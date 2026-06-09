@@ -177,8 +177,13 @@ header{
 
 #menuNav.open {
 	display: block;
+	background: #62CBB8;
 }
 
+#menuNav ul {
+	list-style: none outside none;
+	padding-left: 0;
+}
 
 
 
