@@ -295,6 +295,11 @@ footer a:hover {
 	margin-bottom: 40px;
 }
 
+#calendarEnd {
+	display: flex;
+	justify-content: center;
+}
+
 #current {
 	width: 82%;
 	display: flex;
@@ -628,9 +633,13 @@ nav {
 
 	p{
 		font-size: 16px;
-    	line-height: 25px;
-    }
+    line-height: 20px;
+   }
 
+  h2{
+    line-height: 1.0;
+    margin-bottom: 20px;
+   }
 }
 
 @media screen and (max-width:420px){
