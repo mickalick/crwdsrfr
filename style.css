@@ -200,11 +200,11 @@ header{
 .navItem {
 	display: block;
 	text-align: center;
+	margin: 20px 0px;
 }
 
 .navLink{
 	color:#101010;
-	padding:20px 10px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -525,6 +525,7 @@ footer a:hover {
   mask-image: url('images/icons/menu.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
+  mask-position: center;
   height: 45px;
   width: 45px;
 }
