@@ -746,6 +746,11 @@ nav {
 	.eventLink{
 		margin: 0 4px;
 	}
+
+	#navArrows li {
+		padding:20px 0;
+		width: 45px;
+	}
 }
 
 
