@@ -172,11 +172,11 @@ header{
 }
 
 #menuNav {
-  display: none;
+	display: none;
 }
 
-#menuToggle:checked ~ #menuNav {
-  display: block;
+#menuNav.open {
+	display: block;
 }
 
 
