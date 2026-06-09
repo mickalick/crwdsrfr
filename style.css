@@ -144,7 +144,9 @@ header{
 }
 
 #menuButton{
-	margin-top: 26px;
+	margin-right: 30px;
+	height: 100%;
+	width: 60px;
 }
 
 
@@ -155,14 +157,13 @@ header{
 #menuToggle + label {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
 }
 
 #menuToggle + label span {
   display: block;
-  width: 24px;
-  height: 2px;
   background: white;
 }
 
