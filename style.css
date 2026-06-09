@@ -792,6 +792,7 @@ input[type=text], select, textarea {
 
 #ad {
 	min-height: 5vh;
+	text-align: center;
 }
 
 #ad .main {
