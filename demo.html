@@ -96,16 +96,17 @@
 									<h3>Mon, Jun 8, 2026</h3>
 									<input type="text" id="datePicker" style="display:none;">
 									<script>
+										document.addEventListener('DOMContentLoaded', function() {
+  											const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+ 											const today = new Date();
+
+  											document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
+
 										flatpickr("#datePicker", {
 											positionElement: document.getElementById('currentSelector'),
 											position: "below auto",
-											onReady: function(selectedDates, dateStr) {
-												const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-    											const formatted = selectedDates[0].toLocaleDateString('en-US', options);
-    											document.querySelector('#currentSelector h3').textContent = formatted;
-												}
+											defaultDate: today,
 											onChange: function(selectedDates, dateStr) {
-												const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
     											const formatted = selectedDates[0].toLocaleDateString('en-US', options);
     											document.querySelector('#currentSelector h3').textContent = formatted;
 												}
