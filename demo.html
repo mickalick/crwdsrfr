@@ -62,6 +62,27 @@
 				});	
 			});
 		</script>
+		<script>
+		  document.addEventListener('DOMContentLoaded', function() {
+		    const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+		    const today = new Date();
+
+		    document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
+
+		    flatpickr("#datePicker", {
+		      defaultDate: today,
+		      appendTo: document.getElementById('currentSelector'),
+		      onChange: function(selectedDates, dateStr) {
+		        const formatted = selectedDates[0].toLocaleDateString('en-US', options);
+		        document.querySelector('#currentSelector h3').textContent = formatted;
+		      }
+		    });
+
+		    document.getElementById('currentSelector').addEventListener('click', function() {
+		      document.getElementById('datePicker')._flatpickr.open();
+		    });
+		  });
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
@@ -95,27 +116,6 @@
 									<span class="icon" id="cal"></span>
 									<h3>Mon, Jun 8, 2026</h3>
 									<input type="text" id="datePicker" style="display:none;">
-									<script>
-										document.addEventListener('DOMContentLoaded', function() {
-  											const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
- 											const today = new Date();
-
-  											document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
-
-										flatpickr("#datePicker", {
-											positionElement: document.getElementById('currentSelector'),
-											position: "below auto",
-											defaultDate: today,
-											onChange: function(selectedDates, dateStr) {
-    											const formatted = selectedDates[0].toLocaleDateString('en-US', options);
-    											document.querySelector('#currentSelector h3').textContent = formatted;
-												}
-										});
-
-										document.getElementById('currentSelector').addEventListener('click', function() {
-    										document.getElementById('datePicker')._flatpickr.open();
- 										 });
-									</script>
 								</div>
 							</div>
 							<ul id="navArrows">
