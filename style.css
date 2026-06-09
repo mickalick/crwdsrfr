@@ -251,6 +251,15 @@ footer a:hover {
   font-size: 16px;
 }
 
+#searchGo {
+	background-color: #62CBB8;
+	-webkit-mask-image: url('images/icons/search.svg');
+  mask-image: url('images/icons/search.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  float: right;
+}
+
 #intro p {
 	margin: 8px 0;
 }
@@ -347,14 +356,53 @@ footer a:hover {
 }
 
 .icon{
-	background: url(images/social.png) no-repeat;
-	margin:5px 20px 0px;
 	display: inline-block;
-	box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.05);
+	width: 24px;
+  height: 24px;
 }
 
 .icon:hover{
 	transform: translateY(-2px);
+}
+
+#cal {
+	background-color: #F9F976;
+	-webkit-mask-image: url('images/icons/calendar.svg');
+  mask-image: url('images/icons/calendar.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#fwd {
+	background-color: #F9F976;
+	-webkit-mask-image: url('images/icons/forward.svg');
+  mask-image: url('images/icons/forward.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#bck {
+	background-color: #F9F976;
+	-webkit-mask-image: url('images/icons/back.svg');
+  mask-image: url('images/icons/back.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#opn {
+	background-color: #101010;
+	-webkit-mask-image: url('images/icons/open.svg');
+  mask-image: url('images/icons/open.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#ser {
+	background-color: #62CBB8;
+	-webkit-mask-image: url('images/icons/search.svg');
+  mask-image: url('images/icons/search.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 #twitter {
