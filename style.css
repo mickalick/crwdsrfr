@@ -309,10 +309,12 @@ footer a:hover {
 #currentSelector {
 	display: flex;
 	align-items: center;
+	height: 100%;
+	margin: 0 16px;
 }
 
 #currentSelector:hover {
-	background-color: #1F1F1F !important;
+	background-color: #171717 !important;
 	cursor: pointer;
 }
 
