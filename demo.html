@@ -82,9 +82,7 @@
 			     	defaultDate: today,
 			      	positionElement: document.getElementById('currentSelector'),
 			      	position: 'below auto',
-			      	onReady: function(selectedDates, dateStr, instance) {
-    					instance.input.style.display = 'none';
-  					},
+			      	disableMobile: true,
 			      	onChange: function(selectedDates, dateStr) {
 			        	const formatted = selectedDates[0].toLocaleDateString('en-US', options);
 			        	document.querySelector('#currentSelector h3').textContent = formatted;
