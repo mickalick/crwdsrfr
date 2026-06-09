@@ -366,8 +366,17 @@ footer a:hover {
 
 .eventLink {
 	min-height: 32px;
+	min-width: 32px;
   background: #62CBB8;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventLink a {
+	height: 100%;
+	width: 100%;
 }
 
 .icon{
