@@ -376,8 +376,8 @@ footer a:hover {
 }
 
 .eventLink {
-	min-height: 40px;
-	min-width: 40px;
+	max-height: 40px;
+	max-width: 40px;
   background: #62CBB8;
   border-radius: 20px;
   display: flex;
@@ -556,7 +556,7 @@ nav {
 		width: 20%;
 	}
 
-	.main h1, .main h2, .main h3, .main h4 {
+	.main h1, .main h2, {
 		text-align: center;
 	}
 
@@ -573,6 +573,18 @@ nav {
 		margin-right: 0;
 		margin-bottom: 24px;
 		text-align: center;
+	}
+
+	.searchWrapper {
+		width: 100%;
+	}
+
+	#navArrows li {
+		margin:0;
+	}
+
+	#footLogo {
+		width: 10%;
 	}
 }
 
