@@ -365,7 +365,9 @@ footer a:hover {
 }
 
 .eventLink {
-	width: 10%;
+	min-height: 32px;
+  background: #62CBB8;
+  border-radius: 16px;
 }
 
 .icon{
@@ -635,6 +637,7 @@ input[type=text], select, textarea {
 	float: left;
 	width: 6%;
 	margin-right: 32px;
+	margin-left: 20px;
 }
 
 #ad {
@@ -642,5 +645,5 @@ input[type=text], select, textarea {
 }
 
 #ad .main {
-	background-color: #F9F976;
+	background-color: #000;
 }
