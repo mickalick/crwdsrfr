@@ -150,7 +150,6 @@ header{
 	display: flex;
 	justify-content: center;
 	margin-right: 30px;
-	height: 100%;
 	width: 60px;
 }
 
@@ -557,6 +556,7 @@ footer a:hover {
 
 nav {
 	max-width: 1200px;
+	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	position: relative;
