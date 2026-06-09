@@ -728,10 +728,6 @@ nav {
 }
 
 @media screen and (max-width:420px){
-	header {
-		padding: 40px 0 !important;
-	}
-
 	.navItem{
 		margin: 0 2px !important;
 	}
