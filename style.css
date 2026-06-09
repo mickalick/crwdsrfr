@@ -157,6 +157,7 @@ header{
 #menuButton label {
 	display: flex;
 	align-items: center;
+	padding: 20px 0;
 }
 
 #menuToggle {
