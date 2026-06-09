@@ -239,25 +239,36 @@ footer a:hover {
 	margin-right: 60px;
 }
 
+.searchWrapper {
+	position: relative;
+	display: inline-flex;
+	width: 52%;
+}
+
 #search {
-	min-width: 52%;
+	width: 100%;
 	min-height: 70px;
-	margin: auto 0;
 	background-color: #101010;
 	border: 1px solid #62CBB8;
 	border-radius: 9px;
 	font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
+  padding-right: 60px;
 }
 
 #searchGo {
   height: 70px;
-  position: relative;
-  right: 64px;
-  top: 24px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #searchGo .icon {
@@ -496,6 +507,9 @@ nav {
 		margin: 60px 50px !important;
 	}
 
+	#searchGo {
+		top: 36px;
+	}
 }
 
 @media screen and (max-width:1024px){
@@ -521,6 +535,9 @@ nav {
 		margin: 70px 50px !important;
 	}
 
+	#searchGo {
+		top: 76px;
+	}
 }
 
 @media screen and (max-width:984px){
