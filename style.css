@@ -300,6 +300,7 @@ footer a:hover {
 
 #current .icon {
 	margin-right: 20px;
+	cursor: pointer;
 }
 
 #navArrows {
@@ -313,6 +314,7 @@ footer a:hover {
 	margin:0 20px;
 	color: #F9F976;
 	width: 60px;
+	cursor: pointer;
 }
 
 .main{
@@ -360,7 +362,7 @@ footer a:hover {
 
 .eventTime, .eventCost {
 	font-family: "Space Mono", monospace;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-size: 14px;
   color: #ADADAD;
@@ -377,7 +379,7 @@ footer a:hover {
 
 .eventLink {
 	max-height: 40px;
-	max-width: 40px;
+	min-width: 40px;
   background: #62CBB8;
   border-radius: 20px;
   display: flex;
@@ -584,7 +586,7 @@ nav {
 	}
 
 	#footLogo {
-		width: 10%;
+		width: 10% !important;
 	}
 }
 
