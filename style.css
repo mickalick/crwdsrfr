@@ -306,6 +306,10 @@ footer a:hover {
 	align-items: center;
 }
 
+#currentSelector:hover {
+	background-color: #212121;
+}
+
 #current .icon {
 	margin-right: 20px;
 	cursor: pointer;

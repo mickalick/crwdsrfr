@@ -18,6 +18,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -59,6 +61,9 @@
 					}
 				});	
 			});
+			$(function() {
+				$("#currentSelector").flatpickr(optional_config);
+			});
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
@@ -89,8 +94,10 @@
 					<div class="calendarWrapper">
 						<div id="calendarNav">
 							<div id="current">
-								<span class="icon" id="cal"></span>
-								<h3>Mon, Jun 8, 2026</h3>
+								<div id="currentSelector">
+									<span class="icon" id="cal"></span>
+									<h3>Mon, Jun 8, 2026</h3>
+								</div>
 							</div>
 							<ul id="navArrows">
 								<li id="prevArrow"><span class="icon" id="bck"></span></li>
