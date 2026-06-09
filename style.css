@@ -375,7 +375,7 @@ footer a:hover {
 }
 
 .icon:hover{
-	box-shadow: inset 0 0 0 100px rgba(255,255,255,.3);
+	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
 }
 
 #cal {
@@ -416,6 +416,16 @@ footer a:hover {
   mask-image: url('images/icons/search.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
+}
+
+#mnu {
+	background-color: #FFF;
+	-webkit-mask-image: url('images/icons/menu.svg');
+  mask-image: url('images/icons/menu.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  height: 45px;
+  width: 45px;
 }
 
 #twitter {
