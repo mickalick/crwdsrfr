@@ -306,8 +306,14 @@ footer a:hover {
 	align-items: center;
 }
 
+#currentSelector {
+	display: flex;
+	align-items: center;
+}
+
 #currentSelector:hover {
-	background-color: #212121;
+	background-color: #1F1F1F !important;
+	cursor: pointer;
 }
 
 #current .icon {
