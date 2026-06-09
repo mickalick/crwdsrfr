@@ -80,6 +80,9 @@ h3 a{
 
 h4 a{
 	color:#FFF !important;
+}
+
+h4 a:hover {
 	text-decoration: underline;
 }
 
