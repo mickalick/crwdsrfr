@@ -177,6 +177,8 @@ header{
 
 #menuNav.open {
 	display: block;
+	position: absolute;
+	top: 100%;
 	background: #62CBB8;
 }
 
@@ -196,12 +198,6 @@ header{
 #bottomNav li {
 	display: inline-flex;
 	margin-right: 24px;
-}
-
-.navItem{
-	float:right;
-	padding:20px 0;
-	margin:0 45px;
 }
 
 .bottomNavItem{
@@ -549,6 +545,7 @@ nav {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
+	position: relative;
 	justify-content: space-between;
 	align-items: center;
 }
