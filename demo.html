@@ -1,0 +1,202 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>CRWDSRFR | Live Show Finder</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to top of page" href="#top"><h1>CRWD<em>SRFR</em></h1></a>
+				<ul id="topNav">
+					<li class="navItem"><a class="navLink" href="#contact">Menu</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="calendar" class="page">
+				<div class="main">
+					<div id="calendarHeader">
+						<div id="intro">
+							<h2><em>Cleveland's</em> Live Music Calendar</h2>
+							<p>Updated every Monday.</p>
+							<p>Not seeing a venue or show? <a href="/">Let us know.</a></p>
+						</div>
+						<input type="text" id="search" name="search" placeholder="Surf by venue, event, or artist">
+					</div>
+					<div class="calendarWrapper">
+						<div id="calendarNav">
+							<div id="current">
+								<h3>Mon, Jun 8, 2026</h3>
+							</div>
+							<ul id="navArrows">
+								<li id="prevArrow">Prev</li>
+								<li id="nextArrow">Next</li>
+							</ul>
+						</div>
+						<div id="calendarCards">
+							<div class="venueCard">
+								<div class="venue">
+									<h4><a href="/">Venue Name</a></h4>
+								</div>
+								<div class="venueEvents">
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 1</span>
+											<span class="eventTime">7 PM (Doors 6 PM)</span><span class="eventCost">$20</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 2</span>
+											<span class="eventTime">9 PM</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="venueCard">
+								<div class="venue">
+									<h4><a href="/">Venue Name</a></h4>
+								</div>
+								<div class="venueEvents">
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 1</span>
+											<span class="eventTime">7 PM (Doors 6 PM)</span>
+											<span class="eventCost">$20</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 2</span>
+											<span class="eventTime">9 PM</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 3</span>
+											<span class="eventTime">11:30 PM</span>
+											<span class="eventCost">$10</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="venueCard">
+								<div class="venue">
+									<h4><a href="/">Venue Name</a></h4>
+								</div>
+								<div class="venueEvents">
+									<div class="event">
+										<div class="eventInfo">
+											<span class="eventName">Event 1</span>
+											<span class="eventTime">7 PM (Doors 6 PM)</span><span class="eventCost">$20</span>
+										</div>
+										<div class="eventLink">
+											<a href="/">Link</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="calendarEnd">
+								<span>End of Results</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="ad" class="page">
+				<div class="main">
+					<p>test</p>
+				</div>
+			</section>
+			<footer>
+				<div class="footWrap">
+					<img id="footLogo" src="images/logo.png">
+					<p><small>&copy; 2026 CRWDSRFR.com. All rights reserved.</p>
+					<ul id="bottomNav">
+						<li><a href="/">About</a></li>
+						<li><a href="/">Contact</a></li>
+						<li><a href="/">Contribute</a></li>
+					</ul>
+					<p><small><a href="https://kmmakes.com">KM Makes</a> this site.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+
+	</html>

@@ -1,0 +1,552 @@
+* {
+	margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+}
+
+html {
+	height:100%;
+	margin:0;
+}
+
+body {
+	height:100%;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	background-color: #222;
+}
+
+a {
+	text-decoration:none;
+}
+
+.main a{
+	color:#62CBB8;
+}
+
+.main a:hover{
+	text-decoration: underline;
+}
+
+h1,h2{
+	margin:0;
+	padding:0;
+	font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  color: #FFF;
+}
+
+h1{
+	font-size:48px;
+	font-weight: 700 !important;
+}
+
+h2{
+	font-size:32px;
+	font-weight: 400;
+}
+
+
+h3, h4 {
+	color:#FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h3{
+	font-size:24px;
+	padding:0;
+	margin:5px 0;
+	color: #FFF;
+}
+
+h4{
+	font-size:20px;
+	padding:0;
+	margin:0;
+}
+
+h3 a{
+	padding:3px;
+	color:#424142;
+}
+
+h4 a{
+	color:#FFF !important;
+	text-decoration: underline;
+}
+
+p{
+	font-size:21px;
+	line-height:1.2;
+	margin:20px 0;
+	color:#FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+hr{
+	width: 50%;
+    border: solid #ddd;
+    border-width: 1px 0 0;
+    margin: 12px auto 20px;
+}
+
+sup{
+	font-size: 55%;
+	line-height: 0;
+	position: relative;
+	font-weight: normal;
+}
+
+em{
+	color:#62CBB8;
+	font-weight:700;
+	font-style:normal;
+}
+
+header{
+	height:120px;
+	width:100%;
+	font-size:18px;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	padding-top: 75px;
+}
+
+.scrolled{
+	padding: 0 !important;
+	background-color:#101010;
+}
+
+#logo{
+	background:url("images/logo.png") no-repeat left;
+	background-size: 25%;
+	padding: 5px 0px 0px 72px;
+	color:#FFF;
+	float:left;
+}
+
+#logo:hover{
+	transform: translateY(-3px);
+}
+
+#topNav{
+	list-style:none outside none;
+	margin-top: 26px;
+}
+
+#bottomNav{
+	list-style:none outside none;
+	padding-left: 0;
+}
+
+#bottomNav li {
+	display: inline-flex;
+	margin-right: 24px;
+}
+
+.navItem{
+	float:right;
+	padding:20px 0;
+	margin:0 45px;
+}
+
+.bottomNavItem{
+	text-align: center;
+	padding:10px 0;
+	margin:0 45px;
+}
+
+.navLink{
+	color:#FCFCFC;
+	padding:20px 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	transition:all 250ms ease;
+	-webkit-transition:all 250ms ease;
+	-moz-transition:all 250ms ease;
+}
+
+.navLink:hover{
+	color:#62CBB8;
+}
+
+#wrapper{
+	color: #fff;
+}
+
+.push{
+	height:10vh;
+}
+
+footer {
+	background: #101010;
+}
+
+.footWrap {
+	padding: 20px 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+footer p {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	line-height: 1.2;
+	text-align: left;
+}
+
+footer a {
+	color: #62CBB8;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.page {
+	display: flex;
+	align-items: center;
+}
+
+#calendarHeader {
+	width: 100%;
+	margin-bottom: 60px;
+	display: flex;
+}
+
+#intro {
+	min-width: 40%;
+	margin-right: 60px;
+}
+
+#search {
+	min-width: 45%;
+	min-height: 70px;
+	margin: auto 0;
+	background-color: #101010;
+	border: 1px solid #62CBB8;
+	border-radius: 9px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+}
+
+#intro p {
+	margin: 8px 0;
+}
+
+#calendar {
+	margin-top: 160px;
+}
+
+#calendarNav {
+	display: flex;
+	width: 100%;
+	border-bottom: 5px solid #F9F976;
+	margin-bottom: 40px;
+}
+
+#current {
+	width: 70%;
+}
+
+#navArrows {
+	list-style:none outside none;
+	display: flex;
+	align-items: flex-end;
+}
+
+#navArrows li {
+	padding:20px 0;
+	margin:0 45px;
+	color: #F9F976;
+}
+
+.main{
+	max-width:1100px;
+	width: 100%;
+	margin: 60px auto;
+}
+
+.venueCard {
+	width: 100%;
+	display: flex;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ADADAD;
+	margin-bottom: 24px;
+}
+
+.venue {
+	width: 25%;
+  margin-right: 20px;
+}
+
+.venueEvents {
+	width: 70%;
+}
+
+.event {
+	margin-bottom: 40px;
+	width: 100%;
+	display: flex;
+}
+
+.eventInfo {
+	width: 90%;
+}
+
+.eventInfo span {
+	display: inline-flex;
+	margin-right: 40px;
+}
+
+.eventName {
+	font-size: 20px;
+	min-width: 33%;
+}
+
+.eventTime, .eventCost {
+	font-family: "Space Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: #ADADAD;
+}
+
+.eventTime {
+	min-width: 30%;
+	text-align: center;
+}
+
+.eventCost {
+	min-width: 14%;
+	text-align: center;
+}
+
+.eventLink {
+	width: 10%;
+}
+
+.icon{
+	background: url(images/social.png) no-repeat;
+	margin:5px 20px 0px;
+	display: inline-block;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.icon:hover{
+	transform: translateY(-2px);
+}
+
+#twitter {
+	width: 45px;
+	height: 45px;
+	background-position: -48px -2px;
+}
+
+#instagram {
+	width: 45px;
+	height: 45px;
+	background-position: -98px -2px;
+}
+
+#linkedin {
+	width: 45px;
+	height: 45px;
+	background-position: 0px -2px;
+}
+
+.empty {
+	text-align: center !important;
+	vertical-align: top;
+	padding-top: 13%;
+	width: 48%;
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* Responsive Code */
+
+
+@media screen and (max-width:1280px){
+	#logo{
+		margin-left: 30px;
+	}
+
+	#topNav{
+		margin-right: 30px;
+	}
+}
+
+
+@media screen and (max-width:1108px){
+	.main{
+		margin: 60px 50px !important;
+	}
+
+}
+
+@media screen and (max-width:1024px){
+	header{
+		font-size:18px;
+		height: 61px;
+	}
+
+	h1{
+		font-size:40px;
+		line-height: 45px;
+	}
+
+	h2{
+		font-size:27px;
+	}
+
+	h3{
+		font-size:22px;
+	}
+
+	.main{
+		margin: 70px 50px !important;
+	}
+
+}
+
+@media screen and (max-width:768px){
+
+	.main h1, .main h2, .main h3, .main h4 {
+		text-align: center;
+	}
+
+	p{
+		font-size:19px;
+		line-height:30px;
+	}
+
+}
+
+@media screen and (max-width:625px){
+	#logo{
+		background-size: 75%;
+	}
+
+	.navItem{
+		margin: 0 30px !important;
+	}
+
+}
+
+@media screen and (max-width:535px){
+	header{
+		font-size:16px;
+		height: 60px;
+	}
+
+	#logo{
+		margin-left: 25px;
+		background-size: 68%;
+		padding: 30px 0 30px 60px !important;
+	}
+
+	#topNav{
+		margin-right: 20px;
+	}
+
+	.navItem{
+		padding: 20px 0 !important;
+		margin: 0 16px !important;
+	}
+
+	.main{
+		margin: 80px 30px 70px !important;
+	}
+
+	p{
+		font-size: 16px;
+    	line-height: 25px;
+    }
+
+}
+
+@media screen and (max-width:420px){
+	header {
+		padding: 40px 0 !important;
+	}
+
+	.navItem{
+		margin: 0 2px !important;
+	}
+
+}
+
+
+/* Grid Hover Animation */
+
+figure:hover, figure a:hover{
+	transform: translateY(-3px);
+	text-decoration: none !important;
+}
+
+.vert{
+	width: 61%;
+	margin: 8px 20%;
+} 
+
+@keyframes bounce {
+	0% {bottom:10px;}
+	100% {bottom:15px;}
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #222; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  background: #333;
+  color: #FCFCFC;
+}
+
+#social {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#footLogo {
+	float: left;
+	width: 6%;
+	margin-right: 32px;
+}
+
+#ad {
+	min-height: 5vh;
+}
+
+#ad .main {
+	background-color: #F9F976;
+}

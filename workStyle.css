@@ -1,0 +1,262 @@
+.workBanner{
+	color: #FFF;
+	overflow:hidden;
+	transition:none;
+	height:350px;
+	margin-top: 200px !important;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+	border-radius: 15px;
+}
+
+#nationwide{
+	background:url(images/nationwide.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#mva{
+	background:url(images/mva.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#lean{
+	background:url(images/lean.png) no-repeat #BD97CE;
+	background-size: cover;
+	background-position: center;
+}
+
+#sherwin{
+	background: url(images/sw_banner.jpg) no-repeat #BD97CE;
+    background-size: cover;
+    box-shadow: none;
+    background-position: center;
+}
+
+#sherwincc{
+	background: url(images/swcc_banner.jpg) no-repeat #BD97CE;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
+#huntington{
+	background: url(images/hnb_banner.jpg) no-repeat #BD97CE;
+    background-size: cover;
+    box-shadow: none;
+    background-position: center;
+}
+
+#messaging{
+	background: url(images/messaging.jpg) no-repeat #BD97CE;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
+#lobbyoverview{
+	background: url(images/lobbyoverview.jpg) no-repeat #BD97CE;
+    background-size: cover;
+    box-shadow: none;
+    background-position: top;
+}
+
+#selectcheckout{
+	background:url(images/selectcheckout.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#passwordreset{
+	background:url(images/passwordreset.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#promoplans{
+	background:url(images/promoplans.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#granular{
+	background:url(images/granular.jpg) no-repeat #BD97CE;
+	background-size: cover;
+}
+
+#mywork{
+	margin:0 auto;
+	padding:0 10px;
+	max-width:1392px;
+}
+
+.workPage .main {
+	max-width: 1000px;
+}
+
+.workPage p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.workPage footer{
+	color:#FCFCFC;
+	text-align: center;
+}
+
+footer h4{
+	margin-bottom: 15px;
+}
+
+footer a{
+	text-decoration: underline !important;
+	color: #555;
+}
+
+.work{
+	width:32%;
+	float:left;
+	margin:2px;
+}
+
+.workItem{
+	padding: 60px 0;
+}
+
+.workItem h2{
+	margin-top: 60px;
+	font-size: 36px;
+	font-weight: 600;
+	color: #BD97CE;
+}
+
+.altBackground{
+	background-color: #292929;
+}
+
+.workImage{
+	display: block;
+	margin: 0 auto 20px;
+	max-height: 80vh;
+	max-width:90%;
+}
+
+.work-items{
+	width:80%;
+	margin:0 auto;
+}
+
+.workLabel{
+	font-size: 16px !important;
+	margin:30px 0 5px;
+	font-style: italic;
+}
+
+#nw_pdf{
+	width: 100%;
+	height: 85vh;
+}
+
+.flex_2col {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex_2col_main {
+	max-width: 65%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.flex_2col_main h1 {
+	color: #BD97CE;
+}
+
+.flex_2col_main h2 {
+	color: #FCFCFC;
+}
+
+.flex_2col_side {
+	width: 30%;
+	max-width: 300px;
+	margin-top: 20px;
+	background: #222;
+  	border-radius: 9px;
+  	padding: 20px;
+  	height: fit-content;
+}
+
+.flex_2col_side ul {
+	list-style: none outside none;
+	margin: 5px 0 25px;
+	padding-left: 0;
+	color: #FCFCFC;
+}
+
+.flex_2col_side p {
+	font-size: 16px;
+	margin: 5px 0 25px;
+	line-height: 20px;
+}
+
+.flex_2col h4 {
+	text-transform: uppercase;
+	color: #BD97CE;
+}
+
+.flex_2col_half {
+	max-width: 48%;
+}
+
+.leanGif{
+	max-height: 60vh !important;
+}
+
+@media screen and (min-width:1118px){
+	.workPage .main {
+		margin: 60px auto;
+	}
+}
+
+@media screen and (max-width:768px){
+	.workBanner{
+		height: 250px;
+	}
+
+	.flex_2col {
+		flex-direction: column;
+	}
+
+	.flex_2col_main {
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.flex_2col_side {
+		width: 100%;
+	}
+
+	.flex_2col_half {
+		max-width: 100%;
+	}
+
+	.reverseFlex {
+		flex-direction: column-reverse !important;
+	}
+}
+
+@media screen and (max-width:424px){
+	.workPage .main{
+		margin: 50px 30px;
+	}
+
+	.workItem{
+		padding: 15px;
+	}
+
+	.workBanner{
+		height: 20vh;
+		margin-top: 150px !important;
+	}
+
+	#nationwidePDF{
+		display: none;
+	}
+}

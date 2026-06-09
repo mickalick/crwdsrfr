@@ -1,0 +1,359 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>KM Makes | Design Services</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a class="logo" aria-label="Back to top of page" href="#top"></a>
+				<ul id="homeNav">
+					<li class="navItem"><a class="navLink" href="#contact">Contact</a></li>
+					<li class="navItem"><a class="navLink" href="#about">About</a></li>
+					<li class="navItem"><a class="navLink" href="#myWork">Work</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="intro">
+					<canvas id="particle-canvas"></canvas>
+					<div id="introOverlay">
+						<div class="main">
+							<div id="introSpacer">
+								<img id="heroLogo" src="images/newLogo_sans.png">
+								<p id="myWork" class="tagline"><em><span class="static-part">KM Makes </span></em><span id="rotating-word" class="rotating-word"></span><span id="cursor" class="cursor">
+								
+								<script>
+									const words = ["experiences with impact.", "products that matter.", "ideas come to life.", "things that don't suck.", "a lot of cool stuff, actually."];
+
+									const el = document.getElementById('rotating-word');
+									const cursor = document.getElementById('cursor');
+
+									let wordIndex = 0;
+									let charIndex = 0;
+									let isDeleting = false;
+
+									function tick() {
+									  const current = words[wordIndex];
+									  isDeleting ? charIndex-- : charIndex++;
+									  el.textContent = current.slice(0, charIndex);
+
+									  let delay = isDeleting ? 25 : 45; // delete faster than type
+
+									  if (!isDeleting && charIndex === current.length) {
+									    delay = 1600;       // pause at the end
+									    isDeleting = true;
+									  } else if (isDeleting && charIndex === 0) {
+									    isDeleting = false;
+									    wordIndex = (wordIndex + 1) % words.length; // next word, looping
+									    delay = 300;
+									  } else {
+									    cursor.style.animationPlayState = 'paused';
+									    cursor.style.opacity = '1';
+									  }
+
+									  setTimeout(tick, delay);
+									}
+									tick();
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					const canvas = document.getElementById('particle-canvas');
+					const ctx = canvas.getContext('2d');
+					const container = document.getElementById('intro');
+
+					function resize() {
+					  canvas.width = window.innerWidth;
+					  canvas.height = window.innerHeight;
+					}
+					resize();
+					window.addEventListener('resize', resize);
+
+					const COLORS = ['#B282C5', '#C99AD8', '#9A6AAF', '#D4AAEB', '#7E5499', '#E2C4F0'];
+
+					class Particle {
+					  constructor() { this.reset(true); }
+					  reset(initial) {
+					    this.x = Math.random() * canvas.width;
+					    this.y = initial ? Math.random() * canvas.height : canvas.height + 10;
+					    this.r = Math.random() * 3.2 + 0.5;
+					    this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+					    this.alpha = Math.random() * 0.6 + 0.15;
+					    this.speedY = -(Math.random() * 0.4 + 0.1);
+					    this.speedX = (Math.random() - 0.5) * 0.25;
+					    this.drift = Math.random() * Math.PI * 2;
+					    this.driftSpeed = (Math.random() * 0.008 + 0.003);
+					    this.driftAmp = Math.random() * 0.6 + 0.2;
+					    this.pulsePhase = Math.random() * Math.PI * 2;
+					    this.pulseSpeed = Math.random() * 0.02 + 0.008;
+					  }
+					  update() {
+					    this.drift += this.driftSpeed;
+					    this.pulsePhase += this.pulseSpeed;
+					    this.x += this.speedX + Math.sin(this.drift) * this.driftAmp;
+					    this.y += this.speedY;
+					    this.currentAlpha = this.alpha * (0.7 + 0.3 * Math.sin(this.pulsePhase));
+					    if (this.y < -10) this.reset(false);
+					  }
+					  draw() {
+					    ctx.save();
+					    ctx.globalAlpha = this.currentAlpha;
+					    ctx.beginPath();
+					    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+					    ctx.fillStyle = this.color;
+					    ctx.fill();
+					    ctx.restore();
+					  }
+					}
+
+					class ConnectionLine {
+					  constructor() { this.reset(); }
+					  reset() {
+					    this.x = Math.random() * canvas.width;
+					    this.y = Math.random() * canvas.height;
+					    this.targetX = this.x + (Math.random() - 0.5) * 120;
+					    this.targetY = this.y + (Math.random() - 0.5) * 120;
+					    this.progress = 0;
+					    this.speed = Math.random() * 0.004 + 0.002;
+					    this.maxAlpha = Math.random() * 0.12 + 0.03;
+					    this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+					    this.life = 0;
+					    this.maxLife = Math.random() * 200 + 100;
+					  }
+					  update() {
+					    this.life++;
+					    if (this.life > this.maxLife) this.reset();
+					    this.progress = this.life / this.maxLife;
+					  }
+					  draw() {
+					    const fade = this.progress < 0.2 ? this.progress / 0.2 : this.progress > 0.8 ? (1 - this.progress) / 0.2 : 1;
+					    ctx.save();
+					    ctx.globalAlpha = this.maxAlpha * fade;
+					    ctx.strokeStyle = this.color;
+					    ctx.lineWidth = 0.5;
+					    ctx.beginPath();
+					    ctx.moveTo(this.x, this.y);
+					    const cx = this.x + (this.targetX - this.x) * this.progress;
+					    const cy = this.y + (this.targetY - this.y) * this.progress;
+					    ctx.lineTo(cx, cy);
+					    ctx.stroke();
+					    ctx.restore();
+					  }
+					}
+
+					const particles = Array.from({length: 500}, () => new Particle());
+					const lines = Array.from({length: 14}, () => new ConnectionLine());
+
+					function loop() {
+					  ctx.clearRect(0, 0, canvas.width, canvas.height);
+					  lines.forEach(l => { l.update(); l.draw(); });
+					  particles.forEach(p => { p.update(); p.draw(); });
+					  requestAnimationFrame(loop);
+					}
+					loop();
+				</script>
+			</section>
+			<section id="work" class="page">
+				<div class="main">
+					<div class="grid-wrapper">
+						<h4><em>Featured Work</em></h4>
+						<ul class="grid">
+							<li class="grid-item">
+								<a href="huntington.html">
+									<div class="grid-content">
+										<h3><em>Huntington National Bank:</em></h3>
+										<h2>Building a groundbreaking onboarding journey for commercial and business banking prospects.</h2>
+										<p>Product Design</p>
+										<h5>2021 - 2025</h5>
+									</div>
+									<div class="grid-img">
+										<img src="images/tile_huntington_alt.jpg">
+									</div>
+								</a>
+							</li>
+							<li class="grid-item">
+								<a href="sw.html">
+									<div class="grid-content">
+										<h3><em>Sherwin-Williams:</em></h3>
+										<h2>Defining strategy and design for the future of automotive collision repair apps.</h2>
+										<p>Product Strategy, Product Design</p>
+										<h5>2019 - 2020</h5>
+									</div>
+									<div class="grid-img">
+										<img src="images/tile_sw_alt.jpg">
+									</div>
+								</a>
+							</li>
+							<li class="grid-item">
+								<a href="private/promoplans.html">
+									<div class="grid-content">
+										<h3><em>Alliance Data:</em></h3>
+										<h2>Demystifying the cardholder's promotional plan experience.</h2>
+										<p>Market Research, Product Design</p>
+										<h5>2018 - 2019</h5>
+									</div>
+									<div class="grid-img">
+										<img src="images/tile_pp_alt.jpg">
+									</div>		
+								</a>
+							</li>
+						</ul>
+						<h4><em>More of Our Work</em></h4>
+						<div class="workLinks">
+							<a href="private/granular.html">
+								<h3><em>Alliance Data:</em> Creating a robust set of credit card security controls.</h3>
+								<h4>Product Strategy, Product Design; 2018</h4>
+							</a>
+							<a href="ads_pwr.html">
+								<h3><em>Alliance Data:</em> Rethinking the password reset process.</h3>
+								<h4>Product Design; 2015 - 2016</h4>
+							</a>
+							<a href="nw_lean.html">
+								<h3><em>Nationwide Insurance:</em> Designing an internal application for task and time management.</h3>
+								<h4>Product Design; 2015</h4>
+							</a>
+							<a href="nw_lean.html">
+								<h3><em>My Volunteer Adventure:</em> Building the brand for a startup volunteer organization.</h3>
+								<h4>Product Strategy, Product Design; 2014 - 2015</h4>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="page">
+				<div class="main">
+					<div class="about-content">
+						<h1>About</h1>
+						<h2>KM Makes exists for one reason: to help <em>humans</em> serve other <em>humans</em> better.</h2>
+						<p>No matter the size or goals of your organization (or lack thereof), there can be endless questions in your mind about how you can best deliver value to both you and your audience, and what paths you can take to get there.</p>
+						<p>That's where we come in. KM Makes is a digital design service that helps organizations from as small as one person to large-scale corporations realize the potential of their products through a human-centered approach.</p>
+						<h4>Services</h4>
+						<p>Our services range from high-level strategic consulting, all the way to delivering research-backed, developer hand-off ready product mockups and prototypes. We meet you wherever you're at in your lifecycle, understand your goals, and go from there.</p>
+						<h4>Rates</h4>
+						<p>The first hour is always on the house, with options after ranging from hourly to project-based pricing. We understand budgets are always tight, so we'll work with you to find something sustainable for everyone.</p>
+						<h3>The Team</h3>
+						<div id="teamCards">
+							<div class="teamCard">
+								<div class="teamPhoto center">
+									<img src="images/km_portrait.jpg">
+								</div>
+								<div class="teamCardContent">
+									<h4>Kevin Mihalich</h4>
+									<h4 class="sub">Founder, Lead Designer</h4>
+									<p><em>"</em>With over 12 years of leading digital design efforts for teams across various environments and industries, I started KM Makes to further the impact that thoughtful design can have on the world. I specialize in finding simple solutions to complex challenges, and I'm always eager for opportunities to help improve the digial lives of others.<em>"</em></p>
+									<a href="work/kmihalich_resume.pdf"><h5>Resume</h5></a>
+									<a href="https://www.linkedin.com/in/kevinmihalich"><h5>LinkedIn</h5></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="page">
+				<div class="main">
+					<h1 class="hero">Contact</h1>
+					<h2>Whether for work inquiries or just to connect, we'd love to hear from you.</h2>
+					<div id="contactArea">
+						<div id="contactInfo">
+							<h3>Email:</h3>
+							<p>hello@kmmakes.com</p>
+							<h3>Call:</h3>
+							<p>Coming Soon</p>
+						</div>
+
+						<div class="contactForm">
+							<h3>Or, get in touch now:</h3>
+	  						<form  action="https://formspree.io/f/xwvjoeqv" method="POST">
+
+	    					<label for="name">Name (first or full):</label>
+	    					<input type="text" id="name" name="name" placeholder="Your name">
+
+	    					<label for="email">Email:</label>
+	    					<input type="text" id="email" name="email" placeholder="Your email address">
+
+	    					<label for="message">Message:</label>
+	    					<textarea id="message" name="message" placeholder="How can we help?" style="height:200px"></textarea>
+
+	    					<input type="submit" class="contact-button" value="Send">
+
+	  						</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="foot-wrap">
+					<img id="footLogo" src="images/newLogo.png">
+					<div id="social">
+						<a id="linkedin" class="icon" aria-label="LinkedIn" href="https://www.linkedin.com/in/kevinmihalich" target="_blank"></a>
+						<a id="instagram" class="icon" aria-label="Instagram" href="https://www.instagram.com/kmickalick/" target="_blank"></a>
+					</div>
+					<p><small>&copy; 2026 KM Makes LLC.<br>This site was designed and built by us.<br>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+
+	</html>
