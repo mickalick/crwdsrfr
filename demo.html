@@ -103,15 +103,18 @@
 			      setDate(next);
 			    });
 
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+    			});
+
 			    document.addEventListener('click', function(e) {
-				  const menu = document.getElementById('menuToggle');
-				  const nav = document.getElementById('menuNav');
-				  const label = document.querySelector('label[for="menuToggle"]');
-				  
-				  if (!nav.contains(e.target) && !label.contains(e.target)) {
-				    menu.checked = false;
-				  }
-			  	});
+			      const nav = document.getElementById('menuNav');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			      }
+			    });
 			});
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -122,7 +125,6 @@
 			<nav>
 				<a id="logo" aria-label="Back to top of page" href="#top"><h1>CRWD<em>SRFR</em></h1></a>
 				<div id="menuButton">
-					<input type="checkbox" id="menuToggle">
 					<label for="menuToggle" aria-label="Open Menu">
 				  	<span class="icon" id="mnu"></span>
 					</label>
