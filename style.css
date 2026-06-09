@@ -143,12 +143,16 @@ header{
 	transform: translateY(-3px);
 }
 
+
+
+
 #menuButton{
+	display: flex;
+	justify-content: center;
 	margin-right: 30px;
 	height: 100%;
 	width: 60px;
 }
-
 
 #menuToggle {
   display: none;
