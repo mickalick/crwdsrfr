@@ -694,6 +694,7 @@ nav {
 	#logo{
 		margin-left: 25px;
 		margin-top: 8px;
+		padding-top: 0;
 	}
 
 	#menuToggle{
@@ -734,6 +735,17 @@ nav {
 		margin: 0 2px !important;
 	}
 
+	#currentSelector {
+		padding: 0;
+	}
+
+	#currentSelector h3 {
+		font-size: 18px;
+	}
+
+	.eventLink{
+		margin: 0 4px;
+	}
 }
 
 
