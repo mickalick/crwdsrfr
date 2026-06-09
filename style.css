@@ -322,7 +322,7 @@ footer a:hover {
 
 .eventName {
 	font-size: 20px;
-	min-width: 33%;
+	width: 33%;
 }
 
 .eventTime, .eventCost {
@@ -334,12 +334,11 @@ footer a:hover {
 }
 
 .eventTime {
-	min-width: 30%;
-	text-align: center;
+	width: 30%;
 }
 
 .eventCost {
-	min-width: 14%;
+	width: 14%;
 	text-align: center;
 }
 
@@ -413,7 +412,7 @@ nav {
 @media screen and (max-width:1024px){
 	header{
 		font-size:18px;
-		height: 61px;
+		height: 110px;
 	}
 
 	h1{
@@ -422,7 +421,7 @@ nav {
 	}
 
 	h2{
-		font-size:27px;
+		font-size:48px;
 	}
 
 	h3{
@@ -435,7 +434,27 @@ nav {
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:984px){
+
+	.eventInfo span {
+  	margin-right: 20px;
+	}
+
+}
+
+@media screen and (max-width:774px){
+
+	.eventName {
+  	display: flex !important;
+	}
+
+	.eventTime {
+		width: 60%;
+	}
+
+	.eventCost {
+		width: 20%;
+	}
 
 	.main h1, .main h2, .main h3, .main h4 {
 		text-align: center;
@@ -446,12 +465,18 @@ nav {
 		line-height:30px;
 	}
 
+	#calendarHeader {
+		flex-direction: column;
+	}
+
+	#intro {
+		margin-right: 0;
+		margin-bottom: 24px;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width:625px){
-	#logo{
-		background-size: 75%;
-	}
 
 	.navItem{
 		margin: 0 30px !important;
@@ -462,13 +487,11 @@ nav {
 @media screen and (max-width:535px){
 	header{
 		font-size:16px;
-		height: 60px;
+		height: 104px;
 	}
 
 	#logo{
 		margin-left: 25px;
-		background-size: 68%;
-		padding: 30px 0 30px 60px !important;
 	}
 
 	#topNav{
