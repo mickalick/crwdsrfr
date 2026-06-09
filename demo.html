@@ -97,7 +97,7 @@
 									<input type="text" id="datePicker" style="display:none;">
 									<script>
 										flatpickr("#datePicker", {
-											appendTo: document.getElementById('currentSelector'),
+											positionElement: document.getElementById('currentSelector'),
 											position: "below auto",
 											onChange: function(selectedDates, dateStr) {
 												const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
