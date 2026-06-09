@@ -103,6 +103,10 @@
     											document.querySelector('#currentSelector h3').textContent = formatted;
 												}
 										});
+
+										document.getElementById('currentSelector').addEventListener('click', function() {
+    										document.getElementById('datePicker')._flatpickr.open();
+ 										 });
 									</script>
 								</div>
 							</div>
