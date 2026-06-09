@@ -94,8 +94,17 @@
 								<div id="currentSelector">
 									<span class="icon" id="cal"></span>
 									<h3>Mon, Jun 8, 2026</h3>
+									<input type="text" id="datePicker" style="display:none;">
+									<script>
+										flatpickr("#datePicker", {
+											onChange: function(selectedDates, dateStr) {
+												const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+    											const formatted = selectedDates[0].toLocaleDateString('en-US', options);
+    											document.querySelector('#currentSelector h3').textContent = formatted;
+												}
+										});
+									</script>
 								</div>
-								<script>flatpickr("#currenSelector");</script>
 							</div>
 							<ul id="navArrows">
 								<li id="prevArrow"><span class="icon" id="bck"></span></li>
