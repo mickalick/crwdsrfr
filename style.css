@@ -143,10 +143,43 @@ header{
 	transform: translateY(-3px);
 }
 
-#topNav{
-	list-style:none outside none;
+#menuToggle{
 	margin-top: 26px;
 }
+
+
+
+
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle + label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#menuToggle + label span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: white;
+}
+
+#menuNav {
+  display: none;
+}
+
+#menuToggle:checked ~ #menuNav {
+  display: block;
+}
+
+
+
+
 
 #bottomNav{
 	list-style:none outside none;
@@ -519,7 +552,7 @@ nav {
 		margin-left: 30px;
 	}
 
-	#topNav{
+	#menuToggle {
 		margin-right: 30px;
 	}
 }
@@ -630,7 +663,7 @@ nav {
 		margin-top: 8px;
 	}
 
-	#topNav{
+	#menuToggle{
 		margin-right: 20px;
 		margin-top: 16px;
 	}
