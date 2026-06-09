@@ -173,13 +173,23 @@ header{
 
 #menuNav {
 	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0%;
+	background: #62CBB8;
+	width: 25%;
 }
 
 #menuNav.open {
 	display: block;
-	position: absolute;
-	top: 100%;
-	background: #62CBB8;
+}
+
+#menuButton.open {
+	background-color: #62CBB8;
+}
+
+#menuButton.open #mnu {
+	background-color: #101010;
 }
 
 #menuNav ul {
@@ -187,7 +197,25 @@ header{
 	padding-left: 0;
 }
 
+.navItem {
+	display: block;
+	text-align: center;
+}
 
+.navLink{
+	color:#101010;
+	padding:20px 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	transition:all 250ms ease;
+	-webkit-transition:all 250ms ease;
+	-moz-transition:all 250ms ease;
+}
+
+.navLink:hover{
+	text-decoration: underline;
+}
 
 
 #bottomNav{
@@ -204,21 +232,6 @@ header{
 	text-align: center;
 	padding:10px 0;
 	margin:0 45px;
-}
-
-.navLink{
-	color:#FCFCFC;
-	padding:20px 10px;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	transition:all 250ms ease;
-	-webkit-transition:all 250ms ease;
-	-moz-transition:all 250ms ease;
-}
-
-.navLink:hover{
-	color:#62CBB8;
 }
 
 #wrapper{

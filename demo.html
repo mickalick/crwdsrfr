@@ -105,14 +105,17 @@
 
 			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
       				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
     			});
 
 			    document.addEventListener('click', function(e) {
 			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
 			      const label = document.querySelector('label[for="menuToggle"]');
 
 			      if (!nav.contains(e.target) && !label.contains(e.target)) {
 			        nav.classList.remove('open');
+			        btn.classList.remove('open');
 			      }
 			    });
 			});
