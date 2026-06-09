@@ -791,5 +791,13 @@ input[type=text], select, textarea {
 }
 
 #datePicker {
-	display: none !important;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+}
+
+.flatpickr-calendar {
+	z-index: 9999;
 }
