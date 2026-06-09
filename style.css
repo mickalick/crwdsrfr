@@ -716,6 +716,6 @@ input[type=text], select, textarea {
 	background-color: #000;
 }
 
-.flatpickr-calendar.open {
+.flatpickr-calendar .open {
 	top: 69px !important,
 }
