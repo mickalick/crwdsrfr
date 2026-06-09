@@ -310,7 +310,7 @@ footer a:hover {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	margin: 0 16px;
+	padding: 0 16px;
 }
 
 #currentSelector:hover {
