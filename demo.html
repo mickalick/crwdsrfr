@@ -63,56 +63,56 @@
 			});
 		</script>
 		<script>
-		  document.addEventListener('DOMContentLoaded', function() {
-		    const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-		    const today = new Date();
+			document.addEventListener('DOMContentLoaded', function() {
+		    	const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+		    	const today = new Date();
 
-		    function setDate(date) {
-		      const formatted = date.toLocaleDateString('en-US', options);
-		      document.querySelector('#currentSelector h3').textContent = formatted;
-		      document.getElementById('datePicker')._flatpickr.setDate(date, false);
-		    }
+			    function setDate(date) {
+			      const formatted = date.toLocaleDateString('en-US', options);
+			      document.querySelector('#currentSelector h3').textContent = formatted;
+			      document.getElementById('datePicker')._flatpickr.setDate(date, false);
+			    }
 
-		    document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
+			    document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
 
-		    flatpickr("#datePicker", {
-		      defaultDate: today,
-		      positionElement: document.getElementById('currentSelector'),
-		      position: 'below auto',
-		      onChange: function(selectedDates, dateStr) {
-		        const formatted = selectedDates[0].toLocaleDateString('en-US', options);
-		        document.querySelector('#currentSelector h3').textContent = formatted;
-		      }
-		    });
+			    flatpickr("#datePicker", {
+			      defaultDate: today,
+			      positionElement: document.getElementById('currentSelector'),
+			      position: 'below auto',
+			      onChange: function(selectedDates, dateStr) {
+			        const formatted = selectedDates[0].toLocaleDateString('en-US', options);
+			        document.querySelector('#currentSelector h3').textContent = formatted;
+			      }
+			    });
 
-		    document.getElementById('currentSelector').addEventListener('click', function() {
-		      document.getElementById('datePicker')._flatpickr.open();
-		    });
+			    document.getElementById('currentSelector').addEventListener('click', function() {
+			      document.getElementById('datePicker')._flatpickr.open();
+			    });
 
-		    document.getElementById('prevArrow').addEventListener('click', function() {
-		      const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
-		      const prev = new Date(current);
-		      prev.setDate(prev.getDate() - 1);
-		      setDate(prev);
-		    });
+			    document.getElementById('prevArrow').addEventListener('click', function() {
+			      const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
+			      const prev = new Date(current);
+			      prev.setDate(prev.getDate() - 1);
+			      setDate(prev);
+			    });
 
-		    document.getElementById('nextArrow').addEventListener('click', function() {
-		      const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
-		      const next = new Date(current);
-		      next.setDate(next.getDate() + 1);
-		      setDate(next);
-		    });
+			    document.getElementById('nextArrow').addEventListener('click', function() {
+			      const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
+			      const next = new Date(current);
+			      next.setDate(next.getDate() + 1);
+			      setDate(next);
+			    });
 
-		    document.addEventListener('click', function(e) {
-			  const menu = document.getElementById('menuToggle');
-			  const nav = document.getElementById('menuNav');
-			  const label = document.querySelector('label[for="menuToggle"]');
-			  
-			  if (!nav.contains(e.target) && !label.contains(e.target)) {
-			    menu.checked = false;
-			  }
-			}
-		  });
+			    document.addEventListener('click', function(e) {
+				  const menu = document.getElementById('menuToggle');
+				  const nav = document.getElementById('menuNav');
+				  const label = document.querySelector('label[for="menuToggle"]');
+				  
+				  if (!nav.contains(e.target) && !label.contains(e.target)) {
+				    menu.checked = false;
+				  }
+			  	});
+			});
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
