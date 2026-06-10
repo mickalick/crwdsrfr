@@ -607,6 +607,10 @@ nav {
 		height: 110px;
 	}
 
+	#logo {
+		width: 120px;
+	}
+
 	h1{
 		font-size:40px;
 		line-height: 45px;
@@ -699,6 +703,7 @@ nav {
 		margin-left: 25px;
 		margin-top: 8px;
 		padding-top: 0;
+		width: 100px;
 	}
 
 	#menuToggle{
