@@ -480,11 +480,15 @@ footer a:hover {
 .eventLink {
 	height: 40px;
 	width: 40px;
-  background: #62CBB8;
+  background: none;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.eventLink:hover {
+	background: #62CBB8;
 }
 
 .eventLink a {
@@ -495,8 +499,8 @@ footer a:hover {
   justify-content: center;
 }
 
-.eventLink a:hover {
-	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+.eventLink #opn:hover {
+	background-color: #101010;
 }
 
 .icon{
@@ -538,7 +542,7 @@ footer a:hover {
 }
 
 #opn {
-	background-color: #101010;
+	background-color: #62CBB8;
 	-webkit-mask-image: url('../images/icons/open.svg');
   mask-image: url('../images/icons/open.svg');
   mask-size: contain;
