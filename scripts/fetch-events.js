@@ -232,10 +232,6 @@ async function fetchBeachland() {
       const day = $(el).find('.event-day').text().trim();
       const doors = $(el).find('.presenter-div.time .uui-text-size-xlarge-white.bodyfont').first().text().trim();
       const showTime = $(el).find('.text-block-73').text().trim();
-      console.log('doors:', JSON.stringify(doors));
-      console.log('showTime:', JSON.stringify(showTime));
-
-
       const relativeUrl = $(el).find('a').attr('href');
       const nocoverEl = $(el).find('.text-block-61').filter((i, e) => $(e).text().trim() === 'No Cover');
       const isNoCover = nocoverEl.length && !nocoverEl.hasClass('w-condition-invisible');
@@ -336,8 +332,9 @@ async function main() {
       'grog-shop': { name: 'Grog Shop', url: 'https://grogshop.gs', eventsUrl: 'https://grogshop.gs/event-details/', city: 'Cleveland Heights' },
       'the-agora': { name: 'The Agora', url: 'https://agoracleveland.com', eventsUrl: 'https://www.agoracleveland.com/events/all', city: 'Cleveland' },
       'rocket-arena': { name: 'Rocket Arena', url: 'https://rocketarena.com', eventsUrl: 'https://seatgeek.com/venues/rocket-arena/tickets', city: 'Cleveland' },
-      'beachland-ballroom': { name: 'Beachland Ballroom', url: 'https://beachlandballroom.com', eventsUrl: 'https://www.beachlandballroom.com', city: 'Cleveland' },
-      'cebars': { name: 'Cebars', url: null, eventsUrl: null, city: 'Cleveland' },
+      'beachland-ballroom': { name: 'Beachland Ballroom', url: 'https://beachlandballroom.com', eventsUrl: 'https://www.beachlandballroom.com/shows', city: 'Cleveland' },
+      'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
+      'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
     },
     events: allEvents,
   };

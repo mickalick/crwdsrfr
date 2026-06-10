@@ -21,17 +21,239 @@
     "beachland-ballroom": {
       "name": "Beachland Ballroom",
       "url": "https://beachlandballroom.com",
-      "eventsUrl": "https://www.beachlandballroom.com",
+      "eventsUrl": "https://www.beachlandballroom.com/shows",
       "city": "Cleveland"
     },
     "cebars": {
       "name": "Cebars",
-      "url": null,
+      "url": "https://www.facebook.com/groups/51071547181",
+      "eventsUrl": null,
+      "city": "Cleveland"
+    },
+    "paninis-westlake": {
+      "name": "Paninis Westlake",
+      "url": "https://www.facebook.com/PaninisWestlake/",
       "eventsUrl": null,
       "city": "Cleveland"
     }
   },
   "events": [
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-05-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-05-22-disco-inferno"
+    },
+    {
+      "title": "That 80's Band",
+      "performers": [
+        {
+          "name": "That 80's Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-05-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-05-23-that-80-s-band"
+    },
+    {
+      "title": "Ladies Night",
+      "performers": [
+        {
+          "name": "Ladies Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-05-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-05-29-ladies-night"
+    },
+    {
+      "title": "Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-05-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-05-30-spazmatics"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-05-31",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-05-31-sully-solo"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-03",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-03-dog-water"
+    },
+    {
+      "title": "Lady Antoinette Karaoke",
+      "performers": [
+        {
+          "name": "Lady Antoinette Karaoke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-04-lady-antoinette-karaoke"
+    },
+    {
+      "title": "Stix",
+      "performers": [
+        {
+          "name": "Stix",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-05-stix"
+    },
+    {
+      "title": "Southbound",
+      "performers": [
+        {
+          "name": "Southbound",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-05-southbound"
+    },
+    {
+      "title": "Loconti",
+      "performers": [
+        {
+          "name": "Loconti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-06-loconti"
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-06-ace-molar"
+    },
+    {
+      "title": "Island Troy",
+      "performers": [
+        {
+          "name": "Island Troy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-07",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-07-island-troy"
+    },
     {
       "id": "the-agora-2026-06-10-coheed-and-cambria",
       "title": "Coheed and Cambria w/ Arm's Length, Kaonashi",
@@ -57,6 +279,24 @@
       "ticketUrl": "https://www.axs.com/events/1382123/coheed-and-cambria-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-10",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-10-dog-water"
     },
     {
       "id": "grog-shop-2026-06-11-yung-bleu",
@@ -169,6 +409,42 @@
       "manual": false
     },
     {
+      "title": "Drew J's Travel Plaza",
+      "performers": [
+        {
+          "name": "Drew J's Travel Plaza",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-12",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-12-drew-j-s-travel-plaza"
+    },
+    {
+      "title": "Billy Morris",
+      "performers": [
+        {
+          "name": "Billy Morris",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-12-billy-morris"
+    },
+    {
       "id": "grog-shop-2026-06-13-clechay-the-land-vol-2-ep-release-show",
       "title": "CLEchay : The Land Vol.2 EP Release  Show w/ Eli Moon, DJ Scottstradamus, Polaris",
       "venueId": "grog-shop",
@@ -257,6 +533,42 @@
       "manual": false
     },
     {
+      "title": "4 To Go",
+      "performers": [
+        {
+          "name": "4 To Go",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-13",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-13-4-to-go"
+    },
+    {
+      "title": "Kiss Me Deadly",
+      "performers": [
+        {
+          "name": "Kiss Me Deadly",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-13-kiss-me-deadly"
+    },
+    {
       "id": "grog-shop-2026-06-14-worm-total-possession-of-america",
       "title": "Worm \"Total Possession of America\" w/ Atomic Witch, Vile Light",
       "venueId": "grog-shop",
@@ -303,6 +615,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-14",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-14-sully-solo"
     },
     {
       "id": "grog-shop-2026-06-15-make-em-laugh-mondays",
@@ -495,6 +825,24 @@
       "manual": false
     },
     {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-17",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-17-dog-water"
+    },
+    {
       "id": "grog-shop-2026-06-18-higher-nation",
       "title": "Higher Nation w/ C-Level, Saturdazed",
       "venueId": "grog-shop",
@@ -559,6 +907,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/candi-jenkins-18-jun",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Lady Antoinette Karaoke",
+      "performers": [
+        {
+          "name": "Lady Antoinette Karaoke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-18-lady-antoinette-karaoke"
     },
     {
       "id": "grog-shop-2026-06-19-inmates",
@@ -635,6 +1001,42 @@
       "manual": false
     },
     {
+      "title": "Cap",
+      "performers": [
+        {
+          "name": "Cap",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-19",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-19-cap"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-19-tricky-dick"
+    },
+    {
       "id": "grog-shop-2026-06-20-westside-live-ft-last-pick-young-genesis",
       "title": "Westside Live! ft Last Pick & Young Genesis w/ Young Genesis",
       "venueId": "grog-shop",
@@ -679,6 +1081,42 @@
       "manual": false
     },
     {
+      "title": "You Ain't Hard Fest",
+      "performers": [
+        {
+          "name": "You Ain't Hard Fest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-20",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-20-you-ain-t-hard-fest"
+    },
+    {
+      "title": "Cocktail Johnny",
+      "performers": [
+        {
+          "name": "Cocktail Johnny",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-20-cocktail-johnny"
+    },
+    {
       "id": "grog-shop-2026-06-21-ryan-davis-the-roadhouse-band",
       "title": "Ryan Davis & the Roadhouse Band w/ Elizabeth Moen",
       "venueId": "grog-shop",
@@ -721,6 +1159,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-21",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-21-furious-george"
     },
     {
       "id": "grog-shop-2026-06-22-midnight-rental-presents-secret-movie-night",
@@ -913,6 +1369,24 @@
       "manual": false
     },
     {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-24-dog-water"
+    },
+    {
       "id": "grog-shop-2026-06-25-teenage-bottlerocket",
       "title": "Teenage Bottlerocket w/ Sludgeworth, Whatever",
       "venueId": "grog-shop",
@@ -1093,6 +1567,42 @@
       "manual": false
     },
     {
+      "title": "Among The Willows",
+      "performers": [
+        {
+          "name": "Among The Willows",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-26-among-the-willows"
+    },
+    {
+      "title": "Pet the Cougar",
+      "performers": [
+        {
+          "name": "Pet the Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-26-pet-the-cougar"
+    },
+    {
       "id": "rocket-arena-2026-06-27-alex-warren",
       "title": "Alex Warren Presents: Finding Family on the Road",
       "venueId": "rocket-arena",
@@ -1219,6 +1729,42 @@
       "manual": false
     },
     {
+      "title": "Collective Cle",
+      "performers": [
+        {
+          "name": "Collective Cle",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-27-collective-cle"
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-27-fm-project"
+    },
+    {
       "id": "grog-shop-2026-06-28-savannah-dexter-damage-control-tour-w-coey-redd",
       "title": "SAVANNAH DEXTER: Damage Control Tour w/ COEY REDD w/ Coey Redd",
       "venueId": "grog-shop",
@@ -1261,6 +1807,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-28",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-28-sully-solo"
     },
     {
       "id": "the-agora-2026-06-30-gigi-perez-live",
@@ -1613,6 +2177,24 @@
       "manual": false
     },
     {
+      "title": "OMF Band",
+      "performers": [
+        {
+          "name": "OMF Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-10-omf-band"
+    },
+    {
       "id": "grog-shop-2026-07-11-conan",
       "title": "Conan w/ Fistula, Slow Wake",
       "venueId": "grog-shop",
@@ -1725,6 +2307,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/jack-blocker-12-jul",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-12-sully-solo"
     },
     {
       "id": "grog-shop-2026-07-13-generacion-suicida",
@@ -1947,6 +2547,24 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-17-tricky-dick"
+    },
+    {
       "id": "rocket-arena-2026-07-18-zac-brown-band",
       "title": "Zac Brown Band: Love & Fear Tour",
       "venueId": "rocket-arena",
@@ -2039,6 +2657,24 @@
       "manual": false
     },
     {
+      "title": "Wayne's World",
+      "performers": [
+        {
+          "name": "Wayne's World",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-18-wayne-s-world"
+    },
+    {
       "id": "grog-shop-2026-07-19-zoloft",
       "title": "Zoloft w/ Cherry Yachtsman, Plum Shed, Wrinkled Beige Linen",
       "venueId": "grog-shop",
@@ -2085,6 +2721,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Island Troy",
+      "performers": [
+        {
+          "name": "Island Troy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-19-island-troy"
     },
     {
       "id": "the-agora-2026-07-20-lucy-dacus",
@@ -2277,6 +2931,24 @@
       "manual": false
     },
     {
+      "title": "Standing Still",
+      "performers": [
+        {
+          "name": "Standing Still",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-24-standing-still"
+    },
+    {
       "id": "beachland-ballroom-2026-07-25-jukebox-the-ghost",
       "title": "Jukebox The Ghost",
       "venueId": "beachland-ballroom",
@@ -2311,6 +2983,42 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/certainly-so-25-jul",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Liverpool Lads",
+      "performers": [
+        {
+          "name": "Liverpool Lads",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-25-liverpool-lads"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-26",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-26-pete-lazard"
     },
     {
       "id": "grog-shop-2026-07-28-amble",
@@ -2463,6 +3171,24 @@
       "manual": false
     },
     {
+      "title": "Billy Morris",
+      "performers": [
+        {
+          "name": "Billy Morris",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-31-billy-morris"
+    },
+    {
       "id": "grog-shop-2026-08-01-the-second-annual-pretty-punk-fest",
       "title": "The Second Annual Pretty & Punk Fest w/ Stonebridge",
       "venueId": "grog-shop",
@@ -2519,6 +3245,42 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/cory-hanson-01-aug",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Rumors",
+      "performers": [
+        {
+          "name": "Rumors",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-01-rumors"
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-02",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-02-furious-george"
     },
     {
       "id": "grog-shop-2026-08-03-viagra-boys",
@@ -2629,6 +3391,24 @@
       "ticketUrl": "https://www.ticketweb.com/event/nascar-aloe-jasiah-capital-grog-shop-tickets/14952943?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Carlos Jones and the Plus Band",
+      "performers": [
+        {
+          "name": "Carlos Jones and the Plus Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-07-carlos-jones-and-the-plus-band"
     },
     {
       "id": "rocket-arena-2026-08-08-hot-wheels-monster-trucks-live-glow-n-fire",
@@ -2771,6 +3551,24 @@
       "ticketUrl": "https://www.ticketweb.com/event/the-expendables-grog-shop-tickets/14803373?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-09-pete-lazard"
     },
     {
       "id": "beachland-ballroom-2026-08-10-jammy-buffet",
@@ -2973,6 +3771,24 @@
       "manual": false
     },
     {
+      "title": "FM77",
+      "performers": [
+        {
+          "name": "FM77",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-14-fm77"
+    },
+    {
       "id": "beachland-ballroom-2026-08-15-ohio-burlesque-festival",
       "title": "Ohio Burlesque Festival",
       "venueId": "beachland-ballroom",
@@ -3007,6 +3823,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/sam-morrow-15-aug",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-15-ace-molar"
     },
     {
       "id": "rocket-arena-2026-08-16-j-cole",
@@ -3087,6 +3921,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/buffalo-wabs-the-price-hill-hustle-16-aug",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-16-sully-solo"
     },
     {
       "id": "beachland-ballroom-2026-08-18-ally-venable",
@@ -3191,6 +4043,24 @@
       "manual": false
     },
     {
+      "title": "Ladies Night",
+      "performers": [
+        {
+          "name": "Ladies Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-21-ladies-night"
+    },
+    {
       "id": "grog-shop-2026-08-22-ben-nichols-and-tim-barry",
       "title": "BEN NICHOLS and TIM BARRY w/ Tim Barry, Cory Branan",
       "venueId": "grog-shop",
@@ -3237,6 +4107,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/kash-d-out-22-aug",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-22-tea-bags"
     },
     {
       "id": "rocket-arena-2026-08-23-real-american-freestyle-12",
@@ -3291,6 +4179,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-23-pete-lazard"
     },
     {
       "id": "grog-shop-2026-08-25-swervedriver-raise-at-35",
@@ -3387,6 +4293,24 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-28-tricky-dick"
+    },
+    {
       "id": "the-agora-2026-08-29-ari-matti",
       "title": "Ari Matti",
       "venueId": "the-agora",
@@ -3427,6 +4351,24 @@
       "manual": false
     },
     {
+      "title": "OMF Band",
+      "performers": [
+        {
+          "name": "OMF Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-29-omf-band"
+    },
+    {
       "id": "the-agora-2026-08-30-myles-smith",
       "title": "Myles Smith",
       "venueId": "the-agora",
@@ -3463,6 +4405,24 @@
       "manual": false
     },
     {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-30",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-30-sully-solo"
+    },
+    {
       "id": "beachland-ballroom-2026-09-01-the-well",
       "title": "The Well with Moon Destroys",
       "venueId": "beachland-ballroom",
@@ -3485,6 +4445,24 @@
       "manual": false
     },
     {
+      "title": "Cocktail Johnny",
+      "performers": [
+        {
+          "name": "Cocktail Johnny",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-04-cocktail-johnny"
+    },
+    {
       "id": "beachland-ballroom-2026-09-05-steve-forbert",
       "title": "Steve Forbert",
       "venueId": "beachland-ballroom",
@@ -3501,6 +4479,42 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Super Troopers",
+      "performers": [
+        {
+          "name": "Super Troopers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-05-super-troopers"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-06-sully-solo"
     },
     {
       "id": "grog-shop-2026-09-11-volumes-the-mirror-touch-tour",
@@ -3589,6 +4603,24 @@
       "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-13",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-13-pete-lazard"
     },
     {
       "id": "beachland-ballroom-2026-09-15-abby-jeanne-the-shadow-band",
@@ -3791,6 +4823,24 @@
       "manual": false
     },
     {
+      "title": "Pet the Cougar",
+      "performers": [
+        {
+          "name": "Pet the Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-18-pet-the-cougar"
+    },
+    {
       "id": "rocket-arena-2026-09-19-rush",
       "title": "RUSH: Fifty Something",
       "venueId": "rocket-arena",
@@ -3809,6 +4859,24 @@
       "manual": false
     },
     {
+      "title": "Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-19-spazmatics"
+    },
+    {
       "id": "grog-shop-2026-09-20-peaches",
       "title": "Peaches",
       "venueId": "grog-shop",
@@ -3825,6 +4893,24 @@
       "ticketUrl": "https://www.ticketweb.com/event/peaches-no-lube-so-globe-iron-tickets/14981843?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-20",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-20-sully-solo"
     },
     {
       "id": "beachland-ballroom-2026-09-21-alicia-witt-album-release-show",
@@ -3921,6 +5007,24 @@
       "manual": false
     },
     {
+      "title": "That 80's Band",
+      "performers": [
+        {
+          "name": "That 80's Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-25-that-80-s-band"
+    },
+    {
       "id": "grog-shop-2026-09-26-the-tear-garden-the-legendary-pink-dots-cevin-key",
       "title": "The Tear Garden (The Legendary Pink Dots & cEvin Key)",
       "venueId": "grog-shop",
@@ -3977,6 +5081,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/pig-26-sep",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "KC and Company",
+      "performers": [
+        {
+          "name": "KC and Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-26-kc-and-company"
     },
     {
       "id": "grog-shop-2026-09-27-zero-boys",
@@ -4047,6 +5169,24 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/zero-boys-27-sep",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-27-furious-george"
     },
     {
       "id": "grog-shop-2026-09-28-witch-w-i-t-c-h",

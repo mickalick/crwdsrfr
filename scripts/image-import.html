@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crwdsrfr — Event Image Import</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f5f5;
+      --surface: #ffffff;
+      --border: #e0e0e0;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --text: #111111;
+      --muted: #888888;
+      --error: #dc2626;
+      --success: #16a34a;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 4px;
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 1100px;
+    }
+
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .panel-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .field input {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      padding: 9px 12px;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .field input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    #dropzone {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 40px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      position: relative;
+      background: var(--bg);
+    }
+
+    #dropzone.drag-over {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    #dropzone.has-image {
+      padding: 0;
+      border-color: var(--accent);
+    }
+
+    #dropzone input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+
+    #dropzone-prompt {
+      pointer-events: none;
+    }
+
+    #dropzone-prompt .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+
+    #dropzone-prompt p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    #dropzone-prompt span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    #preview {
+      display: none;
+      width: 100%;
+      border-radius: 6px;
+      max-height: 320px;
+      object-fit: contain;
+    }
+
+    #dropzone.has-image #preview { display: block; }
+    #dropzone.has-image #dropzone-prompt { display: none; }
+
+    .field select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      padding: 9px 12px;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .field select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    #extractBtn {
+      width: 100%;
+      background: var(--accent);
+      border: none;
+      border-radius: 6px;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px;
+      margin-top: 8px;
+      transition: opacity 0.15s;
+    }
+
+    #extractBtn:hover { opacity: 0.88; }
+    #extractBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      min-height: 18px;
+      color: var(--muted);
+    }
+
+    #status.loading { color: var(--accent); }
+    #status.error { color: var(--error); }
+
+    #resultsPanel { display: none; }
+
+    .event-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      background: var(--bg);
+    }
+
+    .event-card-title {
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .event-card-meta {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .event-card-meta span {
+      color: var(--text);
+    }
+
+    #jsonOutput {
+      background: #f8f8f8;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: #2563eb;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      padding: 14px;
+      white-space: pre;
+      overflow-x: auto;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 16px;
+    }
+
+    #copyBtn {
+      width: 100%;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 10px;
+      margin-top: 10px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    #copyBtn:hover {
+      background: var(--bg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .event-card-fields {
+      margin-top: 10px;
+    }
+
+    .edit-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .edit-row { grid-template-columns: 1fr 1fr; }
+    }
+
+    .edit-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .edit-field label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .edit-field input {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      padding: 6px 8px;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      width: 100%;
+    }
+
+    .edit-field input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    #loadVenuesBtn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 7px 10px;
+      transition: border-color 0.15s, color 0.15s;
+      text-align: left;
+    }
+
+    #loadVenuesBtn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .count-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CRWDSRFR — Event Import</h1>
+    <p>Drop a venue's event calendar image to extract events as JSON</p>
+  </header>
+
+  <div class="layout">
+
+    <!-- Left panel: inputs -->
+    <div class="panel">
+      <div class="panel-label">Setup</div>
+
+      <div class="field">
+        <label>Anthropic API Key</label>
+        <input type="password" id="apiKey" placeholder="sk-ant-..." />
+      </div>
+
+      <div class="field">
+        <label>Venue <span id="venueLoadStatus" style="font-weight:400;color:var(--muted);font-size:11px;margin-left:6px;"></span></label>
+        <select id="venueSelect">
+          <option value="" disabled selected>Load events.json to populate…</option>
+        </select>
+        <button id="loadVenuesBtn" type="button">Load venues from events.json</button>
+        <input type="file" id="eventsJsonInput" accept=".json" style="display:none;" />
+      </div>
+
+      <div class="panel-label" style="margin-top: 20px;">Calendar Image</div>
+
+      <div id="dropzone">
+        <input type="file" id="fileInput" accept="image/*" />
+        <div id="dropzone-prompt">
+          <div class="icon">📅</div>
+          <p>Drop a calendar image here<br><span>or click to browse</span></p>
+        </div>
+        <img id="preview" alt="Preview" />
+      </div>
+
+      <button id="extractBtn" disabled>Extract Events</button>
+      <div id="status"></div>
+    </div>
+
+    <!-- Right panel: results -->
+    <div class="panel" id="resultsPanel">
+      <div class="panel-label">
+        Extracted Events
+        <span class="count-badge" id="countBadge">0</span>
+      </div>
+      <div id="eventCards"></div>
+      <div id="jsonOutput"></div>
+      <button id="copyBtn">Copy JSON</button>
+    </div>
+
+  </div>
+
+  <script>
+    let imageBase64 = null;
+    let imageMediaType = null;
+
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('fileInput');
+    const preview = document.getElementById('preview');
+    const extractBtn = document.getElementById('extractBtn');
+    const status = document.getElementById('status');
+    const resultsPanel = document.getElementById('resultsPanel');
+    const eventCards = document.getElementById('eventCards');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const copyBtn = document.getElementById('copyBtn');
+    const countBadge = document.getElementById('countBadge');
+    const venueSelect = document.getElementById('venueSelect');
+    const loadVenuesBtn = document.getElementById('loadVenuesBtn');
+    const eventsJsonInput = document.getElementById('eventsJsonInput');
+    const venueLoadStatus = document.getElementById('venueLoadStatus');
+
+    loadVenuesBtn.addEventListener('click', () => eventsJsonInput.click());
+
+    eventsJsonInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const data = JSON.parse(ev.target.result);
+          const venues = data.venues;
+          if (!venues || typeof venues !== 'object') throw new Error('No venues found');
+          venueSelect.innerHTML = '';
+          Object.entries(venues).forEach(([id, venue]) => {
+            const opt = document.createElement('option');
+            opt.value = id;
+            opt.textContent = venue.name;
+            venueSelect.appendChild(opt);
+          });
+          const count = Object.keys(venues).length;
+          venueLoadStatus.textContent = `${count} venue${count !== 1 ? 's' : ''} loaded`;
+          venueLoadStatus.style.color = 'var(--success)';
+        } catch (err) {
+          venueLoadStatus.textContent = 'Failed to load venues';
+          venueLoadStatus.style.color = 'var(--error)';
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    function loadImage(file) {
+      if (!file || !file.type.startsWith('image/')) return;
+      imageMediaType = file.type;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        imageBase64 = e.target.result.split(',')[1];
+        preview.src = e.target.result;
+        dropzone.classList.add('has-image');
+        extractBtn.disabled = false;
+        status.textContent = '';
+        status.className = '';
+      };
+      reader.readAsDataURL(file);
+    }
+
+    fileInput.addEventListener('change', (e) => loadImage(e.target.files[0]));
+
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.classList.add('drag-over');
+    });
+    dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag-over'));
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('drag-over');
+      loadImage(e.dataTransfer.files[0]);
+    });
+
+    extractBtn.addEventListener('click', async () => {
+      const apiKey = document.getElementById('apiKey').value.trim();
+      const venueId = document.getElementById('venueSelect').value;
+
+      if (!apiKey) {
+        status.textContent = 'Please enter your Anthropic API key.';
+        status.className = 'error';
+        return;
+      }
+      if (!imageBase64) {
+        status.textContent = 'Please upload an image first.';
+        status.className = 'error';
+        return;
+      }
+
+      extractBtn.disabled = true;
+      status.textContent = 'Extracting events...';
+      status.className = 'loading';
+
+      const currentYear = new Date().getFullYear();
+
+      const prompt = `You are extracting event data from a venue calendar image.
+
+Extract every event you can see and return ONLY a valid JSON array — no explanation, no markdown, no backticks.
+
+Each event object must follow this exact schema:
+{
+  "title": "Headliner name only (no tour names or dashes)",
+  "performers": [
+    { "name": "Headliner Name", "headliner": true },
+    { "name": "Support Act", "headliner": false }
+  ],
+  "date": "YYYY-MM-DD",
+  "time": "HH:MM" or null,
+  "doors": "HH:MM" or null,
+  "price": "$XX" or "No Cover" or null,
+  "ticketUrl": null,
+  "venueId": "${venueId}",
+  "source": "manual",
+  "manual": true
+}
+
+Rules:
+- Use ${currentYear} as the year unless another year is clearly visible
+- Times must be 24hr format (e.g. 20:00 for 8:00 PM)
+- If multiple artists are listed, the first is the headliner
+- Return ONLY the JSON array, nothing else`;
+
+      try {
+        const response = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': apiKey,
+            'anthropic-version': '2023-06-01',
+            'anthropic-dangerous-direct-browser-access': 'true',
+          },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-6',
+            max_tokens: 8000,
+            messages: [{
+              role: 'user',
+              content: [
+                {
+                  type: 'image',
+                  source: {
+                    type: 'base64',
+                    media_type: imageMediaType,
+                    data: imageBase64,
+                  }
+                },
+                { type: 'text', text: prompt }
+              ]
+            }]
+          })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error?.message ?? 'API error');
+        }
+
+        const raw = data.content[0].text.trim();
+        const clean = raw.replace(/^```json|^```|```$/gm, '').trim();
+        const events = JSON.parse(clean);
+
+        // Add generated IDs
+        events.forEach(event => {
+          const slug = (event.performers?.[0]?.name ?? event.title)
+            .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          event.id = `${venueId}-${event.date}-${slug}`;
+        });
+
+        // Store events on window so edit handlers can access them
+        window.extractedEvents = events;
+
+        function rebuildJSON() {
+          jsonOutput.textContent = JSON.stringify(window.extractedEvents, null, 2);
+        }
+
+        function renderCards() {
+          eventCards.innerHTML = window.extractedEvents.map((event, idx) => {
+            const headliner = event.performers?.find(p => p.headliner)?.name ?? event.title;
+            const supports = event.performers?.filter(p => !p.headliner).map(p => p.name).join(', ');
+            return `
+              <div class="event-card" data-idx="${idx}">
+                <div class="event-card-title">${headliner}${supports ? ` <span style="font-weight:400;color:var(--muted)">w/ ${supports}</span>` : ''}</div>
+                <div class="event-card-fields">
+                  <div class="edit-row">
+                    <div class="edit-field">
+                      <label>Date</label>
+                      <input type="text" data-field="date" value="${event.date ?? ''}" placeholder="YYYY-MM-DD" />
+                    </div>
+                    <div class="edit-field">
+                      <label>Show Time</label>
+                      <input type="text" data-field="time" value="${event.time ?? ''}" placeholder="20:00" />
+                    </div>
+                    <div class="edit-field">
+                      <label>Doors</label>
+                      <input type="text" data-field="doors" value="${event.doors ?? ''}" placeholder="19:00" />
+                    </div>
+                    <div class="edit-field">
+                      <label>Price</label>
+                      <input type="text" data-field="price" value="${event.price ?? ''}" placeholder="$15 or No Cover" />
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+          }).join('');
+
+          // Attach input listeners
+          eventCards.querySelectorAll('input[data-field]').forEach(input => {
+            input.addEventListener('input', (e) => {
+              const idx = parseInt(e.target.closest('.event-card').dataset.idx);
+              const field = e.target.dataset.field;
+              const val = e.target.value.trim() || null;
+              window.extractedEvents[idx][field] = val;
+              // Regenerate ID if date changed
+              if (field === 'date') {
+                const slug = (window.extractedEvents[idx].performers?.[0]?.name ?? window.extractedEvents[idx].title)
+                  .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                window.extractedEvents[idx].id = `${venueId}-${val}-${slug}`;
+              }
+              rebuildJSON();
+            });
+          });
+        }
+
+        renderCards();
+        rebuildJSON();
+
+        countBadge.textContent = events.length;
+        resultsPanel.style.display = 'block';
+        status.textContent = `${events.length} event${events.length !== 1 ? 's' : ''} extracted. Edit fields above, then copy JSON.`;
+        status.className = '';
+
+      } catch (err) {
+        status.textContent = `Error: ${err.message}`;
+        status.className = 'error';
+      } finally {
+        extractBtn.disabled = false;
+      }
+    });
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(jsonOutput.textContent).then(() => {
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => copyBtn.textContent = 'Copy JSON', 2000);
+      });
+    });
+  </script>
+
+</body>
+</html>
