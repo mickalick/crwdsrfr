@@ -315,7 +315,7 @@ footer a:hover {
 	width: 100%;
 	min-height: 70px;
 	background-color: #101010;
-	border: 1px solid #62CBB8;
+	border: 3px solid #62CBB8;
 	border-radius: 9px;
 	font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -528,8 +528,8 @@ footer a:hover {
 
 #fwd, #bck {
 	mask-size: 100%;
-	width: 75% !important;
-	height: 75% !important;
+	width: 65% !important;
+	height: 65% !important;
 }
 
 #opn {
@@ -557,6 +557,7 @@ footer a:hover {
   mask-position: center;
   height: 45px;
   width: 45px;
+  cursor: pointer;
 }
 
 #twitter {
@@ -645,7 +646,7 @@ input[type=text], select, textarea {
 }
 
 #ad .main {
-	background-color: #000;
+	background-color: #FCFCFC;
 }
 
 .flatpickr-calendar .open {
