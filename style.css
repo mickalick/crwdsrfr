@@ -813,4 +813,31 @@ input[type=text], select, textarea {
 
 .flatpickr-calendar {
 	z-index: 9999;
+	background: #F9F976 !important;
+	color: #101010 !important;
+	box-shadow: 1px 0 0 #101010,-1px 0 0 #101010,0 1px 0 #101010,0 -1px 0 #101010,0 3px 13px rgba(0,0,0,0.1) !important;
+}
+
+.flatpickr-calendar.arrowTop::before {
+  border-bottom-color: #101010 !important;
+}
+
+.flatpickr-calendar.arrowTop::after {
+  border-bottom-color: #F9F976 !important;
+}
+
+.flatpickr-day.selected {
+	background: #62CBB8 !important;
+	border-color: #62CBB8 !important;
+	color: #101010 !important;
+}
+
+.flatpickr-day.today {
+	border-color: #101010 !important;
+}
+
+.flatpickr-day:hover {
+	background: #F9F976 !important;
+	border-color: #F9F976 !important;
+	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
 }
