@@ -491,16 +491,16 @@ footer a:hover {
 	background: #62CBB8;
 }
 
+.eventLink:hover #opn {
+	background-color: #101010;
+}
+
 .eventLink a {
 	height: 100%;
 	width: 100%;
 	display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.eventLink #opn:hover {
-	background-color: #101010;
 }
 
 .icon{
