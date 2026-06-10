@@ -256,7 +256,10 @@ header{
 }
 
 footer {
-	background: #101010;
+	background:url("../images/crowdPattern.png") repeat-x bottom;
+	background-color: #101010;
+	background-size: 15%;
+	height: 160px;
 }
 
 .footWrap {
@@ -645,7 +648,7 @@ input[type=text], select, textarea {
 
 #footLogo {
 	float: left;
-	width: 10%;
+	width: 12%;
 	margin-right: 32px;
 	margin-left: 20px;
 }
@@ -822,8 +825,13 @@ input[type=text], select, textarea {
 		width: 40%;
 	}
 
+	footer {
+		background-size: 20%;
+	}
+
 	#footLogo {
 		width: 20% !important;
+		margin-bottom: 40px;
 	}
 }
 
