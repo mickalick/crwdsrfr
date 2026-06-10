@@ -374,6 +374,7 @@ footer a:hover {
 	width: 82%;
 	display: flex;
 	align-items: center;
+	height: 64px;
 }
 
 #currentSelector {
@@ -402,12 +403,13 @@ footer a:hover {
 }
 
 #navArrows li {
-	padding:20px;
 	margin:0 20px;
 	color: #F9F976;
 	width: 60px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .main{
@@ -514,7 +516,6 @@ footer a:hover {
 	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/forward.svg');
   mask-image: url('../images/icons/forward.svg');
-  mask-size: contain;
   mask-repeat: no-repeat;
 }
 
@@ -522,8 +523,13 @@ footer a:hover {
 	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/back.svg');
   mask-image: url('../images/icons/back.svg');
-  mask-size: contain;
   mask-repeat: no-repeat;
+}
+
+#fwd, #bck {
+	mask-size: 100%;
+	width: 75% !important;
+	height: 75% !important;
 }
 
 #opn {
@@ -587,6 +593,114 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 }
+
+
+
+
+
+/* Grid Hover Animation */
+
+figure:hover, figure a:hover{
+	transform: translateY(-3px);
+	text-decoration: none !important;
+}
+
+.vert{
+	width: 61%;
+	margin: 8px 20%;
+} 
+
+@keyframes bounce {
+	0% {bottom:10px;}
+	100% {bottom:15px;}
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #222; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  background: #333;
+  color: #FCFCFC;
+}
+
+#social {
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#footLogo {
+	float: left;
+	width: 10%;
+	margin-right: 32px;
+	margin-left: 20px;
+}
+
+#ad {
+	min-height: 5vh;
+	text-align: center;
+}
+
+#ad .main {
+	background-color: #000;
+}
+
+.flatpickr-calendar .open {
+	top: 69px !important,
+}
+
+#datePicker {
+	display: none;
+}
+
+.flatpickr-calendar {
+	z-index: 9999;
+	background: #F9F976 !important;
+	color: #101010 !important;
+	box-shadow: 1px 0 0 #101010,-1px 0 0 #101010,0 1px 0 #101010,0 -1px 0 #101010,0 3px 13px rgba(0,0,0,0.1) !important;
+}
+
+.flatpickr-calendar.arrowTop::before {
+  border-bottom-color: #101010 !important;
+}
+
+.flatpickr-calendar.arrowTop::after {
+  border-bottom-color: #F9F976 !important;
+}
+
+.flatpickr-day.selected {
+	background: #62CBB8 !important;
+	border-color: #62CBB8 !important;
+	color: #101010 !important;
+}
+
+.flatpickr-day.today {
+	border-color: #101010 !important;
+}
+
+.flatpickr-day:hover {
+	background: #F9F976 !important;
+	border-color: #F9F976 !important;
+	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Code */
@@ -764,94 +878,4 @@ nav {
 		padding:20px 0;
 		width: 40px;
 	}
-}
-
-
-/* Grid Hover Animation */
-
-figure:hover, figure a:hover{
-	transform: translateY(-3px);
-	text-decoration: none !important;
-}
-
-.vert{
-	width: 61%;
-	margin: 8px 20%;
-} 
-
-@keyframes bounce {
-	0% {bottom:10px;}
-	100% {bottom:15px;}
-}
-
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #222; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  background: #333;
-  color: #FCFCFC;
-}
-
-#social {
-	margin-right: 20px;
-	margin-bottom: 20px;
-}
-
-#footLogo {
-	float: left;
-	width: 10%;
-	margin-right: 32px;
-	margin-left: 20px;
-}
-
-#ad {
-	min-height: 5vh;
-	text-align: center;
-}
-
-#ad .main {
-	background-color: #000;
-}
-
-.flatpickr-calendar .open {
-	top: 69px !important,
-}
-
-#datePicker {
-	display: none;
-}
-
-.flatpickr-calendar {
-	z-index: 9999;
-	background: #F9F976 !important;
-	color: #101010 !important;
-	box-shadow: 1px 0 0 #101010,-1px 0 0 #101010,0 1px 0 #101010,0 -1px 0 #101010,0 3px 13px rgba(0,0,0,0.1) !important;
-}
-
-.flatpickr-calendar.arrowTop::before {
-  border-bottom-color: #101010 !important;
-}
-
-.flatpickr-calendar.arrowTop::after {
-  border-bottom-color: #F9F976 !important;
-}
-
-.flatpickr-day.selected {
-	background: #62CBB8 !important;
-	border-color: #62CBB8 !important;
-	color: #101010 !important;
-}
-
-.flatpickr-day.today {
-	border-color: #101010 !important;
-}
-
-.flatpickr-day:hover {
-	background: #F9F976 !important;
-	border-color: #F9F976 !important;
-	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
 }
