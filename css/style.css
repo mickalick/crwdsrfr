@@ -505,7 +505,7 @@ footer a:hover {
 #cal {
 	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/calendar.svg');
-  mask-image: url('images/icons/calendar.svg');
+  mask-image: url('../images/icons/calendar.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -513,7 +513,7 @@ footer a:hover {
 #fwd {
 	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/forward.svg');
-  mask-image: url('images/icons/forward.svg');
+  mask-image: url('../images/icons/forward.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -521,7 +521,7 @@ footer a:hover {
 #bck {
 	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/back.svg');
-  mask-image: url('images/icons/back.svg');
+  mask-image: url('../images/icons/back.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -529,7 +529,7 @@ footer a:hover {
 #opn {
 	background-color: #101010;
 	-webkit-mask-image: url('../images/icons/open.svg');
-  mask-image: url('images/icons/open.svg');
+  mask-image: url('../images/icons/open.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -537,7 +537,7 @@ footer a:hover {
 #ser {
 	background-color: #62CBB8;
 	-webkit-mask-image: url('../images/icons/search.svg');
-  mask-image: url('images/icons/search.svg');
+  mask-image: url('../images/icons/search.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -545,7 +545,7 @@ footer a:hover {
 #mnu {
 	background-color: #FFF;
 	-webkit-mask-image: url('../images/icons/menu.svg');
-  mask-image: url('images/icons/menu.svg');
+  mask-image: url('../images/icons/menu.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
