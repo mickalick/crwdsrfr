@@ -680,18 +680,17 @@ nav {
 		margin:0;
 	}
 
-	#footLogo {
-		width: 10% !important;
-	}
-
 	#menuNav {
 		width: 40%;
+	}
+
+	#footLogo {
+		width: 20% !important;
 	}
 }
 
 @media screen and (max-width:625px){
-
-
+	
 }
 
 @media screen and (max-width:535px){
@@ -796,7 +795,7 @@ input[type=text], select, textarea {
 
 #footLogo {
 	float: left;
-	width: 9%;
+	width: 10%;
 	margin-right: 32px;
 	margin-left: 20px;
 }
