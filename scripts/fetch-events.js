@@ -230,14 +230,18 @@ async function fetchBeachland() {
       const supportEl = $(el).find('h3.artist-field');
       const month = $(el).find('.event-month').text().trim();
       const day = $(el).find('.event-day').text().trim();
-      const doors = $(el).find('.uui-text-size-xlarge-white.bodyfont').first().text().trim();
+      const doors = $(el).find('.presenter-div.time .uui-text-size-xlarge-white.bodyfont').first().text().trim();
       const showTime = $(el).find('.text-block-73').text().trim();
+      console.log('doors:', JSON.stringify(doors));
+      console.log('showTime:', JSON.stringify(showTime));
+
+
       const relativeUrl = $(el).find('a').attr('href');
       const nocoverEl = $(el).find('.text-block-61').filter((i, e) => $(e).text().trim() === 'No Cover');
       const isNoCover = nocoverEl.length && !nocoverEl.hasClass('w-condition-invisible');
       const price = isNoCover ? 'No Cover' : null;
 
-      if (!headlinerEl.length || !month || !day) return;
+      if (!headlinerEl.length || !headlinerEl.text().trim() || !month || !day) return;
 
       const headliner = headlinerEl.text().trim();
       const support = supportEl.text().trim();

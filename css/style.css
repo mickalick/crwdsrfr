@@ -80,10 +80,11 @@ h3 a{
 
 h4 a{
 	color:#FFF !important;
+	text-decoration: underline;
 }
 
 h4 a:hover {
-	text-decoration: underline;
+	color:#62CBB8 !important;
 }
 
 p{
@@ -834,6 +835,14 @@ input[type=text], select, textarea {
 	#calendar {
 		margin-top: 0;
 	}
+
+	.eventTime {
+		width: 100%;
+	}
+
+	.eventCost {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:535px){
@@ -876,6 +885,20 @@ input[type=text], select, textarea {
     line-height: 1.0;
     margin-bottom: 20px;
    }
+
+  .venueCard {
+		flex-direction: column;
+	}
+
+	.venue {
+		width: 100%;
+		margin-bottom: 8px;
+		margin-left: 8px;
+	}
+
+	.venueEvents {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:420px){
@@ -900,25 +923,4 @@ input[type=text], select, textarea {
 		align-items: end;
 	}
 
-	.venueCard {
-		flex-direction: column;
-	}
-
-	.venue {
-		width: 100%;
-		margin-bottom: 8px;
-		margin-left: 8px;
-	}
-
-	.venueEvents {
-		width: 100%;
-	}
-
-	.eventTime {
-		width: 100%;
-	}
-
-	.eventCost {
-		width: 100%;
-	}
 }

@@ -52,7 +52,13 @@ function renderEvents(events) {
 
     const calendarEnd = document.getElementById('calendarEnd');
 
-    Object.entries(grouped).forEach(([venueId, venueEvents]) => {
+    Object.entries(grouped)
+      .sort(([a], [b]) => {
+        const nameA = allData.venues[a]?.name ?? '';
+        const nameB = allData.venues[b]?.name ?? '';
+        return nameA.localeCompare(nameB);
+      })
+      .forEach(([venueId, venueEvents]) => {
       const venue = allData.venues[venueId];
       if (!venue) return;
 
