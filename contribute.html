@@ -1,0 +1,148 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Contribute | CRWDSRFR</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to top of page" href="demo.html"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<li class="navItem"><a class="navLink" href="about.html">About</a></li>
+						<li class="navItem"><a class="navLink" href="contact.html">Contact</a></li>
+						<li class="navItem"><a class="navLink" href="contribute.html">Contribute</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="hero" class="page">
+				<div class="main">
+					<div id="calendarHeader">
+						<div id="intro">
+							<h1>Give Me <em>Money.</em></h1>
+							<p>Just kidding. But also, not really.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="aboutContent" class="page">
+				<div class="main">
+					<div class="calendarWrapper">
+						<p>This is where I would write about costs to run the site and ask for donations.</p>
+					</div>
+				</div>
+			</section>
+			<section id="ad" class="page">
+				<div class="main">
+					<p>ad space</p>
+				</div>
+			</section>
+			<footer>
+				<div class="footWrap">
+					<img id="footLogo" src="images/logoWhite.png">
+					<p><small>&copy; 2026 crwdsrfr.com. All rights reserved.</p>
+					<ul id="bottomNav">
+						<li><a href="demo.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contribute.html">Contribute</a></li>
+					</ul>
+					<p><small><a href="https://kmmakes.com">KM Makes</a> this site.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+
+	</html>
