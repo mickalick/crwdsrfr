@@ -432,7 +432,7 @@ footer a:hover {
 }
 
 .venueEvents {
-	width: 70%;
+	width: 73%;
 }
 
 .event {
@@ -775,6 +775,7 @@ input[type=text], select, textarea {
 
 	.eventName {
   	display: flex !important;
+  	width: 100%;
 	}
 
 	.eventTime {
@@ -822,7 +823,13 @@ input[type=text], select, textarea {
 }
 
 @media screen and (max-width:625px){
-	
+	#calendarHeader {
+		margin-bottom: 0;
+	}
+
+	#calendar {
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width:535px){
@@ -885,7 +892,29 @@ input[type=text], select, textarea {
 	}
 
 	#navArrows li {
-		padding:20px 0;
 		width: 40px;
+		align-items: end;
+	}
+
+	.venueCard {
+		flex-direction: column;
+	}
+
+	.venue {
+		width: 100%;
+		margin-bottom: 8px;
+		margin-left: 8px;
+	}
+
+	.venueEvents {
+		width: 100%;
+	}
+
+	.eventTime {
+		width: 100%;
+	}
+
+	.eventCost {
+		width: 100%;
 	}
 }
