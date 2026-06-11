@@ -564,11 +564,12 @@ footer a:hover {
 
 #opn {
 	background-color: #62CBB8;
-	-webkit-mask-image: url('../images/icons/open.svg');
-  mask-image: url('../images/icons/open.svg');
+	-webkit-mask-image: url('../images/icons/ticket.svg');
+  mask-image: url('../images/icons/ticket.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
+
 
 #ser {
 	background-color: #62CBB8;
