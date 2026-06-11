@@ -216,6 +216,7 @@ header{
 	text-align: center;
 	padding: 20px 0px;
 	margin: 4px;
+	background-color: inherit;
 }
 
 .navLink{
@@ -229,7 +230,7 @@ header{
 }
 
 .navLink:hover {
-	background-color: #101010;
+	background-color: #101010 !important;
 	color: #62CBB8;
 }
 
