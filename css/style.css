@@ -228,7 +228,7 @@ header{
 	-moz-transition:all 250ms ease;
 }
 
-.navItem:hover, .navItem:hover .navLink {
+.navItem:hover {
 	background-color: #101010;
 }
 
