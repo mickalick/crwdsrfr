@@ -20,6 +20,7 @@ body {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-optical-sizing: auto;
 	background-color: #222;
+  min-height: 100vh;
 }
 
 a {
@@ -249,6 +250,9 @@ header{
 
 #wrapper{
 	color: #fff;
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .push{
@@ -294,6 +298,7 @@ footer a:hover {
 
 .page {
 	display: flex;
+	flex: 1;
 	align-items: center;
 }
 
@@ -360,6 +365,7 @@ footer a:hover {
 
 #calendar {
 	margin-top: 20px;
+	flex: 1;
 }
 
 #calendarNav {
