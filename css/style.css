@@ -218,11 +218,6 @@ header{
 	margin: 4px;
 }
 
-.navItem:hover, .navItem:hover .navLink {
-	background-color: #101010;
-	color: #62CBB8;
-}
-
 .navLink{
 	color:#101010;
 	box-sizing:border-box;
@@ -233,6 +228,13 @@ header{
 	-moz-transition:all 250ms ease;
 }
 
+.navItem:hover, .navItem:hover .navLink {
+	background-color: #101010;
+}
+
+.navItem:hover .navLink {
+	color: #62CBB8;
+}
 
 #bottomNav{
 	list-style:none outside none;
