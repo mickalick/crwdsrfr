@@ -88,6 +88,14 @@ h4 a:hover {
 	color:#62CBB8 !important;
 }
 
+.subHead {
+	font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  color: #FFF;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+
 p{
 	font-size:21px;
 	line-height:1.2;
