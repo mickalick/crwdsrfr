@@ -44,7 +44,7 @@ function renderEvents(events) {
   $(container).fadeTo(150, 0, function() {
     container.querySelectorAll('.venueCard').forEach(el => el.remove());
     document.getElementById('emptyState').style.display = 'none';
-    document.getElementById('withResults').style.display = 'none';
+    document.getElementById('withResults').style.display = 'block';
 
     const grouped = {};
     events.forEach(event => {
