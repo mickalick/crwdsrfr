@@ -319,13 +319,17 @@ async function main() {
 
   const manualEntries = loadManualEntries();
 
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
   const allEvents = [
     ...rocketArena,
     ...grogShop,
     ...agora,
     ...beachland,
     ...manualEntries,
-  ].sort((a, b) => new Date(a.date) - new Date(b.date));
+  ].filter(e => new Date(e.date) >= today)
+   .sort((a, b) => new Date(a.date) - new Date(b.date));
 
   const output = {
     venues: {

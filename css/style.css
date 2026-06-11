@@ -831,7 +831,7 @@ input[type=text], select, textarea {
 	}
 
 	#footLogo {
-		width: 20% !important;
+		width: 15% !important;
 		margin-bottom: 40px;
 	}
 }
@@ -932,4 +932,13 @@ input[type=text], select, textarea {
 		align-items: end;
 	}
 
+	footer {
+		background-size: 35%;
+	}
+
+	#footLogo {
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-top: 8px;
+	}
 }
