@@ -486,6 +486,10 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+.eventName a:hover {
+	color: #62CBB8;
+}
+
 .eventTime, .eventCost {
 	font-family: "Space Mono", monospace;
   font-weight: 400;
