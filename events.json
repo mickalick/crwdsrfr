@@ -39,412 +39,6 @@
   },
   "events": [
     {
-      "title": "Disco Inferno",
-      "performers": [
-        {
-          "name": "Disco Inferno",
-          "headliner": true
-        }
-      ],
-      "date": "2026-05-22",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-05-22-disco-inferno"
-    },
-    {
-      "title": "That 80's Band",
-      "performers": [
-        {
-          "name": "That 80's Band",
-          "headliner": true
-        }
-      ],
-      "date": "2026-05-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-05-23-that-80-s-band"
-    },
-    {
-      "title": "Ladies Night",
-      "performers": [
-        {
-          "name": "Ladies Night",
-          "headliner": true
-        }
-      ],
-      "date": "2026-05-29",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-05-29-ladies-night"
-    },
-    {
-      "title": "Spazmatics",
-      "performers": [
-        {
-          "name": "Spazmatics",
-          "headliner": true
-        }
-      ],
-      "date": "2026-05-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-05-30-spazmatics"
-    },
-    {
-      "title": "Sully Solo",
-      "performers": [
-        {
-          "name": "Sully Solo",
-          "headliner": true
-        }
-      ],
-      "date": "2026-05-31",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-05-31-sully-solo"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-03-dog-water"
-    },
-    {
-      "title": "Lady Antoinette Karaoke",
-      "performers": [
-        {
-          "name": "Lady Antoinette Karaoke",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-04",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-04-lady-antoinette-karaoke"
-    },
-    {
-      "title": "Stix",
-      "performers": [
-        {
-          "name": "Stix",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-05",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-05-stix"
-    },
-    {
-      "title": "Southbound",
-      "performers": [
-        {
-          "name": "Southbound",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-05-southbound"
-    },
-    {
-      "title": "Loconti",
-      "performers": [
-        {
-          "name": "Loconti",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-06",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-06-loconti"
-    },
-    {
-      "title": "Ace Molar",
-      "performers": [
-        {
-          "name": "Ace Molar",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-06-ace-molar"
-    },
-    {
-      "title": "Island Troy",
-      "performers": [
-        {
-          "name": "Island Troy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-07",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-07-island-troy"
-    },
-    {
-      "id": "the-agora-2026-06-10-coheed-and-cambria",
-      "title": "Coheed and Cambria w/ Arm's Length, Kaonashi",
-      "venueId": "the-agora",
-      "date": "2026-06-10",
-      "time": null,
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Coheed and Cambria",
-          "headliner": true
-        },
-        {
-          "name": "Arm's Length",
-          "headliner": false
-        },
-        {
-          "name": "Kaonashi",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.axs.com/events/1382123/coheed-and-cambria-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-10",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-10-dog-water"
-    },
-    {
-      "id": "grog-shop-2026-06-11-yung-bleu",
-      "title": "Yung Bleu w/ Isaiah Linder, Immature Jayden",
-      "venueId": "grog-shop",
-      "date": "2026-06-11",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$37.54 - $197.70",
-      "performers": [
-        {
-          "name": "Yung Bleu",
-          "headliner": true
-        },
-        {
-          "name": "Isaiah Linder",
-          "headliner": false
-        },
-        {
-          "name": "Immature Jayden",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/yung-bleu-we-grog-shop-tickets/14960323?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-11-satsang",
-      "title": "Satsang with Joey Harkum",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-11",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Satsang",
-          "headliner": true
-        },
-        {
-          "name": "Joey Harkum",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/satsang-11-jun",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-11-parrotfish",
-      "title": "Parrotfish with The Modern Kollective, MUDD",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-11",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Parrotfish",
-          "headliner": true
-        },
-        {
-          "name": "The Modern Kollective, MUDD",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/parrotfish-11-jun",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-12-the-heff-effect-accelerator-the-wrap-up",
-      "title": "The Heff Effect Accelerator “The Wrap Up “",
-      "venueId": "grog-shop",
-      "date": "2026-06-12",
-      "time": "20:30",
-      "doors": "20:00",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "The Heff Effect Accelerator “The Wrap Up “",
-          "headliner": true
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/the-heff-effect-accelerator-the-grog-shop-tickets/14914753?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-12-after-the-apocalypse",
-      "title": "After The Apocalypse with Bessemer Saints, Irewyrm",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-12",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "After The Apocalypse",
-          "headliner": true
-        },
-        {
-          "name": "Bessemer Saints, Irewyrm",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Drew J's Travel Plaza",
-      "performers": [
-        {
-          "name": "Drew J's Travel Plaza",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-12",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-12-drew-j-s-travel-plaza"
-    },
-    {
-      "title": "Billy Morris",
-      "performers": [
-        {
-          "name": "Billy Morris",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-12",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-12-billy-morris"
-    },
-    {
       "id": "grog-shop-2026-06-13-clechay-the-land-vol-2-ep-release-show",
       "title": "CLEchay : The Land Vol.2 EP Release  Show w/ Eli Moon, DJ Scottstradamus, Polaris",
       "venueId": "grog-shop",
@@ -470,6 +64,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/clechay-live-at-the-grog-shop/",
       "ticketUrl": "https://www.ticketweb.com/event/clechay-the-land-vol2-grog-shop-tickets/14903483?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -488,6 +83,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1411069",
       "ticketUrl": "https://www.axs.com/events/1411069/chris-ramsay-presents-its-probably-nothing-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -506,7 +102,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/north-mississippi-allstars-13-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/north-mississippi-allstars-13-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/north-mississippi-allstars-13-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -528,7 +125,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-avengers-13-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-avengers-13-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-avengers-13-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -590,6 +188,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/worm-total-possession-of-america/",
       "ticketUrl": "https://www.ticketweb.com/event/worm-total-possession-of-america-grog-shop-tickets/14780703?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -612,7 +211,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -648,13 +248,14 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-5/",
       "ticketUrl": "https://www.ticketweb.com/event/-make-em-laugh-grog-shop-tickets/14957753?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
     {
       "id": "beachland-ballroom-2026-06-15-the-soap-girls",
-      "title": "The Soap Girls with Eaten By Kittens",
+      "title": "The Soap Girls with Eaten By Kittens, Saints Of Lorain",
       "venueId": "beachland-ballroom",
       "date": "2026-06-15",
       "time": "20:00",
@@ -666,11 +267,12 @@
           "headliner": true
         },
         {
-          "name": "Eaten By Kittens",
+          "name": "Eaten By Kittens, Saints Of Lorain",
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-soapgirls-15-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-soapgirls-15-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-soapgirls-15-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -688,6 +290,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/dave-chappelle-tickets/comedy/2026-06-16-7-30-pm/18281887",
       "source": "seatgeek",
       "manual": false
@@ -714,6 +317,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/son-little-cityfolk-tour-2026/",
       "ticketUrl": "https://www.ticketweb.com/event/son-little-cityfolk-tour-2026-grog-shop-tickets/14859533?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -732,6 +336,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1351305",
       "ticketUrl": "https://www.axs.com/events/1351305/ilana-glazer-live-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -754,7 +359,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/futurebirds-16-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/futurebirds-16-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/futurebirds-16-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -776,6 +382,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/big-freedia-big-freedom-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/big-freedia-big-freedom-tour-grog-shop-tickets/14877333?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -798,6 +405,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1312125",
       "ticketUrl": "https://www.axs.com/events/1312125/ben-folds-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -820,7 +428,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/los-mirlos-17-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/los-mirlos-17-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/los-mirlos-17-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -864,6 +473,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/higher-nation-c-level-lake-irie/",
       "ticketUrl": "https://www.ticketweb.com/event/higher-nation-c-level-saturdazed-grog-shop-tickets/14914903?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -882,7 +492,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/mamma-mia-an-epic-abba-sing-a-long-18-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/mamma-mia-an-epic-abba-sing-a-long-18-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/mamma-mia-an-epic-abba-sing-a-long-18-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -904,7 +515,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/candi-jenkins-18-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/candi-jenkins-18-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/candi-jenkins-18-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -952,6 +564,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/inmates-axioma-pill-time-dj-billie-club/",
       "ticketUrl": "https://www.ticketweb.com/event/inmates-axioma-pill-time-dj-grog-shop-tickets/14777843?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -974,7 +587,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/nick-moss-19-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/nick-moss-19-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/nick-moss-19-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -996,7 +610,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/golems-of-the-red-planet-19-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/golems-of-the-red-planet-19-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/golems-of-the-red-planet-19-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1054,6 +669,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/westside-live-ft-last-pick-young-genesis/",
       "ticketUrl": "https://www.ticketweb.com/event/westside-live-ft-last-pick-grog-shop-tickets/14903383?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1076,7 +692,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-cowslingers-20-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-cowslingers-20-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-cowslingers-20-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1134,6 +751,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/ryan-davis-the-roadhouse-band-elizabeth-moen/",
       "ticketUrl": "https://www.ticketweb.com/event/-ryan-davis-the-grog-shop-tickets/14745153?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1156,7 +774,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1192,6 +811,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-6/",
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14847913?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1214,7 +834,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1240,29 +861,8 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/neptune-swisher-powers-rolin-duo/",
       "ticketUrl": "https://www.ticketweb.com/event/neptune-swisher-powersrolin-duo-grog-shop-tickets/14773993?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-23-kurt-vile-and-the-violators",
-      "title": "Kurt Vile And The Violators w/ The Sadies",
-      "venueId": "grog-shop",
-      "date": "2026-06-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$49.12",
-      "performers": [
-        {
-          "name": "Kurt Vile And The Violators",
-          "headliner": true
-        },
-        {
-          "name": "The Sadies",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/kurt-vile-and-the-violators-the-roxy-at-mahalls-tickets/14837743?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -1280,7 +880,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/spafford-23-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/spafford-23-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/spafford-23-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1302,7 +903,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/hashtronaut-23-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/hashtronaut-23-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/hashtronaut-23-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1324,6 +926,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/sonido-gallo-negro-hello3d/",
       "ticketUrl": "https://www.ticketweb.com/event/sonido-gallo-negro-hello3d-grog-shop-tickets/14165794?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1342,6 +945,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1363617",
       "ticketUrl": "https://www.axs.com/events/1363617/marcus-king-band-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -1364,7 +968,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-darts-24-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-darts-24-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-darts-24-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1408,6 +1013,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/teenage-bottlerocket-sludgeworth/",
       "ticketUrl": "https://www.ticketweb.com/event/teenage-bottlerocket-sludgeworth-whatever-grog-shop-tickets/14789803?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1430,7 +1036,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/barbara-higbie-and-teresa-trull-25-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/barbara-higbie-and-teresa-trull-25-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/barbara-higbie-and-teresa-trull-25-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1452,7 +1059,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/sewerperson-25-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/sewerperson-25-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/sewerperson-25-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1474,33 +1082,8 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/ratboys-when-the-sun-explodes-tour-2026/",
       "ticketUrl": "https://www.ticketweb.com/event/ratboys-when-the-sun-explodes-grog-shop-tickets/14789373?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-26-earl-sweatshirt-mike-home-on-the-range-tour-2026",
-      "title": "Earl Sweatshirt & MIKE Home on the Range Tour 2026 w/ MIKE., SURF GANG",
-      "venueId": "grog-shop",
-      "date": "2026-06-26",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$57.11 - $91.61",
-      "performers": [
-        {
-          "name": "Earl Sweatshirt & MIKE Home on the Range Tour 2026",
-          "headliner": true
-        },
-        {
-          "name": "MIKE.",
-          "headliner": false
-        },
-        {
-          "name": "SURF GANG",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/earl-sweatshirt-mike-home-rock-and-roll-hall-of-tickets/14761443?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -1518,6 +1101,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1402612",
       "ticketUrl": "https://www.axs.com/events/1402612/insane-clown-posse-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -1540,7 +1124,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/omar-hakim-rachel-z-26-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/omar-hakim-rachel-z-26-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/omar-hakim-rachel-z-26-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1562,7 +1147,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/gabe-stillman-26-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/gabe-stillman-26-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/gabe-stillman-26-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1620,6 +1206,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/alex-warren-tickets/cleveland-ohio-rocket-arena-2026-06-27-7-30-pm/concert/17886388",
       "source": "seatgeek",
       "manual": false
@@ -1658,29 +1245,8 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/boldy-james/",
       "ticketUrl": "https://www.ticketweb.com/event/boldy-james-ski-mask-mallley-grog-shop-tickets/14984913?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-27-spoon-the-beths",
-      "title": "Spoon & The Beths w/ Squirrel Flower",
-      "venueId": "grog-shop",
-      "date": "2026-06-27",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$56.08",
-      "performers": [
-        {
-          "name": "Spoon & The Beths",
-          "headliner": true
-        },
-        {
-          "name": "Squirrel Flower",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/spoon-the-beths-rock-and-roll-hall-of-tickets/14107584?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -1702,7 +1268,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/james-mcmurty-and-the-martial-law-review-bettysoo-27-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/james-mcmurty-and-the-martial-law-review-bettysoo-27-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/james-mcmurty-and-the-martial-law-review-bettysoo-27-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1724,7 +1291,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/sugardeer-27-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/sugardeer-27-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/sugardeer-27-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1782,6 +1350,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/savannah-dexter-damage-control-tour-w-coey-redd/",
       "ticketUrl": "https://www.ticketweb.com/event/savannah-dexter-damage-control-tour-grog-shop-tickets/14186224?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1804,7 +1373,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1844,6 +1414,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1418973",
       "ticketUrl": "https://www.axs.com/events/1418973/gigi-perez-live-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -1866,25 +1437,31 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/les-greene-the-swayzees-30-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/les-greene-the-swayzees-30-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/les-greene-the-swayzees-30-jun#tickets",
       "source": "scrape",
       "manual": false
     },
     {
-      "id": "grog-shop-2026-07-02-the-church",
-      "title": "The Church",
+      "id": "grog-shop-2026-07-02-audible-jones-joe-abraham-the-faces-of-belmez",
+      "title": "Audible Jones / Joe Abraham & The Faces of Belmez w/ Faces of Belmez",
       "venueId": "grog-shop",
       "date": "2026-07-02",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$50.15 - $166.80",
+      "price": "$12.59",
       "performers": [
         {
-          "name": "The Church",
+          "name": "Audible Jones / Joe Abraham & The Faces of Belmez",
           "headliner": true
+        },
+        {
+          "name": "Faces of Belmez",
+          "headliner": false
         }
       ],
-      "ticketUrl": "https://www.ticketweb.com/event/the-church-the-singles-rock-and-roll-hall-of-tickets/14150784?pl=grogshop&REFID=clientsitewp",
+      "eventUrl": "https://grogshop.gs/tm-event/audible-jones-faces-of-belmez/",
+      "ticketUrl": "https://www.ticketweb.com/event/audible-jones-joe-abraham-grog-shop-tickets/14192184?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -1934,6 +1511,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/trash-fish-fest-two/",
       "ticketUrl": "https://www.ticketweb.com/event/trash-fish-fest-two-grog-shop-tickets/14950593?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1956,13 +1534,49 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ray-flanagan-03-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ray-flanagan-03-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ray-flanagan-03-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "grog-shop-2026-07-04-4day-ft-es4",
+      "title": "4Day ft. ES4 w/ Spazzplot, Key Da Legend, Poohy, DJ Scottstradamus",
+      "venueId": "grog-shop",
+      "date": "2026-07-04",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "4Day ft. ES4",
+          "headliner": true
+        },
+        {
+          "name": "Spazzplot",
+          "headliner": false
+        },
+        {
+          "name": "Key Da Legend",
+          "headliner": false
+        },
+        {
+          "name": "Poohy",
+          "headliner": false
+        },
+        {
+          "name": "DJ Scottstradamus",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/4day-ft-es4/",
+      "ticketUrl": "https://www.ticketweb.com/event/4day-ft-es4-grog-shop-tickets/14191974?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
     {
       "id": "grog-shop-2026-07-05-this-one-for-bow-shuicide-holla-friends",
-      "title": "“This One For Bow” Shuicide Holla & Friends",
+      "title": "\"This One For Bow\" Shuicide Holla & Friends",
       "venueId": "grog-shop",
       "date": "2026-07-05",
       "time": "19:30",
@@ -1970,10 +1584,11 @@
       "price": "$12.59",
       "performers": [
         {
-          "name": "“This One For Bow” Shuicide Holla & Friends",
+          "name": "\"This One For Bow\" Shuicide Holla & Friends",
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/this-one-for-bow-shuicide-holla-friends/",
       "ticketUrl": "https://www.ticketweb.com/event/this-one-for-bow-shuicide-grog-shop-tickets/14927383?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -1996,7 +1611,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2014,6 +1630,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/501-bryze-built-different-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/501-bryze-built-different-tour-grog-shop-tickets/14887953?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2032,7 +1649,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/puppeteers-for-fears-presents-robopocalypse-the-musical-08-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/puppeteers-for-fears-presents-robopocalypse-the-musical-08-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/puppeteers-for-fears-presents-robopocalypse-the-musical-08-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2062,6 +1680,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/allthehipe-astral-housefly-tryp-jimmy-da-gunner-madstarr/",
       "ticketUrl": "https://www.ticketweb.com/event/allthehipe-astral-housefly-tryp-grog-shop-tickets/14914533?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2080,6 +1699,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1364344",
       "ticketUrl": "https://www.axs.com/events/1364344/the-marvelous-miss-gender-starring-bosco-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -2098,7 +1718,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/lucinda-williams-09-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/lucinda-williams-09-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/lucinda-williams-09-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2120,7 +1741,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/fayuca-09-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/fayuca-09-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/fayuca-09-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2150,6 +1772,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/frontega-mud-whale-tall-grass-lowspot/",
       "ticketUrl": "https://www.ticketweb.com/event/frontega-mud-whale-tall-grass-grog-shop-tickets/14931793?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2172,7 +1795,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/wombo-10-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/wombo-10-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/wombo-10-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2216,6 +1840,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/conan-fistula-slow-wake/",
       "ticketUrl": "https://www.ticketweb.com/event/conan-fistula-slow-wake-grog-shop-tickets/14870633?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2238,7 +1863,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/joint-operation-11-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/joint-operation-11-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/joint-operation-11-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2264,6 +1890,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-body-bigbrave/",
       "ticketUrl": "https://www.ticketweb.com/event/the-body-bigbrave-orphaned-grog-shop-tickets/14829363?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2282,7 +1909,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-flea-12-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-flea-12-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-flea-12-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2304,7 +1932,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jack-blocker-12-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/jack-blocker-12-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jack-blocker-12-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2348,6 +1977,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/generacion-suicida-loosey/",
       "ticketUrl": "https://www.ticketweb.com/event/generacion-suicida-loosey-cruelster-grog-shop-tickets/14803203?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2359,7 +1989,7 @@
       "date": "2026-07-14",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$31.36",
+      "price": "$25.43",
       "performers": [
         {
           "name": "mc chris",
@@ -2374,6 +2004,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/mc-chris-mega-ran/",
       "ticketUrl": "https://www.ticketweb.com/event/mc-chris-mega-ran-crazy8thegreat-grog-shop-tickets/14789773?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2396,7 +2027,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-dynamite-the-bloodsuckers-14-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/johnny-dynamite-the-bloodsuckers-14-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-dynamite-the-bloodsuckers-14-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2418,6 +2050,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/cola-parking/",
       "ticketUrl": "https://www.ticketweb.com/event/cola-parking-grog-shop-tickets/14789633?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2436,6 +2069,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1362376",
       "ticketUrl": "https://www.axs.com/events/1362376/jon-anderson-the-band-geeks-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -2458,7 +2092,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-beautiful-mothers-15-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-beautiful-mothers-15-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-beautiful-mothers-15-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2476,6 +2111,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/a-taste-of-black-cleveland-tickets/sports/2026-07-16-6-pm/18196593",
       "source": "seatgeek",
       "manual": false
@@ -2494,6 +2130,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/westside-live/",
       "ticketUrl": "https://www.ticketweb.com/event/westside-live-grog-shop-tickets/14931033?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2516,7 +2153,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/finger-foods-16-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/finger-foods-16-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/finger-foods-16-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2542,6 +2180,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-sonder-bombs-snarls-angelgirl-eva/",
       "ticketUrl": "https://www.ticketweb.com/event/the-sonder-bombs-snarls-angelgirl-grog-shop-tickets/14963113?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2582,6 +2221,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/zac-brown-band-tickets/cleveland-ohio-rocket-arena-2026-07-18-7-pm/concert/17974995",
       "source": "seatgeek",
       "manual": false
@@ -2612,6 +2252,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/eliy-orcko-king-buu-10-yr-celebration-ft-nature-nvoke-skwerm/",
       "ticketUrl": "https://www.ticketweb.com/event/eliy-orcko-king-buu-grog-shop-tickets/14889853?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2634,7 +2275,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/magoo-18-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/magoo-18-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/magoo-18-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2652,7 +2294,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-polkamaniacs-18-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-polkamaniacs-18-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-polkamaniacs-18-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2700,6 +2343,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/zoloft-cherry-yachtsman-plum-shed-wrinkled-beige-linen/",
       "ticketUrl": "https://www.ticketweb.com/event/zoloft-cherry-yachtsman-plum-grog-shop-tickets/14911673?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2718,7 +2362,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2758,6 +2403,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1365867",
       "ticketUrl": "https://www.axs.com/events/1365867/lucy-dacus-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -2776,7 +2422,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-sloppy-boys-20-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-sloppy-boys-20-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-sloppy-boys-20-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2798,6 +2445,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/second-hand-embarrasment-due-by-midnight-tba/",
       "ticketUrl": "https://www.ticketweb.com/event/second-hand-embarrasment-due-grog-shop-tickets/14834153?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2816,6 +2464,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/school-of-rock-allstars/",
       "ticketUrl": "https://www.ticketweb.com/event/school-of-rock-allstars-grog-shop-tickets/14908843?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2838,6 +2487,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1283578",
       "ticketUrl": "https://www.axs.com/events/1283578/pavement-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -2856,7 +2506,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/broken-hearts-tribute-to-tom-petty-the-heartbreakers-23-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/broken-hearts-tribute-to-tom-petty-the-heartbreakers-23-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/broken-hearts-tribute-to-tom-petty-the-heartbreakers-23-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2878,7 +2529,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/pavement-23-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/pavement-23-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/pavement-23-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2904,6 +2556,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/les-savy-fav/",
       "ticketUrl": "https://www.ticketweb.com/event/les-savy-fav-suitor-beast-grog-shop-tickets/14778793?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -2926,7 +2579,31 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/red-vox-24-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/red-vox-24-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/red-vox-24-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-07-24-manfi-sh",
+      "title": "Manfiïsh with Retained Surgical Instrument, Warmbody, Revere",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-24",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Manfiïsh",
+          "headliner": true
+        },
+        {
+          "name": "Retained Surgical Instrument, Warmbody, Revere",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/manfiish-24-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/manfiish-24-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2962,7 +2639,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jukebox-the-ghost-25-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/jukebox-the-ghost-25-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jukebox-the-ghost-25-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -2980,7 +2658,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/certainly-so-25-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/certainly-so-25-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/certainly-so-25-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3021,28 +2700,6 @@
       "id": "paninis-westlake-2026-07-26-pete-lazard"
     },
     {
-      "id": "grog-shop-2026-07-28-amble",
-      "title": "Amble w/ Fabrizio",
-      "venueId": "grog-shop",
-      "date": "2026-07-28",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "",
-      "performers": [
-        {
-          "name": "Amble",
-          "headliner": true
-        },
-        {
-          "name": "Fabrizio",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/amble-fabrizio-beachland-ballroom-tickets/14674313?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "beachland-ballroom-2026-07-28-amble",
       "title": "AMBLE",
       "venueId": "beachland-ballroom",
@@ -3056,7 +2713,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/amble-28-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/amble-28-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/amble-28-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3074,6 +2732,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-3/",
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14938183?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3096,7 +2755,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/dogpark-29-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/dogpark-29-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/dogpark-29-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3122,6 +2782,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/houdinis-code-the-head-trips-cruze-campo-andy-lang/",
       "ticketUrl": "https://www.ticketweb.com/event/houdinis-code-the-head-trips-grog-shop-tickets/14931193?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3144,7 +2805,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/nektar-30-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/nektar-30-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/nektar-30-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3166,7 +2828,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/alex-williams-31-jul",
+      "eventUrl": "https://www.beachlandballroom.com/shows/alex-williams-31-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/alex-williams-31-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3206,6 +2869,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-second-annual-pretty-punk-fest/",
       "ticketUrl": "https://www.ticketweb.com/event/the-second-annual-pretty-grog-shop-tickets/14953443?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3224,6 +2888,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1356147",
       "ticketUrl": "https://www.axs.com/events/1356147/ashnikko-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3242,7 +2907,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/cory-hanson-01-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/cory-hanson-01-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/cory-hanson-01-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3283,24 +2949,6 @@
       "id": "paninis-westlake-2026-08-02-furious-george"
     },
     {
-      "id": "grog-shop-2026-08-03-viagra-boys",
-      "title": "Viagra Boys",
-      "venueId": "grog-shop",
-      "date": "2026-08-03",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "",
-      "performers": [
-        {
-          "name": "Viagra Boys",
-          "headliner": true
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/viagra-boys-the-agora-theater-tickets/14792843?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-agora-2026-08-03-viagra-boys",
       "title": "Viagra Boys w/ Telehealth",
       "venueId": "the-agora",
@@ -3318,6 +2966,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1371099",
       "ticketUrl": "https://www.axs.com/events/1371099/viagra-boys-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3340,6 +2989,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1303593",
       "ticketUrl": "https://www.axs.com/events/1303593/qveen-herby-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3366,6 +3016,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/abronia-brood-x-powers-rolin-duo/",
       "ticketUrl": "https://www.ticketweb.com/event/abronia-brood-x-powers-grog-shop-tickets/14921153?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3388,6 +3039,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/nascar-aloe-jasiah-capital-punishment-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/nascar-aloe-jasiah-capital-grog-shop-tickets/14952943?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3428,6 +3080,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/hot-wheels-monster-trucks-live-glow-n-fire-tickets/monster-truck/2026-08-08-11-30-am/18039201",
       "source": "seatgeek",
       "manual": false
@@ -3450,6 +3103,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/hot-wheels-monster-trucks-live-glow-n-fire-tickets/monster-truck/2026-08-08-6-30-pm/18090731",
       "source": "seatgeek",
       "manual": false
@@ -3468,6 +3122,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/jack-bensinger/",
       "ticketUrl": "https://www.ticketweb.com/event/jack-bensinger-grog-shop-tickets/14841723?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3486,6 +3141,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1433006",
       "ticketUrl": "https://www.axs.com/events/1433006/oliver-tree-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3508,7 +3164,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/triptides-08-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/triptides-08-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/triptides-08-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3530,6 +3187,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/hot-wheels-monster-trucks-live-glow-n-fire-tickets/monster-truck/2026-08-09-1-30-pm/18090732",
       "source": "seatgeek",
       "manual": false
@@ -3548,6 +3206,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-expendables/",
       "ticketUrl": "https://www.ticketweb.com/event/the-expendables-grog-shop-tickets/14803373?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3584,7 +3243,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jammy-buffet-10-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/jammy-buffet-10-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jammy-buffet-10-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3606,6 +3266,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/rod-stewart-tickets/cleveland-ohio-rocket-arena-2026-08-11-7-30-pm/concert/17877148",
       "source": "seatgeek",
       "manual": false
@@ -3628,6 +3289,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1297743",
       "ticketUrl": "https://www.axs.com/events/1297743/courtney-barnett-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3650,7 +3312,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/oneida-11-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/oneida-11-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/oneida-11-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3676,6 +3339,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1407925",
       "ticketUrl": "https://www.axs.com/events/1407925/dimmu-borgir-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3694,7 +3358,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-13-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-13-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-13-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3712,7 +3377,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3730,6 +3396,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1425471",
       "ticketUrl": "https://www.axs.com/events/1425471/blackberry-smoke-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -3748,7 +3415,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-14-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-14-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-14-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3766,7 +3434,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/6-turning-4-burning-14-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/6-turning-4-burning-14-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/6-turning-4-burning-14-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3802,7 +3471,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-15-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-15-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ohio-burlesque-festival-15-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3820,7 +3490,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/sam-morrow-15-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/sam-morrow-15-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/sam-morrow-15-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3856,6 +3527,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/j-cole-tickets/cleveland-ohio-rocket-arena-2026-08-15-8-pm/concert/18017257",
       "source": "seatgeek",
       "manual": false
@@ -3882,6 +3554,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/rome-streetz-sock-it-to-my-pocket-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/rome-streetz-sock-grog-shop-tickets/14960423?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3900,7 +3573,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-flea-16-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-flea-16-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-flea-16-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3918,7 +3592,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/buffalo-wabs-the-price-hill-hustle-16-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/buffalo-wabs-the-price-hill-hustle-16-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/buffalo-wabs-the-price-hill-hustle-16-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3958,7 +3633,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ally-venable-18-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ally-venable-18-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ally-venable-18-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3976,6 +3652,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-4/",
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14938203?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -3998,7 +3675,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4016,6 +3694,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1433430",
       "ticketUrl": "https://www.axs.com/events/1433430/todd-rundgren-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4038,7 +3717,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/india-ramey-21-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/india-ramey-21-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/india-ramey-21-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4082,6 +3762,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/ben-nichols-and-tim-barry/",
       "ticketUrl": "https://www.ticketweb.com/event/ben-nichols-and-tim-barry-grog-shop-tickets/14940073?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4104,7 +3785,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/kash-d-out-22-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/kash-d-out-22-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/kash-d-out-22-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4140,6 +3822,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/real-american-freestyle-12-tickets/wrestling/2026-08-22-8-pm/18240971",
       "source": "seatgeek",
       "manual": false
@@ -4158,6 +3841,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1103775",
       "ticketUrl": "https://www.axs.com/events/1103775/peter-hook-the-light-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4176,7 +3860,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4212,6 +3897,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/swervedriver-raise-at-35/",
       "ticketUrl": "https://www.ticketweb.com/event/swervedriver-raise-at-35-grog-shop-tickets/14909733?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4234,6 +3920,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/profanatica-cloak/",
       "ticketUrl": "https://www.ticketweb.com/event/profanatica-cloak-grog-shop-tickets/14963103?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4252,6 +3939,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/toni-romiti-16-again-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/toni-romiti-16-again-tour-grog-shop-tickets/14911773?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4270,6 +3958,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18191999",
       "source": "seatgeek",
       "manual": false
@@ -4288,8 +3977,32 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18140261",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-08-28-jay-webb",
+      "title": "Jay Webb with Caitlynne Curtis",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-28",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Jay Webb",
+          "headliner": true
+        },
+        {
+          "name": "Caitlynne Curtis",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/jay-webb-the-homesick-tour-28-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jay-webb-the-homesick-tour-28-aug#tickets",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -4324,6 +4037,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1450146",
       "ticketUrl": "https://www.axs.com/events/1450146/ari-matti-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4346,7 +4060,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/ariel-posen-29-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/ariel-posen-29-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/ariel-posen-29-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4370,7 +4085,7 @@
     },
     {
       "id": "the-agora-2026-08-30-myles-smith",
-      "title": "Myles Smith",
+      "title": "Myles Smith w/ GoldFord",
       "venueId": "the-agora",
       "date": "2026-08-30",
       "time": null,
@@ -4380,8 +4095,13 @@
         {
           "name": "Myles Smith",
           "headliner": true
+        },
+        {
+          "name": "GoldFord",
+          "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1451114",
       "ticketUrl": "https://www.axs.com/events/1451114/myles-smith-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4400,7 +4120,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/magnolia-and-johnson-electric-co-30-aug",
+      "eventUrl": "https://www.beachlandballroom.com/shows/magnolia-and-johnson-electric-co-30-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/magnolia-and-johnson-electric-co-30-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4440,7 +4161,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-well-01-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-well-01-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-well-01-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4476,7 +4198,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4517,24 +4240,40 @@
       "id": "paninis-westlake-2026-09-06-sully-solo"
     },
     {
-      "id": "grog-shop-2026-09-11-volumes-the-mirror-touch-tour",
-      "title": "VOLUMES: The Mirror Touch Tour w/ Catsclaw",
-      "venueId": "grog-shop",
-      "date": "2026-09-11",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "$31.36",
+      "id": "beachland-ballroom-2026-09-08-american-aquarium",
+      "title": "American Aquarium",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-08",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
       "performers": [
         {
-          "name": "VOLUMES: The Mirror Touch Tour",
+          "name": "American Aquarium",
           "headliner": true
-        },
-        {
-          "name": "Catsclaw",
-          "headliner": false
         }
       ],
-      "ticketUrl": "https://www.ticketweb.com/event/volumes-the-mirror-touch-tour-the-foundry-tickets/14983933?pl=grogshop&REFID=clientsitewp",
+      "eventUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-09-10-joey-harkum",
+      "title": "Joey Harkum",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Joey Harkum",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/joey-harkum-10-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/joey-harkum-10-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4560,6 +4299,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/sincere-engineer-the-probable-claws-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/sincere-engineer-the-grog-shop-tickets/14790123?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4582,7 +4322,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/bethany-joy-11-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/bethany-joy-11-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/bethany-joy-11-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4600,6 +4341,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1472187",
       "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4636,7 +4378,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4654,6 +4397,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/plosivs/",
       "ticketUrl": "https://www.ticketweb.com/event/plosivs-grog-shop-tickets/14870803?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4672,7 +4416,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/swmrs-16-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/swmrs-16-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/swmrs-16-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4690,7 +4435,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/sam-greenfield-02-dec",
+      "eventUrl": "https://www.beachlandballroom.com/shows/sam-greenfield-02-dec",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/sam-greenfield-02-dec#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4708,30 +4454,9 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/rush-tickets/cleveland-ohio-rocket-arena-2026-09-17-7-30-pm/concert/17779004",
       "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-09-17-margaret-glaspy",
-      "title": "Margaret Glaspy w/ Anna Tivel",
-      "venueId": "grog-shop",
-      "date": "2026-09-17",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$29.27",
-      "performers": [
-        {
-          "name": "Margaret Glaspy",
-          "headliner": true
-        },
-        {
-          "name": "Anna Tivel",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/margaret-glaspy-the-beachland-ballroom-tickets/14957873?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
       "manual": false
     },
     {
@@ -4752,6 +4477,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1294408",
       "ticketUrl": "https://www.axs.com/events/1294408/bikini-kill-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -4774,7 +4500,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/margaret-glasby-17-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/margaret-glasby-17-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/margaret-glasby-17-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4792,7 +4519,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/bob-log-iii-17-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/bob-log-iii-17-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/bob-log-iii-17-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4803,7 +4531,7 @@
       "date": "2026-09-18",
       "time": "20:30",
       "doors": "19:30",
-      "price": "",
+      "price": "$33.93",
       "performers": [
         {
           "name": "Show Me The Body",
@@ -4818,6 +4546,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/show-me-the-body-whispers-holder/",
       "ticketUrl": "https://www.ticketweb.com/event/show-me-the-body-whispers-grog-shop-tickets/14968953?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4854,6 +4583,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/rush-tickets/cleveland-ohio-rocket-arena-2026-09-19-7-30-pm/concert/17806088",
       "source": "seatgeek",
       "manual": false
@@ -4875,24 +4605,6 @@
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-19-spazmatics"
-    },
-    {
-      "id": "grog-shop-2026-09-20-peaches",
-      "title": "Peaches",
-      "venueId": "grog-shop",
-      "date": "2026-09-20",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$41.14",
-      "performers": [
-        {
-          "name": "Peaches",
-          "headliner": true
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/peaches-no-lube-so-globe-iron-tickets/14981843?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
     },
     {
       "title": "Sully Solo",
@@ -4926,7 +4638,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/alicia-witt-21-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/alicia-witt-21-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/alicia-witt-21-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4944,7 +4657,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -4966,6 +4680,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/squirrel-flower-youbet/",
       "ticketUrl": "https://www.ticketweb.com/event/squirrel-flower-youbet-grog-shop-tickets/14909653?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -4984,7 +4699,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/schur-23-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/schur-23-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/schur-23-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5002,7 +4718,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-inspector-cluzo-25-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-inspector-cluzo-25-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-inspector-cluzo-25-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5038,6 +4755,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-tear-garden-the-legendary-pink-dots-cevin-key/",
       "ticketUrl": "https://www.ticketweb.com/event/the-tear-garden-the-legendary-grog-shop-tickets/14895603?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5056,7 +4774,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/start-making-sense-26-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/start-making-sense-26-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/start-making-sense-26-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5078,7 +4797,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/pig-26-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/pig-26-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/pig-26-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5101,36 +4821,6 @@
       "id": "paninis-westlake-2026-09-26-kc-and-company"
     },
     {
-      "id": "grog-shop-2026-09-27-zero-boys",
-      "title": "Zero Boys w/ The Effigies, The Strains, Robert Conn Band",
-      "venueId": "grog-shop",
-      "date": "2026-09-27",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$26.43",
-      "performers": [
-        {
-          "name": "Zero Boys",
-          "headliner": true
-        },
-        {
-          "name": "The Effigies",
-          "headliner": false
-        },
-        {
-          "name": "The Strains",
-          "headliner": false
-        },
-        {
-          "name": "Robert Conn Band",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/zero-boys-the-effigies-the-beachland-tavern-tickets/14918563?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-agora-2026-09-27-jim-henson-s-labyrinth-in-concert-40th-anniversary",
       "title": "Jim Henson’s Labyrinth: In Concert 40th Anniversary",
       "venueId": "the-agora",
@@ -5144,6 +4834,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1285994",
       "ticketUrl": "https://www.axs.com/events/1285994/jim-hensons-labyrinth-in-concert-40th-anniversary-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5166,7 +4857,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/zero-boys-27-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/zero-boys-27-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/zero-boys-27-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5202,6 +4894,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/witch-w-i-t-c-h/",
       "ticketUrl": "https://www.ticketweb.com/event/witch-witch-grog-shop-tickets/14951063?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5220,7 +4913,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/sub-urban-28-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/sub-urban-28-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/sub-urban-28-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5231,7 +4925,7 @@
       "date": "2026-09-29",
       "time": "19:00",
       "doors": "18:00",
-      "price": "",
+      "price": "$25.43",
       "performers": [
         {
           "name": "Militarie Gun",
@@ -5250,6 +4944,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/militarie-gun-softcult-shady-nasty-dazy/",
       "ticketUrl": "https://www.ticketweb.com/event/militarie-gun-softcult-shady-nasty-grog-shop-tickets/14960163?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5268,7 +4963,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/edgehill-29-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/edgehill-29-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/edgehill-29-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5290,6 +4986,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/luna/",
       "ticketUrl": "https://www.ticketweb.com/event/luna-sister-ray-davies-grog-shop-tickets/14911833?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5308,7 +5005,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/dale-watson-27-sep",
+      "eventUrl": "https://www.beachlandballroom.com/shows/dale-watson-27-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/dale-watson-27-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5330,6 +5028,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/909207",
       "ticketUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5348,7 +5047,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/el-ten-eleven-01-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/el-ten-eleven-01-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/el-ten-eleven-01-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5366,6 +5066,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/bert-kreischer-tickets/comedy/2026-10-03-7-pm/18051358",
       "source": "seatgeek",
       "manual": false
@@ -5392,6 +5093,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/nevertel-rivals-ocean-sleeper/",
       "ticketUrl": "https://www.ticketweb.com/event/nevertel-rivals-ocean-sleeper-grog-shop-tickets/14954043?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5414,7 +5116,8 @@
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/upon-your-dead-body-04-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/upon-your-dead-body-04-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/upon-your-dead-body-04-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5432,7 +5135,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/taylor-bickett-05-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/taylor-bickett-05-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/taylor-bickett-05-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5458,6 +5162,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/gorillaz-tickets/cleveland-ohio-rocket-arena-2026-10-06-7-pm/concert/18037734",
       "source": "seatgeek",
       "manual": false
@@ -5480,6 +5185,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1428035",
       "ticketUrl": "https://www.axs.com/events/1428035/interpol-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5498,7 +5204,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5516,6 +5223,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1300881",
       "ticketUrl": "https://www.axs.com/events/1300881/sugar-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5534,7 +5242,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/slift-09-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/slift-09-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/slift-09-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5556,7 +5265,27 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/feeble-little-horse-bitknot-tour-2026/",
       "ticketUrl": "https://www.ticketweb.com/event/feeble-little-horse-snuggle-grog-shop-tickets/14927803?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "the-agora-2026-10-10-lenny-pearce",
+      "title": "Lenny Pearce",
+      "venueId": "the-agora",
+      "date": "2026-10-10",
+      "time": null,
+      "doors": "16:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Lenny Pearce",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
+      "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
     },
@@ -5574,7 +5303,8 @@
           "headliner": true
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct",
+      "eventUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5592,6 +5322,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/chasing-abbey/",
       "ticketUrl": "https://www.ticketweb.com/event/chasing-abbey-grog-shop-tickets/14768793?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5610,6 +5341,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1480944",
       "ticketUrl": "https://www.axs.com/events/1480944/pat-metheny-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5628,6 +5360,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/dana-and-alden/",
       "ticketUrl": "https://www.ticketweb.com/event/dana-and-alden-grog-shop-tickets/14960063?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5650,6 +5383,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1317886",
       "ticketUrl": "https://www.axs.com/events/1317886/wasp-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5672,6 +5406,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1438503",
       "ticketUrl": "https://www.axs.com/events/1438503/movements-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5694,6 +5429,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1374107",
       "ticketUrl": "https://www.axs.com/events/1374107/jesse-welles-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5720,6 +5456,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1468932",
       "ticketUrl": "https://www.axs.com/events/1468932/mastodon-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5742,6 +5479,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1415423",
       "ticketUrl": "https://www.axs.com/events/1415423/streetlight-manifesto-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5760,6 +5498,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/disney-descendants-zombies-tickets/family/2026-10-25-7-pm/18117307",
       "source": "seatgeek",
       "manual": false
@@ -5790,6 +5529,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1335715",
       "ticketUrl": "https://www.axs.com/events/1335715/mushroomhead-fear-factory-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5820,6 +5560,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1452251",
       "ticketUrl": "https://www.axs.com/events/1452251/arch-enemy-the-black-dahlia-murder-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5838,6 +5579,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1379983",
       "ticketUrl": "https://www.axs.com/events/1379983/blue-october-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -5864,25 +5606,8 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1458549",
       "ticketUrl": "https://www.axs.com/events/1458549/alter-bridge-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-11-11-akeem-ali",
-      "title": "Akeem Ali",
-      "venueId": "grog-shop",
-      "date": "2026-11-11",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$31.36 - $89.04",
-      "performers": [
-        {
-          "name": "Akeem Ali",
-          "headliner": true
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/akeem-ali-the-the-roxy-at-mahalls-tickets/14843823?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -5900,6 +5625,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/journey-tickets/cleveland-ohio-rocket-arena-2026-11-12-7-30-pm/concert/18219942",
       "source": "seatgeek",
       "manual": false
@@ -5926,6 +5652,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/sombr-tickets/cleveland-ohio-rocket-arena-2026-11-13-7-30-pm/concert/18157641",
       "source": "seatgeek",
       "manual": false
@@ -5944,6 +5671,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/low-cut-connie/",
       "ticketUrl": "https://www.ticketweb.com/event/low-cut-connie-grog-shop-tickets/14858983?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5966,6 +5694,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/michigander/",
       "ticketUrl": "https://www.ticketweb.com/event/michigander-grog-shop-tickets/14895723?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
@@ -5984,6 +5713,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1462599",
       "ticketUrl": "https://www.axs.com/events/1462599/dweezil-zappa-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -6002,6 +5732,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1476154",
       "ticketUrl": "https://www.axs.com/events/1476154/wheeler-walker-jr-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -6032,6 +5763,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1450925",
       "ticketUrl": "https://www.axs.com/events/1450925/tropidelic-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -6062,37 +5794,8 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1459475",
       "ticketUrl": "https://www.axs.com/events/1459475/whitechapel-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-12-02-the-bouncing-souls-born-to-be-tour-with-the-suicide-machines",
-      "title": "The Bouncing Souls 'Born To Be Tour' with The Suicide Machines w/ The Suicide Machines, The Flatliners, The Jack Knives",
-      "venueId": "grog-shop",
-      "date": "2026-12-02",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "$40.11",
-      "performers": [
-        {
-          "name": "The Bouncing Souls 'Born To Be Tour' with The Suicide Machines",
-          "headliner": true
-        },
-        {
-          "name": "The Suicide Machines",
-          "headliner": false
-        },
-        {
-          "name": "The Flatliners",
-          "headliner": false
-        },
-        {
-          "name": "The Jack Knives",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/the-bouncing-souls-born-to-house-of-blues-cleveland-tickets/14845943?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -6110,25 +5813,8 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-dose/",
       "ticketUrl": "https://www.ticketweb.com/event/the-dose-a-psychedelic-comedy-grog-shop-tickets/14880133?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-12-10-sold-out-a-john-waters-christmas",
-      "title": "SOLD OUT! A John Waters Christmas",
-      "venueId": "grog-shop",
-      "date": "2026-12-10",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "",
-      "performers": [
-        {
-          "name": "SOLD OUT! A John Waters Christmas",
-          "headliner": true
-        }
-      ],
-      "ticketUrl": "https://www.ticketweb.com/event/sold-out-a-john-waters-gartner-auditorium-at-cleveland-museum-tickets/14957373?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -6150,6 +5836,7 @@
           "headliner": false
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1449327",
       "ticketUrl": "https://www.axs.com/events/1449327/shakey-graves-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -6168,6 +5855,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1231098",
       "ticketUrl": "https://www.axs.com/events/1231098/the-music-of-the-lord-of-the-rings-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
@@ -6186,77 +5874,50 @@
           "headliner": true
         }
       ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1231097",
       "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets?skin=agora&skin=agora",
       "source": "scrape",
       "manual": false
     },
     {
-      "id": "grog-shop-2027-06-10-kid-primitive",
-      "title": "Kid Primitive w/ The Blank, Grandma's Boyfriend",
+      "id": "grog-shop-2027-06-12-the-heff-effect-accelerator-the-wrap-up",
+      "title": "The Heff Effect Accelerator “The Wrap Up “",
       "venueId": "grog-shop",
-      "date": "2027-06-10",
-      "time": "19:30",
-      "doors": "19:00",
-      "price": "$15.16",
+      "date": "2027-06-12",
+      "time": "20:30",
+      "doors": "20:00",
+      "price": "$19.51",
       "performers": [
         {
-          "name": "Kid Primitive",
+          "name": "The Heff Effect Accelerator “The Wrap Up “",
           "headliner": true
-        },
-        {
-          "name": "The Blank",
-          "headliner": false
-        },
-        {
-          "name": "Grandma's Boyfriend",
-          "headliner": false
         }
       ],
-      "ticketUrl": "https://www.ticketweb.com/event/kid-primitive-the-blank-grandmas-grog-shop-tickets/14853993?pl=grogshop&REFID=clientsitewp",
+      "eventUrl": "https://grogshop.gs/tm-event/the-heff-effect-accelerator-the-wrap-up/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-heff-effect-accelerator-the-grog-shop-tickets/14914753?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2027-06-10-trousdale",
-      "title": "Trousdale with verygently",
+      "id": "beachland-ballroom-2027-06-12-after-the-apocalypse",
+      "title": "After The Apocalypse with Bessemer Saints, Irewyrm",
       "venueId": "beachland-ballroom",
-      "date": "2027-06-10",
+      "date": "2027-06-12",
       "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
         {
-          "name": "Trousdale",
+          "name": "After The Apocalypse",
           "headliner": true
         },
         {
-          "name": "verygently",
+          "name": "Bessemer Saints, Irewyrm",
           "headliner": false
         }
       ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/trousdale-10-jun",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2027-06-10-jason-carter",
-      "title": "Jason Carter with Hunter Skeens & the Forerunners",
-      "venueId": "beachland-ballroom",
-      "date": "2027-06-10",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Jason Carter",
-          "headliner": true
-        },
-        {
-          "name": "Hunter Skeens & the Forerunners",
-          "headliner": false
-        }
-      ],
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jason-carter-10-jun",
+      "eventUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -6274,6 +5935,7 @@
           "headliner": true
         }
       ],
+      "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wnba-cleveland-tickets/wnba/2028-01-01-3-30-am/17383484",
       "source": "seatgeek",
       "manual": false
