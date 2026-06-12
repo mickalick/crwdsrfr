@@ -123,9 +123,10 @@ async function fetchGrogShop() {
       const today = new Date();
       let year = currentYear;
       const eventDateThisYear = new Date(currentYear, monthIndex, parseInt(day));
-      if (eventDateThisYear < today) year = currentYear + 1;
+      const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
       const eventDate = new Date(year, monthIndex, parseInt(day));
-      const date = eventDate.toISOString().split('T')[0];
+      const date = toLocalDateStr(eventDate);
 
       function normalizeTime(t) {
         if (!t) return null;
@@ -181,7 +182,7 @@ async function fetchAgora() {
       const dateRaw = dateEl.text().replace(/[^a-zA-Z0-9,\s]/g, '').trim();
       const parsedDate = new Date(dateRaw);
       if (isNaN(parsedDate)) return;
-      const date = parsedDate.toISOString().split('T')[0];
+      const date = toLocalDateStr(parsedDate);
 
       const timeRaw = timeEl.text().replace('Doors', '').trim();
       const timeClean = timeRaw.replace(/[^0-9:\sAPMapm]/g, '').trim();
@@ -268,10 +269,11 @@ async function fetchBeachland() {
       let year = currentYear;
       const today = new Date();
       const eventDateThisYear = new Date(currentYear, monthIndex, parseInt(day));
-      if (eventDateThisYear < today) year = currentYear + 1;
+      const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
 
       const eventDate = new Date(year, monthIndex, parseInt(day));
-      const date = eventDate.toISOString().split('T')[0];
+      const date = toLocalDateStr(eventDate);
 
       function normalizeTime(t) {
         if (!t) return null;

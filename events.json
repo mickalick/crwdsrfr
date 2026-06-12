@@ -39,6 +39,48 @@
   },
   "events": [
     {
+      "id": "grog-shop-2026-06-12-the-heff-effect-accelerator-the-wrap-up",
+      "title": "The Heff Effect Accelerator “The Wrap Up “",
+      "venueId": "grog-shop",
+      "date": "2026-06-12",
+      "time": "20:30",
+      "doors": "20:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "The Heff Effect Accelerator “The Wrap Up “",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/the-heff-effect-accelerator-the-wrap-up/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-heff-effect-accelerator-the-grog-shop-tickets/14914753?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-06-12-after-the-apocalypse",
+      "title": "After The Apocalypse with Bessemer Saints, Irewyrm",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-12",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "After The Apocalypse",
+          "headliner": true
+        },
+        {
+          "name": "Bessemer Saints, Irewyrm",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-06-13-clechay-the-land-vol-2-ep-release-show",
       "title": "CLEchay : The Land Vol.2 EP Release  Show w/ Eli Moon, DJ Scottstradamus, Polaris",
       "venueId": "grog-shop",
@@ -2586,7 +2628,7 @@
     },
     {
       "id": "beachland-ballroom-2026-07-24-manfi-sh",
-      "title": "Manfiïsh with Retained Surgical Instrument, Warmbody, Revere",
+      "title": "Manfiïsh with Retained Surgical Instrument, Nightmare Unit, Revere",
       "venueId": "beachland-ballroom",
       "date": "2026-07-24",
       "time": "20:00",
@@ -2598,7 +2640,7 @@
           "headliner": true
         },
         {
-          "name": "Retained Surgical Instrument, Warmbody, Revere",
+          "name": "Retained Surgical Instrument, Nightmare Unit, Revere",
           "headliner": false
         }
       ],
@@ -5876,48 +5918,6 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1231097",
       "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2027-06-12-the-heff-effect-accelerator-the-wrap-up",
-      "title": "The Heff Effect Accelerator “The Wrap Up “",
-      "venueId": "grog-shop",
-      "date": "2027-06-12",
-      "time": "20:30",
-      "doors": "20:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "The Heff Effect Accelerator “The Wrap Up “",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/the-heff-effect-accelerator-the-wrap-up/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-heff-effect-accelerator-the-grog-shop-tickets/14914753?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2027-06-12-after-the-apocalypse",
-      "title": "After The Apocalypse with Bessemer Saints, Irewyrm",
-      "venueId": "beachland-ballroom",
-      "date": "2027-06-12",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "After The Apocalypse",
-          "headliner": true
-        },
-        {
-          "name": "Bessemer Saints, Irewyrm",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun#tickets",
       "source": "scrape",
       "manual": false
     },
