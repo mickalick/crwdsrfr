@@ -73,6 +73,10 @@ function renderEvents(events) {
         else if (showTime) timeDisplay = showTime;
         else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
 
+        const titleHtml = event.eventUrl
+          ? `<a href="${event.eventUrl}" target="_blank">${event.title}</a>`
+          : event.title;
+
         const linkHtml = event.ticketUrl
           ? `<a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a>`
           : '';
@@ -80,7 +84,7 @@ function renderEvents(events) {
         return `
           <div class="event">
             <div class="eventInfo">
-              <span class="eventName"><a href="${eventUrl}" target="_blank">${event.title}</a></span>
+              <span class="eventName">${titleHtml}</span>
               ${timeDisplay ? `<span class="eventTime">${timeDisplay}</span>` : ''}
               <span class="eventCost">${event.price ?? 'See Event'}</span>
             </div>

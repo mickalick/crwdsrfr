@@ -47,6 +47,7 @@ async function fetchRocketArena() {
         doors: null,
         price: null,
         performers,
+        eventUrl: null,
         ticketUrl: event.url,
         source: 'seatgeek',
         manual: false,
@@ -75,11 +76,15 @@ async function fetchGrogShop() {
 
       if (!titleEl.length || !dateEl.length) return;
 
+      const venueName = $(el).find('.tw-venue-details .tw-venue-name').text().trim();
+      if (!venueName || venueName !== 'Grog Shop') return;
+
       const fullTitle = titleEl.text().trim();
       const dateRaw = dateEl.text().trim();
       const doorsRaw = doorsEl.text().trim();
       const showRaw = showEl.text().replace('Show:', '').trim();
       const ticketUrl = ticketEl.attr('href') ?? null;
+      const eventUrl = titleEl.attr('href') ?? null;
       const price = priceEl.length ? priceEl.text().trim() : null;
 
       // Parse supporting acts from .tw-attractions spans
@@ -135,6 +140,7 @@ async function fetchGrogShop() {
         doors: normalizeTime(doorsRaw),
         price,
         performers,
+        eventUrl,
         ticketUrl,
         source: 'scrape',
         manual: false,
@@ -194,6 +200,7 @@ async function fetchAgora() {
         : headlinerName;
 
       const ticketUrl = ticketEl.attr('href') ?? null;
+      const eventUrl = titleEl.attr('href') ?? null;
       const slug = headlinerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
       events.push({
@@ -205,6 +212,7 @@ async function fetchAgora() {
         doors: normalizeTime(timeClean),
         price: null,
         performers,
+        eventUrl,
         ticketUrl,
         source: 'scrape',
         manual: false,
@@ -271,6 +279,7 @@ async function fetchBeachland() {
       if (support) performers.push({ name: support, headliner: false });
 
       const slug = headliner.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const fullUrl = relativeUrl ? `https://www.beachlandballroom.com${relativeUrl}` : null;
 
       events.push({
         id: `beachland-ballroom-${date}-${slug}`,
@@ -281,7 +290,8 @@ async function fetchBeachland() {
         doors: normalizeTime(doors),
         price,
         performers,
-        ticketUrl: relativeUrl ? `https://www.beachlandballroom.com${relativeUrl}` : null,
+        eventUrl: fullUrl,
+        ticketUrl: fullUrl ? `${fullUrl}#tickets` : null,
         source: 'scrape',
         manual: false,
       });
