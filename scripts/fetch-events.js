@@ -17,6 +17,13 @@ const SEATGEEK_CLIENT_ID = 'OTM4MDQ4OHwxNzgxMDUwNjkxLjk4OTY5NA';
 // Rocket Arena's SeatGeek venue ID
 const ROCKET_ARENA_VENUE_ID = 120;
 
+function toLocalDateStr(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
 // ─── Fetchers ─────────────────────────────────────────────────────────────────
 
 async function fetchRocketArena() {
@@ -329,8 +336,7 @@ async function main() {
 
   const manualEntries = loadManualEntries();
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const todayStr = toLocalDateStr(new Date());
 
   const allEvents = [
     ...rocketArena,
@@ -338,7 +344,7 @@ async function main() {
     ...agora,
     ...beachland,
     ...manualEntries,
-  ].filter(e => new Date(e.date) >= today)
+  ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
   const output = {
