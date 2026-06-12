@@ -80,17 +80,17 @@ function renderEvents(events) {
         return `
           <div class="event">
             <div class="eventInfo">
-              <span class="eventName">${event.title}</span>
+              <span class="eventName"><a href="${eventUrl}" target="_blank">${event.title}</a></span>
               ${timeDisplay ? `<span class="eventTime">${timeDisplay}</span>` : ''}
               <span class="eventCost">${event.price ?? 'See Event'}</span>
             </div>
-            <div class="eventLink">
+            <div class="ticketLink">
               ${linkHtml}
             </div>
           </div>`;
       }).join('');
 
-      const venueUrl = venue.eventsUrl ?? venue.url ?? '#';
+      const venueUrl = venue.url ?? venue.eventsUrl ?? '#';
       const cardHtml = `
         <div class="venueCard">
           <div class="venue">

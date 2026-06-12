@@ -498,7 +498,7 @@ footer a:hover {
 	text-align: center;
 }
 
-.eventLink {
+.ticketLink {
 	height: 40px;
 	width: 40px;
   background: none;
@@ -508,15 +508,15 @@ footer a:hover {
   justify-content: center;
 }
 
-.eventLink:hover {
+.ticketLink:hover {
 	background: #62CBB8;
 }
 
-.eventLink:hover #opn {
+.ticketLink:hover #opn {
 	background-color: #101010;
 }
 
-.eventLink a {
+.ticketLink a {
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -940,7 +940,7 @@ input[type=text], select, textarea {
 		font-size: 18px;
 	}
 
-	.eventLink{
+	.ticketLink{
 		margin: 0 4px;
 	}
 
