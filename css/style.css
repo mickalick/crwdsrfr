@@ -617,6 +617,10 @@ footer a:hover {
   mask-repeat: no-repeat;
 }
 
+#clr:hover {
+	background-color: #E86A6A;
+}
+
 #mnu {
 	background-color: #FFF;
 	-webkit-mask-image: url('../images/icons/menu.svg');
