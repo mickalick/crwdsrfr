@@ -1,0 +1,2562 @@
+{
+  "events": [
+    {
+      "title": "Dog Water",
+      "performers": [{ "name": "Dog Water", "headliner": true }],
+      "date": "2026-06-17",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-17-dog-water"
+    },
+    {
+      "title": "Lady Antoinette Karaoke",
+      "performers": [{ "name": "Lady Antoinette Karaoke", "headliner": true }],
+      "date": "2026-06-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-18-lady-antoinette-karaoke"
+    },
+    {
+      "title": "Cap",
+      "performers": [{ "name": "Cap", "headliner": true }],
+      "date": "2026-06-19",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-19-cap"
+    },
+    {
+      "title": "You Ain't Hard Fest",
+      "performers": [{ "name": "You Ain't Hard Fest", "headliner": true }],
+      "date": "2026-06-20",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-20-you-ain-t-hard-fest"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [{ "name": "Dog Water", "headliner": true }],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-24-dog-water"
+    },
+    {
+      "title": "Among The Willows",
+      "performers": [{ "name": "Among The Willows", "headliner": true }],
+      "date": "2026-06-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-26-among-the-willows"
+    },
+    {
+      "title": "Collective Cle",
+      "performers": [{ "name": "Collective Cle", "headliner": true }],
+      "date": "2026-06-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-27-collective-cle"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [{ "name": "Tricky Dick", "headliner": true }],
+      "date": "2026-06-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-19-tricky-dick"
+    },
+    {
+      "title": "Cocktail Johnny",
+      "performers": [{ "name": "Cocktail Johnny", "headliner": true }],
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-20-cocktail-johnny"
+    },
+    {
+      "title": "Furious George",
+      "performers": [{ "name": "Furious George", "headliner": true }],
+      "date": "2026-06-21",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-21-furious-george"
+    },
+    {
+      "title": "Pet the Cougar",
+      "performers": [{ "name": "Pet the Cougar", "headliner": true }],
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-26-pet-the-cougar"
+    },
+    {
+      "title": "FM Project",
+      "performers": [{ "name": "FM Project", "headliner": true }],
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-27-fm-project"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-06-28",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-28-sully-solo"
+    },
+    {
+      "title": "OMF Band",
+      "performers": [{ "name": "OMF Band", "headliner": true }],
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-10-omf-band"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-07-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-12-sully-solo"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [{ "name": "Tricky Dick", "headliner": true }],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-17-tricky-dick"
+    },
+    {
+      "title": "Wayne's World",
+      "performers": [{ "name": "Wayne's World", "headliner": true }],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-18-wayne-s-world"
+    },
+    {
+      "title": "Island Troy",
+      "performers": [{ "name": "Island Troy", "headliner": true }],
+      "date": "2026-07-19",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-19-island-troy"
+    },
+    {
+      "title": "Standing Still",
+      "performers": [{ "name": "Standing Still", "headliner": true }],
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-24-standing-still"
+    },
+    {
+      "title": "Liverpool Lads",
+      "performers": [{ "name": "Liverpool Lads", "headliner": true }],
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-25-liverpool-lads"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [{ "name": "Pete Lazard", "headliner": true }],
+      "date": "2026-07-26",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-26-pete-lazard"
+    },
+    {
+      "title": "Billy Morris",
+      "performers": [{ "name": "Billy Morris", "headliner": true }],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-31-billy-morris"
+    },
+    {
+      "title": "Rumors",
+      "performers": [{ "name": "Rumors", "headliner": true }],
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-01-rumors"
+    },
+    {
+      "title": "Furious George",
+      "performers": [{ "name": "Furious George", "headliner": true }],
+      "date": "2026-08-02",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-02-furious-george"
+    },
+    {
+      "title": "Carlos Jones and the Plus Band",
+      "performers": [{ "name": "Carlos Jones and the Plus Band", "headliner": true }],
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-07-carlos-jones-and-the-plus-band"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [{ "name": "Pete Lazard", "headliner": true }],
+      "date": "2026-08-09",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-09-pete-lazard"
+    },
+    {
+      "title": "FM77",
+      "performers": [{ "name": "FM77", "headliner": true }],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-14-fm77"
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [{ "name": "Ace Molar", "headliner": true }],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-15-ace-molar"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-08-16",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-16-sully-solo"
+    },
+    {
+      "title": "Ladies Night",
+      "performers": [{ "name": "Ladies Night", "headliner": true }],
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-21-ladies-night"
+    },
+    {
+      "title": "Tea Bags",
+      "performers": [{ "name": "Tea Bags", "headliner": true }],
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-22-tea-bags"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [{ "name": "Pete Lazard", "headliner": true }],
+      "date": "2026-08-23",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-23-pete-lazard"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [{ "name": "Tricky Dick", "headliner": true }],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-28-tricky-dick"
+    },
+    {
+      "title": "OMF Band",
+      "performers": [{ "name": "OMF Band", "headliner": true }],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-29-omf-band"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-08-30",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-30-sully-solo"
+    },
+    {
+      "title": "Cocktail Johnny",
+      "performers": [{ "name": "Cocktail Johnny", "headliner": true }],
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-04-cocktail-johnny"
+    },
+    {
+      "title": "Super Troopers",
+      "performers": [{ "name": "Super Troopers", "headliner": true }],
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-05-super-troopers"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-06-sully-solo"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [{ "name": "Pete Lazard", "headliner": true }],
+      "date": "2026-09-13",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-13-pete-lazard"
+    },
+    {
+      "title": "Pet the Cougar",
+      "performers": [{ "name": "Pet the Cougar", "headliner": true }],
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-18-pet-the-cougar"
+    },
+    {
+      "title": "Spazmatics",
+      "performers": [{ "name": "Spazmatics", "headliner": true }],
+      "date": "2026-09-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-19-spazmatics"
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [{ "name": "Sully Solo", "headliner": true }],
+      "date": "2026-09-20",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-20-sully-solo"
+    },
+    {
+      "title": "That 80's Band",
+      "performers": [{ "name": "That 80's Band", "headliner": true }],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-25-that-80-s-band"
+    },
+    {
+      "title": "KC and Company",
+      "performers": [{ "name": "KC and Company", "headliner": true }],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-26-kc-and-company"
+    },
+    {
+      "title": "Furious George",
+      "performers": [{ "name": "Furious George", "headliner": true }],
+      "date": "2026-09-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-27-furious-george"
+    },
+
+    {
+    "title": "Pop Fiction",
+    "performers": [
+      {
+        "name": "Pop Fiction",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-03",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-03-pop-fiction"
+  },
+  {
+    "title": "Viva/Sammy",
+    "performers": [
+      {
+        "name": "Viva",
+        "headliner": true
+      },
+      {
+        "name": "Sammy",
+        "headliner": false
+      }
+    ],
+    "date": "2026-06-04",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-04-viva"
+  },
+  {
+    "title": "80's Proof",
+    "performers": [
+      {
+        "name": "80's Proof",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-05-80-s-proof"
+  },
+  {
+    "title": "Cheeseburger",
+    "performers": [
+      {
+        "name": "Cheeseburger",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-06",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-06-cheeseburger"
+  },
+  {
+    "title": "Jim Miller",
+    "performers": [
+      {
+        "name": "Jim Miller",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-06",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-06-jim-miller"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-07",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-07-disco-inferno"
+  },
+  {
+    "title": "Zero Hour",
+    "performers": [
+      {
+        "name": "Zero Hour",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-10",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-10-zero-hour"
+  },
+  {
+    "title": "Southbound",
+    "performers": [
+      {
+        "name": "Southbound",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-11",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-11-southbound"
+  },
+  {
+    "title": "FM Project Band",
+    "performers": [
+      {
+        "name": "FM Project Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-12-fm-project-band"
+  },
+  {
+    "title": "Devn 7 Band",
+    "performers": [
+      {
+        "name": "Devn 7 Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-13",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-13-devn-7-band"
+  },
+  {
+    "title": "Eastwind",
+    "performers": [
+      {
+        "name": "Eastwind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-13",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-13-eastwind"
+  },
+  {
+    "title": "Boaterhead",
+    "performers": [
+      {
+        "name": "Boaterhead",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-14",
+    "time": "14:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-14-boaterhead"
+  },
+  {
+    "title": "Cruisin",
+    "performers": [
+      {
+        "name": "Cruisin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-17",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-17-cruisin"
+  },
+  {
+    "title": "Ted Riser",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-18",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-18-ted-riser"
+  },
+  {
+    "title": "Faction",
+    "performers": [
+      {
+        "name": "Faction",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-19-faction"
+  },
+  {
+    "title": "Mister Breeze",
+    "performers": [
+      {
+        "name": "Mister Breeze",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-20",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-20-mister-breeze"
+  },
+  {
+    "title": "Rock Radio",
+    "performers": [
+      {
+        "name": "Rock Radio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-20",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-20-rock-radio"
+  },
+  {
+    "title": "Against the Wind",
+    "performers": [
+      {
+        "name": "Against the Wind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-21",
+    "time": "14:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-21-against-the-wind"
+  },
+  {
+    "title": "Mourning Glory",
+    "performers": [
+      {
+        "name": "Mourning Glory",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-24",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-24-mourning-glory"
+  },
+  {
+    "title": "The Sky's the Limit",
+    "performers": [
+      {
+        "name": "The Sky's the Limit",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-25",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-25-the-sky-s-the-limit"
+  },
+  {
+    "title": "Eclipes",
+    "performers": [
+      {
+        "name": "Eclipes",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-26-eclipes"
+  },
+  {
+    "title": "Tricky Dick",
+    "performers": [
+      {
+        "name": "Tricky Dick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-27",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-27-tricky-dick"
+  },
+  {
+    "title": "KC & Company",
+    "performers": [
+      {
+        "name": "KC & Company",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-27",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-27-kc-company"
+  },
+  {
+    "title": "Alt 95",
+    "performers": [
+      {
+        "name": "Alt 95",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-28",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-06-28-alt-95"
+  },
+
+  {
+    "title": "Southbound",
+    "performers": [
+      {
+        "name": "Southbound",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-01",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-01-southbound"
+  },
+  {
+    "title": "FM Project",
+    "performers": [
+      {
+        "name": "FM Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-02",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-02-fm-project"
+  },
+  {
+    "title": "Tricky Dick",
+    "performers": [
+      {
+        "name": "Tricky Dick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-03",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-03-tricky-dick"
+  },
+  {
+    "title": "Cheeseburger",
+    "performers": [
+      {
+        "name": "Cheeseburger",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-03",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-03-cheeseburger"
+  },
+  {
+    "title": "Against the Wind",
+    "performers": [
+      {
+        "name": "Against the Wind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-04",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-04-against-the-wind"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-04",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-04-custard-pie"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-05",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-05-disco-inferno"
+  },
+  {
+    "title": "Ted Riser",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-08",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-08-ted-riser"
+  },
+  {
+    "title": "Viva/Sammy",
+    "performers": [
+      {
+        "name": "Viva/Sammy",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-09",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-09-viva-sammy"
+  },
+  {
+    "title": "KC & Company",
+    "performers": [
+      {
+        "name": "KC & Company",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-10",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-10-kc-company"
+  },
+  {
+    "title": "Spazmatics",
+    "performers": [
+      {
+        "name": "Spazmatics",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-11-spazmatics"
+  },
+  {
+    "title": "Eastwind",
+    "performers": [
+      {
+        "name": "Eastwind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-11",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-11-eastwind"
+  },
+  {
+    "title": "Bucknaked",
+    "performers": [
+      {
+        "name": "Bucknaked",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-12",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-12-bucknaked"
+  },
+  {
+    "title": "Zero Hour",
+    "performers": [
+      {
+        "name": "Zero Hour",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-15",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-15-zero-hour"
+  },
+  {
+    "title": "Nitebridge",
+    "performers": [
+      {
+        "name": "Nitebridge",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-16",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-16-nitebridge"
+  },
+  {
+    "title": "Lee Gant",
+    "performers": [
+      {
+        "name": "Lee Gant",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-17",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-17-lee-gant"
+  },
+  {
+    "title": "Radio Tokyo",
+    "performers": [
+      {
+        "name": "Radio Tokyo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-18-radio-tokyo"
+  },
+  {
+    "title": "Rock Radio",
+    "performers": [
+      {
+        "name": "Rock Radio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-18",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-18-rock-radio"
+  },
+  {
+    "title": "Soul Shake",
+    "performers": [
+      {
+        "name": "Soul Shake",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-19",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-19-soul-shake"
+  },
+  {
+    "title": "Cruisin",
+    "performers": [
+      {
+        "name": "Cruisin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-22-cruisin"
+  },
+  {
+    "title": "Morning Glory",
+    "performers": [
+      {
+        "name": "Morning Glory",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-23",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-23-morning-glory"
+  },
+  {
+    "title": "Abby Normal",
+    "performers": [
+      {
+        "name": "Abby Normal",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-24-abby-normal"
+  },
+  {
+    "title": "Eclipse",
+    "performers": [
+      {
+        "name": "Eclipse",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-25-eclipse"
+  },
+  {
+    "title": "Cat's on Holiday",
+    "performers": [
+      {
+        "name": "Cat's on Holiday",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-25",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-25-cat-s-on-holiday"
+  },
+  {
+    "title": "Trailer Park Ninjas",
+    "performers": [
+      {
+        "name": "Trailer Park Ninjas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-26",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-26-trailer-park-ninjas"
+  },
+  {
+    "title": "Barcode",
+    "performers": [
+      {
+        "name": "Barcode",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-29",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-29-barcode"
+  },
+  {
+    "title": "Alt 95",
+    "performers": [
+      {
+        "name": "Alt 95",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-30",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-30-alt-95"
+  },
+  {
+    "title": "Pet The Cougar",
+    "performers": [
+      {
+        "name": "Pet The Cougar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-31",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-07-31-pet-the-cougar"
+  },
+
+  {
+    "title": "Diamond Project",
+    "performers": [
+      {
+        "name": "Diamond Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-01-diamond-project"
+  },
+  {
+    "title": "Cheeseburger",
+    "performers": [
+      {
+        "name": "Cheeseburger",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-01-cheeseburger"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-02",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-02-disco-inferno"
+  },
+  {
+    "title": "Ted Riser",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-05",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-05-ted-riser"
+  },
+  {
+    "title": "Viva/Sammy",
+    "performers": [
+      {
+        "name": "Viva/Sammy",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-06",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-06-viva-sammy"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-07-custard-pie"
+  },
+  {
+    "title": "Tricky Dick",
+    "performers": [
+      {
+        "name": "Tricky Dick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-08-tricky-dick"
+  },
+  {
+    "title": "Eastwind",
+    "performers": [
+      {
+        "name": "Eastwind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-08-eastwind"
+  },
+  {
+    "title": "Ace Molar",
+    "performers": [
+      {
+        "name": "Ace Molar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-09-ace-molar"
+  },
+  {
+    "title": "Back Street Blues",
+    "performers": [
+      {
+        "name": "Back Street Blues",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-12",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-12-back-street-blues"
+  },
+  {
+    "title": "Pop Fiction",
+    "performers": [
+      {
+        "name": "Pop Fiction",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-13",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-13-pop-fiction"
+  },
+  {
+    "title": "FM Project",
+    "performers": [
+      {
+        "name": "FM Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-14-fm-project"
+  },
+  {
+    "title": "Against the Wind",
+    "performers": [
+      {
+        "name": "Against the Wind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-15-against-the-wind"
+  },
+  {
+    "title": "Cats on Holiday",
+    "performers": [
+      {
+        "name": "Cats on Holiday",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-15-cats-on-holiday"
+  },
+  {
+    "title": "TheSky'sTheLimit",
+    "performers": [
+      {
+        "name": "TheSky'sTheLimit",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-16",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-16-thesky-sthelimit"
+  },
+  {
+    "title": "Alt 95",
+    "performers": [
+      {
+        "name": "Alt 95",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-19",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-19-alt-95"
+  },
+  {
+    "title": "Nitebridge",
+    "performers": [
+      {
+        "name": "Nitebridge",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-20",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-20-nitebridge"
+  },
+  {
+    "title": "Collage",
+    "performers": [
+      {
+        "name": "Collage",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-21-collage"
+  },
+  {
+    "title": "Radio Tokyo",
+    "performers": [
+      {
+        "name": "Radio Tokyo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-22-radio-tokyo"
+  },
+  {
+    "title": "Rock Radio",
+    "performers": [
+      {
+        "name": "Rock Radio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-22-rock-radio"
+  },
+  {
+    "title": "Boaterhead",
+    "performers": [
+      {
+        "name": "Boaterhead",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-23",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-23-boaterhead"
+  },
+  {
+    "title": "Tea Bags",
+    "performers": [
+      {
+        "name": "Tea Bags",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-26",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-26-tea-bags"
+  },
+  {
+    "title": "Creedence",
+    "performers": [
+      {
+        "name": "Creedence",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-27",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-27-creedence"
+  },
+  {
+    "title": "Faction",
+    "performers": [
+      {
+        "name": "Faction",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-28-faction"
+  },
+  {
+    "title": "Post Road",
+    "performers": [
+      {
+        "name": "Post Road",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-29-post-road"
+  },
+  {
+    "title": "Barcode",
+    "performers": [
+      {
+        "name": "Barcode",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-29-barcode"
+  },
+  {
+    "title": "KC & Company",
+    "performers": [
+      {
+        "name": "KC & Company",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-30",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-08-30-kc-company"
+  },
+
+  {
+    "title": "MatWhataGuy",
+    "performers": [
+      {
+        "name": "MatWhataGuy",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-02",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-02-matwhataguy"
+  },
+  {
+    "title": "Pet The Cougar",
+    "performers": [
+      {
+        "name": "Pet The Cougar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-03",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-03-pet-the-cougar"
+  },
+  {
+    "title": "Mr. Breeze",
+    "performers": [
+      {
+        "name": "Mr. Breeze",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-04-mr-breeze"
+  },
+  {
+    "title": "Eclipse",
+    "performers": [
+      {
+        "name": "Eclipse",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-05-eclipse"
+  },
+  {
+    "title": "KC & Company",
+    "performers": [
+      {
+        "name": "KC & Company",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-05-kc-company"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-06",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-06-disco-inferno"
+  },
+  {
+    "title": "Eastwind",
+    "performers": [
+      {
+        "name": "Eastwind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-06",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-06-eastwind"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-07",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-07-custard-pie"
+  },
+  {
+    "title": "Tea Bags",
+    "performers": [
+      {
+        "name": "Tea Bags",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-09",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-09-tea-bags"
+  },
+  {
+    "title": "Morning Glory",
+    "performers": [
+      {
+        "name": "Morning Glory",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-10",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-10-morning-glory"
+  },
+  {
+    "title": "Tricky Dick",
+    "performers": [
+      {
+        "name": "Tricky Dick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-11-tricky-dick"
+  },
+  {
+    "title": "Soul Shake",
+    "performers": [
+      {
+        "name": "Soul Shake",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-12-soul-shake"
+  },
+  {
+    "title": "Armstrong Bearcat Band",
+    "performers": [
+      {
+        "name": "Armstrong Bearcat Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-12-armstrong-bearcat-band"
+  },
+  {
+    "title": "Delaney's",
+    "performers": [
+      {
+        "name": "Delaney's",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-13",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-13-delaney-s"
+  },
+  {
+    "title": "Jim Miller",
+    "performers": [
+      {
+        "name": "Jim Miller",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-18-jim-miller"
+  },
+  {
+    "title": "Alt-95",
+    "performers": [
+      {
+        "name": "Alt-95",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-19-alt-95"
+  },
+  {
+    "title": "Private Party",
+    "performers": [
+      {
+        "name": "Private Party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-19-private-party"
+  },
+  {
+    "title": "Loose Tooth",
+    "performers": [
+      {
+        "name": "Loose Tooth",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-20",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-20-loose-tooth"
+  },
+  {
+    "title": "Ted Riser Full Band",
+    "performers": [
+      {
+        "name": "Ted Riser Full Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-25-ted-riser-full-band"
+  },
+  {
+    "title": "Cruisin",
+    "performers": [
+      {
+        "name": "Cruisin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-26-cruisin"
+  },
+  {
+    "title": "Private Party",
+    "performers": [
+      {
+        "name": "Private Party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-26-private-party"
+  },
+  {
+    "title": "Evilways",
+    "performers": [
+      {
+        "name": "Evilways",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-27",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "whiskey-island",
+    "source": "manual",
+    "manual": true,
+    "id": "whiskey-island-2026-09-27-evilways"
+  }
+
+  ]
+}

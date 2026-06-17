@@ -24,6 +24,42 @@
       "eventsUrl": "https://www.beachlandballroom.com/shows",
       "city": "Cleveland"
     },
+    "metroparks-huntington": {
+      "name": "The Noshery at Huntington Beach",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Bay Village"
+    },
+    "metroparks-euclid-beach": {
+      "name": "Euclid Beach",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Cleveland"
+    },
+    "metroparks-edgewater": {
+      "name": "Edgewater Beach",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Cleveland"
+    },
+    "metroparks-emerald-necklace": {
+      "name": "Emerald Necklace Marina",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Rocky River"
+    },
+    "metroparks-galley": {
+      "name": "The Galley at East 55th Marina",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Cleveland"
+    },
+    "metroparks-merwins-wharf": {
+      "name": "Merwin's Wharf",
+      "url": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
+      "city": "Cleveland"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -35,289 +71,15 @@
       "url": "https://www.facebook.com/PaninisWestlake/",
       "eventsUrl": null,
       "city": "Cleveland"
+    },
+    "whiskey-island": {
+      "name": "Whiskey Island",
+      "url": "https://www.whiskeyislandstillandeatery.net/",
+      "eventsUrl": "https://www.whiskeyislandstillandeatery.net/bands.html",
+      "city": "Cleveland"
     }
   },
   "events": [
-    {
-      "id": "grog-shop-2026-06-12-the-heff-effect-accelerator-the-wrap-up",
-      "title": "The Heff Effect Accelerator “The Wrap Up “",
-      "venueId": "grog-shop",
-      "date": "2026-06-12",
-      "time": "20:30",
-      "doors": "20:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "The Heff Effect Accelerator “The Wrap Up “",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/the-heff-effect-accelerator-the-wrap-up/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-heff-effect-accelerator-the-grog-shop-tickets/14914753?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-12-after-the-apocalypse",
-      "title": "After The Apocalypse with Bessemer Saints, Irewyrm",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-12",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "After The Apocalypse",
-          "headliner": true
-        },
-        {
-          "name": "Bessemer Saints, Irewyrm",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/after-the-apocalypse-12-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-13-clechay-the-land-vol-2-ep-release-show",
-      "title": "CLEchay : The Land Vol.2 EP Release  Show w/ Eli Moon, DJ Scottstradamus, Polaris",
-      "venueId": "grog-shop",
-      "date": "2026-06-13",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "CLEchay : The Land Vol.2 EP Release  Show",
-          "headliner": true
-        },
-        {
-          "name": "Eli Moon",
-          "headliner": false
-        },
-        {
-          "name": "DJ Scottstradamus",
-          "headliner": false
-        },
-        {
-          "name": "Polaris",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/clechay-live-at-the-grog-shop/",
-      "ticketUrl": "https://www.ticketweb.com/event/clechay-the-land-vol2-grog-shop-tickets/14903483?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "the-agora-2026-06-13-chris-ramsay-presents-it-s-probably-nothing",
-      "title": "Chris Ramsay Presents: It’s Probably Nothing...",
-      "venueId": "the-agora",
-      "date": "2026-06-13",
-      "time": null,
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Chris Ramsay Presents: It’s Probably Nothing...",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1411069",
-      "ticketUrl": "https://www.axs.com/events/1411069/chris-ramsay-presents-its-probably-nothing-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-13-north-mississippi-allstars",
-      "title": "North Mississippi Allstars",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-13",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "North Mississippi Allstars",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/north-mississippi-allstars-13-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/north-mississippi-allstars-13-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-13-the-avengers",
-      "title": "The Avengers with Xanny Stars, DJ HG",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-13",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Avengers",
-          "headliner": true
-        },
-        {
-          "name": "Xanny Stars, DJ HG",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-avengers-13-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-avengers-13-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "4 To Go",
-      "performers": [
-        {
-          "name": "4 To Go",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-13",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-13-4-to-go"
-    },
-    {
-      "title": "Kiss Me Deadly",
-      "performers": [
-        {
-          "name": "Kiss Me Deadly",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-13",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-13-kiss-me-deadly"
-    },
-    {
-      "id": "grog-shop-2026-06-14-worm-total-possession-of-america",
-      "title": "Worm \"Total Possession of America\" w/ Atomic Witch, Vile Light",
-      "venueId": "grog-shop",
-      "date": "2026-06-14",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$28.27",
-      "performers": [
-        {
-          "name": "Worm \"Total Possession of America\"",
-          "headliner": true
-        },
-        {
-          "name": "Atomic Witch",
-          "headliner": false
-        },
-        {
-          "name": "Vile Light",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/worm-total-possession-of-america/",
-      "ticketUrl": "https://www.ticketweb.com/event/worm-total-possession-of-america-grog-shop-tickets/14780703?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-14-the-toxhards",
-      "title": "The Toxhards with Pro Skater",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-14",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Toxhards",
-          "headliner": true
-        },
-        {
-          "name": "Pro Skater",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-toxhards-14-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Sully Solo",
-      "performers": [
-        {
-          "name": "Sully Solo",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-14",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-14-sully-solo"
-    },
-    {
-      "id": "grog-shop-2026-06-15-make-em-laugh-mondays",
-      "title": "Make Em Laugh Mondays",
-      "venueId": "grog-shop",
-      "date": "2026-06-15",
-      "time": "20:00",
-      "doors": "19:30",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "Make Em Laugh Mondays",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-5/",
-      "ticketUrl": "https://www.ticketweb.com/event/-make-em-laugh-grog-shop-tickets/14957753?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-15-the-soap-girls",
-      "title": "The Soap Girls with Eaten By Kittens, Saints Of Lorain",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-15",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Soap Girls",
-          "headliner": true
-        },
-        {
-          "name": "Eaten By Kittens, Saints Of Lorain",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-soapgirls-15-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-soapgirls-15-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
     {
       "id": "rocket-arena-2026-06-16-dave-chappelle",
       "title": "Dave Chappelle: Pulling Up",
@@ -344,7 +106,7 @@
       "date": "2026-06-16",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$31.36",
+      "price": "$37.54",
       "performers": [
         {
           "name": "Son Little 'CityFolk Tour 2026'",
@@ -476,6 +238,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-huntington-2026-06-17-acousticats",
+      "title": "Acousticats",
+      "venueId": "metroparks-huntington",
+      "date": "2026-06-17",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Acousticats",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Dog Water",
       "performers": [
         {
@@ -488,10 +269,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
       "id": "cebars-2026-06-17-dog-water"
+    },
+    {
+      "title": "Cruisin",
+      "performers": [
+        {
+          "name": "Cruisin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-17",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-17-cruisin"
     },
     {
       "id": "grog-shop-2026-06-18-higher-nation",
@@ -563,6 +364,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-euclid-beach-2026-06-18-rayr-image-band",
+      "title": "Rayr Image Band",
+      "venueId": "metroparks-euclid-beach",
+      "date": "2026-06-18",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Rayr Image Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Lady Antoinette Karaoke",
       "performers": [
         {
@@ -575,18 +395,38 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
       "id": "cebars-2026-06-18-lady-antoinette-karaoke"
     },
     {
+      "title": "Ted Riser",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-18",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-18-ted-riser"
+    },
+    {
       "id": "grog-shop-2026-06-19-inmates",
       "title": "Inmates w/ Axioma, Pill Time, DJ Billie Club",
       "venueId": "grog-shop",
       "date": "2026-06-19",
-      "time": "20:30",
-      "doors": "19:30",
+      "time": "21:00",
+      "doors": "20:00",
       "price": "$19.51",
       "performers": [
         {
@@ -612,8 +452,8 @@
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2026-06-19-the-nick-moss-band",
-      "title": "The Nick Moss Band with Blue Lunch",
+      "id": "beachland-ballroom-2026-06-19-the-nick-moss-band-ft-dennis-gruenling",
+      "title": "The Nick Moss Band ft. Dennis Gruenling with Blue Lunch",
       "venueId": "beachland-ballroom",
       "date": "2026-06-19",
       "time": "20:00",
@@ -621,7 +461,7 @@
       "price": null,
       "performers": [
         {
-          "name": "The Nick Moss Band",
+          "name": "The Nick Moss Band ft. Dennis Gruenling",
           "headliner": true
         },
         {
@@ -658,6 +498,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-06-19-run-avril-run",
+      "title": "Run Avril Run",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-06-19",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Run Avril Run",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Cap",
       "performers": [
         {
@@ -670,6 +529,7 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
@@ -688,10 +548,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-19-tricky-dick"
+    },
+    {
+      "title": "Faction",
+      "performers": [
+        {
+          "name": "Faction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-19-faction"
     },
     {
       "id": "grog-shop-2026-06-20-westside-live-ft-last-pick-young-genesis",
@@ -713,6 +593,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/westside-live-ft-last-pick-young-genesis/",
       "ticketUrl": "https://www.ticketweb.com/event/westside-live-ft-last-pick-grog-shop-tickets/14903383?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-06-20-15-60-75-the-numbers-band-out-of-obscurity-into-oblivion-film",
+      "title": "15-60-75 (The Numbers Band), Out of Obscurity Into Oblivion (Film)",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "15-60-75 (The Numbers Band), Out of Obscurity Into Oblivion (Film)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/15-60-75-the-numbers-band-out-of-obscurity-into-oblivion-film-20-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/15-60-75-the-numbers-band-out-of-obscurity-into-oblivion-film-20-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -740,6 +639,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-06-20-brethren",
+      "title": "Brethren",
+      "venueId": "metroparks-galley",
+      "date": "2026-06-20",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Brethren",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "You Ain't Hard Fest",
       "performers": [
         {
@@ -752,6 +670,7 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
@@ -770,10 +689,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-20-cocktail-johnny"
+    },
+    {
+      "title": "Mister Breeze",
+      "performers": [
+        {
+          "name": "Mister Breeze",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-20-mister-breeze"
+    },
+    {
+      "title": "Rock Radio",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-20",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-20-rock-radio"
     },
     {
       "id": "grog-shop-2026-06-21-ryan-davis-the-roadhouse-band",
@@ -795,6 +753,29 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/ryan-davis-the-roadhouse-band-elizabeth-moen/",
       "ticketUrl": "https://www.ticketweb.com/event/-ryan-davis-the-grog-shop-tickets/14745153?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-06-21-beachland-brunch",
+      "title": "Beachland Brunch with DJ Lesley K",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Beachland Brunch",
+          "headliner": true
+        },
+        {
+          "name": "DJ Lesley K",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-21-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-21-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -822,6 +803,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-merwins-wharf-2026-06-21-the-scenic-route",
+      "title": "The Scenic Route",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-06-21",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Scenic Route",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -834,10 +834,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-21-furious-george"
+    },
+    {
+      "title": "Against the Wind",
+      "performers": [
+        {
+          "name": "Against the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-21",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-21-against-the-wind"
     },
     {
       "id": "grog-shop-2026-06-22-midnight-rental-presents-secret-movie-night",
@@ -1016,6 +1036,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-huntington-2026-06-24-ashley-gulla",
+      "title": "Ashley Gulla",
+      "venueId": "metroparks-huntington",
+      "date": "2026-06-24",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Ashley Gulla",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Dog Water",
       "performers": [
         {
@@ -1028,10 +1067,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
       "id": "cebars-2026-06-24-dog-water"
+    },
+    {
+      "title": "Mourning Glory",
+      "performers": [
+        {
+          "name": "Mourning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-24-mourning-glory"
     },
     {
       "id": "grog-shop-2026-06-25-teenage-bottlerocket",
@@ -1105,6 +1164,44 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/sewerperson-25-jun#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "metroparks-euclid-beach-2026-06-25-project-hope-choir",
+      "title": "Project Hope Choir",
+      "venueId": "metroparks-euclid-beach",
+      "date": "2026-06-25",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Project Hope Choir",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "The Sky's the Limit",
+      "performers": [
+        {
+          "name": "The Sky's the Limit",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-25",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-25-the-sky-s-the-limit"
     },
     {
       "id": "grog-shop-2026-06-26-ratboys-when-the-sun-explodes-tour-2026",
@@ -1195,6 +1292,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-06-26-rock-radio",
+      "title": "Rock Radio",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-06-26",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Among The Willows",
       "performers": [
         {
@@ -1207,6 +1323,7 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
@@ -1225,10 +1342,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-26-pet-the-cougar"
+    },
+    {
+      "title": "Eclipes",
+      "performers": [
+        {
+          "name": "Eclipes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-26-eclipes"
     },
     {
       "id": "rocket-arena-2026-06-27-alex-warren",
@@ -1316,8 +1453,8 @@
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2026-06-27-sugardeer",
-      "title": "Sugardeer with Elspeth Tremblay & The Treatment, The Yellow Elevators, Ohayo",
+      "id": "beachland-ballroom-2026-06-27-elspeth-tremblay-the-treatment",
+      "title": "Elspeth Tremblay & The Treatment with Ohayo, The Yellow Elevators, Heavy Burtation",
       "venueId": "beachland-ballroom",
       "date": "2026-06-27",
       "time": "20:00",
@@ -1325,16 +1462,35 @@
       "price": null,
       "performers": [
         {
-          "name": "Sugardeer",
+          "name": "Elspeth Tremblay & The Treatment",
           "headliner": true
         },
         {
-          "name": "Elspeth Tremblay & The Treatment, The Yellow Elevators, Ohayo",
+          "name": "Ohayo, The Yellow Elevators, Heavy Burtation",
           "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/sugardeer-27-jun",
       "ticketUrl": "https://www.beachlandballroom.com/shows/sugardeer-27-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-galley-2026-06-27-pieces-of-eight-featuring-the-lakeside-brass",
+      "title": "Pieces of Eight featuring the Lakeside Brass",
+      "venueId": "metroparks-galley",
+      "date": "2026-06-27",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Pieces of Eight featuring the Lakeside Brass",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -1351,6 +1507,7 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
@@ -1369,10 +1526,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-27-fm-project"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-27-tricky-dick"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-27-kc-company"
     },
     {
       "id": "grog-shop-2026-06-28-savannah-dexter-damage-control-tour-w-coey-redd",
@@ -1421,6 +1617,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-merwins-wharf-2026-06-28-key-west-express",
+      "title": "Key West Express",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-06-28",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Key West Express",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -1433,10 +1648,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-06-28-sully-solo"
+    },
+    {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-28",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-28-alt-95"
     },
     {
       "id": "the-agora-2026-06-30-gigi-perez-live",
@@ -1485,6 +1720,25 @@
       "manual": false
     },
     {
+      "title": "Southbound",
+      "performers": [
+        {
+          "name": "Southbound",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-01",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-01-southbound"
+    },
+    {
       "id": "grog-shop-2026-07-02-audible-jones-joe-abraham-the-faces-of-belmez",
       "title": "Audible Jones / Joe Abraham & The Faces of Belmez w/ Faces of Belmez",
       "venueId": "grog-shop",
@@ -1506,6 +1760,25 @@
       "ticketUrl": "https://www.ticketweb.com/event/audible-jones-joe-abraham-grog-shop-tickets/14192184?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-02-fm-project"
     },
     {
       "id": "grog-shop-2026-07-03-trash-fish-fest-two",
@@ -1582,6 +1855,44 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-03-tricky-dick"
+    },
+    {
+      "title": "Cheeseburger",
+      "performers": [
+        {
+          "name": "Cheeseburger",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-03",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-03-cheeseburger"
+    },
+    {
       "id": "grog-shop-2026-07-04-4day-ft-es4",
       "title": "4Day ft. ES4 w/ Spazzplot, Key Da Legend, Poohy, DJ Scottstradamus",
       "venueId": "grog-shop",
@@ -1615,6 +1926,44 @@
       "ticketUrl": "https://www.ticketweb.com/event/4day-ft-es4-grog-shop-tickets/14191974?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Against the Wind",
+      "performers": [
+        {
+          "name": "Against the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-04-against-the-wind"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-04",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-04-custard-pie"
     },
     {
       "id": "grog-shop-2026-07-05-this-one-for-bow-shuicide-holla-friends",
@@ -1659,6 +2008,44 @@
       "manual": false
     },
     {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-05",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-05-disco-inferno"
+    },
+    {
+      "id": "grog-shop-2026-07-06-make-em-laugh-mondays",
+      "title": "Make Em Laugh Mondays",
+      "venueId": "grog-shop",
+      "date": "2026-07-06",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Make Em Laugh Mondays",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-6/",
+      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-grog-shop-tickets/14202144?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-07-08-501-bryze-built-different-tour",
       "title": "501 BRYZE: Built Different Tour",
       "venueId": "grog-shop",
@@ -1695,6 +2082,44 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/puppeteers-for-fears-presents-robopocalypse-the-musical-08-jul#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "metroparks-huntington-2026-07-08-mike-mike",
+      "title": "Mike & Mike",
+      "venueId": "metroparks-huntington",
+      "date": "2026-07-08",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Mike & Mike",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Ted Riser",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-08-ted-riser"
     },
     {
       "id": "grog-shop-2026-07-09-allthehipe-astral-housefly",
@@ -1789,6 +2214,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-euclid-beach-2026-07-09-forecast-with-serena-wynn",
+      "title": "Forecast with Serena Wynn",
+      "venueId": "metroparks-euclid-beach",
+      "date": "2026-07-09",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Forecast with Serena Wynn",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Viva/Sammy",
+      "performers": [
+        {
+          "name": "Viva/Sammy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-09-viva-sammy"
+    },
+    {
       "id": "grog-shop-2026-07-10-frontega",
       "title": "Frontega w/ Mud Whale, Tall Grass, Lowspot",
       "venueId": "grog-shop",
@@ -1820,6 +2283,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-07-10-into-the-blue-grateful-dead-revival",
+      "title": "Into the Blue - Grateful Dead Revival",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Into the Blue - Grateful Dead Revival",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-10-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-10-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-07-10-wombo",
       "title": "Wombo with Shower Curtain",
       "venueId": "beachland-ballroom",
@@ -1843,6 +2325,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-07-10-the-drop-downs",
+      "title": "The Drop Downs",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-07-10",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Drop Downs",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -1855,10 +2356,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-10-omf-band"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-10-kc-company"
     },
     {
       "id": "grog-shop-2026-07-11-conan",
@@ -1909,6 +2430,63 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/joint-operation-11-jul#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "metroparks-galley-2026-07-11-van-sailin",
+      "title": "Van Sailin'",
+      "venueId": "metroparks-galley",
+      "date": "2026-07-11",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Van Sailin'",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-11-spazmatics"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-11",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-11-eastwind"
     },
     {
       "id": "grog-shop-2026-07-12-the-body",
@@ -1980,6 +2558,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-merwins-wharf-2026-07-12-4peace-acoustic",
+      "title": "4Peace Acoustic",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-07-12",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "4Peace Acoustic",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -1992,10 +2589,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-12-sully-solo"
+    },
+    {
+      "title": "Bucknaked",
+      "performers": [
+        {
+          "name": "Bucknaked",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-12-bucknaked"
     },
     {
       "id": "grog-shop-2026-07-13-generacion-suicida",
@@ -2140,6 +2757,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-huntington-2026-07-15-nick-white",
+      "title": "Nick White",
+      "venueId": "metroparks-huntington",
+      "date": "2026-07-15",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Nick White",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Zero Hour",
+      "performers": [
+        {
+          "name": "Zero Hour",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-15",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-15-zero-hour"
+    },
+    {
       "id": "rocket-arena-2026-07-16-a-taste-of-black-cleveland",
       "title": "A Taste of Black Cleveland: The Food Showcase 8.0",
       "venueId": "rocket-arena",
@@ -2201,6 +2856,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-edgewater-2026-07-16-disco-inferno",
+      "title": "Disco Inferno",
+      "venueId": "metroparks-edgewater",
+      "date": "2026-07-16",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Nitebridge",
+      "performers": [
+        {
+          "name": "Nitebridge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-16",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-16-nitebridge"
+    },
+    {
       "id": "grog-shop-2026-07-17-the-sonder-bombs",
       "title": "The Sonder Bombs w/ Snarls, Angelgirl EVA",
       "venueId": "grog-shop",
@@ -2228,6 +2921,44 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-07-17-off-leash-jerry-big-s-world-famous-band",
+      "title": "Off Leash, Jerry Big's World Famous Band",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Off Leash, Jerry Big's World Famous Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/off-leash-x-jerry-big-s-world-famous-band-17-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/off-leash-x-jerry-big-s-world-famous-band-17-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-emerald-necklace-2026-07-17-becky-boyd-the-groove-train",
+      "title": "Becky Boyd & The Groove Train",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-07-17",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Becky Boyd & The Groove Train",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -2240,10 +2971,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-17-tricky-dick"
+    },
+    {
+      "title": "Lee Gant",
+      "performers": [
+        {
+          "name": "Lee Gant",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-17-lee-gant"
     },
     {
       "id": "rocket-arena-2026-07-18-zac-brown-band",
@@ -2342,6 +3093,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-07-18-blue-lunch",
+      "title": "Blue Lunch",
+      "venueId": "metroparks-galley",
+      "date": "2026-07-18",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Blue Lunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Wayne's World",
       "performers": [
         {
@@ -2354,10 +3124,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-18-wayne-s-world"
+    },
+    {
+      "title": "Radio Tokyo",
+      "performers": [
+        {
+          "name": "Radio Tokyo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-18-radio-tokyo"
+    },
+    {
+      "title": "Rock Radio",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-18-rock-radio"
     },
     {
       "id": "grog-shop-2026-07-19-zoloft",
@@ -2410,6 +3219,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-merwins-wharf-2026-07-19-chagrin-river-band",
+      "title": "Chagrin River Band",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-07-19",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Chagrin River Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Island Troy",
       "performers": [
         {
@@ -2422,10 +3250,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-19-island-troy"
+    },
+    {
+      "title": "Soul Shake",
+      "performers": [
+        {
+          "name": "Soul Shake",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-19-soul-shake"
+    },
+    {
+      "id": "grog-shop-2026-07-20-make-em-laugh-mondays",
+      "title": "Make Em Laugh Mondays",
+      "venueId": "grog-shop",
+      "date": "2026-07-20",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Make Em Laugh Mondays",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-7/",
+      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-grog-shop-tickets/14202164?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "the-agora-2026-07-20-lucy-dacus",
@@ -2470,8 +3337,8 @@
       "manual": false
     },
     {
-      "id": "grog-shop-2026-07-22-second-hand-embarrasment-due-by-midnight-tba",
-      "title": "Second Hand Embarrasment / Due By Midnight  + TBA w/ Due By Midnight",
+      "id": "grog-shop-2026-07-22-second-hand-embarrasment-due-by-midnight-a-way-of-flying",
+      "title": "Second Hand Embarrasment / Due By Midnight / A Way Of Flying w/ Due By Midnight, A Way Of Flying",
       "venueId": "grog-shop",
       "date": "2026-07-22",
       "time": "19:30",
@@ -2479,11 +3346,15 @@
       "price": "$19.51",
       "performers": [
         {
-          "name": "Second Hand Embarrasment / Due By Midnight  + TBA",
+          "name": "Second Hand Embarrasment / Due By Midnight / A Way Of Flying",
           "headliner": true
         },
         {
           "name": "Due By Midnight",
+          "headliner": false
+        },
+        {
+          "name": "A Way Of Flying",
           "headliner": false
         }
       ],
@@ -2491,6 +3362,44 @@
       "ticketUrl": "https://www.ticketweb.com/event/second-hand-embarrasment-due-grog-shop-tickets/14834153?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "metroparks-huntington-2026-07-22-six-miles-high",
+      "title": "Six Miles High",
+      "venueId": "metroparks-huntington",
+      "date": "2026-07-22",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Six Miles High",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Cruisin",
+      "performers": [
+        {
+          "name": "Cruisin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-22-cruisin"
     },
     {
       "id": "grog-shop-2026-07-23-school-of-rock-allstars",
@@ -2577,6 +3486,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-edgewater-2026-07-23-diamond-project",
+      "title": "Diamond Project",
+      "venueId": "metroparks-edgewater",
+      "date": "2026-07-23",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Diamond Project",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Morning Glory",
+      "performers": [
+        {
+          "name": "Morning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-23",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-23-morning-glory"
+    },
+    {
       "id": "grog-shop-2026-07-24-les-savy-fav",
       "title": "Les Savy Fav w/ Suitor, Beast Killer",
       "venueId": "grog-shop",
@@ -2650,6 +3597,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-07-24-cats-on-holiday",
+      "title": "Cats on Holiday",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-07-24",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Cats on Holiday",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Standing Still",
       "performers": [
         {
@@ -2662,10 +3628,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-24-standing-still"
+    },
+    {
+      "title": "Abby Normal",
+      "performers": [
+        {
+          "name": "Abby Normal",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-24-abby-normal"
     },
     {
       "id": "beachland-ballroom-2026-07-25-jukebox-the-ghost",
@@ -2706,6 +3692,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-07-25-city-lite-band",
+      "title": "City Lite Band",
+      "venueId": "metroparks-galley",
+      "date": "2026-07-25",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "City Lite Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Liverpool Lads",
       "performers": [
         {
@@ -2718,10 +3723,68 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-25-liverpool-lads"
+    },
+    {
+      "title": "Eclipse",
+      "performers": [
+        {
+          "name": "Eclipse",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-25-eclipse"
+    },
+    {
+      "title": "Cat's on Holiday",
+      "performers": [
+        {
+          "name": "Cat's on Holiday",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-25-cat-s-on-holiday"
+    },
+    {
+      "id": "metroparks-merwins-wharf-2026-07-26-east-wind",
+      "title": "East Wind",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-07-26",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "East Wind",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
     },
     {
       "title": "Pete Lazard",
@@ -2736,10 +3799,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-26-pete-lazard"
+    },
+    {
+      "title": "Trailer Park Ninjas",
+      "performers": [
+        {
+          "name": "Trailer Park Ninjas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-26",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-26-trailer-park-ninjas"
     },
     {
       "id": "beachland-ballroom-2026-07-28-amble",
@@ -2803,6 +3886,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-huntington-2026-07-29-big-sky-cleveland-duo",
+      "title": "Big Sky Cleveland Duo",
+      "venueId": "metroparks-huntington",
+      "date": "2026-07-29",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Big Sky Cleveland Duo",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Barcode",
+      "performers": [
+        {
+          "name": "Barcode",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-29",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-29-barcode"
+    },
+    {
       "id": "grog-shop-2026-07-30-houdini-s-code",
       "title": "Houdini's Code w/ The Head Trips, Andy Lang",
       "venueId": "grog-shop",
@@ -2853,6 +3974,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-edgewater-2026-07-30-carlos-jones",
+      "title": "Carlos Jones",
+      "venueId": "metroparks-edgewater",
+      "date": "2026-07-30",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Carlos Jones",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-30",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-30-alt-95"
+    },
+    {
       "id": "beachland-ballroom-2026-07-31-alex-williams",
       "title": "Alex Williams with Easton Union",
       "venueId": "beachland-ballroom",
@@ -2876,6 +4035,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-07-31-colin-dussault-s-blues-project",
+      "title": "Colin Dussault's Blues Project",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-07-31",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Colin Dussault's Blues Project",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Billy Morris",
       "performers": [
         {
@@ -2888,10 +4066,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-07-31-billy-morris"
+    },
+    {
+      "title": "Pet The Cougar",
+      "performers": [
+        {
+          "name": "Pet The Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-31-pet-the-cougar"
     },
     {
       "id": "grog-shop-2026-08-01-the-second-annual-pretty-punk-fest",
@@ -2955,6 +4153,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-08-01-the-band-intense",
+      "title": "The Band Intense",
+      "venueId": "metroparks-galley",
+      "date": "2026-08-01",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Band Intense",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Rumors",
       "performers": [
         {
@@ -2967,10 +4184,87 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-01-rumors"
+    },
+    {
+      "title": "Diamond Project",
+      "performers": [
+        {
+          "name": "Diamond Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-01-diamond-project"
+    },
+    {
+      "title": "Cheeseburger",
+      "performers": [
+        {
+          "name": "Cheeseburger",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-01-cheeseburger"
+    },
+    {
+      "id": "grog-shop-2026-08-02-battle-of-the-bands",
+      "title": "Battle Of The Bands",
+      "venueId": "grog-shop",
+      "date": "2026-08-02",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": "$0.00",
+      "performers": [
+        {
+          "name": "Battle Of The Bands",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/battle-of-the-bands/",
+      "ticketUrl": "https://www.ticketweb.com/event/battle-of-the-bands-grog-shop-tickets/14201314?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2026-08-02-rj-chandler-the-roadhouse-band",
+      "title": "RJ Chandler & The Roadhouse Band",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-08-02",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "RJ Chandler & The Roadhouse Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
     },
     {
       "title": "Furious George",
@@ -2985,10 +4279,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-02-furious-george"
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-02",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-02-disco-inferno"
     },
     {
       "id": "the-agora-2026-08-03-viagra-boys",
@@ -3037,6 +4351,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-huntington-2026-08-05-corissa-bragg",
+      "title": "Corissa Bragg",
+      "venueId": "metroparks-huntington",
+      "date": "2026-08-05",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Corissa Bragg",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Ted Riser",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-05-ted-riser"
+    },
+    {
       "id": "grog-shop-2026-08-06-abronia",
       "title": "ABRONIA w/ Brood X, Powers / Rolin Duo",
       "venueId": "grog-shop",
@@ -3064,6 +4416,44 @@
       "manual": false
     },
     {
+      "id": "metroparks-edgewater-2026-08-06-prince-project",
+      "title": "Prince Project",
+      "venueId": "metroparks-edgewater",
+      "date": "2026-08-06",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Prince Project",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Viva/Sammy",
+      "performers": [
+        {
+          "name": "Viva/Sammy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-06-viva-sammy"
+    },
+    {
       "id": "grog-shop-2026-08-07-nascar-aloe-jasiah-capital-punishment-tour",
       "title": "NASCAR ALOE + JASIAH: Capital Punishment Tour w/ REJECTEDREYNA",
       "venueId": "grog-shop",
@@ -3087,6 +4477,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-emerald-necklace-2026-08-07-swamp-boogie-band",
+      "title": "Swamp Boogie Band",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2026-08-07",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Swamp Boogie Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Carlos Jones and the Plus Band",
       "performers": [
         {
@@ -3099,10 +4508,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-07-carlos-jones-and-the-plus-band"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-07-custard-pie"
     },
     {
       "id": "rocket-arena-2026-08-08-hot-wheels-monster-trucks-live-glow-n-fire",
@@ -3212,6 +4641,63 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-08-08-abby-normal-the-detroit-lean",
+      "title": "Abby Normal & the Detroit Lean",
+      "venueId": "metroparks-galley",
+      "date": "2026-08-08",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Abby Normal & the Detroit Lean",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-08-tricky-dick"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-08-eastwind"
+    },
+    {
       "id": "rocket-arena-2026-08-09-hot-wheels-monster-trucks-live-glow-n-fire",
       "title": "Hot Wheels Monster Trucks Glow-N-Fire",
       "venueId": "rocket-arena",
@@ -3236,7 +4722,7 @@
     },
     {
       "id": "grog-shop-2026-08-09-the-expendables",
-      "title": "The Expendables",
+      "title": "The Expendables w/ Chad Tepper, Sons of Paradise",
       "venueId": "grog-shop",
       "date": "2026-08-09",
       "time": "19:30",
@@ -3246,10 +4732,37 @@
         {
           "name": "The Expendables",
           "headliner": true
+        },
+        {
+          "name": "Chad Tepper",
+          "headliner": false
+        },
+        {
+          "name": "Sons of Paradise",
+          "headliner": false
         }
       ],
       "eventUrl": "https://grogshop.gs/tm-event/the-expendables/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-expendables-grog-shop-tickets/14803373?pl=grogshop&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/the-expendables-chad-tepper-sons-grog-shop-tickets/14803373?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2026-08-09-stamper-starr",
+      "title": "Stamper Starr",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-08-09",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Stamper Starr",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -3266,10 +4779,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-09-pete-lazard"
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-09-ace-molar"
     },
     {
       "id": "beachland-ballroom-2026-08-10-jammy-buffet",
@@ -3360,6 +4893,25 @@
       "manual": false
     },
     {
+      "title": "Back Street Blues",
+      "performers": [
+        {
+          "name": "Back Street Blues",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-12",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-12-back-street-blues"
+    },
+    {
       "id": "the-agora-2026-08-13-dimmu-borgir",
       "title": "Dimmu Borgir w/ Hypocrisy, Hulder",
       "venueId": "the-agora",
@@ -3423,6 +4975,25 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pop Fiction",
+      "performers": [
+        {
+          "name": "Pop Fiction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-13-pop-fiction"
     },
     {
       "id": "the-agora-2026-08-14-blackberry-smoke",
@@ -3494,10 +5065,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-14-fm77"
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-14-fm-project"
     },
     {
       "id": "beachland-ballroom-2026-08-15-ohio-burlesque-festival",
@@ -3538,6 +5129,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-08-15-grunge-dna",
+      "title": "Grunge DNA",
+      "venueId": "metroparks-galley",
+      "date": "2026-08-15",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Grunge DNA",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Ace Molar",
       "performers": [
         {
@@ -3550,10 +5160,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-15-ace-molar"
+    },
+    {
+      "title": "Against the Wind",
+      "performers": [
+        {
+          "name": "Against the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-15-against-the-wind"
+    },
+    {
+      "title": "Cats on Holiday",
+      "performers": [
+        {
+          "name": "Cats on Holiday",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-15-cats-on-holiday"
     },
     {
       "id": "rocket-arena-2026-08-16-j-cole",
@@ -3640,6 +5289,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-merwins-wharf-2026-08-16-the-zoomies",
+      "title": "The Zoomies",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-08-16",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Zoomies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -3652,10 +5320,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-16-sully-solo"
+    },
+    {
+      "title": "TheSky'sTheLimit",
+      "performers": [
+        {
+          "name": "TheSky'sTheLimit",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-16-thesky-sthelimit"
+    },
+    {
+      "id": "beachland-ballroom-2026-08-17-mountain-grass-unit",
+      "title": "Mountain Grass Unit",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Mountain Grass Unit",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/mountain-grass-unit-17-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/mountain-grass-unit-17-aug#tickets",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "beachland-ballroom-2026-08-18-ally-venable",
@@ -3700,6 +5407,25 @@
       "manual": false
     },
     {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-19",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-19-alt-95"
+    },
+    {
       "id": "beachland-ballroom-2026-08-20-kyle-smith",
       "title": "Kyle Smith with Miles Crowl",
       "venueId": "beachland-ballroom",
@@ -3721,6 +5447,25 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Nitebridge",
+      "performers": [
+        {
+          "name": "Nitebridge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-20-nitebridge"
     },
     {
       "id": "the-agora-2026-08-21-todd-rundgren",
@@ -3777,10 +5522,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-21-ladies-night"
+    },
+    {
+      "title": "Collage",
+      "performers": [
+        {
+          "name": "Collage",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-21-collage"
     },
     {
       "id": "grog-shop-2026-08-22-ben-nichols-and-tim-barry",
@@ -3833,6 +5598,25 @@
       "manual": false
     },
     {
+      "id": "metroparks-galley-2026-08-22-sammy-deleon-y-su-orquesta",
+      "title": "Sammy DeLeon y Su Orquesta",
+      "venueId": "metroparks-galley",
+      "date": "2026-08-22",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Sammy DeLeon y Su Orquesta",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tea Bags",
       "performers": [
         {
@@ -3845,10 +5629,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-22-tea-bags"
+    },
+    {
+      "title": "Radio Tokyo",
+      "performers": [
+        {
+          "name": "Radio Tokyo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-22-radio-tokyo"
+    },
+    {
+      "title": "Rock Radio",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-22-rock-radio"
     },
     {
       "id": "rocket-arena-2026-08-23-real-american-freestyle-12",
@@ -3890,7 +5713,7 @@
     },
     {
       "id": "beachland-ballroom-2026-08-23-shinyribs",
-      "title": "Shinyribs",
+      "title": "Shinyribs with Scott Strickland",
       "venueId": "beachland-ballroom",
       "date": "2026-08-23",
       "time": "20:00",
@@ -3900,10 +5723,33 @@
         {
           "name": "Shinyribs",
           "headliner": true
+        },
+        {
+          "name": "Scott Strickland",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug",
       "ticketUrl": "https://www.beachlandballroom.com/shows/shinyribs-23-aug#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2026-08-23-billy-likes-soda",
+      "title": "Billy Likes Soda",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2026-08-23",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Billy Likes Soda",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -3920,10 +5766,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-23-pete-lazard"
+    },
+    {
+      "title": "Boaterhead",
+      "performers": [
+        {
+          "name": "Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-23-boaterhead"
     },
     {
       "id": "grog-shop-2026-08-25-swervedriver-raise-at-35",
@@ -3968,6 +5834,25 @@
       "manual": false
     },
     {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-26",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-26-tea-bags"
+    },
+    {
       "id": "grog-shop-2026-08-27-toni-romiti-16-again-tour",
       "title": "TONI ROMITI: 16 Again Tour",
       "venueId": "grog-shop",
@@ -3987,23 +5872,42 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
-      "title": "WWE Souvenir Ticket : WWE Friday Night Smackdown",
-      "venueId": "rocket-arena",
-      "date": "2026-08-28",
-      "time": "19:30",
+      "id": "metroparks-edgewater-2026-08-27-the-jimmy-s-band",
+      "title": "The Jimmy's Band",
+      "venueId": "metroparks-edgewater",
+      "date": "2026-08-27",
+      "time": "17:00",
       "doors": null,
-      "price": null,
+      "price": "Free",
       "performers": [
         {
-          "name": "WWE Friday Night SmackDown",
+          "name": "The Jimmy's Band",
           "headliner": true
         }
       ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18191999",
-      "source": "seatgeek",
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Creedence",
+      "performers": [
+        {
+          "name": "Creedence",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-27-creedence"
     },
     {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
@@ -4021,6 +5925,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18140261",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
+      "title": "WWE Souvenir Ticket : WWE Friday Night Smackdown",
+      "venueId": "rocket-arena",
+      "date": "2026-08-28",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "WWE Friday Night SmackDown",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18191999",
       "source": "seatgeek",
       "manual": false
     },
@@ -4060,10 +5983,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-28-tricky-dick"
+    },
+    {
+      "title": "Faction",
+      "performers": [
+        {
+          "name": "Faction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-28-faction"
     },
     {
       "id": "the-agora-2026-08-29-ari-matti",
@@ -4120,10 +6063,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-29-omf-band"
+    },
+    {
+      "title": "Post Road",
+      "performers": [
+        {
+          "name": "Post Road",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-29-post-road"
+    },
+    {
+      "title": "Barcode",
+      "performers": [
+        {
+          "name": "Barcode",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-29-barcode"
     },
     {
       "id": "the-agora-2026-08-30-myles-smith",
@@ -4180,10 +6162,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-08-30-sully-solo"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-30",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-30-kc-company"
     },
     {
       "id": "beachland-ballroom-2026-09-01-the-well",
@@ -4209,6 +6211,44 @@
       "manual": false
     },
     {
+      "title": "MatWhataGuy",
+      "performers": [
+        {
+          "name": "MatWhataGuy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-02-matwhataguy"
+    },
+    {
+      "title": "Pet The Cougar",
+      "performers": [
+        {
+          "name": "Pet The Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-03",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-03-pet-the-cougar"
+    },
+    {
       "title": "Cocktail Johnny",
       "performers": [
         {
@@ -4221,10 +6261,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-04-cocktail-johnny"
+    },
+    {
+      "title": "Mr. Breeze",
+      "performers": [
+        {
+          "name": "Mr. Breeze",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-04-mr-breeze"
     },
     {
       "id": "beachland-ballroom-2026-09-05-steve-forbert",
@@ -4258,10 +6318,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-05-super-troopers"
+    },
+    {
+      "title": "Eclipse",
+      "performers": [
+        {
+          "name": "Eclipse",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-05-eclipse"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-05-kc-company"
     },
     {
       "title": "Sully Solo",
@@ -4276,10 +6375,68 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-06-sully-solo"
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-06-disco-inferno"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-06-eastwind"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-07-custard-pie"
     },
     {
       "id": "beachland-ballroom-2026-09-08-american-aquarium",
@@ -4301,6 +6458,25 @@
       "manual": false
     },
     {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-09-tea-bags"
+    },
+    {
       "id": "beachland-ballroom-2026-09-10-joey-harkum",
       "title": "Joey Harkum",
       "venueId": "beachland-ballroom",
@@ -4318,6 +6494,25 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/joey-harkum-10-sep#tickets",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Morning Glory",
+      "performers": [
+        {
+          "name": "Morning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-10",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-10-morning-glory"
     },
     {
       "id": "grog-shop-2026-09-11-sincere-engineer",
@@ -4370,6 +6565,63 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-11-tricky-dick"
+    },
+    {
+      "title": "Soul Shake",
+      "performers": [
+        {
+          "name": "Soul Shake",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-12-soul-shake"
+    },
+    {
+      "title": "Armstrong Bearcat Band",
+      "performers": [
+        {
+          "name": "Armstrong Bearcat Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-12-armstrong-bearcat-band"
+    },
+    {
       "id": "the-agora-2026-09-13-elvis-costello-the-imposters-with-charlie-sexton",
       "title": "Elvis Costello & The Imposters with Charlie Sexton",
       "venueId": "the-agora",
@@ -4401,10 +6653,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-13-pete-lazard"
+    },
+    {
+      "title": "Delaney's",
+      "performers": [
+        {
+          "name": "Delaney's",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-13",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-13-delaney-s"
     },
     {
       "id": "beachland-ballroom-2026-09-15-abby-jeanne-the-shadow-band",
@@ -4422,25 +6694,6 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-09-16-plosivs",
-      "title": "Plosivs",
-      "venueId": "grog-shop",
-      "date": "2026-09-16",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$30.33",
-      "performers": [
-        {
-          "name": "Plosivs",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/plosivs/",
-      "ticketUrl": "https://www.ticketweb.com/event/plosivs-grog-shop-tickets/14870803?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -4573,7 +6826,7 @@
       "date": "2026-09-18",
       "time": "20:30",
       "doors": "19:30",
-      "price": "$33.93",
+      "price": "$35.22",
       "performers": [
         {
           "name": "Show Me The Body",
@@ -4606,10 +6859,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-18-pet-the-cougar"
+    },
+    {
+      "title": "Jim Miller",
+      "performers": [
+        {
+          "name": "Jim Miller",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-18-jim-miller"
     },
     {
       "id": "rocket-arena-2026-09-19-rush",
@@ -4643,10 +6916,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-19-spazmatics"
+    },
+    {
+      "title": "Alt-95",
+      "performers": [
+        {
+          "name": "Alt-95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-19-alt-95"
+    },
+    {
+      "title": "Private Party",
+      "performers": [
+        {
+          "name": "Private Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-19-private-party"
     },
     {
       "title": "Sully Solo",
@@ -4661,10 +6973,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-20-sully-solo"
+    },
+    {
+      "title": "Loose Tooth",
+      "performers": [
+        {
+          "name": "Loose Tooth",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-20",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-20-loose-tooth"
     },
     {
       "id": "beachland-ballroom-2026-09-21-alicia-witt-album-release-show",
@@ -4747,6 +7079,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-09-24-daley",
+      "title": "Daley",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-24",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Daley",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/daley-24-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/daley-24-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-09-25-the-inspector-cluzo",
       "title": "The Inspector Cluzo",
       "venueId": "beachland-ballroom",
@@ -4778,10 +7129,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-25-that-80-s-band"
+    },
+    {
+      "title": "Ted Riser Full Band",
+      "performers": [
+        {
+          "name": "Ted Riser Full Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-25-ted-riser-full-band"
     },
     {
       "id": "grog-shop-2026-09-26-the-tear-garden-the-legendary-pink-dots-cevin-key",
@@ -4857,10 +7228,49 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-26-kc-and-company"
+    },
+    {
+      "title": "Cruisin",
+      "performers": [
+        {
+          "name": "Cruisin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-26-cruisin"
+    },
+    {
+      "title": "Private Party",
+      "performers": [
+        {
+          "name": "Private Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-26-private-party"
     },
     {
       "id": "the-agora-2026-09-27-jim-henson-s-labyrinth-in-concert-40th-anniversary",
@@ -4917,10 +7327,30 @@
       "doors": null,
       "price": null,
       "ticketUrl": null,
+      "eventUrl": null,
       "venueId": "paninis-westlake",
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-27-furious-george"
+    },
+    {
+      "title": "Evilways",
+      "performers": [
+        {
+          "name": "Evilways",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-27-evilways"
     },
     {
       "id": "grog-shop-2026-09-28-witch-w-i-t-c-h",
@@ -4988,6 +7418,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/militarie-gun-softcult-shady-nasty-dazy/",
       "ticketUrl": "https://www.ticketweb.com/event/militarie-gun-softcult-shady-nasty-grog-shop-tickets/14960163?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-09-29-hazlett",
+      "title": "Hazlett",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-29",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Hazlett",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/hazlett-29-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/hazlett-29-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5328,25 +7777,6 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
       "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-10-10-jed-harrelson",
-      "title": "Jed Harrelson",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-10",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Jed Harrelson",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5719,6 +8149,69 @@
       "manual": false
     },
     {
+      "id": "rocket-arena-2026-11-16-cash-money-no-limit",
+      "title": "Cash Money & No Limit Tour",
+      "venueId": "rocket-arena",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cash Money & No Limit",
+          "headliner": true
+        },
+        {
+          "name": "Juvenile",
+          "headliner": false
+        },
+        {
+          "name": "Master P",
+          "headliner": false
+        },
+        {
+          "name": "Mannie Fresh",
+          "headliner": false
+        },
+        {
+          "name": "Birdman",
+          "headliner": false
+        },
+        {
+          "name": "Fiend",
+          "headliner": false
+        },
+        {
+          "name": "Silkk The Shocker",
+          "headliner": false
+        },
+        {
+          "name": "Mercedes",
+          "headliner": false
+        },
+        {
+          "name": "Mia X",
+          "headliner": false
+        },
+        {
+          "name": "Choppa",
+          "headliner": false
+        },
+        {
+          "name": "BG",
+          "headliner": false
+        },
+        {
+          "name": "Lil Boosie",
+          "headliner": false
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/cash-money-and-no-limit-tickets/cleveland-ohio-rocket-arena-2026-11-15-7-pm/concert/18292588",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-11-17-michigander",
       "title": "Michigander w/ Wildermiss",
       "venueId": "grog-shop",
@@ -5918,6 +8411,101 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1231097",
       "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-huntington-2027-06-10-front-porch-jammin",
+      "title": "Front Porch Jammin",
+      "venueId": "metroparks-huntington",
+      "date": "2027-06-10",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Front Porch Jammin",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-euclid-beach-2027-06-11-the-quenton-rubin-band",
+      "title": "The Quenton Rubin Band",
+      "venueId": "metroparks-euclid-beach",
+      "date": "2027-06-11",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Quenton Rubin Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-emerald-necklace-2027-06-12-bobby-st-vincent",
+      "title": "Bobby St. Vincent",
+      "venueId": "metroparks-emerald-necklace",
+      "date": "2027-06-12",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Bobby St. Vincent",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-galley-2027-06-13-follow-the-sun",
+      "title": "Follow the Sun",
+      "venueId": "metroparks-galley",
+      "date": "2027-06-13",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Follow the Sun",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2027-06-14-black-jack-gypsies",
+      "title": "Black Jack Gypsies",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2027-06-14",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Black Jack Gypsies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },

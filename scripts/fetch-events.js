@@ -313,12 +313,87 @@ async function fetchBeachland() {
   }
 }
 
+async function fetchMetroparks() {
+  try {
+    const res = await fetch('https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    const venueIdMap = {
+      'The Noshery at Huntington Beach Concerts': 'metroparks-huntington',
+      'Euclid Beach Concerts': 'metroparks-euclid-beach',
+      'Edgewater Beach Concerts': 'metroparks-edgewater',
+      'Emerald Necklace Marina Concerts': 'metroparks-emerald-necklace',
+      'The Galley at Patrick S. Parker Community Sailing Center Concerts': 'metroparks-galley',
+      "Merwin's Wharf Concerts": 'metroparks-merwins-wharf',
+    };
+
+    const monthMap = {
+      Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+      Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
+      June: 5, July: 6, August: 7, September: 8, October: 9,
+      November: 10, December: 11, January: 0, February: 1,
+      March: 2, April: 3,
+    };
+
+    $('.accordion-listing__item').each((i, el) => {
+      const venueName = $(el).find('.accordion-button').text().trim();
+      const venueId = venueIdMap[venueName];
+      if (!venueId) return;
+
+      $(el).find('.accordion-content p').each((j, p) => {
+        const text = $(p).text().trim();
+        const match = text.match(/^(\w+)\s+(\d+)\s*[-–]\s*(.+?)\s*\|\s*(.+)$/);
+        if (!match) return;
+
+        const [, monthStr, dayStr, artistRaw, genre] = match;
+        const monthIndex = monthMap[monthStr];
+        if (monthIndex === undefined) return;
+
+        const day = parseInt(dayStr);
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const eventDateThisYear = new Date(currentYear, monthIndex, day);
+        const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+        const year = eventDateThisYear < todayMidnight ? currentYear + 1 : currentYear;
+        const date = toLocalDateStr(new Date(year, monthIndex, day));
+
+        const artistName = artistRaw.trim();
+        const slug = artistName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+        events.push({
+          id: `${venueId}-${date}-${slug}`,
+          title: artistName,
+          venueId,
+          date,
+          time: '17:00',
+          doors: null,
+          price: 'Free',
+          performers: [{ name: artistName, headliner: true }],
+          eventUrl: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries',
+          ticketUrl: null,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchMetroparks error:', err.message);
+    return [];
+  }
+}
+
+
+
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
 function loadManualEntries() {
   try {
-    const existing = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8'));
-    return existing.events.filter(e => e.manual === true);
+    const manual = JSON.parse(readFileSync(join(__dirname, '..', 'manual-events.json'), 'utf-8'));
+    return manual.events ?? [];
   } catch {
     return [];
   }
@@ -329,11 +404,12 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
     fetchBeachland(),
+    fetchMetroparks(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -345,6 +421,7 @@ async function main() {
     ...grogShop,
     ...agora,
     ...beachland,
+    ...metroparks,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -355,8 +432,15 @@ async function main() {
       'the-agora': { name: 'The Agora', url: 'https://agoracleveland.com', eventsUrl: 'https://www.agoracleveland.com/events/all', city: 'Cleveland' },
       'rocket-arena': { name: 'Rocket Arena', url: 'https://rocketarena.com', eventsUrl: 'https://seatgeek.com/venues/rocket-arena/tickets', city: 'Cleveland' },
       'beachland-ballroom': { name: 'Beachland Ballroom', url: 'https://beachlandballroom.com', eventsUrl: 'https://www.beachlandballroom.com/shows', city: 'Cleveland' },
+      'metroparks-huntington': { name: 'The Noshery at Huntington Beach', url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Bay Village' },
+      'metroparks-euclid-beach': { name: 'Euclid Beach', url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Cleveland' },
+      'metroparks-edgewater': { name: 'Edgewater Beach', url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Cleveland' },
+      'metroparks-emerald-necklace': { name: 'Emerald Necklace Marina', url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Rocky River' },
+      'metroparks-galley': { name: 'The Galley at East 55th Marina', url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Cleveland' },
+      'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries', eventsUrl: null, city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
+      'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
     },
     events: allEvents,
   };
