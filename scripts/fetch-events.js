@@ -774,6 +774,121 @@ async function fetchHappyDog() {
   }
 }
 
+async function fetchMahalls() {
+  try {
+    const venueId = 'mahalls';
+    const baseUrl = 'https://mahalls20lanes.com/api/plot/v1/listings';
+
+    function to24Hour(t) {
+      const cleaned = t.trim().toLowerCase().replace(/\s+/g, '');
+      const match = cleaned.match(/^(\d{1,2})(?::(\d{2}))?(am|pm)$/);
+      if (!match) return null;
+      let [, hours, minutes, meridian] = match;
+      hours = parseInt(hours, 10);
+      minutes = minutes ? parseInt(minutes, 10) : 0;
+      if (meridian === 'pm' && hours !== 12) hours += 12;
+      if (meridian === 'am' && hours === 12) hours = 0;
+      return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    }
+
+    function slugify(name) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    // Strips the wrapping <span> the API puts around dateTime, e.g.
+    // "<span>06/17/26 •  7pm</span>" -> "06/17/26 •  7pm"
+    function stripHtml(str) {
+      return str.replace(/<[^>]*>/g, '').trim();
+    }
+
+    async function fetchPage(page) {
+      const url = `${baseUrl}?currentpage=${page}&notLoaded=false&listingsPerPage=24&_locale=user`;
+      const res = await fetch(url);
+      return res.json();
+    }
+
+    // Fetch page 1 first to learn how many total pages exist (the API
+    // reports this on every individual event via "maxPages"), then fetch
+    // the rest and concatenate.
+    const firstPage = await fetchPage(1);
+    if (!Array.isArray(firstPage) || !firstPage.length) return [];
+
+    const maxPages = firstPage[0].maxPages || 1;
+    const allRaw = [...firstPage];
+
+    for (let page = 2; page <= maxPages; page++) {
+      const nextPage = await fetchPage(page);
+      if (Array.isArray(nextPage)) allRaw.push(...nextPage);
+    }
+
+    const events = allRaw.map(raw => {
+      // dateTime looks like "<span>06/17/26 •  7pm</span>" - strip the span,
+      // then split on the bullet to get the date and show time separately.
+      const dateTimeClean = stripHtml(raw.dateTime || '');
+      const [datePart, timePart] = dateTimeClean.split('•').map(s => s.trim());
+
+      // datePart is "06/17/26" (m/d/y per the page's data-date-format)
+      let date = null;
+      if (datePart) {
+        const [month, day, yearShort] = datePart.split('/').map(s => s.trim());
+        const year = `20${yearShort}`;
+        date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+      }
+
+      const time = timePart ? to24Hour(timePart) : null;
+
+      // doors field looks like "Doors: 7pm"
+      const doorsMatch = (raw.doors || '').match(/Doors:\s*([\d:]+\s*[apAP][mM])/);
+      const doors = doorsMatch ? to24Hour(doorsMatch[1]) : null;
+
+      // Lineup comes pre-split from the API when present; fall back to
+      // just the title as a single headliner when it's missing.
+      let performers;
+      if (raw.lineup && Array.isArray(raw.lineup.standard) && raw.lineup.standard.length) {
+        performers = raw.lineup.standard.map((p, idx) => ({
+          name: p.title,
+          headliner: idx === 0,
+        }));
+      } else {
+        performers = [{ name: raw.title, headliner: true }];
+      }
+
+      // fromPrice is either "Tickets from $20.00", "Free entry", or similar.
+      let price = null;
+      if (raw.fromPrice) {
+        if (/free/i.test(raw.fromPrice)) {
+          price = 'Free';
+        } else {
+          price = raw.fromPrice.replace(/^Tickets from\s*/i, '').trim();
+        }
+      }
+
+      const ticketUrl = raw.hasTickets && raw.ticket && raw.ticket.link ? raw.ticket.link : null;
+
+      const slug = slugify(raw.title);
+
+      return {
+        id: `${venueId}-${date}-${slug}`,
+        title: raw.title,
+        venueId,
+        date,
+        time,
+        doors,
+        price,
+        performers,
+        eventUrl: raw.permalink || null,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      };
+    }).filter(ev => ev.date); // drop anything we failed to parse a date for
+
+    return events;
+  } catch (err) {
+    console.error('fetchMahalls error:', err.message);
+    return [];
+  }
+}
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -792,7 +907,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -801,6 +916,7 @@ async function main() {
     fetchRockinOnTheRiver(),
     fetchCainPark(),
     fetchHappyDog(),
+    fetchMahalls(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -816,6 +932,7 @@ async function main() {
     ...rockinOnTheRiver,
     ...cainPark,
     ...happyDog,
+    ...mahalls,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -833,8 +950,9 @@ async function main() {
       'metroparks-galley': { name: 'The Galley at East 55th Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley', eventsUrl: null, city: 'Cleveland' },
       'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf', eventsUrl: null, city: 'Cleveland' },
       'rockin-on-the-river': { name: 'Rockin on the River', url: 'https://www.rockinontheriver.com', eventsUrl: 'https://www.rockinontheriver.com/2026', city: 'Lorain' },
-      'cain-park': { name: 'Cain Park', url: 'https://cainpark.com', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
+      'cain-park': { name: 'Cain Park', url: 'https://cainpark.com/', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
       'happy-dog': { name: 'Happy Dog', url: 'https://happydogcleveland.com/', eventsUrl: 'https://app.opendate.io/v/happy-dog-1767', city: 'Cleveland' },
+      'mahalls': { name: 'Mahalls', url: 'https://mahalls20lanes.com/', eventsUrl: 'https://mahalls20lanes.com/events/', city: 'Lakewood' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },

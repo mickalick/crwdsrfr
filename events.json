@@ -68,9 +68,21 @@
     },
     "cain-park": {
       "name": "Cain Park",
-      "url": "https://cainpark.com",
+      "url": "https://cainpark.com/",
       "eventsUrl": "https://cainpark.com/events/?view=list",
       "city": "Cleveland Heights"
+    },
+    "happy-dog": {
+      "name": "Happy Dog",
+      "url": "https://happydogcleveland.com/",
+      "eventsUrl": "https://app.opendate.io/v/happy-dog-1767",
+      "city": "Cleveland"
+    },
+    "mahalls": {
+      "name": "Mahalls",
+      "url": "https://mahalls20lanes.com/",
+      "eventsUrl": "https://mahalls20lanes.com/events/",
+      "city": "Lakewood"
     },
     "cebars": {
       "name": "Cebars",
@@ -177,6 +189,48 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-17-signal-cle-presents-classical-revolution",
+      "title": "Signal Cle presents: Classical Revolution!",
+      "venueId": "happy-dog",
+      "date": "2026-06-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Signal Cle presents: Classical Revolution!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-june-17-2026-689094",
+      "ticketUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-june-17-2026-689094",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-17-babe-haven",
+      "title": "Babe Haven",
+      "venueId": "mahalls",
+      "date": "2026-06-17",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Babe Haven",
+          "headliner": true
+        },
+        {
+          "name": "Bev Rage & the Drinks",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/babe-haven/",
+      "ticketUrl": "https://link.dice.fm/Q3fc265a04b1",
       "source": "scrape",
       "manual": false
     },
@@ -322,6 +376,52 @@
       ],
       "eventUrl": "https://cainpark.com/event/daniel-donatos-cosmic-country-with-marty-stuart-his-fabulous-superlatives/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/63585264/daniel-donatos-cosmic-country-with-marty-stuart-his-fabulous-superlatives-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-18-roast-battle-cleveland-thursday-night-showdown",
+      "title": "Roast Battle Cleveland - Thursday Night Showdown!",
+      "venueId": "happy-dog",
+      "date": "2026-06-18",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Roast Battle Cleveland - Thursday Night Showdown!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/roast-battle-cleveland-thursday-night-showdown-june-18-2026-689098",
+      "ticketUrl": "https://app.opendate.io/e/roast-battle-cleveland-thursday-night-showdown-june-18-2026-689098",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-18-i-set-my-friends-on-fire",
+      "title": "I Set My Friends On Fire",
+      "venueId": "mahalls",
+      "date": "2026-06-18",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "I Set My Friends on Fire",
+          "headliner": true
+        },
+        {
+          "name": "Scro",
+          "headliner": false
+        },
+        {
+          "name": "Current Comfort",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/i-set-my-friends-on-fire/",
+      "ticketUrl": "https://link.dice.fm/s1fa1630fe80",
       "source": "scrape",
       "manual": false
     },
@@ -483,6 +583,63 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-19-ally-nicholas",
+      "title": "Ally Nicholas",
+      "venueId": "mahalls",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$18.00",
+      "performers": [
+        {
+          "name": "Ally Nicholas",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ally-nicholas/",
+      "ticketUrl": "https://link.dice.fm/l37cea395fc3",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-19-absolute-intense-wrestling-weekend-at-pally-s",
+      "title": "Absolute Intense Wrestling  “Weekend At Pally’s”",
+      "venueId": "mahalls",
+      "date": "2026-06-19",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Absolute Intense Wrestling  “Weekend At Pally’s”",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/absolute-intense-wrestling-weekend-at-pallys/",
+      "ticketUrl": "https://link.dice.fm/B5a177dfc3de",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-19-heated-rivalry-dance-party",
+      "title": "Heated Rivalry dance party",
+      "venueId": "mahalls",
+      "date": "2026-06-19",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Heated Rivalry dance party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/heated-rivalry-dance-party-3/",
+      "ticketUrl": "https://link.dice.fm/Xad7c9bdd60a",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Cap",
       "performers": [
         {
@@ -639,6 +796,90 @@
       ],
       "eventUrl": "https://cainpark.com/event/dumpstaphunk-wsg-big-blitz/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/69443452/dumpstaphunk-wsg-big-blitz-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-20-the-phantom-a-d",
+      "title": "The Phantom A.D. / Oongow!!! / Riptide Suicide",
+      "venueId": "happy-dog",
+      "date": "2026-06-20",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Phantom A.D.",
+          "headliner": true
+        },
+        {
+          "name": "Oongow!!!",
+          "headliner": false
+        },
+        {
+          "name": "Riptide Suicide",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/the-phantom-a-d-oongow-riptide-suicide-june-20-2026-682481",
+      "ticketUrl": "https://app.opendate.io/e/the-phantom-a-d-oongow-riptide-suicide-june-20-2026-682481",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-20-keep",
+      "title": "Keep",
+      "venueId": "mahalls",
+      "date": "2026-06-20",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$18.00",
+      "performers": [
+        {
+          "name": "Keep",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/keep/",
+      "ticketUrl": "https://link.dice.fm/P2fa1c6ae75b",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-20-festival-of-the-sun-a-summer-kick-off-dance-party",
+      "title": "Festival of The Sun: a Summer kick off Dance Party",
+      "venueId": "mahalls",
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Festival of The Sun: a Summer kick off Dance Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/festival-of-the-sun-a-summer-kick-off-dance-party/",
+      "ticketUrl": "https://link.dice.fm/h5e4aae3e3df",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-20-r-bey-a-beyonc-dance-party",
+      "title": "R&Bey: a Beyoncé dance party",
+      "venueId": "mahalls",
+      "date": "2026-06-20",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "R&Bey: a Beyoncé dance party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/rbey-a-beyonce-dance-party/",
+      "ticketUrl": "https://link.dice.fm/h0443fb54291",
       "source": "scrape",
       "manual": false
     },
@@ -807,6 +1048,29 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-21-sace6",
+      "title": "Sace6",
+      "venueId": "mahalls",
+      "date": "2026-06-21",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "sace6",
+          "headliner": true
+        },
+        {
+          "name": "John Harvie",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/sace6/",
+      "ticketUrl": "https://link.dice.fm/N7dedd745c93",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -883,6 +1147,44 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun",
       "ticketUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-22-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-06-22",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-june-22-2026-691575",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-june-22-2026-691575",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-22-daisy-the-great",
+      "title": "Daisy the Great",
+      "venueId": "mahalls",
+      "date": "2026-06-22",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Daisy the Great",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/daisy-the-great/",
+      "ticketUrl": "https://link.dice.fm/H64e9b9a7c06",
       "source": "scrape",
       "manual": false
     },
@@ -975,6 +1277,44 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-23-archangel",
+      "title": "ArchAngel",
+      "venueId": "mahalls",
+      "date": "2026-06-23",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "ArchAngel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/archangel-3/",
+      "ticketUrl": "https://link.dice.fm/l1cf65f4790b",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-23-kurt-vile-and-the-violators",
+      "title": "Kurt Vile And The Violators",
+      "venueId": "mahalls",
+      "date": "2026-06-23",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$40.00",
+      "performers": [
+        {
+          "name": "Kurt Vile & The Violators",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/kurt-vile-and-the-violators/",
+      "ticketUrl": "https://link.dice.fm/r5795e284cf2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-06-24-sonido-gallo-negro",
       "title": "Sonido Gallo Negro w/ Hello!3D",
       "venueId": "grog-shop",
@@ -1055,6 +1395,52 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-24-dark-thoughts",
+      "title": "Dark Thoughts / The Carp / Xanny Stars",
+      "venueId": "happy-dog",
+      "date": "2026-06-24",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Dark Thoughts",
+          "headliner": true
+        },
+        {
+          "name": "The Carp",
+          "headliner": false
+        },
+        {
+          "name": "Xanny Stars",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/dark-thoughts-the-carp-xanny-stars-june-24-2026-699478",
+      "ticketUrl": "https://app.opendate.io/e/dark-thoughts-the-carp-xanny-stars-june-24-2026-699478",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-24-emo-bingo",
+      "title": "Emo Bingo",
+      "venueId": "mahalls",
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Emo Bingo",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/emo-bingo-8/",
+      "ticketUrl": "https://link.dice.fm/gc61dfdf57b0",
       "source": "scrape",
       "manual": false
     },
@@ -1208,6 +1594,56 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-06-25-meg-and-the-wheelers",
+      "title": "Meg and the Wheelers / Lea Marra and the River Boys",
+      "venueId": "happy-dog",
+      "date": "2026-06-25",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Meg and the Wheelers",
+          "headliner": true
+        },
+        {
+          "name": "Lea Marra and the River Boys",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/meg-and-the-wheelers-lea-marra-and-the-river-boys-june-25-2026-712825",
+      "ticketUrl": "https://app.opendate.io/e/meg-and-the-wheelers-lea-marra-and-the-river-boys-june-25-2026-712825",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-25-the-wise-man-s-fear",
+      "title": "The Wise Man’s Fear",
+      "venueId": "mahalls",
+      "date": "2026-06-25",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "The Wise Man's Fear",
+          "headliner": true
+        },
+        {
+          "name": "Constellations",
+          "headliner": false
+        },
+        {
+          "name": "Dreamwalker",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/the-wise-mans-fear/",
+      "ticketUrl": "https://link.dice.fm/K7dfd46336cc",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "The Sky's the Limit",
       "performers": [
         {
@@ -1330,6 +1766,102 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-06-26-atticus-sorrell",
+      "title": "Atticus Sorrell / Colour Phase / Reed & Friends",
+      "venueId": "happy-dog",
+      "date": "2026-06-26",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Atticus Sorrell",
+          "headliner": true
+        },
+        {
+          "name": "Colour Phase",
+          "headliner": false
+        },
+        {
+          "name": "Reed & Friends",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/atticus-sorrell-colour-phase-reed-friends-june-26-2026-687380",
+      "ticketUrl": "https://app.opendate.io/e/atticus-sorrell-colour-phase-reed-friends-june-26-2026-687380",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-26-playboy-manbaby",
+      "title": "Playboy Manbaby",
+      "venueId": "mahalls",
+      "date": "2026-06-26",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$16.00",
+      "performers": [
+        {
+          "name": "Playboy Manbaby",
+          "headliner": true
+        },
+        {
+          "name": "HummusVacuum",
+          "headliner": false
+        },
+        {
+          "name": "Sabon",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/playboy-manbaby/",
+      "ticketUrl": "https://link.dice.fm/ed7b7d5881f8",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-26-black-country-new-road",
+      "title": "Black Country, New Road",
+      "venueId": "mahalls",
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$35.00",
+      "performers": [
+        {
+          "name": "Black Country, New Road",
+          "headliner": true
+        },
+        {
+          "name": "Horsegirl",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/black-country-new-road/",
+      "ticketUrl": "https://link.dice.fm/P4de1adfab9a",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-26-jukebox-breakdown-aka-emo-night-cle",
+      "title": "Jukebox Breakdown aka Emo Night CLE",
+      "venueId": "mahalls",
+      "date": "2026-06-26",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Jukebox Breakdown aka Emo Night CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/jukebox-breakdown-aka-emo-night-cle-13/",
+      "ticketUrl": "https://link.dice.fm/Bbbb73a0e2c5",
       "source": "scrape",
       "manual": false
     },
@@ -1518,6 +2050,98 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-06-27-handsome-jack",
+      "title": "Handsome Jack / Canyon Lights / Goodmorning Valentine / Istvan Medgyesi",
+      "venueId": "happy-dog",
+      "date": "2026-06-27",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Handsome Jack",
+          "headliner": true
+        },
+        {
+          "name": "Canyon Lights",
+          "headliner": false
+        },
+        {
+          "name": "Goodmorning Valentine",
+          "headliner": false
+        },
+        {
+          "name": "Istvan Medgyesi",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/handsome-jack-canyon-lights-goodmorning-valentine-istvan-medgyesi-june-27-2026-712477",
+      "ticketUrl": "https://app.opendate.io/e/handsome-jack-canyon-lights-goodmorning-valentine-istvan-medgyesi-june-27-2026-712477",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-27-club2gay-a-community-pride-party",
+      "title": "Club2Gay: A Community Pride Party",
+      "venueId": "mahalls",
+      "date": "2026-06-27",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Club2Gay: A Community Pride Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/club2gay-a-community-pride-party/",
+      "ticketUrl": "https://link.dice.fm/Y9711c102029",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-27-makeout-reef",
+      "title": "Makeout Reef",
+      "venueId": "mahalls",
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$17.00",
+      "performers": [
+        {
+          "name": "Makeout Reef",
+          "headliner": true
+        },
+        {
+          "name": "Starcharm",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/makeout-reef/",
+      "ticketUrl": "https://link.dice.fm/Zfdebd22f538",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-06-27-gimme-gimme-disco",
+      "title": "Gimme Gimme Disco",
+      "venueId": "mahalls",
+      "date": "2026-06-27",
+      "time": "22:30",
+      "doors": "22:30",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Gimme Gimme Disco",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/gimme-gimme-disco-5/",
+      "ticketUrl": "https://link.dice.fm/T768c1d4bd42",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Collective Cle",
       "performers": [
         {
@@ -1678,6 +2302,29 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-28-caroline-romano-and-lake-drive",
+      "title": "Caroline Romano and Lake Drive",
+      "venueId": "mahalls",
+      "date": "2026-06-28",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Caroline Romano",
+          "headliner": true
+        },
+        {
+          "name": "Lake Drive",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/caroline-romano-and-lake-drive/",
+      "ticketUrl": "https://link.dice.fm/Bbf14fdbe8e9",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -1714,6 +2361,25 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-06-28-alt-95"
+    },
+    {
+      "id": "happy-dog-2026-06-29-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-06-29",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-june-29-2026-713128",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-june-29-2026-713128",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "the-agora-2026-06-30-gigi-perez-live",
@@ -1781,6 +2447,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-30-samsara",
+      "title": "Samsara",
+      "venueId": "mahalls",
+      "date": "2026-06-30",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Samsara",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/samsara/",
+      "ticketUrl": "https://link.dice.fm/l0bd2a98bf48",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cain-park-2026-07-01-the-cleveland-orchestra-free-community-concert",
       "title": "The Cleveland Orchestra Free Community Concert",
       "venueId": "cain-park",
@@ -1838,6 +2523,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/audible-jones-faces-of-belmez/",
       "ticketUrl": "https://www.ticketweb.com/event/audible-jones-joe-abraham-grog-shop-tickets/14192184?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-02-neon-moon-a-90-s-and-2000-s-country-dance-party",
+      "title": "Neon Moon: a 90’s and 2000’s country dance party",
+      "venueId": "mahalls",
+      "date": "2026-07-02",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Neon Moon: a 90’s and 2000’s country dance party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/neon-moon-a-90s-and-2000s-country-dance-party/",
+      "ticketUrl": "https://link.dice.fm/Xb41e42e4082",
       "source": "scrape",
       "manual": false
     },
@@ -1958,6 +2662,52 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-03-kid-tigrrr-record-release",
+      "title": "Kid Tigrrr Record Release w/ R U Three / Benjamin Liar",
+      "venueId": "happy-dog",
+      "date": "2026-07-03",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Kid Tigrrr Record Release",
+          "headliner": true
+        },
+        {
+          "name": "R U Three",
+          "headliner": false
+        },
+        {
+          "name": "Benjamin Liar",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/kid-tigrrr-record-release-w-r-u-three-benjamin-liar-july-03-2026-713741",
+      "ticketUrl": "https://app.opendate.io/e/kid-tigrrr-record-release-w-r-u-three-benjamin-liar-july-03-2026-713741",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-03-bender",
+      "title": "Bender",
+      "venueId": "mahalls",
+      "date": "2026-07-03",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Bender",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/bender/",
+      "ticketUrl": "https://link.dice.fm/sc22d925385e",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -2050,6 +2800,29 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/7-summers-morgan-wallen-tribute-with-country-honk",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/7-summers-morgan-wallen-tribute-with-country-honk",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-04-karaoke-fundraiser-for-cleveland-dsa",
+      "title": "Karaoke Fundraiser for Cleveland DSA w/ KJ Stunningham!",
+      "venueId": "happy-dog",
+      "date": "2026-07-04",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Karaoke Fundraiser for Cleveland DSA",
+          "headliner": true
+        },
+        {
+          "name": "KJ Stunningham!",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/karaoke-fundraiser-for-cleveland-dsa-w-kj-stunningham-july-04-2026-713944",
+      "ticketUrl": "https://app.opendate.io/e/karaoke-fundraiser-for-cleveland-dsa-w-kj-stunningham-july-04-2026-713944",
       "source": "scrape",
       "manual": false
     },
@@ -2168,6 +2941,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-6/",
       "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-grog-shop-tickets/14202144?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-06-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-07-06",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-july-06-2026-713945",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-july-06-2026-713945",
       "source": "scrape",
       "manual": false
     },
@@ -2359,6 +3151,56 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-09-o-r-p-h-a-n-s",
+      "title": "O.R.P.H.A.N.S. / PBJ / Ahn",
+      "venueId": "happy-dog",
+      "date": "2026-07-09",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "O.R.P.H.A.N.S.",
+          "headliner": true
+        },
+        {
+          "name": "PBJ",
+          "headliner": false
+        },
+        {
+          "name": "Ahn",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/o-r-p-h-a-n-s-pbj-ahn-july-09-2026-716002",
+      "ticketUrl": "https://app.opendate.io/e/o-r-p-h-a-n-s-pbj-ahn-july-09-2026-716002",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-09-brotality",
+      "title": "Brotality",
+      "venueId": "mahalls",
+      "date": "2026-07-09",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Brotality",
+          "headliner": true
+        },
+        {
+          "name": "Quantifier",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/brotality/",
+      "ticketUrl": "https://link.dice.fm/Ye74490a1c46",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -2512,6 +3354,71 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-10-the-harder-they-come-featuring-jah-messengers-reggae-band",
+      "title": "The Harder They Come - featuring Jah Messengers Reggae Band / Es Ska Go + XCSB DJs!",
+      "venueId": "happy-dog",
+      "date": "2026-07-10",
+      "time": "18:00",
+      "doors": "17:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Harder They Come - featuring Jah Messengers Reggae Band",
+          "headliner": true
+        },
+        {
+          "name": "Es Ska Go + XCSB DJs!",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/the-harder-they-come-featuring-jah-messengers-reggae-band-es-ska-go-xcsb-djs-july-10-2026-691981",
+      "ticketUrl": "https://app.opendate.io/e/the-harder-they-come-featuring-jah-messengers-reggae-band-es-ska-go-xcsb-djs-july-10-2026-691981",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-10-cole-chaney",
+      "title": "Cole Chaney",
+      "venueId": "mahalls",
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Cole Chaney",
+          "headliner": true
+        },
+        {
+          "name": "Kyova",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/cole-chaney-2/",
+      "ticketUrl": "https://link.dice.fm/bff12b5cb8a5",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-10-club-2k-an-all-out-2010-s-dance-party",
+      "title": "Club 2K: an all out 2010’s dance party",
+      "venueId": "mahalls",
+      "date": "2026-07-10",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Club 2K: an all out 2010’s dance party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/club-2k-an-all-out-2010s-dance-party-2/",
+      "ticketUrl": "https://link.dice.fm/Td04f7c86497",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -2615,6 +3522,79 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-11-lunch-club",
+      "title": "Lunch Club / Jumpy / Fuss / Dr. Fang and the Bats",
+      "venueId": "happy-dog",
+      "date": "2026-07-11",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch Club",
+          "headliner": true
+        },
+        {
+          "name": "Jumpy",
+          "headliner": false
+        },
+        {
+          "name": "Fuss",
+          "headliner": false
+        },
+        {
+          "name": "Dr. Fang and the Bats",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/lunch-club-jumpy-fuss-dr-fang-and-the-bats-july-11-2026-691582",
+      "ticketUrl": "https://app.opendate.io/e/lunch-club-jumpy-fuss-dr-fang-and-the-bats-july-11-2026-691582",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-11-elway-tired-radio",
+      "title": "Elway & Tired Radio",
+      "venueId": "mahalls",
+      "date": "2026-07-11",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Elway",
+          "headliner": true
+        },
+        {
+          "name": "Tired Radio",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/elway-tired-radio/",
+      "ticketUrl": "https://link.dice.fm/ac3d0f8c1795",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-11-pop-rock-princess-dance-party",
+      "title": "Pop Rock Princess dance party",
+      "venueId": "mahalls",
+      "date": "2026-07-11",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Pop Rock Princess dance party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/pop-rock-princess-dance-party-2/",
+      "ticketUrl": "https://link.dice.fm/f94eec3a2c0b",
       "source": "scrape",
       "manual": false
     },
@@ -2745,6 +3725,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-07-12-being-as-an-ocean",
+      "title": "Being As An Ocean",
+      "venueId": "mahalls",
+      "date": "2026-07-12",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Being As An Ocean",
+          "headliner": true
+        },
+        {
+          "name": "Vanna ",
+          "headliner": false
+        },
+        {
+          "name": "lowheaven",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/being-as-an-ocean/",
+      "ticketUrl": "https://link.dice.fm/td1d88352aea",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -2810,6 +3817,52 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-13-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-07-13",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-july-13-2026-713948",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-july-13-2026-713948",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-13-stabbing-westward",
+      "title": "Stabbing Westward",
+      "venueId": "mahalls",
+      "date": "2026-07-13",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Stabbing Westward",
+          "headliner": true
+        },
+        {
+          "name": "PRIEST",
+          "headliner": false
+        },
+        {
+          "name": "Acumen Nation",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/stabbing-westward/",
+      "ticketUrl": "https://link.dice.fm/Xa4fcadf4ad9",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-07-14-mc-chris",
       "title": "mc chris w/ Mega Ran, Crazy8thegreat",
       "venueId": "grog-shop",
@@ -2856,6 +3909,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/johnny-dynamite-the-bloodsuckers-14-jul",
       "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-dynamite-the-bloodsuckers-14-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-14-l-eclair",
+      "title": "L’Eclair",
+      "venueId": "mahalls",
+      "date": "2026-07-14",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$17.00",
+      "performers": [
+        {
+          "name": "L'Eclair",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/leclair/",
+      "ticketUrl": "https://link.dice.fm/lf4eafabb7b1",
       "source": "scrape",
       "manual": false
     },
@@ -2940,6 +4012,56 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-15-signal-cle-presents-classical-revolution",
+      "title": "Signal Cle presents: Classical Revolution!",
+      "venueId": "happy-dog",
+      "date": "2026-07-15",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Signal Cle presents: Classical Revolution!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-july-15-2026-713653",
+      "ticketUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-july-15-2026-713653",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-15-no-cure",
+      "title": "No Cure",
+      "venueId": "mahalls",
+      "date": "2026-07-15",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "No Cure",
+          "headliner": true
+        },
+        {
+          "name": "Big Ass Truck",
+          "headliner": false
+        },
+        {
+          "name": "Bayway",
+          "headliner": false
+        },
+        {
+          "name": "BOLTCUTTER",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/no-cure/",
+      "ticketUrl": "https://link.dice.fm/kefd3d1065f9",
       "source": "scrape",
       "manual": false
     },
@@ -3039,6 +4161,44 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-16-roast-battle-cleveland-thursday-night-showdown",
+      "title": "Roast Battle Cleveland - Thursday Night Showdown!",
+      "venueId": "happy-dog",
+      "date": "2026-07-16",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Roast Battle Cleveland - Thursday Night Showdown!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/roast-battle-cleveland-thursday-night-showdown-july-16-2026-713654",
+      "ticketUrl": "https://app.opendate.io/e/roast-battle-cleveland-thursday-night-showdown-july-16-2026-713654",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-16-miss-ohio-a-night-of-music-from-some-local-ladies-feat-ella-choi",
+      "title": "Miss Ohio: a night of music from some local ladies feat – Ella Choi",
+      "venueId": "mahalls",
+      "date": "2026-07-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Miss Ohio: a night of music from some local ladies feat – Ella Choi",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ella-choi/",
+      "ticketUrl": "https://link.dice.fm/S08daeff138b",
       "source": "scrape",
       "manual": false
     },
@@ -3179,7 +4339,7 @@
       "date": "2026-07-17",
       "time": "19:00",
       "doors": "18:30",
-      "price": "$10 - $21",
+      "price": "$10.25 - $21.25",
       "performers": [
         {
           "name": "Peter Pan Jr.",
@@ -3188,6 +4348,60 @@
       ],
       "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/95682426/peter-pan-jr-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-17-rosana-record-release",
+      "title": "Rosana Record Release w/ Placid State / Grace Favarro",
+      "venueId": "happy-dog",
+      "date": "2026-07-17",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Rosana Record Release",
+          "headliner": true
+        },
+        {
+          "name": "Placid State",
+          "headliner": false
+        },
+        {
+          "name": "Grace Favarro",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/rosana-record-release-w-placid-state-grace-favarro-july-17-2026-691983",
+      "ticketUrl": "https://app.opendate.io/e/rosana-record-release-w-placid-state-grace-favarro-july-17-2026-691983",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-17-felicity",
+      "title": "Felicity",
+      "venueId": "mahalls",
+      "date": "2026-07-17",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Felicity",
+          "headliner": true
+        },
+        {
+          "name": "When The Sun Sets",
+          "headliner": false
+        },
+        {
+          "name": "Wolf Rd",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/felicity-2/",
+      "ticketUrl": "https://link.dice.fm/k8ba3418c3a5",
       "source": "scrape",
       "manual": false
     },
@@ -3397,7 +4611,7 @@
       "date": "2026-07-18",
       "time": "14:00",
       "doors": "13:30",
-      "price": "$10 - $21",
+      "price": "$10.25 - $21.25",
       "performers": [
         {
           "name": "Peter Pan Jr.",
@@ -3406,6 +4620,48 @@
       ],
       "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/75747583/peter-pan-jr-saturday-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-18-downtown-boys",
+      "title": "Downtown Boys / Pop Music Fever Dream",
+      "venueId": "happy-dog",
+      "date": "2026-07-18",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Downtown Boys",
+          "headliner": true
+        },
+        {
+          "name": "Pop Music Fever Dream",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/downtown-boys-pop-music-fever-dream-july-18-2026-695634",
+      "ticketUrl": "https://app.opendate.io/e/downtown-boys-pop-music-fever-dream-july-18-2026-695634",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-18-femi-and-the-foundation-and-70-lewis",
+      "title": "Femi and the Foundation and 70 Lewis",
+      "venueId": "mahalls",
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Femi and the Foundation and 70 Lewis",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/femi-and-the-foundation-and-70-lewis/",
+      "ticketUrl": "https://link.dice.fm/Sa69f7a6e9d4",
       "source": "scrape",
       "manual": false
     },
@@ -3561,7 +4817,7 @@
       "date": "2026-07-19",
       "time": "14:00",
       "doors": "13:30",
-      "price": "$10 - $21",
+      "price": "$10.25 - $21.25",
       "performers": [
         {
           "name": "Peter Pan Jr.",
@@ -3570,6 +4826,29 @@
       ],
       "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/55451476/peter-pan-jr-sunday-matinee-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-19-riley",
+      "title": "Riley!",
+      "venueId": "mahalls",
+      "date": "2026-07-19",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Riley!",
+          "headliner": true
+        },
+        {
+          "name": "Kerosene Heights",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/riley/",
+      "ticketUrl": "https://link.dice.fm/q672ba55725a",
       "source": "scrape",
       "manual": false
     },
@@ -3669,6 +4948,44 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/the-sloppy-boys-20-jul",
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-sloppy-boys-20-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-20-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-07-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-july-20-2026-713950",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-july-20-2026-713950",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-21-blu-exile",
+      "title": "Blu & Exile",
+      "venueId": "mahalls",
+      "date": "2026-07-21",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Blu & Exile",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/blu-exile/",
+      "ticketUrl": "https://link.dice.fm/k95cf447e77d",
       "source": "scrape",
       "manual": false
     },
@@ -3837,6 +5154,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-07-23-stupid-adventure-trivia-presents-captain-randy-s-smooth-jazz-cruise-a-benefit-for-the-john-ritter-foundation",
+      "title": "Stupid Adventure Trivia presents: Captain Randy's Smooth Jazz Cruise - A Benefit for the John Ritter Foundation",
+      "venueId": "happy-dog",
+      "date": "2026-07-23",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Stupid Adventure Trivia presents: Captain Randy's Smooth Jazz Cruise - A Benefit for the John Ritter Foundation",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/stupid-adventure-trivia-presents-captain-randy-s-smooth-jazz-cruise-a-benefit-for-the-john-ritter-foundation-july-23-2026-716009",
+      "ticketUrl": "https://app.opendate.io/e/stupid-adventure-trivia-presents-captain-randy-s-smooth-jazz-cruise-a-benefit-for-the-john-ritter-foundation-july-23-2026-716009",
       "source": "scrape",
       "manual": false
     },
@@ -4131,6 +5467,56 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-25-frank-hurricane",
+      "title": "Frank Hurricane / Thoosie Mob / Tee Shot / The Pop Cult",
+      "venueId": "happy-dog",
+      "date": "2026-07-25",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Frank Hurricane",
+          "headliner": true
+        },
+        {
+          "name": "Thoosie Mob",
+          "headliner": false
+        },
+        {
+          "name": "Tee Shot",
+          "headliner": false
+        },
+        {
+          "name": "The Pop Cult",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/frank-hurricane-thoosie-mob-tee-shot-the-pop-cult-july-25-2026-716941",
+      "ticketUrl": "https://app.opendate.io/e/frank-hurricane-thoosie-mob-tee-shot-the-pop-cult-july-25-2026-716941",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-25-dead-bundy",
+      "title": "Dead Bundy",
+      "venueId": "mahalls",
+      "date": "2026-07-25",
+      "time": "17:30",
+      "doors": "17:30",
+      "price": "$12.00",
+      "performers": [
+        {
+          "name": "Dead Bundy",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/dead-bundy-2/",
+      "ticketUrl": "https://link.dice.fm/q82fced26a0e",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Liverpool Lads",
       "performers": [
         {
@@ -4281,6 +5667,25 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-07-26-trailer-park-ninjas"
+    },
+    {
+      "id": "happy-dog-2026-07-27-monday-night-trivia",
+      "title": "Monday Night Trivia!",
+      "venueId": "happy-dog",
+      "date": "2026-07-27",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Monday Night Trivia!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-july-27-2026-716949",
+      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-july-27-2026-716949",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "beachland-ballroom-2026-07-28-amble",
@@ -4470,6 +5875,33 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-07-30-silvis",
+      "title": "Silvis / Lake Philly / Kid Primitive",
+      "venueId": "happy-dog",
+      "date": "2026-07-30",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Silvis",
+          "headliner": true
+        },
+        {
+          "name": "Lake Philly",
+          "headliner": false
+        },
+        {
+          "name": "Kid Primitive",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/silvis-lake-philly-kid-primitive-july-30-2026-691984",
+      "ticketUrl": "https://app.opendate.io/e/silvis-lake-philly-kid-primitive-july-30-2026-691984",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Alt 95",
       "performers": [
         {
@@ -4550,6 +5982,33 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/whos-bad-michael-jackson-tribute-with-the-sunrise-jones-jukebox",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/whos-bad-michael-jackson-tribute-with-the-sunrise-jones-jukebox",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-07-31-dropout-kings",
+      "title": "Dropout Kings",
+      "venueId": "mahalls",
+      "date": "2026-07-31",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Dropout Kings",
+          "headliner": true
+        },
+        {
+          "name": "VRSTY",
+          "headliner": false
+        },
+        {
+          "name": "Dead Cassette",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/dropout-kings/",
+      "ticketUrl": "https://link.dice.fm/Zbc505a8eca3",
       "source": "scrape",
       "manual": false
     },
@@ -4672,6 +6131,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-01-slow-joy-i-love-you-so-much-i-could-die-tour",
+      "title": "Slow Joy – I Love You So Much I Could Die Tour",
+      "venueId": "mahalls",
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Slow Joy",
+          "headliner": true
+        },
+        {
+          "name": "Bike Routes",
+          "headliner": false
+        },
+        {
+          "name": "Glom",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/slow-joy/",
+      "ticketUrl": "https://link.dice.fm/Scfb265ded45",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Rumors",
       "performers": [
         {
@@ -4786,6 +6272,37 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-02-royal-coda",
+      "title": "Royal Coda",
+      "venueId": "mahalls",
+      "date": "2026-08-02",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Royal Coda",
+          "headliner": true
+        },
+        {
+          "name": "Dwellings",
+          "headliner": false
+        },
+        {
+          "name": "Strawberry Milk Cult",
+          "headliner": false
+        },
+        {
+          "name": "Amarionette",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/royal-coda/",
+      "ticketUrl": "https://link.dice.fm/fe393d9ac988",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -4889,6 +6406,29 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-04-bay-faction",
+      "title": "Bay Faction",
+      "venueId": "mahalls",
+      "date": "2026-08-04",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$18.00",
+      "performers": [
+        {
+          "name": "Bay Faction",
+          "headliner": true
+        },
+        {
+          "name": "NUFFER",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/bay-faction/",
+      "ticketUrl": "https://link.dice.fm/radb7c845dfa",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "metroparks-huntington-2026-08-05-corissa-bragg",
       "title": "Corissa Bragg",
       "venueId": "metroparks-huntington",
@@ -4904,6 +6444,33 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-08-05-tiffy",
+      "title": "TIFFY / Molly O'Malley / Empty Kodiak",
+      "venueId": "happy-dog",
+      "date": "2026-08-05",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "TIFFY",
+          "headliner": true
+        },
+        {
+          "name": "Molly O'Malley",
+          "headliner": false
+        },
+        {
+          "name": "Empty Kodiak",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
+      "ticketUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
       "source": "scrape",
       "manual": false
     },
@@ -4992,6 +6559,68 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-08-06-public-acid",
+      "title": "Public Acid / Invertebrates / Yambag / Rawheads",
+      "venueId": "happy-dog",
+      "date": "2026-08-06",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Public Acid",
+          "headliner": true
+        },
+        {
+          "name": "Invertebrates",
+          "headliner": false
+        },
+        {
+          "name": "Yambag",
+          "headliner": false
+        },
+        {
+          "name": "Rawheads",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/public-acid-invertebrates-yambag-rawheads-august-06-2026-716014",
+      "ticketUrl": "https://app.opendate.io/e/public-acid-invertebrates-yambag-rawheads-august-06-2026-716014",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-06-belmont",
+      "title": "Belmont",
+      "venueId": "mahalls",
+      "date": "2026-08-06",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Belmont",
+          "headliner": true
+        },
+        {
+          "name": "Major League",
+          "headliner": false
+        },
+        {
+          "name": "Spite House",
+          "headliner": false
+        },
+        {
+          "name": "all in ur head",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/belmont-2/",
+      "ticketUrl": "https://link.dice.fm/U7f38b08eb9b",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -5072,6 +6701,29 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/in-the-end-linkin-park-tribute-with-truss",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/in-the-end-linkin-park-tribute-with-truss",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-08-07-karaoke-night",
+      "title": "Karaoke Night w/ Terkalerk!",
+      "venueId": "happy-dog",
+      "date": "2026-08-07",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Karaoke Night",
+          "headliner": true
+        },
+        {
+          "name": "Terkalerk!",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/karaoke-night-w-terkalerk-august-07-2026-716018",
+      "ticketUrl": "https://app.opendate.io/e/karaoke-night-w-terkalerk-august-07-2026-716018",
       "source": "scrape",
       "manual": false
     },
@@ -5255,6 +6907,25 @@
       ],
       "eventUrl": "https://cainpark.com/event/steel-pulse-with-special-guests-carlos-jones-the-plus-band/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/56070488/steel-pulse-with-special-guests-carlos-jones-the-plus-band-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-08-american-vanity",
+      "title": "American Vanity",
+      "venueId": "mahalls",
+      "date": "2026-08-08",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$17.00",
+      "performers": [
+        {
+          "name": "American Vanity",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/american-vanity/",
+      "ticketUrl": "https://link.dice.fm/t46e04d0802e",
       "source": "scrape",
       "manual": false
     },
@@ -5530,6 +7201,52 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-11-the-dear-hunter-the-road-to-sunya-tour-2026",
+      "title": "The Dear Hunter: The Road To Sunya Tour 2026",
+      "venueId": "mahalls",
+      "date": "2026-08-11",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$32.00",
+      "performers": [
+        {
+          "name": "The Dear Hunter",
+          "headliner": true
+        },
+        {
+          "name": "Closure in Moscow",
+          "headliner": false
+        },
+        {
+          "name": "K Será",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/the-dear-hunter-the-road-to-sunya-tour-2026-2/",
+      "ticketUrl": "https://link.dice.fm/of8353348f58",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-12-kill-bill-the-rapper",
+      "title": "Kill Bill: The Rapper",
+      "venueId": "mahalls",
+      "date": "2026-08-12",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$23.00",
+      "performers": [
+        {
+          "name": "Kill Bill: The Rapper",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/kill-bill-the-rapper/",
+      "ticketUrl": "https://link.dice.fm/Oa9ab61fb988",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Back Street Blues",
       "performers": [
         {
@@ -5755,6 +7472,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-14-weekend-nachos",
+      "title": "Weekend Nachos",
+      "venueId": "mahalls",
+      "date": "2026-08-14",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Weekend Nachos",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/weekend-nachos/",
+      "ticketUrl": "https://link.dice.fm/K0cfcef9e9b0",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "FM77",
       "performers": [
         {
@@ -5865,6 +7601,41 @@
       ],
       "eventUrl": "https://cainpark.com/event/violent-femmes/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/98738845/violent-femmes-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-08-15-speak-in-tongues-book-release-show",
+      "title": "Speak in Tongues Book Release show w/ Harriet the Spy / Brian Straw / Beckett and Friends / Applejuice",
+      "venueId": "happy-dog",
+      "date": "2026-08-15",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Speak in Tongues Book Release show",
+          "headliner": true
+        },
+        {
+          "name": "Harriet the Spy",
+          "headliner": false
+        },
+        {
+          "name": "Brian Straw",
+          "headliner": false
+        },
+        {
+          "name": "Beckett and Friends",
+          "headliner": false
+        },
+        {
+          "name": "Applejuice",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/speak-in-tongues-book-release-show-w-harriet-the-spy-brian-straw-beckett-and-friends-applejuice-august-15-2026-712434",
+      "ticketUrl": "https://app.opendate.io/e/speak-in-tongues-book-release-show-w-harriet-the-spy-brian-straw-beckett-and-friends-applejuice-august-15-2026-712434",
       "source": "scrape",
       "manual": false
     },
@@ -6128,6 +7899,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-18-greyhaven",
+      "title": "Greyhaven",
+      "venueId": "mahalls",
+      "date": "2026-08-18",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Greyhaven",
+          "headliner": true
+        },
+        {
+          "name": "FOOTBALLHEAD",
+          "headliner": false
+        },
+        {
+          "name": "Cheem",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/greyhaven/",
+      "ticketUrl": "https://link.dice.fm/Jf3408987a61",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-08-19-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
@@ -6162,6 +7960,56 @@
       ],
       "eventUrl": "https://cainpark.com/event/django-festival-allstars/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/91488815/django-festival-allstars-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-19-driveways",
+      "title": "Driveways",
+      "venueId": "mahalls",
+      "date": "2026-08-19",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Driveways",
+          "headliner": true
+        },
+        {
+          "name": "Like Roses",
+          "headliner": false
+        },
+        {
+          "name": "Action/Adventure",
+          "headliner": false
+        },
+        {
+          "name": "Don't Panic",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/driveways-2/",
+      "ticketUrl": "https://link.dice.fm/nb8b07d4f96a",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-19-dawn-of-ouroboros",
+      "title": "Dawn of Ouroboros",
+      "venueId": "mahalls",
+      "date": "2026-08-19",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "Dawn of Ouroboros",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/dawn-of-ouroboros-exist-greylotus/",
+      "ticketUrl": "https://link.dice.fm/h646e11e562b",
       "source": "scrape",
       "manual": false
     },
@@ -6223,6 +8071,25 @@
       ],
       "eventUrl": "https://cainpark.com/event/california-dreamin-a-1966-folk-rock-concert-by-new-long-road/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/96563300/california-dreamina-1966-folkrock-concert-by-new-long-road-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-20-calva-louise",
+      "title": "Calva Louise",
+      "venueId": "mahalls",
+      "date": "2026-08-20",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Calva Louise",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/calva-louise/",
+      "ticketUrl": "https://link.dice.fm/Hec62322aa9c",
       "source": "scrape",
       "manual": false
     },
@@ -6326,6 +8193,25 @@
       ],
       "eventUrl": "https://cainpark.com/event/joshua-redman/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/83069236/joshua-redman-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-21-wilt",
+      "title": "Wilt",
+      "venueId": "mahalls",
+      "date": "2026-08-21",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "wilt",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/wilt/",
+      "ticketUrl": "https://link.dice.fm/V8ea447bfad4",
       "source": "scrape",
       "manual": false
     },
@@ -6456,6 +8342,60 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/wish-you-were-here-pink-flyod-tribute-with-colin-dussaults-blues-project",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/wish-you-were-here-pink-flyod-tribute-with-colin-dussaults-blues-project",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-08-22-hed-cheez",
+      "title": "Hed Cheez / Matt the Thief / Caty Petersilge / Chris Anderson - In the Underdog!",
+      "venueId": "happy-dog",
+      "date": "2026-08-22",
+      "time": "18:00",
+      "doors": "17:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Hed Cheez",
+          "headliner": true
+        },
+        {
+          "name": "Matt the Thief",
+          "headliner": false
+        },
+        {
+          "name": "Caty Petersilge",
+          "headliner": false
+        },
+        {
+          "name": "Chris Anderson - In the Underdog!",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/hed-cheez-matt-the-thief-caty-petersilge-chris-anderson-in-the-underdog-august-22-2026-717340",
+      "ticketUrl": "https://app.opendate.io/e/hed-cheez-matt-the-thief-caty-petersilge-chris-anderson-in-the-underdog-august-22-2026-717340",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-22-ollie-joseph-and-matt-corman",
+      "title": "Ollie Joseph and Matt Corman",
+      "venueId": "mahalls",
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$18.00",
+      "performers": [
+        {
+          "name": "Ollie Joseph",
+          "headliner": true
+        },
+        {
+          "name": "Matt Corman",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ollie-joseph-and-matt-corman/",
+      "ticketUrl": "https://link.dice.fm/Ef82ff102960",
       "source": "scrape",
       "manual": false
     },
@@ -6612,6 +8552,37 @@
       ],
       "eventUrl": "https://cainpark.com/event/workmens-circle-yiddish-concert-in-the-park/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-23-bad-time-records-tour-2026",
+      "title": "Bad Time Records Tour 2026",
+      "venueId": "mahalls",
+      "date": "2026-08-23",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Kill Lincoln",
+          "headliner": true
+        },
+        {
+          "name": "JER",
+          "headliner": false
+        },
+        {
+          "name": "BAD OPERATION ",
+          "headliner": false
+        },
+        {
+          "name": "The Best of the Worst",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/bad-time-records-tour-2026/",
+      "ticketUrl": "https://link.dice.fm/U32501d7673d",
       "source": "scrape",
       "manual": false
     },
@@ -6894,6 +8865,64 @@
       "manual": false
     },
     {
+      "id": "happy-dog-2026-08-28-two-mile-moon-anniversary-show",
+      "title": "Two Mile Moon Anniversary Show w/ False Teeth / Pro Skater / Cherry Yachtsman",
+      "venueId": "happy-dog",
+      "date": "2026-08-28",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Two Mile Moon Anniversary Show",
+          "headliner": true
+        },
+        {
+          "name": "False Teeth",
+          "headliner": false
+        },
+        {
+          "name": "Pro Skater",
+          "headliner": false
+        },
+        {
+          "name": "Cherry Yachtsman",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/two-mile-moon-anniversary-show-w-false-teeth-pro-skater-cherry-yachtsman-august-28-2026-717345",
+      "ticketUrl": "https://app.opendate.io/e/two-mile-moon-anniversary-show-w-false-teeth-pro-skater-cherry-yachtsman-august-28-2026-717345",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-28-faetooth",
+      "title": "Faetooth",
+      "venueId": "mahalls",
+      "date": "2026-08-28",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Faetooth",
+          "headliner": true
+        },
+        {
+          "name": "Latter",
+          "headliner": false
+        },
+        {
+          "name": "Bosses",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/faetooth/",
+      "ticketUrl": "https://link.dice.fm/Had69f84c29e",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -7170,6 +9199,37 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-02-matwhataguy"
+    },
+    {
+      "id": "mahalls-2026-09-03-mustard-service",
+      "title": "Mustard Service",
+      "venueId": "mahalls",
+      "date": "2026-09-03",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$24.00",
+      "performers": [
+        {
+          "name": "Mustard Service",
+          "headliner": true
+        },
+        {
+          "name": "Pity Party (Girls Club)",
+          "headliner": false
+        },
+        {
+          "name": "Manwolves",
+          "headliner": false
+        },
+        {
+          "name": "Chicano Mosh",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/mustard-service/",
+      "ticketUrl": "https://link.dice.fm/d6fe05ca5e96",
+      "source": "scrape",
+      "manual": false
     },
     {
       "title": "Pet The Cougar",
@@ -7476,6 +9536,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-10-punchline",
+      "title": "Punchline",
+      "venueId": "mahalls",
+      "date": "2026-09-10",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Punchline",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/punchline/",
+      "ticketUrl": "https://link.dice.fm/w464a29a6ed7",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Morning Glory",
       "performers": [
         {
@@ -7564,6 +9643,37 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/the-seven-wonders-fleetwood-mac-tribute-with-the-evil-ways-band-a-tribute-to-santana",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/the-seven-wonders-fleetwood-mac-tribute-with-the-evil-ways-band-a-tribute-to-santana",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-09-11-jim-e-brown",
+      "title": "Jim E. Brown / Andy Burns / Chemical Baths / DJs Nothing Phase and Spek",
+      "venueId": "happy-dog",
+      "date": "2026-09-11",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Jim E. Brown",
+          "headliner": true
+        },
+        {
+          "name": "Andy Burns",
+          "headliner": false
+        },
+        {
+          "name": "Chemical Baths",
+          "headliner": false
+        },
+        {
+          "name": "DJs Nothing Phase and Spek",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/jim-e-brown-andy-burns-chemical-baths-djs-nothing-phase-and-spek-september-11-2026-695946",
+      "ticketUrl": "https://app.opendate.io/e/jim-e-brown-andy-burns-chemical-baths-djs-nothing-phase-and-spek-september-11-2026-695946",
       "source": "scrape",
       "manual": false
     },
@@ -7758,6 +9868,48 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-16-ensiferum",
+      "title": "Ensiferum",
+      "venueId": "mahalls",
+      "date": "2026-09-16",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$30.00",
+      "performers": [
+        {
+          "name": "Ensiferum",
+          "headliner": true
+        },
+        {
+          "name": "Firewind",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ensiferum/",
+      "ticketUrl": "https://link.dice.fm/gd6890ba4b1a",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-16-the-4411",
+      "title": "The 4411",
+      "venueId": "mahalls",
+      "date": "2026-09-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$16.00",
+      "performers": [
+        {
+          "name": "The 4411",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/the-4411/",
+      "ticketUrl": "https://link.dice.fm/h6013cac9441",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-09-17-rush",
       "title": "RUSH: Fifty Something",
       "venueId": "rocket-arena",
@@ -7892,6 +10044,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-18-dean-johnson",
+      "title": "Dean Johnson",
+      "venueId": "mahalls",
+      "date": "2026-09-18",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Dean Johnson",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/dean-johnson/",
+      "ticketUrl": "https://link.dice.fm/y66fa7b19773",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Pet the Cougar",
       "performers": [
         {
@@ -7964,6 +10135,83 @@
       ],
       "eventUrl": "https://cainpark.com/event/punch-brothers-2/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/71600885/punch-brothers-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "happy-dog-2026-09-19-white-flag-over-providence",
+      "title": "White Flag Over Providence / False Teeth / Inpatient",
+      "venueId": "happy-dog",
+      "date": "2026-09-19",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "White Flag Over Providence",
+          "headliner": true
+        },
+        {
+          "name": "False Teeth",
+          "headliner": false
+        },
+        {
+          "name": "Inpatient",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/white-flag-over-providence-false-teeth-inpatient-september-19-2026-716950",
+      "ticketUrl": "https://app.opendate.io/e/white-flag-over-providence-false-teeth-inpatient-september-19-2026-716950",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-19-crown-magnetar-x-to-the-grave",
+      "title": "Crown Magnetar x To The Grave",
+      "venueId": "mahalls",
+      "date": "2026-09-19",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Crown Magnetar",
+          "headliner": true
+        },
+        {
+          "name": "To the Grave",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/crown-magnetar-x-to-the-grave/",
+      "ticketUrl": "https://link.dice.fm/n9bb95acf990",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-19-scene-queen-metalicious",
+      "title": "Scene Queen: METALICIOUS",
+      "venueId": "mahalls",
+      "date": "2026-09-19",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$27.50",
+      "performers": [
+        {
+          "name": "Scene Queen",
+          "headliner": true
+        },
+        {
+          "name": "WARGASM",
+          "headliner": false
+        },
+        {
+          "name": "Bailey Spinn",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/scene-queen-metalicious/",
+      "ticketUrl": "https://link.dice.fm/N91e236a0eb9",
       "source": "scrape",
       "manual": false
     },
@@ -8082,6 +10330,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-21-arrows-in-action",
+      "title": "Arrows In Action",
+      "venueId": "mahalls",
+      "date": "2026-09-21",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Arrows in Action",
+          "headliner": true
+        },
+        {
+          "name": "Good Boy Daisy",
+          "headliner": false
+        },
+        {
+          "name": "Instant Crush",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/arrows-in-action/",
+      "ticketUrl": "https://link.dice.fm/A7662052d30a",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-09-22-big-sandy-his-fly-rite-boys",
       "title": "Big Sandy & His Fly-Rite Boys",
       "venueId": "beachland-ballroom",
@@ -8097,6 +10372,29 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-22-ultra-sunn",
+      "title": "Ultra Sunn",
+      "venueId": "mahalls",
+      "date": "2026-09-22",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "ULTRA SUNN",
+          "headliner": true
+        },
+        {
+          "name": "Soft Vein",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ultra-sunn/",
+      "ticketUrl": "https://link.dice.fm/ddd2d56e8b0d",
       "source": "scrape",
       "manual": false
     },
@@ -8158,6 +10456,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/daley-24-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/daley-24-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-24-sparta",
+      "title": "Sparta",
+      "venueId": "mahalls",
+      "date": "2026-09-24",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Sparta",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/sparta/",
+      "ticketUrl": "https://link.dice.fm/i243ec8ca96d",
       "source": "scrape",
       "manual": false
     },
@@ -8524,6 +10841,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-29-the-holdup",
+      "title": "The Holdup",
+      "venueId": "mahalls",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "The Holdup",
+          "headliner": true
+        },
+        {
+          "name": "Cydeways",
+          "headliner": false
+        },
+        {
+          "name": "Dylan Reese",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/the-holdup/",
+      "ticketUrl": "https://link.dice.fm/v75b6b85d2b0",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-09-30-luna",
       "title": "Luna w/ Sister Ray Davies",
       "venueId": "grog-shop",
@@ -8608,6 +10952,37 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-02-thousand-below",
+      "title": "Thousand Below",
+      "venueId": "mahalls",
+      "date": "2026-10-02",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Thousand Below",
+          "headliner": true
+        },
+        {
+          "name": "Acres",
+          "headliner": false
+        },
+        {
+          "name": "VCTMS",
+          "headliner": false
+        },
+        {
+          "name": "Lost in Separation",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/thousand-below/",
+      "ticketUrl": "https://link.dice.fm/ab2c7ea9c2b6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-10-03-bert-kreischer",
       "title": "Bert Kreischer: Permission to Party",
       "venueId": "rocket-arena",
@@ -8673,6 +11048,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/upon-your-dead-body-04-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/upon-your-dead-body-04-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-10-04-bayonne",
+      "title": "Bayonne",
+      "venueId": "mahalls",
+      "date": "2026-10-04",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Bayonne",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/bayonne/",
+      "ticketUrl": "https://link.dice.fm/Ea579f8edc9c",
       "source": "scrape",
       "manual": false
     },
@@ -8864,6 +11258,29 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-10-julia-wolf",
+      "title": "Julia Wolf",
+      "venueId": "mahalls",
+      "date": "2026-10-10",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$29.00",
+      "performers": [
+        {
+          "name": "Julia Wolf",
+          "headliner": true
+        },
+        {
+          "name": "Bee Blackwell",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/julia-wolf/",
+      "ticketUrl": "https://link.dice.fm/O015d1938025",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-10-11-chasing-abbey",
       "title": "Chasing Abbey",
       "venueId": "grog-shop",
@@ -8898,6 +11315,33 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1480944",
       "ticketUrl": "https://www.axs.com/events/1480944/pat-metheny-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-10-13-wind-walkers-the-i-don-t-belong-here-tour",
+      "title": "Wind Walkers:  The “I Don’t Belong Here” Tour",
+      "venueId": "mahalls",
+      "date": "2026-10-13",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Wind Walkers",
+          "headliner": true
+        },
+        {
+          "name": "If Not For Me",
+          "headliner": false
+        },
+        {
+          "name": "True North",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/wind-walkers-the-i-dont-belong-here-tour/",
+      "ticketUrl": "https://link.dice.fm/x554c6612f08",
       "source": "scrape",
       "manual": false
     },
@@ -8967,6 +11411,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-17-willow-avalon-pink-pocket-pistol-tour",
+      "title": "Willow Avalon: Pink Pocket Pistol Tour",
+      "venueId": "mahalls",
+      "date": "2026-10-17",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Willow Avalon",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/willow-avalon-pink-pocket-pistol-tour/",
+      "ticketUrl": "https://link.dice.fm/c4d2de035bd4",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-18-jesse-welles",
       "title": "Jesse Welles w/ Hudson Freeman",
       "venueId": "the-agora",
@@ -9017,6 +11480,29 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-20-silly-goose",
+      "title": "Silly Goose",
+      "venueId": "mahalls",
+      "date": "2026-10-20",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$18.00",
+      "performers": [
+        {
+          "name": "Silly Goose",
+          "headliner": true
+        },
+        {
+          "name": "MUTTLEE",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/silly-goose/",
+      "ticketUrl": "https://link.dice.fm/x73b96edb285",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-24-streetlight-manifesto",
       "title": "Streetlight Manifesto w/ Dave Hause",
       "venueId": "the-agora",
@@ -9040,6 +11526,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-24-baby-bugs-with-special-guest-elliot-lee",
+      "title": "Baby Bugs with Special Guest Elliot Lee",
+      "venueId": "mahalls",
+      "date": "2026-10-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Baby Bugs",
+          "headliner": true
+        },
+        {
+          "name": "Elliot Lee",
+          "headliner": false
+        },
+        {
+          "name": "earth 2 tiffany",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/baby-bugs/",
+      "ticketUrl": "https://link.dice.fm/dcb8aab2e741",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-10-25-disney-worlds-collide-concert-tour",
       "title": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
       "venueId": "rocket-arena",
@@ -9056,6 +11569,25 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/disney-descendants-zombies-tickets/family/2026-10-25-7-pm/18117307",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-10-28-this-is-lorelei",
+      "title": "This is Lorelei",
+      "venueId": "mahalls",
+      "date": "2026-10-28",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "This Is Lorelei",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/this-is-lorelei-2/",
+      "ticketUrl": "https://link.dice.fm/I40ea477860f",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -9140,6 +11672,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-11-08-ax-and-the-hatchetmen",
+      "title": "Ax and the Hatchetmen",
+      "venueId": "mahalls",
+      "date": "2026-11-08",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Ax and the Hatchetmen",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/ax-and-the-hatchetmen-2/",
+      "ticketUrl": "https://link.dice.fm/K81027c16ffa",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-10-alter-bridge",
       "title": "Alter Bridge w/ Big Wreck, Tim Montana",
       "venueId": "the-agora",
@@ -9163,6 +11714,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1458549",
       "ticketUrl": "https://www.axs.com/events/1458549/alter-bridge-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-11-11-akeem-ali",
+      "title": "Akeem Ali",
+      "venueId": "mahalls",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Akeem Ali",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/akeem-ali/",
+      "ticketUrl": "https://link.dice.fm/Pa7ff215b78b",
       "source": "scrape",
       "manual": false
     },
@@ -9292,6 +11862,29 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/cash-money-and-no-limit-tickets/cleveland-ohio-rocket-arena-2026-11-15-7-pm/concert/18292588",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-11-16-hovvdy",
+      "title": "Hovvdy",
+      "venueId": "mahalls",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Hovvdy",
+          "headliner": true
+        },
+        {
+          "name": "Christian Lee Hutson",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/hovvdy/",
+      "ticketUrl": "https://link.dice.fm/R2cef4046702",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -9433,6 +12026,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/the-dose/",
       "ticketUrl": "https://www.ticketweb.com/event/the-dose-a-psychedelic-comedy-grog-shop-tickets/14880133?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-12-05-king-buffalo",
+      "title": "King Buffalo",
+      "venueId": "mahalls",
+      "date": "2026-12-05",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "King Buffalo (USA)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/king-buffalo/",
+      "ticketUrl": "https://link.dice.fm/Q019933ff2b6",
       "source": "scrape",
       "manual": false
     },
