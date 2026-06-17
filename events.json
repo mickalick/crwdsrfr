@@ -27,37 +27,37 @@
     "metroparks-huntington": {
       "name": "The Noshery at Huntington Beach",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/huntington-reservation/the-noshery",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Bay Village"
     },
     "metroparks-euclid-beach": {
       "name": "Euclid Beach",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/euclid-creek-reservation/euclid-beach-park",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Cleveland"
     },
     "metroparks-edgewater": {
       "name": "Edgewater Beach",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/edgewater-beach",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Cleveland"
     },
     "metroparks-emerald-necklace": {
       "name": "Emerald Necklace Marina",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/rocky-river-reservation/emerald-necklace-marina",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Rocky River"
     },
     "metroparks-galley": {
       "name": "The Galley at East 55th Marina",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Cleveland"
     },
     "metroparks-merwins-wharf": {
       "name": "Merwin's Wharf",
       "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf",
-      "eventsUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "eventsUrl": null,
       "city": "Cleveland"
     },
     "cebars": {
@@ -80,25 +80,6 @@
     }
   },
   "events": [
-    {
-      "id": "rocket-arena-2026-06-16-dave-chappelle",
-      "title": "Dave Chappelle: Pulling Up",
-      "venueId": "rocket-arena",
-      "date": "2026-06-16",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Dave Chappelle",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/dave-chappelle-tickets/comedy/2026-06-16-7-30-pm/18281887",
-      "source": "seatgeek",
-      "manual": false
-    },
     {
       "id": "grog-shop-2026-06-16-son-little-cityfolk-tour-2026",
       "title": "Son Little 'CityFolk Tour 2026' w/ Tonina, Sierra Delaine",
