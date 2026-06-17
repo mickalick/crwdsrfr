@@ -66,6 +66,12 @@
       "eventsUrl": "https://www.rockinontheriver.com/2026",
       "city": "Lorain"
     },
+    "cain-park": {
+      "name": "Cain Park",
+      "url": "https://cainpark.com",
+      "eventsUrl": "https://cainpark.com/events/?view=list",
+      "city": "Cleveland Heights"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -297,6 +303,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-06-18-daniel-donato-s-cosmic-country-with-marty-stuart-his-fabulous-superlatives",
+      "title": "Daniel Donato’s Cosmic Country with Marty Stuart & His Fabulous Superlatives",
+      "venueId": "cain-park",
+      "date": "2026-06-18",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$23.75 to $77.50",
+      "performers": [
+        {
+          "name": "Daniel Donato’s Cosmic Country with Marty Stuart & His Fabulous Superlatives",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/daniel-donatos-cosmic-country-with-marty-stuart-his-fabulous-superlatives/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/63585264/daniel-donatos-cosmic-country-with-marty-stuart-his-fabulous-superlatives-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -595,6 +620,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-06-20-dumpstaphunk-wsg-big-blitz",
+      "title": "DUMPSTAPHUNK wsg Big Blitz",
+      "venueId": "cain-park",
+      "date": "2026-06-20",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$14.25 to $87.50",
+      "performers": [
+        {
+          "name": "DUMPSTAPHUNK wsg Big Blitz",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/dumpstaphunk-wsg-big-blitz/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/69443452/dumpstaphunk-wsg-big-blitz-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -912,6 +956,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-06-23-trillium-trio",
+      "title": "Trillium Trio",
+      "venueId": "cain-park",
+      "date": "2026-06-23",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Trillium Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/trillium-trio/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-06-24-sonido-gallo-negro",
       "title": "Sonido Gallo Negro w/ Hello!3D",
       "venueId": "grog-shop",
@@ -1122,6 +1185,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-06-25-larkin-poe-and-special-guests-the-record-company",
+      "title": "Larkin Poe and Special Guests The Record Company",
+      "venueId": "cain-park",
+      "date": "2026-06-25",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": "$24.25 to $96.50",
+      "performers": [
+        {
+          "name": "Larkin Poe and Special Guests The Record Company",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/larkin-poe-and-special-guests-the-record-company/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/44309973/larkin-poe-and-special-guests-the-record-company-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -1577,6 +1659,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-06-28-yiddishe-cup",
+      "title": "Yiddishe Cup",
+      "venueId": "cain-park",
+      "date": "2026-06-28",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Yiddishe Cup",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/yiddishe-cup-2/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -1657,6 +1758,44 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/les-greene-the-swayzees-30-jun",
       "ticketUrl": "https://www.beachlandballroom.com/shows/les-greene-the-swayzees-30-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-06-30-amethyst-string-trio",
+      "title": "Amethyst String Trio",
+      "venueId": "cain-park",
+      "date": "2026-06-30",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Amethyst String Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/amethyst-string-trio/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-01-the-cleveland-orchestra-free-community-concert",
+      "title": "The Cleveland Orchestra Free Community Concert",
+      "venueId": "cain-park",
+      "date": "2026-07-01",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Cleveland Orchestra Free Community Concert",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/the-cleveland-orchestra-free-community-concert/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/88684018/the-cleveland-orchestra-free-community-concert-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -2354,6 +2493,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-07-10-arts-festival",
+      "title": "Arts Festival",
+      "venueId": "cain-park",
+      "date": "2026-07-10",
+      "time": "12:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Arts Festival",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/arts-festival/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -2996,6 +3154,44 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-07-17-lalah-hathaway-eric-ben-t",
+      "title": "Lalah Hathaway & Eric Benét",
+      "venueId": "cain-park",
+      "date": "2026-07-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$52.50 to $97.50",
+      "performers": [
+        {
+          "name": "Lalah Hathaway & Eric Benét",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/lalah-hathaway-eric-ben%c3%a9t/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/72182039/lalah-hathaway-eric-ben%C3%A9t-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-17-peter-pan-jr",
+      "title": "Peter Pan Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Peter Pan Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/95682426/peter-pan-jr-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -3176,6 +3372,44 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-07-18-joe-russo-s-almost-dead",
+      "title": "Joe Russo’s Almost Dead",
+      "venueId": "cain-park",
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$62.50 to $138.50",
+      "performers": [
+        {
+          "name": "Joe Russo’s Almost Dead",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/joe-russos-almost-dead/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/59486106/joe-russos-almost-dead-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-18-peter-pan-jr",
+      "title": "Peter Pan Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-18",
+      "time": "14:00",
+      "doors": "13:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Peter Pan Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/75747583/peter-pan-jr-saturday-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Wayne's World",
       "performers": [
         {
@@ -3298,6 +3532,44 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-19-gillian-welch-david-rawlings",
+      "title": "Gillian Welch & David Rawlings",
+      "venueId": "cain-park",
+      "date": "2026-07-19",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$52.50 to $87.50",
+      "performers": [
+        {
+          "name": "Gillian Welch & David Rawlings",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/gillian-welch-david-rawlings/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/50834530/gillian-welch-david-rawlings-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-19-peter-pan-jr",
+      "title": "Peter Pan Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-19",
+      "time": "14:00",
+      "doors": "13:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Peter Pan Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/55451476/peter-pan-jr-sunday-matinee-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -3707,6 +3979,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-07-24-into-the-woods-jr",
+      "title": "Into the Woods Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Into the Woods Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/into-the-woods-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/47488522/into-the-woods-jr-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Standing Still",
       "performers": [
         {
@@ -3802,6 +4093,44 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-07-25-inlet-dance-theatre",
+      "title": "Inlet Dance Theatre",
+      "venueId": "cain-park",
+      "date": "2026-07-25",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$14.50 to $34.50",
+      "performers": [
+        {
+          "name": "Inlet Dance Theatre",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/inlet-dance-theatre/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/78535441/inlet-dance-theatre-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-25-into-the-woods-jr",
+      "title": "Into the Woods Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-25",
+      "time": "14:00",
+      "doors": "13:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Into the Woods Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/into-the-woods-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/42781856/into-the-woods-jr-saturday-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Liverpool Lads",
       "performers": [
         {
@@ -3893,6 +4222,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-26-into-the-woods-jr",
+      "title": "Into the Woods Jr.",
+      "venueId": "cain-park",
+      "date": "2026-07-26",
+      "time": "14:00",
+      "doors": "13:30",
+      "price": "$10 - $21",
+      "performers": [
+        {
+          "name": "Into the Woods Jr.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/into-the-woods-jr/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/72192180/into-the-woods-jr-sunday-matinee-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -4099,6 +4447,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-07-30-broadway-cabaret-series",
+      "title": "Broadway Cabaret Series",
+      "venueId": "cain-park",
+      "date": "2026-07-30",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$28 - $31",
+      "performers": [
+        {
+          "name": "Broadway Cabaret Series",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/broadway-cabaret-series/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/81730628/broadway-salutes-showbiz-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -4400,6 +4767,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-02-men-at-work-toad-the-wet-sprocket-shonen-knife",
+      "title": "Men at Work, Toad the Wet Sprocket, Shonen Knife",
+      "venueId": "cain-park",
+      "date": "2026-08-02",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$62.50 to $277.50 / Day Of : $70",
+      "performers": [
+        {
+          "name": "Men at Work, Toad the Wet Sprocket, Shonen Knife",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/men-at-work-toad-the-wet-sprocket-shonen-knife/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/55301494/men-at-worktoad-the-wet-sprocketshonen-knife-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -4484,6 +4870,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-04-olympic-brass",
+      "title": "Olympic Brass",
+      "venueId": "cain-park",
+      "date": "2026-08-04",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Olympic Brass",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/olympic-brass/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "metroparks-huntington-2026-08-05-corissa-bragg",
       "title": "Corissa Bragg",
       "venueId": "metroparks-huntington",
@@ -4564,6 +4969,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-06-broadway-cabaret-series",
+      "title": "Broadway Cabaret Series",
+      "venueId": "cain-park",
+      "date": "2026-08-06",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$28 - $31",
+      "performers": [
+        {
+          "name": "Broadway Cabaret Series",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/broadway-cabaret-series/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/45796866/disney-on-broadway-cabaret-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -4816,6 +5240,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-08-steel-pulse-with-special-guests-carlos-jones-the-plus-band",
+      "title": "Steel Pulse with special guests Carlos Jones & The PLUS Band",
+      "venueId": "cain-park",
+      "date": "2026-08-08",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$33.50 to $77.50",
+      "performers": [
+        {
+          "name": "Steel Pulse with special guests Carlos Jones & The PLUS Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/steel-pulse-with-special-guests-carlos-jones-the-plus-band/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/56070488/steel-pulse-with-special-guests-carlos-jones-the-plus-band-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -4919,6 +5362,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-09-boney-james-wsg-avery-sunshine",
+      "title": "Boney James wsg Avery*Sunshine",
+      "venueId": "cain-park",
+      "date": "2026-08-09",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$52.50 to $202.50",
+      "performers": [
+        {
+          "name": "Boney James wsg Avery*Sunshine",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/boney-james-wsg-averysunshine/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/30160697/boney-james-wsg-averysunshine-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5049,6 +5511,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-11-the-string-cheese-incident-just-keep-spinning-tour",
+      "title": "The String Cheese Incident – Just Keep Spinning Tour",
+      "venueId": "cain-park",
+      "date": "2026-08-11",
+      "time": "19:15",
+      "doors": "18:00",
+      "price": "$52.50 to $139.50",
+      "performers": [
+        {
+          "name": "The String Cheese Incident – Just Keep Spinning Tour",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/the-string-cheese-incident-just-keep-spinning-tour/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/70388270/the-string-cheese-incident-just-keep-spinning-tour-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Back Street Blues",
       "performers": [
         {
@@ -5129,6 +5610,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug",
       "ticketUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-13-bruce-hornsby-the-noisemakers-indigo-park-tour",
+      "title": "Bruce Hornsby & The Noisemakers: Indigo Park Tour",
+      "venueId": "cain-park",
+      "date": "2026-08-13",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": "$49.50 to $94.50",
+      "performers": [
+        {
+          "name": "Bruce Hornsby & The Noisemakers: Indigo Park Tour",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/bruce-hornsby-the-noisemakers-indigo-park-tour/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/79438899/bruce-hornsby-the-noisemakersindigo-park-tour-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5236,6 +5736,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-14-moe-umphrey-s-mcgee",
+      "title": "moe. & Umphrey’s McGee",
+      "venueId": "cain-park",
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$43.50 to $89.50",
+      "performers": [
+        {
+          "name": "moe. & Umphrey’s McGee",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/moe-umphreys-mcgee/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/65891908/moeumphreys-mcgee-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "FM77",
       "performers": [
         {
@@ -5327,6 +5846,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-15-violent-femmes",
+      "title": "Violent Femmes",
+      "venueId": "cain-park",
+      "date": "2026-08-15",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$52.50 to $229.50",
+      "performers": [
+        {
+          "name": "Violent Femmes",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/violent-femmes/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/98738845/violent-femmes-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5571,6 +6109,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-18-gruca-white-ensemble",
+      "title": "Gruca White Ensemble",
+      "venueId": "cain-park",
+      "date": "2026-08-18",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Gruca White Ensemble",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/gruca-white-ensemble/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-08-19-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
@@ -5586,6 +6143,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-4/",
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14938203?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-19-django-festival-allstars",
+      "title": "Django Festival Allstars",
+      "venueId": "cain-park",
+      "date": "2026-08-19",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$29.50 to $64.50",
+      "performers": [
+        {
+          "name": "Django Festival Allstars",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/django-festival-allstars/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/91488815/django-festival-allstars-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5628,6 +6204,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug",
       "ticketUrl": "https://www.beachlandballroom.com/shows/kyle-smith-20-aug#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-20-california-dreamin-a-1966-folk-rock-concert-by-new-long-road",
+      "title": "California Dreamin’: A 1966 Folk-Rock Concert by New Long Road",
+      "venueId": "cain-park",
+      "date": "2026-08-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$13.75 to $16.75",
+      "performers": [
+        {
+          "name": "California Dreamin’: A 1966 Folk-Rock Concert by New Long Road",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/california-dreamin-a-1966-folk-rock-concert-by-new-long-road/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/96563300/california-dreamina-1966-folkrock-concert-by-new-long-road-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5712,6 +6307,25 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/dancing-queen-abba-tribute-with-boaterhead",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/dancing-queen-abba-tribute-with-boaterhead",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-21-joshua-redman",
+      "title": "Joshua Redman",
+      "venueId": "cain-park",
+      "date": "2026-08-21",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$39.50 to $79.50",
+      "performers": [
+        {
+          "name": "Joshua Redman",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/joshua-redman/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/83069236/joshua-redman-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -5983,6 +6597,25 @@
       "manual": false
     },
     {
+      "id": "cain-park-2026-08-23-workmen-s-circle-yiddish-concert-in-the-park",
+      "title": "Workmen’s Circle Yiddish Concert in the Park",
+      "venueId": "cain-park",
+      "date": "2026-08-23",
+      "time": "18:00",
+      "doors": "17:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Workmen’s Circle Yiddish Concert in the Park",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/workmens-circle-yiddish-concert-in-the-park/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Pete Lazard",
       "performers": [
         {
@@ -6036,6 +6669,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/swervedriver-raise-at-35/",
       "ticketUrl": "https://www.ticketweb.com/event/swervedriver-raise-at-35-grog-shop-tickets/14909733?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-25-black-squirrel-winds",
+      "title": "Black Squirrel Winds",
+      "venueId": "cain-park",
+      "date": "2026-08-25",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Black Squirrel Winds",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/black-squirrel-winds/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -6116,6 +6768,25 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-27-broadway-cabaret-series",
+      "title": "Broadway Cabaret Series",
+      "venueId": "cain-park",
+      "date": "2026-08-27",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$28 - $31",
+      "performers": [
+        {
+          "name": "Broadway Cabaret Series",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/events/category/series/broadway-cabaret-series/cain-park-alma-theater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/38895494/leading-men-of-broadway-cabaret-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -6299,6 +6970,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/ariel-posen-29-aug",
       "ticketUrl": "https://www.beachlandballroom.com/shows/ariel-posen-29-aug#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-08-29-the-legends-of-jazz-4-yellow-jackets-patrice-rushen-hiroshima",
+      "title": "The Legends of Jazz 4: Yellow Jackets, Patrice Rushen, Hiroshima",
+      "venueId": "cain-park",
+      "date": "2026-08-29",
+      "time": "17:00",
+      "doors": "16:00",
+      "price": "$68.50 to $119.50",
+      "performers": [
+        {
+          "name": "The Legends of Jazz 4: Yellow Jackets, Patrice Rushen, Hiroshima",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/the-legends-of-jazz-4-yellow-jackets-patrice-rushen-hiroshima/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/95003240/the-legends-of-jazz-4yellow-jacketspatrice-rushenhiroshima-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -6516,6 +7206,25 @@
       ],
       "eventUrl": "https://www.rockinontheriver.com/event-details-registration/chris-lane-with-tyler-farr",
       "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/chris-lane-with-tyler-farr",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-09-04-elle-king",
+      "title": "Elle King",
+      "venueId": "cain-park",
+      "date": "2026-09-04",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$49.50 to $104.50 / Day Of : $57",
+      "performers": [
+        {
+          "name": "Elle King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/elle-king/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/50169292/elle-king-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false
     },
@@ -6878,6 +7587,25 @@
       "id": "whiskey-island-2026-09-11-tricky-dick"
     },
     {
+      "id": "cain-park-2026-09-12-branford-marsalis-and-dianne-reeves",
+      "title": "Branford Marsalis and Dianne Reeves",
+      "venueId": "cain-park",
+      "date": "2026-09-12",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$44.50 to $99.50",
+      "performers": [
+        {
+          "name": "Branford Marsalis and Dianne Reeves",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/branford-marsalis-and-dianne-reeves/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/54475505/branford-marsalis-and-dianne-reeves-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Soul Shake",
       "performers": [
         {
@@ -7218,6 +7946,25 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/rush-tickets/cleveland-ohio-rocket-arena-2026-09-19-7-30-pm/concert/17806088",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "cain-park-2026-09-19-punch-brothers",
+      "title": "Punch Brothers",
+      "venueId": "cain-park",
+      "date": "2026-09-19",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": "$44.50 to $202.50",
+      "performers": [
+        {
+          "name": "Punch Brothers",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cainpark.com/event/punch-brothers-2/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "ticketUrl": "https://www.etix.com/ticket/p/71600885/punch-brothers-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
       "manual": false
     },
     {

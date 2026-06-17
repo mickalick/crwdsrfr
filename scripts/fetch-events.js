@@ -500,6 +500,182 @@ async function fetchRockinOnTheRiver() {
   }
 }
 
+async function fetchCainPark() {
+  try {
+    const venueId = 'cain-park';
+    const res = await fetch('https://cainpark.com/events/?view=list');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    // Parses "Doors: 6 pm // Show: 7 pm" or "Show: 12 pm" (doors-only text
+    // is never seen on this site, but we handle missing doors gracefully)
+    function parseDoorsShow(text) {
+      if (!text) return { doors: null, time: null };
+      const doorsMatch = text.match(/Doors:\s*([\d:]+\s*[apAP][mM])/);
+      const showMatch = text.match(/Show:\s*([\d:]+\s*[apAP][mM])/);
+      return {
+        doors: doorsMatch ? to24Hour(doorsMatch[1]) : null,
+        time: showMatch ? to24Hour(showMatch[1]) : null,
+      };
+    }
+
+    function to24Hour(t) {
+      const cleaned = t.trim().toLowerCase().replace(/\s+/g, '');
+      const match = cleaned.match(/^(\d{1,2})(?::(\d{2}))?(am|pm)$/);
+      if (!match) return null;
+      let [, hours, minutes, meridian] = match;
+      hours = parseInt(hours, 10);
+      minutes = minutes ? parseInt(minutes, 10) : 0;
+      if (meridian === 'pm' && hours !== 12) hours += 12;
+      if (meridian === 'am' && hours === 12) hours = 0;
+      return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    }
+
+    // Cain Park's cost text comes in a few shapes:
+    // "$23.75 to $77.50", "$23.75 to $77.50 / Day Of : $70", "Free / Day Of : $Free"
+    // We keep it as a display string rather than trying to force a single number.
+    function cleanPrice(text) {
+      if (!text) return null;
+      const cleaned = text.replace(/\s+/g, ' ').trim();
+      if (!cleaned) return null;
+      if (/^free\b/i.test(cleaned)) return 'Free';
+      return cleaned;
+    }
+
+    function slugify(name) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    const currentYear = new Date().getFullYear();
+
+    // --- Single-day events ---
+    $('.rhpSingleEvent').each((i, el) => {
+      const $el = $(el);
+
+      const titleEl = $el.find('#eventTitle, .eventTitleDiv a').first();
+      const title = titleEl.text().trim().replace(/\s+/g, ' ');
+      if (!title) return;
+
+      const dateRaw = $el.find('#eventDate, .eventDateListTop').first().text().trim();
+      // Date format: "Thu, Jun 18" - no year given, so attach current year.
+      // Handles a Dec->Jan rollover by bumping the year if the parsed
+      // month is earlier than today's month by a lot (e.g. event in Jan,
+      // today is Dec).
+      const parsedDate = new Date(`${dateRaw}, ${currentYear}`);
+      if (isNaN(parsedDate)) return;
+      const now = new Date();
+      if (parsedDate.getMonth() < now.getMonth() - 6) {
+        parsedDate.setFullYear(currentYear + 1);
+      }
+      const date = `${parsedDate.getFullYear()}-${String(parsedDate.getMonth() + 1).padStart(2, '0')}-${String(parsedDate.getDate()).padStart(2, '0')}`;
+
+      const doorsShowText = $el.find('.eventDoorStartDate, .rhp-event__time-text--list').first().text().trim();
+      const { doors, time } = parseDoorsShow(doorsShowText);
+
+      const priceText = $el.find('.eventCost, .rhp-event__cost-text--list').first().text().trim();
+      const price = cleanPrice(priceText);
+
+      const ctaEl = $el.find('.rhp-event-list-cta a, .rhp-event-cta a').first();
+      const ctaText = ctaEl.text().trim();
+      const ctaHref = ctaEl.attr('href') || null;
+      // "Free Show" and other javascript:void(0) buttons have no real URL
+      const ticketUrl = ctaHref && !ctaHref.startsWith('javascript:') ? ctaHref : null;
+
+      const eventUrl = $el.find('.eventMoreInfo a, a.url').first().attr('href') || null;
+
+      const slug = slugify(title);
+
+      events.push({
+        id: `${venueId}-${date}-${slug}`,
+        title,
+        venueId,
+        date,
+        time,
+        doors,
+        price,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    // --- Multi-day series events (e.g. Arts Festival, Peter Pan Jr.) ---
+    // Each <li class="rhp-event-series-individual"> inside one of these
+    // wrappers represents one real, separate performance date - we expand
+    // each into its own event entry rather than treating the series as one.
+    $('.rhpEventSeries').each((i, el) => {
+      const $el = $(el);
+
+      const seriesTitle = $el.find('.eventSeriesTitle a, h2 a').first().text().trim().replace(/\s+/g, ' ');
+      if (!seriesTitle) return;
+
+      const seriesPriceText = $el.find('.rhp-event-price-box, .seriesCostDiv').first().text().trim();
+      const seriesPrice = cleanPrice(seriesPriceText);
+
+      const seriesUrl = $el.find('.eventMoreInfo a').first().attr('href') || null;
+
+      // Used to infer the year for each "Jul 10"-style date inside the list,
+      // since individual list items don't carry a year themselves.
+      const rangeLabel = $el.find('.eventDateListTop, .eventMonth').first().text().trim();
+      const rangeYearMatch = rangeLabel.match(/(\d{4})/);
+      const seriesYear = rangeYearMatch ? parseInt(rangeYearMatch[1], 10) : currentYear;
+
+      $el.find('li.rhp-event-series-individual').each((j, li) => {
+        const $li = $(li);
+
+        const dateRaw = $li.find('.rhp-event-series-date').first().text().trim();
+        if (!dateRaw) return;
+
+        const parsedDate = new Date(`${dateRaw}, ${seriesYear}`);
+        if (isNaN(parsedDate)) return;
+        const now = new Date();
+        if (parsedDate.getMonth() < now.getMonth() - 6) {
+          parsedDate.setFullYear(seriesYear + 1);
+        }
+        const date = `${parsedDate.getFullYear()}-${String(parsedDate.getMonth() + 1).padStart(2, '0')}-${String(parsedDate.getDate()).padStart(2, '0')}`;
+
+        const doorsShowText = $li.find('.rhp-event-series-time').first().text().trim();
+        const { doors, time } = parseDoorsShow(doorsShowText);
+
+        const ctaEl = $li.find('a').first();
+        const ctaText = ctaEl.text().trim();
+        const ctaHref = ctaEl.attr('href') || null;
+        const ticketUrl = ctaHref && !ctaHref.startsWith('javascript:') ? ctaHref : null;
+
+        // Individual performances in a series don't show their own price -
+        // the series-level price (e.g. "$10 - $21") applies to all dates,
+        // except free series like Arts Festival where the CTA itself says "Free".
+        const price = /free/i.test(ctaText) ? 'Free' : seriesPrice;
+
+        const slug = slugify(seriesTitle);
+
+        events.push({
+          id: `${venueId}-${date}-${slug}`,
+          title: seriesTitle,
+          venueId,
+          date,
+          time,
+          doors,
+          price,
+          performers: [{ name: seriesTitle, headliner: true }],
+          eventUrl: seriesUrl,
+          ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchCainPark error:', err.message);
+    return [];
+  }
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -518,13 +694,14 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
     fetchBeachland(),
     fetchMetroparks(),
-    fetchRockinOnTheRiver()
+    fetchRockinOnTheRiver(),
+    fetchCainPark(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -538,6 +715,7 @@ async function main() {
     ...beachland,
     ...metroparks,
     ...rockinOnTheRiver,
+    ...cainPark,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -555,6 +733,7 @@ async function main() {
       'metroparks-galley': { name: 'The Galley at East 55th Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley', eventsUrl: null, city: 'Cleveland' },
       'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf', eventsUrl: null, city: 'Cleveland' },
       'rockin-on-the-river': { name: 'Rockin on the River', url: 'https://www.rockinontheriver.com', eventsUrl: 'https://www.rockinontheriver.com/2026', city: 'Lorain' },
+      'cain-park': { name: 'Cain Park', url: 'https://cainpark.com', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
