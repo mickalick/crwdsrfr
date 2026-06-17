@@ -17,7 +17,17 @@ function formatTime(t) {
   return `${hour}:${String(m).padStart(2, '0')} ${period}`;
 }
 
+function updateSubHead() {
+  const subHeadSpan = document.querySelector('.subHead span');
+  const term = currentSearch.trim();
+  subHeadSpan.textContent = term === ''
+    ? 'Showing all events for:'
+    : `Showing all events with "${term}" for:`;
+}
+
 function applyFilters() {
+  updateSubHead();
+
   if (!allData) return;
 
   let filtered = allData.events.filter(e => e.date === currentDateStr);
