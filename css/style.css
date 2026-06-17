@@ -748,6 +748,7 @@ input[type=text], select, textarea {
   letter-spacing: 2px;
   text-transform: uppercase;
   float: right;
+  cursor: pointer;
 }
 
 .contactButton:hover {
