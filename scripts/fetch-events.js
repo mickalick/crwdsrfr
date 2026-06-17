@@ -676,6 +676,104 @@ async function fetchCainPark() {
   }
 }
 
+async function fetchHappyDog() {
+  try {
+    const venueId = 'happy-dog';
+    const res = await fetch('https://app.opendate.io/v/happy-dog-1767');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    function to24Hour(t) {
+      const cleaned = t.trim().toLowerCase().replace(/\s+/g, '');
+      const match = cleaned.match(/^(\d{1,2})(?::(\d{2}))?(am|pm)$/);
+      if (!match) return null;
+      let [, hours, minutes, meridian] = match;
+      hours = parseInt(hours, 10);
+      minutes = minutes ? parseInt(minutes, 10) : 0;
+      if (meridian === 'pm' && hours !== 12) hours += 12;
+      if (meridian === 'am' && hours === 12) hours = 0;
+      return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    }
+
+    function slugify(name) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    // Each event card is a Bootstrap col wrapping a .confirm-card. The
+    // .card-body's direct <p> children appear in a fixed order:
+    // [0] title link, [1] date, [2] doors/show time, [3] venue line.
+    $('.confirm-card').each((i, el) => {
+      const $el = $(el);
+      const $body = $el.find('.card-body').first();
+      const paragraphs = $body.find('> p');
+
+      const titleLink = paragraphs.eq(0).find('a').first();
+      const title = titleLink.text().trim().replace(/\s+/g, ' ');
+      const eventUrl = titleLink.attr('href') || null;
+      if (!title || !eventUrl) return;
+
+      const dateRaw = paragraphs.eq(1).text().trim();
+      const parsedDate = new Date(dateRaw);
+      if (isNaN(parsedDate)) return;
+      const date = `${parsedDate.getFullYear()}-${String(parsedDate.getMonth() + 1).padStart(2, '0')}-${String(parsedDate.getDate()).padStart(2, '0')}`;
+
+      const timeText = paragraphs.eq(2).text().trim();
+      const doorsMatch = timeText.match(/Doors:\s*([\d:]+\s*[APap][Mm])/);
+      const showMatch = timeText.match(/Show:\s*([\d:]+\s*[APap][Mm])/);
+      const doors = doorsMatch ? to24Hour(doorsMatch[1]) : null;
+      const time = showMatch ? to24Hour(showMatch[1]) : null;
+
+      // Titles commonly list multiple acts separated by " / ", e.g.
+      // "The Phantom A.D. / Oongow!!! / Riptide Suicide". Some titles also
+      // use " w/ " to introduce the lineup, e.g. "Kid Tigrrr Record Release
+      // w/ R U Three / Benjamin Liar" - splitting on " / " alone would wrongly
+      // chop "w/" in two and leave a dangling "w" on the headliner name.
+      // So: split on " / " first to get every raw segment, then specifically
+      // check the FIRST segment for an embedded " w/ " boundary (that's the
+      // only place "w/" has shown up) and split it further if found.
+      // Titles commonly list multiple acts separated by " / ", e.g.
+      // "The Phantom A.D. / Oongow!!! / Riptide Suicide". Some titles also
+      // use " w/ " to introduce the lineup, e.g. "Kid Tigrrr Record Release
+      // w/ R U Three / Benjamin Liar". Splitting on " / " directly would
+      // wrongly treat the "/" inside "w/" as a separator too, mangling the
+      // headliner name. So we temporarily mask " w/ " with a placeholder,
+      // split on " / " as normal, then un-mask and split each segment on
+      // the placeholder to recover the "w/" boundary separately.
+      const W_PLACEHOLDER = '\u0000WSLASH\u0000';
+      const maskedTitle = title.replace(/\s+w\/\s+/gi, W_PLACEHOLDER);
+      const rawSegments = maskedTitle.split(/\s*\/\s*/).map(s => s.trim()).filter(Boolean);
+      const acts = [];
+      rawSegments.forEach(seg => {
+        seg.split(W_PLACEHOLDER).map(s => s.trim()).filter(Boolean).forEach(part => acts.push(part));
+      });
+      const performers = acts.map((name, idx) => ({ name, headliner: idx === 0 }));
+
+      const slug = slugify(acts[0] || title);
+
+      events.push({
+        id: `${venueId}-${date}-${slug}`,
+        title,
+        venueId,
+        date,
+        time,
+        doors,
+        price: null,
+        performers,
+        eventUrl,
+        ticketUrl: eventUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchHappyDog error:', err.message);
+    return [];
+  }
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -694,7 +792,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -702,6 +800,7 @@ async function main() {
     fetchMetroparks(),
     fetchRockinOnTheRiver(),
     fetchCainPark(),
+    fetchHappyDog(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -716,6 +815,7 @@ async function main() {
     ...metroparks,
     ...rockinOnTheRiver,
     ...cainPark,
+    ...happyDog,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -734,6 +834,7 @@ async function main() {
       'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf', eventsUrl: null, city: 'Cleveland' },
       'rockin-on-the-river': { name: 'Rockin on the River', url: 'https://www.rockinontheriver.com', eventsUrl: 'https://www.rockinontheriver.com/2026', city: 'Lorain' },
       'cain-park': { name: 'Cain Park', url: 'https://cainpark.com', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
+      'happy-dog': { name: 'Happy Dog', url: 'https://happydogcleveland.com/', eventsUrl: 'https://app.opendate.io/v/happy-dog-1767', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
