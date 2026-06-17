@@ -77,8 +77,13 @@ function renderEvents(events) {
           ? `<a href="${event.eventUrl}" target="_blank">${event.title}</a>`
           : event.title;
 
+        // Only render the .ticketLink wrapper at all when there's an
+        // actual ticket URL. Previously this div was always rendered
+        // (just left empty when there was no link), which meant the
+        // .ticketLink:hover effect in the CSS still fired on empty,
+        // non-clickable boxes.
         const linkHtml = event.ticketUrl
-          ? `<a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a>`
+          ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
           : '';
 
         return `
@@ -88,9 +93,7 @@ function renderEvents(events) {
               ${timeDisplay ? `<span class="eventTime">${timeDisplay}</span>` : ''}
               <span class="eventCost">${event.price ?? 'See Event'}</span>
             </div>
-            <div class="ticketLink">
-              ${linkHtml}
-            </div>
+            ${linkHtml}
           </div>`;
       }).join('');
 
