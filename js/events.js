@@ -22,7 +22,7 @@ function updateSubHead() {
   const term = currentSearch.trim();
   subHeadSpan.textContent = term === ''
     ? 'Showing all events for:'
-    : `Showing all events with "${term}" for:`;
+    : `Showing all events including "${term}" for:`;
 }
 
 function applyFilters() {
@@ -46,6 +46,15 @@ function applyFilters() {
   }
 
   renderEvents(filtered);
+}
+
+function resetSearch() {
+  const input = document.getElementById('search');
+  input.value = '';
+  currentSearch = '';
+  document.querySelector('.searchWrapper').classList.remove('hasValue');
+  applyFilters();
+  input.focus();
 }
 
 function renderEvents(events) {
@@ -170,6 +179,7 @@ loadEvents();
 
 document.getElementById('search').addEventListener('input', function() {
   currentSearch = this.value;
+  document.querySelector('.searchWrapper').classList.toggle('hasValue', currentSearch.trim() !== '');
   applyFilters();
 });
 

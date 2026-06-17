@@ -356,7 +356,28 @@ footer a:hover {
   cursor: pointer;
 }
 
-#searchGo .icon {
+#searchReset {
+	display: none;
+}
+
+.searchWrapper.hasValue #searchGo {
+	display: none;
+}
+
+.searchWrapper.hasValue #searchReset {
+	height: 100%;
+  position: absolute;
+  right: 16px;
+  top: 4px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#searchGo .icon, #searchReset .icon {
 	width: 40px;
 	height: 40px;
 }
@@ -584,6 +605,14 @@ footer a:hover {
 	background-color: #62CBB8;
 	-webkit-mask-image: url('../images/icons/search.svg');
   mask-image: url('../images/icons/search.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#clr {
+	background-color: #62CBB8;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+  mask-image: url('../images/icons/clear.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
