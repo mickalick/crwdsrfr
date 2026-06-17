@@ -60,6 +60,12 @@
       "eventsUrl": null,
       "city": "Cleveland"
     },
+    "rockin-on-the-river": {
+      "name": "Rockin on the River",
+      "url": "https://www.rockinontheriver.com",
+      "eventsUrl": "https://www.rockinontheriver.com/2026",
+      "city": "Lorain"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -81,82 +87,13 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-06-16-son-little-cityfolk-tour-2026",
-      "title": "Son Little 'CityFolk Tour 2026' w/ Tonina, Sierra Delaine",
-      "venueId": "grog-shop",
-      "date": "2026-06-16",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$37.54",
-      "performers": [
-        {
-          "name": "Son Little 'CityFolk Tour 2026'",
-          "headliner": true
-        },
-        {
-          "name": "Tonina",
-          "headliner": false
-        },
-        {
-          "name": "Sierra Delaine",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/son-little-cityfolk-tour-2026/",
-      "ticketUrl": "https://www.ticketweb.com/event/son-little-cityfolk-tour-2026-grog-shop-tickets/14859533?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "the-agora-2026-06-16-ilana-glazer-live",
-      "title": "Ilana Glazer Live!",
-      "venueId": "the-agora",
-      "date": "2026-06-16",
-      "time": null,
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Ilana Glazer Live!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1351305",
-      "ticketUrl": "https://www.axs.com/events/1351305/ilana-glazer-live-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-16-futurebirds",
-      "title": "Futurebirds with Joelton Mayfield",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-16",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Futurebirds",
-          "headliner": true
-        },
-        {
-          "name": "Joelton Mayfield",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/futurebirds-16-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/futurebirds-16-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "grog-shop-2026-06-17-big-freedia-big-freedom-tour",
       "title": "Big Freedia: BIG FREEDOM Tour w/ Navy Jayde",
       "venueId": "grog-shop",
       "date": "2026-06-17",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$33.93",
+      "price": "$39.60",
       "performers": [
         {
           "name": "Big Freedia: BIG FREEDOM Tour",
@@ -494,6 +431,29 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-06-19-24k-magic-bruno-mars-tribute",
+      "title": "24K Magic Bruno Mars Tribute with Rock The House Live",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-06-19",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "24K Magic Bruno Mars Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Rock The House Live",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/24k-magic-bruno-mars-tribute-with-rock-the-house-live",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/24k-magic-bruno-mars-tribute-with-rock-the-house-live",
       "source": "scrape",
       "manual": false
     },
@@ -1836,6 +1796,29 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-07-03-mr-speed-kiss-tribute",
+      "title": "Mr. Speed Kiss Tribute with Medusa",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-03",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Mr. Speed Kiss Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Medusa",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/mr-speed-kiss-tribute-with-medusa",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/mr-speed-kiss-tribute-with-medusa",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -1905,6 +1888,29 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/4day-ft-es4/",
       "ticketUrl": "https://www.ticketweb.com/event/4day-ft-es4-grog-shop-tickets/14191974?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-07-04-7-summers-morgan-wallen-tribute",
+      "title": "7 Summers Morgan Wallen Tribute with Country Honk",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-04",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "7 Summers Morgan Wallen Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Country Honk",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/7-summers-morgan-wallen-tribute-with-country-honk",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/7-summers-morgan-wallen-tribute-with-country-honk",
       "source": "scrape",
       "manual": false
     },
@@ -2321,6 +2327,29 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-07-10-forever-seger",
+      "title": "Forever Seger with The Michael Weber Show",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-10",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Forever Seger",
+          "headliner": true
+        },
+        {
+          "name": "The Michael Weber Show",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/forever-seger-with-the-michael-weber-show",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/forever-seger-with-the-michael-weber-show",
       "source": "scrape",
       "manual": false
     },
@@ -2940,6 +2969,33 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-07-17-7-bridges-eagles-tribute",
+      "title": "7 Bridges Eagles Tribute with Straight On, Heart Tribute",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-17",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "7 Bridges Eagles Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Straight On",
+          "headliner": false
+        },
+        {
+          "name": "Heart Tribute",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/7-bridges-eagles-tribute-with-straight-on-heart-tribute",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/7-bridges-eagles-tribute-with-straight-on-heart-tribute",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -3089,6 +3145,33 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-07-18-boy-band-review",
+      "title": "Boy Band Review with Almost Taylor, Taylor Swift Tribute",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-18",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Boy Band Review",
+          "headliner": true
+        },
+        {
+          "name": "Almost Taylor",
+          "headliner": false
+        },
+        {
+          "name": "Taylor Swift Tribute",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/boy-band-review-with-almost-taylor",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/boy-band-review-with-almost-taylor",
       "source": "scrape",
       "manual": false
     },
@@ -3597,6 +3680,33 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-07-24-queen-nation",
+      "title": "Queen Nation with Into The Blue, ELO Tribute",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-24",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Queen Nation",
+          "headliner": true
+        },
+        {
+          "name": "Into The Blue",
+          "headliner": false
+        },
+        {
+          "name": "ELO Tribute",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/queen-nation-with-into-the-blue-elo-tribute",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/queen-nation-with-into-the-blue-elo-tribute",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Standing Still",
       "performers": [
         {
@@ -3763,6 +3873,25 @@
         }
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-07-26-the-patriots-symphonic-band",
+      "title": "The Patriots Symphonic Band",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Patriots Symphonic Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -4031,6 +4160,29 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-07-31-who-s-bad-michael-jackson-tribute",
+      "title": "Who's Bad, Michael Jackson Tribute, with The Sunrise Jones Jukebox",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-07-31",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Who's Bad, Michael Jackson Tribute",
+          "headliner": true
+        },
+        {
+          "name": "The Sunrise Jones Jukebox",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/whos-bad-michael-jackson-tribute-with-the-sunrise-jones-jukebox",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/whos-bad-michael-jackson-tribute-with-the-sunrise-jones-jukebox",
       "source": "scrape",
       "manual": false
     },
@@ -4473,6 +4625,29 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-08-07-in-the-end-linkin-park-tribute",
+      "title": "In The End, Linkin Park Tribute, with Truss",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-08-07",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "In The End, Linkin Park Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Truss",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/in-the-end-linkin-park-tribute-with-truss",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/in-the-end-linkin-park-tribute-with-truss",
       "source": "scrape",
       "manual": false
     },
@@ -5034,6 +5209,33 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-08-14-e5c4p3-journey-tribute",
+      "title": "E5C4P3, Journey Tribute with Best of Times, Styx Tribute",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-08-14",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "E5C4P3, Journey Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Best of Times",
+          "headliner": false
+        },
+        {
+          "name": "Styx Tribute",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/e5c4p3-journey-tribute-with-best-of-times-styx-tribute",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/e5c4p3-journey-tribute-with-best-of-times-styx-tribute",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "FM77",
       "performers": [
         {
@@ -5491,6 +5693,29 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-08-21-dancing-queen-an-abba-salute",
+      "title": "Dancing Queen: An ABBA Salute with Boaterhead",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-08-21",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Dancing Queen: An ABBA Salute",
+          "headliner": true
+        },
+        {
+          "name": "Boaterhead",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/dancing-queen-abba-tribute-with-boaterhead",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/dancing-queen-abba-tribute-with-boaterhead",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Ladies Night",
       "performers": [
         {
@@ -5594,6 +5819,29 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-08-22-wish-you-were-here-pink-floyd-tribute",
+      "title": "Wish You Were Here, Pink Floyd Tribute, with Colin Dussault's Blues Project",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-08-22",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$15 PRESALE | $20 GATE",
+      "performers": [
+        {
+          "name": "Wish You Were Here, Pink Floyd Tribute",
+          "headliner": true
+        },
+        {
+          "name": "Colin Dussault's Blues Project",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/wish-you-were-here-pink-flyod-tribute-with-colin-dussaults-blues-project",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/wish-you-were-here-pink-flyod-tribute-with-colin-dussaults-blues-project",
       "source": "scrape",
       "manual": false
     },
@@ -5892,25 +6140,6 @@
     },
     {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
-      "title": "WWE Friday Night Smackdown",
-      "venueId": "rocket-arena",
-      "date": "2026-08-28",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "WWE Friday Night SmackDown",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18140261",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
       "title": "WWE Souvenir Ticket : WWE Friday Night Smackdown",
       "venueId": "rocket-arena",
       "date": "2026-08-28",
@@ -5925,6 +6154,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18191999",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
+      "title": "WWE Friday Night Smackdown",
+      "venueId": "rocket-arena",
+      "date": "2026-08-28",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "WWE Friday Night SmackDown",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-7-30-pm/18140261",
       "source": "seatgeek",
       "manual": false
     },
@@ -5948,6 +6196,29 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/jay-webb-the-homesick-tour-28-aug",
       "ticketUrl": "https://www.beachlandballroom.com/shows/jay-webb-the-homesick-tour-28-aug#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-08-28-crazy-train-ozzy-experience",
+      "title": "Crazy Train, Ozzy Experience, with Billy Morris & Sunset Strip and Shawn Perry Vice City",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-08-28",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Crazy Train, Ozzy Experience",
+          "headliner": true
+        },
+        {
+          "name": "Billy Morris & Sunset Strip and Shawn Perry Vice City",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/crazy-train-ozzy-tribute-with-shawn-perry-vice-city-billy-morris",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/crazy-train-ozzy-tribute-with-shawn-perry-vice-city-billy-morris",
       "source": "scrape",
       "manual": false
     },
@@ -6228,6 +6499,25 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-03-pet-the-cougar"
+    },
+    {
+      "id": "rockin-on-the-river-2026-09-04-national-recording-artists-chris-lane-tyler-farr",
+      "title": "National Recording Artists - Chris Lane & Tyler Farr",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-09-04",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "PRESALE $25 | GATE $40",
+      "performers": [
+        {
+          "name": "National Recording Artists - Chris Lane & Tyler Farr",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/chris-lane-with-tyler-farr",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/chris-lane-with-tyler-farr",
+      "source": "scrape",
+      "manual": false
     },
     {
       "title": "Cocktail Johnny",
@@ -6546,6 +6836,29 @@
       "manual": false
     },
     {
+      "id": "rockin-on-the-river-2026-09-11-the-seven-wonders-fleetwood-mac-tribute",
+      "title": "The Seven Wonders, Fleetwood Mac Tribute, with The Evil Ways Band",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-09-11",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "The Seven Wonders, Fleetwood Mac Tribute",
+          "headliner": true
+        },
+        {
+          "name": "The Evil Ways Band",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/the-seven-wonders-fleetwood-mac-tribute-with-the-evil-ways-band-a-tribute-to-santana",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/the-seven-wonders-fleetwood-mac-tribute-with-the-evil-ways-band-a-tribute-to-santana",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -6824,6 +7137,29 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/show-me-the-body-whispers-holder/",
       "ticketUrl": "https://www.ticketweb.com/event/show-me-the-body-whispers-grog-shop-tickets/14968953?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rockin-on-the-river-2026-09-18-bad-juju",
+      "title": "Bad JuJu with Old Skool",
+      "venueId": "rockin-on-the-river",
+      "date": "2026-09-18",
+      "time": "18:15",
+      "doors": "17:30",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Bad JuJu",
+          "headliner": true
+        },
+        {
+          "name": "Old Skool",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.rockinontheriver.com/event-details-registration/bad-juju-with-old-skool",
+      "ticketUrl": "https://www.rockinontheriver.com/event-details-registration/bad-juju-with-old-skool",
       "source": "scrape",
       "manual": false
     },
@@ -7758,6 +8094,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
       "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-10-jed-harrelson",
+      "title": "Jed Harrelson",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Jed Harrelson",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct#tickets",
       "source": "scrape",
       "manual": false
     },

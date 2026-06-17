@@ -386,6 +386,120 @@ async function fetchMetroparks() {
   }
 }
 
+async function fetchRockinOnTheRiver() {
+  try {
+    const venueId = 'rockin-on-the-river';
+    const defaultDoors = '17:30';
+    const defaultTime = '18:15';
+
+    const res = await fetch('https://www.rockinontheriver.com/2026?shem=rimspwouoe');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    // Each event lives inside one of Wix's repeater item containers.
+    // We can't rely on the randomized IDs (they change per page build),
+    // but the repeater + rich-text/button class fragments are stable.
+    $('[id*="__item-"]').each((i, el) => {
+      const $el = $(el);
+
+      // Only treat this as an event card if it has both a date paragraph
+      // and a title heading - filters out image-only / nested wrapper divs.
+      const dateEl = $el.find('> div > p.wixui-rich-text__text, p.wixui-rich-text__text').first();
+      const titleEl = $el.find('h4.wixui-rich-text__text').first();
+
+      if (!dateEl.length || !titleEl.length) return;
+
+      const dateRaw = dateEl.text().trim();
+      // Collapse any whitespace runs (including literal newlines that
+      // sometimes sneak into the source title text) into a single space.
+      const titleRaw = titleEl.text().trim().replace(/\s+/g, ' ');
+      if (!dateRaw || !titleRaw) return;
+
+      const parsedDate = new Date(dateRaw);
+      if (isNaN(parsedDate)) return;
+
+      // Dedupe guard: Wix's nested containers mean the same card can be
+      // matched more than once as we walk through `[id*="__item-"]`.
+      const date = toLocalDateStr(parsedDate);
+      const dupeKey = `${date}::${titleRaw}`;
+      if (events.some(e => e._dupeKey === dupeKey)) return;
+
+      // Ticket/price link + URL. Some events (e.g. free community shows)
+      // have no ticket button at all.
+      const ticketEl = $el.find('a.wixui-button').first();
+      const ticketText = ticketEl.length ? ticketEl.text().trim() : null;
+      const eventUrl = ticketEl.length ? (ticketEl.attr('href') ?? null) : null;
+
+      // Parse price out of common formats:
+      // "TICKETS PRICED AT $10", "$15 PRESALE | $20 GATE", "PRESALE $25 | GATE $40"
+      let price = null;
+      if (ticketText) {
+        if (/free/i.test(ticketText)) {
+          price = 'Free';
+        } else {
+          price = ticketText
+            .replace(/TICKETS PRICED AT/i, '')
+            .trim();
+        }
+      }
+
+      // Special-case override for shows with a non-default start time,
+      // e.g. "SHOW STARTS AT 7:00 PM" appended to the title.
+      let time = defaultTime;
+      let doors = defaultDoors;
+      const timeOverrideMatch = titleRaw.match(/SHOW STARTS AT\s+([\d:]+\s*[APap][Mm])/);
+      let cleanTitle = titleRaw;
+      if (timeOverrideMatch) {
+        const [hours, minutes] = timeOverrideMatch[1].match(/[\d:]+/)[0].split(':').map(Number);
+        const isPM = /pm/i.test(timeOverrideMatch[1]);
+        let h = hours;
+        if (isPM && h !== 12) h += 12;
+        if (!isPM && h === 12) h = 0;
+        time = `${String(h).padStart(2, '0')}:${String(minutes ?? 0).padStart(2, '0')}`;
+        doors = null;
+        cleanTitle = titleRaw.replace(/SHOW STARTS AT\s+[\d:]+\s*[APap][Mm]/, '').trim();
+      }
+
+      const headlinerName = cleanTitle.split(/\s+with\s+/i)[0].trim().replace(/,\s*$/, '');
+      const slug = headlinerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+      // Simple performer split: headliner is everything before " with ",
+      // supporters are comma-separated after it. Good enough given the
+      // consistent "X with Y, Z" naming convention on this page.
+      const performers = [{ name: headlinerName, headliner: true }];
+      const afterWith = cleanTitle.split(/\s+with\s+/i)[1];
+      if (afterWith) {
+        afterWith.split(',').map(s => s.trim()).filter(Boolean).forEach(name => {
+          performers.push({ name, headliner: false });
+        });
+      }
+
+      events.push({
+        _dupeKey: dupeKey,
+        id: `${venueId}-${date}-${slug}`,
+        title: cleanTitle,
+        venueId,
+        date,
+        time,
+        doors,
+        price,
+        performers,
+        eventUrl,
+        ticketUrl: eventUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    // Strip the internal dedupe key before returning
+    return events.map(({ _dupeKey, ...ev }) => ev);
+  } catch (err) {
+    console.error('fetchRockinOnTheRiver error:', err.message);
+    return [];
+  }
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -404,12 +518,13 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
     fetchBeachland(),
     fetchMetroparks(),
+    fetchRockinOnTheRiver()
   ]);
 
   const manualEntries = loadManualEntries();
@@ -422,6 +537,7 @@ async function main() {
     ...agora,
     ...beachland,
     ...metroparks,
+    ...rockinOnTheRiver,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -438,6 +554,7 @@ async function main() {
       'metroparks-emerald-necklace': { name: 'Emerald Necklace Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/rocky-river-reservation/emerald-necklace-marina', eventsUrl: null, city: 'Rocky River' },
       'metroparks-galley': { name: 'The Galley at East 55th Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley', eventsUrl: null, city: 'Cleveland' },
       'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf', eventsUrl: null, city: 'Cleveland' },
+      'rockin-on-the-river': { name: 'Rockin on the River', url: 'https://www.rockinontheriver.com', eventsUrl: 'https://www.rockinontheriver.com/2026', city: 'Lorain' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
