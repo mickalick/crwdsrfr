@@ -84,6 +84,12 @@
       "eventsUrl": "https://mahalls20lanes.com/events/",
       "city": "Lakewood"
     },
+    "bop-stop": {
+      "name": "Bop Stop",
+      "url": "https://www.themusicsettlement.org/bop-stop/overview",
+      "eventsUrl": "https://www.themusicsettlement.org/events/center/bop-stop",
+      "city": "Cleveland"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -105,181 +111,13 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-06-17-big-freedia-big-freedom-tour",
-      "title": "Big Freedia: BIG FREEDOM Tour w/ Navy Jayde",
-      "venueId": "grog-shop",
-      "date": "2026-06-17",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$39.60",
-      "performers": [
-        {
-          "name": "Big Freedia: BIG FREEDOM Tour",
-          "headliner": true
-        },
-        {
-          "name": "Navy Jayde",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/big-freedia-big-freedom-tour/",
-      "ticketUrl": "https://www.ticketweb.com/event/big-freedia-big-freedom-tour-grog-shop-tickets/14877333?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "the-agora-2026-06-17-ben-folds",
-      "title": "Ben Folds w/ Lindsey Kraft",
-      "venueId": "the-agora",
-      "date": "2026-06-17",
-      "time": null,
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Ben Folds",
-          "headliner": true
-        },
-        {
-          "name": "Lindsey Kraft",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1312125",
-      "ticketUrl": "https://www.axs.com/events/1312125/ben-folds-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-17-los-mirlos",
-      "title": "Los Mirlos with Hello! 3D",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-17",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Los Mirlos",
-          "headliner": true
-        },
-        {
-          "name": "Hello! 3D",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/los-mirlos-17-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/los-mirlos-17-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2026-06-17-acousticats",
-      "title": "Acousticats",
-      "venueId": "metroparks-huntington",
-      "date": "2026-06-17",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Acousticats",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "happy-dog-2026-06-17-signal-cle-presents-classical-revolution",
-      "title": "Signal Cle presents: Classical Revolution!",
-      "venueId": "happy-dog",
-      "date": "2026-06-17",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Signal Cle presents: Classical Revolution!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-june-17-2026-689094",
-      "ticketUrl": "https://app.opendate.io/e/signal-cle-presents-classical-revolution-june-17-2026-689094",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-06-17-babe-haven",
-      "title": "Babe Haven",
-      "venueId": "mahalls",
-      "date": "2026-06-17",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Babe Haven",
-          "headliner": true
-        },
-        {
-          "name": "Bev Rage & the Drinks",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/babe-haven/",
-      "ticketUrl": "https://link.dice.fm/Q3fc265a04b1",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-17",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-17-dog-water"
-    },
-    {
-      "title": "Cruisin",
-      "performers": [
-        {
-          "name": "Cruisin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-17",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-06-17-cruisin"
-    },
-    {
       "id": "grog-shop-2026-06-18-higher-nation",
       "title": "Higher Nation w/ C-Level, Saturdazed",
       "venueId": "grog-shop",
       "date": "2026-06-18",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$15.16",
+      "price": "$19.51",
       "performers": [
         {
           "name": "Higher Nation",
@@ -367,7 +205,7 @@
       "date": "2026-06-18",
       "time": "19:00",
       "doors": "18:00",
-      "price": "$23.75 to $77.50",
+      "price": "$23.75 to $80.50 / Day Of : $50",
       "performers": [
         {
           "name": "Daniel Donato’s Cosmic Country with Marty Stuart & His Fabulous Superlatives",
@@ -405,7 +243,7 @@
       "date": "2026-06-18",
       "time": "18:00",
       "doors": "18:00",
-      "price": "$25.00",
+      "price": "$28.00",
       "performers": [
         {
           "name": "I Set My Friends on Fire",
@@ -422,6 +260,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/i-set-my-friends-on-fire/",
       "ticketUrl": "https://link.dice.fm/s1fa1630fe80",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-06-18-otherlands-trio-bop-stop",
+      "title": "Otherlands Trio",
+      "venueId": "bop-stop",
+      "date": "2026-06-18",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Otherlands Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/18/otherlands-trio-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/18/otherlands-trio-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -640,6 +497,44 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-06-19-todd-isler-quartet-bop-stop",
+      "title": "Todd Isler Quartet",
+      "venueId": "bop-stop",
+      "date": "2026-06-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Todd Isler Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/19/todd-isler-quartet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/19/todd-isler-quartet-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-06-19-jazz-jam-session-bop-stop",
+      "title": "Jazz Jam Session",
+      "venueId": "bop-stop",
+      "date": "2026-06-19",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Jazz Jam Session",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/19/jazz-jam-session-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/19/jazz-jam-session-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Cap",
       "performers": [
         {
@@ -716,6 +611,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/westside-live-ft-last-pick-young-genesis/",
       "ticketUrl": "https://www.ticketweb.com/event/westside-live-ft-last-pick-grog-shop-tickets/14903383?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-06-20-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-20",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-20-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-20-jun#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -884,6 +798,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-06-20-ben-tweedt-trio-bop-stop",
+      "title": "Ben Tweedt Trio",
+      "venueId": "bop-stop",
+      "date": "2026-06-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ben Tweedt Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/20/ben-tweedt-trio-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/20/ben-tweedt-trio-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "You Ain't Hard Fest",
       "performers": [
         {
@@ -1006,6 +939,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-06-21-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-21",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-21-jun-018a6",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-21-jun-018a6#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-06-21-johnny-mullenax",
       "title": "Johnny Mullenax with Jeshua Marshall & The Flood",
       "venueId": "beachland-ballroom",
@@ -1067,6 +1019,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/sace6/",
       "ticketUrl": "https://link.dice.fm/N7dedd745c93",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-06-21-raul-midn-bop-stop",
+      "title": "Raul Midón",
+      "venueId": "bop-stop",
+      "date": "2026-06-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Raul Midón",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/21/raul-midn-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/21/raul-midn-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -1445,6 +1416,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-06-24-tracy-marie-album-release-bop-stop",
+      "title": "Tracy Marie Album Release",
+      "venueId": "bop-stop",
+      "date": "2026-06-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Tracy Marie Album Release",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/24/tracy-marie-album-release-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/24/tracy-marie-album-release-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Dog Water",
       "performers": [
         {
@@ -1640,6 +1630,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-wise-mans-fear/",
       "ticketUrl": "https://link.dice.fm/K7dfd46336cc",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-06-25-bop-stop-closed-for-private-event-bop-stop",
+      "title": "BOP STOP Closed For Private Event",
+      "venueId": "bop-stop",
+      "date": "2026-06-25",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "BOP STOP Closed For Private Event",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/25/bop-stop-closed-for-private-event-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/25/bop-stop-closed-for-private-event-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -1985,6 +1994,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-06-27-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-27",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-27-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-27-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-06-27-james-mcmurtry-and-the-martial-law-review",
       "title": "James McMurtry and the Martial Law Review with BettySoo",
       "venueId": "beachland-ballroom",
@@ -2142,6 +2170,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-06-27-erica-sunshine-lee-bop-stop",
+      "title": "Erica Sunshine Lee",
+      "venueId": "bop-stop",
+      "date": "2026-06-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Erica Sunshine Lee",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/27/erica-sunshine-lee-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/27/erica-sunshine-lee-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Collective Cle",
       "performers": [
         {
@@ -2241,6 +2288,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-06-28-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-06-28",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-28-jun",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-28-jun#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-06-28-love-muffin-super-awesome-concert",
       "title": "Love Muffin Super Awesome Concert with Flowers Love Being Eerie, Craig Bell & The Dead Man's Handle, The Robert Conn Band, The Plastic Volts",
       "venueId": "beachland-ballroom",
@@ -2321,6 +2387,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/caroline-romano-and-lake-drive/",
       "ticketUrl": "https://link.dice.fm/Bbf14fdbe8e9",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-06-28-spin-cycle-bop-stop",
+      "title": "Spin Cycle",
+      "venueId": "bop-stop",
+      "date": "2026-06-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Spin Cycle",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/28/spin-cycle-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/28/spin-cycle-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -2485,6 +2570,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-01-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "venueId": "bop-stop",
+      "date": "2026-07-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/01/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/01/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Southbound",
       "performers": [
         {
@@ -2542,6 +2646,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/neon-moon-a-90s-and-2000s-country-dance-party/",
       "ticketUrl": "https://link.dice.fm/Xb41e42e4082",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-02-the-hall-of-fame-big-band-feat-steve-kortyka-bop-stop",
+      "title": "The Hall of Fame Big Band feat. Steve Kortyka",
+      "venueId": "bop-stop",
+      "date": "2026-07-02",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Hall of Fame Big Band feat. Steve Kortyka",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/02/the-hall-of-fame-big-band-feat-steve-kortyka-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/02/the-hall-of-fame-big-band-feat-steve-kortyka-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -2708,6 +2831,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-03-theron-brown-quartet-bop-stop",
+      "title": "Theron Brown Quartet",
+      "venueId": "bop-stop",
+      "date": "2026-07-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Theron Brown Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/03/theron-brown-quartet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/03/theron-brown-quartet-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -2827,6 +2969,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-04-were-all-gonna-die-tribute-to-sufjan-stevens-bop-stop",
+      "title": "We’re All Gonna Die: Tribute to Sufjan Stevens",
+      "venueId": "bop-stop",
+      "date": "2026-07-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "We’re All Gonna Die: Tribute to Sufjan Stevens",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/04/were-all-gonna-die-tribute-to-sufjan-stevens-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/04/were-all-gonna-die-tribute-to-sufjan-stevens-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Against the Wind",
       "performers": [
         {
@@ -2903,6 +3064,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul",
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-05-bop-stop-closed",
+      "title": "BOP STOP Closed",
+      "venueId": "bop-stop",
+      "date": "2026-07-05",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "BOP STOP Closed",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/05/bop-stop-closed",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/05/bop-stop-closed",
       "source": "scrape",
       "manual": false
     },
@@ -3201,6 +3381,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-09-infusion-blending-jazz-and-indian-classical-music-bop-stop",
+      "title": "Infusion: Blending Jazz and Indian Classical Music",
+      "venueId": "bop-stop",
+      "date": "2026-07-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Infusion: Blending Jazz and Indian Classical Music",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/09/infusion-blending-jazz-and-indian-classical-music-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/09/infusion-blending-jazz-and-indian-classical-music-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -3419,6 +3618,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-10-bryan-eng-trio-bop-stop",
+      "title": "Bryan Eng Trio",
+      "venueId": "bop-stop",
+      "date": "2026-07-10",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Bryan Eng Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/10/bryan-eng-trio-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/10/bryan-eng-trio-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -3599,6 +3817,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-11-moises-borges-quartet-featuring-ava-preston-bop-stop",
+      "title": "Moises Borges Quartet Featuring Ava Preston",
+      "venueId": "bop-stop",
+      "date": "2026-07-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Moises Borges Quartet Featuring Ava Preston",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/11/moises-borges-quartet-featuring-ava-preston-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/11/moises-borges-quartet-featuring-ava-preston-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Spazmatics",
       "performers": [
         {
@@ -3748,6 +3985,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/being-as-an-ocean/",
       "ticketUrl": "https://link.dice.fm/td1d88352aea",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-12-aanya-sengupta-with-bobby-ferrazza-bop-stop",
+      "title": "Aanya Sengupta with Bobby Ferrazza",
+      "venueId": "bop-stop",
+      "date": "2026-07-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Aanya Sengupta with Bobby Ferrazza",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/12/aanya-sengupta-with-bobby-ferrazza-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/12/aanya-sengupta-with-bobby-ferrazza-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -4066,6 +4322,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-15-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "venueId": "bop-stop",
+      "date": "2026-07-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/15/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/15/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Zero Hour",
       "performers": [
         {
@@ -4124,7 +4399,7 @@
     },
     {
       "id": "beachland-ballroom-2026-07-16-finger-foods",
-      "title": "Finger Foods with Cherry Yachtsman",
+      "title": "Finger Foods with Cherry Yachtsman, Wrinkled Beige Linen",
       "venueId": "beachland-ballroom",
       "date": "2026-07-16",
       "time": "20:00",
@@ -4136,7 +4411,7 @@
           "headliner": true
         },
         {
-          "name": "Cherry Yachtsman",
+          "name": "Cherry Yachtsman, Wrinkled Beige Linen",
           "headliner": false
         }
       ],
@@ -4199,6 +4474,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/ella-choi/",
       "ticketUrl": "https://link.dice.fm/S08daeff138b",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-16-the-howard-levy-4-bop-stop",
+      "title": "The Howard Levy 4",
+      "venueId": "bop-stop",
+      "date": "2026-07-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Howard Levy 4",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/16/the-howard-levy-4-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/16/the-howard-levy-4-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -4402,6 +4696,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/felicity-2/",
       "ticketUrl": "https://link.dice.fm/k8ba3418c3a5",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-17-mike-khourys-spite-of-darkness-bop-stop",
+      "title": "Mike Khoury’s Spite of Darkness",
+      "venueId": "bop-stop",
+      "date": "2026-07-17",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mike Khoury’s Spite of Darkness",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/17/mike-khourys-spite-of-darkness-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/17/mike-khourys-spite-of-darkness-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -4666,6 +4979,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-18-virginia-macdonald-quartet-bop-stop",
+      "title": "Virginia MacDonald Quartet",
+      "venueId": "bop-stop",
+      "date": "2026-07-18",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Virginia MacDonald Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/18/virginia-macdonald-quartet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/18/virginia-macdonald-quartet-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Wayne's World",
       "performers": [
         {
@@ -4853,6 +5185,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-19-emp-trio-the-end-of-the-chapter-bop-stop",
+      "title": "EMP Trio: The End of the Chapter",
+      "venueId": "bop-stop",
+      "date": "2026-07-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "EMP Trio: The End of the Chapter",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/19/emp-trio-the-end-of-the-chapter-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/19/emp-trio-the-end-of-the-chapter-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Island Troy",
       "performers": [
         {
@@ -4986,6 +5337,44 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/blu-exile/",
       "ticketUrl": "https://link.dice.fm/k95cf447e77d",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-21-picard-folger-karkosiak-bop-stop",
+      "title": "Picard / Folger / Karkosiak",
+      "venueId": "bop-stop",
+      "date": "2026-07-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Picard / Folger / Karkosiak",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/21/picard-folger-karkosiak-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/21/picard-folger-karkosiak-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-21-outlab-experiments-in-improvised-music-bop-stop",
+      "title": "Outlab: Experiments in Improvised Music",
+      "venueId": "bop-stop",
+      "date": "2026-07-21",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Outlab: Experiments in Improvised Music",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/21/outlab-experiments-in-improvised-music-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/21/outlab-experiments-in-improvised-music-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -5177,6 +5566,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-23-javier-red-quartet-bop-stop",
+      "title": "Javier Red Quartet",
+      "venueId": "bop-stop",
+      "date": "2026-07-23",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Javier Red Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/23/javier-red-quartet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/23/javier-red-quartet-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Morning Glory",
       "performers": [
         {
@@ -5330,6 +5738,25 @@
       ],
       "eventUrl": "https://cainpark.com/events/category/series/into-the-woods-jr/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/47488522/into-the-woods-jr-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-24-nous-smith-brown-plank-bop-stop",
+      "title": "Nous (Smith, Brown, Plank)",
+      "venueId": "bop-stop",
+      "date": "2026-07-24",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nous (Smith, Brown, Plank)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/24/nous-smith-brown-plank-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/24/nous-smith-brown-plank-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -5513,6 +5940,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/dead-bundy-2/",
       "ticketUrl": "https://link.dice.fm/q82fced26a0e",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-25-maxophone-quintet-bop-stop",
+      "title": "Maxophone Quintet",
+      "venueId": "bop-stop",
+      "date": "2026-07-25",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Maxophone Quintet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/25/maxophone-quintet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/25/maxophone-quintet-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -5902,6 +6348,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-30-third-law-collective-bop-stop",
+      "title": "Third Law Collective",
+      "venueId": "bop-stop",
+      "date": "2026-07-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Third Law Collective",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/30/third-law-collective-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/30/third-law-collective-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Alt 95",
       "performers": [
         {
@@ -6009,6 +6474,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/dropout-kings/",
       "ticketUrl": "https://link.dice.fm/Zbc505a8eca3",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-07-31-indestructible-featuring-roger-humphries-bop-stop",
+      "title": "Indestructible: Featuring Roger Humphries",
+      "venueId": "bop-stop",
+      "date": "2026-07-31",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Indestructible: Featuring Roger Humphries",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/31/indestructible-featuring-roger-humphries-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/31/indestructible-featuring-roger-humphries-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -6303,6 +6787,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-08-02-pete-and-nolan-cavano-bop-stop",
+      "title": "Pete and Nolan Cavano",
+      "venueId": "bop-stop",
+      "date": "2026-08-02",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Pete and Nolan Cavano",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/02/pete-and-nolan-cavano-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/02/pete-and-nolan-cavano-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -6471,6 +6974,25 @@
       ],
       "eventUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
       "ticketUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-08-05-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "venueId": "bop-stop",
+      "date": "2026-08-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/05/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/05/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -7313,7 +7835,7 @@
     },
     {
       "id": "beachland-ballroom-2026-08-13-garrett-boys",
-      "title": "Garrett Boys",
+      "title": "Garrett Boys with King/Kovac/Huddleston",
       "venueId": "beachland-ballroom",
       "date": "2026-08-13",
       "time": "20:00",
@@ -7323,6 +7845,10 @@
         {
           "name": "Garrett Boys",
           "headliner": true
+        },
+        {
+          "name": "King/Kovac/Huddleston",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/garrett-boys-13-aug",
@@ -7800,6 +8326,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-08-16-sunny-side-7-piece-jazz-band-from-new-orleans-bop-stop",
+      "title": "Sunny Side, 7 Piece Jazz Band from New Orleans",
+      "venueId": "bop-stop",
+      "date": "2026-08-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Sunny Side, 7 Piece Jazz Band from New Orleans",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/16/sunny-side-7-piece-jazz-band-from-new-orleans-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/16/sunny-side-7-piece-jazz-band-from-new-orleans-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -7926,6 +8471,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-08-18-outlab-experiments-in-improvised-music-bop-stop",
+      "title": "Outlab: Experiments in Improvised Music",
+      "venueId": "bop-stop",
+      "date": "2026-08-18",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Outlab: Experiments in Improvised Music",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/18/outlab-experiments-in-improvised-music-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/18/outlab-experiments-in-improvised-music-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-08-19-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
@@ -8010,6 +8574,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/dawn-of-ouroboros-exist-greylotus/",
       "ticketUrl": "https://link.dice.fm/h646e11e562b",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-08-19-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "venueId": "bop-stop",
+      "date": "2026-08-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/19/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/19/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -9121,6 +9704,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-08-30-alan-hsiao-bop-stop",
+      "title": "Alan Hsiao",
+      "venueId": "bop-stop",
+      "date": "2026-08-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Alan Hsiao",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/30/alan-hsiao-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/30/alan-hsiao-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -9515,6 +10117,29 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-09-tea-bags"
+    },
+    {
+      "id": "beachland-ballroom-2026-09-10-mikaela-davis",
+      "title": "Mikaela Davis with Johanna Samuels",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Mikaela Davis",
+          "headliner": true
+        },
+        {
+          "name": "Johanna Samuels",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/mikaela-davis-10-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/mikaela-davis-10-sep#tickets",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "beachland-ballroom-2026-09-10-joey-harkum",
@@ -9994,33 +10619,6 @@
       "manual": false
     },
     {
-      "id": "grog-shop-2026-09-18-show-me-the-body",
-      "title": "Show Me The Body w/ Whispers, Holder",
-      "venueId": "grog-shop",
-      "date": "2026-09-18",
-      "time": "20:30",
-      "doors": "19:30",
-      "price": "$35.22",
-      "performers": [
-        {
-          "name": "Show Me The Body",
-          "headliner": true
-        },
-        {
-          "name": "Whispers",
-          "headliner": false
-        },
-        {
-          "name": "Holder",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/show-me-the-body-whispers-holder/",
-      "ticketUrl": "https://www.ticketweb.com/event/show-me-the-body-whispers-grog-shop-tickets/14968953?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "rockin-on-the-river-2026-09-18-bad-juju",
       "title": "Bad JuJu with Old Skool",
       "venueId": "rockin-on-the-river",
@@ -10358,7 +10956,7 @@
     },
     {
       "id": "beachland-ballroom-2026-09-22-big-sandy-his-fly-rite-boys",
-      "title": "Big Sandy & His Fly-Rite Boys",
+      "title": "Big Sandy & His Fly-Rite Boys with Rockin' Rodney and the Regulars",
       "venueId": "beachland-ballroom",
       "date": "2026-09-22",
       "time": "20:00",
@@ -10368,6 +10966,10 @@
         {
           "name": "Big Sandy & His Fly-Rite Boys",
           "headliner": true
+        },
+        {
+          "name": "Rockin' Rodney and the Regulars",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/big-sandy-his-fly-rite-boys-22-sep",
@@ -10422,6 +11024,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-09-23-daley",
+      "title": "Daley",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-23",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Daley",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/daley-24-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/daley-24-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-09-23-schur",
       "title": "schur",
       "venueId": "beachland-ballroom",
@@ -10437,25 +11058,6 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/schur-23-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/schur-23-sep#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-09-24-daley",
-      "title": "Daley",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Daley",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/daley-24-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/daley-24-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11071,25 +11673,6 @@
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2026-10-05-taylor-bickett",
-      "title": "Taylor Bickett",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-05",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Taylor Bickett",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/taylor-bickett-05-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/taylor-bickett-05-oct#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "rocket-arena-2026-10-06-gorillaz",
       "title": "Gorillaz - The Mountain Tour",
       "venueId": "rocket-arena",
@@ -11140,25 +11723,6 @@
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2026-10-07-the-dream-syndicate",
-      "title": "The Dream Syndicate",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-07",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Dream Syndicate",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-agora-2026-10-09-sugar",
       "title": "SUGAR",
       "venueId": "the-agora",
@@ -11174,25 +11738,6 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1300881",
       "ticketUrl": "https://www.axs.com/events/1300881/sugar-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-10-09-slift",
-      "title": "SLIFT",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-09",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "SLIFT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/slift-09-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/slift-09-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11235,25 +11780,6 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
       "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-10-10-jed-harrelson",
-      "title": "Jed Harrelson",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-10",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Jed Harrelson",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jed-harrelson-10-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11718,6 +12244,29 @@
       "manual": false
     },
     {
+      "id": "grog-shop-2026-11-11-small-brown-bike",
+      "title": "Small Brown Bike w/ The Casket Lottery",
+      "venueId": "grog-shop",
+      "date": "2026-11-11",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$21.57",
+      "performers": [
+        {
+          "name": "Small Brown Bike",
+          "headliner": true
+        },
+        {
+          "name": "The Casket Lottery",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/small-brown-bike-the-casket-lottery/",
+      "ticketUrl": "https://www.ticketweb.com/event/small-brown-bike-the-casket-grog-shop-tickets/14203314?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-11-11-akeem-ali",
       "title": "Akeem Ali",
       "venueId": "mahalls",
@@ -11831,6 +12380,10 @@
           "headliner": false
         },
         {
+          "name": "Boosie BadAzz",
+          "headliner": false
+        },
+        {
           "name": "Fiend",
           "headliner": false
         },
@@ -11843,6 +12396,10 @@
           "headliner": false
         },
         {
+          "name": "Mac",
+          "headliner": false
+        },
+        {
           "name": "Mia X",
           "headliner": false
         },
@@ -11852,10 +12409,6 @@
         },
         {
           "name": "BG",
-          "headliner": false
-        },
-        {
-          "name": "Lil Boosie",
           "headliner": false
         }
       ],
@@ -12196,6 +12749,25 @@
       "performers": [
         {
           "name": "Black Jack Gypsies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-huntington-2027-06-17-acousticats",
+      "title": "Acousticats",
+      "venueId": "metroparks-huntington",
+      "date": "2027-06-17",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Acousticats",
           "headliner": true
         }
       ],
