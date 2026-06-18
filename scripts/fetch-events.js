@@ -975,6 +975,106 @@ async function fetchBopStop() {
   return events;
 }
 
+async function fetchGlobeIron() {
+  try {
+    const res = await fetch('https://aegwebprod.blob.core.windows.net/json/events/339/events.json');
+    const data = await res.json();
+    const events = [];
+
+    for (const ev of data.events || []) {
+      if (!ev.active || ev.publishStatus !== 1) continue;
+
+      const eventDateTime = ev.eventDateTime; // e.g. "2026-06-21T19:00:00"
+      if (!eventDateTime) continue;
+      const date = eventDateTime.slice(0, 10);
+      const time = eventDateTime.slice(11, 16);
+      const doors = ev.doorDateTime ? ev.doorDateTime.slice(11, 16) : null;
+
+      const headliner = ev.title?.headlinersText?.trim();
+      if (!headliner) continue;
+
+      const supporting = ev.title?.supportingText?.trim();
+      const tour = ev.title?.tour?.trim();
+      const hasRealSupport = supporting && supporting !== tour;
+
+      const title = hasRealSupport ? `${headliner} with ${supporting}` : headliner;
+
+      const performers = [{ name: headliner, headliner: true }];
+      if (hasRealSupport) performers.push({ name: supporting, headliner: false });
+
+      events.push({
+        id: `globe-iron-${ev.eventId}`,
+        title,
+        venueId: 'globe-iron',
+        date,
+        time,
+        doors,
+        price: null,
+        performers,
+        eventUrl: `https://globeironcle.com/events/detail?event_id=${ev.eventId}`,
+        ticketUrl: ev.ticketing?.url || null,
+        source: 'scrape',
+        manual: false,
+      });
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchGlobeIron error:', err.message);
+    return [];
+  }
+}
+
+async function fetchJacobsPavilion() {
+  try {
+    const res = await fetch('https://aegwebprod.blob.core.windows.net/json/events/224/events.json');
+    const data = await res.json();
+    const events = [];
+
+    for (const ev of data.events || []) {
+      if (!ev.active || ev.publishStatus !== 1) continue;
+
+      const eventDateTime = ev.eventDateTime;
+      if (!eventDateTime) continue;
+      const date = eventDateTime.slice(0, 10);
+      const time = eventDateTime.slice(11, 16);
+      const doors = ev.doorDateTime ? ev.doorDateTime.slice(11, 16) : null;
+
+      const headliner = ev.title?.headlinersText?.trim();
+      if (!headliner) continue;
+
+      const supporting = ev.title?.supportingText?.trim();
+      const tour = ev.title?.tour?.trim();
+      const hasRealSupport = supporting && supporting !== tour;
+
+      const title = hasRealSupport ? `${headliner} with ${supporting}` : headliner;
+
+      const performers = [{ name: headliner, headliner: true }];
+      if (hasRealSupport) performers.push({ name: supporting, headliner: false });
+
+      events.push({
+        id: `jacobs-pavilion-${ev.eventId}`,
+        title,
+        venueId: 'jacobs-pavilion',
+        date,
+        time,
+        doors,
+        price: null,
+        performers,
+        eventUrl: `https://jacobspavilion.com/events/detail?event_id=${ev.eventId}`,
+        ticketUrl: ev.ticketing?.url || null,
+        source: 'scrape',
+        manual: false,
+      });
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchJacobsPavilion error:', err.message);
+    return [];
+  }
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -992,7 +1092,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -1002,7 +1102,9 @@ async function main() {
     fetchCainPark(),
     fetchHappyDog(),
     fetchMahalls(),
-    fetchBopStop()
+    fetchBopStop(),
+    fetchGlobeIron(),
+    fetchJacobsPavilion(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -1020,6 +1122,8 @@ async function main() {
     ...happyDog,
     ...mahalls,
     ...bopStop,
+    ...globeIron,
+    ...jacobsPavilion,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -1041,6 +1145,8 @@ async function main() {
       'happy-dog': { name: 'Happy Dog', url: 'https://happydogcleveland.com/', eventsUrl: 'https://app.opendate.io/v/happy-dog-1767', city: 'Cleveland' },
       'mahalls': { name: 'Mahalls', url: 'https://mahalls20lanes.com/', eventsUrl: 'https://mahalls20lanes.com/events/', city: 'Lakewood' },
       'bop-stop': { name: 'Bop Stop', url: 'https://www.themusicsettlement.org/bop-stop/overview', eventsUrl: 'https://www.themusicsettlement.org/events/center/bop-stop', city: 'Cleveland' },
+      'globe-iron': { name: 'Globe Iron', url: 'https://globeironcle.com/', eventsUrl: 'https://globeironcle.com/calendar/', city: 'Cleveland' },
+      'jacobs-pavilion': { name: 'Jacobs Pavilion', url: 'https://jacobspavilion.com/', eventsUrl: 'https://jacobspavilion.com/calendar/', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },

@@ -90,6 +90,18 @@
       "eventsUrl": "https://www.themusicsettlement.org/events/center/bop-stop",
       "city": "Cleveland"
     },
+    "globe-iron": {
+      "name": "Globe Iron",
+      "url": "https://globeironcle.com/",
+      "eventsUrl": "https://globeironcle.com/calendar/",
+      "city": "Cleveland"
+    },
+    "jacobs-pavilion": {
+      "name": "Jacobs Pavilion",
+      "url": "https://jacobspavilion.com/",
+      "eventsUrl": "https://jacobspavilion.com/calendar/",
+      "city": "Cleveland"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -279,6 +291,25 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/06/18/otherlands-trio-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/18/otherlands-trio-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1225285",
+      "title": "The Avett Brothers & Mike Patton present AVTT/PTTN",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-06-18",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Avett Brothers & Mike Patton present AVTT/PTTN",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1225285",
+      "ticketUrl": "https://www.axs.com/events/1225285/the-avett-brothers-mike-patton-present-avtt-pttn-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -531,6 +562,29 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/06/19/jazz-jam-session-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/19/jazz-jam-session-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1414942",
+      "title": "Bleachers Forever with Wednesday",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-06-19",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Bleachers Forever",
+          "headliner": true
+        },
+        {
+          "name": "Wednesday",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1414942",
+      "ticketUrl": "https://www.axs.com/events/1414942/bleachers-forever-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -1042,6 +1096,25 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1455585",
+      "title": "Happy Endings Featuring Special Guest: Sango",
+      "venueId": "globe-iron",
+      "date": "2026-06-21",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Happy Endings Featuring Special Guest: Sango",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1455585",
+      "ticketUrl": "https://www.axs.com/events/1455585/happy-endings-featuring-special-guest-sango-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Furious George",
       "performers": [
         {
@@ -1431,6 +1504,29 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/06/24/tracy-marie-album-release-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/24/tracy-marie-album-release-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1362143",
+      "title": "Passion Pit with The Pretty Penny Tour w/ Arden Jones",
+      "venueId": "globe-iron",
+      "date": "2026-06-24",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Passion Pit",
+          "headliner": true
+        },
+        {
+          "name": "The Pretty Penny Tour w/ Arden Jones",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1362143",
+      "ticketUrl": "https://www.axs.com/events/1362143/passion-pit-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3637,6 +3733,25 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1430968",
+      "title": "Absolute Intense Wrestling: Absolution 19",
+      "venueId": "globe-iron",
+      "date": "2026-07-10",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Absolute Intense Wrestling: Absolution 19",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1430968",
+      "ticketUrl": "https://www.axs.com/events/1430968/absolute-intense-wrestling-absolution-19-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -4341,6 +4456,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1298166",
+      "title": "Death Cab for Cutie with Jay Som",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-07-15",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Death Cab for Cutie",
+          "headliner": true
+        },
+        {
+          "name": "Jay Som",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1298166",
+      "ticketUrl": "https://www.axs.com/events/1298166/death-cab-for-cutie-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Zero Hour",
       "performers": [
         {
@@ -4998,6 +5136,29 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1463676",
+      "title": "Betterland Festival with Rubblebucket, David Murphy's For My Peeps, Loconti, AJ & the Woods",
+      "venueId": "globe-iron",
+      "date": "2026-07-18",
+      "time": "15:00",
+      "doors": "15:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Betterland Festival",
+          "headliner": true
+        },
+        {
+          "name": "Rubblebucket, David Murphy's For My Peeps, Loconti, AJ & the Woods",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1463676",
+      "ticketUrl": "https://www.axs.com/events/1463676/betterland-festival-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Wayne's World",
       "performers": [
         {
@@ -5322,6 +5483,48 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1444981",
+      "title": "Bloc Party",
+      "venueId": "globe-iron",
+      "date": "2026-07-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Bloc Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1444981",
+      "ticketUrl": "https://www.axs.com/events/1444981/bloc-party-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1158181",
+      "title": "Louis Tomlinson with The Beaches, Picture Parlour",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-07-20",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Louis Tomlinson",
+          "headliner": true
+        },
+        {
+          "name": "The Beaches, Picture Parlour",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1158181",
+      "ticketUrl": "https://www.axs.com/events/1158181/louis-tomlinson-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-07-21-blu-exile",
       "title": "Blu & Exile",
       "venueId": "mahalls",
@@ -5585,6 +5788,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1353095",
+      "title": "Slightly Stoopid with THE ELOVATERS, Bumpin Uglies",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-07-23",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Slightly Stoopid",
+          "headliner": true
+        },
+        {
+          "name": "THE ELOVATERS, Bumpin Uglies",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1353095",
+      "ticketUrl": "https://www.axs.com/events/1353095/slightly-stoopid-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Morning Glory",
       "performers": [
         {
@@ -5757,6 +5983,29 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/07/24/nous-smith-brown-plank-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/24/nous-smith-brown-plank-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1335872",
+      "title": "Zeds Dead with Mary Droppinz",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Zeds Dead",
+          "headliner": true
+        },
+        {
+          "name": "Mary Droppinz",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1335872",
+      "ticketUrl": "https://www.axs.com/events/1335872/zeds-dead-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -6073,6 +6322,25 @@
       ],
       "eventUrl": "https://cainpark.com/events/category/series/into-the-woods-jr/cain-park-alma-theater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/72192180/into-the-woods-jr-sunday-matinee-cleveland-heights-cain-park-alma-theater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1312904",
+      "title": "Brit Floyd",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-07-26",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Brit Floyd",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1312904",
+      "ticketUrl": "https://www.axs.com/events/1312904/brit-floyd-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -7143,6 +7411,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1398438",
+      "title": "Sam Barber with Waylon Wyatt, Wild Horses",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-06",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Sam Barber",
+          "headliner": true
+        },
+        {
+          "name": "Waylon Wyatt, Wild Horses",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1398438",
+      "ticketUrl": "https://www.axs.com/events/1398438/sam-barber-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -7246,6 +7537,29 @@
       ],
       "eventUrl": "https://app.opendate.io/e/karaoke-night-w-terkalerk-august-07-2026-716018",
       "ticketUrl": "https://app.opendate.io/e/karaoke-night-w-terkalerk-august-07-2026-716018",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1446845",
+      "title": "CLUB 1BD: Courtyard Edition with ft. Smacks",
+      "venueId": "globe-iron",
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "CLUB 1BD: Courtyard Edition",
+          "headliner": true
+        },
+        {
+          "name": "ft. Smacks",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1446845",
+      "ticketUrl": "https://www.axs.com/events/1446845/club-1bd-courtyard-edition-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -7769,6 +8083,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1307132",
+      "title": "The Fray with Dashboard Confessional and Colony House",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-12",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Fray",
+          "headliner": true
+        },
+        {
+          "name": "Dashboard Confessional and Colony House",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1307132",
+      "ticketUrl": "https://www.axs.com/events/1307132/the-fray-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Back Street Blues",
       "performers": [
         {
@@ -7872,6 +8209,29 @@
       ],
       "eventUrl": "https://cainpark.com/event/bruce-hornsby-the-noisemakers-indigo-park-tour/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/79438899/bruce-hornsby-the-noisemakersindigo-park-tour-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1326879",
+      "title": "Simple Plan with 3OH!3, Bowling For Soup",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-13",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Simple Plan",
+          "headliner": true
+        },
+        {
+          "name": "3OH!3, Bowling For Soup",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1326879",
+      "ticketUrl": "https://www.axs.com/events/1326879/simple-plan-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -8341,6 +8701,29 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/08/16/sunny-side-7-piece-jazz-band-from-new-orleans-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/16/sunny-side-7-piece-jazz-band-from-new-orleans-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1457710",
+      "title": "Howard Jones with Wang Chung, The English Beat, Modern English, Richard Blade",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-16",
+      "time": "18:30",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Howard Jones",
+          "headliner": true
+        },
+        {
+          "name": "Wang Chung, The English Beat, Modern English, Richard Blade",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1457710",
+      "ticketUrl": "https://www.axs.com/events/1457710/howard-jones-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -8983,6 +9366,52 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1408461",
+      "title": "Citizen with Hotline TNT, Anxious, Rocket",
+      "venueId": "globe-iron",
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Citizen",
+          "headliner": true
+        },
+        {
+          "name": "Hotline TNT, Anxious, Rocket",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1408461",
+      "ticketUrl": "https://www.axs.com/events/1408461/citizen-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1365876",
+      "title": "Ella Mai with AMA and Girlfriend",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-22",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Ella Mai",
+          "headliner": true
+        },
+        {
+          "name": "AMA and Girlfriend",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1365876",
+      "ticketUrl": "https://www.axs.com/events/1365876/ella-mai-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tea Bags",
       "performers": [
         {
@@ -9506,6 +9935,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1362163",
+      "title": "NEEDTOBREATHE with Drew Holcomb & Ellie Holcomb",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "NEEDTOBREATHE",
+          "headliner": true
+        },
+        {
+          "name": "Drew Holcomb & Ellie Holcomb",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1362163",
+      "ticketUrl": "https://www.axs.com/events/1362163/needtobreathe-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -9601,6 +10053,29 @@
       ],
       "eventUrl": "https://cainpark.com/event/the-legends-of-jazz-4-yellow-jackets-patrice-rushen-hiroshima/cain-park-evans-amphitheater/cleveland-heights-ohio/",
       "ticketUrl": "https://www.etix.com/ticket/p/95003240/the-legends-of-jazz-4yellow-jacketspatrice-rushenhiroshima-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1479056",
+      "title": "Masters of Funk with Larry Dodson, The SOS Band, The Original Lakeside, Midnight Star, Con Funk Shun, Alisa Peoples",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Masters of Funk",
+          "headliner": true
+        },
+        {
+          "name": "Larry Dodson, The SOS Band, The Original Lakeside, Midnight Star, Con Funk Shun, Alisa Peoples",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1479056",
+      "ticketUrl": "https://www.axs.com/events/1479056/masters-of-funk-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -9723,6 +10198,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1374267",
+      "title": "Myles Smith - MOVED TO AGORA THEATRE with Hazlett, Stella Lefty",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-08-30",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Myles Smith - MOVED TO AGORA THEATRE",
+          "headliner": true
+        },
+        {
+          "name": "Hazlett, Stella Lefty",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1374267",
+      "ticketUrl": "https://www.axs.com/events/1374267/myles-smith-moved-to-agora-theatre-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -9780,6 +10278,52 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/the-well-01-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-well-01-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1425652",
+      "title": "Squeeze with with Special Guest Adam Ant and Haircut 100",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-01",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Squeeze",
+          "headliner": true
+        },
+        {
+          "name": "with Special Guest Adam Ant and Haircut 100",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1425652",
+      "ticketUrl": "https://www.axs.com/events/1425652/squeeze-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1407931",
+      "title": "3Quency with Lucy, DJ Gab Wright",
+      "venueId": "globe-iron",
+      "date": "2026-09-02",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "3Quency",
+          "headliner": true
+        },
+        {
+          "name": "Lucy, DJ Gab Wright",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1407931",
+      "ticketUrl": "https://www.axs.com/events/1407931/3quency-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -10303,6 +10847,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1366509",
+      "title": "Gavin Adcock with Jake Worthington and Tyler Nance",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-11",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Gavin Adcock",
+          "headliner": true
+        },
+        {
+          "name": "Jake Worthington and Tyler Nance",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1366509",
+      "ticketUrl": "https://www.axs.com/events/1366509/gavin-adcock-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -10394,6 +10961,29 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1472187",
       "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1407898",
+      "title": "Black Label Society with Zakk Sabbath, Dark Chapel",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-13",
+      "time": "19:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Black Label Society",
+          "headliner": true
+        },
+        {
+          "name": "Zakk Sabbath, Dark Chapel",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1407898",
+      "ticketUrl": "https://www.axs.com/events/1407898/black-label-society-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -10619,6 +11209,25 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1438454",
+      "title": "Ashley Cooke",
+      "venueId": "globe-iron",
+      "date": "2026-09-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Ashley Cooke",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1438454",
+      "ticketUrl": "https://www.axs.com/events/1438454/ashley-cooke-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rockin-on-the-river-2026-09-18-bad-juju",
       "title": "Bad JuJu with Old Skool",
       "venueId": "rockin-on-the-river",
@@ -10657,6 +11266,29 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/dean-johnson/",
       "ticketUrl": "https://link.dice.fm/y66fa7b19773",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1343769",
+      "title": "Kamelot with Visions of Atlantis, Frozen Crown",
+      "venueId": "globe-iron",
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Kamelot",
+          "headliner": true
+        },
+        {
+          "name": "Visions of Atlantis, Frozen Crown",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1343769",
+      "ticketUrl": "https://www.axs.com/events/1343769/kamelot-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -10814,6 +11446,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1407893",
+      "title": "Killswitch Engage with Machine Head, Rivers of Nihil, and Judiciary",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-19",
+      "time": "18:30",
+      "doors": "17:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Killswitch Engage",
+          "headliner": true
+        },
+        {
+          "name": "Machine Head, Rivers of Nihil, and Judiciary",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1407893",
+      "ticketUrl": "https://www.axs.com/events/1407893/killswitch-engage-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Spazmatics",
       "performers": [
         {
@@ -10869,6 +11524,25 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-19-private-party"
+    },
+    {
+      "id": "globe-iron-1477920",
+      "title": "Peaches",
+      "venueId": "globe-iron",
+      "date": "2026-09-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Peaches",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1477920",
+      "ticketUrl": "https://www.axs.com/events/1477920/peaches-tickets",
+      "source": "scrape",
+      "manual": false
     },
     {
       "title": "Sully Solo",
@@ -11058,6 +11732,29 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/schur-23-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/schur-23-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1340454",
+      "title": "St. Paul & The Broken Bones with The Psycodelics",
+      "venueId": "globe-iron",
+      "date": "2026-09-23",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "St. Paul & The Broken Bones",
+          "headliner": true
+        },
+        {
+          "name": "The Psycodelics",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1340454",
+      "ticketUrl": "https://www.axs.com/events/1340454/st-paul-the-broken-bones-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11512,6 +12209,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1386853",
+      "title": "Modest Mouse with Caroline Rose",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-30",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Modest Mouse",
+          "headliner": true
+        },
+        {
+          "name": "Caroline Rose",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1386853",
+      "ticketUrl": "https://www.axs.com/events/1386853/modest-mouse-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-01-sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter",
       "title": "Sex Pistols (Steve Jones, Paul Cook, Glen Matlock) featuring Frank Carter w/ Bad Nerves",
       "venueId": "the-agora",
@@ -11554,6 +12274,29 @@
       "manual": false
     },
     {
+      "id": "jacobs-pavilion-1448383",
+      "title": "Ole 60 with Kolton Moore & the Clever Few, GARRET ELIAS",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-10-01",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Ole 60",
+          "headliner": true
+        },
+        {
+          "name": "Kolton Moore & the Clever Few, GARRET ELIAS",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1448383",
+      "ticketUrl": "https://www.axs.com/events/1448383/ole-60-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-10-02-thousand-below",
       "title": "Thousand Below",
       "venueId": "mahalls",
@@ -11581,6 +12324,29 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/thousand-below/",
       "ticketUrl": "https://link.dice.fm/ab2c7ea9c2b6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1210725",
+      "title": "Benjamin Tod & Lost Dog Street Band with Candi Jenkins",
+      "venueId": "globe-iron",
+      "date": "2026-10-02",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Benjamin Tod & Lost Dog Street Band",
+          "headliner": true
+        },
+        {
+          "name": "Candi Jenkins",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1210725",
+      "ticketUrl": "https://www.axs.com/events/1210725/benjamin-tod-lost-dog-street-band-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11872,6 +12638,29 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1383237",
+      "title": "Daði Freyr with BRÍET",
+      "venueId": "globe-iron",
+      "date": "2026-10-14",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Daði Freyr",
+          "headliner": true
+        },
+        {
+          "name": "BRÍET",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1383237",
+      "ticketUrl": "https://www.axs.com/events/1383237/daoi-freyr-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-10-15-dana-and-alden",
       "title": "Dana and Alden",
       "venueId": "grog-shop",
@@ -12029,6 +12818,29 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1465851",
+      "title": "Plini with Night Verses, Portraits",
+      "venueId": "globe-iron",
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Plini",
+          "headliner": true
+        },
+        {
+          "name": "Night Verses, Portraits",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1465851",
+      "ticketUrl": "https://www.axs.com/events/1465851/plini-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-24-streetlight-manifesto",
       "title": "Streetlight Manifesto w/ Dave Hause",
       "venueId": "the-agora",
@@ -12098,6 +12910,25 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1433620",
+      "title": "L7",
+      "venueId": "globe-iron",
+      "date": "2026-10-27",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "L7",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1433620",
+      "ticketUrl": "https://www.axs.com/events/1433620/l7-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-10-28-this-is-lorelei",
       "title": "This is Lorelei",
       "venueId": "mahalls",
@@ -12144,6 +12975,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1335715",
       "ticketUrl": "https://www.axs.com/events/1335715/mushroomhead-fear-factory-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1425475",
+      "title": "Eivør",
+      "venueId": "globe-iron",
+      "date": "2026-11-03",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Eivør",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1425475",
+      "ticketUrl": "https://www.axs.com/events/1425475/eivr-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -12302,6 +13152,29 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/journey-tickets/cleveland-ohio-rocket-arena-2026-11-12-7-30-pm/concert/18219942",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1457716",
+      "title": "Skipline and Ascension with Vicar Blood",
+      "venueId": "globe-iron",
+      "date": "2026-11-13",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Skipline and Ascension",
+          "headliner": true
+        },
+        {
+          "name": "Vicar Blood",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1457716",
+      "ticketUrl": "https://www.axs.com/events/1457716/skipline-and-ascension-tickets",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -12464,6 +13337,29 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1489871",
+      "title": "Yaelokre with Ben Caplan",
+      "venueId": "globe-iron",
+      "date": "2026-11-17",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Yaelokre",
+          "headliner": true
+        },
+        {
+          "name": "Ben Caplan",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1489871",
+      "ticketUrl": "https://www.axs.com/events/1489871/yaelokre-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-19-dweezil-zappa",
       "title": "Dweezil Zappa",
       "venueId": "the-agora",
@@ -12502,6 +13398,25 @@
       "manual": false
     },
     {
+      "id": "globe-iron-1480568",
+      "title": "STS9",
+      "venueId": "globe-iron",
+      "date": "2026-11-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "STS9",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1480568",
+      "ticketUrl": "https://www.axs.com/events/1480568/sts9-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-21-tropidelic",
       "title": "Tropidelic w/ Surfer Girl, The Quasi Kings, Land of Panda.",
       "venueId": "the-agora",
@@ -12529,6 +13444,29 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1450925",
       "ticketUrl": "https://www.axs.com/events/1450925/tropidelic-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1460421",
+      "title": "Catch Your Breath with Not Broken Enough Tour with: Tx2, Arankai, Colorblind",
+      "venueId": "globe-iron",
+      "date": "2026-11-21",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Catch Your Breath",
+          "headliner": true
+        },
+        {
+          "name": "Not Broken Enough Tour with: Tx2, Arankai, Colorblind",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1460421",
+      "ticketUrl": "https://www.axs.com/events/1460421/catch-your-breath-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -12659,6 +13597,48 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1231097",
       "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1371082",
+      "title": "Public Image Ltd with Plague Vendor",
+      "venueId": "globe-iron",
+      "date": "2027-03-24",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Public Image Ltd",
+          "headliner": true
+        },
+        {
+          "name": "Plague Vendor",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1371082",
+      "ticketUrl": "https://www.axs.com/events/1371082/public-image-ltd-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1471582",
+      "title": "Denny Love",
+      "venueId": "globe-iron",
+      "date": "2027-04-09",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Denny Love",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1471582",
+      "ticketUrl": "https://www.axs.com/events/1471582/denny-love-tickets",
       "source": "scrape",
       "manual": false
     },
