@@ -890,6 +890,91 @@ async function fetchMahalls() {
   }
 }
 
+async function fetchBopStop() {
+  const events = [];
+  const seenIds = new Set();
+
+  function getMonthsToFetch(count) {
+    const today = new Date();
+    const months = [];
+    for (let i = 0; i < count; i++) {
+      const d = new Date(today.getFullYear(), today.getMonth() + i, 1);
+      months.push({ year: d.getFullYear(), month: d.getMonth() + 1 });
+    }
+    return months;
+  }
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+    if (!match) return null;
+    let [, hours, minutes, modifier] = match;
+    hours = parseInt(hours, 10);
+    if (modifier.toLowerCase() === 'pm' && hours !== 12) hours += 12;
+    if (modifier.toLowerCase() === 'am' && hours === 12) hours = 0;
+    return `${String(hours).padStart(2, '0')}:${minutes}`;
+  }
+
+  const months = getMonthsToFetch(3);
+
+  for (const { year, month } of months) {
+    try {
+      const monthUrl = `https://www.themusicsettlement.org/events/${year}/${String(month).padStart(2, '0')}`;
+      const res = await fetch(monthUrl);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+
+      $('td').each((i, td) => {
+        const dayText = $(td).children('p.day').first().text().trim();
+        const day = parseInt(dayText, 10);
+        if (!day) return; // skip empty/padding cells
+
+        $(td).children('div.event').each((j, eventEl) => {
+          const isBopStop = $(eventEl).children('ul.categories').find('li.bop-stop').length > 0;
+          if (!isBopStop) return; // skip recitals, school closures, etc.
+
+          const titleLink = $(eventEl).children('p.title').find('a').first();
+          const rawTitle = titleLink.text().trim();
+          const href = titleLink.attr('href');
+          if (!rawTitle || !href) return;
+
+          const title = rawTitle.replace(/\s*@\s*BOP STOP\s*$/i, '').trim();
+          const timeRaw = $(eventEl).children('p.time').first().text().trim();
+          const eventDate = new Date(year, month - 1, day);
+          const date = toLocalDateStr(eventDate);
+
+          const fullUrl = href.startsWith('http') ? href : `https://www.themusicsettlement.org${href}`;
+          const slugMatch = href.match(/\/events\/\d{4}\/\d{2}\/\d{2}\/([^/]+)/);
+          const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+          const id = `bop-stop-${date}-${slug}`;
+          if (seenIds.has(id)) return;
+          seenIds.add(id);
+
+          events.push({
+            id,
+            title,
+            venueId: 'bop-stop',
+            date,
+            time: normalizeTime(timeRaw),
+            doors: null,
+            price: null,
+            performers: [{ name: title, headliner: true }],
+            eventUrl: fullUrl,
+            ticketUrl: fullUrl,
+            source: 'scrape',
+            manual: false,
+          });
+        });
+      });
+    } catch (err) {
+      console.error(`fetchBopStop error (${year}-${month}):`, err.message);
+    }
+  }
+
+  return events;
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -907,7 +992,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -917,6 +1002,7 @@ async function main() {
     fetchCainPark(),
     fetchHappyDog(),
     fetchMahalls(),
+    fetchBopStop()
   ]);
 
   const manualEntries = loadManualEntries();
@@ -933,6 +1019,7 @@ async function main() {
     ...cainPark,
     ...happyDog,
     ...mahalls,
+    ...bopStop,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -953,6 +1040,7 @@ async function main() {
       'cain-park': { name: 'Cain Park', url: 'https://cainpark.com/', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
       'happy-dog': { name: 'Happy Dog', url: 'https://happydogcleveland.com/', eventsUrl: 'https://app.opendate.io/v/happy-dog-1767', city: 'Cleveland' },
       'mahalls': { name: 'Mahalls', url: 'https://mahalls20lanes.com/', eventsUrl: 'https://mahalls20lanes.com/events/', city: 'Lakewood' },
+      'bop-stop': { name: 'Bop Stop', url: 'https://www.themusicsettlement.org/bop-stop/overview', eventsUrl: 'https://www.themusicsettlement.org/events/center/bop-stop', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
