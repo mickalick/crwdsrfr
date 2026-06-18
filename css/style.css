@@ -804,6 +804,7 @@ input[type=text], select, textarea {
 	font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
 	color: #F9F976;
+	margin-left: 8px;
 }
 
 
@@ -872,6 +873,7 @@ input[type=text], select, textarea {
 	.eventName {
   	display: flex !important;
   	width: 100%;
+  	margin-bottom: 8px;
 	}
 
 	.eventTime {
