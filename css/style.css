@@ -790,7 +790,7 @@ input[type=text], select, textarea {
 }
 
 
-#venueList {
+.venueList {
 	margin-top: 20px;
 }
 
