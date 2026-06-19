@@ -22,7 +22,7 @@ function updateSubHead() {
   const term = currentSearch.trim();
   subHeadSpan.textContent = term === ''
     ? 'Showing all events for:'
-    : `Showing all events including "${term}" for:`;
+    : `Showing all events that include "${term}" for:`;
 }
 
 function applyFilters() {
