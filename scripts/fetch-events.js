@@ -1075,6 +1075,297 @@ async function fetchJacobsPavilion() {
   }
 }
 
+async function fetchMusicBox() {
+  const events = [];
+  const seenIds = new Set();
+
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  function parsePage(html) {
+    const $ = cheerio.load(html);
+    const today = new Date();
+    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    const currentYear = today.getFullYear();
+
+    $('.event-archive').each((i, el) => {
+      const titleLink = $(el).find('h2.event-arc-title a').first();
+      const title = titleLink.text().trim();
+      const href = titleLink.attr('href');
+      if (!title || !href) return;
+
+      const dateText = $(el).find('p.event-date').first().text().trim(); // "Sun, Jun 21"
+      const dateMatch = dateText.match(/([A-Za-z]{3})\s+(\d{1,2})/);
+      if (!dateMatch) return;
+      const monthIndex = monthMap[dateMatch[1]];
+      const day = parseInt(dateMatch[2], 10);
+      if (monthIndex === undefined) return;
+
+      let year = currentYear;
+      const eventDateThisYear = new Date(currentYear, monthIndex, day);
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+      const eventDate = new Date(year, monthIndex, day);
+      const date = toLocalDateStr(eventDate);
+
+      const time = normalizeTime($(el).find('p.event-arc-time.showtime').first().text().trim());
+      const doorsRaw = $(el).find('.event-arc-info p.event-arc-time').first().text().trim();
+      const doors = normalizeTime(doorsRaw.replace(/doors open:?/i, ''));
+
+      const room = $(el).find('p.event-arc-venue').first().text().trim() || null;
+
+      let price = $(el).find('div.ticket_price').first().text().trim() || null;
+      if (!price && /free entry/i.test($(el).text())) price = 'Free';
+
+      const ticketHref = $(el).find('a.resLink').first().attr('href');
+      const ticketUrl = ticketHref
+        ? (ticketHref.startsWith('http') ? ticketHref : `https://musicboxcle.com${ticketHref}`)
+        : null;
+
+      const eventUrl = href.startsWith('http') ? href : `https://musicboxcle.com${href}`;
+      const slugMatch = href.match(/\/event\/([^/]+)\/?/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+      const id = `music-box-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'music-box',
+        date,
+        time,
+        doors,
+        price,
+        room,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  }
+
+  try {
+    const firstRes = await fetch('https://musicboxcle.com/schedule/');
+    const firstHtml = await firstRes.text();
+    const $ = cheerio.load(firstHtml);
+
+    let lastPage = 1;
+    $('a').each((i, el) => {
+      const href = $(el).attr('href') || '';
+      const match = href.match(/\/schedule\/page\/(\d+)\/?/);
+      if (match) {
+        const num = parseInt(match[1], 10);
+        if (num > lastPage) lastPage = num;
+      }
+    });
+    lastPage = Math.min(lastPage, 30); // safety cap
+
+    parsePage(firstHtml);
+
+    for (let page = 2; page <= lastPage; page++) {
+      try {
+        const res = await fetch(`https://musicboxcle.com/schedule/page/${page}/`);
+        const html = await res.text();
+        parsePage(html);
+      } catch (err) {
+        console.error(`fetchMusicBox error (page ${page}):`, err.message);
+      }
+    }
+  } catch (err) {
+    console.error('fetchMusicBox error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchWinchester() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  function parsePage($) {
+    $('.tw-section').each((i, el) => {
+      const titleEl = $(el).find('.tw-name a');
+      const dateEl = $(el).find('.tw-event-date');
+      const fullTitle = titleEl.text().trim();
+      const eventUrl = titleEl.attr('href') || null;
+      const dateRaw = dateEl.text().trim().replace(/,$/, ''); // "Jun 21"
+      if (!fullTitle || !eventUrl || !dateRaw) return;
+
+      // Defensive venue check, in case the feed ever mixes venues (3 Thirty 3 runs multiple spots)
+      const venueName = $(el).find('.tw-venue-details .tw-venue-name').text().trim();
+      if (venueName && !/winchester/i.test(venueName)) return;
+
+      const [month, day] = dateRaw.split(' ');
+      const monthIndex = monthMap[month];
+      if (monthIndex === undefined || !day) return;
+
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      let year = currentYear;
+      const eventDateThisYear = new Date(currentYear, monthIndex, parseInt(day));
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+      const eventDate = new Date(year, monthIndex, parseInt(day));
+      const date = toLocalDateStr(eventDate);
+
+      const showRaw = $(el).find('.tw-event-time').first().text().trim();
+      const doorsRaw = $(el).find('.tw-event-door-time').first().text().replace(/doors:?/i, '').trim();
+
+      // Only split the title if TicketWeb actually tagged separate attractions;
+      // otherwise the title already contains the full bill as plain text.
+      const supportSpans = $(el).find('.tw-attractions span');
+      let title = fullTitle;
+      let performers = [{ name: fullTitle, headliner: true }];
+      if (supportSpans.length) {
+        const headlinerName = fullTitle.split(/,| –| -/)[0].trim();
+        const supporters = [];
+        supportSpans.each((j, span) => supporters.push($(span).text().trim()));
+        performers = [{ name: headlinerName, headliner: true }];
+        supporters.forEach(s => performers.push({ name: s, headliner: false }));
+        title = `${headlinerName} w/ ${supporters.join(', ')}`;
+      }
+
+      let price = $(el).find('.tw-price').first().text().trim() || null;
+      if (price === '$0.00') price = 'Free';
+
+      const ticketUrl = $(el).find('.tw-buy-tix-btn').first().attr('href') || null;
+
+      const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const id = `winchester-music-tavern-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'winchester-music-tavern',
+        date,
+        time: normalizeTime(showRaw),
+        doors: normalizeTime(doorsRaw),
+        price,
+        performers,
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  }
+
+  try {
+    let url = 'https://thewinchestermusictavern.com/event-details/';
+    let pageCount = 0;
+    const maxPages = 40; // safety cap
+
+    while (url && pageCount < maxPages) {
+      const res = await fetch(url);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+
+      parsePage($);
+
+      const nextLink = $('a').filter((i, el) => /^next/i.test($(el).text().trim())).first();
+      url = nextLink.length ? nextLink.attr('href') : null;
+      pageCount++;
+    }
+  } catch (err) {
+    console.error('fetchWinchester error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchHouseOfBlues() {
+  const events = [];
+  const seenIds = new Set();
+  const limit = 36;
+  const baseUrl = 'https://content.livenationapi.com/v1/venues/KovZpZAEAA1A/events';
+
+  function extractDoorsTime(text) {
+    if (!text) return null;
+    const match = text.match(/doors? open.{0,15}?(\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?)/i);
+    if (!match) return null;
+    const m2 = match[1].replace(/\./g, '').toLowerCase().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/);
+    if (!m2) return null;
+    let h = parseInt(m2[1], 10);
+    const min = m2[2] || '00';
+    if (m2[3] === 'pm' && h !== 12) h += 12;
+    if (m2[3] === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${min}`;
+  }
+
+  try {
+    let offset = 0;
+    while (true) {
+      const res = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
+      const data = await res.json();
+      const batch = Array.isArray(data) ? data : (data.events || []);
+      if (!batch.length) break;
+
+      for (const ev of batch) {
+        if (ev.status_code === 'cancelled') continue;
+
+        const id = `house-of-blues-${ev.id}`;
+        if (seenIds.has(id)) continue;
+        seenIds.add(id);
+
+        const title = ev.name;
+        const performers = Array.isArray(ev.artists) && ev.artists.length
+          ? ev.artists.map((a, i) => ({ name: a.name, headliner: i === 0 }))
+          : [{ name: title, headliner: true }];
+
+        events.push({
+          id,
+          title,
+          venueId: 'house-of-blues',
+          date: ev.start_date_local,
+          time: ev.start_time_local ? ev.start_time_local.slice(0, 5) : null,
+          doors: extractDoorsTime(ev.important_info),
+          price: null,
+          performers,
+          eventUrl: ev.url || 'https://cleveland.houseofblues.com/shows',
+          ticketUrl: ev.url || null,
+          source: 'scrape',
+          manual: false,
+        });
+      }
+
+      if (batch.length < limit) break;
+      offset += limit;
+    }
+  } catch (err) {
+    console.error('fetchHouseOfBlues error:', err.message);
+  }
+
+  return events;
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -1092,7 +1383,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -1105,6 +1396,9 @@ async function main() {
     fetchBopStop(),
     fetchGlobeIron(),
     fetchJacobsPavilion(),
+    fetchMusicBox(),
+    fetchWinchester(),
+    fetchHouseOfBlues(),
   ]);
 
   const manualEntries = loadManualEntries();
@@ -1124,6 +1418,9 @@ async function main() {
     ...bopStop,
     ...globeIron,
     ...jacobsPavilion,
+    ...musicBox,
+    ...winchester,
+    ...houseOfBlues,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -1147,6 +1444,9 @@ async function main() {
       'bop-stop': { name: 'Bop Stop', url: 'https://www.themusicsettlement.org/bop-stop/overview', eventsUrl: 'https://www.themusicsettlement.org/events/center/bop-stop', city: 'Cleveland' },
       'globe-iron': { name: 'Globe Iron', url: 'https://globeironcle.com/', eventsUrl: 'https://globeironcle.com/calendar/', city: 'Cleveland' },
       'jacobs-pavilion': { name: 'Jacobs Pavilion', url: 'https://jacobspavilion.com/', eventsUrl: 'https://jacobspavilion.com/calendar/', city: 'Cleveland' },
+      'music-box': { name: 'Music Box Supper Club', url: 'https://musicboxcle.com/', eventsUrl: 'https://musicboxcle.com/schedule/', city: 'Cleveland' },
+      'winchester-music-tavern': { name: 'The Winchester Music Tavern', url: 'https://thewinchestermusictavern.com/', eventsUrl: 'https://thewinchestermusictavern.com/event-details/', city: 'Lakewood' },
+      'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
