@@ -1366,6 +1366,605 @@ async function fetchHouseOfBlues() {
   return events;
 }
 
+async function fetchFwdNightclub() {
+  try {
+    const res = await fetch('https://www.fwdnightclub.com/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    function slugify(name) {
+      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    $('div.event.w-dyn-item').each((i, el) => {
+      const $el = $(el);
+      const dateAttr = $el.attr('event-date'); // e.g. "June 21, 2026 12:00 PM"
+      const title = $el.find('p.event-name').first().text().trim();
+      if (!dateAttr || !title) return;
+
+      const parsedDate = new Date(dateAttr);
+      if (isNaN(parsedDate)) return;
+
+      const date = toLocalDateStr(parsedDate);
+      const time = `${String(parsedDate.getHours()).padStart(2, '0')}:${String(parsedDate.getMinutes()).padStart(2, '0')}`;
+
+      const tag = $el.find('.event_tag p').first().text().trim() || null; // "DAY" or "NIGHT"
+
+      const ticketUrl = $el.find('a[itemprop="offers"]').first().attr('href') || null;
+
+      const slug = slugify(title);
+
+      events.push({
+        id: `fwd-nightclub-${date}-${slug}`,
+        title,
+        venueId: 'fwd-nightclub',
+        date,
+        time,
+        doors: null,
+        price: null,
+        tag,
+        performers: [{ name: title, headliner: true }],
+        eventUrl: ticketUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchFwdNightclub error:', err.message);
+    return [];
+  }
+}
+
+async function fetchCollisionBend() {
+  try {
+    const res = await fetch('https://collisionbendbrewery.com/events/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    const venueIdMap = {
+      '43117': 'collision-bend-euclid',
+      '11716': 'collision-bend-cleveland',
+    };
+
+    // Recurring/weekly events are excluded by default, except for ones
+    // explicitly allowlisted here by exact title (e.g. Brunch Singo).
+    const RECURRING_ALLOWLIST = ['Brunch Singo at Collision Bend CLE'];
+
+    $('li.list_item').each((i, el) => {
+      const $el = $(el);
+      const classAttr = $el.attr('class') || '';
+      const locMatch = classAttr.match(/loc_(\d+)/);
+      const venueId = locMatch ? venueIdMap[locMatch[1]] : null;
+      if (!venueId) return; // unrecognized location, skip
+
+      const titleLink = $el.find('.name a').first();
+      const title = titleLink.text().trim();
+      const href = titleLink.attr('href');
+      if (!title || !href) return;
+
+      const dateText = $el.find('.date').first().text().replace(/\s+/g, ' ').trim();
+      const isRecurring = /^every\b/i.test(dateText);
+      if (isRecurring && !RECURRING_ALLOWLIST.includes(title)) return;
+
+      // For recurring events we keep, the real next date follows "Next:"
+      const relevantText = dateText.includes('Next:') ? dateText.split('Next:')[1] : dateText;
+      const dateMatch = relevantText.match(/([A-Za-z]+ \d{1,2}, \d{4})\s*@\s*(\d{1,2}:\d{2}\s*[ap]m)/i);
+      if (!dateMatch) return;
+
+      const parsedDate = new Date(`${dateMatch[1]} ${dateMatch[2]}`);
+      if (isNaN(parsedDate)) return;
+
+      const date = toLocalDateStr(parsedDate);
+      const time = `${String(parsedDate.getHours()).padStart(2, '0')}:${String(parsedDate.getMinutes()).padStart(2, '0')}`;
+
+      const eventUrl = `https://collisionbendbrewery.com${href}`;
+      const slugMatch = href.match(/\/events\/([^/]+)\/?$/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+      events.push({
+        id: `${venueId}-${date}-${slug}`,
+        title,
+        venueId,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchCollisionBend error:', err.message);
+    return [];
+  }
+}
+
+async function fetchMercuryMusicLounge() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  function parsePage($) {
+    $('.tw-section').each((i, el) => {
+      const titleEl = $(el).find('.tw-name a');
+      const dateEl = $(el).find('.tw-event-date');
+      const fullTitle = titleEl.text().trim();
+      const eventUrl = titleEl.attr('href') || null;
+      const dateRaw = dateEl.text().trim().replace(/,$/, ''); // "Jun 22"
+      if (!fullTitle || !eventUrl || !dateRaw) return;
+
+      // Defensive venue check, in case the feed ever mixes venues
+      const venueName = $(el).find('.tw-venue-details .tw-venue-name').text().trim();
+      if (venueName && !/mercury/i.test(venueName)) return;
+
+      const [month, day] = dateRaw.split(' ');
+      const monthIndex = monthMap[month];
+      if (monthIndex === undefined || !day) return;
+
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      let year = currentYear;
+      const eventDateThisYear = new Date(currentYear, monthIndex, parseInt(day));
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+      const eventDate = new Date(year, monthIndex, parseInt(day));
+      const date = toLocalDateStr(eventDate);
+
+      const showRaw = $(el).find('.tw-event-time').first().text().trim();
+      const doorsRaw = $(el).find('.tw-event-door-time').first().text().trim();
+
+      // Only split the title if TicketWeb actually tagged separate attractions;
+      // otherwise the title already contains the full bill as plain text.
+      const supportSpans = $(el).find('.tw-attractions span');
+      let title = fullTitle;
+      let performers = [{ name: fullTitle, headliner: true }];
+      if (supportSpans.length) {
+        const headlinerName = fullTitle.split(/,| –| -/)[0].trim();
+        const supporters = [];
+        supportSpans.each((j, span) => supporters.push($(span).text().trim()));
+        performers = [{ name: headlinerName, headliner: true }];
+        supporters.forEach(s => performers.push({ name: s, headliner: false }));
+        title = `${headlinerName} w/ ${supporters.join(', ')}`;
+      }
+
+      let price = $(el).find('.tw-price').first().text().trim() || null;
+      if (price === '$0.00') price = 'Free';
+
+      const ticketUrl = $(el).find('.tw-buy-tix-btn').first().attr('href') || null;
+
+      const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const id = `mercury-music-lounge-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'mercury-music-lounge',
+        date,
+        time: normalizeTime(showRaw),
+        doors: normalizeTime(doorsRaw),
+        price,
+        performers,
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  }
+
+  try {
+    let url = 'https://www.mercurymusiclakewood.com/';
+    let pageCount = 0;
+    const maxPages = 40; // safety cap
+
+    while (url && pageCount < maxPages) {
+      const res = await fetch(url);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+
+      parsePage($);
+
+      const nextLink = $('a').filter((i, el) => /^next/i.test($(el).text().trim())).first();
+      url = nextLink.length ? nextLink.attr('href') : null;
+      pageCount++;
+    }
+  } catch (err) {
+    console.error('fetchMercuryMusicLounge error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchRockHall() {
+  const events = [];
+  try {
+    const baseUrl = 'https://rockhall25.wpenginepowered.com/index.php';
+    const persistedQueryHash = 'fdb7f20ecb81c499c6ba1d0c3f92ae2771a9a5b6c540a73cf3cc48c3023b8a40';
+    const size = 12;
+    let offset = 0;
+    let hasMore = true;
+    let safetyCounter = 0;
+
+    while (hasMore && safetyCounter < 10) {
+      const variables = encodeURIComponent(JSON.stringify({ taxonomies: [], offset, size, language: 'en' }));
+      const extensions = encodeURIComponent(JSON.stringify({ persistedQuery: { version: 1, sha256Hash: persistedQueryHash } }));
+      const url = `${baseUrl}?graphql&operationName=EventsByTaxonomy&variables=${variables}&extensions=${extensions}`;
+
+      const res = await fetch(url);
+      const data = await res.json();
+
+      const nodes = data?.data?.events?.nodes || [];
+      for (const ev of nodes) {
+        const ed = ev.eventData;
+        if (!ed?.startDate) continue;
+
+        // startDate looks like UTC ("...+00:00") but is actually already
+        // Cleveland local time mislabeled - slice it directly, don't run it
+        // through a Date object's local-time getters.
+        const date = ed.startDate.slice(0, 10);
+        const time = ed.startDate.slice(11, 16);
+
+        let price = null;
+        if (ed.price) {
+          const parts = [];
+          if (ed.price.gaPrice != null) parts.push(`GA $${ed.price.gaPrice}`);
+          if (ed.price.membersPrice != null) parts.push(`Members $${ed.price.membersPrice}`);
+          if (ed.price.priceWithAdmission != null) parts.push(`With Admission $${ed.price.priceWithAdmission}`);
+          if (parts.length) price = parts.join(', ');
+        }
+        if (!price && Array.isArray(ed.pricingType)) {
+          if (ed.pricingType.includes('free-with-rsvp')) price = 'Free (RSVP required)';
+          else if (ed.pricingType.includes('free-with-admission')) price = 'Free with Museum Admission';
+        }
+
+        const slug = ev.uri.replace(/^\/event\//, '').replace(/\/$/, '');
+
+        events.push({
+          id: `rock-hall-${date}-${slug}`,
+          title: ev.title,
+          venueId: 'rock-hall',
+          date,
+          time,
+          doors: null,
+          price,
+          performers: [{ name: ev.title, headliner: true }],
+          eventUrl: `https://rockhall.com${ev.uri}`,
+          ticketUrl: ed.ticketLink || null,
+          source: 'scrape',
+          manual: false,
+        });
+      }
+
+      hasMore = data?.data?.events?.pageInfo?.offsetPagination?.hasMore ?? false;
+      offset += size;
+      safetyCounter++;
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchRockHall error:', err.message);
+    return events;
+  }
+}
+
+async function fetchBlossomMusicCenter() {
+  const events = [];
+  const seenIds = new Set();
+  const limit = 36;
+  const baseUrl = 'https://content.livenationapi.com/v1/venues/KovZpZAEAtAA/events';
+
+  function extractDoorsTime(text) {
+    if (!text) return null;
+    const match = text.match(/doors? open.{0,15}?(\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?)/i);
+    if (!match) return null;
+    const m2 = match[1].replace(/\./g, '').toLowerCase().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/);
+    if (!m2) return null;
+    let h = parseInt(m2[1], 10);
+    const min = m2[2] || '00';
+    if (m2[3] === 'pm' && h !== 12) h += 12;
+    if (m2[3] === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${min}`;
+  }
+
+  try {
+    let offset = 0;
+    while (true) {
+      const res = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
+      const data = await res.json();
+      const batch = Array.isArray(data) ? data : (data.events || []);
+      if (!batch.length) break;
+
+      for (const ev of batch) {
+        if (ev.status_code === 'cancelled') continue;
+
+        const id = `blossom-music-center-${ev.id}`;
+        if (seenIds.has(id)) continue;
+        seenIds.add(id);
+
+        const title = ev.name;
+        const performers = Array.isArray(ev.artists) && ev.artists.length
+          ? ev.artists.map((a, i) => ({ name: a.name, headliner: i === 0 }))
+          : [{ name: title, headliner: true }];
+
+        events.push({
+          id,
+          title,
+          venueId: 'blossom-music-center',
+          date: ev.start_date_local,
+          time: ev.start_time_local ? ev.start_time_local.slice(0, 5) : null,
+          doors: extractDoorsTime(ev.important_info),
+          price: null,
+          performers,
+          eventUrl: ev.url || 'https://www.blossommusic.com/shows',
+          ticketUrl: ev.url || null,
+          source: 'scrape',
+          manual: false,
+        });
+      }
+
+      if (batch.length < limit) break;
+      offset += limit;
+    }
+  } catch (err) {
+    console.error('fetchBlossomMusicCenter error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchPlayhouseSquare() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11,
+    January:0, February:1, March:2, April:3, June:5, July:6, August:7, September:8, October:9, November:10, December:11 };
+
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() + 30);
+  const cutoffStr = toLocalDateStr(cutoff);
+
+  function slugify(name) {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  function parseEventItems($) {
+    const parsed = [];
+    $('.m-eventItem').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('h3.m-eventItem__title a').first();
+      const title = titleLink.text().trim();
+      const href = titleLink.attr('href');
+      if (!title || !href) return;
+
+      const presentedBy = $el.find('h4.m-eventItem__tagline').first().text().trim() || null;
+      const room = $el.find('.venue_title').first().text().trim() || null;
+
+      const dateText = $el.find('.m-eventItem__date').first().text().replace(/\s+/g, ' ').trim();
+      const dateMatch = dateText.match(/^([A-Za-z]+)\s+(\d{1,2})(?:\s*-\s*(?:([A-Za-z]+)\s+)?(\d{1,2}))?,\s*(\d{4})/);
+      if (!dateMatch) return;
+
+      const [, startMonth, startDay, endMonth, endDay, yearStr] = dateMatch;
+      const year = parseInt(yearStr, 10);
+      const startMonthIndex = monthMap[startMonth];
+      if (startMonthIndex === undefined) return;
+
+      const startDate = new Date(year, startMonthIndex, parseInt(startDay, 10));
+      const date = toLocalDateStr(startDate);
+
+      let endDateStr = null;
+      if (endDay) {
+        const endMonthIndex = endMonth ? monthMap[endMonth] : startMonthIndex;
+        if (endMonthIndex !== undefined) {
+          const endDate = new Date(year, endMonthIndex, parseInt(endDay, 10));
+          endDateStr = toLocalDateStr(endDate);
+        }
+      }
+
+      const ticketUrl = $el.find('a.tickets').first().attr('href') || null;
+      const eventUrl = href.startsWith('http') ? href : `https://www.playhousesquare.org${href}`;
+      const slugMatch = href.match(/\/events\/detail\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
+
+      parsed.push({
+        title,
+        venueId: 'playhouse-square',
+        date,
+        endDate: endDateStr,
+        room,
+        presentedBy,
+        eventUrl,
+        ticketUrl,
+        slug,
+      });
+    });
+    return parsed;
+  }
+
+  async function fetchShowings(eventUrl) {
+    try {
+      const res = await fetch(eventUrl);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+      const showings = [];
+
+      $('ul.showings_left li.entry').each((i, el) => {
+        const $el = $(el);
+        const monthAbbr = $el.find('.date__month').first().text().trim();
+        const dayYearRaw = $el.find('.date__day').first().text().trim(); // "21, 2026"
+        const [dayStr, yearStr] = dayYearRaw.split(',').map(s => s.trim());
+        const monthIndex = monthMap[monthAbbr];
+        if (monthIndex === undefined || !dayStr || !yearStr) return;
+
+        const showDate = new Date(parseInt(yearStr, 10), monthIndex, parseInt(dayStr, 10));
+        const date = toLocalDateStr(showDate);
+        const time = normalizeTime($el.find('.time').first().text().trim());
+        const ticketUrl = $el.find('.ticket a').first().attr('href') || null;
+
+        showings.push({ date, time, ticketUrl });
+      });
+
+      return showings;
+    } catch (err) {
+      console.error(`fetchShowings error (${eventUrl}):`, err.message);
+      return [];
+    }
+  }
+
+  function addEvent(ev) {
+    if (seenIds.has(ev.id)) return;
+    seenIds.add(ev.id);
+    events.push(ev);
+  }
+
+  try {
+    const res = await fetch('https://www.playhousesquare.org/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    let baseEvents = parseEventItems($);
+
+    let offset = baseEvents.length;
+    let safetyCounter = 0;
+    while (safetyCounter < 30) {
+      const ajaxUrl = `https://www.playhousesquare.org/events/events_ajax/${offset}?category=0&venue=0&team=0&per_page=12&came_from_page=event-list-page`;
+      const ajaxRes = await fetch(ajaxUrl);
+      const raw = await ajaxRes.text();
+
+      let fragment;
+      try {
+        fragment = JSON.parse(raw);
+      } catch {
+        fragment = raw;
+      }
+      if (!fragment || !fragment.trim()) break;
+
+      const $$ = cheerio.load(fragment);
+      const newBaseEvents = parseEventItems($$);
+      if (!newBaseEvents.length) break;
+
+      baseEvents.push(...newBaseEvents);
+      offset += newBaseEvents.length;
+      safetyCounter++;
+    }
+
+    for (const base of baseEvents) {
+      if (base.endDate) {
+        const allShowings = await fetchShowings(base.eventUrl);
+        // Rolling window: only expand showtimes within the next 30 days.
+        // Later performances get picked up on future runs as the window moves.
+        const showings = allShowings.filter(s => s.date <= cutoffStr);
+
+        if (showings.length) {
+          showings.forEach(s => {
+            addEvent({
+              id: `playhouse-square-${s.date}-${s.time ? s.time.replace(':', '') : 'tba'}-${base.slug}`,
+              title: base.title,
+              venueId: 'playhouse-square',
+              date: s.date,
+              endDate: null,
+              time: s.time,
+              doors: null,
+              price: null,
+              room: base.room,
+              presentedBy: base.presentedBy,
+              performers: [{ name: base.title, headliner: true }],
+              eventUrl: base.eventUrl,
+              ticketUrl: s.ticketUrl || base.ticketUrl,
+              source: 'scrape',
+              manual: false,
+            });
+          });
+          continue;
+        }
+
+        // No showings at all (e.g. streaming/on-demand "events"), or every
+        // showing fell outside the 30-day window - skip for now rather than
+        // emitting a vague placeholder; a future run will pick it up once
+        // it's within range. Only exception: genuinely no showings list
+        // existed (not a live-performance event), where we keep the original
+        // single date-range entry so it doesn't disappear from the site entirely.
+        if (!allShowings.length) {
+          addEvent({
+            id: `playhouse-square-${base.date}-${base.slug}`,
+            title: base.title,
+            venueId: 'playhouse-square',
+            date: base.date,
+            endDate: base.endDate,
+            time: null,
+            doors: null,
+            price: null,
+            room: base.room,
+            presentedBy: base.presentedBy,
+            performers: [{ name: base.title, headliner: true }],
+            eventUrl: base.eventUrl,
+            ticketUrl: base.ticketUrl,
+            source: 'scrape',
+            manual: false,
+          });
+        }
+        continue;
+      }
+
+      addEvent({
+        id: `playhouse-square-${base.date}-${base.slug}`,
+        title: base.title,
+        venueId: 'playhouse-square',
+        date: base.date,
+        endDate: base.endDate,
+        time: null,
+        doors: null,
+        price: null,
+        room: base.room,
+        presentedBy: base.presentedBy,
+        performers: [{ name: base.title, headliner: true }],
+        eventUrl: base.eventUrl,
+        ticketUrl: base.ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchPlayhouseSquare error:', err.message);
+    return events;
+  }
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -1383,7 +1982,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -1399,6 +1998,12 @@ async function main() {
     fetchMusicBox(),
     fetchWinchester(),
     fetchHouseOfBlues(),
+    fetchFwdNightclub(),
+    fetchCollisionBend(),
+    fetchMercuryMusicLounge(),
+    fetchRockHall(),
+    fetchBlossomMusicCenter(),
+    fetchPlayhouseSquare(),
   ]);
 
   // ─── Per-venue event counts ──────────────────────────────────────────────
@@ -1417,6 +2022,12 @@ async function main() {
   console.log('Music Box:', musicBox.length);
   console.log('Winchester:', winchester.length);
   console.log('House of Blues:', houseOfBlues.length);
+  console.log('FWD Nightclub:', fwdNightclub.length);
+  console.log('Collision Bend:', collisionBend.length);
+  console.log('Mercury Music Lounge:', mercuryMusicLounge.length);
+  console.log('Rock Hall:', rockHall.length);
+  console.log('Blossom:', blossomMusicCenter.length);
+  console.log('Playhouse:', playhouseSquare.length);
 
 
   const manualEntries = loadManualEntries();
@@ -1439,6 +2050,12 @@ async function main() {
     ...musicBox,
     ...winchester,
     ...houseOfBlues,
+    ...fwdNightclub,
+    ...collisionBend,
+    ...mercuryMusicLounge,
+    ...rockHall,
+    ...blossomMusicCenter,
+    ...playhouseSquare,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -1465,9 +2082,21 @@ async function main() {
       'music-box': { name: 'Music Box Supper Club', url: 'https://musicboxcle.com/', eventsUrl: 'https://musicboxcle.com/schedule/', city: 'Cleveland' },
       'winchester-music-tavern': { name: 'The Winchester Music Tavern', url: 'https://thewinchestermusictavern.com/', eventsUrl: 'https://thewinchestermusictavern.com/event-details/', city: 'Lakewood' },
       'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
+      'fwd-nightclub': { name: 'FWD Day + Nightclub', url: 'https://www.fwdnightclub.com/', eventsUrl: 'https://www.fwdnightclub.com/events', city: 'Cleveland' },
+      'collision-bend-cleveland': { name: 'Collision Bend Cleveland', url: 'https://collisionbendbrewery.com/location/cleveland-ohio-11716', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Cleveland' },
+      'collision-bend-euclid': { name: 'Collision Bend Euclid', url: 'https://collisionbendbrewery.com/location/euclid-ohio-43117', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Euclid' },
+      'mercury-music-lounge': { name: 'Mercury Music Lounge', url: 'https://www.mercurymusiclakewood.com/', eventsUrl: 'https://www.mercurymusiclakewood.com/', city: 'Lakewood' },
+      'rock-hall': { name: 'Rock & Roll Hall of Fame', url: 'https://rockhall.com/', eventsUrl: 'https://rockhall.com/events/', city: 'Cleveland' },
+      'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
+      'playhouse-square': { name: 'Playhouse Square', url: 'https://www.playhousesquare.org/', eventsUrl: 'https://www.playhousesquare.org/events', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
+      'cavottas-garden-bar': { name: 'Cavottas Garden Bar', url: 'https://cavottas.com/cavottas-garden-bar', eventsUrl: 'https://cavottas.com/cavottas-garden-bar', city: 'Cleveland' },
+      'sound-stage-tavern': { name: 'Sound Stage Tavern', url: 'https://www.soundstagetavern.com/', eventsUrl: 'https://www.soundstagetavern.com/calendar', city: 'Wickliffe' },
+      'smedleys': { name: 'Smedleys', url: 'https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/', eventsUrl: null, city: 'Cleveland' },
+      'seeing-double': { name: 'Seeing Double Speakeasy Bar', url: 'https://www.seeingdoublecle.com/', eventsUrl: 'https://www.seeingdoublecle.com/music', city: 'Cleveland' },
+      'huntington-bank-field': { name: 'Huntington Bank Field', url: 'https://huntingtonbankfield.com/', eventsUrl: 'https://huntingtonbankfield.com/events/', city: 'Cleveland' },
     },
     events: allEvents,
   };
