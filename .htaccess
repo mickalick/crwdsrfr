@@ -1,5 +1,0 @@
-AuthName "private"
-AuthUserFile "/home4/kevinmih/.htpasswds/public_html/private/passwd"
-AuthType Basic
-require valid-user
-ErrorDocument 401 /401.html

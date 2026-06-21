@@ -1,0 +1,192 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>CRWDSRFR Terms of Use</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to home" href="demo.html"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<a class="navLink" href="demo.html"><li class="navItem">Home</li></a>
+						<a class="navLink" href="venues.html"><li class="navItem">Venues</li></a>
+						<a class="navLink" href="about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="contribute.html"><li class="navItem">Contribute</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="hero" class="page">
+				<div class="main">
+					<div id="calendarHeader">
+						<div id="intro">
+							<h1>Terms of Use</em></h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="aboutContent" class="page">
+				<div class="main">
+					<h2>Last Updated: June 21, 2026</h2>
+					<p>Please read these Terms of Use ("Terms") carefully before using CRWD SRFR (the "Site," "Service"). The Site is operated by KM Makes LLC (“KM Makes”, "we," "us," "our"). By accessing or using CRWD SRFR, you agree to be bound by these Terms. If you do not agree, please do not use the Site.</p>
+					<h4>1. What CRWD SRFR Is</h4>
+					<p>CRWD SRFR is a free, informational website that aggregates publicly available information about live music events in the Cleveland, Ohio area, sourced from venue websites, ticketing platforms, and other public listings. CRWD SRFR is NOT a ticket seller, box office, venue, promoter, or event organizer. We do not process ticket purchases, and we are not affiliated with, endorsed by, or officially connected to any venue, artist, or ticketing platform referenced on the Site unless explicitly stated.</p>
+					<h4>2. No Warranty on Event Data</h4>
+					<p>Event information displayed on CRWD SRFR — including but not limited to dates, times, doors/show times, pricing, performer lineups, and venue details — is collected from third-party sources (venue websites, ticketing APIs, and other public listings) on an automated or semi-automated basis.</p>
+					<p>This information may be incomplete, outdated, or inaccurate. Venues and promoters frequently change event details without notice, and errors can occur in the collection process. CRWD SRFR makes no warranty, express or implied, as to the accuracy, completeness, or timeliness of any event information displayed.</p>
+					<p>Always verify event details directly with the venue or official ticketing source before making plans, travel arrangements, or purchases. Any links to ticket purchase pages ("eventUrl," "ticketUrl," or similar) are provided for convenience only.</p>
+					<h4>3. Third-Party Links and Services</h4>
+					<p>The Site contains links to third-party websites and services (venue pages, ticketing platforms such as SeatGeek, AXS, opendate.io, and others). We do not control these third parties and are not responsible for:</p>
+					<ul>
+						<li>The accuracy of their content,</li>
+						<li>Their availability of uptime,</li>
+						<li>Any transactions you complete on their platform</li>
+						<li>Their privacy practives or terms of use.</li>
+					</ul>
+					<p>Your use of any third-party site is goverend by that site's one terms and privacy policy, not ours.</p>
+					<h4>4. Data Sourcing and Takedown</h4>
+					<p>We aggregate publicly available event information for informational and discovery purposes. If you are a venue, promoter, artist, or rights holder and believe your content has been used inappropriately or you would like it removed from CRWD SRFR, please contact us at contact@crwdsrfr.com and we will promptly review and address the request.</p>
+					<h4>5. Intellectual Property</h4>
+					<p>The CRWD SRFR name, logo, design, layout, and original code are the property of KM Makes LLC. Event data, venue names, artist names, and associated logos/trademarks remain the property of their respective owners and are used for informational and identification purposes only.</p>
+					<p>You may not copy, scrape, reproduce, or redistribute substantial portions of the Site's compiled data or design for commercial purposes without our prior written permission.</p>
+					<h4>6. Acceptable Use</h4>
+					<p>You agree not to:</p>
+					<ul>
+						<li>Scrape, crawl, or harvest data from CRWD SRFR using automated means beyond normal browsing, without our permission;</li>
+						<li>Use the Site for any unlawful purpose;</li>
+						<li>Attempt to interfere with, disrupt, or gain unauthorized access to the Site or its underlying systems;</li>
+						<li>Misrepresent CRWD SRFR data as your own or as officially sourced from a venue/ticketing platform.</li>
+					</ul>
+					<h4>7. Donations</h4>
+					<p>CRWD SRFR may offer an optional donation feature (e.g., via PayPal) to support the operation of the Site. Donations are voluntary, non-refundable, and do not constitute payment for any product, service, ticket, or membership. Donating does not entitle you to any special access, features, or guarantees regarding the Site.</p>
+					<h4>8. No Liability for Event Outcomes</h4>
+					<p>We are not responsible for any loss, inconvenience, or damages arising from reliance on event information on the Site, including but not limited to canceled events, schedule changes, incorrect pricing, or issues arising from third-party ticket purchases.</p>
+					<h4>9. "As Is" Service / Limitation of Liability</h4>
+					<p>The Site is provided on an "as is" and "as available" basis, without warranties of any kind, whether express or implied. To the fullest extent permitted by law, KM Makes disclaims all warranties, including merchantability, fitness for a particular purpose, and non-infringement.</p>
+					<p>To the fullest extent permitted by law, KM Makes shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, the Site.</p>
+					<h4>10. Changes to the Site and These Terms</h4>
+					<p>We may modify, suspend, or discontinue the Site (or any part of it) at any time without notice. We may also update these Terms from time to time; the "Last Updated" date above will reflect the most recent revision. Continued use of the Site after changes are posted constitutes acceptance of the updated Terms.</p>
+					<h4>11. Governing Law</h4>
+					<p>These Terms are governed by the laws of the State of Ohio, without regard to conflict-of-law principles, unless otherwise required by applicable law.</p>
+					<h4>12. Contact</h4>
+					<p>Questions about these Terms can be directed to:</p>
+					<p>KM Makes LLC, hello@kmmakes.com, www.kmmakes.com</p>
+				</div>
+			</section>
+			<section id="spacer" class="page">
+				<div class="main">
+				</div>
+			</section>
+			<footer>
+				<div class="footWrap">
+					<img id="footLogo" src="images/logoWhite.png">
+					<small>
+					<ul id="bottomNav">
+						<li><a href="terms.html">Terms of Use</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contribute.html">Contribute</a></li>
+					</ul>
+					<p>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="demo.html">crwdsrfr.com</a> | All rights reserved.</p>
+					</small>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+		
+	</body>
+
+	</html>
