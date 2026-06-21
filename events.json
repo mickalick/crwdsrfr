@@ -315,7 +315,7 @@
       "date": "2026-06-21",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -335,7 +335,7 @@
       "date": "2026-06-21",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -867,7 +867,7 @@
       "date": "2026-06-24",
       "time": "19:00",
       "doors": "17:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -1128,7 +1128,7 @@
       "date": "2026-06-25",
       "time": "19:00",
       "doors": "17:00",
-      "price": "$8 AdvanceAdv, $12 Day of ShowDay of",
+      "price": "$8 Advance, $12 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -1148,7 +1148,7 @@
       "date": "2026-06-25",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$22 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$22 Advance, $28 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2147,7 +2147,7 @@
       "date": "2026-06-28",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2167,7 +2167,7 @@
       "date": "2026-06-28",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -2523,7 +2523,7 @@
       "date": "2026-07-02",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$30 AdvanceAdv, $38 Day of ShowDay of",
+      "price": "$30 Advance, $38 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2543,7 +2543,7 @@
       "date": "2026-07-02",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -2782,7 +2782,7 @@
       "date": "2026-07-03",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$25 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$25 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2802,7 +2802,7 @@
       "date": "2026-07-03",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -2908,6 +2908,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-07-04-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-04",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-04-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-04-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rockin-on-the-river-2026-07-04-7-summers-morgan-wallen-tribute",
       "title": "7 Summers Morgan Wallen Tribute with Country Honk",
       "venueId": "rockin-on-the-river",
@@ -2979,7 +2998,7 @@
       "date": "2026-07-04",
       "time": "19:00",
       "doors": "17:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2999,7 +3018,7 @@
       "date": "2026-07-04",
       "time": "19:00",
       "doors": "17:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -3118,7 +3137,7 @@
       "date": "2026-07-05",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -3138,7 +3157,7 @@
       "date": "2026-07-05",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -3622,7 +3641,7 @@
       "date": "2026-07-09",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$25 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$25 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -3975,7 +3994,7 @@
       "date": "2026-07-10",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -4466,7 +4485,7 @@
       "date": "2026-07-12",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -4486,7 +4505,7 @@
       "date": "2026-07-12",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -5114,7 +5133,7 @@
       "date": "2026-07-16",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -5436,7 +5455,7 @@
       "date": "2026-07-17",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -5456,7 +5475,7 @@
       "date": "2026-07-17",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -6066,7 +6085,7 @@
       "date": "2026-07-19",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -6086,7 +6105,7 @@
       "date": "2026-07-19",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -6427,7 +6446,7 @@
       "date": "2026-07-22",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$20 Advance, $28 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -6630,7 +6649,7 @@
       "date": "2026-07-23",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$35 AdvanceAdv, $45 Day of ShowDay of",
+      "price": "$35 Advance, $45 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -6650,7 +6669,7 @@
       "date": "2026-07-23",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -6896,7 +6915,7 @@
       "date": "2026-07-24",
       "time": "20:00",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -6916,7 +6935,7 @@
       "date": "2026-07-24",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -7180,7 +7199,7 @@
       "date": "2026-07-25",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -7200,7 +7219,7 @@
       "date": "2026-07-25",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -7376,7 +7395,7 @@
       "date": "2026-07-26",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -7396,7 +7415,7 @@
       "date": "2026-07-26",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -7764,7 +7783,7 @@
       "date": "2026-07-30",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -7933,7 +7952,7 @@
       "date": "2026-07-31",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -7953,7 +7972,7 @@
       "date": "2026-07-31",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -8168,7 +8187,7 @@
       "date": "2026-08-01",
       "time": "19:00",
       "doors": "17:30",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -8375,7 +8394,7 @@
       "date": "2026-08-02",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -8395,7 +8414,7 @@
       "date": "2026-08-02",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -9099,7 +9118,7 @@
       "date": "2026-08-07",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -9527,7 +9546,7 @@
       "date": "2026-08-09",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -9547,7 +9566,7 @@
       "date": "2026-08-09",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$18 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$18 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -10148,7 +10167,7 @@
       "date": "2026-08-14",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -10378,7 +10397,7 @@
       "date": "2026-08-15",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -10623,7 +10642,7 @@
       "date": "2026-08-16",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -10643,7 +10662,7 @@
       "date": "2026-08-16",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -11282,7 +11301,7 @@
       "date": "2026-08-21",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -11551,7 +11570,7 @@
       "date": "2026-08-22",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$22 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$22 Advance, $28 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -11777,7 +11796,7 @@
       "date": "2026-08-23",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$17 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$17 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -11797,7 +11816,7 @@
       "date": "2026-08-23",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$18 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$18 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -11998,7 +12017,7 @@
       "date": "2026-08-26",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$28 AdvanceAdv, $38 Day of ShowDay of",
+      "price": "$28 Advance, $38 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -12355,7 +12374,7 @@
       "date": "2026-08-28",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -12375,7 +12394,7 @@
       "date": "2026-08-28",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$28 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$28 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -12731,7 +12750,7 @@
       "date": "2026-08-30",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$20 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$20 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -12751,7 +12770,7 @@
       "date": "2026-08-30",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -13043,7 +13062,7 @@
       "date": "2026-09-04",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$30 AdvanceAdv, $38 Day of ShowDay of",
+      "price": "$30 Advance, $38 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -13053,6 +13072,33 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/odyssey-company-sep4/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62096",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZko0GkdE0K-t",
+      "title": "Peephole-Tribute to System Of A Down-Celebrating 25 years of Toxicity",
+      "venueId": "house-of-blues",
+      "date": "2026-09-04",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Peephole: Tribute to System of a Down",
+          "headliner": true
+        },
+        {
+          "name": "The Subliminal Verses - A Midwest Tribute To Slipknot",
+          "headliner": false
+        },
+        {
+          "name": "Walk on Homeboys",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/peepholetribute-to-system-of-a-downcelebrating-cleveland-ohio-09-04-2026/event/05006464E7913869",
+      "ticketUrl": "https://www.ticketmaster.com/peepholetribute-to-system-of-a-downcelebrating-cleveland-ohio-09-04-2026/event/05006464E7913869",
       "source": "scrape",
       "manual": false
     },
@@ -13110,6 +13156,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/steve-forbert-05-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_GRxOena",
+      "title": "Who's Bad: The Ultimate Michael Jackson Experience",
+      "venueId": "house-of-blues",
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Who's Bad",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/whos-bad-the-ultimate-michael-jackson-cleveland-ohio-09-05-2026/event/050064CBE2802A89",
+      "ticketUrl": "https://www.ticketmaster.com/whos-bad-the-ultimate-michael-jackson-cleveland-ohio-09-05-2026/event/050064CBE2802A89",
       "source": "scrape",
       "manual": false
     },
@@ -13305,6 +13370,33 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_G5Z_qMd",
+      "title": "Chad Gray: 30 Years of Madnesss",
+      "venueId": "house-of-blues",
+      "date": "2026-09-09",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Chad Gray",
+          "headliner": true
+        },
+        {
+          "name": "Butcher Babies",
+          "headliner": false
+        },
+        {
+          "name": "Devil's Cut",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/chad-gray-30-years-of-madnesss-cleveland-ohio-09-09-2026/event/050064C2C065DDC3",
+      "ticketUrl": "https://www.ticketmaster.com/chad-gray-30-years-of-madnesss-cleveland-ohio-09-09-2026/event/050064C2C065DDC3",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tea Bags",
       "performers": [
         {
@@ -13381,6 +13473,33 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/punchline/",
       "ticketUrl": "https://link.dice.fm/w464a29a6ed7",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv17fZ_kGkn4GgIm",
+      "title": "The Pretty Reckless - Dear God Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-09-10",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Pretty Reckless",
+          "headliner": true
+        },
+        {
+          "name": "paris jackson",
+          "headliner": false
+        },
+        {
+          "name": "doug.",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-pretty-reckless-dear-god-tour-cleveland-ohio-09-10-2026/event/0500646A95335A2E",
+      "ticketUrl": "https://www.ticketmaster.com/the-pretty-reckless-dear-god-tour-cleveland-ohio-09-10-2026/event/0500646A95335A2E",
       "source": "scrape",
       "manual": false
     },
@@ -13537,7 +13656,7 @@
       "date": "2026-09-11",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$28 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$28 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -13694,7 +13813,7 @@
       "date": "2026-09-13",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -13714,7 +13833,7 @@
       "date": "2026-09-13",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -13734,7 +13853,7 @@
       "date": "2026-09-13",
       "time": "19:00",
       "doors": "17:30",
-      "price": "$25 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$25 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -13929,7 +14048,7 @@
       "date": "2026-09-16",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$38 AdvanceAdv, $48 Day of ShowDay of",
+      "price": "$38 Advance, $48 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -14383,6 +14502,25 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_1SJlqYe",
+      "title": "Dax - The Anger Management Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-09-20",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Dax",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/dax-the-anger-management-tour-cleveland-ohio-09-20-2026/event/050064ACE6ADDC02",
+      "ticketUrl": "https://www.ticketmaster.com/dax-the-anger-management-tour-cleveland-ohio-09-20-2026/event/050064ACE6ADDC02",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Sully Solo",
       "performers": [
         {
@@ -14532,6 +14670,37 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_1NdSI9f",
+      "title": "Black Veil Brides: Vindicatour US 2026",
+      "venueId": "house-of-blues",
+      "date": "2026-09-22",
+      "time": "17:30",
+      "doors": "17:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Black Veil Brides",
+          "headliner": true
+        },
+        {
+          "name": "Caskets",
+          "headliner": false
+        },
+        {
+          "name": "Archers",
+          "headliner": false
+        },
+        {
+          "name": "Autumn Kings",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/black-veil-brides-vindicatour-us-2026-cleveland-ohio-09-22-2026/event/050064A8C3CE85D4",
+      "ticketUrl": "https://www.ticketmaster.com/black-veil-brides-vindicatour-us-2026-cleveland-ohio-09-22-2026/event/050064A8C3CE85D4",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-09-23-squirrel-flower",
       "title": "Squirrel Flower w/ youbet",
       "venueId": "grog-shop",
@@ -14622,7 +14791,7 @@
       "date": "2026-09-23",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$22 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$22 Advance, $28 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -14700,7 +14869,7 @@
       "date": "2026-09-25",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$30 AdvanceAdv, $38 Day of ShowDay of",
+      "price": "$30 Advance, $38 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -14813,6 +14982,48 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZk3pGkdcdevA",
+      "title": "The Takes",
+      "venueId": "house-of-blues",
+      "date": "2026-09-26",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Takes",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-takes-cleveland-ohio-09-26-2026/event/05006496ED0C2045",
+      "ticketUrl": "https://www.ticketmaster.com/the-takes-cleveland-ohio-09-26-2026/event/05006496ED0C2045",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZkoSGkeRNQlw",
+      "title": "Cavetown - Running With Scissors Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Cavetown",
+          "headliner": true
+        },
+        {
+          "name": "Chloe Moriondo",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/cavetown-running-with-scissors-tour-cleveland-ohio-09-26-2026/event/05006473AF8DAAF2",
+      "ticketUrl": "https://www.ticketmaster.com/cavetown-running-with-scissors-tour-cleveland-ohio-09-26-2026/event/05006473AF8DAAF2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "KC and Company",
       "performers": [
         {
@@ -14918,7 +15129,7 @@
       "date": "2026-09-27",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -14948,6 +15159,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/over-the-shire-sep27/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62531",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZk39Gkd_BHWd",
+      "title": "Buena Vista Orchestra",
+      "venueId": "house-of-blues",
+      "date": "2026-09-27",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Buena Vista Orchestra",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/buena-vista-orchestra-cleveland-ohio-09-27-2026/event/05006497D9EBCF43",
+      "ticketUrl": "https://www.ticketmaster.com/buena-vista-orchestra-cleveland-ohio-09-27-2026/event/05006497D9EBCF43",
       "source": "scrape",
       "manual": false
     },
@@ -15228,6 +15458,29 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZkoSGkdhxX5U",
+      "title": "Cheekface W/ Special Guest Apes Of The State",
+      "venueId": "house-of-blues",
+      "date": "2026-09-30",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Cheekface",
+          "headliner": true
+        },
+        {
+          "name": "Apes of the State",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/cheekface-w-special-guest-apes-of-cleveland-ohio-09-30-2026/event/05006473DB8BE2F6",
+      "ticketUrl": "https://www.ticketmaster.com/cheekface-w-special-guest-apes-of-cleveland-ohio-09-30-2026/event/05006473DB8BE2F6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-01-sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter",
       "title": "Sex Pistols (Steve Jones, Paul Cook, Glen Matlock) featuring Frank Carter w/ Bad Nerves",
       "venueId": "the-agora",
@@ -15299,7 +15552,7 @@
       "date": "2026-10-01",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$18 AdvanceAdv, $25 Day of ShowDay of",
+      "price": "$18 Advance, $25 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -15373,7 +15626,7 @@
       "date": "2026-10-02",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -15433,6 +15686,29 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv17fZ_6GkwRU145",
+      "title": "Artemas - LOVERCORE / GETTING UP TO NO GOOD Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-10-03",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Artemas",
+          "headliner": true
+        },
+        {
+          "name": "Henry Morris",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/artemas-lovercore-getting-up-to-no-cleveland-ohio-10-03-2026/event/0500647CAFD8A54B",
+      "ticketUrl": "https://www.ticketmaster.com/artemas-lovercore-getting-up-to-no-cleveland-ohio-10-03-2026/event/0500647CAFD8A54B",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-10-04-upon-your-dead-body",
       "title": "Upon your Dead Body with When The Sun Sets , Rematch",
       "venueId": "beachland-ballroom",
@@ -15481,7 +15757,7 @@
       "date": "2026-10-04",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -15520,7 +15796,7 @@
       "date": "2026-10-05",
       "time": "18:30",
       "doors": "18:30",
-      "price": "$25 AdvanceAdv, $30 Day of ShowDay of",
+      "price": "$25 Advance, $30 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -15567,7 +15843,7 @@
       "date": "2026-10-06",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$40 AdvanceAdv, $50 Day of ShowDay of",
+      "price": "$40 Advance, $50 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -15686,7 +15962,7 @@
       "date": "2026-10-09",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -15784,6 +16060,25 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZkosGkeYlbhr",
+      "title": "Here Come the Mummies",
+      "venueId": "house-of-blues",
+      "date": "2026-10-10",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Here Come the Mummies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/here-come-the-mummies-cleveland-ohio-10-10-2026/event/05006471B0AD86DE",
+      "ticketUrl": "https://www.ticketmaster.com/here-come-the-mummies-cleveland-ohio-10-10-2026/event/05006471B0AD86DE",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-10-11-chasing-abbey",
       "title": "Chasing Abbey",
       "venueId": "grog-shop",
@@ -15841,6 +16136,29 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZkosGkdxxii9",
+      "title": "Tab Benoit w/ Ghalia Volt: Soul of the Swamp Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-10-11",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Tab Benoit",
+          "headliner": true
+        },
+        {
+          "name": "Ghalia Volt",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/tab-benoit-w-ghalia-volt-soul-cleveland-ohio-10-11-2026/event/05006471E28ACB17",
+      "ticketUrl": "https://www.ticketmaster.com/tab-benoit-w-ghalia-volt-soul-cleveland-ohio-10-11-2026/event/05006471E28ACB17",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-10-12-white-denim",
       "title": "White Denim",
       "venueId": "beachland-ballroom",
@@ -15856,25 +16174,6 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/white-denim-12-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/white-denim-12-oct#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-10-13-roger-clyne-the-peacemakers",
-      "title": "Roger Clyne & The Peacemakers",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-13",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Roger Clyne & The Peacemakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/roger-clyne-the-peacemakers-13-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/roger-clyne-the-peacemakers-13-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -16080,7 +16379,7 @@
       "date": "2026-10-18",
       "time": "19:00",
       "doors": "17:30",
-      "price": "$38 AdvanceAdv, $48 Day of ShowDay of",
+      "price": "$38 Advance, $48 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -16109,6 +16408,25 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/adam-paddock/",
       "ticketUrl": "https://www.ticketweb.com/event/adam-paddock-the-winchester-tickets/14938783",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_GKq4Vw_",
+      "title": "The Brook & The Bluff: The Werewolf Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-10-19",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Brook & The Bluff",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-brook-the-bluff-the-werewolf-cleveland-ohio-10-19-2026/event/050064C4DD574C99",
+      "ticketUrl": "https://www.ticketmaster.com/the-brook-the-bluff-the-werewolf-cleveland-ohio-10-19-2026/event/050064C4DD574C99",
       "source": "scrape",
       "manual": false
     },
@@ -16182,6 +16500,33 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_5hbiTow",
+      "title": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "venueId": "house-of-blues",
+      "date": "2026-10-20",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Hawthorne Heights",
+          "headliner": true
+        },
+        {
+          "name": "letlive",
+          "headliner": false
+        },
+        {
+          "name": "Creeper",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/hawthorne-heights-20th-anniversary-of-if-cleveland-ohio-10-20-2026/event/050064B6D8B3F472",
+      "ticketUrl": "https://www.ticketmaster.com/hawthorne-heights-20th-anniversary-of-if-cleveland-ohio-10-20-2026/event/050064B6D8B3F472",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "globe-iron-1465851",
       "title": "Plini with Night Verses, Portraits",
       "venueId": "globe-iron",
@@ -16211,7 +16556,7 @@
       "date": "2026-10-23",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$22 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$22 Advance, $28 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -16221,6 +16566,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/the-empty-pockets-oct23/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62666",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_5Kxxnka",
+      "title": "Lauren Alaina: The Stages Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Lauren Alaina",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/lauren-alaina-the-stages-tour-cleveland-ohio-10-23-2026/event/050064B4E28AA189",
+      "ticketUrl": "https://www.ticketmaster.com/lauren-alaina-the-stages-tour-cleveland-ohio-10-23-2026/event/050064B4E28AA189",
       "source": "scrape",
       "manual": false
     },
@@ -16281,7 +16645,7 @@
       "date": "2026-10-24",
       "time": "19:00",
       "doors": "17:30",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -16311,6 +16675,25 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/disney-descendants-zombies-tickets/family/2026-10-25-7-pm/18117307",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_1QxXiit",
+      "title": "The Airborne Toxic Event - The Way Home 20 Year Anniversary Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-10-26",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Airborne Toxic Event",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-airborne-toxic-event-the-way-cleveland-ohio-10-26-2026/event/050064A6A2FACB29",
+      "ticketUrl": "https://www.ticketmaster.com/the-airborne-toxic-event-the-way-cleveland-ohio-10-26-2026/event/050064A6A2FACB29",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -16367,6 +16750,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/this-is-lorelei-2/",
       "ticketUrl": "https://link.dice.fm/I40ea477860f",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_G3Qa_UH",
+      "title": "The Longest Johns",
+      "venueId": "house-of-blues",
+      "date": "2026-10-30",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Longest Johns",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-longest-johns-cleveland-ohio-10-30-2026/event/050064C49A259DBC",
+      "ticketUrl": "https://www.ticketmaster.com/the-longest-johns-cleveland-ohio-10-30-2026/event/050064C49A259DBC",
       "source": "scrape",
       "manual": false
     },
@@ -16440,6 +16842,37 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_G6CNiL5",
+      "title": "20 Years of Nekrogoblikon with Special Guests Aborted",
+      "venueId": "house-of-blues",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Nekrogoblikon",
+          "headliner": true
+        },
+        {
+          "name": "Aborted",
+          "headliner": false
+        },
+        {
+          "name": "Signs of the Swarm",
+          "headliner": false
+        },
+        {
+          "name": "Party Cannon",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/20-years-of-nekrogoblikon-with-special-cleveland-ohio-11-04-2026/event/050064C1CE8EC7CB",
+      "ticketUrl": "https://www.ticketmaster.com/20-years-of-nekrogoblikon-with-special-cleveland-ohio-11-04-2026/event/050064C1CE8EC7CB",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-05-arch-enemy-the-black-dahlia-murder",
       "title": "Arch Enemy & The Black Dahlia Murder w/ Septicflesh, Crypta, Thrown Into Exile",
       "venueId": "the-agora",
@@ -16477,7 +16910,7 @@
       "date": "2026-11-05",
       "time": "19:30",
       "doors": "18:00",
-      "price": "$25 AdvanceAdv, $35 Day of ShowDay of",
+      "price": "$25 Advance, $35 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -16516,7 +16949,7 @@
       "date": "2026-11-06",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$28 AdvanceAdv, $38 Day of ShowDay of",
+      "price": "$28 Advance, $38 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -16526,6 +16959,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/noise-pollution-nov6/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62640",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_GfU4kw9",
+      "title": "Chris Mitchell: The Begging For Sax Tour (18 & Over Only, ID Required)",
+      "venueId": "house-of-blues",
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Chris Mitchell",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/chris-mitchell-the-begging-for-sax-cleveland-ohio-11-06-2026/event/050064C536546C97",
+      "ticketUrl": "https://www.ticketmaster.com/chris-mitchell-the-begging-for-sax-cleveland-ohio-11-06-2026/event/050064C536546C97",
       "source": "scrape",
       "manual": false
     },
@@ -16568,6 +17020,60 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_GGni5Mp",
+      "title": "Pigeons Playing Ping Pong Fall Tour 2026",
+      "venueId": "house-of-blues",
+      "date": "2026-11-07",
+      "time": "17:30",
+      "doors": "17:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Pigeons Playing Ping Pong",
+          "headliner": true
+        },
+        {
+          "name": "Kendall Street Company",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-fall-tour-cleveland-ohio-11-07-2026/event/050064C32AB0BDD6",
+      "ticketUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-fall-tour-cleveland-ohio-11-07-2026/event/050064C32AB0BDD6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZk3FGkdmpCG1",
+      "title": "Beyond The Walls 3",
+      "venueId": "house-of-blues",
+      "date": "2026-11-07",
+      "time": "19:30",
+      "doors": "19:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "KB",
+          "headliner": true
+        },
+        {
+          "name": "Brenno",
+          "headliner": false
+        },
+        {
+          "name": "Taylor Wells",
+          "headliner": false
+        },
+        {
+          "name": "Porsha Love",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/beyond-the-walls-3-cleveland-ohio-11-07-2026/event/05006488EE58E30A",
+      "ticketUrl": "https://www.ticketmaster.com/beyond-the-walls-3-cleveland-ohio-11-07-2026/event/05006488EE58E30A",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-11-08-ax-and-the-hatchetmen",
       "title": "Ax and the Hatchetmen",
       "venueId": "mahalls",
@@ -16593,7 +17099,7 @@
       "date": "2026-11-08",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$15 AdvanceAdv, $20 Day of ShowDay of",
+      "price": "$15 Advance, $20 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -16613,7 +17119,7 @@
       "date": "2026-11-08",
       "time": "12:00",
       "doors": "11:00",
-      "price": "$12 AdvanceAdv, $18 Day of ShowDay of",
+      "price": "$12 Advance, $18 Day of Show",
       "room": "Supper Club",
       "performers": [
         {
@@ -16735,6 +17241,60 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZk33GkdSFHSD",
+      "title": "Palace - USA & Canada Tour 2026",
+      "venueId": "house-of-blues",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Palace",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-cleveland-ohio-11-11-2026/event/05006492F323CCFB",
+      "ticketUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-cleveland-ohio-11-11-2026/event/05006492F323CCFB",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vvG1fZ_GfKKTgG",
+      "title": "Pouya - The Foreverglades Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-11-12",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Pouya",
+          "headliner": true
+        },
+        {
+          "name": "Ramirez",
+          "headliner": false
+        },
+        {
+          "name": "Fat Nick",
+          "headliner": false
+        },
+        {
+          "name": "Black Smurf",
+          "headliner": false
+        },
+        {
+          "name": "comehelpglo",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/pouya-the-foreverglades-tour-cleveland-ohio-11-12-2026/event/050064C5134FFD4C",
+      "ticketUrl": "https://www.ticketmaster.com/pouya-the-foreverglades-tour-cleveland-ohio-11-12-2026/event/050064C5134FFD4C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-11-13-journey",
       "title": "JOURNEY: Final Frontier Tour (An Evening With)",
       "venueId": "rocket-arena",
@@ -16773,6 +17333,33 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1457716",
       "ticketUrl": "https://www.axs.com/events/1457716/skipline-and-ascension-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1kfZ_abeG7YgaQ",
+      "title": "The Menzingers: Everything I Ever Saw North American Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-11-13",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Menzingers",
+          "headliner": true
+        },
+        {
+          "name": "Hot Water Music",
+          "headliner": false
+        },
+        {
+          "name": "Weakened Friends",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-cleveland-ohio-11-13-2026/event/0500649602C3525A",
+      "ticketUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-cleveland-ohio-11-13-2026/event/0500649602C3525A",
       "source": "scrape",
       "manual": false
     },
@@ -16829,7 +17416,7 @@
       "date": "2026-11-15",
       "time": "19:00",
       "doors": "17:30",
-      "price": "$22 AdvanceAdv, $28 Day of ShowDay of",
+      "price": "$22 Advance, $28 Day of Show",
       "room": "Concert Hall",
       "performers": [
         {
@@ -17017,6 +17604,29 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vvG1fZ_1hjbMSa",
+      "title": "Everclear - Lucky 7 Tour",
+      "venueId": "house-of-blues",
+      "date": "2026-11-19",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Everclear",
+          "headliner": true
+        },
+        {
+          "name": "American Hi-Fi",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/everclear-lucky-7-tour-cleveland-ohio-11-19-2026/event/050064A6DC637CC9",
+      "ticketUrl": "https://www.ticketmaster.com/everclear-lucky-7-tour-cleveland-ohio-11-19-2026/event/050064A6DC637CC9",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-20-wheeler-walker-jr",
       "title": "Wheeler Walker Jr.",
       "venueId": "the-agora",
@@ -17109,6 +17719,25 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv17fZ_6GkV5UWwG",
+      "title": "Ekoostik Hookah",
+      "venueId": "house-of-blues",
+      "date": "2026-11-21",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Ekoostik Hookah",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/ekoostik-hookah-cleveland-ohio-11-21-2026/event/0500647D0BDBDC8C",
+      "ticketUrl": "https://www.ticketmaster.com/ekoostik-hookah-cleveland-ohio-11-21-2026/event/0500647D0BDBDC8C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-11-24-secret-society-comedy-presents-one-more-joke-59",
       "title": "Secret Society Comedy Presents: One More Joke",
       "venueId": "winchester-music-tavern",
@@ -17159,6 +17788,25 @@
       "manual": false
     },
     {
+      "id": "house-of-blues-vv1AAZk36GkdLeDPU",
+      "title": "The Pineapple Thief",
+      "venueId": "house-of-blues",
+      "date": "2026-11-28",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Pineapple Thief",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-pineapple-thief-cleveland-ohio-11-28-2026/event/05006487DF0BB976",
+      "ticketUrl": "https://www.ticketmaster.com/the-pineapple-thief-cleveland-ohio-11-28-2026/event/05006487DF0BB976",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-12-01-secret-society-comedy-presents-one-more-joke-60",
       "title": "Secret Society Comedy Presents: One More Joke",
       "venueId": "winchester-music-tavern",
@@ -17174,6 +17822,37 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/secret-society-comedy-presents-one-more-joke-60/",
       "ticketUrl": "https://www.ticketweb.com/event/secret-society-comedy-presents-one-the-winchester-tickets/13982874",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZk3aGkdqrigO",
+      "title": "THE BOUNCING SOULS 'Born To Be Tour' with The Suicide Machines",
+      "venueId": "house-of-blues",
+      "date": "2026-12-02",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Bouncing Souls",
+          "headliner": true
+        },
+        {
+          "name": "The Suicide Machines",
+          "headliner": false
+        },
+        {
+          "name": "The Flatliners",
+          "headliner": false
+        },
+        {
+          "name": "Jack Knives",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/the-bouncing-souls-born-to-be-cleveland-ohio-12-02-2026/event/05006489DD7ACD60",
+      "ticketUrl": "https://www.ticketmaster.com/the-bouncing-souls-born-to-be-cleveland-ohio-12-02-2026/event/05006489DD7ACD60",
       "source": "scrape",
       "manual": false
     },
@@ -17212,6 +17891,37 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/king-buffalo/",
       "ticketUrl": "https://link.dice.fm/Q019933ff2b6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "house-of-blues-vv1AAZk3fGkdLJCLn",
+      "title": "GWAR",
+      "venueId": "house-of-blues",
+      "date": "2026-12-05",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "GWAR",
+          "headliner": true
+        },
+        {
+          "name": "Midnight",
+          "headliner": false
+        },
+        {
+          "name": "Mac Sabbath",
+          "headliner": false
+        },
+        {
+          "name": "X-Cops",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.ticketmaster.com/gwar-cleveland-ohio-12-05-2026/event/05006494DF98E7EA",
+      "ticketUrl": "https://www.ticketmaster.com/gwar-cleveland-ohio-12-05-2026/event/05006494DF98E7EA",
       "source": "scrape",
       "manual": false
     },

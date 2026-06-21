@@ -1104,7 +1104,7 @@ async function fetchMusicBox() {
       const href = titleLink.attr('href');
       if (!title || !href) return;
 
-      const dateText = $(el).find('p.event-date').first().text().trim(); // "Sun, Jun 21"
+      const dateText = $(el).find('p.event-date').first().text().trim();
       const dateMatch = dateText.match(/([A-Za-z]{3})\s+(\d{1,2})/);
       if (!dateMatch) return;
       const monthIndex = monthMap[dateMatch[1]];
@@ -1123,7 +1123,7 @@ async function fetchMusicBox() {
 
       const room = $(el).find('p.event-arc-venue').first().text().trim() || null;
 
-      let price = $(el).find('div.ticket_price').first().text().trim() || null;
+      let price = $(el).find('div.ticket_price').first().clone().find('.tixMobile').remove().end().text().trim() || null;
       if (!price && /free entry/i.test($(el).text())) price = 'Free';
 
       const ticketHref = $(el).find('a.resLink').first().attr('href');
@@ -1400,6 +1400,24 @@ async function main() {
     fetchWinchester(),
     fetchHouseOfBlues(),
   ]);
+
+  // ─── Per-venue event counts ──────────────────────────────────────────────
+  console.log('Rocket Arena:', rocketArena.length);
+  console.log('Grog Shop:', grogShop.length);
+  console.log('The Agora:', agora.length);
+  console.log('Beachland Ballroom:', beachland.length);
+  console.log('Metroparks:', metroparks.length);
+  console.log('Rockin on the River:', rockinOnTheRiver.length);
+  console.log('Cain Park:', cainPark.length);
+  console.log('Happy Dog:', happyDog.length);
+  console.log('Mahalls:', mahalls.length);
+  console.log('Bop Stop:', bopStop.length);
+  console.log('Globe Iron:', globeIron.length);
+  console.log('Jacobs Pavilion:', jacobsPavilion.length);
+  console.log('Music Box:', musicBox.length);
+  console.log('Winchester:', winchester.length);
+  console.log('House of Blues:', houseOfBlues.length);
+
 
   const manualEntries = loadManualEntries();
 
