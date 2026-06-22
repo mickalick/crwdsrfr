@@ -183,9 +183,21 @@ document.getElementById('search').addEventListener('input', function() {
   applyFilters();
 });
 
+document.getElementById('search').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    this.blur(); // dismisses the mobile keyboard
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('currentSelector').addEventListener('click', function() {
-    document.getElementById('datePicker')._flatpickr.open();
+    const fp = document.getElementById('datePicker')._flatpickr;
+    if (fp.isOpen) {
+      fp.close();
+    } else {
+      fp.open();
+    }
   });
   document.getElementById('prevArrow').addEventListener('click', function() {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];

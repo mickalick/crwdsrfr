@@ -31,10 +31,6 @@ a {
 	color:#62CBB8;
 }
 
-.main a:hover{
-	text-decoration: underline;
-}
-
 h1,h2{
 	margin:0;
 	padding:0;
@@ -82,10 +78,6 @@ h3 a{
 h4 a{
 	color:#FFF !important;
 	text-decoration: underline;
-}
-
-h4 a:hover {
-	color:#62CBB8 !important;
 }
 
 .subHead {
@@ -148,10 +140,6 @@ header{
 	color:#FFF;
 	width: 150px;
 	height: 80px;
-}
-
-#logo:hover{
-	transform: translateY(-3px);
 }
 
 
@@ -237,11 +225,6 @@ header{
 	-moz-transition:all 250ms ease;
 }
 
-.navLink:hover {
-	background-color: #101010 !important;
-	color: #62CBB8;
-}
-
 #wrapper{
 	color: #fff;
 	display: flex;
@@ -304,10 +287,6 @@ footer p {
 
 footer a {
 	color: #62CBB8;
-}
-
-footer a:hover {
-	text-decoration: underline;
 }
 
 .center {
@@ -408,11 +387,15 @@ footer a:hover {
 }
 
 #calendarNav {
+	position: sticky;
+	top: 0; /* adjust if you have a fixed header above this — set to that header's height */
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	border-bottom: 5px solid #F9F976;
 	margin-bottom: 40px;
+	background: #222;
+	z-index: 10;
 }
 
 #calendarEnd {
@@ -433,11 +416,6 @@ footer a:hover {
 	height: 100%;
 	padding: 0 16px;
 	position: relative;
-}
-
-#currentSelector:hover, #navArrows li:hover {
-	background-color: #171717 !important;
-	cursor: pointer;
 }
 
 #current .icon {
@@ -492,10 +470,6 @@ footer a:hover {
 	padding: 16px 24px 24px 16px;
 }
 
-.event:hover {
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-}
-
 .eventInfo {
 	width: 90%;
 }
@@ -513,10 +487,6 @@ footer a:hover {
 .eventName a {
 	color: #FFF;
 	text-decoration: underline;
-}
-
-.eventName a:hover {
-	color: #62CBB8;
 }
 
 .eventTime, .eventCost {
@@ -545,14 +515,6 @@ footer a:hover {
   justify-content: center;
 }
 
-.ticketLink:hover {
-	background: #62CBB8;
-}
-
-.ticketLink:hover #opn {
-	background-color: #101010;
-}
-
 .ticketLink a {
 	height: 100%;
 	width: 100%;
@@ -565,10 +527,6 @@ footer a:hover {
 	display: inline-block;
 	width: 24px;
   height: 24px;
-}
-
-.icon:hover{
-	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
 }
 
 #cal {
@@ -624,10 +582,6 @@ footer a:hover {
   mask-repeat: no-repeat;
 }
 
-#clr:hover {
-	background-color: #FF6262;
-}
-
 #mnu {
 	background-color: #FFF;
 	-webkit-mask-image: url('../images/icons/menu.svg');
@@ -675,16 +629,6 @@ nav {
 	align-items: center;
 }
 
-
-
-
-
-/* Grid Hover Animation */
-
-figure:hover, figure a:hover{
-	transform: translateY(-3px);
-	text-decoration: none !important;
-}
 
 .vert{
 	width: 61%;
@@ -759,13 +703,6 @@ input[type=text], select, textarea {
 	border-color: #101010 !important;
 }
 
-.flatpickr-day:hover {
-	background: #F9F976 !important;
-	border-color: #F9F976 !important;
-	box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
-}
-
-
 .contactForm {
 	margin-top: 40px;
 }
@@ -783,13 +720,6 @@ input[type=text], select, textarea {
   float: right;
   cursor: pointer;
 }
-
-.contactButton:hover {
-	background: #62CBB8 !important;
-	color: #222 !important;
-	text-decoration: none !important;
-}
-
 
 .venueList {
 	margin: 20px 0;
@@ -815,7 +745,80 @@ input[type=text], select, textarea {
 
 
 
+/* Mobile Hover Fix */
 
+@media (hover: hover) and (pointer: fine) {
+	.navArrows li:hover {
+		background: #F9F976;
+	}
+
+	.main a:hover{
+		text-decoration: underline;
+	}
+
+	h4 a:hover {
+		color:#62CBB8 !important;
+	}
+
+	#logo:hover{
+		transform: translateY(-3px);
+	}
+
+	.navLink:hover {
+		background-color: #101010 !important;
+		color: #62CBB8;
+	}
+
+	footer a:hover {
+		text-decoration: underline;
+	}
+
+	#currentSelector:hover, #navArrows li:hover {
+		background-color: #171717 !important;
+		cursor: pointer;
+	}
+
+	.event:hover {
+		box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+	}
+
+	.eventName a:hover {
+		color: #62CBB8;
+	}
+
+	.ticketLink:hover {
+		background: #62CBB8;
+	}
+
+	.ticketLink:hover #opn {
+		background-color: #101010;
+	}
+
+	.icon:hover{
+		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+	}
+
+	#clr:hover {
+		background-color: #FF6262;
+	}
+
+	figure:hover, figure a:hover{
+		transform: translateY(-3px);
+		text-decoration: none !important;
+	}
+
+	.flatpickr-day:hover {
+		background: #F9F976 !important;
+		border-color: #F9F976 !important;
+		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+	}
+
+	.contactButton:hover {
+		background: #62CBB8 !important;
+		color: #222 !important;
+		text-decoration: none !important;
+	}
+}
 
 
 
