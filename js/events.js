@@ -191,15 +191,21 @@ document.getElementById('search').addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('currentSelector').addEventListener('mousedown', function(e) {
-    e.stopPropagation(); // prevent Flatpickr's own outside-click-to-close listener from also firing on this click
+  function toggleDatePicker(e) {
+    e.preventDefault();
+    e.stopPropagation();
     const fp = document.getElementById('datePicker')._flatpickr;
     if (fp.isOpen) {
       fp.close();
     } else {
       fp.open();
     }
-  });
+  }
+
+  const currentSelector = document.getElementById('currentSelector');
+  currentSelector.addEventListener('mousedown', toggleDatePicker);
+  currentSelector.addEventListener('touchstart', toggleDatePicker);
+  
   document.getElementById('prevArrow').addEventListener('click', function() {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
     const prev = new Date(current);
