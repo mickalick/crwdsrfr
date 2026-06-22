@@ -385,6 +385,7 @@ footer a {
 #calendar {
 	margin-top: 20px;
 	flex: 1;
+	align-items: flex-start;
 }
 
 #calendarNav {
