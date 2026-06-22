@@ -191,7 +191,8 @@ document.getElementById('search').addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('currentSelector').addEventListener('click', function() {
+  document.getElementById('currentSelector').addEventListener('mousedown', function(e) {
+    e.stopPropagation(); // prevent Flatpickr's own outside-click-to-close listener from also firing on this click
     const fp = document.getElementById('datePicker')._flatpickr;
     if (fp.isOpen) {
       fp.close();
