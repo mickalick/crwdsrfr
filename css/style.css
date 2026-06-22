@@ -242,22 +242,6 @@ header{
 	color: #62CBB8;
 }
 
-#bottomNav{
-	list-style:none outside none;
-	padding-left: 0;
-}
-
-#bottomNav li {
-	display: inline-flex;
-	margin-right: 24px;
-}
-
-.bottomNavItem{
-	text-align: center;
-	padding:10px 0;
-	margin:0 45px;
-}
-
 #wrapper{
 	color: #fff;
 	display: flex;
@@ -278,9 +262,32 @@ footer {
 }
 
 .footWrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	padding: 20px 0;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+#footLogo {
+	height: 60px;
+	margin-right: 32px;
+	margin-left: 20px;
+}
+
+.footContent {
+	display: block;
+}
+
+#bottomNav{
+	list-style:none outside none;
+	padding-left: 0;
+}
+
+#bottomNav li {
+	display: inline-flex;
+	margin-right: 24px;
 }
 
 footer p {
@@ -706,13 +713,6 @@ input[type=text], select, textarea {
 	margin-bottom: 20px;
 }
 
-#footLogo {
-	float: left;
-	width: 12%;
-	margin-right: 32px;
-	margin-left: 20px;
-}
-
 #ad {
 	min-height: 5vh;
 	text-align: center;
@@ -811,6 +811,12 @@ input[type=text], select, textarea {
 #meme {
 	width: 250px;
 }
+
+
+
+
+
+
 
 
 
@@ -923,11 +929,6 @@ input[type=text], select, textarea {
 	footer {
 		background-size: 20%;
 	}
-
-	#footLogo {
-		width: 15% !important;
-		margin-bottom: 40px;
-	}
 }
 
 @media screen and (max-width:625px){
@@ -1030,7 +1031,12 @@ input[type=text], select, textarea {
 		background-size: 35%;
 	}
 
+	.footWrap {
+		align-items: start;
+	}
+
 	#footLogo {
+		height: 40px;
 		margin-right: 20px;
 		margin-left: 20px;
 		margin-top: 8px;
