@@ -91,6 +91,7 @@ function renderEvents(events) {
         if (showTime && doorsTime) timeDisplay = `${showTime} (Doors ${doorsTime})`;
         else if (showTime) timeDisplay = showTime;
         else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
+        else timeDisplay = 'See Event';
 
         const titleHtml = event.eventUrl
           ? `<a href="${event.eventUrl}" target="_blank">${event.title}</a>`
@@ -109,7 +110,7 @@ function renderEvents(events) {
           <div class="event">
             <div class="eventInfo">
               <span class="eventName">${titleHtml}</span>
-              ${timeDisplay ? `<span class="eventTime">${timeDisplay ?? 'See Event'}</span>` : ''}
+              <span class="eventTime">${timeDisplay}</span>
               <span class="eventCost">${event.price ?? 'See Event'}</span>
             </div>
             ${linkHtml}
