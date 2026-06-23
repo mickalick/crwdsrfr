@@ -109,7 +109,7 @@ function renderEvents(events) {
           <div class="event">
             <div class="eventInfo">
               <span class="eventName">${titleHtml}</span>
-              ${timeDisplay ? `<span class="eventTime">${timeDisplay}</span>` : ''}
+              ${timeDisplay ? `<span class="eventTime">${timeDisplay ?? 'See Event'}</span>` : ''}
               <span class="eventCost">${event.price ?? 'See Event'}</span>
             </div>
             ${linkHtml}
