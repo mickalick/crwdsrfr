@@ -1969,10 +1969,14 @@ async function fetchPlayhouseSquare() {
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
 function loadManualEntries() {
+  const manualPath = join(__dirname, '..', 'manual-events.json');
   try {
-    const manual = JSON.parse(readFileSync(join(__dirname, '..', 'manual-events.json'), 'utf-8'));
-    return manual.events ?? [];
-  } catch {
+    const manual = JSON.parse(readFileSync(manualPath, 'utf-8'));
+    const entries = manual.events ?? [];
+    console.log(`Loaded ${entries.length} manual entries from ${manualPath}`);
+    return entries;
+  } catch (err) {
+    console.error(`Failed to load manual entries from ${manualPath}:`, err.message);
     return [];
   }
 }

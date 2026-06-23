@@ -213,419 +213,13 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-06-21-ryan-davis-the-roadhouse-band",
-      "title": "Ryan Davis & the Roadhouse Band w/ Elizabeth Moen",
-      "venueId": "grog-shop",
-      "date": "2026-06-21",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$31.36",
-      "performers": [
-        {
-          "name": "Ryan Davis & the Roadhouse Band",
-          "headliner": true
-        },
-        {
-          "name": "Elizabeth Moen",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/ryan-davis-the-roadhouse-band-elizabeth-moen/",
-      "ticketUrl": "https://www.ticketweb.com/event/-ryan-davis-the-grog-shop-tickets/14745153?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-21-johnny-mullenax",
-      "title": "Johnny Mullenax with Jeshua Marshall & The Flood",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-21",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Johnny Mullenax",
-          "headliner": true
-        },
-        {
-          "name": "Jeshua Marshall & The Flood",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/johnny-mullenax-21-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2026-06-21-the-scenic-route",
-      "title": "The Scenic Route",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2026-06-21",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "The Scenic Route",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-06-21-sace6",
-      "title": "Sace6",
-      "venueId": "mahalls",
-      "date": "2026-06-21",
-      "time": "18:30",
-      "doors": "18:30",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "sace6",
-          "headliner": true
-        },
-        {
-          "name": "John Harvie",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/sace6/",
-      "ticketUrl": "https://link.dice.fm/N7dedd745c93",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-06-21-raul-midn-bop-stop",
-      "title": "Raul Midón",
-      "venueId": "bop-stop",
-      "date": "2026-06-21",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Raul Midón",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/21/raul-midn-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/21/raul-midn-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "globe-iron-1455585",
-      "title": "Happy Endings Featuring Special Guest: Sango",
-      "venueId": "globe-iron",
-      "date": "2026-06-21",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Happy Endings Featuring Special Guest: Sango",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://globeironcle.com/events/detail?event_id=1455585",
-      "ticketUrl": "https://www.axs.com/events/1455585/happy-endings-featuring-special-guest-sango-tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-21-elo-brunch-june21",
-      "title": "Father’s Day Brunch * ELO Tribute by Into the Blue",
-      "venueId": "music-box",
-      "date": "2026-06-21",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$20 Advance, $25 Day of Show",
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Father’s Day Brunch * ELO Tribute by Into the Blue",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/elo-brunch-june21/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=56778",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-21-jimmy-buffett-brunch-june21",
-      "title": "Father’s Day Brunch * Jimmy Buffett Tribute by Cheeseburgers In Paradise",
-      "venueId": "music-box",
-      "date": "2026-06-21",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$15 Advance, $20 Day of Show",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Father’s Day Brunch * Jimmy Buffett Tribute by Cheeseburgers In Paradise",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/jimmy-buffett-brunch-june21/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-21-sun-shade-june21",
-      "title": "Reggae Sundays: Sun Shade",
-      "venueId": "music-box",
-      "date": "2026-06-21",
-      "time": "16:00",
-      "doors": "15:30",
-      "price": "Free",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Reggae Sundays: Sun Shade",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/sun-shade-june21/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-06-21-fathers-day-brunch-bob-seger",
-      "title": "Father’s Day Brunch (Bob Seger)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-06-21",
-      "time": "11:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Father’s Day Brunch (Bob Seger)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/fathers-day-brunch-bob-seger/",
-      "ticketUrl": "https://www.ticketweb.com/event/fathers-day-brunch-bob-seger-the-winchester-tickets/14984093",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-06-21-sean-chambers-featuring-the-savoy-brown-rhythm-section",
-      "title": "Sean Chambers Featuring: The Savoy Brown Rhythm Section",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-06-21",
-      "time": "19:30",
-      "doors": "19:00",
-      "price": "$25.21",
-      "performers": [
-        {
-          "name": "Sean Chambers Featuring: The Savoy Brown Rhythm Section",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/sean-chambers-featuring-the-savoy-brown-rhythm-section/",
-      "ticketUrl": "https://www.ticketweb.com/event/sean-chambers-featuring-the-savoy-the-winchester-tickets/14156594",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "fwd-nightclub-2026-06-21-desiviibes",
-      "title": "DesiViibes",
-      "venueId": "fwd-nightclub",
-      "date": "2026-06-21",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "tag": "NIGHT",
-      "performers": [
-        {
-          "name": "DesiViibes",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/DesiViibes?eid=EVE-CE208E",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/DesiViibes?eid=EVE-CE208E",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rock-hall-2026-06-21-rock-hall-live-kim-gordon",
-      "title": "Rock Hall Live: Kim Gordon",
-      "venueId": "rock-hall",
-      "date": "2026-06-21",
-      "time": "20:00",
-      "doors": null,
-      "price": "GA $32, With Admission $62",
-      "performers": [
-        {
-          "name": "Rock Hall Live: Kim Gordon",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/rock-hall-live-kim-gordon/",
-      "ticketUrl": "https://tickets.rockhall.com/events/019dd41e-37de-02c5-5963-afab05dfa703",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-06-21-1830-the-great-gatsby",
-      "title": "The Great Gatsby",
-      "venueId": "playhouse-square",
-      "date": "2026-06-21",
-      "endDate": null,
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "room": "Connor Palace",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "The Great Gatsby",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-great-gatsby",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E4C204BC-12E3-489B-9586-9419C506FAEC",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-06-21-to-be-announced",
-      "title": "Freak The Mighty",
-      "venueId": "playhouse-square",
-      "date": "2026-06-21",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Allen Theatre",
-      "presentedBy": "Cleveland Play House",
-      "performers": [
-        {
-          "name": "Freak The Mighty",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/to-be-announced",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=D4E1853A-6D48-4C9D-BF5F-003BA3193680",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-06-22-midnight-rental-presents-secret-movie-night",
-      "title": "Midnight Rental presents Secret Movie Night",
-      "venueId": "grog-shop",
-      "date": "2026-06-22",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "Midnight Rental presents Secret Movie Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-6/",
-      "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14847913?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-22-everything-yes",
-      "title": "Everything Yes with Nate Yingling Trio",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-22",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Everything Yes",
-          "headliner": true
-        },
-        {
-          "name": "Nate Yingling Trio",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/everything-yes-22-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "happy-dog-2026-06-22-monday-night-trivia",
-      "title": "Monday Night Trivia!",
-      "venueId": "happy-dog",
-      "date": "2026-06-22",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Monday Night Trivia!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-june-22-2026-691575",
-      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-june-22-2026-691575",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-06-22-daisy-the-great",
-      "title": "Daisy the Great",
-      "venueId": "mahalls",
-      "date": "2026-06-22",
-      "time": "18:30",
-      "doors": "18:30",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Daisy the Great",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/daisy-the-great/",
-      "ticketUrl": "https://link.dice.fm/H64e9b9a7c06",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-06-22-music-trivi-aoke-24",
-      "title": "MUSIC TRIVI-AOKE",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-06-22",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "MUSIC TRIVI-AOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-24/",
-      "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14061214",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "grog-shop-2026-06-23-neptune",
       "title": "Neptune w/ Swisher, Powers/Rolin Duo",
       "venueId": "grog-shop",
       "date": "2026-06-23",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$15.16",
+      "price": "$19.51",
       "performers": [
         {
           "name": "Neptune",
@@ -707,6 +301,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-06-23-kurt-vile-and-the-violators",
+      "title": "Kurt Vile And The Violators",
+      "venueId": "mahalls",
+      "date": "2026-06-23",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$45.00",
+      "performers": [
+        {
+          "name": "Kurt Vile & The Violators",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/kurt-vile-and-the-violators/",
+      "ticketUrl": "https://link.dice.fm/r5795e284cf2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-06-23-archangel",
       "title": "ArchAngel",
       "venueId": "mahalls",
@@ -722,25 +335,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/archangel-3/",
       "ticketUrl": "https://link.dice.fm/l1cf65f4790b",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-06-23-kurt-vile-and-the-violators",
-      "title": "Kurt Vile And The Violators",
-      "venueId": "mahalls",
-      "date": "2026-06-23",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$40.00",
-      "performers": [
-        {
-          "name": "Kurt Vile & The Violators",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/kurt-vile-and-the-violators/",
-      "ticketUrl": "https://link.dice.fm/r5795e284cf2",
       "source": "scrape",
       "manual": false
     },
@@ -841,6 +435,25 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E4C204BC-12E3-489B-9586-9419C506FAEC",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Dub Club 30% Off Whiskey & Tequila",
+      "performers": [
+        {
+          "name": "Dub Club",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-06-23-dub-club"
     },
     {
       "id": "grog-shop-2026-06-24-sonido-gallo-negro",
@@ -1035,6 +648,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-06-24-boozy-bingo-plant-9",
+      "title": "BOOZY BINGO (PLANT)",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-06-24",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "BOOZY BINGO (PLANT)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-bingo-plant-9/",
+      "ticketUrl": "https://www.ticketweb.com/event/boozy-bingo-plant-the-winchester-tickets/14211174",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "house-of-blues-vv17fZ_kGkBnW_gG",
       "title": "Matt Maeson: Watch My Step Tour",
       "venueId": "house-of-blues",
@@ -1116,6 +748,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E4C204BC-12E3-489B-9586-9419C506FAEC",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-24-dog-water"
+    },
+    {
+      "title": "Mourning Glory",
+      "performers": [
+        {
+          "name": "Mourning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-24-mourning-glory"
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-06-24-chris-hatton"
     },
     {
       "id": "grog-shop-2026-06-25-teenage-bottlerocket",
@@ -1357,6 +1046,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-06-25-tipsy-trivia-harry-potter-edition-2",
+      "title": "TIPSY TRIVIA (HARRY POTTER EDITION)",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "TIPSY TRIVIA (HARRY POTTER EDITION)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/tipsy-trivia-harry-potter-edition-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/tipsy-trivia-harry-potter-edition-the-winchester-tickets/14211224",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "house-of-blues-2246",
       "title": "Live and Local featuring Huffman Acoustic",
       "venueId": "house-of-blues",
@@ -1456,6 +1164,44 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=01BA4BEB-A115-47C6-9CB3-00A396C92016",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "The Sky's the Limit",
+      "performers": [
+        {
+          "name": "The Sky's the Limit",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-25",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-25-the-sky-s-the-limit"
+    },
+    {
+      "title": "Post Malone",
+      "venueId": "huntington-bank-field",
+      "date": "2026-06-25",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Post Malone",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://huntingtonbankfield.com/events/post-malone/",
+      "ticketUrl": "https://www.ticketmaster.com/event/0500643CC652D7A6?camefrom=CFC_BROWNS_POST_MALONE_WEB_WEB_PAGE",
+      "source": "manual",
+      "manual": true,
+      "id": "huntington-bank-field-2026-06-25-post-malone"
     },
     {
       "id": "grog-shop-2026-06-26-ratboys-when-the-sun-explodes-tour-2026",
@@ -1925,6 +1671,139 @@
       "manual": false
     },
     {
+      "title": "Among The Willows",
+      "performers": [
+        {
+          "name": "Among The Willows",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-26-among-the-willows"
+    },
+    {
+      "title": "Pet the Cougar",
+      "performers": [
+        {
+          "name": "Pet the Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-26-pet-the-cougar"
+    },
+    {
+      "title": "Eclipes",
+      "performers": [
+        {
+          "name": "Eclipes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-26-eclipes"
+    },
+    {
+      "title": "Blue Lunch",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-06-26",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Lunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-06-26-blue-lunch"
+    },
+    {
+      "title": "High Flyers",
+      "performers": [
+        {
+          "name": "High Flyers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "sound-stage-tavern",
+      "source": "manual",
+      "manual": true,
+      "id": "sound-stage-tavern-2026-06-26-high-flyers"
+    },
+    {
+      "title": "Jester Revenge",
+      "performers": [
+        {
+          "name": "Jester Revenge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-06-26-jester-revenge"
+    },
+    {
+      "title": "TRS Trio",
+      "performers": [
+        {
+          "name": "TRS Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-26",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-06-26-trs-trio"
+    },
+    {
       "id": "rocket-arena-2026-06-27-alex-warren",
       "title": "Alex Warren Presents: Finding Family on the Road",
       "venueId": "rocket-arena",
@@ -2207,7 +2086,7 @@
       "date": "2026-06-27",
       "time": "21:00",
       "doors": null,
-      "price": "$13.41",
+      "price": "$20.06",
       "performers": [
         {
           "name": "SORRY FOR PARTY ROCKING (2010-2015 Pop & EDM All Night Long!)",
@@ -2520,6 +2399,158 @@
       "manual": false
     },
     {
+      "title": "Collective Cle",
+      "performers": [
+        {
+          "name": "Collective Cle",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-06-27-collective-cle"
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-27-fm-project"
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-27-tricky-dick"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-27-kc-company"
+    },
+    {
+      "title": "Evil Ways",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-06-27",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Evil Ways",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-06-27-evil-ways"
+    },
+    {
+      "title": "DB Project",
+      "performers": [
+        {
+          "name": "DB Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "sound-stage-tavern",
+      "source": "manual",
+      "manual": true,
+      "id": "sound-stage-tavern-2026-06-27-db-project"
+    },
+    {
+      "title": "Ynot",
+      "performers": [
+        {
+          "name": "Ynot",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-06-27-ynot"
+    },
+    {
+      "title": "Qwik-Silver Trio",
+      "performers": [
+        {
+          "name": "Qwik-Silver Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-06-27-qwik-silver-trio"
+    },
+    {
       "id": "grog-shop-2026-06-28-savannah-dexter-damage-control-tour-w-coey-redd",
       "title": "SAVANNAH DEXTER: Damage Control Tour w/ COEY REDD w/ Coey Redd",
       "venueId": "grog-shop",
@@ -2547,8 +2578,8 @@
       "title": "This Way Out",
       "venueId": "beachland-ballroom",
       "date": "2026-06-28",
-      "time": "11:00",
-      "doors": "11:00",
+      "time": "12:00",
+      "doors": "12:00",
       "price": "No Cover",
       "performers": [
         {
@@ -2725,6 +2756,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-06-28-boozy-brunch-ella-langley",
+      "title": "BOOZY BRUNCH (ELLA LANGLEY)",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-06-28",
+      "time": "11:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "BOOZY BRUNCH (ELLA LANGLEY)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-brunch-ella-langley/",
+      "ticketUrl": "https://www.ticketweb.com/event/boozy-brunch-ella-langley-the-winchester-tickets/14211274",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-06-28-deadly-confessionals-groundstate-moon-tipper",
       "title": "Deadly Confessionals, Groundstate, Moon Tipper",
       "venueId": "winchester-music-tavern",
@@ -2849,6 +2899,82 @@
       "manual": false
     },
     {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-28",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-06-28-sully-solo"
+    },
+    {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-28",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-06-28-alt-95"
+    },
+    {
+      "title": "Blue Drivers",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-06-28",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Drivers",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-06-28-blue-drivers"
+    },
+    {
+      "title": "All Star Show!",
+      "performers": [
+        {
+          "name": "All Star Show!",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-28",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-06-28-all-star-show"
+    },
+    {
       "id": "happy-dog-2026-06-29-monday-night-trivia",
       "title": "Monday Night Trivia!",
       "venueId": "happy-dog",
@@ -2885,6 +3011,25 @@
       "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14061224",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-06-29",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-06-29-dj-sam-sinister"
     },
     {
       "id": "the-agora-2026-06-30-gigi-perez-live",
@@ -3028,12 +3173,12 @@
       "manual": false
     },
     {
-      "id": "playhouse-square-2026-06-30-tba-summer-plaza-series-summer-sounds",
+      "id": "playhouse-square-2026-06-30-1100-summer-plaza-series-summer-sounds",
       "title": "Summer Plaza Series | Summer Sounds",
       "venueId": "playhouse-square",
       "date": "2026-06-30",
       "endDate": null,
-      "time": null,
+      "time": "11:00",
       "doors": null,
       "price": null,
       "room": "Playhouse Square Plaza",
@@ -3086,6 +3231,25 @@
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/01/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Southbound",
+      "performers": [
+        {
+          "name": "Southbound",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-01",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-01-southbound"
     },
     {
       "id": "grog-shop-2026-07-02-audible-jones-joe-abraham-the-faces-of-belmez",
@@ -3244,6 +3408,25 @@
       "ticketUrl": "https://tickets.rockhall.com/events/019c1eca-148e-ab93-cf73-d9331bd9e490",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-02-fm-project"
     },
     {
       "id": "grog-shop-2026-07-03-trash-fish-fest-two",
@@ -3408,6 +3591,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-03-jazz-jam-session-bop-stop",
+      "title": "Jazz Jam Session",
+      "venueId": "bop-stop",
+      "date": "2026-07-03",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Jazz Jam Session",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/03/jazz-jam-session-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/03/jazz-jam-session-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "music-box-2026-07-03-baldassarre-rock-orchestra-july3",
       "title": "Baldassarre Rock Orchestra",
       "venueId": "music-box",
@@ -3506,6 +3708,63 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-03-tricky-dick"
+    },
+    {
+      "title": "Cheeseburger",
+      "performers": [
+        {
+          "name": "Cheeseburger",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-03",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-03-cheeseburger"
+    },
+    {
+      "title": "City Lite Band",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-03",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "City Lite Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-03-city-lite-band"
+    },
+    {
       "id": "grog-shop-2026-07-04-4day-ft-es4",
       "title": "4Day ft. ES4 w/ Spazzplot, Key Da Legend, Poohy, DJ Scottstradamus",
       "venueId": "grog-shop",
@@ -3537,25 +3796,6 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/4day-ft-es4/",
       "ticketUrl": "https://www.ticketweb.com/event/4day-ft-es4-grog-shop-tickets/14191974?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-07-04-this-way-out",
-      "title": "This Way Out",
-      "venueId": "beachland-ballroom",
-      "date": "2026-07-04",
-      "time": "12:00",
-      "doors": "12:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "This Way Out",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-04-jul",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-04-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3685,6 +3925,63 @@
       "manual": false
     },
     {
+      "id": "collision-bend-euclid-2026-07-04-bottoms-up-yoga-and-brew-48284",
+      "title": "Bottoms Up! Yoga and Brew",
+      "venueId": "collision-bend-euclid",
+      "date": "2026-07-04",
+      "time": "22:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Bottoms Up! Yoga and Brew",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/bottoms-up-yoga-and-brew-48284",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Against the Wind",
+      "performers": [
+        {
+          "name": "Against the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-04-against-the-wind"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-04",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-04-custard-pie"
+    },
+    {
       "id": "grog-shop-2026-07-05-this-one-for-bow-shuicide-holla-friends",
       "title": "\"This One For Bow\" Shuicide Holla & Friends",
       "venueId": "grog-shop",
@@ -3700,6 +3997,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/this-one-for-bow-shuicide-holla-friends/",
       "ticketUrl": "https://www.ticketweb.com/event/this-one-for-bow-shuicide-grog-shop-tickets/14927383?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-07-05-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-05",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-05-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-05-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -3824,6 +4140,44 @@
       "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/MIKE-POSNER-(4TH-OF-JULY-WEEKEND)?eid=EVE-X4CTJI",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-05",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-05-disco-inferno"
+    },
+    {
+      "title": "Rachel Brown & the Beatnik Playboys (Euclid Pet Pals Fundraiser)",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-05",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Rachel Brown & the Beatnik Playboys",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-05-rachel-brown-the-beatnik-playboys"
     },
     {
       "id": "grog-shop-2026-07-06-make-em-laugh-mondays",
@@ -3961,6 +4315,29 @@
       "ticketUrl": "https://www.ticketmaster.com/jack-johnson-surfilmusic-tour-2026-cuyahoga-falls-ohio-07-07-2026/event/05006363F268A4EF",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "The R&B Tour Starring Usher Raymond + Chris Brown",
+      "venueId": "huntington-bank-field",
+      "date": "2026-07-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Usher Raymond",
+          "headliner": true
+        },
+        {
+          "name": "Chris Brown",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://huntingtonbankfield.com/events/chris-brown-usher/",
+      "ticketUrl": "https://www.ticketmaster.com/event/0500647423AF3EF1?camefrom=CFC_BROWNS_CHRIS_BROWN_USHER_WEB_WEB_PAGE",
+      "source": "manual",
+      "manual": true,
+      "id": "huntington-bank-field-2026-07-07-rb-tour-usher-chris-brown"
     },
     {
       "id": "grog-shop-2026-07-08-501-bryze-built-different-tour",
@@ -4114,6 +4491,25 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Ted Riser",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-08-ted-riser"
     },
     {
       "id": "grog-shop-2026-07-09-allthehipe-astral-housefly",
@@ -4434,6 +4830,25 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Viva/Sammy",
+      "performers": [
+        {
+          "name": "Viva/Sammy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-09-viva-sammy"
     },
     {
       "id": "grog-shop-2026-07-10-frontega",
@@ -4793,6 +5208,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-07-10-lunch-by-the-lake-natalie-mcmahon-jul10",
+      "title": "Lunch by the Lake: Natalie McMahon",
+      "venueId": "rock-hall",
+      "date": "2026-07-10",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Natalie McMahon",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-natalie-mcmahon-jul10/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rock-hall-2026-07-10-women-in-metal",
       "title": "Women In Metal",
       "venueId": "rock-hall",
@@ -4854,6 +5288,63 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "OMF Band",
+      "performers": [
+        {
+          "name": "OMF Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-10-omf-band"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-10-kc-company"
+    },
+    {
+      "title": "Moko Bovo",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-10",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Moko Bovo",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-10-moko-bovo"
     },
     {
       "id": "grog-shop-2026-07-11-conan",
@@ -5067,6 +5558,10 @@
         {
           "name": "idobi Radio Summer School",
           "headliner": false
+        },
+        {
+          "name": "TRUSS",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.ticketmaster.com/idobi-radio-summer-school-w-honey-cleveland-ohio-07-11-2026/event/050064529EB7942C",
@@ -5155,6 +5650,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-11-spazmatics"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-11",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-11-eastwind"
+    },
+    {
+      "title": "Ace Molar",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-11",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-11-ace-molar"
     },
     {
       "id": "grog-shop-2026-07-12-the-body",
@@ -5432,6 +5984,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-12-sully-solo"
+    },
+    {
+      "title": "Bucknaked",
+      "performers": [
+        {
+          "name": "Bucknaked",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-12-bucknaked"
+    },
+    {
+      "title": "RockLogic",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-12",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "RockLogic",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-12-rocklogic"
     },
     {
       "id": "grog-shop-2026-07-13-generacion-suicida",
@@ -5916,6 +6525,25 @@
       "manual": false
     },
     {
+      "title": "Zero Hour",
+      "performers": [
+        {
+          "name": "Zero Hour",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-15",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-15-zero-hour"
+    },
+    {
       "id": "rocket-arena-2026-07-16-a-taste-of-black-cleveland",
       "title": "A Taste of Black Cleveland: The Food Showcase 8.0",
       "venueId": "rocket-arena",
@@ -6194,6 +6822,25 @@
       "manual": false
     },
     {
+      "title": "Nitebridge",
+      "performers": [
+        {
+          "name": "Nitebridge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-16",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-16-nitebridge"
+    },
+    {
       "id": "grog-shop-2026-07-17-the-sonder-bombs",
       "title": "The Sonder Bombs w/ Snarls, Angelgirl EVA",
       "venueId": "grog-shop",
@@ -6397,6 +7044,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-07-17-jazz-jam-session-bop-stop",
+      "title": "Jazz Jam Session",
+      "venueId": "bop-stop",
+      "date": "2026-07-17",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Jazz Jam Session",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/17/jazz-jam-session-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/17/jazz-jam-session-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "music-box-2026-07-17-beatles-at-night-july17",
       "title": "Beatles at Night with The Sunrise Jones",
       "venueId": "music-box",
@@ -6537,6 +7203,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-07-17-lunch-by-the-lake-conor-michael-smith-jul17",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-07-17",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-jul17/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "blossom-music-center-vv17fZ_dGkVQqIE8",
       "title": "Tim McGraw: Pawn Shop Guitar Tour 2026",
       "venueId": "blossom-music-center",
@@ -6580,6 +7265,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-17-tricky-dick"
+    },
+    {
+      "title": "Lee Gant",
+      "performers": [
+        {
+          "name": "Lee Gant",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-17-lee-gant"
+    },
+    {
+      "title": "Bluescasters",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-17",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Bluescasters",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-17-bluescasters"
     },
     {
       "id": "rocket-arena-2026-07-18-zac-brown-band",
@@ -6905,6 +7647,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-07-18-lunch-by-the-lake-carlo-michel-jul18",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-07-18",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-jul18/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-07-18-1330-the-lion-king",
       "title": "The Lion King",
       "venueId": "playhouse-square",
@@ -6947,6 +7708,82 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Wayne's World",
+      "performers": [
+        {
+          "name": "Wayne's World",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-18-wayne-s-world"
+    },
+    {
+      "title": "Radio Tokyo",
+      "performers": [
+        {
+          "name": "Radio Tokyo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-18-radio-tokyo"
+    },
+    {
+      "title": "Rock Radio",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-18-rock-radio"
+    },
+    {
+      "title": "Pieces Of Eight",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-18",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Pieces Of Eight",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-18-pieces-of-eight"
     },
     {
       "id": "grog-shop-2026-07-19-zoloft",
@@ -7219,6 +8056,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Island Troy",
+      "performers": [
+        {
+          "name": "Island Troy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-19-island-troy"
+    },
+    {
+      "title": "Soul Shake",
+      "performers": [
+        {
+          "name": "Soul Shake",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-19-soul-shake"
+    },
+    {
+      "title": "FM 77",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-19",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "FM 77",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-19-fm-77"
     },
     {
       "id": "grog-shop-2026-07-20-make-em-laugh-mondays",
@@ -7605,6 +8499,47 @@
       "manual": false
     },
     {
+      "id": "playhouse-square-2026-07-22-1930-the-lion-king",
+      "title": "The Lion King",
+      "venueId": "playhouse-square",
+      "date": "2026-07-22",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Lion King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Cruisin",
+      "performers": [
+        {
+          "name": "Cruisin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-22-cruisin"
+    },
+    {
       "id": "grog-shop-2026-07-23-school-of-rock-allstars",
       "title": "School of Rock AllStars",
       "venueId": "grog-shop",
@@ -7826,6 +8761,69 @@
       "ticketUrl": "https://tickets.rockhall.com/events/b9e63226-dee0-8f8c-06cc-fc7677371ac4",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-07-23-1930-the-lion-king",
+      "title": "The Lion King",
+      "venueId": "playhouse-square",
+      "date": "2026-07-23",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Lion King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-07-23-1100-summer-plaza-series",
+      "title": "Summer Plaza Series | Get Your Game On",
+      "venueId": "playhouse-square",
+      "date": "2026-07-23",
+      "endDate": null,
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "room": "Playhouse Square Plaza",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "Summer Plaza Series | Get Your Game On",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/summer-plaza-series",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Morning Glory",
+      "performers": [
+        {
+          "name": "Morning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-23",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-23-morning-glory"
     },
     {
       "id": "grog-shop-2026-07-24-les-savy-fav",
@@ -8171,6 +9169,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-07-24-lunch-by-the-lake-carlo-michel-jul24",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-07-24",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-jul24/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "blossom-music-center-vv17fZbVGkTsLaT4",
       "title": "Parker McCollum",
       "venueId": "blossom-music-center",
@@ -8218,6 +9235,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=840B1B54-5CCA-4E3E-981D-D86793E593D8",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Standing Still",
+      "performers": [
+        {
+          "name": "Standing Still",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-24-standing-still"
+    },
+    {
+      "title": "Abby Normal",
+      "performers": [
+        {
+          "name": "Abby Normal",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-24-abby-normal"
+    },
+    {
+      "title": "Blues DeVille",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-24",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blues DeVille",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-24-blues-deville"
     },
     {
       "id": "beachland-ballroom-2026-07-25-jukebox-the-ghost",
@@ -8512,6 +9586,82 @@
       "manual": false
     },
     {
+      "title": "Liverpool Lads",
+      "performers": [
+        {
+          "name": "Liverpool Lads",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-25-liverpool-lads"
+    },
+    {
+      "title": "Eclipse",
+      "performers": [
+        {
+          "name": "Eclipse",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-25-eclipse"
+    },
+    {
+      "title": "Cat's on Holiday",
+      "performers": [
+        {
+          "name": "Cat's on Holiday",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-25-cat-s-on-holiday"
+    },
+    {
+      "title": "Lea Marra & The River Boys",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-25",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Lea Marra & The River Boys",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-25-lea-marra-the-river-boys"
+    },
+    {
       "id": "metroparks-merwins-wharf-2026-07-26-east-wind",
       "title": "East Wind",
       "venueId": "metroparks-merwins-wharf",
@@ -8665,6 +9815,82 @@
       "ticketUrl": "https://www.ticketweb.com/event/tantric-25th-anniversary-the-winchester-tickets/14909993",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "rock-hall-2026-07-26-lunch-by-the-lake-conor-michael-smith-jul26",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-07-26",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-jul26/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-26",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-26-pete-lazard"
+    },
+    {
+      "title": "Trailer Park Ninjas",
+      "performers": [
+        {
+          "name": "Trailer Park Ninjas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-26",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-26-trailer-park-ninjas"
+    },
+    {
+      "title": "Monica Robins & The Whiskey Kings",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-26",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Monica Robins & The Whiskey Kings",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-26-monica-robins-the-whiskey-kings"
     },
     {
       "id": "happy-dog-2026-07-27-monday-night-trivia",
@@ -8829,6 +10055,25 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Barcode",
+      "performers": [
+        {
+          "name": "Barcode",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-29",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-29-barcode"
     },
     {
       "id": "grog-shop-2026-07-30-houdini-s-code",
@@ -9029,6 +10274,25 @@
       "ticketUrl": "https://www.ticketmaster.com/evanescence-2026-world-tour-with-spiritbox-cuyahoga-falls-ohio-07-30-2026/event/05006378DF31A424",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-30",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-30-alt-95"
     },
     {
       "id": "beachland-ballroom-2026-07-31-alex-williams",
@@ -9256,6 +10520,82 @@
       "ticketUrl": "https://www.ticketweb.com/event/ohio-deathfest-2026-the-mercury-music-lounge-tickets/14790293",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "rock-hall-2026-07-31-lunch-by-the-lake-carlo-michel-jul31",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-07-31",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-jul31/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Billy Morris",
+      "performers": [
+        {
+          "name": "Billy Morris",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-07-31-billy-morris"
+    },
+    {
+      "title": "Pet The Cougar",
+      "performers": [
+        {
+          "name": "Pet The Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-07-31-pet-the-cougar"
+    },
+    {
+      "title": "Becky Boyd & the Groove Train",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-07-31",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Becky Boyd & the Groove Train",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-07-31-becky-boyd-the-groove-train"
     },
     {
       "id": "grog-shop-2026-08-01-the-second-annual-pretty-punk-fest",
@@ -9519,6 +10859,82 @@
       "manual": false
     },
     {
+      "title": "Rumors",
+      "performers": [
+        {
+          "name": "Rumors",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-01-rumors"
+    },
+    {
+      "title": "Diamond Project",
+      "performers": [
+        {
+          "name": "Diamond Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-01-diamond-project"
+    },
+    {
+      "title": "Cheeseburger",
+      "performers": [
+        {
+          "name": "Cheeseburger",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-01-cheeseburger"
+    },
+    {
+      "title": "Evil Ways",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-01",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Evil Ways",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-01-evil-ways"
+    },
+    {
       "id": "grog-shop-2026-08-02-battle-of-the-bands",
       "title": "Battle Of The Bands",
       "venueId": "grog-shop",
@@ -9734,6 +11150,82 @@
       "ticketUrl": "https://www.ticketmaster.com/wax-dj-hoppa-cleveland-ohio-08-02-2026/event/05006478F392D769",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "rock-hall-2026-08-02-lunch-by-the-lake-conor-michael-smith-aug2",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-08-02",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-aug2/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-02",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-02-furious-george"
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-02",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-02-disco-inferno"
+    },
+    {
+      "title": "The Echoes",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-02",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "The Echoes",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-02-the-echoes"
     },
     {
       "id": "the-agora-2026-08-03-viagra-boys",
@@ -10016,6 +11508,25 @@
       "manual": false
     },
     {
+      "title": "Ted Riser",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-05-ted-riser"
+    },
+    {
       "id": "grog-shop-2026-08-06-abronia",
       "title": "ABRONIA w/ Brood X, Powers / Rolin Duo",
       "venueId": "grog-shop",
@@ -10224,6 +11735,25 @@
       "manual": false
     },
     {
+      "title": "Viva/Sammy",
+      "performers": [
+        {
+          "name": "Viva/Sammy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-06-viva-sammy"
+    },
+    {
       "id": "grog-shop-2026-08-07-nascar-aloe-jasiah-capital-punishment-tour",
       "title": "NASCAR ALOE + JASIAH: Capital Punishment Tour w/ REJECTEDREYNA",
       "venueId": "grog-shop",
@@ -10416,6 +11946,25 @@
       "manual": false
     },
     {
+      "id": "collision-bend-cleveland-2026-08-07-henry-loconti-at-collision-bend-cle-1-48300",
+      "title": "Henry LoConti at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Henry LoConti at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/henry-loconti-at-collision-bend-cle-1-48300",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "blossom-music-center-vv17fZbwGkSrh0uJ",
       "title": "Riley Green: Cowboy As It Gets Tour 2026",
       "venueId": "blossom-music-center",
@@ -10445,6 +11994,63 @@
       "ticketUrl": "https://www.ticketmaster.com/riley-green-cowboy-as-it-gets-cuyahoga-falls-ohio-08-07-2026/event/0500632CDE6E4366",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Carlos Jones and the Plus Band",
+      "performers": [
+        {
+          "name": "Carlos Jones and the Plus Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-07-carlos-jones-and-the-plus-band"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-07-custard-pie"
+    },
+    {
+      "title": "Blue Lunch",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-07",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Lunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-07-blue-lunch"
     },
     {
       "id": "rocket-arena-2026-08-08-hot-wheels-monster-trucks-live-glow-n-fire",
@@ -10687,6 +12293,63 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-08-tricky-dick"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-08-eastwind"
+    },
+    {
+      "title": "Super Troupers",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-08",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Super Troupers",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-08-super-troupers"
+    },
+    {
       "id": "rocket-arena-2026-08-09-hot-wheels-monster-trucks-live-glow-n-fire",
       "title": "Hot Wheels Monster Trucks Glow-N-Fire",
       "venueId": "rocket-arena",
@@ -10835,6 +12498,82 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-08-09-lunch-by-the-lake-conor-michael-smith-aug9",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-08-09",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-aug9/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-09-pete-lazard"
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-09-ace-molar"
+    },
+    {
+      "title": "Soul Shake & The Eastside Horns",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-09",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Soul Shake & The Eastside Horns",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-09-soul-shake-the-eastside-horns"
+    },
+    {
       "id": "beachland-ballroom-2026-08-10-jammy-buffet",
       "title": "Jammy Buffet",
       "venueId": "beachland-ballroom",
@@ -10890,6 +12629,25 @@
       "ticketUrl": "https://www.ticketweb.com/event/smile-empty-soul-the-winchester-tickets/14983123",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Foo Fighters",
+      "venueId": "huntington-bank-field",
+      "date": "2026-08-10",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Foo Fighters",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://huntingtonbankfield.com/events/foo-fighters/",
+      "ticketUrl": "https://www.ticketmaster.com/event/05006355C0336656?camefrom=CFC_STADIUM_FOOFIGHTERS_WEB_PAGE",
+      "source": "manual",
+      "manual": true,
+      "id": "huntington-bank-field-2026-08-10-foo-fighters"
     },
     {
       "id": "rocket-arena-2026-08-11-rod-stewart",
@@ -11152,6 +12910,25 @@
       "manual": false
     },
     {
+      "title": "Back Street Blues",
+      "performers": [
+        {
+          "name": "Back Street Blues",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-12",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-12-back-street-blues"
+    },
+    {
       "id": "the-agora-2026-08-13-dimmu-borgir",
       "title": "Dimmu Borgir w/ Hypocrisy, Hulder",
       "venueId": "the-agora",
@@ -11280,6 +13057,25 @@
       "ticketUrl": "https://tickets.rockhall.com/events/b9e63226-dee0-8f8c-06cc-fc7677371ac4",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pop Fiction",
+      "performers": [
+        {
+          "name": "Pop Fiction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-13-pop-fiction"
     },
     {
       "id": "the-agora-2026-08-14-blackberry-smoke",
@@ -11505,6 +13301,44 @@
       "manual": false
     },
     {
+      "id": "collision-bend-euclid-2026-08-14-exodus-pro-declaration-of-independents-at-collision-brew-euclid-48282",
+      "title": "Exodus Pro Declaration of Independents at Collision Brew Euclid",
+      "venueId": "collision-bend-euclid",
+      "date": "2026-08-14",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Exodus Pro Declaration of Independents at Collision Brew Euclid",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/exodus-pro-declaration-of-independents-at-collision-brew-euclid-48282",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-08-14-samuel-john-at-collision-bend-cle-48302",
+      "title": "Samuel John at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Samuel John at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/samuel-john-at-collision-bend-cle-48302",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mercury-music-lounge-2026-08-14-emo-night-karaoke",
       "title": "EMO NIGHT KARAOKE",
       "venueId": "mercury-music-lounge",
@@ -11520,6 +13354,25 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/emo-night-karaoke/",
       "ticketUrl": "https://www.ticketweb.com/event/emo-night-karaoke-the-mercury-music-lounge-tickets/14855923",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rock-hall-2026-08-14-lunch-by-the-lake-carlo-michel-aug14",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-08-14",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-aug14/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -11541,10 +13394,6 @@
           "headliner": false
         },
         {
-          "name": "Isaia Huron",
-          "headliner": false
-        },
-        {
           "name": "TheARTI$t",
           "headliner": false
         },
@@ -11557,6 +13406,63 @@
       "ticketUrl": "https://www.ticketmaster.com/the-kehlani-world-tour-north-america-cuyahoga-falls-ohio-08-14-2026/event/050064B5BA5EA8F9",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "FM77",
+      "performers": [
+        {
+          "name": "FM77",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-14-fm77"
+    },
+    {
+      "title": "FM Project",
+      "performers": [
+        {
+          "name": "FM Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-14-fm-project"
+    },
+    {
+      "title": "Black Jack Gypsies",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-14",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Black Jack Gypsies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-14-black-jack-gypsies"
     },
     {
       "id": "beachland-ballroom-2026-08-15-ohio-burlesque-festival",
@@ -11768,6 +13674,82 @@
       "ticketUrl": "https://tickets.rockhall.com/events/019d9230-c3d6-42cf-2e06-d860e1b655c4",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Ace Molar",
+      "performers": [
+        {
+          "name": "Ace Molar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-15-ace-molar"
+    },
+    {
+      "title": "Against the Wind",
+      "performers": [
+        {
+          "name": "Against the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-15-against-the-wind"
+    },
+    {
+      "title": "Cats on Holiday",
+      "performers": [
+        {
+          "name": "Cats on Holiday",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-15-cats-on-holiday"
+    },
+    {
+      "title": "The Saints",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-15",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "The Saints",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-15-the-saints"
     },
     {
       "id": "rocket-arena-2026-08-16-j-cole",
@@ -11992,6 +13974,82 @@
       "ticketUrl": "https://www.ticketmaster.com/save-ferris-cleveland-ohio-08-16-2026/event/05006497E793F502",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "rock-hall-2026-08-16-lunch-by-the-lake-conor-michael-smith-aug16",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-08-16",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-aug16/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-16-sully-solo"
+    },
+    {
+      "title": "TheSky'sTheLimit",
+      "performers": [
+        {
+          "name": "TheSky'sTheLimit",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-16-thesky-sthelimit"
+    },
+    {
+      "title": "Masterpiece",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-16",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Masterpiece",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-16-masterpiece"
     },
     {
       "id": "beachland-ballroom-2026-08-17-mountain-grass-unit",
@@ -12338,6 +14396,25 @@
       "manual": false
     },
     {
+      "title": "Alt 95",
+      "performers": [
+        {
+          "name": "Alt 95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-19",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-19-alt-95"
+    },
+    {
       "id": "beachland-ballroom-2026-08-20-kyle-smith",
       "title": "Kyle Smith with Miles Crowl",
       "venueId": "beachland-ballroom",
@@ -12418,6 +14495,25 @@
       "manual": false
     },
     {
+      "id": "bop-stop-2026-08-20-bark-culture-with-sam-yulsman-bop-stop",
+      "title": "Bark Culture with Sam Yulsman",
+      "venueId": "bop-stop",
+      "date": "2026-08-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Bark Culture with Sam Yulsman",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/20/bark-culture-with-sam-yulsman-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/20/bark-culture-with-sam-yulsman-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "house-of-blues-vv17fZ_eGkM5BF9g",
       "title": "Rene Vaca 2026 Tour",
       "venueId": "house-of-blues",
@@ -12435,6 +14531,25 @@
       "ticketUrl": "https://www.ticketmaster.com/rene-vaca-2026-tour-cleveland-ohio-08-20-2026/event/0500642DCBE885F5",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Nitebridge",
+      "performers": [
+        {
+          "name": "Nitebridge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-20-nitebridge"
     },
     {
       "id": "the-agora-2026-08-21-todd-rundgren",
@@ -12599,6 +14714,44 @@
       "manual": false
     },
     {
+      "id": "collision-bend-cleveland-2026-08-21-anna-marie-and-the-restaurant-at-collision-bend-cle-48306",
+      "title": "Anna Marie and The Restaurant at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Anna Marie and The Restaurant at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/anna-marie-and-the-restaurant-at-collision-bend-cle-48306",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "rock-hall-2026-08-21-lunch-by-the-lake-carlo-michel-aug21",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-08-21",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-aug21/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "blossom-music-center-vv16AZkoJvvZAG18Cd",
       "title": "Empire of the Sun - Ask That God: Afterlife North American Tour",
       "venueId": "blossom-music-center",
@@ -12624,6 +14777,63 @@
       "ticketUrl": "https://www.ticketmaster.com/empire-of-the-sun-ask-that-cuyahoga-falls-ohio-08-21-2026/event/05006466041B9FD2",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Ladies Night",
+      "performers": [
+        {
+          "name": "Ladies Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-21-ladies-night"
+    },
+    {
+      "title": "Collage",
+      "performers": [
+        {
+          "name": "Collage",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-21-collage"
+    },
+    {
+      "title": "City Lite Band",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-21",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "City Lite Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-21-city-lite-band"
     },
     {
       "id": "grog-shop-2026-08-22-ben-nichols-and-tim-barry",
@@ -12877,6 +15087,82 @@
       "manual": false
     },
     {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-22-tea-bags"
+    },
+    {
+      "title": "Radio Tokyo",
+      "performers": [
+        {
+          "name": "Radio Tokyo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-22-radio-tokyo"
+    },
+    {
+      "title": "Rock Radio",
+      "performers": [
+        {
+          "name": "Rock Radio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-22-rock-radio"
+    },
+    {
+      "title": "Abby Normal & The Detroit Lean",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-22",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Abby Normal & The Detroit Lean",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-22-abby-normal-the-detroit-lean"
+    },
+    {
       "id": "rocket-arena-2026-08-23-real-american-freestyle-12",
       "title": "Real American Freestyle 12",
       "venueId": "rocket-arena",
@@ -13087,6 +15373,82 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-08-23-lunch-by-the-lake-conor-michael-smith-aug23",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-08-23",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-aug23/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-23-pete-lazard"
+    },
+    {
+      "title": "Boaterhead",
+      "performers": [
+        {
+          "name": "Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-23-boaterhead"
+    },
+    {
+      "title": "Rachel Brown & the Beatnik Playboys",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-23",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Rachel Brown & the Beatnik Playboys",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-23-rachel-brown-the-beatnik-playboys"
+    },
+    {
       "id": "blossom-music-center-vv17fZbUGkVCNNy_",
       "title": "The Return Of The Carnival Of Sins: Mötley Crüe",
       "venueId": "blossom-music-center",
@@ -13214,7 +15576,7 @@
     },
     {
       "id": "grog-shop-2026-08-26-profanatica",
-      "title": "Profanatica w/ Cloak",
+      "title": "Profanatica w/ Cloak, Kurnugia",
       "venueId": "grog-shop",
       "date": "2026-08-26",
       "time": "20:00",
@@ -13228,10 +15590,33 @@
         {
           "name": "Cloak",
           "headliner": false
+        },
+        {
+          "name": "Kurnugia",
+          "headliner": false
         }
       ],
       "eventUrl": "https://grogshop.gs/tm-event/profanatica-cloak/",
-      "ticketUrl": "https://www.ticketweb.com/event/profanatica-cloak-grog-shop-tickets/14963103?pl=grogshop&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/profanatica-cloak-kurnugia-grog-shop-tickets/14963103?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-08-26-the-keefe-jackson--jakob-heinemann-quartet-bop-stop",
+      "title": "The Keefe Jackson - Jakob Heinemann Quartet",
+      "venueId": "bop-stop",
+      "date": "2026-08-26",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Keefe Jackson - Jakob Heinemann Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/26/the-keefe-jackson--jakob-heinemann-quartet-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/26/the-keefe-jackson--jakob-heinemann-quartet-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -13275,6 +15660,25 @@
       "manual": false
     },
     {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-26",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-26-tea-bags"
+    },
+    {
       "id": "grog-shop-2026-08-27-toni-romiti-16-again-tour",
       "title": "TONI ROMITI: 16 Again Tour",
       "venueId": "grog-shop",
@@ -13290,6 +15694,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/toni-romiti-16-again-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/toni-romiti-16-again-tour-grog-shop-tickets/14911773?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-08-27-jam-for-justice-legal-aid-s-annual-summer-fundraiser",
+      "title": "Jam for Justice - Legal Aid’s annual summer fundraiser!",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-27",
+      "time": "17:15",
+      "doors": "16:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Jam for Justice - Legal Aid’s annual summer fundraiser!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/jam-for-justice-legal-aid-s-annual-summer-fundraiser-27-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/jam-for-justice-legal-aid-s-annual-summer-fundraiser-27-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -13430,6 +15853,25 @@
       "ticketUrl": "https://www.ticketmaster.com/rufus-du-sol-north-america-2026-cuyahoga-falls-ohio-08-27-2026/event/0500644DB736E448",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Creedence",
+      "performers": [
+        {
+          "name": "Creedence",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-27-creedence"
     },
     {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
@@ -13679,6 +16121,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-08-28-lunch-by-the-lake-carlo-michel-aug28",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-08-28",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-aug28/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "blossom-music-center-vvG1fZ_13SsmGA",
       "title": "Josh Groban: Stage, Screen And Symphony",
       "venueId": "blossom-music-center",
@@ -13717,6 +16178,82 @@
       "eventUrl": "https://www.playhousesquare.org/events/detail/hasan-hates-ronny-ronny-hates-hasan",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=C739B360-5A9B-40A8-875E-D2DD0FD33A53",
       "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-28-tricky-dick"
+    },
+    {
+      "title": "Faction",
+      "performers": [
+        {
+          "name": "Faction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-28-faction"
+    },
+    {
+      "title": "Blues DeVille",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-28",
+      "time": "17:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blues DeVille",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-28-blues-deville"
+    },
+    {
+      "id": "rocket-arena-2026-08-29-don-toliver",
+      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+      "venueId": "rocket-arena",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Don Toliver",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
+      "source": "seatgeek",
       "manual": false
     },
     {
@@ -13812,6 +16349,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-08-29-indie-night-w-false-teeth-more",
+      "title": "Indie Night w/ False Teeth + more",
+      "venueId": "mahalls",
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "False Teeth",
+          "headliner": true
+        },
+        {
+          "name": "Rohna",
+          "headliner": false
+        },
+        {
+          "name": "Tough Loss",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/indie-night-w-false-teeth-more/",
+      "ticketUrl": "https://link.dice.fm/e7324b3c2edc",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "jacobs-pavilion-1479056",
       "title": "Masters of Funk with Larry Dodson, The SOS Band, The Original Lakeside, Midnight Star, Con Funk Shun, Alisa Peoples",
       "venueId": "jacobs-pavilion",
@@ -13854,21 +16418,22 @@
       "manual": false
     },
     {
-      "id": "collision-bend-euclid-2026-08-29-bobby-neal-at-collision-bend-euclid-2-48066",
-      "title": "Bobby Neal at Collision Bend Euclid",
-      "venueId": "collision-bend-euclid",
+      "id": "fwd-nightclub-2026-08-29-afrojack",
+      "title": "AFROJACK",
+      "venueId": "fwd-nightclub",
       "date": "2026-08-29",
-      "time": "14:00",
+      "time": "21:00",
       "doors": null,
       "price": null,
+      "tag": "NIGHT",
       "performers": [
         {
-          "name": "Bobby Neal at Collision Bend Euclid",
+          "name": "AFROJACK",
           "headliner": true
         }
       ],
-      "eventUrl": "https://collisionbendbrewery.com/events/bobby-neal-at-collision-bend-euclid-2-48066",
-      "ticketUrl": null,
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/AFROJACK?eid=EVE-HVI10W",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/AFROJACK?eid=EVE-HVI10W",
       "source": "scrape",
       "manual": false
     },
@@ -13892,8 +16457,103 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-08-29-lunch-by-the-lake-conor-michael-smith-aug29",
+      "title": "Lunch by the Lake: Conor Michael Smith",
+      "venueId": "rock-hall",
+      "date": "2026-08-29",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Conor Michael Smith",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-conor-michael-smith-aug29/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "OMF Band",
+      "performers": [
+        {
+          "name": "OMF Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-29-omf-band"
+    },
+    {
+      "title": "Post Road",
+      "performers": [
+        {
+          "name": "Post Road",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-29-post-road"
+    },
+    {
+      "title": "Barcode",
+      "performers": [
+        {
+          "name": "Barcode",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-29-barcode"
+    },
+    {
+      "title": "Pieces of Eight",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-29",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Pieces of Eight",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-29-pieces-of-eight"
+    },
+    {
       "id": "the-agora-2026-08-30-myles-smith",
-      "title": "Myles Smith w/ GoldFord",
+      "title": "Myles Smith w/ with GoldFord",
       "venueId": "the-agora",
       "date": "2026-08-30",
       "time": null,
@@ -13905,7 +16565,7 @@
           "headliner": true
         },
         {
-          "name": "GoldFord",
+          "name": "with GoldFord",
           "headliner": false
         }
       ],
@@ -13954,7 +16614,7 @@
     },
     {
       "id": "jacobs-pavilion-1374267",
-      "title": "Myles Smith - MOVED TO AGORA THEATRE with Hazlett, Stella Lefty",
+      "title": "Myles Smith - MOVED TO AGORA THEATRE with with GoldFord",
       "venueId": "jacobs-pavilion",
       "date": "2026-08-30",
       "time": "19:00",
@@ -13966,7 +16626,7 @@
           "headliner": true
         },
         {
-          "name": "Hazlett, Stella Lefty",
+          "name": "with GoldFord",
           "headliner": false
         }
       ],
@@ -14034,6 +16694,82 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
+    },
+    {
+      "id": "rock-hall-2026-08-30-lunch-by-the-lake-carlo-michel-aug30",
+      "title": "Lunch by the Lake: Carlo Michel",
+      "venueId": "rock-hall",
+      "date": "2026-08-30",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lunch by the Lake: Carlo Michel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/lunch-by-the-lake-carlo-michel-aug30/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-30",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-08-30-sully-solo"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-30",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-08-30-kc-company"
+    },
+    {
+      "title": "The Zoomies",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-08-30",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "The Zoomies",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-08-30-the-zoomies"
     },
     {
       "id": "beachland-ballroom-2026-09-01-the-well",
@@ -14174,6 +16910,52 @@
       "manual": false
     },
     {
+      "title": "MatWhataGuy",
+      "performers": [
+        {
+          "name": "MatWhataGuy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-02-matwhataguy"
+    },
+    {
+      "id": "grog-shop-2026-09-03-dire-wolf-cowboy-princess-brigade-cloner",
+      "title": "Dire Wolf / Cowboy Princess Brigade / Cloner w/ Cowboy Princess Brigade, Cloner",
+      "venueId": "grog-shop",
+      "date": "2026-09-03",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Dire Wolf / Cowboy Princess Brigade / Cloner",
+          "headliner": true
+        },
+        {
+          "name": "Cowboy Princess Brigade",
+          "headliner": false
+        },
+        {
+          "name": "Cloner",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/dire-wolf-cowboy-princess-brigade-cloner/",
+      "ticketUrl": "https://www.ticketweb.com/event/dire-wolf-cowboy-princess-grog-shop-tickets/14202254?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-09-03-mustard-service",
       "title": "Mustard Service",
       "venueId": "mahalls",
@@ -14205,6 +16987,26 @@
       "manual": false
     },
     {
+      "id": "music-box-2026-09-03-duprees-dead-band-sep3",
+      "title": "Dupree’s Dead Band",
+      "venueId": "music-box",
+      "date": "2026-09-03",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Dupree’s Dead Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/duprees-dead-band-sep3/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62342",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-09-03-the-kenny-vs-spenny-2026-usa-comedy-tour",
       "title": "The Kenny VS Spenny 2026 USA Comedy Tour",
       "venueId": "winchester-music-tavern",
@@ -14222,6 +17024,25 @@
       "ticketUrl": "https://www.ticketweb.com/event/the-kenny-vs-spenny-2026-the-winchester-tickets/14202764",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pet The Cougar",
+      "performers": [
+        {
+          "name": "Pet The Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-03",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-03-pet-the-cougar"
     },
     {
       "id": "rockin-on-the-river-2026-09-04-national-recording-artists-chris-lane-tyler-farr",
@@ -14282,31 +17103,42 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZko0GkdE0K-t",
-      "title": "Peephole-Tribute to System Of A Down-Celebrating 25 years of Toxicity",
-      "venueId": "house-of-blues",
-      "date": "2026-09-04",
-      "time": "18:30",
-      "doors": "18:30",
-      "price": null,
+      "title": "Cocktail Johnny",
       "performers": [
         {
-          "name": "Peephole: Tribute to System of a Down",
+          "name": "Cocktail Johnny",
           "headliner": true
-        },
-        {
-          "name": "The Subliminal Verses - A Midwest Tribute To Slipknot",
-          "headliner": false
-        },
-        {
-          "name": "Walk on Homeboys",
-          "headliner": false
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/peepholetribute-to-system-of-a-downcelebrating-cleveland-ohio-09-04-2026/event/05006464E7913869",
-      "ticketUrl": "https://www.ticketmaster.com/peepholetribute-to-system-of-a-downcelebrating-cleveland-ohio-09-04-2026/event/05006464E7913869",
-      "source": "scrape",
-      "manual": false
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-04-cocktail-johnny"
+    },
+    {
+      "title": "Mr. Breeze",
+      "performers": [
+        {
+          "name": "Mr. Breeze",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-04-mr-breeze"
     },
     {
       "id": "beachland-ballroom-2026-09-05-steve-forbert",
@@ -14328,21 +17160,98 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_GRxOena",
-      "title": "Who's Bad: The Ultimate Michael Jackson Experience",
-      "venueId": "house-of-blues",
-      "date": "2026-09-05",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
+      "title": "Super Troopers",
       "performers": [
         {
-          "name": "Who's Bad",
+          "name": "Super Troopers",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/whos-bad-the-ultimate-michael-jackson-cleveland-ohio-09-05-2026/event/050064CBE2802A89",
-      "ticketUrl": "https://www.ticketmaster.com/whos-bad-the-ultimate-michael-jackson-cleveland-ohio-09-05-2026/event/050064CBE2802A89",
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-05-super-troopers"
+    },
+    {
+      "title": "Eclipse",
+      "performers": [
+        {
+          "name": "Eclipse",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-05-eclipse"
+    },
+    {
+      "title": "KC & Company",
+      "performers": [
+        {
+          "name": "KC & Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-05-kc-company"
+    },
+    {
+      "title": "Blue Lunch",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-05",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Lunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-05-blue-lunch"
+    },
+    {
+      "id": "music-box-2026-09-06-elo-brunch-sep6",
+      "title": "ELO Brunch with Into The Blue",
+      "venueId": "music-box",
+      "date": "2026-09-06",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$18 Advance, $25 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "ELO Brunch with Into The Blue",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/elo-brunch-sep6/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62719",
       "source": "scrape",
       "manual": false
     },
@@ -14365,6 +17274,101 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-06-sully-solo"
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-06-disco-inferno"
+    },
+    {
+      "title": "Eastwind",
+      "performers": [
+        {
+          "name": "Eastwind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-06-eastwind"
+    },
+    {
+      "title": "Becky Boyd & the Groove Train",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-06",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Becky Boyd & the Groove Train",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-06-becky-boyd-the-groove-train"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-07-custard-pie"
     },
     {
       "id": "beachland-ballroom-2026-09-08-american-aquarium",
@@ -14424,33 +17428,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_G5Z_qMd",
-      "title": "Chad Gray: 30 Years of Madnesss",
-      "venueId": "house-of-blues",
-      "date": "2026-09-09",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Chad Gray",
-          "headliner": true
-        },
-        {
-          "name": "Butcher Babies",
-          "headliner": false
-        },
-        {
-          "name": "Devil's Cut",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/chad-gray-30-years-of-madnesss-cleveland-ohio-09-09-2026/event/050064C2C065DDC3",
-      "ticketUrl": "https://www.ticketmaster.com/chad-gray-30-years-of-madnesss-cleveland-ohio-09-09-2026/event/050064C2C065DDC3",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "blossom-music-center-vv1kv8v0jOGA1zYVG",
       "title": "Wu-Tang Forever: The Final Chamber",
       "venueId": "blossom-music-center",
@@ -14472,6 +17449,25 @@
       "ticketUrl": "https://www.ticketmaster.com/wutang-forever-the-final-chamber-cuyahoga-falls-ohio-09-09-2026/event/050064720AE30D0C",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Tea Bags",
+      "performers": [
+        {
+          "name": "Tea Bags",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-09-tea-bags"
     },
     {
       "id": "beachland-ballroom-2026-09-10-mikaela-davis",
@@ -14535,33 +17531,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv17fZ_kGkn4GgIm",
-      "title": "The Pretty Reckless - Dear God Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-09-10",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Pretty Reckless",
-          "headliner": true
-        },
-        {
-          "name": "paris jackson",
-          "headliner": false
-        },
-        {
-          "name": "doug.",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-pretty-reckless-dear-god-tour-cleveland-ohio-09-10-2026/event/0500646A95335A2E",
-      "ticketUrl": "https://www.ticketmaster.com/the-pretty-reckless-dear-god-tour-cleveland-ohio-09-10-2026/event/0500646A95335A2E",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "blossom-music-center-vv1AAZkosGkdV_WBp",
       "title": "TLC & Salt-N-Pepa with En Vogue - IT'S ICONIC",
       "venueId": "blossom-music-center",
@@ -14587,6 +17556,25 @@
       "ticketUrl": "https://www.ticketmaster.com/tlc-saltnpepa-with-en-vogue-its-cuyahoga-falls-ohio-09-10-2026/event/05006471F467DE96",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Morning Glory",
+      "performers": [
+        {
+          "name": "Morning Glory",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-10",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-10-morning-glory"
     },
     {
       "id": "grog-shop-2026-09-11-sincere-engineer",
@@ -14785,6 +17773,25 @@
       "manual": false
     },
     {
+      "title": "Tricky Dick",
+      "performers": [
+        {
+          "name": "Tricky Dick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-11-tricky-dick"
+    },
+    {
       "id": "cain-park-2026-09-12-branford-marsalis-and-dianne-reeves",
       "title": "Branford Marsalis and Dianne Reeves",
       "venueId": "cain-park",
@@ -14867,6 +17874,63 @@
       "ticketUrl": "https://www.ticketmaster.com/thomas-rhett-the-soundtrack-to-life-cuyahoga-falls-ohio-09-12-2026/event/05006465DF420F30",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Soul Shake",
+      "performers": [
+        {
+          "name": "Soul Shake",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-12-soul-shake"
+    },
+    {
+      "title": "Armstrong Bearcat Band",
+      "performers": [
+        {
+          "name": "Armstrong Bearcat Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-12-armstrong-bearcat-band"
+    },
+    {
+      "title": "The Saints",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-12",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "The Saints",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-12-the-saints"
     },
     {
       "id": "the-agora-2026-09-13-elvis-costello-the-imposters-with-charlie-sexton",
@@ -14994,6 +18058,63 @@
       "manual": false
     },
     {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-13",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-13-pete-lazard"
+    },
+    {
+      "title": "Delaney's",
+      "performers": [
+        {
+          "name": "Delaney's",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-13",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-13-delaney-s"
+    },
+    {
+      "title": "Monica Robins & The Whiskey Kings",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-13",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Monica Robins & The Whiskey Kings",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-13-monica-robins-the-whiskey-kings"
+    },
+    {
       "id": "beachland-ballroom-2026-09-15-abby-jeanne-the-shadow-band",
       "title": "Abby Jeanne & The Shadow Band",
       "venueId": "beachland-ballroom",
@@ -15009,6 +18130,29 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "jacobs-pavilion-1497632",
+      "title": "Erykah Badu with The Alchemist, De La Soul",
+      "venueId": "jacobs-pavilion",
+      "date": "2026-09-15",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Erykah Badu",
+          "headliner": true
+        },
+        {
+          "name": "The Alchemist, De La Soul",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1497632",
+      "ticketUrl": "https://www.axs.com/events/1497632/erykah-badu-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -15318,6 +18462,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-09-18-rend-collective",
+      "title": "Rend Collective",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-18",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Rend Collective",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/rend-collective-18-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/rend-collective-18-sep#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rockin-on-the-river-2026-09-18-bad-juju",
       "title": "Bad JuJu with Old Skool",
       "venueId": "rockin-on-the-river",
@@ -15401,6 +18564,44 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62665",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Pet the Cougar",
+      "performers": [
+        {
+          "name": "Pet the Cougar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-18-pet-the-cougar"
+    },
+    {
+      "title": "Jim Miller",
+      "performers": [
+        {
+          "name": "Jim Miller",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-18-jim-miller"
     },
     {
       "id": "rocket-arena-2026-09-19-rush",
@@ -15560,6 +18761,82 @@
       "manual": false
     },
     {
+      "title": "Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-19-spazmatics"
+    },
+    {
+      "title": "Alt-95",
+      "performers": [
+        {
+          "name": "Alt-95",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-19-alt-95"
+    },
+    {
+      "title": "Private Party",
+      "performers": [
+        {
+          "name": "Private Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-19-private-party"
+    },
+    {
+      "title": "Cavotta's Annual Clambake (Music by Rachel Brown & the Beatnik Playboys)",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-19",
+      "time": null,
+      "doors": null,
+      "price": "Advanced Ticket Sales Only",
+      "performers": [
+        {
+          "name": "Rachel Brown & the Beatnik Playboys",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-19-cavottas-annual-clambake"
+    },
+    {
       "id": "globe-iron-1477920",
       "title": "Peaches",
       "venueId": "globe-iron",
@@ -15579,21 +18856,22 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_1SJlqYe",
-      "title": "Dax - The Anger Management Tour",
-      "venueId": "house-of-blues",
+      "id": "music-box-2026-09-20-linda-ronstadt-brunch-sep20",
+      "title": "Linda Ronstadt Brunch",
+      "venueId": "music-box",
       "date": "2026-09-20",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$15 Advance, $20 Day of Show",
+      "room": "Supper Club",
       "performers": [
         {
-          "name": "Dax",
+          "name": "Linda Ronstadt Brunch",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/dax-the-anger-management-tour-cleveland-ohio-09-20-2026/event/050064ACE6ADDC02",
-      "ticketUrl": "https://www.ticketmaster.com/dax-the-anger-management-tour-cleveland-ohio-09-20-2026/event/050064ACE6ADDC02",
+      "eventUrl": "https://musicboxcle.com/event/linda-ronstadt-brunch-sep20/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62720",
       "source": "scrape",
       "manual": false
     },
@@ -15615,6 +18893,63 @@
       "ticketUrl": "https://www.ticketweb.com/event/black-flag-the-mercury-music-lounge-tickets/14876933",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-20",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-20-sully-solo"
+    },
+    {
+      "title": "Loose Tooth",
+      "performers": [
+        {
+          "name": "Loose Tooth",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-20",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-20-loose-tooth"
+    },
+    {
+      "title": "Blue Drivers",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-20",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Drivers",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-20-blue-drivers"
     },
     {
       "id": "beachland-ballroom-2026-09-21-alicia-witt-album-release-show",
@@ -15709,6 +19044,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-09-22-combichrist-the-venom-in-the-mouth-of-god-tour",
+      "title": "COMBICHRIST – THE VENOM IN THE MOUTH OF GOD TOUR",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-09-22",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$30.36",
+      "performers": [
+        {
+          "name": "COMBICHRIST – THE VENOM IN THE MOUTH OF GOD TOUR",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/combichrist-the-venom-in-the-mouth-of-god-tour/",
+      "ticketUrl": "https://www.ticketweb.com/event/combichrist-the-venom-the-winchester-tickets/14209894",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-09-22-secret-society-comedy-presents-one-more-joke-50",
       "title": "Secret Society Comedy Presents: One More Joke",
       "venueId": "winchester-music-tavern",
@@ -15724,37 +19078,6 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/secret-society-comedy-presents-one-more-joke-50/",
       "ticketUrl": "https://www.ticketweb.com/event/secret-society-comedy-presents-one-the-winchester-tickets/13982624",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_1NdSI9f",
-      "title": "Black Veil Brides: Vindicatour US 2026",
-      "venueId": "house-of-blues",
-      "date": "2026-09-22",
-      "time": "17:30",
-      "doors": "17:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "Black Veil Brides",
-          "headliner": true
-        },
-        {
-          "name": "Caskets",
-          "headliner": false
-        },
-        {
-          "name": "Archers",
-          "headliner": false
-        },
-        {
-          "name": "Autumn Kings",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/black-veil-brides-vindicatour-us-2026-cleveland-ohio-09-22-2026/event/050064A8C3CE85D4",
-      "ticketUrl": "https://www.ticketmaster.com/black-veil-brides-vindicatour-us-2026-cleveland-ohio-09-22-2026/event/050064A8C3CE85D4",
       "source": "scrape",
       "manual": false
     },
@@ -15940,6 +19263,37 @@
       "manual": false
     },
     {
+      "id": "the-agora-2026-09-25-pennywise",
+      "title": "Pennywise w/ Angel Du$t, H2O, Murphy's Law",
+      "venueId": "the-agora",
+      "date": "2026-09-25",
+      "time": null,
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Pennywise",
+          "headliner": true
+        },
+        {
+          "name": "Angel Du$t",
+          "headliner": false
+        },
+        {
+          "name": "H2O",
+          "headliner": false
+        },
+        {
+          "name": "Murphy's Law",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1497545",
+      "ticketUrl": "https://www.axs.com/events/1497545/pennywise-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-09-25-the-inspector-cluzo",
       "title": "The Inspector Cluzo",
       "venueId": "beachland-ballroom",
@@ -16032,6 +19386,44 @@
       "manual": false
     },
     {
+      "title": "That 80's Band",
+      "performers": [
+        {
+          "name": "That 80's Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-25-that-80-s-band"
+    },
+    {
+      "title": "Ted Riser Full Band",
+      "performers": [
+        {
+          "name": "Ted Riser Full Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-25-ted-riser-full-band"
+    },
+    {
       "id": "grog-shop-2026-09-26-the-tear-garden-the-legendary-pink-dots-cevin-key",
       "title": "The Tear Garden (The Legendary Pink Dots & cEvin Key)",
       "venueId": "grog-shop",
@@ -16093,48 +19485,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZk3pGkdcdevA",
-      "title": "The Takes",
-      "venueId": "house-of-blues",
-      "date": "2026-09-26",
-      "time": "18:30",
-      "doors": "18:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Takes",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-takes-cleveland-ohio-09-26-2026/event/05006496ED0C2045",
-      "ticketUrl": "https://www.ticketmaster.com/the-takes-cleveland-ohio-09-26-2026/event/05006496ED0C2045",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vv1AAZkoSGkeRNQlw",
-      "title": "Cavetown - Running With Scissors Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-09-26",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Cavetown",
-          "headliner": true
-        },
-        {
-          "name": "Chloe Moriondo",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/cavetown-running-with-scissors-tour-cleveland-ohio-09-26-2026/event/05006473AF8DAAF2",
-      "ticketUrl": "https://www.ticketmaster.com/cavetown-running-with-scissors-tour-cleveland-ohio-09-26-2026/event/05006473AF8DAAF2",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-09-26-gregory-porter-1",
       "title": "Gregory Porter",
       "venueId": "playhouse-square",
@@ -16155,6 +19505,63 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B0D604C7-F94D-4676-9760-3E13F67FA33D",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "KC and Company",
+      "performers": [
+        {
+          "name": "KC and Company",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-26-kc-and-company"
+    },
+    {
+      "title": "Cruisin",
+      "performers": [
+        {
+          "name": "Cruisin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-26-cruisin"
+    },
+    {
+      "title": "Private Party",
+      "performers": [
+        {
+          "name": "Private Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-26-private-party"
     },
     {
       "id": "the-agora-2026-09-27-jim-henson-s-labyrinth-in-concert-40th-anniversary",
@@ -16239,23 +19646,61 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZk39Gkd_BHWd",
-      "title": "Buena Vista Orchestra",
-      "venueId": "house-of-blues",
-      "date": "2026-09-27",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
+      "title": "Furious George",
       "performers": [
         {
-          "name": "Buena Vista Orchestra",
+          "name": "Furious George",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/buena-vista-orchestra-cleveland-ohio-09-27-2026/event/05006497D9EBCF43",
-      "ticketUrl": "https://www.ticketmaster.com/buena-vista-orchestra-cleveland-ohio-09-27-2026/event/05006497D9EBCF43",
-      "source": "scrape",
-      "manual": false
+      "date": "2026-09-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": null,
+      "venueId": "paninis-westlake",
+      "source": "manual",
+      "manual": true,
+      "id": "paninis-westlake-2026-09-27-furious-george"
+    },
+    {
+      "title": "Evilways",
+      "performers": [
+        {
+          "name": "Evilways",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "whiskey-island",
+      "source": "manual",
+      "manual": true,
+      "id": "whiskey-island-2026-09-27-evilways"
+    },
+    {
+      "title": "Dogwater",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-09-27",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Dogwater",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-09-27-dogwater"
     },
     {
       "id": "grog-shop-2026-09-28-witch-w-i-t-c-h",
@@ -16515,29 +19960,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZkoSGkdhxX5U",
-      "title": "Cheekface W/ Special Guest Apes Of The State",
-      "venueId": "house-of-blues",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Cheekface",
-          "headliner": true
-        },
-        {
-          "name": "Apes of the State",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/cheekface-w-special-guest-apes-of-cleveland-ohio-09-30-2026/event/05006473DB8BE2F6",
-      "ticketUrl": "https://www.ticketmaster.com/cheekface-w-special-guest-apes-of-cleveland-ohio-09-30-2026/event/05006473DB8BE2F6",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mercury-music-lounge-2026-09-30-iguana-death-cult",
       "title": "Iguana Death Cult",
       "venueId": "mercury-music-lounge",
@@ -16638,6 +20060,28 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/danielle-nicole-oct1/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62690",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-10-01-the-billy-joel-legacy",
+      "title": "The Billy Joel Legacy",
+      "venueId": "playhouse-square",
+      "date": "2026-10-01",
+      "endDate": null,
+      "time": null,
+      "doors": null,
+      "price": null,
+      "room": "Mimi Ohio Theatre",
+      "presentedBy": "CELEBRATING THE PIANO MAN",
+      "performers": [
+        {
+          "name": "The Billy Joel Legacy",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-billy-joel-legacy",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0D330B1D-29EB-460C-82B6-D63FC91C6215",
       "source": "scrape",
       "manual": false
     },
@@ -16762,25 +20206,25 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv17fZ_6GkwRU145",
-      "title": "Artemas - LOVERCORE / GETTING UP TO NO GOOD Tour",
-      "venueId": "house-of-blues",
+      "id": "beachland-ballroom-2026-10-03-slothrust",
+      "title": "Slothrust with The Velveteers",
+      "venueId": "beachland-ballroom",
       "date": "2026-10-03",
-      "time": "19:00",
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
         {
-          "name": "Artemas",
+          "name": "Slothrust",
           "headliner": true
         },
         {
-          "name": "Henry Morris",
+          "name": "The Velveteers",
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/artemas-lovercore-getting-up-to-no-cleveland-ohio-10-03-2026/event/0500647CAFD8A54B",
-      "ticketUrl": "https://www.ticketmaster.com/artemas-lovercore-getting-up-to-no-cleveland-ohio-10-03-2026/event/0500647CAFD8A54B",
+      "eventUrl": "https://www.beachlandballroom.com/shows/slothrust-the-dystopian-theatre-tour-03-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/slothrust-the-dystopian-theatre-tour-03-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -16805,6 +20249,25 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EFC9FA57-08C2-44F9-8D8B-BAF66DAC5AF0",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Blue Lunch",
+      "venueId": "cavottas-garden-bar",
+      "date": "2026-10-03",
+      "time": "15:00",
+      "doors": null,
+      "price": "$5 Cover",
+      "performers": [
+        {
+          "name": "Blue Lunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "id": "cavottas-garden-bar-2026-10-03-blue-lunch"
     },
     {
       "id": "beachland-ballroom-2026-10-04-upon-your-dead-body",
@@ -17035,6 +20498,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-07-inoha",
+      "title": "INOHA",
+      "venueId": "mahalls",
+      "date": "2026-10-07",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "INOHA",
+          "headliner": true
+        },
+        {
+          "name": "Capital Soiree",
+          "headliner": false
+        },
+        {
+          "name": "Pretoria",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/inoha/",
+      "ticketUrl": "https://link.dice.fm/m65a4232d97e",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-10-07-neil-degrasse-tyson-search-for-life-in-the-universe",
       "title": "Neil deGrasse Tyson \"Search For Life In The Universe\"",
       "venueId": "playhouse-square",
@@ -17222,25 +20712,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZkosGkeYlbhr",
-      "title": "Here Come the Mummies",
-      "venueId": "house-of-blues",
-      "date": "2026-10-10",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Here Come the Mummies",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/here-come-the-mummies-cleveland-ohio-10-10-2026/event/05006471B0AD86DE",
-      "ticketUrl": "https://www.ticketmaster.com/here-come-the-mummies-cleveland-ohio-10-10-2026/event/05006471B0AD86DE",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-10-10-marc-maron-2",
       "title": "Marc Maron",
       "venueId": "playhouse-square",
@@ -17320,25 +20791,21 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZkosGkdxxii9",
-      "title": "Tab Benoit w/ Ghalia Volt: Soul of the Swamp Tour",
-      "venueId": "house-of-blues",
+      "id": "winchester-music-tavern-2026-10-11-the-po-ramblin-boys",
+      "title": "The Po’ Ramblin’ Boys",
+      "venueId": "winchester-music-tavern",
       "date": "2026-10-11",
       "time": "19:00",
       "doors": "19:00",
-      "price": null,
+      "price": "$23.15",
       "performers": [
         {
-          "name": "Tab Benoit",
+          "name": "The Po’ Ramblin’ Boys",
           "headliner": true
-        },
-        {
-          "name": "Ghalia Volt",
-          "headliner": false
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/tab-benoit-w-ghalia-volt-soul-cleveland-ohio-10-11-2026/event/05006471E28ACB17",
-      "ticketUrl": "https://www.ticketmaster.com/tab-benoit-w-ghalia-volt-soul-cleveland-ohio-10-11-2026/event/05006471E28ACB17",
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/the-po-ramblin-boys/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-po-ramblin-boys-the-winchester-tickets/14214384",
       "source": "scrape",
       "manual": false
     },
@@ -17594,6 +21061,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-10-15-the-last-waltz-the-50th-anniversary-tour-featuring-chest-fever",
+      "title": "The Last Waltz – The 50th Anniversary Tour Featuring: Chest Fever",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-10-15",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$30.36",
+      "performers": [
+        {
+          "name": "The Last Waltz – The 50th Anniversary Tour Featuring: Chest Fever",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/the-last-waltz-the-50th-anniversary-tour-featuring-chest-fever/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-last-waltz-the-winchester-tickets/14213244",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-10-15-killers-of-kill-tony-1",
       "title": "KILLERS OF KILL TONY",
       "venueId": "playhouse-square",
@@ -17720,21 +21206,21 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_GKq4Vw_",
-      "title": "The Brook & The Bluff: The Werewolf Tour",
-      "venueId": "house-of-blues",
+      "id": "grog-shop-2026-10-19-the-tubs",
+      "title": "The Tubs",
+      "venueId": "grog-shop",
       "date": "2026-10-19",
-      "time": "19:00",
+      "time": "20:00",
       "doors": "19:00",
-      "price": null,
+      "price": "",
       "performers": [
         {
-          "name": "The Brook & The Bluff",
+          "name": "The Tubs",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/the-brook-the-bluff-the-werewolf-cleveland-ohio-10-19-2026/event/050064C4DD574C99",
-      "ticketUrl": "https://www.ticketmaster.com/the-brook-the-bluff-the-werewolf-cleveland-ohio-10-19-2026/event/050064C4DD574C99",
+      "eventUrl": "https://grogshop.gs/tm-event/the-tubs/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-tubs-grog-shop-tickets/14207344?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -17804,33 +21290,6 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/secret-society-comedy-presents-one-more-joke-54/",
       "ticketUrl": "https://www.ticketweb.com/event/secret-society-comedy-presents-one-the-winchester-tickets/13982754",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_5hbiTow",
-      "title": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
-      "venueId": "house-of-blues",
-      "date": "2026-10-20",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Hawthorne Heights",
-          "headliner": true
-        },
-        {
-          "name": "letlive",
-          "headliner": false
-        },
-        {
-          "name": "Creeper",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/hawthorne-heights-20th-anniversary-of-if-cleveland-ohio-10-20-2026/event/050064B6D8B3F472",
-      "ticketUrl": "https://www.ticketmaster.com/hawthorne-heights-20th-anniversary-of-if-cleveland-ohio-10-20-2026/event/050064B6D8B3F472",
       "source": "scrape",
       "manual": false
     },
@@ -17959,25 +21418,6 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/the-empty-pockets-oct23/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62666",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_5Kxxnka",
-      "title": "Lauren Alaina: The Stages Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Lauren Alaina",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/lauren-alaina-the-stages-tour-cleveland-ohio-10-23-2026/event/050064B4E28AA189",
-      "ticketUrl": "https://www.ticketmaster.com/lauren-alaina-the-stages-tour-cleveland-ohio-10-23-2026/event/050064B4E28AA189",
       "source": "scrape",
       "manual": false
     },
@@ -18115,25 +21555,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_1QxXiit",
-      "title": "The Airborne Toxic Event - The Way Home 20 Year Anniversary Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-10-26",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Airborne Toxic Event",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-airborne-toxic-event-the-way-cleveland-ohio-10-26-2026/event/050064A6A2FACB29",
-      "ticketUrl": "https://www.ticketmaster.com/the-airborne-toxic-event-the-way-cleveland-ohio-10-26-2026/event/050064A6A2FACB29",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "globe-iron-1433620",
       "title": "L7",
       "venueId": "globe-iron",
@@ -18206,25 +21627,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/this-is-lorelei-2/",
       "ticketUrl": "https://link.dice.fm/I40ea477860f",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_G3Qa_UH",
-      "title": "The Longest Johns",
-      "venueId": "house-of-blues",
-      "date": "2026-10-30",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Longest Johns",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-longest-johns-cleveland-ohio-10-30-2026/event/050064C49A259DBC",
-      "ticketUrl": "https://www.ticketmaster.com/the-longest-johns-cleveland-ohio-10-30-2026/event/050064C49A259DBC",
       "source": "scrape",
       "manual": false
     },
@@ -18313,37 +21715,6 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-89/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14969983",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_G6CNiL5",
-      "title": "20 Years of Nekrogoblikon with Special Guests Aborted",
-      "venueId": "house-of-blues",
-      "date": "2026-11-04",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Nekrogoblikon",
-          "headliner": true
-        },
-        {
-          "name": "Aborted",
-          "headliner": false
-        },
-        {
-          "name": "Signs of the Swarm",
-          "headliner": false
-        },
-        {
-          "name": "Party Cannon",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/20-years-of-nekrogoblikon-with-special-cleveland-ohio-11-04-2026/event/050064C1CE8EC7CB",
-      "ticketUrl": "https://www.ticketmaster.com/20-years-of-nekrogoblikon-with-special-cleveland-ohio-11-04-2026/event/050064C1CE8EC7CB",
       "source": "scrape",
       "manual": false
     },
@@ -18438,25 +21809,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_GfU4kw9",
-      "title": "Chris Mitchell: The Begging For Sax Tour (18 & Over Only, ID Required)",
-      "venueId": "house-of-blues",
-      "date": "2026-11-06",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Chris Mitchell",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/chris-mitchell-the-begging-for-sax-cleveland-ohio-11-06-2026/event/050064C536546C97",
-      "ticketUrl": "https://www.ticketmaster.com/chris-mitchell-the-begging-for-sax-cleveland-ohio-11-06-2026/event/050064C536546C97",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-agora-2026-11-07-blue-october",
       "title": "Blue October",
       "venueId": "the-agora",
@@ -18491,60 +21843,6 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/android-paranoid-an-evening-of-radiohead/",
       "ticketUrl": "https://www.ticketweb.com/event/android-paranoid-an-the-winchester-tickets/14905243",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_GGni5Mp",
-      "title": "Pigeons Playing Ping Pong Fall Tour 2026",
-      "venueId": "house-of-blues",
-      "date": "2026-11-07",
-      "time": "17:30",
-      "doors": "17:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "Pigeons Playing Ping Pong",
-          "headliner": true
-        },
-        {
-          "name": "Kendall Street Company",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-fall-tour-cleveland-ohio-11-07-2026/event/050064C32AB0BDD6",
-      "ticketUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-fall-tour-cleveland-ohio-11-07-2026/event/050064C32AB0BDD6",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vv1AAZk3FGkdmpCG1",
-      "title": "Beyond The Walls 3",
-      "venueId": "house-of-blues",
-      "date": "2026-11-07",
-      "time": "19:30",
-      "doors": "19:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "KB",
-          "headliner": true
-        },
-        {
-          "name": "Brenno",
-          "headliner": false
-        },
-        {
-          "name": "Taylor Wells",
-          "headliner": false
-        },
-        {
-          "name": "Porsha Love",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/beyond-the-walls-3-cleveland-ohio-11-07-2026/event/05006488EE58E30A",
-      "ticketUrl": "https://www.ticketmaster.com/beyond-the-walls-3-cleveland-ohio-11-07-2026/event/05006488EE58E30A",
       "source": "scrape",
       "manual": false
     },
@@ -18757,60 +22055,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZk33GkdSFHSD",
-      "title": "Palace - USA & Canada Tour 2026",
-      "venueId": "house-of-blues",
-      "date": "2026-11-11",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Palace",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-cleveland-ohio-11-11-2026/event/05006492F323CCFB",
-      "ticketUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-cleveland-ohio-11-11-2026/event/05006492F323CCFB",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vvG1fZ_GfKKTgG",
-      "title": "Pouya - The Foreverglades Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-11-12",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Pouya",
-          "headliner": true
-        },
-        {
-          "name": "Ramirez",
-          "headliner": false
-        },
-        {
-          "name": "Fat Nick",
-          "headliner": false
-        },
-        {
-          "name": "Black Smurf",
-          "headliner": false
-        },
-        {
-          "name": "comehelpglo",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/pouya-the-foreverglades-tour-cleveland-ohio-11-12-2026/event/050064C5134FFD4C",
-      "ticketUrl": "https://www.ticketmaster.com/pouya-the-foreverglades-tour-cleveland-ohio-11-12-2026/event/050064C5134FFD4C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-11-12-daniel-sloss-1",
       "title": "Daniel Sloss",
       "venueId": "playhouse-square",
@@ -18871,33 +22115,6 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1457716",
       "ticketUrl": "https://www.axs.com/events/1457716/skipline-and-ascension-tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vv1kfZ_abeG7YgaQ",
-      "title": "The Menzingers: Everything I Ever Saw North American Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-11-13",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Menzingers",
-          "headliner": true
-        },
-        {
-          "name": "Hot Water Music",
-          "headliner": false
-        },
-        {
-          "name": "Weakened Friends",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-cleveland-ohio-11-13-2026/event/0500649602C3525A",
-      "ticketUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-cleveland-ohio-11-13-2026/event/0500649602C3525A",
       "source": "scrape",
       "manual": false
     },
@@ -19205,29 +22422,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vvG1fZ_1hjbMSa",
-      "title": "Everclear - Lucky 7 Tour",
-      "venueId": "house-of-blues",
-      "date": "2026-11-19",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Everclear",
-          "headliner": true
-        },
-        {
-          "name": "American Hi-Fi",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/everclear-lucky-7-tour-cleveland-ohio-11-19-2026/event/050064A6DC637CC9",
-      "ticketUrl": "https://www.ticketmaster.com/everclear-lucky-7-tour-cleveland-ohio-11-19-2026/event/050064A6DC637CC9",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-agora-2026-11-20-wheeler-walker-jr",
       "title": "Wheeler Walker Jr.",
       "venueId": "the-agora",
@@ -19342,21 +22536,22 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv17fZ_6GkV5UWwG",
-      "title": "Ekoostik Hookah",
-      "venueId": "house-of-blues",
-      "date": "2026-11-21",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
+      "id": "music-box-2026-11-22-hearn-gregory-nov22",
+      "title": "Kate Gregory & Brendan Hearn",
+      "venueId": "music-box",
+      "date": "2026-11-22",
+      "time": "17:00",
+      "doors": "16:00",
+      "price": "$20 Advance, $25 Day of Show",
+      "room": "Supper Club",
       "performers": [
         {
-          "name": "Ekoostik Hookah",
+          "name": "Kate Gregory & Brendan Hearn",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.ticketmaster.com/ekoostik-hookah-cleveland-ohio-11-21-2026/event/0500647D0BDBDC8C",
-      "ticketUrl": "https://www.ticketmaster.com/ekoostik-hookah-cleveland-ohio-11-21-2026/event/0500647D0BDBDC8C",
+      "eventUrl": "https://musicboxcle.com/event/hearn-gregory-nov22/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62721",
       "source": "scrape",
       "manual": false
     },
@@ -19430,25 +22625,6 @@
       "manual": false
     },
     {
-      "id": "house-of-blues-vv1AAZk36GkdLeDPU",
-      "title": "The Pineapple Thief",
-      "venueId": "house-of-blues",
-      "date": "2026-11-28",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Pineapple Thief",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-pineapple-thief-cleveland-ohio-11-28-2026/event/05006487DF0BB976",
-      "ticketUrl": "https://www.ticketmaster.com/the-pineapple-thief-cleveland-ohio-11-28-2026/event/05006487DF0BB976",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-11-29-jingle-bell-pops",
       "title": "Jingle Bell POPS!",
       "venueId": "playhouse-square",
@@ -19466,7 +22642,7 @@
         }
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/jingle-bell-pops",
-      "ticketUrl": null,
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0B6C6E14-B631-4CD0-B580-0286E58A43AF",
       "source": "scrape",
       "manual": false
     },
@@ -19505,37 +22681,6 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-93/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970013",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vv1AAZk3aGkdqrigO",
-      "title": "THE BOUNCING SOULS 'Born To Be Tour' with The Suicide Machines",
-      "venueId": "house-of-blues",
-      "date": "2026-12-02",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Bouncing Souls",
-          "headliner": true
-        },
-        {
-          "name": "The Suicide Machines",
-          "headliner": false
-        },
-        {
-          "name": "The Flatliners",
-          "headliner": false
-        },
-        {
-          "name": "Jack Knives",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-bouncing-souls-born-to-be-cleveland-ohio-12-02-2026/event/05006489DD7ACD60",
-      "ticketUrl": "https://www.ticketmaster.com/the-bouncing-souls-born-to-be-cleveland-ohio-12-02-2026/event/05006489DD7ACD60",
       "source": "scrape",
       "manual": false
     },
@@ -19596,37 +22741,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/king-buffalo/",
       "ticketUrl": "https://link.dice.fm/Q019933ff2b6",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "house-of-blues-vv1AAZk3fGkdLJCLn",
-      "title": "GWAR",
-      "venueId": "house-of-blues",
-      "date": "2026-12-05",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "GWAR",
-          "headliner": true
-        },
-        {
-          "name": "Midnight",
-          "headliner": false
-        },
-        {
-          "name": "Mac Sabbath",
-          "headliner": false
-        },
-        {
-          "name": "X-Cops",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/gwar-cleveland-ohio-12-05-2026/event/05006494DF98E7EA",
-      "ticketUrl": "https://www.ticketmaster.com/gwar-cleveland-ohio-12-05-2026/event/05006494DF98E7EA",
       "source": "scrape",
       "manual": false
     },
@@ -19990,6 +23104,28 @@
       "manual": false
     },
     {
+      "id": "playhouse-square-2027-02-23-jeff-arcuri",
+      "title": "Jeff Arcuri",
+      "venueId": "playhouse-square",
+      "date": "2027-02-23",
+      "endDate": null,
+      "time": null,
+      "doors": null,
+      "price": null,
+      "room": "Connor Palace",
+      "presentedBy": "The Road Trip Tour",
+      "performers": [
+        {
+          "name": "Jeff Arcuri",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/jeff-arcuri",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5E032C9F-1D8A-41E3-813A-E1F07E68F852",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2027-02-27-pilobolus-1",
       "title": "Pilobolus",
       "venueId": "playhouse-square",
@@ -20008,6 +23144,28 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/pilobolus-1",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=3798BFFB-7B20-4544-897D-A1C2A1C809B0",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2027-03-02-sonic-live-in-concert",
+      "title": "Sonic Live In Concert",
+      "venueId": "playhouse-square",
+      "date": "2027-03-02",
+      "endDate": null,
+      "time": null,
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "Sonic Live In Concert",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/sonic-live-in-concert",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=3B632EE0-5F01-411D-AD11-58003623110C",
       "source": "scrape",
       "manual": false
     },
@@ -20279,6 +23437,25 @@
       "performers": [
         {
           "name": "Brethren",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2027-06-21-the-scenic-route",
+      "title": "The Scenic Route",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2027-06-21",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Scenic Route",
           "headliner": true
         }
       ],
