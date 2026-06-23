@@ -2556,7 +2556,7 @@
     "source": "manual",
     "manual": true,
     "id": "whiskey-island-2026-09-27-evilways"
-  }
+  },
 
   {
     "title": "Becky Boyd & the Groove Train",
@@ -3317,7 +3317,7 @@
     "source": "manual",
     "manual": true,
     "id": "cavottas-garden-bar-2026-10-03-blue-lunch"
-  }
+  },
 
   {
     "title": "Electric Glide",
@@ -3375,7 +3375,7 @@
     "source": "manual",
     "manual": true,
     "id": "sound-stage-tavern-2026-06-27-db-project"
-  }
+  },
 
   {
     "title": "Dan Molt",
@@ -3498,7 +3498,84 @@
     "source": "manual",
     "manual": true,
     "id": "smedleys-2026-06-29-dj-sam-sinister"
-  }
+  },
+
+  {
+    "title": "Dub Club 30% Off Whiskey & Tequila",
+    "performers": [
+      {
+        "name": "Dub Club",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-23",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-06-23-dub-club"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-24",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-06-24-chris-hatton"
+  },
+  {
+    "title": "TRS Trio",
+    "performers": [
+      {
+        "name": "TRS Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-26",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-06-26-trs-trio"
+  },
+  {
+    "title": "Qwik-Silver Trio",
+    "performers": [
+      {
+        "name": "Qwik-Silver Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-06-27",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-06-27-qwik-silver-trio"
+  },
 
       {
       "title": "Post Malone",
