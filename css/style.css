@@ -143,7 +143,15 @@ header{
 }
 
 
+#backToTop {
+	display: none;
+	color: #FFF;
+	font-size: 16px;
+}
 
+.scrolled #backToTop {
+	display: block;
+}
 
 #menuButton{
 	display: flex;
@@ -818,6 +826,11 @@ input[type=text], select, textarea {
 		background: #62CBB8 !important;
 		color: #222 !important;
 		text-decoration: none !important;
+	}
+
+	#backToTop:hover {
+		color: #62CBB8;
+		text-decoration: underline;
 	}
 }
 
