@@ -410,6 +410,7 @@ footer a {
 #calendarEnd {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 #current {
