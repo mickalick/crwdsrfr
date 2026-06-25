@@ -248,7 +248,7 @@ footer {
 	background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
     url('../images/crowdPattern.png') repeat-x bottom;
 	background-color: #101010;
-	background-size: 15%;
+	background-size: 12%;
 	height: 160px;
 }
 
@@ -730,15 +730,29 @@ input[type=text], select, textarea {
   cursor: pointer;
 }
 
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.columnTwo {
+	display: block;
+	width: 45%;
+}
+
+#venuesList {
+	margin-top: 40px;
+}
+
 .venueList {
 	margin: 20px 0;
 }
 
-
 .contentSection {
 	margin-bottom: 40px;
 }
-
 
 .newVenue {
 	font-family: "Bebas Neue", sans-serif;
@@ -1018,6 +1032,14 @@ input[type=text], select, textarea {
 	}
 
 	.venueEvents {
+		width: 100%;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	.columnTwo {
 		width: 100%;
 	}
 }
