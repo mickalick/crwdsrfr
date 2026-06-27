@@ -1965,6 +1965,558 @@ async function fetchPlayhouseSquare() {
   }
 }
 
+async function fetchFoundry() {
+  const events = [];
+  const seenIds = new Set();
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  // Foundry's TicketWeb dates are "June 30, 2026" (full month name + year),
+  // unlike the "Jun 21" short form other TicketWeb venues use.
+  const fullMonthMap = {
+    January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+    July: 6, August: 7, September: 8, October: 9, November: 10, December: 11
+  };
+
+  function parseFullDate(dateRaw) {
+    const match = dateRaw.trim().match(/^([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})$/);
+    if (!match) return null;
+    const monthIndex = fullMonthMap[match[1]];
+    if (monthIndex === undefined) return null;
+    return { monthIndex, day: parseInt(match[2], 10), year: parseInt(match[3], 10) };
+  }
+
+
+
+  function parsePage($) {
+    $('.tw-section').each((i, el) => {
+      const titleEl = $(el).find('.tw-name a').first();
+      const fullTitle = titleEl.text().trim();
+      const eventUrl = titleEl.attr('href') || null;
+      if (!fullTitle || !eventUrl) return;
+
+      const supportSpans = $(el).find('.tw-attractions span');
+      let title = fullTitle;
+      let performers = [{ name: fullTitle, headliner: true }];
+      if (supportSpans.length) {
+        const headlinerName = fullTitle.split(/,| –| -/)[0].trim();
+        const supporters = [];
+        supportSpans.each((j, span) => supporters.push($(span).text().trim()));
+        performers = [{ name: headlinerName, headliner: true }];
+        supporters.forEach(s => performers.push({ name: s, headliner: false }));
+        title = `${headlinerName} w/ ${supporters.join(', ')}`;
+      }
+
+      let price = $(el).find('.tw-price').first().text().trim() || null;
+      if (price === '$0.00') price = 'Free';
+
+      const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
+      const baseSlug = slugMatch ? slugMatch[1] : fullTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+      // Foundry lists recurring events with one .tw-date-time block per date
+      // and a matching .tw-info-price-buy-tix link, in the same order (see
+      // the "combine-events" multi-date pattern). Zip them together so each
+      // date becomes its own event entry.
+      const dateBlocks = $(el).find('.tw-date-time');
+      const ticketLinks = $(el).find('.tw-info-price-buy-tix a.tw-buy-tix-btn');
+
+      dateBlocks.each((j, dateEl) => {
+        const dateRaw = $(dateEl).find('.tw-event-date').text().trim();
+        const parsed = parseFullDate(dateRaw);
+        if (!parsed) return;
+
+        const eventDate = new Date(parsed.year, parsed.monthIndex, parsed.day);
+        const date = toLocalDateStr(eventDate);
+
+        const showRaw = $(dateEl).find('.tw-event-time').first().text().trim();
+        const ticketUrl = ticketLinks.eq(j).attr('href') || null;
+
+        const id = `foundry-concert-club-${date}-${baseSlug}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+
+        events.push({
+          id,
+          title,
+          venueId: 'foundry-concert-club',
+          date,
+          time: normalizeTime(showRaw),
+          doors: null,
+          price,
+          performers,
+          eventUrl,
+          ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    });
+  }
+
+  try {
+    let url = 'https://www.foundryconcertclub.com/';
+    let pageCount = 0;
+    const maxPages = 20; // safety cap
+
+    while (url && pageCount < maxPages) {
+      const res = await fetch(url);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+
+      parsePage($);
+
+      const nextLink = $('a').filter((i, el) => /^next/i.test($(el).text().trim())).first();
+      url = nextLink.length ? nextLink.attr('href') : null;
+      pageCount++;
+    }
+  } catch (err) {
+    console.error('fetchFoundry error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchDunlaps() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  try {
+    const res = await fetch('https://www.dunlapsbar.com/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('.event-list-item').each((i, el) => {
+      const titleEl = $(el).find('.el-header a').first();
+      const title = titleEl.text().trim();
+      const hrefRaw = titleEl.attr('href');
+      if (!title || !hrefRaw) return;
+      const eventUrl = `https://www.dunlapsbar.com${hrefRaw}`;
+
+      // "Wed Jul  1 2026,  8:00 PM" — note the irregular double-spacing
+      // around single-digit days/hours, hence the loose \s+ matching.
+      const dateRaw = $(el).find('h6.event-date').first().text().trim();
+      const dateMatch = dateRaw.match(/[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})\s+(\d{4}),\s*(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+      if (!dateMatch) return; // skip multi-date/ongoing listings with no single showtime (e.g. "July 16 - December 17")
+
+      const [, month, day, year, hour, minute, modifier] = dateMatch;
+      const monthIndex = monthMap[month];
+      if (monthIndex === undefined) return;
+
+      const eventDate = new Date(parseInt(year, 10), monthIndex, parseInt(day, 10));
+      const date = toLocalDateStr(eventDate);
+
+      let h = parseInt(hour, 10);
+      if (modifier.toLowerCase() === 'pm' && h !== 12) h += 12;
+      if (modifier.toLowerCase() === 'am' && h === 12) h = 0;
+      const time = `${String(h).padStart(2, '0')}:${minute}`;
+
+      // Doors are always exactly 1 hour before showtime at this venue
+      const doorsHour = (h - 1 + 24) % 24;
+      const doors = `${String(doorsHour).padStart(2, '0')}:${minute}`;
+
+      const headliner = title;
+      const performers = [{ name: headliner, headliner: true }];
+      $(el).find('.event-supporting-acts b').each((j, b) => {
+        performers.push({ name: $(b).text().trim(), headliner: false });
+      });
+
+      const ticketHrefRaw = $(el).find('.el-showtimes a.btn-primary').first().attr('href');
+      const ticketUrl = ticketHrefRaw ? `https://www.dunlapsbar.com${ticketHrefRaw}` : null;
+
+      const slugMatch = hrefRaw.match(/\/events\/(\d+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const id = `dunlaps-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'dunlaps-corner-bar',
+        date,
+        time,
+        doors,
+        price: null,
+        performers,
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchDunlaps error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchWelcomeToTheFarm() {
+  const events = [];
+  const venueSlug = 'welcoetothefarm'; // typo is intentional — it's BeatGig's actual slug for this venue
+  const venueTimezone = 'America/New_York';
+
+  function toVenueLocalParts(utcIso) {
+    const date = new Date(utcIso);
+    const fmt = new Intl.DateTimeFormat('en-US', {
+      timeZone: venueTimezone,
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hour12: false,
+    });
+    const parts = fmt.formatToParts(date);
+    const get = type => parts.find(p => p.type === type).value;
+    let hour = get('hour');
+    if (hour === '24') hour = '00'; // some Node ICU builds return 24 instead of 00 at midnight
+    return {
+      date: `${get('year')}-${get('month')}-${get('day')}`,
+      time: `${hour}:${get('minute')}`,
+    };
+  }
+
+  // Captured verbatim from the live "load more" request — reusing as-is
+  // since a trimmed-down query is untested against BeatGig's schema.
+  const query = `query VenueCalendarBookings($slug: String!, $start: DateTime!, $offset: Int!, $limit: Int!) {
+  venue: organizationBySlug(slug: $slug) {
+    ...VenuePublic
+    __typename
+  }
+  calendarBookings(
+    start: $start
+    limit: $limit
+    offset: $offset
+    organizationSlugs: [$slug]
+  ) {
+    bookings: calendarBookings {
+      ...VenueCalendarBooking
+      __typename
+    }
+    canFetchMore
+    __typename
+  }
+}
+fragment VenuePublic on Organization {
+  id
+  name
+  slug
+  __typename
+}
+fragment VenueCalendarBooking on CalendarBooking {
+  artistName
+  artistSlug
+  publicEventDescription
+  startTime
+  id
+  ticketLinkUrl
+  ticketLinkTitle
+  __typename
+}`;
+
+  try {
+    let offset = 0;
+    const limit = 18;
+    let canFetchMore = true;
+    let pageCount = 0;
+    const maxPages = 20; // safety cap
+    const startIso = new Date().toISOString();
+
+    while (canFetchMore && pageCount < maxPages) {
+      const res = await fetch('https://backend.beatgig.com/api/v1/graphql', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          operationName: 'VenueCalendarBookings',
+          query,
+          variables: { slug: venueSlug, start: startIso, offset, limit },
+        }),
+      });
+      const json = await res.json();
+      const bookings = json?.data?.calendarBookings?.bookings ?? [];
+
+      bookings.forEach(b => {
+        if (!b.artistName || !b.startTime) return;
+        const { date, time } = toVenueLocalParts(b.startTime);
+        const title = (b.publicEventDescription || b.artistName).trim();
+
+        events.push({
+          id: `welcome-to-the-farm-${b.id}`,
+          title,
+          venueId: 'welcome-to-the-farm',
+          date,
+          time,
+          doors: null,
+          price: null,
+          performers: [{ name: b.artistName.trim(), headliner: true }],
+          eventUrl: null,
+          ticketUrl: b.ticketLinkUrl || null,
+          source: 'beatgig',
+          manual: false,
+        });
+      });
+
+      canFetchMore = json?.data?.calendarBookings?.canFetchMore ?? false;
+      offset += limit;
+      pageCount++;
+    }
+  } catch (err) {
+    console.error('fetchWelcomeToTheFarm error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchHilarities() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  function parseShowDate(dateRaw) {
+    // "Thu, Jul 16, 2026"
+    const m = dateRaw.trim().match(/^[A-Za-z]+,\s+([A-Za-z]{3})\s+(\d{1,2}),\s+(\d{4})$/);
+    if (!m) return null;
+    const monthIndex = monthMap[m[1]];
+    if (monthIndex === undefined) return null;
+    return { monthIndex, day: parseInt(m[2], 10), year: parseInt(m[3], 10) };
+  }
+
+  // Fetches the per-event page for events whose listing entry has no single
+  // showtime (multi-date "July 16 - July 18" style listings), and expands
+  // the "CLICK TIME TO PURCHASE TICKETS" block into individual showings.
+  // Sold-out times (rendered as a <span>, no href) are kept with
+  // ticketUrl: null rather than dropped, since the show itself still happens.
+  async function fetchShowtimes(eventUrl) {
+    try {
+      const res = await fetch(eventUrl);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+      const showings = [];
+
+      $('.event-times-list h6.event-date').each((i, el) => {
+        const $dateHeader = $(el);
+        const parsed = parseShowDate($dateHeader.text());
+        if (!parsed) return;
+        const showDate = new Date(parsed.year, parsed.monthIndex, parsed.day);
+        const date = toLocalDateStr(showDate);
+
+        const $group = $dateHeader.next('.event-list-button-group');
+        $group.find('.event-btn-inline').each((j, btn) => {
+          const $btn = $(btn);
+          const time = normalizeTime($btn.text());
+          const href = $btn.is('a') ? $btn.attr('href') : null;
+          const ticketUrl = href ? `https://hilarities.com${href}` : null;
+          showings.push({ date, time, ticketUrl });
+        });
+      });
+
+      return showings;
+    } catch (err) {
+      console.error(`fetchHilaritiesShowtimes error (${eventUrl}):`, err.message);
+      return [];
+    }
+  }
+
+  try {
+    const res = await fetch('https://hilarities.com/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const multiDateEvents = [];
+
+    $('.event-list-item').each((i, el) => {
+      const $el = $(el);
+      const titleEl = $el.find('.el-header a').first();
+      const title = titleEl.text().trim();
+      const hrefRaw = titleEl.attr('href');
+      if (!title || !hrefRaw) return;
+      const eventUrl = `https://hilarities.com${hrefRaw}`;
+      const slugMatch = hrefRaw.match(/\/events\/(\d+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+      const dateRaw = $el.find('h6.event-date').first().text().trim();
+      const dateMatch = dateRaw.match(/[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})\s+(\d{4}),\s*(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+
+      if (!dateMatch) {
+        // Multi-date event ("July 16 - July 18") — handled in the pass below
+        multiDateEvents.push({ title, eventUrl, slug });
+        return;
+      }
+
+      const [, month, day, year, hour, minute, modifier] = dateMatch;
+      const monthIndex = monthMap[month];
+      if (monthIndex === undefined) return;
+
+      const eventDate = new Date(parseInt(year, 10), monthIndex, parseInt(day, 10));
+      const date = toLocalDateStr(eventDate);
+
+      let h = parseInt(hour, 10);
+      if (modifier.toLowerCase() === 'pm' && h !== 12) h += 12;
+      if (modifier.toLowerCase() === 'am' && h === 12) h = 0;
+      const time = `${String(h).padStart(2, '0')}:${minute}`;
+
+      const ticketHrefRaw = $el.find('.el-showtimes a.btn-primary').first().attr('href');
+      const ticketUrl = ticketHrefRaw ? `https://hilarities.com${ticketHrefRaw}` : null;
+
+      const id = `hilarities-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'hilarities',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    for (const base of multiDateEvents) {
+      const showings = await fetchShowtimes(base.eventUrl);
+      showings.forEach(s => {
+        const id = `hilarities-${s.date}-${s.time ? s.time.replace(':', '') : 'tba'}-${base.slug}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+
+        events.push({
+          id,
+          title: base.title,
+          venueId: 'hilarities',
+          date: s.date,
+          time: s.time,
+          doors: null,
+          price: null,
+          performers: [{ name: base.title, headliner: true }],
+          eventUrl: base.eventUrl,
+          ticketUrl: s.ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    }
+  } catch (err) {
+    console.error('fetchHilarities error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchVanAken() {
+  const events = [];
+  const seenIds = new Set();
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    const minutes = m ? parseInt(m, 10) : 0;
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+  }
+
+  function parsePage($) {
+    $('.events_card').each((i, el) => {
+      const $el = $(el);
+      const linkEl = $el.find('a.events_card-item').first();
+      const hrefRaw = linkEl.attr('href');
+      const title = $el.find('h3.heading-style-h4').first().text().trim();
+      if (!hrefRaw || !title) return;
+
+      // Slug ends in -YYYY-MM-DD — use this instead of parsing "Jun 27" +
+      // guessing the year, since it's exact and avoids ambiguity around
+      // year-end rollover.
+      const dateMatch = hrefRaw.match(/-(\d{4})-(\d{2})-(\d{2})$/);
+      if (!dateMatch) return;
+      const [, year, month, day] = dateMatch;
+      const date = `${year}-${month}-${day}`;
+
+      const eventUrl = hrefRaw.startsWith('http') ? hrefRaw : `https://www.thevanakendistrict.com${hrefRaw}`;
+
+      const detailTexts = $el.find('.layout422_location-wrapper .text-size-small');
+      const timeRaw = detailTexts.eq(0).text().trim(); // "10:30 AM - 3 PM"
+      const room = detailTexts.eq(1).text().trim() || null;
+
+      const startRaw = timeRaw.split('-')[0]?.trim();
+      const time = normalizeTime(startRaw);
+
+      const slugMatch = hrefRaw.match(/\/events-at-the-district\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${date}`;
+      const id = `van-aken-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'van-aken-district',
+        date,
+        time,
+        doors: null,
+        price: null,
+        room,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  }
+
+   try {
+    let url = 'https://www.thevanakendistrict.com/events-at-the-district';
+    let pageCount = 0;
+    const maxPages = 20; // safety cap (you mentioned ~6 pages currently)
+
+    while (url && pageCount < maxPages) {
+      const res = await fetch(url);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+
+      parsePage($);
+
+      const nextLink = $('a').filter((i, el) => $(el).text().trim() === 'Next').first();
+      const nextHref = nextLink.length ? nextLink.attr('href') : null;
+      // Webflow renders this as a relative URL (e.g. "?97ab8971_page=2"),
+      // which fetch() can't use directly — resolve it against the current page.
+      url = nextHref ? new URL(nextHref, url).toString() : null;
+      pageCount++;
+    }
+  } catch (err) {
+    console.error('fetchVanAken error:', err.message);
+  }
+
+  return events;
+}
+
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -1986,7 +2538,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -2008,6 +2560,11 @@ async function main() {
     fetchRockHall(),
     fetchBlossomMusicCenter(),
     fetchPlayhouseSquare(),
+    fetchFoundry(),
+    fetchDunlaps(),
+    fetchWelcomeToTheFarm(),
+    fetchHilarities(),
+    fetchVanAken(),
   ]);
 
   // ─── Per-venue event counts ──────────────────────────────────────────────
@@ -2032,6 +2589,11 @@ async function main() {
   console.log('Rock Hall:', rockHall.length);
   console.log('Blossom:', blossomMusicCenter.length);
   console.log('Playhouse:', playhouseSquare.length);
+  console.log('Foundry:', foundry.length);
+  console.log('Dunlaps:', dunlaps.length);
+  console.log('Welcome To the Farm:', welcomeToTheFarm.length);
+  console.log('Hilarities:', hilarities.length);
+  console.log('Van Aken:', vanAken.length);
 
 
   const manualEntries = loadManualEntries();
@@ -2060,6 +2622,11 @@ async function main() {
     ...rockHall,
     ...blossomMusicCenter,
     ...playhouseSquare,
+    ...foundry,
+    ...dunlaps,
+    ...welcomeToTheFarm,
+    ...hilarities,
+    ...vanAken,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -2093,6 +2660,11 @@ async function main() {
       'rock-hall': { name: 'Rock & Roll Hall of Fame', url: 'https://rockhall.com/', eventsUrl: 'https://rockhall.com/events/', city: 'Cleveland' },
       'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
       'playhouse-square': { name: 'Playhouse Square', url: 'https://www.playhousesquare.org/', eventsUrl: 'https://www.playhousesquare.org/events', city: 'Cleveland' },
+      'foundry-concert-club': { name: 'The Foundry Concert Club', url: 'https://www.foundryconcertclub.com/', eventsUrl: 'https://www.foundryconcertclub.com/', city: 'Cleveland' },
+      'dunlaps-corner-bar': { name: 'Dunlaps', url: 'https://www.dunlapsbar.com/', eventsUrl: 'https://www.dunlapsbar.com/events', city: 'Cleveland' },
+      'welcome-to-the-farm': { name: 'Welcome to the Farm', url: 'https://welcometothefarm.com/cleveland', eventsUrl: 'https://welcometothefarm.com/cleveland', city: 'Cleveland' },
+      'hilarities': { name: 'Hilarities', url: 'https://hilarities.com/', eventsUrl: 'https://hilarities.com/events', city: 'Cleveland' },
+      'van-aken-district': { name: 'Van Aken District', url: 'https://www.thevanakendistrict.com/', eventsUrl: 'https://www.thevanakendistrict.com/events-at-the-district', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -2101,6 +2673,9 @@ async function main() {
       'smedleys': { name: 'Smedleys', url: 'https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/', eventsUrl: null, city: 'Cleveland' },
       'seeing-double': { name: 'Seeing Double Speakeasy Bar', url: 'https://www.seeingdoublecle.com/', eventsUrl: 'https://www.seeingdoublecle.com/music', city: 'Cleveland' },
       'huntington-bank-field': { name: 'Huntington Bank Field', url: 'https://huntingtonbankfield.com/', eventsUrl: 'https://huntingtonbankfield.com/events/', city: 'Cleveland' },
+      'chagrin-tavern': { name: 'Chagrin Tavern on the River', url: 'https://www.chagrintavernontheriver.com/', eventsUrl: 'https://www.chagrintavernontheriver.com/events-1', city: 'Eastlake' },
+      'shooters': { name: 'Shooters', url: 'https://www.shooterscleveland.com/', eventsUrl: 'https://speakeasygo.com/shooters-cleveland?vid=VN-dexa', city: 'Cleveland' },
+      'crobar': { name: 'crobar', url: 'https://www.crobar1921.com/', eventsUrl: 'https://www.crobar1921.com/events', city: 'Cleveland' },
     },
     events: allEvents,
   };
