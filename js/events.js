@@ -83,7 +83,17 @@ function renderEvents(events) {
       const venue = allData.venues[venueId];
       if (!venue) return;
 
-      const eventsHtml = venueEvents.map(event => {
+      // Sort same-day events earliest to latest. Events without a time
+      // (rendered as "See Event") sort to the end rather than being
+      // treated as midnight, since we don't actually know when they start.
+      const sortedEvents = [...venueEvents].sort((a, b) => {
+        if (!a.time && !b.time) return 0;
+        if (!a.time) return 1;
+        if (!b.time) return -1;
+        return a.time.localeCompare(b.time);
+      });
+
+      const eventsHtml = sortedEvents.map(event => {
         const showTime = formatTime(event.time);
         const doorsTime = formatTime(event.doors);
 
