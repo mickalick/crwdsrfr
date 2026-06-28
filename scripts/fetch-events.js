@@ -2516,6 +2516,942 @@ async function fetchVanAken() {
   return events;
 }
 
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchTreelawn() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  // Fetches one page, retrying on bad status OR a suspiciously empty result —
+  // TicketWeb's Treelawn Music Hall page has been intermittently flaky
+  // (506 errors, thin/stale responses) despite working fine in a browser.
+  async function fetchPageWithRetry(url, maxAttempts = 4) {
+    let lastHtml = '';
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        const res = await fetch(url);
+        const html = await res.text();
+        lastHtml = html;
+        const $ = cheerio.load(html);
+        const itemCount = $('li.media').length;
+
+        if (res.ok && itemCount > 0) {
+          return $;
+        }
+
+        console.warn(`fetchTreelawn: attempt ${attempt} for ${url} got status ${res.status}, ${itemCount} items — retrying`);
+      } catch (err) {
+        console.warn(`fetchTreelawn: attempt ${attempt} for ${url} threw: ${err.message}`);
+      }
+
+      if (attempt < maxAttempts) {
+        await sleep(attempt * 1500); // 1.5s, 3s, 4.5s backoff
+      }
+    }
+
+    console.error(`fetchTreelawn: all ${maxAttempts} attempts failed for ${url}, giving up on this page`);
+    return cheerio.load(lastHtml);
+  }
+
+  async function fetchRoom(baseUrl, room, roomSlug) {
+    let pageCount = 0;
+    const maxPages = 15; // safety cap
+    let sawNewOnLastPage = true;
+
+    while (pageCount < maxPages && sawNewOnLastPage) {
+      pageCount++;
+      sawNewOnLastPage = false;
+
+      const $ = await fetchPageWithRetry(`${baseUrl}?page=${pageCount}`);
+      const items = $('li.media');
+
+      if (items.length === 0) break;
+
+      items.each((i, el) => {
+        const $el = $(el);
+
+        const statusText = $el.find('.event-status').text().trim();
+        if (/cancelled/i.test(statusText)) return; // drop cancelled shows entirely
+
+        const titleLink = $el.find('.event-name a').first();
+        const title = titleLink.text().trim();
+        // Angular renders the real href from data-ng-href client-side — the
+        // raw page source (what fetch() actually gets) only has data-ng-href,
+        // so href alone comes back undefined. Fall back to it explicitly.
+        const eventUrl = titleLink.attr('href') || titleLink.attr('data-ng-href');
+        if (!title || !eventUrl) return;
+
+        const dateRaw = $el.find('.event-date').first().text().replace(/\s+/g, ' ').trim();
+        // "Sun Jun 28 7:00 PM - 9:00 PM (Doors 6:00 PM)" or "Mon Jun 29 7:30 PM"
+        const dateMatch = dateRaw.match(
+          /^[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})\s+(\d{1,2}:\d{2}\s*[AP]M)(?:\s*-\s*\d{1,2}:\d{2}\s*[AP]M)?(?:\s*\(Doors\s+(\d{1,2}:\d{2}\s*[AP]M)\))?/i
+        );
+        if (!dateMatch) return;
+
+        const [, monthStr, dayStr, startTimeRaw, doorsTimeRaw] = dateMatch;
+        const monthIndex = monthMap[monthStr];
+        if (monthIndex === undefined) return;
+        const day = parseInt(dayStr, 10);
+
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+        let year = currentYear;
+        const eventDateThisYear = new Date(currentYear, monthIndex, day);
+        if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+        const eventDate = new Date(year, monthIndex, day);
+        const date = toLocalDateStr(eventDate);
+
+        const time = normalizeTime(startTimeRaw);
+        const doors = doorsTimeRaw ? normalizeTime(doorsTimeRaw) : null;
+
+        // "Find Tickets" vs "Tickets Currently Not Available Through TicketWeb"
+        // both link to the same /event/ URL — only treat it as a working
+        // ticket link when the status text confirms tickets are findable.
+        const ticketUrl = /not available/i.test(statusText) ? null : eventUrl;
+
+        const idMatch = eventUrl.match(/-tickets\/(\d+)/);
+        const ticketwebId = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const id = `treelawn-${roomSlug}-${date}-${ticketwebId}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+        sawNewOnLastPage = true;
+
+        events.push({
+          id,
+          title,
+          venueId: 'treelawn',
+          room,
+          date,
+          time,
+          doors,
+          price: null,
+          performers: [{ name: title, headliner: true }],
+          eventUrl,
+          ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    }
+  }
+
+  await fetchRoom('https://www.ticketweb.com/venue/treelawn-music-hall-cleveland-oh/525645', 'Treelawn Music Hall', 'music-hall');
+  await fetchRoom('https://www.ticketweb.com/venue/treelawn-social-club-cleveland-oh/524805', 'Treelawn Social Club', 'social-club');
+
+  return events;
+}
+
+async function fetchHofbrauhaus() {
+  const events = [];
+  const seenIds = new Set();
+  const skipTitles = ['World Cup Specials']; // add more here if needed, e.g. 'CLOSED FOR DINNER SERVICE'
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  try {
+    const res = await fetch('https://www.hofbrauhauscleveland.com/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('article.eventlist-event--upcoming').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('h1.eventlist-title a.eventlist-title-link').first();
+      const title = titleLink.text().trim();
+      if (!title || skipTitles.includes(title) || /closed/i.test(title)) return;
+
+      const hrefRaw = titleLink.attr('href');
+      if (!hrefRaw) return;
+      const eventUrl = hrefRaw.startsWith('http') ? hrefRaw : `https://www.hofbrauhauscleveland.com${hrefRaw}`;
+
+      // Exact ISO date straight from the datetime attribute — no parsing needed
+      const date = $el.find('time.event-date').first().attr('datetime');
+      if (!date) return;
+
+      const startTimeText = $el.find('time.event-time-localized-start').first().text().trim();
+      const time = normalizeTime(startTimeText);
+
+      const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `hofbrauhaus-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'hofbrauhaus-cleveland',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchHofbrauhaus error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchQuintanasSpeakeasy() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = {
+    January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+    July: 6, August: 7, September: 8, October: 9, November: 10, December: 11
+  };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{1,2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    const minutes = String(parseInt(m, 10)).padStart(2, '0'); // fixes "9:0pm" typos in source
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${minutes}`;
+  }
+
+  function resolveYear(monthIndex, day) {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+    const thisYearDate = new Date(currentYear, monthIndex, day);
+    return thisYearDate < todayMidnight ? currentYear + 1 : currentYear;
+  }
+
+  const dateLeadRegex = /^([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?:/i;
+  const sessionLeadRegex = /^(\d{1,2}:\d{1,2}\s*[ap]m)\s*-\s*(\d{1,2}:\d{1,2}\s*[ap]m)/i;
+
+  try {
+    const res = await fetch('https://qbds.net/speakeasy-events/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    let current = null; // tracks the most recent dated event, for orphan session paragraphs to attach to
+
+    $('p').each((i, el) => {
+      const $p = $(el);
+      const text = $p.text().replace(/\s+/g, ' ').trim();
+      if (!text) return;
+
+      const dateMatch = text.match(dateLeadRegex);
+
+      if (dateMatch) {
+        const monthIndex = monthMap[dateMatch[1]];
+        const day = parseInt(dateMatch[2], 10);
+        current = null; // reset unless we successfully build a valid event below
+
+        if (monthIndex === undefined) return;
+
+        const title = $p.find('strong').first().text().trim();
+        if (!title || /closed/i.test(title)) return;
+
+        const timeMatch = text.match(/(\d{1,2}:\d{1,2}\s*[ap]m)\s*[-–]\s*(\d{1,2}:\d{1,2}\s*[ap]m|midnight)/i);
+        const time = timeMatch ? normalizeTime(timeMatch[1]) : null;
+
+        const year = resolveYear(monthIndex, day);
+        const date = toLocalDateStr(new Date(year, monthIndex, day));
+
+        const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
+
+        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const id = `quintanas-speakeasy-${date}-${slug}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+
+        const eventObj = {
+          id,
+          title,
+          venueId: 'quintanas-speakeasy',
+          date,
+          time,
+          doors: null,
+          price: null,
+          performers: [{ name: title, headliner: true }],
+          eventUrl: 'https://qbds.net/speakeasy-events/',
+          ticketUrl: ticketHref,
+          source: 'scrape',
+          manual: false,
+        };
+
+        events.push(eventObj);
+        current = eventObj; // subsequent orphan paragraphs may attach more sessions to this
+        return;
+      }
+
+      // Not a dated paragraph — check if it's an orphan extra session
+      // (e.g. Tarot Night's separate 6:30-7:30 / 7:30-8:30 ticket links)
+      const sessionMatch = text.match(sessionLeadRegex);
+      if (sessionMatch && current) {
+        const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
+        const time = normalizeTime(sessionMatch[1]);
+        const slug = current.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const id = `quintanas-speakeasy-${current.date}-${slug}-${time || i}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+
+        events.push({
+          ...current,
+          id,
+          time,
+          ticketUrl: ticketHref,
+        });
+      }
+      // Otherwise it's just description continuation text — ignored
+    });
+  } catch (err) {
+    console.error('fetchQuintanasSpeakeasy error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchCoda() {
+  const events = [];
+  const seenIds = new Set();
+
+  function parseExcerptHour(hourStr, minStr, meridiem) {
+    let h = parseInt(hourStr, 10);
+    const m = minStr ? minStr.replace(':', '') : '00';
+    if (meridiem) {
+      const mer = meridiem.toLowerCase();
+      if (mer === 'pm' && h !== 12) h += 12;
+      if (mer === 'am' && h === 12) h = 0;
+    } else if (h >= 1 && h <= 11) {
+      // No AM/PM given in the excerpt — assume PM (this is an evening venue)
+      h += 12;
+    }
+    return `${String(h).padStart(2, '0')}:${m.padStart(2, '0')}`;
+  }
+
+  try {
+    const res = await fetch('https://danteboccuzzi.com/coda/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('article.wfea-grid_event').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('.wfea-header__title a').first();
+      const title = titleLink.text().trim();
+      const eventUrl = titleLink.attr('href');
+      if (!title || !eventUrl) return;
+
+      const isoDateTime = $el.find('time.wfea-grid__date-time').first().attr('datetime');
+      if (!isoDateTime) return;
+      const date = isoDateTime.split('T')[0]; // already YYYY-MM-DD
+      const isoTime = isoDateTime.split('T')[1]?.slice(0, 5) || null; // fallback HH:MM
+
+      const excerpt = $el.find('.wfea-grid__excerpt').first().text().replace(/\s+/g, ' ').trim();
+
+      const showMatch = excerpt.match(/Show\s+at\s+(\d{1,2})(:\d{2})?\s*(am|pm)?/i);
+      const doorsMatch = excerpt.match(/Doors\s+at\s+(\d{1,2})(:\d{2})?\s*(am|pm)?/i);
+      const priceMatch = excerpt.match(/\$(\d+(?:\.\d{2})?)/);
+
+      const time = showMatch
+        ? parseExcerptHour(showMatch[1], showMatch[2], showMatch[3])
+        : isoTime;
+      const doors = doorsMatch
+        ? parseExcerptHour(doorsMatch[1], doorsMatch[2], doorsMatch[3])
+        : null;
+      const price = priceMatch ? `$${priceMatch[1]}` : null;
+
+      const idMatch = eventUrl.match(/tickets-(\d+)/);
+      const ticketwebId = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `coda-${date}-${ticketwebId}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'coda',
+        date,
+        time,
+        doors,
+        price,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: eventUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchCoda error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchProsperitySocialClub() {
+  const events = [];
+  const seenIds = new Set();
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  try {
+    const res = await fetch('https://www.prosperitysocialclub.com/events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('article.eventlist-event--upcoming').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('h1.eventlist-title a.eventlist-title-link').first();
+      const title = titleLink.text().trim();
+      if (!title) return;
+
+      const hrefRaw = titleLink.attr('href');
+      if (!hrefRaw) return;
+      const eventUrl = hrefRaw.startsWith('http') ? hrefRaw : `https://www.prosperitysocialclub.com${hrefRaw}`;
+
+      // Multi-day listings (e.g. 8pm-midnight) repeat time.event-date twice —
+      // taking only the first occurrence collapses these to a single day,
+      // which is what we want here rather than treating it as a 2-day event.
+      const date = $el.find('time.event-date').first().attr('datetime');
+      if (!date) return;
+
+      const startTimeText = $el.find('time.event-time-localized').first().text().trim();
+      const time = normalizeTime(startTimeText);
+
+      const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `prosperity-social-club-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'prosperity-social-club',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchProsperitySocialClub error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchSixty6() {
+  const events = [];
+  const seenIds = new Set();
+
+  try {
+    const res = await fetch('https://thesixty6.com/events/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('script[type="application/ld+json"]').each((i, el) => {
+      const raw = $(el).html();
+      if (!raw || !raw.includes('"@type": "Event"')) return;
+
+      let data;
+      try {
+        data = JSON.parse(raw);
+      } catch (err) {
+        return; // skip any malformed JSON-LD block rather than crashing the run
+      }
+
+      const title = data.name?.trim();
+      const eventUrl = data.url;
+      if (!title || !eventUrl) return;
+
+      // "2026-6-28T14:00+0:00" — the "+0:00" is not a real UTC offset (it
+      // doesn't match the page's actual GMT-04:00), so parse the date/time
+      // components directly as already-local rather than treating this as
+      // a genuine UTC timestamp.
+      const dtMatch = (data.startDate || '').match(/^(\d{4})-(\d{1,2})-(\d{1,2})T(\d{2}):(\d{2})/);
+      if (!dtMatch) return;
+      const [, year, month, day, hour, minute] = dtMatch;
+      const date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+      const time = `${hour}:${minute}`;
+
+      // Most shows are free/no-ticket, but a few (e.g. Prom Night) embed a
+      // real Eventbrite link inside the prose description — grab it if present.
+      const description = data.description || '';
+      const ticketMatch = description.match(/href=['"]?(https:\/\/www\.eventbrite\.com\/[^'"]+)['"]?/);
+      const ticketUrl = ticketMatch ? ticketMatch[1] : null;
+
+      const slugMatch = eventUrl.match(/\/events\/([^/]+)\/?/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `sixty6-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'the-sixty6',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchSixty6 error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchJollyScholar() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = {
+    January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+    July: 6, August: 7, September: 8, October: 9, November: 10, December: 11
+  };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  try {
+    const res = await fetch('https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('section[id]').each((i, el) => {
+      const $el = $(el);
+      const sectionId = $el.attr('id');
+
+      const title = $el.find('h2').first().text().trim();
+      if (!title) return;
+
+      // "Wednesday July 8th" — weekday, month, ordinal day, no year
+      const dayRaw = $el.find('.event-day').first().text().trim();
+      const dateMatch = dayRaw.match(/^[A-Za-z]+\s+([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?$/);
+      if (!dateMatch) return;
+      const monthIndex = monthMap[dateMatch[1]];
+      const day = parseInt(dateMatch[2], 10);
+      if (monthIndex === undefined) return;
+
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+      let year = currentYear;
+      const eventDateThisYear = new Date(currentYear, monthIndex, day);
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+      const date = toLocalDateStr(new Date(year, monthIndex, day));
+
+      const timeRaw = $el.find('.event-time').first().text().trim();
+      const startRaw = timeRaw.split('-')[0]?.trim();
+      const time = normalizeTime(startRaw);
+
+      const id = `jolly-scholar-${date}-${sectionId}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'jolly-scholar',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl: `https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#${sectionId}`,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchJollyScholar error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchTheIvy() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  try {
+    const res = await fetch('https://www.ivycle.com/the-ivy-events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('li[data-hook="event-list-item"]').each((i, el) => {
+      const $el = $(el);
+
+      const title = $el.find('[data-hook="ev-list-item-title"]').first().text().trim();
+      const ticketUrl = $el.find('[data-hook="ev-rsvp-button"]').first().attr('href') || null;
+      if (!title) return;
+
+      // "Aug 14, 2026, 8:00 PM – Aug 15, 2026, 2:30 AM" — only the start half matters here
+      const dateRaw = $el.find('[data-hook="date"]').first().text().trim();
+      const startRaw = dateRaw.split(/[–-]/)[0].trim();
+      const dateMatch = startRaw.match(/^([A-Za-z]{3})\s+(\d{1,2}),\s+(\d{4}),\s+(\d{1,2}:\d{2}\s*[AP]M)/i);
+      if (!dateMatch) return;
+
+      const [, monthStr, dayStr, yearStr, timeStr] = dateMatch;
+      const monthIndex = monthMap[monthStr];
+      if (monthIndex === undefined) return;
+      const date = toLocalDateStr(new Date(parseInt(yearStr, 10), monthIndex, parseInt(dayStr, 10)));
+      const time = normalizeTime(timeStr);
+
+      const eventUrl = ticketUrl; // event-details page doubles as the ticket/RSVP link here
+      const slugMatch = (ticketUrl || '').match(/\/event-details\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `the-ivy-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'the-ivy',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchTheIvy error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchBentMace() {
+  const events = [];
+  const seenIds = new Set();
+
+  try {
+    const res = await fetch('https://bentmace.org/events/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('ul.tribe-events-calendar-list li.tribe-events-calendar-list__event-row').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('.tribe-events-calendar-list__event-title-link').first();
+      const fullTitle = titleLink.text().trim();
+      const eventUrl = titleLink.attr('href');
+      if (!fullTitle || !eventUrl) return;
+
+      const date = $el.find('time.tribe-events-calendar-list__event-datetime').first().attr('datetime');
+      if (!date) return;
+
+      // "June 28 @ 8:00 pm" — only need the time portion after the @
+      const startText = $el.find('.tribe-event-date-start').first().text().trim();
+      const timeMatch = startText.match(/@\s*(\d{1,2}):(\d{2})\s*(am|pm)/i);
+      let time = null;
+      if (timeMatch) {
+        let [, h, m, mod] = timeMatch;
+        h = parseInt(h, 10);
+        if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+        if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+        time = `${String(h).padStart(2, '0')}:${m}`;
+      }
+
+      // Multi-band bills are written as "Band A / Band B / Band C" in the title
+      const acts = fullTitle.split('/').map(s => s.trim()).filter(Boolean);
+      const performers = acts.length > 1
+        ? acts.map((name, idx) => ({ name, headliner: idx === 0 }))
+        : [{ name: fullTitle, headliner: true }];
+
+      const slugMatch = eventUrl.match(/\/event\/([^/]+)\/?/);
+      const slug = slugMatch ? slugMatch[1] : fullTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `bent-mace-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title: fullTitle,
+        venueId: 'bent-mace',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers,
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchBentMace error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchBside() {
+  const events = [];
+  const seenIds = new Set();
+  const monthMap = { January:0, February:1, March:2, April:3, May:4, June:5, July:6, August:7, September:8, October:9, November:10, December:11 };
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+
+  try {
+    const res = await fetch('https://bsideliquorlounge.com/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('.flexmedia--artistevents-wrap').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('.artisteventsname').closest('a');
+      const title = $el.find('.artisteventsname').first().text().trim();
+      const eventUrl = titleLink.attr('href');
+      if (!title || !eventUrl) return;
+
+      // "Sunday, June 28th 4:00PM Doors /  4:00PM Show" — weekday/month/day, no year
+      const dateTimeRaw = $el.find('.artisteventstime').first().text().replace(/\s+/g, ' ').trim();
+      const dateMatch = dateTimeRaw.match(/^[A-Za-z]+,\s+([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?/);
+      if (!dateMatch) return;
+
+      const monthIndex = monthMap[dateMatch[1]];
+      const day = parseInt(dateMatch[2], 10);
+      if (monthIndex === undefined) return;
+
+      const today = new Date();
+      const currentYear = today.getFullYear();
+      const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+      let year = currentYear;
+      const eventDateThisYear = new Date(currentYear, monthIndex, day);
+      if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+      const date = toLocalDateStr(new Date(year, monthIndex, day));
+
+      // Grab the FIRST doors/show time match only — one live listing has a
+      // rendering glitch duplicating "Show" text, so don't assume a clean string
+      const doorsMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Doors/i);
+      const showMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Show/i);
+      const doors = doorsMatch ? normalizeTime(doorsMatch[1]) : null;
+      const time = showMatch ? normalizeTime(showMatch[1]) : doors;
+
+      let price = $el.find('.artistseventsprice').first().text().trim() || null;
+      if (price === '$0.00') price = 'Free';
+
+      const ticketUrl = $el.find('.eventsbutton a.button-primary').first().attr('href') || null;
+
+      const idMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
+      const slug = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `bside-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'bside-liquor-lounge',
+        date,
+        time,
+        doors,
+        price,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchBside error:', err.message);
+  }
+
+  return events;
+}
+
+async function fetchNoClass() {
+  const events = [];
+  const seenIds = new Set();
+
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    const minutes = m || '00';
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${minutes}`;
+  }
+
+  try {
+    const res = await fetch('https://www.noclasscle.com/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('article.eventlist-event--upcoming').each((i, el) => {
+      const $el = $(el);
+
+      const titleLink = $el.find('h1.eventlist-title a.eventlist-title-link').first();
+      const title = titleLink.text().trim();
+      const hrefRaw = titleLink.attr('href');
+      if (!title || !hrefRaw) return;
+      const eventUrl = hrefRaw.startsWith('http') ? hrefRaw : `https://www.noclasscle.com${hrefRaw}`;
+
+      const date = $el.find('time.event-date').first().attr('datetime');
+      if (!date) return;
+
+      const startTimeText = $el.find('.event-time-12hr-start').first().text().trim();
+      const time = normalizeTime(startTimeText);
+
+      // Description is "<br>"-separated: band names first, then a "———"
+      // divider, then logistics lines like "Doors: 7pm" / "Cost: $15"
+      const descHtml = $el.find('.eventlist-description .sqs-html-content p').first().html() || '';
+      const lines = descHtml
+        .split(/<br\s*\/?>/i)
+        .map(s => $('<div>').html(s).text().trim())
+        .filter(Boolean);
+
+      const dividerIdx = lines.findIndex(l => /^—+$/.test(l));
+      const performerLines = dividerIdx === -1 ? [] : lines.slice(0, dividerIdx);
+      const infoLines = dividerIdx === -1 ? lines : lines.slice(dividerIdx + 1);
+
+      const performers = performerLines.length
+        ? performerLines.map((name, idx) => ({ name, headliner: idx === 0 }))
+        : [{ name: title, headliner: true }];
+
+      let doors = null;
+      let price = null;
+
+      infoLines.forEach(line => {
+        const doorsMatch = line.match(/^doors:\s*(.+)$/i);
+        if (doorsMatch) doors = normalizeTime(doorsMatch[1]);
+
+        const costMatch = line.match(/^cost:\s*(.+)$/i);
+        if (costMatch) {
+          const raw = costMatch[1].trim();
+          price = raw.toLowerCase() === 'free' ? 'Free' : (/^\$/.test(raw) ? raw : `$${raw}`);
+        }
+      });
+
+      // Most shows are "Tickets: At The Door" (no real link), but grab an
+      // outbound link (e.g. Eventbrite) if one's actually present
+      const descLink = $el.find('.eventlist-description a[href]').filter((j, a) => {
+        const href = $(a).attr('href') || '';
+        return href.startsWith('http') && !href.includes('noclasscle.com');
+      }).first().attr('href');
+      const ticketUrl = descLink || null;
+
+      const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const id = `no-class-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'no-class',
+        date,
+        time,
+        doors,
+        price,
+        performers,
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchNoClass error:', err.message);
+  }
+
+  return events;
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -2538,7 +3474,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -2565,7 +3501,19 @@ async function main() {
     fetchWelcomeToTheFarm(),
     fetchHilarities(),
     fetchVanAken(),
+    fetchTreelawn(),
+    fetchHofbrauhaus(),
+    fetchQuintanasSpeakeasy(),
+    fetchCoda(),
+    fetchProsperitySocialClub(),
+    fetchSixty6(),
+    fetchJollyScholar(),
+    fetchTheIvy(),
+    fetchBentMace(),
+    fetchBside(),
+    fetchNoClass(),
   ]);
+
 
   // ─── Per-venue event counts ──────────────────────────────────────────────
   console.log('Rocket Arena:', rocketArena.length);
@@ -2594,6 +3542,17 @@ async function main() {
   console.log('Welcome To the Farm:', welcomeToTheFarm.length);
   console.log('Hilarities:', hilarities.length);
   console.log('Van Aken:', vanAken.length);
+  console.log('Treelawn:', treelawn.length);
+  console.log('Hofbrauhaus:', hofbrauhaus.length);
+  console.log('Quintanas:', quintanasSpeakeasy.length);
+  console.log('CODA:', coda.length);
+  console.log('Prosperity:', prosperitySocialClub.length);
+  console.log('Sixty 6:', sixty6.length);
+  console.log('Jolly Scholar:', jollyScholar.length);
+  console.log('The Ivy:', theIvy.length);
+  console.log('Bent Mace:', bentMace.length);
+  console.log('B Side:', bside.length);
+  console.log('No Class:', noClass.length);
 
 
   const manualEntries = loadManualEntries();
@@ -2627,6 +3586,17 @@ async function main() {
     ...welcomeToTheFarm,
     ...hilarities,
     ...vanAken,
+    ...treelawn,
+    ...hofbrauhaus,
+    ...quintanasSpeakeasy,
+    ...coda,
+    ...prosperitySocialClub,
+    ...sixty6,
+    ...jollyScholar,
+    ...theIvy,
+    ...bentMace,
+    ...bside,
+    ...noClass,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -2664,7 +3634,18 @@ async function main() {
       'dunlaps-corner-bar': { name: 'Dunlaps', url: 'https://www.dunlapsbar.com/', eventsUrl: 'https://www.dunlapsbar.com/events', city: 'Cleveland' },
       'welcome-to-the-farm': { name: 'Welcome to the Farm', url: 'https://welcometothefarm.com/cleveland', eventsUrl: 'https://welcometothefarm.com/cleveland', city: 'Cleveland' },
       'hilarities': { name: 'Hilarities', url: 'https://hilarities.com/', eventsUrl: 'https://hilarities.com/events', city: 'Cleveland' },
-      'van-aken-district': { name: 'Van Aken District', url: 'https://www.thevanakendistrict.com/', eventsUrl: 'https://www.thevanakendistrict.com/events-at-the-district', city: 'Cleveland' },
+      'van-aken-district': { name: 'Van Aken District', url: 'https://www.thevanakendistrict.com/', eventsUrl: 'https://www.thevanakendistrict.com/events-at-the-district', city: 'Shaker Heights' },
+      'treelawn': { name: 'The Treelawn', url: 'https://thetreelawn.com/', eventsUrl: 'https://thetreelawn.com/', city: 'Cleveland' },
+      'hofbrauhaus-cleveland': { name: 'Hofbrauhaus', url: 'https://www.hofbrauhauscleveland.com/', eventsUrl: 'https://www.hofbrauhauscleveland.com/events', city: 'Cleveland' },
+      'quintanas-speakeasy': { name: 'Quintanas Speakeasy', url: 'https://qbds.net/speakeasy/', eventsUrl: 'https://qbds.net/speakeasy-events/', city: 'Cleveland Heights' },
+      'coda': { name: 'CODA', url: 'https://danteboccuzzi.com/coda/', eventsUrl: 'https://danteboccuzzi.com/coda/', city: 'Cleveland' },
+      'prosperity-social-club': { name: 'Prosperity Social Club', url: 'https://www.prosperitysocialclub.com/', eventsUrl: 'https://www.prosperitysocialclub.com/events', city: 'Cleveland' },
+      'the-sixty6': { name: 'The Sixty 6', url: 'https://thesixty6.com/', eventsUrl: 'https://thesixty6.com/events/', city: 'Cleveland' },
+      'jolly-scholar': { name: 'The Jolly Scholar', url: 'https://thejollyscholar.com/', eventsUrl: 'https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events', city: 'Cleveland' },
+      'the-ivy': { name: 'The Ivy', url: 'https://www.ivycle.com/', eventsUrl: 'https://www.ivycle.com/the-ivy-events', city: 'Cleveland' },
+      'bent-mace': { name: 'Bent Mace', url: 'https://www.ivycle.com/', eventsUrl: 'https://bentmace.org/events/', city: 'Cleveland' },
+      'bside-liquor-lounge': { name: 'B Side Liquor Lounge', url: 'https://bsideliquorlounge.com/', eventsUrl: 'https://bsideliquorlounge.com/', city: 'Cleveland Heights' },
+      'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -2676,6 +3657,7 @@ async function main() {
       'chagrin-tavern': { name: 'Chagrin Tavern on the River', url: 'https://www.chagrintavernontheriver.com/', eventsUrl: 'https://www.chagrintavernontheriver.com/events-1', city: 'Eastlake' },
       'shooters': { name: 'Shooters', url: 'https://www.shooterscleveland.com/', eventsUrl: 'https://speakeasygo.com/shooters-cleveland?vid=VN-dexa', city: 'Cleveland' },
       'crobar': { name: 'crobar', url: 'https://www.crobar1921.com/', eventsUrl: 'https://www.crobar1921.com/events', city: 'Cleveland' },
+      'nightjar': { name: 'Nightjar', url: 'https://www.nightjarjazzbar.com/', eventsUrl: 'https://www.nightjarjazzbar.com/live-music-schedule', city: 'Woodmere' },
     },
     events: allEvents,
   };
