@@ -249,22 +249,39 @@ footer {
     url('../images/crowdPattern.png') repeat-x bottom;
 	background-color: #101010;
 	background-size: 12%;
-	height: 160px;
 }
 
 .footWrap {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	padding: 20px 0;
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: center;
 }
 
-#footLogo {
-	height: 60px;
-	margin-right: 32px;
-	margin-left: 20px;
+#social {
+	margin: 20px;
+}
+
+#social a {
+	margin: 0 20px;
+}
+
+.icon {
+	display: inline-block;
+	width: 32px;
+  height: 32px;
+}
+
+#insta {
+	background-color: #FFF;
+	-webkit-mask-image: url('images/svgs/insta.svg');
+  mask-image: url('images/svgs/insta.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 .footContent {
@@ -278,7 +295,7 @@ footer {
 
 #bottomNav li {
 	display: inline-flex;
-	margin-right: 24px;
+	margin: 0 16px;
 }
 
 footer p {
@@ -662,11 +679,6 @@ input[type=text], select, textarea {
   color: #FCFCFC;
 }
 
-#social {
-	margin-right: 20px;
-	margin-bottom: 20px;
-}
-
 #ad {
 	min-height: 5vh;
 	text-align: center;
@@ -769,6 +781,18 @@ input[type=text], select, textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Hover Fix */
 
 @media (hover: hover) and (pointer: fine) {
@@ -846,6 +870,10 @@ input[type=text], select, textarea {
 	#backToTop:hover {
 		color: #62CBB8;
 		text-decoration: underline;
+	}
+
+	#insta:hover {
+		background-color: #62CBB8;
 	}
 }
 
