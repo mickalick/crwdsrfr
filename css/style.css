@@ -270,16 +270,10 @@ footer {
 	margin: 0 20px;
 }
 
-.icon {
-	display: inline-block;
-	width: 32px;
-  height: 32px;
-}
-
 #insta {
 	background-color: #FFF;
-	-webkit-mask-image: url('images/svgs/insta.svg');
-  mask-image: url('images/svgs/insta.svg');
+	-webkit-mask-image: url('images/icons/insta.svg');
+  mask-image: url('images/icons/insta.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -550,7 +544,7 @@ footer a {
   justify-content: center;
 }
 
-.icon{
+.icon {
 	display: inline-block;
 	width: 24px;
   height: 24px;

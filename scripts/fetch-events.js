@@ -2532,7 +2532,13 @@ async function fetchTreelawn() {
     let lastHtml = '';
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       try {
-        const res = await fetch(url);
+        const res = await fetch(url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+          }
+        });
         const html = await res.text();
         lastHtml = html;
         const $ = cheerio.load(html);
@@ -3446,50 +3452,68 @@ async function fetchClevelandOrchestra() {
   const seenIds = new Set();
 
   try {
-    const res = await fetch('https://www.clevelandorchestra.com/api/event-instances.json');
-    const data = await res.json();
-
     const today = new Date();
     const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-    Object.values(data).forEach(instance => {
-      const title = instance.event?.title?.trim();
-      const startDateLocal = instance.startDateLocal; // e.g. "2026-07-01T20:00:00" — use this, NOT instance.event.startDateLocal (can be stale)
-      if (!title || !startDateLocal) return;
+    let page = 1;
+    let hasNextPage = true;
+    const maxPages = 20; // safety cap
 
-      const [date, timeRaw] = startDateLocal.split('T');
-      const time = timeRaw ? timeRaw.slice(0, 5) : null; // "20:00:00" -> "20:00"
+    while (hasNextPage && page <= maxPages) {
+      const res = await fetch(`https://www.clevelandorchestra.com/api/event-instances.json?page=${page}`);
+      const data = await res.json();
+      const docs = data.docs || [];
 
-      const [y, m, d] = date.split('-').map(Number);
-      const eventDate = new Date(y, m - 1, d);
-      if (eventDate < todayMidnight) return; // skip anything already in the past
+      docs.forEach(instance => {
+        const title = instance?.event?.title?.trim();
 
-      const room = instance.venue?.title || null;
-      const ticketUrl = instance.booking?.bookingLinkURL || instance.ticketingSystemId || null;
+        // "startDateLocalAsUTC" e.g. "2026-07-01T20:00:00.000Z" — despite the
+        // "Z", this is local wall-clock time, NOT real UTC (confirmed against
+        // displayTitle, which says 8:00 PM, not 8:00 PM's UTC equivalent).
+        // Parse the components directly as text rather than letting Date()
+        // reinterpret the bogus "Z" and shift it by 4-5 hours.
+        const startDateRaw = instance?.startDateLocalAsUTC;
+        if (!title || !startDateRaw) return;
 
-      const eventUrlPath = instance.event?.url;
-      const eventUrl = eventUrlPath ? `https://www.clevelandorchestra.com${eventUrlPath}` : null;
+        const dtMatch = startDateRaw.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+        if (!dtMatch) return;
+        const [, y, m, d, hh, mm] = dtMatch;
+        const date = `${y}-${m}-${d}`;
+        const time = `${hh}:${mm}`;
 
-      const id = `cleveland-orchestra-${instance.id}`;
-      if (seenIds.has(id)) return;
-      seenIds.add(id);
+        const eventDate = new Date(Number(y), Number(m) - 1, Number(d));
+        if (eventDate < todayMidnight) return;
 
-      events.push({
-        id,
-        title,
-        venueId: 'cleveland-orchestra',
-        room,
-        date,
-        time,
-        doors: null,
-        price: null,
-        performers: [{ name: title, headliner: true }],
-        eventUrl,
-        ticketUrl,
-        source: 'scrape',
-        manual: false,
+        const room = instance.venue?.title || null;
+        const ticketUrl = instance.booking?.bookingLinkURL || instance.ticketingSystemId || null;
+
+        const eventUrlPath = instance.event?.url;
+        const eventUrl = eventUrlPath ? `https://www.clevelandorchestra.com${eventUrlPath}` : null;
+
+        const id = `cleveland-orchestra-${instance.id}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+
+        events.push({
+          id,
+          title,
+          venueId: 'cleveland-orchestra',
+          room,
+          date,
+          time,
+          doors: null,
+          price: null,
+          performers: [{ name: title, headliner: true }],
+          eventUrl,
+          ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
       });
-    });
+
+      hasNextPage = data.hasNextPage === true;
+      page++;
+    }
   } catch (err) {
     console.error('fetchClevelandOrchestra error:', err.message);
   }
