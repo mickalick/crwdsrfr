@@ -1290,71 +1290,6 @@ async function fetchWinchester() {
   return events;
 }
 
-async function fetchHouseOfBlues() {
-  const events = [];
-  const seenIds = new Set();
-  const limit = 36;
-  const baseUrl = 'https://content.livenationapi.com/v1/venues/KovZpZAEAA1A/events';
-
-  function extractDoorsTime(text) {
-    if (!text) return null;
-    const match = text.match(/doors? open.{0,15}?(\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?)/i);
-    if (!match) return null;
-    const m2 = match[1].replace(/\./g, '').toLowerCase().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/);
-    if (!m2) return null;
-    let h = parseInt(m2[1], 10);
-    const min = m2[2] || '00';
-    if (m2[3] === 'pm' && h !== 12) h += 12;
-    if (m2[3] === 'am' && h === 12) h = 0;
-    return `${String(h).padStart(2, '0')}:${min}`;
-  }
-
-  try {
-    let offset = 0;
-    while (true) {
-      const res = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
-      const data = await res.json();
-      const batch = Array.isArray(data) ? data : (data.events || []);
-      if (!batch.length) break;
-
-      for (const ev of batch) {
-        if (ev.status_code === 'cancelled') continue;
-
-        const id = `house-of-blues-${ev.id}`;
-        if (seenIds.has(id)) continue;
-        seenIds.add(id);
-
-        const title = ev.name;
-        const performers = Array.isArray(ev.artists) && ev.artists.length
-          ? ev.artists.map((a, i) => ({ name: a.name, headliner: i === 0 }))
-          : [{ name: title, headliner: true }];
-
-        events.push({
-          id,
-          title,
-          venueId: 'house-of-blues',
-          date: ev.start_date_local,
-          time: ev.start_time_local ? ev.start_time_local.slice(0, 5) : null,
-          doors: extractDoorsTime(ev.important_info),
-          price: null,
-          performers,
-          eventUrl: ev.url || 'https://cleveland.houseofblues.com/shows',
-          ticketUrl: ev.url || null,
-          source: 'scrape',
-          manual: false,
-        });
-      }
-
-      if (batch.length < limit) break;
-      offset += limit;
-    }
-  } catch (err) {
-    console.error('fetchHouseOfBlues error:', err.message);
-  }
-
-  return events;
-}
-
 async function fetchFwdNightclub() {
   try {
     const res = await fetch('https://www.fwdnightclub.com/events');
@@ -1658,71 +1593,6 @@ async function fetchRockHall() {
     console.error('fetchRockHall error:', err.message);
     return events;
   }
-}
-
-async function fetchBlossomMusicCenter() {
-  const events = [];
-  const seenIds = new Set();
-  const limit = 36;
-  const baseUrl = 'https://content.livenationapi.com/v1/venues/KovZpZAEAtAA/events';
-
-  function extractDoorsTime(text) {
-    if (!text) return null;
-    const match = text.match(/doors? open.{0,15}?(\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?)/i);
-    if (!match) return null;
-    const m2 = match[1].replace(/\./g, '').toLowerCase().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/);
-    if (!m2) return null;
-    let h = parseInt(m2[1], 10);
-    const min = m2[2] || '00';
-    if (m2[3] === 'pm' && h !== 12) h += 12;
-    if (m2[3] === 'am' && h === 12) h = 0;
-    return `${String(h).padStart(2, '0')}:${min}`;
-  }
-
-  try {
-    let offset = 0;
-    while (true) {
-      const res = await fetch(`${baseUrl}?offset=${offset}&limit=${limit}`);
-      const data = await res.json();
-      const batch = Array.isArray(data) ? data : (data.events || []);
-      if (!batch.length) break;
-
-      for (const ev of batch) {
-        if (ev.status_code === 'cancelled') continue;
-
-        const id = `blossom-music-center-${ev.id}`;
-        if (seenIds.has(id)) continue;
-        seenIds.add(id);
-
-        const title = ev.name;
-        const performers = Array.isArray(ev.artists) && ev.artists.length
-          ? ev.artists.map((a, i) => ({ name: a.name, headliner: i === 0 }))
-          : [{ name: title, headliner: true }];
-
-        events.push({
-          id,
-          title,
-          venueId: 'blossom-music-center',
-          date: ev.start_date_local,
-          time: ev.start_time_local ? ev.start_time_local.slice(0, 5) : null,
-          doors: extractDoorsTime(ev.important_info),
-          price: null,
-          performers,
-          eventUrl: ev.url || 'https://www.blossommusic.com/shows',
-          ticketUrl: ev.url || null,
-          source: 'scrape',
-          manual: false,
-        });
-      }
-
-      if (batch.length < limit) break;
-      offset += limit;
-    }
-  } catch (err) {
-    console.error('fetchBlossomMusicCenter error:', err.message);
-  }
-
-  return events;
 }
 
 async function fetchPlayhouseSquare() {
@@ -2528,7 +2398,7 @@ async function fetchTreelawn() {
   // Fetches one page, retrying on bad status OR a suspiciously empty result —
   // TicketWeb's Treelawn Music Hall page has been intermittently flaky
   // (506 errors, thin/stale responses) despite working fine in a browser.
-  async function fetchPageWithRetry(url, maxAttempts = 4) {
+  async function fetchPageWithRetry(url, maxAttempts = 3) {
     let lastHtml = '';
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       try {
@@ -3543,7 +3413,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3558,12 +3428,10 @@ async function main() {
     fetchJacobsPavilion(),
     fetchMusicBox(),
     fetchWinchester(),
-    fetchHouseOfBlues(),
     fetchFwdNightclub(),
     fetchCollisionBend(),
     fetchMercuryMusicLounge(),
     fetchRockHall(),
-    fetchBlossomMusicCenter(),
     fetchPlayhouseSquare(),
     fetchFoundry(),
     fetchDunlaps(),
@@ -3600,12 +3468,10 @@ async function main() {
   console.log('Jacobs Pavilion:', jacobsPavilion.length);
   console.log('Music Box:', musicBox.length);
   console.log('Winchester:', winchester.length);
-  console.log('House of Blues:', houseOfBlues.length);
   console.log('FWD Nightclub:', fwdNightclub.length);
   console.log('Collision Bend:', collisionBend.length);
   console.log('Mercury Music Lounge:', mercuryMusicLounge.length);
   console.log('Rock Hall:', rockHall.length);
-  console.log('Blossom:', blossomMusicCenter.length);
   console.log('Playhouse:', playhouseSquare.length);
   console.log('Foundry:', foundry.length);
   console.log('Dunlaps:', dunlaps.length);
@@ -3645,12 +3511,10 @@ async function main() {
     ...jacobsPavilion,
     ...musicBox,
     ...winchester,
-    ...houseOfBlues,
     ...fwdNightclub,
     ...collisionBend,
     ...mercuryMusicLounge,
     ...rockHall,
-    ...blossomMusicCenter,
     ...playhouseSquare,
     ...foundry,
     ...dunlaps,
@@ -3694,13 +3558,11 @@ async function main() {
       'jacobs-pavilion': { name: 'Jacobs Pavilion', url: 'https://jacobspavilion.com/', eventsUrl: 'https://jacobspavilion.com/calendar/', city: 'Cleveland' },
       'music-box': { name: 'Music Box Supper Club', url: 'https://musicboxcle.com/', eventsUrl: 'https://musicboxcle.com/schedule/', city: 'Cleveland' },
       'winchester-music-tavern': { name: 'The Winchester Music Tavern', url: 'https://thewinchestermusictavern.com/', eventsUrl: 'https://thewinchestermusictavern.com/event-details/', city: 'Lakewood' },
-      'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
       'fwd-nightclub': { name: 'FWD Day + Nightclub', url: 'https://www.fwdnightclub.com/', eventsUrl: 'https://www.fwdnightclub.com/events', city: 'Cleveland' },
       'collision-bend-cleveland': { name: 'Collision Bend Cleveland', url: 'https://collisionbendbrewery.com/location/cleveland-ohio-11716', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Cleveland' },
       'collision-bend-euclid': { name: 'Collision Bend Euclid', url: 'https://collisionbendbrewery.com/location/euclid-ohio-43117', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Euclid' },
       'mercury-music-lounge': { name: 'Mercury Music Lounge', url: 'https://www.mercurymusiclakewood.com/', eventsUrl: 'https://www.mercurymusiclakewood.com/', city: 'Lakewood' },
       'rock-hall': { name: 'Rock & Roll Hall of Fame', url: 'https://rockhall.com/', eventsUrl: 'https://rockhall.com/events/', city: 'Cleveland' },
-      'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
       'playhouse-square': { name: 'Playhouse Square', url: 'https://www.playhousesquare.org/', eventsUrl: 'https://www.playhousesquare.org/events', city: 'Cleveland' },
       'foundry-concert-club': { name: 'The Foundry Concert Club', url: 'https://www.foundryconcertclub.com/', eventsUrl: 'https://www.foundryconcertclub.com/', city: 'Cleveland' },
       'dunlaps-corner-bar': { name: 'Dunlaps', url: 'https://www.dunlapsbar.com/', eventsUrl: 'https://www.dunlapsbar.com/events', city: 'Cleveland' },
@@ -3731,6 +3593,8 @@ async function main() {
       'shooters': { name: 'Shooters', url: 'https://www.shooterscleveland.com/', eventsUrl: 'https://speakeasygo.com/shooters-cleveland?vid=VN-dexa', city: 'Cleveland' },
       'crobar': { name: 'crobar', url: 'https://www.crobar1921.com/', eventsUrl: 'https://www.crobar1921.com/events', city: 'Cleveland' },
       'nightjar': { name: 'Nightjar', url: 'https://www.nightjarjazzbar.com/', eventsUrl: 'https://www.nightjarjazzbar.com/live-music-schedule', city: 'Woodmere' },
+      'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
+      'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
     },
     events: allEvents,
   };
