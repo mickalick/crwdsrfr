@@ -893,7 +893,6 @@ async function fetchMahalls() {
 async function fetchBopStop() {
   const events = [];
   const seenIds = new Set();
-
   function getMonthsToFetch(count) {
     const today = new Date();
     const months = [];
@@ -903,7 +902,6 @@ async function fetchBopStop() {
     }
     return months;
   }
-
   function normalizeTime(t) {
     if (!t) return null;
     const match = t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
@@ -914,43 +912,35 @@ async function fetchBopStop() {
     if (modifier.toLowerCase() === 'am' && hours === 12) hours = 0;
     return `${String(hours).padStart(2, '0')}:${minutes}`;
   }
-
   const months = getMonthsToFetch(3);
-
   for (const { year, month } of months) {
     try {
       const monthUrl = `https://www.themusicsettlement.org/events/${year}/${String(month).padStart(2, '0')}`;
       const res = await fetch(monthUrl);
       const html = await res.text();
       const $ = cheerio.load(html);
-
       $('td').each((i, td) => {
         const dayText = $(td).children('p.day').first().text().trim();
         const day = parseInt(dayText, 10);
         if (!day) return; // skip empty/padding cells
-
         $(td).children('div.event').each((j, eventEl) => {
           const isBopStop = $(eventEl).children('ul.categories').find('li.bop-stop').length > 0;
           if (!isBopStop) return; // skip recitals, school closures, etc.
-
           const titleLink = $(eventEl).children('p.title').find('a').first();
           const rawTitle = titleLink.text().trim();
           const href = titleLink.attr('href');
           if (!rawTitle || !href) return;
-
+          if (/closed/i.test(rawTitle)) return; // skip "BOP STOP Closed" and similar closure notices
           const title = rawTitle.replace(/\s*@\s*BOP STOP\s*$/i, '').trim();
           const timeRaw = $(eventEl).children('p.time').first().text().trim();
           const eventDate = new Date(year, month - 1, day);
           const date = toLocalDateStr(eventDate);
-
           const fullUrl = href.startsWith('http') ? href : `https://www.themusicsettlement.org${href}`;
           const slugMatch = href.match(/\/events\/\d{4}\/\d{2}\/\d{2}\/([^/]+)/);
           const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-
           const id = `bop-stop-${date}-${slug}`;
           if (seenIds.has(id)) return;
           seenIds.add(id);
-
           events.push({
             id,
             title,
@@ -971,7 +961,6 @@ async function fetchBopStop() {
       console.error(`fetchBopStop error (${year}-${month}):`, err.message);
     }
   }
-
   return events;
 }
 
@@ -3452,6 +3441,62 @@ async function fetchNoClass() {
   return events;
 }
 
+async function fetchClevelandOrchestra() {
+  const events = [];
+  const seenIds = new Set();
+
+  try {
+    const res = await fetch('https://www.clevelandorchestra.com/api/event-instances.json');
+    const data = await res.json();
+
+    const today = new Date();
+    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+    Object.values(data).forEach(instance => {
+      const title = instance.event?.title?.trim();
+      const startDateLocal = instance.startDateLocal; // e.g. "2026-07-01T20:00:00" — use this, NOT instance.event.startDateLocal (can be stale)
+      if (!title || !startDateLocal) return;
+
+      const [date, timeRaw] = startDateLocal.split('T');
+      const time = timeRaw ? timeRaw.slice(0, 5) : null; // "20:00:00" -> "20:00"
+
+      const [y, m, d] = date.split('-').map(Number);
+      const eventDate = new Date(y, m - 1, d);
+      if (eventDate < todayMidnight) return; // skip anything already in the past
+
+      const room = instance.venue?.title || null;
+      const ticketUrl = instance.booking?.bookingLinkURL || instance.ticketingSystemId || null;
+
+      const eventUrlPath = instance.event?.url;
+      const eventUrl = eventUrlPath ? `https://www.clevelandorchestra.com${eventUrlPath}` : null;
+
+      const id = `cleveland-orchestra-${instance.id}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'cleveland-orchestra',
+        room,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchClevelandOrchestra error:', err.message);
+  }
+
+  return events;
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -3474,7 +3519,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, houseOfBlues, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, blossomMusicCenter, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3512,6 +3557,7 @@ async function main() {
     fetchBentMace(),
     fetchBside(),
     fetchNoClass(),
+    fetchClevelandOrchestra(),
   ]);
 
 
@@ -3553,6 +3599,7 @@ async function main() {
   console.log('Bent Mace:', bentMace.length);
   console.log('B Side:', bside.length);
   console.log('No Class:', noClass.length);
+  console.log('Cleveland Orchestra:', clevelandOrchestra.length);
 
 
   const manualEntries = loadManualEntries();
@@ -3597,6 +3644,7 @@ async function main() {
     ...bentMace,
     ...bside,
     ...noClass,
+    ...clevelandOrchestra,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -3646,6 +3694,7 @@ async function main() {
       'bent-mace': { name: 'Bent Mace', url: 'https://www.ivycle.com/', eventsUrl: 'https://bentmace.org/events/', city: 'Cleveland' },
       'bside-liquor-lounge': { name: 'B Side Liquor Lounge', url: 'https://bsideliquorlounge.com/', eventsUrl: 'https://bsideliquorlounge.com/', city: 'Cleveland Heights' },
       'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
+      'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
