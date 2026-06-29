@@ -258,6 +258,12 @@
       "eventsUrl": "https://www.noclasscle.com/",
       "city": "Cleveland"
     },
+    "cleveland-orchestra": {
+      "name": "The Cleveland Orchestra",
+      "url": "https://www.clevelandorchestra.com/",
+      "eventsUrl": "https://www.clevelandorchestra.com/tickets/calendar",
+      "city": "Cleveland"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -332,763 +338,6 @@
     }
   },
   "events": [
-    {
-      "id": "grog-shop-2026-06-28-savannah-dexter-damage-control-tour-w-coey-redd",
-      "title": "SAVANNAH DEXTER: Damage Control Tour w/ COEY REDD w/ Coey Redd",
-      "venueId": "grog-shop",
-      "date": "2026-06-28",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$43.20",
-      "performers": [
-        {
-          "name": "SAVANNAH DEXTER: Damage Control Tour w/ COEY REDD",
-          "headliner": true
-        },
-        {
-          "name": "Coey Redd",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/savannah-dexter-damage-control-tour-w-coey-redd/",
-      "ticketUrl": "https://www.ticketweb.com/event/savannah-dexter-damage-control-tour-grog-shop-tickets/14186224?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-28-beachland-brunch",
-      "title": "Beachland Brunch with DJ Annie",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-28",
-      "time": "11:00",
-      "doors": "11:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "Beachland Brunch",
-          "headliner": true
-        },
-        {
-          "name": "DJ Annie",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-28-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-28-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-28-this-way-out",
-      "title": "This Way Out",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": "12:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "This Way Out",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-28-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-28-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-06-28-love-muffin-super-awesome-concert",
-      "title": "Love Muffin Super Awesome Concert with Flowers Love Being Eerie, Craig Bell & The Dead Man's Handle, The Robert Conn Band, The Plastic Volts",
-      "venueId": "beachland-ballroom",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Love Muffin Super Awesome Concert",
-          "headliner": true
-        },
-        {
-          "name": "Flowers Love Being Eerie, Craig Bell & The Dead Man's Handle, The Robert Conn Band, The Plastic Volts",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/austin-rich-s-love-muffin-super-awesome-concert-28-jun#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2026-06-28-key-west-express",
-      "title": "Key West Express",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2026-06-28",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Key West Express",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cain-park-2026-06-28-yiddishe-cup",
-      "title": "Yiddishe Cup",
-      "venueId": "cain-park",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Yiddishe Cup",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/event/yiddishe-cup-2/cain-park-alma-theater/cleveland-heights-ohio/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-06-28-spin-cycle-bop-stop",
-      "title": "Spin Cycle",
-      "venueId": "bop-stop",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Spin Cycle",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/06/28/spin-cycle-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/06/28/spin-cycle-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-28-bob-seger-brunch-june28",
-      "title": "Bob Seger Tribute",
-      "venueId": "music-box",
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$15 Advance, $20 Day of Show",
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Bob Seger Tribute",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/bob-seger-brunch-june28/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62343",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-28-stones-brunch-june28",
-      "title": "Stones Brunch with Gimme Sugar",
-      "venueId": "music-box",
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$12 Advance, $18 Day of Show",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Stones Brunch with Gimme Sugar",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/stones-brunch-june28/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62157",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-06-28-lake-irie-june28",
-      "title": "Reggae Sundays: Lake Irie",
-      "venueId": "music-box",
-      "date": "2026-06-28",
-      "time": "16:00",
-      "doors": "15:30",
-      "price": "Free",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Reggae Sundays: Lake Irie",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/lake-irie-june28/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-06-28-boozy-brunch-ella-langley",
-      "title": "BOOZY BRUNCH (ELLA LANGLEY)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-06-28",
-      "time": "11:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "BOOZY BRUNCH (ELLA LANGLEY)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-brunch-ella-langley/",
-      "ticketUrl": "https://www.ticketweb.com/event/boozy-brunch-ella-langley-the-winchester-tickets/14211274",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-06-28-deadly-confessionals-groundstate-moon-tipper",
-      "title": "Deadly Confessionals, Groundstate, Moon Tipper",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "$13.41",
-      "performers": [
-        {
-          "name": "Deadly Confessionals, Groundstate, Moon Tipper",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/deadly-confessionals-groundstate-moon-tipper/",
-      "ticketUrl": "https://www.ticketweb.com/event/deadly-confessionals-groundstate-moon-tipper-the-winchester-tickets/14821063",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "fwd-nightclub-2026-06-28-pool-days",
-      "title": "POOL DAYS",
-      "venueId": "fwd-nightclub",
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "tag": "DAY",
-      "performers": [
-        {
-          "name": "POOL DAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-415PFS",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-415PFS",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-06-28-brokencyde",
-      "title": "WTF FEST",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-06-28",
-      "time": "15:00",
-      "doors": "14:30",
-      "price": "$38.60",
-      "performers": [
-        {
-          "name": "WTF FEST",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/brokencyde/",
-      "ticketUrl": "https://www.ticketweb.com/event/wtf-fest-the-mercury-music-lounge-tickets/14911803",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "blossom-music-center-vv1AAZko_GkenOfHX",
-      "title": "The Guess Who: Takin' It Back Tour 2026",
-      "venueId": "blossom-music-center",
-      "date": "2026-06-28",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "The Guess Who",
-          "headliner": true
-        },
-        {
-          "name": "Don Felder",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.ticketmaster.com/the-guess-who-takin-it-back-cuyahoga-falls-ohio-06-28-2026/event/05006459AA814F3E",
-      "ticketUrl": "https://www.ticketmaster.com/the-guess-who-takin-it-back-cuyahoga-falls-ohio-06-28-2026/event/05006459AA814F3E",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-06-28-the-great-gatsby",
-      "title": "The Great Gatsby",
-      "venueId": "playhouse-square",
-      "date": "2026-06-28",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Connor Palace",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "The Great Gatsby",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-great-gatsby",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E4C204BC-12E3-489B-9586-9419C506FAEC",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "dunlaps-2026-06-28-137087",
-      "title": "3rd Annual Laugh at the Lake Comedy Festival",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-06-28",
-      "time": "17:00",
-      "doors": "16:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "3rd Annual Laugh at the Lake Comedy Festival",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/137087",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/372104",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "dunlaps-2026-06-28-139297",
-      "title": "No Notes Karaoke",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-06-28",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "No Notes Karaoke",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/139297",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/377282",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "welcome-to-the-farm-booking_01KVB4RSP2EGF270BVZ6H5NVXG",
-      "title": "Chad Baker",
-      "venueId": "welcome-to-the-farm",
-      "date": "2026-06-28",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Chad Baker",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "beatgig",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-06-28-135830",
-      "title": "Sarah Tollemache",
-      "venueId": "hilarities",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Sarah Tollemache",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/135830",
-      "ticketUrl": "https://hilarities.com/shows/369095",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-06-28-136502",
-      "title": "Jokes On You",
-      "venueId": "hilarities",
-      "date": "2026-06-28",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Jokes On You",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/136502",
-      "ticketUrl": "https://hilarities.com/shows/374954",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-free-family-yoga-bubbles-2026-06-28",
-      "title": "Free Family Yoga + Bubbles",
-      "venueId": "van-aken-district",
-      "date": "2026-06-28",
-      "time": "11:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Free Family Yoga + Bubbles",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/free-family-yoga-bubbles-2026-06-28",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-jb-bagelry-pop-up-2026-06-28",
-      "title": "JB Bagelry Pop Up",
-      "venueId": "van-aken-district",
-      "date": "2026-06-28",
-      "time": "09:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "JB Bagelry Pop Up",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/jb-bagelry-pop-up-2026-06-28",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-social-club-2026-06-28-14933523",
-      "title": "The Solidarity Series: Kari Rutushin and Kevin Richards",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-06-28",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Solidarity Series: Kari Rutushin and Kevin Richards",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/the-solidarity-series-kari-rutushin-treelawn-social-club-tickets/14933523{{urlAskRef}}",
-      "ticketUrl": "https://www.ticketweb.com/event/the-solidarity-series-kari-rutushin-treelawn-social-club-tickets/14933523{{urlAskRef}}",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hofbrauhaus-2026-06-28-fbsrwwfz3z8tljf-2t792-rxan9-l8k5a-bxnfz-a47rm-cdy6l-bfwrp-jh27h",
-      "title": "Live Music: Aaron Dussing",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-06-28",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Music: Aaron Dussing",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/fbsrwwfz3z8tljf-2t792-rxan9-l8k5a-bxnfz-a47rm-cdy6l-bfwrp-jh27h",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "sixty6-2026-06-28-foxx-and-company-live-at-the-sixty6-june-2026",
-      "title": "Foxx and Co. Live",
-      "venueId": "the-sixty6",
-      "date": "2026-06-28",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Foxx and Co. Live",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/foxx-and-company-live-at-the-sixty6-june-2026/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bent-mace-2026-06-28-pcrv-nd-tba",
-      "title": "PCRV (ND) / Order of the Wire Mother (MN) / Prolepsis (MI) / Collapsed Arc / KEM Bond / Wallfacer",
-      "venueId": "bent-mace",
-      "date": "2026-06-28",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PCRV (ND)",
-          "headliner": true
-        },
-        {
-          "name": "Order of the Wire Mother (MN)",
-          "headliner": false
-        },
-        {
-          "name": "Prolepsis (MI)",
-          "headliner": false
-        },
-        {
-          "name": "Collapsed Arc",
-          "headliner": false
-        },
-        {
-          "name": "KEM Bond",
-          "headliner": false
-        },
-        {
-          "name": "Wallfacer",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/pcrv-nd-tba/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-06-28-sun-made-disco-club-with-lolo-knows-innergroove-delish-sissybunny",
-      "title": "SUN MADE DISCO CLUB: with Lolo Knows, Innergroove, Delish, SissyBunny",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-06-28",
-      "time": "16:00",
-      "doors": "16:00",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "SUN MADE DISCO CLUB: with Lolo Knows, Innergroove, Delish, SissyBunny",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/sun-made-disco-club-with-lolo-knows-innergroove-delish-sissybunny/",
-      "ticketUrl": "https://www.ticketweb.com/event/sun-made-disco-club-with-b-side-lounge-tickets/14902923?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-06-28-an-exceptionally-dope-affair",
-      "title": "AN EXCEPTIONALLY DOPE AFFAIR",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-06-28",
-      "time": "21:00",
-      "doors": null,
-      "price": "$25.43",
-      "performers": [
-        {
-          "name": "AN EXCEPTIONALLY DOPE AFFAIR",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/an-exceptionally-dope-affair/",
-      "ticketUrl": "https://www.ticketweb.com/event/an-exceptionally-dope-affair-b-side-lounge-tickets/14215194?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-06-28-total-chaos-noogy",
-      "title": "TOTAL CHAOS",
-      "venueId": "no-class",
-      "date": "2026-06-28",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$20",
-      "performers": [
-        {
-          "name": "Total Chaos",
-          "headliner": true
-        },
-        {
-          "name": "Noogy",
-          "headliner": false
-        },
-        {
-          "name": "Sketchball",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/total-chaos-noogy",
-      "ticketUrl": "https://sickening.events/e/total-chaos",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Sully Solo",
-      "performers": [
-        {
-          "name": "Sully Solo",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-06-28-sully-solo"
-    },
-    {
-      "title": "Alt 95",
-      "performers": [
-        {
-          "name": "Alt 95",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-06-28-alt-95"
-    },
-    {
-      "title": "Blue Drivers",
-      "venueId": "cavottas-garden-bar",
-      "date": "2026-06-28",
-      "time": "15:00",
-      "doors": null,
-      "price": "$5 Cover",
-      "performers": [
-        {
-          "name": "Blue Drivers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "id": "cavottas-garden-bar-2026-06-28-blue-drivers"
-    },
-    {
-      "title": "All Star Show!",
-      "performers": [
-        {
-          "name": "All Star Show!",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-06-28-all-star-show"
-    },
-    {
-      "title": "Payton Smith",
-      "performers": [
-        {
-          "name": "Payton Smith",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-06-28-payton-smith"
-    },
-    {
-      "title": "BUNT.",
-      "performers": [
-        {
-          "name": "BUNT.",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-06-28-bunt"
-    },
-    {
-      "title": "Legacy Band",
-      "performers": [
-        {
-          "name": "Legacy Band",
-          "headliner": true
-        }
-      ],
-      "date": "2026-06-28",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "chagrin-tavern",
-      "source": "manual",
-      "manual": true,
-      "id": "chagrin-tavern-2026-06-28-legacy-band"
-    },
     {
       "id": "happy-dog-2026-06-29-monday-night-trivia",
       "title": "Monday Night Trivia!",
@@ -1724,6 +973,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6a04de2d970515500825b739",
+      "title": "2026 Cain Park Community Concert",
+      "venueId": "cleveland-orchestra",
+      "room": "Cain Park",
+      "date": "2026-07-01",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "2026 Cain Park Community Concert",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/2026-cain-park-community-concert",
+      "ticketUrl": "https://www.etix.com/ticket/p/88684018/the-cleveland-orchestra-cleveland-heights-cain-park-evans-amphitheater",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Southbound",
       "performers": [
         {
@@ -2314,6 +1583,26 @@
       "manual": false
     },
     {
+      "id": "fwd-nightclub-2026-07-03-4th-of-july-weekend-pass",
+      "title": "4TH OF JULY WEEKEND PASS",
+      "venueId": "fwd-nightclub",
+      "date": "2026-07-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "tag": "NIGHT",
+      "performers": [
+        {
+          "name": "4TH OF JULY WEEKEND PASS",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/4TH-OF-JULY-WEEKEND-PASS?eid=EVE-2GCI20",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/4TH-OF-JULY-WEEKEND-PASS?eid=EVE-2GCI20",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "fwd-nightclub-2026-07-03-moonlght",
       "title": "MOONLGHT",
       "venueId": "fwd-nightclub",
@@ -2330,26 +1619,6 @@
       ],
       "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/MOONLGHT?eid=EVE-6UCNKN",
       "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/MOONLGHT?eid=EVE-6UCNKN",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "fwd-nightclub-2026-07-03-4th-of-july-weekend-pass",
-      "title": "4TH OF JULY WEEKEND PASS",
-      "venueId": "fwd-nightclub",
-      "date": "2026-07-03",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "tag": "NIGHT",
-      "performers": [
-        {
-          "name": "4TH OF JULY WEEKEND PASS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/4TH-OF-JULY-WEEKEND-PASS?eid=EVE-2GCI20",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/4TH-OF-JULY-WEEKEND-PASS?eid=EVE-2GCI20",
       "source": "scrape",
       "manual": false
     },
@@ -2658,6 +1927,37 @@
       "manual": false
     },
     {
+      "id": "bent-mace-2026-07-03-5anboro-dr-balls-trashcat-spamware-phx",
+      "title": "5anBoro & Dr. Balls / Trashcat / Spamware / PHX",
+      "venueId": "bent-mace",
+      "date": "2026-07-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "5anBoro & Dr. Balls",
+          "headliner": true
+        },
+        {
+          "name": "Trashcat",
+          "headliner": false
+        },
+        {
+          "name": "Spamware",
+          "headliner": false
+        },
+        {
+          "name": "PHX",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/5anboro-dr-balls-trashcat-spamware-phx/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-07-03-club-227",
       "title": "Club 227",
       "venueId": "bside-liquor-lounge",
@@ -2704,6 +2004,26 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/high-tolerance-due-by-midnight",
       "ticketUrl": "https://www.ticketnut.com/public/stage_events/1335",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b41044e3a4d9cc6c2e3d3d",
+      "title": "America at 250",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "America at 250",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/america-at-250",
+      "ticketUrl": "24283",
       "source": "scrape",
       "manual": false
     },
@@ -3013,8 +2333,8 @@
       "manual": false
     },
     {
-      "id": "fwd-nightclub-2026-07-04-side-quest-july-4th-party",
-      "title": "SIDE QUEST (July 4th Party)",
+      "id": "fwd-nightclub-2026-07-04-side-quest-july-4th-pool-party",
+      "title": "SIDE QUEST (July 4th Pool Party)",
       "venueId": "fwd-nightclub",
       "date": "2026-07-04",
       "time": "12:00",
@@ -3023,12 +2343,12 @@
       "tag": "DAY",
       "performers": [
         {
-          "name": "SIDE QUEST (July 4th Party)",
+          "name": "SIDE QUEST (July 4th Pool Party)",
           "headliner": true
         }
       ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/SIDE-QUEST-(July-4th-Party)?eid=EVE-ZXRH8E",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/SIDE-QUEST-(July-4th-Party)?eid=EVE-ZXRH8E",
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/SIDE-QUEST-(July-4th-Pool-Party)?eid=EVE-ZXRH8E",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/SIDE-QUEST-(July-4th-Pool-Party)?eid=EVE-ZXRH8E",
       "source": "scrape",
       "manual": false
     },
@@ -3239,6 +2559,41 @@
       "manual": false
     },
     {
+      "id": "bent-mace-2026-07-04-crawling-thru-the-dark-zaire-lavert-gore-hospital-luxurytreehouse-v-bizy",
+      "title": "Crawling Thru The Dark / Zaire Levert / Gore Hospital / luxurytreehouse / V BIZY",
+      "venueId": "bent-mace",
+      "date": "2026-07-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Crawling Thru The Dark",
+          "headliner": true
+        },
+        {
+          "name": "Zaire Levert",
+          "headliner": false
+        },
+        {
+          "name": "Gore Hospital",
+          "headliner": false
+        },
+        {
+          "name": "luxurytreehouse",
+          "headliner": false
+        },
+        {
+          "name": "V BIZY",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/crawling-thru-the-dark-zaire-lavert-gore-hospital-luxurytreehouse-v-bizy/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-07-04-basement-rb-experience-4th-of-july-edition",
       "title": "Basement: R&B Experience 4th of July Edition",
       "venueId": "bside-liquor-lounge",
@@ -3254,6 +2609,26 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-4th-of-july-edition/",
       "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-4th-of-b-side-lounge-tickets/14903323?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b3191fb613282085990877",
+      "title": "Salute to America",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Salute to America",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/salute-to-america",
+      "ticketUrl": "24284",
       "source": "scrape",
       "manual": false
     },
@@ -3414,25 +2789,6 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul",
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-strike-05-jul#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-07-05-bop-stop-closed",
-      "title": "BOP STOP Closed",
-      "venueId": "bop-stop",
-      "date": "2026-07-05",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "BOP STOP Closed",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/05/bop-stop-closed",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/05/bop-stop-closed",
       "source": "scrape",
       "manual": false
     },
@@ -3735,11 +3091,11 @@
           "headliner": true
         },
         {
-          "name": "Pill Time",
+          "name": "Oongow!",
           "headliner": false
         },
         {
-          "name": "+ more TBA",
+          "name": "Lords of the Highway",
           "headliner": false
         }
       ],
@@ -5195,6 +4551,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6a03438537480292e1009e10",
+      "title": "An Evening with Itzhak Perlman",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "An Evening with Itzhak Perlman",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/an-evening-with-itzhak-perlman",
+      "ticketUrl": "24577",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -6108,6 +5484,25 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-07-11-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-11",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-11-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-11-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-07-11-joint-operation",
       "title": "Joint Operation with Hoverboard, ZuP",
       "venueId": "beachland-ballroom",
@@ -6695,7 +6090,7 @@
     },
     {
       "id": "bent-mace-2026-07-11-neoh-exp-fest-iii-a-bent-mace-benefit",
-      "title": "[NEOH EXP FEST III: A Bent Mace Benefit] Tiger Village / NosawwasoN / Problem / Ann B. Klorox / Hex Reymann / Side Part / R6 Implant / DJ GreenMoonGleam / TBA",
+      "title": "[NEOH EXP FEST III: A Bent Mace Benefit] Tiger Village / NosawwasoN / Problem / Ann B. Klorox / Hex Reymann / Side Part / ch4t_r0u13tt3 / R6 Implant / DJ GreenMoonGleam / DJ JidSenkins69",
       "venueId": "bent-mace",
       "date": "2026-07-11",
       "time": "17:00",
@@ -6727,6 +6122,10 @@
           "headliner": false
         },
         {
+          "name": "ch4t_r0u13tt3",
+          "headliner": false
+        },
+        {
           "name": "R6 Implant",
           "headliner": false
         },
@@ -6735,7 +6134,7 @@
           "headliner": false
         },
         {
-          "name": "TBA",
+          "name": "DJ JidSenkins69",
           "headliner": false
         }
       ],
@@ -6798,6 +6197,46 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/sapphic-night-7-11-26",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6a2320425f5349144c6f4121",
+      "title": "Gourmet Matinee with Genevieve Smelser",
+      "venueId": "cleveland-orchestra",
+      "room": "Blossom Music Center",
+      "date": "2026-07-11",
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Gourmet Matinee with Genevieve Smelser",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/gourmet-matinee-with-genevieve-smelser",
+      "ticketUrl": "https://secure.clevelandorchestra.com/support/donate/donate-now?amount=300&sourcecode=68711",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-690b989f4bfce6fc1eb23069",
+      "title": "Harry Potter & The Chamber of Secrets™",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Harry Potter & The Chamber of Secrets™",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/harry-potter-and-the-chamber-of-secrets",
+      "ticketUrl": "24179",
       "source": "scrape",
       "manual": false
     },
@@ -7427,6 +6866,26 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/katywentmissing",
       "ticketUrl": "https://sickening.events/e/katywentmissing",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-690b989f4bfce6fc1eb23078",
+      "title": "Harry Potter & The Chamber of Secrets™",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Harry Potter & The Chamber of Secrets™",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/harry-potter-and-the-chamber-of-secrets",
+      "ticketUrl": "24180",
       "source": "scrape",
       "manual": false
     },
@@ -8835,6 +8294,26 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/sapphic-social-7-16-26",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b31b7914cd2c2d684fcaf9",
+      "title": "Ohlsson Plays Rachmaninoff",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ohlsson Plays Rachmaninoff",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/ohlsson-plays-rachmaninoff",
+      "ticketUrl": "24322",
       "source": "scrape",
       "manual": false
     },
@@ -10378,6 +9857,41 @@
       "manual": false
     },
     {
+      "id": "bent-mace-2026-07-18-detatchi-cin-dogsrunfree-placid-state-whippet-tba",
+      "title": "Detatchi (CIN) / dogsrunfree / Placid State / Whippet / TBA",
+      "venueId": "bent-mace",
+      "date": "2026-07-18",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Detatchi (CIN)",
+          "headliner": true
+        },
+        {
+          "name": "dogsrunfree",
+          "headliner": false
+        },
+        {
+          "name": "Placid State",
+          "headliner": false
+        },
+        {
+          "name": "Whippet",
+          "headliner": false
+        },
+        {
+          "name": "TBA",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/detatchi-cin-dogsrunfree-placid-state-whippet-tba/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-07-18-basement-rb-experience-5",
       "title": "Basement: R&B Experience",
       "venueId": "bside-liquor-lounge",
@@ -10393,6 +9907,26 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-5/",
       "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14903213?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b347eed1f5c14a7635382c",
+      "title": "Brahms & Shostakovich",
+      "venueId": "cleveland-orchestra",
+      "room": "Blossom Music Center",
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms & Shostakovich",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahms-and-shostakovich",
+      "ticketUrl": "24206",
       "source": "scrape",
       "manual": false
     },
@@ -13851,6 +13385,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69b319c2c81144aa3705e97f",
+      "title": "Rachmaninoff’s Symphonic Dances",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff’s Symphonic Dances",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-symphonic-dances",
+      "ticketUrl": "24208",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Liverpool Lads",
       "performers": [
         {
@@ -14341,6 +13895,101 @@
       "manual": false
     },
     {
+      "id": "no-class-2026-07-26-d-bloc",
+      "title": "D BLOC",
+      "venueId": "no-class",
+      "date": "2026-07-26",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$23",
+      "performers": [
+        {
+          "name": "D Bloc",
+          "headliner": true
+        },
+        {
+          "name": "One Thousand blades",
+          "headliner": false
+        },
+        {
+          "name": "Bring the Pain",
+          "headliner": false
+        },
+        {
+          "name": "Disfigurement",
+          "headliner": false
+        },
+        {
+          "name": "Dead in my Eyes",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/d-bloc",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b1d0f575c106f49319e917",
+      "title": "Blossom Summer Soirée",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-26",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blossom Summer Soirée",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/blossom-summer-soiree",
+      "ticketUrl": "https://donate2.app/XLWt1R",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69fce1cb09a18710496f49d7",
+      "title": "The Spritz",
+      "venueId": "cleveland-orchestra",
+      "room": "Blossom Music Center",
+      "date": "2026-07-26",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Spritz",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/blossom-the-spritz",
+      "ticketUrl": "https://donate2.app/xAXYgU",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b319eb658ffe6b40e36ef6",
+      "title": "An Evening with Idina Menzel",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "An Evening with Idina Menzel",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/an-evening-with-idina-menzel",
+      "ticketUrl": "24316",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Pete Lazard",
       "performers": [
         {
@@ -14781,6 +14430,28 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-07-29-1930-the-lion-king",
+      "title": "The Lion King",
+      "venueId": "playhouse-square",
+      "date": "2026-07-29",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Lion King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
     },
@@ -15259,6 +14930,26 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/ohio-deathfest-pre-party",
       "ticketUrl": "https://sickening.events/e/ohio-deathfest-pre-party",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b4236beb07a4c7308316ac",
+      "title": "Saint-Saëns’s Organ Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-07-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Saint-Saëns’s Organ Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/saint-saenss-organ-symphony",
+      "ticketUrl": "24323",
       "source": "scrape",
       "manual": false
     },
@@ -16313,6 +16004,29 @@
       "manual": false
     },
     {
+      "id": "bent-mace-2026-08-01-void-of-infinite-consequence-phi-tba",
+      "title": "Void of Infinite Consequence (PHI) / TBA",
+      "venueId": "bent-mace",
+      "date": "2026-08-01",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Void of Infinite Consequence (PHI)",
+          "headliner": true
+        },
+        {
+          "name": "TBA",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/void-of-infinite-consequence-phi-tba/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-08-01-how-did-that-get-there",
       "title": "HOW DID THAT GET THERE?",
       "venueId": "bside-liquor-lounge",
@@ -16328,6 +16042,26 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/how-did-that-get-there/",
       "ticketUrl": "https://www.ticketweb.com/event/how-did-that-get-there-b-side-lounge-tickets/14200394?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b31a0e3ddd27ecaa54af9d",
+      "title": "Schumann’s Second Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Schumann’s Second Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/schumanns-second-symphony",
+      "ticketUrl": "24210",
       "source": "scrape",
       "manual": false
     },
@@ -18063,7 +17797,7 @@
     },
     {
       "id": "bent-mace-2026-08-07-muzzle-wi-common-threat-tba",
-      "title": "Muzzle (WI) / Common Threat / TBA",
+      "title": "Muzzle (WI) / Common Threat / MYST / TBA",
       "venueId": "bent-mace",
       "date": "2026-08-07",
       "time": "20:00",
@@ -18079,12 +17813,36 @@
           "headliner": false
         },
         {
+          "name": "MYST",
+          "headliner": false
+        },
+        {
           "name": "TBA",
           "headliner": false
         }
       ],
       "eventUrl": "https://bentmace.org/event/muzzle-wi-common-threat-tba/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69e8d0be6118b70725f6e698",
+      "title": "How To Train Your Dragon",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "How To Train Your Dragon",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/how-to-train-your-dragon",
+      "ticketUrl": "24540",
       "source": "scrape",
       "manual": false
     },
@@ -18611,6 +18369,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69b31a53c81144aa3705ec70",
+      "title": "The Voices that Changed Music",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-08",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Voices that Changed Music",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-voices-that-changed-music",
+      "ticketUrl": "24285",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -18889,6 +18667,26 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/lovemuffinpalooza-2026-a-treelawn-music-hall-tickets/14925803{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/lovemuffinpalooza-2026-a-treelawn-music-hall-tickets/14925803{{urlAskRef}}",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69e8d0be6118b70725f6e69f",
+      "title": "How To Train Your Dragon",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-09",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "How To Train Your Dragon",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/how-to-train-your-dragon",
+      "ticketUrl": "24541",
       "source": "scrape",
       "manual": false
     },
@@ -19748,6 +19546,26 @@
       ],
       "eventUrl": "https://qbds.net/speakeasy-events/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b39ac17b04684f97c38113",
+      "title": "A Night at the Opera",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-13",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "A Night at the Opera",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/a-night-at-the-opera",
+      "ticketUrl": "24324",
       "source": "scrape",
       "manual": false
     },
@@ -20825,6 +20643,26 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/brand-new-hat-treelawn-social-club-tickets/14805633{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/brand-new-hat-treelawn-social-club-tickets/14805633{{urlAskRef}}",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b30236459eb3da1472bf14",
+      "title": "Prokofiev’s Romeo & Juliet",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Prokofiev’s Romeo & Juliet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/prokofievs-romeo-and-juliet",
+      "ticketUrl": "24207",
       "source": "scrape",
       "manual": false
     },
@@ -21986,6 +21824,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69cea979deb6cfb79d6202d9",
+      "title": "Jon Batiste with The Cleveland Orchestra",
+      "venueId": "cleveland-orchestra",
+      "room": "Blossom Music Center",
+      "date": "2026-08-20",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Jon Batiste with The Cleveland Orchestra",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/jon-batiste-with-the-cleveland-orchestra",
+      "ticketUrl": "24441",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Nitebridge",
       "performers": [
         {
@@ -22340,29 +22198,6 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/lucy-isabel-treelawn-social-club-tickets/14811533{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/lucy-isabel-treelawn-social-club-tickets/14811533{{urlAskRef}}",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bent-mace-2026-08-21-komrads-roch-tba",
-      "title": "Komrads (ROCH) / TBA",
-      "venueId": "bent-mace",
-      "date": "2026-08-21",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Komrads (ROCH)",
-          "headliner": true
-        },
-        {
-          "name": "TBA",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/komrads-roch-tba/",
-      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -22827,29 +22662,6 @@
       "manual": false
     },
     {
-      "id": "bent-mace-2026-08-22-5anboro-tba",
-      "title": "5ANboRo / TBA",
-      "venueId": "bent-mace",
-      "date": "2026-08-22",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "5ANboRo",
-          "headliner": true
-        },
-        {
-          "name": "TBA",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/5anboro-tba/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "no-class-2026-08-22-wrestlerager-10",
       "title": "WRESTLERAGER 10",
       "venueId": "no-class",
@@ -22896,6 +22708,26 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/six-feet-under",
       "ticketUrl": "https://sickening.events/e/six-feet-under",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b417544defcdc7fabfd471",
+      "title": "Ravel’s Piano Concerto in G",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ravel’s Piano Concerto in G",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/ravels-piano-concerto-in-g",
+      "ticketUrl": "24209",
       "source": "scrape",
       "manual": false
     },
@@ -23266,6 +23098,46 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/sun-made-disco-club-bunny-bday-ft-battyjack-angelgirl-eva-hush-joey-sardelle-sissybunny/",
       "ticketUrl": "https://www.ticketweb.com/event/sun-made-disco-club-bunny-b-side-lounge-tickets/14903033?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6a300826935d44458e95494e",
+      "title": "Video Game Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-23",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Video Game Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/video-game-symphony-choose-your-character",
+      "ticketUrl": "24580",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b31ad3c81144aa3705eefd",
+      "title": "Cole Porter: Let’s Misbehave",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cole Porter: Let’s Misbehave",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/cole-porter-lets-misbehave",
+      "ticketUrl": "24296",
       "source": "scrape",
       "manual": false
     },
@@ -24019,6 +23891,26 @@
       ],
       "eventUrl": "https://qbds.net/speakeasy-events/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b3118de96ec90ed00a121c",
+      "title": "Welser-Möst Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Welser-Möst Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/welser-most-conducts-strauss",
+      "ticketUrl": "24325",
       "source": "scrape",
       "manual": false
     },
@@ -25086,6 +24978,46 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6a19b16cfeedbbfc04b96c74",
+      "title": "Open Rehearsal",
+      "venueId": "cleveland-orchestra",
+      "room": "Blossom Music Center",
+      "date": "2026-08-29",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Open Rehearsal",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/open-rehearsal-aug26",
+      "ticketUrl": "https://secure.clevelandorchestra.com/support/donate/donate-now?amount=120&source=68710",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b31b08fd05197ff6d30a63",
+      "title": "Summer in Vienna",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Summer in Vienna",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/summer-in-vienna",
+      "ticketUrl": "24211",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OMF Band",
       "performers": [
         {
@@ -25960,6 +25892,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69b2fdfaf1ed93c9ed4b54b4",
+      "title": "The Music of John Williams",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Music of John Williams",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-music-of-john-williams",
+      "ticketUrl": "24295",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Cocktail Johnny",
       "performers": [
         {
@@ -26191,6 +26143,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69b2fdfaf1ed93c9ed4b54b7",
+      "title": "The Music of John Williams",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Music of John Williams",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-music-of-john-williams",
+      "ticketUrl": "24287",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Super Troopers",
       "performers": [
         {
@@ -26345,6 +26317,26 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/carlos-jones-sep6/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69b2fdfaf1ed93c9ed4b54ba",
+      "title": "The Music of John Williams",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Music of John Williams",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-music-of-john-williams",
+      "ticketUrl": "24286",
       "source": "scrape",
       "manual": false
     },
@@ -26779,6 +26771,26 @@
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/summer-farmers-market-2026-09-10",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6957e165806226671400474a",
+      "title": "2026 Blossom Lawn Ticket Books",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-10",
+      "time": "09:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "2026 Blossom Lawn Ticket Books",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/2026-blossom-lawn-ticket-books",
+      "ticketUrl": "24214",
       "source": "scrape",
       "manual": false
     },
@@ -27359,6 +27371,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69ef89fd2be72be0c9e76c8e",
+      "title": "Lang Lang in Recital",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-09-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lang Lang in Recital",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/lang-lang-in-recital",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/lang-lang-in-recital",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Soul Shake",
       "performers": [
         {
@@ -27815,6 +27847,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6994923e5c1cd830eca879db",
+      "title": "Juanes World Tour 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-15",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Juanes World Tour 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/juanes-world-tour-2026",
+      "ticketUrl": "24315",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-09-16-swmrs",
       "title": "SWMRS",
       "venueId": "beachland-ballroom",
@@ -28100,6 +28152,26 @@
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/mikey-silas-ts4d7-pnexy-9g3aj",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6a3bee079a9943a546cdb3e8",
+      "title": "Strauss & Shostakovich",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-17",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Strauss & Shostakovich",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/strauss-and-shostakovich",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/strauss-and-shostakovich",
       "source": "scrape",
       "manual": false
     },
@@ -28508,25 +28580,6 @@
       "manual": false
     },
     {
-      "id": "bent-mace-2026-09-19-monitor-fest",
-      "title": "“MONITOR FEST”",
-      "venueId": "bent-mace",
-      "date": "2026-09-19",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "“MONITOR FEST”",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/monitor-fest/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "title": "Spazmatics",
       "performers": [
         {
@@ -28695,6 +28748,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/135848",
       "ticketUrl": "https://hilarities.com/shows/369128",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6a3bee435694bd4bed97c91f",
+      "title": "Strauss & Shostakovich",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-20",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Strauss & Shostakovich",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/strauss-and-shostakovich",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/strauss-and-shostakovich",
       "source": "scrape",
       "manual": false
     },
@@ -29073,6 +29146,26 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/sunflurry-treelawn-social-club-tickets/14788233{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/sunflurry-treelawn-social-club-tickets/14788233{{urlAskRef}}",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d91bc70ed478fa07c3654d",
+      "title": "Brahms’s Second Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-24",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms’s Second Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
       "source": "scrape",
       "manual": false
     },
@@ -29617,6 +29710,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d91bfd0ed478fa07c367ff",
+      "title": "Brahms’s Second Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-09-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms’s Second Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "KC and Company",
       "performers": [
         {
@@ -29790,6 +29903,25 @@
       ],
       "eventUrl": "https://hilarities.com/events/139554",
       "ticketUrl": "https://hilarities.com/shows/378003",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-27-sun-made-disco-club-all-vinyl-final-ft-red-i-oraclepussies-j-navarro-throat-yogurt-sissybunny",
+      "title": "SUN MADE DISCO CLUB: All Vinyl Final! Ft. Red-I, oraclepussies, J Navarro, Throat Yogurt, SissyBunny",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-27",
+      "time": "16:00",
+      "doors": "16:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "SUN MADE DISCO CLUB: All Vinyl Final! Ft. Red-I, oraclepussies, J Navarro, Throat Yogurt, SissyBunny",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/sun-made-disco-club-all-vinyl-final-ft-red-i-oraclepussies-j-navarro-throat-yogurt-sissybunny/",
+      "ticketUrl": "https://www.ticketweb.com/event/sun-made-disco-club-all-b-side-lounge-tickets/14903083?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -30442,6 +30574,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69f23cc44e264f76cf0626da",
+      "title": "Hamburg, Germany",
+      "venueId": "cleveland-orchestra",
+      "room": "Elbphilharmonie",
+      "date": "2026-10-02",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Hamburg, Germany",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/hamburg-germany-1",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-10-03-bert-kreischer",
       "title": "Bert Kreischer: Permission to Party",
       "venueId": "rocket-arena",
@@ -30628,6 +30780,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69b9df503202ca66e5cf27ab",
+      "title": "Hamburg, Germany",
+      "venueId": "cleveland-orchestra",
+      "room": "Elbphilharmonie",
+      "date": "2026-10-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Hamburg, Germany",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/hamburg-germany",
+      "ticketUrl": "https://www.elbphilharmonie.de/en/whats-on/the-cleveland-orchestra-golda-schulz-franz-welser-most/27887",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Blue Lunch",
       "venueId": "cavottas-garden-bar",
       "date": "2026-10-03",
@@ -30690,6 +30862,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69df8c4ab630fea04bc7132e",
+      "title": "Dortmund, Germany",
+      "venueId": "cleveland-orchestra",
+      "room": "Konzerthaus, Dortmund, DE",
+      "date": "2026-10-04",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Dortmund, Germany",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/dortmund-germany",
+      "ticketUrl": "https://www.konzerthaus-dortmund.de/de/programm/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-10-05-taylor-bickett",
       "title": "Taylor Bickett",
       "venueId": "beachland-ballroom",
@@ -30743,6 +30935,26 @@
         }
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/prosperaoke-oct",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69f23f874e264f76cf0629a9",
+      "title": "Luxembourg",
+      "venueId": "cleveland-orchestra",
+      "room": "Philharmonie Luxembourg",
+      "date": "2026-10-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Luxembourg",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/luxembourg",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -30852,6 +31064,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69df8cdd25effffd0e35280f",
+      "title": "Paris, France",
+      "venueId": "cleveland-orchestra",
+      "room": "Philharmonie de Paris",
+      "date": "2026-10-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Paris, France",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/paris-france",
+      "ticketUrl": "https://philharmoniedeparis.fr/en/activite/29166?itemId=145432",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-07-interpol",
       "title": "Interpol w/ DIIV",
       "venueId": "the-agora",
@@ -30954,6 +31186,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/135416",
       "ticketUrl": "https://hilarities.com/shows/368030",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8d16ead56883491cbc88",
+      "title": "Brussels, Belgium",
+      "venueId": "cleveland-orchestra",
+      "room": "Palais des Beaux Arts (BOZAR)",
+      "date": "2026-10-08",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brussels, Belgium",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brussels-belgium",
+      "ticketUrl": "https://www.bozar.be/en/calendar/cleveland-orchestra-welser-most-schultz",
       "source": "scrape",
       "manual": false
     },
@@ -31251,6 +31503,46 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6a2089576ea56ea7143c85db",
+      "title": "Thee Phantom & The Illharmonic Orchestra",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-10-10",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Thee Phantom & The Illharmonic Orchestra",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/illharmonic",
+      "ticketUrl": "24599",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8d55b630fea04bc713e3",
+      "title": "Bratislava, Slovakia",
+      "venueId": "cleveland-orchestra",
+      "room": "Reduta Hall",
+      "date": "2026-10-10",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Bratislava, Slovakia",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/bratislava-slovakia",
+      "ticketUrl": "https://www.filharmonia.sk/en/concerts",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-10-11-chasing-abbey",
       "title": "Chasing Abbey",
       "venueId": "grog-shop",
@@ -31361,6 +31653,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/135417",
       "ticketUrl": "https://hilarities.com/shows/368031",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8d8bead56883491cbe07",
+      "title": "Linz, Austria",
+      "venueId": "cleveland-orchestra",
+      "room": "Brucknerhaus",
+      "date": "2026-10-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Linz, Austria",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/linz-austria",
+      "ticketUrl": "https://www.brucknerhaus.at/en/programme/events/welser-moest-the-cleveland-orchestra-11.10.2026-15-00",
       "source": "scrape",
       "manual": false
     },
@@ -31479,6 +31791,26 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-86/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970193",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8de396c01a6052d019d6",
+      "title": "Budapest, Hungary",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-10-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Budapest, Hungary",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/budapest-hungary",
+      "ticketUrl": "https://mupa.hu/en/events/event-calendar/2026/10",
       "source": "scrape",
       "manual": false
     },
@@ -31669,6 +32001,68 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69df8e2a25effffd0e352a04",
+      "title": "Vienna, Austria",
+      "venueId": "cleveland-orchestra",
+      "room": "Musikverein",
+      "date": "2026-10-15",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Vienna, Austria",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/vienna-austria",
+      "ticketUrl": "https://musikverein.at/2026-27/abonnements/orchestermusik/franz-welser-moest-zyklus/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-16-eggy",
+      "title": "Eggy",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-16",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Eggy",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/eggy-04-mar",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/eggy-04-mar#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-16-acid-mothers-temple",
+      "title": "Acid Mothers Temple with Magick Potion",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-16",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Acid Mothers Temple",
+          "headliner": true
+        },
+        {
+          "name": "Magick Potion",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/acid-mothers-temple-16-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/acid-mothers-temple-16-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5YEZ42FFGEG9G81D2S9WR2",
       "title": "Reece Gus & The Fifths",
       "venueId": "welcome-to-the-farm",
@@ -31685,6 +32079,26 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8e6e96c01a6052d01aff",
+      "title": "Vienna, Austria",
+      "venueId": "cleveland-orchestra",
+      "room": "Musikverein",
+      "date": "2026-10-16",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Vienna, Austria",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/vienna-austria-2",
+      "ticketUrl": "https://musikverein.at/2026-27/abonnements/orchestermusik/franz-welser-moest-zyklus/",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -31727,6 +32141,26 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8ee7ead56883491cbf70",
+      "title": "Vienna, Austria",
+      "venueId": "cleveland-orchestra",
+      "room": "Konzerthaus, Vienna, AUST",
+      "date": "2026-10-17",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Vienna, Austria",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/vienna-austria-3",
+      "ticketUrl": "https://konzerthaus.at/en/program-and-tickets/cleveland-orchestra-welser-most/63726",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -31812,6 +32246,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69df8f20b90bbd973559a9a9",
+      "title": "Ljubljana, Slovenia",
+      "venueId": "cleveland-orchestra",
+      "room": "Cankarjev dom",
+      "date": "2026-10-18",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ljubljana, Slovenia",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/ljubljana-slovenia",
+      "ticketUrl": "https://www.cd-cc.si/en/culture/music",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-10-19-the-tubs",
       "title": "The Tubs",
       "venueId": "grog-shop",
@@ -31827,6 +32281,26 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/the-tubs/",
       "ticketUrl": "https://www.ticketweb.com/event/the-tubs-grog-shop-tickets/14207344?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69ef89b2090b02ce61ca4bf8",
+      "title": "Batiashvili, Capuçon & Thibaudet in Recital",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-10-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Batiashvili, Capuçon & Thibaudet in Recital",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/batiashvili-capucon-and-thibaudet-in-recital",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/batiashvili-capucon-and-thibaudet-in-recital",
       "source": "scrape",
       "manual": false
     },
@@ -31918,6 +32392,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69df8f54b0331538bd468e1c",
+      "title": "Thessaloniki, Greece",
+      "venueId": "cleveland-orchestra",
+      "room": "Thessaloniki Concert Hall",
+      "date": "2026-10-20",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Thessaloniki, Greece",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/thessaloniki-greece",
+      "ticketUrl": "https://www.tch.gr/default.aspx?lang=en-GB&page=2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-10-21-my-hero-academia-in-concert",
       "title": "My Hero Academia In Concert",
       "venueId": "playhouse-square",
@@ -31955,6 +32449,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/139054",
       "ticketUrl": "https://hilarities.com/shows/376793",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69df8f89b0331538bd468f1a",
+      "title": "Athens, Greece",
+      "venueId": "cleveland-orchestra",
+      "room": "Megaron",
+      "date": "2026-10-21",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Athens, Greece",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/athens-greece",
+      "ticketUrl": "https://www.megaron.gr/en/events-2/list/",
       "source": "scrape",
       "manual": false
     },
@@ -32367,6 +32881,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d6b8131b896a81e4b74e30",
+      "title": "The Chorus at 75",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-10-24",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Chorus at 75",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-chorus-at-75",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/the-chorus-at-75",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-10-25-disney-worlds-collide-concert-tour",
       "title": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
       "venueId": "rocket-arena",
@@ -32577,6 +33111,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d6b8486bd109731c660b4c",
+      "title": "Mahler’s Fifth Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-10-30",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Fifth Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-10-31-mushroomhead-fear-factory",
       "title": "Mushroomhead & Fear Factory w/ Nine Treasures, Bittersweet Revenge, Unhealthy While Unhinged",
       "venueId": "the-agora",
@@ -32643,6 +33197,46 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/bob-frank-his-delta-treelawn-social-club-tickets/14952593{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/bob-frank-his-delta-treelawn-social-club-tickets/14952593{{urlAskRef}}",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d6b8610f7a013b2e212c47",
+      "title": "Mahler’s Fifth Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-10-31",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Fifth Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d6b8766bd109731c660c92",
+      "title": "Mahler’s Fifth Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-01",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Fifth Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-fifth-symphony",
       "source": "scrape",
       "manual": false
     },
@@ -32812,6 +33406,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d9345e0747f2375fd1fd60",
+      "title": "Brahms’s Requiem",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms’s Requiem",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-06-zack-fox-dj-set",
       "title": "Zack Fox (DJ Set)",
       "venueId": "the-agora",
@@ -32968,6 +33582,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d934a0de6d4672d906289e",
+      "title": "Brahms’s Requiem",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-07",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms’s Requiem",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "music-box-2026-11-08-billy-joel-brunch-nov8",
       "title": "Billy Joel Brunch with Walt Wise and 52nd Street",
       "venueId": "music-box",
@@ -33004,6 +33638,26 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/doobie-brothers-tribute-nov8/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62568",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d934c40342da511681fda2",
+      "title": "Brahms’s Requiem",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-08",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Brahms’s Requiem",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-requiem",
       "source": "scrape",
       "manual": false
     },
@@ -33176,6 +33830,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d9359f506a24da187123db",
+      "title": "Royal Illuminations",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Royal Illuminations",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-11-13-journey",
       "title": "JOURNEY: Final Frontier Tour (An Evening With)",
       "venueId": "rocket-arena",
@@ -33327,6 +34001,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d935d8506a24da1871257f",
+      "title": "Royal Illuminations",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-14",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Royal Illuminations",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-11-15-low-cut-connie",
       "title": "Low Cut Connie",
       "venueId": "grog-shop",
@@ -33362,6 +34056,26 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/fruition-nov15/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62703",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93604c89cf6f75a8dda35",
+      "title": "Royal Illuminations",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-15",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Royal Illuminations",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
       "source": "scrape",
       "manual": false
     },
@@ -33555,6 +34269,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d93670f27d721a97be4fb9",
+      "title": "Rouvali Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rouvali Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-11-20-wheeler-walker-jr",
       "title": "Wheeler Walker Jr.",
       "venueId": "the-agora",
@@ -33631,6 +34365,46 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d9368c3703e5fcdf55c080",
+      "title": "Rouvali Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-20",
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rouvali Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69fc961fd5b26b208ce0f85f",
+      "title": "COYO Plays Tchaikovsky",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-11-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "COYO Plays Tchaikovsky",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/coyo-plays-tchaikovsky",
+      "ticketUrl": "24568",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -33726,6 +34500,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d936a8f27d721a97be50b6",
+      "title": "Rouvali Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-21",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rouvali Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "music-box-2026-11-22-hearn-gregory-nov22",
       "title": "Kate Gregory & Brendan Hearn",
       "venueId": "music-box",
@@ -33742,6 +34536,26 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/hearn-gregory-nov22/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62721",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d936d220e0317fbd5d0b8e",
+      "title": "Rouvali Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-22",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rouvali Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rouvali-conducts-strauss",
       "source": "scrape",
       "manual": false
     },
@@ -33834,6 +34648,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d9373a4e8fd3afc183453f",
+      "title": "Tchaikovsky’s Swan Lake",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-27",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Tchaikovsky’s Swan Lake",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5T9HKVHJPDW3EPYXNGWWS7",
       "title": "Southbound",
       "venueId": "welcome-to-the-farm",
@@ -33850,6 +34684,26 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d9375237860d6a60f7a956",
+      "title": "Tchaikovsky’s Swan Lake",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-28",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Tchaikovsky’s Swan Lake",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -33871,6 +34725,26 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/jingle-bell-pops",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0B6C6E14-B631-4CD0-B580-0286E58A43AF",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93771604f1484ff413118",
+      "title": "Tchaikovsky’s Swan Lake",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-11-29",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Tchaikovsky’s Swan Lake",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tchaikovskys-swan-lake",
       "source": "scrape",
       "manual": false
     },
@@ -33909,6 +34783,26 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-93/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970013",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d937d5edaf7108312dd342",
+      "title": "Hadelich Plays Bartók",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-12-03",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Hadelich Plays Bartók",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
       "source": "scrape",
       "manual": false
     },
@@ -33969,6 +34863,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/139407",
       "ticketUrl": "https://hilarities.com/shows/377576",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d937f24e8fd3afc1834fcd",
+      "title": "Hadelich Plays Bartók",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-12-04",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Hadelich Plays Bartók",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
       "source": "scrape",
       "manual": false
     },
@@ -34065,6 +34979,26 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/matthew-alec-and-the-soul-treelawn-social-club-tickets/14930143{{urlAskRef}}",
       "ticketUrl": "https://www.ticketweb.com/event/matthew-alec-and-the-soul-treelawn-social-club-tickets/14930143{{urlAskRef}}",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d938168e6929b7b99ce20e",
+      "title": "Hadelich Plays Bartók",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-12-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Hadelich Plays Bartók",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/hadelich-plays-bartok",
       "source": "scrape",
       "manual": false
     },
@@ -34228,6 +35162,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6a05f3118862f259a0af52fa",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2026-12-11",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24251",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5V5B3F79YAEFKEM4SGW289",
       "title": "Post Road",
       "venueId": "welcome-to-the-farm",
@@ -34244,6 +35198,86 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83500b1f37f5ef38c55",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-12",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24253",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83500b1f37f5ef38c65",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24254",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83500b1f37f5ef38c75",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-13",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24255",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38c85",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-13",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24252",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -34384,6 +35418,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38c95",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-18",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24250",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5WYFANM3Z3SEYVT4K58BQW",
       "title": "Dave Hinrich",
       "venueId": "welcome-to-the-farm",
@@ -34460,6 +35514,86 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38ca5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-19",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24256",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38cb5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24257",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38cc5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-20",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24258",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38cd5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24259",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-12-22-secret-society-comedy-presents-one-more-joke-63",
       "title": "Secret Society Comedy Presents: One More Joke",
       "venueId": "winchester-music-tavern",
@@ -34516,6 +35650,46 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/tomaseen-foleys-a-celtic-christmas-4",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=2A34CC36-A46C-471F-8F7A-A5D425113352",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38ce5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-22",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24260",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6970e83600b1f37f5ef38cf5",
+      "title": "Holiday Concerts 2026",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-23",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holiday Concerts 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
+      "ticketUrl": "24261",
       "source": "scrape",
       "manual": false
     },
@@ -34577,6 +35751,106 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d93956e93bbf18ee1a999d",
+      "title": "Beethoven’s Missa Solemnis",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-01-14",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Beethoven’s Missa Solemnis",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/beethovens-missa-solemnis",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/beethovens-missa-solemnis",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93b67e0d0d5ca09d56241",
+      "title": "Welser-Möst Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-01-15",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Welser-Möst Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/welser-moest-conducts-strauss",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/welser-moest-conducts-strauss",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d9397de805881be3c88dd2",
+      "title": "Beethoven’s Missa Solemnis",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-01-16",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Beethoven’s Missa Solemnis",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/beethovens-missa-solemnis",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/beethovens-missa-solemnis",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69de9e9fb8d755d6796e4d16",
+      "title": "Carnegie Hall - Beethoven’s Missa Solemnis",
+      "venueId": "cleveland-orchestra",
+      "room": "Carnegie Hall",
+      "date": "2027-01-19",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Carnegie Hall - Beethoven’s Missa Solemnis",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/carnegie-beethovens-missa-solemnis",
+      "ticketUrl": "https://www.carnegiehall.org/Calendar/2027/01/19/The-Cleveland-Orchestra-0800PM",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dea011f6624b54fd00dcbf",
+      "title": "Carnegie Hall - Welser-Möst Conducts Strauss",
+      "venueId": "cleveland-orchestra",
+      "room": "Carnegie Hall",
+      "date": "2027-01-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Carnegie Hall - Welser-Möst Conducts Strauss",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/carnegie-welser-moest-conducts-strauss",
+      "ticketUrl": "https://www.carnegiehall.org/Calendar/2027/01/20/The-Cleveland-Orchestra-0800PM",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2027-01-23-hubbard-street-dance-chicago-1",
       "title": "Hubbard Street Dance Chicago",
       "venueId": "playhouse-square",
@@ -34595,6 +35869,86 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/hubbard-street-dance-chicago-1",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=44B3533D-3061-4DAE-904D-C44C9AC454DC",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7db59155513fb6a270b02",
+      "title": "Beethoven's Fifth Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": "Adrienne Arsht Center",
+      "date": "2027-01-23",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Beethoven's Fifth Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/beethovens-fifth-symphony",
+      "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-beethoven-s-fifth-symphony/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-6a2082222e6bc91a47fa245a",
+      "title": "Stephen Hough in Recital",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-01-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Stephen Hough in Recital",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/stephen-hough-in-recital",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/stephen-hough-in-recital",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7e541123961a7e6fdfe9c",
+      "title": "A Night in Vienna",
+      "venueId": "cleveland-orchestra",
+      "room": "Artis—Naples",
+      "date": "2027-01-30",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "A Night in Vienna",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/a-night-in-vienna-2",
+      "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-a-night-in-vienna/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7e0b7492ab5abbf43a0ee",
+      "title": "A Night in Vienna",
+      "venueId": "cleveland-orchestra",
+      "room": "Artis—Naples",
+      "date": "2027-01-31",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "A Night in Vienna",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/a-night-in-vienna",
+      "ticketUrl": "https://www.arshtcenter.org/calendar/",
       "source": "scrape",
       "manual": false
     },
@@ -34637,6 +35991,206 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69d93cb644b85f83a87d302a",
+      "title": "Holst’s The Planets",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-04",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holst’s The Planets",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93cdf44b85f83a87d31fd",
+      "title": "Holst’s The Planets",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holst’s The Planets",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93d08a2511cdc1dafd241",
+      "title": "Holst’s The Planets",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-06",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holst’s The Planets",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93d2e8f9b294248495ef7",
+      "title": "Holst’s The Planets",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-07",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Holst’s The Planets",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/holsts-the-planets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93edc704be3f9693f09ce",
+      "title": "All Tchaikovsky",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-11",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "All Tchaikovsky",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93efcc8447cd047797bb8",
+      "title": "All Tchaikovsky",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "All Tchaikovsky",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93f17a2511cdc1dafd7a4",
+      "title": "All Tchaikovsky",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-13",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "All Tchaikovsky",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d93f37e3e182b3c9294a51",
+      "title": "All Tchaikovsky",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-14",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "All Tchaikovsky",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/all-tchaikovsky",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd081ade1dc85ba862829d",
+      "title": "Huang Plays Barber",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-18",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Huang Plays Barber",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/huang-plays-barber",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/huang-plays-barber",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0851d8fb4542ff9c24d3",
+      "title": "Huang Plays Barber",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Huang Plays Barber",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/huang-plays-barber",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/huang-plays-barber",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2027-02-23-jeff-arcuri",
       "title": "Jeff Arcuri",
       "venueId": "playhouse-square",
@@ -34655,6 +36209,46 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/jeff-arcuri",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5E032C9F-1D8A-41E3-813A-E1F07E68F852",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0a0a987fc1548d3c8707",
+      "title": "Cho Plays Chopin",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-25",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cho Plays Chopin",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0a2faa196bed43df8a2f",
+      "title": "Cho Plays Chopin",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cho Plays Chopin",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
       "source": "scrape",
       "manual": false
     },
@@ -34681,6 +36275,46 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69dd0a53aa196bed43df8b3b",
+      "title": "Cho Plays Chopin",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-02-27",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cho Plays Chopin",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69fc967c0861dd4c24614ec5",
+      "title": "COYO & COYC in Concert: Brahms & Billy the Kid",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-02-28",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "COYO & COYC in Concert: Brahms & Billy the Kid",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/coyo-and-coyc-in-concert-brahms-and-billy-the-kid",
+      "ticketUrl": "24569",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2027-03-02-sonic-live-in-concert",
       "title": "Sonic Live In Concert",
       "venueId": "playhouse-square",
@@ -34699,6 +36333,166 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/sonic-live-in-concert",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=3B632EE0-5F01-411D-AD11-58003623110C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f219a29ede76f4e229c8",
+      "title": "Rachmaninoff’s Rhapsody",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-03-04",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff’s Rhapsody",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0bc20dbe71635436eb66",
+      "title": "Rachmaninoff’s Rhapsody",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-03-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff’s Rhapsody",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0beec2eee5fd39d56ab9",
+      "title": "Rachmaninoff’s Rhapsody",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-03-06",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff’s Rhapsody",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0c16f16dd5f4f9f52db7",
+      "title": "Rachmaninoff’s Rhapsody",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-03-07",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff’s Rhapsody",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody-spring",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f1bab35936161d9c2b94",
+      "title": "The Music of John Williams",
+      "venueId": "cleveland-orchestra",
+      "room": "Adrienne Arsht Center",
+      "date": "2027-03-12",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Music of John Williams",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/miami-the-music-of-john-williams",
+      "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-the-music-of-john-williams/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f3210e0ee4d2d6b4f94b",
+      "title": "Rachmaninoff's Rhapsody",
+      "venueId": "cleveland-orchestra",
+      "room": "Adrienne Arsht Center",
+      "date": "2027-03-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rachmaninoff's Rhapsody",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/rachmaninoffs-rhapsody",
+      "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-rachmaninoffs-rhapsody/",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69ef88b722e77621c9f63f64",
+      "title": "Garrick Ohlsson in Recital",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-03-16",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Garrick Ohlsson in Recital",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/garrick-ohlsson-in-recital",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/garrick-ohlsson-in-recital",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7c917dcf262eb32a3f719",
+      "title": "Szeps-Znaider Plays Bruch",
+      "venueId": "cleveland-orchestra",
+      "room": "Adrienne Arsht Center",
+      "date": "2027-03-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Szeps-Znaider Plays Bruch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/szeps-znaider-plays-bruch",
+      "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-szeps-znaider-plays-bruch/",
       "source": "scrape",
       "manual": false
     },
@@ -34767,6 +36561,26 @@
       "manual": false
     },
     {
+      "id": "cleveland-orchestra-69dd0cd39f116fce00b68a0b",
+      "title": "Lim Plays Liszt",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-04-15",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lim Plays Liszt",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2027-04-17-gallim",
       "title": "GALLIM",
       "venueId": "playhouse-square",
@@ -34785,6 +36599,366 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/gallim",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9A0D7049-C2FE-4AAF-95DD-21A3C4523FA1",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0cfb9f116fce00b68ada",
+      "title": "Lim Plays Liszt",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-04-17",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lim Plays Liszt",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd0d240e6f25c81cf56e39",
+      "title": "Lim Plays Liszt",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-04-18",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lim Plays Liszt",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/lim-plays-liszt",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69ef8853e9a8a0e05eadd5bd",
+      "title": "Nobuyuki Tsujji in Recital",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-04-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nobuyuki Tsujji in Recital",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/nobuyuki-tsujji-in-recital",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/nobuyuki-tsujji-in-recital",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1156e63fdc2ecaa293fc",
+      "title": "Adams & Tao",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-04-22",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Adams & Tao",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/adams-and-tao",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tao-plays-copland",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd117f72cfd8b9b72cd0ce",
+      "title": "Adams & Tao",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-04-23",
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Adams & Tao",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/adams-and-tao",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tao-plays-copland",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1196132394bbfdc424dc",
+      "title": "Adams & Tao",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-04-24",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Adams & Tao",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/adams-and-tao",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/tao-plays-copland",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1255fc541d9ac8c197dc",
+      "title": "Mahler’s Ninth",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-04-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Ninth",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1274414583b2b7bee5c1",
+      "title": "Mahler’s Ninth",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-01",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Ninth",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd129158f299da5a042bfc",
+      "title": "Mahler’s Ninth",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-02",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mahler’s Ninth",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/mahlers-ninth",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1357a1f88a67d429eb15",
+      "title": "Stravinsky & Sibelius",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-06",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Stravinsky & Sibelius",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/stravinsky-and-sibelius",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/stravinsky-and-sibelius",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd132aa1f88a67d429ea38",
+      "title": "Stravinsky & Sibelius",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-07",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Stravinsky & Sibelius",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/stravinsky-and-sibelius",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/stravinsky-and-sibelius",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69fc98fe985fe2a5a8bcbd8d",
+      "title": "COYO Plays Pines of Rome",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-05-08",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "COYO Plays Pines of Rome",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/coyo-plays-pines-of-rome",
+      "ticketUrl": "24570",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f1fa55690b12bc1e4175",
+      "title": "Die Frau ohne Schatten",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-16",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Die Frau ohne Schatten",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f2f00e0ee4d2d6b4f792",
+      "title": "Die Frau ohne Schatten",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-19",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Die Frau ohne Schatten",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69d7f3211bc4f266961de981",
+      "title": "Die Frau ohne Schatten",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Die Frau ohne Schatten",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/die-frau-ohne-schatten",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd14a3b702d34cc6baf56b",
+      "title": "Haydn’s Creation",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-27",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Haydn’s Creation",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/haydns-creation",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/haydns-creation",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd1512691ce729d6688d7b",
+      "title": "Strauss’s Alpine Symphony",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-28",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Strauss’s Alpine Symphony",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/strausss-alpine-symphony",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/strausss-alpine-symphony",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "cleveland-orchestra-69dd15fe572f8a7810232a7a",
+      "title": "The Last Waltz",
+      "venueId": "cleveland-orchestra",
+      "room": "Mandel Concert Hall",
+      "date": "2027-05-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Last Waltz",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/the-last-waltz",
+      "ticketUrl": "https://www.clevelandorchestra.com/events/the-last-waltz",
       "source": "scrape",
       "manual": false
     },
@@ -35065,6 +37239,25 @@
       "performers": [
         {
           "name": "Pieces of Eight featuring the Lakeside Brass",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2027-06-28-key-west-express",
+      "title": "Key West Express",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2027-06-28",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Key West Express",
           "headliner": true
         }
       ],
