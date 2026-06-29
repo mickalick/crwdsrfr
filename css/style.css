@@ -270,14 +270,6 @@ footer {
 	margin: 0 20px;
 }
 
-#insta {
-	background-color: #FFF;
-	-webkit-mask-image: url('images/icons/insta.svg');
-  mask-image: url('images/icons/insta.svg');
-  mask-size: contain;
-  mask-repeat: no-repeat;
-}
-
 .footContent {
 	display: block;
 }
@@ -615,23 +607,15 @@ footer a {
   cursor: pointer;
 }
 
-#twitter {
-	width: 45px;
-	height: 45px;
-	background-position: -48px -2px;
+#insta {
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/insta.svg');
+  mask-image: url('../images/icons/insta.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
-#instagram {
-	width: 45px;
-	height: 45px;
-	background-position: -98px -2px;
-}
 
-#linkedin {
-	width: 45px;
-	height: 45px;
-	background-position: 0px -2px;
-}
 
 .empty {
 	text-align: center !important;
