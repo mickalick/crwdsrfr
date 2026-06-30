@@ -103,8 +103,9 @@ function renderEvents(events) {
         else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
         else timeDisplay = 'See Event';
 
-        const titleHtml = event.eventUrl
-          ? `<a href="${event.eventUrl}" target="_blank">${event.title}</a>`
+        const titleLink = event.eventUrl || venue.eventsUrl || null;
+        const titleHtml = titleLink
+          ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
           : event.title;
 
         // Only render the .ticketLink wrapper at all when there's an
