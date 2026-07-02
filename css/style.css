@@ -657,16 +657,16 @@ input[type=text], select, textarea {
   color: #FCFCFC;
 }
 
-#ad {
+#promo {
 	min-height: 5vh;
 	text-align: center;
 }
 
-#ad .main {
+#promo .main {
 	background-color: #FCFCFC;
 }
 
-#ad .main p {
+#promo .main p {
 	color: #101010;
 }
 

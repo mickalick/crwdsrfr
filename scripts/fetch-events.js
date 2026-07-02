@@ -2457,7 +2457,8 @@ async function fetchTreelawn() {
         // Angular renders the real href from data-ng-href client-side — the
         // raw page source (what fetch() actually gets) only has data-ng-href,
         // so href alone comes back undefined. Fall back to it explicitly.
-        const eventUrl = titleLink.attr('href') || titleLink.attr('data-ng-href');
+        const rawEventUrl = titleLink.attr('href') || titleLink.attr('data-ng-href');
+        const eventUrl = rawEventUrl ? rawEventUrl.replace(/\{\{[^}]+\}\}/g, '').trim() : null;
         if (!title || !eventUrl) return;
 
         const dateRaw = $el.find('.event-date').first().text().replace(/\s+/g, ' ').trim();
@@ -3355,7 +3356,13 @@ async function fetchClevelandOrchestra() {
         if (eventDate < todayMidnight) return;
 
         const room = instance.venue?.title || null;
-        const ticketUrl = instance.booking?.bookingLinkURL || instance.ticketingSystemId || null;
+        const rawTicketId = instance.ticketingSystemId || null;
+        const bookingUrl = instance.booking?.bookingLinkURL || null;
+        const ticketUrl = bookingUrl
+          ? bookingUrl
+          : rawTicketId && /^\d+$/.test(rawTicketId.toString().trim())
+            ? `https://secure.clevelandorchestra.com/syos/performance/${rawTicketId.trim()}`
+            : rawTicketId || null;
 
         const eventUrlPath = instance.event?.url;
         const eventUrl = eventUrlPath ? `https://www.clevelandorchestra.com${eventUrlPath}` : null;

@@ -2,102 +2,330 @@
   "events": [
     {
       "title": "Dog Water",
-      "performers": [{ "name": "Dog Water", "headliner": true }],
-      "date": "2026-06-17",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-01",
       "time": "18:00",
       "doors": null,
       "price": null,
-      "ticketUrl": null,
       "eventUrl": null,
+      "ticketUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
-      "id": "cebars-2026-06-17-dog-water"
+      "id": "cebars-2026-07-01-dog-water"
     },
     {
       "title": "Lady Antoinette Karaoke",
-      "performers": [{ "name": "Lady Antoinette Karaoke", "headliner": true }],
-      "date": "2026-06-18",
+      "performers": [
+        {
+          "name": "Lady Antoinette Karaoke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-02",
       "time": "19:00",
       "doors": null,
       "price": null,
-      "ticketUrl": null,
       "eventUrl": null,
+      "ticketUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
-      "id": "cebars-2026-06-18-lady-antoinette-karaoke"
+      "id": "cebars-2026-07-02-lady-antoinette-karaoke"
     },
     {
-      "title": "Cap",
-      "performers": [{ "name": "Cap", "headliner": true }],
-      "date": "2026-06-19",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-19-cap"
-    },
-    {
-      "title": "You Ain't Hard Fest",
-      "performers": [{ "name": "You Ain't Hard Fest", "headliner": true }],
-      "date": "2026-06-20",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-06-20-you-ain-t-hard-fest"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [{ "name": "Dog Water", "headliner": true }],
-      "date": "2026-06-24",
+      "title": "Hoodech",
+      "performers": [
+        {
+          "name": "Hoodech",
+          "headliner": true
+        },
+        {
+          "name": "Liz + Fred",
+          "headliner": false
+        }
+      ],
+      "date": "2026-07-03",
       "time": "18:00",
       "doors": null,
       "price": null,
-      "ticketUrl": null,
       "eventUrl": null,
+      "ticketUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
-      "id": "cebars-2026-06-24-dog-water"
+      "id": "cebars-2026-07-03-hoodech"
     },
     {
-      "title": "Among The Willows",
-      "performers": [{ "name": "Among The Willows", "headliner": true }],
-      "date": "2026-06-26",
-      "time": "21:00",
+      "title": "Open",
+      "performers": [
+        {
+          "name": "Open",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-04",
+      "time": null,
       "doors": null,
       "price": null,
-      "ticketUrl": null,
       "eventUrl": null,
+      "ticketUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
-      "id": "cebars-2026-06-26-among-the-willows"
+      "id": "cebars-2026-07-04-open"
     },
     {
-      "title": "Collective Cle",
-      "performers": [{ "name": "Collective Cle", "headliner": true }],
-      "date": "2026-06-27",
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-08-dog-water"
+    },
+    {
+      "title": "Alan Greene Band",
+      "performers": [
+        {
+          "name": "Alan Greene Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-10",
       "time": "20:00",
       "doors": null,
       "price": null,
-      "ticketUrl": null,
       "eventUrl": null,
+      "ticketUrl": null,
       "venueId": "cebars",
       "source": "manual",
       "manual": true,
-      "id": "cebars-2026-06-27-collective-cle"
+      "id": "cebars-2026-07-10-alan-greene-band"
     },
+    {
+      "title": "4 To Go",
+      "performers": [
+        {
+          "name": "4 To Go",
+          "headliner": true
+        },
+        {
+          "name": "Pivot",
+          "headliner": false
+        }
+      ],
+      "date": "2026-07-11",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-11-4-to-go"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-15",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-15-dog-water"
+    },
+    {
+      "title": "Lady Antoinette Karaoke",
+      "performers": [
+        {
+          "name": "Lady Antoinette Karaoke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-16-lady-antoinette-karaoke"
+    },
+    {
+      "title": "CLE Collective",
+      "performers": [
+        {
+          "name": "CLE Collective",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-17-cle-collective"
+    },
+    {
+      "title": "Punk Night",
+      "performers": [
+        {
+          "name": "Punk Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-18-punk-night"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-22-dog-water"
+    },
+    {
+      "title": "Phil & Frank",
+      "performers": [
+        {
+          "name": "Phil & Frank",
+          "headliner": true
+        },
+        {
+          "name": "The Vumms",
+          "headliner": false
+        }
+      ],
+      "date": "2026-07-24",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-24-phil-frank"
+    },
+    {
+      "title": "Strange Matter",
+      "performers": [
+        {
+          "name": "Strange Matter",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-25",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-25-strange-matter"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-29",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-29-dog-water"
+    },
+    {
+      "title": "AWD",
+      "performers": [
+        {
+          "name": "AWD",
+          "headliner": true
+        },
+        {
+          "name": "Bootleg Service",
+          "headliner": false
+        },
+        {
+          "name": "Jack & The Optimists",
+          "headliner": false
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-07-31-awd"
+    },
+
+
     {
       "title": "Tricky Dick",
       "performers": [{ "name": "Tricky Dick", "headliner": true }],
@@ -3501,15 +3729,15 @@
   },
 
   {
-    "title": "Dub Club 30% Off Whiskey & Tequila",
+    "title": "Furious George",
     "performers": [
       {
-        "name": "Dub Club",
+        "name": "Furious George",
         "headliner": true
       }
     ],
-    "date": "2026-06-23",
-    "time": null,
+    "date": "2026-07-03",
+    "time": "20:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3517,7 +3745,7 @@
     "venueId": "seeing-double",
     "source": "manual",
     "manual": true,
-    "id": "seeing-double-2026-06-23-dub-club"
+    "id": "seeing-double-2026-07-03-furious-george"
   },
   {
     "title": "Chris Hatton",
@@ -3527,7 +3755,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-06-24",
+    "date": "2026-07-08",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -3536,7 +3764,45 @@
     "venueId": "seeing-double",
     "source": "manual",
     "manual": true,
-    "id": "seeing-double-2026-06-24-chris-hatton"
+    "id": "seeing-double-2026-07-08-chris-hatton"
+  },
+  {
+    "title": "The Sopranos Trivia Night",
+    "performers": [
+      {
+        "name": "The Sopranos Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-09",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-09-the-sopranos-trivia-night"
+  },
+  {
+    "title": "Eric Everett Jazz Elation",
+    "performers": [
+      {
+        "name": "Eric Everett",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-10",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-10-eric-everett"
   },
   {
     "title": "TRS Trio",
@@ -3546,7 +3812,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-06-26",
+    "date": "2026-07-11",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -3555,7 +3821,159 @@
     "venueId": "seeing-double",
     "source": "manual",
     "manual": true,
-    "id": "seeing-double-2026-06-26-trs-trio"
+    "id": "seeing-double-2026-07-11-trs-trio"
+  },
+  {
+    "title": "Dub Club 30% Off Whiskey & Tequila",
+    "performers": [
+      {
+        "name": "Dub Club",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-14",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-14-dub-club"
+  },
+  {
+    "title": "Survivor Drag Bingo",
+    "performers": [
+      {
+        "name": "Survivor Drag Bingo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-15",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-15-survivor-drag-bingo"
+  },
+  {
+    "title": "Trivia Night",
+    "performers": [
+      {
+        "name": "Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-16",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-16-trivia-night"
+  },
+  {
+    "title": "Jazz Cabbage",
+    "performers": [
+      {
+        "name": "Jazz Cabbage",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-17",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-17-jazz-cabbage"
+  },
+  {
+    "title": "Karaoke Night with Meshell",
+    "performers": [
+      {
+        "name": "Meshell",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-18",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-18-meshell"
+  },
+  {
+    "title": "Bourbon Cigar Tasting with Jack Daniel's",
+    "performers": [
+      {
+        "name": "Jack Daniel's",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-21-jack-daniel-s"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-22-chris-hatton"
+  },
+  {
+    "title": "Trivia Night",
+    "performers": [
+      {
+        "name": "Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-23",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-23-trivia-night"
   },
   {
     "title": "Qwik-Silver Trio",
@@ -3565,7 +3983,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-06-27",
+    "date": "2026-07-24",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -3574,7 +3992,311 @@
     "venueId": "seeing-double",
     "source": "manual",
     "manual": true,
-    "id": "seeing-double-2026-06-27-qwik-silver-trio"
+    "id": "seeing-double-2026-07-24-qwik-silver-trio"
+  },
+  {
+    "title": "Dustin Kines",
+    "performers": [
+      {
+        "name": "Dustin Kines",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-25",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-25-dustin-kines"
+  },
+  {
+    "title": "Italian Gin Brunch",
+    "performers": [
+      {
+        "name": "Italian Gin Brunch",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-26",
+    "time": "11:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-26-italian-gin-brunch"
+  },
+  {
+    "title": "Plants & Peens Bingo Night with Meshell",
+    "performers": [
+      {
+        "name": "Meshell",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-28-meshell"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-29",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-29-chris-hatton"
+  },
+  {
+    "title": "Trivia Night",
+    "performers": [
+      {
+        "name": "Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-30",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-30-trivia-night"
+  },
+  {
+    "title": "Big Sky",
+    "performers": [
+      {
+        "name": "Big Sky",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-31",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-07-31-big-sky"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-01-chris-hatton"
+  },
+  {
+    "title": "Dub Club 30% Off Whiskey & Tequila",
+    "performers": [
+      {
+        "name": "Dub Club",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-04-dub-club"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-05",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-05-chris-hatton"
+  },
+  {
+    "title": "Trivia Night",
+    "performers": [
+      {
+        "name": "Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-06",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-06-trivia-night"
+  },
+  {
+    "title": "Furious George",
+    "performers": [
+      {
+        "name": "Furious George",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-07-furious-george"
+  },
+  {
+    "title": "TRS Trio",
+    "performers": [
+      {
+        "name": "TRS Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-08-trs-trio"
+  },
+  {
+    "title": "Dub Club 30% Off Whiskey & Tequila",
+    "performers": [
+      {
+        "name": "Dub Club",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-11-dub-club"
+  },
+  {
+    "title": "Drag Bingo with Uncle Lulu",
+    "performers": [
+      {
+        "name": "Uncle Lulu",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-12-uncle-lulu"
+  },
+  {
+    "title": "Trivia Night",
+    "performers": [
+      {
+        "name": "Trivia Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-13",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-13-trivia-night"
+  },
+  {
+    "title": "Karaoke Night with Meshell",
+    "performers": [
+      {
+        "name": "Meshell",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "seeing-double",
+    "source": "manual",
+    "manual": true,
+    "id": "seeing-double-2026-08-15-meshell"
   },
 
       {
@@ -3640,63 +4362,6 @@
     },
 
     {
-    "title": "Justin Nyce",
-    "performers": [
-      {
-        "name": "Justin Nyce",
-        "headliner": true
-      }
-    ],
-    "date": "2026-06-27",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-06-27-justin-nyce"
-  },
-  {
-    "title": "Payton Smith",
-    "performers": [
-      {
-        "name": "Payton Smith",
-        "headliner": true
-      }
-    ],
-    "date": "2026-06-28",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-06-28-payton-smith"
-  },
-  {
-    "title": "BUNT.",
-    "performers": [
-      {
-        "name": "BUNT.",
-        "headliner": true
-      }
-    ],
-    "date": "2026-06-28",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-06-28-bunt"
-  },
-  {
     "title": "Akon",
     "performers": [
       {
@@ -3705,7 +4370,7 @@
       }
     ],
     "date": "2026-07-03",
-    "time": "22:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3716,15 +4381,73 @@
     "id": "shooters-2026-07-03-akon"
   },
   {
-    "title": "HUGEL",
+    "title": "Fireworks Viewing",
     "performers": [
       {
-        "name": "HUGEL",
+        "name": "Jinari Kemet",
+        "headliner": true
+      },
+      {
+        "name": "The Black Jackets",
+        "headliner": false
+      },
+      {
+        "name": "Apostle Jones",
+        "headliner": false
+      },
+      {
+        "name": "Just AJ",
+        "headliner": false
+      },
+      {
+        "name": "Bobby Booshay",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-04",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-07-04-jinari-kemet"
+  },
+  {
+    "title": "Just AJ",
+    "performers": [
+      {
+        "name": "Just AJ",
+        "headliner": true
+      },
+      {
+        "name": "Bobby Booshay",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-07-04-just-aj"
+  },
+  {
+    "title": "Hugel",
+    "performers": [
+      {
+        "name": "Hugel",
         "headliner": true
       }
     ],
     "date": "2026-07-05",
-    "time": "16:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3735,6 +4458,25 @@
     "id": "shooters-2026-07-05-hugel"
   },
   {
+    "title": "Cazes",
+    "performers": [
+      {
+        "name": "Cazes",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-07-11-cazes"
+  },
+  {
     "title": "Redferrin",
     "performers": [
       {
@@ -3743,7 +4485,7 @@
       }
     ],
     "date": "2026-07-12",
-    "time": "12:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3762,7 +4504,7 @@
       }
     ],
     "date": "2026-07-24",
-    "time": "22:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3773,6 +4515,25 @@
     "id": "shooters-2026-07-24-dj-pauly-d"
   },
   {
+    "title": "Austin Millz",
+    "performers": [
+      {
+        "name": "Austin Millz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-31",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-07-31-austin-millz"
+  },
+  {
     "title": "Timmy Trumpet",
     "performers": [
       {
@@ -3781,7 +4542,7 @@
       }
     ],
     "date": "2026-08-28",
-    "time": "22:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3800,7 +4561,7 @@
       }
     ],
     "date": "2026-09-12",
-    "time": "22:00",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
