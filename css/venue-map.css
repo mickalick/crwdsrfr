@@ -138,4 +138,5 @@
 }
 
 .pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-accent); transform: rotate(45deg); }
-.pin.selected { width:32px; height:32px; }
+.pin.selected { width:32px; height:32px; background-color:var(--vm-accent); }
+.pin.selected .dot-inner { background-color:var(--vm-ink); }
