@@ -100,7 +100,7 @@ async function initMap() {
 
   map = new Map(document.getElementById("map"), {
     center: { lat: 41.4993, lng: -81.6944 },
-    zoom: 12,
+    zoom: 10,
     mapId: "CRWDSRFR_VENUE_MAP",
     disableDefaultUI: true,
     zoomControl: true
