@@ -615,7 +615,13 @@ footer a {
   mask-repeat: no-repeat;
 }
 
-
+#fil {
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/filter.svg');
+  mask-image: url('../images/icons/filter.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
 
 .empty {
 	text-align: center !important;
@@ -1077,10 +1083,6 @@ input[type=text], select, textarea {
 
 	footer {
 		background-size: 35%;
-	}
-
-	.footWrap {
-		align-items: start;
 	}
 
 	#footLogo {

@@ -3,25 +3,56 @@ const TYPE_LABELS = {
   "club": "Club",
   "theater": "Theater",
   "arena": "Arena",
-  "bar": "Bar"
+  "bar": "Bar",
+  'outdoor': "Outdoor"
 };
 
-let map, markers = {}, infoWindow, activeVenueId = null, idleListener = null;
+let map, markers = {}, infoWindow, activeFilter = null, activeVenueId = null, idleListener = null;
+let showFilters = false;
+
+function toggleFilters() {
+  showFilters = !showFilters;
+  const filterRow = document.getElementById('filters');
+  filterRow.style.display = showFilters ? 'flex' : 'none';
+  document.getElementById('filterToggle').classList.toggle('active', showFilters);
+}
+
+function buildFilterChips() {
+  const wrap = document.getElementById('filters');
+  const types = [...new Set(window.VENUES.map(v => v.type))].sort();
+  wrap.innerHTML = types.map(t =>
+    `<button class="chip ${t === activeFilter ? 'active' : ''}" data-type="${t}">
+      ${TYPE_LABELS[t] || t}
+    </button>`
+  ).join('');
+  wrap.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      activeFilter = activeFilter === chip.dataset.type ? null : chip.dataset.type;
+      buildFilterChips();
+      renderList();
+      applyMapFilter();
+    });
+  });
+}
 
 function visibleVenues() {
   const q = document.getElementById('venueSearch').value.trim().toLowerCase();
-  return window.VENUES.filter(v => !q || v.name.toLowerCase().includes(q));
+  return window.VENUES.filter(v => {
+    const matchesType = !activeFilter || v.type === activeFilter;
+    const matchesSearch = !q || v.name.toLowerCase().includes(q);
+    return matchesType && matchesSearch;
+  });
 }
 
 function renderList() {
   const list = document.getElementById('venueList');
   const vs = visibleVenues().sort((a, b) => a.name.localeCompare(b.name));
-  document.getElementById('count').textContent = `${vs.length} venue${vs.length === 1 ? '' : 's'} shown`;
+  document.getElementById('count').textContent = `${vs.length} venue${vs.length === 1 ? '' : 's'}`;
 
   list.innerHTML = vs.map(v => `
     <div class="venue-item ${v.id === activeVenueId ? 'selected' : ''}" data-id="${v.id}">
       <div class="v-name">${v.name}</div>
-      <div class="v-meta">${TYPE_LABELS[v.type] || v.type} · ${v.address}</div>
+      <div class="v-meta">${v.address} <br/> ${TYPE_LABELS[v.type] || v.type}</div>
     </div>
   `).join('');
 
@@ -86,7 +117,7 @@ function selectVenue(id, fromList) {
   infoWindow.setContent(`
     <div class="iw">
       <div class="iw-title">${venue.name}</div>
-      <div class="iw-meta">${TYPE_LABELS[venue.type] || venue.type} · ${venue.address}</div>
+      <div class="iw-meta">${venue.address} <br/> ${TYPE_LABELS[venue.type] || venue.type}</div>
     </div>
   `);
 
@@ -104,7 +135,7 @@ async function initMap() {
 
   map = new Map(document.getElementById("map"), {
     center: { lat: 41.4993, lng: -81.6944 },
-    zoom: 9,
+    zoom: 10,
     mapId: "CRWDSRFR_VENUE_MAP",
     disableDefaultUI: true,
     zoomControl: true,
@@ -139,12 +170,15 @@ async function initMap() {
     markers[v.id] = marker;
   });
 
+  buildFilterChips();
   renderList();
 
   document.getElementById('venueSearch').addEventListener('input', () => {
     renderList();
     applyMapFilter();
   });
+
+  document.getElementById('filterToggle').addEventListener('click', toggleFilters);
 }
 
 // Google's loader calls this by name once the API script finishes loading.

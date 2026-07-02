@@ -7,6 +7,7 @@
 #venueMap {
   --vm-ink:#101010;
   --vm-paper:#FFF;
+  --vm-main:#62CBB8;
   --vm-accent:#F9F976;
   --vm-live:#3ddc97;
   --vm-mute:#8a8580;
@@ -15,12 +16,13 @@
 
   display:grid;
   grid-template-columns: 360px 1fr;
-  height: 40vh;
+  height: 45vh;
   min-height: 480px;
   background: var(--vm-ink);
   color: var(--vm-paper);
   font-family: 'Plus Jakarta Sans', sans-serif;
   border: 1px solid var(--vm-line);
+  margin-top: 40px;
 }
 
 #venueMap, #map {
@@ -40,7 +42,17 @@
   flex-direction: column;
   min-height: 0;
 }
-#venueMap .vm-controls { padding: 14px 20px; padding-bottom: 0;}
+#venueMap .vm-controls {
+  padding: 14px 20px;
+  padding-bottom: 0;
+}
+
+#venueMap .venueSearchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #venueMap .search {
   width: 100%;
   background: var(--vm-card);
@@ -49,6 +61,7 @@
   padding: 10px 12px;
   font-size: 13px;
   border-radius: 2px;
+  height: 40px;
 }
 #venueMap .search:focus { outline: none; border-color: var(--vm-accent); }
 
@@ -56,7 +69,30 @@
   margin-bottom: 6px !important;
 }
 
-#venueMap .filter-row { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+#venueMap .filter-toggle {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border: 1px solid var(--vm-line);
+  border-radius: 2px;
+  color: var(--vm-mute);
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .15s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#venueMap .filter-toggle:hover,
+#venueMap .filter-toggle.active {
+  border-color: var(--vm-accent);
+}
+
+#venueMap .filter-row { display:flex; gap:4px; margin-top:10px; flex-wrap:wrap; }
 #venueMap .chip {
   font-family:'Space Mono', monospace;
   font-size:10px;
@@ -113,6 +149,7 @@
   font-size:10px; color:var(--vm-mute);
   text-transform:uppercase;
   border-bottom:1px solid var(--vm-line);
+  text-align: center;
 }
 
 #venueMap .map-pane { width:100%; height:100%; }
@@ -137,15 +174,15 @@
 .pin {
   width:26px; height:26px;
   border-radius:50% 50% 50% 0;
-  background:#101010;
+  background: var(--vm-main);
   border:2px solid;
-  border-color: var(--vm-accent);
+  border-color: var(--vm-ink);
   transform: rotate(-45deg);
   display:flex; align-items:center; justify-content:center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   cursor:pointer;
 }
 
-.pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-accent); transform: rotate(45deg); }
+.pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-ink); transform: rotate(45deg); }
 .pin.selected { width:32px; height:32px; background-color:var(--vm-accent); border-color:var(--vm-ink); }
 .pin.selected .dot-inner { background-color:var(--vm-ink); }
