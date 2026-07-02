@@ -12,13 +12,15 @@
 		</script>
 
 		<meta charset="utf-8">
-		<title>Venue List | CRWDSRFR</title>
+		<title>Venues | CRWD SRFR</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/venue-map.css">
 		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
 		<script type="text/javascript">
@@ -120,8 +122,25 @@
 			<section id="venuesContent" class="page">
 				<div class="main">
 					<div class="calendarWrapper">
-						<p>Our goal is to be the only site you need to find live music and events for any venue in the greater Cleveland area.</p>
+						<p>Our goal is to be the only site you need to find live music and shows for any venue in the greater Cleveland area.</p>
 						<p>Our list of supported venues is always growing, but it's inevitable that we may have missed some. So if you aren't seeing a venue you frequent, please <a href="contact.html">let us know!</a></p>
+
+						<!--
+
+						<section id="venueMap">
+						  <aside class="vm-sidebar">
+						    <div class="vm-controls">
+						      <input class="search" id="search" type="text" placeholder="Search venues…" />
+						      <div class="filter-row" id="filters"></div>
+						    </div>
+						    <div class="venue-list" id="venueList"></div>
+						    <div class="count" id="count"></div>
+						  </aside>
+						  <div class="map-pane" id="map"></div>
+						</section>
+
+						-->
+
 						<div id="venuesList" class="flex">
 							<div class="columnTwo">
 								<h4>Currently Supported Venues:</h4>
@@ -227,6 +246,11 @@
 		
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
 		
+		<script src="/js/venues-data.js"></script>
+		<script src="/js/venue-map.js" defer></script>
+		<script async
+		  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly&libraries=marker">
+		</script>
 	</body>
 
 	</html>

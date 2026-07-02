@@ -1,0 +1,138 @@
+/* venue-map.css
+   Scoped under #venueMap so it can be linked site-wide without leaking
+   into your existing page styles. Adjust the custom properties at the
+   top to match your site's existing palette/fonts if you'd rather not
+   maintain a second type system.
+*/
+#venueMap {
+  --vm-ink:#121212;
+  --vm-paper:#f2eee3;
+  --vm-accent:#ff4d2e;
+  --vm-live:#3ddc97;
+  --vm-mute:#8a8580;
+  --vm-line: rgba(242,238,227,0.12);
+  --vm-card: #1a1a1a;
+
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  height: 70vh;
+  min-height: 480px;
+  background: var(--vm-ink);
+  color: var(--vm-paper);
+  font-family: 'Inter', sans-serif;
+  border: 1px solid var(--vm-line);
+}
+@media (max-width: 860px) {
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 90vh; }
+}
+
+#venueMap .vm-sidebar {
+  border-right: 1px solid var(--vm-line);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+#venueMap .vm-controls { padding: 14px 20px; border-bottom: 1px solid var(--vm-line); }
+#venueMap .search {
+  width: 100%;
+  background: var(--vm-card);
+  border: 1px solid var(--vm-line);
+  color: var(--vm-paper);
+  padding: 10px 12px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+#venueMap .search:focus { outline: none; border-color: var(--vm-accent); }
+
+#venueMap .filter-row { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+#venueMap .chip {
+  font-family:'Space Mono', monospace;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  padding:5px 9px;
+  border:1px solid var(--vm-line);
+  border-radius:20px;
+  color:var(--vm-mute);
+  cursor:pointer;
+  background:transparent;
+  transition: all .15s ease;
+}
+#venueMap .chip.active { border-color: var(--vm-accent); color: var(--vm-accent); }
+#venueMap .chip:hover { color: var(--vm-paper); }
+
+#venueMap .venue-list { overflow-y:auto; flex:1; min-height:0; }
+#venueMap .venue-item {
+  padding:14px 20px;
+  border-bottom:1px solid var(--vm-line);
+  cursor:pointer;
+  position:relative;
+  transition: background .15s ease;
+}
+#venueMap .venue-item:hover { background: rgba(255,255,255,0.03); }
+#venueMap .venue-item.selected { background: rgba(255,77,46,0.08); }
+#venueMap .venue-item.selected::before {
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background: var(--vm-accent);
+}
+#venueMap .v-name { font-weight:600; font-size:14px; }
+#venueMap .v-meta {
+  font-family:'Space Mono', monospace;
+  font-size:10.5px; color:var(--vm-mute);
+  margin-top:3px; text-transform:uppercase; letter-spacing:0.04em;
+}
+#venueMap .v-next { font-size:12px; margin-top:6px; color:var(--vm-paper); }
+#venueMap .v-next .dot {
+  display:inline-block; width:6px; height:6px; border-radius:50%;
+  background: var(--vm-live); margin-right:6px;
+  box-shadow: 0 0 0 0 rgba(61,220,151,.6);
+  animation: vm-pulse 2s infinite;
+}
+@keyframes vm-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(61,220,151,.5); }
+  70% { box-shadow: 0 0 0 6px rgba(61,220,151,0); }
+  100% { box-shadow: 0 0 0 0 rgba(61,220,151,0); }
+}
+#venueMap .v-empty { color: var(--vm-mute); font-style: italic; font-size:12px; margin-top:6px; }
+
+#venueMap .count {
+  padding:10px 20px;
+  font-family:'Space Mono', monospace;
+  font-size:10px; color:var(--vm-mute);
+  text-transform:uppercase;
+  border-top:1px solid var(--vm-line);
+}
+
+#venueMap .map-pane { width:100%; height:100%; }
+
+/* InfoWindow content (Google renders this outside #venueMap's DOM subtree
+   in some cases, so these rules are intentionally not scoped) */
+.iw {
+  font-family:'Inter', sans-serif; background:#1a1a1a; color:#f2eee3;
+  padding:2px 2px 6px; min-width:220px;
+}
+.iw-title { font-weight:700; font-size:14px; margin-bottom:2px; }
+.iw-meta {
+  font-family:'Space Mono', monospace; font-size:10px; color:#8a8580;
+  text-transform:uppercase; margin-bottom:8px;
+}
+.iw-event { border-top:1px solid rgba(255,255,255,0.1); padding:7px 0; font-size:12px; }
+.iw-event a { color:#ff4d2e; text-decoration:none; font-weight:600; }
+.iw-event a:hover { text-decoration:underline; }
+.iw-event .when { color:#8a8580; font-family:'Space Mono', monospace; font-size:10px; }
+
+/* Marker pin */
+.pin {
+  width:26px; height:26px;
+  border-radius:50% 50% 50% 0;
+  background:#1a1a1a;
+  border:2px solid #ff4d2e;
+  transform: rotate(-45deg);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  cursor:pointer;
+}
+.pin.has-show { border-color: #3ddc97; }
+.pin .dot-inner { width:6px; height:6px; border-radius:50%; background:#ff4d2e; transform: rotate(45deg); }
+.pin.has-show .dot-inner { background: #3ddc97; }
+.pin.selected { width:32px; height:32px; }

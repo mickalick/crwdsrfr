@@ -21,8 +21,8 @@ function updateSubHead() {
   const subHeadSpan = document.querySelector('.subHead span');
   const term = currentSearch.trim();
   subHeadSpan.textContent = term === ''
-    ? 'Showing all events for:'
-    : `Showing all events that include "${term}" for:`;
+    ? 'All shows for:'
+    : `All shows that include "${term}" for:`;
 }
 
 function applyFilters() {
