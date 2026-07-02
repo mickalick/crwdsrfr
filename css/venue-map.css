@@ -15,7 +15,7 @@
 
   display:grid;
   grid-template-columns: 360px 1fr;
-  height: 70vh;
+  height: 40vh;
   min-height: 480px;
   background: var(--vm-ink);
   color: var(--vm-paper);

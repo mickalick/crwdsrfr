@@ -63,7 +63,8 @@ function renderList() {
 
 function buildPinElement(venue, selected) {
   const pin = document.createElement('div');
-  pin.className = `pin ${venue.events.length ? 'has-show' : ''} ${selected ? 'selected' : ''}`;
+  const hasEvents = venue.events && venue.events.length > 0;
+  pin.className = `pin ${hasEvents ? 'has-show' : ''} ${selected ? 'selected' : ''}`;
   const inner = document.createElement('div');
   inner.className = 'dot-inner';
   pin.appendChild(inner);
