@@ -37,7 +37,7 @@ function visibleVenues() {
 
 function renderList() {
   const list = document.getElementById('venueList');
-  const vs = visibleVenues();
+  const vs = visibleVenues().sort((a, b) => a.name.localeCompare(b.name));
   document.getElementById('count').textContent = `${vs.length} venue${vs.length === 1 ? '' : 's'} shown`;
 
   list.innerHTML = vs.map(v => `
