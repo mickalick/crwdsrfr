@@ -23,7 +23,7 @@
   border: 1px solid var(--vm-line);
 }
 @media (max-width: 860px) {
-  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 70vh; }
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 70vh; display: flex; flex-direction: column;}
 
   #venueMap .vm-sidebar { height: 60%; }
   #venueMap .map-pane { height: 40%; }
@@ -137,5 +137,5 @@
   cursor:pointer;
 }
 
-.pin .dot-inner { width:6px; height:6px; border-radius:50%; background:#ff4d2e; transform: rotate(45deg); }
+.pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-accent); transform: rotate(45deg); }
 .pin.selected { width:32px; height:32px; }
