@@ -22,6 +22,11 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   border: 1px solid var(--vm-line);
 }
+
+#venueMap, #map {
+  transition: none !important;
+}
+
 @media (max-width: 860px) {
   #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 70vh; display: flex; flex-direction: column;}
 
@@ -138,5 +143,5 @@
 }
 
 .pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-accent); transform: rotate(45deg); }
-.pin.selected { width:32px; height:32px; background-color:var(--vm-accent); }
+.pin.selected { width:32px; height:32px; background-color:var(--vm-accent); border-color:var(--vm-ink); }
 .pin.selected .dot-inner { background-color:var(--vm-ink); }
