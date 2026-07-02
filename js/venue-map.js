@@ -6,7 +6,7 @@ const TYPE_LABELS = {
   "bar": "Bar"
 };
 
-let map, markers = {}, infoWindow, activeFilter = "all", activeVenueId = null;
+let map, markers = {}, infoWindow, activeFilter = "all", activeVenueId = null, idleListener = null;
 
 function buildFilterChips() {
   const wrap = document.getElementById('filters');
@@ -68,10 +68,35 @@ function applyMapFilter() {
   });
 }
 
+function deselectVenue() {
+  activeVenueId = null;
+  infoWindow.close();
+  Object.entries(markers).forEach(([vid, marker]) => {
+    const v = window.VENUES.find(x => x.id === vid);
+    marker.content = buildPinElement(v, false);
+  });
+  renderList();
+  map.panTo({ lat: 41.4993, lng: -81.6944 });
+  map.setZoom(9);
+}
+
 function selectVenue(id, fromList) {
+  if (id === activeVenueId) {
+    deselectVenue();
+    return;
+  }
+
   activeVenueId = id;
   const venue = window.VENUES.find(v => v.id === id);
   if (!venue) return;
+
+  infoWindow.close();
+
+  // cancel any previously pending idle open
+  if (idleListener) {
+    google.maps.event.removeListener(idleListener);
+    idleListener = null;
+  }
 
   Object.entries(markers).forEach(([vid, marker]) => {
     const v = window.VENUES.find(x => x.id === vid);
@@ -80,18 +105,19 @@ function selectVenue(id, fromList) {
 
   renderList();
 
-  if (fromList) {
-    map.panTo({ lat: venue.lat, lng: venue.lng });
-    map.setZoom(15);
-  }
-
   infoWindow.setContent(`
     <div class="iw">
       <div class="iw-title">${venue.name}</div>
       <div class="iw-meta">${TYPE_LABELS[venue.type] || venue.type} · ${venue.address}</div>
     </div>
   `);
-  infoWindow.open({ anchor: markers[id], map });
+
+  map.moveCamera({ center: { lat: venue.lat, lng: venue.lng }, zoom: 14 });
+
+  idleListener = google.maps.event.addListenerOnce(map, 'idle', () => {
+    idleListener = null;
+    infoWindow.open({ anchor: markers[id], map });
+  });
 }
 
 async function initMap() {
@@ -100,13 +126,29 @@ async function initMap() {
 
   map = new Map(document.getElementById("map"), {
     center: { lat: 41.4993, lng: -81.6944 },
-    zoom: 10,
+    zoom: 9,
     mapId: "CRWDSRFR_VENUE_MAP",
     disableDefaultUI: true,
-    zoomControl: true
+    zoomControl: true,
+    gestureHandling: 'greedy',
+    isFractionalZoomEnabled: false
   });
 
   infoWindow = new google.maps.InfoWindow();
+
+  map.addListener('dragend', () => {
+    if (idleListener) {
+      google.maps.event.removeListener(idleListener);
+      idleListener = null;
+    }
+    infoWindow.close();
+    activeVenueId = null;
+    Object.entries(markers).forEach(([vid, marker]) => {
+      const v = window.VENUES.find(x => x.id === vid);
+      marker.content = buildPinElement(v, false);
+    });
+    renderList();
+  });
 
   window.VENUES.forEach(v => {
     const marker = new AdvancedMarkerElement({
