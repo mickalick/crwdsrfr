@@ -3594,7 +3594,7 @@ async function main() {
       'cavottas-garden-bar': { name: 'Cavottas Garden Bar', url: 'https://cavottas.com/cavottas-garden-bar', eventsUrl: 'https://cavottas.com/cavottas-garden-bar', city: 'Cleveland' },
       'sound-stage-tavern': { name: 'Sound Stage Tavern', url: 'https://www.soundstagetavern.com/', eventsUrl: 'https://www.soundstagetavern.com/calendar', city: 'Wickliffe' },
       'smedleys': { name: 'Smedleys', url: 'https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/', eventsUrl: null, city: 'Cleveland' },
-      'seeing-double': { name: 'Seeing Double Speakeasy Bar', url: 'https://www.seeingdoublecle.com/', eventsUrl: 'https://www.seeingdoublecle.com/music', city: 'Cleveland' },
+      'seeing-double': { name: 'Seeing Double Speakeasy Bar', url: 'https://www.seeingdoublecle.com/', eventsUrl: 'https://www.seeingdoublecle.com/music', city: 'North Olmsted' },
       'huntington-bank-field': { name: 'Huntington Bank Field', url: 'https://huntingtonbankfield.com/', eventsUrl: 'https://huntingtonbankfield.com/events/', city: 'Cleveland' },
       'chagrin-tavern': { name: 'Chagrin Tavern on the River', url: 'https://www.chagrintavernontheriver.com/', eventsUrl: 'https://www.chagrintavernontheriver.com/events-1', city: 'Eastlake' },
       'shooters': { name: 'Shooters', url: 'https://www.shooterscleveland.com/', eventsUrl: 'https://speakeasygo.com/shooters-cleveland?vid=VN-dexa', city: 'Cleveland' },
