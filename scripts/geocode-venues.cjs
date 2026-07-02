@@ -45,8 +45,7 @@ async function geocodeAddress(address) {
   }
 
   // always re-write venues-data.js from whatever's in the registry
-  const venuesWithEvents = venues.map(v => ({ ...v, events: v.events || [] }));
-  const output = `/* venues-data.js — auto generated, do not edit by hand */\nwindow.VENUES = ${JSON.stringify(venuesWithEvents, null, 2)};\n`;
+  const output = `/* venues-data.js — auto generated, do not edit by hand */\nwindow.VENUES = ${JSON.stringify(venues, null, 2)};\n`;
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_PATH, output);
   console.log(`Wrote ${venues.length} venues to ${OUTPUT_PATH}`);

@@ -8,14 +8,6 @@ const TYPE_LABELS = {
 
 let map, markers = {}, infoWindow, activeFilter = "all", activeVenueId = null;
 
-function nextEventLine(v) {
-  if (!v.events || v.events.length === 0) {
-    return '<div class="v-empty">No events listed right now</div>';
-  }
-  const e = v.events[0];
-  return `<div class="v-next"><span class="dot"></span>${e.title} — ${e.date}</div>`;
-}
-
 function buildFilterChips() {
   const wrap = document.getElementById('filters');
   const types = ["all", ...new Set(window.VENUES.map(v => v.type))];
@@ -35,7 +27,7 @@ function buildFilterChips() {
 }
 
 function visibleVenues() {
-  const q = document.getElementById('search').value.trim().toLowerCase();
+  const q = document.getElementById('venueSearch').value.trim().toLowerCase();
   return window.VENUES.filter(v => {
     const matchesType = activeFilter === 'all' || v.type === activeFilter;
     const matchesSearch = !q || v.name.toLowerCase().includes(q);
@@ -52,7 +44,6 @@ function renderList() {
     <div class="venue-item ${v.id === activeVenueId ? 'selected' : ''}" data-id="${v.id}">
       <div class="v-name">${v.name}</div>
       <div class="v-meta">${TYPE_LABELS[v.type] || v.type} · ${v.address}</div>
-      ${nextEventLine(v)}
     </div>
   `).join('');
 
@@ -63,8 +54,7 @@ function renderList() {
 
 function buildPinElement(venue, selected) {
   const pin = document.createElement('div');
-  const hasEvents = venue.events && venue.events.length > 0;
-  pin.className = `pin ${hasEvents ? 'has-show' : ''} ${selected ? 'selected' : ''}`;
+  pin.className = `pin ${selected ? 'selected' : ''}`;
   const inner = document.createElement('div');
   inner.className = 'dot-inner';
   pin.appendChild(inner);
@@ -95,19 +85,10 @@ function selectVenue(id, fromList) {
     map.setZoom(15);
   }
 
-  const eventsHtml = venue.events.length
-    ? venue.events.map(e => `
-        <div class="iw-event">
-          <a href="${e.eventUrl}">${e.title}</a><br>
-          <span class="when">${e.date}</span>
-        </div>`).join('')
-    : `<div class="iw-event"><span class="when">No upcoming events listed</span></div>`;
-
   infoWindow.setContent(`
     <div class="iw">
       <div class="iw-title">${venue.name}</div>
       <div class="iw-meta">${TYPE_LABELS[venue.type] || venue.type} · ${venue.address}</div>
-      ${eventsHtml}
     </div>
   `);
   infoWindow.open({ anchor: markers[id], map });
@@ -141,7 +122,7 @@ async function initMap() {
   buildFilterChips();
   renderList();
 
-  document.getElementById('search').addEventListener('input', () => {
+  document.getElementById('venueSearch').addEventListener('input', () => {
     renderList();
     applyMapFilter();
   });

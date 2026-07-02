@@ -19,7 +19,7 @@
   min-height: 480px;
   background: var(--vm-ink);
   color: var(--vm-paper);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   border: 1px solid var(--vm-line);
 }
 @media (max-width: 860px) {
@@ -108,7 +108,7 @@
 /* InfoWindow content (Google renders this outside #venueMap's DOM subtree
    in some cases, so these rules are intentionally not scoped) */
 .iw {
-  font-family:'Inter', sans-serif; background:#1a1a1a; color:#f2eee3;
+  font-family:'Plus Jakarta Sans', sans-serif; background:#1a1a1a; color:#f2eee3;
   padding:2px 2px 6px; min-width:220px;
 }
 .iw-title { font-weight:700; font-size:14px; margin-bottom:2px; }
@@ -132,7 +132,6 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   cursor:pointer;
 }
-.pin.has-show { border-color: #3ddc97; }
+
 .pin .dot-inner { width:6px; height:6px; border-radius:50%; background:#ff4d2e; transform: rotate(45deg); }
-.pin.has-show .dot-inner { background: #3ddc97; }
 .pin.selected { width:32px; height:32px; }
