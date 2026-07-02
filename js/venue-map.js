@@ -6,33 +6,11 @@ const TYPE_LABELS = {
   "bar": "Bar"
 };
 
-let map, markers = {}, infoWindow, activeFilter = "all", activeVenueId = null, idleListener = null;
-
-function buildFilterChips() {
-  const wrap = document.getElementById('filters');
-  const types = ["all", ...new Set(window.VENUES.map(v => v.type))];
-  wrap.innerHTML = types.map(t =>
-    `<button class="chip ${t === activeFilter ? 'active' : ''}" data-type="${t}">
-      ${t === 'all' ? 'All' : TYPE_LABELS[t] || t}
-    </button>`
-  ).join('');
-  wrap.querySelectorAll('.chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      activeFilter = chip.dataset.type;
-      buildFilterChips();
-      renderList();
-      applyMapFilter();
-    });
-  });
-}
+let map, markers = {}, infoWindow, activeVenueId = null, idleListener = null;
 
 function visibleVenues() {
   const q = document.getElementById('venueSearch').value.trim().toLowerCase();
-  return window.VENUES.filter(v => {
-    const matchesType = activeFilter === 'all' || v.type === activeFilter;
-    const matchesSearch = !q || v.name.toLowerCase().includes(q);
-    return matchesType && matchesSearch;
-  });
+  return window.VENUES.filter(v => !q || v.name.toLowerCase().includes(q));
 }
 
 function renderList() {
@@ -161,7 +139,6 @@ async function initMap() {
     markers[v.id] = marker;
   });
 
-  buildFilterChips();
   renderList();
 
   document.getElementById('venueSearch').addEventListener('input', () => {
