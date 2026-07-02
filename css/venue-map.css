@@ -23,7 +23,10 @@
   border: 1px solid var(--vm-line);
 }
 @media (max-width: 860px) {
-  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 90vh; }
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 70vh; }
+
+  #venueMap .vm-sidebar { height: 60%; }
+  #venueMap .map-pane { height: 40%; }
 }
 
 #venueMap .vm-sidebar {
