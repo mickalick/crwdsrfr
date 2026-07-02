@@ -5,8 +5,8 @@
    maintain a second type system.
 */
 #venueMap {
-  --vm-ink:#121212;
-  --vm-paper:#f2eee3;
+  --vm-ink:#101010;
+  --vm-paper:#FFF;
   --vm-accent:#F9F976;
   --vm-live:#3ddc97;
   --vm-mute:#8a8580;
@@ -23,7 +23,10 @@
   border: 1px solid var(--vm-line);
 }
 @media (max-width: 860px) {
-  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 90vh; }
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 70vh; }
+
+  #venueMap .vm-sidebar { height: 60%; }
+  #venueMap .map-pane { height: 40%; }
 }
 
 #venueMap .vm-sidebar {
@@ -125,8 +128,9 @@
 .pin {
   width:26px; height:26px;
   border-radius:50% 50% 50% 0;
-  background:#1a1a1a;
-  border:2px solid #ff4d2e;
+  background:#101010;
+  border:2px solid;
+  border-color: var(--vm-accent);
   transform: rotate(-45deg);
   display:flex; align-items:center; justify-content:center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
