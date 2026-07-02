@@ -91,7 +91,7 @@ window.VENUES = [
   {
     "id": "cain-park",
     "name": "Cain Park",
-    "type": "amphitheater",
+    "type": "outdoor",
     "address": "14591 Superior Rd, Cleveland Heights, OH 44118",
     "lat": 41.5071297,
     "lng": -81.560671
@@ -131,7 +131,7 @@ window.VENUES = [
   {
     "id": "jacobs-pavilion",
     "name": "Jacobs Pavilion",
-    "type": "amphitheater",
+    "type": "outdoor",
     "address": "2014 Sycamore St, Cleveland, OH 44113",
     "lat": 41.4962961,
     "lng": -81.7030652
@@ -155,7 +155,7 @@ window.VENUES = [
   {
     "id": "fwd-nightclub",
     "name": "FWD Day + Nightclub",
-    "type": "nightclub",
+    "type": "club",
     "address": "1176 Front Ave, Cleveland, OH 44113",
     "lat": 41.4999356,
     "lng": -81.7080354
@@ -251,7 +251,7 @@ window.VENUES = [
   {
     "id": "hofbrauhaus-cleveland",
     "name": "Hofbrauhaus",
-    "type": "bar",
+    "type": "music-hall",
     "address": "1550 Chester Ave, Cleveland, OH 44114",
     "lat": 41.5028927,
     "lng": -81.68110709999999
@@ -267,7 +267,7 @@ window.VENUES = [
   {
     "id": "coda",
     "name": "CODA",
-    "type": "bar",
+    "type": "music-hall",
     "address": "2247 Professor Ave, Cleveland, OH 44113",
     "lat": 41.4816052,
     "lng": -81.6863691
@@ -283,7 +283,7 @@ window.VENUES = [
   {
     "id": "the-sixty6",
     "name": "The Sixty 6",
-    "type": "bar",
+    "type": "music-hall",
     "address": "1966 E 66th St, Cleveland, OH 44103",
     "lat": 41.5056042,
     "lng": -81.6448116
@@ -307,7 +307,7 @@ window.VENUES = [
   {
     "id": "bent-mace",
     "name": "Bent Mace",
-    "type": "bar",
+    "type": "music-hall",
     "address": "1709 Alvin Ave, Cleveland, OH 44109",
     "lat": 41.4267869,
     "lng": -81.6931464
@@ -363,7 +363,7 @@ window.VENUES = [
   {
     "id": "cavottas-garden-bar",
     "name": "Cavottas Garden Bar",
-    "type": "bar",
+    "type": "outdoor",
     "address": "19603 Nottingham Rd, Cleveland, OH 44110",
     "lat": 41.570671,
     "lng": -81.54166579999999
@@ -419,7 +419,7 @@ window.VENUES = [
   {
     "id": "crobar",
     "name": "crobar",
-    "type": "nightclub",
+    "type": "club",
     "address": "3244 Saint Clair Ave NE, Cleveland, OH 44114",
     "lat": 41.5135601,
     "lng": -81.66972849999999
@@ -435,7 +435,7 @@ window.VENUES = [
   {
     "id": "house-of-blues",
     "name": "House of Blues",
-    "type": "music-hall",
+    "type": "theater",
     "address": "308 Euclid Ave, Cleveland, OH 44114",
     "lat": 41.4990907,
     "lng": -81.69064259999999
@@ -443,7 +443,7 @@ window.VENUES = [
   {
     "id": "blossom-music-center",
     "name": "Blossom Music Center",
-    "type": "amphitheater",
+    "type": "outdoor",
     "address": "1145 W Steels Corners Rd, Cuyahoga Falls, OH 44223",
     "lat": 41.1860594,
     "lng": -81.5520051
