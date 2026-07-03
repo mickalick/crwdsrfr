@@ -4,11 +4,13 @@ const TYPE_LABELS = {
   "theater": "Theater",
   "arena": "Arena",
   "bar": "Bar",
-  'outdoor': "Outdoor"
+  "outdoor": "Outdoor"
 };
 
-let map, markers = {}, infoWindow, activeFilter = null, activeVenueId = null, idleListener = null;
+let map, markers = {}, infoWindow, activeFilter = null, activeVenueId = null;
 let showFilters = false;
+let panAnimationId = null;
+let currentCenter = null; // our own source of truth while animating, avoids querying a lagging map
 
 function toggleFilters() {
   showFilters = !showFilters;
@@ -75,6 +77,14 @@ function buildPinElement(venue, selected) {
   return wrap;
 }
 
+// Rebuilds every marker's pin content, highlighting `selectedId` (or none, if null).
+function refreshPins(selectedId) {
+  Object.entries(markers).forEach(([vid, marker]) => {
+    const v = window.VENUES.find(x => x.id === vid);
+    marker.content = buildPinElement(v, vid === selectedId);
+  });
+}
+
 function applyMapFilter() {
   const visibleIds = new Set(visibleVenues().map(v => v.id));
   Object.entries(markers).forEach(([id, marker]) => {
@@ -85,10 +95,7 @@ function applyMapFilter() {
 function deselectVenue(resetView = true) {
   activeVenueId = null;
   infoWindow.close();
-  Object.entries(markers).forEach(([vid, marker]) => {
-    const v = window.VENUES.find(x => x.id === vid);
-    marker.content = buildPinElement(v, false);
-  });
+  refreshPins(null);
   renderList();
 
   if (resetView) {
@@ -96,9 +103,6 @@ function deselectVenue(resetView = true) {
     map.setZoom(9);
   }
 }
-
-let panAnimationId = null;
-let currentCenter = null; // our own source of truth while animating, avoids querying a lagging map
 
 function smoothPanTo(map, target, duration = 450) {
   if (panAnimationId) {
@@ -139,12 +143,7 @@ function selectVenue(id, fromList) {
   if (!venue) return;
 
   infoWindow.close(); // force a clean rebind to the new anchor instead of reusing stale state
-
-  Object.entries(markers).forEach(([vid, marker]) => {
-    const v = window.VENUES.find(x => x.id === vid);
-    marker.content = buildPinElement(v, vid === id);
-  });
-
+  refreshPins(id);
   renderList();
 
   infoWindow.setContent(`
@@ -167,26 +166,11 @@ async function initMap() {
     center: { lat: 41.4993, lng: -81.6944 },
     zoom: 9,
     mapId: "CRWDSRFR_VENUE_MAP",
-    renderingType: google.maps.RenderingType.RASTER, // temporary diagnostic
     disableDefaultUI: true,
     zoomControl: true,
     gestureHandling: 'greedy',
     isFractionalZoomEnabled: false
   });
-
-  ['center_changed', 'zoom_changed', 'bounds_changed', 'dragstart', 'drag', 'dragend', 'idle', 'resize'].forEach(evt => {
-    map.addListener(evt, () => {
-      const c = map.getCenter();
-      const z = map.getZoom();
-      console.log(`[${performance.now().toFixed(0)}ms] ${evt}`, c ? `${c.lat().toFixed(5)}, ${c.lng().toFixed(5)}` : '', 'zoom:', z);
-    });
-  });
-
-  const mapDiv = document.getElementById('map');
-  new ResizeObserver(entries => {
-    const r = entries[0].contentRect;
-    console.log(`[${performance.now().toFixed(0)}ms] map container resized`, `${r.width.toFixed(1)}x${r.height.toFixed(1)}`);
-  }).observe(mapDiv);
 
   infoWindow = new google.maps.InfoWindow({
     disableAutoPan: true // we handle panning ourselves in selectVenue; letting both run causes competing animations
@@ -195,10 +179,7 @@ async function initMap() {
   map.addListener('dragend', () => {
     infoWindow.close();
     activeVenueId = null;
-    Object.entries(markers).forEach(([vid, marker]) => {
-      const v = window.VENUES.find(x => x.id === vid);
-      marker.content = buildPinElement(v, false);
-    });
+    refreshPins(null);
     renderList();
   });
 
