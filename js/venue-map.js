@@ -62,12 +62,17 @@ function renderList() {
 }
 
 function buildPinElement(venue, selected) {
+  const wrap = document.createElement('div');
+  wrap.className = `pin-anchor ${selected ? 'selected' : ''}`;
+
   const pin = document.createElement('div');
-  pin.className = `pin ${selected ? 'selected' : ''}`;
+  pin.className = 'pin';
   const inner = document.createElement('div');
   inner.className = 'dot-inner';
   pin.appendChild(inner);
-  return pin;
+  wrap.appendChild(pin);
+
+  return wrap;
 }
 
 function applyMapFilter() {
@@ -77,7 +82,7 @@ function applyMapFilter() {
   });
 }
 
-function deselectVenue() {
+function deselectVenue(resetView = true) {
   activeVenueId = null;
   infoWindow.close();
   Object.entries(markers).forEach(([vid, marker]) => {
@@ -85,13 +90,47 @@ function deselectVenue() {
     marker.content = buildPinElement(v, false);
   });
   renderList();
-  map.panTo({ lat: 41.4993, lng: -81.6944 });
-  map.setZoom(9);
+
+  if (resetView) {
+    map.panTo({ lat: 41.4993, lng: -81.6944 });
+    map.setZoom(9);
+  }
+}
+
+let panAnimationId = null;
+let currentCenter = null; // our own source of truth while animating, avoids querying a lagging map
+
+function smoothPanTo(map, target, duration = 450) {
+  if (panAnimationId) {
+    cancelAnimationFrame(panAnimationId);
+    panAnimationId = null;
+  }
+
+  const c = map.getCenter();
+  const start = currentCenter || { lat: c.lat(), lng: c.lng() };
+  const dLat = target.lat - start.lat, dLng = target.lng - start.lng;
+  const startTime = performance.now();
+
+  return new Promise(resolve => {
+    function step(now) {
+      const t = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      currentCenter = { lat: start.lat + dLat * eased, lng: start.lng + dLng * eased };
+      map.setCenter(currentCenter);
+      if (t < 1) {
+        panAnimationId = requestAnimationFrame(step);
+      } else {
+        panAnimationId = null;
+        resolve();
+      }
+    }
+    panAnimationId = requestAnimationFrame(step);
+  });
 }
 
 function selectVenue(id, fromList) {
   if (id === activeVenueId) {
-    deselectVenue();
+    deselectVenue(fromList);
     return;
   }
 
@@ -99,13 +138,7 @@ function selectVenue(id, fromList) {
   const venue = window.VENUES.find(v => v.id === id);
   if (!venue) return;
 
-  infoWindow.close();
-
-  // cancel any previously pending idle open
-  if (idleListener) {
-    google.maps.event.removeListener(idleListener);
-    idleListener = null;
-  }
+  infoWindow.close(); // force a clean rebind to the new anchor instead of reusing stale state
 
   Object.entries(markers).forEach(([vid, marker]) => {
     const v = window.VENUES.find(x => x.id === vid);
@@ -121,12 +154,9 @@ function selectVenue(id, fromList) {
     </div>
   `);
 
-  map.moveCamera({ center: { lat: venue.lat, lng: venue.lng }, zoom: 14 });
-
-  idleListener = google.maps.event.addListenerOnce(map, 'idle', () => {
-    idleListener = null;
-    infoWindow.open({ anchor: markers[id], map });
-  });
+  infoWindow.open({ anchor: markers[id], map });
+  if (map.getZoom() !== 14) map.setZoom(14);
+  smoothPanTo(map, { lat: venue.lat, lng: venue.lng });
 }
 
 async function initMap() {
@@ -137,19 +167,32 @@ async function initMap() {
     center: { lat: 41.4993, lng: -81.6944 },
     zoom: 9,
     mapId: "CRWDSRFR_VENUE_MAP",
+    renderingType: google.maps.RenderingType.RASTER, // temporary diagnostic
     disableDefaultUI: true,
     zoomControl: true,
     gestureHandling: 'greedy',
     isFractionalZoomEnabled: false
   });
 
-  infoWindow = new google.maps.InfoWindow();
+  ['center_changed', 'zoom_changed', 'bounds_changed', 'dragstart', 'drag', 'dragend', 'idle', 'resize'].forEach(evt => {
+    map.addListener(evt, () => {
+      const c = map.getCenter();
+      const z = map.getZoom();
+      console.log(`[${performance.now().toFixed(0)}ms] ${evt}`, c ? `${c.lat().toFixed(5)}, ${c.lng().toFixed(5)}` : '', 'zoom:', z);
+    });
+  });
+
+  const mapDiv = document.getElementById('map');
+  new ResizeObserver(entries => {
+    const r = entries[0].contentRect;
+    console.log(`[${performance.now().toFixed(0)}ms] map container resized`, `${r.width.toFixed(1)}x${r.height.toFixed(1)}`);
+  }).observe(mapDiv);
+
+  infoWindow = new google.maps.InfoWindow({
+    disableAutoPan: true // we handle panning ourselves in selectVenue; letting both run causes competing animations
+  });
 
   map.addListener('dragend', () => {
-    if (idleListener) {
-      google.maps.event.removeListener(idleListener);
-      idleListener = null;
-    }
     infoWindow.close();
     activeVenueId = null;
     Object.entries(markers).forEach(([vid, marker]) => {

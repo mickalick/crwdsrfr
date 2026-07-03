@@ -60,7 +60,7 @@
   color: var(--vm-paper);
   padding: 10px 12px;
   font-size: 13px;
-  border-radius: 2px;
+  border-radius: 2px 0 0 2px;
   height: 40px;
 }
 #venueMap .search:focus { outline: none; border-color: var(--vm-accent); }
@@ -76,7 +76,7 @@
   letter-spacing: 0.05em;
   padding: 5px 12px;
   border: 1px solid var(--vm-line);
-  border-radius: 2px;
+  border-radius: 0 2px 2px 0;
   color: var(--vm-mute);
   background: transparent;
   cursor: pointer;
@@ -146,7 +146,7 @@
 #venueMap .count {
   padding:10px 20px;
   font-family:'Space Mono', monospace;
-  font-size:10px; color:var(--vm-mute);
+  font-size:12px; color: var(--vm-mute);
   text-transform:uppercase;
   border-bottom:1px solid var(--vm-line);
   text-align: center;
@@ -171,18 +171,36 @@
 .iw-event .when { color:#8a8580; font-family:'Space Mono', monospace; font-size:10px; }
 
 /* Marker pin */
+.pin-anchor {
+  position: relative;
+  width: 26px;
+  height: 31px; /* 26 * 1.2071 */
+  cursor: pointer;
+}
+.pin-anchor.selected {
+  width: 32px;
+  height: 39px; /* 32 * 1.2071 */
+}
+
 .pin {
-  width:26px; height:26px;
-  border-radius:50% 50% 50% 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
   background: var(--vm-main);
-  border:2px solid;
+  border: 2px solid;
   border-color: var(--vm-ink);
   transform: rotate(-45deg);
-  display:flex; align-items:center; justify-content:center;
+  transform-origin: center center;
+  display: flex; align-items: center; justify-content: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  cursor:pointer;
+}
+.pin-anchor.selected .pin {
+  height: 32px;
+  background-color: var(--vm-accent);
 }
 
 .pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-ink); transform: rotate(45deg); }
-.pin.selected { width:32px; height:32px; background-color:var(--vm-accent); border-color:var(--vm-ink); }
-.pin.selected .dot-inner { background-color:var(--vm-ink); }
+.pin-anchor.selected .dot-inner { background-color: var(--vm-ink); }
