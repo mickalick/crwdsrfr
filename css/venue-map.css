@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 860px) {
-  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 80vh; display: flex; flex-direction: column;}
+  #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 78vh; display: flex; flex-direction: column;}
 
   #venueMap .vm-sidebar { height: 60% !important; }
   #venueMap .map-pane { height: 40% !important; }
