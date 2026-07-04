@@ -73,7 +73,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 5px 12px;
-  border: 1px solid var(--vm-line);
+  border: 1px solid var(--vm-accent);
   border-radius: 0 2px 2px 0;
   color: var(--vm-mute);
   background: transparent;
@@ -85,9 +85,12 @@
   align-items: center;
 }
 
-#venueMap .filter-toggle:hover,
 #venueMap .filter-toggle.active {
-  border-color: var(--vm-accent);
+  background-color: var(--vm-accent);
+}
+
+#venueMap .filter-toggle.active #fil {
+  background-color: var(--vm-ink);
 }
 
 #venueMap .filter-row { display:flex; gap:4px; margin-top:10px; flex-wrap:wrap; }
