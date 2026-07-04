@@ -105,13 +105,14 @@ function deselectVenue(resetView = true) {
 }
 
 function smoothPanTo(map, target, duration = 450) {
+  const wasAnimating = panAnimationId !== null;
   if (panAnimationId) {
     cancelAnimationFrame(panAnimationId);
     panAnimationId = null;
   }
 
   const c = map.getCenter();
-  const start = currentCenter || { lat: c.lat(), lng: c.lng() };
+  const start = wasAnimating && currentCenter ? currentCenter : { lat: c.lat(), lng: c.lng() };
   const dLat = target.lat - start.lat, dLng = target.lng - start.lng;
   const startTime = performance.now();
 

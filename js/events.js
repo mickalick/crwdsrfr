@@ -52,7 +52,7 @@ function resetSearch() {
   const input = document.getElementById('search');
   input.value = '';
   currentSearch = '';
-  document.querySelector('.searchWrapper').classList.remove('hasValue');
+  document.getElementById('searchWrapper').classList.remove('hasValue');
   applyFilters();
   input.focus();
 }
@@ -191,7 +191,7 @@ loadEvents();
 
 document.getElementById('search').addEventListener('input', function() {
   currentSearch = this.value;
-  document.querySelector('.searchWrapper').classList.toggle('hasValue', currentSearch.trim() !== '');
+  document.getElementById('searchWrapper').classList.toggle('hasValue', currentSearch.trim() !== '');
   applyFilters();
 });
 
