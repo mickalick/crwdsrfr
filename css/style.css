@@ -484,7 +484,8 @@ footer a {
 
 .venue {
 	width: 25%;
-  margin-top: 16px;
+  margin: 16px 0;
+  padding-bottom: 16px;
 }
 
 .venueEvents {
