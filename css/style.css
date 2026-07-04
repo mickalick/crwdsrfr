@@ -334,7 +334,7 @@ footer a {
 	margin-right: 60px;
 }
 
-.searchWrapper {
+#searchWrapper {
 	position: relative;
 	display: inline-flex;
 	width: 52%;
@@ -351,6 +351,10 @@ footer a {
   font-optical-sizing: auto;
   font-size: 16px;
   padding-right: 60px;
+}
+
+#searchWrapper.hasValue #search {
+	border: 3px solid #F9F976;
 }
 
 #searchGo {
@@ -370,11 +374,11 @@ footer a {
 	display: none;
 }
 
-.searchWrapper.hasValue #searchGo {
+#searchWrapper.hasValue #searchGo {
 	display: none;
 }
 
-.searchWrapper.hasValue #searchReset {
+#searchWrapper.hasValue #searchReset {
 	height: 100%;
   position: absolute;
   right: 16px;
@@ -474,9 +478,8 @@ footer a {
 .venueCard {
 	width: 100%;
 	display: flex;
-	padding-bottom: 16px;
 	border-bottom: 1px solid #ADADAD;
-	margin-bottom: 24px;
+	margin-bottom: 16px;
 }
 
 .venue {
@@ -492,7 +495,7 @@ footer a {
 	margin-bottom: 16px;
 	width: 100%;
 	display: flex;
-	padding: 16px 24px 24px 16px;
+	padding: 16px;
 }
 
 .eventInfo {
@@ -538,6 +541,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 8px;
 }
 
 .ticketLink a {
@@ -600,7 +604,7 @@ footer a {
 }
 
 #clr {
-	background-color: #62CBB8;
+	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/clear.svg');
   mask-image: url('../images/icons/clear.svg');
   mask-size: contain;
@@ -675,17 +679,17 @@ input[type=text], select, textarea {
   color: #FCFCFC;
 }
 
-#promo {
+#sponsors {
 	min-height: 5vh;
 	text-align: center;
 }
 
-#promo .main {
-	background-color: #FCFCFC;
+#sponsors .main {
+	background-color: #101010;
 }
 
-#promo .main p {
-	color: #101010;
+#sponsors .main p {
+	color: #999;
 }
 
 .flatpickr-calendar .open {
@@ -972,7 +976,7 @@ input[type=text], select, textarea {
 		text-align: center;
 	}
 
-	.searchWrapper {
+	#searchWrapper {
 		width: 100%;
 	}
 
