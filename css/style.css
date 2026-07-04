@@ -418,7 +418,7 @@ footer a {
 	position: sticky;
 	top: 0; /* adjust if you have a fixed header above this — set to that header's height */
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 	border-bottom: 5px solid #F9F976;
 	margin-bottom: 40px;
@@ -460,7 +460,7 @@ footer a {
 }
 
 #navArrows li {
-	margin:0 20px;
+	margin:0 16px;
 	color: #F9F976;
 	width: 60px;
 	height: 100%;
