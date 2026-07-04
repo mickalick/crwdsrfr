@@ -702,27 +702,58 @@ input[type=text], select, textarea {
 
 .flatpickr-calendar {
 	z-index: 9999;
-	background: #F9F976 !important;
-	color: #101010 !important;
+	background: #101010 !important;
+	color: #F9F976 !important;
 	box-shadow: 1px 0 0 #101010,-1px 0 0 #101010,0 1px 0 #101010,0 -1px 0 #101010,0 3px 13px rgba(0,0,0,0.1) !important;
+	border: 1px solid #F9F976 !important;
 }
 
 .flatpickr-calendar.arrowTop::before {
-  border-bottom-color: #101010 !important;
+  border-bottom-color: #F9F976 !important;
 }
 
 .flatpickr-calendar.arrowTop::after {
   border-bottom-color: #F9F976 !important;
 }
 
-.flatpickr-day.selected {
-	background: #62CBB8 !important;
-	border-color: #62CBB8 !important;
+.flatpickr-months {
+	background: #F9F976 !important;
+}
+
+.flatpickr-months .flatpickr-month {
 	color: #101010 !important;
 }
 
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
+	color: #101010 !important;
+	fill: #101010 !important;
+}
+
+.flatpickr-day {
+	color: #FCFCFC !important;
+}
+
+.flatpickr-day.prevMonthDay, .flatpickr-day.nextMonthDay {
+	color: rgba(252,252,252,0.5) !important;
+}
+
 .flatpickr-day.today {
-	border-color: #101010 !important;
+	border-color: #62CBB8 !important;
+}
+
+.flatpickr-day.selected {
+	background: rgba(249,249,118,0.4) !important;
+	border-color: #F9F976 !important;
+	color: #F9F976 !important;
+}
+
+.flatpickr-weekdays {
+	background: #F9F976 !important;
+	margin-bottom: 4px !important;
+}
+
+span.flatpickr-weekday {
+	color: rgba(16,16,16,0.54) !important;
 }
 
 .contactForm {
@@ -858,7 +889,7 @@ input[type=text], select, textarea {
 	}
 
 	.flatpickr-day:hover {
-		background: #F9F976 !important;
+		background: rgba(249,249,118,0.54) !important;
 		border-color: #F9F976 !important;
 		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
 	}
