@@ -702,31 +702,26 @@ input[type=text], select, textarea {
 
 .flatpickr-calendar {
 	z-index: 9999;
-	background: #101010 !important;
-	color: #F9F976 !important;
+	background: #222222 !important;
 	box-shadow: 1px 0 0 #101010,-1px 0 0 #101010,0 1px 0 #101010,0 -1px 0 #101010,0 3px 13px rgba(0,0,0,0.1) !important;
-	border: 1px solid #F9F976 !important;
+	border: 1px solid #101010 !important;
 }
 
-.flatpickr-calendar.arrowTop::before {
-  border-bottom-color: #F9F976 !important;
-}
-
-.flatpickr-calendar.arrowTop::after {
-  border-bottom-color: #F9F976 !important;
+.flatpickr-calendar.arrowTop::before, .flatpickr-calendar.arrowTop::after {
+  display: none;
 }
 
 .flatpickr-months {
-	background: #F9F976 !important;
+	background: #101010 !important;
 }
 
 .flatpickr-months .flatpickr-month {
-	color: #101010 !important;
+	color: #F9F976 !important;
 }
 
 .flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month {
-	color: #101010 !important;
-	fill: #101010 !important;
+	color: #F9F976 !important;
+	fill: #F9F976 !important;
 }
 
 .flatpickr-day {
@@ -748,12 +743,21 @@ input[type=text], select, textarea {
 }
 
 .flatpickr-weekdays {
-	background: #F9F976 !important;
+	background: #101010 !important;
 	margin-bottom: 4px !important;
 }
 
 span.flatpickr-weekday {
-	color: rgba(16,16,16,0.54) !important;
+	color: rgba(249,249,118,0.54) !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months option {
+	color: #101010 !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month .flatpickr-monthDropdown-months option {
+  transition: none !important;
 }
 
 .contactForm {
@@ -892,6 +896,11 @@ span.flatpickr-weekday {
 		background: rgba(249,249,118,0.54) !important;
 		border-color: #F9F976 !important;
 		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+	}
+
+	.flatpickr-months .flatpickr-prev-month:hover svg, .flatpickr-months .flatpickr-next-month:hover svg {
+		color: rgba(249,249,118,0.6) !important;
+		fill: rgba(249,249,118,0.6) !important;
 	}
 
 	.contactButton:hover {
