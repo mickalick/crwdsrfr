@@ -223,6 +223,10 @@ header{
 	background-color: inherit;
 }
 
+.navItem small {
+		font-size: 12px;
+	}
+
 .navLink{
 	color:#101010;
 	box-sizing:border-box;
@@ -633,7 +637,7 @@ footer a {
 }
 
 #fil {
-	background-color: #F9F976;
+	background-color: #FFF;
 	-webkit-mask-image: url('../images/icons/filter.svg');
   mask-image: url('../images/icons/filter.svg');
   mask-size: contain;
@@ -880,12 +884,9 @@ span.flatpickr-weekday {
 		background-color: #101010;
 	}
 
-	.icon:hover{
-		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
-	}
-
 	#clr:hover {
 		background-color: #FF6262;
+		box-shadow: none !important;
 	}
 
 	figure:hover, figure a:hover{
@@ -894,9 +895,14 @@ span.flatpickr-weekday {
 	}
 
 	.flatpickr-day:hover {
-		background: rgba(249,249,118,0.54) !important;
+		background: rgba(249,249,118,0.20) !important;
 		border-color: #F9F976 !important;
 		box-shadow: inset 0 0 0 100px rgba(0,0,0,.2);
+	}
+
+	.flatpickr-months .flatpickr-prev-month:hover svg, .flatpickr-months .flatpickr-next-month:hover svg {
+		color: rgba(249,249,118,0.6) !important;
+		fill: rgba(249,249,118,0.6) !important;
 	}
 
 	.flatpickr-months .flatpickr-prev-month:hover svg, .flatpickr-months .flatpickr-next-month:hover svg {

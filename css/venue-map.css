@@ -73,7 +73,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 5px 12px;
-  border: 1px solid var(--vm-accent);
+  border: 1px solid var(--vm-line);
   border-radius: 0 2px 2px 0;
   color: var(--vm-mute);
   background: transparent;
@@ -85,12 +85,12 @@
   align-items: center;
 }
 
-#venueMap .filter-toggle.active {
-  background-color: var(--vm-accent);
+#venueMap .filter-toggle:hover #fil, #venueMap .filter-toggle.active #fil {
+  background: var(--vm-accent) !important;
 }
 
-#venueMap .filter-toggle.active #fil {
-  background-color: var(--vm-ink);
+#venueMap .filter-toggle.active {
+  border-color: var(--vm-accent);
 }
 
 #venueMap .filter-row { display:flex; gap:4px; margin-top:10px; flex-wrap:wrap; }
@@ -102,13 +102,13 @@
   padding:5px 9px;
   border:1px solid var(--vm-line);
   border-radius:20px;
-  color:var(--vm-mute);
+  color:var(--vm-paper);
   cursor:pointer;
   background:transparent;
   transition: all .15s ease;
 }
-#venueMap .chip.active { border-color: var(--vm-accent); color: var(--vm-accent); }
-#venueMap .chip:hover { color: var(--vm-paper); }
+#venueMap .chip:hover { color: var(--vm-paper); border-color: var(--vm-main); }
+#venueMap .chip.active { border-color: var(--vm-accent) !important; color: var(--vm-accent); }
 
 #venueMap .venue-list { overflow-y:auto; flex:1; min-height:0; }
 #venueMap .venue-item {
@@ -147,7 +147,7 @@
 #venueMap .count {
   padding:10px 20px;
   font-family:'Space Mono', monospace;
-  font-size:12px; color: var(--vm-mute);
+  font-size:12px; color: var(--vm-paper);
   text-transform:uppercase;
   border-bottom:1px solid var(--vm-line);
   text-align: center;
