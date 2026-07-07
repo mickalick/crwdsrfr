@@ -196,7 +196,7 @@ header{
 	margin-right: 30px;
 	background: #62CBB8;
 	width: 25%;
-	margin-top: 28px;
+	margin-top: 26px;
 }
 
 #menuNav.open {
@@ -1064,7 +1064,7 @@ span.flatpickr-weekday {
 	}
 
 	#logo{
-		margin-left: 25px;
+		margin-left: 20px;
 		padding-top: 0;
 		width: 120px;
 	}
