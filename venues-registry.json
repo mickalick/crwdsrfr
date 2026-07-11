@@ -336,6 +336,30 @@
     "lng": -81.6094664
   },
   {
+    "id": "forest-city-brewery",
+    "name": "Forest City Brewery",
+    "type": "brewery",
+    "address": "2135 Columbus Rd, Cleveland, OH 44113",
+    "lat": 41.4832518,
+    "lng": -81.70015769999999
+  },
+  {
+    "id": "spirits-willoughby",
+    "name": "Spirits in Willoughby",
+    "type": "bar",
+    "address": "3872 Erie St, Willoughby, OH 44094",
+    "lat": 41.6445782,
+    "lng": -81.4067774
+  },
+  {
+    "id": "the-grove",
+    "name": "The Grove Amphitheatre",
+    "type": "outdoor",
+    "address": "425 North Commons Blvd, Mayfield Village, OH 44143",
+    "lat": 41.5615684,
+    "lng": -81.4408481
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "type": "bar",
@@ -446,5 +470,21 @@
     "address": "1145 W Steels Corners Rd, Cuyahoga Falls, OH 44223",
     "lat": 41.1860594,
     "lng": -81.5520051
+  },
+  {
+    "id": "bar-32",
+    "name": "Bar 32",
+    "type": "bar",
+    "address": "100 LakeSide Ave East, Floor 32, Cleveland, OH 44114",
+    "lat": 41.5029144,
+    "lng": -81.6955564
+  },
+  {
+    "id": "local-bar-strongsville",
+    "name": "The Local Bar Strongsville",
+    "type": "bar",
+    "address": "14751 Pearl Rd, Strongsville, OH 44136",
+    "lat": 41.3076835,
+    "lng": -81.8333123
   }
 ]
