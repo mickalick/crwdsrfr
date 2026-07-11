@@ -24,6 +24,21 @@ function toLocalDateStr(date) {
   return `${y}-${m}-${d}`;
 }
 
+// Shared slug helper — used across all fetchers to build event ids.
+// Consolidated from ~35 near-identical inline copies (see cleanup pass, July 2026).
+function slugify(str) {
+  return (str ?? '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// Shared 3-letter month map — several fetchers had this exact object inline.
+// NOTE: some fetchers still declare their own monthMap with extra/different keys
+// (full month names, or additional entries) — those were left untouched rather
+// than risk changing their parsing behavior blind. See cleanup notes.
+const MONTH_ABBR = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
+
 // ─── Fetchers ─────────────────────────────────────────────────────────────────
 
 async function fetchRocketArena() {
@@ -43,7 +58,7 @@ async function fetchRocketArena() {
       }));
 
       const headliner = performers.find(p => p.headliner)?.name ?? event.title;
-      const slug = headliner.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugify(headliner);
 
       return {
         id: `rocket-arena-${date}-${slug}`,
@@ -137,7 +152,7 @@ async function fetchGrogShop() {
         return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
       }
 
-      const slug = headlinerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugify(headlinerName);
 
       events.push({
         id: `grog-shop-${date}-${slug}`,
@@ -209,7 +224,7 @@ async function fetchAgora() {
 
       const ticketUrl = ticketEl.attr('href') ?? null;
       const eventUrl = titleEl.attr('href') ?? null;
-      const slug = headlinerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugify(headlinerName);
 
       events.push({
         id: `the-agora-${date}-${slug}`,
@@ -287,7 +302,7 @@ async function fetchBeachland() {
       const performers = [{ name: headliner, headliner: true }];
       if (support) performers.push({ name: support, headliner: false });
 
-      const slug = headliner.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugify(headliner);
       const fullUrl = relativeUrl ? `https://www.beachlandballroom.com${relativeUrl}` : null;
 
       events.push({
@@ -360,7 +375,7 @@ async function fetchMetroparks() {
         const date = toLocalDateStr(new Date(year, monthIndex, day));
 
         const artistName = artistRaw.trim();
-        const slug = artistName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const slug = slugify(artistName);
 
         events.push({
           id: `${venueId}-${date}-${slug}`,
@@ -462,7 +477,7 @@ async function fetchRockinOnTheRiver() {
       }
 
       const headlinerName = cleanTitle.split(/\s+with\s+/i)[0].trim().replace(/,\s*$/, '');
-      const slug = headlinerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugify(headlinerName);
 
       // Simple performer split: headliner is everything before " with ",
       // supporters are comma-separated after it. Good enough given the
@@ -543,9 +558,6 @@ async function fetchCainPark() {
       return cleaned;
     }
 
-    function slugify(name) {
-      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    }
 
     const currentYear = new Date().getFullYear();
 
@@ -696,9 +708,6 @@ async function fetchHappyDog() {
       return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
     }
 
-    function slugify(name) {
-      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    }
 
     // Each event card is a Bootstrap col wrapping a .confirm-card. The
     // .card-body's direct <p> children appear in a fixed order:
@@ -791,9 +800,6 @@ async function fetchMahalls() {
       return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
     }
 
-    function slugify(name) {
-      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    }
 
     // Strips the wrapping <span> the API puts around dateTime, e.g.
     // "<span>06/17/26 •  7pm</span>" -> "06/17/26 •  7pm"
@@ -937,7 +943,7 @@ async function fetchBopStop() {
           const date = toLocalDateStr(eventDate);
           const fullUrl = href.startsWith('http') ? href : `https://www.themusicsettlement.org${href}`;
           const slugMatch = href.match(/\/events\/\d{4}\/\d{2}\/\d{2}\/([^/]+)/);
-          const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+          const slug = slugMatch ? slugMatch[1] : slugify(title);
           const id = `bop-stop-${date}-${slug}`;
           if (seenIds.has(id)) return;
           seenIds.add(id);
@@ -1068,7 +1074,7 @@ async function fetchMusicBox() {
   const events = [];
   const seenIds = new Set();
 
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -1122,7 +1128,7 @@ async function fetchMusicBox() {
 
       const eventUrl = href.startsWith('http') ? href : `https://musicboxcle.com${href}`;
       const slugMatch = href.match(/\/event\/([^/]+)\/?/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
 
       const id = `music-box-${date}-${slug}`;
       if (seenIds.has(id)) return;
@@ -1183,7 +1189,7 @@ async function fetchMusicBox() {
 async function fetchWinchester() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -1245,7 +1251,7 @@ async function fetchWinchester() {
       const ticketUrl = $(el).find('.tw-buy-tix-btn').first().attr('href') || null;
 
       const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `winchester-music-tavern-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -1297,9 +1303,6 @@ async function fetchFwdNightclub() {
     const $ = cheerio.load(html);
     const events = [];
 
-    function slugify(name) {
-      return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-    }
 
     $('div.event.w-dyn-item').each((i, el) => {
       const $el = $(el);
@@ -1388,7 +1391,7 @@ async function fetchCollisionBend() {
 
       const eventUrl = `https://collisionbendbrewery.com${href}`;
       const slugMatch = href.match(/\/events\/([^/]+)\/?$/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
 
       events.push({
         id: `${venueId}-${date}-${slug}`,
@@ -1416,7 +1419,7 @@ async function fetchCollisionBend() {
 async function fetchMercuryMusicLounge() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -1478,7 +1481,7 @@ async function fetchMercuryMusicLounge() {
       const ticketUrl = $(el).find('.tw-buy-tix-btn').first().attr('href') || null;
 
       const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `mercury-music-lounge-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -1605,9 +1608,6 @@ async function fetchPlayhouseSquare() {
   cutoff.setDate(cutoff.getDate() + 30);
   const cutoffStr = toLocalDateStr(cutoff);
 
-  function slugify(name) {
-    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-  }
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -1879,7 +1879,7 @@ async function fetchFoundry() {
       if (price === '$0.00') price = 'Free';
 
       const slugMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
-      const baseSlug = slugMatch ? slugMatch[1] : fullTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const baseSlug = slugMatch ? slugMatch[1] : slugify(fullTitle);
 
       // Foundry lists recurring events with one .tw-date-time block per date
       // and a matching .tw-info-price-buy-tix link, in the same order (see
@@ -1947,7 +1947,7 @@ async function fetchFoundry() {
 async function fetchDunlaps() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   try {
     const res = await fetch('https://www.dunlapsbar.com/events');
@@ -1993,7 +1993,7 @@ async function fetchDunlaps() {
       const ticketUrl = ticketHrefRaw ? `https://www.dunlapsbar.com${ticketHrefRaw}` : null;
 
       const slugMatch = hrefRaw.match(/\/events\/(\d+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `dunlaps-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2136,7 +2136,7 @@ fragment VenueCalendarBooking on CalendarBooking {
 async function fetchHilarities() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -2208,7 +2208,7 @@ async function fetchHilarities() {
       if (!title || !hrefRaw) return;
       const eventUrl = `https://hilarities.com${hrefRaw}`;
       const slugMatch = hrefRaw.match(/\/events\/(\d+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
 
       const dateRaw = $el.find('h6.event-date').first().text().trim();
       const dateMatch = dateRaw.match(/[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})\s+(\d{4}),\s*(\d{1,2}):(\d{2})\s*(AM|PM)/i);
@@ -2326,7 +2326,7 @@ async function fetchVanAken() {
       const time = normalizeTime(startRaw);
 
       const slugMatch = hrefRaw.match(/\/events-at-the-district\/([^/?]+)/);
-      const slug = slugMatch ? slugMatch[1] : `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${date}`;
+      const slug = slugMatch ? slugMatch[1] : `${slugify(title)}-${date}`;
       const id = `van-aken-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2382,7 +2382,7 @@ async function sleep(ms) {
 async function fetchTreelawn() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -2491,7 +2491,7 @@ async function fetchTreelawn() {
         const ticketUrl = /not available/i.test(statusText) ? null : eventUrl;
 
         const idMatch = eventUrl.match(/-tickets\/(\d+)/);
-        const ticketwebId = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const ticketwebId = idMatch ? idMatch[1] : slugify(title);
         const id = `treelawn-${roomSlug}-${date}-${ticketwebId}`;
         if (seenIds.has(id)) return;
         seenIds.add(id);
@@ -2562,7 +2562,7 @@ async function fetchHofbrauhaus() {
       const time = normalizeTime(startTimeText);
 
       const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `hofbrauhaus-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2652,7 +2652,7 @@ async function fetchQuintanasSpeakeasy() {
 
         const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
 
-        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const slug = slugify(title);
         const id = `quintanas-speakeasy-${date}-${slug}`;
         if (seenIds.has(id)) return;
         seenIds.add(id);
@@ -2683,7 +2683,7 @@ async function fetchQuintanasSpeakeasy() {
       if (sessionMatch && current) {
         const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
         const time = normalizeTime(sessionMatch[1]);
-        const slug = current.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const slug = current.slugify(title);
         const id = `quintanas-speakeasy-${current.date}-${slug}-${time || i}`;
         if (seenIds.has(id)) return;
         seenIds.add(id);
@@ -2755,7 +2755,7 @@ async function fetchCoda() {
       const price = priceMatch ? `$${priceMatch[1]}` : null;
 
       const idMatch = eventUrl.match(/tickets-(\d+)/);
-      const ticketwebId = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const ticketwebId = idMatch ? idMatch[1] : slugify(title);
       const id = `coda-${date}-${ticketwebId}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2823,7 +2823,7 @@ async function fetchProsperitySocialClub() {
       const time = normalizeTime(startTimeText);
 
       const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `prosperity-social-club-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2891,7 +2891,7 @@ async function fetchSixty6() {
       const ticketUrl = ticketMatch ? ticketMatch[1] : null;
 
       const slugMatch = eventUrl.match(/\/events\/([^/]+)\/?/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `sixty6-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -2998,7 +2998,7 @@ async function fetchJollyScholar() {
 async function fetchTheIvy() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = MONTH_ABBR;
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -3037,7 +3037,7 @@ async function fetchTheIvy() {
 
       const eventUrl = ticketUrl; // event-details page doubles as the ticket/RSVP link here
       const slugMatch = (ticketUrl || '').match(/\/event-details\/([^/?]+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `the-ivy-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -3103,7 +3103,7 @@ async function fetchBentMace() {
         : [{ name: fullTitle, headliner: true }];
 
       const slugMatch = eventUrl.match(/\/event\/([^/]+)\/?/);
-      const slug = slugMatch ? slugMatch[1] : fullTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(fullTitle);
       const id = `bent-mace-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -3189,7 +3189,7 @@ async function fetchBside() {
       const ticketUrl = $el.find('.eventsbutton a.button-primary').first().attr('href') || null;
 
       const idMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
-      const slug = idMatch ? idMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = idMatch ? idMatch[1] : slugify(title);
       const id = `bside-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -3291,7 +3291,7 @@ async function fetchNoClass() {
       const ticketUrl = descLink || null;
 
       const slugMatch = hrefRaw.match(/\/events\/([^/?]+)/);
-      const slug = slugMatch ? slugMatch[1] : title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
       const id = `no-class-${date}-${slug}`;
       if (seenIds.has(id)) return;
       seenIds.add(id);
@@ -3398,6 +3398,225 @@ async function fetchClevelandOrchestra() {
   return events;
 }
 
+async function fetchForestCityBrewery() {
+  try {
+    const url = 'https://www.forestcitybrewery.com/events';
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      }
+    });
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const seenIds = new Set();
+    const events = [];
+
+    $('.eventlist-event').each((i, el) => {
+      const $el = $(el);
+
+      const title = $el.find('.eventlist-title-link').first().text().trim();
+      const relativeUrl = $el.find('.eventlist-title-link').first().attr('href');
+      const eventUrl = relativeUrl ? `https://www.forestcitybrewery.com${relativeUrl}` : null;
+
+      const date = $el.find('.event-date').first().attr('datetime'); // e.g. "2026-07-10"
+      if (!title || !date) return; // skip malformed entries
+
+      const startTimeRaw = $el.find('.event-time-localized-start').first().text().trim(); // "5:00 PM"
+      const time = startTimeRaw ? to24Hour(startTimeRaw) : null;
+
+      const slug = slugify(title);
+      const id = `forest-city-brewery-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'forest-city-brewery',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchForestCityBrewery error:', err.message);
+    return [];
+  }
+}
+
+function to24Hour(timeStr) {
+  const [time, modifier] = timeStr.split(' ');
+  let [hours, minutes] = time.split(':');
+  hours = parseInt(hours, 10);
+  if (modifier === 'PM' && hours !== 12) hours += 12;
+  if (modifier === 'AM' && hours === 12) hours = 0;
+  return `${String(hours).padStart(2, '0')}:${minutes}`;
+}
+
+async function fetchSpiritsWilloughby() {
+  try {
+    const url = 'https://spiritsinwilloughby.com/api/google/schema/events';
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      }
+    });
+    const json = await res.json();
+    const rawEvents = json.data ?? []; // <-- unwrap the envelope
+    const seenIds = new Set();
+    const events = [];
+
+    for (const event of rawEvents) {
+      if (!event || event['@type'] !== 'Event' || !event.startDate) continue;
+
+      const { date, time } = toLocalDateTime(event.startDate);
+      const title = event.name;
+      if (!title || !date) continue;
+
+      const slug = slugify(title);
+      const id = `spirits-willoughby-${date}-${slug}`;
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'spirits-willoughby',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [],
+        eventUrl: event.url ?? null,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchSpiritsWilloughby error:', err.message);
+    return [];
+  }
+}
+
+function toLocalDateTime(utcString) {
+  const d = new Date(utcString);
+  const date = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(d); // en-CA locale outputs YYYY-MM-DD directly
+  const time = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false,
+  }).format(d);
+  return { date, time };
+}
+
+async function fetchTheGrove() {
+  try {
+    const url = 'https://recreation.mayfieldvillage.com/events/list/?shortcode=8a1dbc4e&ical=1';
+    const res = await fetch(url);
+    const text = await res.text();
+
+    const lines = unfoldIcsLines(text);
+    const veventBlocks = extractVevents(lines);
+    const seenIds = new Set();
+    const events = [];
+
+    for (const block of veventBlocks) {
+      const fields = parseIcsBlock(block);
+
+      const isGrove =
+        fields.CATEGORIES?.includes('The Grove') ||
+        (!fields.CATEGORIES && fields.LOCATION?.includes('North Commons Blvd'));
+      if (!isGrove) continue;
+
+      const { date, time } = parseIcsLocalDateTime(fields.DTSTART);
+      const title = fields.SUMMARY;
+      if (!title || !date) continue;
+
+      const slug = slugify(title);
+      const id = `the-grove-${date}-${slug}`;
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId: 'the-grove',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [],
+        eventUrl: fields.URL ?? null,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    }
+
+    return events;
+  } catch (err) {
+    console.error('fetchTheGrove error:', err.message);
+    return [];
+  }
+}
+
+function unfoldIcsLines(text) {
+  const rawLines = text.split(/\r\n|\n|\r/);
+  const unfolded = [];
+  for (const line of rawLines) {
+    if ((line.startsWith(' ') || line.startsWith('\t')) && unfolded.length > 0) {
+      unfolded[unfolded.length - 1] += line.slice(1);
+    } else {
+      unfolded.push(line);
+    }
+  }
+  return unfolded;
+}
+
+function extractVevents(lines) {
+  const blocks = [];
+  let current = null;
+  for (const line of lines) {
+    if (line === 'BEGIN:VEVENT') current = [];
+    else if (line === 'END:VEVENT') { if (current) blocks.push(current); current = null; }
+    else if (current) current.push(line);
+  }
+  return blocks;
+}
+
+function parseIcsBlock(lines) {
+  const fields = {};
+  for (const line of lines) {
+    const colonIndex = line.indexOf(':');
+    if (colonIndex === -1) continue;
+    const key = line.slice(0, colonIndex).split(';')[0]; // strips ;TZID=... params
+    fields[key] = unescapeIcsText(line.slice(colonIndex + 1));
+  }
+  return fields;
+}
+
+function unescapeIcsText(str) {
+  return str.replace(/\\,/g, ',').replace(/\\;/g, ';').replace(/\\n/gi, ' ').replace(/\\\\/g, '\\');
+}
+
+function parseIcsLocalDateTime(dtstartValue) {
+  if (!dtstartValue || dtstartValue.length < 15) return { date: null, time: null };
+  const date = `${dtstartValue.slice(0, 4)}-${dtstartValue.slice(4, 6)}-${dtstartValue.slice(6, 8)}`;
+  const time = `${dtstartValue.slice(9, 11)}:${dtstartValue.slice(11, 13)}`;
+  return { date, time };
+}
+
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -3420,7 +3639,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, spiritsWilloughby, theGrove] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3457,6 +3676,9 @@ async function main() {
     fetchBside(),
     fetchNoClass(),
     fetchClevelandOrchestra(),
+    fetchForestCityBrewery(),
+    fetchSpiritsWilloughby(),
+    fetchTheGrove(),
   ]);
 
 
@@ -3497,6 +3719,9 @@ async function main() {
   console.log('B Side:', bside.length);
   console.log('No Class:', noClass.length);
   console.log('Cleveland Orchestra:', clevelandOrchestra.length);
+  console.log('Forest City:', forestCityBrewery.length);
+  console.log('Spirits Willoughby:', spiritsWilloughby.length);
+  console.log('The Grove:', theGrove.length);
 
 
   const manualEntries = loadManualEntries();
@@ -3540,6 +3765,9 @@ async function main() {
     ...bside,
     ...noClass,
     ...clevelandOrchestra,
+    ...forestCityBrewery,
+    ...spiritsWilloughby,
+    ...theGrove,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -3588,6 +3816,9 @@ async function main() {
       'bside-liquor-lounge': { name: 'B Side Liquor Lounge', url: 'https://bsideliquorlounge.com/', eventsUrl: 'https://bsideliquorlounge.com/', city: 'Cleveland Heights' },
       'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
       'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
+      'forest-city-brewery': { name: 'Forest City Brewery', url: 'https://www.forestcitybrewery.com/', eventsUrl: 'https://www.forestcitybrewery.com/events', city: 'Cleveland' },
+      'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
+      'the-grove': { name: 'The Grove Amphitheatre', url: 'https://recreation.mayfieldvillage.com/the-grove/', eventsUrl: 'https://recreation.mayfieldvillage.com/the-grove/', city: 'Mayfield Village' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -3602,6 +3833,8 @@ async function main() {
       'nightjar': { name: 'Nightjar', url: 'https://www.nightjarjazzbar.com/', eventsUrl: 'https://www.nightjarjazzbar.com/live-music-schedule', city: 'Woodmere' },
       'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
       'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
+      'bar-32': { name: 'Bar 32', url: 'https://www.bar32cle.com/', eventsUrl: 'https://www.bar32cle.com/entertainment', city: 'Cleveland' },
+      'local-bar-strongsville': { name: 'The Local Bar Strongsville', url: 'https://localbarstrongsville.com/', eventsUrl: 'https://localbarstrongsville.com/events', city: 'Strongsville' },
     },
     events: allEvents,
   };
@@ -3610,4 +3843,48 @@ async function main() {
   console.log(`Done! Wrote ${allEvents.length} events to events.json`);
 }
 
-main();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main();
+}
+
+export {
+  fetchRocketArena,
+  fetchGrogShop,
+  fetchAgora,
+  fetchBeachland,
+  fetchMetroparks,
+  fetchRockinOnTheRiver,
+  fetchCainPark,
+  fetchHappyDog,
+  fetchMahalls,
+  fetchBopStop,
+  fetchGlobeIron,
+  fetchJacobsPavilion,
+  fetchMusicBox,
+  fetchWinchester,
+  fetchFwdNightclub,
+  fetchCollisionBend,
+  fetchMercuryMusicLounge,
+  fetchRockHall,
+  fetchPlayhouseSquare,
+  fetchFoundry,
+  fetchDunlaps,
+  fetchWelcomeToTheFarm,
+  fetchHilarities,
+  fetchVanAken,
+  fetchTreelawn,
+  fetchHofbrauhaus,
+  fetchQuintanasSpeakeasy,
+  fetchCoda,
+  fetchProsperitySocialClub,
+  fetchSixty6,
+  fetchJollyScholar,
+  fetchTheIvy,
+  fetchBentMace,
+  fetchBside,
+  fetchNoClass,
+  fetchClevelandOrchestra,
+  fetchForestCityBrewery,
+  fetchSpiritsWilloughby,
+  fetchTheGrove,
+};
