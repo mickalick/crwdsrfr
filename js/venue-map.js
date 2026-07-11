@@ -63,6 +63,13 @@ function renderList() {
   });
 }
 
+function scrollToVenueItem(id) {
+  const item = document.querySelector(`.venue-item[data-id="${id}"]`);
+  if (item) {
+    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
 function buildPinElement(venue, selected) {
   const wrap = document.createElement('div');
   wrap.className = `pin-anchor ${selected ? 'selected' : ''}`;
@@ -146,6 +153,7 @@ function selectVenue(id, fromList) {
   infoWindow.close(); // force a clean rebind to the new anchor instead of reusing stale state
   refreshPins(id);
   renderList();
+  scrollToVenueItem(id);
 
   infoWindow.setContent(`
     <div class="iw">

@@ -2589,121 +2589,6 @@ async function fetchHofbrauhaus() {
   return events;
 }
 
-async function fetchQuintanasSpeakeasy() {
-  const events = [];
-  const seenIds = new Set();
-  const monthMap = {
-    January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
-    July: 6, August: 7, September: 8, October: 9, November: 10, December: 11
-  };
-
-  function normalizeTime(t) {
-    if (!t) return null;
-    const match = t.trim().match(/(\d{1,2}):(\d{1,2})\s*(am|pm)/i);
-    if (!match) return null;
-    let [, h, m, mod] = match;
-    h = parseInt(h, 10);
-    const minutes = String(parseInt(m, 10)).padStart(2, '0'); // fixes "9:0pm" typos in source
-    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
-    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
-    return `${String(h).padStart(2, '0')}:${minutes}`;
-  }
-
-  function resolveYear(monthIndex, day) {
-    const today = new Date();
-    const currentYear = today.getFullYear();
-    const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
-    const thisYearDate = new Date(currentYear, monthIndex, day);
-    return thisYearDate < todayMidnight ? currentYear + 1 : currentYear;
-  }
-
-  const dateLeadRegex = /^([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?:/i;
-  const sessionLeadRegex = /^(\d{1,2}:\d{1,2}\s*[ap]m)\s*-\s*(\d{1,2}:\d{1,2}\s*[ap]m)/i;
-
-  try {
-    const res = await fetch('https://qbds.net/speakeasy-events/');
-    const html = await res.text();
-    const $ = cheerio.load(html);
-
-    let current = null; // tracks the most recent dated event, for orphan session paragraphs to attach to
-
-    $('p').each((i, el) => {
-      const $p = $(el);
-      const text = $p.text().replace(/\s+/g, ' ').trim();
-      if (!text) return;
-
-      const dateMatch = text.match(dateLeadRegex);
-
-      if (dateMatch) {
-        const monthIndex = monthMap[dateMatch[1]];
-        const day = parseInt(dateMatch[2], 10);
-        current = null; // reset unless we successfully build a valid event below
-
-        if (monthIndex === undefined) return;
-
-        const title = $p.find('strong').first().text().trim();
-        if (!title || /closed/i.test(title)) return;
-
-        const timeMatch = text.match(/(\d{1,2}:\d{1,2}\s*[ap]m)\s*[-–]\s*(\d{1,2}:\d{1,2}\s*[ap]m|midnight)/i);
-        const time = timeMatch ? normalizeTime(timeMatch[1]) : null;
-
-        const year = resolveYear(monthIndex, day);
-        const date = toLocalDateStr(new Date(year, monthIndex, day));
-
-        const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
-
-        const slug = slugify(title);
-        const id = `quintanas-speakeasy-${date}-${slug}`;
-        if (seenIds.has(id)) return;
-        seenIds.add(id);
-
-        const eventObj = {
-          id,
-          title,
-          venueId: 'quintanas-speakeasy',
-          date,
-          time,
-          doors: null,
-          price: null,
-          performers: [{ name: title, headliner: true }],
-          eventUrl: 'https://qbds.net/speakeasy-events/',
-          ticketUrl: ticketHref,
-          source: 'scrape',
-          manual: false,
-        };
-
-        events.push(eventObj);
-        current = eventObj; // subsequent orphan paragraphs may attach more sessions to this
-        return;
-      }
-
-      // Not a dated paragraph — check if it's an orphan extra session
-      // (e.g. Tarot Night's separate 6:30-7:30 / 7:30-8:30 ticket links)
-      const sessionMatch = text.match(sessionLeadRegex);
-      if (sessionMatch && current) {
-        const ticketHref = $p.find('a[href*="eventbrite"]').first().attr('href') || null;
-        const time = normalizeTime(sessionMatch[1]);
-        const slug = current.slugify(title);
-        const id = `quintanas-speakeasy-${current.date}-${slug}-${time || i}`;
-        if (seenIds.has(id)) return;
-        seenIds.add(id);
-
-        events.push({
-          ...current,
-          id,
-          time,
-          ticketUrl: ticketHref,
-        });
-      }
-      // Otherwise it's just description continuation text — ignored
-    });
-  } catch (err) {
-    console.error('fetchQuintanasSpeakeasy error:', err.message);
-  }
-
-  return events;
-}
-
 async function fetchCoda() {
   const events = [];
   const seenIds = new Set();
@@ -3453,71 +3338,16 @@ async function fetchForestCityBrewery() {
 }
 
 function to24Hour(timeStr) {
-  const [time, modifier] = timeStr.split(' ');
+  if (!timeStr) return null;
+  // Squarespace renders times like "3:00 PM" using U+202F (narrow no-break space)
+  // instead of a regular space, so a plain split(' ') silently fails on it.
+  const normalized = timeStr.replace(/[\u00A0\u202F]/g, ' ').trim();
+  const [time, modifier] = normalized.split(/\s+/);
   let [hours, minutes] = time.split(':');
   hours = parseInt(hours, 10);
   if (modifier === 'PM' && hours !== 12) hours += 12;
   if (modifier === 'AM' && hours === 12) hours = 0;
   return `${String(hours).padStart(2, '0')}:${minutes}`;
-}
-
-async function fetchSpiritsWilloughby() {
-  try {
-    const url = 'https://spiritsinwilloughby.com/api/google/schema/events';
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      }
-    });
-    const json = await res.json();
-    const rawEvents = json.data ?? []; // <-- unwrap the envelope
-    const seenIds = new Set();
-    const events = [];
-
-    for (const event of rawEvents) {
-      if (!event || event['@type'] !== 'Event' || !event.startDate) continue;
-
-      const { date, time } = toLocalDateTime(event.startDate);
-      const title = event.name;
-      if (!title || !date) continue;
-
-      const slug = slugify(title);
-      const id = `spirits-willoughby-${date}-${slug}`;
-      if (seenIds.has(id)) continue;
-      seenIds.add(id);
-
-      events.push({
-        id,
-        title,
-        venueId: 'spirits-willoughby',
-        date,
-        time,
-        doors: null,
-        price: null,
-        performers: [],
-        eventUrl: event.url ?? null,
-        ticketUrl: null,
-        source: 'scrape',
-        manual: false,
-      });
-    }
-
-    return events;
-  } catch (err) {
-    console.error('fetchSpiritsWilloughby error:', err.message);
-    return [];
-  }
-}
-
-function toLocalDateTime(utcString) {
-  const d = new Date(utcString);
-  const date = new Intl.DateTimeFormat('en-CA', {
-    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
-  }).format(d); // en-CA locale outputs YYYY-MM-DD directly
-  const time = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false,
-  }).format(d);
-  return { date, time };
 }
 
 async function fetchTheGrove() {
@@ -3639,7 +3469,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, quintanasSpeakeasy, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, spiritsWilloughby, theGrove] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3666,7 +3496,6 @@ async function main() {
     fetchVanAken(),
     fetchTreelawn(),
     fetchHofbrauhaus(),
-    fetchQuintanasSpeakeasy(),
     fetchCoda(),
     fetchProsperitySocialClub(),
     fetchSixty6(),
@@ -3677,7 +3506,6 @@ async function main() {
     fetchNoClass(),
     fetchClevelandOrchestra(),
     fetchForestCityBrewery(),
-    fetchSpiritsWilloughby(),
     fetchTheGrove(),
   ]);
 
@@ -3709,7 +3537,6 @@ async function main() {
   console.log('Van Aken:', vanAken.length);
   console.log('Treelawn:', treelawn.length);
   console.log('Hofbrauhaus:', hofbrauhaus.length);
-  console.log('Quintanas:', quintanasSpeakeasy.length);
   console.log('CODA:', coda.length);
   console.log('Prosperity:', prosperitySocialClub.length);
   console.log('Sixty 6:', sixty6.length);
@@ -3720,7 +3547,6 @@ async function main() {
   console.log('No Class:', noClass.length);
   console.log('Cleveland Orchestra:', clevelandOrchestra.length);
   console.log('Forest City:', forestCityBrewery.length);
-  console.log('Spirits Willoughby:', spiritsWilloughby.length);
   console.log('The Grove:', theGrove.length);
 
 
@@ -3755,7 +3581,6 @@ async function main() {
     ...vanAken,
     ...treelawn,
     ...hofbrauhaus,
-    ...quintanasSpeakeasy,
     ...coda,
     ...prosperitySocialClub,
     ...sixty6,
@@ -3766,7 +3591,6 @@ async function main() {
     ...noClass,
     ...clevelandOrchestra,
     ...forestCityBrewery,
-    ...spiritsWilloughby,
     ...theGrove,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
@@ -3806,7 +3630,6 @@ async function main() {
       'van-aken-district': { name: 'Van Aken District', url: 'https://www.thevanakendistrict.com/', eventsUrl: 'https://www.thevanakendistrict.com/events-at-the-district', city: 'Shaker Heights' },
       'treelawn': { name: 'The Treelawn', url: 'https://thetreelawn.com/', eventsUrl: 'https://thetreelawn.com/', city: 'Cleveland' },
       'hofbrauhaus-cleveland': { name: 'Hofbrauhaus', url: 'https://www.hofbrauhauscleveland.com/', eventsUrl: 'https://www.hofbrauhauscleveland.com/events', city: 'Cleveland' },
-      'quintanas-speakeasy': { name: 'Quintanas Speakeasy', url: 'https://qbds.net/speakeasy/', eventsUrl: 'https://qbds.net/speakeasy-events/', city: 'Cleveland Heights' },
       'coda': { name: 'CODA', url: 'https://danteboccuzzi.com/coda/', eventsUrl: 'https://danteboccuzzi.com/coda/', city: 'Cleveland' },
       'prosperity-social-club': { name: 'Prosperity Social Club', url: 'https://www.prosperitysocialclub.com/', eventsUrl: 'https://www.prosperitysocialclub.com/events', city: 'Cleveland' },
       'the-sixty6': { name: 'The Sixty 6', url: 'https://thesixty6.com/', eventsUrl: 'https://thesixty6.com/events/', city: 'Cleveland' },
@@ -3817,7 +3640,6 @@ async function main() {
       'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
       'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
       'forest-city-brewery': { name: 'Forest City Brewery', url: 'https://www.forestcitybrewery.com/', eventsUrl: 'https://www.forestcitybrewery.com/events', city: 'Cleveland' },
-      'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
       'the-grove': { name: 'The Grove Amphitheatre', url: 'https://recreation.mayfieldvillage.com/the-grove/', eventsUrl: 'https://recreation.mayfieldvillage.com/the-grove/', city: 'Mayfield Village' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
@@ -3835,6 +3657,8 @@ async function main() {
       'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
       'bar-32': { name: 'Bar 32', url: 'https://www.bar32cle.com/', eventsUrl: 'https://www.bar32cle.com/entertainment', city: 'Cleveland' },
       'local-bar-strongsville': { name: 'The Local Bar Strongsville', url: 'https://localbarstrongsville.com/', eventsUrl: 'https://localbarstrongsville.com/events', city: 'Strongsville' },
+      'quintanas-speakeasy': { name: 'Quintanas Speakeasy', url: 'https://qbds.net/speakeasy/', eventsUrl: 'https://qbds.net/speakeasy-events/', city: 'Cleveland Heights' },
+      'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
     },
     events: allEvents,
   };
@@ -3874,7 +3698,6 @@ export {
   fetchVanAken,
   fetchTreelawn,
   fetchHofbrauhaus,
-  fetchQuintanasSpeakeasy,
   fetchCoda,
   fetchProsperitySocialClub,
   fetchSixty6,
@@ -3885,6 +3708,5 @@ export {
   fetchNoClass,
   fetchClevelandOrchestra,
   fetchForestCityBrewery,
-  fetchSpiritsWilloughby,
   fetchTheGrove,
 };

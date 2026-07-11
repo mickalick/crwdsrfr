@@ -192,12 +192,6 @@
       "eventsUrl": "https://www.hofbrauhauscleveland.com/events",
       "city": "Cleveland"
     },
-    "quintanas-speakeasy": {
-      "name": "Quintanas Speakeasy",
-      "url": "https://qbds.net/speakeasy/",
-      "eventsUrl": "https://qbds.net/speakeasy-events/",
-      "city": "Cleveland Heights"
-    },
     "coda": {
       "name": "CODA",
       "url": "https://danteboccuzzi.com/coda/",
@@ -257,12 +251,6 @@
       "url": "https://www.forestcitybrewery.com/",
       "eventsUrl": "https://www.forestcitybrewery.com/events",
       "city": "Cleveland"
-    },
-    "spirits-willoughby": {
-      "name": "Spirits in Willoughby",
-      "url": "https://spiritsinwilloughby.com/",
-      "eventsUrl": "https://spiritsinwilloughby.com/events",
-      "city": "Willoughby"
     },
     "the-grove": {
       "name": "The Grove Amphitheatre",
@@ -365,6 +353,18 @@
       "url": "https://localbarstrongsville.com/",
       "eventsUrl": "https://localbarstrongsville.com/events",
       "city": "Strongsville"
+    },
+    "quintanas-speakeasy": {
+      "name": "Quintanas Speakeasy",
+      "url": "https://qbds.net/speakeasy/",
+      "eventsUrl": "https://qbds.net/speakeasy-events/",
+      "city": "Cleveland Heights"
+    },
+    "spirits-willoughby": {
+      "name": "Spirits in Willoughby",
+      "url": "https://spiritsinwilloughby.com/",
+      "eventsUrl": "https://spiritsinwilloughby.com/events",
+      "city": "Willoughby"
     }
   },
   "events": [
@@ -392,25 +392,6 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/conan-fistula-slow-wake/",
       "ticketUrl": "https://www.ticketweb.com/event/conan-fistula-slow-wake-grog-shop-tickets/14870633?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-07-11-this-way-out",
-      "title": "This Way Out",
-      "venueId": "beachland-ballroom",
-      "date": "2026-07-11",
-      "time": "12:00",
-      "doors": "12:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "This Way Out",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-11-jul",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-11-jul#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -595,26 +576,6 @@
       "manual": false
     },
     {
-      "id": "fwd-nightclub-2026-07-11-pool-days",
-      "title": "POOL DAYS",
-      "venueId": "fwd-nightclub",
-      "date": "2026-07-11",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "tag": "DAY",
-      "performers": [
-        {
-          "name": "POOL DAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-BNDGT9",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-BNDGT9",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "fwd-nightclub-2026-07-11-four-color-zack",
       "title": "FOUR COLOR ZACK",
       "venueId": "fwd-nightclub",
@@ -635,32 +596,13 @@
       "manual": false
     },
     {
-      "id": "collision-bend-euclid-2026-07-11-live-music-w-austin-walkin-cane-48056",
-      "title": "Live Music w/ Austin Walkin' Cane",
-      "venueId": "collision-bend-euclid",
-      "date": "2026-07-11",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Music w/ Austin Walkin' Cane",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/live-music-w-austin-walkin-cane-48056",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mercury-music-lounge-2026-07-11-the-ex-faces-night-2",
       "title": "THE EX-FACES (Night 2)",
       "venueId": "mercury-music-lounge",
       "date": "2026-07-11",
       "time": "18:30",
       "doors": "18:00",
-      "price": null,
+      "price": "$42.72",
       "performers": [
         {
           "name": "THE EX-FACES (Night 2)",
@@ -669,28 +611,6 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-ex-faces-night-2/",
       "ticketUrl": "https://www.ticketweb.com/event/the-ex-faces-night-2-the-mercury-music-lounge-tickets/14741043",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-07-11-1330-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-07-11",
-      "endDate": null,
-      "time": "13:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
     },
@@ -1044,7 +964,7 @@
         }
       ],
       "eventUrl": "https://www.ticketweb.com/event/catmoonshadow-a-tribute-treelawn-social-club-tickets/14784073",
-      "ticketUrl": "https://www.ticketweb.com/event/catmoonshadow-a-tribute-treelawn-social-club-tickets/14784073",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -1068,21 +988,21 @@
       "manual": false
     },
     {
-      "id": "quintanas-speakeasy-2026-07-11-learn-hands-on-craft-cocktails",
-      "title": "Learn Hands-On Craft Cocktails",
-      "venueId": "quintanas-speakeasy",
+      "id": "coda-2026-07-11-1993748318892",
+      "title": "Karaoke Night at CODA",
+      "venueId": "coda",
       "date": "2026-07-11",
-      "time": "17:00",
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [
         {
-          "name": "Learn Hands-On Craft Cocktails",
+          "name": "Karaoke Night at CODA",
           "headliner": true
         }
       ],
-      "eventUrl": "https://qbds.net/speakeasy-events/",
-      "ticketUrl": "https://www.eventbrite.com/e/learn-hands-on-speakeasy-classic-original-craft-cocktails-tickets-1989389377180?aff=oddtdtcreator",
+      "eventUrl": "https://www.eventbrite.com/e/karaoke-night-at-coda-tickets-1993748318892",
+      "ticketUrl": "https://www.eventbrite.com/e/karaoke-night-at-coda-tickets-1993748318892",
       "source": "scrape",
       "manual": false
     },
@@ -1273,48 +1193,6 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/harry-potter-and-the-chamber-of-secrets",
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24179",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-11-the-ragged-people",
-      "title": "The ragged people",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-11",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/the-ragged-people-1",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-11-carolyn-party-train",
-      "title": "Carolyn  party (train)",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-11",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/carolyn-bday-party",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-11-ted-riser",
-      "title": "Ted Riser",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-11",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/ted-riser-3",
-      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -1675,42 +1553,42 @@
       "id": "local-bar-strongsville-2026-07-11-slow-easy"
     },
     {
-      "id": "cain-park-2026-07-11-arts-festival",
-      "title": "Arts Festival",
-      "venueId": "cain-park",
-      "date": "2026-07-11",
-      "time": "10:00",
-      "doors": null,
-      "price": "Free",
+      "title": "Learn Hands-On Craft Cocktails",
       "performers": [
         {
-          "name": "Arts Festival",
+          "name": "Learn Hands-On Craft Cocktails",
           "headliner": true
         }
       ],
-      "eventUrl": "https://cainpark.com/events/category/series/arts-festival/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "date": "2026-07-11",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-11-learn-hands-on-craft-cocktails"
     },
     {
-      "id": "cain-park-2026-07-12-arts-festival",
-      "title": "Arts Festival",
-      "venueId": "cain-park",
-      "date": "2026-07-12",
-      "time": "11:00",
-      "doors": null,
-      "price": "Free",
+      "title": "Ted Riser",
       "performers": [
         {
-          "name": "Arts Festival",
+          "name": "Ted Riser",
           "headliner": true
         }
       ],
-      "eventUrl": "https://cainpark.com/events/category/series/arts-festival/cain-park-evans-amphitheater/cleveland-heights-ohio/",
+      "date": "2026-07-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-11-ted-riser"
     },
     {
       "id": "grog-shop-2026-07-12-the-body",
@@ -2266,39 +2144,11 @@
       "title": "Classic Honk Sunday - FREE!",
       "venueId": "forest-city-brewery",
       "date": "2026-07-12",
-      "time": "03:00 PM",
+      "time": "15:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2025/11/9/classic-honk-sunday-free-yz4s3-r5h5k",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-12-dom-noce",
-      "title": "Dom Noce",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-12",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/dom-noce-2",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-12-the-hit-list",
-      "title": "The Hit List",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-12",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/the-hit-list-3",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -2416,6 +2266,44 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-07-12-higher-ground"
+    },
+    {
+      "title": "Dom Noce",
+      "performers": [
+        {
+          "name": "Dom Noce",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-12-dom-noce"
+    },
+    {
+      "title": "The Hit List",
+      "performers": [
+        {
+          "name": "The Hit List",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-12",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-12-the-hit-list"
     },
     {
       "id": "grog-shop-2026-07-13-generacion-suicida",
@@ -2621,48 +2509,6 @@
       "manual": false
     },
     {
-      "id": "spirits-willoughby-2026-07-13-submit-payroll",
-      "title": "Submit payroll",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-13",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/submit-payroll-4",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-13-bocce",
-      "title": "Bocce",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-13",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/bocce-5-30-5",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-13-ace-of-spades",
-      "title": "ACE OF SPADES",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-13",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/barroom-shenanigans-with-beardo-26",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "title": "Metal Mondays w/ DJ Sam Sinister",
       "performers": [
         {
@@ -2688,6 +2534,25 @@
       "source": "manual",
       "manual": true,
       "id": "smedleys-2026-07-13-dj-sam-sinister"
+    },
+    {
+      "title": "ACE OF SPADES",
+      "performers": [
+        {
+          "name": "ACE OF SPADES",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-13",
+      "time": "18:30",
+      "doors": null,
+      "price": "$5",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-13-ace-of-spades"
     },
     {
       "id": "grog-shop-2026-07-14-mc-chris",
@@ -2883,25 +2748,6 @@
       "manual": false
     },
     {
-      "id": "quintanas-speakeasy-2026-07-14-tarot-night-in-the-speakeasy",
-      "title": "Tarot Night in The Speakeasy",
-      "venueId": "quintanas-speakeasy",
-      "date": "2026-07-14",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Tarot Night in The Speakeasy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://qbds.net/speakeasy-events/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "bside-2026-07-14-lyrical-rhythms-23",
       "title": "Lyrical Rhythms",
       "venueId": "bside-liquor-lounge",
@@ -2944,7 +2790,7 @@
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
       "date": "2026-07-14",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -2971,6 +2817,25 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-07-14-dub-club"
+    },
+    {
+      "title": "Tarot Night",
+      "performers": [
+        {
+          "name": "Eranah Adorjan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-14",
+      "time": "18:30",
+      "doors": null,
+      "price": "$22",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-14-eranah-adorjan"
     },
     {
       "id": "grog-shop-2026-07-15-cola",
@@ -3357,25 +3222,11 @@
       "title": "Swing Time Big Band",
       "venueId": "forest-city-brewery",
       "date": "2026-07-15",
-      "time": "07:00 PM",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2025/8/20/swing-time-big-band-l5xnh",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-15-trivia-with-kevin-whalen",
-      "title": "TRIVIA WITH KEVIN WHALEN",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-15",
       "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/trivia-with-kevin-whalen-13",
+      "eventUrl": "https://www.forestcitybrewery.com/events/2025/8/20/swing-time-big-band-l5xnh",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -3497,6 +3348,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-07-15-killer-queen"
+    },
+    {
+      "title": "Trivia with Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-15-kevin-whalen"
     },
     {
       "id": "rocket-arena-2026-07-16-a-taste-of-black-cleveland",
@@ -4154,25 +4024,11 @@
       "title": "Kevin McCarthy & Friends - FREE SHOW",
       "venueId": "forest-city-brewery",
       "date": "2026-07-16",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2026/7/16/kevin-mccarthy-friends-free-show",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-16-cleveland-blues-society-jam",
-      "title": "CLEVELAND BLUES SOCIETY JAM",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-16",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/cleveland-blues-society-jam-3",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -4328,6 +4184,44 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-16-twin-b-project"
+    },
+    {
+      "title": "Jimmy Mrozek",
+      "performers": [
+        {
+          "name": "Jimmy Mrozek",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-16-jimmy-mrozek"
+    },
+    {
+      "title": "Cleveland Blues Society Jam",
+      "performers": [
+        {
+          "name": "Cleveland Blues Society Jam",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-16",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-16-cleveland-blues-society-jam"
     },
     {
       "id": "grog-shop-2026-07-17-the-sonder-bombs",
@@ -5111,25 +5005,11 @@
       "title": "Ray Flanagan LIVE Happy Hour",
       "venueId": "forest-city-brewery",
       "date": "2026-07-17",
-      "time": "05:00 PM",
+      "time": "17:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2025/10/17/ray-flanagan-live-happy-hour-fyyyz",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-17-chagrin-river-band",
-      "title": "Chagrin River Band",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-17",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/chagrin-river-band-1",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -5413,6 +5293,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-17-run-avril-run"
+    },
+    {
+      "title": "Chagrin River Band",
+      "performers": [
+        {
+          "name": "Chagrin River Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-17-chagrin-river-band"
     },
     {
       "id": "rocket-arena-2026-07-18-zac-brown-band",
@@ -6406,7 +6305,7 @@
       "title": "Tapped In Yoga in the Beer Garden at Forest City Brewery",
       "venueId": "forest-city-brewery",
       "date": "2026-07-18",
-      "time": "11:00 AM",
+      "time": "11:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -6420,39 +6319,11 @@
       "title": "Speed Dating with Date Cleveland",
       "venueId": "forest-city-brewery",
       "date": "2026-07-18",
-      "time": "06:30 PM",
+      "time": "18:30",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2026/7/18/speed-dating-with-date-cleveland",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-18-ashley-marie",
-      "title": "Ashley Marie",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-18",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/ashley-marie",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-18-crb-unplugged",
-      "title": "CRB Unplugged",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-18",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/crb-unplugged-2",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -6749,6 +6620,44 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-18-mr-breeze"
+    },
+    {
+      "title": "Ashley Marie",
+      "performers": [
+        {
+          "name": "Ashley Marie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-18-ashley-marie"
+    },
+    {
+      "title": "CRB Unplugged",
+      "performers": [
+        {
+          "name": "CRB Unplugged",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-18-crb-unplugged"
     },
     {
       "id": "grog-shop-2026-07-19-zoloft",
@@ -7273,39 +7182,11 @@
       "title": "Bobby St. Vincent - Free Acoustic Show",
       "venueId": "forest-city-brewery",
       "date": "2026-07-19",
-      "time": "03:00 PM",
+      "time": "15:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2025/10/17/bobby-st-vincent-free-acoustic-show",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-19-route-6",
-      "title": "Route 6",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/route-6-1",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-19-stamper-starr",
-      "title": "Stamper Starr",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-19",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/stamper-starr-1",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -7404,6 +7285,44 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-07-19-sully-solo"
+    },
+    {
+      "title": "Route 6",
+      "performers": [
+        {
+          "name": "Route 6",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-19-route-6"
+    },
+    {
+      "title": "Stamper Starr",
+      "performers": [
+        {
+          "name": "Stamper Starr",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-19",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-19-stamper-starr"
     },
     {
       "id": "grog-shop-2026-07-20-make-em-laugh-mondays",
@@ -7685,48 +7604,6 @@
       "manual": false
     },
     {
-      "id": "spirits-willoughby-2026-07-20-submit-payroll",
-      "title": "Submit payroll",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-20",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/submit-payroll-5",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-20-bocce",
-      "title": "Bocce",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-20",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/bocce-5-30-6",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-20-ace-of-spades",
-      "title": "ACE OF SPADES",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-20",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/barroom-shenanigans-with-beardo-27",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "title": "Metal Mondays w/ DJ Sam Sinister",
       "performers": [
         {
@@ -7993,7 +7870,7 @@
       "title": "Secret Song Society",
       "venueId": "forest-city-brewery",
       "date": "2026-07-21",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -8007,7 +7884,7 @@
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
       "date": "2026-07-21",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -8091,6 +7968,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-21-ronnie-clinton"
+    },
+    {
+      "title": "Game Night",
+      "performers": [
+        {
+          "name": "Game Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-21",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-21-game-night"
     },
     {
       "id": "grog-shop-2026-07-22-second-hand-embarrasment-due-by-midnight-a-way-of-flying",
@@ -8435,25 +8331,11 @@
       "title": "False Teeth Acoustic Set",
       "venueId": "forest-city-brewery",
       "date": "2026-07-22",
-      "time": "05:00 PM",
+      "time": "17:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2026/5/8/false-teeth-acoustic-set",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-22-trivia-with-kevin-whalen",
-      "title": "TRIVIA WITH KEVIN WHALEN",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-22",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/trivia-with-kevin-whalen-14",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -9053,25 +8935,11 @@
       "title": "Max Shlenk Quartet",
       "venueId": "forest-city-brewery",
       "date": "2026-07-23",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2026/7/23/max-shlenk-quartet",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-23-ted-riser-bike-mic-night",
-      "title": "Ted Riser Bike & Mic night",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-23",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/ted-riser-bike-mic-night-13",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -9203,6 +9071,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-23-justo-the-havana-nights"
+    },
+    {
+      "title": "Anthony Forniti",
+      "performers": [
+        {
+          "name": "Anthony Forniti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-23-anthony-forniti"
     },
     {
       "id": "grog-shop-2026-07-24-les-savy-fav",
@@ -9980,25 +9867,11 @@
       "title": "Austin Walkin' Cane",
       "venueId": "forest-city-brewery",
       "date": "2026-07-24",
-      "time": "05:00 PM",
+      "time": "17:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2025/10/24/austin-walkin-cane-y2g9s",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-24-liquid-night",
-      "title": "Liquid Night",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/liquid-night",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -11214,48 +11087,6 @@
       "manual": false
     },
     {
-      "id": "spirits-willoughby-2026-07-25-mandy-wilson-party-50",
-      "title": "Mandy Wilson party (50)",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-25",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/mandy-wilson-party-50",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-25-bobby-j-richfield-slim",
-      "title": "Bobby J & Richfield Slim",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-25",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/bobby-j-richfield-slim-2",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-25-benny-tizzano",
-      "title": "Benny Tizzano",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-25",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/benny-tizzano-1",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "title": "Strange Matter",
       "performers": [
         {
@@ -12093,7 +11924,7 @@
       "title": "Tapped In Yoga in the Beer Garden at Forest City Brewery",
       "venueId": "forest-city-brewery",
       "date": "2026-07-26",
-      "time": "11:00 AM",
+      "time": "11:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -12107,39 +11938,11 @@
       "title": "Kelly, Matt & Meredith Live",
       "venueId": "forest-city-brewery",
       "date": "2026-07-26",
-      "time": "03:00 PM",
+      "time": "15:00",
       "doors": null,
       "price": null,
       "performers": [],
       "eventUrl": "https://www.forestcitybrewery.com/events/2025/9/28/kelly-matt-meredith-live-gt4t3",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-26-frankie-laforge",
-      "title": "Frankie LaForge",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-26",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/frankie-laforge-3",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-26-dog-water",
-      "title": "Dog Water",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-26",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/dog-water",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -12257,6 +12060,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-07-26-ted-riser"
+    },
+    {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-26",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-26-dog-water"
     },
     {
       "id": "happy-dog-2026-07-27-monday-night-trivia",
@@ -12439,48 +12261,6 @@
       "manual": false
     },
     {
-      "id": "spirits-willoughby-2026-07-27-submit-payroll",
-      "title": "Submit payroll",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-27",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/submit-payroll-6",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-27-bocce",
-      "title": "Bocce",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-27",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/bocce-5-30-7",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "spirits-willoughby-2026-07-27-ace-of-spades",
-      "title": "ACE OF SPADES",
-      "venueId": "spirits-willoughby",
-      "date": "2026-07-27",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://spiritsinwilloughby.com/events/barroom-shenanigans-with-beardo-28",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "title": "Metal Mondays w/ DJ Sam Sinister",
       "performers": [
         {
@@ -12498,6 +12278,25 @@
       "source": "manual",
       "manual": true,
       "id": "smedleys-2026-07-27-dj-sam-sinister"
+    },
+    {
+      "title": "ACE OF SPADES",
+      "performers": [
+        {
+          "name": "ACE OF SPADES",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-27",
+      "time": "18:30",
+      "doors": null,
+      "price": "$5",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-27-ace-of-spades"
     },
     {
       "id": "beachland-ballroom-2026-07-28-amble",
@@ -12712,7 +12511,7 @@
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
       "date": "2026-07-28",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -13012,7 +12811,7 @@
       "title": "Line Dancing Lessons with Laura",
       "venueId": "forest-city-brewery",
       "date": "2026-07-29",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -13096,6 +12895,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-07-29-singo"
+    },
+    {
+      "title": "Trivia with Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-29-kevin-whalen"
     },
     {
       "id": "grog-shop-2026-07-30-houdini-s-code",
@@ -13571,7 +13389,7 @@
       "title": "When September Ends -AN ACOUSTIC GREEN DAY EXPERIENCE",
       "venueId": "forest-city-brewery",
       "date": "2026-07-30",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -13682,6 +13500,44 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-07-30-nathan-hedges"
+    },
+    {
+      "title": "Rick Z",
+      "performers": [
+        {
+          "name": "Rick Z",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-07-30-rick-z"
+    },
+    {
+      "title": "Ted Riser Bike & Mic Night",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-30",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-30-ted-riser"
     },
     {
       "id": "grog-shop-2026-07-31-the-magnavox-s-yellow-elevators-slag-genie",
@@ -14342,7 +14198,7 @@
       "title": "Natalie McMahon Free Acoustic Show",
       "venueId": "forest-city-brewery",
       "date": "2026-07-31",
-      "time": "05:00 PM",
+      "time": "17:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -14356,7 +14212,7 @@
       "title": "Plant Bingo at FCB",
       "venueId": "forest-city-brewery",
       "date": "2026-07-31",
-      "time": "07:00 PM",
+      "time": "19:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -14603,6 +14459,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-07-31-recess"
+    },
+    {
+      "title": "Austin Hamilton",
+      "performers": [
+        {
+          "name": "Austin Hamilton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-07-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-07-31-austin-hamilton"
     },
     {
       "id": "grog-shop-2026-08-01-the-second-annual-pretty-punk-fest",
@@ -15514,6 +15389,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-08-01-3am"
+    },
+    {
+      "title": "Learn Hands-On Craft Cocktails",
+      "performers": [
+        {
+          "name": "Learn Hands-On Craft Cocktails",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-01-learn-hands-on-craft-cocktails"
     },
     {
       "id": "grog-shop-2026-08-02-battle-of-the-bands",
@@ -17297,6 +17191,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-08-06-payton-paige"
+    },
+    {
+      "title": "Kitty Novakova",
+      "performers": [
+        {
+          "name": "Kitty Novakova",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-06-kitty-novakova"
     },
     {
       "id": "grog-shop-2026-08-07-nascar-aloe-jasiah-capital-punishment-tour",
@@ -19799,6 +19712,25 @@
       "id": "house-of-blues-2026-08-11-chance-the-rapper"
     },
     {
+      "title": "Tarot Night",
+      "performers": [
+        {
+          "name": "Eranah Adorjan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-11",
+      "time": "18:30",
+      "doors": null,
+      "price": "$22",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-11-eranah-adorjan"
+    },
+    {
       "id": "happy-dog-2026-08-12-tunnel-of-love",
       "title": "Tunnel of Love / Last Gasp / Secret Handshake",
       "venueId": "happy-dog",
@@ -20423,6 +20355,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-08-13-rob-samay"
+    },
+    {
+      "title": "Jimmy Mrozek",
+      "performers": [
+        {
+          "name": "Jimmy Mrozek",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-13",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-13-jimmy-mrozek"
     },
     {
       "id": "grog-shop-2026-08-14-king-space-from-space-with-love-album-release",
@@ -22712,6 +22663,25 @@
       "id": "blossom-music-center-2026-08-18-lindsey-stirling"
     },
     {
+      "title": "Game Night",
+      "performers": [
+        {
+          "name": "Game Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-18",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-18-game-night"
+    },
+    {
       "id": "grog-shop-2026-08-19-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
@@ -23348,6 +23318,25 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-08-20-carson-clouse"
+    },
+    {
+      "title": "John Markovic",
+      "performers": [
+        {
+          "name": "John Markovic",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-20",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-20-john-markovic"
     },
     {
       "id": "grog-shop-2026-08-21-now-that-s-what-i-call-the-90s-live-band-karaoke",
@@ -25925,6 +25914,25 @@
       "id": "local-bar-strongsville-2026-08-27-fungirl"
     },
     {
+      "title": "John Lucic",
+      "performers": [
+        {
+          "name": "John Lucic",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-08-27-john-lucic"
+    },
+    {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
       "title": "WWE Friday Night Smackdown",
       "venueId": "rocket-arena",
@@ -26571,25 +26579,6 @@
     },
     {
       "id": "rocket-arena-2026-08-29-don-toliver",
-      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-      "venueId": "rocket-arena",
-      "date": "2026-08-29",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Don Toliver",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-29-don-toliver",
       "title": "DON'S GARAGE VIP UPGRADE: DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2 (NOT AN EVENT TICKET)",
       "venueId": "rocket-arena",
       "date": "2026-08-29",
@@ -26604,6 +26593,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18328978",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-29-don-toliver",
+      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+      "venueId": "rocket-arena",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Don Toliver",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
       "source": "seatgeek",
       "manual": false
     },
@@ -28168,6 +28176,25 @@
       "id": "whiskey-island-2026-09-03-pet-the-cougar"
     },
     {
+      "title": "Pat Sandy",
+      "performers": [
+        {
+          "name": "Pat Sandy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-03-pat-sandy"
+    },
+    {
       "id": "rockin-on-the-river-2026-09-04-national-recording-artists-chris-lane-tyler-farr",
       "title": "National Recording Artists - Chris Lane & Tyler Farr",
       "venueId": "rockin-on-the-river",
@@ -28768,6 +28795,25 @@
       "id": "house-of-blues-2026-09-05-who-s-bad"
     },
     {
+      "title": "Learn Hands-On Craft Cocktails",
+      "performers": [
+        {
+          "name": "Learn Hands-On Craft Cocktails",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-05-learn-hands-on-craft-cocktails"
+    },
+    {
       "id": "beachland-ballroom-2026-09-06-the-furious-bongos",
       "title": "The Furious Bongos with Da Land Brass Band",
       "venueId": "beachland-ballroom",
@@ -29098,6 +29144,25 @@
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14969963",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Tarot Night",
+      "performers": [
+        {
+          "name": "Eranah Adorjan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-08",
+      "time": "18:30",
+      "doors": null,
+      "price": "$22",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-08-eranah-adorjan"
     },
     {
       "id": "mahalls-2026-09-09-sex-mex",
@@ -29481,6 +29546,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-10-the-pretty-reckless"
+    },
+    {
+      "title": "Island Vibes",
+      "performers": [
+        {
+          "name": "Island Vibes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-10-island-vibes"
     },
     {
       "id": "grog-shop-2026-09-11-sincere-engineer",
@@ -30699,6 +30783,25 @@
       "manual": false
     },
     {
+      "title": "Game Night",
+      "performers": [
+        {
+          "name": "Game Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-15",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-15-game-night"
+    },
+    {
       "id": "beachland-ballroom-2026-09-16-swmrs",
       "title": "SWMRS",
       "venueId": "beachland-ballroom",
@@ -31206,6 +31309,25 @@
       "ticketUrl": "https://www.clevelandorchestra.com/events/strauss-and-shostakovich",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Sully Solo",
+      "performers": [
+        {
+          "name": "Sully Solo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-17-sully-solo"
     },
     {
       "id": "beachland-ballroom-2026-09-18-rend-collective",
@@ -32556,6 +32678,25 @@
       "ticketUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "Ashley Gulla",
+      "performers": [
+        {
+          "name": "Ashley Gulla",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-09-24-ashley-gulla"
     },
     {
       "id": "the-agora-2026-09-25-pennywise",
@@ -35704,6 +35845,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-10-11-tab-benoit"
+    },
+    {
+      "id": "beachland-ballroom-2026-10-12-white-denim",
+      "title": "White Denim",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-12",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "White Denim",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/white-denim-12-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/white-denim-12-oct#tickets",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "mercury-music-lounge-2026-10-12-music-trivi-aoke-40",
@@ -43360,25 +43520,6 @@
         }
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "quintanas-speakeasy-2027-07-09-maria-didonato-live-in-the-speakeasy",
-      "title": "Maria DiDonato Live in The Speakeasy",
-      "venueId": "quintanas-speakeasy",
-      "date": "2027-07-09",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Maria DiDonato Live in The Speakeasy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://qbds.net/speakeasy-events/",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
