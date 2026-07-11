@@ -227,7 +227,7 @@ window.VENUES = [
   {
     "id": "hilarities",
     "name": "Hilarities",
-    "type": "theater",
+    "type": "club",
     "address": "2035 East Fourth St, Cleveland, OH 44114",
     "lat": 41.4992947,
     "lng": -81.6900662
@@ -255,14 +255,6 @@ window.VENUES = [
     "address": "1550 Chester Ave, Cleveland, OH 44114",
     "lat": 41.5028927,
     "lng": -81.68110709999999
-  },
-  {
-    "id": "quintanas-speakeasy",
-    "name": "Quintanas Speakeasy",
-    "type": "bar",
-    "address": "2200 S Taylor Rd, Cleveland Heights, OH 44118",
-    "lat": 41.4997934,
-    "lng": -81.5563557
   },
   {
     "id": "coda",
@@ -343,14 +335,6 @@ window.VENUES = [
     "address": "2135 Columbus Rd, Cleveland, OH 44113",
     "lat": 41.4832518,
     "lng": -81.70015769999999
-  },
-  {
-    "id": "spirits-willoughby",
-    "name": "Spirits in Willoughby",
-    "type": "bar",
-    "address": "3872 Erie St, Willoughby, OH 44094",
-    "lat": 41.6445782,
-    "lng": -81.4067774
   },
   {
     "id": "the-grove",
@@ -487,5 +471,21 @@ window.VENUES = [
     "address": "14751 Pearl Rd, Strongsville, OH 44136",
     "lat": 41.3076835,
     "lng": -81.8333123
+  },
+  {
+    "id": "quintanas-speakeasy",
+    "name": "Quintanas Speakeasy",
+    "type": "bar",
+    "address": "2200 S Taylor Rd, Cleveland Heights, OH 44118",
+    "lat": 41.4997934,
+    "lng": -81.5563557
+  },
+  {
+    "id": "spirits-willoughby",
+    "name": "Spirits in Willoughby",
+    "type": "bar",
+    "address": "3872 Erie St, Willoughby, OH 44094",
+    "lat": 41.6445782,
+    "lng": -81.4067774
   }
 ];
