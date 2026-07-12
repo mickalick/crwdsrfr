@@ -695,7 +695,8 @@ hr {
 }
 
 #featuredSpace .main, #featuredContent .main {
-	margin: 0 auto !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 #featuredSpace.page {
