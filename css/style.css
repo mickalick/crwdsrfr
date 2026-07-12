@@ -689,16 +689,28 @@ input[type=text], select, textarea {
   color: #FCFCFC;
 }
 
-#sponsors {
+
+hr {
+	width: 100%;
+}
+
+#featuredSpace .main, #featuredContent .main {
+	margin: 0 auto !important;
+}
+
+#featuredSpace.page {
+	align-items: flex-start;
+}
+
+.featureTile-Wide {
+	display: flex;
+	justify-content: center;
 	min-height: 5vh;
-	text-align: center;
+	width: 100%;
+	background-color: #101010
 }
 
-#sponsors .main {
-	background-color: #101010;
-}
-
-#sponsors .main p {
+.featureTile-Wide p {
 	color: #999;
 }
 
