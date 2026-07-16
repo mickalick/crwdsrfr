@@ -3,7 +3,7 @@ window.VENUES = [
   {
     "id": "grog-shop",
     "name": "Grog Shop",
-    "type": "bar",
+    "type": "music-hall",
     "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH 44106",
     "lat": 41.508361,
     "lng": -81.5804398
@@ -203,7 +203,7 @@ window.VENUES = [
   {
     "id": "foundry-concert-club",
     "name": "The Foundry Concert Club",
-    "type": "music-hall",
+    "type": "bar",
     "address": "4256 Pearl Rd, Cleveland, OH 44109",
     "lat": 41.4397738,
     "lng": -81.7066973
@@ -227,7 +227,7 @@ window.VENUES = [
   {
     "id": "hilarities",
     "name": "Hilarities",
-    "type": "club",
+    "type": "theater",
     "address": "2035 East Fourth St, Cleveland, OH 44114",
     "lat": 41.4992947,
     "lng": -81.6900662
@@ -291,7 +291,7 @@ window.VENUES = [
   {
     "id": "the-ivy",
     "name": "The Ivy",
-    "type": "bar",
+    "type": "club",
     "address": "1212 W 6th St, Cleveland, OH 44113",
     "lat": 41.5009647,
     "lng": -81.700116
@@ -427,7 +427,7 @@ window.VENUES = [
   {
     "id": "crobar",
     "name": "crobar",
-    "type": "club",
+    "type": "music-hall",
     "address": "3244 Saint Clair Ave NE, Cleveland, OH 44114",
     "lat": 41.5135601,
     "lng": -81.66972849999999
