@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   const currentSelector = document.getElementById('currentSelector');
-  currentSelector.addEventListener('mousedown', toggleDatePicker);
-  currentSelector.addEventListener('touchstart', toggleDatePicker);
+  currentSelector.addEventListener('mouseup', toggleDatePicker);
+  currentSelector.addEventListener('touchend', toggleDatePicker);
   
   document.getElementById('prevArrow').addEventListener('click', function() {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
