@@ -1179,6 +1179,10 @@ span.flatpickr-weekday {
 		width: 100%;
 	}
 
+	.event {
+		padding: 8px 16px;
+	}
+
 	.flex {
 		flex-direction: column;
 	}
