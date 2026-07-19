@@ -220,6 +220,12 @@ header.scrolled #menuNav {
 	padding-left: 0;
 }
 
+#menuNav hr {
+	width: 85%;
+	margin: 0 auto;
+	border-color: #101010;
+}
+
 .navItem {
 	display: block;
 	text-align: center;
@@ -240,6 +246,11 @@ header.scrolled #menuNav {
 	transition:all 250ms ease;
 	-webkit-transition:all 250ms ease;
 	-moz-transition:all 250ms ease;
+}
+
+.currentPage {
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 #wrapper{
@@ -848,7 +859,7 @@ span.flatpickr-weekday {
 .wave-top::before {   
   content: "";
   width: 100%;
-  height: 4px;
+  height: 3px;
   position: absolute;
   bottom: -0.3%;
   left: 0;
@@ -868,7 +879,7 @@ span.flatpickr-weekday {
 .wave-bottom::before {   
   content: "";
   width: 100%;
-  height: 4px;
+  height: 3px;
   position: absolute;
   bottom: -0.3%;
   left: 0;
