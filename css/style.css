@@ -1201,6 +1201,10 @@ span.flatpickr-weekday {
 	.columnTwo {
 		width: 100%;
 	}
+
+	#hero {
+		background-position: right;
+	}
 }
 
 @media screen and (max-width:420px){
