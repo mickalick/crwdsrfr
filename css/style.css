@@ -429,8 +429,7 @@ footer a {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	border-bottom: 5px solid #F9F976;
-	margin-bottom: 40px;
+	/*border-bottom: 5px solid #F9F976;*/
 	background: #222;
 	z-index: 10;
 }
@@ -840,8 +839,63 @@ span.flatpickr-weekday {
 
 
 
+.wave-top {  
+  height: 5px;
+  background-color: #222222;
+  position: relative;
+}
 
+.wave-top::before {   
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 22vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23f9f976'/></svg>");
+}
 
+.wave-bottom {  
+  height: 5px;
+  background-color: #f9f976;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.wave-bottom::before {   
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 22vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23222222'/></svg>");
+}
+
+.wave-footer {  
+  height: 5px;
+  background-color: #222222;
+  position: relative;
+}
+
+.wave-footer::before {   
+  content: "";
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 22vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23000000'/></svg>");
+}
 
 
 

@@ -3635,7 +3635,7 @@ async function main() {
       'the-sixty6': { name: 'The Sixty 6', url: 'https://thesixty6.com/', eventsUrl: 'https://thesixty6.com/events/', city: 'Cleveland' },
       'jolly-scholar': { name: 'The Jolly Scholar', url: 'https://thejollyscholar.com/', eventsUrl: 'https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events', city: 'Cleveland' },
       'the-ivy': { name: 'The Ivy', url: 'https://www.ivycle.com/', eventsUrl: 'https://www.ivycle.com/the-ivy-events', city: 'Cleveland' },
-      'bent-mace': { name: 'Bent Mace', url: 'https://www.ivycle.com/', eventsUrl: 'https://bentmace.org/events/', city: 'Cleveland' },
+      'bent-mace': { name: 'Bent Mace', url: 'https://bentmace.org/', eventsUrl: 'https://bentmace.org/events/', city: 'Cleveland' },
       'bside-liquor-lounge': { name: 'B Side Liquor Lounge', url: 'https://bsideliquorlounge.com/', eventsUrl: 'https://bsideliquorlounge.com/', city: 'Cleveland Heights' },
       'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
       'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
