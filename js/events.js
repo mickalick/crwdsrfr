@@ -173,11 +173,17 @@ function setDate(date) {
 
 document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
 
+let lastAutoClose = 0;
+
 flatpickr('#datePicker', {
   defaultDate: today,
   positionElement: document.getElementById('currentSelector'),
   position: 'below auto',
   disableMobile: true,
+  clickOpens: false,
+  onClose: function() {
+    lastAutoClose = Date.now();
+  },
   onChange: function(selectedDates) {
     if (!allData || selectedDates.length === 0) return;
     const formatted = selectedDates[0].toLocaleDateString('en-US', options);
@@ -207,11 +213,14 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
     e.stopPropagation();
     const fp = document.getElementById('datePicker')._flatpickr;
+
     if (fp.isOpen) {
       fp.close();
-    } else {
-      fp.open();
+      return;
     }
+    if (Date.now() - lastAutoClose < 300) return;
+
+    fp.open();
   }
 
   const currentSelector = document.getElementById('currentSelector');

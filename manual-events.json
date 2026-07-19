@@ -3548,14 +3548,14 @@
   },
 
   {
-    "title": "Electric Glide",
+    "title": "G Strings",
     "performers": [
       {
-        "name": "Electric Glide",
+        "name": "G Strings",
         "headliner": true
       }
     ],
-    "date": "2026-06-20",
+    "date": "2026-07-24",
     "time": null,
     "doors": null,
     "price": null,
@@ -3564,17 +3564,17 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-06-20-electric-glide"
+    "id": "sound-stage-tavern-2026-07-24-g-strings"
   },
   {
-    "title": "High Flyers",
+    "title": "Higher Ground",
     "performers": [
       {
-        "name": "High Flyers",
+        "name": "Higher Ground",
         "headliner": true
       }
     ],
-    "date": "2026-06-26",
+    "date": "2026-07-25",
     "time": null,
     "doors": null,
     "price": null,
@@ -3583,26 +3583,7 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-06-26-high-flyers"
-  },
-  {
-    "title": "DB Project",
-    "performers": [
-      {
-        "name": "DB Project",
-        "headliner": true
-      }
-    ],
-    "date": "2026-06-27",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "sound-stage-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "sound-stage-tavern-2026-06-27-db-project"
+    "id": "sound-stage-tavern-2026-07-25-higher-ground"
   },
 
   {
@@ -4712,15 +4693,15 @@
     },
 
     {
-    "title": "Justin Nyce",
+    "title": "Bobby Booshay",
     "performers": [
       {
-        "name": "Justin Nyce",
+        "name": "Bobby Booshay",
         "headliner": true
       }
     ],
-    "date": "2026-07-10",
-    "time": null,
+    "date": "2026-07-18",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4728,18 +4709,18 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-07-10-justin-nyce"
+    "id": "shooters-2026-07-18-bobby-booshay"
   },
   {
-    "title": "Cazes",
+    "title": "Emma Nicholas",
     "performers": [
       {
-        "name": "Cazes",
+        "name": "Emma Nicholas",
         "headliner": true
       }
     ],
-    "date": "2026-07-11",
-    "time": null,
+    "date": "2026-07-19",
+    "time": "15:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4747,26 +4728,7 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-07-11-cazes"
-  },
-  {
-    "title": "Redferrin",
-    "performers": [
-      {
-        "name": "Redferrin",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-12",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-07-12-redferrin"
+    "id": "shooters-2026-07-19-emma-nicholas"
   },
   {
     "title": "DJ Pauly D",
@@ -4777,7 +4739,7 @@
       }
     ],
     "date": "2026-07-24",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4796,7 +4758,7 @@
       }
     ],
     "date": "2026-07-31",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4815,7 +4777,7 @@
       }
     ],
     "date": "2026-08-01",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4834,7 +4796,7 @@
       }
     ],
     "date": "2026-08-22",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4853,7 +4815,7 @@
       }
     ],
     "date": "2026-08-28",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4872,7 +4834,7 @@
       }
     ],
     "date": "2026-09-12",
-    "time": null,
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4884,84 +4846,6 @@
   },
 
   
-  {
-    "title": "Second Nature",
-    "performers": [
-      {
-        "name": "Second Nature",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-10",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-07-10-second-nature"
-  },
-  {
-    "title": "Soul Clap- 12 Hour Party",
-    "performers": [
-      {
-        "name": "Soul Clap",
-        "headliner": true
-      },
-      {
-        "name": "Schlippy",
-        "headliner": false
-      },
-      {
-        "name": "Stout XTC",
-        "headliner": false
-      },
-      {
-        "name": "Craig Brodhead",
-        "headliner": false
-      },
-      {
-        "name": "Collin Miller",
-        "headliner": false
-      },
-      {
-        "name": "GLIMMER ON THE PATIO",
-        "headliner": false
-      },
-      {
-        "name": "Malzof",
-        "headliner": false
-      },
-      {
-        "name": "orcaclepussies",
-        "headliner": false
-      },
-      {
-        "name": "Hot Take",
-        "headliner": false
-      },
-      {
-        "name": "Kevon Rhoa",
-        "headliner": false
-      },
-      {
-        "name": "Uh Huh",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-07-11-soul-clap"
-  },
   {
     "title": "Alpha Rhythm",
     "performers": [
@@ -4981,13 +4865,40 @@
     "date": "2026-07-18",
     "time": "21:00",
     "doors": null,
-    "price": "$15 adv",
+    "price": "$15",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "crobar",
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-07-18-kc"
+  },
+  {
+    "title": "Harrison BDP",
+    "performers": [
+      {
+        "name": "Harrison BDP",
+        "headliner": true
+      },
+      {
+        "name": "Carrie Sours",
+        "headliner": false
+      },
+      {
+        "name": "Hot Take",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-24",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-07-24-harrison-bdp"
   },
   {
     "title": "Moon Boots",
@@ -5016,9 +4927,43 @@
     "manual": true,
     "id": "crobar-2026-07-25-moon-boots"
   },
-
   {
-    "title": "Harry Romero",
+    "title": "güdtaste presents: ünity",
+    "performers": [
+      {
+        "name": "Cardio",
+        "headliner": true
+      },
+      {
+        "name": "C Star",
+        "headliner": false
+      },
+      {
+        "name": "Just AJ",
+        "headliner": false
+      },
+      {
+        "name": "Soud on Tape",
+        "headliner": false
+      },
+      {
+        "name": "Zihynx",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-31",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-07-31-cardio"
+  },
+  {
+    "title": "Sampled",
     "performers": [
       {
         "name": "Harry Romero",
@@ -5037,17 +4982,13 @@
         "headliner": false
       },
       {
-        "name": "Delish",
-        "headliner": false
-      },
-      {
-        "name": "Andre Leone",
+        "name": "Delish b2b Andre Leone",
         "headliner": false
       }
     ],
     "date": "2026-08-08",
     "time": "08:00",
-    "doors": "08:00",
+    "doors": null,
     "price": null,
     "eventUrl": null,
     "ticketUrl": null,
@@ -5056,6 +4997,8 @@
     "manual": true,
     "id": "crobar-2026-08-08-harry-romero"
   },
+
+
 
   {
     "title": "Jam Machine",
@@ -6566,6 +6509,8 @@
   },
 
 
+
+
   {
     "title": "Rockport",
     "performers": [
@@ -6776,6 +6721,10 @@
     "id": "house-of-blues-2026-07-31-diana-chittester"
   },
 
+
+
+
+
   {
     "title": "DJ Conscious Creator",
     "performers": [
@@ -6894,6 +6843,10 @@
     "manual": true,
     "id": "house-of-blues-2026-07-31-dj-eisenberg"
   },
+
+
+
+
 
   {
     "title": "Kevian Kraemer",
@@ -7156,80 +7109,14 @@
   },
 
 
-  {
-    "title": "Gimme Sugar and Ball & Chain",
-    "performers": [
-      {
-        "name": "Gimme Sugar",
-        "headliner": true
-      },
-      {
-        "name": "Ball & Chain",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-10",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-07-10-gimme-sugar"
-  },
-  {
-    "title": "Idobi Radio Summer School",
-    "performers": [
-      {
-        "name": "Idobi Radio Summer School",
-        "headliner": true
-      },
-      {
-        "name": "Honey Revenge",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-07-11-idobi-radio-summer-school"
-  },
-  {
-    "title": "Killer Queen",
-    "performers": [
-      {
-        "name": "Killer Queen",
-        "headliner": true
-      },
-      {
-        "name": "Patrick Myers",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-07-15-killer-queen"
-  },
+
+
+
   {
     "title": "Smells Like Nirvana",
     "performers": [
       {
-        "name": "Smells Like Nirvana",
+        "name": "Smells Like Nirvana - A Tribute to Nirvana",
         "headliner": true
       }
     ],
@@ -7242,13 +7129,13 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-07-17-smells-like-nirvana"
+    "id": "house-of-blues-2026-07-17-smells-like-nirvana-a-tribute-to-nirvana"
   },
   {
-    "title": "Love In The Club",
+    "title": "Love in the Club",
     "performers": [
       {
-        "name": "Love In The Club",
+        "name": "Love in the Club",
         "headliner": true
       }
     ],
@@ -7302,25 +7189,6 @@
     "id": "house-of-blues-2026-08-01-tomahawk"
   },
   {
-    "title": "Bossman Dlow",
-    "performers": [
-      {
-        "name": "Bossman Dlow",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-03",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-03-bossman-dlow"
-  },
-  {
     "title": "BoDeans",
     "performers": [
       {
@@ -7363,10 +7231,10 @@
     "id": "house-of-blues-2026-08-07-american-football"
   },
   {
-    "title": "Bop To The Top",
+    "title": "Bop to the Top",
     "performers": [
       {
-        "name": "Bop To The Top",
+        "name": "Bop to the Top",
         "headliner": true
       }
     ],
@@ -7382,10 +7250,10 @@
     "id": "house-of-blues-2026-08-08-bop-to-the-top"
   },
   {
-    "title": "Chance The Rapper",
+    "title": "Chance the Rapper",
     "performers": [
       {
-        "name": "Chance The Rapper",
+        "name": "Chance the Rapper",
         "headliner": true
       }
     ],
@@ -7401,10 +7269,10 @@
     "id": "house-of-blues-2026-08-11-chance-the-rapper"
   },
   {
-    "title": "Saved By The 90's",
+    "title": "Saved by the 90's",
     "performers": [
       {
-        "name": "Saved By The 90's",
+        "name": "Saved by the 90's",
         "headliner": true
       }
     ],
@@ -7458,10 +7326,10 @@
     "id": "house-of-blues-2026-08-19-down"
   },
   {
-    "title": "Bebe Rexha",
+    "title": "Rene Vaca",
     "performers": [
       {
-        "name": "Bebe Rexha",
+        "name": "Rene Vaca",
         "headliner": true
       }
     ],
@@ -7474,7 +7342,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-20-bebe-rexha"
+    "id": "house-of-blues-2026-08-20-rene-vaca"
   },
   {
     "title": "Jon B.",
@@ -7539,6 +7407,10 @@
       {
         "name": "Isaiah Rashad",
         "headliner": true
+      },
+      {
+        "name": "Lil Sunny",
+        "headliner": false
       }
     ],
     "date": "2026-08-28",
@@ -7556,7 +7428,7 @@
     "title": "Peephole",
     "performers": [
       {
-        "name": "Peephole",
+        "name": "Peephole - Tribute to System of a Down",
         "headliner": true
       }
     ],
@@ -7569,13 +7441,13 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-09-04-peephole"
+    "id": "house-of-blues-2026-09-04-peephole-tribute-to-system-of-a-down"
   },
   {
     "title": "Who's Bad",
     "performers": [
       {
-        "name": "Who's Bad",
+        "name": "Who's Bad: The Ultimate Michael Jackson Experience",
         "headliner": true
       }
     ],
@@ -7588,7 +7460,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-09-05-who-s-bad"
+    "id": "house-of-blues-2026-09-05-who-s-bad-the-ultimate-michael-jackson-experience"
   },
   {
     "title": "Chad Gray",
@@ -7628,8 +7500,6 @@
     "manual": true,
     "id": "house-of-blues-2026-09-10-the-pretty-reckless"
   },
-
-
   {
     "title": "Jose Madero",
     "performers": [
@@ -7707,7 +7577,7 @@
     "id": "house-of-blues-2026-09-22-black-veil-brides"
   },
   {
-    "title": "How Did We Get Weird Live! with Vanessa Bayer",
+    "title": "How Did We Get Weird Live!",
     "performers": [
       {
         "name": "Vanessa Bayer",
@@ -7764,14 +7634,14 @@
     "id": "house-of-blues-2026-09-27-buena-vista-orchestra"
   },
   {
-    "title": "Artemas",
+    "title": "Domi & JD Beck",
     "performers": [
       {
-        "name": "Artemas",
+        "name": "Domi & JD Beck",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
+    "date": "2025-09-28",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7780,7 +7650,45 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-03-artemas"
+    "id": "house-of-blues-2025-09-28-domi-jd-beck"
+  },
+  {
+    "title": "Domi & JD Beck",
+    "performers": [
+      {
+        "name": "Domi & JD Beck",
+        "headliner": true
+      }
+    ],
+    "date": "2025-09-28",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2025-09-28-domi-jd-beck"
+  },
+  {
+    "title": "Artemas",
+    "performers": [
+      {
+        "name": "Artemas",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-03",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2025-10-03-artemas"
   },
   {
     "title": "Here Come The Mummies",
@@ -7790,7 +7698,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-10",
+    "date": "2025-10-10",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7799,7 +7707,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-10-here-come-the-mummies"
+    "id": "house-of-blues-2025-10-10-here-come-the-mummies"
   },
   {
     "title": "Tab Benoit",
@@ -7813,7 +7721,7 @@
         "headliner": false
       }
     ],
-    "date": "2026-10-11",
+    "date": "2025-10-11",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7822,7 +7730,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-11-tab-benoit"
+    "id": "house-of-blues-2025-10-11-tab-benoit"
   },
   {
     "title": "The Brook & The Bluff",
@@ -7832,7 +7740,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-19",
+    "date": "2025-10-19",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7841,7 +7749,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-19-the-brook-the-bluff"
+    "id": "house-of-blues-2025-10-19-the-brook-the-bluff"
   },
   {
     "title": "Hawthorne Heights",
@@ -7851,7 +7759,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-20",
+    "date": "2025-10-20",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -7860,7 +7768,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-20-hawthorne-heights"
+    "id": "house-of-blues-2025-10-20-hawthorne-heights"
   },
   {
     "title": "Lauren Alaina",
@@ -7870,7 +7778,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-23",
+    "date": "2025-10-23",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7879,7 +7787,49 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-23-lauren-alaina"
+    "id": "house-of-blues-2025-10-23-lauren-alaina"
+  },
+  {
+    "title": "Candlebox",
+    "performers": [
+      {
+        "name": "Candlebox",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2025-10-24-candlebox"
+  },
+  {
+    "title": "Cradle of Filth",
+    "performers": [
+      {
+        "name": "Cradle of Filth",
+        "headliner": true
+      },
+      {
+        "name": "Moonspell",
+        "headliner": false
+      }
+    ],
+    "date": "2025-10-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2025-10-25-cradle-of-filth"
   },
   {
     "title": "The Airborne Toxic Event",
@@ -7889,7 +7839,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-26",
+    "date": "2025-10-26",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7898,7 +7848,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-26-the-airborne-toxic-event"
+    "id": "house-of-blues-2025-10-26-the-airborne-toxic-event"
   },
   {
     "title": "The Wrecks",
@@ -7908,7 +7858,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-27",
+    "date": "2025-10-27",
     "time": "17:30",
     "doors": null,
     "price": null,
@@ -7917,7 +7867,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-27-the-wrecks"
+    "id": "house-of-blues-2025-10-27-the-wrecks"
   },
   {
     "title": "The Longest Johns",
@@ -7927,7 +7877,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-30",
+    "date": "2025-10-30",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7936,7 +7886,26 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-30-the-longest-johns"
+    "id": "house-of-blues-2025-10-30-the-longest-johns"
+  },
+  {
+    "title": "The Amity Affliction",
+    "performers": [
+      {
+        "name": "The Amity Affliction",
+        "headliner": true
+      }
+    ],
+    "date": "2025-11-01",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2025-11-01-the-amity-affliction"
   },
   {
     "title": "Nekrogoblikon",
@@ -7950,7 +7919,7 @@
         "headliner": false
       }
     ],
-    "date": "2026-11-04",
+    "date": "2025-11-04",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -7959,7 +7928,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-04-nekrogoblikon"
+    "id": "house-of-blues-2025-11-04-nekrogoblikon"
   },
   {
     "title": "Chris Mitchell",
@@ -7969,7 +7938,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-06",
+    "date": "2025-11-06",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7978,7 +7947,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-06-chris-mitchell"
+    "id": "house-of-blues-2025-11-06-chris-mitchell"
   },
   {
     "title": "Pigeons Playing Ping Pong",
@@ -7988,7 +7957,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-07",
+    "date": "2025-11-07",
     "time": "17:30",
     "doors": null,
     "price": null,
@@ -7997,7 +7966,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-07-pigeons-playing-ping-pong"
+    "id": "house-of-blues-2025-11-07-pigeons-playing-ping-pong"
   },
   {
     "title": "Palace",
@@ -8007,7 +7976,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-11",
+    "date": "2025-11-11",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8016,7 +7985,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-11-palace"
+    "id": "house-of-blues-2025-11-11-palace"
   },
   {
     "title": "Pouya",
@@ -8026,7 +7995,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-12",
+    "date": "2025-11-12",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8035,7 +8004,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-12-pouya"
+    "id": "house-of-blues-2025-11-12-pouya"
   },
   {
     "title": "The Menzingers",
@@ -8045,7 +8014,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-13",
+    "date": "2025-11-13",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8054,7 +8023,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-13-the-menzingers"
+    "id": "house-of-blues-2025-11-13-the-menzingers"
   },
   {
     "title": "AJ McLean",
@@ -8064,7 +8033,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-14",
+    "date": "2025-11-14",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8073,7 +8042,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-14-aj-mclean"
+    "id": "house-of-blues-2025-11-14-aj-mclean"
   },
   {
     "title": "Rival Sons",
@@ -8083,7 +8052,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-18",
+    "date": "2025-11-18",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8092,7 +8061,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-18-rival-sons"
+    "id": "house-of-blues-2025-11-18-rival-sons"
   },
   {
     "title": "Everclear",
@@ -8102,7 +8071,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-19",
+    "date": "2025-11-19",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8111,7 +8080,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-19-everclear"
+    "id": "house-of-blues-2025-11-19-everclear"
   },
   {
     "title": "Ekoostik Hookah",
@@ -8121,7 +8090,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-21",
+    "date": "2025-11-21",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8130,7 +8099,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-21-ekoostik-hookah"
+    "id": "house-of-blues-2025-11-21-ekoostik-hookah"
   },
   {
     "title": "The Pineapple Thief",
@@ -8140,7 +8109,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-28",
+    "date": "2025-11-28",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8149,7 +8118,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-28-the-pineapple-thief"
+    "id": "house-of-blues-2025-11-28-the-pineapple-thief"
   },
   {
     "title": "The Bouncing Souls",
@@ -8159,7 +8128,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-12-02",
+    "date": "2025-12-02",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8168,7 +8137,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-12-02-the-bouncing-souls"
+    "id": "house-of-blues-2025-12-02-the-bouncing-souls"
   },
   {
     "title": "GWAR",
@@ -8178,7 +8147,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-12-05",
+    "date": "2025-12-05",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8187,7 +8156,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-12-05-gwar"
+    "id": "house-of-blues-2025-12-05-gwar"
   },
   {
     "title": "VNV Nation",
@@ -8197,7 +8166,7 @@
         "headliner": true
       }
     ],
-    "date": "2027-04-03",
+    "date": "2026-04-03",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -8206,8 +8175,16 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2027-04-03-vnv-nation"
+    "id": "house-of-blues-2026-04-03-vnv-nation"
   },
+
+
+
+
+
+
+
+
 
   {
     "title": "Maria Petti",
@@ -9367,101 +9344,6 @@
 
 
   {
-    "title": "Ted Riser",
-    "performers": [
-      {
-        "name": "Ted Riser",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-11-ted-riser"
-  },
-  {
-    "title": "Dom Noce",
-    "performers": [
-      {
-        "name": "Dom Noce",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-12",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-12-dom-noce"
-  },
-  {
-    "title": "The Hit List",
-    "performers": [
-      {
-        "name": "The Hit List",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-12",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-12-the-hit-list"
-  },
-  {
-    "title": "ACE OF SPADES",
-    "performers": [
-      {
-        "name": "ACE OF SPADES",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-13",
-    "time": "18:30",
-    "doors": null,
-    "price": "$5",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-13-ace-of-spades"
-  },
-  {
-    "title": "Trivia with Kevin Whalen",
-    "performers": [
-      {
-        "name": "Kevin Whalen",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-15-kevin-whalen"
-  },
-  {
     "title": "Cleveland Blues Society Jam",
     "performers": [
       {
@@ -9519,10 +9401,10 @@
     "id": "spirits-willoughby-2026-07-18-ashley-marie"
   },
   {
-    "title": "CRB Unplugged",
+    "title": "Filth Unplugged",
     "performers": [
       {
-        "name": "CRB Unplugged",
+        "name": "Filth Unplugged",
         "headliner": true
       }
     ],
@@ -9535,7 +9417,7 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-07-18-crb-unplugged"
+    "id": "spirits-willoughby-2026-07-18-filth-unplugged"
   },
   {
     "title": "Route 6",
@@ -9576,10 +9458,128 @@
     "id": "spirits-willoughby-2026-07-19-stamper-starr"
   },
   {
-    "title": "Dog Water",
+    "title": "Trivia with Kevin Whalen",
     "performers": [
       {
-        "name": "Dog Water",
+        "name": "Kevin Whalen",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-22",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-22-kevin-whalen"
+  },
+  {
+    "title": "Ted Riser Bike & Mic Night",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-23",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-23-ted-riser"
+  },
+  {
+    "title": "Liquid Night",
+    "performers": [
+      {
+        "name": "Liquid Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-24-liquid-night"
+  },
+  {
+    "title": "Bobby J at Richfield Slim",
+    "performers": [
+      {
+        "name": "Bobby J",
+        "headliner": true
+      },
+      {
+        "name": "Richfield Slim",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-25",
+    "time": "14:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-25-bobby-j"
+  },
+  {
+    "title": "Benny T The Singing DJ",
+    "performers": [
+      {
+        "name": "Benny T The Singing DJ",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-25-benny-t-the-singing-dj"
+  },
+  {
+    "title": "Frankie LaForge",
+    "performers": [
+      {
+        "name": "Frankie LaForge",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-26",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-07-26-frankie-laforge"
+  },
+  {
+    "title": "NightDawgs",
+    "performers": [
+      {
+        "name": "NightDawgs",
         "headliner": true
       }
     ],
@@ -9592,26 +9592,7 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-07-26-dog-water"
-  },
-  {
-    "title": "ACE OF SPADES",
-    "performers": [
-      {
-        "name": "ACE OF SPADES",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-27",
-    "time": "18:30",
-    "doors": null,
-    "price": "$5",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-07-27-ace-of-spades"
+    "id": "spirits-willoughby-2026-07-26-nightdawgs"
   },
   {
     "title": "Trivia with Kevin Whalen",
@@ -9669,6 +9650,44 @@
     "source": "manual",
     "manual": true,
     "id": "spirits-willoughby-2026-07-31-austin-hamilton"
+  },
+  {
+    "title": "Traci & the Dreamers",
+    "performers": [
+      {
+        "name": "Traci & the Dreamers",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-08-01-traci-the-dreamers"
+  },
+  {
+    "title": "Mara Petti",
+    "performers": [
+      {
+        "name": "Mara Petti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-02",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-08-02-mara-petti"
   }
 
 
