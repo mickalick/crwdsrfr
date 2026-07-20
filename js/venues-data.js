@@ -5,6 +5,7 @@ window.VENUES = [
     "name": "Grog Shop",
     "type": "music-hall",
     "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH 44106",
+    "area": "Cleveland Heights",
     "lat": 41.508361,
     "lng": -81.5804398
   },
@@ -13,6 +14,7 @@ window.VENUES = [
     "name": "The Agora",
     "type": "theater",
     "address": "5000 Euclid Ave, Cleveland, OH 44103",
+    "area": "MidTown",
     "lat": 41.50338199999999,
     "lng": -81.6541697
   },
@@ -21,6 +23,7 @@ window.VENUES = [
     "name": "Rocket Arena",
     "type": "arena",
     "address": "1 Center Court, Cleveland, OH 44115",
+    "area": "Downtown",
     "lat": 41.4963405,
     "lng": -81.6719914
   },
@@ -29,6 +32,7 @@ window.VENUES = [
     "name": "Beachland Ballroom",
     "type": "music-hall",
     "address": "15711 Waterloo Rd, Cleveland, OH 44110",
+    "area": "Collinwood",
     "lat": 41.5714165,
     "lng": -81.5704374
   },
@@ -37,6 +41,7 @@ window.VENUES = [
     "name": "The Noshery at Huntington Beach",
     "type": "outdoor",
     "address": "28001 Lake Rd, Bay Village, OH 44140",
+    "area": "Bay Village",
     "lat": 41.4890547,
     "lng": -81.92963689999999
   },
@@ -45,6 +50,7 @@ window.VENUES = [
     "name": "Euclid Beach",
     "type": "outdoor",
     "address": "16301 Lakeshore Blvd, Cleveland, OH 44110",
+    "area": "Collinwood",
     "lat": 41.5828974,
     "lng": -81.56935349999999
   },
@@ -53,6 +59,7 @@ window.VENUES = [
     "name": "Edgewater Beach",
     "type": "outdoor",
     "address": "6500 Memorial Shoreway, Cleveland, OH 44102",
+    "area": "Edgewater",
     "lat": 41.5059918,
     "lng": -81.6964325
   },
@@ -61,6 +68,7 @@ window.VENUES = [
     "name": "Emerald Necklace Marina",
     "type": "outdoor",
     "address": "1500 Scenic Park Dr, Lakewood, OH 44107",
+    "area": "Lakewood",
     "lat": 41.481098,
     "lng": -81.8313972
   },
@@ -69,6 +77,7 @@ window.VENUES = [
     "name": "The Galley at East 55th Marina",
     "type": "outdoor",
     "address": "5601 N Marginal Rd, Cleveland, OH 44114",
+    "area": "Glenville",
     "lat": 41.5305037,
     "lng": -81.652422
   },
@@ -77,6 +86,7 @@ window.VENUES = [
     "name": "Merwin's Wharf",
     "type": "outdoor",
     "address": "1785 Merwin Ave, Cleveland, OH 44113",
+    "area": "Irishtown Bend",
     "lat": 41.4893085,
     "lng": -81.7026339
   },
@@ -85,6 +95,7 @@ window.VENUES = [
     "name": "Rockin on the River",
     "type": "outdoor",
     "address": "421 Black River Ln, Lorain, OH 44052",
+    "area": "Lorain",
     "lat": 41.4677599,
     "lng": -82.17476239999999
   },
@@ -93,6 +104,7 @@ window.VENUES = [
     "name": "Cain Park",
     "type": "outdoor",
     "address": "14591 Superior Rd, Cleveland Heights, OH 44118",
+    "area": "Cleveland Heights",
     "lat": 41.5071297,
     "lng": -81.560671
   },
@@ -101,6 +113,7 @@ window.VENUES = [
     "name": "Happy Dog",
     "type": "bar",
     "address": "5801 Detroit Ave, Cleveland, OH 44102",
+    "area": "Detroit Shoreway",
     "lat": 41.4848048,
     "lng": -81.72652029999999
   },
@@ -109,6 +122,7 @@ window.VENUES = [
     "name": "Mahalls",
     "type": "music-hall",
     "address": "13200 Madison Ave, Lakewood, OH 44107",
+    "area": "Lakewood",
     "lat": 41.4772835,
     "lng": -81.7811796
   },
@@ -117,6 +131,7 @@ window.VENUES = [
     "name": "Bop Stop",
     "type": "music-hall",
     "address": "2920 Detroit Ave, Cleveland, OH 44113",
+    "area": "Detroit Shoreway",
     "lat": 41.489898,
     "lng": -81.71178119999999
   },
@@ -125,6 +140,7 @@ window.VENUES = [
     "name": "Globe Iron",
     "type": "music-hall",
     "address": "2325 Elm St, Cleveland, OH 44113",
+    "area": "Flats West Bank",
     "lat": 41.496102,
     "lng": -81.7078354
   },
@@ -133,6 +149,7 @@ window.VENUES = [
     "name": "Jacobs Pavilion",
     "type": "outdoor",
     "address": "2014 Sycamore St, Cleveland, OH 44113",
+    "area": "Flats West Bank",
     "lat": 41.4962961,
     "lng": -81.7030652
   },
@@ -141,6 +158,7 @@ window.VENUES = [
     "name": "Music Box Supper Club",
     "type": "music-hall",
     "address": "1148 Main Ave, Cleveland, OH 44113",
+    "area": "Flats West Bank",
     "lat": 41.4982204,
     "lng": -81.70702279999999
   },
@@ -149,6 +167,7 @@ window.VENUES = [
     "name": "The Winchester Music Tavern",
     "type": "bar",
     "address": "12112 Madison Ave, Lakewood, OH 44107",
+    "area": "Lakewood",
     "lat": 41.4772112,
     "lng": -81.7736499
   },
@@ -157,6 +176,7 @@ window.VENUES = [
     "name": "FWD Day + Nightclub",
     "type": "club",
     "address": "1176 Front Ave, Cleveland, OH 44113",
+    "area": "Flats East Bank",
     "lat": 41.4999356,
     "lng": -81.7080354
   },
@@ -165,6 +185,7 @@ window.VENUES = [
     "name": "Collision Bend Cleveland",
     "type": "brewery",
     "address": "1250 Old River Rd, Cleveland, OH 44113",
+    "area": "Flats East Bank",
     "lat": 41.4987861,
     "lng": -81.7040533
   },
@@ -173,6 +194,7 @@ window.VENUES = [
     "name": "Collision Bend Euclid",
     "type": "brewery",
     "address": "1261 Babbitt Rd, Euclid, OH 44132",
+    "area": "Euclid",
     "lat": 41.5909546,
     "lng": -81.5086279
   },
@@ -181,6 +203,7 @@ window.VENUES = [
     "name": "Mercury Music Lounge",
     "type": "bar",
     "address": "18206 Detroit Ave, Lakewood, OH 44107",
+    "area": "Lakewood",
     "lat": 41.483978,
     "lng": -81.8242667
   },
@@ -189,6 +212,7 @@ window.VENUES = [
     "name": "Rock & Roll Hall of Fame",
     "type": "theater",
     "address": "1100 Rock and Roll Blvd, Cleveland, OH 44114",
+    "area": "North Coast Harbor",
     "lat": 41.5085418,
     "lng": -81.6953688
   },
@@ -197,6 +221,7 @@ window.VENUES = [
     "name": "Playhouse Square",
     "type": "theater",
     "address": "1501 Euclid Ave, Cleveland, OH 44115",
+    "area": "Playhouse Square",
     "lat": 41.501152,
     "lng": -81.681128
   },
@@ -205,6 +230,7 @@ window.VENUES = [
     "name": "The Foundry Concert Club",
     "type": "bar",
     "address": "4256 Pearl Rd, Cleveland, OH 44109",
+    "area": "Old Brooklyn",
     "lat": 41.4397738,
     "lng": -81.7066973
   },
@@ -213,6 +239,7 @@ window.VENUES = [
     "name": "Dunlaps",
     "type": "bar",
     "address": "3258 W 32nd St, Cleveland, OH 44109",
+    "area": "Clark Fulton",
     "lat": 41.4653622,
     "lng": -81.7044098
   },
@@ -221,6 +248,7 @@ window.VENUES = [
     "name": "Welcome to the Farm",
     "type": "bar",
     "address": "1054 Old River Rd, Cleveland, OH 44113",
+    "area": "Flats East Bank",
     "lat": 41.4996444,
     "lng": -81.70729879999999
   },
@@ -229,6 +257,7 @@ window.VENUES = [
     "name": "Hilarities",
     "type": "theater",
     "address": "2035 East Fourth St, Cleveland, OH 44114",
+    "area": "E 4th",
     "lat": 41.4992947,
     "lng": -81.6900662
   },
@@ -237,6 +266,7 @@ window.VENUES = [
     "name": "Van Aken District",
     "type": "outdoor",
     "address": "3401 Tuttle Rd, Shaker Heights, OH 44122",
+    "area": "Shaker Heights",
     "lat": 41.4673159,
     "lng": -81.5368047
   },
@@ -245,6 +275,7 @@ window.VENUES = [
     "name": "The Treelawn",
     "type": "music-hall",
     "address": "15335 Waterloo Rd, Cleveland, OH 44110",
+    "area": "Collinwood",
     "lat": 41.5706596,
     "lng": -81.5733357
   },
@@ -253,6 +284,7 @@ window.VENUES = [
     "name": "Hofbrauhaus",
     "type": "music-hall",
     "address": "1550 Chester Ave, Cleveland, OH 44114",
+    "area": "Playhouse Square",
     "lat": 41.5028927,
     "lng": -81.68110709999999
   },
@@ -261,6 +293,7 @@ window.VENUES = [
     "name": "CODA",
     "type": "music-hall",
     "address": "2247 Professor Ave, Cleveland, OH 44113",
+    "area": "Tremont",
     "lat": 41.4816052,
     "lng": -81.6863691
   },
@@ -269,6 +302,7 @@ window.VENUES = [
     "name": "Prosperity Social Club",
     "type": "bar",
     "address": "1109 Starkweather Ave, Cleveland, OH 44113",
+    "area": "Tremont",
     "lat": 41.4771892,
     "lng": -81.6898741
   },
@@ -277,6 +311,7 @@ window.VENUES = [
     "name": "The Sixty 6",
     "type": "music-hall",
     "address": "1966 E 66th St, Cleveland, OH 44103",
+    "area": "MidTown",
     "lat": 41.5056042,
     "lng": -81.6448116
   },
@@ -285,6 +320,7 @@ window.VENUES = [
     "name": "The Jolly Scholar",
     "type": "brewery",
     "address": "11111 Euclid Ave, Cleveland, OH 44106",
+    "area": "University Circle",
     "lat": 41.5074066,
     "lng": -81.60832649999999
   },
@@ -293,6 +329,7 @@ window.VENUES = [
     "name": "The Ivy",
     "type": "club",
     "address": "1212 W 6th St, Cleveland, OH 44113",
+    "area": "Downtown",
     "lat": 41.5009647,
     "lng": -81.700116
   },
@@ -301,6 +338,7 @@ window.VENUES = [
     "name": "Bent Mace",
     "type": "music-hall",
     "address": "1709 Alvin Ave, Cleveland, OH 44109",
+    "area": "Old Brooklyn",
     "lat": 41.4267869,
     "lng": -81.6931464
   },
@@ -309,6 +347,7 @@ window.VENUES = [
     "name": "B Side Liquor Lounge",
     "type": "bar",
     "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH 44106",
+    "area": "Cleveland Heights",
     "lat": 41.508361,
     "lng": -81.5804398
   },
@@ -317,6 +356,7 @@ window.VENUES = [
     "name": "No Class",
     "type": "bar",
     "address": "11213 Detroit Ave, Cleveland, OH, 44102",
+    "area": "Edgewater",
     "lat": 41.4825948,
     "lng": -81.7655317
   },
@@ -325,6 +365,7 @@ window.VENUES = [
     "name": "The Cleveland Orchestra",
     "type": "theater",
     "address": "11001 Euclid Ave, Cleveland, OH 44106",
+    "area": "University Circle",
     "lat": 41.5062527,
     "lng": -81.6094664
   },
@@ -333,6 +374,7 @@ window.VENUES = [
     "name": "Forest City Brewery",
     "type": "brewery",
     "address": "2135 Columbus Rd, Cleveland, OH 44113",
+    "area": "Ohio City",
     "lat": 41.4832518,
     "lng": -81.70015769999999
   },
@@ -341,6 +383,7 @@ window.VENUES = [
     "name": "The Grove Amphitheatre",
     "type": "outdoor",
     "address": "425 North Commons Blvd, Mayfield Village, OH 44143",
+    "area": "Mayfield Village",
     "lat": 41.5615684,
     "lng": -81.4408481
   },
@@ -349,6 +392,7 @@ window.VENUES = [
     "name": "Cebars",
     "type": "bar",
     "address": "595 E 185th St, Cleveland, OH 44119",
+    "area": "Collinwood",
     "lat": 41.5913921,
     "lng": -81.5496103
   },
@@ -357,6 +401,7 @@ window.VENUES = [
     "name": "Paninis Westlake",
     "type": "bar",
     "address": "23800 Detroit Rd, Westlake, OH 44145",
+    "area": "Westlake",
     "lat": 41.47187599999999,
     "lng": -81.8834825
   },
@@ -365,6 +410,7 @@ window.VENUES = [
     "name": "Whiskey Island",
     "type": "outdoor",
     "address": "2800 Whiskey Island Dr, Cleveland, OH 44102",
+    "area": "Wendy Park",
     "lat": 41.4988435,
     "lng": -81.71510459999999
   },
@@ -373,6 +419,7 @@ window.VENUES = [
     "name": "Cavottas Garden Bar",
     "type": "outdoor",
     "address": "19603 Nottingham Rd, Cleveland, OH 44110",
+    "area": "Collinwood",
     "lat": 41.570671,
     "lng": -81.54166579999999
   },
@@ -381,6 +428,7 @@ window.VENUES = [
     "name": "Sound Stage Tavern",
     "type": "bar",
     "address": "30525 Euclid Ave, Wickliffe, OH 44092",
+    "area": "Wickliffe",
     "lat": 41.6199269,
     "lng": -81.4549414
   },
@@ -389,6 +437,7 @@ window.VENUES = [
     "name": "Smedleys",
     "type": "bar",
     "address": "17004 Lorain Ave, Cleveland, OH 44111",
+    "area": "Kamms Corners",
     "lat": 41.4505778,
     "lng": -81.81571559999999
   },
@@ -397,6 +446,7 @@ window.VENUES = [
     "name": "Seeing Double Speakeasy Bar",
     "type": "bar",
     "address": "26880 Brookpark Ext, North Olmsted, OH 44070",
+    "area": "North Olmsted",
     "lat": 41.419936,
     "lng": -81.921787
   },
@@ -405,6 +455,7 @@ window.VENUES = [
     "name": "Huntington Bank Field",
     "type": "arena",
     "address": "100 Alfred Lerner Way, Cleveland, OH 44114",
+    "area": "North Coast Harbor",
     "lat": 41.50671,
     "lng": -81.7011023
   },
@@ -413,6 +464,7 @@ window.VENUES = [
     "name": "Chagrin Tavern on the River",
     "type": "bar",
     "address": "196 E Island Dr, Eastlake, OH 44095",
+    "area": "Eastlake",
     "lat": 41.67345220000001,
     "lng": -81.4293148
   },
@@ -421,6 +473,7 @@ window.VENUES = [
     "name": "Shooters",
     "type": "bar",
     "address": "1148 Main Ave, Cleveland, OH 44113",
+    "area": "Flats West Bank",
     "lat": 41.4982204,
     "lng": -81.70702279999999
   },
@@ -429,6 +482,7 @@ window.VENUES = [
     "name": "crobar",
     "type": "music-hall",
     "address": "3244 Saint Clair Ave NE, Cleveland, OH 44114",
+    "area": "AsiaTown",
     "lat": 41.5135601,
     "lng": -81.66972849999999
   },
@@ -437,6 +491,7 @@ window.VENUES = [
     "name": "Nightjar",
     "type": "bar",
     "address": "28867 Chagrin Blvd, Woodmere, OH 44122",
+    "area": "Woodmere",
     "lat": 41.4631684,
     "lng": -81.4738763
   },
@@ -445,6 +500,7 @@ window.VENUES = [
     "name": "House of Blues",
     "type": "theater",
     "address": "308 Euclid Ave, Cleveland, OH 44114",
+    "area": "E 4th",
     "lat": 41.4990907,
     "lng": -81.69064259999999
   },
@@ -453,6 +509,7 @@ window.VENUES = [
     "name": "Blossom Music Center",
     "type": "outdoor",
     "address": "1145 W Steels Corners Rd, Cuyahoga Falls, OH 44223",
+    "area": "Cuyahoga Falls",
     "lat": 41.1860594,
     "lng": -81.5520051
   },
@@ -461,6 +518,7 @@ window.VENUES = [
     "name": "Bar 32",
     "type": "bar",
     "address": "100 LakeSide Ave East, Floor 32, Cleveland, OH 44114",
+    "area": "Downtown",
     "lat": 41.5029144,
     "lng": -81.6955564
   },
@@ -469,6 +527,7 @@ window.VENUES = [
     "name": "The Local Bar Strongsville",
     "type": "bar",
     "address": "14751 Pearl Rd, Strongsville, OH 44136",
+    "area": "Strongsville",
     "lat": 41.3076835,
     "lng": -81.8333123
   },
@@ -477,6 +536,7 @@ window.VENUES = [
     "name": "Quintanas Speakeasy",
     "type": "bar",
     "address": "2200 S Taylor Rd, Cleveland Heights, OH 44118",
+    "area": "Cleveland Heights",
     "lat": 41.4997934,
     "lng": -81.5563557
   },
@@ -485,6 +545,7 @@ window.VENUES = [
     "name": "Spirits in Willoughby",
     "type": "bar",
     "address": "3872 Erie St, Willoughby, OH 44094",
+    "area": "Willoughby",
     "lat": 41.6445782,
     "lng": -81.4067774
   }

@@ -369,732 +369,6 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-07-19-zoloft",
-      "title": "Zoloft w/ Cherry Yachtsman, Plum Shed, Wrinkled Beige Linen",
-      "venueId": "grog-shop",
-      "date": "2026-07-19",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "Zoloft",
-          "headliner": true
-        },
-        {
-          "name": "Cherry Yachtsman",
-          "headliner": false
-        },
-        {
-          "name": "Plum Shed",
-          "headliner": false
-        },
-        {
-          "name": "Wrinkled Beige Linen",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/zoloft-cherry-yachtsman-plum-shed-wrinkled-beige-linen/",
-      "ticketUrl": "https://www.ticketweb.com/event/zoloft-cherry-yachtsman-plum-grog-shop-tickets/14911673?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-07-19-beachland-brunch",
-      "title": "Beachland Brunch with DJ Vanilla Drew",
-      "venueId": "beachland-ballroom",
-      "date": "2026-07-19",
-      "time": "11:00",
-      "doors": "11:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "Beachland Brunch",
-          "headliner": true
-        },
-        {
-          "name": "DJ Vanilla Drew",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-19-jul",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-19-jul#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-07-19-this-way-out",
-      "title": "This Way Out",
-      "venueId": "beachland-ballroom",
-      "date": "2026-07-19",
-      "time": "11:00",
-      "doors": "11:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "This Way Out",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-19-jul",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-19-jul#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-07-19-nick-lowe-los-straitjackets",
-      "title": "Nick Lowe & Los Straitjackets",
-      "venueId": "beachland-ballroom",
-      "date": "2026-07-19",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Nick Lowe & Los Straitjackets",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/nick-lowe-los-straitjackets-12-jul#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2026-07-19-chagrin-river-band",
-      "title": "Chagrin River Band",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2026-07-19",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Chagrin River Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cain-park-2026-07-19-gillian-welch-david-rawlings",
-      "title": "Gillian Welch & David Rawlings",
-      "venueId": "cain-park",
-      "date": "2026-07-19",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "$55.50 to $90.50 / Day Of : $60",
-      "performers": [
-        {
-          "name": "Gillian Welch & David Rawlings",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/event/gillian-welch-david-rawlings/cain-park-evans-amphitheater/cleveland-heights-ohio/",
-      "ticketUrl": "https://www.etix.com/ticket/p/50834530/gillian-welch-david-rawlings-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cain-park-2026-07-19-peter-pan-jr",
-      "title": "Peter Pan Jr.",
-      "venueId": "cain-park",
-      "date": "2026-07-19",
-      "time": "14:00",
-      "doors": "13:30",
-      "price": "$10.25 - $21.25",
-      "performers": [
-        {
-          "name": "Peter Pan Jr.",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
-      "ticketUrl": "https://www.etix.com/ticket/p/55451476/peter-pan-jr-sunday-matinee-cleveland-heights-cain-park-alma-theater?partner_id=100",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cain-park-2026-07-19-peter-pan-jr",
-      "title": "Peter Pan Jr.",
-      "venueId": "cain-park",
-      "date": "2026-07-19",
-      "time": "17:30",
-      "doors": "17:00",
-      "price": "$10.25 - $21.25",
-      "performers": [
-        {
-          "name": "Peter Pan Jr.",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/events/category/series/peter-pan-jr/cain-park-alma-theater/cleveland-heights-ohio/",
-      "ticketUrl": "https://www.etix.com/ticket/p/95682426/peter-pan-jr-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-07-19-riley",
-      "title": "Riley!",
-      "venueId": "mahalls",
-      "date": "2026-07-19",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "Riley!",
-          "headliner": true
-        },
-        {
-          "name": "Kerosene Heights",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/riley/",
-      "ticketUrl": "https://link.dice.fm/q672ba55725a",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-07-19-emp-trio-the-end-of-the-chapter-bop-stop",
-      "title": "EMP Trio: The End of the Chapter",
-      "venueId": "bop-stop",
-      "date": "2026-07-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "EMP Trio: The End of the Chapter",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/07/19/emp-trio-the-end-of-the-chapter-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/07/19/emp-trio-the-end-of-the-chapter-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-07-19-matchbox-20-tribute-july19",
-      "title": "Matchbox 20 Tribute by 3am",
-      "venueId": "music-box",
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$12 Advance, $18 Day of Show",
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Matchbox 20 Tribute by 3am",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/matchbox-20-tribute-july19/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62578",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-07-19-frampton-tribute-july19",
-      "title": "Frampton Tribute by Talkbox Comes Alive",
-      "venueId": "music-box",
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": "11:00",
-      "price": "$12 Advance, $18 Day of Show",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Frampton Tribute by Talkbox Comes Alive",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/frampton-tribute-july19/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62201",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-07-19-ms-bbc-the-queens-july19",
-      "title": "Reggae Sundays: Ms. BBC & The Queens",
-      "venueId": "music-box",
-      "date": "2026-07-19",
-      "time": "16:00",
-      "doors": "15:30",
-      "price": "Free",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Reggae Sundays: Ms. BBC & The Queens",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/ms-bbc-the-queens-july19/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-07-19-boozy-brunch-taylor-swift-4",
-      "title": "BOOZY BRUNCH (TAYLOR SWIFT)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-07-19",
-      "time": "11:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "BOOZY BRUNCH (TAYLOR SWIFT)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-brunch-taylor-swift-4/",
-      "ticketUrl": "https://www.ticketweb.com/event/boozy-brunch-taylor-swift-the-winchester-tickets/14257774",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-07-19-sassys-sunday-funday-drag-brunch-bingo",
-      "title": "Sassy’s Sunday Funday Drag Brunch & Bingo!",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-07-19",
-      "time": "12:30",
-      "doors": "11:30",
-      "price": "$8.26 - $20.06",
-      "performers": [
-        {
-          "name": "Sassy’s Sunday Funday Drag Brunch & Bingo!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/sassys-sunday-funday-drag-brunch-bingo/",
-      "ticketUrl": "https://www.ticketweb.com/event/sassys-sunday-funday-drag-brunch-the-winchester-tickets/14217504",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "fwd-nightclub-2026-07-19-pool-days",
-      "title": "POOL DAYS",
-      "venueId": "fwd-nightclub",
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "tag": "DAY",
-      "performers": [
-        {
-          "name": "POOL DAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-X4X7WE",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/POOL-DAYS?eid=EVE-X4X7WE",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-07-19-blues-for-greeny-the-music-of-peter-green",
-      "title": "Blues for Greeny – The Music of Peter Green",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-07-19",
-      "time": "20:00",
-      "doors": null,
-      "price": "$24.70",
-      "performers": [
-        {
-          "name": "Blues for Greeny – The Music of Peter Green",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/blues-for-greeny-the-music-of-peter-green/",
-      "ticketUrl": "https://www.ticketweb.com/event/blues-for-greeny-the-mercury-music-lounge-tickets/14261704",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rock-hall-2026-07-19-salsa-across-borders",
-      "title": "Salsa Across Borders",
-      "venueId": "rock-hall",
-      "date": "2026-07-19",
-      "time": "11:00",
-      "doors": null,
-      "price": "Free (RSVP required)",
-      "performers": [
-        {
-          "name": "Salsa Across Borders",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/salsa-across-borders/",
-      "ticketUrl": "https://share.google/gd44Izjp8SQANncEr",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-07-19-1300-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-07-19",
-      "endDate": null,
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-07-19-1830-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-07-19",
-      "endDate": null,
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "welcome-to-the-farm-booking_01KTYQ82MSYR0YK5S33T7S5KQJ",
-      "title": "Dave Hinrich",
-      "venueId": "welcome-to-the-farm",
-      "date": "2026-07-19",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Dave Hinrich",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "beatgig",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-07-19-130142",
-      "title": "Tom Thakkar",
-      "venueId": "hilarities",
-      "date": "2026-07-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Tom Thakkar",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/130142",
-      "ticketUrl": "https://hilarities.com/shows/355905",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-07-19-139403",
-      "title": "Ariel Elias",
-      "venueId": "hilarities",
-      "date": "2026-07-19",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Ariel Elias",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/139403",
-      "ticketUrl": "https://hilarities.com/shows/377572",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-sunday-get-down-2026-07-19",
-      "title": "Sunday Get Down",
-      "venueId": "van-aken-district",
-      "date": "2026-07-19",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "Sunday Get Down",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/sunday-get-down-2026-07-19",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "coda-2026-07-19-1992848189581",
-      "title": "Taste of Tremont 2026",
-      "venueId": "coda",
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Taste of Tremont 2026",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.eventbrite.com/e/taste-of-tremont-2026-tickets-1992848189581",
-      "ticketUrl": "https://www.eventbrite.com/e/taste-of-tremont-2026-tickets-1992848189581",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "sixty6-2026-07-19-forecast-brunch-at-the-sixty6-july-2026",
-      "title": "FORECAST",
-      "venueId": "the-sixty6",
-      "date": "2026-07-19",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "FORECAST",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/forecast-brunch-at-the-sixty6-july-2026/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-07-19-hoods-curbed",
-      "title": "HOODS",
-      "venueId": "no-class",
-      "date": "2026-07-19",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$20",
-      "performers": [
-        {
-          "name": "Hoods",
-          "headliner": true
-        },
-        {
-          "name": "Curbed",
-          "headliner": false
-        },
-        {
-          "name": "Sketchball",
-          "headliner": false
-        },
-        {
-          "name": "Violent Convictions",
-          "headliner": false
-        },
-        {
-          "name": "Common Threat",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/hoods-curbed",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-07-19-bobby-st-vincent-free-acoustic-show",
-      "title": "Bobby St. Vincent - Free Acoustic Show",
-      "venueId": "forest-city-brewery",
-      "date": "2026-07-19",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2025/10/17/bobby-st-vincent-free-acoustic-show",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Island Troy",
-      "performers": [
-        {
-          "name": "Island Troy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": null,
-      "venueId": "paninis-westlake",
-      "source": "manual",
-      "manual": true,
-      "id": "paninis-westlake-2026-07-19-island-troy"
-    },
-    {
-      "title": "Soul Shake",
-      "performers": [
-        {
-          "name": "Soul Shake",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-07-19-soul-shake"
-    },
-    {
-      "title": "FM 77",
-      "venueId": "cavottas-garden-bar",
-      "date": "2026-07-19",
-      "time": "15:00",
-      "doors": null,
-      "price": "$5 Cover",
-      "performers": [
-        {
-          "name": "FM 77",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cavottas.com/cavottas-garden-bar",
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "id": "cavottas-garden-bar-2026-07-19-fm-77"
-    },
-    {
-      "title": "C Hatton",
-      "performers": [
-        {
-          "name": "C Hatton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-07-19-c-hatton"
-    },
-    {
-      "title": "Emma Nicholas",
-      "performers": [
-        {
-          "name": "Emma Nicholas",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-07-19-emma-nicholas"
-    },
-    {
-      "title": "Sully Solo",
-      "performers": [
-        {
-          "name": "Sully Solo",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "chagrin-tavern",
-      "source": "manual",
-      "manual": true,
-      "id": "chagrin-tavern-2026-07-19-sully-solo"
-    },
-    {
-      "title": "Route 6",
-      "performers": [
-        {
-          "name": "Route 6",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-07-19-route-6"
-    },
-    {
-      "title": "Stamper Starr",
-      "performers": [
-        {
-          "name": "Stamper Starr",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-19",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-07-19-stamper-starr"
-    },
-    {
       "id": "grog-shop-2026-07-20-make-em-laugh-mondays",
       "title": "Make Em Laugh Mondays",
       "venueId": "grog-shop",
@@ -2391,6 +1665,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/a-tribute-to-nirvana-july23/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62475",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-07-23-hawt-topic-emo-drag-nite",
+      "title": "HAWT TOPIC: EMO DRAG NITE",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-07-23",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$13.41",
+      "performers": [
+        {
+          "name": "HAWT TOPIC: EMO DRAG NITE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/hawt-topic-emo-drag-nite/",
+      "ticketUrl": "https://www.ticketweb.com/event/hawt-topic-emo-drag-nite-the-winchester-tickets/14269224",
       "source": "scrape",
       "manual": false
     },
@@ -4215,8 +3508,8 @@
       "title": "Dead Bundy",
       "venueId": "mahalls",
       "date": "2026-07-25",
-      "time": "17:30",
-      "doors": "17:30",
+      "time": "18:30",
+      "doors": "18:30",
       "price": "$12.00",
       "performers": [
         {
@@ -5650,6 +4943,25 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "dunlaps-2026-07-26-129349",
+      "title": "The Mic That Doesn’t End",
+      "venueId": "dunlaps-corner-bar",
+      "date": "2026-07-26",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Mic That Doesn’t End",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.dunlapsbar.com/events/129349",
+      "ticketUrl": "https://www.dunlapsbar.com/shows/377277",
       "source": "scrape",
       "manual": false
     },
@@ -8562,6 +7874,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1356147",
       "ticketUrl": "https://www.axs.com/events/1356147/ashnikko-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-08-01-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-01",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-01-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-01-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -13853,25 +13184,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-08-11-sunfo",
-      "title": "Sunfo",
-      "venueId": "mahalls",
-      "date": "2026-08-11",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$15.00",
-      "performers": [
-        {
-          "name": "SUNFO",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/sunfo/",
-      "ticketUrl": "https://link.dice.fm/E648f7386321",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-08-11-the-dear-hunter-the-road-to-sunya-tour-2026",
       "title": "The Dear Hunter: The Road To Sunya Tour 2026",
       "venueId": "mahalls",
@@ -13895,6 +13207,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-dear-hunter-the-road-to-sunya-tour-2026-2/",
       "ticketUrl": "https://link.dice.fm/of8353348f58",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-08-11-sunfo",
+      "title": "Sunfo",
+      "venueId": "mahalls",
+      "date": "2026-08-11",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15.00",
+      "performers": [
+        {
+          "name": "SUNFO",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/sunfo/",
+      "ticketUrl": "https://link.dice.fm/E648f7386321",
       "source": "scrape",
       "manual": false
     },
@@ -16780,6 +16111,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/t-natty-aug16/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-08-16-sassys-birthday-bash-drag-brunch",
+      "title": "Sassy’s Birthday Bash & Drag Brunch!",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-08-16",
+      "time": "12:30",
+      "doors": null,
+      "price": "$8.26",
+      "performers": [
+        {
+          "name": "Sassy’s Birthday Bash & Drag Brunch!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/sassys-birthday-bash-drag-brunch/",
+      "ticketUrl": "https://www.ticketweb.com/event/sassys-birthday-bash-drag-the-winchester-tickets/14269234",
       "source": "scrape",
       "manual": false
     },
@@ -20168,7 +19518,11 @@
           "headliner": false
         },
         {
-          "name": "+ more TBA",
+          "name": "Trunk Rides",
+          "headliner": false
+        },
+        {
+          "name": "Saints of Lorain",
           "headliner": false
         }
       ],
@@ -20275,25 +19629,6 @@
       "id": "cavottas-garden-bar-2026-08-23-rachel-brown-the-beatnik-playboys"
     },
     {
-      "id": "grog-shop-2026-08-24-make-em-laugh-mondays-hosted-by-kevin-ford",
-      "title": "Make Em Laugh Mondays Hosted By Kevin Ford",
-      "venueId": "grog-shop",
-      "date": "2026-08-24",
-      "time": "20:00",
-      "doors": "19:30",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "Make Em Laugh Mondays Hosted By Kevin Ford",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-hosted-grog-shop-tickets/14236364?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "grog-shop-2026-08-24-sheer-terror",
       "title": "Sheer Terror w/ Ugly & Damaged, Sketchball, Madman",
       "venueId": "grog-shop",
@@ -20321,6 +19656,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/sheer-terror-dog-end-days-tour-2026/",
       "ticketUrl": "https://www.ticketweb.com/event/sheer-terror-dog-grog-shop-tickets/14249884?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "grog-shop-2026-08-24-make-em-laugh-mondays-hosted-by-kevin-ford",
+      "title": "Make Em Laugh Mondays Hosted By Kevin Ford",
+      "venueId": "grog-shop",
+      "date": "2026-08-24",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Make Em Laugh Mondays Hosted By Kevin Ford",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-hosted-grog-shop-tickets/14236364?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -20738,7 +20092,7 @@
           "headliner": false
         },
         {
-          "name": "+more TBA",
+          "name": "This Pestilent Existence",
           "headliner": false
         }
       ],
@@ -21886,25 +21240,6 @@
     },
     {
       "id": "rocket-arena-2026-08-29-don-toliver",
-      "title": "DON'S GARAGE VIP UPGRADE: DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2 (NOT AN EVENT TICKET)",
-      "venueId": "rocket-arena",
-      "date": "2026-08-29",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Don Toliver",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18328978",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-29-don-toliver",
       "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
       "venueId": "rocket-arena",
       "date": "2026-08-29",
@@ -21919,6 +21254,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-29-don-toliver",
+      "title": "DON'S GARAGE VIP UPGRADE: DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2 (NOT AN EVENT TICKET)",
+      "venueId": "rocket-arena",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Don Toliver",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18328978",
       "source": "seatgeek",
       "manual": false
     },
@@ -26758,25 +26112,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-09-16-poison-girl-friend",
-      "title": "POiSON GiRL FRiEND",
-      "venueId": "mahalls",
-      "date": "2026-09-16",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$30.00",
-      "performers": [
-        {
-          "name": "POiSON GiRL FRiEND",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/poison-girl-friend/",
-      "ticketUrl": "https://link.dice.fm/ub3903957eea",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-09-16-the-4411",
       "title": "The 4411",
       "venueId": "mahalls",
@@ -26792,6 +26127,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-4411/",
       "ticketUrl": "https://link.dice.fm/h6013cac9441",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-16-poison-girl-friend",
+      "title": "POiSON GiRL FRiEND",
+      "venueId": "mahalls",
+      "date": "2026-09-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$30.00",
+      "performers": [
+        {
+          "name": "POiSON GiRL FRiEND",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/poison-girl-friend/",
+      "ticketUrl": "https://link.dice.fm/ub3903957eea",
       "source": "scrape",
       "manual": false
     },
@@ -27759,6 +27113,25 @@
       ],
       "eventUrl": "https://hilarities.com/events/137226",
       "ticketUrl": "https://hilarities.com/shows/372425",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-09-19-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-09-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380770",
       "source": "scrape",
       "manual": false
     },
@@ -29408,6 +28781,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-09-26-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-09-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380901",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-09-26-1900-133081",
       "title": "Sam Tallent",
       "venueId": "hilarities",
@@ -30077,25 +29469,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-09-29-noah-rinker",
-      "title": "Noah Rinker",
-      "venueId": "mahalls",
-      "date": "2026-09-29",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$22.00",
-      "performers": [
-        {
-          "name": "Noah Rinker",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
-      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-09-29-the-holdup",
       "title": "The Holdup",
       "venueId": "mahalls",
@@ -30119,6 +29492,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-holdup/",
       "ticketUrl": "https://link.dice.fm/v75b6b85d2b0",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-29-noah-rinker",
+      "title": "Noah Rinker",
+      "venueId": "mahalls",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Noah Rinker",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
+      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
       "source": "scrape",
       "manual": false
     },
@@ -31891,6 +31283,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-10-10-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-10-10",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380902",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-10-10-1600-135017",
       "title": "T.J. Miller",
       "venueId": "hilarities",
@@ -32154,7 +31565,11 @@
           "headliner": true
         },
         {
-          "name": "+ more TBA",
+          "name": "God’s End",
+          "headliner": false
+        },
+        {
+          "name": "Patron of Beggars",
           "headliner": false
         }
       ],
@@ -32218,6 +31633,52 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-40/",
       "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233314",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-13-roger-clyne-the-peacemakers",
+      "title": "Roger Clyne & The Peacemakers with Ike Reilly Featuring Shane Reilly",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-13",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Roger Clyne & The Peacemakers",
+          "headliner": true
+        },
+        {
+          "name": "Ike Reilly Featuring Shane Reilly",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/roger-clyne-the-peacemakers-13-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/roger-clyne-the-peacemakers-13-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-13-laura-veirs",
+      "title": "Laura Veirs with Karl Blau",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-13",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Laura Veirs",
+          "headliner": true
+        },
+        {
+          "name": "Karl Blau",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/laura-veirs-13-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/laura-veirs-13-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -32322,6 +31783,29 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/budapest-hungary",
       "ticketUrl": "https://mupa.hu/en/events/event-calendar/2026/10",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-14-the-linda-lindas",
+      "title": "The Linda Lindas with adan diaz",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-14",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Linda Lindas",
+          "headliner": true
+        },
+        {
+          "name": "adan diaz",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -33782,6 +33266,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-10-24-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-10-24",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380903",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-10-24-1800-133515",
       "title": "Joe Dombrowski",
       "venueId": "hilarities",
@@ -35035,6 +34538,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-11-07-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-11-07",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380904",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-11-07-1830-140556",
       "title": "Anthony Rodia",
       "venueId": "hilarities",
@@ -35378,21 +34900,25 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-11-11-akeem-ali",
-      "title": "Akeem Ali",
+      "id": "mahalls-2026-11-11-bryan-andrews",
+      "title": "Bryan Andrews",
       "venueId": "mahalls",
       "date": "2026-11-11",
       "time": "19:00",
       "doors": "19:00",
-      "price": "$25.00",
+      "price": "$20.00",
       "performers": [
         {
-          "name": "Akeem Ali",
+          "name": "Bryan Andrews",
           "headliner": true
+        },
+        {
+          "name": "Lou Ridley",
+          "headliner": false
         }
       ],
-      "eventUrl": "https://mahalls20lanes.com/listing/akeem-ali/",
-      "ticketUrl": "https://link.dice.fm/Pa7ff215b78b",
+      "eventUrl": "https://mahalls20lanes.com/listing/bryan-andrews/",
+      "ticketUrl": "https://link.dice.fm/g7196073c71c",
       "source": "scrape",
       "manual": false
     },
@@ -35829,6 +35355,25 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-11-14-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-11-14",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380905",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -36574,6 +36119,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-11-21-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-11-21",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380906",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-11-21-1830-140294",
       "title": "Steve Rannazzisi",
       "venueId": "hilarities",
@@ -37311,6 +36875,25 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-12-05-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-12-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380907",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "treelawn-social-club-2026-12-05-14930143",
       "title": "Matthew Alec and The Soul Electric",
       "venueId": "treelawn",
@@ -37649,6 +37232,25 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-12-12-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-12-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380908",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -38045,6 +37647,25 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-12-19-1930-140805",
+      "title": "Mardi Gras Murder",
+      "venueId": "hilarities",
+      "date": "2026-12-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mardi Gras Murder",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/140805",
+      "ticketUrl": "https://hilarities.com/shows/380909",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -38570,6 +38191,25 @@
       ],
       "eventUrl": "https://hilarities.com/events/140703",
       "ticketUrl": "https://hilarities.com/shows/380555",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2027-01-14-132703",
+      "title": "Natalie Cuomo",
+      "venueId": "hilarities",
+      "date": "2027-01-14",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Natalie Cuomo",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/132703",
+      "ticketUrl": "https://hilarities.com/shows/361787",
       "source": "scrape",
       "manual": false
     },
@@ -40808,6 +40448,44 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "metroparks-merwins-wharf-2027-07-19-chagrin-river-band",
+      "title": "Chagrin River Band",
+      "venueId": "metroparks-merwins-wharf",
+      "date": "2027-07-19",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Chagrin River Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mercury-music-lounge-2027-07-19-blues-for-greeny-the-music-of-peter-green",
+      "title": "Blues for Greeny – The Music of Peter Green",
+      "venueId": "mercury-music-lounge",
+      "date": "2027-07-19",
+      "time": "20:00",
+      "doors": null,
+      "price": "$29.85",
+      "performers": [
+        {
+          "name": "Blues for Greeny – The Music of Peter Green",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/blues-for-greeny-the-music-of-peter-green/",
+      "ticketUrl": "https://www.ticketweb.com/event/blues-for-greeny-the-mercury-music-lounge-tickets/14261704",
       "source": "scrape",
       "manual": false
     },
