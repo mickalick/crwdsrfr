@@ -2398,7 +2398,7 @@ async function fetchTreelawn() {
   // Fetches one page, retrying on bad status OR a suspiciously empty result —
   // TicketWeb's Treelawn Music Hall page has been intermittently flaky
   // (506 errors, thin/stale responses) despite working fine in a browser.
-  async function fetchPageWithRetry(url, maxAttempts = 3) {
+  async function fetchPageWithRetry(url, maxAttempts = 2) {
     let lastHtml = '';
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
       try {
@@ -3018,7 +3018,7 @@ async function fetchBentMace() {
 async function fetchBside() {
   const events = [];
   const seenIds = new Set();
-  const monthMap = { January:0, February:1, March:2, April:3, May:4, June:5, July:6, August:7, September:8, October:9, November:10, December:11 };
+  const MONTH_ABBR = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -3031,25 +3031,22 @@ async function fetchBside() {
     return `${String(h).padStart(2, '0')}:${m}`;
   }
 
-  try {
-    const res = await fetch('https://bsideliquorlounge.com/');
-    const html = await res.text();
+  // Parses one page's events into `events`, returns the highest page number
+  // found in the pagination links (1 if there's no pagination block).
+  function parsePage(html) {
     const $ = cheerio.load(html);
-
-    $('.flexmedia--artistevents-wrap').each((i, el) => {
+    $('.tw-section').each((i, el) => {
       const $el = $(el);
-
-      const titleLink = $el.find('.artisteventsname').closest('a');
-      const title = $el.find('.artisteventsname').first().text().trim();
+      const titleLink = $el.find('.tw-name a').first();
+      const title = titleLink.text().trim();
       const eventUrl = titleLink.attr('href');
       if (!title || !eventUrl) return;
 
-      // "Sunday, June 28th 4:00PM Doors /  4:00PM Show" — weekday/month/day, no year
-      const dateTimeRaw = $el.find('.artisteventstime').first().text().replace(/\s+/g, ' ').trim();
-      const dateMatch = dateTimeRaw.match(/^[A-Za-z]+,\s+([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?/);
+      // "Tue, Jul 21" — weekday, abbreviated month, day, no year
+      const dateRaw = $el.find('.tw-event-date').first().text().trim();
+      const dateMatch = dateRaw.match(/^[A-Za-z]+,\s+([A-Za-z]+)\s+(\d{1,2})/);
       if (!dateMatch) return;
-
-      const monthIndex = monthMap[dateMatch[1]];
+      const monthIndex = MONTH_ABBR[dateMatch[1]];
       const day = parseInt(dateMatch[2], 10);
       if (monthIndex === undefined) return;
 
@@ -3061,17 +3058,14 @@ async function fetchBside() {
       if (eventDateThisYear < todayMidnight) year = currentYear + 1;
       const date = toLocalDateStr(new Date(year, monthIndex, day));
 
-      // Grab the FIRST doors/show time match only — one live listing has a
-      // rendering glitch duplicating "Show" text, so don't assume a clean string
-      const doorsMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Doors/i);
-      const showMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Show/i);
-      const doors = doorsMatch ? normalizeTime(doorsMatch[1]) : null;
-      const time = showMatch ? normalizeTime(showMatch[1]) : doors;
+      let time = normalizeTime($el.find('.tw-event-time').first().text());
+      const doors = normalizeTime($el.find('.tw-event-door-time').first().text());
+      if (!time) time = doors;
 
-      let price = $el.find('.artistseventsprice').first().text().trim() || null;
+      let price = $el.find('.tw-price').first().text().trim() || null;
       if (price === '$0.00') price = 'Free';
 
-      const ticketUrl = $el.find('.eventsbutton a.button-primary').first().attr('href') || null;
+      const ticketUrl = $el.find('.tw-buy-tix-btn').first().attr('href') || null;
 
       const idMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
       const slug = idMatch ? idMatch[1] : slugify(title);
@@ -3094,10 +3088,29 @@ async function fetchBside() {
         manual: false,
       });
     });
+
+    let maxPage = 1;
+    $('.tm-paginate a[href*="/page/"]').each((i, el) => {
+      const m = ($(el).attr('href') || '').match(/\/page\/(\d+)\/?/);
+      if (m) maxPage = Math.max(maxPage, parseInt(m[1], 10));
+    });
+    return maxPage;
+  }
+
+  try {
+    const res = await fetch('https://bsideliquorlounge.com/');
+    const html = await res.text();
+    const maxPage = parsePage(html);
+
+    // Sequential — gentle on their server
+    for (let page = 2; page <= maxPage; page++) {
+      const pageRes = await fetch(`https://bsideliquorlounge.com/page/${page}/`);
+      const pageHtml = await pageRes.text();
+      parsePage(pageHtml);
+    }
   } catch (err) {
     console.error('fetchBside error:', err.message);
   }
-
   return events;
 }
 
