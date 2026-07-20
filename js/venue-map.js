@@ -41,7 +41,7 @@ function visibleVenues() {
   const q = document.getElementById('venueSearch').value.trim().toLowerCase();
   return window.VENUES.filter(v => {
     const matchesType = !activeFilter || v.type === activeFilter;
-    const matchesSearch = !q || v.name.toLowerCase().includes(q);
+    const matchesSearch = !q || v.name.toLowerCase().includes(q) || v.area.toLowerCase().includes(q);
     return matchesType && matchesSearch;
   });
 }
@@ -54,7 +54,7 @@ function renderList() {
   list.innerHTML = vs.map(v => `
     <div class="venue-item ${v.id === activeVenueId ? 'selected' : ''}" data-id="${v.id}">
       <div class="v-name">${v.name}</div>
-      <div class="v-meta">${v.address} <br/> ${TYPE_LABELS[v.type] || v.type}</div>
+      <div class="v-meta">${v.area} | ${TYPE_LABELS[v.type] || v.type}</div>
     </div>
   `).join('');
 
