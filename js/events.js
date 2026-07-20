@@ -25,6 +25,28 @@ function updateSubHead() {
     : `All shows that include "${term}" for:`;
 }
 
+let matchingDates = new Set();
+
+function updateMatchingDates() {
+  matchingDates = new Set();
+  if (!allData) return;
+
+  const term = currentSearch.toLowerCase().trim();
+  if (term === '') return; // no search = no dots
+
+  allData.events.forEach(event => {
+    const venue = allData.venues[event.venueId];
+    const matchesTitle = event.title.toLowerCase().includes(term);
+    const matchesVenue = venue?.name.toLowerCase().includes(term);
+    const matchesPerformer = event.performers?.some(p =>
+      p.name.toLowerCase().includes(term)
+    );
+    if (matchesTitle || matchesVenue || matchesPerformer) {
+      matchingDates.add(event.date);
+    }
+  });
+}
+
 function applyFilters() {
   updateSubHead();
 
@@ -53,6 +75,8 @@ function resetSearch() {
   input.value = '';
   currentSearch = '';
   document.getElementById('searchWrapper').classList.remove('hasValue');
+  updateMatchingDates();
+  datePickerFp.redraw();
   applyFilters();
   input.focus();
 }
@@ -157,6 +181,8 @@ function renderEvents(events) {
 async function loadEvents() {
   const res = await fetch('events.json');
   allData = await res.json();
+  updateMatchingDates();
+  datePickerFp.redraw();
   applyFilters();
 }
 
@@ -175,12 +201,18 @@ document.querySelector('#currentSelector h3').textContent = today.toLocaleDateSt
 
 let lastAutoClose = 0;
 
-flatpickr('#datePicker', {
+const datePickerFp = flatpickr('#datePicker', {
   defaultDate: today,
   positionElement: document.getElementById('currentSelector'),
   position: 'below auto',
   disableMobile: true,
   clickOpens: false,
+  onDayCreate: function(dObj, dStr, fp, dayElem) {
+    const dateStr = toLocalDateStr(dayElem.dateObj);
+    if (matchingDates.has(dateStr)) {
+      dayElem.classList.add('has-results');
+    }
+  },
   onClose: function() {
     lastAutoClose = Date.now();
   },
@@ -198,6 +230,8 @@ loadEvents();
 document.getElementById('search').addEventListener('input', function() {
   currentSearch = this.value;
   document.getElementById('searchWrapper').classList.toggle('hasValue', currentSearch.trim() !== '');
+  updateMatchingDates();
+  datePickerFp.redraw();
   applyFilters();
 });
 
