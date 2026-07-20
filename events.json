@@ -491,6 +491,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-07-20-the-hobbit-himself",
+      "title": "The Hobbit Himself",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-07-20",
+      "time": "20:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "The Hobbit Himself",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/the-hobbit-himself/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-hobbit-himself-the-winchester-tickets/14270054",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mercury-music-lounge-2026-07-20-music-trivi-aoke-28",
       "title": "MUSIC TRIVI-AOKE",
       "venueId": "mercury-music-lounge",
@@ -506,28 +525,6 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-28/",
       "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233184",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-07-20-1100-dance-for-parkinsons-classes-2",
-      "title": "Dance for Parkinson's: Classes",
-      "venueId": "playhouse-square",
-      "date": "2026-07-20",
-      "endDate": null,
-      "time": "11:00",
-      "doors": null,
-      "price": null,
-      "room": "Playhouse Square",
-      "presentedBy": "Summer: July 13, 2026 - September 21, 2026",
-      "performers": [
-        {
-          "name": "Dance for Parkinson's: Classes",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/dance-for-parkinsons-classes-2",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BC15264C-0819-4ED5-B718-1D213905CA0B",
       "source": "scrape",
       "manual": false
     },
@@ -732,6 +729,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-07-21-emo-yoga-2",
+      "title": "EMO YOGA",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-07-21",
+      "time": "17:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "EMO YOGA",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/emo-yoga-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/emo-yoga-the-winchester-tickets/14269734",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-07-21-secret-society-comedy-presents-one-more-joke-41",
       "title": "Secret Society Comedy Presents: One More Joke",
       "venueId": "winchester-music-tavern",
@@ -853,6 +869,25 @@
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
       "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/14967683?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-21-lyrical-rhythms-24",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-21",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-24/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14870593?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -1276,6 +1311,44 @@
       "manual": false
     },
     {
+      "id": "bside-2026-07-22-the-people-poetry-open-mic-night-12",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-22",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-12/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14903163?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-22-shit-show-karaoke-26",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-22",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-26/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14870483?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-07-22-just-a-bar-7-1-26-3ywfw-txfw3-w2n3w",
       "title": "JUST A BAR",
       "venueId": "no-class",
@@ -1669,6 +1742,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-07-23-tipsy-trivia-the-office",
+      "title": "TIPSY TRIVIA (THE OFFICE)",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-07-23",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "TIPSY TRIVIA (THE OFFICE)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/tipsy-trivia-the-office/",
+      "ticketUrl": "https://www.ticketweb.com/event/tipsy-trivia-the-office-the-winchester-tickets/14270334",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "winchester-music-tavern-2026-07-23-hawt-topic-emo-drag-nite",
       "title": "HAWT TOPIC: EMO DRAG NITE",
       "venueId": "winchester-music-tavern",
@@ -1903,6 +1995,25 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/curse-the-alchemist-4",
       "ticketUrl": "https://www.ivycle.com/event-details/curse-the-alchemist-4",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-23-princessfest",
+      "title": "PRINCESSFEST",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-23",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "PRINCESSFEST",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/princessfest/",
+      "ticketUrl": "https://www.ticketweb.com/event/princessfest-b-side-lounge-tickets/14270584?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -2892,6 +3003,63 @@
       ],
       "eventUrl": "https://bentmace.org/event/noise-show-tba/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-24-trappy-loves-the-kids-youth-week-the-fashion-show",
+      "title": "Trappy Loves The Kids Youth Week : The Fashion Show",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-24",
+      "time": "18:00",
+      "doors": "17:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "Trappy Loves The Kids Youth Week : The Fashion Show",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/trappy-loves-the-kids-youth-week-the-fashion-show/",
+      "ticketUrl": "https://www.ticketweb.com/event/trappy-loves-the-kids-youth-b-side-lounge-tickets/14200534?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-24-b-side-summer-patio-series-with-joe-rangel-and-fox-ears",
+      "title": "B Side Summer Patio Series with Joe Rangel and Fox Ears",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-24",
+      "time": "19:30",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "B Side Summer Patio Series with Joe Rangel and Fox Ears",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-summer-patio-series-with-joe-rangel-and-fox-ears/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-summer-patio-series-b-side-lounge-tickets/14885283?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-24-swangin-ft-trapothonjerm-and-dj-scottstradamus",
+      "title": "Swangin’ FT. Trapothonjerm and DJ Scottstradamus",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-24",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Swangin’ FT. Trapothonjerm and DJ Scottstradamus",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/swangin-ft-trapothonjerm-and-dj-scottstradamus/",
+      "ticketUrl": "https://www.ticketweb.com/event/swangin-ft-trapothonjerm-and-dj-b-side-lounge-tickets/14264984?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -4097,6 +4265,26 @@
       "manual": false
     },
     {
+      "id": "treelawn-social-club-2026-07-25-14269744",
+      "title": "Cleveland Choro",
+      "venueId": "treelawn",
+      "room": "Treelawn Social Club",
+      "date": "2026-07-25",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Cleveland Choro",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketweb.com/event/cleveland-choro-treelawn-social-club-tickets/14269744",
+      "ticketUrl": "https://www.ticketweb.com/event/cleveland-choro-treelawn-social-club-tickets/14269744",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "treelawn-social-club-2026-07-25-14222554",
       "title": "The Quenton Rubin Band",
       "venueId": "treelawn",
@@ -4208,6 +4396,44 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/just-aj-dare",
       "ticketUrl": "https://www.ivycle.com/event-details/just-aj-dare",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-25-b-side-patio-series-presents-the-playas-picnic-ft-armand-rashad-and-dj-knyce",
+      "title": "B Side Patio Series Presents: The Playa's Picnic ft. Armand Rashad and DJ Knyce",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-25",
+      "time": "18:00",
+      "doors": "17:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "B Side Patio Series Presents: The Playa's Picnic ft. Armand Rashad and DJ Knyce",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-patio-series-presents-the-playas-picnic-ft-armand-rashad-and-dj-knyce/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-patio-series-presents-b-side-lounge-tickets/14216684?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-25-in-my-feelings-an-rb-hip-hop-joint-2",
+      "title": "In My Feelings: An R&B – Hip-Hop Joint",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-25",
+      "time": "22:00",
+      "doors": null,
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "In My Feelings: An R&B – Hip-Hop Joint",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/in-my-feelings-an-rb-hip-hop-joint-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/in-my-feelings-an-rb-b-side-lounge-tickets/14223044?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -4633,6 +4859,29 @@
       "manual": false
     },
     {
+      "id": "beachland-ballroom-2026-07-26-beachland-brunch",
+      "title": "Beachland Brunch with DJ Pumpkin",
+      "venueId": "beachland-ballroom",
+      "date": "2026-07-26",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "Beachland Brunch",
+          "headliner": true
+        },
+        {
+          "name": "DJ Pumpkin",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-26-jul",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-26-jul#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-07-26-this-way-out",
       "title": "This Way Out",
       "venueId": "beachland-ballroom",
@@ -4841,6 +5090,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/lazo-exodus-july26/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-07-26-boozy-brunch-breakfast-club",
+      "title": "Boozy Brunch (Breakfast Club)",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-07-26",
+      "time": "11:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Boozy Brunch (Breakfast Club)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-brunch-breakfast-club/",
+      "ticketUrl": "https://www.ticketweb.com/event/boozy-brunch-breakfast-club-the-winchester-tickets/14270424",
       "source": "scrape",
       "manual": false
     },
@@ -5117,6 +5385,25 @@
       ],
       "eventUrl": "https://thesixty6.com/events/horns-and-things-brunch-at-the-sixty6-july-2026/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-26-the-cookout",
+      "title": "THE COOKOUT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-26",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "THE COOKOUT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-cookout/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-cookout-b-side-lounge-tickets/14262284?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -5773,6 +6060,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-07-28-lyrical-rhythms-25",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-28",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-25/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14870603?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-07-28-just-a-bar-7-1-26-3ywfw-txfw3-w2n3w-6fbzd",
       "title": "JUST A BAR",
       "venueId": "no-class",
@@ -6066,6 +6372,25 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/mahjong-game-night-with-mahjong-irl",
       "ticketUrl": "https://www.ivycle.com/event-details/mahjong-game-night-with-mahjong-irl",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-29-shit-show-karaoke-27",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-29",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-27/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14870493?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -6628,6 +6953,25 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/patanto-1",
       "ticketUrl": "https://www.ivycle.com/event-details/patanto-1",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-30-just-dem-vibez-patio-party",
+      "title": "Just Dem Vibez: Patio Party",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-30",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "Just Dem Vibez: Patio Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/just-dem-vibez-patio-party/",
+      "ticketUrl": "https://www.ticketweb.com/event/just-dem-vibez-patio-party-b-side-lounge-tickets/14223064?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -7476,6 +7820,25 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/dare-lano",
       "ticketUrl": "https://www.ivycle.com/event-details/dare-lano",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-07-31-urge-cruel-summer",
+      "title": "URGE: CRUEL SUMMER",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-07-31",
+      "time": "21:00",
+      "doors": "21:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "URGE: CRUEL SUMMER",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/urge-cruel-summer/",
+      "ticketUrl": "https://www.ticketweb.com/event/urge-cruel-summer-b-side-lounge-tickets/14228214?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -8525,6 +8888,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-01-how-did-that-get-there",
+      "title": "HOW DID THAT GET THERE?",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-01",
+      "time": "18:30",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "HOW DID THAT GET THERE?",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/how-did-that-get-there/",
+      "ticketUrl": "https://www.ticketweb.com/event/how-did-that-get-there-b-side-lounge-tickets/14200394?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-08-01-befallen",
       "title": "BEFALLEN",
       "venueId": "no-class",
@@ -8808,6 +9190,25 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/battle-of-the-bands/",
       "ticketUrl": "https://www.ticketweb.com/event/battle-of-the-bands-grog-shop-tickets/14201314?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-08-02-this-way-out",
+      "title": "This Way Out",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-02",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "This Way Out",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/this-way-out-02-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/this-way-out-02-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -9177,6 +9578,25 @@
       ],
       "eventUrl": "https://thesixty6.com/events/gary-galbreath-jr-the-vibe-band/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-02-the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge",
+      "title": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-02",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14226134?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -9747,6 +10167,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-04-lyrical-rhythms-2",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-04",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229854?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "forest-city-brewery-2026-08-04-last-call-trivia",
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
@@ -10027,6 +10466,44 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/hboktoberfestbier-7ebnt",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-05-we-are-wednesdays-w-da-land-brass-band",
+      "title": "We Are Wednesdays w/ Da Land Brass Band",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-05",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "We Are Wednesdays w/ Da Land Brass Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/we-are-wednesdays-w-da-land-brass-band/",
+      "ticketUrl": "https://www.ticketweb.com/event/we-are-wednesdays-w-da-b-side-lounge-tickets/14240804?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-05-shit-show-karaoke-2",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-05",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230154?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -10503,6 +10980,44 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-06-pretty-lit-ladies-night-3",
+      "title": "PRETTY LIT LADIES NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-06",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "PRETTY LIT LADIES NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/pretty-lit-ladies-night-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/pretty-lit-ladies-night-b-side-lounge-tickets/14230334?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-06-dancehall-vs-afrobeats",
+      "title": "Dancehall Vs. Afrobeats",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-06",
+      "time": "22:00",
+      "doors": "21:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Dancehall Vs. Afrobeats",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/dancehall-vs-afrobeats/",
+      "ticketUrl": "https://www.ticketweb.com/event/dancehall-vs-afrobeats-b-side-lounge-tickets/14260694?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-08-06-alaska-303",
       "title": "ALASKA-303",
       "venueId": "no-class",
@@ -10942,8 +11457,8 @@
       "manual": false
     },
     {
-      "id": "collision-bend-cleveland-2026-08-07-henry-loconti-at-collision-bend-cle-1-48300",
-      "title": "Henry LoConti at Collision Bend CLE",
+      "id": "collision-bend-cleveland-2026-08-07-lana-ann-at-collision-bend-cle-48300",
+      "title": "Lana Ann at Collision Bend CLE",
       "venueId": "collision-bend-cleveland",
       "date": "2026-08-07",
       "time": "19:00",
@@ -10951,11 +11466,11 @@
       "price": null,
       "performers": [
         {
-          "name": "Henry LoConti at Collision Bend CLE",
+          "name": "Lana Ann at Collision Bend CLE",
           "headliner": true
         }
       ],
-      "eventUrl": "https://collisionbendbrewery.com/events/henry-loconti-at-collision-bend-cle-1-48300",
+      "eventUrl": "https://collisionbendbrewery.com/events/lana-ann-at-collision-bend-cle-48300",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -12169,6 +12684,44 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-08-b-side-summer-patio-series-with-the-forest-city-string-band",
+      "title": "B Side Summer Patio Series with The Forest City String Band",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-08",
+      "time": "17:30",
+      "doors": "17:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "B Side Summer Patio Series with The Forest City String Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-summer-patio-series-with-the-forest-city-string-band/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-summer-patio-series-b-side-lounge-tickets/14223054?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-08-a-90s-jam-2",
+      "title": "A 90s Jam",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-08",
+      "time": "22:00",
+      "doors": "21:00",
+      "price": "$12.59 - $25.43",
+      "performers": [
+        {
+          "name": "A 90s Jam",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/a-90s-jam-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/a-90s-jam-b-side-lounge-tickets/14260734?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-08-08-leptospira",
       "title": "LEPTOSPIRA",
       "venueId": "no-class",
@@ -12769,6 +13322,25 @@
       ],
       "eventUrl": "https://thesixty6.com/events/hubbs-groove-cleveland/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-09-lit-in-the-land",
+      "title": "Lit In The Land",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-09",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Lit In The Land",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lit-in-the-land/",
+      "ticketUrl": "https://www.ticketweb.com/event/lit-in-the-land-b-side-lounge-tickets/14243334?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -13382,6 +13954,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-11-lyrical-rhythms-3",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-11",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229904?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-08-11-torso-man",
       "title": "TORSO MAN",
       "venueId": "no-class",
@@ -13740,6 +14331,63 @@
       ],
       "eventUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#3156462",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-12-the-people-poetry-open-mic-night-13",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-12",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-13/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14903183?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-12-the-people-poetry-open-mic-night",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-12",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231004?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-12-shit-show-karaoke-16",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-12",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-16/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230184?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -14176,6 +14824,25 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/the-spyder-stompers-treelawn-social-club-tickets/14942663",
       "ticketUrl": "https://www.ticketweb.com/event/the-spyder-stompers-treelawn-social-club-tickets/14942663",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-13-b-side-grooves-3",
+      "title": "B SIDE GROOVES",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-13",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "B SIDE GROOVES",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-grooves-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-grooves-b-side-lounge-tickets/14267054?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -14881,6 +15548,44 @@
       ],
       "eventUrl": "https://bentmace.org/event/exp-noise-show-tba/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-14-bside-patio-series-presents-westside-lo-friends",
+      "title": "Bside Patio Series Presents : Westside lo & Friends",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-14",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "Bside Patio Series Presents : Westside lo & Friends",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/bside-patio-series-presents-westside-lo-friends/",
+      "ticketUrl": "https://www.ticketweb.com/event/bside-patio-series-presents-b-side-lounge-tickets/14244974?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-14-goth-night-presents-nite-and-echos",
+      "title": "Goth Night Presents: NITE and Echos",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-14",
+      "time": "21:00",
+      "doors": "20:30",
+      "price": "$20.54",
+      "performers": [
+        {
+          "name": "Goth Night Presents: NITE and Echos",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/goth-night-presents-nite-and-echos/",
+      "ticketUrl": "https://www.ticketweb.com/event/goth-night-presents-nite-and-b-side-lounge-tickets/14214634?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -15718,6 +16423,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-15-basement-rb-experience-2",
+      "title": "Basement: R&B Experience",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-15",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Basement: R&B Experience",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14230424?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69b30236459eb3da1472bf14",
       "title": "Prokofiev’s Romeo & Juliet",
       "venueId": "cleveland-orchestra",
@@ -16191,6 +16915,25 @@
       "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "welcome-to-the-farm-booking_01KY063VSM14A5PTVTQ87E71VN",
+      "title": "LoConti",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-16",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "LoConti",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
       "manual": false
     },
     {
@@ -16859,6 +17602,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-18-lyrical-rhythms-4",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-18",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-4/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229924?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "forest-city-brewery-2026-08-18-secret-song-society",
       "title": "Secret Song Society",
       "venueId": "forest-city-brewery",
@@ -17164,6 +17926,25 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/joe-hunter-tim-matson-treelawn-social-club-tickets/14205874",
       "ticketUrl": "https://www.ticketweb.com/event/joe-hunter-tim-matson-treelawn-social-club-tickets/14205874",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-19-shit-show-karaoke-17",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-19",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-17/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230214?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -18050,6 +18831,25 @@
       "manual": false
     },
     {
+      "id": "welcome-to-the-farm-booking_01KXZWW8B3STJCNK54FW28M73Y",
+      "title": "Meyer pavich",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Meyer pavich",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5SDJK1AHEDJGHRX0G3GKQM",
       "title": "Matt Whataguy",
       "venueId": "welcome-to-the-farm",
@@ -18204,6 +19004,44 @@
       ],
       "eventUrl": "https://bentmace.org/event/komrads-roch-tba/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-21-b-side-summer-patio-series-with-grandview-and-jered-robert",
+      "title": "B Side Summer Patio Series with Grandview and Pillow Weight",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "B Side Summer Patio Series with Grandview and Pillow Weight",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-summer-patio-series-with-grandview-and-jered-robert/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-summer-patio-series-b-side-lounge-tickets/14223184?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-21-qweirdo-vol-14",
+      "title": "QWEIRDO: Vol. 14",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-21",
+      "time": "21:30",
+      "doors": "21:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "QWEIRDO: Vol. 14",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/qweirdo-vol-14/",
+      "ticketUrl": "https://www.ticketweb.com/event/qweirdo-vol-14-b-side-lounge-tickets/14264914?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -18934,6 +19772,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-22-in-my-feelings-an-rb-hip-hop-joint",
+      "title": "In My Feelings: An R&B – Hip-Hop Joint",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-22",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "In My Feelings: An R&B – Hip-Hop Joint",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/in-my-feelings-an-rb-hip-hop-joint/",
+      "ticketUrl": "https://www.ticketweb.com/event/in-my-feelings-an-rb-b-side-lounge-tickets/14260654?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-08-22-wrestlerager-10",
       "title": "WRESTLERAGER 10",
       "venueId": "no-class",
@@ -19424,6 +20281,28 @@
       "manual": false
     },
     {
+      "id": "playhouse-square-2026-08-23-shining-star-cle-2026",
+      "title": "Shining Star CLE 2026",
+      "venueId": "playhouse-square",
+      "date": "2026-08-23",
+      "endDate": null,
+      "time": null,
+      "doors": null,
+      "price": null,
+      "room": "Mimi Ohio Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "Shining Star CLE 2026",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/shining-star-cle-2026",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=5A50133F-8CEC-4693-80A5-A36D1CA13EEF",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KTYQ83C03N64W9FRQRSHFFTV",
       "title": "Dave Hinrich",
       "venueId": "welcome-to-the-farm",
@@ -19497,6 +20376,25 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/live-music-ed-klimzcak",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-23-sun-made-disco-club-bunny-bday-ft-battyjack-angelgirl-eva-hush-joey-sardelle-sissybunny",
+      "title": "SUN MADE DISCO CLUB: Bunny Bday ft. BATTYJACK, angelgirl EVA, HUSH, JOEY SARDELLE, SISSYBUNNY",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-23",
+      "time": "16:00",
+      "doors": "16:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "SUN MADE DISCO CLUB: Bunny Bday ft. BATTYJACK, angelgirl EVA, HUSH, JOEY SARDELLE, SISSYBUNNY",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/sun-made-disco-club-bunny-bday-ft-battyjack-angelgirl-eva-hush-joey-sardelle-sissybunny/",
+      "ticketUrl": "https://www.ticketweb.com/event/sun-made-disco-club-bunny-b-side-lounge-tickets/14903033?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -19859,6 +20757,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-08-25-lyrical-rhythms-5",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-25",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-5/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229934?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "forest-city-brewery-2026-08-25-last-call-trivia",
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
@@ -20071,6 +20988,63 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/remi-goode-abigayle-oakley-anthony-treelawn-social-club-tickets/14743943",
       "ticketUrl": "https://www.ticketweb.com/event/remi-goode-abigayle-oakley-anthony-treelawn-social-club-tickets/14743943",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-26-the-people-poetry-open-mic-night-14",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-26",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-14/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14903193?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-26-the-people-poetry-open-mic-night-2",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-26",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231014?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-26-shit-show-karaoke-18",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-26",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-18/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230224?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -20552,25 +21526,6 @@
     },
     {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
-      "title": "WWE Souvenir Ticket : WWE Raw & Smackdown",
-      "venueId": "rocket-arena",
-      "date": "2026-08-28",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "WWE Friday Night SmackDown",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-5-30-pm/18191999",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
       "title": "WWE Raw & Smackdown",
       "venueId": "rocket-arena",
       "date": "2026-08-28",
@@ -20589,8 +21544,27 @@
       "manual": false
     },
     {
-      "id": "grog-shop-2026-08-28-bitchfest",
-      "title": "Bitchfest w/ Cool Party, The House of Wills, Sam Supreme, Trollop, Unity",
+      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
+      "title": "WWE Souvenir Ticket : WWE Raw & Smackdown",
+      "venueId": "rocket-arena",
+      "date": "2026-08-28",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "WWE Friday Night SmackDown",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-5-30-pm/18191999",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "grog-shop-2026-08-28-bitchfest-iii",
+      "title": "Bitchfest III w/ Cool Party, The House of Wills, Sam Supreme, Trollop, Uniity",
       "venueId": "grog-shop",
       "date": "2026-08-28",
       "time": "19:30",
@@ -20598,7 +21572,7 @@
       "price": "$23.12",
       "performers": [
         {
-          "name": "Bitchfest",
+          "name": "Bitchfest III",
           "headliner": true
         },
         {
@@ -20618,12 +21592,12 @@
           "headliner": false
         },
         {
-          "name": "Unity",
+          "name": "Uniity",
           "headliner": false
         }
       ],
       "eventUrl": "https://grogshop.gs/tm-event/bitchfest/",
-      "ticketUrl": "https://www.ticketweb.com/event/bitchfest-grog-shop-tickets/14250344?pl=grogshop&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/bitchfest-iii-grog-shop-tickets/14250344?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -20935,6 +21909,25 @@
       "manual": false
     },
     {
+      "id": "welcome-to-the-farm-booking_01KXZWX2H0BERZ8RWGAM9GEX6Q",
+      "title": "Meyer pavich",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Meyer pavich",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5T9HKSEA8P4GB36T6WD1R0",
       "title": "Southbound",
       "venueId": "welcome-to-the-farm",
@@ -21065,6 +22058,25 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/polka-haus-party-pb5gs-48bgx-x6z7w-p4r49-zw6yf-bdzzj-w3ase-4ajmx-we6ct-d3xgh-lhyt3-6mek3-wwsba-z7fjb-9wfgg-lzhef-fere3-nfrma-l2wyg-6e9xc-l8329-5lc86-d3yte-g2mks-wgdmw-rls56-ppdrs-5ryg4-asjyn-3lymh",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-28-dolce-vita-all-vinyl-italo-synthpop-hi-nrg-dance-party",
+      "title": "Dolce Vita: All Vinyl Italo, Synthpop, Hi-NRG Dance Party",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-28",
+      "time": "21:00",
+      "doors": "21:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Dolce Vita: All Vinyl Italo, Synthpop, Hi-NRG Dance Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/dolce-vita-all-vinyl-italo-synthpop-hi-nrg-dance-party/",
+      "ticketUrl": "https://www.ticketweb.com/event/dolce-vita-all-vinyl-italo-b-side-lounge-tickets/14269754?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -21240,25 +22252,6 @@
     },
     {
       "id": "rocket-arena-2026-08-29-don-toliver",
-      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-      "venueId": "rocket-arena",
-      "date": "2026-08-29",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Don Toliver",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-29-don-toliver",
       "title": "DON'S GARAGE VIP UPGRADE: DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2 (NOT AN EVENT TICKET)",
       "venueId": "rocket-arena",
       "date": "2026-08-29",
@@ -21273,6 +22266,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18328978",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-29-don-toliver",
+      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+      "venueId": "rocket-arena",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Don Toliver",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
       "source": "seatgeek",
       "manual": false
     },
@@ -21810,6 +22822,25 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/bill-lestock-treelawn-social-club-tickets/14942623",
       "ticketUrl": "https://www.ticketweb.com/event/bill-lestock-treelawn-social-club-tickets/14942623",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-08-29-good-sleepy-summerbruise-tunnelvision",
+      "title": "Good Sleepy , Summerbruise,  Tunnel/Vision",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Good Sleepy , Summerbruise,  Tunnel/Vision",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/good-sleepy-summerbruise-tunnelvision/",
+      "ticketUrl": "https://www.ticketweb.com/event/-good-sleepy-summerbruise-b-side-lounge-tickets/14236424?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -22507,6 +23538,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-01-lyrical-rhythms-6",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-01",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-6/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229964?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cain-park-2026-09-02-the-cleveland-orchestra-free-community-concert",
       "title": "The Cleveland Orchestra Free Community Concert",
       "venueId": "cain-park",
@@ -22584,6 +23634,44 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/hboktoberfestbier-7ebnt-9l7r4",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-02-we-are-wednesdays-w-da-land-brass-band-2",
+      "title": "We Are Wednesdays w/ Da Land Brass Band",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-02",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "We Are Wednesdays w/ Da Land Brass Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/we-are-wednesdays-w-da-land-brass-band-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/we-are-wednesdays-w-da-b-side-lounge-tickets/14240814?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-02-shit-show-karaoke-21",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-02",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-21/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230234?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -22862,6 +23950,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-03-pretty-lit-ladies-night-4",
+      "title": "PRETTY LIT LADIES NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-03",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "PRETTY LIT LADIES NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/pretty-lit-ladies-night-4/",
+      "ticketUrl": "https://www.ticketweb.com/event/pretty-lit-ladies-night-b-side-lounge-tickets/14230344?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "no-class-2026-09-03-acid-witch",
       "title": "ACID WITCH",
       "venueId": "no-class",
@@ -23126,6 +24233,25 @@
       "manual": false
     },
     {
+      "id": "welcome-to-the-farm-booking_01KY0JQZ1Z15A8JAWTSB62Z8MJ",
+      "title": "Emma Nicholas",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-09-04",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5TG0EA27ZPC3RWCM40QTC4",
       "title": "Kelly Daniels",
       "venueId": "welcome-to-the-farm",
@@ -23236,6 +24362,25 @@
       ],
       "eventUrl": "https://thesixty6.com/events/line-dance-is-my-therapy-5/var/ri-7.l-L1",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-04-b-side-summer-patio-series-with-jeff-holland-and-last-pick",
+      "title": "B Side Summer Patio Series with Jeff Holland and Last Pick",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-04",
+      "time": "19:30",
+      "doors": "19:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "B Side Summer Patio Series with Jeff Holland and Last Pick",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-summer-patio-series-with-jeff-holland-and-last-pick/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-summer-patio-series-b-side-lounge-tickets/14240874?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -23872,6 +25017,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-06-the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-8",
+      "title": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-06",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-8/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14230524?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69b2fdfaf1ed93c9ed4b54ba",
       "title": "The Music of John Williams",
       "venueId": "cleveland-orchestra",
@@ -24102,6 +25266,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-08-lyrical-rhythms-12",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-08",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-12/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229984?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tarot Night",
       "performers": [
         {
@@ -24243,6 +25426,44 @@
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/djsayword-51326-akmd9",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-09-the-people-poetry-open-mic-night-3",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-09",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231024?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-09-shit-show-karaoke-22",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-09",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-22/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230244?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -24446,6 +25667,25 @@
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/summer-farmers-market-2026-09-10",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-10-b-side-grooves-4",
+      "title": "B SIDE GROOVES",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-10",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "B SIDE GROOVES",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-grooves-4/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-grooves-b-side-lounge-tickets/14267064?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -24734,6 +25974,25 @@
       "manual": false
     },
     {
+      "id": "collision-bend-cleveland-2026-09-11-follow-the-sun-at-collision-bend-cle-48738",
+      "title": "Follow the Sun at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-09-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Follow the Sun at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/follow-the-sun-at-collision-bend-cle-48738",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-09-11-rickey-smiley-live",
       "title": "Rickey Smiley Live!",
       "venueId": "playhouse-square",
@@ -24947,6 +26206,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-11-kawaii-rave-anime-dance-party",
+      "title": "Kawaii Rave: Anime Dance Party",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-11",
+      "time": "21:00",
+      "doors": "21:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Kawaii Rave: Anime Dance Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/kawaii-rave-anime-dance-party/",
+      "ticketUrl": "https://www.ticketweb.com/event/kawaii-rave-anime-dance-party-b-side-lounge-tickets/14198574?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Tricky Dick",
       "performers": [
         {
@@ -25076,6 +26354,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-jack-wharff-band/",
       "ticketUrl": "https://link.dice.fm/X82de049c1f6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bop-stop-2026-09-12-dave-sterners-tricotism-jazz-trio-bop-stop",
+      "title": "Dave Sterner's Tricotism Jazz Trio",
+      "venueId": "bop-stop",
+      "date": "2026-09-12",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Dave Sterner's Tricotism Jazz Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/09/12/dave-sterners-tricotism-jazz-trio-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/12/dave-sterners-tricotism-jazz-trio-bop-stop",
       "source": "scrape",
       "manual": false
     },
@@ -25989,6 +27286,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-15-lyrical-rhythms-13",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-15",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-13/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230004?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-6994923e5c1cd830eca879db",
       "title": "Juanes World Tour 2026",
       "venueId": "cleveland-orchestra",
@@ -26029,7 +27345,7 @@
     },
     {
       "id": "beachland-ballroom-2026-09-16-swmrs",
-      "title": "SWMRS",
+      "title": "SWMRS with The Happy Return",
       "venueId": "beachland-ballroom",
       "date": "2026-09-16",
       "time": "20:00",
@@ -26039,6 +27355,10 @@
         {
           "name": "SWMRS",
           "headliner": true
+        },
+        {
+          "name": "The Happy Return",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/swmrs-16-sep",
@@ -26267,6 +27587,25 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/artemus-crump-treelawn-social-club-tickets/14242854",
       "ticketUrl": "https://www.ticketweb.com/event/artemus-crump-treelawn-social-club-tickets/14242854",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-16-shit-show-karaoke-23",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-16",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-23/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230254?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -26739,6 +28078,25 @@
       "manual": false
     },
     {
+      "id": "collision-bend-cleveland-2026-09-18-maura-rogers-and-the-bellows-at-collision-bend-cle-48741",
+      "title": "Maura Rogers and the Bellows at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-09-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Maura Rogers and the Bellows at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/maura-rogers-and-the-bellows-at-collision-bend-cle-48741",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "foundry-concert-club-2026-09-18-the-barbarians-of-california-squint-armed-for-apocalypse",
       "title": "The Barbarians of California w/ The Barbarians of California, Squint, Armed for Apocalypse",
       "venueId": "foundry-concert-club",
@@ -26823,6 +28181,25 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/pejs743al64l8j9-h2c7c-pgkbb-pcexp-n72dj-2ys6a-fnrxm-ec5jz-7pdsm-jsrbp-gamxm-lyk9l-bnas9-e6m9w-4ysh5",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-18-show-me-the-body-powerplant-whispers-holder-s-m-i-l-e-slugg",
+      "title": "Show Me The Body, Powerplant, Whispers, Holder, S.M.I.L.E., Slugg",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-18",
+      "time": "19:30",
+      "doors": "19:00",
+      "price": "$34.70",
+      "performers": [
+        {
+          "name": "Show Me The Body, Powerplant, Whispers, Holder, S.M.I.L.E., Slugg",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/show-me-the-body-powerplant-whispers-holder-s-m-i-l-e-slugg/",
+      "ticketUrl": "https://www.ticketweb.com/event/show-me-the-body-powerplant-grog-shop-and-b-side-tickets/14202094?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -27250,6 +28627,25 @@
       ],
       "eventUrl": "https://bentmace.org/event/monitor-fest/",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-19-basement-rb-experience-6",
+      "title": "Basement: R&B Experience",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-19",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Basement: R&B Experience",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-6/",
+      "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14230444?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -27874,6 +29270,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-22-lyrical-rhythms-14",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-22",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-14/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230014?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Black Veil Brides",
       "performers": [
         {
@@ -27894,7 +29309,7 @@
     },
     {
       "id": "grog-shop-2026-09-23-squirrel-flower",
-      "title": "Squirrel Flower w/ youbet",
+      "title": "Squirrel Flower w/ youbet, Wish Queen",
       "venueId": "grog-shop",
       "date": "2026-09-23",
       "time": "20:00",
@@ -27908,10 +29323,14 @@
         {
           "name": "youbet",
           "headliner": false
+        },
+        {
+          "name": "Wish Queen",
+          "headliner": false
         }
       ],
       "eventUrl": "https://grogshop.gs/tm-event/squirrel-flower-youbet/",
-      "ticketUrl": "https://www.ticketweb.com/event/squirrel-flower-youbet-grog-shop-tickets/14909653?pl=grogshop&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/squirrel-flower-youbet-wish-queen-grog-shop-tickets/14909653?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -28055,6 +29474,44 @@
       ],
       "eventUrl": "https://www.ticketweb.com/event/dan-hubbard-the-treelawn-social-club-tickets/14252984",
       "ticketUrl": "https://www.ticketweb.com/event/dan-hubbard-the-treelawn-social-club-tickets/14252984",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-23-the-people-poetry-open-mic-night-4",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-23",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-4/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231034?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-23-shit-show-karaoke-24",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-23",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-24/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230264?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -28542,6 +29999,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-25-qweirdo",
+      "title": "QWEIRDO",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-25",
+      "time": "21:30",
+      "doors": "21:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "QWEIRDO",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/qweirdo/",
+      "ticketUrl": "https://www.ticketweb.com/event/qweirdo-b-side-lounge-tickets/14265024?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "That 80's Band",
       "performers": [
         {
@@ -28917,6 +30393,44 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-26-b-side-summer-patio-series-with-swap-meet-and-hotel-cable",
+      "title": "B Side Summer Patio Series with Swap Meet and Hotel Cable",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-26",
+      "time": "18:30",
+      "doors": "18:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "B Side Summer Patio Series with Swap Meet and Hotel Cable",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-summer-patio-series-with-swap-meet-and-hotel-cable/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-summer-patio-series-b-side-lounge-tickets/14227854?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-26-in-my-feelings-an-rb-hip-hop-joint-3",
+      "title": "In My Feelings: An R&B – Hip-Hop Joint",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-26",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "In My Feelings: An R&B – Hip-Hop Joint",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/in-my-feelings-an-rb-hip-hop-joint-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/in-my-feelings-an-rb-b-side-lounge-tickets/14260664?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69d91bfd0ed478fa07c367ff",
       "title": "Brahms’s Second Symphony",
       "venueId": "cleveland-orchestra",
@@ -29205,6 +30719,25 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/fbsrwwfz3z8tljf-2t792-rxan9-l8k5a-bxnfz-a47rm-cdy6l-bfwrp-jh27h-g2bkb-cr5hf-z7kjy-995gy-5tnd6-ynnse-c5wbr-wy3l3-wddc2-3adrp",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-27-sun-made-disco-club-all-vinyl-final-ft-red-i-oraclepussies-j-navarro-throat-yogurt-sissybunny",
+      "title": "SUN MADE DISCO CLUB: All Vinyl Final! Ft. Red-I, oraclepussies, J Navarro, Throat Yogurt, SissyBunny",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-27",
+      "time": "16:00",
+      "doors": "16:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "SUN MADE DISCO CLUB: All Vinyl Final! Ft. Red-I, oraclepussies, J Navarro, Throat Yogurt, SissyBunny",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/sun-made-disco-club-all-vinyl-final-ft-red-i-oraclepussies-j-navarro-throat-yogurt-sissybunny/",
+      "ticketUrl": "https://www.ticketweb.com/event/sun-made-disco-club-all-b-side-lounge-tickets/14903083?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -29553,6 +31086,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-09-29-lyrical-rhythms-15",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-29",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-15/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230034?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-09-30-luna",
       "title": "Luna w/ Sister Ray Davies",
       "venueId": "grog-shop",
@@ -29692,6 +31244,25 @@
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-09-30",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-09-30-shit-show-karaoke-25",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-09-30",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-25/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230284?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -29891,6 +31462,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-01-pretty-lit-ladies-night-5",
+      "title": "PRETTY LIT LADIES NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-01",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "PRETTY LIT LADIES NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/pretty-lit-ladies-night-5/",
+      "ticketUrl": "https://www.ticketweb.com/event/pretty-lit-ladies-night-b-side-lounge-tickets/14230364?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-10-02-cleveland-monsters",
       "title": "Grand Rapids Griffins at Cleveland Monsters",
       "venueId": "rocket-arena",
@@ -30004,6 +31594,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/theatre-of-crue-oct2/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62208",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-10-02-waynes-world-band-at-collision-bend-cle-48745",
+      "title": "Wayne's World Band at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-10-02",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Wayne's World Band at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/waynes-world-band-at-collision-bend-cle-48745",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -30538,6 +32147,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-04-the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-9",
+      "title": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-04",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-9/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14230534?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8c4ab630fea04bc7132e",
       "title": "Dortmund, Germany",
       "venueId": "cleveland-orchestra",
@@ -30763,6 +32391,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-06-lyrical-rhythms-16",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-06",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-16/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230054?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8cdd25effffd0e35280f",
       "title": "Paris, France",
       "venueId": "cleveland-orchestra",
@@ -30874,6 +32521,44 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-07-we-are-wednesdays-w-da-land-brass-band-3",
+      "title": "We Are Wednesdays w/ Da Land Brass Band",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-07",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "We Are Wednesdays w/ Da Land Brass Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/we-are-wednesdays-w-da-land-brass-band-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/we-are-wednesdays-w-da-b-side-lounge-tickets/14240834?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-07-shit-show-karaoke-28",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-07",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-28/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230294?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-10-08-first-to-eleven",
       "title": "First To Eleven",
       "venueId": "mahalls",
@@ -30927,6 +32612,25 @@
       ],
       "eventUrl": "https://hilarities.com/events/135416",
       "ticketUrl": "https://hilarities.com/shows/368030",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-08-b-side-grooves-5",
+      "title": "B SIDE GROOVES",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-08",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "B SIDE GROOVES",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/b-side-grooves-5/",
+      "ticketUrl": "https://www.ticketweb.com/event/b-side-grooves-b-side-lounge-tickets/14267084?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -31055,6 +32759,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/drag-bingo-oct9/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62576",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-10-09-boaterhead-at-collision-bend-cle-48749",
+      "title": "Boaterhead at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Boaterhead at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/boaterhead-at-collision-bend-cle-48749",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -31379,6 +33102,26 @@
       "manual": false
     },
     {
+      "id": "treelawn-social-club-2026-10-10-14232424",
+      "title": "Chris Hovan Organic Trio",
+      "venueId": "treelawn",
+      "room": "Treelawn Social Club",
+      "date": "2026-10-10",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Chris Hovan Organic Trio",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketweb.com/event/chris-hovan-organic-trio-treelawn-social-club-tickets/14232424",
+      "ticketUrl": "https://www.ticketweb.com/event/chris-hovan-organic-trio-treelawn-social-club-tickets/14232424",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-6a2089576ea56ea7143c85db",
       "title": "Thee Phantom & The Illharmonic Orchestra",
       "venueId": "cleveland-orchestra",
@@ -31660,29 +33403,6 @@
       "manual": false
     },
     {
-      "id": "beachland-ballroom-2026-10-13-laura-veirs",
-      "title": "Laura Veirs with Karl Blau",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-13",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Laura Veirs",
-          "headliner": true
-        },
-        {
-          "name": "Karl Blau",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/laura-veirs-13-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/laura-veirs-13-oct#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-10-13-wind-walkers-the-i-don-t-belong-here-tour",
       "title": "Wind Walkers:  The “I Don’t Belong Here” Tour",
       "venueId": "mahalls",
@@ -31767,6 +33487,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-13-lyrical-rhythms-28",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-13",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-28/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230074?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8de396c01a6052d019d6",
       "title": "Budapest, Hungary",
       "venueId": "cleveland-orchestra",
@@ -31783,29 +33522,6 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/budapest-hungary",
       "ticketUrl": "https://mupa.hu/en/events/event-calendar/2026/10",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-10-14-the-linda-lindas",
-      "title": "The Linda Lindas with adan diaz",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-14",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Linda Lindas",
-          "headliner": true
-        },
-        {
-          "name": "adan diaz",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -31897,6 +33613,44 @@
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/djsayword-51326-akmd9-htpmt",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-14-the-people-poetry-open-mic-night-15",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-15/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231044?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-14-shit-show-karaoke-29",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-14",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-29/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230304?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -32082,6 +33836,25 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-16-7-pm/18356907",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-10-16-the-new-barlerycorn-at-collision-bend-cle-48751",
+      "title": "The New Barlerycorn at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-10-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The New Barlerycorn at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/the-new-barlerycorn-at-collision-bend-cle-48751",
+      "ticketUrl": null,
+      "source": "scrape",
       "manual": false
     },
     {
@@ -32445,6 +34218,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-17-basement-rb-experience-7",
+      "title": "Basement: R&B Experience",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-17",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Basement: R&B Experience",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-7/",
+      "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14230464?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8ee7ead56883491cbf70",
       "title": "Vienna, Austria",
       "venueId": "cleveland-orchestra",
@@ -32758,6 +34550,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-20-lyrical-rhythms-29",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-20",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-29/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230094?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8f54b0331538bd468e1c",
       "title": "Thessaloniki, Greece",
       "venueId": "cleveland-orchestra",
@@ -32819,6 +34630,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-21-shit-show-karaoke-30",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-21",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-30/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230314?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69df8f89b0331538bd468f1a",
       "title": "Athens, Greece",
       "venueId": "cleveland-orchestra",
@@ -32855,6 +34685,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/prognation-reunion-oct22/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62784",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-10-22-jim-florentine",
+      "title": "Jim Florentine",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-10-22",
+      "time": "20:00",
+      "doors": "00:00",
+      "price": "$23.15 - $43.75",
+      "performers": [
+        {
+          "name": "Jim Florentine",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/jim-florentine/",
+      "ticketUrl": "https://www.ticketweb.com/event/jim-florentine-the-winchester-tickets/14270214",
       "source": "scrape",
       "manual": false
     },
@@ -33075,6 +34924,25 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/dennett-the-ivy",
       "ticketUrl": "https://www.ivycle.com/event-details/dennett-the-ivy",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-23-qweirdo-2",
+      "title": "QWEIRDO",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-23",
+      "time": "21:30",
+      "doors": "21:00",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "QWEIRDO",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/qweirdo-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/qweirdo-b-side-lounge-tickets/14265044?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -33461,25 +35329,6 @@
       "manual": false
     },
     {
-      "id": "winchester-music-tavern-2026-10-25-brother-ali-midwest-trek-26",
-      "title": "BROTHER ALI – Midwest Trek ’26",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-10-25",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$28.30",
-      "performers": [
-        {
-          "name": "BROTHER ALI – Midwest Trek ’26",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-midwest-trek-26/",
-      "ticketUrl": "https://www.ticketweb.com/event/brother-ali-midwest-the-winchester-tickets/14260864",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "winchester-music-tavern-2026-10-25-brother-ali-w-dj-abilities",
       "title": "Brother Ali W/ DJ Abilities",
       "venueId": "winchester-music-tavern",
@@ -33495,6 +35344,25 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-w-dj-abilities/",
       "ticketUrl": "https://www.ticketweb.com/event/brother-ali-w-dj-abilities-the-winchester-tickets/14240014",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-10-25-brother-ali-midwest-trek-26",
+      "title": "BROTHER ALI – Midwest Trek ’26",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-10-25",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$28.30",
+      "performers": [
+        {
+          "name": "BROTHER ALI – Midwest Trek ’26",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-midwest-trek-26/",
+      "ticketUrl": "https://www.ticketweb.com/event/brother-ali-midwest-the-winchester-tickets/14260864",
       "source": "scrape",
       "manual": false
     },
@@ -33632,6 +35500,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-10-27-lyrical-rhythms-30",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-27",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-30/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14230104?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-10-28-this-is-lorelei",
       "title": "This is Lorelei",
       "venueId": "mahalls",
@@ -33685,6 +35572,44 @@
       ],
       "eventUrl": "https://hilarities.com/events/135982",
       "ticketUrl": "https://hilarities.com/shows/369401",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-28-the-people-poetry-open-mic-night-16",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-28",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-16/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231064?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-28-shit-show-karaoke-31",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-28",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-31/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230324?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -34013,6 +35938,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-11-01-the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-10",
+      "title": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-01",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-10/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14231134?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69d6b8766bd109731c660c92",
       "title": "Mahler’s Fifth Symphony",
       "venueId": "cleveland-orchestra",
@@ -34124,6 +36068,44 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-89/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14969983",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-03-lyrical-rhythms-31",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-03",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-31/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231154?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-04-shit-show-karaoke-3",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-04",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-3/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243614?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -34299,6 +36281,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/noise-pollution-nov6/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62640",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-11-06-pieces-of-eight-at-collision-bend-cle-48747",
+      "title": "Pieces of Eight at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Pieces of Eight at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/pieces-of-eight-at-collision-bend-cle-48747",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -34858,6 +36859,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-11-10-lyrical-rhythms-32",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-10",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-32/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231164?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-11-11-small-brown-bike",
       "title": "Small Brown Bike w/ The Casket Lottery",
       "venueId": "grog-shop",
@@ -34958,6 +36978,44 @@
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/djsayword-51326-akmd9-htpmt-nysc8",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-11-the-people-poetry-open-mic-night-17",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-17/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231074?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-11-shit-show-karaoke-32",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-11",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-32/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243624?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -35145,6 +37203,25 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1457716",
       "ticketUrl": "https://www.axs.com/events/1457716/skipline-and-ascension-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "collision-bend-cleveland-2026-11-13-sunshine-daydream-at-collision-bend-cle-48753",
+      "title": "Sunshine Daydream at Collision Bend CLE",
+      "venueId": "collision-bend-cleveland",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Sunshine Daydream at Collision Bend CLE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://collisionbendbrewery.com/events/sunshine-daydream-at-collision-bend-cle-48753",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -35373,26 +37450,6 @@
       ],
       "eventUrl": "https://hilarities.com/events/140805",
       "ticketUrl": "https://hilarities.com/shows/380905",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-social-club-2026-11-14-14232424",
-      "title": "Chris Hovan Organic Trio",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-11-14",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Chris Hovan Organic Trio",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/chris-hovan-organic-trio-treelawn-social-club-tickets/14232424",
-      "ticketUrl": "https://www.ticketweb.com/event/chris-hovan-organic-trio-treelawn-social-club-tickets/14232424",
       "source": "scrape",
       "manual": false
     },
@@ -35711,6 +37768,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-11-17-lyrical-rhythms-33",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-17",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-33/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231174?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rocket-arena-2026-11-18-cleveland-monsters",
       "title": "Hamilton Hammers at Cleveland Monsters",
       "venueId": "rocket-arena",
@@ -35749,6 +37825,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/hot-freaks/",
       "ticketUrl": "https://link.dice.fm/Zf24d9263af1",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-18-shit-show-karaoke-33",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-18",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-33/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243634?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -36176,6 +38271,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-11-21-basement-rb-experience-8",
+      "title": "Basement: R&B Experience",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-21",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Basement: R&B Experience",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-8/",
+      "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14243734?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-69d936a8f27d721a97be50b6",
       "title": "Rouvali Conducts Strauss",
       "venueId": "cleveland-orchestra",
@@ -36358,6 +38472,63 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-92/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970133",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-24-lyrical-rhythms-34",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-24",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-34/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231194?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-25-the-people-poetry-open-mic-night-18",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-25",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-18/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231084?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-11-25-shit-show-karaoke-34",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-25",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-34/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243654?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -36631,6 +38802,44 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-93/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970013",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-01-lyrical-rhythms-35",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-01",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-35/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231204?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-02-shit-show-karaoke-35",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-02",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-35/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243664?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -36974,6 +39183,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-12-06-the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-11",
+      "title": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-06",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$12.59",
+      "performers": [
+        {
+          "name": "THE SAMMY DELEON AND JACKIE WARREN QUARTET, WITH KIP REED & CHRIS BURGE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-11/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14231144?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mercury-music-lounge-2026-12-07-music-trivi-aoke-48",
       "title": "MUSIC TRIVI-AOKE",
       "venueId": "mercury-music-lounge",
@@ -37050,6 +39278,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-12-08-lyrical-rhythms-36",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-08",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-36/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231214?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-12-09-wicked-3",
       "title": "WICKED",
       "venueId": "playhouse-square",
@@ -37087,6 +39334,44 @@
       ],
       "eventUrl": "https://www.prosperitysocialclub.com/events/djsayword-51326-akmd9-htpmt-nysc8-gxdgn",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-09-the-people-poetry-open-mic-night-19",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-09",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-19/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231104?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-09-shit-show-karaoke-36",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-09",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-36/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243684?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -37411,6 +39696,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-12-15-lyrical-rhythms-37",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-15",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-37/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231224?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "the-agora-2026-12-16-shakey-graves",
       "title": "Shakey Graves w/ Jobi Riccio",
       "venueId": "the-agora",
@@ -37430,6 +39734,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1449327",
       "ticketUrl": "https://www.axs.com/events/1449327/shakey-graves-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-16-shit-show-karaoke-37",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-16",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-37/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243694?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -37707,6 +40030,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-12-19-basement-rb-experience-9",
+      "title": "Basement: R&B Experience",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-19",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Basement: R&B Experience",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/basement-rb-experience-9/",
+      "ticketUrl": "https://www.ticketweb.com/event/basement-rb-experience-b-side-lounge-tickets/14243754?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-6970e83600b1f37f5ef38ca5",
       "title": "Holiday Concerts 2026",
       "venueId": "cleveland-orchestra",
@@ -37888,6 +40230,25 @@
       "manual": false
     },
     {
+      "id": "bside-2026-12-22-lyrical-rhythms-38",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-22",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-38/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231234?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "cleveland-orchestra-6970e83600b1f37f5ef38ce5",
       "title": "Holiday Concerts 2026",
       "venueId": "cleveland-orchestra",
@@ -37904,6 +40265,44 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/holiday-concerts-26",
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24260",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-23-the-people-poetry-open-mic-night-20",
+      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-23",
+      "time": "19:00",
+      "doors": "18:30",
+      "price": "$9.76",
+      "performers": [
+        {
+          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-20/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231124?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-23-shit-show-karaoke-38",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-23",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-38/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243704?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -38027,6 +40426,44 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-97/",
       "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970023",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-29-lyrical-rhythms-39",
+      "title": "Lyrical Rhythms",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-29",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Lyrical Rhythms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-39/",
+      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231244?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-12-30-shit-show-karaoke-39",
+      "title": "SHIT SHOW KARAOKE",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-30",
+      "time": "22:00",
+      "doors": "22:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "SHIT SHOW KARAOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-39/",
+      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243714?pl=bside",
       "source": "scrape",
       "manual": false
     },
