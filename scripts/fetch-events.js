@@ -1863,17 +1863,8 @@ async function fetchFoundry() {
       const eventUrl = titleEl.attr('href') || null;
       if (!fullTitle || !eventUrl) return;
 
-      const supportSpans = $(el).find('.tw-attractions span');
-      let title = fullTitle;
-      let performers = [{ name: fullTitle, headliner: true }];
-      if (supportSpans.length) {
-        const headlinerName = fullTitle.split(/,| –| -/)[0].trim();
-        const supporters = [];
-        supportSpans.each((j, span) => supporters.push($(span).text().trim()));
-        performers = [{ name: headlinerName, headliner: true }];
-        supporters.forEach(s => performers.push({ name: s, headliner: false }));
-        title = `${headlinerName} w/ ${supporters.join(', ')}`;
-      }
+      const title = fullTitle;
+      const performers = [{ name: fullTitle, headliner: true }];
 
       let price = $(el).find('.tw-price').first().text().trim() || null;
       if (price === '$0.00') price = 'Free';

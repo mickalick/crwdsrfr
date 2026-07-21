@@ -530,7 +530,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-20-nerd-night-3",
-      "title": "NERD NIGHT w/ Nerd Night",
+      "title": "NERD NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-07-20",
       "time": "17:00",
@@ -540,10 +540,6 @@
         {
           "name": "NERD NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Nerd Night",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night-3/",
@@ -553,7 +549,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-20-chain-gang-curbed-myst",
-      "title": "Chain Gang w/ Chain Gang, Curbed, Myst",
+      "title": "Chain Gang, Curbed, Myst",
       "venueId": "foundry-concert-club",
       "date": "2026-07-20",
       "time": "19:00",
@@ -561,55 +557,12 @@
       "price": null,
       "performers": [
         {
-          "name": "Chain Gang",
+          "name": "Chain Gang, Curbed, Myst",
           "headliner": true
-        },
-        {
-          "name": "Chain Gang",
-          "headliner": false
-        },
-        {
-          "name": "Curbed",
-          "headliner": false
-        },
-        {
-          "name": "Myst",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/chain-gang-curbed-myst/",
       "ticketUrl": "https://www.ticketweb.com/event/chain-gang-curbed-myst-the-foundry-tickets/14263764?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "dunlaps-2026-07-20-139172",
-      "title": "Tiberius & Sweet Petunia",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-07-20",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Tiberius & Sweet Petunia",
-          "headliner": true
-        },
-        {
-          "name": "Leila Marie",
-          "headliner": false
-        },
-        {
-          "name": "Cherry Yachtsman",
-          "headliner": false
-        },
-        {
-          "name": "Sweet Petunia",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/139172",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/377044",
       "source": "scrape",
       "manual": false
     },
@@ -828,7 +781,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-21-book-banter-brigade-2",
-      "title": "Book Banter Brigade w/ Book Banter Brigade",
+      "title": "Book Banter Brigade",
       "venueId": "foundry-concert-club",
       "date": "2026-07-21",
       "time": "18:00",
@@ -838,10 +791,6 @@
         {
           "name": "Book Banter Brigade",
           "headliner": true
-        },
-        {
-          "name": "Book Banter Brigade",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/book-banter-brigade-2/",
@@ -851,7 +800,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-21-personality-crisis-aka-cle-punk-night-16",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-07-21",
       "time": "21:00",
@@ -861,10 +810,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
@@ -1180,7 +1125,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-22-metalcore-wednesday-5",
-      "title": "Metalcore Wednesday w/ Metalcore Wednesday",
+      "title": "Metalcore Wednesday",
       "venueId": "foundry-concert-club",
       "date": "2026-07-22",
       "time": "18:00",
@@ -1190,10 +1135,6 @@
         {
           "name": "Metalcore Wednesday",
           "headliner": true
-        },
-        {
-          "name": "Metalcore Wednesday",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/metalcore-wednesday-5/",
@@ -2719,7 +2660,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-24-until-i-wake-deadlands-pinknoise-how-we-feel",
-      "title": "Until I Wake w/ Until I Wake, Deadlands, PINKNOISE, How We Feel",
+      "title": "Until I Wake, Deadlands, PINKNOISE, How We Feel",
       "venueId": "foundry-concert-club",
       "date": "2026-07-24",
       "time": "18:00",
@@ -2727,28 +2668,43 @@
       "price": null,
       "performers": [
         {
-          "name": "Until I Wake",
+          "name": "Until I Wake, Deadlands, PINKNOISE, How We Feel",
           "headliner": true
-        },
-        {
-          "name": "Until I Wake",
-          "headliner": false
-        },
-        {
-          "name": "Deadlands",
-          "headliner": false
-        },
-        {
-          "name": "PINKNOISE",
-          "headliner": false
-        },
-        {
-          "name": "How We Feel",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/until-i-wake-deadlands-pinknoise-how-we-feel/",
       "ticketUrl": "https://www.ticketweb.com/event/until-i-wake-deadlands-pinknoise-the-foundry-tickets/14967343?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "dunlaps-2026-07-24-140907",
+      "title": "Prithee",
+      "venueId": "dunlaps-corner-bar",
+      "date": "2026-07-24",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Prithee",
+          "headliner": true
+        },
+        {
+          "name": "Pareidolia",
+          "headliner": false
+        },
+        {
+          "name": "Tiny Vamp",
+          "headliner": false
+        },
+        {
+          "name": "Common Threat",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.dunlapsbar.com/events/140907",
+      "ticketUrl": "https://www.dunlapsbar.com/shows/381067",
       "source": "scrape",
       "manual": false
     },
@@ -4009,7 +3965,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-25-club-hell",
-      "title": "Club Hell w/ DJ BES",
+      "title": "Club Hell",
       "venueId": "foundry-concert-club",
       "date": "2026-07-25",
       "time": "21:00",
@@ -4019,14 +3975,37 @@
         {
           "name": "Club Hell",
           "headliner": true
-        },
-        {
-          "name": "DJ BES",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/club-hell/",
       "ticketUrl": "https://www.ticketweb.com/event/club-hell-the-foundry-tickets/14268974?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "dunlaps-2026-07-25-140908",
+      "title": "Pro Skater",
+      "venueId": "dunlaps-corner-bar",
+      "date": "2026-07-25",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Pro Skater",
+          "headliner": true
+        },
+        {
+          "name": "Stoat",
+          "headliner": false
+        },
+        {
+          "name": "Lake Erie Highball",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.dunlapsbar.com/events/140908",
+      "ticketUrl": "https://www.dunlapsbar.com/shows/381068",
       "source": "scrape",
       "manual": false
     },
@@ -4260,6 +4239,26 @@
         }
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/personal-color-analysis-2026-07-25",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "van-aken-celebrating-6-years-of-slfmkr-2026-07-25",
+      "title": "Celebrating 6 Years of Slfmkr",
+      "venueId": "van-aken-district",
+      "date": "2026-07-25",
+      "time": "10:00",
+      "doors": null,
+      "price": null,
+      "room": "Slfmkr",
+      "performers": [
+        {
+          "name": "Celebrating 6 Years of Slfmkr",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/celebrating-6-years-of-slfmkr-2026-07-25",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -5766,7 +5765,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-27-islander",
-      "title": "Islander w/ Islander",
+      "title": "Islander",
       "venueId": "foundry-concert-club",
       "date": "2026-07-27",
       "time": "18:00",
@@ -5776,10 +5775,6 @@
         {
           "name": "Islander",
           "headliner": true
-        },
-        {
-          "name": "Islander",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/islander/",
@@ -5984,7 +5979,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-28-personality-crisis-aka-cle-punk-night-16",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-07-28",
       "time": "21:00",
@@ -5994,10 +5989,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
@@ -6007,7 +5998,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-28-personality-crisis-aka-cle-punk-night-9",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-07-28",
       "time": "21:00",
@@ -6017,10 +6008,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-9/",
@@ -6272,7 +6259,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-29-metalcore-wednesday-5",
-      "title": "Metalcore Wednesday w/ Metalcore Wednesday",
+      "title": "Metalcore Wednesday",
       "venueId": "foundry-concert-club",
       "date": "2026-07-29",
       "time": "18:00",
@@ -6282,10 +6269,6 @@
         {
           "name": "Metalcore Wednesday",
           "headliner": true
-        },
-        {
-          "name": "Metalcore Wednesday",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/metalcore-wednesday-5/",
@@ -6295,7 +6278,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-29-metalcore-wednesday-6",
-      "title": "Metalcore Wednesday w/ Metalcore Wednesday",
+      "title": "Metalcore Wednesday",
       "venueId": "foundry-concert-club",
       "date": "2026-07-29",
       "time": "18:00",
@@ -6305,10 +6288,6 @@
         {
           "name": "Metalcore Wednesday",
           "headliner": true
-        },
-        {
-          "name": "Metalcore Wednesday",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/metalcore-wednesday-6/",
@@ -6817,7 +6796,7 @@
     },
     {
       "id": "foundry-concert-club-2026-07-30-catalina-wine-mixer-movie-night",
-      "title": "Catalina Wine Mixer & Movie Night w/ Catalina Wine Mixer & Movie Night",
+      "title": "Catalina Wine Mixer & Movie Night",
       "venueId": "foundry-concert-club",
       "date": "2026-07-30",
       "time": "19:00",
@@ -6827,10 +6806,6 @@
         {
           "name": "Catalina Wine Mixer & Movie Night",
           "headliner": true
-        },
-        {
-          "name": "Catalina Wine Mixer & Movie Night",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/catalina-wine-mixer-movie-night/",
@@ -8567,7 +8542,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-01-scythe-of-grim-the-divine-judgement-tour",
-      "title": "Scythe of Grim: The Divine Judgement Tour w/ Scythe of Grim, Tracheotomy, Traumatization, Terra Vista, POOCH",
+      "title": "Scythe of Grim: The Divine Judgement Tour",
       "venueId": "foundry-concert-club",
       "date": "2026-08-01",
       "time": "18:00",
@@ -8577,31 +8552,30 @@
         {
           "name": "Scythe of Grim: The Divine Judgement Tour",
           "headliner": true
-        },
-        {
-          "name": "Scythe of Grim",
-          "headliner": false
-        },
-        {
-          "name": "Tracheotomy",
-          "headliner": false
-        },
-        {
-          "name": "Traumatization",
-          "headliner": false
-        },
-        {
-          "name": "Terra Vista",
-          "headliner": false
-        },
-        {
-          "name": "POOCH",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/scythe-of-grim-the-divine-judgement-tour/",
       "ticketUrl": "https://www.ticketweb.com/event/scythe-of-grim-the-divine-the-foundry-tickets/14242744?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "welcome-to-the-farm-booking_01KY0DYSG8B63CJEP5R4N5EZ6Q",
+      "title": "Quinn Hoffman",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Quinn Hoffman",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
       "manual": false
     },
     {
@@ -9464,7 +9438,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-02-foundry-flea",
-      "title": "FOUNDRY FLEA w/ Foundry Flea",
+      "title": "FOUNDRY FLEA",
       "venueId": "foundry-concert-club",
       "date": "2026-08-02",
       "time": "12:00",
@@ -9474,10 +9448,6 @@
         {
           "name": "FOUNDRY FLEA",
           "headliner": true
-        },
-        {
-          "name": "Foundry Flea",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/foundry-flea/",
@@ -10079,7 +10049,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-04-personality-crisis-aka-cle-punk-night-16",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-04",
       "time": "21:00",
@@ -10089,10 +10059,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
@@ -10102,7 +10068,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-04-personality-crisis-aka-cle-punk-night-9",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-04",
       "time": "21:00",
@@ -10112,10 +10078,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-9/",
@@ -10125,7 +10087,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-04-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-04",
       "time": "21:00",
@@ -10135,10 +10097,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
@@ -11526,6 +11484,25 @@
       "manual": false
     },
     {
+      "id": "welcome-to-the-farm-booking_01KY0E1BNYZNRN52YC7GAAPNFK",
+      "title": "Teddy Robb",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Teddy Robb",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5SV409DP6WW714WQJ42DJ7",
       "title": "Martin McDaniel",
       "venueId": "welcome-to-the-farm",
@@ -12378,7 +12355,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-08-crossbreed-unhealthy-while-unhinged-unvow-voices-of-the-damned",
-      "title": "Crossbreed w/ Crossbreed, Unhealthy While Unhinged, Unvow, Voices Of The Damned",
+      "title": "Crossbreed, Unhealthy While Unhinged, Unvow, Voices Of The Damned",
       "venueId": "foundry-concert-club",
       "date": "2026-08-08",
       "time": "18:00",
@@ -12386,24 +12363,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Crossbreed",
+          "name": "Crossbreed, Unhealthy While Unhinged, Unvow, Voices Of The Damned",
           "headliner": true
-        },
-        {
-          "name": "Crossbreed",
-          "headliner": false
-        },
-        {
-          "name": "Unhealthy While Unhinged",
-          "headliner": false
-        },
-        {
-          "name": "Unvow",
-          "headliner": false
-        },
-        {
-          "name": "Voices Of The Damned",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/crossbreed-unhealthy-while-unhinged-unvow-voices-of-the-damned/",
@@ -13229,6 +13190,25 @@
       "manual": false
     },
     {
+      "id": "welcome-to-the-farm-booking_01KY05ZNM52S752Z7TRBX4AX4F",
+      "title": "Mark Mason",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-09",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mark Mason",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-08-09-139406",
       "title": "WKYC Channel 3 Talent Showcase: A Fundraiser for VeloSano",
       "venueId": "hilarities",
@@ -13863,7 +13843,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-11-personality-crisis-aka-cle-punk-night-16",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-11",
       "time": "21:00",
@@ -13873,10 +13853,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
@@ -13886,7 +13862,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-11-personality-crisis-aka-cle-punk-night-9",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-11",
       "time": "21:00",
@@ -13896,10 +13872,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-9/",
@@ -13909,7 +13881,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-11-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-11",
       "time": "21:00",
@@ -13919,10 +13891,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
@@ -13932,7 +13900,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-11-personality-crisis-aka-cle-punk-night-11",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-11",
       "time": "21:00",
@@ -13942,10 +13910,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-11/",
@@ -15315,7 +15279,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-14-autumn-lies-buried-mantra-of-morta",
-      "title": "Autumn Lies Buried w/ Autumn Lies Buried, Mantra Of Morta, Executionist",
+      "title": "Autumn Lies Buried, Mantra Of Morta, Executionist",
       "venueId": "foundry-concert-club",
       "date": "2026-08-14",
       "time": "19:00",
@@ -15323,20 +15287,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Autumn Lies Buried",
+          "name": "Autumn Lies Buried, Mantra Of Morta, Executionist",
           "headliner": true
-        },
-        {
-          "name": "Autumn Lies Buried",
-          "headliner": false
-        },
-        {
-          "name": "Mantra Of Morta",
-          "headliner": false
-        },
-        {
-          "name": "Executionist",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/autumn-lies-buried-mantra-of-morta/",
@@ -16148,7 +16100,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-15-cholera-traumatization-xeighty-sixedx-walking-wounded-dead-in-my-eyes-loveletters",
-      "title": "Cholera w/ Cholera, Traumatization, xEighty-Sixedx, Walking Wounded, Dead In My Eyes, Loveletters",
+      "title": "Cholera, Traumatization, xEighty-Sixedx, Walking Wounded, Dead In My Eyes, Loveletters",
       "venueId": "foundry-concert-club",
       "date": "2026-08-15",
       "time": "18:00",
@@ -16156,32 +16108,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Cholera",
+          "name": "Cholera, Traumatization, xEighty-Sixedx, Walking Wounded, Dead In My Eyes, Loveletters",
           "headliner": true
-        },
-        {
-          "name": "Cholera",
-          "headliner": false
-        },
-        {
-          "name": "Traumatization",
-          "headliner": false
-        },
-        {
-          "name": "xEighty-Sixedx",
-          "headliner": false
-        },
-        {
-          "name": "Walking Wounded",
-          "headliner": false
-        },
-        {
-          "name": "Dead In My Eyes",
-          "headliner": false
-        },
-        {
-          "name": "Loveletters",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/cholera-traumatization-xeighty-sixedx-walking-wounded-dead-in-my-eyes-loveletters/",
@@ -17437,7 +17365,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-personality-crisis-aka-cle-punk-night-16",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "21:00",
@@ -17447,10 +17375,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-16/",
@@ -17460,7 +17384,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-personality-crisis-aka-cle-punk-night-9",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "21:00",
@@ -17470,10 +17394,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-9/",
@@ -17483,7 +17403,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "21:00",
@@ -17493,10 +17413,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
@@ -17506,7 +17422,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-personality-crisis-aka-cle-punk-night-11",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "21:00",
@@ -17516,10 +17432,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-11/",
@@ -17529,7 +17441,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-chironex-cerebral-desecration-warmbody",
-      "title": "Chironex w/ Chironex, Cerebral Desecration, Warmbody",
+      "title": "Chironex, Cerebral Desecration, Warmbody",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "19:00",
@@ -17537,20 +17449,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Chironex",
+          "name": "Chironex, Cerebral Desecration, Warmbody",
           "headliner": true
-        },
-        {
-          "name": "Chironex",
-          "headliner": false
-        },
-        {
-          "name": "Cerebral Desecration",
-          "headliner": false
-        },
-        {
-          "name": "Warmbody",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/chironex-cerebral-desecration-warmbody/",
@@ -17560,7 +17460,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-18-personality-crisis-aka-cle-punk-night-12",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-18",
       "time": "21:00",
@@ -17570,10 +17470,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-12/",
@@ -18797,7 +18693,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-21-jeffrey-nothing-dizasterpiece",
-      "title": "Jeffrey Nothing w/ Jeffrey Nothing, Dizasterpiece, Rustfed, Definitive Strike",
+      "title": "Jeffrey Nothing, Dizasterpiece, Rustfed, Definitive Strike",
       "venueId": "foundry-concert-club",
       "date": "2026-08-21",
       "time": "19:00",
@@ -18805,24 +18701,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Jeffrey Nothing",
+          "name": "Jeffrey Nothing, Dizasterpiece, Rustfed, Definitive Strike",
           "headliner": true
-        },
-        {
-          "name": "Jeffrey Nothing",
-          "headliner": false
-        },
-        {
-          "name": "Dizasterpiece",
-          "headliner": false
-        },
-        {
-          "name": "Rustfed",
-          "headliner": false
-        },
-        {
-          "name": "Definitive Strike",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/jeffrey-nothing-dizasterpiece/",
@@ -19531,7 +19411,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-22-comehelpglo",
-      "title": "comehelpglo w/ comehelpglo",
+      "title": "comehelpglo",
       "venueId": "foundry-concert-club",
       "date": "2026-08-22",
       "time": "19:00",
@@ -19541,15 +19421,30 @@
         {
           "name": "comehelpglo",
           "headliner": true
-        },
-        {
-          "name": "comehelpglo",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/comehelpglo/",
       "ticketUrl": "https://www.ticketweb.com/event/comehelpglo-the-foundry-tickets/14229954?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "welcome-to-the-farm-booking_01KY05ZPBFB1988SWJ1T45MSHH",
+      "title": "Mark Mason",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Mark Mason",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
       "manual": false
     },
     {
@@ -20735,7 +20630,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-25-personality-crisis-aka-cle-punk-night-13",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT w/ Personality Crisis",
+      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
       "venueId": "foundry-concert-club",
       "date": "2026-08-25",
       "time": "21:00",
@@ -20745,10 +20640,6 @@
         {
           "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
           "headliner": true
-        },
-        {
-          "name": "Personality Crisis",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-13/",
@@ -23189,7 +23080,7 @@
     },
     {
       "id": "foundry-concert-club-2026-08-30-southpaw-arcline",
-      "title": "Southpaw w/ Southpaw, Arcline, Unvow, 6Deep",
+      "title": "Southpaw, Arcline, Unvow, 6Deep",
       "venueId": "foundry-concert-club",
       "date": "2026-08-30",
       "time": "19:00",
@@ -23197,24 +23088,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Southpaw",
+          "name": "Southpaw, Arcline, Unvow, 6Deep",
           "headliner": true
-        },
-        {
-          "name": "Southpaw",
-          "headliner": false
-        },
-        {
-          "name": "Arcline",
-          "headliner": false
-        },
-        {
-          "name": "Unvow",
-          "headliner": false
-        },
-        {
-          "name": "6Deep",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/southpaw-arcline/",
@@ -23885,7 +23760,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-03-runnner-pleasure-systems",
-      "title": "Runnner w/ Runnner, Pleasure Systems",
+      "title": "Runnner, Pleasure Systems",
       "venueId": "foundry-concert-club",
       "date": "2026-09-03",
       "time": "19:00",
@@ -23893,16 +23768,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Runnner",
+          "name": "Runnner, Pleasure Systems",
           "headliner": true
-        },
-        {
-          "name": "Runnner",
-          "headliner": false
-        },
-        {
-          "name": "Pleasure Systems",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/runnner-pleasure-systems/",
@@ -24211,7 +24078,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-04-new-wave-dance-party",
-      "title": "NEW WAVE DANCE PARTY w/ New Wave Dance Party",
+      "title": "NEW WAVE DANCE PARTY",
       "venueId": "foundry-concert-club",
       "date": "2026-09-04",
       "time": "20:30",
@@ -24221,10 +24088,6 @@
         {
           "name": "NEW WAVE DANCE PARTY",
           "headliner": true
-        },
-        {
-          "name": "New Wave Dance Party",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/new-wave-dance-party/",
@@ -25346,7 +25209,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-09-sports-x-remo-drive",
-      "title": "sports. x Remo Drive w/ sports., Remo Drive",
+      "title": "sports. x Remo Drive",
       "venueId": "foundry-concert-club",
       "date": "2026-09-09",
       "time": "19:00",
@@ -25356,14 +25219,6 @@
         {
           "name": "sports. x Remo Drive",
           "headliner": true
-        },
-        {
-          "name": "sports.",
-          "headliner": false
-        },
-        {
-          "name": "Remo Drive",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/sports-x-remo-drive/",
@@ -26016,7 +25871,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-11-volumes-the-mirror-touch-tour",
-      "title": "VOLUMES: The Mirror Touch Tour w/ Volumes, Catsclaw",
+      "title": "VOLUMES: The Mirror Touch Tour",
       "venueId": "foundry-concert-club",
       "date": "2026-09-11",
       "time": "19:00",
@@ -26026,14 +25881,6 @@
         {
           "name": "VOLUMES: The Mirror Touch Tour",
           "headliner": true
-        },
-        {
-          "name": "Volumes",
-          "headliner": false
-        },
-        {
-          "name": "Catsclaw",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/volumes-the-mirror-touch-tour/",
@@ -26416,7 +26263,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-12-dirty-sound-magnet",
-      "title": "Dirty Sound Magnet w/ Dirty Sound Magnet",
+      "title": "Dirty Sound Magnet",
       "venueId": "foundry-concert-club",
       "date": "2026-09-12",
       "time": "19:00",
@@ -26426,10 +26273,6 @@
         {
           "name": "Dirty Sound Magnet",
           "headliner": true
-        },
-        {
-          "name": "Dirty Sound Magnet",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/dirty-sound-magnet/",
@@ -27042,7 +26885,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-14-wretched",
-      "title": "Wretched w/ Wretched",
+      "title": "Wretched",
       "venueId": "foundry-concert-club",
       "date": "2026-09-14",
       "time": "19:00",
@@ -27052,10 +26895,6 @@
         {
           "name": "Wretched",
           "headliner": true
-        },
-        {
-          "name": "Wretched",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/wretched/",
@@ -27491,7 +27330,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-16-homestyle-dinner-rolls",
-      "title": "Homestyle Dinner Rolls w/ Homestyle Dinner Rolls",
+      "title": "Homestyle Dinner Rolls",
       "venueId": "foundry-concert-club",
       "date": "2026-09-16",
       "time": "19:00",
@@ -27501,10 +27340,6 @@
         {
           "name": "Homestyle Dinner Rolls",
           "headliner": true
-        },
-        {
-          "name": "Homestyle Dinner Rolls",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/homestyle-dinner-rolls/",
@@ -28098,7 +27933,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-18-the-barbarians-of-california-squint-armed-for-apocalypse",
-      "title": "The Barbarians of California w/ The Barbarians of California, Squint, Armed for Apocalypse",
+      "title": "The Barbarians of California, Squint, Armed for Apocalypse",
       "venueId": "foundry-concert-club",
       "date": "2026-09-18",
       "time": "19:00",
@@ -28106,20 +27941,8 @@
       "price": null,
       "performers": [
         {
-          "name": "The Barbarians of California",
+          "name": "The Barbarians of California, Squint, Armed for Apocalypse",
           "headliner": true
-        },
-        {
-          "name": "The Barbarians of California",
-          "headliner": false
-        },
-        {
-          "name": "Squint",
-          "headliner": false
-        },
-        {
-          "name": "Armed for Apocalypse",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/the-barbarians-of-california-squint-armed-for-apocalypse/",
@@ -29240,7 +29063,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-22-acumen-nation-16-volt",
-      "title": "16 Volt w/ 16 Volt, Acumen Nation, Moon 17",
+      "title": "16 Volt, Acumen Nation, Moon 17",
       "venueId": "foundry-concert-club",
       "date": "2026-09-22",
       "time": "18:30",
@@ -29248,20 +29071,8 @@
       "price": null,
       "performers": [
         {
-          "name": "16 Volt",
+          "name": "16 Volt, Acumen Nation, Moon 17",
           "headliner": true
-        },
-        {
-          "name": "16 Volt",
-          "headliner": false
-        },
-        {
-          "name": "Acumen Nation",
-          "headliner": false
-        },
-        {
-          "name": "Moon 17",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/acumen-nation-16-volt/",
@@ -29632,6 +29443,41 @@
       ],
       "eventUrl": "https://www.eventbrite.com/e/charming-disaster-miss-dreadful-at-coda-tickets-1993623127441",
       "ticketUrl": "https://www.eventbrite.com/e/charming-disaster-miss-dreadful-at-coda-tickets-1993623127441",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "no-class-2026-09-24-eyesawgod",
+      "title": "EYESAWGOD",
+      "venueId": "no-class",
+      "date": "2026-09-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15 ADV / $20 DOS",
+      "performers": [
+        {
+          "name": "EYESAWGOD",
+          "headliner": true
+        },
+        {
+          "name": "Snake Father",
+          "headliner": false
+        },
+        {
+          "name": "Betrayal",
+          "headliner": false
+        },
+        {
+          "name": "Warm Body",
+          "headliner": false
+        },
+        {
+          "name": "Death & Exhale",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/eyesawgod",
+      "ticketUrl": "https://sickening.events/e/eyesawgod",
       "source": "scrape",
       "manual": false
     },
@@ -30197,7 +30043,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-26-versus-me",
-      "title": "Versus Me w/ Versus Me",
+      "title": "Versus Me",
       "venueId": "foundry-concert-club",
       "date": "2026-09-26",
       "time": "18:00",
@@ -30207,10 +30053,6 @@
         {
           "name": "Versus Me",
           "headliner": true
-        },
-        {
-          "name": "Versus Me",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/versus-me/",
@@ -32783,7 +32625,7 @@
     },
     {
       "id": "foundry-concert-club-2026-10-09-ian-mcconnell",
-      "title": "Ian McConnell w/ Ian McConnell",
+      "title": "Ian McConnell",
       "venueId": "foundry-concert-club",
       "date": "2026-10-09",
       "time": "19:00",
@@ -32793,10 +32635,6 @@
         {
           "name": "Ian McConnell",
           "headliner": true
-        },
-        {
-          "name": "Ian McConnell",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/ian-mcconnell/",
@@ -34085,7 +33923,7 @@
     },
     {
       "id": "foundry-concert-club-2026-10-17-halloween-freakshow-2026",
-      "title": "HALLOWEEN FREAKSHOW 2026 w/ The Static Wake, Dead Cassette",
+      "title": "HALLOWEEN FREAKSHOW 2026",
       "venueId": "foundry-concert-club",
       "date": "2026-10-17",
       "time": "17:00",
@@ -34095,14 +33933,6 @@
         {
           "name": "HALLOWEEN FREAKSHOW 2026",
           "headliner": true
-        },
-        {
-          "name": "The Static Wake",
-          "headliner": false
-        },
-        {
-          "name": "Dead Cassette",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/halloween-freakshow-2026/",
@@ -34320,7 +34150,7 @@
     },
     {
       "id": "foundry-concert-club-2026-10-18-telescreens",
-      "title": "Telescreens w/ Telescreens",
+      "title": "Telescreens",
       "venueId": "foundry-concert-club",
       "date": "2026-10-18",
       "time": "19:00",
@@ -34330,10 +34160,6 @@
         {
           "name": "Telescreens",
           "headliner": true
-        },
-        {
-          "name": "Telescreens",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/telescreens/",
@@ -35070,7 +34896,7 @@
     },
     {
       "id": "foundry-concert-club-2026-10-24-rehash-the-flooks",
-      "title": "Rehash w/ Rehash, The Flooks",
+      "title": "Rehash, The Flooks",
       "venueId": "foundry-concert-club",
       "date": "2026-10-24",
       "time": "19:00",
@@ -35078,16 +34904,8 @@
       "price": null,
       "performers": [
         {
-          "name": "Rehash",
+          "name": "Rehash, The Flooks",
           "headliner": true
-        },
-        {
-          "name": "Rehash",
-          "headliner": false
-        },
-        {
-          "name": "The Flooks",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/rehash-the-flooks/",
@@ -42904,25 +42722,6 @@
       ],
       "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2027-07-19-blues-for-greeny-the-music-of-peter-green",
-      "title": "Blues for Greeny – The Music of Peter Green",
-      "venueId": "mercury-music-lounge",
-      "date": "2027-07-19",
-      "time": "20:00",
-      "doors": null,
-      "price": "$29.85",
-      "performers": [
-        {
-          "name": "Blues for Greeny – The Music of Peter Green",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/blues-for-greeny-the-music-of-peter-green/",
-      "ticketUrl": "https://www.ticketweb.com/event/blues-for-greeny-the-mercury-music-lounge-tickets/14261704",
       "source": "scrape",
       "manual": false
     },
