@@ -3009,7 +3009,7 @@ async function fetchBentMace() {
 async function fetchBside() {
   const events = [];
   const seenIds = new Set();
-  const MONTH_ABBR = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+  const monthMap = { January:0, February:1, March:2, April:3, May:4, June:5, July:6, August:7, September:8, October:9, November:10, December:11 };
 
   function normalizeTime(t) {
     if (!t) return null;
@@ -3026,21 +3026,20 @@ async function fetchBside() {
   // found in the pagination links (1 if there's no pagination block).
   function parsePage(html) {
     const $ = cheerio.load(html);
-    $('.tw-section').each((i, el) => {
+    $('.flexmedia--artistevents-wrap').each((i, el) => {
       const $el = $(el);
-      const titleLink = $el.find('.tw-name a').first();
-      const title = titleLink.text().trim();
+      const titleLink = $el.find('.artisteventsname').closest('a');
+      const title = $el.find('.artisteventsname').first().text().trim();
       const eventUrl = titleLink.attr('href');
       if (!title || !eventUrl) return;
 
-      // "Tue, Jul 21" — weekday, abbreviated month, day, no year
-      const dateRaw = $el.find('.tw-event-date').first().text().trim();
-      const dateMatch = dateRaw.match(/^[A-Za-z]+,\s+([A-Za-z]+)\s+(\d{1,2})/);
+      // "Sunday, June 28th 4:00PM Doors /  4:00PM Show" — weekday/month/day, no year
+      const dateTimeRaw = $el.find('.artisteventstime').first().text().replace(/\s+/g, ' ').trim();
+      const dateMatch = dateTimeRaw.match(/^[A-Za-z]+,\s+([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?/);
       if (!dateMatch) return;
-      const monthIndex = MONTH_ABBR[dateMatch[1]];
+      const monthIndex = monthMap[dateMatch[1]];
       const day = parseInt(dateMatch[2], 10);
       if (monthIndex === undefined) return;
-
       const today = new Date();
       const currentYear = today.getFullYear();
       const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
@@ -3049,14 +3048,17 @@ async function fetchBside() {
       if (eventDateThisYear < todayMidnight) year = currentYear + 1;
       const date = toLocalDateStr(new Date(year, monthIndex, day));
 
-      let time = normalizeTime($el.find('.tw-event-time').first().text());
-      const doors = normalizeTime($el.find('.tw-event-door-time').first().text());
-      if (!time) time = doors;
+      // Grab the FIRST doors/show time match only — one live listing has a
+      // rendering glitch duplicating "Show" text, so don't assume a clean string
+      const doorsMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Doors/i);
+      const showMatch = dateTimeRaw.match(/(\d{1,2}:\d{2}\s*[AP]M)\s*Show/i);
+      const doors = doorsMatch ? normalizeTime(doorsMatch[1]) : null;
+      const time = showMatch ? normalizeTime(showMatch[1]) : doors;
 
-      let price = $el.find('.tw-price').first().text().trim() || null;
+      let price = $el.find('.artistseventsprice').first().text().trim() || null;
       if (price === '$0.00') price = 'Free';
 
-      const ticketUrl = $el.find('.tw-buy-tix-btn').first().attr('href') || null;
+      const ticketUrl = $el.find('.eventsbutton a.button-primary').first().attr('href') || null;
 
       const idMatch = eventUrl.match(/\/tm-event\/([^/]+)\/?/);
       const slug = idMatch ? idMatch[1] : slugify(title);
@@ -3451,6 +3453,79 @@ function parseIcsLocalDateTime(dtstartValue) {
   return { date, time };
 }
 
+async function fetchNelsonLedges() {
+  const events = [];
+  const seenIds = new Set();
+
+  // "2026-06-19T08:00:00.000-04:00" -> Date anchored to that local calendar day
+  function toLocalDateOnly(isoLocal) {
+    const [datePart] = isoLocal.split('T');
+    const [y, m, d] = datePart.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  function normalizeTimeFromIso(isoLocal) {
+    const match = isoLocal.match(/T(\d{2}):(\d{2}):/);
+    return match ? `${match[1]}:${match[2]}` : null;
+  }
+
+  // Ticket tiers live inside the freeform description HTML, not as structured
+  // data — grab the first dollar figure as a "starting from" price.
+  function extractStartingPrice(descriptionHtml) {
+    if (!descriptionHtml) return null;
+    const match = descriptionHtml.match(/\$(\d+(?:\.\d{2})?)/);
+    return match ? `From $${match[1]}` : null;
+  }
+
+  try {
+    const res = await fetch('https://nlqp.com/events/');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const raw = $('#tixco-data').html();
+    if (!raw) return events;
+    const data = JSON.parse(raw);
+
+    data.forEach(ev => {
+      if (ev.status !== 'LIVE') return;
+      if (!ev.slug || !ev.name || !ev.startsAtLocal || !ev.endsAtLocal) return;
+
+      const eventUrl = `https://nlqp.com/events/${ev.slug}`;
+      const ticketUrl = eventUrl; // "Buy Tickets" opens a checkout modal on this same page — no separate ticket URL exists
+      const price = extractStartingPrice(ev.description);
+      const startTime = normalizeTimeFromIso(ev.startsAtLocal);
+
+      const startDate = toLocalDateOnly(ev.startsAtLocal);
+      const endDate = toLocalDateOnly(ev.endsAtLocal);
+
+      // One entry per calendar day the festival runs, inclusive of both ends
+      for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+        const date = toLocalDateStr(d);
+        const isFirstDay = d.getTime() === startDate.getTime();
+        const id = `nlqp-${date}-${ev.slug}`;
+        if (seenIds.has(id)) continue;
+        seenIds.add(id);
+
+        events.push({
+          id,
+          title: ev.name,
+          venueId: 'nelson-ledges',
+          date,
+          time: isFirstDay ? startTime : null, // per-day set times aren't in the data
+          doors: null,
+          price,
+          performers: [{ name: ev.name, headliner: true }],
+          eventUrl,
+          ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      }
+    });
+  } catch (err) {
+    console.error('fetchNelsonLedges error:', err.message);
+  }
+  return events;
+}
 
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -3473,7 +3548,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3511,6 +3586,7 @@ async function main() {
     fetchClevelandOrchestra(),
     fetchForestCityBrewery(),
     fetchTheGrove(),
+    fetchNelsonLedges(),
   ]);
 
 
@@ -3552,6 +3628,7 @@ async function main() {
   console.log('Cleveland Orchestra:', clevelandOrchestra.length);
   console.log('Forest City:', forestCityBrewery.length);
   console.log('The Grove:', theGrove.length);
+  console.log('Nelson Ledges:', nelsonLedges.length);
 
 
   const manualEntries = loadManualEntries();
@@ -3596,6 +3673,7 @@ async function main() {
     ...clevelandOrchestra,
     ...forestCityBrewery,
     ...theGrove,
+    ...nelsonLedges,
     ...manualEntries,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -3645,6 +3723,7 @@ async function main() {
       'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
       'forest-city-brewery': { name: 'Forest City Brewery', url: 'https://www.forestcitybrewery.com/', eventsUrl: 'https://www.forestcitybrewery.com/events', city: 'Cleveland' },
       'the-grove': { name: 'The Grove Amphitheatre', url: 'https://recreation.mayfieldvillage.com/the-grove/', eventsUrl: 'https://recreation.mayfieldvillage.com/the-grove/', city: 'Mayfield Village' },
+      'nelson-ledges': { name: 'Nelson Ledges Quarry Park', url: 'https://nlqp.com/', eventsUrl: 'https://nlqp.com/events/', city: 'Garrettsville' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -3663,6 +3742,8 @@ async function main() {
       'local-bar-strongsville': { name: 'The Local Bar Strongsville', url: 'https://localbarstrongsville.com/', eventsUrl: 'https://localbarstrongsville.com/events', city: 'Strongsville' },
       'quintanas-speakeasy': { name: 'Quintanas Speakeasy', url: 'https://qbds.net/speakeasy/', eventsUrl: 'https://qbds.net/speakeasy-events/', city: 'Cleveland Heights' },
       'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
+      'treehouse': { name: 'The Treehouse', url: 'https://www.treehousecleveland.com/', eventsUrl: 'https://www.treehousecleveland.com/live-music', city: 'Cleveland' },
+      'time-warp': { name: 'Time Warp Bar', url: 'https://timewarpbar.com/wp/', eventsUrl: 'https://timewarpbar.com/wp/live-entertainment/', city: 'Westlake' },
     },
     events: allEvents,
   };

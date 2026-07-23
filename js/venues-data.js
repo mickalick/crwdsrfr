@@ -388,6 +388,15 @@ window.VENUES = [
     "lng": -81.4408481
   },
   {
+    "id": "nelson-ledges",
+    "name": "Nelson Ledges Quarry Park",
+    "type": "outdoor",
+    "address": "12001 State Route 282, Garrettsville, OH, 44231",
+    "area": "Garrettsville",
+    "lat": 41.3205873,
+    "lng": -81.0364809
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "type": "bar",
@@ -548,5 +557,23 @@ window.VENUES = [
     "area": "Willoughby",
     "lat": 41.6445782,
     "lng": -81.4067774
+  },
+  {
+    "id": "treehouse",
+    "name": "The Treehouse",
+    "type": "bar",
+    "address": "820 College Ave, Cleveland, OH 44113",
+    "area": "Tremont",
+    "lat": 41.4807336,
+    "lng": -81.6855581
+  },
+  {
+    "id": "time-warp",
+    "name": "Time Warp Bar",
+    "type": "bar",
+    "address": "26261 Center Ridge Rd, Westlake, OH 44145",
+    "area": "Westlake",
+    "lat": 41.4524085,
+    "lng": -81.9114038
   }
 ];

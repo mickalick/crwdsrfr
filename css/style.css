@@ -718,7 +718,8 @@ hr {
 	justify-content: center;
 	min-height: 5vh;
 	width: 100%;
-	background-color: #101010
+	background-color: #101010;
+	margin-bottom: 20px;
 }
 
 .featureTile-Wide p {
@@ -726,7 +727,7 @@ hr {
 }
 
 .flatpickr-calendar .open {
-	top: 69px !important,
+	top: 69px !important;
 }
 
 #datePicker {
