@@ -17,6 +17,10 @@ function formatTime(t) {
   return `${hour}:${String(m).padStart(2, '0')} ${period}`;
 }
 
+function sortableName(name) {
+  return name.replace(/^the\s+/i, '');
+}
+
 function updateSubHead() {
   const subHeadSpan = document.querySelector('.subHead span');
   const term = currentSearch.trim();
@@ -99,8 +103,8 @@ function renderEvents(events) {
 
     Object.entries(grouped)
       .sort(([a], [b]) => {
-        const nameA = allData.venues[a]?.name ?? '';
-        const nameB = allData.venues[b]?.name ?? '';
+        const nameA = sortableName(allData.venues[a]?.name ?? '');
+        const nameB = sortableName(allData.venues[b]?.name ?? '');
         return nameA.localeCompare(nameB);
       })
       .forEach(([venueId, venueEvents]) => {

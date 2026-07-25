@@ -255,7 +255,6 @@ async function fetchBeachland() {
     const html = await res.text();
     const $ = cheerio.load(html);
     const events = [];
-
     $('.uui-layout88_item').each((i, el) => {
       const headlinerEl = $(el).find('h3.headliner');
       const supportEl = $(el).find('h3.artist-field');
@@ -267,12 +266,16 @@ async function fetchBeachland() {
       const nocoverEl = $(el).find('.text-block-61').filter((i, e) => $(e).text().trim() === 'No Cover');
       const isNoCover = nocoverEl.length && !nocoverEl.hasClass('w-condition-invisible');
       const price = isNoCover ? 'No Cover' : null;
-
       if (!headlinerEl.length || !headlinerEl.text().trim() || !month || !day) return;
+
+      // Only keep events actually happening at Beachland Ballroom or Beachland
+      // Tavern — the shows page also lists events at other venues (e.g. Globe
+      // Iron) that Beachland is just presenting/promoting.
+      const venueNameText = $(el).find('.text-white').first().text().trim();
+      if (venueNameText !== 'Beachland Ballroom' && venueNameText !== 'Beachland Tavern') return;
 
       const headliner = headlinerEl.text().trim();
       const support = supportEl.text().trim();
-
       const currentYear = new Date().getFullYear();
       const monthMap = {
         Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
@@ -280,16 +283,13 @@ async function fetchBeachland() {
       };
       const monthIndex = monthMap[month];
       if (monthIndex === undefined) return;
-
       let year = currentYear;
       const today = new Date();
       const eventDateThisYear = new Date(currentYear, monthIndex, parseInt(day));
       const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
       if (eventDateThisYear < todayMidnight) year = currentYear + 1;
-
       const eventDate = new Date(year, monthIndex, parseInt(day));
       const date = toLocalDateStr(eventDate);
-
       function normalizeTime(t) {
         if (!t) return null;
         const [time, modifier] = t.split(' ');
@@ -298,13 +298,10 @@ async function fetchBeachland() {
         if (modifier?.toLowerCase() === 'am' && hours === 12) hours = 0;
         return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
       }
-
       const performers = [{ name: headliner, headliner: true }];
       if (support) performers.push({ name: support, headliner: false });
-
       const slug = slugify(headliner);
       const fullUrl = relativeUrl ? `https://www.beachlandballroom.com${relativeUrl}` : null;
-
       events.push({
         id: `beachland-ballroom-${date}-${slug}`,
         title: support ? `${headliner} with ${support}` : headliner,
@@ -320,7 +317,6 @@ async function fetchBeachland() {
         manual: false,
       });
     });
-
     return events;
   } catch (err) {
     console.error('fetchBeachland error:', err.message);
