@@ -8465,250 +8465,10 @@
     "id": "bar-32-2026-07-31-chris-hatton"
   },
 
-  {
-    "title": "Tom Brady",
-    "performers": [
-      {
-        "name": "Tom Brady",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-02",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-02-tom-brady"
-  },
-  {
-    "title": "Vinyl Arcade",
-    "performers": [
-      {
-        "name": "Vinyl Arcade",
-        "headliner": true
-      },
-      {
-        "name": "3 Day Weekend",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-03",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-03-vinyl-arcade"
-  },
-  {
-    "title": "Ronnie Szucs",
-    "performers": [
-      {
-        "name": "Ronnie Szucs",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-09",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-09-ronnie-szucs"
-  },
-  {
-    "title": "Bound In Black",
-    "performers": [
-      {
-        "name": "Bound In Black",
-        "headliner": true
-      },
-      {
-        "name": "Vulgar Display of Pantera",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-10",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-10-bound-in-black"
-  },
-  {
-    "title": "Slow & Easy",
-    "performers": [
-      {
-        "name": "Slow & Easy",
-        "headliner": true
-      },
-      {
-        "name": "Under Lokken Key",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": "https://tinyurl.com/WhiteSnake-Dokken-tributes",
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-11-slow-easy"
-  },
-  {
-    "title": "Twin B Project",
-    "performers": [
-      {
-        "name": "Twin B Project",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-16",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-16-twin-b-project"
-  },
-  {
-    "title": "Run Avril Run",
-    "performers": [
-      {
-        "name": "Run Avril Run",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-17",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-17-run-avril-run"
-  },
-  {
-    "title": "Mr. Breeze",
-    "performers": [
-      {
-        "name": "Mr. Breeze",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-18",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-18-mr-breeze"
-  },
-  {
-    "title": "Ronnie Clinton",
-    "performers": [
-      {
-        "name": "Ronnie Clinton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-21",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-21-ronnie-clinton"
-  },
-  {
-    "title": "Justo & The Havana Nights",
-    "performers": [
-      {
-        "name": "Justo & The Havana Nights",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-23",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-23-justo-the-havana-nights"
-  },
-  {
-    "title": "Elmerz Gun",
-    "performers": [
-      {
-        "name": "Elmerz Gun",
-        "headliner": true
-      },
-      {
-        "name": "Jesters Revenge",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-24",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-24-elmerz-gun"
-  },
-  {
-    "title": "Tripside",
-    "performers": [
-      {
-        "name": "Tripside",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-25",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-07-25-tripside"
-  },
+
+
+
+  
   {
     "title": "Recess",
     "performers": [
@@ -9010,6 +8770,261 @@
     "manual": true,
     "id": "local-bar-strongsville-2026-08-29-billy-morris-the-sunset-strip"
   },
+  {
+    "title": "Ronnie Szucs",
+    "performers": [
+      {
+        "name": "Ronnie Szucs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-03",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-03-ronnie-szucs"
+  },
+  {
+    "title": "Sushi Roll",
+    "performers": [
+      {
+        "name": "Sushi Roll",
+        "headliner": true
+      },
+      {
+        "name": "KC & Company",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-04-sushi-roll"
+  },
+  {
+    "title": "Bronx Country",
+    "performers": [
+      {
+        "name": "Bronx Country",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-05-bronx-country"
+  },
+  {
+    "title": "Elvis",
+    "performers": [
+      {
+        "name": "Elvis",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-10",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-10-elvis"
+  },
+  {
+    "title": "Jam Machine",
+    "performers": [
+      {
+        "name": "Jam Machine",
+        "headliner": true
+      },
+      {
+        "name": "Tea Bags",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-11-jam-machine"
+  },
+  {
+    "title": "Icons of Country",
+    "performers": [
+      {
+        "name": "Kenny Chesney",
+        "headliner": true
+      },
+      {
+        "name": "Jason Aldean",
+        "headliner": false
+      },
+      {
+        "name": "Luke Bryan",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": "https://tinyurl.com/ICONS-ALDEAN-LUKE-CHESNEY",
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-12-kenny-chesney"
+  },
+  {
+    "title": "Ronnie Clinton",
+    "performers": [
+      {
+        "name": "Ronnie Clinton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-17",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-17-ronnie-clinton"
+  },
+  {
+    "title": "Follow the Sun",
+    "performers": [
+      {
+        "name": "Follow the Sun",
+        "headliner": true
+      },
+      {
+        "name": "4Locos",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-18",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-18-follow-the-sun"
+  },
+  {
+    "title": "Hair Nation",
+    "performers": [
+      {
+        "name": "Hair Nation",
+        "headliner": true
+      },
+      {
+        "name": "Big in Japan",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-19-hair-nation"
+  },
+  {
+    "title": "Justo & The Havana Nights",
+    "performers": [
+      {
+        "name": "Justo & The Havana Nights",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-24",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-24-justo-the-havana-nights"
+  },
+  {
+    "title": "Ace Molar",
+    "performers": [
+      {
+        "name": "Ace Molar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-25-ace-molar"
+  },
+  {
+    "title": "Old Skool",
+    "performers": [
+      {
+        "name": "Old Skool",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-09-26-old-skool"
+  },
+
+
+
 
   {
     "title": "Maria DiDonato",
