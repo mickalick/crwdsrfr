@@ -3740,6 +3740,9 @@ async function main() {
       'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
       'treehouse': { name: 'The Treehouse', url: 'https://www.treehousecleveland.com/', eventsUrl: 'https://www.treehousecleveland.com/live-music', city: 'Cleveland' },
       'time-warp': { name: 'Time Warp Bar', url: 'https://timewarpbar.com/wp/', eventsUrl: 'https://timewarpbar.com/wp/live-entertainment/', city: 'Westlake' },
+      'no-surf-fest': { name: 'No Surf Fest', url: 'https://nosurffest.org/', eventsUrl: 'https://nosurffest.org/lineup', city: 'Cleveland' },
+      'public-square': { name: 'Public Square', url: 'https://www.clevelandpublicsquare.com/', eventsUrl: 'https://www.clevelandpublicsquare.com/events', city: 'Cleveland' },
+      '1928-public-house': { name: '1928 Public House', url: 'https://1928publichouse.com/', eventsUrl: 'https://1928publichouse.com/live-music/', city: 'Middleburg Heights' },
     },
     events: allEvents,
   };
@@ -3790,4 +3793,5 @@ export {
   fetchClevelandOrchestra,
   fetchForestCityBrewery,
   fetchTheGrove,
+  fetchNelsonLedges,
 };

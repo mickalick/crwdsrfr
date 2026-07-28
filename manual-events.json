@@ -10538,7 +10538,899 @@
     "source": "manual",
     "manual": true,
     "id": "time-warp-2026-12-31-new-years-eve-celebration"
+  },
+
+
+  {
+    "title": "Black Voltron",
+    "performers": [
+      {
+        "name": "Black Voltron",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "19:15",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "no-surf-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "no-surf-fest-2026-08-01-black-voltron"
+  },
+  {
+    "title": "The Labra Brothers",
+    "performers": [
+      {
+        "name": "The Labra Brothers",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "17:55",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "no-surf-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "no-surf-fest-2026-08-01-the-labra-brothers"
+  },
+  {
+    "title": "Nikki D & The Sisters of Thunder",
+    "performers": [
+      {
+        "name": "Nikki D & The Sisters of Thunder",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "16:50",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "no-surf-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "no-surf-fest-2026-08-01-nikki-d-the-sisters-of-thunder"
+  },
+  {
+    "title": "Ray Flanagan",
+    "performers": [
+      {
+        "name": "Ray Flanagan",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "15:55",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "no-surf-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "no-surf-fest-2026-08-01-ray-flanagan"
+  },
+  {
+    "title": "Da Land Brass Band",
+    "performers": [
+      {
+        "name": "Da Land Brass Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "15:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "no-surf-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "no-surf-fest-2026-08-01-da-land-brass-band"
+  },
+
+
+
+
+  {
+    "title": "Recess",
+    "performers": [
+      {
+        "name": "Recess",
+        "headliner": true
+      },
+      {
+        "name": "Napsack",
+        "headliner": false
+      }
+    ],
+    "date": "2026-07-29",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-07-29-recess"
+  },
+  {
+    "title": "Angela Perley",
+    "performers": [
+      {
+        "name": "Angela Perley",
+        "headliner": true
+      },
+      {
+        "name": "Cowboy Princess Brigade",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-05",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-08-05-angela-perley"
+  },
+  {
+    "title": "Austin Walkin' Cane",
+    "performers": [
+      {
+        "name": "Austin Walkin' Cane",
+        "headliner": true
+      },
+      {
+        "name": "Stakhouse",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-12",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-08-12-austin-walkin-cane"
+  },
+  {
+    "title": "Doc Robinson",
+    "performers": [
+      {
+        "name": "Doc Robinson",
+        "headliner": true
+      },
+      {
+        "name": "Anya Van Rose",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-19",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-08-19-doc-robinson"
+  },
+  {
+    "title": "King Buu",
+    "performers": [
+      {
+        "name": "King Buu",
+        "headliner": true
+      },
+      {
+        "name": "Frida and The Mann",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-26",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-08-26-king-buu"
+  },
+  {
+    "title": "Mourning [A] Blkstar",
+    "performers": [
+      {
+        "name": "Mourning [A] Blkstar",
+        "headliner": true
+      },
+      {
+        "name": "Free Black!",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-02",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-09-02-mourning-a-blkstar"
+  },
+  {
+    "title": "Rachel Brown & The Beatnik Playboys",
+    "performers": [
+      {
+        "name": "Rachel Brown & The Beatnik Playboys",
+        "headliner": true
+      },
+      {
+        "name": "Hunter Skeens",
+        "headliner": false
+      },
+      {
+        "name": "The Forerunners",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-09",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-09-09-rachel-brown-the-beatnik-playboys"
+  },
+  {
+    "title": "Voodoo Funk",
+    "performers": [
+      {
+        "name": "Voodoo Funk",
+        "headliner": true
+      },
+      {
+        "name": "Thicarus",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-16",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-09-16-voodoo-funk"
+  },
+  {
+    "title": "Hubb's Groove",
+    "performers": [
+      {
+        "name": "Hubb's Groove",
+        "headliner": true
+      },
+      {
+        "name": "Esther Fitz",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-23",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-09-23-hubb-s-groove"
+  },
+  {
+    "title": "Grupo Fuego",
+    "performers": [
+      {
+        "name": "Grupo Fuego",
+        "headliner": true
+      },
+      {
+        "name": "Moises Borges",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-30",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "public-square",
+    "source": "manual",
+    "manual": true,
+    "id": "public-square-2026-09-30-grupo-fuego"
+  },
+
+
+
+  {
+    "title": "Justo",
+    "performers": [
+      {
+        "name": "Justo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-30",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-07-30-justo"
+  },
+  {
+    "title": "Stamper Starr",
+    "performers": [
+      {
+        "name": "Stamper Starr",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-31",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-07-31-stamper-starr"
+  },
+  {
+    "title": "Stamper Starr",
+    "performers": [
+      {
+        "name": "Stamper Starr",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-02",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-02-stamper-starr"
+  },
+  {
+    "title": "Fungirl",
+    "performers": [
+      {
+        "name": "Fungirl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-06",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-06-fungirl"
+  },
+
+  {
+    "title": "Quinn Hoffman",
+    "performers": [
+      {
+        "name": "Quinn Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-07-quinn-hoffman"
+  },
+  {
+    "title": "Fungirl",
+    "performers": [
+      {
+        "name": "Fungirl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-13",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-13-fungirl"
+  },
+  {
+    "title": "Chad Hoffman",
+    "performers": [
+      {
+        "name": "Chad Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-20",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-20-chad-hoffman"
+  },
+  {
+    "title": "Dreadlock Dave",
+    "performers": [
+      {
+        "name": "Dreadlock Dave",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-21-dreadlock-dave"
+  },
+  {
+    "title": "Wesley Saylor",
+    "performers": [
+      {
+        "name": "Wesley Saylor",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-27",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-27-wesley-saylor"
+  },
+  {
+    "title": "Quinn Hoffman",
+    "performers": [
+      {
+        "name": "Quinn Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-28-quinn-hoffman"
+  },
+  {
+    "title": "Chris Casalinuovo",
+    "performers": [
+      {
+        "name": "Chris Casalinuovo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-03",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-03-chris-casalinuovo"
+  },
+  {
+    "title": "Fungirl",
+    "performers": [
+      {
+        "name": "Fungirl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-04-fungirl"
+  },
+  {
+    "title": "Chad Hoffman",
+    "performers": [
+      {
+        "name": "Chad Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-10",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-10-chad-hoffman"
+  },
+  {
+    "title": "Danny Christian",
+    "performers": [
+      {
+        "name": "Danny Christian",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-11-danny-christian"
+  },
+  {
+    "title": "Fun Girl",
+    "performers": [
+      {
+        "name": "Fun Girl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-17",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-17-fun-girl"
+  },
+  {
+    "title": "Flannel Planet",
+    "performers": [
+      {
+        "name": "Flannel Planet",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-24",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-24-flannel-planet"
+  },
+  {
+    "title": "Danny Christian",
+    "performers": [
+      {
+        "name": "Danny Christian",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-25-danny-christian"
+  },
+
+  {
+    "title": "Bronx Country",
+    "performers": [
+      {
+        "name": "Bronx Country",
+        "headliner": true
+      }
+    ],
+    "date": "2026-07-31",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-07-31-bronx-country"
+  },
+  {
+    "title": "Jam Machine",
+    "performers": [
+      {
+        "name": "Jam Machine",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-01-jam-machine"
+  },
+  {
+    "title": "Hair Nation",
+    "performers": [
+      {
+        "name": "Hair Nation",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-07-hair-nation"
+  },
+  {
+    "title": "Spazmatics",
+    "performers": [
+      {
+        "name": "Spazmatics",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-08-spazmatics"
+  },
+  {
+    "title": "Ronnie Szucs",
+    "performers": [
+      {
+        "name": "Ronnie Szucs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-14-ronnie-szucs"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-15-disco-inferno"
+  },
+  {
+    "title": "Follow The Sun",
+    "performers": [
+      {
+        "name": "Follow The Sun",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-22-follow-the-sun"
+  },
+  {
+    "title": "4Locos",
+    "performers": [
+      {
+        "name": "4Locos",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-08-28-4locos"
+  },
+  {
+    "title": "Ladies Night Band",
+    "performers": [
+      {
+        "name": "Ladies Night Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-11-ladies-night-band"
+  },
+  {
+    "title": "Serious FM",
+    "performers": [
+      {
+        "name": "Serious FM",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-12-serious-fm"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-18-custard-pie"
+  },
+  {
+    "title": "Panama",
+    "performers": [
+      {
+        "name": "Panama",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "1928-public-house",
+    "source": "manual",
+    "manual": true,
+    "id": "1928-public-house-2026-09-19-panama"
   }
+
 
 
   ]

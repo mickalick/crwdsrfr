@@ -575,5 +575,32 @@ window.VENUES = [
     "area": "Westlake",
     "lat": 41.4524085,
     "lng": -81.9114038
+  },
+  {
+    "id": "no-surf-fest",
+    "name": "No Surf Fest",
+    "type": "outdoor",
+    "address": "3550 W 117th St, Cleveland, OH 44111",
+    "area": "West Park",
+    "lat": 41.4558241,
+    "lng": -81.7710898
+  },
+  {
+    "id": "public-square",
+    "name": "Public Square",
+    "type": "outdoor",
+    "address": "50 Public Square, Cleveland, OH 44113",
+    "area": "Downtown",
+    "lat": 41.4985131,
+    "lng": -81.69386999999999
+  },
+  {
+    "id": "1928-public-house",
+    "name": "1928 Public House",
+    "type": "bar",
+    "address": "18590 Bagley Rd, Middleburg Heights, OH 44130",
+    "area": "Middleburg Heights",
+    "lat": 41.3725768,
+    "lng": -81.8311822
   }
 ];
