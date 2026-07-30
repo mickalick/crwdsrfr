@@ -33,6 +33,66 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+// Shared recurring events materializer — used specifically by Spotlight.
+function materializeRecurringEvents(rules, monthsAhead = 3) {
+  const events = [];
+  const seenIds = new Set();
+  const today = new Date();
+  const horizon = new Date(today.getFullYear(), today.getMonth() + monthsAhead + 1, 0);
+
+  for (const rule of rules) {
+    const start = new Date(rule.startDate);
+    const end = rule.endDate ? new Date(rule.endDate) : horizon;
+    const cursor = new Date(Math.max(start, today));
+    cursor.setDate(1); // start scanning from the 1st of the month
+
+    while (cursor <= end && cursor <= horizon) {
+      const year = cursor.getFullYear();
+      const month = cursor.getMonth();
+
+      // find every date in this month matching the weekday
+      const matches = [];
+      const d = new Date(year, month, 1);
+      while (d.getMonth() === month) {
+        if (d.getDay() === rule.weekday) matches.push(new Date(d));
+        d.setDate(d.getDate() + 1);
+      }
+
+      const occurrences = rule.nth === null
+        ? matches                                             // weekly: every match this month
+        : rule.nth.map(n => matches[n - 1]).filter(Boolean);   // nth-of-month
+
+      for (const occurrence of occurrences) {
+        if (occurrence && occurrence >= start && occurrence >= today && occurrence <= end) {
+          const dateStr = toLocalDateStr(occurrence);
+          const id = `${rule.id}-${dateStr}`;
+          if (!seenIds.has(id)) {
+            seenIds.add(id);
+            events.push({
+              id,
+              title: rule.title,
+              venueId: rule.venueId,
+              date: dateStr,
+              time: rule.time,
+              doors: null,
+              price: null,
+              performers: [],
+              eventUrl: null,
+              ticketUrl: null,
+              source: 'manual',
+              manual: true,
+            });
+          }
+        }
+      }
+
+      cursor.setMonth(cursor.getMonth() + 1);
+    }
+  }
+
+  return events;
+}
+
 // Shared 3-letter month map — several fetchers had this exact object inline.
 // NOTE: some fetchers still declare their own monthMap with extra/different keys
 // (full month names, or additional entries) — those were left untouched rather
@@ -3523,6 +3583,140 @@ async function fetchNelsonLedges() {
   return events;
 }
 
+async function fetchImpostersTheater() {
+  const venueId = 'imposters-theater';
+  const venueName = 'Imposters Theater';
+  const baseUrl = 'https://www.imposterstheater.com';
+  const events = [];
+  const seenIds = new Set();
+
+  try {
+    const res = await fetch(`${baseUrl}/schedule`);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('article.eventlist-event').each((_, el) => {
+      const $el = $(el);
+
+      const title = $el.find('.eventlist-title-link').first().text().trim();
+      if (!title || /closed for a private event/i.test(title)) return;
+
+      const dateAttr = $el.find('time.event-date').first().attr('datetime'); // "2026-07-30"
+      if (!dateAttr) return;
+
+      const startTimeText = $el.find('.event-time-localized-start').first().text().trim(); // "6:00 PM"
+
+      const relUrl = $el.find('.eventlist-title-link').first().attr('href');
+      const eventUrl = relUrl ? new URL(relUrl, baseUrl).href : null;
+
+      // Best-effort price grab — first visible price on the card.
+      const priceText = $el.find('.product-price').first().text().trim() || null;
+
+      const id = `${venueId}-${dateAttr}-${slugify(title)}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId,
+        date: dateAttr,
+        time: startTimeText || null,
+        doors: null,
+        price: priceText,
+        performers: [],
+        eventUrl,
+        ticketUrl: eventUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error(`Error fetching ${venueName}:`, err.message);
+  }
+
+  return events;
+}
+
+async function fetchGrindstoneTapHouse() {
+  const venueId = 'grindstone-tap-house';
+  const venueName = 'Grindstone Tap House';
+  const baseUrl = 'https://grindstonetaphouse.com';
+  const eventsUrl = `${baseUrl}/events`;
+  const events = [];
+  const seenIds = new Set();
+
+  const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const TITLE_BLOCKLIST = /burger|wings/i;
+
+  const parseOrdinalDate = (dateStr) => {
+    // "Thursday, July 30th, 2026" -> "2026-07-30"
+    const match = dateStr.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,\s+(\d{4})/);
+    if (!match) return null;
+    const [, monthName, day, year] = match;
+    const monthIndex = MONTH_NAMES.indexOf(monthName);
+    if (monthIndex === -1) return null;
+    return `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  };
+
+  const normalizeTime = (t) => {
+    // "7pm" / "7:30pm" -> "7:00 PM" / "7:30 PM"
+    const m = t.trim().match(/^(\d{1,2})(?::(\d{2}))?\s*(am|pm)$/i);
+    if (!m) return t.trim();
+    const [, h, min = '00', ap] = m;
+    return `${h}:${min} ${ap.toUpperCase()}`;
+  };
+
+  try {
+    const res = await fetch(eventsUrl);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    $('.calendar-day-event').each((_, el) => {
+      const $el = $(el);
+
+      const eventId = $el.attr('data-event-id');
+      const title = $el.find('.ev-title').first().text().trim();
+      const dateText = $el.find('.ev-date').first().text().trim();
+      const timeRange = $el.find('.ev-time').first().text().trim(); // e.g. "7pm-10pm"
+
+      if (!title || !dateText) return;
+      if (TITLE_BLOCKLIST.test(title)) return;
+
+      const date = parseOrdinalDate(dateText);
+      if (!date) return;
+
+      const [startRaw] = timeRange.split('-');
+      const time = startRaw ? normalizeTime(startRaw) : null;
+
+      // eventId + date is unique per occurrence, no slugify needed
+      const id = `${venueId}-${eventId}-${date}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [],
+        // Detail lives in a JS modal, not a real page — link to the calendar itself.
+        eventUrl: eventsUrl,
+        ticketUrl: eventsUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error(`Error fetching ${venueName}:`, err.message);
+  }
+
+  return events;
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -3544,7 +3738,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges, impostersTheater, grindstoneTapHouse] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3583,6 +3777,8 @@ async function main() {
     fetchForestCityBrewery(),
     fetchTheGrove(),
     fetchNelsonLedges(),
+    fetchImpostersTheater(),
+    fetchGrindstoneTapHouse(),
   ]);
 
 
@@ -3625,9 +3821,15 @@ async function main() {
   console.log('Forest City:', forestCityBrewery.length);
   console.log('The Grove:', theGrove.length);
   console.log('Nelson Ledges:', nelsonLedges.length);
+  console.log('Imposters Theater:', impostersTheater.length);
+  console.log('Grindstone:', grindstoneTapHouse.length);
 
 
   const manualEntries = loadManualEntries();
+
+  const recurringRules = JSON.parse(readFileSync(join(__dirname, '..', 'recurring-rules.json'), 'utf-8'));
+  const recurringEvents = materializeRecurringEvents(recurringRules);
+  console.log('Spotlight Cleveland (recurring):', recurringEvents.length);
 
   const todayStr = toLocalDateStr(new Date());
 
@@ -3670,7 +3872,10 @@ async function main() {
     ...forestCityBrewery,
     ...theGrove,
     ...nelsonLedges,
+    ...impostersTheater,
+    ...grindstoneTapHouse,
     ...manualEntries,
+    ...recurringEvents,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
@@ -3720,6 +3925,8 @@ async function main() {
       'forest-city-brewery': { name: 'Forest City Brewery', url: 'https://www.forestcitybrewery.com/', eventsUrl: 'https://www.forestcitybrewery.com/events', city: 'Cleveland' },
       'the-grove': { name: 'The Grove Amphitheatre', url: 'https://recreation.mayfieldvillage.com/the-grove/', eventsUrl: 'https://recreation.mayfieldvillage.com/the-grove/', city: 'Mayfield Village' },
       'nelson-ledges': { name: 'Nelson Ledges Quarry Park', url: 'https://nlqp.com/', eventsUrl: 'https://nlqp.com/events/', city: 'Garrettsville' },
+      'imposters-theater': { name: 'Imposters Theater', url: 'https://www.imposterstheater.com/', eventsUrl: 'https://www.imposterstheater.com/schedule', city: 'Cleveland' },
+      'grindstone-tap-house': { name: 'Grindstone Tap House', url: 'https://grindstonetaphouse.com/', eventsUrl: 'https://grindstonetaphouse.com/events', city: 'Berea' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -3743,6 +3950,8 @@ async function main() {
       'no-surf-fest': { name: 'No Surf Fest', url: 'https://nosurffest.org/', eventsUrl: 'https://nosurffest.org/lineup', city: 'Cleveland' },
       'public-square': { name: 'Public Square', url: 'https://www.clevelandpublicsquare.com/', eventsUrl: 'https://www.clevelandpublicsquare.com/events', city: 'Cleveland' },
       '1928-public-house': { name: '1928 Public House', url: 'https://1928publichouse.com/', eventsUrl: 'https://1928publichouse.com/live-music/', city: 'Middleburg Heights' },
+      'little-rose': { name: 'Little Rose Tavern', url: 'https://littlerosetavern.com/', eventsUrl: 'https://littlerosetavern.com/event/', city: 'Cleveland' },
+      'spotlight-cle': { name: 'Spotlight Cleveland', url: 'https://spotlightcle.com/', eventsUrl: 'https://spotlightcle.com/events', city: 'Cleveland' },
     },
     events: allEvents,
   };
@@ -3794,4 +4003,6 @@ export {
   fetchForestCityBrewery,
   fetchTheGrove,
   fetchNelsonLedges,
+  fetchImpostersTheater,
+  fetchGrindstoneTapHouse,
 };
