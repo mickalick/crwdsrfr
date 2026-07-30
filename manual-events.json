@@ -4789,6 +4789,25 @@
     "id": "shooters-2026-08-01-d-o-d"
   },
   {
+    "title": "Ian Asher",
+    "performers": [
+      {
+        "name": "Ian Asher",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-14-ian-asher"
+  },
+  {
     "title": "Jigitz",
     "performers": [
       {
@@ -5010,7 +5029,7 @@
     "id": "crobar-2026-08-08-harry-romero"
   },
   {
-    "title": "Amita",
+    "title": "Perf",
     "performers": [
       {
         "name": "Amita",
@@ -5047,6 +5066,61 @@
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-08-01-amita"
+  },
+  {
+    "title": "Lake Love",
+    "performers": [
+      {
+        "name": "Mike Clark",
+        "headliner": true
+      },
+      {
+        "name": "Agent X",
+        "headliner": false
+      },
+      {
+        "name": "Neil Chastain",
+        "headliner": false
+      },
+      {
+        "name": "A-Live",
+        "headliner": false
+      },
+      {
+        "name": "Forrest Getemgump",
+        "headliner": false
+      },
+      {
+        "name": "Stout XTC",
+        "headliner": false
+      },
+      {
+        "name": "Chris Pulse",
+        "headliner": false
+      },
+      {
+        "name": "Golden Marmoset",
+        "headliner": false
+      },
+      {
+        "name": "The Baraness",
+        "headliner": false
+      },
+      {
+        "name": "Lolo Knows",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "21:00",
+    "doors": null,
+    "price": "$15 Advance, $20 Doors",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-08-14-mike-clark"
   },
 
 
@@ -9736,10 +9810,10 @@
     "id": "spirits-willoughby-2026-07-31-austin-hamilton"
   },
   {
-    "title": "Traci & the Dreamers",
+    "title": "Trista & the Dreamers",
     "performers": [
       {
-        "name": "Traci & the Dreamers",
+        "name": "Trista & the Dreamers",
         "headliner": true
       }
     ],
@@ -9752,18 +9826,18 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-08-01-traci-the-dreamers"
+    "id": "spirits-willoughby-2026-08-01-trista-the-dreamers"
   },
   {
-    "title": "Mara Petti",
+    "title": "6 Mile High",
     "performers": [
       {
-        "name": "Mara Petti",
+        "name": "6 Mile High",
         "headliner": true
       }
     ],
     "date": "2026-08-02",
-    "time": "12:00",
+    "time": "17:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -9771,7 +9845,26 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-08-02-mara-petti"
+    "id": "spirits-willoughby-2026-08-02-6-mile-high"
+  },
+  {
+    "title": "Trivia with Kevin Whalen",
+    "performers": [
+      {
+        "name": "Kevin Whalen",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-08-05-kevin-whalen"
   },
 
 
