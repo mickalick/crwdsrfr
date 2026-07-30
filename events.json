@@ -707,25 +707,6 @@
       "manual": false
     },
     {
-      "id": "dunlaps-2026-07-30-140985",
-      "title": "Artist Networking Night",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-07-30",
-      "time": "18:00",
-      "doors": "17:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Artist Networking Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/140985",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/381227",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "hilarities-2026-07-30-1900-139051",
       "title": "Blake Hammond",
       "venueId": "hilarities",
@@ -3404,7 +3385,7 @@
       "id": "shooters-2026-08-01-d-o-d"
     },
     {
-      "title": "Amita",
+      "title": "Perf",
       "performers": [
         {
           "name": "Amita",
@@ -3523,10 +3504,10 @@
       "id": "quintanas-speakeasy-2026-08-01-learn-hands-on-craft-cocktails"
     },
     {
-      "title": "Traci & the Dreamers",
+      "title": "Trista & the Dreamers",
       "performers": [
         {
-          "name": "Traci & the Dreamers",
+          "name": "Trista & the Dreamers",
           "headliner": true
         }
       ],
@@ -3539,7 +3520,7 @@
       "venueId": "spirits-willoughby",
       "source": "manual",
       "manual": true,
-      "id": "spirits-willoughby-2026-08-01-traci-the-dreamers"
+      "id": "spirits-willoughby-2026-08-01-trista-the-dreamers"
     },
     {
       "title": "Black Voltron",
@@ -4301,15 +4282,15 @@
       "id": "house-of-blues-2026-08-02-wax"
     },
     {
-      "title": "Mara Petti",
+      "title": "6 Mile High",
       "performers": [
         {
-          "name": "Mara Petti",
+          "name": "6 Mile High",
           "headliner": true
         }
       ],
       "date": "2026-08-02",
-      "time": "12:00",
+      "time": "17:00",
       "doors": null,
       "price": null,
       "eventUrl": null,
@@ -4317,7 +4298,7 @@
       "venueId": "spirits-willoughby",
       "source": "manual",
       "manual": true,
-      "id": "spirits-willoughby-2026-08-02-mara-petti"
+      "id": "spirits-willoughby-2026-08-02-6-mile-high"
     },
     {
       "title": "Stamper Starr",
@@ -5285,6 +5266,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-05-singo"
+    },
+    {
+      "title": "Trivia with Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-05-kevin-whalen"
     },
     {
       "title": "Steve Kennedy",
@@ -11507,6 +11507,80 @@
       "source": "manual",
       "manual": true,
       "id": "cavottas-garden-bar-2026-08-14-black-jack-gypsies"
+    },
+    {
+      "title": "Ian Asher",
+      "performers": [
+        {
+          "name": "Ian Asher",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-08-14-ian-asher"
+    },
+    {
+      "title": "Lake Love",
+      "performers": [
+        {
+          "name": "Mike Clark",
+          "headliner": true
+        },
+        {
+          "name": "Agent X",
+          "headliner": false
+        },
+        {
+          "name": "Neil Chastain",
+          "headliner": false
+        },
+        {
+          "name": "A-Live",
+          "headliner": false
+        },
+        {
+          "name": "Forrest Getemgump",
+          "headliner": false
+        },
+        {
+          "name": "Stout XTC",
+          "headliner": false
+        },
+        {
+          "name": "Chris Pulse",
+          "headliner": false
+        },
+        {
+          "name": "Golden Marmoset",
+          "headliner": false
+        },
+        {
+          "name": "The Baraness",
+          "headliner": false
+        },
+        {
+          "name": "Lolo Knows",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "21:00",
+      "doors": null,
+      "price": "$15 Advance, $20 Doors",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-08-14-mike-clark"
     },
     {
       "title": "The Legacy Band",
@@ -26154,7 +26228,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-14-wretched",
-      "title": "Wretched, Cerebral Necrosis, Chaos Eater",
+      "title": "Wretched, The Convalescence, Cerebral Necrosis, Chaos Eater",
       "venueId": "foundry-concert-club",
       "date": "2026-09-14",
       "time": "19:00",
@@ -26162,12 +26236,12 @@
       "price": null,
       "performers": [
         {
-          "name": "Wretched, Cerebral Necrosis, Chaos Eater",
+          "name": "Wretched, The Convalescence, Cerebral Necrosis, Chaos Eater",
           "headliner": true
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/wretched/",
-      "ticketUrl": "https://www.ticketweb.com/event/wretched-cerebral-necrosis-chaos-eater-the-foundry-tickets/14251064?pl=thefoundry&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/wretched-the-convalescence-cerebral-necrosis-the-foundry-tickets/14251064?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
