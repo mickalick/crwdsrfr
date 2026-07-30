@@ -3590,6 +3590,17 @@ async function fetchImpostersTheater() {
   const events = [];
   const seenIds = new Set();
 
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+    if (!match) return null;
+    let [, hours, minutes, modifier] = match;
+    hours = parseInt(hours, 10);
+    if (modifier.toLowerCase() === 'pm' && hours !== 12) hours += 12;
+    if (modifier.toLowerCase() === 'am' && hours === 12) hours = 0;
+    return `${String(hours).padStart(2, '0')}:${minutes}`;
+  }
+
   try {
     const res = await fetch(`${baseUrl}/schedule`);
     const html = await res.text();
@@ -3601,15 +3612,14 @@ async function fetchImpostersTheater() {
       const title = $el.find('.eventlist-title-link').first().text().trim();
       if (!title || /closed for a private event/i.test(title)) return;
 
-      const dateAttr = $el.find('time.event-date').first().attr('datetime'); // "2026-07-30"
+      const dateAttr = $el.find('time.event-date').first().attr('datetime');
       if (!dateAttr) return;
 
-      const startTimeText = $el.find('.event-time-localized-start').first().text().trim(); // "6:00 PM"
+      const startTimeText = $el.find('.event-time-localized-start').first().text().trim();
 
       const relUrl = $el.find('.eventlist-title-link').first().attr('href');
       const eventUrl = relUrl ? new URL(relUrl, baseUrl).href : null;
 
-      // Best-effort price grab — first visible price on the card.
       const priceText = $el.find('.product-price').first().text().trim() || null;
 
       const id = `${venueId}-${dateAttr}-${slugify(title)}`;
@@ -3621,7 +3631,7 @@ async function fetchImpostersTheater() {
         title,
         venueId,
         date: dateAttr,
-        time: startTimeText || null,
+        time: normalizeTime(startTimeText),
         doors: null,
         price: priceText,
         performers: [],
@@ -3660,11 +3670,13 @@ async function fetchGrindstoneTapHouse() {
   };
 
   const normalizeTime = (t) => {
-    // "7pm" / "7:30pm" -> "7:00 PM" / "7:30 PM"
     const m = t.trim().match(/^(\d{1,2})(?::(\d{2}))?\s*(am|pm)$/i);
-    if (!m) return t.trim();
-    const [, h, min = '00', ap] = m;
-    return `${h}:${min} ${ap.toUpperCase()}`;
+    if (!m) return null;
+    let [, h, min = '00', ap] = m;
+    h = parseInt(h, 10);
+    if (ap.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (ap.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${min}`;
   };
 
   try {
