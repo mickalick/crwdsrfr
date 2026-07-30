@@ -397,6 +397,24 @@ window.VENUES = [
     "lng": -81.0364809
   },
   {
+    "id": "imposters-theater",
+    "name": "Imposters Theater",
+    "type": "theater",
+    "address": "4828 Lorain Ave, Cleveland OH 44102",
+    "area": "Ohio City",
+    "lat": 41.4779872,
+    "lng": -81.7206772
+  },
+  {
+    "id": "grindstone-tap-house",
+    "name": "Grindstone Tap House",
+    "type": "bar",
+    "address": "826 Front St, Berea, OH 44017",
+    "area": "Berea",
+    "lat": 41.3880486,
+    "lng": -81.8522869
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "type": "bar",
@@ -602,5 +620,14 @@ window.VENUES = [
     "area": "Middleburg Heights",
     "lat": 41.3725768,
     "lng": -81.8311822
+  },
+  {
+    "id": "spotlight-cle",
+    "name": "Spotlight Cleveland",
+    "type": "bar",
+    "address": "8701 Madison Ave, Cleveland, OH 44102",
+    "area": "Detroit Shoreway",
+    "lat": 41.4769988,
+    "lng": -81.744315
   }
 ];

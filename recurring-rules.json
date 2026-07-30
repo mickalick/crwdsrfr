@@ -1,0 +1,92 @@
+[
+  {
+    "id": "spotlight-acoustic-jam-night",
+    "venueId": "spotlight-cle",
+    "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+    "weekday": 1,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-comedy-open-mic",
+    "venueId": "spotlight-cle",
+    "title": "Comedy Open Mic",
+    "weekday": 2,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-jam-night",
+    "venueId": "spotlight-cle",
+    "title": "Jam Night",
+    "weekday": 3,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-bluegrass-jam",
+    "venueId": "spotlight-cle",
+    "title": "Bluegrass Jam (hosted by David Mayfield)",
+    "weekday": 4,
+    "nth": [1],
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-open-mic-theme",
+    "venueId": "spotlight-cle",
+    "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+    "weekday": 4,
+    "nth": [2, 4],
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-tk-jazz-odyssey",
+    "venueId": "spotlight-cle",
+    "title": "TK's Jazz Odyssey & Workshop",
+    "weekday": 4,
+    "nth": [3],
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-weekend-nights-fri",
+    "venueId": "spotlight-cle",
+    "title": "Live Music • DJs • Special Nights",
+    "weekday": 5,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-weekend-nights-sat",
+    "venueId": "spotlight-cle",
+    "title": "Live Music • DJs • Special Nights",
+    "weekday": 6,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  },
+  {
+    "id": "spotlight-house-techno",
+    "venueId": "spotlight-cle",
+    "title": "House & Techno",
+    "weekday": 0,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-01-01",
+    "endDate": null
+  }
+]
