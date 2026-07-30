@@ -415,6 +415,15 @@ window.VENUES = [
     "lng": -81.8522869
   },
   {
+    "id": "reithoffers",
+    "name": "Reithoffers (Hoffs)",
+    "type": "bar",
+    "address": "17711 Ravenna Rd, Chagrin Falls, OH 44023",
+    "area": "Chagrin Falls",
+    "lat": 41.3886252,
+    "lng": -81.2156801
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "type": "bar",

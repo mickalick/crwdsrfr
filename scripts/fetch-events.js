@@ -3729,6 +3729,85 @@ async function fetchGrindstoneTapHouse() {
   return events;
 }
 
+async function fetchReithoffers() {
+  const venueId = 'reithoffers';
+  const venueName = "Reithoffer's";
+  const baseUrl = 'https://www.reithoffers.com';
+  const eventsUrl = `${baseUrl}/entertainment`;
+  const events = [];
+  const seenIds = new Set();
+
+  const TITLE_BLOCKLIST = /mah\s*jongg|food\s*truck|bbq|clambake/i;
+
+  try {
+    const res = await fetch(eventsUrl);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const currentYear = new Date().getFullYear();
+    const now = new Date();
+
+    $('li[data-hook="side-by-side-item"]').each((_, el) => {
+      const $el = $(el);
+
+      const titleEl = $el.find('a[data-hook="title"]').first();
+      const title = titleEl.text().trim();
+      if (!title) return;
+      if (TITLE_BLOCKLIST.test(title)) return;
+
+      const relUrl = titleEl.attr('href');
+      const eventUrl = relUrl ? new URL(relUrl, baseUrl).href : null;
+
+      // "Multiple Dates" events embed exact date+time in the URL slug,
+      // e.g. "...-2026-08-13-18-00" -> 2026-08-13, 18:00
+      let date = null;
+      let time = null;
+      const slugMatch = relUrl ? relUrl.match(/(\d{4})-(\d{2})-(\d{2})-(\d{2})-(\d{2})$/) : null;
+      if (slugMatch) {
+        const [, y, m, d, h, min] = slugMatch;
+        date = `${y}-${m}-${d}`;
+        time = `${h}:${min}`;
+      } else {
+        // Fall back to the visible "Thu, Jul 30" text - no year given,
+        // so attach current year and bump on a Dec->Jan rollover
+        // (same approach as the Cain Park fetcher).
+        const dateRaw = $el.find('[data-hook="short-date"]').first().text().trim();
+        if (!dateRaw) return;
+        const parsedDate = new Date(`${dateRaw}, ${currentYear}`);
+        if (isNaN(parsedDate)) return;
+        if (parsedDate.getMonth() < now.getMonth() - 6) {
+          parsedDate.setFullYear(currentYear + 1);
+        }
+        date = `${parsedDate.getFullYear()}-${String(parsedDate.getMonth() + 1).padStart(2, '0')}-${String(parsedDate.getDate()).padStart(2, '0')}`;
+      }
+
+      if (!date) return;
+
+      const id = `${venueId}-${date}-${slugify(title)}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+
+      events.push({
+        id,
+        title,
+        venueId,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [],
+        eventUrl,
+        ticketUrl: eventUrl,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error(`Error fetching ${venueName}:`, err.message);
+  }
+
+  return events;
+}
+
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
@@ -3750,7 +3829,7 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges, impostersTheater, grindstoneTapHouse] = await Promise.all([
+  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges, impostersTheater, grindstoneTapHouse, reithoffers] = await Promise.all([
     fetchRocketArena(),
     fetchGrogShop(),
     fetchAgora(),
@@ -3791,6 +3870,7 @@ async function main() {
     fetchNelsonLedges(),
     fetchImpostersTheater(),
     fetchGrindstoneTapHouse(),
+    fetchReithoffers(),
   ]);
 
 
@@ -3835,6 +3915,7 @@ async function main() {
   console.log('Nelson Ledges:', nelsonLedges.length);
   console.log('Imposters Theater:', impostersTheater.length);
   console.log('Grindstone:', grindstoneTapHouse.length);
+  console.log('Reithoffers:', reithoffers.length);
 
 
   const manualEntries = loadManualEntries();
@@ -3886,6 +3967,7 @@ async function main() {
     ...nelsonLedges,
     ...impostersTheater,
     ...grindstoneTapHouse,
+    ...reithoffers,
     ...manualEntries,
     ...recurringEvents,
   ].filter(e => e.date >= todayStr)
@@ -3939,6 +4021,7 @@ async function main() {
       'nelson-ledges': { name: 'Nelson Ledges Quarry Park', url: 'https://nlqp.com/', eventsUrl: 'https://nlqp.com/events/', city: 'Garrettsville' },
       'imposters-theater': { name: 'Imposters Theater', url: 'https://www.imposterstheater.com/', eventsUrl: 'https://www.imposterstheater.com/schedule', city: 'Cleveland' },
       'grindstone-tap-house': { name: 'Grindstone Tap House', url: 'https://grindstonetaphouse.com/', eventsUrl: 'https://grindstonetaphouse.com/events', city: 'Berea' },
+      'reithoffers': { name: 'Reithoffers (Hoffs)', url: 'https://www.reithoffers.com/', eventsUrl: 'https://www.reithoffers.com/entertainment', city: 'Chagrin Falls' },
       'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
       'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
       'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
@@ -4017,4 +4100,5 @@ export {
   fetchNelsonLedges,
   fetchImpostersTheater,
   fetchGrindstoneTapHouse,
+  fetchReithoffers,
 };
