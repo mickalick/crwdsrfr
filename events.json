@@ -276,6 +276,12 @@
       "eventsUrl": "https://grindstonetaphouse.com/events",
       "city": "Berea"
     },
+    "reithoffers": {
+      "name": "Reithoffers (Hoffs)",
+      "url": "https://www.reithoffers.com/",
+      "eventsUrl": "https://www.reithoffers.com/entertainment",
+      "city": "Chagrin Falls"
+    },
     "cebars": {
       "name": "Cebars",
       "url": "https://www.facebook.com/groups/51071547181",
@@ -814,7 +820,7 @@
         }
       ],
       "eventUrl": "https://www.ticketweb.com/event/night-terrors-treelawn-social-club-tickets/14747883",
-      "ticketUrl": "https://www.ticketweb.com/event/night-terrors-treelawn-social-club-tickets/14747883",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -981,6 +987,20 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-07-30-abba-disco-night-ft-dj-chris-hatton",
+      "title": "ABBA Disco Night ft. DJ Chris Hatton",
+      "venueId": "reithoffers",
+      "date": "2026-07-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/abba-disco-night-ft-dj-chris-hatton",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/abba-disco-night-ft-dj-chris-hatton",
       "source": "scrape",
       "manual": false
     },
@@ -1717,7 +1737,7 @@
         }
       ],
       "eventUrl": "https://hilarities.com/events/131214",
-      "ticketUrl": null,
+      "ticketUrl": "https://hilarities.com/shows/358160",
       "source": "scrape",
       "manual": false
     },
@@ -2015,6 +2035,20 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-07-31-austin-walkin-cane",
+      "title": "Austin Walkin' Cane",
+      "venueId": "reithoffers",
+      "date": "2026-07-31",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/austin-walkin-cane-6",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/austin-walkin-cane-6",
       "source": "scrape",
       "manual": false
     },
@@ -5842,6 +5876,20 @@
       "manual": false
     },
     {
+      "id": "reithoffers-2026-08-06-beginners-sourdough-workshop-with-terra-from-boujee-bread",
+      "title": "Beginners Sourdough Workshop with Terra from Boujee Bread",
+      "venueId": "reithoffers",
+      "date": "2026-08-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/beginners-sourdough-workshop-with-terra-from-boujee-bread",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/beginners-sourdough-workshop-with-terra-from-boujee-bread",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Viva/Sammy",
       "performers": [
         {
@@ -6763,6 +6811,20 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-08-07-no-control",
+      "title": "No Control",
+      "venueId": "reithoffers",
+      "date": "2026-08-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/no-control-5",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/no-control-5",
       "source": "scrape",
       "manual": false
     },
@@ -7902,6 +7964,20 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-08-08-the-eastside-troubadours",
+      "title": "The Eastside Troubadours",
+      "venueId": "reithoffers",
+      "date": "2026-08-08",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/the-eastside-troubadours-2",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/the-eastside-troubadours-2",
       "source": "scrape",
       "manual": false
     },
@@ -10431,6 +10507,34 @@
       "manual": false
     },
     {
+      "id": "reithoffers-2026-08-13-john-barile",
+      "title": "John Barile",
+      "venueId": "reithoffers",
+      "date": "2026-08-13",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/john-barile-3",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/john-barile-3",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-08-13-indigo-shibori-dyeing-workshop-with-deb-berkebile",
+      "title": "Indigo Shibori Dyeing Workshop with Deb Berkebile",
+      "venueId": "reithoffers",
+      "date": "2026-08-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/indigo-shibori-dyeing-workshop-with-deb-berkebile-2026-08-13-18-00",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/indigo-shibori-dyeing-workshop-with-deb-berkebile-2026-08-13-18-00",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Pop Fiction",
       "performers": [
         {
@@ -11316,6 +11420,34 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-08-14-hoff-s-annual-summer-market",
+      "title": "Hoff's Annual Summer Market",
+      "venueId": "reithoffers",
+      "date": "2026-08-14",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/hoffs-annual-summer-market",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/hoffs-annual-summer-market",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "reithoffers-2026-08-14-dust-my-broom",
+      "title": "Dust My Broom",
+      "venueId": "reithoffers",
+      "date": "2026-08-14",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/dust-my-broom-5",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/dust-my-broom-5",
       "source": "scrape",
       "manual": false
     },
@@ -12261,6 +12393,20 @@
       "manual": false
     },
     {
+      "id": "reithoffers-2026-08-15-hoff-s-annual-summer-market",
+      "title": "Hoff's Annual Summer Market",
+      "venueId": "reithoffers",
+      "date": "2026-08-15",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/hoffs-annual-summer-market-2",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/hoffs-annual-summer-market-2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Ace Molar",
       "performers": [
         {
@@ -12784,6 +12930,26 @@
       ],
       "eventUrl": "https://hilarities.com/events/141386",
       "ticketUrl": "https://hilarities.com/shows/382147",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "van-aken-back-to-school-kids-fashion-show-2026-08-16",
+      "title": "Back to School Kids Fashion Show",
+      "venueId": "van-aken-district",
+      "date": "2026-08-16",
+      "time": "10:00",
+      "doors": null,
+      "price": null,
+      "room": "3401 Tuttle Road, Shaker Heights, OH",
+      "performers": [
+        {
+          "name": "Back to School Kids Fashion Show",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/back-to-school-kids-fashion-show-2026-08-16",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -14995,26 +15161,6 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/magic-with-john-westford-aug21/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62638",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "fwd-nightclub-2026-08-21-chris-lorenzo",
-      "title": "CHRIS LORENZO",
-      "venueId": "fwd-nightclub",
-      "date": "2026-08-21",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "tag": "NIGHT",
-      "performers": [
-        {
-          "name": "CHRIS LORENZO",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CHRIS-LORENZO?eid=EVE-NQTGU2",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CHRIS-LORENZO?eid=EVE-NQTGU2",
       "source": "scrape",
       "manual": false
     },
@@ -26008,7 +26154,7 @@
     },
     {
       "id": "foundry-concert-club-2026-09-14-wretched",
-      "title": "Wretched",
+      "title": "Wretched, Cerebral Necrosis, Chaos Eater",
       "venueId": "foundry-concert-club",
       "date": "2026-09-14",
       "time": "19:00",
@@ -26016,12 +26162,12 @@
       "price": null,
       "performers": [
         {
-          "name": "Wretched",
+          "name": "Wretched, Cerebral Necrosis, Chaos Eater",
           "headliner": true
         }
       ],
       "eventUrl": "https://www.foundryconcertclub.com/tm-event/wretched/",
-      "ticketUrl": "https://www.ticketweb.com/event/wretched-the-foundry-tickets/14251064?pl=thefoundry&REFID=clientsitewp",
+      "ticketUrl": "https://www.ticketweb.com/event/wretched-cerebral-necrosis-chaos-eater-the-foundry-tickets/14251064?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -34834,6 +34980,25 @@
       "manual": false
     },
     {
+      "id": "rock-hall-2026-10-16-educator-open-house-2026",
+      "title": "Educator Open House",
+      "venueId": "rock-hall",
+      "date": "2026-10-16",
+      "time": "16:00",
+      "doors": null,
+      "price": "Free (RSVP required)",
+      "performers": [
+        {
+          "name": "Educator Open House",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://rockhall.com/event/educator-open-house-2026/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rock-hall-2026-10-16-rock-hall-live-earl-sweatshirt-mike-w-surf-gang",
       "title": "Rock Hall Live: Earl Sweatshirt & MIKE w/ Harrison (Surf Gang)",
       "venueId": "rock-hall",
@@ -35876,6 +36041,25 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/jo-koy",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B50C8A40-2692-423A-AF19-98EBC6D70BA6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "foundry-concert-club-2026-10-22-nini-seven-kingdoms",
+      "title": "Nini, Seven Kingdoms",
+      "venueId": "foundry-concert-club",
+      "date": "2026-10-22",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nini, Seven Kingdoms",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nini-seven-kingdoms/",
+      "ticketUrl": "https://www.ticketweb.com/event/nini-seven-kingdoms-the-foundry-tickets/15002573?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
