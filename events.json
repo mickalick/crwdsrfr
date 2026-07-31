@@ -707,25 +707,6 @@
       "manual": false
     },
     {
-      "id": "hilarities-2026-07-30-1900-139051",
-      "title": "Blake Hammond",
-      "venueId": "hilarities",
-      "date": "2026-07-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blake Hammond",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/139051",
-      "ticketUrl": "https://hilarities.com/shows/376782",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "van-aken-summer-farmers-market-2026-07-30",
       "title": "Summer Farmers Market",
       "venueId": "van-aken-district",
@@ -878,26 +859,6 @@
       ],
       "eventUrl": "https://www.noclasscle.com/events/ohio-deathfest-pre-party",
       "ticketUrl": "https://sickening.events/e/ohio-deathfest-pre-party",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cleveland-orchestra-69b4236beb07a4c7308316ac",
-      "title": "Saint-Saëns’s Organ Symphony",
-      "venueId": "cleveland-orchestra",
-      "room": null,
-      "date": "2026-07-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Saint-Saëns’s Organ Symphony",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/saint-saenss-organ-symphony",
-      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24323",
       "source": "scrape",
       "manual": false
     },
@@ -3443,6 +3404,44 @@
       "id": "chagrin-tavern-2026-08-01-rock-the-house"
     },
     {
+      "title": "Rockport",
+      "performers": [
+        {
+          "name": "Rockport",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-01-rockport"
+    },
+    {
+      "title": "Foundation Room and Arnold Hines Present It's A Vibe",
+      "performers": [
+        {
+          "name": "Arnold Hines",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-01",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-01-arnold-hines"
+    },
+    {
       "title": "Tomahawk",
       "performers": [
         {
@@ -4259,14 +4258,14 @@
       "id": "chagrin-tavern-2026-08-02-sully-solo"
     },
     {
-      "title": "Wax",
+      "title": "WAX + DJ HOPPA",
       "performers": [
         {
-          "name": "Wax",
+          "name": "WAX",
           "headliner": true
         },
         {
-          "name": "DJ Hoppa",
+          "name": "DJ HOPPA",
           "headliner": false
         }
       ],
@@ -5970,6 +5969,44 @@
       "id": "blossom-music-center-2026-08-06-chicago"
     },
     {
+      "title": "Brokenglish",
+      "performers": [
+        {
+          "name": "Brokenglish",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-06-brokenglish"
+    },
+    {
+      "title": "One Spark Party",
+      "performers": [
+        {
+          "name": "One Spark Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-06-one-spark-party"
+    },
+    {
       "title": "BoDeans",
       "performers": [
         {
@@ -6941,6 +6978,44 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-08-07-riley-green"
+    },
+    {
+      "title": "Bridge The Gap",
+      "performers": [
+        {
+          "name": "Bridge The Gap",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-07-bridge-the-gap"
+    },
+    {
+      "title": "Bosco Jigs",
+      "performers": [
+        {
+          "name": "Bosco Jigs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-07-bosco-jigs"
     },
     {
       "title": "A Thousand Horses",
@@ -8110,6 +8185,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-08-medusa"
+    },
+    {
+      "title": "Dan Pyne",
+      "performers": [
+        {
+          "name": "Dan Pyne",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-08-dan-pyne"
     },
     {
       "title": "Bop to the Top",
@@ -10592,6 +10686,25 @@
       "id": "chagrin-tavern-2026-08-13-trivia"
     },
     {
+      "title": "Matt Goodrich",
+      "performers": [
+        {
+          "name": "Matt Goodrich",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-13-matt-goodrich"
+    },
+    {
       "title": "Rob Samay",
       "performers": [
         {
@@ -11621,6 +11734,44 @@
       "id": "blossom-music-center-2026-08-14-kehlani"
     },
     {
+      "title": "The Brakes",
+      "performers": [
+        {
+          "name": "The Brakes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-14-the-brakes"
+    },
+    {
+      "title": "Glotaku DJs",
+      "performers": [
+        {
+          "name": "Glotaku DJs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-14-glotaku-djs"
+    },
+    {
       "title": "Gannon Fremin & CCREV",
       "performers": [
         {
@@ -12593,6 +12744,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-15-glass-house"
+    },
+    {
+      "title": "Take 2",
+      "performers": [
+        {
+          "name": "Take 2",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-15-take-2"
     },
     {
       "title": "Whiskey Bound",
@@ -14876,6 +15046,25 @@
       "id": "chagrin-tavern-2026-08-20-trivia"
     },
     {
+      "title": "Chad Hoffman",
+      "performers": [
+        {
+          "name": "Chad Hoffman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-20-chad-hoffman"
+    },
+    {
       "title": "Rene Vaca",
       "performers": [
         {
@@ -15765,6 +15954,44 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-08-21-empire-of-the-sun"
+    },
+    {
+      "title": "Brent Kirby",
+      "performers": [
+        {
+          "name": "Brent Kirby",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-21-brent-kirby"
+    },
+    {
+      "title": "The Mars Express",
+      "performers": [
+        {
+          "name": "The Mars Express",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-21-the-mars-express"
     },
     {
       "title": "Jon B.",
@@ -16680,6 +16907,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-22-cleveland-rock-bar"
+    },
+    {
+      "title": "Diana Chittester",
+      "performers": [
+        {
+          "name": "Diana Chittester",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-22-diana-chittester"
     },
     {
       "title": "Will Wood",
@@ -18700,6 +18946,25 @@
       "id": "blossom-music-center-2026-08-27-r-f-s-du-sol"
     },
     {
+      "title": "Scott Stiert",
+      "performers": [
+        {
+          "name": "Scott Stiert",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-27-scott-stiert"
+    },
+    {
       "title": "Fattmack",
       "performers": [
         {
@@ -19611,6 +19876,25 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-08-28-josh-groban"
+    },
+    {
+      "title": "Erin Nicole Neal & The Chill Factors",
+      "performers": [
+        {
+          "name": "Erin Nicole Neal & The Chill Factors",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-28-erin-nicole-neal-the-chill-factors"
     },
     {
       "title": "Isaiah Rashad",
@@ -20664,6 +20948,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-29-jam-machine"
+    },
+    {
+      "title": "Ohio Drifters",
+      "performers": [
+        {
+          "name": "Ohio Drifters",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-29-ohio-drifters"
     },
     {
       "title": "Billy Morris & The Sunset Strip",
@@ -33323,6 +33626,25 @@
       "manual": false
     },
     {
+      "title": "The Haunt",
+      "performers": [
+        {
+          "name": "The Haunt",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-07",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-07-the-haunt"
+    },
+    {
       "id": "spotlight-jam-night-2026-10-07",
       "title": "Jam Night",
       "venueId": "spotlight-cle",
@@ -37051,6 +37373,25 @@
       "manual": false
     },
     {
+      "title": "With A Vengeance",
+      "performers": [
+        {
+          "name": "With A Vengeance",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-26-with-a-vengeance"
+    },
+    {
       "id": "spotlight-acoustic-jam-night-2026-10-26",
       "title": "Acoustic Jam Night (hosted by Joshua Donato)",
       "venueId": "spotlight-cle",
@@ -38592,10 +38933,10 @@
       "manual": false
     },
     {
-      "title": "Beyond the Walls 3",
+      "title": "Beyond The Walls 3",
       "performers": [
         {
-          "name": "Beyond the Walls 3",
+          "name": "Beyond The Walls 3",
           "headliner": true
         }
       ],
