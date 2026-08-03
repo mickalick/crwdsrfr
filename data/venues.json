@@ -2,6 +2,8 @@
   {
     "id": "grog-shop",
     "name": "Grog Shop",
+    "url": "https://grogshop.gs",
+    "eventsUrl": "https://grogshop.gs/event-details/",
     "type": "music-hall",
     "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH 44106",
     "area": "Cleveland Heights",
@@ -11,6 +13,8 @@
   {
     "id": "the-agora",
     "name": "The Agora",
+    "url": "https://agoracleveland.com",
+    "eventsUrl": "https://www.agoracleveland.com/events/all",
     "type": "theater",
     "address": "5000 Euclid Ave, Cleveland, OH 44103",
     "area": "MidTown",
@@ -20,6 +24,8 @@
   {
     "id": "rocket-arena",
     "name": "Rocket Arena",
+    "url": "https://rocketarena.com",
+    "eventsUrl": "https://seatgeek.com/venues/rocket-arena/tickets",
     "type": "arena",
     "address": "400 Huron Rd E, Cleveland, OH 44115",
     "area": "Downtown",
@@ -29,6 +35,8 @@
   {
     "id": "beachland-ballroom",
     "name": "Beachland Ballroom",
+    "url": "https://beachlandballroom.com",
+    "eventsUrl": "https://www.beachlandballroom.com/shows",
     "type": "music-hall",
     "address": "15711 Waterloo Rd, Cleveland, OH 44110",
     "area": "Collinwood",
@@ -38,6 +46,8 @@
   {
     "id": "metroparks-huntington",
     "name": "The Noshery at Huntington Beach",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/huntington-reservation/the-noshery",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "28001 Lake Rd, Bay Village, OH 44140",
     "area": "Bay Village",
@@ -47,6 +57,8 @@
   {
     "id": "metroparks-euclid-beach",
     "name": "Euclid Beach",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/euclid-creek-reservation/euclid-beach-park",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "16301 Lakeshore Blvd, Cleveland, OH 44110",
     "area": "Collinwood",
@@ -56,6 +68,8 @@
   {
     "id": "metroparks-edgewater",
     "name": "Edgewater Beach",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/edgewater-beach",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "Edgewater Pk Lower Lot Dr, Cleveland, OH 44102",
     "area": "Edgewater",
@@ -65,6 +79,8 @@
   {
     "id": "metroparks-emerald-necklace",
     "name": "Emerald Necklace Marina",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/rocky-river-reservation/emerald-necklace-marina",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "1500 Scenic Park Dr, Lakewood, OH 44107",
     "area": "Lakewood",
@@ -74,6 +90,8 @@
   {
     "id": "metroparks-galley",
     "name": "The Galley at East 55th Marina",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "5601 N Marginal Rd, Cleveland, OH 44114",
     "area": "Glenville",
@@ -83,6 +101,8 @@
   {
     "id": "metroparks-merwins-wharf",
     "name": "Merwin's Wharf",
+    "url": "https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf",
+    "eventsUrl": null,
     "type": "outdoor",
     "address": "1785 Merwin Ave, Cleveland, OH 44113",
     "area": "Irishtown Bend",
@@ -92,6 +112,8 @@
   {
     "id": "rockin-on-the-river",
     "name": "Rockin on the River",
+    "url": "https://www.rockinontheriver.com",
+    "eventsUrl": "https://www.rockinontheriver.com/2026",
     "type": "outdoor",
     "address": "421 Black River Ln, Lorain, OH 44052",
     "area": "Lorain",
@@ -101,6 +123,8 @@
   {
     "id": "cain-park",
     "name": "Cain Park",
+    "url": "https://cainpark.com/",
+    "eventsUrl": "https://cainpark.com/events/?view=list",
     "type": "outdoor",
     "address": "14591 Superior Rd, Cleveland Heights, OH 44118",
     "area": "Cleveland Heights",
@@ -110,6 +134,8 @@
   {
     "id": "happy-dog",
     "name": "Happy Dog",
+    "url": "https://happydogcleveland.com/",
+    "eventsUrl": "https://app.opendate.io/v/happy-dog-1767",
     "type": "bar",
     "address": "5801 Detroit Ave, Cleveland, OH 44102",
     "area": "Detroit Shoreway",
@@ -119,6 +145,8 @@
   {
     "id": "mahalls",
     "name": "Mahalls",
+    "url": "https://mahalls20lanes.com/",
+    "eventsUrl": "https://mahalls20lanes.com/events/",
     "type": "music-hall",
     "address": "13200 Madison Ave, Lakewood, OH 44107",
     "area": "Lakewood",
@@ -128,7 +156,9 @@
   {
     "id": "bop-stop",
     "name": "Bop Stop",
-    "type": "music-hall",
+    "url": "https://www.themusicsettlement.org/bop-stop/overview",
+    "eventsUrl": "https://www.themusicsettlement.org/events/center/bop-stop",
+    "type": "jazz-bar",
     "address": "2920 Detroit Ave, Cleveland, OH 44113",
     "area": "Detroit Shoreway",
     "lat": 41.489898,
@@ -137,6 +167,8 @@
   {
     "id": "globe-iron",
     "name": "Globe Iron",
+    "url": "https://globeironcle.com/",
+    "eventsUrl": "https://globeironcle.com/calendar/",
     "type": "music-hall",
     "address": "2325 Elm St, Cleveland, OH 44113",
     "area": "Flats West Bank",
@@ -146,6 +178,8 @@
   {
     "id": "jacobs-pavilion",
     "name": "Jacobs Pavilion",
+    "url": "https://jacobspavilion.com/",
+    "eventsUrl": "https://jacobspavilion.com/calendar/",
     "type": "outdoor",
     "address": "2014 Sycamore St, Cleveland, OH 44113",
     "area": "Flats West Bank",
@@ -155,6 +189,8 @@
   {
     "id": "music-box",
     "name": "Music Box Supper Club",
+    "url": "https://musicboxcle.com/",
+    "eventsUrl": "https://musicboxcle.com/schedule/",
     "type": "music-hall",
     "address": "1148 Main Ave, Cleveland, OH 44113",
     "area": "Flats West Bank",
@@ -164,6 +200,8 @@
   {
     "id": "winchester-music-tavern",
     "name": "The Winchester Music Tavern",
+    "url": "https://thewinchestermusictavern.com/",
+    "eventsUrl": "https://thewinchestermusictavern.com/event-details/",
     "type": "bar",
     "address": "12112 Madison Ave, Lakewood, OH 44107",
     "area": "Lakewood",
@@ -173,6 +211,8 @@
   {
     "id": "fwd-nightclub",
     "name": "FWD Day + Nightclub",
+    "url": "https://www.fwdnightclub.com/",
+    "eventsUrl": "https://www.fwdnightclub.com/events",
     "type": "club",
     "address": "1176 Front Ave, Cleveland, OH 44113",
     "area": "Flats East Bank",
@@ -182,6 +222,8 @@
   {
     "id": "collision-bend-cleveland",
     "name": "Collision Bend Cleveland",
+    "url": "https://collisionbendbrewery.com/location/cleveland-ohio-11716",
+    "eventsUrl": "https://collisionbendbrewery.com/events/",
     "type": "brewery",
     "address": "1250 Old River Rd, Cleveland, OH 44113",
     "area": "Flats East Bank",
@@ -191,6 +233,8 @@
   {
     "id": "collision-bend-euclid",
     "name": "Collision Bend Euclid",
+    "url": "https://collisionbendbrewery.com/location/euclid-ohio-43117",
+    "eventsUrl": "https://collisionbendbrewery.com/events/",
     "type": "brewery",
     "address": "1261 Babbitt Rd, Euclid, OH 44132",
     "area": "Euclid",
@@ -200,6 +244,8 @@
   {
     "id": "mercury-music-lounge",
     "name": "Mercury Music Lounge",
+    "url": "https://www.mercurymusiclakewood.com/",
+    "eventsUrl": "https://www.mercurymusiclakewood.com/",
     "type": "bar",
     "address": "18206 Detroit Ave, Lakewood, OH 44107",
     "area": "Lakewood",
@@ -209,6 +255,8 @@
   {
     "id": "rock-hall",
     "name": "Rock & Roll Hall of Fame",
+    "url": "https://rockhall.com/",
+    "eventsUrl": "https://rockhall.com/events/",
     "type": "theater",
     "address": "1100 Rock and Roll Blvd, Cleveland, OH 44114",
     "area": "North Coast Harbor",
@@ -218,15 +266,19 @@
   {
     "id": "playhouse-square",
     "name": "Playhouse Square",
+    "url": "https://www.playhousesquare.org/",
+    "eventsUrl": "https://www.playhousesquare.org/events",
     "type": "theater",
     "address": "1501 Euclid Ave, Cleveland, OH 44115",
-    "area": "Playhouse Square",
+    "area": "Downtown",
     "lat": 41.501152,
     "lng": -81.681128
   },
   {
     "id": "foundry-concert-club",
     "name": "The Foundry Concert Club",
+    "url": "https://www.foundryconcertclub.com/",
+    "eventsUrl": "https://www.foundryconcertclub.com/",
     "type": "bar",
     "address": "4256 Pearl Rd, Cleveland, OH 44109",
     "area": "Old Brooklyn",
@@ -236,6 +288,8 @@
   {
     "id": "dunlaps-corner-bar",
     "name": "Dunlaps",
+    "url": "https://www.dunlapsbar.com/",
+    "eventsUrl": "https://www.dunlapsbar.com/events",
     "type": "bar",
     "address": "3258 W 32nd St, Cleveland, OH 44109",
     "area": "Clark Fulton",
@@ -245,6 +299,8 @@
   {
     "id": "welcome-to-the-farm",
     "name": "Welcome to the Farm",
+    "url": "https://welcometothefarm.com/cleveland",
+    "eventsUrl": "https://welcometothefarm.com/cleveland",
     "type": "bar",
     "address": "1054 Old River Rd, Cleveland, OH 44113",
     "area": "Flats East Bank",
@@ -254,15 +310,19 @@
   {
     "id": "hilarities",
     "name": "Hilarities",
-    "type": "theater",
+    "url": "https://hilarities.com/",
+    "eventsUrl": "https://hilarities.com/events",
+    "type": "comedy-club",
     "address": "2035 East Fourth St, Cleveland, OH 44114",
-    "area": "E 4th",
+    "area": "Downtown",
     "lat": 41.4992947,
     "lng": -81.6900662
   },
   {
     "id": "van-aken-district",
     "name": "Van Aken District",
+    "url": "https://www.thevanakendistrict.com/",
+    "eventsUrl": "https://www.thevanakendistrict.com/events-at-the-district",
     "type": "outdoor",
     "address": "3401 Tuttle Rd, Shaker Heights, OH 44122",
     "area": "Shaker Heights",
@@ -272,6 +332,8 @@
   {
     "id": "treelawn",
     "name": "The Treelawn",
+    "url": "https://thetreelawn.com/",
+    "eventsUrl": "https://thetreelawn.com/",
     "type": "music-hall",
     "address": "15335 Waterloo Rd, Cleveland, OH 44110",
     "area": "Collinwood",
@@ -281,15 +343,19 @@
   {
     "id": "hofbrauhaus-cleveland",
     "name": "Hofbrauhaus",
+    "url": "https://www.hofbrauhauscleveland.com/",
+    "eventsUrl": "https://www.hofbrauhauscleveland.com/events",
     "type": "music-hall",
     "address": "1550 Chester Ave, Cleveland, OH 44114",
-    "area": "Playhouse Square",
+    "area": "Downtown",
     "lat": 41.5028927,
     "lng": -81.68110709999999
   },
   {
     "id": "coda",
     "name": "CODA",
+    "url": "https://danteboccuzzi.com/coda/",
+    "eventsUrl": "https://danteboccuzzi.com/coda/",
     "type": "music-hall",
     "address": "2247 Professor Ave, Cleveland, OH 44113",
     "area": "Tremont",
@@ -299,6 +365,8 @@
   {
     "id": "prosperity-social-club",
     "name": "Prosperity Social Club",
+    "url": "https://www.prosperitysocialclub.com/",
+    "eventsUrl": "https://www.prosperitysocialclub.com/events",
     "type": "bar",
     "address": "1109 Starkweather Ave, Cleveland, OH 44113",
     "area": "Tremont",
@@ -308,6 +376,8 @@
   {
     "id": "the-sixty6",
     "name": "The Sixty 6",
+    "url": "https://thesixty6.com/",
+    "eventsUrl": "https://thesixty6.com/events/",
     "type": "music-hall",
     "address": "1966 E 66th St, Cleveland, OH 44103",
     "area": "MidTown",
@@ -317,6 +387,8 @@
   {
     "id": "jolly-scholar",
     "name": "The Jolly Scholar",
+    "url": "https://thejollyscholar.com/",
+    "eventsUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events",
     "type": "brewery",
     "address": "11111 Euclid Ave, Cleveland, OH 44106",
     "area": "University Circle",
@@ -326,6 +398,8 @@
   {
     "id": "the-ivy",
     "name": "The Ivy",
+    "url": "https://www.ivycle.com/",
+    "eventsUrl": "https://www.ivycle.com/the-ivy-events",
     "type": "club",
     "address": "1212 W 6th St, Cleveland, OH 44113",
     "area": "Downtown",
@@ -335,6 +409,8 @@
   {
     "id": "bent-mace",
     "name": "Bent Mace",
+    "url": "https://bentmace.org/",
+    "eventsUrl": "https://bentmace.org/events/",
     "type": "music-hall",
     "address": "1709 Alvin Ave, Cleveland, OH 44109",
     "area": "Old Brooklyn",
@@ -344,6 +420,8 @@
   {
     "id": "bside-liquor-lounge",
     "name": "B Side Liquor Lounge",
+    "url": "https://bsideliquorlounge.com/",
+    "eventsUrl": "https://bsideliquorlounge.com/",
     "type": "bar",
     "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH 44106",
     "area": "Cleveland Heights",
@@ -353,6 +431,8 @@
   {
     "id": "no-class",
     "name": "No Class",
+    "url": "https://www.noclasscle.com/",
+    "eventsUrl": "https://www.noclasscle.com/",
     "type": "bar",
     "address": "11213 Detroit Ave, Cleveland, OH, 44102",
     "area": "Edgewater",
@@ -362,6 +442,8 @@
   {
     "id": "cleveland-orchestra",
     "name": "The Cleveland Orchestra",
+    "url": "https://www.clevelandorchestra.com/",
+    "eventsUrl": "https://www.clevelandorchestra.com/tickets/calendar",
     "type": "theater",
     "address": "11001 Euclid Ave, Cleveland, OH 44106",
     "area": "University Circle",
@@ -371,6 +453,8 @@
   {
     "id": "forest-city-brewery",
     "name": "Forest City Brewery",
+    "url": "https://www.forestcitybrewery.com/",
+    "eventsUrl": "https://www.forestcitybrewery.com/events",
     "type": "brewery",
     "address": "2135 Columbus Rd, Cleveland, OH 44113",
     "area": "Ohio City",
@@ -380,6 +464,8 @@
   {
     "id": "the-grove",
     "name": "The Grove Amphitheatre",
+    "url": "https://recreation.mayfieldvillage.com/the-grove/",
+    "eventsUrl": "https://recreation.mayfieldvillage.com/the-grove/",
     "type": "outdoor",
     "address": "425 North Commons Blvd, Mayfield Village, OH 44143",
     "area": "Mayfield Village",
@@ -389,6 +475,8 @@
   {
     "id": "nelson-ledges",
     "name": "Nelson Ledges Quarry Park",
+    "url": "https://nlqp.com/",
+    "eventsUrl": "https://nlqp.com/events/",
     "type": "outdoor",
     "address": "12001 State Route 282, Garrettsville, OH, 44231",
     "area": "Garrettsville",
@@ -398,7 +486,9 @@
   {
     "id": "imposters-theater",
     "name": "Imposters Theater",
-    "type": "theater",
+    "url": "https://www.imposterstheater.com/",
+    "eventsUrl": "https://www.imposterstheater.com/schedule",
+    "type": "comedy-club",
     "address": "4828 Lorain Ave, Cleveland OH 44102",
     "area": "Ohio City",
     "lat": 41.4779872,
@@ -407,6 +497,8 @@
   {
     "id": "grindstone-tap-house",
     "name": "Grindstone Tap House",
+    "url": "https://grindstonetaphouse.com/",
+    "eventsUrl": "https://grindstonetaphouse.com/events",
     "type": "bar",
     "address": "826 Front St, Berea, OH 44017",
     "area": "Berea",
@@ -416,6 +508,8 @@
   {
     "id": "reithoffers",
     "name": "Reithoffers (Hoffs)",
+    "url": "https://www.reithoffers.com/",
+    "eventsUrl": "https://www.reithoffers.com/entertainment",
     "type": "bar",
     "address": "17711 Ravenna Rd, Chagrin Falls, OH 44023",
     "area": "Chagrin Falls",
@@ -425,6 +519,8 @@
   {
     "id": "cebars",
     "name": "Cebars",
+    "url": "https://www.facebook.com/groups/51071547181",
+    "eventsUrl": null,
     "type": "bar",
     "address": "595 E 185th St, Cleveland, OH 44119",
     "area": "Collinwood",
@@ -434,6 +530,8 @@
   {
     "id": "paninis-westlake",
     "name": "Paninis Westlake",
+    "url": "https://www.facebook.com/PaninisWestlake/",
+    "eventsUrl": null,
     "type": "bar",
     "address": "23800 Detroit Rd, Westlake, OH 44145",
     "area": "Westlake",
@@ -443,15 +541,19 @@
   {
     "id": "whiskey-island",
     "name": "Whiskey Island",
+    "url": "https://www.whiskeyislandstillandeatery.net/",
+    "eventsUrl": "https://www.whiskeyislandstillandeatery.net/bands.html",
     "type": "outdoor",
     "address": "2800 Whiskey Island Dr, Cleveland, OH 44102",
-    "area": "Wendy Park",
+    "area": "Edgewater",
     "lat": 41.4988435,
     "lng": -81.71510459999999
   },
   {
     "id": "cavottas-garden-bar",
     "name": "Cavottas Garden Bar",
+    "url": "https://cavottas.com/cavottas-garden-bar",
+    "eventsUrl": "https://cavottas.com/cavottas-garden-bar",
     "type": "outdoor",
     "address": "19603 Nottingham Rd, Cleveland, OH 44110",
     "area": "Collinwood",
@@ -461,6 +563,8 @@
   {
     "id": "sound-stage-tavern",
     "name": "Sound Stage Tavern",
+    "url": "https://www.soundstagetavern.com/",
+    "eventsUrl": "https://www.soundstagetavern.com/calendar",
     "type": "bar",
     "address": "30525 Euclid Ave, Wickliffe, OH 44092",
     "area": "Wickliffe",
@@ -470,6 +574,8 @@
   {
     "id": "smedleys",
     "name": "Smedleys",
+    "url": "https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/",
+    "eventsUrl": null,
     "type": "bar",
     "address": "17004 Lorain Ave, Cleveland, OH 44111",
     "area": "Kamms Corners",
@@ -479,6 +585,8 @@
   {
     "id": "seeing-double",
     "name": "Seeing Double Speakeasy Bar",
+    "url": "https://www.seeingdoublecle.com/",
+    "eventsUrl": "https://www.seeingdoublecle.com/music",
     "type": "bar",
     "address": "26880 Brookpark Ext, North Olmsted, OH 44070",
     "area": "North Olmsted",
@@ -488,6 +596,8 @@
   {
     "id": "huntington-bank-field",
     "name": "Huntington Bank Field",
+    "url": "https://huntingtonbankfield.com/",
+    "eventsUrl": "https://huntingtonbankfield.com/events/",
     "type": "arena",
     "address": "100 Alfred Lerner Way, Cleveland, OH 44114",
     "area": "North Coast Harbor",
@@ -497,6 +607,8 @@
   {
     "id": "chagrin-tavern",
     "name": "Chagrin Tavern on the River",
+    "url": "https://www.chagrintavernontheriver.com/",
+    "eventsUrl": "https://www.chagrintavernontheriver.com/events-1",
     "type": "bar",
     "address": "196 E Island Dr, Eastlake, OH 44095",
     "area": "Eastlake",
@@ -506,6 +618,8 @@
   {
     "id": "shooters",
     "name": "Shooters",
+    "url": "https://www.shooterscleveland.com/",
+    "eventsUrl": "https://speakeasygo.com/shooters-cleveland?vid=VN-dexa",
     "type": "bar",
     "address": "1148 Main Ave, Cleveland, OH 44113",
     "area": "Flats West Bank",
@@ -515,6 +629,8 @@
   {
     "id": "crobar",
     "name": "crobar",
+    "url": "https://www.crobar1921.com/",
+    "eventsUrl": "https://www.crobar1921.com/events",
     "type": "music-hall",
     "address": "3244 Saint Clair Ave NE, Cleveland, OH 44114",
     "area": "AsiaTown",
@@ -524,7 +640,9 @@
   {
     "id": "nightjar",
     "name": "Nightjar",
-    "type": "bar",
+    "url": "https://www.nightjarjazzbar.com/",
+    "eventsUrl": "https://www.nightjarjazzbar.com/live-music-schedule",
+    "type": "jazz-bar",
     "address": "28867 Chagrin Blvd, Woodmere, OH 44122",
     "area": "Woodmere",
     "lat": 41.4631684,
@@ -533,15 +651,19 @@
   {
     "id": "house-of-blues",
     "name": "House of Blues",
-    "type": "theater",
+    "url": "https://cleveland.houseofblues.com/",
+    "eventsUrl": "https://cleveland.houseofblues.com/shows",
+    "type": "music-hall",
     "address": "308 Euclid Ave, Cleveland, OH 44114",
-    "area": "E 4th",
+    "area": "Downtown",
     "lat": 41.4990907,
     "lng": -81.69064259999999
   },
   {
     "id": "blossom-music-center",
     "name": "Blossom Music Center",
+    "url": "https://www.blossommusic.com/",
+    "eventsUrl": "https://www.blossommusic.com/shows",
     "type": "outdoor",
     "address": "1145 W Steels Corners Rd, Cuyahoga Falls, OH 44223",
     "area": "Cuyahoga Falls",
@@ -551,6 +673,8 @@
   {
     "id": "bar-32",
     "name": "Bar 32",
+    "url": "https://www.bar32cle.com/",
+    "eventsUrl": "https://www.bar32cle.com/entertainment",
     "type": "bar",
     "address": "100 LakeSide Ave East, Floor 32, Cleveland, OH 44114",
     "area": "Downtown",
@@ -560,6 +684,8 @@
   {
     "id": "local-bar-strongsville",
     "name": "The Local Bar Strongsville",
+    "url": "https://localbarstrongsville.com/",
+    "eventsUrl": "https://localbarstrongsville.com/events",
     "type": "bar",
     "address": "14751 Pearl Rd, Strongsville, OH 44136",
     "area": "Strongsville",
@@ -569,6 +695,8 @@
   {
     "id": "quintanas-speakeasy",
     "name": "Quintanas Speakeasy",
+    "url": "https://qbds.net/speakeasy/",
+    "eventsUrl": "https://qbds.net/speakeasy-events/",
     "type": "bar",
     "address": "2200 S Taylor Rd, Cleveland Heights, OH 44118",
     "area": "Cleveland Heights",
@@ -578,6 +706,8 @@
   {
     "id": "spirits-willoughby",
     "name": "Spirits in Willoughby",
+    "url": "https://spiritsinwilloughby.com/",
+    "eventsUrl": "https://spiritsinwilloughby.com/events",
     "type": "bar",
     "address": "3872 Erie St, Willoughby, OH 44094",
     "area": "Willoughby",
@@ -587,6 +717,8 @@
   {
     "id": "treehouse",
     "name": "The Treehouse",
+    "url": "https://www.treehousecleveland.com/",
+    "eventsUrl": "https://www.treehousecleveland.com/live-music",
     "type": "bar",
     "address": "820 College Ave, Cleveland, OH 44113",
     "area": "Tremont",
@@ -596,6 +728,8 @@
   {
     "id": "time-warp",
     "name": "Time Warp Bar",
+    "url": "https://timewarpbar.com/wp/",
+    "eventsUrl": "https://timewarpbar.com/wp/live-entertainment/",
     "type": "bar",
     "address": "26261 Center Ridge Rd, Westlake, OH 44145",
     "area": "Westlake",
@@ -605,6 +739,8 @@
   {
     "id": "no-surf-fest",
     "name": "No Surf Fest",
+    "url": "https://nosurffest.org/",
+    "eventsUrl": "https://nosurffest.org/lineup",
     "type": "outdoor",
     "address": "3550 W 117th St, Cleveland, OH 44111",
     "area": "West Park",
@@ -614,6 +750,8 @@
   {
     "id": "public-square",
     "name": "Public Square",
+    "url": "https://www.clevelandpublicsquare.com/",
+    "eventsUrl": "https://www.clevelandpublicsquare.com/events",
     "type": "outdoor",
     "address": "50 Public Square, Cleveland, OH 44113",
     "area": "Downtown",
@@ -623,6 +761,8 @@
   {
     "id": "1928-public-house",
     "name": "1928 Public House",
+    "url": "https://1928publichouse.com/",
+    "eventsUrl": "https://1928publichouse.com/live-music/",
     "type": "bar",
     "address": "18590 Bagley Rd, Middleburg Heights, OH 44130",
     "area": "Middleburg Heights",
@@ -630,8 +770,21 @@
     "lng": -81.8311822
   },
   {
+    "id": "little-rose",
+    "name": "Little Rose Tavern",
+    "url": "https://littlerosetavern.com/",
+    "eventsUrl": "https://littlerosetavern.com/event/",
+    "type": "bar",
+    "address": "14206 Lorain Ave. Cleveland, Ohio 44111",
+    "area": "West Park",
+    "lat": 41.3725768,
+    "lng": -81.8311822
+  },
+  {
     "id": "spotlight-cle",
     "name": "Spotlight Cleveland",
+    "url": "https://spotlightcle.com/",
+    "eventsUrl": "https://spotlightcle.com/events",
     "type": "bar",
     "address": "8701 Madison Ave, Cleveland, OH 44102",
     "area": "Detroit Shoreway",

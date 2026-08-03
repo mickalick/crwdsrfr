@@ -377,10 +377,10 @@
       <div class="field">
         <label>Venue <span id="venueLoadStatus" style="font-weight:400;color:var(--muted);font-size:11px;margin-left:6px;"></span></label>
         <select id="venueSelect">
-          <option value="" disabled selected>Load events.json to populate…</option>
+          <option value="" disabled selected>Load venues.json to populate…</option>
         </select>
-        <button id="loadVenuesBtn" type="button">Load venues from events.json</button>
-        <input type="file" id="eventsJsonInput" accept=".json" style="display:none;" />
+        <button id="loadVenuesBtn" type="button">Load venues from venues.json</button>
+        <input type="file" id="venuesJsonInput" accept=".json" style="display:none;" />
       </div>
 
       <div class="panel-label" style="margin-top: 20px;">Calendar Image</div>
@@ -427,29 +427,30 @@
     const countBadge = document.getElementById('countBadge');
     const venueSelect = document.getElementById('venueSelect');
     const loadVenuesBtn = document.getElementById('loadVenuesBtn');
-    const eventsJsonInput = document.getElementById('eventsJsonInput');
+    const venuesJsonInput = document.getElementById('venuesJsonInput');
     const venueLoadStatus = document.getElementById('venueLoadStatus');
 
-    loadVenuesBtn.addEventListener('click', () => eventsJsonInput.click());
+    loadVenuesBtn.addEventListener('click', () => venuesJsonInput.click());
 
-    eventsJsonInput.addEventListener('change', (e) => {
+    venuesJsonInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
       if (!file) return;
       const reader = new FileReader();
       reader.onload = (ev) => {
         try {
-          const data = JSON.parse(ev.target.result);
-          const venues = data.venues;
-          if (!venues || typeof venues !== 'object') throw new Error('No venues found');
+          const venues = JSON.parse(ev.target.result);
+          if (!Array.isArray(venues)) throw new Error('Expected an array of venues');
           venueSelect.innerHTML = '';
-          Object.entries(venues).forEach(([id, venue]) => {
-            const opt = document.createElement('option');
-            opt.value = id;
-            opt.textContent = venue.name;
-            venueSelect.appendChild(opt);
-          });
-          const count = Object.keys(venues).length;
-          venueLoadStatus.textContent = `${count} venue${count !== 1 ? 's' : ''} loaded`;
+          venues
+            .slice()
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .forEach((venue) => {
+              const opt = document.createElement('option');
+              opt.value = venue.id;
+              opt.textContent = venue.name;
+              venueSelect.appendChild(opt);
+            });
+          venueLoadStatus.textContent = `${venues.length} venue${venues.length !== 1 ? 's' : ''} loaded`;
           venueLoadStatus.style.color = 'var(--success)';
         } catch (err) {
           venueLoadStatus.textContent = 'Failed to load venues';

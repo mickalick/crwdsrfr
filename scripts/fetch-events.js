@@ -9,7 +9,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Path to events.json, one level up from /scripts
-const OUTPUT_PATH = join(__dirname, '..', 'events.json');
+const OUTPUT_PATH = join(__dirname, '..', 'data', 'events.json');
+
+// Venue registry — single source of truth for venue metadata (name, url, address,
+// map coords, etc). Both this script and venue-map.js read from venues.json directly.
+const VENUES_PATH = join(__dirname, '..', 'data', 'venues.json');
+const venues = JSON.parse(readFileSync(VENUES_PATH, 'utf-8'));
 
 // Your SeatGeek API key
 const SEATGEEK_CLIENT_ID = 'OTM4MDQ4OHwxNzgxMDUwNjkxLjk4OTY5NA';
@@ -3809,6 +3814,56 @@ async function fetchReithoffers() {
 }
 
 
+// ─── Scraper manifest ──────────────────────────────────────────────────────
+// One entry per scraper. Some fetchers (Metroparks, Collision Bend) cover
+// multiple venues internally and tag each event with its own venueId — the
+// label here is just for the console summary below.
+// Venues with NO entry here are manual-only: their events come from
+// manual-events.json and they never need to be touched in this file.
+const FETCHERS = [
+  { label: 'Rocket Arena', fn: fetchRocketArena },
+  { label: 'Grog Shop', fn: fetchGrogShop },
+  { label: 'The Agora', fn: fetchAgora },
+  { label: 'Beachland Ballroom', fn: fetchBeachland },
+  { label: 'Metroparks', fn: fetchMetroparks },
+  { label: 'Rockin on the River', fn: fetchRockinOnTheRiver },
+  { label: 'Cain Park', fn: fetchCainPark },
+  { label: 'Happy Dog', fn: fetchHappyDog },
+  { label: 'Mahalls', fn: fetchMahalls },
+  { label: 'Bop Stop', fn: fetchBopStop },
+  { label: 'Globe Iron', fn: fetchGlobeIron },
+  { label: 'Jacobs Pavilion', fn: fetchJacobsPavilion },
+  { label: 'Music Box', fn: fetchMusicBox },
+  { label: 'Winchester', fn: fetchWinchester },
+  { label: 'FWD Nightclub', fn: fetchFwdNightclub },
+  { label: 'Collision Bend', fn: fetchCollisionBend },
+  { label: 'Mercury Music Lounge', fn: fetchMercuryMusicLounge },
+  { label: 'Rock Hall', fn: fetchRockHall },
+  { label: 'Playhouse', fn: fetchPlayhouseSquare },
+  { label: 'Foundry', fn: fetchFoundry },
+  { label: 'Dunlaps', fn: fetchDunlaps },
+  { label: 'Welcome To the Farm', fn: fetchWelcomeToTheFarm },
+  { label: 'Hilarities', fn: fetchHilarities },
+  { label: 'Van Aken', fn: fetchVanAken },
+  { label: 'Treelawn', fn: fetchTreelawn },
+  { label: 'Hofbrauhaus', fn: fetchHofbrauhaus },
+  { label: 'CODA', fn: fetchCoda },
+  { label: 'Prosperity', fn: fetchProsperitySocialClub },
+  { label: 'Sixty 6', fn: fetchSixty6 },
+  { label: 'Jolly Scholar', fn: fetchJollyScholar },
+  { label: 'The Ivy', fn: fetchTheIvy },
+  { label: 'Bent Mace', fn: fetchBentMace },
+  { label: 'B Side', fn: fetchBside },
+  { label: 'No Class', fn: fetchNoClass },
+  { label: 'Cleveland Orchestra', fn: fetchClevelandOrchestra },
+  { label: 'Forest City', fn: fetchForestCityBrewery },
+  { label: 'The Grove', fn: fetchTheGrove },
+  { label: 'Nelson Ledges', fn: fetchNelsonLedges },
+  { label: 'Imposters Theater', fn: fetchImpostersTheater },
+  { label: 'Grindstone', fn: fetchGrindstoneTapHouse },
+  { label: 'Reithoffers', fn: fetchReithoffers },
+];
+
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
 function loadManualEntries() {
@@ -3829,225 +3884,37 @@ function loadManualEntries() {
 async function main() {
   console.log('Fetching events...');
 
-  const [rocketArena, grogShop, agora, beachland, metroparks, rockinOnTheRiver, cainPark, happyDog, mahalls, bopStop, globeIron, jacobsPavilion, musicBox, winchester, fwdNightclub, collisionBend, mercuryMusicLounge, rockHall, playhouseSquare, foundry, dunlaps, welcomeToTheFarm, hilarities, vanAken, treelawn, hofbrauhaus, coda, prosperitySocialClub, sixty6, jollyScholar, theIvy, bentMace, bside, noClass, clevelandOrchestra, forestCityBrewery, theGrove, nelsonLedges, impostersTheater, grindstoneTapHouse, reithoffers] = await Promise.all([
-    fetchRocketArena(),
-    fetchGrogShop(),
-    fetchAgora(),
-    fetchBeachland(),
-    fetchMetroparks(),
-    fetchRockinOnTheRiver(),
-    fetchCainPark(),
-    fetchHappyDog(),
-    fetchMahalls(),
-    fetchBopStop(),
-    fetchGlobeIron(),
-    fetchJacobsPavilion(),
-    fetchMusicBox(),
-    fetchWinchester(),
-    fetchFwdNightclub(),
-    fetchCollisionBend(),
-    fetchMercuryMusicLounge(),
-    fetchRockHall(),
-    fetchPlayhouseSquare(),
-    fetchFoundry(),
-    fetchDunlaps(),
-    fetchWelcomeToTheFarm(),
-    fetchHilarities(),
-    fetchVanAken(),
-    fetchTreelawn(),
-    fetchHofbrauhaus(),
-    fetchCoda(),
-    fetchProsperitySocialClub(),
-    fetchSixty6(),
-    fetchJollyScholar(),
-    fetchTheIvy(),
-    fetchBentMace(),
-    fetchBside(),
-    fetchNoClass(),
-    fetchClevelandOrchestra(),
-    fetchForestCityBrewery(),
-    fetchTheGrove(),
-    fetchNelsonLedges(),
-    fetchImpostersTheater(),
-    fetchGrindstoneTapHouse(),
-    fetchReithoffers(),
-  ]);
+  const results = await Promise.all(FETCHERS.map(f => f.fn()));
 
-
-  // ─── Per-venue event counts ──────────────────────────────────────────────
-  console.log('Rocket Arena:', rocketArena.length);
-  console.log('Grog Shop:', grogShop.length);
-  console.log('The Agora:', agora.length);
-  console.log('Beachland Ballroom:', beachland.length);
-  console.log('Metroparks:', metroparks.length);
-  console.log('Rockin on the River:', rockinOnTheRiver.length);
-  console.log('Cain Park:', cainPark.length);
-  console.log('Happy Dog:', happyDog.length);
-  console.log('Mahalls:', mahalls.length);
-  console.log('Bop Stop:', bopStop.length);
-  console.log('Globe Iron:', globeIron.length);
-  console.log('Jacobs Pavilion:', jacobsPavilion.length);
-  console.log('Music Box:', musicBox.length);
-  console.log('Winchester:', winchester.length);
-  console.log('FWD Nightclub:', fwdNightclub.length);
-  console.log('Collision Bend:', collisionBend.length);
-  console.log('Mercury Music Lounge:', mercuryMusicLounge.length);
-  console.log('Rock Hall:', rockHall.length);
-  console.log('Playhouse:', playhouseSquare.length);
-  console.log('Foundry:', foundry.length);
-  console.log('Dunlaps:', dunlaps.length);
-  console.log('Welcome To the Farm:', welcomeToTheFarm.length);
-  console.log('Hilarities:', hilarities.length);
-  console.log('Van Aken:', vanAken.length);
-  console.log('Treelawn:', treelawn.length);
-  console.log('Hofbrauhaus:', hofbrauhaus.length);
-  console.log('CODA:', coda.length);
-  console.log('Prosperity:', prosperitySocialClub.length);
-  console.log('Sixty 6:', sixty6.length);
-  console.log('Jolly Scholar:', jollyScholar.length);
-  console.log('The Ivy:', theIvy.length);
-  console.log('Bent Mace:', bentMace.length);
-  console.log('B Side:', bside.length);
-  console.log('No Class:', noClass.length);
-  console.log('Cleveland Orchestra:', clevelandOrchestra.length);
-  console.log('Forest City:', forestCityBrewery.length);
-  console.log('The Grove:', theGrove.length);
-  console.log('Nelson Ledges:', nelsonLedges.length);
-  console.log('Imposters Theater:', impostersTheater.length);
-  console.log('Grindstone:', grindstoneTapHouse.length);
-  console.log('Reithoffers:', reithoffers.length);
-
+  const scrapedEvents = [];
+  FETCHERS.forEach((f, i) => {
+    const events = results[i];
+    console.log(`${f.label}:`, events.length);
+    scrapedEvents.push(...events);
+  });
 
   const manualEntries = loadManualEntries();
 
   const recurringRules = JSON.parse(readFileSync(join(__dirname, '..', 'recurring-rules.json'), 'utf-8'));
   const recurringEvents = materializeRecurringEvents(recurringRules);
-  console.log('Spotlight Cleveland (recurring):', recurringEvents.length);
+  console.log('Recurring Events:', recurringEvents.length);
 
   const todayStr = toLocalDateStr(new Date());
 
   const allEvents = [
-    ...rocketArena,
-    ...grogShop,
-    ...agora,
-    ...beachland,
-    ...metroparks,
-    ...rockinOnTheRiver,
-    ...cainPark,
-    ...happyDog,
-    ...mahalls,
-    ...bopStop,
-    ...globeIron,
-    ...jacobsPavilion,
-    ...musicBox,
-    ...winchester,
-    ...fwdNightclub,
-    ...collisionBend,
-    ...mercuryMusicLounge,
-    ...rockHall,
-    ...playhouseSquare,
-    ...foundry,
-    ...dunlaps,
-    ...welcomeToTheFarm,
-    ...hilarities,
-    ...vanAken,
-    ...treelawn,
-    ...hofbrauhaus,
-    ...coda,
-    ...prosperitySocialClub,
-    ...sixty6,
-    ...jollyScholar,
-    ...theIvy,
-    ...bentMace,
-    ...bside,
-    ...noClass,
-    ...clevelandOrchestra,
-    ...forestCityBrewery,
-    ...theGrove,
-    ...nelsonLedges,
-    ...impostersTheater,
-    ...grindstoneTapHouse,
-    ...reithoffers,
+    ...scrapedEvents,
     ...manualEntries,
     ...recurringEvents,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
+  // Built straight from venues.json — add/edit a venue there and it flows
+  // through to events.json automatically, no edits needed here.
   const output = {
-    venues: {
-      'grog-shop': { name: 'Grog Shop', url: 'https://grogshop.gs', eventsUrl: 'https://grogshop.gs/event-details/', city: 'Cleveland Heights' },
-      'the-agora': { name: 'The Agora', url: 'https://agoracleveland.com', eventsUrl: 'https://www.agoracleveland.com/events/all', city: 'Cleveland' },
-      'rocket-arena': { name: 'Rocket Arena', url: 'https://rocketarena.com', eventsUrl: 'https://seatgeek.com/venues/rocket-arena/tickets', city: 'Cleveland' },
-      'beachland-ballroom': { name: 'Beachland Ballroom', url: 'https://beachlandballroom.com', eventsUrl: 'https://www.beachlandballroom.com/shows', city: 'Cleveland' },
-      'metroparks-huntington': { name: 'The Noshery at Huntington Beach', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/huntington-reservation/the-noshery', eventsUrl: null, city: 'Bay Village' },
-      'metroparks-euclid-beach': { name: 'Euclid Beach', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/euclid-creek-reservation/euclid-beach-park', eventsUrl: null, city: 'Cleveland' },
-      'metroparks-edgewater': { name: 'Edgewater Beach', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/edgewater-beach', eventsUrl: null, city: 'Cleveland' },
-      'metroparks-emerald-necklace': { name: 'Emerald Necklace Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/rocky-river-reservation/emerald-necklace-marina', eventsUrl: null, city: 'Rocky River' },
-      'metroparks-galley': { name: 'The Galley at East 55th Marina', url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley', eventsUrl: null, city: 'Cleveland' },
-      'metroparks-merwins-wharf': { name: "Merwin's Wharf", url: 'https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/merwin-s-wharf', eventsUrl: null, city: 'Cleveland' },
-      'rockin-on-the-river': { name: 'Rockin on the River', url: 'https://www.rockinontheriver.com', eventsUrl: 'https://www.rockinontheriver.com/2026', city: 'Lorain' },
-      'cain-park': { name: 'Cain Park', url: 'https://cainpark.com/', eventsUrl: 'https://cainpark.com/events/?view=list', city: 'Cleveland Heights' },
-      'happy-dog': { name: 'Happy Dog', url: 'https://happydogcleveland.com/', eventsUrl: 'https://app.opendate.io/v/happy-dog-1767', city: 'Cleveland' },
-      'mahalls': { name: 'Mahalls', url: 'https://mahalls20lanes.com/', eventsUrl: 'https://mahalls20lanes.com/events/', city: 'Lakewood' },
-      'bop-stop': { name: 'Bop Stop', url: 'https://www.themusicsettlement.org/bop-stop/overview', eventsUrl: 'https://www.themusicsettlement.org/events/center/bop-stop', city: 'Cleveland' },
-      'globe-iron': { name: 'Globe Iron', url: 'https://globeironcle.com/', eventsUrl: 'https://globeironcle.com/calendar/', city: 'Cleveland' },
-      'jacobs-pavilion': { name: 'Jacobs Pavilion', url: 'https://jacobspavilion.com/', eventsUrl: 'https://jacobspavilion.com/calendar/', city: 'Cleveland' },
-      'music-box': { name: 'Music Box Supper Club', url: 'https://musicboxcle.com/', eventsUrl: 'https://musicboxcle.com/schedule/', city: 'Cleveland' },
-      'winchester-music-tavern': { name: 'The Winchester Music Tavern', url: 'https://thewinchestermusictavern.com/', eventsUrl: 'https://thewinchestermusictavern.com/event-details/', city: 'Lakewood' },
-      'fwd-nightclub': { name: 'FWD Day + Nightclub', url: 'https://www.fwdnightclub.com/', eventsUrl: 'https://www.fwdnightclub.com/events', city: 'Cleveland' },
-      'collision-bend-cleveland': { name: 'Collision Bend Cleveland', url: 'https://collisionbendbrewery.com/location/cleveland-ohio-11716', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Cleveland' },
-      'collision-bend-euclid': { name: 'Collision Bend Euclid', url: 'https://collisionbendbrewery.com/location/euclid-ohio-43117', eventsUrl: 'https://collisionbendbrewery.com/events/', city: 'Euclid' },
-      'mercury-music-lounge': { name: 'Mercury Music Lounge', url: 'https://www.mercurymusiclakewood.com/', eventsUrl: 'https://www.mercurymusiclakewood.com/', city: 'Lakewood' },
-      'rock-hall': { name: 'Rock & Roll Hall of Fame', url: 'https://rockhall.com/', eventsUrl: 'https://rockhall.com/events/', city: 'Cleveland' },
-      'playhouse-square': { name: 'Playhouse Square', url: 'https://www.playhousesquare.org/', eventsUrl: 'https://www.playhousesquare.org/events', city: 'Cleveland' },
-      'foundry-concert-club': { name: 'The Foundry Concert Club', url: 'https://www.foundryconcertclub.com/', eventsUrl: 'https://www.foundryconcertclub.com/', city: 'Cleveland' },
-      'dunlaps-corner-bar': { name: 'Dunlaps', url: 'https://www.dunlapsbar.com/', eventsUrl: 'https://www.dunlapsbar.com/events', city: 'Cleveland' },
-      'welcome-to-the-farm': { name: 'Welcome to the Farm', url: 'https://welcometothefarm.com/cleveland', eventsUrl: 'https://welcometothefarm.com/cleveland', city: 'Cleveland' },
-      'hilarities': { name: 'Hilarities', url: 'https://hilarities.com/', eventsUrl: 'https://hilarities.com/events', city: 'Cleveland' },
-      'van-aken-district': { name: 'Van Aken District', url: 'https://www.thevanakendistrict.com/', eventsUrl: 'https://www.thevanakendistrict.com/events-at-the-district', city: 'Shaker Heights' },
-      'treelawn': { name: 'The Treelawn', url: 'https://thetreelawn.com/', eventsUrl: 'https://thetreelawn.com/', city: 'Cleveland' },
-      'hofbrauhaus-cleveland': { name: 'Hofbrauhaus', url: 'https://www.hofbrauhauscleveland.com/', eventsUrl: 'https://www.hofbrauhauscleveland.com/events', city: 'Cleveland' },
-      'coda': { name: 'CODA', url: 'https://danteboccuzzi.com/coda/', eventsUrl: 'https://danteboccuzzi.com/coda/', city: 'Cleveland' },
-      'prosperity-social-club': { name: 'Prosperity Social Club', url: 'https://www.prosperitysocialclub.com/', eventsUrl: 'https://www.prosperitysocialclub.com/events', city: 'Cleveland' },
-      'the-sixty6': { name: 'The Sixty 6', url: 'https://thesixty6.com/', eventsUrl: 'https://thesixty6.com/events/', city: 'Cleveland' },
-      'jolly-scholar': { name: 'The Jolly Scholar', url: 'https://thejollyscholar.com/', eventsUrl: 'https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events', city: 'Cleveland' },
-      'the-ivy': { name: 'The Ivy', url: 'https://www.ivycle.com/', eventsUrl: 'https://www.ivycle.com/the-ivy-events', city: 'Cleveland' },
-      'bent-mace': { name: 'Bent Mace', url: 'https://bentmace.org/', eventsUrl: 'https://bentmace.org/events/', city: 'Cleveland' },
-      'bside-liquor-lounge': { name: 'B Side Liquor Lounge', url: 'https://bsideliquorlounge.com/', eventsUrl: 'https://bsideliquorlounge.com/', city: 'Cleveland Heights' },
-      'no-class': { name: 'No Class', url: 'https://www.noclasscle.com/', eventsUrl: 'https://www.noclasscle.com/', city: 'Cleveland' },
-      'cleveland-orchestra': { name: 'The Cleveland Orchestra', url: 'https://www.clevelandorchestra.com/', eventsUrl: 'https://www.clevelandorchestra.com/tickets/calendar', city: 'Cleveland' },
-      'forest-city-brewery': { name: 'Forest City Brewery', url: 'https://www.forestcitybrewery.com/', eventsUrl: 'https://www.forestcitybrewery.com/events', city: 'Cleveland' },
-      'the-grove': { name: 'The Grove Amphitheatre', url: 'https://recreation.mayfieldvillage.com/the-grove/', eventsUrl: 'https://recreation.mayfieldvillage.com/the-grove/', city: 'Mayfield Village' },
-      'nelson-ledges': { name: 'Nelson Ledges Quarry Park', url: 'https://nlqp.com/', eventsUrl: 'https://nlqp.com/events/', city: 'Garrettsville' },
-      'imposters-theater': { name: 'Imposters Theater', url: 'https://www.imposterstheater.com/', eventsUrl: 'https://www.imposterstheater.com/schedule', city: 'Cleveland' },
-      'grindstone-tap-house': { name: 'Grindstone Tap House', url: 'https://grindstonetaphouse.com/', eventsUrl: 'https://grindstonetaphouse.com/events', city: 'Berea' },
-      'reithoffers': { name: 'Reithoffers (Hoffs)', url: 'https://www.reithoffers.com/', eventsUrl: 'https://www.reithoffers.com/entertainment', city: 'Chagrin Falls' },
-      'cebars': { name: 'Cebars', url: 'https://www.facebook.com/groups/51071547181', eventsUrl: null, city: 'Cleveland' },
-      'paninis-westlake': { name: 'Paninis Westlake', url: 'https://www.facebook.com/PaninisWestlake/', eventsUrl: null, city: 'Cleveland' },
-      'whiskey-island': { name: 'Whiskey Island', url: 'https://www.whiskeyislandstillandeatery.net/', eventsUrl: 'https://www.whiskeyislandstillandeatery.net/bands.html', city: 'Cleveland' },
-      'cavottas-garden-bar': { name: 'Cavottas Garden Bar', url: 'https://cavottas.com/cavottas-garden-bar', eventsUrl: 'https://cavottas.com/cavottas-garden-bar', city: 'Cleveland' },
-      'sound-stage-tavern': { name: 'Sound Stage Tavern', url: 'https://www.soundstagetavern.com/', eventsUrl: 'https://www.soundstagetavern.com/calendar', city: 'Wickliffe' },
-      'smedleys': { name: 'Smedleys', url: 'https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/', eventsUrl: null, city: 'Cleveland' },
-      'seeing-double': { name: 'Seeing Double Speakeasy Bar', url: 'https://www.seeingdoublecle.com/', eventsUrl: 'https://www.seeingdoublecle.com/music', city: 'North Olmsted' },
-      'huntington-bank-field': { name: 'Huntington Bank Field', url: 'https://huntingtonbankfield.com/', eventsUrl: 'https://huntingtonbankfield.com/events/', city: 'Cleveland' },
-      'chagrin-tavern': { name: 'Chagrin Tavern on the River', url: 'https://www.chagrintavernontheriver.com/', eventsUrl: 'https://www.chagrintavernontheriver.com/events-1', city: 'Eastlake' },
-      'shooters': { name: 'Shooters', url: 'https://www.shooterscleveland.com/', eventsUrl: 'https://speakeasygo.com/shooters-cleveland?vid=VN-dexa', city: 'Cleveland' },
-      'crobar': { name: 'crobar', url: 'https://www.crobar1921.com/', eventsUrl: 'https://www.crobar1921.com/events', city: 'Cleveland' },
-      'nightjar': { name: 'Nightjar', url: 'https://www.nightjarjazzbar.com/', eventsUrl: 'https://www.nightjarjazzbar.com/live-music-schedule', city: 'Woodmere' },
-      'house-of-blues': { name: 'House of Blues', url: 'https://cleveland.houseofblues.com/', eventsUrl: 'https://cleveland.houseofblues.com/shows', city: 'Cleveland' },
-      'blossom-music-center': { name: 'Blossom Music Center', url: 'https://www.blossommusic.com/', eventsUrl: 'https://www.blossommusic.com/shows', city: 'Cuyahoga Falls' },
-      'bar-32': { name: 'Bar 32', url: 'https://www.bar32cle.com/', eventsUrl: 'https://www.bar32cle.com/entertainment', city: 'Cleveland' },
-      'local-bar-strongsville': { name: 'The Local Bar Strongsville', url: 'https://localbarstrongsville.com/', eventsUrl: 'https://localbarstrongsville.com/events', city: 'Strongsville' },
-      'quintanas-speakeasy': { name: 'Quintanas Speakeasy', url: 'https://qbds.net/speakeasy/', eventsUrl: 'https://qbds.net/speakeasy-events/', city: 'Cleveland Heights' },
-      'spirits-willoughby': { name: 'Spirits in Willoughby', url: 'https://spiritsinwilloughby.com/', eventsUrl: 'https://spiritsinwilloughby.com/events', city: 'Willoughby' },
-      'treehouse': { name: 'The Treehouse', url: 'https://www.treehousecleveland.com/', eventsUrl: 'https://www.treehousecleveland.com/live-music', city: 'Cleveland' },
-      'time-warp': { name: 'Time Warp Bar', url: 'https://timewarpbar.com/wp/', eventsUrl: 'https://timewarpbar.com/wp/live-entertainment/', city: 'Westlake' },
-      'no-surf-fest': { name: 'No Surf Fest', url: 'https://nosurffest.org/', eventsUrl: 'https://nosurffest.org/lineup', city: 'Cleveland' },
-      'public-square': { name: 'Public Square', url: 'https://www.clevelandpublicsquare.com/', eventsUrl: 'https://www.clevelandpublicsquare.com/events', city: 'Cleveland' },
-      '1928-public-house': { name: '1928 Public House', url: 'https://1928publichouse.com/', eventsUrl: 'https://1928publichouse.com/live-music/', city: 'Middleburg Heights' },
-      'little-rose': { name: 'Little Rose Tavern', url: 'https://littlerosetavern.com/', eventsUrl: 'https://littlerosetavern.com/event/', city: 'Cleveland' },
-      'spotlight-cle': { name: 'Spotlight Cleveland', url: 'https://spotlightcle.com/', eventsUrl: 'https://spotlightcle.com/events', city: 'Cleveland' },
-    },
+    venues: Object.fromEntries(venues.map(v => [
+      v.id,
+      { name: v.name, url: v.url, eventsUrl: v.eventsUrl, type: v.type, area: v.area },
+    ])),
     events: allEvents,
   };
 
