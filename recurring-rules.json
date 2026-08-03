@@ -88,5 +88,38 @@
     "time": null,
     "startDate": "2026-01-01",
     "endDate": null
+  },
+
+  {
+    "id": "treehouse-karaoke-night",
+    "venueId": "treehouse",
+    "title": "Karaoke Night",
+    "weekday": 0,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-02",
+    "endDate": null
+  },
+
+
+  {
+    "id": "smedleys-wednesdays",
+    "venueId": "smedleys",
+    "title": "JP & Friends",
+    "weekday": 3,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-05",
+    "endDate": null
+  },
+  {
+    "id": "smedleys-thursdays",
+    "venueId": "smedleys",
+    "title": "Freebyrds Jam Night",
+    "weekday": 4,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-06",
+    "endDate": null
   }
 ]

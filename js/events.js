@@ -183,7 +183,7 @@ function renderEvents(events) {
 }
 
 async function loadEvents() {
-  const res = await fetch('events.json');
+  const res = await fetch('/data/events.json');
   allData = await res.json();
   updateMatchingDates();
   datePickerFp.redraw();

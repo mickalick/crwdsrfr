@@ -4,8 +4,16 @@ const TYPE_LABELS = {
   "theater": "Theater",
   "arena": "Arena",
   "bar": "Bar",
-  "outdoor": "Outdoor"
+  "outdoor": "Outdoor",
+  "jazz-bar": "Jazz Bar",
+  "comedy-club": "Comedy Club"
 };
+
+// Matches the same convention as events.js — ignore a leading "The " when
+// alphabetizing, so "The Agora" sorts under A, not T.
+function sortableName(name) {
+  return name.replace(/^the\s+/i, '');
+}
 
 let map, markers = {}, infoWindow, activeFilter = null, activeVenueId = null;
 let showFilters = false;
@@ -48,7 +56,7 @@ function visibleVenues() {
 
 function renderList() {
   const list = document.getElementById('venueList');
-  const vs = visibleVenues().sort((a, b) => a.name.localeCompare(b.name));
+  const vs = visibleVenues().sort((a, b) => sortableName(a.name).localeCompare(sortableName(b.name)));
   document.getElementById('count').textContent = `${vs.length} venue${vs.length === 1 ? '' : 's'}`;
 
   list.innerHTML = vs.map(v => `
@@ -168,8 +176,14 @@ function selectVenue(id, fromList) {
 }
 
 async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  // venues.json is the single source of truth for venue data — the same file
+  // fetch-events.js reads from. No separate venues-data.js to keep in sync.
+  const [{ Map }, { AdvancedMarkerElement }, venues] = await Promise.all([
+    google.maps.importLibrary("maps"),
+    google.maps.importLibrary("marker"),
+    fetch('/data/venues.json').then(res => res.json()),
+  ]);
+  window.VENUES = venues;
 
   map = new Map(document.getElementById("map"), {
     center: { lat: 41.4993, lng: -81.6944 },

@@ -1,15 +1,14 @@
-/* geocode-venues.js
-   Run manually when adding new venues to venues-registry.json:
-     node geocode-venues.js
-   Reads venues-registry.json, geocodes any missing lat/lng,
-   writes coords back into venues-registry.json directly, and
-   rebuilds venues-data.js. Never needs to run on a schedule.
+/* geocode-venues.cjs
+   Run manually when adding new venues to venues.json:
+     node geocode-venues.cjs
+   Reads venues.json, geocodes any venue missing lat/lng, and writes
+   the coordinates back into venues.json directly. Never needs to run
+   on a schedule — only when a venue with no coordinates is added.
 */
 const fs = require('fs');
 const path = require('path');
 
-const REGISTRY_PATH = path.join(__dirname, '..', 'venues-registry.json');
-const OUTPUT_PATH = path.join(__dirname, '..', 'js', 'venues-data.js');
+const VENUES_PATH = path.join(__dirname, '..', 'data', 'venues.json');
 const API_KEY = process.env.GOOGLE_GEOCODE_API_KEY;
 
 async function geocodeAddress(address) {
@@ -21,11 +20,11 @@ async function geocodeAddress(address) {
 }
 
 (async function main() {
-  const venues = JSON.parse(fs.readFileSync(REGISTRY_PATH, 'utf8'));
+  const venues = JSON.parse(fs.readFileSync(VENUES_PATH, 'utf8'));
   let updated = false;
 
   for (const venue of venues) {
-    if (typeof venue.lat === 'number') continue; // already geocoded
+    if (typeof venue.lat === 'number' && typeof venue.lng === 'number') continue; // already geocoded
     console.log(`Geocoding ${venue.name}...`);
     try {
       const { lat, lng } = await geocodeAddress(venue.address);
@@ -39,14 +38,9 @@ async function geocodeAddress(address) {
   }
 
   if (updated) {
-    // write coords back into the registry so you don't re-geocode next time
-    fs.writeFileSync(REGISTRY_PATH, JSON.stringify(venues, null, 2));
-    console.log('Updated venues-registry.json with new coordinates.');
+    fs.writeFileSync(VENUES_PATH, JSON.stringify(venues, null, 2));
+    console.log('Updated venues.json with new coordinates.');
+  } else {
+    console.log('Nothing to geocode — every venue already has coordinates.');
   }
-
-  // always re-write venues-data.js from whatever's in the registry
-  const output = `/* venues-data.js — auto generated, do not edit by hand */\nwindow.VENUES = ${JSON.stringify(venues, null, 2)};\n`;
-  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, output);
-  console.log(`Wrote ${venues.length} venues to ${OUTPUT_PATH}`);
 })();
