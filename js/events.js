@@ -2,6 +2,7 @@ let allData = null;
 let allVenues = null; // keyed by venue id — loaded from venues.json for type/area filtering
 let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
+let calendarViewMode = 'day'; // 'day' | 'week'
 
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
@@ -29,6 +30,18 @@ function toLocalDateStr(date) {
   return `${y}-${m}-${d}`;
 }
 
+function getWeekDates(startDateStr) {
+  const [y, m, d] = startDateStr.split('-').map(Number);
+  const start = new Date(y, m - 1, d); // local date, not UTC — avoids the off-by-one issues toLocalDateStr already guards against
+  const dates = [];
+  for (let i = 0; i < 7; i++) {
+    const dt = new Date(start);
+    dt.setDate(start.getDate() + i);
+    dates.push(toLocalDateStr(dt));
+  }
+  return dates;
+}
+
 function formatTime(t) {
   if (!t) return null;
   const [h, m] = t.split(':').map(Number);
@@ -44,9 +57,16 @@ function sortableName(name) {
 function updateSubHead() {
   const subHeadSpan = document.querySelector('.subHead span');
   const term = currentSearch.trim();
-  subHeadSpan.textContent = term === ''
-    ? 'All shows for:'
-    : `All shows that include "${term}" for:`;
+
+  if (calendarViewMode === 'week') {
+    subHeadSpan.textContent = term === ''
+      ? 'All shows for week of:'
+      : `All shows including "${term}" for week of:`;
+  } else {
+    subHeadSpan.textContent = term === ''
+      ? 'All shows for:'
+      : `All shows including "${term}" for:`;
+  }
 }
 
 let matchingDates = new Set();
@@ -102,7 +122,13 @@ function applyFilters() {
 
   if (!allData) return;
 
-  let filtered = allData.events.filter(e => e.date === currentDateStr);
+  let filtered;
+  if (calendarViewMode === 'week') {
+    const weekSet = new Set(getWeekDates(currentDateStr));
+    filtered = allData.events.filter(e => weekSet.has(e.date));
+  } else {
+    filtered = allData.events.filter(e => e.date === currentDateStr);
+  }
 
   if (currentSearch.trim() !== '') {
     const term = currentSearch.toLowerCase().trim();
@@ -135,35 +161,23 @@ function resetSearch() {
   input.focus();
 }
 
-function renderEvents(events) {
-  const container = document.getElementById('calendarCards');
+function renderVenueCards(events, container, beforeNode) {
+  const grouped = {};
+  events.forEach(event => {
+    if (!grouped[event.venueId]) grouped[event.venueId] = [];
+    grouped[event.venueId].push(event);
+  });
 
-  $(container).fadeTo(150, 0, function() {
-    container.querySelectorAll('.venueCard').forEach(el => el.remove());
-    document.getElementById('emptyState').style.display = 'none';
-    document.getElementById('withResults').style.display = 'block';
-
-    const grouped = {};
-    events.forEach(event => {
-      if (!grouped[event.venueId]) grouped[event.venueId] = [];
-      grouped[event.venueId].push(event);
-    });
-
-    const calendarEnd = document.getElementById('calendarEnd');
-
-    Object.entries(grouped)
-      .sort(([a], [b]) => {
-        const nameA = sortableName(allData.venues[a]?.name ?? '');
-        const nameB = sortableName(allData.venues[b]?.name ?? '');
-        return nameA.localeCompare(nameB);
-      })
-      .forEach(([venueId, venueEvents]) => {
+  Object.entries(grouped)
+    .sort(([a], [b]) => {
+      const nameA = sortableName(allData.venues[a]?.name ?? '');
+      const nameB = sortableName(allData.venues[b]?.name ?? '');
+      return nameA.localeCompare(nameB);
+    })
+    .forEach(([venueId, venueEvents]) => {
       const venue = allData.venues[venueId];
       if (!venue) return;
 
-      // Sort same-day events earliest to latest. Events without a time
-      // (rendered as "See Event") sort to the end rather than being
-      // treated as midnight, since we don't actually know when they start.
       const sortedEvents = [...venueEvents].sort((a, b) => {
         if (!a.time && !b.time) return 0;
         if (!a.time) return 1;
@@ -186,11 +200,6 @@ function renderEvents(events) {
           ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
           : event.title;
 
-        // Only render the .ticketLink wrapper at all when there's an
-        // actual ticket URL. Previously this div was always rendered
-        // (just left empty when there was no link), which meant the
-        // .ticketLink:hover effect in the CSS still fired on empty,
-        // non-clickable boxes.
         const linkHtml = event.ticketUrl
           ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
           : '';
@@ -219,11 +228,46 @@ function renderEvents(events) {
 
       container.insertBefore(
         document.createRange().createContextualFragment(cardHtml),
-        calendarEnd
+        beforeNode
       );
     });
 
-    if (Object.keys(grouped).length === 0) {
+  return Object.keys(grouped).length > 0;
+}
+
+function renderDateSeparator(dateStr, container, beforeNode) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const formatted = new Date(y, m - 1, d).toLocaleDateString('en-US', options);
+  container.insertBefore(
+    document.createRange().createContextualFragment(`<h2 class="dateSeparator">${formatted}</h2>`),
+    beforeNode
+  );
+}
+
+function renderEvents(events) {
+  const container = document.getElementById('calendarCards');
+
+  $(container).fadeTo(150, 0, function() {
+    container.querySelectorAll('.venueCard, .dateSeparator').forEach(el => el.remove());
+    document.getElementById('emptyState').style.display = 'none';
+    document.getElementById('withResults').style.display = 'block';
+
+    const calendarEnd = document.getElementById('calendarEnd');
+    let anyRendered = false;
+
+    if (calendarViewMode === 'week') {
+      getWeekDates(currentDateStr).forEach(dateStr => {
+        const dayEvents = events.filter(e => e.date === dateStr);
+        if (dayEvents.length === 0) return;
+        anyRendered = true;
+        renderDateSeparator(dateStr, container, calendarEnd);
+        renderVenueCards(dayEvents, container, calendarEnd);
+      });
+    } else {
+      anyRendered = renderVenueCards(events, container, calendarEnd);
+    }
+
+    if (!anyRendered) {
       document.getElementById('emptyState').style.display = 'block';
       document.getElementById('withResults').style.display = 'none';
     }
@@ -453,14 +497,16 @@ document.addEventListener('DOMContentLoaded', function() {
   
   document.getElementById('prevArrow').addEventListener('click', function() {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
+    const step = calendarViewMode === 'week' ? 7 : 1;
     const prev = new Date(current);
-    prev.setDate(prev.getDate() - 1);
+    prev.setDate(prev.getDate() - step);
     setDate(prev);
   });
   document.getElementById('nextArrow').addEventListener('click', function() {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
+    const step = calendarViewMode === 'week' ? 7 : 1;
     const next = new Date(current);
-    next.setDate(next.getDate() + 1);
+    next.setDate(next.getDate() + step);
     setDate(next);
   });
   document.getElementById('calendarFilterToggle').addEventListener('click', function() {
@@ -470,4 +516,13 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.toggle('active', !isOpen);
     if (!isOpen) buildCalendarFilterChips(); // re-measure now that the panel has real layout
   });
+  function setViewMode(mode) {
+    calendarViewMode = mode;
+    document.getElementById('calendarToggleDay').classList.toggle('active', mode === 'day');
+    document.getElementById('calendarToggleWeek').classList.toggle('active', mode === 'week');
+    applyFilters();
+  }
+
+  document.getElementById('calendarToggleDay').addEventListener('click', () => setViewMode('day'));
+  document.getElementById('calendarToggleWeek').addEventListener('click', () => setViewMode('week'));
 });
