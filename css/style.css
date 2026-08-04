@@ -125,7 +125,7 @@ header{
 	position:fixed;
 	top:0;
 	z-index:1000;
-	padding-top: 75px;
+	padding-top: 60px;
 }
 
 .scrolled{
@@ -429,14 +429,54 @@ footer a {
 }
 
 
-#calendarFilterBar {
+#calendarSettingsBar {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 20px;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
-#calendarFilterBar .filter-toggle {
+#calendarToggle {
+	border-radius: 9px;
+	border: 1px solid #F9F976;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+}
+
+#calendarToggle .toggle-button {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	color: #FFFFFF;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	height: 100%;
+}
+
+#calendarToggle .toggle-button:first-child {
+	border-radius: 9px 0 0 9px;
+}
+
+#calendarToggle .toggle-button:last-child {
+	border-radius: 0 9px 9px 0;
+}
+
+#calendarToggle .toggle-button.active {
+	color: #222;
+	background: #F9F976;
+	font-weight: 900;
+}
+
+#calendarSettingsBar .filter-toggle {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.05em;
@@ -451,29 +491,44 @@ footer a {
 	gap: 8px;
 }
 
-#calendarFilterBar .filter-toggle .icon{
+#calendarSettingsBar .filter-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#calendarSettingsBar .filter-toggle .icon{
 	width: 32px;
 	height: 32px;
 }
 
-#calendarFilterBar .filter-toggle:hover #fil, #calendarFilterBar .filter-toggle.active #fil {
+#calendarSettingsBar .filter-toggle:hover #fil, #calendarSettingsBar .filter-toggle.active #fil {
 	background-color: #F9F976 !important;
 }
 
-#calendarFilterBar .filter-toggle.active {
+#calendarSettingsBar .filter-toggle.active {
 	border: 1px solid #F9F976;
 }
 
-#calendarFilterBar .filter-panel {
+#calendarFilterPanel .filter-panel {
 	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	gap: 10px;
 }
 
-#calendarFilterBar .filter-group-label {
+#calendarFilterPanel .filter-group-label {
 	font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -483,13 +538,13 @@ footer a {
 	margin-bottom: 8px;
 }
 
-#calendarFilterBar .filter-row {
+#calendarFilterPanel .filter-row {
 	display: flex;
 	gap: 8px;
 	flex-wrap: wrap;
 }
 
-#calendarFilterBar .chip {
+#calendarFilterPanel .chip {
 	font-family: 'Space Mono', monospace;
 	font-size: 14px;
 	letter-spacing: 0.05em;
@@ -502,16 +557,16 @@ footer a {
 	transition: all .15s ease;
 }
 
-#calendarFilterBar .chip:hover {
+#calendarFilterPanel .chip:hover {
 	border-color: #62CBB8;
 }
 
-#calendarFilterBar .chip.active {
+#calendarFilterPanel .chip.active {
 	border-color: #F9F976 !important;
 	color: #F9F976;
 }
 
-#calendarFilterBar .chip-show-all {
+#calendarFilterPanel .chip-show-all {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	border-style: none;
 	color: #FFFFFF;
@@ -519,7 +574,7 @@ footer a {
 	padding-left: 8px;
 }
 
-#calendarFilterBar .chip-show-all:hover {
+#calendarFilterPanel .chip-show-all:hover {
 	color: #62CBB8;
 }
 
@@ -538,8 +593,8 @@ footer a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
-	gap: 6px;
-	margin-bottom: 16px;
+	gap: 8px;
+	margin-bottom: 32px;
 }
 
 #activeFiltersWrapper #activeFiltersLabel {
@@ -719,6 +774,15 @@ footer a {
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dateSeparator {
+	font-family: "Bebas Neue", sans-serif;
+	color: #F9F976;
+	font-size: 24px;
+	font-weight: 100;
+	margin: 16px 0;
+	padding-top: 16px;
 }
 
 .icon {
@@ -1368,6 +1432,7 @@ span.flatpickr-weekday {
 
 	#hero {
 		background-position: right;
+		padding-top: 120px;
 	}
 }
 
