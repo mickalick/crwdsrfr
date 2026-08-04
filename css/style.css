@@ -428,6 +428,155 @@ footer a {
 	background-size: cover;
 }
 
+
+#calendarFilterBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#calendarFilterBar .filter-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#calendarFilterBar .filter-toggle .icon{
+	width: 32px;
+	height: 32px;
+}
+
+#calendarFilterBar .filter-toggle:hover #fil, #calendarFilterBar .filter-toggle.active #fil {
+	background-color: #F9F976 !important;
+}
+
+#calendarFilterBar .filter-toggle.active {
+	border: 1px solid #F9F976;
+}
+
+#calendarFilterBar .filter-panel {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+#calendarFilterBar .filter-group-label {
+	font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #FCFCFC;
+	margin-bottom: 8px;
+}
+
+#calendarFilterBar .filter-row {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+#calendarFilterBar .chip {
+	font-family: 'Space Mono', monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	padding: 8px 16px;
+	border: 1px solid rgba(255,255,255,0.15);
+	border-radius: 20px;
+	color: #FFF;
+	cursor: pointer;
+	background: transparent;
+	transition: all .15s ease;
+}
+
+#calendarFilterBar .chip:hover {
+	border-color: #62CBB8;
+}
+
+#calendarFilterBar .chip.active {
+	border-color: #F9F976 !important;
+	color: #F9F976;
+}
+
+#calendarFilterBar .chip-show-all {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	border-style: none;
+	color: #FFFFFF;
+	padding: 8px 0;
+	padding-left: 8px;
+}
+
+#calendarFilterBar .chip-show-all:hover {
+	color: #62CBB8;
+}
+
+.filter-group {
+	margin-bottom: 8px;
+}
+
+#activeFilters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+#activeFiltersWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 6px;
+	margin-bottom: 16px;
+}
+
+#activeFiltersWrapper #activeFiltersLabel {
+	font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+#activeFilters .chip {
+	display: inline-flex;
+	align-items: baseline;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background: transparent;
+	border-style: none;
+	cursor: pointer;
+	gap: 8px;
+}
+
+#activeFilters .chip-remove {
+	color: #FF6262;
+	font-size: 20px;
+}
+
+#activeFilters .chip-reset {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+#activeFilters .chip-reset:hover {
+	color: #F9F976;
+}
+
 #calendar {
 	margin-top: 20px;
 	flex: 1;
@@ -491,7 +640,7 @@ footer a {
 .main{
 	max-width:1100px;
 	width: 100%;
-	margin: 60px auto;
+	margin: 40px auto;
 }
 
 .venueCard {
@@ -1044,7 +1193,7 @@ span.flatpickr-weekday {
 
 @media screen and (max-width:1108px){
 	.main{
-		margin: 60px 50px !important;
+		margin: 40px 50px !important;
 	}
 
 }
@@ -1068,7 +1217,7 @@ span.flatpickr-weekday {
 	}
 
 	.main{
-		margin: 70px 50px !important;
+		margin: 40px 50px !important;
 	}
 
 }
@@ -1177,7 +1326,7 @@ span.flatpickr-weekday {
 	}
 
 	.main{
-		margin: 80px 30px 70px !important;
+		margin: 40px 30px 80px !important;
 	}
 
 	p{
