@@ -1,6 +1,26 @@
 let allData = null;
+let allVenues = null; // keyed by venue id — loaded from venues.json for type/area filtering
 let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
+
+// Selected filter values. Names are stored as venue ids (unambiguous),
+// types and areas as their raw string values.
+const selectedVenueIds = new Set();
+const selectedTypes = new Set();
+const selectedAreas = new Set();
+const expandedGroups = { name: false, type: false, area: false };
+
+const TYPE_LABELS = {
+  "music-hall": "Music Hall",
+  "club": "Club",
+  "theater": "Theater",
+  "arena": "Arena",
+  "bar": "Bar",
+  "outdoor": "Outdoor",
+  "brewery": "Brewery",
+  "jazz-bar": "Jazz Bar",
+  "comedy-club": "Comedy Club"
+};
 
 function toLocalDateStr(date) {
   const y = date.getFullYear();
@@ -36,19 +56,45 @@ function updateMatchingDates() {
   if (!allData) return;
 
   const term = currentSearch.toLowerCase().trim();
-  if (term === '') return; // no search = no dots
+  const filtersActive = hasActiveVenueFilters();
+  if (term === '' && !filtersActive) return; // nothing active = no dots, default calendar view
 
   allData.events.forEach(event => {
     const venue = allData.venues[event.venueId];
-    const matchesTitle = event.title.toLowerCase().includes(term);
-    const matchesVenue = venue?.name.toLowerCase().includes(term);
-    const matchesPerformer = event.performers?.some(p =>
-      p.name.toLowerCase().includes(term)
-    );
-    if (matchesTitle || matchesVenue || matchesPerformer) {
+
+    let matchesSearch = true;
+    if (term !== '') {
+      const matchesTitle = event.title.toLowerCase().includes(term);
+      const matchesVenue = venue?.name.toLowerCase().includes(term);
+      const matchesPerformer = event.performers?.some(p =>
+        p.name.toLowerCase().includes(term)
+      );
+      matchesSearch = matchesTitle || matchesVenue || matchesPerformer;
+    }
+
+    const matchesVenueFilter = !filtersActive || venueMatchesFilters(allVenues?.[event.venueId]);
+
+    if (matchesSearch && matchesVenueFilter) {
       matchingDates.add(event.date);
     }
   });
+}
+
+function hasActiveVenueFilters() {
+  return selectedVenueIds.size > 0 || selectedTypes.size > 0 || selectedAreas.size > 0;
+}
+
+// Name > Type > Area, but "priority" here just means each category is
+// checked in that order — a venue matches if it satisfies ANY selected
+// filter across all three categories (union, not intersection). e.g.
+// selecting one venue name plus an area shows that venue AND every
+// venue in that area, not just venues that match both.
+function venueMatchesFilters(venue) {
+  if (!venue) return false;
+  if (selectedVenueIds.has(venue.id)) return true;
+  if (selectedTypes.has(venue.type)) return true;
+  if (selectedAreas.has(venue.area)) return true;
+  return false;
 }
 
 function applyFilters() {
@@ -69,6 +115,10 @@ function applyFilters() {
       );
       return matchesTitle || matchesVenue || matchesPerformer;
     });
+  }
+
+  if (hasActiveVenueFilters()) {
+    filtered = filtered.filter(event => venueMatchesFilters(allVenues?.[event.venueId]));
   }
 
   renderEvents(filtered);
@@ -182,9 +232,145 @@ function renderEvents(events) {
   });
 }
 
+function collapseChipRow(wrap, groupKey) {
+  wrap.querySelectorAll('.chip-show-all').forEach(el => el.remove());
+  const chips = [...wrap.querySelectorAll('.chip')];
+  chips.forEach(c => c.style.display = '');
+
+  if (chips.length === 0) return;
+
+  const lineOneTop = chips[0].offsetTop;
+  const lineTwoStart = chips.findIndex(c => c.offsetTop !== lineOneTop);
+  if (lineTwoStart === -1) return; // everything fits on line 1
+
+  const lineTwoTop = chips[lineTwoStart].offsetTop;
+  const lineThreeStart = chips.findIndex((c, i) => i >= lineTwoStart && c.offsetTop !== lineTwoTop);
+  if (lineThreeStart === -1) return; // everything fits within 2 lines
+
+  const toggleBtn = document.createElement('button');
+  toggleBtn.type = 'button';
+  toggleBtn.className = 'chip chip-show-all';
+
+  if (expandedGroups[groupKey]) {
+    toggleBtn.textContent = 'Show Less';
+    toggleBtn.addEventListener('click', () => {
+      expandedGroups[groupKey] = false;
+      collapseChipRow(wrap, groupKey);
+    });
+  } else {
+    chips.slice(lineThreeStart).forEach(c => c.style.display = 'none');
+    toggleBtn.textContent = `Show All (${chips.length - lineThreeStart} more)`;
+    toggleBtn.addEventListener('click', () => {
+      expandedGroups[groupKey] = true;
+      collapseChipRow(wrap, groupKey);
+    });
+  }
+
+  wrap.appendChild(toggleBtn);
+}
+
+function refreshFilterUI() {
+  buildCalendarFilterChips();
+  renderActiveFilters();
+  updateMatchingDates();
+  datePickerFp.redraw();
+  applyFilters();
+}
+
+function renderActiveFilters() {
+  const wrapper = document.getElementById('activeFiltersWrapper');
+  const chipsWrap = document.getElementById('activeFilters');
+  const active = [];
+
+  selectedVenueIds.forEach(id => {
+    active.push({ group: 'name', value: id, label: allVenues?.[id]?.name ?? id });
+  });
+  selectedTypes.forEach(t => {
+    active.push({ group: 'type', value: t, label: TYPE_LABELS[t] || t });
+  });
+  selectedAreas.forEach(a => {
+    active.push({ group: 'area', value: a, label: a });
+  });
+
+  if (active.length === 0) {
+    wrapper.style.display = 'none';
+    chipsWrap.innerHTML = '';
+    return;
+  }
+
+  wrapper.style.display = 'flex';
+  chipsWrap.innerHTML = active.map(f => `
+    <button type="button" class="chip active-chip" data-group="${f.group}" data-value="${f.value}">${f.label} <span class="chip-remove">&times;</span></button>
+  `).join('') + `<button type="button" class="chip chip-reset" id="resetAllFilters">Reset</button>`;
+
+  chipsWrap.querySelectorAll('.active-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const { group, value } = chip.dataset;
+      const set = group === 'name' ? selectedVenueIds : group === 'type' ? selectedTypes : selectedAreas;
+      set.delete(value);
+      refreshFilterUI();
+    });
+  });
+
+  document.getElementById('resetAllFilters').addEventListener('click', () => {
+    selectedVenueIds.clear();
+    selectedTypes.clear();
+    selectedAreas.clear();
+    refreshFilterUI();
+  });
+}
+
+function buildCalendarFilterChips() {
+  if (!allVenues) return;
+  const venues = Object.values(allVenues);
+
+  const nameWrap = document.getElementById('calendarVenueFilters');
+  const typeWrap = document.getElementById('calendarTypeFilters');
+  const areaWrap = document.getElementById('calendarAreaFilters');
+
+  const sortedVenues = [...venues].sort((a, b) =>
+    sortableName(a.name).localeCompare(sortableName(b.name))
+  );
+  nameWrap.innerHTML = sortedVenues.map(v => `
+    <button type="button" class="chip ${selectedVenueIds.has(v.id) ? 'active' : ''}" data-filter="name" data-value="${v.id}">${v.name}</button>
+  `).join('');
+
+  const types = [...new Set(venues.map(v => v.type))].sort();
+  typeWrap.innerHTML = types.map(t => `
+    <button type="button" class="chip ${selectedTypes.has(t) ? 'active' : ''}" data-filter="type" data-value="${t}">${TYPE_LABELS[t] || t}</button>
+  `).join('');
+
+  const areas = [...new Set(venues.map(v => v.area))].sort();
+  areaWrap.innerHTML = areas.map(a => `
+    <button type="button" class="chip ${selectedAreas.has(a) ? 'active' : ''}" data-filter="area" data-value="${a}">${a}</button>
+  `).join('');
+
+  [nameWrap, typeWrap, areaWrap].forEach(wrap => {
+    wrap.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const { filter, value } = chip.dataset;
+        const set = filter === 'name' ? selectedVenueIds : filter === 'type' ? selectedTypes : selectedAreas;
+        if (set.has(value)) set.delete(value); else set.add(value);
+        refreshFilterUI();
+      });
+    });
+  });
+
+  collapseChipRow(nameWrap, 'name');
+  collapseChipRow(typeWrap, 'type');
+  collapseChipRow(areaWrap, 'area');
+}
+
 async function loadEvents() {
-  const res = await fetch('/data/events.json');
-  allData = await res.json();
+  const [eventsRes, venuesRes] = await Promise.all([
+    fetch('/data/events.json'),
+    fetch('/data/venues.json'),
+  ]);
+  allData = await eventsRes.json();
+  const venuesList = await venuesRes.json();
+  allVenues = Object.fromEntries(venuesList.map(v => [v.id, v]));
+  buildCalendarFilterChips();
+  renderActiveFilters();
   updateMatchingDates();
   datePickerFp.redraw();
   applyFilters();
@@ -276,5 +462,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const next = new Date(current);
     next.setDate(next.getDate() + 1);
     setDate(next);
+  });
+  document.getElementById('calendarFilterToggle').addEventListener('click', function() {
+    const panel = document.getElementById('calendarFilters');
+    const isOpen = panel.style.display !== 'none';
+    panel.style.display = isOpen ? 'none' : 'flex';
+    this.classList.toggle('active', !isOpen);
+    if (!isOpen) buildCalendarFilterChips(); // re-measure now that the panel has real layout
   });
 });

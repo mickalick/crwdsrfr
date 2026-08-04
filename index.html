@@ -130,6 +130,34 @@
 			</section>
 			<section id="calendar" class="page">
 				<div class="main">
+					<div id="calendarFilterBar">
+						<button type="button" class="filter-toggle" id="calendarFilterToggle" aria-label="Show Filters">
+							Filters <span class="icon" id="fil"></span>
+						</button>
+
+						<div class="filter-panel" id="calendarFilters" style="display:none;">
+							<div class="filter-group">
+								<div class="filter-group-label">Venue</div>
+								<div class="filter-row" id="calendarVenueFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Type</div>
+								<div class="filter-row" id="calendarTypeFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Area</div>
+								<div class="filter-row" id="calendarAreaFilters"></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="activeFiltersWrapper" style="display:none;">
+						<h2 id="activeFiltersLabel">Applied Filters:</h2>
+						<div id="activeFilters"></div>
+					</div>
+
 					<h4 class="subHead"><span>All shows for:</span></h4>
 					<div class="calendarWrapper">
 						<div id="calendarNav">
