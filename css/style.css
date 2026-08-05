@@ -1183,7 +1183,8 @@ span.flatpickr-weekday {
 
 #venueLocation #venueMap {
 	margin-top: 0;
-	height: 35vh;
+	min-height: 20vh;
+	height: 25vh;
 }
 
 .venueCalendar #current .icon {
