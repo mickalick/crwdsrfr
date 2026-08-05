@@ -121,5 +121,18 @@
     "time": null,
     "startDate": "2026-08-06",
     "endDate": null
+  },
+
+
+  {
+    "id": "crocker-movies",
+    "venueId": "crocker-park",
+    "title": "Movies in the Park",
+    "weekday": 4,
+    "nth": null,
+    "time": null,
+    "startDate": "2026-08-06",
+    "endDate": "2026-09-03"
   }
+
 ]

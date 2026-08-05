@@ -21,7 +21,8 @@ const TYPE_LABELS = {
   "brewery": "Brewery",
   "jazz-bar": "Jazz Bar",
   "comedy-club": "Comedy Club",
-  "diy": "DIY"
+  "diy": "DIY",
+  "festival": "Festival"
 };
 
 function toLocalDateStr(date) {

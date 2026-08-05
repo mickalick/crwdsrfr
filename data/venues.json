@@ -741,7 +741,7 @@
     "name": "No Surf Fest",
     "url": "https://nosurffest.org/",
     "eventsUrl": "https://nosurffest.org/lineup",
-    "type": "outdoor",
+    "type": "festival",
     "address": "3550 W 117th St, Cleveland, OH 44111",
     "area": "West Park",
     "lat": 41.4558241,
@@ -801,5 +801,27 @@
     "area": "Euclid",
     "lat": 41.6085603,
     "lng": -81.5158821
+  },
+  {
+    "id": "mgk-day",
+    "name": "MGK Day",
+    "url": "https://www.mgkday.com/",
+    "eventsUrl": "https://www.mgkday.com/schedule",
+    "type": "festival",
+    "address": "515 Erieside Ave, Cleveland, OH 44114",
+    "area": "North Coast Harbor",
+    "lat": 41.5079838,
+    "lng": -81.700138
+  },
+  {
+    "id": "crocker-park",
+    "name": "Crocker Park",
+    "url": "https://crockerpark.com/",
+    "eventsUrl": "https://crockerpark.com/our-events/",
+    "type": "outdoor",
+    "address": "177 Market St, Westlake, OH 44145",
+    "area": "Westlake",
+    "lat": 41.4604385,
+    "lng": -81.9521177
   }
 ]
