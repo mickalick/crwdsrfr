@@ -92,7 +92,7 @@
       "area": "Detroit Shoreway"
     },
     "mahalls": {
-      "name": "Mahalls",
+      "name": "Mahall's",
       "url": "https://mahalls20lanes.com/",
       "eventsUrl": "https://mahalls20lanes.com/events/",
       "type": "music-hall",
@@ -113,7 +113,7 @@
       "area": "Flats West Bank"
     },
     "jacobs-pavilion": {
-      "name": "Jacobs Pavilion",
+      "name": "Jacob's Pavilion",
       "url": "https://jacobspavilion.com/",
       "eventsUrl": "https://jacobspavilion.com/calendar/",
       "type": "outdoor",
@@ -183,7 +183,7 @@
       "area": "Old Brooklyn"
     },
     "dunlaps-corner-bar": {
-      "name": "Dunlaps",
+      "name": "Dunlap's Corner Bar",
       "url": "https://www.dunlapsbar.com/",
       "eventsUrl": "https://www.dunlapsbar.com/events",
       "type": "bar",
@@ -263,7 +263,7 @@
       "name": "Bent Mace",
       "url": "https://bentmace.org/",
       "eventsUrl": "https://bentmace.org/events/",
-      "type": "music-hall",
+      "type": "diy",
       "area": "Old Brooklyn"
     },
     "bside-liquor-lounge": {
@@ -323,7 +323,7 @@
       "area": "Berea"
     },
     "reithoffers": {
-      "name": "Reithoffers (Hoffs)",
+      "name": "Reithoffer's (Hoff's)",
       "url": "https://www.reithoffers.com/",
       "eventsUrl": "https://www.reithoffers.com/entertainment",
       "type": "bar",
@@ -337,7 +337,7 @@
       "area": "Collinwood"
     },
     "paninis-westlake": {
-      "name": "Paninis Westlake",
+      "name": "Panini's Westlake",
       "url": "https://www.facebook.com/PaninisWestlake/",
       "eventsUrl": null,
       "type": "bar",
@@ -351,7 +351,7 @@
       "area": "Edgewater"
     },
     "cavottas-garden-bar": {
-      "name": "Cavottas Garden Bar",
+      "name": "Cavotta's Garden Bar",
       "url": "https://cavottas.com/cavottas-garden-bar",
       "eventsUrl": "https://cavottas.com/cavottas-garden-bar",
       "type": "outdoor",
@@ -365,7 +365,7 @@
       "area": "Wickliffe"
     },
     "smedleys": {
-      "name": "Smedleys",
+      "name": "Smedley's",
       "url": "https://www.facebook.com/people/Smedleys-Cleveland/61571250336346/",
       "eventsUrl": null,
       "type": "bar",
@@ -442,7 +442,7 @@
       "area": "Strongsville"
     },
     "quintanas-speakeasy": {
-      "name": "Quintanas Speakeasy",
+      "name": "Quintana's Speakeasy",
       "url": "https://qbds.net/speakeasy/",
       "eventsUrl": "https://qbds.net/speakeasy-events/",
       "type": "bar",
@@ -473,7 +473,7 @@
       "name": "No Surf Fest",
       "url": "https://nosurffest.org/",
       "eventsUrl": "https://nosurffest.org/lineup",
-      "type": "outdoor",
+      "type": "festival",
       "area": "West Park"
     },
     "public-square": {
@@ -510,248 +510,23 @@
       "eventsUrl": "https://www.briardalegreens.com/events/",
       "type": "bar",
       "area": "Euclid"
+    },
+    "mgk-day": {
+      "name": "MGK Day",
+      "url": "https://www.mgkday.com/",
+      "eventsUrl": "https://www.mgkday.com/schedule",
+      "type": "festival",
+      "area": "North Coast Harbor"
+    },
+    "crocker-park": {
+      "name": "Crocker Park",
+      "url": "https://crockerpark.com/",
+      "eventsUrl": "https://crockerpark.com/our-events/",
+      "type": "outdoor",
+      "area": "Westlake"
     }
   },
   "events": [
-    {
-      "id": "grog-shop-2026-08-04-the-great-grog-bake-off",
-      "title": "The Great Grog Bake Off w/ Kelly Brewer, Scott \"Cosmo\" Nixon, Laura Wimbels",
-      "venueId": "grog-shop",
-      "date": "2026-08-04",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "The Great Grog Bake Off",
-          "headliner": true
-        },
-        {
-          "name": "Kelly Brewer",
-          "headliner": false
-        },
-        {
-          "name": "Scott \"Cosmo\" Nixon",
-          "headliner": false
-        },
-        {
-          "name": "Laura Wimbels",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/the-great-grog-bake-off/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-great-grog-bake-off-grog-shop-tickets/14236444?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "the-agora-2026-08-04-qveen-herby",
-      "title": "Qveen Herby w/ Thot Squad",
-      "venueId": "the-agora",
-      "date": "2026-08-04",
-      "time": null,
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Qveen Herby",
-          "headliner": true
-        },
-        {
-          "name": "Thot Squad",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1303593",
-      "ticketUrl": "https://www.axs.com/events/1303593/qveen-herby-tickets?skin=agora&skin=agora",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cain-park-2026-08-04-olympic-brass",
-      "title": "Olympic Brass",
-      "venueId": "cain-park",
-      "date": "2026-08-04",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Olympic Brass",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/event/olympic-brass/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-08-04-bay-faction",
-      "title": "Bay Faction",
-      "venueId": "mahalls",
-      "date": "2026-08-04",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Bay Faction",
-          "headliner": true
-        },
-        {
-          "name": "NUFFER",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/bay-faction/",
-      "ticketUrl": "https://link.dice.fm/radb7c845dfa",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-08-04-secret-society-comedy-presents-one-more-joke-43",
-      "title": "Secret Society Comedy Presents: One More Joke",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-08-04",
-      "time": "21:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Secret Society Comedy Presents: One More Joke",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/secret-society-comedy-presents-one-more-joke-43/",
-      "ticketUrl": "https://www.ticketweb.com/event/secret-society-comedy-presents-one-the-winchester-tickets/13982734",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-08-04-the-mercury-jam-76",
-      "title": "The Mercury Jam",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-08-04",
-      "time": "20:30",
-      "doors": "20:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Mercury Jam",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-76/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14970163",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-08-04-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-04",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
-      "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/14948573?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-national-night-out-2026-08-04",
-      "title": "National Night Out",
-      "venueId": "van-aken-district",
-      "date": "2026-08-04",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "National Night Out",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/national-night-out-2026-08-04",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-08-04-lyrical-rhythms-2",
-      "title": "Lyrical Rhythms",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-08-04",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": "$9.76",
-      "performers": [
-        {
-          "name": "Lyrical Rhythms",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229854?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-08-04-last-call-trivia",
-      "title": "Last Call Trivia",
-      "venueId": "forest-city-brewery",
-      "date": "2026-08-04",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/1/6/last-call-trivia-zjehs-afmpz-zy2rs-jx5n3",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-08-04-the-improv-workout-w-michael-busch",
-      "title": "The Improv Workout w Michael Busch",
-      "venueId": "imposters-theater",
-      "date": "2026-08-04",
-      "time": "18:00",
-      "doors": null,
-      "price": "from $35.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/the-improv-workout-w-michael-busch-080426",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/the-improv-workout-w-michael-busch-080426",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Dub Club 30% Off Whiskey & Tequila",
-      "performers": [
-        {
-          "name": "Dub Club",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-04",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-08-04-dub-club"
-    },
     {
       "id": "grog-shop-2026-08-05-crown-shy",
       "title": "Crown Shy w/ LINE, Sundial Ceremony",
@@ -759,7 +534,7 @@
       "date": "2026-08-05",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$15.16",
+      "price": "$19.51",
       "performers": [
         {
           "name": "Crown Shy",
@@ -1318,34 +1093,6 @@
       "source": "manual",
       "manual": true,
       "id": "public-square-2026-08-05-angela-perley"
-    },
-    {
-      "id": "spotlight-jam-night-2026-08-05",
-      "title": "Jam Night",
-      "venueId": "spotlight-cle",
-      "date": "2026-08-05",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "smedleys-wednesdays-2026-08-05",
-      "title": "JP & Friends",
-      "venueId": "smedleys",
-      "date": "2026-08-05",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
     },
     {
       "id": "grog-shop-2026-08-06-abronia",
@@ -1971,6 +1718,29 @@
       "id": "chagrin-tavern-2026-08-06-trivia"
     },
     {
+      "title": "Eton Presents: Boulevard Beats",
+      "performers": [
+        {
+          "name": "Victoria Rosemond",
+          "headliner": true
+        },
+        {
+          "name": "Ed Ridley",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-06-boulevard-beats"
+    },
+    {
       "title": "Chicago & Styx",
       "performers": [
         {
@@ -2108,6 +1878,25 @@
       "id": "1928-public-house-2026-08-06-fungirl"
     },
     {
+      "title": "Emo Nite (@ 27 Club)",
+      "performers": [
+        {
+          "name": "Emo Nite",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-06-emo-nite"
+    },
+    {
       "id": "spotlight-bluegrass-jam-2026-08-06",
       "title": "Bluegrass Jam (hosted by David Mayfield)",
       "venueId": "spotlight-cle",
@@ -2125,6 +1914,20 @@
       "id": "smedleys-thursdays-2026-08-06",
       "title": "Freebyrds Jam Night",
       "venueId": "smedleys",
+      "date": "2026-08-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
+      "id": "crocker-movies-2026-08-06",
+      "title": "Movies in the Park",
+      "venueId": "crocker-park",
       "date": "2026-08-06",
       "time": null,
       "doors": null,
@@ -2272,7 +2075,7 @@
       "date": "2026-08-07",
       "time": "20:00",
       "doors": "20:00",
-      "price": "$10.00",
+      "price": "$15.00",
       "performers": [
         {
           "name": "Music + Fashion + Film – a Charli party",
@@ -2352,7 +2155,7 @@
       "date": "2026-08-07",
       "time": "20:00",
       "doors": "18:30",
-      "price": "$20 Advance, $25 Day of Show",
+      "price": "$20",
       "room": "Concert Hall",
       "performers": [
         {
@@ -2684,6 +2487,25 @@
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/polka-haus-party-pb5gs-48bgx-x6z7w-p4r49-zw6yf-bdzzj-w3ase-4ajmx-we6ct-d3xgh-lhyt3-6mek3-wwsba-z7fjb-9wfgg-lzhef-fere3-nfrma-l2wyg-6e9xc-l8329-5lc86-d3yte-g2mks-wgdmw-rls56-ppdrs",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "coda-2026-08-07-1996654433158",
+      "title": "Rellick | Old Country Business | Late Braces at CODA",
+      "venueId": "coda",
+      "date": "2026-08-07",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": "$10",
+      "performers": [
+        {
+          "name": "Rellick | Old Country Business | Late Braces at CODA",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.eventbrite.com/e/rellick-old-country-business-late-braces-at-coda-tickets-1996654433158",
+      "ticketUrl": "https://www.eventbrite.com/e/rellick-old-country-business-late-braces-at-coda-tickets-1996654433158",
       "source": "scrape",
       "manual": false
     },
@@ -3041,6 +2863,25 @@
       "id": "seeing-double-2026-08-07-furious-george"
     },
     {
+      "title": "MGK (MGK Day Pre-Party)",
+      "performers": [
+        {
+          "name": "MGK",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-08-07-mgk"
+    },
+    {
       "title": "The Marshall Band",
       "performers": [
         {
@@ -3058,6 +2899,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-08-07-the-marshall-band"
+    },
+    {
+      "title": "Tricotism",
+      "performers": [
+        {
+          "name": "Tricotism",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-07-tricotism"
     },
     {
       "title": "Riley Green",
@@ -3159,6 +3019,25 @@
       "id": "house-of-blues-2026-08-07-american-football"
     },
     {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-07-emma-nicholas"
+    },
+    {
       "title": "Back 2 The Future",
       "performers": [
         {
@@ -3247,6 +3126,82 @@
       "source": "manual",
       "manual": true,
       "id": "sticks-pub-2026-08-07-larry-insana"
+    },
+    {
+      "title": "Red Bull Best Trick Contest (@ Crooked River Skate Park)",
+      "performers": [
+        {
+          "name": "Red Bull Best Trick Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-07-red-bull-best-trick-contest"
+    },
+    {
+      "title": "Karaoke Night (@ 27 Club)",
+      "performers": [
+        {
+          "name": "Karaoke Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-07-karaoke-night"
+    },
+    {
+      "title": "Welcome to Cleveland Party (@ Shooters)",
+      "performers": [
+        {
+          "name": "MGK",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-07-mgk"
+    },
+    {
+      "title": "3 Sheets to the Wind",
+      "performers": [
+        {
+          "name": "3 Sheets to the Wind",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-07",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-07-3-sheets-to-the-wind"
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-08-07",
@@ -3499,7 +3454,7 @@
       "date": "2026-08-08",
       "time": "22:00",
       "doors": "22:00",
-      "price": "$10.00",
+      "price": "$15.00",
       "performers": [
         {
           "name": "Ari’s Universe: an all Ariana Grande dance party",
@@ -3551,8 +3506,8 @@
       "manual": false
     },
     {
-      "id": "fwd-nightclub-2026-08-08-acraze",
-      "title": "ACRAZE",
+      "id": "fwd-nightclub-2026-08-08-chizzle",
+      "title": "CHIZZLE",
       "venueId": "fwd-nightclub",
       "date": "2026-08-08",
       "time": "21:00",
@@ -3561,12 +3516,12 @@
       "tag": "NIGHT",
       "performers": [
         {
-          "name": "ACRAZE",
+          "name": "CHIZZLE",
           "headliner": true
         }
       ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/ACRAZE?eid=EVE-J2L274",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/ACRAZE?eid=EVE-J2L274",
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CHIZZLE?eid=EVE-GC4I79",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CHIZZLE?eid=EVE-GC4I79",
       "source": "scrape",
       "manual": false
     },
@@ -4255,6 +4210,25 @@
       "id": "cavottas-garden-bar-2026-08-08-super-troupers"
     },
     {
+      "title": "11th Hour",
+      "performers": [
+        {
+          "name": "11th Hour",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "sound-stage-tavern",
+      "source": "manual",
+      "manual": true,
+      "id": "sound-stage-tavern-2026-08-08-11th-hour"
+    },
+    {
       "title": "Jester Revenge",
       "performers": [
         {
@@ -4293,7 +4267,7 @@
       "id": "seeing-double-2026-08-08-trs-trio"
     },
     {
-      "title": "50 Cent",
+      "title": "50 Cent (MGK Day Afterparty)",
       "performers": [
         {
           "name": "50 Cent",
@@ -4366,6 +4340,25 @@
       "id": "chagrin-tavern-2026-08-08-medusa"
     },
     {
+      "title": "Bobby Selvaggio Hope Quartet",
+      "performers": [
+        {
+          "name": "Bobby Selvaggio Hope Quartet",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-08-bobby-selvaggio-hope-quartet"
+    },
+    {
       "title": "Dan Pyne",
       "performers": [
         {
@@ -4402,6 +4395,44 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-08-bop-to-the-top"
+    },
+    {
+      "title": "Maria Petti",
+      "performers": [
+        {
+          "name": "Maria Petti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-08-maria-petti"
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-08-dj-caffrey"
     },
     {
       "title": "Berea ARF Animal Fundraiser",
@@ -4459,6 +4490,162 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-08-08-spazmatics"
+    },
+    {
+      "title": "MGK Day Tailgate (@ North Coast Yard)",
+      "performers": [
+        {
+          "name": "MGK Day Tailgate",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-mgk-day-tailgate"
+    },
+    {
+      "title": "City Ride",
+      "performers": [
+        {
+          "name": "City Ride",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "15:00",
+      "doors": "14:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-city-ride"
+    },
+    {
+      "title": "MGK Day Festival (@ North Coast Yard)",
+      "performers": [
+        {
+          "name": "MGK Day Festival",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-mgk-day-festival"
+    },
+    {
+      "title": "MGK with Wiz Khalifa (@ Main Stage)",
+      "performers": [
+        {
+          "name": "MGK",
+          "headliner": true
+        },
+        {
+          "name": "Wiz Khalifa",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-mgk"
+    },
+    {
+      "title": "Emo Nite 2 (@ 27 Club)",
+      "performers": [
+        {
+          "name": "Emo Nite",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-emo-nite"
+    },
+    {
+      "title": "50 Cent (@ Shooters)",
+      "performers": [
+        {
+          "name": "50 Cent",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-08-50-cent"
+    },
+    {
+      "title": "Quinn Hoffman",
+      "performers": [
+        {
+          "name": "Quinn Hoffman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-08-quinn-hoffman"
+    },
+    {
+      "title": "Midwest Music Project",
+      "performers": [
+        {
+          "name": "Midwest Music Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-08",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-08-midwest-music-project"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-08-08",
@@ -4521,6 +4708,29 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/the-expendables/",
       "ticketUrl": "https://www.ticketweb.com/event/the-expendables-chad-tepper-sons-grog-shop-tickets/14803373?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-08-09-beachland-brunch",
+      "title": "Beachland Brunch with DJ Poptone & DJ ActionAlpha",
+      "venueId": "beachland-ballroom",
+      "date": "2026-08-09",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "Beachland Brunch",
+          "headliner": true
+        },
+        {
+          "name": "DJ Poptone & DJ ActionAlpha",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-09-aug",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/beachland-brunch-09-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -5142,6 +5352,101 @@
       "id": "smedleys-2026-08-09-mookie-baylock"
     },
     {
+      "title": "I'm From Cleveland Sessions",
+      "performers": [
+        {
+          "name": "I'm From Cleveland Sessions",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-08-09-i-m-from-cleveland-sessions"
+    },
+    {
+      "title": "5K + Pilates (@ 27 Club)",
+      "performers": [
+        {
+          "name": "5K + Pilates",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-09-5k-pilates"
+    },
+    {
+      "title": "I'm From Cleveland Sessions (@ Shooters)",
+      "performers": [
+        {
+          "name": "I'm From Cleveland Sessions",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-09-i-m-from-cleveland-sessions"
+    },
+    {
+      "title": "Silent Disco (@ 27 Club)",
+      "performers": [
+        {
+          "name": "Silent Disco",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "mgk-day",
+      "source": "manual",
+      "manual": true,
+      "id": "mgk-day-2026-08-09-silent-disco"
+    },
+    {
+      "title": "Back9 Par4",
+      "performers": [
+        {
+          "name": "Back9 Par4",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-09",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-09-back9-par4"
+    },
+    {
       "id": "spotlight-house-techno-2026-08-09",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -5555,7 +5860,7 @@
       "date": "2026-08-11",
       "time": "19:15",
       "doors": "18:00",
-      "price": "$52.65 to $139.65",
+      "price": "$29.40 to $139.65",
       "performers": [
         {
           "name": "The String Cheese Incident – Just Keep Spinning Tour",
@@ -5670,25 +5975,6 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/summer-plaza-series-summer-sounds",
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-08-11-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-11",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
-      "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/14948663?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -6657,6 +6943,25 @@
       "manual": false
     },
     {
+      "id": "mercury-music-lounge-2026-08-13-live-wire-karaoke-32",
+      "title": "Live Wire Karaoke",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-08-13",
+      "time": "21:00",
+      "doors": "21:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Live Wire Karaoke",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/live-wire-karaoke-32/",
+      "ticketUrl": "https://www.ticketweb.com/event/live-wire-karaoke-the-mercury-music-lounge-tickets/15012323",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rock-hall-2026-08-13-live-local-black-voltron-and-post-saga",
       "title": "Live & Local: Black Voltron and Post Saga",
       "venueId": "rock-hall",
@@ -7107,13 +7412,27 @@
       "manual": true
     },
     {
+      "id": "crocker-movies-2026-08-13",
+      "title": "Movies in the Park",
+      "venueId": "crocker-park",
+      "date": "2026-08-13",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
       "id": "grog-shop-2026-08-14-king-space-from-space-with-love-album-release",
-      "title": "King Space \"From Space with Love\" Album Release w/ Big Steppa, Sadhu, Reco Bandz, Odovee, Don Foe, DJ Cooley High",
+      "title": "King Space \"From Space with Love\" Album Release w/ Big Steppa, Sadhu, Reco Bandz, Don Foe, DJ Cooley High, Lynn Foreign",
       "venueId": "grog-shop",
       "date": "2026-08-14",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$19.51",
+      "price": "$19.51 - $23.12",
       "performers": [
         {
           "name": "King Space \"From Space with Love\" Album Release",
@@ -7132,15 +7451,15 @@
           "headliner": false
         },
         {
-          "name": "Odovee",
-          "headliner": false
-        },
-        {
           "name": "Don Foe",
           "headliner": false
         },
         {
           "name": "DJ Cooley High",
+          "headliner": false
+        },
+        {
+          "name": "Lynn Foreign",
           "headliner": false
         }
       ],
@@ -7346,8 +7665,8 @@
       "title": "Hooked Like Helen – EP Release Show",
       "venueId": "winchester-music-tavern",
       "date": "2026-08-14",
-      "time": "20:00",
-      "doors": "19:00",
+      "time": "19:30",
+      "doors": "18:30",
       "price": "$13.41",
       "performers": [
         {
@@ -7965,6 +8284,25 @@
       "id": "cavottas-garden-bar-2026-08-14-black-jack-gypsies"
     },
     {
+      "title": "Dead Ringers",
+      "performers": [
+        {
+          "name": "Dead Ringers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "sound-stage-tavern",
+      "source": "manual",
+      "manual": true,
+      "id": "sound-stage-tavern-2026-08-14-dead-ringers"
+    },
+    {
       "title": "Smarty Jones",
       "performers": [
         {
@@ -8077,6 +8415,25 @@
       "id": "chagrin-tavern-2026-08-14-the-legacy-band"
     },
     {
+      "title": "Max Schlenk Group",
+      "performers": [
+        {
+          "name": "Max Schlenk Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-14-max-schlenk-group"
+    },
+    {
       "title": "Kehlani",
       "performers": [
         {
@@ -8176,6 +8533,25 @@
       "id": "house-of-blues-2026-08-14-saved-by-the-90-s"
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-14-chris-hatton"
+    },
+    {
       "title": "Coop's Nightmare",
       "performers": [
         {
@@ -8212,6 +8588,25 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-08-14-ronnie-szucs"
+    },
+    {
+      "title": "Rellick",
+      "performers": [
+        {
+          "name": "Rellick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-14-rellick"
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-08-14",
@@ -8439,6 +8834,26 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/lower-13-transcend-ep-release-party/",
       "ticketUrl": "https://www.ticketweb.com/event/lower-13-transcend-the-winchester-tickets/14233054",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "fwd-nightclub-2026-08-15-rick-wonder",
+      "title": "RICK WONDER",
+      "venueId": "fwd-nightclub",
+      "date": "2026-08-15",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "tag": "NIGHT",
+      "performers": [
+        {
+          "name": "RICK WONDER",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/RICK-WONDER?eid=EVE-4KEF87",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/RICK-WONDER?eid=EVE-4KEF87",
       "source": "scrape",
       "manual": false
     },
@@ -9136,6 +9551,25 @@
       "id": "cavottas-garden-bar-2026-08-15-the-saints"
     },
     {
+      "title": "Mary Taylor Brooks",
+      "performers": [
+        {
+          "name": "Mary Taylor Brooks",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "sound-stage-tavern",
+      "source": "manual",
+      "manual": true,
+      "id": "sound-stage-tavern-2026-08-15-mary-taylor-brooks"
+    },
+    {
       "title": "Mediocre on a Good Day",
       "performers": [
         {
@@ -9193,6 +9627,29 @@
       "id": "chagrin-tavern-2026-08-15-glass-house"
     },
     {
+      "title": "Joe Hunter & Tim Matson",
+      "performers": [
+        {
+          "name": "Joe Hunter",
+          "headliner": true
+        },
+        {
+          "name": "Tim Matson",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-15-joe-hunter"
+    },
+    {
       "title": "Take 2",
       "performers": [
         {
@@ -9229,6 +9686,44 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-15-whiskey-bound"
+    },
+    {
+      "title": "Maria Petti",
+      "performers": [
+        {
+          "name": "Maria Petti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-15-maria-petti"
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-15-dj-caffrey"
     },
     {
       "title": "Creedence",
@@ -9271,6 +9766,25 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-08-15-disco-inferno"
+    },
+    {
+      "title": "Eric Embacher",
+      "performers": [
+        {
+          "name": "Eric Embacher",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-15-eric-embacher"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-08-15",
@@ -9788,8 +10302,8 @@
       "manual": false
     },
     {
-      "id": "imposters-theater-2026-08-16-imposters-test-kitchen-live-from-purgatory",
-      "title": "Imposters Test Kitchen: Live From Purgatory! +",
+      "id": "imposters-theater-2026-08-16-imposters-test-kitchen-live-from-purgatory-improvivor",
+      "title": "Imposters Test Kitchen: Live From Purgatory! + IMPROVIVOR",
       "venueId": "imposters-theater",
       "date": "2026-08-16",
       "time": "19:30",
@@ -9909,6 +10423,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-16-save-ferris"
+    },
+    {
+      "title": "Jerry Mitchell",
+      "performers": [
+        {
+          "name": "Jerry Mitchell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-16-jerry-mitchell"
     },
     {
       "id": "spotlight-house-techno-2026-08-16",
@@ -10570,25 +11103,6 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/midnight-rental-presents-secret-movie-night-4/",
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/14938203?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-08-19-rio-da-yung-og",
-      "title": "Rio Da Yung Og",
-      "venueId": "beachland-ballroom",
-      "date": "2026-08-19",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Rio Da Yung Og",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/rio-da-yung-og-19-aug",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/rio-da-yung-og-19-aug#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -11313,6 +11827,25 @@
       "manual": false
     },
     {
+      "id": "mercury-music-lounge-2026-08-20-grateful-dead-night-w-sunshine-daydream-6",
+      "title": "Grateful Dead Night – W/ Sunshine Daydream",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-08-20",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$6.20",
+      "performers": [
+        {
+          "name": "Grateful Dead Night – W/ Sunshine Daydream",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/grateful-dead-night-w-sunshine-daydream-6/",
+      "ticketUrl": "https://www.ticketweb.com/event/grateful-dead-night-the-mercury-music-lounge-tickets/15015953",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-08-20-1100-summer-plaza-series",
       "title": "Summer Plaza Series | Get Your Game On",
       "venueId": "playhouse-square",
@@ -11736,6 +12269,20 @@
       "id": "smedleys-thursdays-2026-08-20",
       "title": "Freebyrds Jam Night",
       "venueId": "smedleys",
+      "date": "2026-08-20",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
+      "id": "crocker-movies-2026-08-20",
+      "title": "Movies in the Park",
+      "venueId": "crocker-park",
       "date": "2026-08-20",
       "time": null,
       "doors": null,
@@ -12172,6 +12719,44 @@
       "manual": false
     },
     {
+      "id": "hilarities-2026-08-21-1900-141623",
+      "title": "Nathan Macintosh",
+      "venueId": "hilarities",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nathan Macintosh",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/141623",
+      "ticketUrl": "https://hilarities.com/shows/382638",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-08-21-2145-141623",
+      "title": "Nathan Macintosh",
+      "venueId": "hilarities",
+      "date": "2026-08-21",
+      "time": "21:45",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nathan Macintosh",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/141623",
+      "ticketUrl": "https://hilarities.com/shows/382639",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "van-aken-live-music-at-the-van-aken-district-tamil-jordan-2026-08-21",
       "title": "Live Music at the Van Aken District - Tamil Jordan",
       "venueId": "van-aken-district",
@@ -12567,6 +13152,25 @@
       "id": "chagrin-tavern-2026-08-21-higher-ground"
     },
     {
+      "title": "The Public Good",
+      "performers": [
+        {
+          "name": "The Public Good",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-21-the-public-good"
+    },
+    {
       "title": "Empire of the Sun",
       "performers": [
         {
@@ -12643,6 +13247,25 @@
       "id": "house-of-blues-2026-08-21-jon-b"
     },
     {
+      "title": "Maria Petti",
+      "performers": [
+        {
+          "name": "Maria Petti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-21-maria-petti"
+    },
+    {
       "title": "Nickelbox",
       "performers": [
         {
@@ -12679,6 +13302,25 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-08-21-dreadlock-dave"
+    },
+    {
+      "title": "Wave Magnetik",
+      "performers": [
+        {
+          "name": "Wave Magnetik",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-21",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-21-wave-magnetik"
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-08-21",
@@ -12984,26 +13626,6 @@
       "manual": false
     },
     {
-      "id": "fwd-nightclub-2026-08-22-hntr",
-      "title": "HNTR",
-      "venueId": "fwd-nightclub",
-      "date": "2026-08-22",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "tag": "NIGHT",
-      "performers": [
-        {
-          "name": "HNTR",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/HNTR?eid=EVE-YDIJ3S",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/HNTR?eid=EVE-YDIJ3S",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "rock-hall-2026-08-22-lunch-by-the-lake-natalie-mcmahon-aug22",
       "title": "Lunch by the Lake: Natalie McMahon",
       "venueId": "rock-hall",
@@ -13114,6 +13736,44 @@
       ],
       "eventUrl": "https://hilarities.com/events/134231",
       "ticketUrl": "https://hilarities.com/shows/365495",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-08-22-1900-141623",
+      "title": "Nathan Macintosh",
+      "venueId": "hilarities",
+      "date": "2026-08-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nathan Macintosh",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/141623",
+      "ticketUrl": "https://hilarities.com/shows/382640",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hilarities-2026-08-22-2145-141623",
+      "title": "Nathan Macintosh",
+      "venueId": "hilarities",
+      "date": "2026-08-22",
+      "time": "21:45",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Nathan Macintosh",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/141623",
+      "ticketUrl": "https://hilarities.com/shows/382641",
       "source": "scrape",
       "manual": false
     },
@@ -13632,6 +14292,29 @@
       "id": "chagrin-tavern-2026-08-22-cleveland-rock-bar"
     },
     {
+      "title": "Gabe Jones & Fresh Fruit",
+      "performers": [
+        {
+          "name": "Gabe Jones",
+          "headliner": true
+        },
+        {
+          "name": "Fresh Fruit",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-22-gabe-jones"
+    },
+    {
       "title": "Diana Chittester",
       "performers": [
         {
@@ -13670,6 +14353,25 @@
       "id": "house-of-blues-2026-08-22-will-wood"
     },
     {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-22-dj-caffrey"
+    },
+    {
       "title": "Wanted",
       "performers": [
         {
@@ -13706,6 +14408,25 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-08-22-follow-the-sun"
+    },
+    {
+      "title": "Hip to That",
+      "performers": [
+        {
+          "name": "Hip to That",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-22",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-22-hip-to-that"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-08-22",
@@ -14321,6 +15042,25 @@
       "id": "smedleys-2026-08-23-tony-schultz"
     },
     {
+      "title": "AWD",
+      "performers": [
+        {
+          "name": "AWD",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-23-awd"
+    },
+    {
       "id": "spotlight-house-techno-2026-08-23",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -14747,25 +15487,6 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/summer-plaza-series-summer-sounds",
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-08-25-personality-crisis-aka-cle-punk-night-10",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-25",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-10/",
-      "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/14948633?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -15530,6 +16251,25 @@
       "manual": false
     },
     {
+      "id": "mercury-music-lounge-2026-08-27-live-wire-karaoke-33",
+      "title": "Live Wire Karaoke",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-08-27",
+      "time": "21:00",
+      "doors": "21:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Live Wire Karaoke",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/live-wire-karaoke-33/",
+      "ticketUrl": "https://www.ticketweb.com/event/live-wire-karaoke-the-mercury-music-lounge-tickets/15012333",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "rock-hall-2026-08-27-rock-hall-live-old-97s",
       "title": "Rock Hall Live: Old 97’s",
       "venueId": "rock-hall",
@@ -15589,6 +16329,25 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "foundry-concert-club-2026-08-27-vulgar-display-of-tiki",
+      "title": "VULGAR DISPLAY OF TIKI",
+      "venueId": "foundry-concert-club",
+      "date": "2026-08-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "VULGAR DISPLAY OF TIKI",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/vulgar-display-of-tiki/",
+      "ticketUrl": "https://www.ticketweb.com/event/vulgar-display-of-tiki-the-foundry-tickets/15016283?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -15927,6 +16686,20 @@
       "id": "smedleys-thursdays-2026-08-27",
       "title": "Freebyrds Jam Night",
       "venueId": "smedleys",
+      "date": "2026-08-27",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
+      "id": "crocker-movies-2026-08-27",
+      "title": "Movies in the Park",
+      "venueId": "crocker-park",
       "date": "2026-08-27",
       "time": null,
       "doors": null,
@@ -16382,6 +17155,25 @@
       "manual": false
     },
     {
+      "id": "foundry-concert-club-2026-08-28-soulmirror-dissected-desolate-remains-gouted-corpse-befallen-expiate",
+      "title": "SOULMIRROR, Dissected, Desolate Remains, Gouted Corpse, Befallen, Expiate",
+      "venueId": "foundry-concert-club",
+      "date": "2026-08-28",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "SOULMIRROR, Dissected, Desolate Remains, Gouted Corpse, Befallen, Expiate",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/soulmirror-dissected-desolate-remains-gouted-corpse-befallen-expiate/",
+      "ticketUrl": "https://www.ticketweb.com/event/soulmirror-dissected-desolate-remains-gouted-the-foundry-tickets/15016183?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "dunlaps-2026-08-28-141317",
       "title": "Forced Happiness",
       "venueId": "dunlaps-corner-bar",
@@ -16657,8 +17449,8 @@
       "manual": false
     },
     {
-      "id": "imposters-theater-2026-08-28-at-the-buzzer-sports-comedy-talk-show-pitch-perfect-a-powerpoint-competition",
-      "title": "At The Buzzer: Sports Comedy Talk Show + Pitch Perfect: A Powerpoint Competition",
+      "id": "imposters-theater-2026-08-28-at-the-buzzer-sports-comedy-talk-show-i-m-right-you-re-wrong-shut-up-the-game-show",
+      "title": "At The Buzzer: Sports Comedy Talk Show + I’m Right, You’re Wrong, Shut Up: The Game Show",
       "venueId": "imposters-theater",
       "date": "2026-08-28",
       "time": "19:30",
@@ -16799,6 +17591,33 @@
       "id": "chagrin-tavern-2026-08-28-fm-77"
     },
     {
+      "title": "Chris Hovan, Tim Mirth & Taylor Arbogast",
+      "performers": [
+        {
+          "name": "Chris Hovan",
+          "headliner": true
+        },
+        {
+          "name": "Tim Mirth",
+          "headliner": false
+        },
+        {
+          "name": "Taylor Arbogast",
+          "headliner": false
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-28-chris-hovan"
+    },
+    {
       "title": "Josh Groban",
       "performers": [
         {
@@ -16860,6 +17679,25 @@
       "id": "house-of-blues-2026-08-28-isaiah-rashad"
     },
     {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-28-pete-lazard"
+    },
+    {
       "title": "Spazmatics",
       "performers": [
         {
@@ -16917,6 +17755,25 @@
       "id": "1928-public-house-2026-08-28-4locos"
     },
     {
+      "title": "Mike Raymond",
+      "performers": [
+        {
+          "name": "Mike Raymond",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-28-mike-raymond"
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-08-28",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -16929,29 +17786,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-08-29-don-toliver",
-      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-      "venueId": "rocket-arena",
-      "date": "2026-08-29",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Don Toliver",
-          "headliner": true
-        },
-        {
-          "name": "Chase B",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "rocket-arena-2026-08-29-don-toliver",
@@ -16973,6 +17807,29 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18328978",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-29-don-toliver",
+      "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+      "venueId": "rocket-arena",
+      "date": "2026-08-29",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Don Toliver",
+          "headliner": true
+        },
+        {
+          "name": "Chase B",
+          "headliner": false
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/don-toliver-tickets/cleveland-ohio-rocket-arena-2026-08-29-7-30-pm/concert/18301696",
       "source": "seatgeek",
       "manual": false
     },
@@ -17928,6 +18785,25 @@
       "id": "chagrin-tavern-2026-08-29-jam-machine"
     },
     {
+      "title": "Alvin Frazier Group",
+      "performers": [
+        {
+          "name": "Alvin Frazier Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-08-29-alvin-frazier-group"
+    },
+    {
       "title": "Ohio Drifters",
       "performers": [
         {
@@ -17945,6 +18821,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-29-ohio-drifters"
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-08-29-chris-hatton"
     },
     {
       "title": "Billy Morris & The Sunset Strip",
@@ -17968,6 +18863,44 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-08-29-billy-morris-the-sunset-strip"
+    },
+    {
+      "title": "Light of 2 Moons",
+      "performers": [
+        {
+          "name": "Light of 2 Moons",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-29-light-of-2-moons"
+    },
+    {
+      "title": "Brian Alan Hager",
+      "performers": [
+        {
+          "name": "Brian Alan Hager",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-29-brian-alan-hager"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-08-29",
@@ -18720,6 +19653,25 @@
       "id": "smedleys-2026-08-31-dj-sam-sinister"
     },
     {
+      "title": "Mike and Mike",
+      "performers": [
+        {
+          "name": "Mike and Mike",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-31",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-08-31-mike-and-mike"
+    },
+    {
       "id": "spotlight-acoustic-jam-night-2026-08-31",
       "title": "Acoustic Jam Night (hosted by Joshua Donato)",
       "venueId": "spotlight-cle",
@@ -19209,7 +20161,7 @@
     },
     {
       "id": "beachland-ballroom-2026-09-03-nolan-taylor",
-      "title": "Nolan Taylor",
+      "title": "Nolan Taylor with Jess Woodland",
       "venueId": "beachland-ballroom",
       "date": "2026-09-03",
       "time": "20:00",
@@ -19219,6 +20171,10 @@
         {
           "name": "Nolan Taylor",
           "headliner": true
+        },
+        {
+          "name": "Jess Woodland",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/nolan-taylor-03-sep",
@@ -19746,7 +20702,7 @@
       "date": "2026-09-04",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$18.00",
+      "price": "$20.06",
       "performers": [
         {
           "name": "Motley 2 – Motley Crue Tribute",
@@ -19813,6 +20769,28 @@
       ],
       "eventUrl": "https://rockhall.com/event/believe-in-cle-yoga-2026/",
       "ticketUrl": "https://www.believeincle.com/believe-in-cle-events/2026/9/4/13th-annual-believe-in-cle-at-the-rock-hall",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-09-04-2000-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-09-04",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
       "source": "scrape",
       "manual": false
     },
@@ -19949,6 +20927,25 @@
       ],
       "eventUrl": "https://hilarities.com/events/138026",
       "ticketUrl": "https://hilarities.com/shows/374438",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "hofbrauhaus-2026-09-04-oktoberfest-2",
+      "title": "OKTOBERFEST",
+      "venueId": "hofbrauhaus-cleveland",
+      "date": "2026-09-04",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "OKTOBERFEST",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.hofbrauhauscleveland.com/events/oktoberfest-2",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -20230,6 +21227,25 @@
       "id": "1928-public-house-2026-09-04-fungirl"
     },
     {
+      "title": "Nooch",
+      "performers": [
+        {
+          "name": "Nooch",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-09-04-nooch"
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-09-04",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -20380,6 +21396,25 @@
       ],
       "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/Niiko-x-Swae?eid=EVE-CR8CN2",
       "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/Niiko-x-Swae?eid=EVE-CR8CN2",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mercury-music-lounge-2026-09-05-girl-cologne-riley-burke-band-the-velvet-gentlemen-last-pick",
+      "title": "Girl Cologne, Riley Burke Band, The Velvet Gentlemen, Last Pick",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-09-05",
+      "time": "19:00",
+      "doors": null,
+      "price": "$14.14",
+      "performers": [
+        {
+          "name": "Girl Cologne, Riley Burke Band, The Velvet Gentlemen, Last Pick",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/girl-cologne-riley-burke-band-the-velvet-gentlemen-last-pick/",
+      "ticketUrl": "https://www.ticketweb.com/event/girl-cologne-riley-burke-band-the-mercury-music-lounge-tickets/15013633",
       "source": "scrape",
       "manual": false
     },
@@ -20635,6 +21670,20 @@
       "manual": false
     },
     {
+      "id": "imposters-theater-2026-09-05-she-they-comedy-hour",
+      "title": "She/They Comedy Hour",
+      "venueId": "imposters-theater",
+      "date": "2026-09-05",
+      "time": "18:00",
+      "doors": null,
+      "price": "from $5.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/shethey-comedy-hour-090526",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/shethey-comedy-hour-090526",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "imposters-theater-2026-09-05-imposters-big-comedy-night",
       "title": "Imposters BIG Comedy Night",
       "venueId": "imposters-theater",
@@ -20794,6 +21843,25 @@
       "source": "manual",
       "manual": true,
       "id": "quintanas-speakeasy-2026-09-05-learn-hands-on-craft-cocktails"
+    },
+    {
+      "title": "Jasmine Jeanise",
+      "performers": [
+        {
+          "name": "Jasmine Jeanise",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-09-05-jasmine-jeanise"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-09-05",
@@ -21199,6 +22267,25 @@
       "id": "shooters-2026-09-06-gordo"
     },
     {
+      "title": "Earle Rogoff",
+      "performers": [
+        {
+          "name": "Earle Rogoff",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crocker-park",
+      "source": "manual",
+      "manual": true,
+      "id": "crocker-park-2026-09-06-earle-rogoff"
+    },
+    {
       "id": "spotlight-house-techno-2026-09-06",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -21357,7 +22444,7 @@
     },
     {
       "id": "beachland-ballroom-2026-09-08-american-aquarium",
-      "title": "American Aquarium",
+      "title": "American Aquarium with Nathan Evans Fox",
       "venueId": "beachland-ballroom",
       "date": "2026-09-08",
       "time": "20:00",
@@ -21367,6 +22454,10 @@
         {
           "name": "American Aquarium",
           "headliner": true
+        },
+        {
+          "name": "Nathan Evans Fox",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep",
@@ -22413,8 +23504,8 @@
       "title": "Keep Flying",
       "venueId": "mahalls",
       "date": "2026-09-11",
-      "time": "18:30",
-      "doors": "18:30",
+      "time": "18:00",
+      "doors": "18:00",
       "price": "$15.00",
       "performers": [
         {
@@ -23001,6 +24092,29 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/bloodrave/",
       "ticketUrl": "https://www.ticketweb.com/event/bloodrave-grog-shop-tickets/14265244?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-09-12-waterloo-arts-fest",
+      "title": "Waterloo Arts Fest with Collin Miller & the Brother Nature, Jack & The Optimists, Fox Ears, Frida & the Mann, Shortt Stories",
+      "venueId": "beachland-ballroom",
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": "12:00",
+      "price": "No Cover",
+      "performers": [
+        {
+          "name": "Waterloo Arts Fest",
+          "headliner": true
+        },
+        {
+          "name": "Collin Miller & the Brother Nature, Jack & The Optimists, Fox Ears, Frida & the Mann, Shortt Stories",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/waterloo-arts-fest-12-sep",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/waterloo-arts-fest-12-sep#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -27718,6 +28832,25 @@
       "manual": false
     },
     {
+      "id": "winchester-music-tavern-2026-09-25-thr3e-will-rush-tribute",
+      "title": "THR3E WILL – Rush Tribute",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-09-25",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$25.21",
+      "performers": [
+        {
+          "name": "THR3E WILL – Rush Tribute",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/thr3e-will-rush-tribute/",
+      "ticketUrl": "https://www.ticketweb.com/event/thr3e-will-rush-the-winchester-tickets/15013683",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "playhouse-square-2026-09-25-harland-williams",
       "title": "(Canceled) Harland Williams",
       "venueId": "playhouse-square",
@@ -30240,6 +31373,26 @@
       "manual": false
     },
     {
+      "id": "treelawn-music-hall-2026-10-02-15012813",
+      "title": "Jason White wsg Bent String",
+      "venueId": "treelawn",
+      "room": "Treelawn Music Hall",
+      "date": "2026-10-02",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Jason White wsg Bent String",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketweb.com/event/jason-white-wsg-bent-string-treelawn-music-hall-tickets/15012813",
+      "ticketUrl": "https://www.ticketweb.com/event/jason-white-wsg-bent-string-treelawn-music-hall-tickets/15012813",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "sixty6-2026-10-02-line-dance-is-my-therapy-5",
       "title": "Line Dance is My Therapy",
       "venueId": "the-sixty6",
@@ -30255,6 +31408,25 @@
       ],
       "eventUrl": "https://thesixty6.com/events/line-dance-is-my-therapy-5/var/ri-8.l-L1",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "bside-2026-10-02-broadway-rave-dance-party",
+      "title": "Broadway Rave Dance Party",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-10-02",
+      "time": "20:30",
+      "doors": "20:00",
+      "price": "$28.52",
+      "performers": [
+        {
+          "name": "Broadway Rave Dance Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/broadway-rave-dance-party/",
+      "ticketUrl": "https://www.ticketweb.com/event/broadway-rave-dance-party-b-side-lounge-tickets/14272974?pl=bside",
       "source": "scrape",
       "manual": false
     },
@@ -31419,6 +32591,29 @@
       "manual": true
     },
     {
+      "id": "grog-shop-2026-10-08-ajj",
+      "title": "AJJ w/ Greet Death",
+      "venueId": "grog-shop",
+      "date": "2026-10-08",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "",
+      "performers": [
+        {
+          "name": "AJJ",
+          "headliner": true
+        },
+        {
+          "name": "Greet Death",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/ajj-greet-death/",
+      "ticketUrl": "https://www.ticketweb.com/event/ajj-greet-death-grog-shop-tickets/15013623?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-10-08-lily-vakili-her-band",
       "title": "Lily Vakili & Her Band with Mighty Joe Castro & The Gravamen",
       "venueId": "beachland-ballroom",
@@ -31936,6 +33131,25 @@
       ],
       "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
       "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "beachland-ballroom-2026-10-10-the-clarks",
+      "title": "The Clarks",
+      "venueId": "beachland-ballroom",
+      "date": "2026-10-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Clarks",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/the-clarks-10-oct",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/the-clarks-10-oct#tickets",
       "source": "scrape",
       "manual": false
     },
@@ -33265,6 +34479,29 @@
       "manual": false
     },
     {
+      "id": "grog-shop-2026-10-16-vibe-direct",
+      "title": "Vibe & Direct w/ Carlos Jones & The P.L.U.S. Band",
+      "venueId": "grog-shop",
+      "date": "2026-10-16",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Vibe & Direct",
+          "headliner": true
+        },
+        {
+          "name": "Carlos Jones & The P.L.U.S. Band",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/vibe-direct-carlos-jones-the-p-l-u-s-band/",
+      "ticketUrl": "https://www.ticketweb.com/event/vibe-direct-carlos-jones-grog-shop-tickets/14995403?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "beachland-ballroom-2026-10-16-eggy",
       "title": "Eggy",
       "venueId": "beachland-ballroom",
@@ -33303,6 +34540,25 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/acid-mothers-temple-16-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/acid-mothers-temple-16-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "globe-iron-1541581",
+      "title": "Earlybirds Club",
+      "venueId": "globe-iron",
+      "date": "2026-10-16",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Earlybirds Club",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://globeironcle.com/events/detail?event_id=1541581",
+      "ticketUrl": "https://www.axs.com/events/1541581/earlybirds-club-tickets",
       "source": "scrape",
       "manual": false
     },
@@ -33868,6 +35124,37 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-18-pain-of-truth",
+      "title": "Pain of Truth",
+      "venueId": "mahalls",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Pain of Truth",
+          "headliner": true
+        },
+        {
+          "name": "Biohazard",
+          "headliner": false
+        },
+        {
+          "name": "Shattered Realm",
+          "headliner": false
+        },
+        {
+          "name": "Killing Pace",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/pain-of-truth/",
+      "ticketUrl": "https://link.dice.fm/C1407cd94f04",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "globe-iron-1541564",
       "title": "CupcakKe",
       "venueId": "globe-iron",
@@ -34061,7 +35348,7 @@
     },
     {
       "id": "beachland-ballroom-2026-10-19-osees-featuring-brigid-dawson",
-      "title": "OSEES featuring Brigid Dawson with Traps PS",
+      "title": "OSEES featuring Brigid Dawson with Traps PS, Bill Fox",
       "venueId": "beachland-ballroom",
       "date": "2026-10-19",
       "time": "20:00",
@@ -34073,12 +35360,35 @@
           "headliner": true
         },
         {
-          "name": "Traps PS",
+          "name": "Traps PS, Bill Fox",
           "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/osees-19-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/osees-19-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-10-19-passion-mango",
+      "title": "Passion Mango",
+      "venueId": "mahalls",
+      "date": "2026-10-19",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Passion Mango",
+          "headliner": true
+        },
+        {
+          "name": "cherry pick",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/passion-mango/",
+      "ticketUrl": "https://link.dice.fm/k008086b2f54",
       "source": "scrape",
       "manual": false
     },
@@ -35644,29 +36954,6 @@
       "manual": true
     },
     {
-      "id": "beachland-ballroom-2026-10-27-in-her-own-words-every-avenue",
-      "title": "In Her Own Words, Every Avenue with Fluorescents",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-27",
-      "time": "19:30",
-      "doors": "18:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "In Her Own Words, Every Avenue",
-          "headliner": true
-        },
-        {
-          "name": "Fluorescents",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/in-her-own-words-x-every-avenue-27-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/in-her-own-words-x-every-avenue-27-oct#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-10-27-quadeca-life-1-tour",
       "title": "Quadeca “Life 1 Tour”",
       "venueId": "mahalls",
@@ -35801,29 +37088,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "beachland-ballroom-2026-10-28-flamin-groovies",
-      "title": "Flamin' Groovies with The Courettes",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-28",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Flamin' Groovies",
-          "headliner": true
-        },
-        {
-          "name": "The Courettes",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/flamin-groovies-28-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/flamin-groovies-28-oct#tickets",
-      "source": "scrape",
-      "manual": false
     },
     {
       "id": "mahalls-2026-10-28-this-is-lorelei",
@@ -36036,6 +37300,25 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-30-7-pm/18356915",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "the-agora-2026-10-30-beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson",
+      "title": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
+      "venueId": "the-agora",
+      "date": "2026-10-30",
+      "time": null,
+      "doors": "18:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.agoracleveland.com/events/detail/1541883",
+      "ticketUrl": "https://www.axs.com/events/1541883/beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson-tickets?skin=agora&skin=agora",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -36807,6 +38090,29 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/ho99o9-n8noface-sincerely___-the-void/",
       "ticketUrl": "https://link.dice.fm/Ad40801a00dc",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-11-05-george-clanton",
+      "title": "George Clanton",
+      "venueId": "mahalls",
+      "date": "2026-11-05",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "George Clanton",
+          "headliner": true
+        },
+        {
+          "name": "Ryan Hemsworth",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/george-clanton-2/",
+      "ticketUrl": "https://link.dice.fm/Pdad2932e8a3",
       "source": "scrape",
       "manual": false
     },
@@ -38135,10 +39441,10 @@
       "manual": false
     },
     {
-      "id": "cleveland-orchestra-69d9359f506a24da187123db",
+      "id": "cleveland-orchestra-6a738ab1e994ae6bc96f9424",
       "title": "Royal Illuminations",
       "venueId": "cleveland-orchestra",
-      "room": "Mandel Concert Hall",
+      "room": null,
       "date": "2026-11-12",
       "time": "19:30",
       "doors": null,
@@ -38150,7 +39456,7 @@
         }
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
-      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24378",
       "source": "scrape",
       "manual": false
     },
@@ -38366,6 +39672,20 @@
       "manual": false
     },
     {
+      "id": "imposters-theater-2026-11-13-new-management-a-black-owned-comedy-show",
+      "title": "New Management: A Black-Owned Comedy Show",
+      "venueId": "imposters-theater",
+      "date": "2026-11-13",
+      "time": "21:30",
+      "doors": null,
+      "price": "from $5.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/new-management-091126-njm69",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/new-management-091126-njm69",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "OLD SKOOL",
       "performers": [
         {
@@ -38527,10 +39847,10 @@
       "manual": false
     },
     {
-      "id": "cleveland-orchestra-69d935d8506a24da1871257f",
+      "id": "cleveland-orchestra-6a738bc69e92aefe01515c0b",
       "title": "Royal Illuminations",
       "venueId": "cleveland-orchestra",
-      "room": "Mandel Concert Hall",
+      "room": null,
       "date": "2026-11-14",
       "time": "19:30",
       "doors": null,
@@ -38542,7 +39862,7 @@
         }
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
-      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24400",
       "source": "scrape",
       "manual": false
     },
@@ -38684,10 +40004,10 @@
       "manual": false
     },
     {
-      "id": "cleveland-orchestra-69d93604c89cf6f75a8dda35",
+      "id": "cleveland-orchestra-6a738bfd1c765bb433f5e8e7",
       "title": "Royal Illuminations",
       "venueId": "cleveland-orchestra",
-      "room": "Mandel Concert Hall",
+      "room": null,
       "date": "2026-11-15",
       "time": "15:00",
       "doors": null,
@@ -38699,7 +40019,7 @@
         }
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
-      "ticketUrl": "https://www.clevelandorchestra.com/events/royal-illuminations",
+      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24436",
       "source": "scrape",
       "manual": false
     },
@@ -38796,6 +40116,29 @@
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/cash-money-and-no-limit-tickets/cleveland-ohio-rocket-arena-2026-11-15-7-pm/concert/18292588",
       "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-11-16-hovvdy",
+      "title": "Hovvdy",
+      "venueId": "mahalls",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "Hovvdy",
+          "headliner": true
+        },
+        {
+          "name": "Christian Lee Hutson",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/hovvdy/",
+      "ticketUrl": "https://link.dice.fm/R2cef4046702",
+      "source": "scrape",
       "manual": false
     },
     {
@@ -39182,7 +40525,7 @@
       "date": "2026-11-20",
       "time": "18:00",
       "doors": "18:00",
-      "price": "$22.00",
+      "price": null,
       "performers": [
         {
           "name": "WHY?",
@@ -39996,6 +41339,37 @@
       "manual": true
     },
     {
+      "id": "mahalls-2026-11-25-kingdom-of-giants",
+      "title": "Kingdom of Giants",
+      "venueId": "mahalls",
+      "date": "2026-11-25",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Kingdom of Giants",
+          "headliner": true
+        },
+        {
+          "name": "Deadlands",
+          "headliner": false
+        },
+        {
+          "name": "Holy Wars",
+          "headliner": false
+        },
+        {
+          "name": "Night Rider",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/kingdom-of-giants/",
+      "ticketUrl": "https://link.dice.fm/V628e8ff60b3",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-11-25-the-people-poetry-open-mic-night-18",
       "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
       "venueId": "bside-liquor-lounge",
@@ -40375,7 +41749,7 @@
       "date": "2026-11-28",
       "time": "15:00",
       "doors": "14:00",
-      "price": "$35.51",
+      "price": "$35.51 - $45.81",
       "performers": [
         {
           "name": "80's Day Disco!",
@@ -40946,6 +42320,25 @@
       "manual": false
     },
     {
+      "id": "mercury-music-lounge-2026-12-05-a-killers-confession",
+      "title": "A Killers Confession",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-12-05",
+      "time": "18:30",
+      "doors": "17:30",
+      "price": "$36.03",
+      "performers": [
+        {
+          "name": "A Killers Confession",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/a-killers-confession/",
+      "ticketUrl": "https://www.ticketweb.com/event/a-killers-confession-the-mercury-music-lounge-tickets/14936263",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "welcome-to-the-farm-booking_01KV5WYFANGHYRTN53H0HJYAGV",
       "title": "Dave Hinrich",
       "venueId": "welcome-to-the-farm",
@@ -40981,25 +42374,6 @@
       "eventUrl": null,
       "ticketUrl": null,
       "source": "beatgig",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-12-05-1930-140805",
-      "title": "Mardi Gras Murder",
-      "venueId": "hilarities",
-      "date": "2026-12-05",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Mardi Gras Murder",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/140805",
-      "ticketUrl": "https://hilarities.com/shows/380907",
-      "source": "scrape",
       "manual": false
     },
     {
@@ -41157,6 +42531,25 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/the-sammy-deleon-and-jackie-warren-quartet-with-kip-reed-chris-burge-11/",
       "ticketUrl": "https://www.ticketweb.com/event/the-sammy-deleon-and-jackie-b-side-lounge-tickets/14231144?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mercury-music-lounge-2026-12-07-music-trivi-aoke-48",
+      "title": "MUSIC TRIVI-AOKE",
+      "venueId": "mercury-music-lounge",
+      "date": "2026-12-07",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "MUSIC TRIVI-AOKE",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-48/",
+      "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233224",
       "source": "scrape",
       "manual": false
     },

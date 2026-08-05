@@ -3547,15 +3547,21 @@
     "id": "cavottas-garden-bar-2026-10-03-blue-lunch"
   },
 
+
+
+
+
+
+
   {
-    "title": "G Strings",
+    "title": "11th Hour",
     "performers": [
       {
-        "name": "G Strings",
+        "name": "11th Hour",
         "headliner": true
       }
     ],
-    "date": "2026-07-24",
+    "date": "2026-08-08",
     "time": null,
     "doors": null,
     "price": null,
@@ -3564,17 +3570,17 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-07-24-g-strings"
+    "id": "sound-stage-tavern-2026-08-08-11th-hour"
   },
   {
-    "title": "Higher Ground",
+    "title": "Dead Ringers",
     "performers": [
       {
-        "name": "Higher Ground",
+        "name": "Dead Ringers",
         "headliner": true
       }
     ],
-    "date": "2026-07-25",
+    "date": "2026-08-14",
     "time": null,
     "doors": null,
     "price": null,
@@ -3583,8 +3589,31 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-07-25-higher-ground"
+    "id": "sound-stage-tavern-2026-08-14-dead-ringers"
   },
+  {
+    "title": "Mary Taylor Brooks",
+    "performers": [
+      {
+        "name": "Mary Taylor Brooks",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "sound-stage-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "sound-stage-tavern-2026-08-15-mary-taylor-brooks"
+  },
+
+
+
+
 
 
 
@@ -4623,8 +4652,30 @@
     },
 
 
+
+
+
   {
-    "title": "50 Cent",
+    "title": "MGK (MGK Day Pre-Party)",
+    "performers": [
+      {
+        "name": "MGK",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-07-mgk"
+  },
+  {
+    "title": "50 Cent (MGK Day Afterparty)",
     "performers": [
       {
         "name": "50 Cent",
@@ -4641,6 +4692,25 @@
     "source": "manual",
     "manual": true,
     "id": "shooters-2026-08-08-50-cent"
+  },
+  {
+    "title": "I'm From Cleveland Sessions",
+    "performers": [
+      {
+        "name": "I'm From Cleveland Sessions",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-09-i-m-from-cleveland-sessions"
   },
   {
     "title": "Ian Asher",
@@ -4758,6 +4828,8 @@
   },
 
   
+
+
 
 
   {
@@ -5857,38 +5929,43 @@
     "id": "chagrin-tavern-2026-08-30-phil-n-the-blanks"
   },
 
+
+
+
+
+
   {
-    "title": "Jackie Warren & Joshua Smith",
+    "title": "Eton Presents: Boulevard Beats",
     "performers": [
       {
-        "name": "Jackie Warren",
+        "name": "Victoria Rosemond",
         "headliner": true
       },
       {
-        "name": "Joshua Smith",
+        "name": "Ed Ridley",
         "headliner": false
       }
     ],
-    "date": "2026-07-03",
-    "time": "20:00",
+    "date": "2026-08-06",
+    "time": "16:00",
     "doors": null,
-    "price": "$10",
+    "price": null,
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-03-jackie-warren"
+    "id": "nightjar-2026-08-06-boulevard-beats"
   },
   {
-    "title": "Joshua Smith's Lo-Fi Live",
+    "title": "Tricotism",
     "performers": [
       {
-        "name": "Joshua Smith",
+        "name": "Tricotism",
         "headliner": true
       }
     ],
-    "date": "2026-07-10",
+    "date": "2026-08-07",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -5897,17 +5974,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-10-joshua-smith"
+    "id": "nightjar-2026-08-07-tricotism"
   },
   {
-    "title": "Joshua Smith's Lo-Fi Live",
+    "title": "Bobby Selvaggio Hope Quartet",
     "performers": [
       {
-        "name": "Joshua Smith",
+        "name": "Bobby Selvaggio Hope Quartet",
         "headliner": true
       }
     ],
-    "date": "2026-07-11",
+    "date": "2026-08-08",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -5916,26 +5993,7 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-11-joshua-smith"
-  },
-  {
-    "title": "EMP Trio",
-    "performers": [
-      {
-        "name": "EMP Trio",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-17",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-07-17-emp-trio"
+    "id": "nightjar-2026-08-08-bobby-selvaggio-hope-quartet"
   },
   {
     "title": "Max Schlenk Group",
@@ -5945,7 +6003,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-18",
+    "date": "2026-08-14",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -5954,17 +6012,40 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-18-max-schlenk-group"
+    "id": "nightjar-2026-08-14-max-schlenk-group"
   },
   {
-    "title": "Swingbone",
+    "title": "Joe Hunter & Tim Matson",
     "performers": [
       {
-        "name": "Swingbone",
+        "name": "Joe Hunter",
+        "headliner": true
+      },
+      {
+        "name": "Tim Matson",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-08-15-joe-hunter"
+  },
+  {
+    "title": "The Public Good",
+    "performers": [
+      {
+        "name": "The Public Good",
         "headliner": true
       }
     ],
-    "date": "2026-07-24",
+    "date": "2026-08-21",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -5973,7 +6054,57 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-24-swingbone"
+    "id": "nightjar-2026-08-21-the-public-good"
+  },
+  {
+    "title": "Gabe Jones & Fresh Fruit",
+    "performers": [
+      {
+        "name": "Gabe Jones",
+        "headliner": true
+      },
+      {
+        "name": "Fresh Fruit",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-08-22-gabe-jones"
+  },
+  {
+    "title": "Chris Hovan, Tim Mirth & Taylor Arbogast",
+    "performers": [
+      {
+        "name": "Chris Hovan",
+        "headliner": true
+      },
+      {
+        "name": "Tim Mirth",
+        "headliner": false
+      },
+      {
+        "name": "Taylor Arbogast",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-08-28-chris-hovan"
   },
   {
     "title": "Alvin Frazier Group",
@@ -5983,7 +6114,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-25",
+    "date": "2026-08-29",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -5992,8 +6123,15 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-07-25-alvin-frazier-group"
+    "id": "nightjar-2026-08-29-alvin-frazier-group"
   },
+
+
+
+
+
+
+
 
   {
     "title": "Jack Johnson",
@@ -8262,14 +8400,14 @@
 
 
   {
-    "title": "Maria Petti",
+    "title": "Pete Lazard",
     "performers": [
       {
-        "name": "Maria Petti",
+        "name": "Pete Lazard",
         "headliner": true
       }
     ],
-    "date": "2026-07-04",
+    "date": "2026-08-01",
     "time": "17:00",
     "doors": null,
     "price": null,
@@ -8278,18 +8416,18 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-04-maria-petti"
+    "id": "bar-32-2026-08-01-pete-lazard"
   },
   {
-    "title": "DJ Caffrey",
+    "title": "Emma Nicholas",
     "performers": [
       {
-        "name": "DJ Caffrey",
+        "name": "Emma Nicholas",
         "headliner": true
       }
     ],
-    "date": "2026-07-04",
-    "time": "20:30",
+    "date": "2026-08-07",
+    "time": "18:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -8297,7 +8435,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-04-dj-caffrey"
+    "id": "bar-32-2026-08-07-emma-nicholas"
   },
   {
     "title": "Maria Petti",
@@ -8307,8 +8445,8 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-10",
-    "time": "18:00",
+    "date": "2026-08-08",
+    "time": "17:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -8316,26 +8454,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-10-maria-petti"
-  },
-  {
-    "title": "Mo Andrews",
-    "performers": [
-      {
-        "name": "Mo Andrews",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-07-11-mo-andrews"
+    "id": "bar-32-2026-08-08-maria-petti"
   },
   {
     "title": "DJ Caffrey",
@@ -8345,7 +8464,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-11",
+    "date": "2026-08-08",
     "time": "20:30",
     "doors": null,
     "price": null,
@@ -8354,7 +8473,102 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-11-dj-caffrey"
+    "id": "bar-32-2026-08-08-dj-caffrey"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-08-14-chris-hatton"
+  },
+  {
+    "title": "Maria Petti",
+    "performers": [
+      {
+        "name": "Maria Petti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-08-15-maria-petti"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-08-15-dj-caffrey"
+  },
+  {
+    "title": "Maria Petti",
+    "performers": [
+      {
+        "name": "Maria Petti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-08-21-maria-petti"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-08-22-dj-caffrey"
   },
   {
     "title": "Pete Lazard",
@@ -8364,7 +8578,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-17",
+    "date": "2026-08-28",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -8373,7 +8587,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-17-pete-lazard"
+    "id": "bar-32-2026-08-28-pete-lazard"
   },
   {
     "title": "Chris Hatton",
@@ -8383,7 +8597,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-18",
+    "date": "2026-08-29",
     "time": "17:00",
     "doors": null,
     "price": null,
@@ -8392,83 +8606,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-07-18-chris-hatton"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-18",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-07-18-dj-caffrey"
-  },
-  {
-    "title": "Maria Petti",
-    "performers": [
-      {
-        "name": "Maria Petti",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-24",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-07-24-maria-petti"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-25",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-07-25-dj-caffrey"
-  },
-  {
-    "title": "Chris Hatton",
-    "performers": [
-      {
-        "name": "Chris Hatton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-31",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-07-31-chris-hatton"
+    "id": "bar-32-2026-08-29-chris-hatton"
   },
 
 
@@ -11393,8 +11531,594 @@
     "source": "manual",
     "manual": true,
     "id": "sticks-pub-2026-08-07-larry-insana"
-  }
+  },
 
+
+
+
+
+
+  {
+    "title": "Emo Nite (@ 27 Club)",
+    "performers": [
+      {
+        "name": "Emo Nite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-06",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-06-emo-nite"
+  },
+  {
+    "title": "Red Bull Best Trick Contest (@ Crooked River Skate Park)",
+    "performers": [
+      {
+        "name": "Red Bull Best Trick Contest",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-07-red-bull-best-trick-contest"
+  },
+  {
+    "title": "Karaoke Night (@ 27 Club)",
+    "performers": [
+      {
+        "name": "Karaoke Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-07-karaoke-night"
+  },
+  {
+    "title": "Welcome to Cleveland Party (@ Shooters)",
+    "performers": [
+      {
+        "name": "MGK",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-07-mgk"
+  },
+  {
+    "title": "MGK Day Tailgate (@ North Coast Yard)",
+    "performers": [
+      {
+        "name": "MGK Day Tailgate",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-mgk-day-tailgate"
+  },
+  {
+    "title": "City Ride",
+    "performers": [
+      {
+        "name": "City Ride",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "15:00",
+    "doors": "14:00",
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-city-ride"
+  },
+  {
+    "title": "MGK Day Festival (@ North Coast Yard)",
+    "performers": [
+      {
+        "name": "MGK Day Festival",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "15:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-mgk-day-festival"
+  },
+  {
+    "title": "MGK with Wiz Khalifa (@ Main Stage)",
+    "performers": [
+      {
+        "name": "MGK",
+        "headliner": true
+      },
+      {
+        "name": "Wiz Khalifa",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-mgk"
+  },
+  {
+    "title": "Emo Nite 2 (@ 27 Club)",
+    "performers": [
+      {
+        "name": "Emo Nite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-emo-nite"
+  },
+  {
+    "title": "50 Cent (@ Shooters)",
+    "performers": [
+      {
+        "name": "50 Cent",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-08-50-cent"
+  },
+  {
+    "title": "5K + Pilates (@ 27 Club)",
+    "performers": [
+      {
+        "name": "5K + Pilates",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "11:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-09-5k-pilates"
+  },
+  {
+    "title": "I'm From Cleveland Sessions (@ Shooters)",
+    "performers": [
+      {
+        "name": "I'm From Cleveland Sessions",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-09-i-m-from-cleveland-sessions"
+  },
+  {
+    "title": "Silent Disco (@ 27 Club)",
+    "performers": [
+      {
+        "name": "Silent Disco",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "mgk-day",
+    "source": "manual",
+    "manual": true,
+    "id": "mgk-day-2026-08-09-silent-disco"
+  },
+
+
+
+
+
+
+
+  {
+    "title": "3 Sheets to the Wind",
+    "performers": [
+      {
+        "name": "3 Sheets to the Wind",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-07-3-sheets-to-the-wind"
+  },
+  {
+    "title": "Quinn Hoffman",
+    "performers": [
+      {
+        "name": "Quinn Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-08-quinn-hoffman"
+  },
+  {
+    "title": "Midwest Music Project",
+    "performers": [
+      {
+        "name": "Midwest Music Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-08-midwest-music-project"
+  },
+  {
+    "title": "Back9 Par4",
+    "performers": [
+      {
+        "name": "Back9 Par4",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-09",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-09-back9-par4"
+  },
+  {
+    "title": "Rellick",
+    "performers": [
+      {
+        "name": "Rellick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-14-rellick"
+  },
+  {
+    "title": "Eric Embacher",
+    "performers": [
+      {
+        "name": "Eric Embacher",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-15-eric-embacher"
+  },
+  {
+    "title": "Jerry Mitchell",
+    "performers": [
+      {
+        "name": "Jerry Mitchell",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-16",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-16-jerry-mitchell"
+  },
+  {
+    "title": "Wave Magnetik",
+    "performers": [
+      {
+        "name": "Wave Magnetik",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-21-wave-magnetik"
+  },
+  {
+    "title": "Hip to That",
+    "performers": [
+      {
+        "name": "Hip to That",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-22-hip-to-that"
+  },
+  {
+    "title": "AWD",
+    "performers": [
+      {
+        "name": "AWD",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-23",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-23-awd"
+  },
+  {
+    "title": "Mike Raymond",
+    "performers": [
+      {
+        "name": "Mike Raymond",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-28-mike-raymond"
+  },
+  {
+    "title": "Light of 2 Moons",
+    "performers": [
+      {
+        "name": "Light of 2 Moons",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-29-light-of-2-moons"
+  },
+  {
+    "title": "Brian Alan Hager",
+    "performers": [
+      {
+        "name": "Brian Alan Hager",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-29-brian-alan-hager"
+  },
+  {
+    "title": "Mike and Mike",
+    "performers": [
+      {
+        "name": "Mike and Mike",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-31",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-08-31-mike-and-mike"
+  },
+  {
+    "title": "Nooch",
+    "performers": [
+      {
+        "name": "Nooch",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-09-04-nooch"
+  },
+  {
+    "title": "Jasmine Jeanise",
+    "performers": [
+      {
+        "name": "Jasmine Jeanise",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-09-05-jasmine-jeanise"
+  },
+  {
+    "title": "Earle Rogoff",
+    "performers": [
+      {
+        "name": "Earle Rogoff",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-06",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crocker-park",
+    "source": "manual",
+    "manual": true,
+    "id": "crocker-park-2026-09-06-earle-rogoff"
+  }
 
 
 
