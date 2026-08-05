@@ -1,0 +1,193 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Sound Stage Tavern | CRWD SRFR</title>
+		<meta name="description" content="Venue information and calendar of upcoming events.">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/venue-map.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top" data-venue-id="sound-stage-tavern">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to home" href="/"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
+						<a class="navLink" href="/featured.html"><li class="navItem">Featured</li></a>
+						<a class="navLink" href="/venues/"><li class="navItem currentPage">Venues</li></a>
+						<hr>
+						<a class="navLink" href="/about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="/contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="/contribute.html"><li class="navItem">Contribute</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="venueContent" class="page">
+				<div class="main">
+					<div class="breadcrumb">
+						<a href="/venues/">All Venues</a> |
+					</div>
+					<div id="venueTop" class="flex">
+						<div id="venueInfo" class="columnTwo">
+							<h1>Sound Stage Tavern</h1>
+							<div class="venueMetadata">
+								Wickliffe | Bar
+							</div>
+							<div class="venueInfo">
+								<p>30525 Euclid Ave, Wickliffe, OH 44092</p>
+								<p class="venueURL"><a href="https://www.soundstagetavern.com/">Visit Site <span class="icon" id="ext"></span></a></p>
+							</div>
+						</div>
+						<div id="venueLocation" class="columnTwo">
+							<div id="venueMap" data-lat="41.6199269" data-lng="-81.4549414" data-name="Sound Stage Tavern"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="venueCalendar" class="page">
+				<div class="main">
+					<div class="venueCalendar">
+						<h4 class="subHead"><span>All upcoming shows for:</span></h4>
+						<div class="calendarWrapper">
+							<div id="calendarNav">
+								<div id="current">
+									<div id="currentSelector">
+										<span class="icon" id="plc"></span>
+										<h3>Sound Stage Tavern</h3>
+									</div>
+								</div>
+								<ul id="navArrows">
+								    <li id="prevArrow"><a href="/venues/smedleys/" aria-label="Previous venue: Smedleys"><span class="icon" id="bck"></span></a></li>
+								    <li id="nextArrow"><a href="/venues/spirits-willoughby/" aria-label="Next venue: Spirits in Willoughby"><span class="icon" id="fwd"></span></a></li>
+								</ul>
+							</div>
+							<div class="wave-top"></div>
+							<div class="wave-bottom"></div>
+							<div id="calendarCards">
+								<div id="calendarEnd">
+									<span id="emptyState" style="display:none;">No shows found :(</span>
+									<span id="withResults">That's all, folks<br/><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></span>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="/js/venue-page.js" defer></script>
+		<script async
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS8ONBEUoe9Z3U7jjR3RKD_d-gYH4vIIs&callback=initMap&v=weekly&libraries=marker">
+		</script>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+
+	</body>
+
+	</html>
