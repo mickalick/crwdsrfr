@@ -21,7 +21,9 @@ const TYPE_LABELS = {
   "bar": "Bar",
   "outdoor": "Outdoor",
   "brewery": "Brewery",
-  "jazz-bar": "Jazz Bar"
+  "jazz-bar": "Jazz Bar",
+  "comedy-club": "Comedy Club",
+  "diy": "DIY"
 };
 
 // Matches the same convention as events.js/venue-map.js — ignore a

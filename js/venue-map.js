@@ -6,7 +6,8 @@ const TYPE_LABELS = {
   "bar": "Bar",
   "outdoor": "Outdoor",
   "jazz-bar": "Jazz Bar",
-  "comedy-club": "Comedy Club"
+  "comedy-club": "Comedy Club",
+  "diy": "DIY"
 };
 
 // Matches the same convention as events.js — ignore a leading "The " when
