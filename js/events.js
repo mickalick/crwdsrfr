@@ -215,11 +215,10 @@ function renderVenueCards(events, container, beforeNode) {
           </div>`;
       }).join('');
 
-      const venueUrl = venue.url ?? venue.eventsUrl ?? '#';
       const cardHtml = `
         <div class="venueCard">
           <div class="venue">
-            <h4><a href="${venueUrl}" target="_blank">${venue.name}</a></h4>
+            <h4><a href="/venues/${venueId}/">${venue.name}</a></h4>
           </div>
           <div class="venueEvents">
             ${eventsHtml}
