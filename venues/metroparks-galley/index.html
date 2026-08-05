@@ -12,10 +12,10 @@
 		</script>
 
 		<meta charset="utf-8">
-		<title>Venues | CRWD SRFR</title>
-		<meta name="description" content="Supported venue list and map, as well as on the radar venues to support.">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="images/favicon.png">
+		<title>The Galley at East 55th Marina | CRWD SRFR</title>
+		<meta name="description" content="Venue information and calendar of upcoming events.">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="shortcut icon" href="/images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -90,7 +90,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
-	<body id="top">
+	<body id="top" data-venue-id="metroparks-galley">
 		<header>
 			<nav>
 				<a id="logo" aria-label="Back to home" href="/"></a>
@@ -102,99 +102,65 @@
 				<div id="menuNav">
 					<ul>
 						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
-						<a class="navLink" href="featured.html"><li class="navItem">Featured</li></a>
-						<a class="navLink" href="venues.html"><li class="navItem currentPage">Venues</li></a>
+						<a class="navLink" href="/featured.html"><li class="navItem">Featured</li></a>
+						<a class="navLink" href="/venues/"><li class="navItem currentPage">Venues</li></a>
 						<hr>
-						<a class="navLink" href="about.html"><li class="navItem">About</li></a>
-						<a class="navLink" href="contact.html"><li class="navItem">Contact</li></a>
-						<a class="navLink" href="contribute.html"><li class="navItem">Contribute</li></a>
+						<a class="navLink" href="/about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="/contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="/contribute.html"><li class="navItem">Contribute</li></a>
 					</ul>
 				</div>
 			</nav>
 		</header>
 		<div id="wrapper">
-			<section id="hero" class="page">
+			<section id="venueContent" class="page">
 				<div class="main">
-					<div class="pageHeader">
-						<div class="headContent">
-							<h1>Venues</em></h1>
+					<div class="breadcrumb">
+						<a href="/venues/">All Venues</a> |
+					</div>
+					<div id="venueTop" class="flex">
+						<div id="venueInfo" class="columnTwo">
+							<h1>The Galley at East 55th Marina</h1>
+							<div class="venueMetadata">
+								Glenville | Outdoor
+							</div>
+							<div class="venueInfo">
+								<p>5601 N Marginal Rd, Cleveland, OH 44114</p>
+								<p class="venueURL"><a href="https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation/the-galley">Visit Site <span class="icon" id="ext"></span></a></p>
+							</div>
+						</div>
+						<div id="venueLocation" class="columnTwo">
+							<div id="venueMap" data-lat="41.5305037" data-lng="-81.652422" data-name="The Galley at East 55th Marina"></div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="venuesContent" class="page">
+			<section id="venueCalendar" class="page">
 				<div class="main">
-					<div class="calendarWrapper">
-						<p>Our goal is to be the only site you need to find live music and shows for any venue in the greater Cleveland area.</p>
-						<p>Though our list of supported venues is always growing, it's inevitable that we may have missed some. So if you aren't seeing a venue you frequent, please <a href="contact.html">let us know!</a></p>
-
-						<section id="venueMap">
-						  <aside class="vm-sidebar">
-						    <div class="vm-controls">
-						    	<div class="venueSearchBar">
-						      		<input class="search" id="venueSearch" type="text" placeholder="Search supported venues" />
-						      		<button aria-label="Show Filters" class="filter-toggle" id="filterToggle"><span class="icon" id="fil"></span></button>
-						      	</div>
-						      	<div class="filter-row" id="filters" style="display:none;"></div>
-						    </div>
-						    <div class="count" id="count"></div>
-						    <div class="venue-list" id="venueList"></div>
-						  </aside>
-						  <div class="map-pane" id="map"></div>
-						</section>
-
-						<div id="venuesList" class="flex">
-							<div class="columnTwo">
-								<h2>Latest Venues Added:</h2>
-								<ul class="venueList">
-									<li class="listTitle">August 3</li>
-									<li>Sticks Pub & Grille</li>
-									<br/>
-									<li class="listTitle">July 30</li>
-									<li>Grindstone Tap House</li>
-									<li>Imposters Theater</li>
-									<li>Reithoffer's (Hoff's)</li>
-									<li>Spotlight Cleveland</li>
-									<br/>
-									<li class="listTitle">July 27</li>
-									<li>1928 Public House</li>
-									<li>No Surf Fest</li>
-									<li>Public Square</li>
+					<div class="venueCalendar">
+						<h4 class="subHead"><span>All upcoming shows for:</span></h4>
+						<div class="calendarWrapper">
+							<div id="calendarNav">
+								<div id="current">
+									<div id="currentSelector">
+										<span class="icon" id="plc"></span>
+										<h3>The Galley at East 55th Marina</h3>
+									</div>
+								</div>
+								<ul id="navArrows">
+								    <li id="prevArrow"><a href="/venues/fwd-nightclub/" aria-label="Previous venue: FWD Day + Nightclub"><span class="icon" id="bck"></span></a></li>
+								    <li id="nextArrow"><a href="/venues/globe-iron/" aria-label="Next venue: Globe Iron"><span class="icon" id="fwd"></span></a></li>
 								</ul>
 							</div>
-							<div class="columnTwo">
-								<h2>On Our Radar:</h2>
-								<ul class="venueList">
-									<li>Backstage Bar</li>
-									<li>Beck Center for the Arts</li>
-									<li>Billy's A Cappelli Martini Bar</li>
-									<li>The Birds Nest</li>
-									<li>Brothers Lounge</li>
-									<li>Crocker Park</li>
-									<li>Double D's Honkytonk</li>
-									<li>Funny Bone Comedy Club</li>
-									<li>Garden of Eden Rooftop</li>
-									<li>Gormley's Pub</li>
-									<li>Hydrant Pub & Grub</li>
-									<li>Hyde Park Beachwood</li>
-									<li>Jolene's Honky Tonk</li>
-									<li>Little Rose Tavern</li>
-									<li>Lyric Bistro</li>
-									<li>Market Garden Irishtown Bend Taproom</li>
-									<li>McGuire's Pub</li>
-									<li>Mister Zhangs</li>
-									<li>Near West Theatre</li>
-									<li>The Odeon</li>
-									<li>The Root Cafe</li>
-									<li>Smoke and Mirrors</li>
-									<li>Soberay 365</li>
-									<li>Twist Social Club</li>
-									<li>Velvet Tango Room</li>
-									<li>Westpark Station</li>
-									<li>Wild Eagle</li>
-									<li>Wizbang</li>
-								</ul>
+							<div class="wave-top"></div>
+							<div class="wave-bottom"></div>
+							<div id="calendarCards">
+								<div id="calendarEnd">
+									<span id="emptyState" style="display:none;">No shows found :(</span>
+									<span id="withResults">That's all, folks<br/><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></span>
+								</div>
 							</div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -206,8 +172,8 @@
 						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
 					</div>
 					<ul id="bottomNav">
-						<li><a href="terms.html">Terms of Use</a></li>
-						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
 					</ul>
 					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
 					<p><small>All rights reserved.</small></p>
@@ -215,7 +181,7 @@
 			</footer>
 		</div>
 		
-		<script src="/js/venue-map.js" defer></script>
+		<script src="/js/venue-page.js" defer></script>
 		<script async
 		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS8ONBEUoe9Z3U7jjR3RKD_d-gYH4vIIs&callback=initMap&v=weekly&libraries=marker">
 		</script>

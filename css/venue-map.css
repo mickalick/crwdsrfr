@@ -25,7 +25,7 @@
   margin-top: 40px;
 }
 
-#venueMap, #map, #map * { transition: none !important; }
+#venueMap, #venueMap *, #map, #map * { transition: none !important; }
 
 @media (max-width: 860px) {
   #venueMap { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 78vh; display: flex; flex-direction: column;}

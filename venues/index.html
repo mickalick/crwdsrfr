@@ -1,0 +1,303 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Venues | CRWD SRFR</title>
+		<meta name="description" content="Supported venue list and map, as well as on the radar venues to support.">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/venue-map.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to home" href="/"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
+						<a class="navLink" href="/featured.html"><li class="navItem">Featured</li></a>
+						<a class="navLink" href="/venues/"><li class="navItem currentPage">Venues</li></a>
+						<hr>
+						<a class="navLink" href="/about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="/contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="/contribute.html"><li class="navItem">Contribute</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="hero" class="page">
+				<div class="main">
+					<div class="pageHeader">
+						<div class="headContent">
+							<h1>Venues</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="venuesContent" class="page">
+				<div class="main">
+					<div class="calendarWrapper">
+						<p>Our goal is to be the only site you need to find live music and shows for any venue in the greater Cleveland area.</p>
+						<p>Though our list of supported venues is always growing, it's inevitable that we may have missed some. So if you aren't seeing a venue you frequent, please <a href="/contact.html">let us know!</a></p>
+
+						<section id="venueMap">
+						  <aside class="vm-sidebar">
+						    <div class="vm-controls">
+						    	<div class="venueSearchBar">
+						      		<input class="search" id="venueSearch" type="text" placeholder="Search supported venues" />
+						      		<button aria-label="Show Filters" class="filter-toggle" id="filterToggle"><span class="icon" id="fil"></span></button>
+						      	</div>
+						      	<div class="filter-row" id="filters" style="display:none;"></div>
+						    </div>
+						    <div class="count" id="count"></div>
+						    <div class="venue-list" id="venueList"></div>
+						  </aside>
+						  <div class="map-pane" id="map"></div>
+						</section>
+
+						<div id="venuesList" class="flex">
+							<div class="columnTwo">
+								<h2>Latest Venues Added:</h2>
+								<ul class="venueList">
+									<li class="listTitle">August 3:</li>
+									<li>Sticks Pub & Grille</li>
+									<br/>
+									<li class="listTitle">July 30:</li>
+									<li>Grindstone Tap House</li>
+									<li>Imposters Theater</li>
+									<li>Reithoffer's (Hoff's)</li>
+									<li>Spotlight Cleveland</li>
+									<br/>
+									<li class="listTitle">July 27:</li>
+									<li>1928 Public House</li>
+									<li>No Surf Fest</li>
+									<li>Public Square</li>
+								</ul>
+								<h2>On Our Radar:</h2>
+								<ul class="venueList">
+									<li>Backstage Bar</li>
+									<li>Beck Center for the Arts</li>
+									<li>Billy's A Cappelli Martini Bar</li>
+									<li>The Birds Nest</li>
+									<li>Brothers Lounge</li>
+									<li>Crocker Park</li>
+									<li>Double D's Honkytonk</li>
+									<li>Funny Bone Comedy Club</li>
+									<li>Garden of Eden Rooftop</li>
+									<li>Gormley's Pub</li>
+									<li>Hydrant Pub & Grub</li>
+									<li>Hyde Park Beachwood</li>
+									<li>Jolene's Honky Tonk</li>
+									<li>Little Rose Tavern</li>
+									<li>Lyric Bistro</li>
+									<li>Market Garden Irishtown Bend Taproom</li>
+									<li>McGuire's Pub</li>
+									<li>Mister Zhangs</li>
+									<li>Near West Theatre</li>
+									<li>The Odeon</li>
+									<li>The Root Cafe</li>
+									<li>Smoke and Mirrors</li>
+									<li>Soberay 365</li>
+									<li>Twist Social Club</li>
+									<li>Velvet Tango Room</li>
+									<li>Westpark Station</li>
+									<li>Wild Eagle</li>
+									<li>Wizbang</li>
+								</ul>
+							</div>
+							<div class="columnTwo">
+								<h2>All Supported Venues:</h2>
+								<ul class="venueList">
+									<li><a href="/venues/1928-public-house/">1928 Public House</a></li>
+									<li><a href="/venues/the-agora/">The Agora</a></li>
+									<li><a href="/venues/bside-liquor-lounge/">B Side Liquor Lounge</a></li>
+									<li><a href="/venues/bar-32/">Bar 32</a></li>
+									<li><a href="/venues/beachland-ballroom/">Beachland Ballroom</a></li>
+									<li><a href="/venues/bent-mace/">Bent Mace</a></li>
+									<li><a href="/venues/blossom-music-center/">Blossom Music Center</a></li>
+									<li><a href="/venues/bop-stop/">Bop Stop</a></li>
+									<li><a href="/venues/cain-park/">Cain Park</a></li>
+									<li><a href="/venues/cavottas-garden-bar/">Cavotta's Garden Bar</a></li>
+									<li><a href="/venues/cebars/">Cebars</a></li>
+									<li><a href="/venues/chagrin-tavern/">Chagrin Tavern on the River</a></li>
+									<li><a href="/venues/cleveland-orchestra/">The Cleveland Orchestra</a></li>
+									<li><a href="/venues/coda/">CODA</a></li>
+									<li><a href="/venues/collision-bend-cleveland/">Collision Bend Cleveland</a></li>
+									<li><a href="/venues/collision-bend-euclid/">Collision Bend Euclid</a></li>
+									<li><a href="/venues/crobar/">crobar</a></li>
+									<li><a href="/venues/dunlaps-corner-bar/">Dunlap's Corner Bar</a></li>
+									<li><a href="/venues/metroparks-edgewater/">Edgewater Beach</a></li>
+									<li><a href="/venues/metroparks-emerald-necklace/">Emerald Necklace Marina</a></li>
+									<li><a href="/venues/metroparks-euclid-beach/">Euclid Beach</a></li>
+									<li><a href="/venues/forest-city-brewery/">Forest City Brewery</a></li>
+									<li><a href="/venues/foundry-concert-club/">The Foundry Concert Club</a></li>
+									<li><a href="/venues/fwd-nightclub/">FWD Day + Nightclub</a></li>
+									<li><a href="/venues/metroparks-galley/">The Galley at east 55th Marina</a></li>
+									<li><a href="/venues/globe-iron/">Globe Iron</a></li>
+									<li><a href="/venues/grindstone-tap-house/">Grindstone Tap House</a></li>
+									<li><a href="/venues/grog-shop/">Grog Shop</a></li>
+									<li><a href="/venues/the-grove/">The Grove Amphitheatre</a></li>
+									<li><a href="/venues/happy-dog/">Happy Dog</a></li>
+									<li><a href="/venues/hilarities/">Hilarities</a></li>
+									<li><a href="/venues/hofbrauhaus-cleveland/">Hofbrauhaus</a></li>
+									<li><a href="/venues/house-of-blues/">House of Blues</a></li>
+									<li><a href="/venues/huntington-bank-field/">Huntington Bank Field</a></li>
+									<li><a href="/venues/imposters-theater/">Imposters Theater</a></li>
+									<li><a href="/venues/the-ivy/">The Ivy</a></li>
+									<li><a href="/venues/jacobs-pavilion/">Jacob's Pavilion</a></li>
+									<li><a href="/venues/jolly-scholar/">The Jolly Scholar</a></li>
+									<li><a href="/venues/little-rose/">Little Rose Tavern</a></li>
+									<li><a href="/venues/local-bar-strongsville/">The Local Bar Strongsville</a></li>
+									<li><a href="/venues/mahalls/">Mahall's</a></li>
+									<li><a href="/venues/mercury-music-lounge/">Mercury Music Lounge</a></li>
+									<li><a href="/venues/metroparks-merwins-wharf/">Merwin's Wharf</a></li>
+									<li><a href="/venues/music-box/">Music Box Supper Club</a></li>
+									<li><a href="/venues/nelson-ledges/">Nelson Ledges Quarry Park</a></li>
+									<li><a href="/venues/nightjar/">Nightjar</a></li>
+									<li><a href="/venues/no-class/">No Class</a></li>
+									<li><a href="/venues/no-surf-fest/">No Surf Fest</a></li>
+									<li><a href="/venues/metroparks-huntington/">The Noshery at Huntington Beach</a></li>
+									<li><a href="/venues/paninis-westlake/">Panini's Westlake</a></li>
+									<li><a href="/venues/playhouse-square/">Playhouse Square</a></li>
+									<li><a href="/venues/prosperity-social-club/">Prosperity Social Club</a></li>
+									<li><a href="/venues/public-square/">Public Square</a></li>
+									<li><a href="/venues/quintanas-speakeasy/">Quintana's Speakeasy</a></li>
+									<li><a href="/venues/reithoffers/">Reithoffer's (Hoff's)</a></li>
+									<li><a href="/venues/rock-hall/">Rock & Roll Hall of Fame</a></li>
+									<li><a href="/venues/rocket-arena/">Rocket Arena</a></li>
+									<li><a href="/venues/rockin-on-the-river/">Rockin on the River</a></li>
+									<li><a href="/venues/seeing-double/">Seeing Double Speakeasy Bar</a></li>
+									<li><a href="/venues/shooters/">Shooters</a></li>
+									<li><a href="/venues/the-sixty6/">The Sixty 6</a></li>
+									<li><a href="/venues/smedleys/">Smedley's</a></li>
+									<li><a href="/venues/sound-stage-tavern/">Sound Stage Tavern</a></li>
+									<li><a href="/venues/spirits-willoughby/">Spirits in Willoughby</a></li>
+									<li><a href="/venues/spotlight-cle/">Spotlight Cleveland</a></li>
+									<li><a href="/venues/sticks-pub/">Sticks Pub & Grille</a></li>
+									<li><a href="/venues/time-warp/">Time Warp Bar</a></li>
+									<li><a href="/venues/treehouse/">The Treehouse</a></li>
+									<li><a href="/venues/treelawn/">The Treelawn</a></li>
+									<li><a href="/venues/van-aken-district/">Van Aken District</a></li>
+									<li><a href="/venues/welcome-to-the-farm/">Welcome to the Farm</a></li>
+									<li><a href="/venues/whiskey-island/">Whiskey Island</a></li>
+									<li><a href="/venues/winchester-music-tavern/">The Winchester Music Tavern</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="/js/venue-map.js" defer></script>
+		<script async
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS8ONBEUoe9Z3U7jjR3RKD_d-gYH4vIIs&callback=initMap&v=weekly&libraries=marker">
+		</script>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+
+	</body>
+
+	</html>
