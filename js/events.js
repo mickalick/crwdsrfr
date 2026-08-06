@@ -304,7 +304,7 @@ function collapseChipRow(wrap, groupKey) {
     });
   } else {
     chips.slice(lineThreeStart).forEach(c => c.style.display = 'none');
-    toggleBtn.textContent = `Show All (${chips.length - lineThreeStart} more)`;
+    toggleBtn.textContent = `Show All`;
     toggleBtn.addEventListener('click', () => {
       expandedGroups[groupKey] = true;
       collapseChipRow(wrap, groupKey);

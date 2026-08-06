@@ -107,12 +107,13 @@ const MONTH_ABBR = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug
 // ─── Fetchers ─────────────────────────────────────────────────────────────────
 
 async function fetchRocketArena() {
+  const TITLE_BLOCKLIST = /cleveland\s*monsters|cleveland\s*cavaliers/i;
   try {
     const url = `https://api.seatgeek.com/2/events?venue.id=${ROCKET_ARENA_VENUE_ID}&per_page=50&client_id=${SEATGEEK_CLIENT_ID}`;
     const res = await fetch(url);
     const data = await res.json();
 
-    return data.events.map(event => {
+    return data.events.filter(event => !TITLE_BLOCKLIST.test(event.title)).map(event => {
       const datetime = new Date(event.datetime_local);
       const date = datetime.toISOString().split('T')[0];
       const time = datetime.toTimeString().slice(0, 5);
@@ -430,10 +431,10 @@ async function fetchMetroparks() {
         const day = parseInt(dayStr);
         const today = new Date();
         const currentYear = today.getFullYear();
-        const eventDateThisYear = new Date(currentYear, monthIndex, day);
+        const eventDate = new Date(currentYear, monthIndex, day);
         const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
-        const year = eventDateThisYear < todayMidnight ? currentYear + 1 : currentYear;
-        const date = toLocalDateStr(new Date(year, monthIndex, day));
+        if (eventDate < todayMidnight) return; // skip events whose date has already passed this year
+        const date = toLocalDateStr(eventDate);
 
         const artistName = artistRaw.trim();
         const slug = slugify(artistName);
@@ -2858,6 +2859,7 @@ async function fetchSixty6() {
 async function fetchJollyScholar() {
   const events = [];
   const seenIds = new Set();
+  const TITLE_BLOCKLIST = /national/i;
   const monthMap = {
     January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
     July: 6, August: 7, September: 8, October: 9, November: 10, December: 11
@@ -2885,6 +2887,7 @@ async function fetchJollyScholar() {
 
       const title = $el.find('h2').first().text().trim();
       if (!title) return;
+      if (TITLE_BLOCKLIST.test(title)) return;
 
       // "Wednesday July 8th" — weekday, month, ordinal day, no year
       const dayRaw = $el.find('.event-day').first().text().trim();
