@@ -1171,8 +1171,8 @@ span.flatpickr-weekday {
 }
 
 .breadcrumb a {
-	text-decoration: underline;
-	color: #FFF;
+	text-decoration: none;
+	color: #62CBB8;
 }
 
 .venueMetadata {
@@ -1195,6 +1195,8 @@ span.flatpickr-weekday {
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
+	color: #FFF;
+	text-decoration: underline;
 }
 
 
@@ -1311,6 +1313,11 @@ span.flatpickr-weekday {
 	}
 
 	.breadcrumb a:hover {
+		text-decoration: underline;
+		color: #62CBB8;
+	}
+
+	.venueURL a:hover {
 		color: #62CBB8;
 	}
 
