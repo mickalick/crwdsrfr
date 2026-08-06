@@ -239,7 +239,7 @@
       "area": "Tremont"
     },
     "the-sixty6": {
-      "name": "The Sixty 6",
+      "name": "The Sixty6",
       "url": "https://thesixty6.com/",
       "eventsUrl": "https://thesixty6.com/events/",
       "type": "music-hall",
@@ -528,580 +528,13 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-08-05-crown-shy",
-      "title": "Crown Shy w/ LINE, Sundial Ceremony",
-      "venueId": "grog-shop",
-      "date": "2026-08-05",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "Crown Shy",
-          "headliner": true
-        },
-        {
-          "name": "LINE",
-          "headliner": false
-        },
-        {
-          "name": "Sundial Ceremony",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/crown-shy-line-sundial-ceremony/",
-      "ticketUrl": "https://www.ticketweb.com/event/crown-shy-line-sundial-ceremony-grog-shop-tickets/14240274?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2026-08-05-corissa-bragg",
-      "title": "Corissa Bragg",
-      "venueId": "metroparks-huntington",
-      "date": "2026-08-05",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Corissa Bragg",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "happy-dog-2026-08-05-tiffy",
-      "title": "TIFFY / Molly O'Malley / Empty Kodiak",
-      "venueId": "happy-dog",
-      "date": "2026-08-05",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "TIFFY",
-          "headliner": true
-        },
-        {
-          "name": "Molly O'Malley",
-          "headliner": false
-        },
-        {
-          "name": "Empty Kodiak",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
-      "ticketUrl": "https://app.opendate.io/e/tiffy-molly-o-malley-empty-kodiak-august-05-2026-717327",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-08-05-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
-      "venueId": "bop-stop",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/08/05/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/08/05/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-08-05-tiki-time-painting-aug5",
-      "title": "Tiki Time! Paint a Set of 2 Ceramic Tiki Glasses",
-      "venueId": "music-box",
-      "date": "2026-08-05",
-      "time": "17:30",
-      "doors": "17:00",
-      "price": "$40",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Tiki Time! Paint a Set of 2 Ceramic Tiki Glasses",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/tiki-time-painting-aug5/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-08-05-big-bad-voodoo-daddy-aug5",
-      "title": "Big Bad Voodoo Daddy",
-      "venueId": "music-box",
-      "date": "2026-08-05",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": null,
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Big Bad Voodoo Daddy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/big-bad-voodoo-daddy-aug5/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62581",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-08-05-as-seen-on-tv-bingo",
-      "title": "AS SEEN ON TV BINGO!!",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "AS SEEN ON TV BINGO!!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/as-seen-on-tv-bingo/",
-      "ticketUrl": "https://www.ticketweb.com/event/as-seen-on-tv-bingo-the-winchester-tickets/15001563",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-08-05-mercury-bike-night-6",
-      "title": "MERCURY BIKE NIGHT",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "MERCURY BIKE NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/mercury-bike-night-6/",
-      "ticketUrl": "https://www.ticketweb.com/event/mercury-bike-night-the-mercury-music-lounge-tickets/14232704",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-08-05-1930-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-08-05",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-08-05-for-absent-friends-metalcore-night",
-      "title": "For Absent Friends Metalcore Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "For Absent Friends Metalcore Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/for-absent-friends-metalcore-night/",
-      "ticketUrl": "https://www.ticketweb.com/event/for-absent-friends-metalcore-night-the-foundry-tickets/15003153?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-08-05",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-08-05",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-08-05",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-piercing-party-at-luster-2026-08-05",
-      "title": "Piercing Party at Luster!",
-      "venueId": "van-aken-district",
-      "date": "2026-08-05",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "room": "LUSTER A Gift Boutique",
-      "performers": [
-        {
-          "name": "Piercing Party at Luster!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/piercing-party-at-luster-2026-08-05",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-social-club-2026-08-05-14210364",
-      "title": "Skeleton Drive, Sick City, Death Mattress",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-08-05",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Skeleton Drive, Sick City, Death Mattress",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/skeleton-drive-sick-city-death-treelawn-social-club-tickets/14210364",
-      "ticketUrl": "https://www.ticketweb.com/event/skeleton-drive-sick-city-death-treelawn-social-club-tickets/14210364",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hofbrauhaus-2026-08-05-yhma73yj886bclr-amp5w-s9rhp-6ty6s-j3smd-da59c-ydczn-twn77-rsf46-t2s8s-f396t-7mwyt-29rla-zpbay-ch8h6-jljkl-687et-an8s5-9438m-57x5z-f7b75-m95t7-955g4-4l3tn-j2tjg",
-      "title": "Live Music: Joey Tomsick & The Shotskis",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-08-05",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Music: Joey Tomsick & The Shotskis",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/yhma73yj886bclr-amp5w-s9rhp-6ty6s-j3smd-da59c-ydczn-twn77-rsf46-t2s8s-f396t-7mwyt-29rla-zpbay-ch8h6-jljkl-687et-an8s5-9438m-57x5z-f7b75-m95t7-955g4-4l3tn-j2tjg",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hofbrauhaus-2026-08-05-hboktoberfestbier-7ebnt",
-      "title": "HB Oktoberfestbier Keg Tapping",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-08-05",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "HB Oktoberfestbier Keg Tapping",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/hboktoberfestbier-7ebnt",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-08-05-we-are-wednesdays-w-da-land-brass-band",
-      "title": "We Are Wednesdays w/ Da Land Brass Band",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "We Are Wednesdays w/ Da Land Brass Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/we-are-wednesdays-w-da-land-brass-band/",
-      "ticketUrl": "https://www.ticketweb.com/event/we-are-wednesdays-w-da-b-side-lounge-tickets/14240804?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-08-05-shit-show-karaoke-2",
-      "title": "SHIT SHOW KARAOKE",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-08-05",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "SHIT SHOW KARAOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230154?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-08-05-chemical-x",
-      "title": "CHEMICAL-X",
-      "venueId": "no-class",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$10-$15 Suggested",
-      "performers": [
-        {
-          "name": "Chemical-X",
-          "headliner": true
-        },
-        {
-          "name": "Hogan's Last Smash",
-          "headliner": false
-        },
-        {
-          "name": "Hey Stupid",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/chemical-x",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-08-05-swing-island",
-      "title": "Swing Island",
-      "venueId": "forest-city-brewery",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/6/3/swing-island",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-08-05-joke-writing-workshop-with-michael-busch",
-      "title": "Joke Writing Workshop with Michael Busch",
-      "venueId": "imposters-theater",
-      "date": "2026-08-05",
-      "time": "18:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/joke-writing-mb-080526",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/joke-writing-mb-080526",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-08-05-the-wednesday-jam",
-      "title": "The Wednesday Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-08-05",
-      "time": "20:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-080526",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-080526",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grindstone-tap-house-3240345-2026-08-05",
-      "title": "Jeopardy Bar Leagues!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Ted Riser",
-      "performers": [
-        {
-          "name": "Ted Riser",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-08-05-ted-riser"
-    },
-    {
-      "title": "Chris Hatton",
-      "performers": [
-        {
-          "name": "Chris Hatton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-08-05-chris-hatton"
-    },
-    {
-      "title": "SINGO",
-      "performers": [
-        {
-          "name": "SINGO",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "chagrin-tavern",
-      "source": "manual",
-      "manual": true,
-      "id": "chagrin-tavern-2026-08-05-singo"
-    },
-    {
-      "title": "Ice Cream & Whiskey Pairing",
-      "performers": [
-        {
-          "name": "Ice Cream & Whiskey Pairing",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-08-05-ice-cream-whiskey-pairing"
-    },
-    {
-      "title": "Trivia with Kevin Whalen",
-      "performers": [
-        {
-          "name": "Kevin Whalen",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-08-05-kevin-whalen"
-    },
-    {
-      "title": "Steve Kennedy",
-      "performers": [
-        {
-          "name": "Steve Kennedy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-08-05-steve-kennedy"
-    },
-    {
-      "title": "Angela Perley",
-      "performers": [
-        {
-          "name": "Angela Perley",
-          "headliner": true
-        },
-        {
-          "name": "Cowboy Princess Brigade",
-          "headliner": false
-        }
-      ],
-      "date": "2026-08-05",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "public-square",
-      "source": "manual",
-      "manual": true,
-      "id": "public-square-2026-08-05-angela-perley"
-    },
-    {
       "id": "grog-shop-2026-08-06-abronia",
       "title": "ABRONIA w/ Brood X, Powers / Rolin Duo",
       "venueId": "grog-shop",
       "date": "2026-08-06",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$15.16",
+      "price": "$19.51",
       "performers": [
         {
           "name": "ABRONIA",
@@ -1197,7 +630,7 @@
       "date": "2026-08-06",
       "time": "18:00",
       "doors": "18:00",
-      "price": "$25.00",
+      "price": "$30.00",
       "performers": [
         {
           "name": "Belmont",
@@ -1323,28 +756,6 @@
       "manual": false
     },
     {
-      "id": "playhouse-square-2026-08-06-1930-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-08-06",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-08-06-1100-summer-plaza-series",
       "title": "Summer Plaza Series | Get Your Game On",
       "venueId": "playhouse-square",
@@ -1363,6 +774,28 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/summer-plaza-series",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-08-06-1930-the-lion-king",
+      "title": "The Lion King",
+      "venueId": "playhouse-square",
+      "date": "2026-08-06",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Lion King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
     },
@@ -1484,25 +917,6 @@
       "manual": false
     },
     {
-      "id": "jolly-scholar-2026-08-06-2109368",
-      "title": "National IPA Day",
-      "venueId": "jolly-scholar",
-      "date": "2026-08-06",
-      "time": "11:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "National IPA Day",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#2109368",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "the-ivy-2026-08-06-poizon-2",
       "title": "Poizon",
       "venueId": "the-ivy",
@@ -1559,7 +973,7 @@
       "date": "2026-08-06",
       "time": "22:00",
       "doors": "21:00",
-      "price": "$19.51",
+      "price": "$25.43",
       "performers": [
         {
           "name": "Dancehall Vs. Afrobeats",
@@ -1895,48 +1309,6 @@
       "source": "manual",
       "manual": true,
       "id": "mgk-day-2026-08-06-emo-nite"
-    },
-    {
-      "id": "spotlight-bluegrass-jam-2026-08-06",
-      "title": "Bluegrass Jam (hosted by David Mayfield)",
-      "venueId": "spotlight-cle",
-      "date": "2026-08-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "smedleys-thursdays-2026-08-06",
-      "title": "Freebyrds Jam Night",
-      "venueId": "smedleys",
-      "date": "2026-08-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "crocker-movies-2026-08-06",
-      "title": "Movies in the Park",
-      "venueId": "crocker-park",
-      "date": "2026-08-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
     },
     {
       "id": "grog-shop-2026-08-07-nascar-aloe-jasiah-capital-punishment-tour",
@@ -4511,7 +3883,7 @@
       "id": "mgk-day-2026-08-08-mgk-day-tailgate"
     },
     {
-      "title": "City Ride",
+      "title": "City Ride (@ Southeast Harley)",
       "performers": [
         {
           "name": "City Ride",
@@ -6583,7 +5955,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-08-12",
+      "id": "grindstone-tap-house-3267931-2026-08-12",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-08-12",
@@ -6981,28 +6353,6 @@
       "manual": false
     },
     {
-      "id": "playhouse-square-2026-08-13-1330-the-lion-king",
-      "title": "The Lion King",
-      "venueId": "playhouse-square",
-      "date": "2026-08-13",
-      "endDate": null,
-      "time": "13:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Lion King",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-08-13-1100-summer-plaza-series",
       "title": "Summer Plaza Series | Get Your Game On",
       "venueId": "playhouse-square",
@@ -7021,6 +6371,28 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/summer-plaza-series",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-08-13-1330-the-lion-king",
+      "title": "The Lion King",
+      "venueId": "playhouse-square",
+      "date": "2026-08-13",
+      "endDate": null,
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "room": "KeyBank State Theatre",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Lion King",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-lion-king",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=62EB77A2-E022-4D7C-A064-2B66C803FC5C",
       "source": "scrape",
       "manual": false
     },
@@ -9333,6 +8705,41 @@
       "manual": false
     },
     {
+      "id": "bent-mace-2026-08-15-shyion-atl-milkboy-shugoxl-noelleakimbo-newport-motel",
+      "title": "Shyion (ATL) / Milkboy / ShugoXL / Noelleakimbo / Newport Motel",
+      "venueId": "bent-mace",
+      "date": "2026-08-15",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Shyion (ATL)",
+          "headliner": true
+        },
+        {
+          "name": "Milkboy",
+          "headliner": false
+        },
+        {
+          "name": "ShugoXL",
+          "headliner": false
+        },
+        {
+          "name": "Noelleakimbo",
+          "headliner": false
+        },
+        {
+          "name": "Newport Motel",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/shyion-atl-milkboy-shugoxl-noelleakimbo-newport-motel/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "bside-2026-08-15-basement-rb-experience-2",
       "title": "Basement: R&B Experience",
       "venueId": "bside-liquor-lounge",
@@ -10173,6 +9580,26 @@
         }
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/back-to-school-kids-fashion-show-2026-08-16",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "van-aken-cabi-fashion-pop-up-2026-08-16",
+      "title": "Cabi Fashion Pop-Up",
+      "venueId": "van-aken-district",
+      "date": "2026-08-16",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "room": "3401 Tuttle Road, Shaker Heights, OH",
+      "performers": [
+        {
+          "name": "Cabi Fashion Pop-Up",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/cabi-fashion-pop-up-2026-08-16",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -11291,25 +10718,6 @@
       "manual": false
     },
     {
-      "id": "foundry-concert-club-2026-08-19-for-absent-friends-metalcore-night",
-      "title": "For Absent Friends Metalcore Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-19",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "For Absent Friends Metalcore Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/for-absent-friends-metalcore-night/",
-      "ticketUrl": "https://www.ticketweb.com/event/for-absent-friends-metalcore-night-the-foundry-tickets/15003163?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "foundry-concert-club-2026-08-19-for-absent-friends-metalcore-night-2",
       "title": "For Absent Friends Metalcore Night",
       "venueId": "foundry-concert-club",
@@ -11364,6 +10772,26 @@
         }
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/live-music-at-the-van-aken-district-shaker-community-band-2026-08-19",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "van-aken-shaker-community-band-concert-2026-08-19",
+      "title": "Shaker Community Band Concert",
+      "venueId": "van-aken-district",
+      "date": "2026-08-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "room": "3401 Tuttle Road, Shaker Heights, OH",
+      "performers": [
+        {
+          "name": "Shaker Community Band Concert",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-community-band-concert-2026-08-19",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -11518,7 +10946,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-08-19",
+      "id": "grindstone-tap-house-3267931-2026-08-19",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-08-19",
@@ -11833,7 +11261,7 @@
       "date": "2026-08-20",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$6.20",
+      "price": "$8.26",
       "performers": [
         {
           "name": "Grateful Dead Night – W/ Sunshine Daydream",
@@ -12757,8 +12185,8 @@
       "manual": false
     },
     {
-      "id": "van-aken-live-music-at-the-van-aken-district-tamil-jordan-2026-08-21",
-      "title": "Live Music at the Van Aken District - Tamil Jordan",
+      "id": "van-aken-live-music-at-the-van-aken-district-slideways-2026-08-21",
+      "title": "Live Music at the Van Aken District - Slideways",
       "venueId": "van-aken-district",
       "date": "2026-08-21",
       "time": "17:30",
@@ -12767,11 +12195,11 @@
       "room": "3401 Tuttle Road, Shaker Heights, OH",
       "performers": [
         {
-          "name": "Live Music at the Van Aken District - Tamil Jordan",
+          "name": "Live Music at the Van Aken District - Slideways",
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/live-music-at-the-van-aken-district-tamil-jordan-2026-08-21",
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/live-music-at-the-van-aken-district-slideways-2026-08-21",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false
@@ -12875,7 +12303,7 @@
     },
     {
       "id": "bent-mace-2026-08-21-komrads-roch-tba",
-      "title": "Komrads (ROCH) / TBA",
+      "title": "Komrads (NY) / STCLVR (NY) / Succulent & Sinister (NY) / Silence Embrace",
       "venueId": "bent-mace",
       "date": "2026-08-21",
       "time": "20:00",
@@ -12883,11 +12311,19 @@
       "price": null,
       "performers": [
         {
-          "name": "Komrads (ROCH)",
+          "name": "Komrads (NY)",
           "headliner": true
         },
         {
-          "name": "TBA",
+          "name": "STCLVR (NY)",
+          "headliner": false
+        },
+        {
+          "name": "Succulent & Sinister (NY)",
+          "headliner": false
+        },
+        {
+          "name": "Silence Embrace",
           "headliner": false
         }
       ],
@@ -13952,45 +13388,6 @@
       ],
       "eventUrl": "https://www.ivycle.com/event-details/jaybe-mattitude-2",
       "ticketUrl": "https://www.ivycle.com/event-details/jaybe-mattitude-2",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bent-mace-2026-08-22-5anboro-tba",
-      "title": "5ANboRo + Dr. Balls / #1nytestand / Noelle Akimbo / Rey Angel / DH Da God / TBA",
-      "venueId": "bent-mace",
-      "date": "2026-08-22",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "5ANboRo + Dr. Balls",
-          "headliner": true
-        },
-        {
-          "name": "#1nytestand",
-          "headliner": false
-        },
-        {
-          "name": "Noelle Akimbo",
-          "headliner": false
-        },
-        {
-          "name": "Rey Angel",
-          "headliner": false
-        },
-        {
-          "name": "DH Da God",
-          "headliner": false
-        },
-        {
-          "name": "TBA",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/5anboro-tba/",
-      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -15089,6 +14486,25 @@
       "manual": true
     },
     {
+      "id": "grog-shop-2026-08-24-make-em-laugh-mondays-hosted-by-kevin-ford",
+      "title": "Make Em Laugh Mondays Hosted By Kevin Ford",
+      "venueId": "grog-shop",
+      "date": "2026-08-24",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Make Em Laugh Mondays Hosted By Kevin Ford",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-hosted-grog-shop-tickets/14236364?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "grog-shop-2026-08-24-sheer-terror",
       "title": "Sheer Terror w/ Ugly & Damaged, Sketchball, Madman",
       "venueId": "grog-shop",
@@ -15116,25 +14532,6 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/sheer-terror-dog-end-days-tour-2026/",
       "ticketUrl": "https://www.ticketweb.com/event/sheer-terror-dog-grog-shop-tickets/14249884?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grog-shop-2026-08-24-make-em-laugh-mondays-hosted-by-kevin-ford",
-      "title": "Make Em Laugh Mondays Hosted By Kevin Ford",
-      "venueId": "grog-shop",
-      "date": "2026-08-24",
-      "time": "20:00",
-      "doors": "19:30",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "Make Em Laugh Mondays Hosted By Kevin Ford",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-hosted-grog-shop-tickets/14236364?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
@@ -15968,7 +15365,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-08-26",
+      "id": "grindstone-tap-house-3267931-2026-08-26",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-08-26",
@@ -19999,7 +19396,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-09-02",
+      "id": "grindstone-tap-house-3267931-2026-09-02",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-09-02",
@@ -20543,6 +19940,20 @@
       "id": "smedleys-thursdays-2026-09-03",
       "title": "Freebyrds Jam Night",
       "venueId": "smedleys",
+      "date": "2026-09-03",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
+      "id": "crocker-movies-2026-09-03",
+      "title": "Movies in the Park",
+      "venueId": "crocker-park",
       "date": "2026-09-03",
       "time": null,
       "doors": null,
@@ -21415,6 +20826,50 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/girl-cologne-riley-burke-band-the-velvet-gentlemen-last-pick/",
       "ticketUrl": "https://www.ticketweb.com/event/girl-cologne-riley-burke-band-the-mercury-music-lounge-tickets/15013633",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-09-05-1600-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-09-05",
+      "endDate": null,
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-09-05-2000-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-09-05",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
       "source": "scrape",
       "manual": false
     },
@@ -22805,7 +22260,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-09-09",
+      "id": "grindstone-tap-house-3267931-2026-09-09",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-09-09",
@@ -25579,25 +25034,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-09-16-poison-girl-friend",
-      "title": "POiSON GiRL FRiEND",
-      "venueId": "mahalls",
-      "date": "2026-09-16",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$30.00",
-      "performers": [
-        {
-          "name": "POiSON GiRL FRiEND",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/poison-girl-friend/",
-      "ticketUrl": "https://link.dice.fm/ub3903957eea",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-09-16-the-4411",
       "title": "The 4411",
       "venueId": "mahalls",
@@ -25613,6 +25049,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-4411/",
       "ticketUrl": "https://link.dice.fm/h6013cac9441",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-16-poison-girl-friend",
+      "title": "POiSON GiRL FRiEND",
+      "venueId": "mahalls",
+      "date": "2026-09-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$30.00",
+      "performers": [
+        {
+          "name": "POiSON GiRL FRiEND",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/poison-girl-friend/",
+      "ticketUrl": "https://link.dice.fm/ub3903957eea",
       "source": "scrape",
       "manual": false
     },
@@ -25791,7 +25246,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-09-16",
+      "id": "grindstone-tap-house-3267931-2026-09-16",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-09-16",
@@ -27244,6 +26699,20 @@
       "manual": false
     },
     {
+      "id": "imposters-theater-2026-09-19-questionable-choices-improvised-standup-show",
+      "title": "Questionable Choices: Improvised Standup Show",
+      "venueId": "imposters-theater",
+      "date": "2026-09-19",
+      "time": "21:30",
+      "doors": null,
+      "price": "from $5.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/questionable-choices-091926",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/questionable-choices-091926",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "title": "Spazmatics",
       "performers": [
         {
@@ -28282,7 +27751,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-09-23",
+      "id": "grindstone-tap-house-3267931-2026-09-23",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-09-23",
@@ -30362,25 +29831,6 @@
       "manual": false
     },
     {
-      "id": "jolly-scholar-2026-09-28-2247369",
-      "title": "National Drink Beer Day",
-      "venueId": "jolly-scholar",
-      "date": "2026-09-28",
-      "time": "11:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "National Drink Beer Day",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#2247369",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "spotlight-acoustic-jam-night-2026-09-28",
       "title": "Acoustic Jam Night (hosted by Joshua Donato)",
       "venueId": "spotlight-cle",
@@ -30464,25 +29914,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-09-29-noah-rinker",
-      "title": "Noah Rinker",
-      "venueId": "mahalls",
-      "date": "2026-09-29",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$22.00",
-      "performers": [
-        {
-          "name": "Noah Rinker",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
-      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-09-29-the-holdup",
       "title": "The Holdup",
       "venueId": "mahalls",
@@ -30506,6 +29937,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-holdup/",
       "ticketUrl": "https://link.dice.fm/v75b6b85d2b0",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-29-noah-rinker",
+      "title": "Noah Rinker",
+      "venueId": "mahalls",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Noah Rinker",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
+      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
       "source": "scrape",
       "manual": false
     },
@@ -30762,7 +30212,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-09-30",
+      "id": "grindstone-tap-house-3267931-2026-09-30",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-09-30",
@@ -31120,29 +30570,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-02-cleveland-monsters",
-      "title": "Grand Rapids Griffins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-02",
-      "time": "03:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Grand Rapids Griffins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-02-3-30-am/18259663",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "mahalls-2026-10-02-thousand-below",
@@ -31816,29 +31243,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-04-cleveland-monsters",
-      "title": "Grand Rapids Griffins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-04",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Grand Rapids Griffins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-04-3-pm/18356906",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "the-agora-2026-10-04-cortex",
@@ -32530,7 +31934,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-10-07",
+      "id": "grindstone-tap-house-3267931-2026-10-07",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-10-07",
@@ -34187,7 +33591,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-10-14",
+      "id": "grindstone-tap-house-3267931-2026-10-14",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-10-14",
@@ -34454,29 +33858,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-16-cleveland-monsters",
-      "title": "Wilkes-Barre/Scranton Penguins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-16",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Wilkes-Barre/Scranton Penguins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-16-7-pm/18356907",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "grog-shop-2026-10-16-vibe-direct",
@@ -34748,29 +34129,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-17-cleveland-monsters",
-      "title": "Wilkes-Barre/Scranton Penguins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-17",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Wilkes-Barre/Scranton Penguins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-17-7-pm/18356908",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "grog-shop-2026-10-17-brigitte-calls-me-baby",
@@ -35727,7 +35085,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-10-21",
+      "id": "grindstone-tap-house-3267931-2026-10-21",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-10-21",
@@ -37185,7 +36543,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-10-28",
+      "id": "grindstone-tap-house-3267931-2026-10-28",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-10-28",
@@ -37278,29 +36636,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-30-cleveland-monsters",
-      "title": "Milwaukee Admirals at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Milwaukee Admirals",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-30-7-pm/18356915",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "the-agora-2026-10-30-beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson",
@@ -37493,29 +36828,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-10-31-cleveland-monsters",
-      "title": "Milwaukee Admirals at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-10-31",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Milwaukee Admirals",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-10-31-2-pm/18356916",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "the-agora-2026-10-31-mushroomhead-fear-factory",
@@ -37923,25 +37235,6 @@
       "manual": false
     },
     {
-      "id": "jolly-scholar-2026-11-03-2487848",
-      "title": "National Sandwich Day",
-      "venueId": "jolly-scholar",
-      "date": "2026-11-03",
-      "time": "11:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "National Sandwich Day",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#2487848",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "bside-2026-11-03-lyrical-rhythms-31",
       "title": "Lyrical Rhythms",
       "venueId": "bside-liquor-lounge",
@@ -37994,7 +37287,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-11-04",
+      "id": "grindstone-tap-house-3267931-2026-11-04",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-11-04",
@@ -39314,7 +38607,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-11-11",
+      "id": "grindstone-tap-house-3267931-2026-11-11",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-11-11",
@@ -40292,29 +39585,6 @@
       "manual": true
     },
     {
-      "id": "rocket-arena-2026-11-18-cleveland-monsters",
-      "title": "Hamilton Hammers at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-11-18",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Hamilton Hammers",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-11-17-7-pm/18356919",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-11-18-hot-freaks",
       "title": "Hot Freaks",
       "venueId": "mahalls",
@@ -40353,7 +39623,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-11-18",
+      "id": "grindstone-tap-house-3267931-2026-11-18",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-11-18",
@@ -41027,52 +40297,6 @@
       "manual": true
     },
     {
-      "id": "rocket-arena-2026-11-22-cleveland-monsters",
-      "title": "Utica Comets at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-11-22",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Utica Comets",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-11-21-7-pm/18356920",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-11-22-cleveland-monsters",
-      "title": "Utica Comets at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-11-22",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Utica Comets",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-11-22-3-pm/18356925",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "globe-iron-1512019",
       "title": "Daily Bread with Vanishing Point Tour with Vincent Antone and Zoska",
       "venueId": "globe-iron",
@@ -41408,7 +40632,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-11-25",
+      "id": "grindstone-tap-house-3267931-2026-11-25",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-11-25",
@@ -41514,29 +40738,6 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
-    },
-    {
-      "id": "rocket-arena-2026-11-27-cleveland-monsters",
-      "title": "Hamilton Hammers at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-11-27",
-      "time": "03:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Hamilton Hammers",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-11-27-3-30-am/18259664",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "the-agora-2026-11-27-whitechapel",
@@ -41834,29 +41035,6 @@
       "manual": true
     },
     {
-      "id": "rocket-arena-2026-11-29-cleveland-monsters",
-      "title": "Hamilton Hammers at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-11-29",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Hamilton Hammers",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-11-28-7-pm/18356926",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "playhouse-square-2026-11-29-jingle-bell-pops",
       "title": "Jingle Bell POPS!",
       "venueId": "playhouse-square",
@@ -42058,7 +41236,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-12-02",
+      "id": "grindstone-tap-house-3267931-2026-12-02",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-12-02",
@@ -42069,29 +41247,6 @@
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-12-03-cleveland-monsters",
-      "title": "Rochester Americans at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Rochester Americans",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-02-7-pm/18356927",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -42729,7 +41884,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-12-09",
+      "id": "grindstone-tap-house-3267931-2026-12-09",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-12-09",
@@ -42838,52 +41993,6 @@
       "source": "manual",
       "manual": true,
       "id": "time-warp-2026-12-11-tricky-dick-and-the-cover-ups"
-    },
-    {
-      "id": "rocket-arena-2026-12-12-cleveland-monsters",
-      "title": "Laval Rocket at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-12",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Laval Rocket",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-11-7-pm/18356928",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-12-12-cleveland-monsters",
-      "title": "Laval Rocket at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-12",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Laval Rocket",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-12-1-pm/18356929",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "welcome-to-the-farm-booking_01KV5V5B3F79YAEFKEM4SGW289",
@@ -43201,7 +42310,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-12-16",
+      "id": "grindstone-tap-house-3267931-2026-12-16",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-12-16",
@@ -43348,29 +42457,6 @@
       "source": "manual",
       "manual": true,
       "id": "time-warp-2026-12-18-that-80-s-band"
-    },
-    {
-      "id": "rocket-arena-2026-12-19-cleveland-monsters",
-      "title": "Syracuse Crunch at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Syracuse Crunch",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-18-7-pm/18356930",
-      "source": "seatgeek",
-      "manual": false
     },
     {
       "id": "rocket-arena-2026-12-19-cleveland-monsters",
@@ -43803,7 +42889,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-12-23",
+      "id": "grindstone-tap-house-3267931-2026-12-23",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-12-23",
@@ -43836,29 +42922,6 @@
       "id": "time-warp-2026-12-26-lisa-and-the-deadbeats"
     },
     {
-      "id": "rocket-arena-2026-12-28-cleveland-monsters",
-      "title": "Charlotte Checkers at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-28",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Charlotte Checkers",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-28-6-30-pm/18356948",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "mercury-music-lounge-2026-12-28-music-trivi-aoke-51",
       "title": "MUSIC TRIVI-AOKE",
       "venueId": "mercury-music-lounge",
@@ -43875,29 +42938,6 @@
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-51/",
       "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233304",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-12-29-cleveland-monsters",
-      "title": "Charlotte Checkers at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2026-12-29",
-      "time": "03:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Charlotte Checkers",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2026-12-29-3-30-am/18259666",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -43977,7 +43017,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2026-12-30",
+      "id": "grindstone-tap-house-3267931-2026-12-30",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-12-30",
@@ -44010,7 +43050,7 @@
       "id": "time-warp-2026-12-31-new-years-eve-celebration"
     },
     {
-      "id": "grindstone-tap-house-3240345-2027-01-06",
+      "id": "grindstone-tap-house-3267931-2027-01-06",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2027-01-06",
@@ -44021,52 +43061,6 @@
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-01-07-cleveland-monsters",
-      "title": "Syracuse Crunch at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-07",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Syracuse Crunch",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-06-7-pm/18356971",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-01-08-cleveland-monsters",
-      "title": "Syracuse Crunch at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-08",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Syracuse Crunch",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-07-7-pm/18356972",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -44146,29 +43140,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-01-10-cleveland-monsters",
-      "title": "Toronto Marlies at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-10",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Toronto Marlies",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-10-4-pm/18356973",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "rock-hall-2027-01-10-sensory-friendly-hours-jan-2027",
       "title": "Sensory Friendly Hours",
       "venueId": "rock-hall",
@@ -44227,7 +43198,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2027-01-13",
+      "id": "grindstone-tap-house-3267931-2027-01-13",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2027-01-13",
@@ -44382,7 +43353,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2027-01-20",
+      "id": "grindstone-tap-house-3267931-2027-01-20",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2027-01-20",
@@ -44457,29 +43428,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-01-24-cleveland-monsters",
-      "title": "Grand Rapids Griffins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-24",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Grand Rapids Griffins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-24-4-pm/18356974",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "cleveland-orchestra-6a563e8e4b1f6bf0e7930e36",
       "title": "Stephen Hough in Recital",
       "venueId": "cleveland-orchestra",
@@ -44500,7 +43448,7 @@
       "manual": false
     },
     {
-      "id": "grindstone-tap-house-3240345-2027-01-27",
+      "id": "grindstone-tap-house-3267931-2027-01-27",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
       "date": "2027-01-27",
@@ -44511,29 +43459,6 @@
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-01-30-cleveland-monsters",
-      "title": "Hershey Bears at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Hershey Bears",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-29-7-pm/18356975",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -44554,29 +43479,6 @@
       "eventUrl": "https://www.clevelandorchestra.com/events/a-night-in-vienna-2",
       "ticketUrl": "https://www.arshtcenter.org/tickets/2026-2027/the-cleveland-orchestra/the-cleveland-orchestra-in-miami-a-night-in-vienna/",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-01-31-cleveland-monsters",
-      "title": "Hershey Bears at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-01-31",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Hershey Bears",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-01-31-3-pm/18356990",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -44860,29 +43762,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-02-15-cleveland-monsters",
-      "title": "Grand Rapids Griffins at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-02-15",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Grand Rapids Griffins",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-02-15-3-pm/18356993",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "cleveland-orchestra-69dd081ade1dc85ba862829d",
       "title": "Huang Plays Barber",
       "venueId": "cleveland-orchestra",
@@ -44985,29 +43864,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-02-25-cleveland-monsters",
-      "title": "Rochester Americans at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-02-25",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Rochester Americans",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-02-24-7-pm/18356999",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "the-agora-2027-02-25-crystal-methyd-the-enchanted-forest",
       "title": "Crystal Methyd The Enchanted Forest",
       "venueId": "the-agora",
@@ -45084,52 +43940,6 @@
       "eventUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
       "ticketUrl": "https://www.clevelandorchestra.com/events/cho-plays-chopin",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-02-27-cleveland-monsters",
-      "title": "Belleville Senators at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-02-27",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Belleville Senators",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-02-26-7-pm/18357000",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-02-27-cleveland-monsters",
-      "title": "Belleville Senators at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-02-27",
-      "time": "03:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Belleville Senators",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-02-27-3-30-am/18259667",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -45296,29 +44106,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-03-06-cleveland-monsters",
-      "title": "Toronto Marlies at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-03-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Toronto Marlies",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-03-05-7-pm/18357001",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "cleveland-orchestra-69dd0beec2eee5fd39d56ab9",
       "title": "Rachmaninoff’s Rhapsody",
       "venueId": "cleveland-orchestra",
@@ -45437,29 +44224,6 @@
       "manual": false
     },
     {
-      "id": "rocket-arena-2027-03-16-cleveland-monsters",
-      "title": "Rochester Americans at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-03-16",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Rochester Americans",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-03-16-7-pm/18357003",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
       "id": "cleveland-orchestra-6a563cecebb87621f2405bd3",
       "title": "Garrick Ohlsson in Recital",
       "venueId": "cleveland-orchestra",
@@ -45477,29 +44241,6 @@
       "eventUrl": "https://www.clevelandorchestra.com/events/garrick-ohlsson-in-recital",
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24553",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-03-17-cleveland-monsters",
-      "title": "Rochester Americans at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-03-17",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Rochester Americans",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-03-17-7-pm/18357004",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -45543,29 +44284,6 @@
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1371082",
       "ticketUrl": "https://www.axs.com/events/1371082/public-image-ltd-tickets",
       "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2027-03-26-cleveland-monsters",
-      "title": "Lehigh Valley Phantoms at Cleveland Monsters",
-      "venueId": "rocket-arena",
-      "date": "2027-03-26",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Monsters",
-          "headliner": true
-        },
-        {
-          "name": "Lehigh Valley Phantoms",
-          "headliner": false
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/cleveland-monsters-tickets/minor-league-hockey/2027-03-26-7-pm/18357005",
-      "source": "seatgeek",
       "manual": false
     },
     {
@@ -46266,690 +44984,6 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/the-last-waltz",
       "ticketUrl": "https://www.clevelandorchestra.com/events/the-last-waltz",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-06-10-front-porch-jammin",
-      "title": "Front Porch Jammin",
-      "venueId": "metroparks-huntington",
-      "date": "2027-06-10",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Front Porch Jammin",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-euclid-beach-2027-06-11-the-quenton-rubin-band",
-      "title": "The Quenton Rubin Band",
-      "venueId": "metroparks-euclid-beach",
-      "date": "2027-06-11",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "The Quenton Rubin Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-06-12-bobby-st-vincent",
-      "title": "Bobby St. Vincent",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-06-12",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Bobby St. Vincent",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-06-13-follow-the-sun",
-      "title": "Follow the Sun",
-      "venueId": "metroparks-galley",
-      "date": "2027-06-13",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Follow the Sun",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-06-14-black-jack-gypsies",
-      "title": "Black Jack Gypsies",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-06-14",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Black Jack Gypsies",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-06-17-acousticats",
-      "title": "Acousticats",
-      "venueId": "metroparks-huntington",
-      "date": "2027-06-17",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Acousticats",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-euclid-beach-2027-06-18-rayr-image-band",
-      "title": "Rayr Image Band",
-      "venueId": "metroparks-euclid-beach",
-      "date": "2027-06-18",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Rayr Image Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-edgewater-2027-06-19-new-philadelphia-steel-band",
-      "title": "New Philadelphia Steel Band",
-      "venueId": "metroparks-edgewater",
-      "date": "2027-06-19",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "New Philadelphia Steel Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-06-19-run-avril-run",
-      "title": "Run Avril Run",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-06-19",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Run Avril Run",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-06-20-brethren",
-      "title": "Brethren",
-      "venueId": "metroparks-galley",
-      "date": "2027-06-20",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Brethren",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-06-21-the-scenic-route",
-      "title": "The Scenic Route",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-06-21",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "The Scenic Route",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-06-24-ashley-gulla",
-      "title": "Ashley Gulla",
-      "venueId": "metroparks-huntington",
-      "date": "2027-06-24",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Ashley Gulla",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-euclid-beach-2027-06-25-project-hope-choir",
-      "title": "Project Hope Choir",
-      "venueId": "metroparks-euclid-beach",
-      "date": "2027-06-25",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Project Hope Choir",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-06-26-rock-radio",
-      "title": "Rock Radio",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-06-26",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Rock Radio",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-06-27-pieces-of-eight-featuring-the-lakeside-brass",
-      "title": "Pieces of Eight featuring the Lakeside Brass",
-      "venueId": "metroparks-galley",
-      "date": "2027-06-27",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Pieces of Eight featuring the Lakeside Brass",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-06-28-key-west-express",
-      "title": "Key West Express",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-06-28",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Key West Express",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-07-08-mike-mike",
-      "title": "Mike & Mike",
-      "venueId": "metroparks-huntington",
-      "date": "2027-07-08",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Mike & Mike",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-euclid-beach-2027-07-09-forecast-with-serena-wynn",
-      "title": "Forecast with Serena Wynn",
-      "venueId": "metroparks-euclid-beach",
-      "date": "2027-07-09",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Forecast with Serena Wynn",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-07-10-the-drop-downs",
-      "title": "The Drop Downs",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-07-10",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "The Drop Downs",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-07-11-van-sailin",
-      "title": "Van Sailin'",
-      "venueId": "metroparks-galley",
-      "date": "2027-07-11",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Van Sailin'",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-07-12-4peace-acoustic",
-      "title": "4Peace Acoustic",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-07-12",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "4Peace Acoustic",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-07-15-nick-white",
-      "title": "Nick White",
-      "venueId": "metroparks-huntington",
-      "date": "2027-07-15",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Nick White",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-edgewater-2027-07-16-disco-inferno",
-      "title": "Disco Inferno",
-      "venueId": "metroparks-edgewater",
-      "date": "2027-07-16",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Disco Inferno",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-07-17-becky-boyd-the-groove-train",
-      "title": "Becky Boyd & The Groove Train",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-07-17",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Becky Boyd & The Groove Train",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-07-18-blue-lunch",
-      "title": "Blue Lunch",
-      "venueId": "metroparks-galley",
-      "date": "2027-07-18",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Blue Lunch",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-07-19-chagrin-river-band",
-      "title": "Chagrin River Band",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-07-19",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Chagrin River Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-07-22-six-miles-high",
-      "title": "Six Miles High",
-      "venueId": "metroparks-huntington",
-      "date": "2027-07-22",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Six Miles High",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-edgewater-2027-07-23-diamond-project",
-      "title": "Diamond Project",
-      "venueId": "metroparks-edgewater",
-      "date": "2027-07-23",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Diamond Project",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-07-24-cats-on-holiday",
-      "title": "Cats on Holiday",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-07-24",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Cats on Holiday",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-07-25-city-lite-band",
-      "title": "City Lite Band",
-      "venueId": "metroparks-galley",
-      "date": "2027-07-25",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "City Lite Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-07-26-east-wind",
-      "title": "East Wind",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-07-26",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "East Wind",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-huntington-2027-07-29-big-sky-cleveland-duo",
-      "title": "Big Sky Cleveland Duo",
-      "venueId": "metroparks-huntington",
-      "date": "2027-07-29",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Big Sky Cleveland Duo",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-edgewater-2027-07-30-carlos-jones",
-      "title": "Carlos Jones",
-      "venueId": "metroparks-edgewater",
-      "date": "2027-07-30",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Carlos Jones",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-emerald-necklace-2027-07-31-colin-dussault-s-blues-project",
-      "title": "Colin Dussault's Blues Project",
-      "venueId": "metroparks-emerald-necklace",
-      "date": "2027-07-31",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Colin Dussault's Blues Project",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-galley-2027-08-01-the-band-intense",
-      "title": "The Band Intense",
-      "venueId": "metroparks-galley",
-      "date": "2027-08-01",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "The Band Intense",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "metroparks-merwins-wharf-2027-08-02-rj-chandler-the-roadhouse-band",
-      "title": "RJ Chandler & The Roadhouse Band",
-      "venueId": "metroparks-merwins-wharf",
-      "date": "2027-08-02",
-      "time": "17:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "RJ Chandler & The Roadhouse Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandmetroparks.com/parks/special-events/summerconcertseries",
-      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
