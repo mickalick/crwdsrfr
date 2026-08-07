@@ -85,7 +85,7 @@
   align-items: center;
 }
 
-#venueMap .filter-toggle:hover #fil, #venueMap .filter-toggle.active #fil {
+#venueMap .filter-toggle.active #fil {
   background: var(--vm-accent) !important;
 }
 
@@ -107,7 +107,7 @@
   background:transparent;
   transition: all .15s ease;
 }
-#venueMap .chip:hover { color: var(--vm-paper); border-color: var(--vm-main); }
+
 #venueMap .chip.active { border-color: var(--vm-accent) !important; color: var(--vm-accent); }
 
 #venueMap .venue-list { overflow-y:auto; flex:1; min-height:0; }
@@ -118,7 +118,7 @@
   position:relative;
   transition: background .15s ease;
 }
-#venueMap .venue-item:hover { background: rgba(255,255,255,0.03); }
+
 #venueMap .venue-item.selected { background: rgba(249,249,118,0.08); }
 #venueMap .venue-item.selected::before {
   content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
@@ -186,7 +186,6 @@
 }
 .iw-event { border-top:1px solid rgba(255,255,255,0.1); padding:7px 0; font-size:12px; }
 .iw-event a { color:#ff4d2e; text-decoration:none; font-weight:600; }
-.iw-event a:hover { text-decoration:underline; }
 .iw-event .when { color:#8a8580; font-family:'Space Mono', monospace; font-size:10px; }
 
 /* Marker pin */
@@ -223,3 +222,29 @@
 
 .pin .dot-inner { width:6px; height:6px; border-radius:50%; background-color:var(--vm-ink); transform: rotate(45deg); }
 .pin-anchor.selected .dot-inner { background-color: var(--vm-ink); }
+
+
+
+
+
+/* Mobile Hover Fix */
+
+@media (hover: hover) and (pointer: fine) {
+
+  #venueMap .filter-toggle:hover #fil {
+    background: var(--vm-accent) !important;
+  }
+
+  #venueMap .chip:hover {
+    color: var(--vm-paper);
+    border-color: var(--vm-main);
+  }
+
+  #venueMap .venue-item:hover {
+    background: rgba(255,255,255,0.03);
+  }
+
+  .iw-event a:hover {
+    text-decoration:underline;
+  }
+}
