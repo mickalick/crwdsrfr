@@ -168,7 +168,11 @@ function selectVenue(id, fromList) {
   infoWindow.setContent(`
     <div class="iw">
       <div class="iw-title">${venue.name}</div>
-      <div class="iw-meta">${venue.address} <br/> ${TYPE_LABELS[venue.type] || venue.type}</div>
+      <div class="iw-meta">${venue.address}</div>
+      <div class="iw-links iw-meta">
+        <a href="${venue.url}" target="_blank" rel="noopener">Visit Site<span class="icon" id="ext"></a>
+        <a href="/venues/${venue.id}/">View Upcoming Shows</a>
+      </div>
     </div>
   `);
 

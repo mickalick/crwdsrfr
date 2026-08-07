@@ -530,7 +530,7 @@ footer a {
 	font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 100;
-	font-size: 14px;
+	font-size: 16px;
 	letter-spacing: 0.05em;
 	color: #FCFCFC;
 	margin-bottom: 8px;
@@ -778,6 +778,7 @@ footer a {
 	font-weight: 100;
 	margin: 16px 0;
 	padding-top: 16px;
+	text-align: center;
 }
 
 .icon {
@@ -1139,6 +1140,10 @@ span.flatpickr-weekday {
 	font-weight: 700;
 }
 
+#supportedVenues li {
+	margin: 4px 0;
+}
+
 .venueList li a {
 	color: #FFFFFF;
 	text-decoration: underline;
@@ -1182,7 +1187,7 @@ span.flatpickr-weekday {
 }
 
 #venueLocation #venueMap {
-	margin-top: 0;
+	margin-bottom: 0;
 	min-height: 20vh;
 	height: 25vh;
 }
@@ -1198,6 +1203,9 @@ span.flatpickr-weekday {
 	color: #FFF;
 	text-decoration: underline;
 }
+
+
+
 
 
 
