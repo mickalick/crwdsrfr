@@ -1,329 +1,331 @@
 {
   "events": [
+
+
     {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-01",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-01-dog-water"
-    },
-    {
-      "title": "Lady Antoinette Karaoke",
-      "performers": [
-        {
-          "name": "Lady Antoinette Karaoke",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-02-lady-antoinette-karaoke"
-    },
-    {
-      "title": "Hoodech",
-      "performers": [
-        {
-          "name": "Hoodech",
-          "headliner": true
-        },
-        {
-          "name": "Liz + Fred",
-          "headliner": false
-        }
-      ],
-      "date": "2026-07-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-03-hoodech"
-    },
-    {
-      "title": "Open",
-      "performers": [
-        {
-          "name": "Open",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-04",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-04-open"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-08",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-08-dog-water"
-    },
-    {
-      "title": "Alan Greene Band",
-      "performers": [
-        {
-          "name": "Alan Greene Band",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-10",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-10-alan-greene-band"
-    },
-    {
-      "title": "4 To Go",
-      "performers": [
-        {
-          "name": "4 To Go",
-          "headliner": true
-        },
-        {
-          "name": "Pivot",
-          "headliner": false
-        }
-      ],
-      "date": "2026-07-11",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-11-4-to-go"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-15",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-15-dog-water"
-    },
-    {
-      "title": "Lady Antoinette Karaoke",
-      "performers": [
-        {
-          "name": "Lady Antoinette Karaoke",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-16",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-16-lady-antoinette-karaoke"
-    },
-    {
-      "title": "CLE Collective",
-      "performers": [
-        {
-          "name": "CLE Collective",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-17",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-17-cle-collective"
-    },
-    {
-      "title": "Punk Night",
-      "performers": [
-        {
-          "name": "Punk Night",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-18",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-18-punk-night"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-22-dog-water"
-    },
-    {
-      "title": "Phil & Frank",
-      "performers": [
-        {
-          "name": "Phil & Frank",
-          "headliner": true
-        },
-        {
-          "name": "The Vumms",
-          "headliner": false
-        }
-      ],
-      "date": "2026-07-24",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-24-phil-frank"
-    },
-    {
-      "title": "Strange Matter",
-      "performers": [
-        {
-          "name": "Strange Matter",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-25",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-25-strange-matter"
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-07-29",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-29-dog-water"
-    },
-    {
-      "title": "AWD",
-      "performers": [
-        {
-          "name": "AWD",
-          "headliner": true
-        },
-        {
-          "name": "Bootleg Service",
-          "headliner": false
-        },
-        {
-          "name": "Jack & The Optimists",
-          "headliner": false
-        }
-      ],
-      "date": "2026-07-31",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-07-31-awd"
-    },
+    "title": "Cebars Fest",
+    "performers": [
+      {
+        "name": "Dog Water",
+        "headliner": true
+      },
+      {
+        "name": "Collective CLE",
+        "headliner": false
+      },
+      {
+        "name": "Young Nick",
+        "headliner": false
+      },
+      {
+        "name": "Kiss Me Deadly",
+        "headliner": false
+      },
+      {
+        "name": "Among The Willows",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-01",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-01-dog-water"
+  },
+  {
+    "title": "Dog Water",
+    "performers": [
+      {
+        "name": "Dog Water",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-05",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-05-dog-water"
+  },
+  {
+    "title": "Pivot",
+    "performers": [
+      {
+        "name": "Pivot",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-07",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-07-pivot"
+  },
+  {
+    "title": "4 To Go",
+    "performers": [
+      {
+        "name": "4 To Go",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-08-4-to-go"
+  },
+  {
+    "title": "Custeys & Quinn",
+    "performers": [
+      {
+        "name": "Custeys & Quinn",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-08",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-08-custeys-quinn"
+  },
+  {
+    "title": "Dog Water",
+    "performers": [
+      {
+        "name": "Dog Water",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-12",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-12-dog-water"
+  },
+  {
+    "title": "Vumms",
+    "performers": [
+      {
+        "name": "Vumms",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-14",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-14-vumms"
+  },
+  {
+    "title": "Drew J's Travel Plaza",
+    "performers": [
+      {
+        "name": "Drew J's Travel Plaza",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-15-drew-j-s-travel-plaza"
+  },
+  {
+    "title": "Dog Water",
+    "performers": [
+      {
+        "name": "Dog Water",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-19",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-19-dog-water"
+  },
+  {
+    "title": "Lady Antoinette Karaoke",
+    "performers": [
+      {
+        "name": "Lady Antoinette Karaoke",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-20",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-20-lady-antoinette-karaoke"
+  },
+  {
+    "title": "Phil & Frank",
+    "performers": [
+      {
+        "name": "Phil & Frank",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-21-phil-frank"
+  },
+  {
+    "title": "Alan Greene Band",
+    "performers": [
+      {
+        "name": "Alan Greene Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-21",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-21-alan-greene-band"
+  },
+  {
+    "title": "KG Mojo",
+    "performers": [
+      {
+        "name": "KG Mojo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-22-kg-mojo"
+  },
+  {
+    "title": "Dog Water",
+    "performers": [
+      {
+        "name": "Dog Water",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-26",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-26-dog-water"
+  },
+  {
+    "title": "Collective CLE",
+    "performers": [
+      {
+        "name": "Collective CLE",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-28-collective-cle"
+  },
+  {
+    "title": "Kiss Me Deadly",
+    "performers": [
+      {
+        "name": "Kiss Me Deadly",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-08-29-kiss-me-deadly"
+  },
+
+
+
+  
 
 
     {

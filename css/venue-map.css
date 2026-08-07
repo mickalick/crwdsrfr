@@ -22,7 +22,7 @@
   color: var(--vm-paper);
   font-family: 'Plus Jakarta Sans', sans-serif;
   border: 1px solid var(--vm-line);
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #venueMap, #venueMap *, #map, #map * { transition: none !important; }
@@ -164,7 +164,25 @@
 .iw-title { font-weight:700; font-size:14px; margin-bottom:2px; }
 .iw-meta {
   font-family:'Space Mono', monospace; font-size:10px;
-  text-transform:uppercase; margin-bottom:8px;
+  text-transform:uppercase;
+}
+.iw-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 4px 0;
+}
+.iw-links a {
+  display: flex;
+  align-items: center;
+  color: #101010;
+  text-decoration: underline;
+}
+.iw-links #ext {
+  height: 14px;
+  width: 14px;
+  background-color: #101010;
+  margin-left: 4px;
 }
 .iw-event { border-top:1px solid rgba(255,255,255,0.1); padding:7px 0; font-size:12px; }
 .iw-event a { color:#ff4d2e; text-decoration:none; font-weight:600; }
