@@ -205,12 +205,7 @@ async function initMap() {
     disableAutoPan: true // we handle panning ourselves in selectVenue; letting both run causes competing animations
   });
 
-  map.addListener('dragend', () => {
-    infoWindow.close();
-    activeVenueId = null;
-    refreshPins(null);
-    renderList();
-  });
+  infoWindow.addListener('closeclick', () => deselectVenue(false));
 
   window.VENUES.forEach(v => {
     const marker = new AdvancedMarkerElement({

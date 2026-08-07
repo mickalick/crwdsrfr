@@ -22,7 +22,7 @@
   color: var(--vm-paper);
   font-family: 'Plus Jakarta Sans', sans-serif;
   border: 1px solid var(--vm-line);
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 #venueMap, #venueMap *, #map, #map * { transition: none !important; }
