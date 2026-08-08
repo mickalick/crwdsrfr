@@ -3884,17 +3884,42 @@ function loadManualEntries() {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
+// Loads the events currently sitting in events.json and keeps only the
+// scraped ones (manual: false). Used by --manual-only so a manual/recurring-only
+// run doesn't wipe out the last full fetch's scraped events.
+function loadPreviouslyScrapedEvents() {
+  try {
+    const existing = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8'));
+    const preserved = (existing.events ?? []).filter(e => !e.manual);
+    console.log(`Preserved ${preserved.length} previously-scraped events from existing events.json`);
+    return preserved;
+  } catch (err) {
+    console.error(`Could not read existing events.json (${err.message}) — scraped events will be empty until a full fetch is run.`);
+    return [];
+  }
+}
+
 async function main() {
-  console.log('Fetching events...');
+  // --manual-only: skip every scraper and just re-merge manual-events.json +
+  // recurring-rules.json on top of whatever scraped events are already in
+  // events.json. Useful for quick manual edits without re-running all fetchers.
+  const manualOnly = process.argv.includes('--manual-only');
 
-  const results = await Promise.all(FETCHERS.map(f => f.fn()));
+  let scrapedEvents;
+  if (manualOnly) {
+    console.log('Manual-only mode: skipping scrapers...');
+    scrapedEvents = loadPreviouslyScrapedEvents();
+  } else {
+    console.log('Fetching events...');
+    const results = await Promise.all(FETCHERS.map(f => f.fn()));
 
-  const scrapedEvents = [];
-  FETCHERS.forEach((f, i) => {
-    const events = results[i];
-    console.log(`${f.label}:`, events.length);
-    scrapedEvents.push(...events);
-  });
+    scrapedEvents = [];
+    FETCHERS.forEach((f, i) => {
+      const events = results[i];
+      console.log(`${f.label}:`, events.length);
+      scrapedEvents.push(...events);
+    });
+  }
 
   const manualEntries = loadManualEntries();
 
