@@ -517,6 +517,39 @@
     "lng": -81.2156801
   },
   {
+    "id": "wild-eagle-downtown",
+    "name": "Wild Eagle Downtown",
+    "url": "https://cleveland.wildeagle.com/",
+    "eventsUrl": "https://cleveland.wildeagle.com/cleveland-gateway-district-wild-eagle-saloon-downtown-cleveland-events",
+    "type": "bar",
+    "address": "921 Huron Road East, Cleveland, OH, 44115",
+    "area": "Downtown",
+    "lat": 41.4996786,
+    "lng": -81.68506769999999
+  },
+  {
+    "id": "wild-eagle-broadview-heights",
+    "name": "Wild Eagle Broadview Heights",
+    "url": "https://broadviewheights.wildeagle.com/",
+    "eventsUrl": "https://broadviewheights.wildeagle.com/broadview-heights-wild-eagle-steak-and-saloon-broadview-heights-events",
+    "type": "bar",
+    "address": "5001 East Royalton Road, Broadview Heights, OH, 44147",
+    "area": "Broadview Heights",
+    "lat": 41.3165189,
+    "lng": -81.651464
+  },
+  {
+    "id": "wild-eagle-streetsboro",
+    "name": "Wild Eagle Streetsboro",
+    "url": "https://streetsboro.wildeagle.com/",
+    "eventsUrl": "https://streetsboro.wildeagle.com/streetsboro-wild-eagle-steak-and-saloon-streetsboro-events",
+    "type": "bar",
+    "address": "9470 OH-14, Streetsboro, OH, 44241",
+    "area": "Streetsboro",
+    "lat": 41.2441288,
+    "lng": -81.3545936
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "url": "https://www.facebook.com/groups/51071547181",
@@ -823,5 +856,49 @@
     "area": "Westlake",
     "lat": 41.4604385,
     "lng": -81.9521177
+  },
+  {
+    "id": "little-italy-feast",
+    "name": "Little Italy Feast of the Assumption",
+    "url": "https://littleitalyfeast.com/",
+    "eventsUrl": "https://holy-rosary.org/schedule-of-events",
+    "type": "festival",
+    "address": "12021 Mayfield Rd, Cleveland, OH 44106",
+    "area": "University Circle",
+    "lat": 41.5089282,
+    "lng": -81.59877259999999
+  },
+  {
+    "id": "heights-music-hop",
+    "name": "Heights Music Hop 2026",
+    "url": "https://futureheights.org/musichop/",
+    "eventsUrl": "https://futureheights.org/musichop/",
+    "type": "festival",
+    "address": "497 Cedar Rd, Cleveland Heights, OH 44118",
+    "area": "Cleveland Heights",
+    "lat": 41.50134630000001,
+    "lng": -81.5652578
+  },
+  {
+    "id": "progressive-field",
+    "name": "Progressive Field",
+    "url": "https://www.mlb.com/guardians/ballpark",
+    "eventsUrl": "https://events.cleguardians.com/events",
+    "type": "outdoor",
+    "address": "2401 Ontario St, Cleveland, Ohio 44115",
+    "area": "Downtown",
+    "lat": 41.4970287,
+    "lng": -81.68423419999999
+  },
+  {
+    "id": "velvet-tango-room",
+    "name": "Velvet Tango Room",
+    "url": "https://www.velvettangoroom.com/",
+    "eventsUrl": "https://www.velvettangoroom.com/special-events/",
+    "type": "jazz-bar",
+    "address": "2095 Columbus Rd, Cleveland, OH 44113",
+    "area": "Ohio City",
+    "lat": 41.4839022,
+    "lng": -81.7001318
   }
 ]

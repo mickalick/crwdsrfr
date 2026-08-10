@@ -3816,6 +3816,96 @@ async function fetchReithoffers() {
   return events;
 }
 
+// Wild Eagle has multiple locations sharing the same page markup, each
+// on its own URL. Add a new location here to bring it into the scrape —
+// no other changes needed.
+const WILD_EAGLE_LOCATIONS = [
+  { venueId: 'wild-eagle-downtown', url: 'https://cleveland.wildeagle.com/cleveland-gateway-district-wild-eagle-saloon-downtown-cleveland-events' },
+  { venueId: 'wild-eagle-broadview-heights', url: 'https://broadviewheights.wildeagle.com/broadview-heights-wild-eagle-steak-and-saloon-broadview-heights-events' },
+  { venueId: 'wild-eagle-streetsboro', url: 'https://streetsboro.wildeagle.com/streetsboro-wild-eagle-steak-and-saloon-streetsboro-events' },
+];
+
+async function fetchWildEagle() {
+  const TITLE_BLOCKLIST = /golf|national/i;
+  const allEvents = [];
+
+  for (const { venueId, url } of WILD_EAGLE_LOCATIONS) {
+    const events = [];
+    try {
+      const res = await fetch(url);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+      const currentYear = new Date().getFullYear();
+      const today = new Date();
+
+      $('.events-holder section').each((_, el) => {
+        const $el = $(el);
+
+        const title = $el.find('h2').first().text().trim();
+        if (!title) return;
+        if (TITLE_BLOCKLIST.test(title)) return;
+
+        // "Saturday August 15th" -> month name + day number
+        const dayRaw = $el.find('.event-day').first().text().trim();
+        const dateMatch = dayRaw.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?/);
+        if (!dateMatch) return;
+
+        const monthIndex = MONTH_ABBR[dateMatch[1].slice(0, 3)];
+        if (monthIndex === undefined) return;
+        const dayNum = parseInt(dateMatch[2], 10);
+
+        // No year on the page — assume current year, roll to next year if
+        // that date has already passed (same approach used elsewhere).
+        let year = currentYear;
+        const eventDateThisYear = new Date(currentYear, monthIndex, dayNum);
+        const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
+        if (eventDateThisYear < todayMidnight) year = currentYear + 1;
+        const date = toLocalDateStr(new Date(year, monthIndex, dayNum));
+
+        // "09:00 PM - 12:00 AM" -> use the start time
+        const timeRaw = $el.find('.event-time').first().text().trim();
+        const timeMatch = timeRaw.split('-')[0].trim().match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
+        let time = null;
+        if (timeMatch) {
+          let hours = parseInt(timeMatch[1], 10);
+          const minutes = timeMatch[2];
+          const modifier = timeMatch[3].toUpperCase();
+          if (modifier === 'PM' && hours !== 12) hours += 12;
+          if (modifier === 'AM' && hours === 12) hours = 0;
+          time = `${String(hours).padStart(2, '0')}:${minutes}`;
+        }
+
+        // Prefer the page's own event id (from <section id="...">) so ids
+        // stay stable even if a title gets tweaked; fall back to date+slug.
+        const eventId = $el.attr('id');
+        const id = eventId ? `${venueId}-${eventId}` : `${venueId}-${date}-${slugify(title)}`;
+
+        events.push({
+          id,
+          title,
+          venueId,
+          date,
+          time,
+          doors: null,
+          price: null,
+          performers: [{ name: title, headliner: true }],
+          eventUrl: url,
+          ticketUrl: null,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    } catch (err) {
+      console.error(`fetchWildEagle (${venueId}) error:`, err.message);
+    }
+
+    console.log(`  Wild Eagle - ${venueId}:`, events.length);
+    allEvents.push(...events);
+  }
+
+  return allEvents;
+}
+
 
 // ─── Scraper manifest ──────────────────────────────────────────────────────
 // One entry per scraper. Some fetchers (Metroparks, Collision Bend) cover
@@ -3865,6 +3955,7 @@ const FETCHERS = [
   { label: 'Imposters Theater', fn: fetchImpostersTheater },
   { label: 'Grindstone', fn: fetchGrindstoneTapHouse },
   { label: 'Reithoffers', fn: fetchReithoffers },
+  { label: 'Wild Eagle', fn: fetchWildEagle },
 ];
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -3996,4 +4087,5 @@ export {
   fetchImpostersTheater,
   fetchGrindstoneTapHouse,
   fetchReithoffers,
+  fetchWildEagle,
 };
