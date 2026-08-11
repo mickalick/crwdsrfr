@@ -577,249 +577,6 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-08-10-make-em-laugh-mondays",
-      "title": "Make Em Laugh Mondays",
-      "venueId": "grog-shop",
-      "date": "2026-08-10",
-      "time": "20:00",
-      "doors": "19:30",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "Make Em Laugh Mondays",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford/",
-      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-grog-shop-tickets/14236354?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-08-10-jammy-buffet",
-      "title": "Jammy Buffet",
-      "venueId": "beachland-ballroom",
-      "date": "2026-08-10",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Jammy Buffet",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/jammy-buffet-10-aug",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/jammy-buffet-10-aug#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "happy-dog-2026-08-10-monday-night-trivia",
-      "title": "Monday Night Trivia!",
-      "venueId": "happy-dog",
-      "date": "2026-08-10",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Monday Night Trivia!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/monday-night-trivia-august-10-2026-719149",
-      "ticketUrl": "https://app.opendate.io/e/monday-night-trivia-august-10-2026-719149",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-08-10-smile-empty-soul-2",
-      "title": "Smile Empty Soul",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-08-10",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "$30.36",
-      "performers": [
-        {
-          "name": "Smile Empty Soul",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/smile-empty-soul-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/smile-empty-soul-the-winchester-tickets/14983123",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-08-10-music-trivi-aoke-31",
-      "title": "MUSIC TRIVI-AOKE",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-08-10",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "MUSIC TRIVI-AOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-31/",
-      "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233194",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "rock-hall-2026-08-10-foo-fighters-fan-day",
-      "title": "Foo Fighters Fan Day",
-      "venueId": "rock-hall",
-      "date": "2026-08-10",
-      "time": "10:00",
-      "doors": null,
-      "price": "Free with Museum Admission",
-      "performers": [
-        {
-          "name": "Foo Fighters Fan Day",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/foo-fighters-fan-day/",
-      "ticketUrl": "https://tickets.rockhall.com/events/1b7785d2-20f1-3af9-501a-c9ed3e95f382/sessions?date=2026-08-10",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-08-10-nerd-night-the-foundry-2",
-      "title": "NERD NIGHT @ THE FOUNDRY",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-10",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "NERD NIGHT @ THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night-the-foundry-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-the-foundry-tickets/15003133?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-08-10-140245",
-      "title": "The Tino Kayafas Jazz Trio",
-      "venueId": "hilarities",
-      "date": "2026-08-10",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "The Tino Kayafas Jazz Trio",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/140245",
-      "ticketUrl": "https://hilarities.com/shows/379531",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-08-10",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-08-10",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-08-10",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-08-10-night-of-the-trivial-dead-8-10-26",
-      "title": "NIGHT OF THE TRIVIAL DEAD",
-      "venueId": "no-class",
-      "date": "2026-08-10",
-      "time": "19:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Cousin Bobby is back with 6 more rounds of terrifying trivia. Come with up to 6 of your friends, and compete for prizes like DVDs, toys, and show tickets.",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/night-of-the-trivial-dead-8-10-26",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-08-10-storytelling-basics",
-      "title": "Storytelling Basics",
-      "venueId": "imposters-theater",
-      "date": "2026-08-10",
-      "time": "19:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/storytelling-basics-081026",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/storytelling-basics-081026",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Metal Mondays w/ DJ Sam Sinister",
-      "performers": [
-        {
-          "name": "DJ Sam Sinister",
-          "headliner": true
-        }
-      ],
-      "date": "2026-08-10",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-08-10-dj-sam-sinister"
-    },
-    {
-      "title": "Foo Fighters",
-      "venueId": "huntington-bank-field",
-      "date": "2026-08-10",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Foo Fighters",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://huntingtonbankfield.com/events/foo-fighters/",
-      "ticketUrl": "https://www.ticketmaster.com/event/05006355C0336656?camefrom=CFC_STADIUM_FOOFIGHTERS_WEB_PAGE",
-      "source": "manual",
-      "manual": true,
-      "id": "huntington-bank-field-2026-08-10-foo-fighters"
-    },
-    {
       "id": "rocket-arena-2026-08-11-rod-stewart",
       "title": "Rod Stewart: ONE LAST TIME",
       "venueId": "rocket-arena",
@@ -849,7 +606,7 @@
       "date": "2026-08-11",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$12.59",
+      "price": "$15.16",
       "performers": [
         {
           "name": "Samsara",
@@ -926,7 +683,7 @@
       "date": "2026-08-11",
       "time": "19:15",
       "doors": "18:00",
-      "price": "$29.40 to $139.65",
+      "price": "$55.65 to $141.65 / Day Of : $61",
       "performers": [
         {
           "name": "The String Cheese Incident – Just Keep Spinning Tour",
@@ -964,7 +721,7 @@
       "date": "2026-08-11",
       "time": "18:00",
       "doors": "18:00",
-      "price": "$32.00",
+      "price": "$38.00",
       "performers": [
         {
           "name": "The Dear Hunter",
@@ -1109,7 +866,7 @@
       "date": "2026-08-11",
       "time": "20:00",
       "doors": "20:00",
-      "price": "$6.67",
+      "price": "$12.59",
       "performers": [
         {
           "name": "Lyrical Rhythms",
@@ -1238,7 +995,7 @@
       "id": "blossom-music-center-2026-08-11-five-finger-death-punch"
     },
     {
-      "title": "Chance the Rapper",
+      "title": "Chance the Rapper (Music Hall)",
       "performers": [
         {
           "name": "Chance the Rapper",
@@ -1274,34 +1031,6 @@
       "source": "manual",
       "manual": true,
       "id": "quintanas-speakeasy-2026-08-11-eranah-adorjan"
-    },
-    {
-      "id": "spotlight-comedy-open-mic-2026-08-11",
-      "title": "Comedy Open Mic",
-      "venueId": "spotlight-cle",
-      "date": "2026-08-11",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-don-phillips-tue-2026-08-11",
-      "title": "Don Phillips (Pianist)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-08-11",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
     },
     {
       "id": "beachland-ballroom-2026-08-12-matte-blue",
@@ -1791,6 +1520,25 @@
       "id": "chagrin-tavern-2026-08-12-singo"
     },
     {
+      "title": "Trivia With Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-12-kevin-whalen"
+    },
+    {
       "title": "Austin Walkin' Cane",
       "performers": [
         {
@@ -1843,7 +1591,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-08-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-12",
       "time": "21:00",
@@ -2455,7 +2203,7 @@
       "id": "chagrin-tavern-2026-08-13-trivia"
     },
     {
-      "title": "Matt Goodrich",
+      "title": "Matt Goodrich (Restaurant)",
       "performers": [
         {
           "name": "Matt Goodrich",
@@ -2512,6 +2260,25 @@
       "id": "quintanas-speakeasy-2026-08-13-bob-wick"
     },
     {
+      "title": "Ted Riser Live Band Karaoke",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-13-ted-riser"
+    },
+    {
       "title": "Fungirl",
       "performers": [
         {
@@ -2531,7 +2298,7 @@
       "id": "1928-public-house-2026-08-13-fungirl"
     },
     {
-      "title": "Dan Ricci / AMS DJ (@ Church Yard Tent)",
+      "title": "Dan Ricci / AMS DJ (Church Yard Tent)",
       "performers": [
         {
           "name": "Dan Ricci",
@@ -2554,7 +2321,7 @@
       "id": "little-italy-feast-2026-08-13-dan-ricci"
     },
     {
-      "title": "Primavera Band (@ Mayfield Rd)",
+      "title": "Primavera Band (Mayfield Rd)",
       "performers": [
         {
           "name": "Primavera Band",
@@ -2573,7 +2340,7 @@
       "id": "little-italy-feast-2026-08-13-primavera-band"
     },
     {
-      "title": "Italian Band of Cleveland (@ Mayfield Rd)",
+      "title": "Italian Band of Cleveland (Mayfield Rd)",
       "performers": [
         {
           "name": "Italian Band of Cleveland",
@@ -2635,7 +2402,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-08-13",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-13",
       "time": "21:00",
@@ -2649,7 +2416,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-08-13",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-13",
       "time": "17:00",
@@ -3729,7 +3496,7 @@
       "id": "blossom-music-center-2026-08-14-kehlani"
     },
     {
-      "title": "The Brakes",
+      "title": "The Brakes (Restaurant)",
       "performers": [
         {
           "name": "The Brakes",
@@ -3748,7 +3515,7 @@
       "id": "house-of-blues-2026-08-14-the-brakes"
     },
     {
-      "title": "Glotaku DJs",
+      "title": "Glotaku DJs (Foundation Room)",
       "performers": [
         {
           "name": "Glotaku DJs",
@@ -3767,7 +3534,7 @@
       "id": "house-of-blues-2026-08-14-glotaku-djs"
     },
     {
-      "title": "Gannon Fremin & CCREV",
+      "title": "Gannon Fremin & CCREV (Cambridge Room)",
       "performers": [
         {
           "name": "Gannon Fremin",
@@ -3790,7 +3557,7 @@
       "id": "house-of-blues-2026-08-14-gannon-fremin"
     },
     {
-      "title": "Saved by the 90's",
+      "title": "Saved by the 90's (Music Hall)",
       "performers": [
         {
           "name": "Saved by the 90's",
@@ -3847,6 +3614,25 @@
       "id": "local-bar-strongsville-2026-08-14-coop-s-nightmare"
     },
     {
+      "title": "Dan McCoy",
+      "performers": [
+        {
+          "name": "Dan McCoy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-14-dan-mccoy"
+    },
+    {
       "title": "Ronnie Szucs",
       "performers": [
         {
@@ -3885,7 +3671,7 @@
       "id": "crocker-park-2026-08-14-rellick"
     },
     {
-      "title": "The GoodFellos (@ Church Yard Tent)",
+      "title": "The GoodFellos (Church Yard Tent)",
       "performers": [
         {
           "name": "The GoodFellos",
@@ -3904,7 +3690,7 @@
       "id": "little-italy-feast-2026-08-14-the-goodfellos"
     },
     {
-      "title": "Primavera Band (@ Mayfield Rd)",
+      "title": "Primavera Band (Mayfield Rd)",
       "performers": [
         {
           "name": "Primavera Band",
@@ -3923,7 +3709,7 @@
       "id": "little-italy-feast-2026-08-14-primavera-band"
     },
     {
-      "title": "Italian Band of Cleveland (@ Mayfield Rd)",
+      "title": "Italian Band of Cleveland (Mayfield Rd)",
       "performers": [
         {
           "name": "Italian Band of Cleveland",
@@ -3942,7 +3728,7 @@
       "id": "little-italy-feast-2026-08-14-italian-band-of-cleveland"
     },
     {
-      "title": "Cleveland Guardians Rock 'n' Blast (Game Ticket Required)",
+      "title": "Rock 'n' Blast (Guardians Ticket Required)",
       "performers": [
         {
           "name": "Rock 'n' Blast",
@@ -3976,7 +3762,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-08-14",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "17:30",
@@ -3990,7 +3776,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-08-14",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "21:00",
@@ -4004,7 +3790,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-08-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "21:00",
@@ -4018,7 +3804,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-08-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "19:00",
@@ -4032,7 +3818,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-08-14",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "20:00",
@@ -4046,7 +3832,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-08-14",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-14",
       "time": "21:00",
@@ -5178,6 +4964,25 @@
       "id": "seeing-double-2026-08-15-meshell"
     },
     {
+      "title": "J. Cole Afterparty",
+      "performers": [
+        {
+          "name": "J. Cole",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-08-15-j-cole"
+    },
+    {
       "title": "Glass House",
       "performers": [
         {
@@ -5220,7 +5025,7 @@
       "id": "nightjar-2026-08-15-joe-hunter"
     },
     {
-      "title": "Take 2",
+      "title": "Take 2 (Restaurant)",
       "performers": [
         {
           "name": "Take 2",
@@ -5239,7 +5044,7 @@
       "id": "house-of-blues-2026-08-15-take-2"
     },
     {
-      "title": "Whiskey Bound",
+      "title": "Whiskey Bound (Music Hall)",
       "performers": [
         {
           "name": "Whiskey Bound",
@@ -5319,6 +5124,25 @@
       "id": "local-bar-strongsville-2026-08-15-creedence"
     },
     {
+      "title": "The Hit List",
+      "performers": [
+        {
+          "name": "The Hit List",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-15-the-hit-list"
+    },
+    {
       "title": "Disco Inferno",
       "performers": [
         {
@@ -5357,7 +5181,7 @@
       "id": "crocker-park-2026-08-15-eric-embacher"
     },
     {
-      "title": "Cleveland Cannolis (@ Church Yard Tent)",
+      "title": "Cleveland Cannolis (Church Yard Tent)",
       "performers": [
         {
           "name": "Cleveland Cannolis",
@@ -5376,7 +5200,7 @@
       "id": "little-italy-feast-2026-08-15-cleveland-cannolis"
     },
     {
-      "title": "Cleveland Cannolis (@ Mayfield Rd)",
+      "title": "Cleveland Cannolis (Mayfield Rd)",
       "performers": [
         {
           "name": "Cleveland Cannolis",
@@ -5395,7 +5219,7 @@
       "id": "little-italy-feast-2026-08-15-cleveland-cannolis"
     },
     {
-      "title": "G4Live Band (@ Church Yard Tent)",
+      "title": "G4Live Band (Church Yard Tent)",
       "performers": [
         {
           "name": "G4Live Band",
@@ -5414,7 +5238,7 @@
       "id": "little-italy-feast-2026-08-15-g4live-band"
     },
     {
-      "title": "Nick Costa (@ Church Yard Tent)",
+      "title": "Nick Costa (Church Yard Tent)",
       "performers": [
         {
           "name": "Nick Costa",
@@ -5433,7 +5257,7 @@
       "id": "little-italy-feast-2026-08-15-nick-costa"
     },
     {
-      "title": "Primavera Band (@ Mayfield Rd)",
+      "title": "Primavera Band (Mayfield Rd)",
       "performers": [
         {
           "name": "Primavera Band",
@@ -5452,7 +5276,7 @@
       "id": "little-italy-feast-2026-08-15-primavera-band"
     },
     {
-      "title": "Italian Band of Cleveland (@ Mayfield Rd)",
+      "title": "Italian Band of Cleveland (Mayfield Rd)",
       "performers": [
         {
           "name": "Italian Band of Cleveland",
@@ -5471,7 +5295,7 @@
       "id": "little-italy-feast-2026-08-15-italian-band-of-cleveland"
     },
     {
-      "title": "Cleveland Guardians Rock 'n' Blast (Game Ticket Required)",
+      "title": "Rock 'n' Blast (Guardians Ticket Required)",
       "performers": [
         {
           "name": "Rock 'n' Blast",
@@ -5505,7 +5329,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-08-15",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-15",
       "time": "21:00",
@@ -5519,7 +5343,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-08-15",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-15",
       "time": "21:00",
@@ -5533,7 +5357,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-08-15",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-15",
       "time": "19:00",
@@ -5547,7 +5371,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-08-15",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-15",
       "time": "20:00",
@@ -5561,7 +5385,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-08-15",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-15",
       "time": "21:00",
@@ -6255,7 +6079,7 @@
       "id": "smedleys-2026-08-16-the-breakwater-acoustic"
     },
     {
-      "title": "Save Ferris",
+      "title": "Save Ferris (Cambridge Room)",
       "performers": [
         {
           "name": "Save Ferris",
@@ -6272,6 +6096,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-16-save-ferris"
+    },
+    {
+      "title": "The Shizz",
+      "performers": [
+        {
+          "name": "The Shizz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-16",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-16-the-shizz"
     },
     {
       "title": "Jerry Mitchell",
@@ -6293,7 +6136,7 @@
       "id": "crocker-park-2026-08-16-jerry-mitchell"
     },
     {
-      "title": "Avanti Band (@ Church Yard Tent)",
+      "title": "Avanti Band (Church Yard Tent)",
       "performers": [
         {
           "name": "Avanti Band",
@@ -6312,7 +6155,7 @@
       "id": "little-italy-feast-2026-08-16-avanti-band"
     },
     {
-      "title": "Primavera Band and Choral Group (@ Front of Church)",
+      "title": "Primavera Band and Choral Group (Front of Church)",
       "performers": [
         {
           "name": "Primavera Band and Choral Group",
@@ -6331,7 +6174,7 @@
       "id": "little-italy-feast-2026-08-16-primavera-band-and-choral-group"
     },
     {
-      "title": "Swamp Boogie Band (@ Church Yard Tent)",
+      "title": "Swamp Boogie Band (Church Yard Tent)",
       "performers": [
         {
           "name": "Swamp Boogie Band",
@@ -6510,25 +6353,6 @@
       "manual": false
     },
     {
-      "id": "foundry-concert-club-2026-08-17-nerd-night-the-foundry-2",
-      "title": "NERD NIGHT @ THE FOUNDRY",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-17",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "NERD NIGHT @ THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night-the-foundry-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-the-foundry-tickets/15003143?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "foundry-concert-club-2026-08-17-nerd-night-the-foundry-3",
       "title": "NERD NIGHT @ THE FOUNDRY",
       "venueId": "foundry-concert-club",
@@ -6663,7 +6487,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-08-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-17",
       "time": "21:00",
@@ -7028,7 +6852,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-08-18",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-18",
       "time": "21:00",
@@ -7581,7 +7405,7 @@
       "id": "chagrin-tavern-2026-08-19-singo"
     },
     {
-      "title": "Down",
+      "title": "Down (Music Hall)",
       "performers": [
         {
           "name": "Down",
@@ -7598,6 +7422,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-19-down"
+    },
+    {
+      "title": "Trivia With Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-19-kevin-whalen"
     },
     {
       "title": "Strum & Strummer",
@@ -7671,7 +7514,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-08-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-19",
       "time": "21:00",
@@ -8229,7 +8072,7 @@
       "id": "chagrin-tavern-2026-08-20-trivia"
     },
     {
-      "title": "Chad Hoffman",
+      "title": "Chad Hoffman (Restaurant)",
       "performers": [
         {
           "name": "Chad Hoffman",
@@ -8248,7 +8091,7 @@
       "id": "house-of-blues-2026-08-20-chad-hoffman"
     },
     {
-      "title": "Rene Vaca",
+      "title": "Rene Vaca (Music Hall)",
       "performers": [
         {
           "name": "Rene Vaca",
@@ -8303,6 +8146,25 @@
       "source": "manual",
       "manual": true,
       "id": "quintanas-speakeasy-2026-08-20-john-markovic"
+    },
+    {
+      "title": "Cleveland Blues Society Jam",
+      "performers": [
+        {
+          "name": "Cleveland Blues Society",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-20-cleveland-blues-society"
     },
     {
       "title": "Chad Hoffman",
@@ -8367,7 +8229,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-08-20",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-20",
       "time": "21:00",
@@ -8381,7 +8243,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-08-20",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-20",
       "time": "17:00",
@@ -9369,7 +9231,7 @@
       "id": "blossom-music-center-2026-08-21-empire-of-the-sun"
     },
     {
-      "title": "Brent Kirby",
+      "title": "Brent Kirby (Restaurant)",
       "performers": [
         {
           "name": "Brent Kirby",
@@ -9388,7 +9250,7 @@
       "id": "house-of-blues-2026-08-21-brent-kirby"
     },
     {
-      "title": "The Mars Express",
+      "title": "The Mars Express (Foundation Room)",
       "performers": [
         {
           "name": "The Mars Express",
@@ -9407,7 +9269,7 @@
       "id": "house-of-blues-2026-08-21-the-mars-express"
     },
     {
-      "title": "Jon B.",
+      "title": "Jon B. (Music Hall)",
       "performers": [
         {
           "name": "Jon B.",
@@ -9517,7 +9379,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-08-21",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "17:30",
@@ -9531,7 +9393,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-08-21",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "21:00",
@@ -9545,7 +9407,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-08-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "21:00",
@@ -9559,7 +9421,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-08-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "19:00",
@@ -9573,7 +9435,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-08-21",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "20:00",
@@ -9587,7 +9449,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-08-21",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-21",
       "time": "21:00",
@@ -10634,7 +10496,7 @@
       "id": "nightjar-2026-08-22-gabe-jones"
     },
     {
-      "title": "Diana Chittester",
+      "title": "Diana Chittester (Restaurant)",
       "performers": [
         {
           "name": "Diana Chittester",
@@ -10653,7 +10515,7 @@
       "id": "house-of-blues-2026-08-22-diana-chittester"
     },
     {
-      "title": "Will Wood",
+      "title": "Will Wood (Music Hall)",
       "performers": [
         {
           "name": "Will Wood",
@@ -10763,7 +10625,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-08-22",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-22",
       "time": "21:00",
@@ -10777,7 +10639,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-08-22",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-22",
       "time": "21:00",
@@ -10791,7 +10653,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-08-22",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-22",
       "time": "19:00",
@@ -10805,7 +10667,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-08-22",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-22",
       "time": "20:00",
@@ -10819,7 +10681,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-08-22",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-22",
       "time": "21:00",
@@ -11483,6 +11345,25 @@
       "id": "smedleys-2026-08-23-tony-schultz"
     },
     {
+      "title": "For the Fathers",
+      "performers": [
+        {
+          "name": "For the Fathers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-23",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-23-for-the-fathers"
+    },
+    {
       "title": "AWD",
       "performers": [
         {
@@ -11659,25 +11540,6 @@
       "manual": false
     },
     {
-      "id": "foundry-concert-club-2026-08-24-nerd-night-the-foundry-2",
-      "title": "NERD NIGHT @ THE FOUNDRY",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-24",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "NERD NIGHT @ THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night-the-foundry-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-the-foundry-tickets/15003113?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "foundry-concert-club-2026-08-24-nerd-night-the-foundry-3",
       "title": "NERD NIGHT @ THE FOUNDRY",
       "venueId": "foundry-concert-club",
@@ -11789,7 +11651,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-08-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-24",
       "time": "21:00",
@@ -12045,7 +11907,7 @@
       "manual": false
     },
     {
-      "title": "Jason Schmidt",
+      "title": "Jason Schmidt (Cambridge Room)",
       "performers": [
         {
           "name": "Jason Schmidt",
@@ -12079,7 +11941,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-08-25",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-25",
       "time": "21:00",
@@ -12527,6 +12389,25 @@
       "id": "chagrin-tavern-2026-08-26-singo"
     },
     {
+      "title": "Trivia With Kevin Whalen",
+      "performers": [
+        {
+          "name": "Kevin Whalen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-26-kevin-whalen"
+    },
+    {
       "title": "Becky Boyd",
       "performers": [
         {
@@ -12598,7 +12479,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-08-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-26",
       "time": "21:00",
@@ -13123,7 +13004,7 @@
       "id": "blossom-music-center-2026-08-27-r-f-s-du-sol"
     },
     {
-      "title": "Scott Stiert",
+      "title": "Scott Stiert (Restaurant)",
       "performers": [
         {
           "name": "Scott Stiert",
@@ -13142,7 +13023,7 @@
       "id": "house-of-blues-2026-08-27-scott-stiert"
     },
     {
-      "title": "Fattmack",
+      "title": "Fattmack (Music Hall)",
       "performers": [
         {
           "name": "Fattmack",
@@ -13197,6 +13078,25 @@
       "source": "manual",
       "manual": true,
       "id": "quintanas-speakeasy-2026-08-27-john-lucie"
+    },
+    {
+      "title": "Ted Riser Live Band Karaoke",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-27-ted-riser"
     },
     {
       "title": "Wesley Saylor",
@@ -13261,7 +13161,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-08-27",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-27",
       "time": "21:00",
@@ -13275,7 +13175,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-08-27",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-27",
       "time": "17:00",
@@ -13308,25 +13208,6 @@
     },
     {
       "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
-      "title": "VIP Meet & Greet Experience: WWE Raw & Smackdown",
-      "venueId": "rocket-arena",
-      "date": "2026-08-28",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "WWE Friday Night SmackDown",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-5-30-pm/18237463",
-      "source": "seatgeek",
-      "manual": false
-    },
-    {
-      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
       "title": "WWE Souvenir Ticket : WWE Raw & Smackdown",
       "venueId": "rocket-arena",
       "date": "2026-08-28",
@@ -13341,6 +13222,25 @@
       ],
       "eventUrl": null,
       "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-5-30-pm/18191999",
+      "source": "seatgeek",
+      "manual": false
+    },
+    {
+      "id": "rocket-arena-2026-08-28-wwe-friday-night-smackdown",
+      "title": "VIP Meet & Greet Experience: WWE Raw & Smackdown",
+      "venueId": "rocket-arena",
+      "date": "2026-08-28",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "WWE Friday Night SmackDown",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/wwe-friday-night-smackdown-tickets/wwe/2026-08-28-5-30-pm/18237463",
       "source": "seatgeek",
       "manual": false
     },
@@ -14280,7 +14180,7 @@
       "id": "blossom-music-center-2026-08-28-josh-groban"
     },
     {
-      "title": "Erin Nicole Neal & The Chill Factors",
+      "title": "Erin Nicole Neal & The Chill Factors (Restaurant)",
       "performers": [
         {
           "name": "Erin Nicole Neal & The Chill Factors",
@@ -14299,7 +14199,7 @@
       "id": "house-of-blues-2026-08-28-erin-nicole-neal-the-chill-factors"
     },
     {
-      "title": "Isaiah Rashad",
+      "title": "Isaiah Rashad (Music Hall)",
       "performers": [
         {
           "name": "Isaiah Rashad",
@@ -14360,6 +14260,25 @@
       "id": "local-bar-strongsville-2026-08-28-spazmatics"
     },
     {
+      "title": "Dawn to Dusk",
+      "performers": [
+        {
+          "name": "Dawn to Dusk",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-28-dawn-to-dusk"
+    },
+    {
       "title": "Quinn Hoffman",
       "performers": [
         {
@@ -14417,7 +14336,7 @@
       "id": "crocker-park-2026-08-28-mike-raymond"
     },
     {
-      "title": "Chuck Fink (@ Luna Bakery)",
+      "title": "Chuck Fink (Luna Bakery)",
       "performers": [
         {
           "name": "Chuck Fink",
@@ -14436,7 +14355,7 @@
       "id": "heights-music-hop-2026-08-28-chuck-fink"
     },
     {
-      "title": "Toby RAPS (@ BUffalo Wild Wings)",
+      "title": "Toby RAPS (BUffalo Wild Wings)",
       "performers": [
         {
           "name": "Toby RAPS",
@@ -14455,7 +14374,7 @@
       "id": "heights-music-hop-2026-08-28-toby-raps"
     },
     {
-      "title": "Jazz Cats (@ EDWINS)",
+      "title": "Jazz Cats (EDWINS)",
       "performers": [
         {
           "name": "Jazz Cats",
@@ -14474,7 +14393,7 @@
       "id": "heights-music-hop-2026-08-28-jazz-cats"
     },
     {
-      "title": "A Glass of Vino (@ POUR)",
+      "title": "A Glass of Vino (POUR)",
       "performers": [
         {
           "name": "A Glass of Vino",
@@ -14493,7 +14412,7 @@
       "id": "heights-music-hop-2026-08-28-a-glass-of-vino"
     },
     {
-      "title": "The Road Warrior (@ The Fairmount)",
+      "title": "The Road Warrior (The Fairmount)",
       "performers": [
         {
           "name": "The Road Warrior",
@@ -14512,7 +14431,7 @@
       "id": "heights-music-hop-2026-08-28-the-road-warrior"
     },
     {
-      "title": "Kiss Me Deadly (@ The Fairmount)",
+      "title": "Kiss Me Deadly (The Fairmount)",
       "performers": [
         {
           "name": "Kiss Me Deadly",
@@ -14531,7 +14450,7 @@
       "id": "heights-music-hop-2026-08-28-kiss-me-deadly"
     },
     {
-      "title": "Stamper Starr (@ The Grocery Outlet)",
+      "title": "Stamper Starr (The Grocery Outlet)",
       "performers": [
         {
           "name": "Stamper Starr",
@@ -14550,7 +14469,7 @@
       "id": "heights-music-hop-2026-08-28-stamper-starr"
     },
     {
-      "title": "Velocity Stax (@ The Checkered Shelf)",
+      "title": "Velocity Stax (The Checkered Shelf)",
       "performers": [
         {
           "name": "Velocity Stax",
@@ -14569,7 +14488,7 @@
       "id": "heights-music-hop-2026-08-28-velocity-stax"
     },
     {
-      "title": "By Light We Loom (@ The Checkered Shelf)",
+      "title": "By Light We Loom (The Checkered Shelf)",
       "performers": [
         {
           "name": "By Light We Loom",
@@ -14588,7 +14507,7 @@
       "id": "heights-music-hop-2026-08-28-by-light-we-loom"
     },
     {
-      "title": "Ruairi Hurley and Carrie King (@ Vero Pizza)",
+      "title": "Ruairi Hurley and Carrie King (Vero Pizza)",
       "performers": [
         {
           "name": "Ruairi Hurley and Carrie King",
@@ -14607,7 +14526,7 @@
       "id": "heights-music-hop-2026-08-28-ruairi-hurley-and-carrie-king"
     },
     {
-      "title": "Kozak and Davidson Duo (@ Vero Pizza)",
+      "title": "Kozak and Davidson Duo (Vero Pizza)",
       "performers": [
         {
           "name": "Kozak and Davidson Duo",
@@ -14626,7 +14545,7 @@
       "id": "heights-music-hop-2026-08-28-kozak-and-davidson-duo"
     },
     {
-      "title": "Alan Greene Band (@ Barrio)",
+      "title": "Alan Greene Band (Barrio)",
       "performers": [
         {
           "name": "Alan Greene Band",
@@ -14645,7 +14564,7 @@
       "id": "heights-music-hop-2026-08-28-alan-greene-band"
     },
     {
-      "title": "Roadkill Revolution (@ Barrio)",
+      "title": "Roadkill Revolution (Barrio)",
       "performers": [
         {
           "name": "Roadkill Revolution",
@@ -14664,7 +14583,7 @@
       "id": "heights-music-hop-2026-08-28-roadkill-revolution"
     },
     {
-      "title": "Civic Summer (@ Barrio)",
+      "title": "Civic Summer (Barrio)",
       "performers": [
         {
           "name": "Civic Summer",
@@ -14683,7 +14602,7 @@
       "id": "heights-music-hop-2026-08-28-civic-summer"
     },
     {
-      "title": "James Douglas (@ Parnell's Pub)",
+      "title": "James Douglas (Parnell's Pub)",
       "performers": [
         {
           "name": "James Douglas",
@@ -14702,7 +14621,7 @@
       "id": "heights-music-hop-2026-08-28-james-douglas"
     },
     {
-      "title": "Grace Oddo (@ Parnell's Pub)",
+      "title": "Grace Oddo (Parnell's Pub)",
       "performers": [
         {
           "name": "Grace Oddo",
@@ -14721,7 +14640,7 @@
       "id": "heights-music-hop-2026-08-28-grace-oddo"
     },
     {
-      "title": "Blue Lunch (@ Ascent Pocket Park)",
+      "title": "Blue Lunch (Ascent Pocket Park)",
       "performers": [
         {
           "name": "Blue Lunch",
@@ -14740,7 +14659,7 @@
       "id": "heights-music-hop-2026-08-28-blue-lunch"
     },
     {
-      "title": "Hello 3D (@ Ascent Pocket Park)",
+      "title": "Hello 3D (Ascent Pocket Park)",
       "performers": [
         {
           "name": "Hello 3D",
@@ -14774,7 +14693,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-08-28",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "17:30",
@@ -14788,7 +14707,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-08-28",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -14802,7 +14721,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-08-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -14816,7 +14735,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-08-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "19:00",
@@ -14830,7 +14749,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-08-28",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "20:00",
@@ -14844,7 +14763,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-08-28",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -15991,7 +15910,7 @@
       "id": "nightjar-2026-08-29-alvin-frazier-group"
     },
     {
-      "title": "Ohio Drifters",
+      "title": "Ohio Drifters (Restaurant)",
       "performers": [
         {
           "name": "Ohio Drifters",
@@ -16008,6 +15927,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-08-29-ohio-drifters"
+    },
+    {
+      "title": "The Taylor Party: The TS Dance Party (Music Hall)",
+      "performers": [
+        {
+          "name": "The Taylor Party: The TS Dance Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-08-29-the-taylor-party"
     },
     {
       "title": "Chris Hatton",
@@ -16052,6 +15990,44 @@
       "id": "local-bar-strongsville-2026-08-29-billy-morris-the-sunset-strip"
     },
     {
+      "title": "The Lonesome Bones",
+      "performers": [
+        {
+          "name": "The Lonesome Bones",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-29-the-lonesome-bones"
+    },
+    {
+      "title": "Lonesome Bones",
+      "performers": [
+        {
+          "name": "Lonesome Bones",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-29-lonesome-bones"
+    },
+    {
       "title": "Light of 2 Moons",
       "performers": [
         {
@@ -16090,7 +16066,7 @@
       "id": "crocker-park-2026-08-29-brian-alan-hager"
     },
     {
-      "title": "Soulful Steps line dancing (@ Noble Library)",
+      "title": "Soulful Steps line dancing (Noble Library)",
       "performers": [
         {
           "name": "Soulful Steps",
@@ -16109,7 +16085,7 @@
       "id": "heights-music-hop-2026-08-29-soulful-steps"
     },
     {
-      "title": "Neekesh and the Band (@ Noble Library)",
+      "title": "Neekesh and the Band (Noble Library)",
       "performers": [
         {
           "name": "Neekesh and the Band",
@@ -16128,7 +16104,7 @@
       "id": "heights-music-hop-2026-08-29-neekesh-and-the-band"
     },
     {
-      "title": "Mr. Haney & Friends (@ Church of the Saviour)",
+      "title": "Mr. Haney & Friends (Church of the Saviour)",
       "performers": [
         {
           "name": "Mr. Haney & Friends",
@@ -16147,7 +16123,7 @@
       "id": "heights-music-hop-2026-08-29-mr-haney-friends"
     },
     {
-      "title": "DJ Lily Jade (@ Church of the Saviour)",
+      "title": "DJ Lily Jade (Church of the Saviour)",
       "performers": [
         {
           "name": "DJ Lily Jade",
@@ -16166,7 +16142,7 @@
       "id": "heights-music-hop-2026-08-29-dj-lily-jade"
     },
     {
-      "title": "Sweet Willy and the Solid Cats (@ Sophie La Gourmande)",
+      "title": "Sweet Willy and the Solid Cats (Sophie La Gourmande)",
       "performers": [
         {
           "name": "Sweet Willy and the Solid Cats",
@@ -16185,7 +16161,7 @@
       "id": "heights-music-hop-2026-08-29-sweet-willy-and-the-solid-cats"
     },
     {
-      "title": "Colleen Welch (@ Sophie La Gourmande)",
+      "title": "Colleen Welch (Sophie La Gourmande)",
       "performers": [
         {
           "name": "Colleen Welch",
@@ -16204,7 +16180,7 @@
       "id": "heights-music-hop-2026-08-29-colleen-welch"
     },
     {
-      "title": "Jesse Jukebox and Music Izzey Groovy (@ S'il Vous Play')",
+      "title": "Jesse Jukebox and Music Izzey Groovy (S'il Vous Play')",
       "performers": [
         {
           "name": "Jesse Jukebox",
@@ -16227,7 +16203,7 @@
       "id": "heights-music-hop-2026-08-29-jesse-jukebox"
     },
     {
-      "title": "With Windswept Hair (@ S'il Vous Play')",
+      "title": "With Windswept Hair (S'il Vous Play')",
       "performers": [
         {
           "name": "With Windswept Hair",
@@ -16246,7 +16222,7 @@
       "id": "heights-music-hop-2026-08-29-with-windswept-hair"
     },
     {
-      "title": "Lonesome Bones (@ CLE Urban Winery)",
+      "title": "Lonesome Bones (CLE Urban Winery)",
       "performers": [
         {
           "name": "Lonesome Bones",
@@ -16265,7 +16241,7 @@
       "id": "heights-music-hop-2026-08-29-lonesome-bones"
     },
     {
-      "title": "Charity Evonna (@ CLE Urban Winery)",
+      "title": "Charity Evonna (CLE Urban Winery)",
       "performers": [
         {
           "name": "Charity Evonna",
@@ -16284,7 +16260,7 @@
       "id": "heights-music-hop-2026-08-29-charity-evonna"
     },
     {
-      "title": "Super Babes (@ CLE Urban Winery)",
+      "title": "Super Babes (CLE Urban Winery)",
       "performers": [
         {
           "name": "Super Babes",
@@ -16303,7 +16279,7 @@
       "id": "heights-music-hop-2026-08-29-super-babes"
     },
     {
-      "title": "Sierra Delaine (@ CLE Urban Winery)",
+      "title": "Sierra Delaine (CLE Urban Winery)",
       "performers": [
         {
           "name": "Sierra Delaine",
@@ -16322,7 +16298,7 @@
       "id": "heights-music-hop-2026-08-29-sierra-delaine"
     },
     {
-      "title": "Craig Rich (@ Stone Oven)",
+      "title": "Craig Rich (Stone Oven)",
       "performers": [
         {
           "name": "Craig Rich",
@@ -16341,7 +16317,7 @@
       "id": "heights-music-hop-2026-08-29-craig-rich"
     },
     {
-      "title": "Kate Kooser (@ Stone Oven)",
+      "title": "Kate Kooser (Stone Oven)",
       "performers": [
         {
           "name": "Kate Kooser",
@@ -16360,7 +16336,7 @@
       "id": "heights-music-hop-2026-08-29-kate-kooser"
     },
     {
-      "title": "Alla Boara (@ Hexagon Books)",
+      "title": "Alla Boara (Hexagon Books)",
       "performers": [
         {
           "name": "Alla Boara",
@@ -16379,7 +16355,7 @@
       "id": "heights-music-hop-2026-08-29-alla-boara"
     },
     {
-      "title": "Shortt Stories (@ Dewey's Pizza)",
+      "title": "Shortt Stories (Dewey's Pizza)",
       "performers": [
         {
           "name": "Shortt Stories",
@@ -16398,7 +16374,7 @@
       "id": "heights-music-hop-2026-08-29-shortt-stories"
     },
     {
-      "title": "Charlie Mosbrook (@ Heights Arts)",
+      "title": "Charlie Mosbrook (Heights Arts)",
       "performers": [
         {
           "name": "Charlie Mosbrook",
@@ -16417,7 +16393,7 @@
       "id": "heights-music-hop-2026-08-29-charlie-mosbrook"
     },
     {
-      "title": "Tweed (@ Heights Arts)",
+      "title": "Tweed (Heights Arts)",
       "performers": [
         {
           "name": "Tweed",
@@ -16436,7 +16412,7 @@
       "id": "heights-music-hop-2026-08-29-tweed"
     },
     {
-      "title": "MOSSOM (@ Bottlehouse)",
+      "title": "MOSSOM (Bottlehouse)",
       "performers": [
         {
           "name": "MOSSOM",
@@ -16455,7 +16431,7 @@
       "id": "heights-music-hop-2026-08-29-mossom"
     },
     {
-      "title": "The Baker's Basement (@ Bottlehouse)",
+      "title": "The Baker's Basement (Bottlehouse)",
       "performers": [
         {
           "name": "The Baker's Basement",
@@ -16474,7 +16450,7 @@
       "id": "heights-music-hop-2026-08-29-the-baker-s-basement"
     },
     {
-      "title": "Warren Bendler (@ Bottlehouse)",
+      "title": "Warren Bendler (Bottlehouse)",
       "performers": [
         {
           "name": "Warren Bendler",
@@ -16493,7 +16469,7 @@
       "id": "heights-music-hop-2026-08-29-warren-bendler"
     },
     {
-      "title": "David Loy and the Ramrods (@ Bottlehouse)",
+      "title": "David Loy and the Ramrods (Bottlehouse)",
       "performers": [
         {
           "name": "David Loy and the Ramrods",
@@ -16512,7 +16488,7 @@
       "id": "heights-music-hop-2026-08-29-david-loy-and-the-ramrods"
     },
     {
-      "title": "Bill Lestock and Alex Parris (@ Abundance)",
+      "title": "Bill Lestock and Alex Parris (Abundance)",
       "performers": [
         {
           "name": "Bill Lestock",
@@ -16535,7 +16511,7 @@
       "id": "heights-music-hop-2026-08-29-bill-lestock"
     },
     {
-      "title": "First Class Citizens (@ Abundance)",
+      "title": "First Class Citizens (Abundance)",
       "performers": [
         {
           "name": "First Class Citizens",
@@ -16554,7 +16530,7 @@
       "id": "heights-music-hop-2026-08-29-first-class-citizens"
     },
     {
-      "title": "Synergy (@ Boss Dog Brewing)",
+      "title": "Synergy (Boss Dog Brewing)",
       "performers": [
         {
           "name": "Synergy",
@@ -16573,7 +16549,7 @@
       "id": "heights-music-hop-2026-08-29-synergy"
     },
     {
-      "title": "Cats on Holiday (@ Boss Dog Brewing)",
+      "title": "Cats on Holiday (Boss Dog Brewing)",
       "performers": [
         {
           "name": "Cats on Holiday",
@@ -16592,7 +16568,7 @@
       "id": "heights-music-hop-2026-08-29-cats-on-holiday"
     },
     {
-      "title": "Maura Rogers and the Bellows (@ Boss Dog Brewing)",
+      "title": "Maura Rogers and the Bellows (Boss Dog Brewing)",
       "performers": [
         {
           "name": "Maura Rogers and the Bellows",
@@ -16611,7 +16587,7 @@
       "id": "heights-music-hop-2026-08-29-maura-rogers-and-the-bellows"
     },
     {
-      "title": "Matt Harmon (@ Mitchell's Chocolates)",
+      "title": "Matt Harmon (Mitchell's Chocolates)",
       "performers": [
         {
           "name": "Matt Harmon",
@@ -16630,7 +16606,7 @@
       "id": "heights-music-hop-2026-08-29-matt-harmon"
     },
     {
-      "title": "Tracy Marie and Josh Donato (@ STEM)",
+      "title": "Tracy Marie and Josh Donato (STEM)",
       "performers": [
         {
           "name": "Tracy Marie",
@@ -16653,7 +16629,7 @@
       "id": "heights-music-hop-2026-08-29-tracy-marie"
     },
     {
-      "title": "Bob Frank (@ STEM)",
+      "title": "Bob Frank (STEM)",
       "performers": [
         {
           "name": "Bob Frank",
@@ -16672,7 +16648,7 @@
       "id": "heights-music-hop-2026-08-29-bob-frank"
     },
     {
-      "title": "Ashley Brooke Toussaint (@ Peace Lily Plant Boutique)",
+      "title": "Ashley Brooke Toussaint (Peace Lily Plant Boutique)",
       "performers": [
         {
           "name": "Ashley Brooke Toussaint",
@@ -16691,7 +16667,7 @@
       "id": "heights-music-hop-2026-08-29-ashley-brooke-toussaint"
     },
     {
-      "title": "Morgan Mecaskey (@ Peace Lily Plant Boutique)",
+      "title": "Morgan Mecaskey (Peace Lily Plant Boutique)",
       "performers": [
         {
           "name": "Morgan Mecaskey",
@@ -16710,7 +16686,7 @@
       "id": "heights-music-hop-2026-08-29-morgan-mecaskey"
     },
     {
-      "title": "Wave Magnetik (@ Olie's Gift & Ship)",
+      "title": "Wave Magnetik (Olie's Gift & Ship)",
       "performers": [
         {
           "name": "Wave Magnetik",
@@ -16729,7 +16705,7 @@
       "id": "heights-music-hop-2026-08-29-wave-magnetik"
     },
     {
-      "title": "Adult Human Chicken (@ Olie's Gift & Ship)",
+      "title": "Adult Human Chicken (Olie's Gift & Ship)",
       "performers": [
         {
           "name": "Adult Human Chicken",
@@ -16748,7 +16724,7 @@
       "id": "heights-music-hop-2026-08-29-adult-human-chicken"
     },
     {
-      "title": "Sean Benjamin (@ High Key on Lee)",
+      "title": "Sean Benjamin (High Key on Lee)",
       "performers": [
         {
           "name": "Sean Benjamin",
@@ -16767,7 +16743,7 @@
       "id": "heights-music-hop-2026-08-29-sean-benjamin"
     },
     {
-      "title": "AJ and the Woods (@ High Key on Lee)",
+      "title": "AJ and the Woods (High Key on Lee)",
       "performers": [
         {
           "name": "AJ and the Woods",
@@ -16786,7 +16762,7 @@
       "id": "heights-music-hop-2026-08-29-aj-and-the-woods"
     },
     {
-      "title": "DJ TK (@ High Key on Lee)",
+      "title": "DJ TK (High Key on Lee)",
       "performers": [
         {
           "name": "DJ TK",
@@ -16805,7 +16781,7 @@
       "id": "heights-music-hop-2026-08-29-dj-tk"
     },
     {
-      "title": "Mariachi Santa Cecilia (@ Cozumel)",
+      "title": "Mariachi Santa Cecilia (Cozumel)",
       "performers": [
         {
           "name": "Mariachi Santa Cecilia",
@@ -16824,7 +16800,7 @@
       "id": "heights-music-hop-2026-08-29-mariachi-santa-cecilia"
     },
     {
-      "title": "Opus 216 (@ Marchant Manor)",
+      "title": "Opus 216 (Marchant Manor)",
       "performers": [
         {
           "name": "Opus 216",
@@ -16843,7 +16819,7 @@
       "id": "heights-music-hop-2026-08-29-opus-216"
     },
     {
-      "title": "Eric Butler (@ Tavern Company)",
+      "title": "Eric Butler (Tavern Company)",
       "performers": [
         {
           "name": "Eric Butler",
@@ -16862,7 +16838,7 @@
       "id": "heights-music-hop-2026-08-29-eric-butler"
     },
     {
-      "title": "City Lite Trio (@ Tavern Company)",
+      "title": "City Lite Trio (Tavern Company)",
       "performers": [
         {
           "name": "City Lite Trio",
@@ -16881,7 +16857,7 @@
       "id": "heights-music-hop-2026-08-29-city-lite-trio"
     },
     {
-      "title": "Apostle Jones (@ Tavern Company)",
+      "title": "Apostle Jones (Tavern Company)",
       "performers": [
         {
           "name": "Apostle Jones",
@@ -16900,7 +16876,7 @@
       "id": "heights-music-hop-2026-08-29-apostle-jones"
     },
     {
-      "title": "Austin Walkin' Cane (@ Marotta's)",
+      "title": "Austin Walkin' Cane (Marotta's)",
       "performers": [
         {
           "name": "Austin Walkin' Cane",
@@ -16919,7 +16895,7 @@
       "id": "heights-music-hop-2026-08-29-austin-walkin-cane"
     },
     {
-      "title": "Musicologie (@ Best Gyros Street Stage)",
+      "title": "Musicologie (Best Gyros Street Stage)",
       "performers": [
         {
           "name": "Musicologie",
@@ -16938,7 +16914,7 @@
       "id": "heights-music-hop-2026-08-29-musicologie"
     },
     {
-      "title": "Tony Quarles and the Discovery Band (@ Best Gyros Street Stage)",
+      "title": "Tony Quarles and the Discovery Band (Best Gyros Street Stage)",
       "performers": [
         {
           "name": "Tony Quarles and the Discovery Band",
@@ -16957,7 +16933,7 @@
       "id": "heights-music-hop-2026-08-29-tony-quarles-and-the-discovery-band"
     },
     {
-      "title": "Tim Matson (@ New Heights Grill)",
+      "title": "Tim Matson (New Heights Grill)",
       "performers": [
         {
           "name": "Tim Matson",
@@ -16976,7 +16952,7 @@
       "id": "heights-music-hop-2026-08-29-tim-matson"
     },
     {
-      "title": "Boomers 330 (@ New Heights Grill)",
+      "title": "Boomers 330 (New Heights Grill)",
       "performers": [
         {
           "name": "Boomers 330",
@@ -16995,7 +16971,7 @@
       "id": "heights-music-hop-2026-08-29-boomers-330"
     },
     {
-      "title": "The Sidemen (@ New Heights Grill)",
+      "title": "The Sidemen (New Heights Grill)",
       "performers": [
         {
           "name": "The Sidemen",
@@ -17014,7 +16990,7 @@
       "id": "heights-music-hop-2026-08-29-the-sidemen"
     },
     {
-      "title": "Get Back (@ The Social Room)",
+      "title": "Get Back (The Social Room)",
       "performers": [
         {
           "name": "Get Back",
@@ -17033,7 +17009,7 @@
       "id": "heights-music-hop-2026-08-29-get-back"
     },
     {
-      "title": "Outside Friends (@ The Social Room)",
+      "title": "Outside Friends (The Social Room)",
       "performers": [
         {
           "name": "Outside Friends",
@@ -17067,7 +17043,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-08-29",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -17081,7 +17057,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-08-29",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -17095,7 +17071,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-08-29",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "19:00",
@@ -17109,7 +17085,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-08-29",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "20:00",
@@ -17123,7 +17099,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-08-29",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -17706,7 +17682,26 @@
       "id": "chagrin-tavern-2026-08-30-phil-n-the-blanks"
     },
     {
-      "title": "Hum and Strum (@ PEACE Park)",
+      "title": "Little Summer",
+      "performers": [
+        {
+          "name": "Little Summer",
+          "headliner": true
+        }
+      ],
+      "date": "2026-08-30",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-08-30-little-summer"
+    },
+    {
+      "title": "Hum and Strum (PEACE Park)",
       "performers": [
         {
           "name": "Hum and Strum",
@@ -17725,7 +17720,7 @@
       "id": "heights-music-hop-2026-08-30-hum-and-strum"
     },
     {
-      "title": "Yiddishe Cup (@ PEACE Park)",
+      "title": "Yiddishe Cup (PEACE Park)",
       "performers": [
         {
           "name": "Yiddishe Cup",
@@ -17744,7 +17739,7 @@
       "id": "heights-music-hop-2026-08-30-yiddishe-cup"
     },
     {
-      "title": "Mekimi (@ Convetry PEACE Arch)",
+      "title": "Mekimi (Convetry PEACE Arch)",
       "performers": [
         {
           "name": "Mekimi",
@@ -17763,7 +17758,7 @@
       "id": "heights-music-hop-2026-08-30-mekimi"
     },
     {
-      "title": "Gary Lee (@ Convetry PEACE Arch)",
+      "title": "Gary Lee (Convetry PEACE Arch)",
       "performers": [
         {
           "name": "Gary Lee",
@@ -17782,7 +17777,7 @@
       "id": "heights-music-hop-2026-08-30-gary-lee"
     },
     {
-      "title": "Allen Littman (@ Mac's Backs Books)",
+      "title": "Allen Littman (Mac's Backs Books)",
       "performers": [
         {
           "name": "Allen Littman",
@@ -17801,7 +17796,7 @@
       "id": "heights-music-hop-2026-08-30-allen-littman"
     },
     {
-      "title": "Melonhead (@ Mac's Backs Books)",
+      "title": "Melonhead (Mac's Backs Books)",
       "performers": [
         {
           "name": "Melonhead",
@@ -17820,7 +17815,7 @@
       "id": "heights-music-hop-2026-08-30-melonhead"
     },
     {
-      "title": "Breaking Point (@ Pekar Park Stage)",
+      "title": "Breaking Point (Pekar Park Stage)",
       "performers": [
         {
           "name": "Breaking Point",
@@ -17839,7 +17834,7 @@
       "id": "heights-music-hop-2026-08-30-breaking-point"
     },
     {
-      "title": "The Blues Drivers (@ Pekar Park Stage)",
+      "title": "The Blues Drivers (Pekar Park Stage)",
       "performers": [
         {
           "name": "The Blues Drivers",
@@ -17858,7 +17853,7 @@
       "id": "heights-music-hop-2026-08-30-the-blues-drivers"
     },
     {
-      "title": "Silent Film Festival with Live Piano (@ City Church)",
+      "title": "Silent Film Festival with Live Piano (City Church)",
       "performers": [
         {
           "name": "Silent Film Festival with Live Piano",
@@ -17877,7 +17872,7 @@
       "id": "heights-music-hop-2026-08-30-silent-film-festival-with-live-piano"
     },
     {
-      "title": "Dave Zup (@ Soba Noodles)",
+      "title": "Dave Zup (Soba Noodles)",
       "performers": [
         {
           "name": "Dave Zup",
@@ -17896,7 +17891,7 @@
       "id": "heights-music-hop-2026-08-30-dave-zup"
     },
     {
-      "title": "Tom Shaper and the Resistance (@ Soba Noodles)",
+      "title": "Tom Shaper and the Resistance (Soba Noodles)",
       "performers": [
         {
           "name": "Tom Shaper and the Resistance",
@@ -17915,7 +17910,7 @@
       "id": "heights-music-hop-2026-08-30-tom-shaper-and-the-resistance"
     },
     {
-      "title": "Highland Heights School of Rock Grad Show (@ Grog Shop)",
+      "title": "Highland Heights School of Rock Grad Show (Grog Shop)",
       "performers": [
         {
           "name": "Highland Heights School of Rock Grad Show",
@@ -17934,7 +17929,7 @@
       "id": "heights-music-hop-2026-08-30-highland-heights-school-of-rock-grad-show"
     },
     {
-      "title": "Highland Heights School of Rock Grad Show (@ Grog Shop)",
+      "title": "Highland Heights School of Rock Grad Show (Grog Shop)",
       "performers": [
         {
           "name": "Highland Heights School of Rock Grad Show",
@@ -17953,7 +17948,7 @@
       "id": "heights-music-hop-2026-08-30-highland-heights-school-of-rock-grad-show"
     },
     {
-      "title": "Tri-Tones Surf and Rock Band (@ B-Side)",
+      "title": "Tri-Tones Surf and Rock Band (B-Side)",
       "performers": [
         {
           "name": "Tri-Tones Surf and Rock Band",
@@ -17972,7 +17967,7 @@
       "id": "heights-music-hop-2026-08-30-tri-tones-surf-and-rock-band"
     },
     {
-      "title": "Ziggy D. of C-level (@ B-Side)",
+      "title": "Ziggy D. of C-level (B-Side)",
       "performers": [
         {
           "name": "Ziggy D. of C-level",
@@ -17991,7 +17986,7 @@
       "id": "heights-music-hop-2026-08-30-ziggy-d-of-c-level"
     },
     {
-      "title": "DJ Trapathonjerm (@ B-Side Patio)",
+      "title": "DJ Trapathonjerm (B-Side Patio)",
       "performers": [
         {
           "name": "DJ Trapathonjerm",
@@ -18010,7 +18005,7 @@
       "id": "heights-music-hop-2026-08-30-dj-trapathonjerm"
     },
     {
-      "title": "DJ Casualtearsintheclub (@ B-Side Patio)",
+      "title": "DJ Casualtearsintheclub (B-Side Patio)",
       "performers": [
         {
           "name": "DJ Casualtearsintheclub",
@@ -18136,25 +18131,6 @@
       "manual": false
     },
     {
-      "id": "foundry-concert-club-2026-08-31-nerd-night-the-foundry-2",
-      "title": "NERD NIGHT @ THE FOUNDRY",
-      "venueId": "foundry-concert-club",
-      "date": "2026-08-31",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "NERD NIGHT @ THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night-the-foundry-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-the-foundry-tickets/15003123?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "foundry-concert-club-2026-08-31-nerd-night-the-foundry-3",
       "title": "NERD NIGHT @ THE FOUNDRY",
       "venueId": "foundry-concert-club",
@@ -18228,26 +18204,6 @@
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-08-31",
       "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-social-club-2026-08-31-15007923",
-      "title": "Togishi, Schlenk/Picard",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-08-31",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Togishi, Schlenk/Picard",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/togishi-schlenkpicard-treelawn-social-club-tickets/15007923",
-      "ticketUrl": "https://www.ticketweb.com/event/togishi-schlenkpicard-treelawn-social-club-tickets/15007923",
       "source": "scrape",
       "manual": false
     },
@@ -18338,7 +18294,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-08-31",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-31",
       "time": "21:00",
@@ -18521,7 +18477,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-01",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-01",
       "time": "21:00",
@@ -18869,7 +18825,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-02",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-02",
       "time": "21:00",
@@ -19318,7 +19274,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-03",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-03",
       "time": "21:00",
@@ -19332,7 +19288,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-03",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-03",
       "time": "17:00",
@@ -19957,7 +19913,7 @@
       "id": "whiskey-island-2026-09-04-mr-breeze"
     },
     {
-      "title": "Peephole",
+      "title": "Peephole (Music Hall)",
       "performers": [
         {
           "name": "Peephole - Tribute to System of a Down",
@@ -20052,7 +20008,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-04",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "17:30",
@@ -20066,7 +20022,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-04",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -20080,7 +20036,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-04",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -20094,7 +20050,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-04",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "19:00",
@@ -20108,7 +20064,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-04",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "20:00",
@@ -20122,7 +20078,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-04",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -20270,6 +20226,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/janis-joplin-tribute-sep5/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62033",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-09-05-bring-me-the-horizon-vs-bad-omens-live-band-karaoke",
+      "title": "Bring me The Horizon VS Bad Omens Live Band Karaoke",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-09-05",
+      "time": "20:00",
+      "doors": null,
+      "price": "$11.35",
+      "performers": [
+        {
+          "name": "Bring me The Horizon VS Bad Omens Live Band Karaoke",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/bring-me-the-horizon-vs-bad-omens-live-band-karaoke/",
+      "ticketUrl": "https://www.ticketweb.com/event/bring-me-the-horizon-vs-the-winchester-tickets/15027193",
       "source": "scrape",
       "manual": false
     },
@@ -20745,7 +20720,7 @@
       "id": "cavottas-garden-bar-2026-09-05-blue-lunch"
     },
     {
-      "title": "Who's Bad",
+      "title": "Who's Bad (Music Hall)",
       "performers": [
         {
           "name": "Who's Bad: The Ultimate Michael Jackson Experience",
@@ -20836,7 +20811,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-05",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -20850,7 +20825,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-05",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -20864,7 +20839,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-05",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "19:00",
@@ -20878,7 +20853,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-05",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "20:00",
@@ -20892,7 +20867,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-05",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -21555,7 +21530,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-07",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-07",
       "time": "21:00",
@@ -21756,7 +21731,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-08",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-08",
       "time": "21:00",
@@ -22056,7 +22031,7 @@
       "id": "blossom-music-center-2026-09-09-wu-tang-clan"
     },
     {
-      "title": "Chad Gray",
+      "title": "Chad Gray (Music Hall)",
       "performers": [
         {
           "name": "Chad Gray",
@@ -22150,7 +22125,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-09",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-09",
       "time": "21:00",
@@ -22266,6 +22241,48 @@
       ],
       "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1520025",
       "ticketUrl": "https://www.axs.com/events/1520025/gymclassheroes-lupe-fiasco-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-09-10-moses-cleaveland",
+      "title": "Who the Heck was Moses Cleaveland?",
+      "venueId": "music-box",
+      "date": "2026-09-10",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Who the Heck was Moses Cleaveland?",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/moses-cleaveland/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "playhouse-square-2026-09-10-2000-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-09-10",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
       "source": "scrape",
       "manual": false
     },
@@ -22513,7 +22530,7 @@
       "id": "blossom-music-center-2026-09-10-tlc"
     },
     {
-      "title": "The Pretty Reckless",
+      "title": "The Pretty Reckless (Music Hall)",
       "performers": [
         {
           "name": "The Pretty Reckless",
@@ -22618,7 +22635,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-10",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-10",
       "time": "21:00",
@@ -22632,7 +22649,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-10",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-10",
       "time": "17:00",
@@ -23082,7 +23099,7 @@
     },
     {
       "id": "bent-mace-2026-09-11-v2k-tba",
-      "title": "V2K / Factual Brains / R6 Implant",
+      "title": "V2K / Factual Brains / bcmng / R6 Implant",
       "venueId": "bent-mace",
       "date": "2026-09-11",
       "time": "20:00",
@@ -23095,6 +23112,10 @@
         },
         {
           "name": "Factual Brains",
+          "headliner": false
+        },
+        {
+          "name": "bcmng",
           "headliner": false
         },
         {
@@ -23228,7 +23249,7 @@
       "id": "blossom-music-center-2026-09-11-o-a-r"
     },
     {
-      "title": "Joe Jordan",
+      "title": "Joe Jordan (Cambridge Room)",
       "performers": [
         {
           "name": "Joe Jordan",
@@ -23342,7 +23363,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-11",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "17:30",
@@ -23356,7 +23377,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-11",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -23370,7 +23391,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-11",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -23384,7 +23405,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-11",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "19:00",
@@ -23398,7 +23419,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-11",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "20:00",
@@ -23412,7 +23433,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-11",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -23960,6 +23981,25 @@
       "id": "blossom-music-center-2026-09-12-thomas-rhett"
     },
     {
+      "title": "It's a 2000's Party (Music Hall)",
+      "performers": [
+        {
+          "name": "It's a 2000's Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-09-12-2000s-party"
+    },
+    {
       "title": "Icons of Country",
       "performers": [
         {
@@ -24040,7 +24080,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-12",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -24054,7 +24094,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -24068,7 +24108,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "19:00",
@@ -24082,7 +24122,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-12",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "20:00",
@@ -24096,7 +24136,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-12",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -24658,7 +24698,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-14",
       "time": "21:00",
@@ -24954,7 +24994,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-15",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-15",
       "time": "21:00",
@@ -25082,25 +25122,6 @@
       "manual": false
     },
     {
-      "id": "mahalls-2026-09-16-the-4411",
-      "title": "The 4411",
-      "venueId": "mahalls",
-      "date": "2026-09-16",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$16.00",
-      "performers": [
-        {
-          "name": "The 4411",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/the-4411/",
-      "ticketUrl": "https://link.dice.fm/h6013cac9441",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "mahalls-2026-09-16-poison-girl-friend",
       "title": "POiSON GiRL FRiEND",
       "venueId": "mahalls",
@@ -25116,6 +25137,25 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/poison-girl-friend/",
       "ticketUrl": "https://link.dice.fm/ub3903957eea",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "mahalls-2026-09-16-the-4411",
+      "title": "The 4411",
+      "venueId": "mahalls",
+      "date": "2026-09-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$16.00",
+      "performers": [
+        {
+          "name": "The 4411",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/the-4411/",
+      "ticketUrl": "https://link.dice.fm/h6013cac9441",
       "source": "scrape",
       "manual": false
     },
@@ -25350,7 +25390,7 @@
       "id": "blossom-music-center-2026-09-16-pitbull"
     },
     {
-      "title": "Guardin",
+      "title": "Guardin (Cambridge Room)",
       "performers": [
         {
           "name": "Guardin",
@@ -25421,7 +25461,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-16",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-16",
       "time": "21:00",
@@ -25617,6 +25657,26 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1438454",
       "ticketUrl": "https://www.axs.com/events/1438454/ashley-cooke-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-09-17-twisted-takes-sep17",
+      "title": "Mike Polk’s Twisted Takes on Historical CLE Photos",
+      "venueId": "music-box",
+      "date": "2026-09-17",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "$8 Advance, $12 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Mike Polk’s Twisted Takes on Historical CLE Photos",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/twisted-takes-sep17/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=60509",
       "source": "scrape",
       "manual": false
     },
@@ -25924,7 +25984,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-17",
       "time": "21:00",
@@ -25938,7 +25998,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-17",
       "time": "17:00",
@@ -26405,7 +26465,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-18",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "17:30",
@@ -26419,7 +26479,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-18",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -26433,7 +26493,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-18",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -26447,7 +26507,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-18",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "19:00",
@@ -26461,7 +26521,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-18",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "20:00",
@@ -26475,7 +26535,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-18",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -27079,7 +27139,7 @@
       "id": "cavottas-garden-bar-2026-09-19-cavottas-annual-clambake"
     },
     {
-      "title": "Jose Madero",
+      "title": "Jose Madero (Music Hall)",
       "performers": [
         {
           "name": "Jose Madero",
@@ -27174,7 +27234,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-19",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -27188,7 +27248,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -27202,7 +27262,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "19:00",
@@ -27216,7 +27276,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-19",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "20:00",
@@ -27230,7 +27290,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-19",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -27512,7 +27572,7 @@
       "id": "cavottas-garden-bar-2026-09-20-blue-drivers"
     },
     {
-      "title": "Dax",
+      "title": "Dax (Music Hall)",
       "performers": [
         {
           "name": "Dax",
@@ -27667,7 +27727,7 @@
     },
     {
       "id": "bent-mace-2026-09-21-farrah-faucet-pgh-tba",
-      "title": "Farrah Faucet (PGH) / Slugg / JOY//DAMAGE",
+      "title": "Farrah Faucet (PGH) / Slugg / Ashley Madison / JOY//DAMAGE",
       "venueId": "bent-mace",
       "date": "2026-09-21",
       "time": "20:00",
@@ -27680,6 +27740,10 @@
         },
         {
           "name": "Slugg",
+          "headliner": false
+        },
+        {
+          "name": "Ashley Madison",
           "headliner": false
         },
         {
@@ -27730,7 +27794,7 @@
       "manual": false
     },
     {
-      "title": "Alien Ant Farm",
+      "title": "Alien Ant Farm (Music Hall)",
       "performers": [
         {
           "name": "Alien Ant Farm",
@@ -27764,7 +27828,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-21",
       "time": "21:00",
@@ -27918,7 +27982,7 @@
       "manual": false
     },
     {
-      "title": "Black Veil Brides",
+      "title": "Black Veil Brides (Music Hall)",
       "performers": [
         {
           "name": "Black Veil Brides",
@@ -27952,7 +28016,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-22",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-22",
       "time": "21:00",
@@ -28091,25 +28155,6 @@
       ],
       "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/free-play-wednesdays-7/",
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023593",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-23-hammerfall-freedom-world-crusade-north-america-2026",
-      "title": "HammerFall – Freedom World Crusade North America 2026",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "doors": "18:30",
-      "price": "$35.51",
-      "performers": [
-        {
-          "name": "HammerFall – Freedom World Crusade North America 2026",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/hammerfall-freedom-world-crusade-north-america-2026/",
-      "ticketUrl": "https://www.ticketweb.com/event/hammerfall-freedom-world-the-mercury-music-lounge-tickets/13984764",
       "source": "scrape",
       "manual": false
     },
@@ -28258,7 +28303,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-23",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-23",
       "time": "21:00",
@@ -28328,6 +28373,26 @@
       ],
       "eventUrl": "https://www.themusicsettlement.org/events/2026/09/24/third-law-collective-bop-stop",
       "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/24/third-law-collective-bop-stop",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-09-24-inspiring-stories-sep24",
+      "title": "Lifting Those with Down Syndrome: Regina Brett & Rob Snow",
+      "venueId": "music-box",
+      "date": "2026-09-24",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "$10 Advance, $15 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Lifting Those with Down Syndrome: Regina Brett & Rob Snow",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/inspiring-stories-sep24/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62991",
       "source": "scrape",
       "manual": false
     },
@@ -28410,8 +28475,8 @@
       "manual": false
     },
     {
-      "id": "no-class-2026-09-24-eyesawgod",
-      "title": "EYESAWGOD",
+      "id": "no-class-2026-09-24-snake-father",
+      "title": "SNAKE FATHER",
       "venueId": "no-class",
       "date": "2026-09-24",
       "time": "18:00",
@@ -28419,12 +28484,8 @@
       "price": "$15 ADV / $20 DOS",
       "performers": [
         {
-          "name": "EYESAWGOD",
-          "headliner": true
-        },
-        {
           "name": "Snake Father",
-          "headliner": false
+          "headliner": true
         },
         {
           "name": "Betrayal",
@@ -28439,8 +28500,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.noclasscle.com/events/eyesawgod",
-      "ticketUrl": "https://sickening.events/e/eyesawgod",
+      "eventUrl": "https://www.noclasscle.com/events/snake-father",
+      "ticketUrl": "https://sickening.events/e/snakefather",
       "source": "scrape",
       "manual": false
     },
@@ -28607,7 +28668,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-24",
       "time": "21:00",
@@ -28621,7 +28682,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-24",
       "time": "17:00",
@@ -29091,7 +29152,7 @@
       "id": "blossom-music-center-2026-09-25-bryson-tiller"
     },
     {
-      "title": "How Did We Get Weird Live!",
+      "title": "How Did We Get Weird Live! (Music Hall)",
       "performers": [
         {
           "name": "Vanessa Bayer",
@@ -29201,7 +29262,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-25",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "17:30",
@@ -29215,7 +29276,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-25",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -29229,7 +29290,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-25",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -29243,7 +29304,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-25",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "19:00",
@@ -29257,7 +29318,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-25",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "20:00",
@@ -29271,7 +29332,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-25",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -29817,7 +29878,7 @@
       "id": "whiskey-island-2026-09-26-private-party"
     },
     {
-      "title": "The Takes",
+      "title": "The Takes (Cambridge Room)",
       "performers": [
         {
           "name": "The Takes",
@@ -29836,7 +29897,7 @@
       "id": "house-of-blues-2026-09-26-the-takes"
     },
     {
-      "title": "Cavetown",
+      "title": "Cavetown (Music Hall)",
       "performers": [
         {
           "name": "Cavetown",
@@ -29927,7 +29988,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-26",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -29941,7 +30002,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -29955,7 +30016,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "19:00",
@@ -29969,7 +30030,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-26",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "20:00",
@@ -29983,7 +30044,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-26",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -30393,7 +30454,7 @@
       "id": "cavottas-garden-bar-2026-09-27-dogwater"
     },
     {
-      "title": "Buena Vista Orchestra",
+      "title": "Buena Vista Orchestra (Music Hall)",
       "performers": [
         {
           "name": "Buena Vista Orchestra",
@@ -30559,6 +30620,25 @@
       "manual": false
     },
     {
+      "title": "Domi & JD Beck (Music Hall)",
+      "performers": [
+        {
+          "name": "Domi & JD Beck",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-09-28-domi-jd-beck"
+    },
+    {
       "id": "spotlight-acoustic-jam-night-2026-09-28",
       "title": "Acoustic Jam Night (hosted by Joshua Donato)",
       "venueId": "spotlight-cle",
@@ -30574,7 +30654,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-28",
       "time": "21:00",
@@ -30656,6 +30736,25 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-09-29-noah-rinker",
+      "title": "Noah Rinker",
+      "venueId": "mahalls",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Noah Rinker",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
+      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-09-29-the-holdup",
       "title": "The Holdup",
       "venueId": "mahalls",
@@ -30679,25 +30778,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-holdup/",
       "ticketUrl": "https://link.dice.fm/v75b6b85d2b0",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-09-29-noah-rinker",
-      "title": "Noah Rinker",
-      "venueId": "mahalls",
-      "date": "2026-09-29",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$22.00",
-      "performers": [
-        {
-          "name": "Noah Rinker",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
-      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
       "source": "scrape",
       "manual": false
     },
@@ -30774,7 +30854,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-29",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-29",
       "time": "21:00",
@@ -30867,6 +30947,26 @@
       ],
       "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1386853",
       "ticketUrl": "https://www.axs.com/events/1386853/modest-mouse-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-09-30-the-misny-method",
+      "title": "The Misny Method",
+      "venueId": "music-box",
+      "date": "2026-09-30",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "The Misny Method",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/the-misny-method/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -31001,7 +31101,7 @@
       "manual": false
     },
     {
-      "title": "Cheekface",
+      "title": "Cheekface (Cambridge Room)",
       "performers": [
         {
           "name": "Cheekface",
@@ -31076,7 +31176,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-30",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-30",
       "time": "21:00",
@@ -31381,7 +31481,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-01",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-01",
       "time": "21:00",
@@ -31395,7 +31495,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-01",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-01",
       "time": "17:00",
@@ -31748,7 +31848,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-02",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "17:30",
@@ -31762,7 +31862,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-02",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -31776,7 +31876,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-02",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -31790,7 +31890,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-02",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "19:00",
@@ -31804,7 +31904,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-02",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "20:00",
@@ -31818,7 +31918,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-02",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -32094,7 +32194,7 @@
     },
     {
       "id": "bent-mace-2026-10-03-dj-solace-tba",
-      "title": "DJ Solace",
+      "title": "DJ Solace / Ladonna",
       "venueId": "bent-mace",
       "date": "2026-10-03",
       "time": "20:00",
@@ -32104,6 +32204,10 @@
         {
           "name": "DJ Solace",
           "headliner": true
+        },
+        {
+          "name": "Ladonna",
+          "headliner": false
         }
       ],
       "eventUrl": "https://bentmace.org/event/dj-solace-tba/",
@@ -32151,6 +32255,25 @@
       "id": "cavottas-garden-bar-2026-10-03-blue-lunch"
     },
     {
+      "title": "Artemas (Music Hall)",
+      "performers": [
+        {
+          "name": "Artemas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-03-artemas"
+    },
+    {
       "title": "DISCO INFERNO",
       "performers": [
         {
@@ -32185,7 +32308,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-03",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -32199,7 +32322,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-03",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -32213,7 +32336,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-03",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "19:00",
@@ -32227,7 +32350,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-03",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "20:00",
@@ -32241,7 +32364,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-03",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -32422,7 +32545,7 @@
       "manual": false
     },
     {
-      "title": "Michael Franti Trio",
+      "title": "Michael Franti Trio (Music Hall)",
       "performers": [
         {
           "name": "Michael Franti Trio",
@@ -32647,7 +32770,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-05",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-05",
       "time": "21:00",
@@ -32837,7 +32960,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-06",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-06",
       "time": "21:00",
@@ -33031,7 +33154,7 @@
       "manual": false
     },
     {
-      "title": "The Haunt",
+      "title": "The Haunt (Cambridge Room)",
       "performers": [
         {
           "name": "The Haunt",
@@ -33048,6 +33171,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-10-07-the-haunt"
+    },
+    {
+      "title": "Unpopular Opinions Night (Music Hall)",
+      "performers": [
+        {
+          "name": "Unpopular Opinions Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-07-unpopular-opinions-night"
     },
     {
       "id": "spotlight-jam-night-2026-10-07",
@@ -33079,7 +33221,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-07",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-07",
       "time": "21:00",
@@ -33195,6 +33337,26 @@
       "manual": false
     },
     {
+      "id": "music-box-2026-10-08-the-story-of-the-raspberries",
+      "title": "The Story of the Raspberries",
+      "venueId": "music-box",
+      "date": "2026-10-08",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "The Story of the Raspberries",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/the-story-of-the-raspberries/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "hilarities-2026-10-08-135416",
       "title": "Michael Palascak",
       "venueId": "hilarities",
@@ -33301,7 +33463,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-08",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-08",
       "time": "21:00",
@@ -33315,7 +33477,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-08",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-08",
       "time": "17:00",
@@ -33451,6 +33613,25 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/drag-bingo-oct9/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62576",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-10-09-blisspop-presents-hot-in-herre-2000s-dance-party",
+      "title": "Blisspop Presents: Hot In Herre: 2000s Dance Party",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-10-09",
+      "time": "20:00",
+      "doors": null,
+      "price": "$20.06",
+      "performers": [
+        {
+          "name": "Blisspop Presents: Hot In Herre: 2000s Dance Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/blisspop-presents-hot-in-herre-2000s-dance-party/",
+      "ticketUrl": "https://www.ticketweb.com/event/blisspop-presents-hot-in-herre-the-winchester-tickets/15027173",
       "source": "scrape",
       "manual": false
     },
@@ -33608,6 +33789,25 @@
       "manual": false
     },
     {
+      "title": "Punchis! Punchis! Banda Rave (Music Hall)",
+      "performers": [
+        {
+          "name": "Punchis! Punchis! Banda Rave",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-09-punchis-punchis"
+    },
+    {
       "title": "OLD SKOOL",
       "performers": [
         {
@@ -33642,7 +33842,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-09",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "17:30",
@@ -33656,7 +33856,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-09",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -33670,7 +33870,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-09",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -33684,7 +33884,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-09",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "19:00",
@@ -33698,7 +33898,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-09",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "20:00",
@@ -33712,7 +33912,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-09",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -34102,6 +34302,25 @@
       "manual": false
     },
     {
+      "title": "Here Come The Mummies (Music Hall)",
+      "performers": [
+        {
+          "name": "Here Come The Mummies",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-10-here-come-the-mummies"
+    },
+    {
       "title": "YOSEMITE SLIM",
       "performers": [
         {
@@ -34136,7 +34355,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-10",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -34150,7 +34369,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-10",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -34164,7 +34383,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-10",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "19:00",
@@ -34178,7 +34397,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-10",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "20:00",
@@ -34192,7 +34411,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-10",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -34316,25 +34535,6 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/elton-john-brunch-oct11/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62281",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-10-11-the-po-ramblin-boys",
-      "title": "The Po’ Ramblin’ Boys",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-10-11",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$25.21",
-      "performers": [
-        {
-          "name": "The Po’ Ramblin’ Boys",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/the-po-ramblin-boys/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-po-ramblin-boys-the-winchester-tickets/14214384",
       "source": "scrape",
       "manual": false
     },
@@ -34481,6 +34681,29 @@
       "manual": false
     },
     {
+      "title": "Tab Benoit (Music Hall)",
+      "performers": [
+        {
+          "name": "Tab Benoit",
+          "headliner": true
+        },
+        {
+          "name": "Ghalia Volt",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-11-tab-benoit"
+    },
+    {
       "id": "spotlight-house-techno-2026-10-11",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -34597,7 +34820,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-12",
       "time": "21:00",
@@ -34840,7 +35063,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-13",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-13",
       "time": "21:00",
@@ -34941,6 +35164,46 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1383237",
       "ticketUrl": "https://www.axs.com/events/1383237/daoi-freyr-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-10-14-steve-popovich",
+      "title": "How Steve Popovich Signed Michael Jackson",
+      "venueId": "music-box",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "How Steve Popovich Signed Michael Jackson",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/steve-popovich/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-10-14-sisters-in-song-oct14",
+      "title": "Sisters In Song",
+      "venueId": "music-box",
+      "date": "2026-10-14",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Sisters In Song",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/sisters-in-song-oct14/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=61890",
       "source": "scrape",
       "manual": false
     },
@@ -35086,7 +35349,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-14",
       "time": "21:00",
@@ -35283,7 +35546,7 @@
       "manual": false
     },
     {
-      "title": "Struggle Jennings",
+      "title": "Struggle Jennings (Cambridge Room)",
       "performers": [
         {
           "name": "Struggle Jennings",
@@ -35331,7 +35594,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-15",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-15",
       "time": "21:00",
@@ -35345,7 +35608,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-15",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-15",
       "time": "17:00",
@@ -35650,7 +35913,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-16",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "17:30",
@@ -35664,7 +35927,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-16",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -35678,7 +35941,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-16",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -35692,7 +35955,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-16",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "19:00",
@@ -35706,7 +35969,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-16",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "20:00",
@@ -35720,7 +35983,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-16",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -36039,7 +36302,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-17",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -36053,7 +36316,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -36067,7 +36330,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "19:00",
@@ -36081,7 +36344,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-17",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "20:00",
@@ -36095,7 +36358,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-17",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -36239,6 +36502,26 @@
       ],
       "eventUrl": "https://musicboxcle.com/event/at-last-oct18/",
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62975",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-10-18-csny-brunch-oct18",
+      "title": "CSNY Brunch with Long Time Gone",
+      "venueId": "music-box",
+      "date": "2026-10-18",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "CSNY Brunch with Long Time Gone",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/csny-brunch-oct18/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62345",
       "source": "scrape",
       "manual": false
     },
@@ -36519,6 +36802,25 @@
       "manual": false
     },
     {
+      "title": "The Brook & The Bluff (Music Hall)",
+      "performers": [
+        {
+          "name": "The Brook & The Bluff",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-19-the-brook-the-bluff"
+    },
+    {
       "id": "spotlight-acoustic-jam-night-2026-10-19",
       "title": "Acoustic Jam Night (hosted by Joshua Donato)",
       "venueId": "spotlight-cle",
@@ -36534,7 +36836,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-19",
       "time": "21:00",
@@ -36734,6 +37036,25 @@
       "manual": false
     },
     {
+      "title": "Hawthorne Heights (Music Hall)",
+      "performers": [
+        {
+          "name": "Hawthorne Heights",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-20-hawthorne-heights"
+    },
+    {
       "id": "spotlight-comedy-open-mic-2026-10-20",
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
@@ -36749,7 +37070,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-20",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-20",
       "time": "21:00",
@@ -36777,6 +37098,26 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/nik-parr-the-selfless-lovers-21-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/nik-parr-the-selfless-lovers-21-oct#tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-10-21-stone-mad",
+      "title": "Stone Mad – A Cleveland Haunted House Story",
+      "venueId": "music-box",
+      "date": "2026-10-21",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Stone Mad – A Cleveland Haunted House Story",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/stone-mad/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -36954,7 +37295,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-21",
       "time": "21:00",
@@ -37156,7 +37497,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-22",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-22",
       "time": "21:00",
@@ -37170,7 +37511,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-22",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-22",
       "time": "17:00",
@@ -37423,6 +37764,25 @@
       "manual": false
     },
     {
+      "title": "Lauren Alaina (Music Hall)",
+      "performers": [
+        {
+          "name": "Lauren Alaina",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-23-lauren-alaina"
+    },
+    {
       "title": "TRICKY DICK AND THE COVER-UPS",
       "performers": [
         {
@@ -37457,7 +37817,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-23",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "17:30",
@@ -37471,7 +37831,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-23",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -37485,7 +37845,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-23",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -37499,7 +37859,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-23",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "19:00",
@@ -37513,7 +37873,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-23",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "20:00",
@@ -37527,7 +37887,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-23",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -37586,6 +37946,33 @@
       "manual": false
     },
     {
+      "id": "mahalls-2026-10-24-baby-bugs-with-special-guest-elliot-lee",
+      "title": "Baby Bugs with Special Guest Elliot Lee",
+      "venueId": "mahalls",
+      "date": "2026-10-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Baby Bugs",
+          "headliner": true
+        },
+        {
+          "name": "Elliot Lee",
+          "headliner": false
+        },
+        {
+          "name": "earth 2 tiffany",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/baby-bugs/",
+      "ticketUrl": "https://link.dice.fm/dcb8aab2e741",
+      "source": "scrape",
+      "manual": false
+    },
+    {
       "id": "mahalls-2026-10-24-spite",
       "title": "Spite",
       "venueId": "mahalls",
@@ -37613,33 +38000,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/spite/",
       "ticketUrl": "https://link.dice.fm/Cc3fe3c53dbf",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-10-24-baby-bugs-with-special-guest-elliot-lee",
-      "title": "Baby Bugs with Special Guest Elliot Lee",
-      "venueId": "mahalls",
-      "date": "2026-10-24",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Baby Bugs",
-          "headliner": true
-        },
-        {
-          "name": "Elliot Lee",
-          "headliner": false
-        },
-        {
-          "name": "earth 2 tiffany",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/baby-bugs/",
-      "ticketUrl": "https://link.dice.fm/dcb8aab2e741",
       "source": "scrape",
       "manual": false
     },
@@ -37878,6 +38238,25 @@
       "manual": false
     },
     {
+      "title": "Candlebox (Music Hall)",
+      "performers": [
+        {
+          "name": "Candlebox",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-24-candlebox"
+    },
+    {
       "title": "THAT 80'S BAND",
       "performers": [
         {
@@ -37912,7 +38291,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-24",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -37926,7 +38305,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -37940,7 +38319,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "19:00",
@@ -37954,7 +38333,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-24",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "20:00",
@@ -37968,7 +38347,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-24",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -38091,25 +38470,6 @@
       "manual": false
     },
     {
-      "id": "winchester-music-tavern-2026-10-25-brother-ali-midwest-trek-26",
-      "title": "BROTHER ALI – Midwest Trek ’26",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-10-25",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$28.30",
-      "performers": [
-        {
-          "name": "BROTHER ALI – Midwest Trek ’26",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-midwest-trek-26/",
-      "ticketUrl": "https://www.ticketweb.com/event/brother-ali-midwest-the-winchester-tickets/14260864",
-      "source": "scrape",
-      "manual": false
-    },
-    {
       "id": "winchester-music-tavern-2026-10-25-brother-ali-w-dj-abilities",
       "title": "Brother Ali W/ DJ Abilities",
       "venueId": "winchester-music-tavern",
@@ -38125,6 +38485,25 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-w-dj-abilities/",
       "ticketUrl": "https://www.ticketweb.com/event/brother-ali-w-dj-abilities-the-winchester-tickets/14240014",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "winchester-music-tavern-2026-10-25-brother-ali-midwest-trek-26",
+      "title": "BROTHER ALI – Midwest Trek ’26",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-10-25",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$28.30",
+      "performers": [
+        {
+          "name": "BROTHER ALI – Midwest Trek ’26",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/brother-ali-midwest-trek-26/",
+      "ticketUrl": "https://www.ticketweb.com/event/brother-ali-midwest-the-winchester-tickets/14260864",
       "source": "scrape",
       "manual": false
     },
@@ -38227,6 +38606,29 @@
       "manual": false
     },
     {
+      "title": "Cradle of Filth (Music Hall)",
+      "performers": [
+        {
+          "name": "Cradle of Filth",
+          "headliner": true
+        },
+        {
+          "name": "Moonspell",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-25-cradle-of-filth"
+    },
+    {
       "id": "spotlight-house-techno-2026-10-25",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -38301,7 +38703,7 @@
       "manual": false
     },
     {
-      "title": "With A Vengeance",
+      "title": "With A Vengeance (Cambridge Room)",
       "performers": [
         {
           "name": "With A Vengeance",
@@ -38335,7 +38737,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-26",
       "time": "21:00",
@@ -38493,6 +38895,25 @@
       "manual": false
     },
     {
+      "title": "The Wrecks (Music Hall)",
+      "performers": [
+        {
+          "name": "The Wrecks",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-27",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-27-the-wrecks"
+    },
+    {
       "id": "spotlight-comedy-open-mic-2026-10-27",
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
@@ -38508,7 +38929,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-27",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-27",
       "time": "21:00",
@@ -38724,7 +39145,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-28",
       "time": "21:00",
@@ -38735,6 +39156,26 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
+    },
+    {
+      "id": "music-box-2026-10-29-cleveland-ghost-stories",
+      "title": "Cleveland Ghost Stories",
+      "venueId": "music-box",
+      "date": "2026-10-29",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Cleveland Ghost Stories",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/cleveland-ghost-stories/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "hilarities-2026-10-29-1900-135982",
@@ -38791,7 +39232,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-29",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-29",
       "time": "21:00",
@@ -38805,7 +39246,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-29",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-29",
       "time": "17:00",
@@ -38977,6 +39418,25 @@
       "manual": false
     },
     {
+      "title": "The Longest Johns (Music Hall)",
+      "performers": [
+        {
+          "name": "The Longest Johns",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-30-the-longest-johns"
+    },
+    {
       "title": "DT AND THE SHAKES",
       "performers": [
         {
@@ -39011,7 +39471,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-30",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "17:30",
@@ -39025,7 +39485,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-30",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -39039,7 +39499,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-30",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -39053,7 +39513,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-30",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "19:00",
@@ -39067,7 +39527,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-30",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "20:00",
@@ -39081,7 +39541,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-30",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -39364,7 +39824,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-31",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -39378,7 +39838,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-31",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -39392,7 +39852,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-31",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "19:00",
@@ -39406,7 +39866,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-31",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "20:00",
@@ -39420,7 +39880,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-31",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -39559,6 +40019,25 @@
       "manual": false
     },
     {
+      "title": "The Amity Affliction (Music Hall)",
+      "performers": [
+        {
+          "name": "The Amity Affliction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-01",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-01-the-amity-affliction"
+    },
+    {
       "id": "spotlight-house-techno-2026-11-01",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -39640,7 +40119,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-02",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-02",
       "time": "21:00",
@@ -39744,7 +40223,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-03",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-03",
       "time": "21:00",
@@ -39755,6 +40234,26 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
+    },
+    {
+      "id": "music-box-2026-11-04-inspiring-stories-nov4",
+      "title": "Happiness Entrepreneur: Regina Brett & Scott Simon",
+      "venueId": "music-box",
+      "date": "2026-11-04",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "$10 Advance, $15 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Happiness Entrepreneur: Regina Brett & Scott Simon",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/inspiring-stories-nov4/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63029",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "mercury-music-lounge-2026-11-04-free-play-wednesdays-13",
@@ -39809,6 +40308,29 @@
       "manual": false
     },
     {
+      "title": "Nekrogoblikon (Music Hall)",
+      "performers": [
+        {
+          "name": "Nekrogoblikon",
+          "headliner": true
+        },
+        {
+          "name": "Aborted",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-04-nekrogoblikon"
+    },
+    {
       "id": "spotlight-jam-night-2026-11-04",
       "title": "Jam Night",
       "venueId": "spotlight-cle",
@@ -39838,7 +40360,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-04",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-04",
       "time": "21:00",
@@ -40059,7 +40581,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-05",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-05",
       "time": "21:00",
@@ -40073,7 +40595,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-05",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-05",
       "time": "17:00",
@@ -40332,6 +40854,25 @@
       "manual": false
     },
     {
+      "title": "Chris Mitchell (Music Hall)",
+      "performers": [
+        {
+          "name": "Chris Mitchell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-06-chris-mitchell"
+    },
+    {
       "title": "AUDIOPHILE",
       "performers": [
         {
@@ -40366,7 +40907,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-06",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "17:30",
@@ -40380,7 +40921,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-06",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -40394,7 +40935,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-06",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -40408,7 +40949,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-06",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "19:00",
@@ -40422,7 +40963,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-06",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "20:00",
@@ -40436,7 +40977,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-06",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -40665,7 +41206,7 @@
       "manual": false
     },
     {
-      "title": "Beyond The Walls 3",
+      "title": "Beyond The Walls 3 (Cambridge Room)",
       "performers": [
         {
           "name": "Beyond The Walls 3",
@@ -40682,6 +41223,25 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-11-07-beyond-the-walls-3"
+    },
+    {
+      "title": "Pigeons Playing Ping Pong (Music Hall)",
+      "performers": [
+        {
+          "name": "Pigeons Playing Ping Pong",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-pigeons-playing-ping-pong"
     },
     {
       "title": "BAD JUJU",
@@ -40718,7 +41278,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-07",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -40732,7 +41292,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-07",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -40746,7 +41306,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-07",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "19:00",
@@ -40760,7 +41320,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-07",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "20:00",
@@ -40774,7 +41334,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-07",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -40971,7 +41531,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-09",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-09",
       "time": "21:00",
@@ -41144,7 +41704,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-10",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-10",
       "time": "21:00",
@@ -41395,6 +41955,25 @@
       "manual": false
     },
     {
+      "title": "Palace (Music Hall)",
+      "performers": [
+        {
+          "name": "Palace",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-11",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-11-palace"
+    },
+    {
       "id": "spotlight-jam-night-2026-11-11",
       "title": "Jam Night",
       "venueId": "spotlight-cle",
@@ -41424,7 +42003,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-11",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-11",
       "time": "21:00",
@@ -41456,6 +42035,26 @@
       ],
       "eventUrl": "https://grogshop.gs/tm-event/the-slackers/",
       "ticketUrl": "https://www.ticketweb.com/event/the-slackers-some-ska-band-grog-shop-tickets/14227754?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-11-12-cleveland-curse",
+      "title": "Cleveland Curse, Volume 1",
+      "venueId": "music-box",
+      "date": "2026-11-12",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Cleveland Curse, Volume 1",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/cleveland-curse/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false
     },
@@ -41542,6 +42141,25 @@
       "manual": false
     },
     {
+      "title": "Pouya (Music Hall)",
+      "performers": [
+        {
+          "name": "Pouya",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-12",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-12-pouya"
+    },
+    {
       "id": "spotlight-open-mic-theme-2026-11-12",
       "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
@@ -41571,7 +42189,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-12",
       "time": "21:00",
@@ -41585,7 +42203,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-12",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-12",
       "time": "17:00",
@@ -41795,6 +42413,25 @@
       "manual": false
     },
     {
+      "title": "The Menzingers (Music Hall)",
+      "performers": [
+        {
+          "name": "The Menzingers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-13-the-menzingers"
+    },
+    {
       "title": "OLD SKOOL",
       "performers": [
         {
@@ -41829,7 +42466,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-13",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "17:30",
@@ -41843,7 +42480,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-13",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -41857,7 +42494,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-13",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -41871,7 +42508,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-13",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "19:00",
@@ -41885,7 +42522,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-13",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "20:00",
@@ -41899,7 +42536,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-13",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -42060,6 +42697,25 @@
       "manual": false
     },
     {
+      "title": "AJ McLean (Music Hall)",
+      "performers": [
+        {
+          "name": "AJ McLean",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-14-aj-mclean"
+    },
+    {
       "title": "SPAZMATICS",
       "performers": [
         {
@@ -42094,7 +42750,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-14",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -42108,7 +42764,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -42122,7 +42778,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-14",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "19:00",
@@ -42136,7 +42792,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-14",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "20:00",
@@ -42150,7 +42806,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-14",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -42306,6 +42962,25 @@
       "manual": false
     },
     {
+      "title": "Golden: A K-Pop Kids Party! (Cambridge Room)",
+      "performers": [
+        {
+          "name": "Golden: A K-Pop Kids Party!",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-15",
+      "time": "10:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-golden-k-pop-kids-party"
+    },
+    {
       "id": "spotlight-house-techno-2026-11-15",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -42458,7 +43133,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-16",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-16",
       "time": "21:00",
@@ -42608,7 +43283,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-17",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-17",
       "time": "21:00",
@@ -42692,6 +43367,25 @@
       "manual": false
     },
     {
+      "title": "Rival Sons (Music Hall)",
+      "performers": [
+        {
+          "name": "Rival Sons",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-18-rival-sons"
+    },
+    {
       "id": "spotlight-jam-night-2026-11-18",
       "title": "Jam Night",
       "venueId": "spotlight-cle",
@@ -42721,7 +43415,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-18",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-18",
       "time": "21:00",
@@ -42811,6 +43505,25 @@
       "manual": false
     },
     {
+      "title": "Everclear (Music Hall)",
+      "performers": [
+        {
+          "name": "Everclear",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-19-everclear"
+    },
+    {
       "id": "spotlight-tk-jazz-odyssey-2026-11-19",
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
@@ -42840,7 +43553,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-19",
       "time": "21:00",
@@ -42854,7 +43567,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-19",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-19",
       "time": "17:00",
@@ -43116,7 +43829,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-20",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "17:30",
@@ -43130,7 +43843,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-20",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -43144,7 +43857,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-20",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -43158,7 +43871,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-20",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "19:00",
@@ -43172,7 +43885,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-20",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "20:00",
@@ -43186,7 +43899,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-20",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -43464,6 +44177,25 @@
       "manual": false
     },
     {
+      "title": "Ekoostik Hookah (Music Hall)",
+      "performers": [
+        {
+          "name": "Ekoostik Hookah",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-21",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-21-ekoostik-hookah"
+    },
+    {
       "title": "FACTION",
       "performers": [
         {
@@ -43498,7 +44230,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-21",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -43512,7 +44244,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -43526,7 +44258,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-21",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "19:00",
@@ -43540,7 +44272,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-21",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "20:00",
@@ -43554,7 +44286,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-21",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -43586,6 +44318,26 @@
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1512019",
       "ticketUrl": "https://www.axs.com/events/1512019/daily-bread-tickets",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-11-22-sinatra-brunch-nov22",
+      "title": "Sinatra Brunch with Patrick Lynch & The Jazz Guys",
+      "venueId": "music-box",
+      "date": "2026-11-22",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Sinatra Brunch with Patrick Lynch & The Jazz Guys",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/sinatra-brunch-nov22/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62043",
       "source": "scrape",
       "manual": false
     },
@@ -43732,7 +44484,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-23",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-23",
       "time": "21:00",
@@ -43848,7 +44600,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-24",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-24",
       "time": "21:00",
@@ -44011,7 +44763,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-25",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-25",
       "time": "21:00",
@@ -44072,7 +44824,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-26",
       "time": "21:00",
@@ -44086,7 +44838,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-26",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-26",
       "time": "17:00",
@@ -44261,7 +45013,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-27",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "17:30",
@@ -44275,7 +45027,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-27",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -44289,7 +45041,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-27",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -44303,7 +45055,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-27",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "19:00",
@@ -44317,7 +45069,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-27",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "20:00",
@@ -44331,7 +45083,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-27",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -44503,6 +45255,25 @@
       "manual": false
     },
     {
+      "title": "The Pineapple Thief (Music Hall)",
+      "performers": [
+        {
+          "name": "The Pineapple Thief",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-28-the-pineapple-thief"
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-11-28",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -44518,7 +45289,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-28",
-      "title": "John James, Bradford and Skip (Jazz Trio)",
+      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -44532,7 +45303,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -44546,7 +45317,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-28",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "19:00",
@@ -44560,7 +45331,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-28",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "20:00",
@@ -44574,7 +45345,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-28",
-      "title": "David Blazer (Pianist)",
+      "title": "Pianist - David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -44585,6 +45356,46 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true
+    },
+    {
+      "id": "music-box-2026-11-29-travis-haddix-brunch-nov29",
+      "title": "Blues Brunch with Travis Haddix",
+      "venueId": "music-box",
+      "date": "2026-11-29",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Blues Brunch with Travis Haddix",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/travis-haddix-brunch-nov29/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=32411",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-11-29-neil-diamond-brunch-nov29",
+      "title": "Neil Diamond Christmas Brunch",
+      "venueId": "music-box",
+      "date": "2026-11-29",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$18 Advance, $25 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Neil Diamond Christmas Brunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/neil-diamond-brunch-nov29/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63060",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "collision-bend-cleveland-2026-11-29-browns-vs-raiders-pregame-at-collision-bend-cle-49893",
@@ -44710,7 +45521,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-30",
-      "title": "Don Phillips (Pianist)",
+      "title": "Pianist - Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-30",
       "time": "21:00",
@@ -44776,6 +45587,26 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-35/",
       "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14231204?pl=bside",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "music-box-2026-12-02-twisted-takes-dec2",
+      "title": "Mike Polk’s Twisted Takes on the Holidays in Cleveland",
+      "venueId": "music-box",
+      "date": "2026-12-02",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "$8 Advance, $12 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Mike Polk’s Twisted Takes on the Holidays in Cleveland",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/twisted-takes-dec2/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63030",
       "source": "scrape",
       "manual": false
     },
@@ -44852,6 +45683,25 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "The Bouncing Souls (Music Hall)",
+      "performers": [
+        {
+          "name": "The Bouncing Souls",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-02-the-bouncing-souls"
     },
     {
       "id": "hilarities-2026-12-03-1930-141496",
@@ -45231,6 +46081,25 @@
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24403",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "GWAR (Music Hall)",
+      "performers": [
+        {
+          "name": "GWAR",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-05-gwar"
     },
     {
       "title": "DISCO INFERNO",
@@ -46349,6 +47218,26 @@
       "source": "manual",
       "manual": true,
       "id": "time-warp-2026-12-19-trailer-park-ninjas"
+    },
+    {
+      "id": "music-box-2026-12-20-peter-mayer-dec20",
+      "title": "Peter Mayer Christmas Show",
+      "venueId": "music-box",
+      "date": "2026-12-20",
+      "time": "19:00",
+      "doors": "17:30",
+      "price": "$40 Advance, $50 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Peter Mayer Christmas Show",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/peter-mayer-dec20/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63062",
+      "source": "scrape",
+      "manual": false
     },
     {
       "id": "cleveland-orchestra-6970e83600b1f37f5ef38cc5",
@@ -47984,6 +48873,25 @@
       "manual": false
     },
     {
+      "title": "The Mary Wallopers (Music Hall)",
+      "performers": [
+        {
+          "name": "VNV Nation",
+          "headliner": true
+        }
+      ],
+      "date": "2027-03-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2027-03-14-mary-wallopers"
+    },
+    {
       "id": "cleveland-orchestra-6a563cecebb87621f2405bd3",
       "title": "Garrick Ohlsson in Recital",
       "venueId": "cleveland-orchestra",
@@ -48085,6 +48993,25 @@
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24592",
       "source": "scrape",
       "manual": false
+    },
+    {
+      "title": "VNV Nation (Music Hall)",
+      "performers": [
+        {
+          "name": "VNV Nation",
+          "headliner": true
+        }
+      ],
+      "date": "2027-04-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2027-04-03-vnv-nation"
     },
     {
       "id": "playhouse-square-2027-04-06-rupauls-drag-race-werq-the-world-2027-tour",
@@ -48650,6 +49577,25 @@
       "manual": false
     },
     {
+      "title": "The Airborne Toxic Event",
+      "performers": [
+        {
+          "name": "The Airborne Toxic Event",
+          "headliner": true
+        }
+      ],
+      "date": "2027-05-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2027-05-24-the-airborne-toxic-event"
+    },
+    {
       "id": "cleveland-orchestra-6a7a1f0eff65fa218992476b",
       "title": "Haydn’s Creation",
       "venueId": "cleveland-orchestra",
@@ -48744,6 +49690,25 @@
       ],
       "eventUrl": "https://www.clevelandorchestra.com/events/the-last-waltz",
       "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24422",
+      "source": "scrape",
+      "manual": false
+    },
+    {
+      "id": "grog-shop-2027-08-10-make-em-laugh-mondays",
+      "title": "Make Em Laugh Mondays",
+      "venueId": "grog-shop",
+      "date": "2027-08-10",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": "$6.67",
+      "performers": [
+        {
+          "name": "Make Em Laugh Mondays",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/make-em-laugh-mondays-hosted-by-kevin-ford/",
+      "ticketUrl": "https://www.ticketweb.com/event/make-em-laugh-mondays-grog-shop-tickets/14236354?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false
     },
