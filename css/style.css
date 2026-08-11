@@ -701,9 +701,13 @@ footer a {
 }
 
 .venue {
-	width: 25%;
+	width: 24%;
   margin: 16px 0;
   padding-bottom: 16px;
+}
+
+.venue h4 {
+	font-size: 16px;
 }
 
 .venueEvents {
@@ -727,8 +731,8 @@ footer a {
 }
 
 .eventName {
-	font-size: 20px;
-	width: 33%;
+	font-size: 18px;
+	width: 34%;
 }
 
 .eventName a {
@@ -1358,6 +1362,10 @@ span.flatpickr-weekday {
 		margin: 40px 50px !important;
 	}
 
+	.eventInfo span {
+  	margin-right: 20px;
+	}
+
 }
 
 @media screen and (max-width:1024px){
@@ -1384,13 +1392,11 @@ span.flatpickr-weekday {
 
 }
 
-@media screen and (max-width:984px){
+/*@media screen and (max-width:984px){
 
-	.eventInfo span {
-  	margin-right: 20px;
-	}
+	
 
-}
+}*/
 
 @media screen and (max-width:774px){
 
