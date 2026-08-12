@@ -114,18 +114,17 @@ async function fetchRocketArena() {
     const data = await res.json();
 
     return data.events.filter(event => !TITLE_BLOCKLIST.test(event.title)).map(event => {
-      const datetime = new Date(event.datetime_local);
-      const date = datetime.toISOString().split('T')[0];
-      const time = datetime.toTimeString().slice(0, 5);
+      // event.datetime_local looks like "2026-11-15T19:00:00" (or with an offset)
+      // Just split it — don't run it through a Date/toISOString round trip.
+      const [date, timeWithSeconds] = event.datetime_local.split('T');
+      const time = timeWithSeconds.slice(0, 5);
 
       const performers = event.performers.map(p => ({
         name: p.name,
         headliner: p.primary ?? false,
       }));
-
       const headliner = performers.find(p => p.headliner)?.name ?? event.title;
       const slug = slugify(headliner);
-
       return {
         id: `rocket-arena-${date}-${slug}`,
         title: event.title,
