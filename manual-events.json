@@ -4696,6 +4696,25 @@
     "id": "shooters-2026-08-14-ian-asher"
   },
   {
+    "title": "Whiskey on the River w/ Lavish Life",
+    "performers": [
+      {
+        "name": "Lavish Life",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-16",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-16-whiskey-on-the-river"
+  },
+  {
     "title": "Jigitz",
     "performers": [
       {
@@ -4796,169 +4815,7 @@
 
 
 
-  {
-    "title": "Harrison BDP",
-    "performers": [
-      {
-        "name": "Harrison BDP",
-        "headliner": true
-      },
-      {
-        "name": "Carrie Sours",
-        "headliner": false
-      },
-      {
-        "name": "Hot Take",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-24",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-07-24-harrison-bdp"
-  },
-  {
-    "title": "Moon Boots",
-    "performers": [
-      {
-        "name": "Moon Boots",
-        "headliner": true
-      },
-      {
-        "name": "Le Mew",
-        "headliner": false
-      },
-      {
-        "name": "MIKEONE",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-25",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-07-25-moon-boots"
-  },
-  {
-    "title": "güdtaste presents: ünity",
-    "performers": [
-      {
-        "name": "Cardio",
-        "headliner": true
-      },
-      {
-        "name": "C Star",
-        "headliner": false
-      },
-      {
-        "name": "Just AJ",
-        "headliner": false
-      },
-      {
-        "name": "Soud on Tape",
-        "headliner": false
-      },
-      {
-        "name": "Zihynx",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-31",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-07-31-cardio"
-  },
-  {
-    "title": "Sampled",
-    "performers": [
-      {
-        "name": "Harry Romero",
-        "headliner": true
-      },
-      {
-        "name": "Mark Farina",
-        "headliner": false
-      },
-      {
-        "name": "DJ Heather",
-        "headliner": false
-      },
-      {
-        "name": "Chuck Daniels",
-        "headliner": false
-      },
-      {
-        "name": "Delish b2b Andre Leone",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "08:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-08-08-harry-romero"
-  },
-  {
-    "title": "Perf",
-    "performers": [
-      {
-        "name": "Amita",
-        "headliner": true
-      },
-      {
-        "name": "Heather Leah",
-        "headliner": false
-      },
-      {
-        "name": "Ladonna",
-        "headliner": false
-      },
-      {
-        "name": "Joey Sardelle",
-        "headliner": false
-      },
-      {
-        "name": "Marc Lansley",
-        "headliner": false
-      },
-      {
-        "name": "Nicole Otero",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-01",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-08-01-amita"
-  },
+
   {
     "title": "Lake Love",
     "performers": [
@@ -5014,6 +4871,48 @@
     "manual": true,
     "id": "crobar-2026-08-14-mike-clark"
   },
+  {
+    "title": "Eli Escobar 12 Hour Party",
+    "performers": [
+      {
+        "name": "Eli Escobar",
+        "headliner": true
+      },
+      {
+        "name": "Delish",
+        "headliner": false
+      },
+      {
+        "name": "Gerad G",
+        "headliner": false
+      },
+      {
+        "name": "innergroove",
+        "headliner": false
+      },
+      {
+        "name": "Joey Sardelle",
+        "headliner": false
+      },
+      {
+        "name": "Retired Athletes",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-22",
+    "time": "21:00",
+    "doors": null,
+    "price": "$15 Advance, $20 Doors",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-08-14-eli-escobar"
+  },
+
+
+
 
 
   {
@@ -5897,68 +5796,6 @@
 
 
 
-
-  {
-    "title": "Eton Presents: Boulevard Beats",
-    "performers": [
-      {
-        "name": "Victoria Rosemond",
-        "headliner": true
-      },
-      {
-        "name": "Ed Ridley",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-06",
-    "time": "16:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-08-06-boulevard-beats"
-  },
-  {
-    "title": "Tricotism",
-    "performers": [
-      {
-        "name": "Tricotism",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-08-07-tricotism"
-  },
-  {
-    "title": "Bobby Selvaggio Hope Quartet",
-    "performers": [
-      {
-        "name": "Bobby Selvaggio Hope Quartet",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-08-08-bobby-selvaggio-hope-quartet"
-  },
   {
     "title": "Max Schlenk Group",
     "performers": [
@@ -6088,6 +5925,158 @@
     "source": "manual",
     "manual": true,
     "id": "nightjar-2026-08-29-alvin-frazier-group"
+  },
+  {
+    "title": "Nick Puin Group",
+    "performers": [
+      {
+        "name": "Nick Puin Group",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-04-nick-puin-group"
+  },
+  {
+    "title": "EMP Group",
+    "performers": [
+      {
+        "name": "EMP Group",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-05-emp-group"
+  },
+  {
+    "title": "Qualified",
+    "performers": [
+      {
+        "name": "Qualified",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-11-qualified"
+  },
+  {
+    "title": "Bill Ransom Trio",
+    "performers": [
+      {
+        "name": "Bill Ransom Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-12-bill-ransom-trio"
+  },
+  {
+    "title": "The Darren Frate Group",
+    "performers": [
+      {
+        "name": "The Darren Frate Group",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-18-the-darren-frate-group"
+  },
+  {
+    "title": "Swingbone",
+    "performers": [
+      {
+        "name": "Swingbone",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-19-swingbone"
+  },
+  {
+    "title": "Scossa Quartet",
+    "performers": [
+      {
+        "name": "Scossa Quartet",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-25-scossa-quartet"
+  },
+  {
+    "title": "Forest City Django Club",
+    "performers": [
+      {
+        "name": "Forest City Django Club",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-09-26-forest-city-django-club"
   },
 
 
@@ -8934,10 +8923,10 @@
     "id": "quintanas-speakeasy-2026-08-11-eranah-adorjan"
   },
   {
-    "title": "Bob Wick",
+    "title": "Julia Taylor",
     "performers": [
       {
-        "name": "Bob Wick",
+        "name": "Julia Taylor",
         "headliner": true
       }
     ],
@@ -8950,7 +8939,7 @@
     "venueId": "quintanas-speakeasy",
     "source": "manual",
     "manual": true,
-    "id": "quintanas-speakeasy-2026-08-13-bob-wick"
+    "id": "quintanas-speakeasy-2026-08-13-julia-taylor"
   },
   {
     "title": "Game Night in The Speakeasy",
@@ -13735,6 +13724,70 @@
     "source": "manual",
     "manual": true,
     "id": "progressive-field-2026-09-26-banana-ball"
+  },
+
+
+
+
+
+
+
+  {
+    "title": "MIKE JAMES",
+    "performers": [
+      {
+        "name": "MIKE JAMES",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-15",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-08-15-mike-james"
+  },
+  {
+    "title": "JUST KIDS AGAIN",
+    "performers": [
+      {
+        "name": "JUST KIDS AGAIN",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-22",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-08-22-just-kids-again"
+  },
+  {
+    "title": "PHERO",
+    "performers": [
+      {
+        "name": "PHERO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-08-29-phero"
   }
 
 
