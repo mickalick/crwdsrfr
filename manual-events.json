@@ -4658,14 +4658,22 @@
 
 
     {
-    "title": "J. Cole Afterparty",
+    "title": "Güdtaste",
     "performers": [
       {
-        "name": "J. Cole",
+        "name": "Just AJ",
         "headliner": true
+      },
+      {
+        "name": "Justin Nyce",
+        "headliner": false
+      },
+      {
+        "name": "Palm",
+        "headliner": false
       }
     ],
-    "date": "2026-08-15",
+    "date": "2026-08-21",
     "time": "22:00",
     "doors": null,
     "price": null,
@@ -4674,45 +4682,7 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-08-15-j-cole"
-  },
-  {
-    "title": "Ian Asher",
-    "performers": [
-      {
-        "name": "Ian Asher",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-08-14-ian-asher"
-  },
-  {
-    "title": "Whiskey on the River w/ Lavish Life",
-    "performers": [
-      {
-        "name": "Lavish Life",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-16",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-08-16-whiskey-on-the-river"
+    "id": "shooters-2026-08-21-just-aj"
   },
   {
     "title": "Jigitz",
@@ -4734,6 +4704,25 @@
     "id": "shooters-2026-08-22-jigitz"
   },
   {
+    "title": "Dalton Davis",
+    "performers": [
+      {
+        "name": "Dalton Davis",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-23",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-23-dalton-davis"
+  },
+  {
     "title": "Timmy Trumpet",
     "performers": [
       {
@@ -4751,6 +4740,44 @@
     "source": "manual",
     "manual": true,
     "id": "shooters-2026-08-28-timmy-trumpet"
+  },
+  {
+    "title": "Don Toliver",
+    "performers": [
+      {
+        "name": "Don Toliver",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-29-don-toliver"
+  },
+  {
+    "title": "Palmer Anthony",
+    "performers": [
+      {
+        "name": "Palmer Anthony",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-30",
+    "time": "15:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-08-30-palmer-anthony"
   },
   {
     "title": "Gordo",
@@ -4817,61 +4844,6 @@
 
 
   {
-    "title": "Lake Love",
-    "performers": [
-      {
-        "name": "Mike Clark",
-        "headliner": true
-      },
-      {
-        "name": "Agent X",
-        "headliner": false
-      },
-      {
-        "name": "Neil Chastain",
-        "headliner": false
-      },
-      {
-        "name": "A-Live",
-        "headliner": false
-      },
-      {
-        "name": "Forrest Getemgump",
-        "headliner": false
-      },
-      {
-        "name": "Stout XTC",
-        "headliner": false
-      },
-      {
-        "name": "Chris Pulse",
-        "headliner": false
-      },
-      {
-        "name": "Golden Marmoset",
-        "headliner": false
-      },
-      {
-        "name": "The Baraness",
-        "headliner": false
-      },
-      {
-        "name": "Lolo Knows",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "21:00",
-    "doors": null,
-    "price": "$15 Advance, $20 Doors",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-08-14-mike-clark"
-  },
-  {
     "title": "Eli Escobar 12 Hour Party",
     "performers": [
       {
@@ -4909,6 +4881,80 @@
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-08-14-eli-escobar"
+  },
+  {
+    "title": "Phase:Zero",
+    "performers": [
+      {
+        "name": "Wax Assassin",
+        "headliner": true
+      },
+      {
+        "name": "Marc Lansley",
+        "headliner": false
+      },
+      {
+        "name": "Side Part",
+        "headliner": false
+      },
+      {
+        "name": "Phase:Zero Residents",
+        "headliner": false
+      },
+      {
+        "name": "Undertow",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "21:00",
+    "doors": null,
+    "price": "$10 Advance, $15 Doors",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-08-28-phase-zero"
+  },
+  {
+    "title": "Perf",
+    "performers": [
+      {
+        "name": "Kiernan Laveaux",
+        "headliner": true
+      },
+      {
+        "name": "Hot Take",
+        "headliner": false
+      },
+      {
+        "name": "Kevin Bumpers",
+        "headliner": false
+      },
+      {
+        "name": "Le Mew",
+        "headliner": false
+      },
+      {
+        "name": "Angelgirl EVA",
+        "headliner": false
+      },
+      {
+        "name": "Joey Sardelle",
+        "headliner": false
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "21:00",
+    "doors": null,
+    "price": "$15 Advance, $18 Doors",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-08-29-perf"
   },
 
 
@@ -11119,261 +11165,6 @@
   },
 
 
-
-
-
-
-  {
-    "title": "Emo Nite (27 Club)",
-    "performers": [
-      {
-        "name": "Emo Nite",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-06",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-06-emo-nite"
-  },
-  {
-    "title": "Red Bull Best Trick Contest (Crooked River Skate Park)",
-    "performers": [
-      {
-        "name": "Red Bull Best Trick Contest",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-07-red-bull-best-trick-contest"
-  },
-  {
-    "title": "Karaoke Night (27 Club)",
-    "performers": [
-      {
-        "name": "Karaoke Night",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-07-karaoke-night"
-  },
-  {
-    "title": "Welcome to Cleveland Party (Shooters)",
-    "performers": [
-      {
-        "name": "MGK",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-07-mgk"
-  },
-  {
-    "title": "MGK Day Tailgate (North Coast Yard)",
-    "performers": [
-      {
-        "name": "MGK Day Tailgate",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-mgk-day-tailgate"
-  },
-  {
-    "title": "City Ride (Southeast Harley)",
-    "performers": [
-      {
-        "name": "City Ride",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "15:00",
-    "doors": "14:00",
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-city-ride"
-  },
-  {
-    "title": "MGK Day Festival (North Coast Yard)",
-    "performers": [
-      {
-        "name": "MGK Day Festival",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-mgk-day-festival"
-  },
-  {
-    "title": "MGK with Wiz Khalifa (Main Stage)",
-    "performers": [
-      {
-        "name": "MGK",
-        "headliner": true
-      },
-      {
-        "name": "Wiz Khalifa",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-mgk"
-  },
-  {
-    "title": "Emo Nite 2 (27 Club)",
-    "performers": [
-      {
-        "name": "Emo Nite",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-emo-nite"
-  },
-  {
-    "title": "50 Cent (Shooters)",
-    "performers": [
-      {
-        "name": "50 Cent",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-08-50-cent"
-  },
-  {
-    "title": "5K + Pilates (27 Club)",
-    "performers": [
-      {
-        "name": "5K + Pilates",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-09",
-    "time": "11:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-09-5k-pilates"
-  },
-  {
-    "title": "I'm From Cleveland Sessions (Shooters)",
-    "performers": [
-      {
-        "name": "I'm From Cleveland Sessions",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-09",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-09-i-m-from-cleveland-sessions"
-  },
-  {
-    "title": "Silent Disco (27 Club)",
-    "performers": [
-      {
-        "name": "Silent Disco",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-09",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "mgk-day",
-    "source": "manual",
-    "manual": true,
-    "id": "mgk-day-2026-08-09-silent-disco"
-  },
 
 
 
