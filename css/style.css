@@ -1538,7 +1538,7 @@ span.flatpickr-weekday {
 
 	.event {
 		padding: 8px 16px;
-		margin-bottom: 8px;
+		margin-bottom: 8px !important;
 	}
 
 	.venueEvents .event:last-child {
