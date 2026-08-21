@@ -1507,11 +1507,9 @@ span.flatpickr-weekday {
     margin-bottom: 20px;
    }
 
-  /*
   .venueCard {
-		flex-direction: column;
+		margin-bottom: 8px;
 	}
-	*/
 
 	.venue {
 		width: 30%;
@@ -1536,13 +1534,13 @@ span.flatpickr-weekday {
 		width: 100%;
 	}
 
-	.event {
+	.venueEvents .event {
 		padding: 8px 16px;
-		margin-bottom: 8px !important;
+		margin-bottom: 4px;
 	}
 
 	.venueEvents .event:last-child {
-		margin-bottom: 16px;
+		margin-bottom: 8px;
 	}
 
 	.flex {
