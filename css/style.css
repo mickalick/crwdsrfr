@@ -1507,15 +1507,29 @@ span.flatpickr-weekday {
     margin-bottom: 20px;
    }
 
+  /*
   .venueCard {
 		flex-direction: column;
 	}
+	*/
 
 	.venue {
-		width: 100%;
-		margin-bottom: 8px;
-		margin-left: 8px;
+		width: 30%;
+		margin: 12px 0;
 		padding-bottom: 0;
+	}
+
+	.venue h4 {
+		font-size: 12px;
+	}
+
+	.eventName {
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+
+	.eventTime, .eventCost {
+		font-size: 12px;
 	}
 
 	.venueEvents {
@@ -1524,6 +1538,11 @@ span.flatpickr-weekday {
 
 	.event {
 		padding: 8px 16px;
+		margin-bottom: 8px;
+	}
+
+	.venueEvents .event:last-child {
+		margin-bottom: 16px;
 	}
 
 	.flex {
@@ -1538,9 +1557,7 @@ span.flatpickr-weekday {
 		background-position: right;
 		padding-top: 120px;
 	}
-}
 
-@media screen and (max-width:420px){
 	.navItem{
 		margin: 0 2px !important;
 	}
@@ -1551,10 +1568,6 @@ span.flatpickr-weekday {
 
 	#currentSelector h3 {
 		font-size: 18px;
-	}
-
-	.ticketLink{
-		margin: 0 4px;
 	}
 
 	#navArrows li {
