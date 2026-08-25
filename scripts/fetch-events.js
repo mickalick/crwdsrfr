@@ -3815,95 +3815,146 @@ async function fetchReithoffers() {
   return events;
 }
 
-// Wild Eagle has multiple locations sharing the same page markup, each
-// on its own URL. Add a new location here to bring it into the scrape —
-// no other changes needed.
-const WILD_EAGLE_LOCATIONS = [
-  { venueId: 'wild-eagle-downtown', url: 'https://cleveland.wildeagle.com/cleveland-gateway-district-wild-eagle-saloon-downtown-cleveland-events' },
-  { venueId: 'wild-eagle-broadview-heights', url: 'https://broadviewheights.wildeagle.com/broadview-heights-wild-eagle-steak-and-saloon-broadview-heights-events' },
-  { venueId: 'wild-eagle-streetsboro', url: 'https://streetsboro.wildeagle.com/streetsboro-wild-eagle-steak-and-saloon-streetsboro-events' },
-];
 
-async function fetchWildEagle() {
-  const TITLE_BLOCKLIST = /golf|national/i;
-  const allEvents = [];
 
-  for (const { venueId, url } of WILD_EAGLE_LOCATIONS) {
+// Flat Iron Cafe — spotapps.co calendar, same .events-holder/section
+// structure as Wild Eagle, but each event's add-to-calendar block embeds an
+// exact local datetime ("2026-08-28 19:00:00") in .atc_date_start — use that
+// directly instead of parsing the year-less "Friday August 28th" heading.
+async function fetchFlatIronCafe() {
+  const venueId = 'flat-iron-cafe';
+  try {
+    const res = await fetch('https://flatironcafe.com/cleveland-flat-iron-cafe-events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
     const events = [];
-    try {
-      const res = await fetch(url);
-      const html = await res.text();
-      const $ = cheerio.load(html);
-      const currentYear = new Date().getFullYear();
-      const today = new Date();
 
-      $('.events-holder section').each((_, el) => {
-        const $el = $(el);
+    $('.events-holder section').each((_, el) => {
+      const $el = $(el);
 
-        const title = $el.find('h2').first().text().trim();
-        if (!title) return;
-        if (TITLE_BLOCKLIST.test(title)) return;
+      const title = $el.find('h2').first().text().trim();
+      if (!title) return;
 
-        // "Saturday August 15th" -> month name + day number
-        const dayRaw = $el.find('.event-day').first().text().trim();
-        const dateMatch = dayRaw.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?/);
-        if (!dateMatch) return;
+      // "2026-08-28 19:00:00" -> split directly, don't round-trip through Date/UTC.
+      const startRaw = $el.find('.atc_date_start').first().text().trim();
+      const match = startRaw.match(/^(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})/);
+      if (!match) {
+        console.warn(`fetchFlatIronCafe: unparseable start time "${startRaw}" for "${title}"`);
+        return;
+      }
+      const [, date, hours, minutes] = match;
+      const time = `${hours}:${minutes}`;
 
-        const monthIndex = MONTH_ABBR[dateMatch[1].slice(0, 3)];
-        if (monthIndex === undefined) return;
-        const dayNum = parseInt(dateMatch[2], 10);
+      // Prefer the page's own event id (from <section id="...">), same
+      // fallback approach as fetchWildEagle.
+      const eventId = $el.attr('id');
+      const id = eventId ? `${venueId}-${eventId}` : `${venueId}-${date}-${slugify(title)}`;
 
-        // No year on the page — assume current year, roll to next year if
-        // that date has already passed (same approach used elsewhere).
-        let year = currentYear;
-        const eventDateThisYear = new Date(currentYear, monthIndex, dayNum);
-        const todayMidnight = new Date(currentYear, today.getMonth(), today.getDate());
-        if (eventDateThisYear < todayMidnight) year = currentYear + 1;
-        const date = toLocalDateStr(new Date(year, monthIndex, dayNum));
-
-        // "09:00 PM - 12:00 AM" -> use the start time
-        const timeRaw = $el.find('.event-time').first().text().trim();
-        const timeMatch = timeRaw.split('-')[0].trim().match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
-        let time = null;
-        if (timeMatch) {
-          let hours = parseInt(timeMatch[1], 10);
-          const minutes = timeMatch[2];
-          const modifier = timeMatch[3].toUpperCase();
-          if (modifier === 'PM' && hours !== 12) hours += 12;
-          if (modifier === 'AM' && hours === 12) hours = 0;
-          time = `${String(hours).padStart(2, '0')}:${minutes}`;
-        }
-
-        // Prefer the page's own event id (from <section id="...">) so ids
-        // stay stable even if a title gets tweaked; fall back to date+slug.
-        const eventId = $el.attr('id');
-        const id = eventId ? `${venueId}-${eventId}` : `${venueId}-${date}-${slugify(title)}`;
-
-        events.push({
-          id,
-          title,
-          venueId,
-          date,
-          time,
-          doors: null,
-          price: null,
-          performers: [{ name: title, headliner: true }],
-          eventUrl: url,
-          ticketUrl: null,
-          source: 'scrape',
-          manual: false,
-        });
+      events.push({
+        id,
+        title,
+        venueId,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl: 'https://flatironcafe.com/cleveland-flat-iron-cafe-events',
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
       });
-    } catch (err) {
-      console.error(`fetchWildEagle (${venueId}) error:`, err.message);
-    }
+    });
 
-    console.log(`  Wild Eagle - ${venueId}:`, events.length);
-    allEvents.push(...events);
+    return events;
+  } catch (err) {
+    console.error('fetchFlatIronCafe error:', err.message);
+    return [];
   }
-
-  return allEvents;
 }
+
+
+// Cleveland Museum of Art — Next.js-rendered performances listing. Every
+// card repeats the same literal id="carousel-card" (not actually unique),
+// so events are matched by that CSS class/id combo rather than treated as
+// unique DOM ids. Date/time comes as one combined string with the year
+// included, e.g. "Sep 9, 2026, 7:30 – 9:00 p.m." — the start time has no
+// am/pm marker of its own (English convention omits a repeated meridiem),
+// so we infer it from the end time's meridiem.
+async function fetchClevelandMuseumOfArt() {
+  const venueId = 'cleveland-museum-of-art';
+  const BASE_URL = 'https://www.clevelandart.org';
+  try {
+    const res = await fetch(`${BASE_URL}/whats-on/performances`);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const events = [];
+
+    $('li#carousel-card').each((_, el) => {
+      const $el = $(el);
+
+      const linkEl = $el.find('h3 a').first();
+      const title = linkEl.text().trim();
+      if (!title) return;
+
+      // "Sep 9, 2026, 7:30 – 9:00 p.m." (nbsp's around the dash/time)
+      const dateText = $el.find('p[data-content-type="wysiwyg"]').first().text()
+        .replace(/\u00A0/g, ' ').trim();
+      const match = dateText.match(
+        /^([A-Za-z]{3,9})\s+(\d{1,2}),\s*(\d{4}),\s*(\d{1,2}):(\d{2})\s*[–—-]\s*(\d{1,2}):(\d{2})\s*(a\.?m\.?|p\.?m\.?)/i
+      );
+      if (!match) {
+        console.warn(`fetchClevelandMuseumOfArt: unparseable date "${dateText}" for "${title}"`);
+        return;
+      }
+      const [, monthStr, dayStr, yearStr, startHourRaw, startMin, endHourRaw, , endMeridiemRaw] = match;
+
+      const monthIndex = MONTH_ABBR[monthStr.slice(0, 3)];
+      if (monthIndex === undefined) return;
+      const day = parseInt(dayStr, 10);
+      const year = parseInt(yearStr, 10);
+      const date = toLocalDateStr(new Date(year, monthIndex, day));
+
+      const startHour = parseInt(startHourRaw, 10);
+      const endHour = parseInt(endHourRaw, 10);
+      const endMeridiem = endMeridiemRaw.toLowerCase().replace(/\./g, '');
+      // If the start hour is <= the end hour, assume they share a meridiem
+      // (the normal case, e.g. "7:30 – 9:00 p.m."); otherwise assume the
+      // start is the opposite period (crossing noon, e.g. "11:30 – 1:00 p.m." -> 11:30 a.m.).
+      const startMeridiem = startHour <= endHour ? endMeridiem : (endMeridiem === 'pm' ? 'am' : 'pm');
+      let hours24 = startHour % 12;
+      if (startMeridiem === 'pm') hours24 += 12;
+      const time = `${String(hours24).padStart(2, '0')}:${startMin}`;
+
+      const hrefRaw = linkEl.attr('href');
+      const eventUrl = hrefRaw ? new URL(hrefRaw, BASE_URL).toString() : `${BASE_URL}/whats-on/performances`;
+
+      events.push({
+        id: `${venueId}-${date}-${slugify(title)}`,
+        title,
+        venueId,
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+
+    return events;
+  } catch (err) {
+    console.error('fetchClevelandMuseumOfArt error:', err.message);
+    return [];
+  }
+}
+
+
+
+
 
 
 // ─── Scraper manifest ──────────────────────────────────────────────────────
@@ -3954,7 +4005,8 @@ const FETCHERS = [
   { label: 'Imposters Theater', fn: fetchImpostersTheater },
   { label: 'Grindstone', fn: fetchGrindstoneTapHouse },
   { label: 'Reithoffers', fn: fetchReithoffers },
-  { label: 'Wild Eagle', fn: fetchWildEagle },
+  { label: 'Flat Iron Cafe', fn: fetchFlatIronCafe },
+  { label: 'Cleveland Museum of Art', fn: fetchClevelandMuseumOfArt },
 ];
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -4086,5 +4138,6 @@ export {
   fetchImpostersTheater,
   fetchGrindstoneTapHouse,
   fetchReithoffers,
-  fetchWildEagle,
+  fetchFlatIronCafe,
+  fetchClevelandMuseumOfArt,
 };

@@ -517,37 +517,26 @@
     "lng": -81.2156801
   },
   {
-    "id": "wild-eagle-downtown",
-    "name": "Wild Eagle Downtown",
-    "url": "https://cleveland.wildeagle.com/",
-    "eventsUrl": "https://cleveland.wildeagle.com/cleveland-gateway-district-wild-eagle-saloon-downtown-cleveland-events",
+    "id": "flat-iron-cafe",
+    "name": "The Flat Iron Cafe",
+    "url": "https://flatironcafe.com/",
+    "eventsUrl": "https://flatironcafe.com/cleveland-flat-iron-cafe-events",
     "type": "bar",
-    "address": "921 Huron Road East, Cleveland, OH, 44115",
-    "area": "Downtown",
-    "lat": 41.4996786,
-    "lng": -81.68506769999999
+    "address": "1114 Center Street, Cleveland, OH, 44113",
+    "area": "Flats East Bank",
+    "lat": 41.494302,
+    "lng": -81.70186269999999
   },
   {
-    "id": "wild-eagle-broadview-heights",
-    "name": "Wild Eagle Broadview Heights",
-    "url": "https://broadviewheights.wildeagle.com/",
-    "eventsUrl": "https://broadviewheights.wildeagle.com/broadview-heights-wild-eagle-steak-and-saloon-broadview-heights-events",
-    "type": "bar",
-    "address": "5001 East Royalton Road, Broadview Heights, OH, 44147",
-    "area": "Broadview Heights",
-    "lat": 41.3165189,
-    "lng": -81.651464
-  },
-  {
-    "id": "wild-eagle-streetsboro",
-    "name": "Wild Eagle Streetsboro",
-    "url": "https://streetsboro.wildeagle.com/",
-    "eventsUrl": "https://streetsboro.wildeagle.com/streetsboro-wild-eagle-steak-and-saloon-streetsboro-events",
-    "type": "bar",
-    "address": "9470 OH-14, Streetsboro, OH, 44241",
-    "area": "Streetsboro",
-    "lat": 41.2441288,
-    "lng": -81.3545936
+    "id": "cleveland-museum-of-art",
+    "name": "Cleveland Museum of Art",
+    "url": "https://www.clevelandart.org/",
+    "eventsUrl": "https://www.clevelandart.org/whats-on/performances",
+    "type": "music-hall",
+    "address": "11150 East Boulevard, Cleveland, OH, 44106",
+    "area": "University Circle",
+    "lat": 41.5079123,
+    "lng": -81.6119848
   },
   {
     "id": "cebars",
@@ -902,14 +891,113 @@
     "lng": -81.7001318
   },
   {
+    "id": "twist-social-club",
+    "name": "Twist Social Club",
+    "url": "https://www.twistsocialclub.com/",
+    "eventsUrl": "https://www.twistsocialclub.com/events",
+    "type": "club",
+    "address": "11633 Clifton Blvd, Cleveland, OH, 44102",
+    "area": "Edgewater",
+    "lat": 41.4871985,
+    "lng": -81.76840539999999
+  },
+  {
+    "id": "wild-eagle-downtown",
+    "name": "Wild Eagle Downtown",
+    "url": "https://wildeagle.com/",
+    "eventsUrl": "https://www.wildeagle.com/downtown-cleveland-upcoming-events",
+    "type": "bar",
+    "address": "921 Huron Road East, Cleveland, OH, 44115",
+    "area": "Downtown",
+    "lat": 41.4996786,
+    "lng": -81.68506769999999
+  },
+  {
+    "id": "wild-eagle-broadview-heights",
+    "name": "Wild Eagle Broadview Heights",
+    "url": "https://wildeagle.com/",
+    "eventsUrl": "https://www.wildeagle.com/broadview-heights-upcoming-events",
+    "type": "bar",
+    "address": "5001 East Royalton Road, Broadview Heights, OH, 44147",
+    "area": "Broadview Heights",
+    "lat": 41.3165189,
+    "lng": -81.651464
+  },
+  {
+    "id": "wild-eagle-streetsboro",
+    "name": "Wild Eagle Streetsboro",
+    "url": "https://wildeagle.com/",
+    "eventsUrl": "https://www.wildeagle.com/streetsboro-upcoming-events",
+    "type": "bar",
+    "address": "9470 OH-14, Streetsboro, OH, 44241",
+    "area": "Streetsboro",
+    "lat": 41.2441288,
+    "lng": -81.3545936
+  },
+  {
     "id": "smoke-and-mirrors",
     "name": "Smoke & Mirrors",
     "url": "https://www.smokeandmirrors.bar/",
-    "eventsUrl": "https://www.instagram.com/smokeandmirrorscle/",
+    "eventsUrl": "https://www.ohiocityevents.com//",
     "type": "bar",
     "address": "1865 W 25th St, Cleveland, OH 44113",
     "area": "Ohio City",
     "lat": 41.4859353,
     "lng": -81.7045912
+  },
+  {
+    "id": "mg-brewpub",
+    "name": "Market Garden Brewpub",
+    "url": "https://www.marketgardenbrewery.com/",
+    "eventsUrl": "https://www.ohiocityevents.com/",
+    "type": "brewery",
+    "address": "1947 West 25th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.4850769,
+    "lng": -81.70343059999999
+  },
+  {
+    "id": "nano-brew",
+    "name": "Nano Brew",
+    "url": "https://www.nanobrewcleveland.com/",
+    "eventsUrl": "https://www.ohiocityevents.com/",
+    "type": "brewery",
+    "address": "1859 West 25th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.4860542,
+    "lng": -81.7045576
+  },
+  {
+    "id": "bird-of-paradise",
+    "name": "Bird of Paradise",
+    "url": "https://www.birdofparadisecle.com/",
+    "eventsUrl": "https://www.ohiocityevents.com/",
+    "type": "bar",
+    "address": "1948 West 25th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.484737,
+    "lng": -81.7041828
+  },
+  {
+    "id": "bright-side",
+    "name": "Bright Side",
+    "url": "https://www.brightsidecle.com/",
+    "eventsUrl": "https://www.ohiocityevents.com/",
+    "type": "bar",
+    "address": "1948 West 25th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.484737,
+    "lng": -81.7041828
+  },
+  {
+    "id": "irishtown-bend-taproom",
+    "name": "Market Garden IrishTown Bend Taproom",
+    "url": "https://www.marketgardenbrewery.com/",
+    "eventsUrl": "https://www.ohiocityevents.com/",
+    "type": "brewery",
+    "address": "1849 West 24th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.4861933,
+    "lng": -81.70286899999999
   }
 ]

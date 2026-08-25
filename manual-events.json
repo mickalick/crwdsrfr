@@ -3556,14 +3556,14 @@
 
 
   {
-    "title": "11th Hour",
+    "title": "Alias",
     "performers": [
       {
-        "name": "11th Hour",
+        "name": "Alias",
         "headliner": true
       }
     ],
-    "date": "2026-08-08",
+    "date": "2026-08-21",
     "time": null,
     "doors": null,
     "price": null,
@@ -3572,17 +3572,17 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-08-08-11th-hour"
+    "id": "sound-stage-tavern-2026-08-21-alias"
   },
   {
-    "title": "Dead Ringers",
+    "title": "Stratford Hill",
     "performers": [
       {
-        "name": "Dead Ringers",
+        "name": "Stratford Hill",
         "headliner": true
       }
     ],
-    "date": "2026-08-14",
+    "date": "2026-08-22",
     "time": null,
     "doors": null,
     "price": null,
@@ -3591,17 +3591,17 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-08-14-dead-ringers"
+    "id": "sound-stage-tavern-2026-08-22-stratford-hill"
   },
   {
-    "title": "Mary Taylor Brooks",
+    "title": "High Flyers",
     "performers": [
       {
-        "name": "Mary Taylor Brooks",
+        "name": "High Flyers",
         "headliner": true
       }
     ],
-    "date": "2026-08-15",
+    "date": "2026-08-28",
     "time": null,
     "doors": null,
     "price": null,
@@ -3610,7 +3610,26 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-08-15-mary-taylor-brooks"
+    "id": "sound-stage-tavern-2026-08-28-high-flyers"
+  },
+  {
+    "title": "Bright Lights Big City",
+    "performers": [
+      {
+        "name": "Bright Lights Big City",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "sound-stage-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "sound-stage-tavern-2026-08-29-bright-lights-big-city"
   },
 
 
@@ -6925,49 +6944,7 @@
 
 
   {
-    "title": "Gannon Fremin & CCREV (Cambridge Room)",
-    "performers": [
-      {
-        "name": "Gannon Fremin",
-        "headliner": true
-      },
-      {
-        "name": "CCREV",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-14-gannon-fremin"
-  },
-  {
-    "title": "Save Ferris (Cambridge Room)",
-    "performers": [
-      {
-        "name": "Save Ferris",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-16",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-16-save-ferris"
-  },
-  {
-    "title": "Jason Schmidt (Cambridge Room)",
+    "title": "Jason Schmidt",
     "performers": [
       {
         "name": "Jason Schmidt",
@@ -6986,7 +6963,7 @@
     "id": "house-of-blues-2026-08-25-jason-schmidt"
   },
   {
-    "title": "Joe Jordan (Cambridge Room)",
+    "title": "Joe Jordan",
     "performers": [
       {
         "name": "Joe Jordan",
@@ -7005,7 +6982,7 @@
     "id": "house-of-blues-2026-09-11-joe-jordan"
   },
   {
-    "title": "Guardin (Cambridge Room)",
+    "title": "Guardin",
     "performers": [
       {
         "name": "Guardin",
@@ -7024,7 +7001,7 @@
     "id": "house-of-blues-2026-09-16-guardin"
   },
   {
-    "title": "The Takes (Cambridge Room)",
+    "title": "The Takes",
     "performers": [
       {
         "name": "The Takes",
@@ -7043,7 +7020,7 @@
     "id": "house-of-blues-2026-09-26-the-takes"
   },
   {
-    "title": "Cheekface (Cambridge Room)",
+    "title": "Cheekface",
     "performers": [
       {
         "name": "Cheekface",
@@ -7066,7 +7043,7 @@
     "id": "house-of-blues-2026-09-30-cheekface"
   },
   {
-    "title": "The Haunt (Cambridge Room)",
+    "title": "The Haunt",
     "performers": [
       {
         "name": "The Haunt",
@@ -7085,7 +7062,7 @@
     "id": "house-of-blues-2026-10-07-the-haunt"
   },
   {
-    "title": "Struggle Jennings (Cambridge Room)",
+    "title": "Struggle Jennings",
     "performers": [
       {
         "name": "Struggle Jennings",
@@ -7104,10 +7081,10 @@
     "id": "house-of-blues-2026-10-15-struggle-jennings"
   },
   {
-    "title": "With A Vengeance (Cambridge Room)",
+    "title": "With a Vengeance",
     "performers": [
       {
-        "name": "With A Vengeance",
+        "name": "With a Vengeance",
         "headliner": true
       }
     ],
@@ -7123,10 +7100,29 @@
     "id": "house-of-blues-2026-10-26-with-a-vengeance"
   },
   {
-    "title": "Beyond The Walls 3 (Cambridge Room)",
+    "title": "Necronomipod",
     "performers": [
       {
-        "name": "Beyond The Walls 3",
+        "name": "Necronomipod",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-10-31-necronomipod"
+  },
+  {
+    "title": "Beyond the Walls 3",
+    "performers": [
+      {
+        "name": "Beyond the Walls 3",
         "headliner": true
       }
     ],
@@ -7142,7 +7138,7 @@
     "id": "house-of-blues-2026-11-07-beyond-the-walls-3"
   },
   {
-    "title": "Golden: A K-Pop Kids Party! (Cambridge Room)",
+    "title": "Golden: A K-Pop Kids Party!",
     "performers": [
       {
         "name": "Golden: A K-Pop Kids Party!",
@@ -7158,23 +7154,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-11-07-golden-k-pop-kids-party"
+    "id": "house-of-blues-2026-11-15-golden-a-k-pop-kids-party"
   },
-
-
-
-
-
-  
   {
-    "title": "Chance the Rapper (Music Hall)",
+    "title": "Maggie Rose",
     "performers": [
       {
-        "name": "Chance the Rapper",
+        "name": "Maggie Rose",
         "headliner": true
       }
     ],
-    "date": "2026-08-11",
+    "date": "2026-11-21",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7183,36 +7173,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-11-chance-the-rapper"
+    "id": "house-of-blues-2026-11-21-maggie-rose"
   },
   {
-    "title": "Saved by the 90's (Music Hall)",
+    "title": "Missio",
     "performers": [
       {
-        "name": "Saved by the 90's",
+        "name": "Missio",
         "headliner": true
       }
     ],
-    "date": "2026-08-14",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-14-saved-by-the-90-s"
-  },
-  {
-    "title": "Whiskey Bound (Music Hall)",
-    "performers": [
-      {
-        "name": "Whiskey Bound",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
+    "date": "2027-01-17",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -7221,86 +7192,15 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-15-whiskey-bound"
+    "id": "house-of-blues-2027-01-17-missio"
   },
+
+
+
+
+
   {
-    "title": "Down (Music Hall)",
-    "performers": [
-      {
-        "name": "Down",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-19",
-    "time": "18:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-19-down"
-  },
-  {
-    "title": "Rene Vaca (Music Hall)",
-    "performers": [
-      {
-        "name": "Rene Vaca",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-20",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-20-rene-vaca"
-  },
-  {
-    "title": "Jon B. (Music Hall)",
-    "performers": [
-      {
-        "name": "Jon B.",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-21",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-21-jon-b"
-  },
-  {
-    "title": "Will Wood (Music Hall)",
-    "performers": [
-      {
-        "name": "Will Wood",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-22",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-22-will-wood"
-  },
-  {
-    "title": "Fattmack (Music Hall)",
+    "title": "Fattmack",
     "performers": [
       {
         "name": "Fattmack",
@@ -7319,15 +7219,11 @@
     "id": "house-of-blues-2026-08-27-fattmack"
   },
   {
-    "title": "Isaiah Rashad (Music Hall)",
+    "title": "Isaiah Rashad",
     "performers": [
       {
         "name": "Isaiah Rashad",
         "headliner": true
-      },
-      {
-        "name": "Lil Sunny",
-        "headliner": false
       }
     ],
     "date": "2026-08-28",
@@ -7342,10 +7238,10 @@
     "id": "house-of-blues-2026-08-28-isaiah-rashad"
   },
   {
-    "title": "The Taylor Party: The TS Dance Party (Music Hall)",
+    "title": "The Taylor Party",
     "performers": [
       {
-        "name": "The Taylor Party: The TS Dance Party",
+        "name": "The Taylor Party",
         "headliner": true
       }
     ],
@@ -7361,10 +7257,10 @@
     "id": "house-of-blues-2026-08-29-the-taylor-party"
   },
   {
-    "title": "Peephole (Music Hall)",
+    "title": "Peephole",
     "performers": [
       {
-        "name": "Peephole - Tribute to System of a Down",
+        "name": "Peephole",
         "headliner": true
       }
     ],
@@ -7377,13 +7273,13 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-09-04-peephole-tribute-to-system-of-a-down"
+    "id": "house-of-blues-2026-09-04-peephole"
   },
   {
-    "title": "Who's Bad (Music Hall)",
+    "title": "Who's Bad",
     "performers": [
       {
-        "name": "Who's Bad: The Ultimate Michael Jackson Experience",
+        "name": "Who's Bad",
         "headliner": true
       }
     ],
@@ -7396,10 +7292,10 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-09-05-who-s-bad-the-ultimate-michael-jackson-experience"
+    "id": "house-of-blues-2026-09-05-who-s-bad"
   },
   {
-    "title": "Chad Gray (Music Hall)",
+    "title": "Chad Gray",
     "performers": [
       {
         "name": "Chad Gray",
@@ -7418,7 +7314,7 @@
     "id": "house-of-blues-2026-09-09-chad-gray"
   },
   {
-    "title": "The Pretty Reckless (Music Hall)",
+    "title": "The Pretty Reckless",
     "performers": [
       {
         "name": "The Pretty Reckless",
@@ -7437,10 +7333,10 @@
     "id": "house-of-blues-2026-09-10-the-pretty-reckless"
   },
   {
-    "title": "It's a 2000's Party (Music Hall)",
+    "title": "It's A 2000's Party",
     "performers": [
       {
-        "name": "It's a 2000's Party",
+        "name": "It's A 2000's Party",
         "headliner": true
       }
     ],
@@ -7453,10 +7349,10 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-09-12-2000s-party"
+    "id": "house-of-blues-2026-09-12-it-s-a-2000-s-party"
   },
   {
-    "title": "Jose Madero (Music Hall)",
+    "title": "Jose Madero",
     "performers": [
       {
         "name": "Jose Madero",
@@ -7475,7 +7371,7 @@
     "id": "house-of-blues-2026-09-19-jose-madero"
   },
   {
-    "title": "Dax (Music Hall)",
+    "title": "Dax",
     "performers": [
       {
         "name": "Dax",
@@ -7494,7 +7390,7 @@
     "id": "house-of-blues-2026-09-20-dax"
   },
   {
-    "title": "Alien Ant Farm (Music Hall)",
+    "title": "Alien Ant Farm",
     "performers": [
       {
         "name": "Alien Ant Farm",
@@ -7513,7 +7409,7 @@
     "id": "house-of-blues-2026-09-21-alien-ant-farm"
   },
   {
-    "title": "Black Veil Brides (Music Hall)",
+    "title": "Black Veil Brides",
     "performers": [
       {
         "name": "Black Veil Brides",
@@ -7532,7 +7428,7 @@
     "id": "house-of-blues-2026-09-22-black-veil-brides"
   },
   {
-    "title": "How Did We Get Weird Live! (Music Hall)",
+    "title": "How Did We Get Weird Live!",
     "performers": [
       {
         "name": "Vanessa Bayer",
@@ -7551,7 +7447,7 @@
     "id": "house-of-blues-2026-09-25-vanessa-bayer"
   },
   {
-    "title": "Cavetown (Music Hall)",
+    "title": "Cavetown",
     "performers": [
       {
         "name": "Cavetown",
@@ -7570,7 +7466,7 @@
     "id": "house-of-blues-2026-09-26-cavetown"
   },
   {
-    "title": "Buena Vista Orchestra (Music Hall)",
+    "title": "Buena Vista Orchestra",
     "performers": [
       {
         "name": "Buena Vista Orchestra",
@@ -7589,7 +7485,7 @@
     "id": "house-of-blues-2026-09-27-buena-vista-orchestra"
   },
   {
-    "title": "Domi & JD Beck (Music Hall)",
+    "title": "Domi & JD Beck",
     "performers": [
       {
         "name": "Domi & JD Beck",
@@ -7608,7 +7504,7 @@
     "id": "house-of-blues-2026-09-28-domi-jd-beck"
   },
   {
-    "title": "Artemas (Music Hall)",
+    "title": "Artemas",
     "performers": [
       {
         "name": "Artemas",
@@ -7627,7 +7523,7 @@
     "id": "house-of-blues-2026-10-03-artemas"
   },
   {
-    "title": "Michael Franti Trio (Music Hall)",
+    "title": "Michael Franti Trio",
     "performers": [
       {
         "name": "Michael Franti Trio",
@@ -7646,7 +7542,7 @@
     "id": "house-of-blues-2026-10-04-michael-franti-trio"
   },
   {
-    "title": "Unpopular Opinions Night (Music Hall)",
+    "title": "Unpopular Opinions Night",
     "performers": [
       {
         "name": "Unpopular Opinions Night",
@@ -7665,7 +7561,7 @@
     "id": "house-of-blues-2026-10-07-unpopular-opinions-night"
   },
   {
-    "title": "Punchis! Punchis! Banda Rave (Music Hall)",
+    "title": "Punchis! Punchis! Banda Rave",
     "performers": [
       {
         "name": "Punchis! Punchis! Banda Rave",
@@ -7673,7 +7569,7 @@
       }
     ],
     "date": "2026-10-09",
-    "time": "19:00",
+    "time": "21:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -7681,10 +7577,10 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-10-09-punchis-punchis"
+    "id": "house-of-blues-2026-10-09-punchis-punchis-banda-rave"
   },
   {
-    "title": "Here Come The Mummies (Music Hall)",
+    "title": "Here Come The Mummies",
     "performers": [
       {
         "name": "Here Come The Mummies",
@@ -7703,7 +7599,7 @@
     "id": "house-of-blues-2026-10-10-here-come-the-mummies"
   },
   {
-    "title": "Tab Benoit (Music Hall)",
+    "title": "Tab Benoit",
     "performers": [
       {
         "name": "Tab Benoit",
@@ -7726,7 +7622,7 @@
     "id": "house-of-blues-2026-10-11-tab-benoit"
   },
   {
-    "title": "The Brook & The Bluff (Music Hall)",
+    "title": "The Brook & The Bluff",
     "performers": [
       {
         "name": "The Brook & The Bluff",
@@ -7745,7 +7641,7 @@
     "id": "house-of-blues-2026-10-19-the-brook-the-bluff"
   },
   {
-    "title": "Hawthorne Heights (Music Hall)",
+    "title": "Hawthorne Heights",
     "performers": [
       {
         "name": "Hawthorne Heights",
@@ -7764,7 +7660,26 @@
     "id": "house-of-blues-2026-10-20-hawthorne-heights"
   },
   {
-    "title": "Lauren Alaina (Music Hall)",
+    "title": "Rene Vaca",
+    "performers": [
+      {
+        "name": "Rene Vaca",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-10-22-rene-vaca"
+  },
+  {
+    "title": "Lauren Alaina",
     "performers": [
       {
         "name": "Lauren Alaina",
@@ -7783,7 +7698,7 @@
     "id": "house-of-blues-2026-10-23-lauren-alaina"
   },
   {
-    "title": "Candlebox (Music Hall)",
+    "title": "Candlebox",
     "performers": [
       {
         "name": "Candlebox",
@@ -7802,7 +7717,7 @@
     "id": "house-of-blues-2026-10-24-candlebox"
   },
   {
-    "title": "Cradle of Filth (Music Hall)",
+    "title": "Cradle of Filth",
     "performers": [
       {
         "name": "Cradle of Filth",
@@ -7825,7 +7740,7 @@
     "id": "house-of-blues-2026-10-25-cradle-of-filth"
   },
   {
-    "title": "The Wrecks (Music Hall)",
+    "title": "The Wrecks",
     "performers": [
       {
         "name": "The Wrecks",
@@ -7844,7 +7759,7 @@
     "id": "house-of-blues-2026-10-27-the-wrecks"
   },
   {
-    "title": "The Longest Johns (Music Hall)",
+    "title": "The Longest Johns",
     "performers": [
       {
         "name": "The Longest Johns",
@@ -7863,7 +7778,30 @@
     "id": "house-of-blues-2026-10-30-the-longest-johns"
   },
   {
-    "title": "The Amity Affliction (Music Hall)",
+    "title": "Kitchen Dwellers",
+    "performers": [
+      {
+        "name": "Kitchen Dwellers",
+        "headliner": true
+      },
+      {
+        "name": "Dogs in a Pile",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-10-31-kitchen-dwellers"
+  },
+  {
+    "title": "The Amity Affliction",
     "performers": [
       {
         "name": "The Amity Affliction",
@@ -7882,7 +7820,7 @@
     "id": "house-of-blues-2026-11-01-the-amity-affliction"
   },
   {
-    "title": "Nekrogoblikon (Music Hall)",
+    "title": "Nekrogoblikon",
     "performers": [
       {
         "name": "Nekrogoblikon",
@@ -7905,7 +7843,7 @@
     "id": "house-of-blues-2026-11-04-nekrogoblikon"
   },
   {
-    "title": "Chris Mitchell (Music Hall)",
+    "title": "Chris Mitchell",
     "performers": [
       {
         "name": "Chris Mitchell",
@@ -7924,7 +7862,7 @@
     "id": "house-of-blues-2026-11-06-chris-mitchell"
   },
   {
-    "title": "Pigeons Playing Ping Pong (Music Hall)",
+    "title": "Pigeons Playing Ping Pong",
     "performers": [
       {
         "name": "Pigeons Playing Ping Pong",
@@ -7943,7 +7881,7 @@
     "id": "house-of-blues-2026-11-07-pigeons-playing-ping-pong"
   },
   {
-    "title": "Palace (Music Hall)",
+    "title": "Palace",
     "performers": [
       {
         "name": "Palace",
@@ -7962,7 +7900,7 @@
     "id": "house-of-blues-2026-11-11-palace"
   },
   {
-    "title": "Pouya (Music Hall)",
+    "title": "Pouya",
     "performers": [
       {
         "name": "Pouya",
@@ -7981,7 +7919,7 @@
     "id": "house-of-blues-2026-11-12-pouya"
   },
   {
-    "title": "The Menzingers (Music Hall)",
+    "title": "The Menzingers",
     "performers": [
       {
         "name": "The Menzingers",
@@ -8000,7 +7938,7 @@
     "id": "house-of-blues-2026-11-13-the-menzingers"
   },
   {
-    "title": "AJ McLean (Music Hall)",
+    "title": "AJ McLean",
     "performers": [
       {
         "name": "AJ McLean",
@@ -8019,7 +7957,7 @@
     "id": "house-of-blues-2026-11-14-aj-mclean"
   },
   {
-    "title": "Rival Sons (Music Hall)",
+    "title": "Rival Sons",
     "performers": [
       {
         "name": "Rival Sons",
@@ -8038,7 +7976,7 @@
     "id": "house-of-blues-2026-11-18-rival-sons"
   },
   {
-    "title": "Everclear (Music Hall)",
+    "title": "Everclear",
     "performers": [
       {
         "name": "Everclear",
@@ -8057,7 +7995,7 @@
     "id": "house-of-blues-2026-11-19-everclear"
   },
   {
-    "title": "Ekoostik Hookah (Music Hall)",
+    "title": "Ekoostik Hookah",
     "performers": [
       {
         "name": "Ekoostik Hookah",
@@ -8076,7 +8014,45 @@
     "id": "house-of-blues-2026-11-21-ekoostik-hookah"
   },
   {
-    "title": "The Pineapple Thief (Music Hall)",
+    "title": "Bleood",
+    "performers": [
+      {
+        "name": "Bleood",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-11-24-bleood"
+  },
+  {
+    "title": "Welshly Arms",
+    "performers": [
+      {
+        "name": "Welshly Arms",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-11-27-welshly-arms"
+  },
+  {
+    "title": "The Pineapple Thief",
     "performers": [
       {
         "name": "The Pineapple Thief",
@@ -8095,7 +8071,7 @@
     "id": "house-of-blues-2026-11-28-the-pineapple-thief"
   },
   {
-    "title": "The Bouncing Souls (Music Hall)",
+    "title": "The Bouncing Souls",
     "performers": [
       {
         "name": "The Bouncing Souls",
@@ -8114,7 +8090,7 @@
     "id": "house-of-blues-2026-12-02-the-bouncing-souls"
   },
   {
-    "title": "GWAR (Music Hall)",
+    "title": "GWAR",
     "performers": [
       {
         "name": "GWAR",
@@ -8133,10 +8109,10 @@
     "id": "house-of-blues-2026-12-05-gwar"
   },
   {
-    "title": "The Mary Wallopers (Music Hall)",
+    "title": "The Mary Wallopers",
     "performers": [
       {
-        "name": "VNV Nation",
+        "name": "The Mary Wallopers",
         "headliner": true
       }
     ],
@@ -8149,10 +8125,10 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2027-03-14-mary-wallopers"
+    "id": "house-of-blues-2027-03-14-the-mary-wallopers"
   },
   {
-    "title": "VNV Nation (Music Hall)",
+    "title": "VNV Nation",
     "performers": [
       {
         "name": "VNV Nation",
@@ -13601,53 +13577,1101 @@
 
 
   {
-    "title": "MIKE JAMES",
+    "title": "Wear It Once Costume Party",
     "performers": [
       {
-        "name": "MIKE JAMES",
+        "name": "Wear It Once",
         "headliner": true
       }
     ],
-    "date": "2026-08-15",
-    "time": null,
+    "date": "2026-08-28",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
+    "venueId": "twist-social-club",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-08-15-mike-james"
+    "id": "twist-social-club-2026-08-28-wear-it-once"
   },
   {
-    "title": "JUST KIDS AGAIN",
+    "title": "Latrice's Bombshell Brunch",
     "performers": [
       {
-        "name": "JUST KIDS AGAIN",
+        "name": "Latrice",
         "headliner": true
+      },
+      {
+        "name": "Lady Inferno Diamond",
+        "headliner": false
       }
     ],
-    "date": "2026-08-22",
-    "time": null,
+    "date": "2026-08-30",
+    "time": "13:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
+    "venueId": "twist-social-club",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-08-22-just-kids-again"
+    "id": "twist-social-club-2026-08-30-latrice"
   },
   {
-    "title": "PHERO",
+    "title": "Beyoncé's Birthday Party",
     "performers": [
       {
-        "name": "PHERO",
+        "name": "Beyoncé",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-09-04-beyonc"
+  },
+  {
+    "title": "Annual Labor Day White Party",
+    "performers": [
+      {
+        "name": "Latrice J-Love Diamond",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-09-05-latrice-j-love-diamond"
+  },
+  {
+    "title": "American Whorror Story",
+    "performers": [
+      {
+        "name": "American Whorror Story",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-09-25-american-whorror-story"
+  },
+  {
+    "title": "Practical Magic Brunch",
+    "performers": [
+      {
+        "name": "Practical Magic Brunch",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "10:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-10-10-practical-magic-brunch"
+  },
+
+
+  {
+    "title": "MIX: Island Vibes",
+    "performers": [
+      {
+        "name": "MIX: Island Vibes",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "18:00",
+    "doors": null,
+    "price": "$16, $5 Members",
+    "eventUrl": "https://www.clevelandart.org/events/mix-island-vibes",
+    "ticketUrl": "https://www.clevelandart.org/events/bc0831b9-06bb-47fa-9b29-35717bfceec1/19421/steps/1?nodeType=event",
+    "venueId": "cleveland-museum-of-art",
+    "source": "manual",
+    "manual": true,
+    "id": "cleveland-museum-of-art-2026-09-04-mix-island-vibes"
+  },
+
+
+
+
+  {
+    "title": "Endrock",
+    "performers": [
+      {
+        "name": "Endrock",
         "headliner": true
       }
     ],
     "date": "2026-08-29",
-    "time": null,
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-08-29-endrock"
+  },
+  {
+    "title": "The Scenic Route",
+    "performers": [
+      {
+        "name": "The Scenic Route",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-09-05-the-scenic-route"
+  },
+  {
+    "title": "The Ladies Night",
+    "performers": [
+      {
+        "name": "The Ladies Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-09-12-the-ladies-night"
+  },
+  {
+    "title": "Drunk Betty",
+    "performers": [
+      {
+        "name": "Drunk Betty",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-10-03-drunk-betty"
+  },
+  {
+    "title": "Third Monkey",
+    "performers": [
+      {
+        "name": "Third Monkey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-24",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-10-24-third-monkey"
+  },
+  {
+    "title": "Three Day Weekend",
+    "performers": [
+      {
+        "name": "Three Day Weekend",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-07",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-11-07-three-day-weekend"
+  },
+  {
+    "title": "4 Locos",
+    "performers": [
+      {
+        "name": "4 Locos",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-11-14-4-locos"
+  },
+  {
+    "title": "Alternation",
+    "performers": [
+      {
+        "name": "Alternation",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-11-21-alternation"
+  },
+  {
+    "title": "The Ladies Night",
+    "performers": [
+      {
+        "name": "The Ladies Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-05",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-12-05-the-ladies-night"
+  },
+  {
+    "title": "Dunk Betty",
+    "performers": [
+      {
+        "name": "Dunk Betty",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-12-19-dunk-betty"
+  },
+
+  {
+    "title": "Country Honk",
+    "performers": [
+      {
+        "name": "Country Honk",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-23",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-08-23-country-honk"
+  },
+  {
+    "title": "Cocktail Johnny",
+    "performers": [
+      {
+        "name": "Cocktail Johnny",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-09-12-cocktail-johnny"
+  },
+  {
+    "title": "Jeep Nite: Jeep vs Broncos",
+    "performers": [],
+    "date": "2026-09-16",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-09-16-jeep-nite-jeep-vs-broncos"
+  },
+  {
+    "title": "Alan Carl",
+    "performers": [
+      {
+        "name": "Alan Carl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-09-19-alan-carl"
+  },
+  {
+    "title": "Post Road",
+    "performers": [
+      {
+        "name": "Post Road",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-04",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-04-post-road"
+  },
+  {
+    "title": "Audiophile",
+    "performers": [
+      {
+        "name": "Audiophile",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-09-audiophile"
+  },
+  {
+    "title": "Tricky Dick & The Cover Ups",
+    "performers": [
+      {
+        "name": "Tricky Dick & The Cover Ups",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-10-tricky-dick-the-cover-ups"
+  },
+  {
+    "title": "Old Skool",
+    "performers": [
+      {
+        "name": "Old Skool",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-16-old-skool"
+  },
+  {
+    "title": "Radio Tokyo",
+    "performers": [
+      {
+        "name": "Radio Tokyo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-17-radio-tokyo"
+  },
+  {
+    "title": "Jeep Nite: Go Topless for Breast Cancer",
+    "performers": [],
+    "date": "2026-10-20",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-20-jeep-nite-go-topless-for-breast-cancer"
+  },
+  {
+    "title": "Hair Nation",
+    "performers": [
+      {
+        "name": "Hair Nation",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-23",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-23-hair-nation"
+  },
+  {
+    "title": "Boaterhead",
+    "performers": [
+      {
+        "name": "Boaterhead",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-24",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-24-boaterhead"
+  },
+  {
+    "title": "The Spazmatics",
+    "performers": [
+      {
+        "name": "The Spazmatics",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-30",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-30-the-spazmatics"
+  },
+  {
+    "title": "Faction",
+    "performers": [
+      {
+        "name": "Faction",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-10-31-faction"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-06",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-06-custard-pie"
+  },
+  {
+    "title": "Out of Eden",
+    "performers": [
+      {
+        "name": "Out of Eden",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-07",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-07-out-of-eden"
+  },
+  {
+    "title": "Follow the Sun",
+    "performers": [
+      {
+        "name": "Follow the Sun",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-14-follow-the-sun"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-14-disco-inferno"
+  },
+  {
+    "title": "Jeep Nite: First Responders Appreciation",
+    "performers": [],
+    "date": "2026-11-17",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-17-jeep-nite-first-responders-appreciation"
+  },
+  {
+    "title": "Cocktail Johnny",
+    "performers": [
+      {
+        "name": "Cocktail Johnny",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-20-cocktail-johnny"
+  },
+  {
+    "title": "Trailer Park Ninjas",
+    "performers": [
+      {
+        "name": "Trailer Park Ninjas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-21-trailer-park-ninjas"
+  },
+  {
+    "title": "The Ladies Night",
+    "performers": [
+      {
+        "name": "The Ladies Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-25",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-25-the-ladies-night"
+  },
+  {
+    "title": "Old Skool",
+    "performers": [
+      {
+        "name": "Old Skool",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-27-old-skool"
+  },
+  {
+    "title": "Jam Machine",
+    "performers": [
+      {
+        "name": "Jam Machine",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-11-28-jam-machine"
+  },
+  {
+    "title": "Bad Juju",
+    "performers": [
+      {
+        "name": "Bad Juju",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-06",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-06-bad-juju"
+  },
+  {
+    "title": "That 80's Band",
+    "performers": [
+      {
+        "name": "That 80's Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-11-that-80-s-band"
+  },
+  {
+    "title": "Rock the House",
+    "performers": [
+      {
+        "name": "Rock the House",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-12-rock-the-house"
+  },
+  {
+    "title": "1988",
+    "performers": [
+      {
+        "name": "1988",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-18",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-18-1988"
+  },
+  {
+    "title": "Country Redford",
+    "performers": [
+      {
+        "name": "Country Redford",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-19-country-redford"
+  },
+  {
+    "title": "Dan & Nick",
+    "performers": [
+      {
+        "name": "Dan & Nick",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-20",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-20-dan-nick"
+  },
+  {
+    "title": "Trailer Park Ninjas",
+    "performers": [
+      {
+        "name": "Trailer Park Ninjas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-31",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-broadview-heights",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-broadview-heights-2026-12-31-trailer-park-ninjas"
+  },
+
+  {
+    "title": "Silver Springs",
+    "performers": [
+      {
+        "name": "Silver Springs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-streetsboro",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-streetsboro-2026-08-29-silver-springs"
+  },
+  {
+    "title": "Revolution Pie",
+    "performers": [
+      {
+        "name": "Revolution Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-streetsboro",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-streetsboro-2026-09-05-revolution-pie"
+  },
+  {
+    "title": "Jeep Nite: Jeep vs Broncos",
+    "performers": [
+      {
+        "name": "Jeep Nite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-08",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-streetsboro",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-streetsboro-2026-09-08-jeep-nite"
+  },
+  {
+    "title": "Jeep Nite: Go Topless for Breast Cancer",
+    "performers": [
+      {
+        "name": "Jeep Nite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-13",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-streetsboro",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-streetsboro-2026-10-13-jeep-nite"
+  },
+  {
+    "title": "Jeep Nite: First Responders Appreciation",
+    "performers": [
+      {
+        "name": "Jeep Nite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-10",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-streetsboro",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-streetsboro-2026-11-10-jeep-nite"
+  },
+
+
+
+
+
+
+  {
+    "title": "Marcus Alan Ward",
+    "performers": [
+      {
+        "name": "Marcus Alan Ward",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-08-28-marcus-alan-ward"
+  },
+  {
+    "title": "DJ Ik Dubaku",
+    "performers": [
+      {
+        "name": "DJ Ik Dubaku",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-08-29-dj-ik-dubaku"
+  },
+  {
+    "title": "DJ JayBe",
+    "performers": [
+      {
+        "name": "DJ JayBe",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-28",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-08-28-dj-jaybe"
+  },
+  {
+    "title": "DJ Flash Flaco",
+    "performers": [
+      {
+        "name": "DJ Flash Flaco",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-08-29-dj-flash-flaco"
+  },
+  {
+    "title": "DJ Phero",
+    "performers": [
+      {
+        "name": "DJ Phero",
+        "headliner": true
+      }
+    ],
+    "date": "2026-08-29",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -13655,7 +14679,34 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-08-29-phero"
+    "id": "smoke-and-mirrors-2026-08-29-dj-phero"
+  },
+  {
+    "title": "Clown Prom",
+    "performers": [
+      {
+        "name": "Clown Prom",
+        "headliner": true
+      },
+      {
+        "name": "DJ EENY",
+        "headliner": false
+      },
+      {
+        "name": "Kellevators",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-09-04-clown-prom"
   }
 
 

@@ -300,6 +300,96 @@
     "time": "21:00",
     "startDate": "2026-08-10",
     "endDate": null
+  },
+
+
+
+
+  {
+    "id": "twist-monday-matinee",
+    "venueId": "twist-social-club",
+    "title": "Monday Matinee Showtunes Happy Hour",
+    "weekday": 1,
+    "nth": null,
+    "time": "16:00",
+    "startDate": "2026-08-24",
+    "endDate": null
+  },
+  {
+    "id": "twist-trivia-tuesdays",
+    "venueId": "twist-social-club",
+    "title": "LGBTQ+ Trivia Tuesdays",
+    "weekday": 2,
+    "nth": null,
+    "time": "19:00",
+    "startDate": "2026-08-25",
+    "endDate": null
+  },
+  {
+    "id": "twist-karaoke-wednesdays",
+    "venueId": "twist-social-club",
+    "title": "Karaoke Wednesdays",
+    "weekday": 3,
+    "nth": null,
+    "time": "21:30",
+    "startDate": "2026-08-26",
+    "endDate": null
+  },
+  {
+    "id": "twist-malibus-dreamhouse",
+    "venueId": "twist-social-club",
+    "title": "Malibu's Dreamhouse Drag Show",
+    "weekday": 4,
+    "nth": [1, 3],
+    "time": "20:30",
+    "startDate": "2026-08-27",
+    "endDate": null
+  },
+  {
+    "id": "twist-dj-saturdays",
+    "venueId": "twist-social-club",
+    "title": "DJ Mike Filly",
+    "weekday": 6,
+    "nth": null,
+    "time": "22:00",
+    "startDate": "2026-08-29",
+    "endDate": null
+  },
+  {
+    "id": "twist-tea-dances",
+    "venueId": "twist-social-club",
+    "title": "Tea Dances",
+    "weekday": 0,
+    "nth": null,
+    "time": "16:00",
+    "startDate": "2026-08-30",
+    "endDate": null
+  },
+
+
+
+
+
+  {
+    "id": "nano-brew-trivia",
+    "venueId": "nano-brew",
+    "title": "Trivia Wednesdays",
+    "weekday": 3,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-08-26",
+    "endDate": null
+  },
+
+  {
+    "id": "bird-of-paradise-karaoke",
+    "venueId": "bird-of-paradise",
+    "title": "KARAOKE",
+    "weekday": 4,
+    "nth": [1],
+    "time": "20:00",
+    "startDate": "2026-09-03",
+    "endDate": null
   }
 
 
