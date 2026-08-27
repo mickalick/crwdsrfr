@@ -640,6 +640,34 @@
   },
   "events": [
     {
+      "id": "velvet-don-phillips-thu-2026-08-27",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2026-08-27",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
+      "id": "velvet-don-phillips-thu-hh-2026-08-27",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2026-08-27",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true
+    },
+    {
       "id": "grog-shop-2026-08-27-toni-romiti-16-again-tour",
       "title": "TONI ROMITI: 16 Again Tour",
       "venueId": "grog-shop",
@@ -3019,7 +3047,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-08-28",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "17:30",
@@ -3033,7 +3061,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-08-28",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -3047,7 +3075,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-08-28",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -3061,7 +3089,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-08-28",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "19:00",
@@ -3075,7 +3103,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-08-28",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "20:00",
@@ -3089,7 +3117,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-08-28",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-28",
       "time": "21:00",
@@ -5567,7 +5595,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-08-29",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -5581,7 +5609,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-08-29",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -5595,7 +5623,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-08-29",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "19:00",
@@ -5609,7 +5637,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-08-29",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "20:00",
@@ -5623,7 +5651,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-08-29",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-29",
       "time": "21:00",
@@ -6950,7 +6978,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-08-31",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-08-31",
       "time": "21:00",
@@ -7240,7 +7268,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-01",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-01",
       "time": "21:00",
@@ -7698,7 +7726,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-02",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-02",
       "time": "21:00",
@@ -8297,7 +8325,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-03",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-03",
       "time": "21:00",
@@ -8311,7 +8339,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-03",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-03",
       "time": "17:00",
@@ -9412,7 +9440,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-04",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "17:30",
@@ -9426,7 +9454,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-04",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -9440,7 +9468,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-04",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -9454,7 +9482,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-04",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "19:00",
@@ -9468,7 +9496,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-04",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "20:00",
@@ -9482,7 +9510,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-04",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-04",
       "time": "21:00",
@@ -10412,7 +10440,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-05",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -10426,7 +10454,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-05",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -10440,7 +10468,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-05",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "19:00",
@@ -10454,7 +10482,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-05",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "20:00",
@@ -10468,7 +10496,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-05",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-05",
       "time": "21:00",
@@ -11225,7 +11253,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-07",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-07",
       "time": "21:00",
@@ -11525,7 +11553,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-08",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-08",
       "time": "21:00",
@@ -12071,7 +12099,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-09",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-09",
       "time": "21:00",
@@ -12768,7 +12796,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-10",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-10",
       "time": "21:00",
@@ -12782,7 +12810,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-10",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-10",
       "time": "17:00",
@@ -13694,7 +13722,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-11",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "17:30",
@@ -13708,7 +13736,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-11",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -13722,7 +13750,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-11",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -13736,7 +13764,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-11",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "19:00",
@@ -13750,7 +13778,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-11",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "20:00",
@@ -13764,7 +13792,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-11",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-11",
       "time": "21:00",
@@ -14656,7 +14684,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-12",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -14670,7 +14698,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-12",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -14684,7 +14712,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-12",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "19:00",
@@ -14698,7 +14726,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-12",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "20:00",
@@ -14712,7 +14740,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-12",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-12",
       "time": "21:00",
@@ -15573,7 +15601,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-14",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-14",
       "time": "21:00",
@@ -16024,7 +16052,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-15",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-15",
       "time": "21:00",
@@ -16658,7 +16686,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-16",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-16",
       "time": "21:00",
@@ -17373,7 +17401,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-17",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-17",
       "time": "21:00",
@@ -17387,7 +17415,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-17",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-17",
       "time": "17:00",
@@ -18125,7 +18153,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-18",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "17:30",
@@ -18139,7 +18167,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-18",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -18153,7 +18181,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-18",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -18167,7 +18195,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-18",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "19:00",
@@ -18181,7 +18209,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-18",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "20:00",
@@ -18195,7 +18223,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-18",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-18",
       "time": "21:00",
@@ -19269,7 +19297,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-19",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -19283,7 +19311,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-19",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -19297,7 +19325,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-19",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "19:00",
@@ -19311,7 +19339,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-19",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "20:00",
@@ -19325,7 +19353,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-19",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-19",
       "time": "21:00",
@@ -20283,7 +20311,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-21",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-21",
       "time": "21:00",
@@ -20601,7 +20629,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-22",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-22",
       "time": "21:00",
@@ -21059,7 +21087,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-23",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-23",
       "time": "21:00",
@@ -21613,7 +21641,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-09-24",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-24",
       "time": "21:00",
@@ -21627,7 +21655,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-09-24",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-24",
       "time": "17:00",
@@ -22537,7 +22565,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-25",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "17:30",
@@ -22551,7 +22579,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-09-25",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -22565,7 +22593,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-09-25",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -22579,7 +22607,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-09-25",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "19:00",
@@ -22593,7 +22621,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-09-25",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "20:00",
@@ -22607,7 +22635,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-09-25",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-25",
       "time": "21:00",
@@ -23596,7 +23624,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-26",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -23610,7 +23638,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-09-26",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -23624,7 +23652,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-09-26",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "19:00",
@@ -23638,7 +23666,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-09-26",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "20:00",
@@ -23652,7 +23680,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-09-26",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-26",
       "time": "21:00",
@@ -24393,7 +24421,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-09-28",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-28",
       "time": "21:00",
@@ -24640,7 +24668,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-29",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-29",
       "time": "21:00",
@@ -25089,7 +25117,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-09-30",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-09-30",
       "time": "21:00",
@@ -25455,7 +25483,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-01",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-01",
       "time": "21:00",
@@ -25469,7 +25497,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-01",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-01",
       "time": "17:00",
@@ -26034,7 +26062,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-02",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "17:30",
@@ -26048,7 +26076,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-02",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -26062,7 +26090,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-02",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -26076,7 +26104,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-02",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "19:00",
@@ -26090,7 +26118,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-02",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "20:00",
@@ -26104,7 +26132,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-02",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-02",
       "time": "21:00",
@@ -26594,7 +26622,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-03",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -26608,7 +26636,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-03",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -26622,7 +26650,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-03",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "19:00",
@@ -26636,7 +26664,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-03",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "20:00",
@@ -26650,7 +26678,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-03",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-03",
       "time": "21:00",
@@ -27208,7 +27236,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-05",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-05",
       "time": "21:00",
@@ -27412,7 +27440,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-06",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-06",
       "time": "21:00",
@@ -27795,7 +27823,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-07",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-07",
       "time": "21:00",
@@ -28131,7 +28159,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-08",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-08",
       "time": "21:00",
@@ -28145,7 +28173,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-08",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-08",
       "time": "17:00",
@@ -28558,7 +28586,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-09",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "17:30",
@@ -28572,7 +28600,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-09",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -28586,7 +28614,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-09",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -28600,7 +28628,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-09",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "19:00",
@@ -28614,7 +28642,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-09",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "20:00",
@@ -28628,7 +28656,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-09",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-09",
       "time": "21:00",
@@ -29246,7 +29274,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-10",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -29260,7 +29288,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-10",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -29274,7 +29302,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-10",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "19:00",
@@ -29288,7 +29316,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-10",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "20:00",
@@ -29302,7 +29330,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-10",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-10",
       "time": "21:00",
@@ -29840,7 +29868,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-12",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-12",
       "time": "21:00",
@@ -30111,7 +30139,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-13",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-13",
       "time": "21:00",
@@ -30518,7 +30546,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-14",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-14",
       "time": "21:00",
@@ -30861,7 +30889,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-15",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-15",
       "time": "21:00",
@@ -30875,7 +30903,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-15",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-15",
       "time": "17:00",
@@ -31365,7 +31393,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-16",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "17:30",
@@ -31379,7 +31407,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-16",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -31393,7 +31421,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-16",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -31407,7 +31435,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-16",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "19:00",
@@ -31421,7 +31449,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-16",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "20:00",
@@ -31435,7 +31463,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-16",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-16",
       "time": "21:00",
@@ -31876,7 +31904,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-17",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -31890,7 +31918,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-17",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -31904,7 +31932,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-17",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "19:00",
@@ -31918,7 +31946,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-17",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "20:00",
@@ -31932,7 +31960,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-17",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-17",
       "time": "21:00",
@@ -32557,7 +32585,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-19",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-19",
       "time": "21:00",
@@ -32838,7 +32866,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-20",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-20",
       "time": "21:00",
@@ -33148,7 +33176,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-21",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-21",
       "time": "21:00",
@@ -33463,7 +33491,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-22",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-22",
       "time": "21:00",
@@ -33477,7 +33505,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-22",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-22",
       "time": "17:00",
@@ -33919,7 +33947,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-23",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "17:30",
@@ -33933,7 +33961,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-23",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -33947,7 +33975,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-23",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -33961,7 +33989,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-23",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "19:00",
@@ -33975,7 +34003,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-23",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "20:00",
@@ -33989,7 +34017,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-23",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-23",
       "time": "21:00",
@@ -34523,7 +34551,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-24",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -34537,7 +34565,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-24",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -34551,7 +34579,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-24",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "19:00",
@@ -34565,7 +34593,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-24",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "20:00",
@@ -34579,7 +34607,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-24",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-24",
       "time": "21:00",
@@ -35073,7 +35101,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-10-26",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-26",
       "time": "21:00",
@@ -35279,7 +35307,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-27",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-27",
       "time": "21:00",
@@ -35550,7 +35578,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-10-28",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-28",
       "time": "21:00",
@@ -35803,7 +35831,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-10-29",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-29",
       "time": "21:00",
@@ -35817,7 +35845,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-10-29",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-29",
       "time": "17:00",
@@ -36100,7 +36128,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-30",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "17:30",
@@ -36114,7 +36142,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-10-30",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -36128,7 +36156,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-10-30",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -36142,7 +36170,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-10-30",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "19:00",
@@ -36156,7 +36184,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-10-30",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "20:00",
@@ -36170,7 +36198,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-10-30",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-30",
       "time": "21:00",
@@ -36600,7 +36628,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-31",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -36614,7 +36642,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-10-31",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -36628,7 +36656,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-10-31",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "19:00",
@@ -36642,7 +36670,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-10-31",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "20:00",
@@ -36656,7 +36684,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-10-31",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-10-31",
       "time": "21:00",
@@ -37028,7 +37056,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-02",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-02",
       "time": "21:00",
@@ -37146,7 +37174,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-03",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-03",
       "time": "21:00",
@@ -37389,7 +37417,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-04",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-04",
       "time": "21:00",
@@ -37661,7 +37689,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-05",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-05",
       "time": "21:00",
@@ -37675,7 +37703,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-05",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-05",
       "time": "17:00",
@@ -38133,7 +38161,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-06",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "17:30",
@@ -38147,7 +38175,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-06",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -38161,7 +38189,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-06",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -38175,7 +38203,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-06",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "19:00",
@@ -38189,7 +38217,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-06",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "20:00",
@@ -38203,7 +38231,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-06",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-06",
       "time": "21:00",
@@ -38599,7 +38627,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-07",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -38613,7 +38641,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-07",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -38627,7 +38655,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-07",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "19:00",
@@ -38641,7 +38669,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-07",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "20:00",
@@ -38655,7 +38683,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-07",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-07",
       "time": "21:00",
@@ -38919,7 +38947,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-09",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-09",
       "time": "21:00",
@@ -39125,7 +39153,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-10",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-10",
       "time": "21:00",
@@ -39461,7 +39489,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-11",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-11",
       "time": "21:00",
@@ -39733,7 +39761,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-12",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-12",
       "time": "21:00",
@@ -39747,7 +39775,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-12",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-12",
       "time": "17:00",
@@ -40095,7 +40123,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-13",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "17:30",
@@ -40109,7 +40137,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-13",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -40123,7 +40151,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-13",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -40137,7 +40165,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-13",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "19:00",
@@ -40151,7 +40179,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-13",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "20:00",
@@ -40165,7 +40193,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-13",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-13",
       "time": "21:00",
@@ -40517,7 +40545,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-14",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -40531,7 +40559,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-14",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -40545,7 +40573,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-14",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "19:00",
@@ -40559,7 +40587,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-14",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "20:00",
@@ -40573,7 +40601,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-14",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-14",
       "time": "21:00",
@@ -40969,7 +40997,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-16",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-16",
       "time": "21:00",
@@ -41167,7 +41195,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-17",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-17",
       "time": "21:00",
@@ -41340,7 +41368,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-18",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-18",
       "time": "21:00",
@@ -41564,7 +41592,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-19",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-19",
       "time": "21:00",
@@ -41578,7 +41606,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-19",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-19",
       "time": "17:00",
@@ -41896,7 +41924,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-20",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "17:30",
@@ -41910,7 +41938,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-20",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -41924,7 +41952,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-20",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -41938,7 +41966,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-20",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "19:00",
@@ -41952,7 +41980,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-20",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "20:00",
@@ -41966,7 +41994,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-20",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-20",
       "time": "21:00",
@@ -42382,7 +42410,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-21",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -42396,7 +42424,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-21",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -42410,7 +42438,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-21",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "19:00",
@@ -42424,7 +42452,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-21",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "20:00",
@@ -42438,7 +42466,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-21",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-21",
       "time": "21:00",
@@ -42733,7 +42761,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-23",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-23",
       "time": "21:00",
@@ -42882,7 +42910,7 @@
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-24",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-24",
       "time": "21:00",
@@ -43101,7 +43129,7 @@
     },
     {
       "id": "velvet-don-phillips-wed-2026-11-25",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-25",
       "time": "21:00",
@@ -43190,7 +43218,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-2026-11-26",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-26",
       "time": "21:00",
@@ -43204,7 +43232,7 @@
     },
     {
       "id": "velvet-don-phillips-thu-hh-2026-11-26",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-26",
       "time": "17:00",
@@ -43417,7 +43445,7 @@
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-27",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "17:30",
@@ -43431,7 +43459,7 @@
     },
     {
       "id": "velvet-jazz-trio-late-2026-11-27",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -43445,7 +43473,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-main-2026-11-27",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -43459,7 +43487,7 @@
     },
     {
       "id": "velvet-don-phillips-fri-back-2026-11-27",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "19:00",
@@ -43473,7 +43501,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-main-2026-11-27",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "20:00",
@@ -43487,7 +43515,7 @@
     },
     {
       "id": "velvet-david-blazer-fri-back-2026-11-27",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-27",
       "time": "21:00",
@@ -43735,7 +43763,7 @@
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-28",
-      "title": "Jazz Trio - John James, Bradford and Skip (Lounge)",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -43749,7 +43777,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-main-2026-11-28",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -43763,7 +43791,7 @@
     },
     {
       "id": "velvet-don-phillips-sat-back-2026-11-28",
-      "title": "Pianist - Don Phillips (Back Room)",
+      "title": "Pianist Don Phillips (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "19:00",
@@ -43777,7 +43805,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-main-2026-11-28",
-      "title": "Pianist - David Blazer (Main Lounge)",
+      "title": "Pianist David Blazer (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "20:00",
@@ -43791,7 +43819,7 @@
     },
     {
       "id": "velvet-david-blazer-sat-back-2026-11-28",
-      "title": "Pianist - David Blazer (Back Room)",
+      "title": "Pianist David Blazer (Back Room)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-28",
       "time": "21:00",
@@ -44065,7 +44093,7 @@
     },
     {
       "id": "velvet-don-phillips-mon-2026-11-30",
-      "title": "Pianist - Don Phillips (Main Lounge)",
+      "title": "Pianist Don Phillips (Main Lounge)",
       "venueId": "velvet-tango-room",
       "date": "2026-11-30",
       "time": "21:00",
