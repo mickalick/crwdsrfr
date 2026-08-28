@@ -652,9 +652,11 @@ footer a {
 #currentSelector {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	width: 60px;
 	height: 100%;
-	padding: 0 16px;
 	position: relative;
+	margin-right: 8px;
 }
 
 #current .icon {
@@ -797,6 +799,7 @@ footer a {
   mask-image: url('../images/icons/calendar.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
+  margin-right: 0 !important;
 }
 
 #fwd {
@@ -1565,7 +1568,7 @@ span.flatpickr-weekday {
 	}
 
 	#currentSelector h3 {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	#navArrows li {

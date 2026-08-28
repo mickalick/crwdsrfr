@@ -197,7 +197,7 @@ async function initMap() {
     mapId: "CRWDSRFR_VENUE_MAP",
     disableDefaultUI: true,
     zoomControl: true,
-    gestureHandling: 'greedy',
+    gestureHandling: 'cooperative',
     isFractionalZoomEnabled: false
   });
 

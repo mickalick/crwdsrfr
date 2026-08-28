@@ -464,13 +464,13 @@ const today = new Date();
 
 function setDate(date) {
   const formatted = date.toLocaleDateString('en-US', options);
-  document.querySelector('#currentSelector h3').textContent = formatted;
+  document.querySelector('#current h3').textContent = formatted;
   document.getElementById('datePicker')._flatpickr.setDate(date, false);
   currentDateStr = toLocalDateStr(date);
   applyFilters();
 }
 
-document.querySelector('#currentSelector h3').textContent = today.toLocaleDateString('en-US', options);
+document.querySelector('#current h3').textContent = today.toLocaleDateString('en-US', options);
 
 let lastAutoClose = 0;
 
@@ -492,7 +492,7 @@ const datePickerFp = flatpickr('#datePicker', {
   onChange: function(selectedDates) {
     if (!allData || selectedDates.length === 0) return;
     const formatted = selectedDates[0].toLocaleDateString('en-US', options);
-    document.querySelector('#currentSelector h3').textContent = formatted;
+    document.querySelector('#current h3').textContent = formatted;
     currentDateStr = toLocalDateStr(selectedDates[0]);
     applyFilters();
   }
