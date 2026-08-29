@@ -345,10 +345,10 @@
 
 .boardTileSubmitted {
 	margin-top: 8px;
-	font-family: "Plus Jakarta Sans", sans-serif;
+	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	line-height: 0.8;
-	color: #FFF;
+	color: #ADADAD;
 }
 
 .boardStateMsg {
