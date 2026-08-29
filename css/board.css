@@ -35,7 +35,7 @@
 	position: relative;
 	display: inline-flex;
 	width: 100%;
-	max-width: 480px;
+	max-width: 520px;
 	height: 70px;
 }
 
@@ -220,6 +220,11 @@
 	color: #FFF;
 }
 
+#boardContent .main .subHead {
+	margin-top: 60px;
+}
+
+
 @media (hover: hover) and (pointer: fine) {
 	#boardSettingsBar .filter-toggle:hover #fil {
 		background-color: #F9F976 !important;
@@ -239,16 +244,20 @@
 }
 
 @media screen and (max-width: 774px) {
-	#boardSearchWrapper {
-		max-width: 100%;
-	}
-
 	#boardSettingsBar {
 		justify-content: center;
 	}
 
 	#boardFilterToggle {
 		margin-top: 16px;
+	}
+
+	#boardSearchWrapper {
+		max-width: 100%;
+	}
+
+	#boardContent .main .subHead {
+		margin-top: 40px;
 	}
 }
 
@@ -352,8 +361,24 @@
 	color: #999;
 }
 
-#boardSentinel {
-	height: 1px;
+.board-load {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: 1px solid #F9F976;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 60px;
+}
+
+.board-load[hidden] {
+	display: none;
 }
 
 @media (hover: hover) and (pointer: fine) {

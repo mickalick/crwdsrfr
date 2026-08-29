@@ -160,7 +160,7 @@
 	if (!grid) return; // Not on the board page — data layer above is still available.
 
 	const resultsEl = document.getElementById('boardResults');
-	const sentinel = document.getElementById('boardSentinel');
+	const loadMoreBtn = document.getElementById('boardLoadMore');
 	const emptyMsg = document.getElementById('boardEmpty');
 	const loadingMsg = document.getElementById('boardLoading');
 
@@ -179,7 +179,6 @@
 	let filteredItems = []; // items after search + filters
 	let venueLookup = {};
 	let renderedCount = 0;
-	let observer = null;
 
 	let currentSearch = '';
 	const selectedVenueIds = new Set();
@@ -238,7 +237,7 @@
 		const term = currentSearch.trim();
 		subHeadEl.textContent = term === ''
 			? 'Most Recent Posts:'
-			: `Most Recent Posts including "${term}":`;
+			: `Most Recent Posts including "${term}"`;
 	}
 
 	function applyFilters() {
@@ -305,11 +304,6 @@
 	// renderEvents() on the calendar page.
 
 	function resetGrid() {
-		if (observer) {
-			observer.disconnect();
-			observer = null;
-		}
-
 		$(resultsEl).fadeTo(150, 0, function () {
 			grid.innerHTML = '';
 			renderedCount = 0;
@@ -318,11 +312,11 @@
 				emptyMsg.hidden = false;
 				emptyMsg.textContent = items.length === 0
 					? "Hmmm, there's nothing here yet..."
-					: 'No results found :(';
+					: 'No results — try a different search or filter.';
+				loadMoreBtn.hidden = true;
 			} else {
 				emptyMsg.hidden = true;
 				renderNextBatch();
-				setupObserver();
 			}
 
 			$(resultsEl).fadeTo(150, 1);
@@ -339,10 +333,7 @@
 
 		renderedCount += batch.length;
 
-		if (renderedCount >= filteredItems.length && observer) {
-			observer.disconnect();
-			observer = null;
-		}
+		loadMoreBtn.hidden = renderedCount >= filteredItems.length;
 	}
 
 	function buildTile(item) {
@@ -394,28 +385,13 @@
 		return tile;
 	}
 
-	// --- Lazy load trigger ------------------------------------------------
+	// --- Load More button ---------------------------------------------------
 
-	function setupObserver() {
-		if (!('IntersectionObserver' in window)) {
-			// Fallback: render everything at once if IO isn't supported.
-			renderNextBatch();
-			while (renderedCount < filteredItems.length) renderNextBatch();
-			return;
-		}
-
-		observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting && renderedCount < filteredItems.length) {
-					loadingMsg.hidden = false;
-					renderNextBatch();
-					loadingMsg.hidden = true;
-				}
-			});
-		}, { rootMargin: '400px 0px' });
-
-		observer.observe(sentinel);
-	}
+	loadMoreBtn.addEventListener('click', () => {
+		loadingMsg.hidden = false;
+		renderNextBatch();
+		loadingMsg.hidden = true;
+	});
 
 	// --- Filter chips -------------------------------------------------------
 
