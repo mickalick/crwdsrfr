@@ -373,9 +373,17 @@
 			tile.appendChild(caption);
 		}
 
+		const venueName = resolveVenueName(item.venueId, venueLookup);
+		if (venueName) {
+			const venueEl = document.createElement('span');
+			venueEl.className = 'boardTileSub';
+			venueEl.textContent = `at ${venueName}`;
+			tile.appendChild(venueEl);
+		}
+
 		if (item.submittedBy) {
 			const caption = document.createElement('span');
-			caption.className = 'boardTileSubmitted';
+			caption.className = 'boardTileSub';
 			caption.textContent = `from ${item.submittedBy}`;
 			tile.appendChild(caption);
 		}
@@ -532,6 +540,7 @@
 			video.src = item.src;
 			video.controls = true;
 			video.autoplay = true;
+			video.volume = 0.5;
 			video.playsInline = true;
 			modalMedia.appendChild(video);
 		} else {

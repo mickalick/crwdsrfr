@@ -343,8 +343,9 @@
 	color: #FFF;
 }
 
-.boardTileSubmitted {
+.boardTileSub {
 	margin-top: 8px;
+	margin-bottom: 4px;
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	line-height: 0.8;
@@ -406,7 +407,7 @@
 		font-size: 18px;
 	}
 
-	.boardTileSubmitted {
+	.boardTileSub {
 		font-size: 12px;
 	}
 }
