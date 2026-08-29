@@ -318,7 +318,7 @@
 				emptyMsg.hidden = false;
 				emptyMsg.textContent = items.length === 0
 					? "Hmmm, there's nothing here yet..."
-					: 'No results — try a different search or filter.';
+					: 'No results found :(';
 			} else {
 				emptyMsg.hidden = true;
 				renderNextBatch();
