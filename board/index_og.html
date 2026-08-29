@@ -1,0 +1,160 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Featured | CRWD SRFR</title>
+		<meta name="description" content="Featured shows around Cleveland this week.">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
+						<a class="navLink" href="featured.html"><li class="navItem currentPage">Featured</li></a>
+						<a class="navLink" href="/venues/"><li class="navItem">Venues</li></a>
+						<hr>
+						<a class="navLink" href="about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="contribute.html"><li class="navItem">Contribute</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="hero" class="page">
+				<div class="main">
+					<div class="pageHeader">
+						<div class="headContent">
+							<h1>Featured</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="featuredContent" class="page">
+				<div class="main">
+					<div class="contentSection">
+						<p>All featured shows and events are paid promotions that help support CRWD SRFR. That doesn't make them any less awesome though, so check them out below:</p>
+						<hr>
+					</div>
+				</div>
+			</section>
+			<section id="featuredSpace" class="page">
+				<div class="main">
+					<div id="featureTiles">
+						<div class="featureTile-Wide">
+							<p>Want to see your show here? <a class="navLink" href="contribute.html">Learn How</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="terms.html">Terms of Use</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+		
+	</body>
+
+	</html>

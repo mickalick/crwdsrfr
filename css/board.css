@@ -1,0 +1,245 @@
+/* board.css
+   Styles for /board/ — the media wall + modal.
+   Colors and type follow the existing style.css palette:
+   #222 page bg, #101010 panel/card bg, #62CBB8 teal accent,
+   #F9F976 yellow accent, #ADADAD/#999 muted text.
+*/
+
+#boardSpace.page {
+	align-items: flex-start;
+}
+
+#boardSpace .main,
+#boardContent .main {
+	margin-bottom: 0 !important;
+}
+
+#boardGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.boardTile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+	text-align: left;
+}
+
+.boardTileThumb {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	border-radius: 9px;
+	background-color: #101010;
+}
+
+.boardTileThumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.boardTileThumb-empty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #999;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+
+.boardTilePlayIcon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 48px;
+	height: 48px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: rgba(16, 16, 16, 0.65);
+	pointer-events: none;
+}
+
+.boardTilePlayIcon::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 9px 0 9px 15px;
+	border-color: transparent transparent transparent #FFF;
+}
+
+.boardTileCaption {
+	margin-top: 8px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #FFF;
+}
+
+.boardTileSubmitted {
+	margin-top: 8px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	line-height: 0.8;
+	color: #FFF;
+}
+
+.boardStateMsg {
+	width: 100%;
+	margin: 20px 0;
+	text-align: center;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #999;
+}
+
+#boardSentinel {
+	height: 1px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardTile:hover,
+	.boardTile:focus-visible {
+		transform: translateY(-3px);
+	}
+
+	.boardTile:hover .boardTileCaption,
+	.boardTile:focus-visible .boardTileCaption {
+		color: #62CBB8;
+	}
+}
+
+/* Responsive: 2-up on tablet, 1-up on phones (matches .main breakpoints) */
+@media screen and (max-width: 774px) {
+	#boardGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	#boardGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.boardTileCaption {
+		font-size: 14px;
+	}
+}
+
+/* --- Modal ------------------------------------------------------------ */
+
+.boardModal[hidden] {
+	display: none;
+}
+
+.boardModal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+}
+
+.boardModalBackdrop {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(16, 16, 16, 0.9);
+}
+
+.boardModalContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	max-height: 90vh;
+	width: 100%;
+	background-color: #101010;
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+.boardModalClose {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	z-index: 2;
+	background: none;
+	border: none;
+	color: #FFF;
+	font-size: 32px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 4px 8px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalClose:hover {
+		color: #62CBB8;
+	}
+}
+
+.boardModalMedia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	max-height: 70vh;
+}
+
+.boardModalMedia img,
+.boardModalMedia video {
+	width: 100%;
+	max-height: 70vh;
+	object-fit: contain;
+	display: block;
+}
+
+.boardModalMeta {
+	padding: 16px 20px 20px;
+}
+
+.boardModalMeta h2 {
+	font-size: 24px;
+}
+
+.boardModalSub {
+	font-family: "Space Mono", monospace;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #ADADAD;
+	margin: 0 0 8px;
+}
+
+.boardModalCredit {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #999;
+	margin: 0;
+}
+
+body.boardModalOpen {
+	overflow: hidden;
+}
