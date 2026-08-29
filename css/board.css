@@ -1,8 +1,14 @@
 /* board.css
-   Styles for /board/ — the media wall + modal.
+   Styles for /board/ — the media wall + modal + search/filter bar.
    Colors and type follow the existing style.css palette:
    #222 page bg, #101010 panel/card bg, #62CBB8 teal accent,
    #F9F976 yellow accent, #ADADAD/#999 muted text.
+
+   The search box and filter chip rules below intentionally mirror
+   #searchWrapper / #calendarSettingsBar / #calendarFilterPanel / #activeFilters
+   from style.css so the board's search + filter UI matches the calendar
+   page's look — just scoped to board-prefixed ids so this page's markup
+   stays consistent with the rest of the "board" naming used here.
 */
 
 #boardSpace.page {
@@ -13,6 +19,240 @@
 #boardContent .main {
 	margin-bottom: 0 !important;
 }
+
+/* --- Search + filter bar ----------------------------------------------- */
+
+#boardSettingsBar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+#boardSearchWrapper {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	max-width: 480px;
+	height: 70px;
+}
+
+#boardSearch {
+	width: 100%;
+	min-height: 70px;
+	background-color: #101010;
+	border: 3px solid #62CBB8;
+	border-radius: 9px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 16px;
+	padding-right: 60px;
+}
+
+#boardSearchWrapper.hasValue #boardSearch {
+	border: 3px solid #F9F976;
+}
+
+#boardSearchGo {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	top: 4px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#boardSearchReset {
+	display: none;
+}
+
+#boardSearchWrapper.hasValue #boardSearchGo {
+	display: none;
+}
+
+#boardSearchWrapper.hasValue #boardSearchReset {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	top: 4px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#boardSearchGo .icon, #boardSearchReset .icon {
+	width: 40px;
+	height: 40px;
+}
+
+#boardSettingsBar .filter-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#boardSettingsBar .filter-toggle .icon {
+	width: 32px;
+	height: 32px;
+}
+
+#boardSettingsBar .filter-toggle.active #fil {
+	background-color: #F9F976 !important;
+}
+
+#boardSettingsBar .filter-toggle.active {
+	border: 1px solid #F9F976;
+}
+
+#boardFilterPanel .filter-panel {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+#boardFilterPanel .filter-group-label {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FCFCFC;
+	margin-bottom: 8px;
+}
+
+#boardFilterPanel .filter-row {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+#boardFilterPanel .chip {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	padding: 8px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 20px;
+	color: #FFF;
+	cursor: pointer;
+	background: transparent;
+	transition: all .15s ease;
+}
+
+#boardFilterPanel .chip.active {
+	border-color: #F9F976 !important;
+	color: #F9F976;
+}
+
+#boardFilterPanel .chip-show-all {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	border-style: none;
+	color: #FFFFFF;
+	padding: 8px 0;
+	padding-left: 8px;
+	margin-right: 80px;
+}
+
+#boardActiveFiltersWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+#boardActiveFiltersWrapper #boardActiveFiltersLabel {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+#boardActiveFilters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+#boardActiveFilters .chip {
+	display: inline-flex;
+	align-items: baseline;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background: transparent;
+	border-style: none;
+	cursor: pointer;
+	gap: 8px;
+}
+
+#boardActiveFilters .chip-remove {
+	color: #FF6262;
+	font-size: 20px;
+}
+
+#boardActiveFilters .chip-reset {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	#boardSettingsBar .filter-toggle:hover #fil {
+		background-color: #F9F976 !important;
+	}
+
+	#boardFilterPanel .chip:hover {
+		border-color: #62CBB8;
+	}
+
+	#boardFilterPanel .chip-show-all:hover {
+		color: #62CBB8;
+	}
+
+	#boardActiveFilters .chip-reset:hover {
+		color: #F9F976;
+	}
+}
+
+@media screen and (max-width: 774px) {
+	#boardSearchWrapper {
+		max-width: 100%;
+	}
+
+	#boardSettingsBar {
+		justify-content: center;
+	}
+
+	#boardFilterToggle {
+		margin-top: 16px;
+	}
+}
+
+/* --- Media grid ---------------------------------------------------------- */
 
 #boardGrid {
 	display: grid;

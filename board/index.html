@@ -127,13 +127,55 @@
 						<div class="wave-top"></div>
 						<div class="wave-bottom"></div>
 					</div>
+
+					<div id="boardSettingsBar">
+						<div id="boardSearchWrapper">
+							<input type="text" id="boardSearch" name="boardSearch" placeholder="Search by title, venue, or name">
+							<button id="boardSearchGo" type="button" aria-label="Search"><span class="icon" id="ser"></span></button>
+							<button id="boardSearchReset" type="button" aria-label="Clear search"><span class="icon" id="clr"></span></button>
+						</div>
+
+						<button type="button" class="filter-toggle" id="boardFilterToggle" aria-label="Show Filters">
+							Filters <span class="icon" id="fil"></span>
+						</button>
+					</div>
+
+					<div id="boardFilterPanel">
+						<div class="filter-panel" id="boardFilters" style="display:none;">
+
+							<div class="filter-group">
+								<div class="filter-group-label">Venue</div>
+								<div class="filter-row" id="boardVenueFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Area</div>
+								<div class="filter-row" id="boardAreaFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<div class="filter-group-label">Type</div>
+								<div class="filter-row" id="boardTypeFilters"></div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="boardActiveFiltersWrapper" style="display:none;">
+						<h2 id="boardActiveFiltersLabel">Applied Filters:</h2>
+						<div id="boardActiveFilters"></div>
+					</div>
+
+					<h4 class="subHead"><span id="boardSubHead">Most Recent Posts:</span></h4>
 				</div>
 			</section>
 			<section id="boardSpace" class="page">
 				<div class="main">
-					<div id="boardGrid" aria-live="polite"></div>
+					<div id="boardResults">
+						<div id="boardGrid" aria-live="polite"></div>
+						<p id="boardEmpty" class="boardStateMsg" hidden>Hmmm, there's nothing here yet...</p>
+					</div>
 					<div id="boardSentinel"></div>
-					<p id="boardEmpty" class="boardStateMsg" hidden>Hmmm, there's nothing here yet...</p>
 					<p id="boardLoading" class="boardStateMsg" hidden>Waxing the board...</p>
 				</div>
 			</section>
