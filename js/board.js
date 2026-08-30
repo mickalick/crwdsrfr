@@ -236,8 +236,8 @@
 		const subHeadEl = document.getElementById('boardSubHead');
 		const term = currentSearch.trim();
 		subHeadEl.textContent = term === ''
-			? 'Most Recent Posts:'
-			: `Most Recent Posts including "${term}"`;
+			? 'Most Recent Shots:'
+			: `Most Recent Shots including "${term}"`;
 	}
 
 	function applyFilters() {
