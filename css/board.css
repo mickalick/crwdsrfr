@@ -220,7 +220,7 @@
 }
 
 #boardContent .main .subHead {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 #boardSubmitTrigger {
@@ -310,7 +310,7 @@
 .boardTileThumb {
 	position: relative;
 	width: 100%;
-	aspect-ratio: 1 / 1;
+	height: 240px;
 	overflow: hidden;
 	border-radius: 9px;
 	background-color: #101010;
