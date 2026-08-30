@@ -291,6 +291,7 @@
 				buildBoardFilterChips();
 				renderActiveFilters();
 				applyFilters();
+				populateSubmitVenueSelect();
 			})
 			.catch((err) => {
 				console.warn('board.js: could not load media', err);
@@ -579,8 +580,66 @@
 	});
 
 	document.addEventListener('keydown', (e) => {
-		if (e.key === 'Escape' && !modal.hidden) closeModal();
+		if (e.key !== 'Escape') return;
+		if (!modal.hidden) closeModal();
+		if (submitModal && !submitModal.hidden) closeSubmitModal();
 	});
+
+	// --- Submit media modal --------------------------------------------------
+
+	const submitModal = document.getElementById('boardSubmitModal');
+	const submitTrigger = document.getElementById('boardSubmitTrigger');
+	const venueSelect = document.getElementById('boardFormVenue');
+	const venueOtherInput = document.getElementById('boardFormVenueOther');
+
+	function populateSubmitVenueSelect() {
+		if (!venueSelect) return;
+
+		const venues = Object.values(venueLookup).sort((a, b) =>
+			sortableName(a.name).localeCompare(sortableName(b.name))
+		);
+
+		const options = venues.map((v) => `<option value="${v.id}">${v.name}</option>`).join('');
+		venueSelect.innerHTML = `<option value="">Select a Venue</option>${options}<option value="__other__">Other (not listed)</option>`;
+	}
+
+	function openSubmitModal() {
+		submitModal.hidden = false;
+		document.body.classList.add('boardModalOpen');
+	}
+
+	function closeSubmitModal() {
+		submitModal.hidden = true;
+		document.body.classList.remove('boardModalOpen');
+	}
+
+	if (submitModal && submitTrigger) {
+		submitTrigger.addEventListener('click', (e) => {
+			e.preventDefault(); // no-op today since the anchor has no href, but guards against future navigation if one's added
+			openSubmitModal();
+		});
+
+		// The trigger is an <a> without an href, which browsers don't make
+		// keyboard-focusable or Enter/Space-activatable by default the way
+		// a real link or button is — so both are added explicitly here.
+		submitTrigger.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				openSubmitModal();
+			}
+		});
+
+		submitModal.addEventListener('click', (e) => {
+			if (e.target.closest('[data-boardsubmitclose]')) closeSubmitModal();
+		});
+
+		venueSelect.addEventListener('change', () => {
+			const isOther = venueSelect.value === '__other__';
+			venueOtherInput.style.display = isOther ? 'block' : 'none';
+			venueOtherInput.required = isOther;
+			if (!isOther) venueOtherInput.value = '';
+		});
+	}
 
 	// --- Search + filter toggle wiring --------------------------------------
 

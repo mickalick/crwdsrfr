@@ -122,8 +122,7 @@
 			<section id="boardContent" class="page">
 				<div class="main">
 					<div class="contentSection">
-						<p>Surf a recent show? Send your photos or videos to <a href="mailto:contact@crwdsrfr.com">contact@crwdsrfr.com</a> to get on the board!</p>
-						<br/>
+						<p>Surf a recent crowd? <a id="boardSubmitTrigger" role="button" tabindex="0">Send in your best shots</a> to get on the board!</p>
 						<div class="wave-top"></div>
 						<div class="wave-bottom"></div>
 					</div>
@@ -205,6 +204,45 @@
 					<h2 id="boardModalTitle"></h2>
 					<p id="boardModalSub" class="boardModalSub"></p>
 					<p id="boardModalCredit" class="boardModalCredit"></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Submit media modal -->
+		<div id="boardSubmitModal" class="boardModal" hidden>
+			<div class="boardModalBackdrop" data-boardsubmitclose></div>
+			<div class="boardModalContent boardSubmitModalContent" role="dialog" aria-modal="true" aria-labelledby="boardSubmitModalTitle">
+				<button type="button" class="boardModalClose" data-boardsubmitclose aria-label="Close">&times;</button>
+				<div class="boardSubmitModalBody">
+					<h2 id="boardSubmitModalTitle">Submit to the SRF Board</h2>
+					<p>Fill out the form below and link or attach your shots, and we'll get them on the board. Alternatively, you can send any shots to <a href="mailto:board@crwdsrfr.com">board@crwdsrfr.com</a>. Your call.</p>
+					<p class="note"><strong>Note:</strong> There is a 25 MB limit for attachments. For larger videos, please either reduce the size or link to the video instead.</p>
+
+					<div class="boardForm">
+						<form action="https://formspree.io/f/myeyzlak" method="POST" enctype="multipart/form-data">
+							<input type="hidden" name="_subject" value="New SRF Board Submission">
+
+							<label for="boardFormTitle">Artist or Show Title:</label>
+							<input type="text" id="boardFormTitle" name="title" placeholder="Who was playing?" required>
+
+							<label for="boardFormTitle">Venue:</label>
+							<input type="text" id="boardFormTitle" name="venue" placeholder="Where were they playing?" required>
+
+							<label for="boardFormTitle">Date:</label>
+							<input type="text" id="boardFormTitle" name="date" placeholder="When was the show?" required>
+
+							<label for="boardFormName">Your Name (if you want it displayed):</label>
+							<input type="text" id="boardFormName" name="submittedBy" placeholder="Who took the shot?">
+
+							<label for="boardFormName">Link to Media:</label>
+							<input type="text" id="boardFormName" name="link" placeholder="Ex: ">
+
+							<label for="boardFormAttachments" id="attachLabel">Attachments:</label>
+							<input type="file" id="boardFormAttachments" name="attachments" accept="image/*,video/*" multiple>
+
+							<input type="submit" id="boardSubmitSend" class="contactButton" value="Send">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
