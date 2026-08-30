@@ -255,11 +255,15 @@
 	}
 
 	#boardSearchWrapper {
-		max-width: 65%;
+		max-width: 74%;
 	}
 
 	#boardContent .main .subHead {
 		margin-top: 40px;
+	}
+
+	.buttonLabel {
+		display: none;
 	}
 }
 
@@ -465,7 +469,7 @@
 	width: 100%;
 	background-color: #222;
 	overflow: hidden;
-	padding: 24px;
+	padding: 48px 24px 24px;
 	border-radius: 9px;
 }
 
