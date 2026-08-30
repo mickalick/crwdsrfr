@@ -392,10 +392,12 @@
 	color: #FFFFFF;
 	background: transparent;
 	cursor: pointer;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 8px;
-	margin-bottom: 60px;
+	width: fit-content;
+	margin: 0 auto 60px;
 }
 
 .board-load[hidden] {
