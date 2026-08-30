@@ -291,7 +291,6 @@
 				buildBoardFilterChips();
 				renderActiveFilters();
 				applyFilters();
-				populateSubmitVenueSelect();
 			})
 			.catch((err) => {
 				console.warn('board.js: could not load media', err);
@@ -589,19 +588,6 @@
 
 	const submitModal = document.getElementById('boardSubmitModal');
 	const submitTrigger = document.getElementById('boardSubmitTrigger');
-	const venueSelect = document.getElementById('boardFormVenue');
-	const venueOtherInput = document.getElementById('boardFormVenueOther');
-
-	function populateSubmitVenueSelect() {
-		if (!venueSelect) return;
-
-		const venues = Object.values(venueLookup).sort((a, b) =>
-			sortableName(a.name).localeCompare(sortableName(b.name))
-		);
-
-		const options = venues.map((v) => `<option value="${v.id}">${v.name}</option>`).join('');
-		venueSelect.innerHTML = `<option value="">Select a Venue</option>${options}<option value="__other__">Other (not listed)</option>`;
-	}
 
 	function openSubmitModal() {
 		submitModal.hidden = false;
@@ -631,13 +617,6 @@
 
 		submitModal.addEventListener('click', (e) => {
 			if (e.target.closest('[data-boardsubmitclose]')) closeSubmitModal();
-		});
-
-		venueSelect.addEventListener('change', () => {
-			const isOther = venueSelect.value === '__other__';
-			venueOtherInput.style.display = isOther ? 'block' : 'none';
-			venueOtherInput.required = isOther;
-			if (!isOther) venueOtherInput.value = '';
 		});
 	}
 
