@@ -79,7 +79,6 @@
 	height: 100%;
 	position: absolute;
 	right: 16px;
-	top: 4px;
 	background: none;
 	border: none;
 	display: flex;
@@ -270,12 +269,12 @@
 		padding-right: 32px;
 	}
 
-	#boardSearchGo .icon {
+	#boardSearchGo .icon, #boardSearchReset .icon {
 		width: 32px !important;
 		height: 32px !important;
 	}
 
-	#boardSearchGo {
+	#boardSearchGo, #boardSearchWrapper.hasValue #boardSearchReset {
 		top: 0;
 		right: 8px;
 	}
