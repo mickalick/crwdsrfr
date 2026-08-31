@@ -114,7 +114,7 @@
 				<div class="main">
 					<div class="pageHeader">
 						<div class="headContent">
-							<h1>The SRF Board</h1>
+							<h1>The SRF <em>Board</em></h1>
 						</div>
 					</div>
 				</div>
@@ -200,7 +200,11 @@
 			<div class="boardModalBackdrop" data-boardclose></div>
 			<div class="boardModalContent" role="dialog" aria-modal="true" aria-labelledby="boardModalTitle">
 				<button type="button" class="boardModalClose" data-boardclose aria-label="Close">&times;</button>
-				<div class="boardModalMedia" id="boardModalMedia"></div>
+				<div class="boardModalMedia" id="boardModalMedia">
+					<button type="button" class="boardModalNavBtn boardModalNavPrev" id="boardModalPrev" aria-label="Previous"><span class="icon" id="bck"></span></button>
+					<div class="boardModalMediaInner" id="boardModalMediaInner"></div>
+					<button type="button" class="boardModalNavBtn boardModalNavNext" id="boardModalNext" aria-label="Next"><span class="icon" id="fwd"></span></button>
+				</div>
 				<div class="boardModalMeta">
 					<h2 id="boardModalTitle"></h2>
 					<p id="boardModalSub" class="boardModalSub"></p>
