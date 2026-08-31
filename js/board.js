@@ -238,7 +238,7 @@
 		const term = currentSearch.trim();
 		subHeadEl.textContent = term === ''
 			? 'All Shots by Most Recent:'
-			: `All Shots by Most Recent including "${term}":`;
+			: `All Shots including "${term}" by Most Recent:`;
 	}
 
 	function applyFilters() {
