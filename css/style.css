@@ -118,7 +118,7 @@ em{
 	font-style:normal;
 }
 
-h1 em {
+h1 em, h2 em {
 	font-weight:400;
 }
 
@@ -1380,7 +1380,7 @@ span.flatpickr-weekday {
 	}
 
 	h2{
-		font-size:48px;
+		font-size:32px;
 	}
 
 	h3{
