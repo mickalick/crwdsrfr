@@ -34,8 +34,8 @@
 #boardSearchWrapper {
 	position: relative;
 	display: inline-flex;
-	width: 75%;
-	max-width: 800px;
+	width: 65%;
+	max-width: 720px;
 	height: 70px;
 }
 
@@ -109,6 +109,7 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
+	margin-right: 10%;
 }
 
 #boardSettingsBar .filter-toggle .icon {
@@ -249,6 +250,14 @@
 	}
 }
 
+/*
+@media screen and (max-width: 1108px) {
+	#boardSettingsBar .filter-toggle {
+		margin-right: 16px;
+	}
+}
+*/
+
 @media screen and (max-width: 774px) {
 	#boardSettingsBar {
 		justify-content: space-between;
@@ -258,16 +267,16 @@
 		margin-top: 4px;
 	}
 
-	#boardSearchWrapper {
-		max-width: 74%;
+	.buttonLabel {
+		display: none;
+	}
+
+	#boardSettingsBar .filter-toggle {
+		margin-right: 11%;
 	}
 
 	#boardContent .main .subHead {
 		margin-top: 40px;
-	}
-
-	.buttonLabel {
-		display: none;
 	}
 }
 
@@ -285,6 +294,14 @@
 	#boardSearchGo, #boardSearchWrapper.hasValue #boardSearchReset {
 		top: 0;
 		right: 8px;
+	}
+
+	#boardSearchWrapper {
+		width: 80%;
+	}
+
+	#boardSettingsBar .filter-toggle {
+		margin-right: 0px;
 	}
 }
 
