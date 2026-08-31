@@ -12,15 +12,17 @@
 		</script>
 
 		<meta charset="utf-8">
-		<title>The SRF Board | CRWD SRFR</title>
-		<meta name="description" content="Photos and videos submitted by the CRWD SRFR community.">
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/board.css">
-		<link rel="shortcut icon" href="../images/favicon.png">
+		<title>CRWD SRFR | Cleveland's Live Show Calendar</title>
+		<meta name="description" content="Updated Mondays and Thursdays. Not seeing a venue or show? Let us know.">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script src="js/events.js" defer></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('body').css('display', 'none');
@@ -90,7 +92,7 @@
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="menuButton">
 					<label for="menuToggle" aria-label="Open Menu">
 				  	<span class="icon" id="mnu"></span>
@@ -98,85 +100,110 @@
 				</div>
 				<div id="menuNav">
 					<ul>
-						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
-						<a class="navLink" href="/featured.html"><li class="navItem">Featured</li></a>
+						<a class="navLink" href="/"><li class="navItem currentPage">Calendar</li></a>
+						<a class="navLink" href="featured.html"><li class="navItem">Featured</li></a>
 						<a class="navLink" href="/venues/"><li class="navItem">Venues</li></a>
-						<a class="navLink" href="/board/"><li class="navItem currentPage">The SRF Board</li></a>
+						<a class="navLink" href="/board/"><li class="navItem">The SRF Board</li></a>
 						<hr>
-						<a class="navLink" href="/about.html"><li class="navItem">About</li></a>
-						<a class="navLink" href="/contact.html"><li class="navItem">Contact</li></a>
+						<a class="navLink" href="about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="contact.html"><li class="navItem">Contact</li></a>
 					</ul>
 				</div>
 			</nav>
 		</header>
 		<div id="wrapper">
-			<section id="boardHero" class="page">
-				<div class="main">
-					<div class="pageHeader">
-						<div class="headContent">
-							<h1>The SRF Board</h1>
+			<section id="hero" class="page">
+				<div id="top" class="main">
+					<div id="calendarHeader">
+						<div id="intro">
+							<h2><em>Cleveland's</em> Live Show Calendar</h2>
+							<p>Updated Sundays and Wednesdays.</p>
+							<p>Not seeing a venue or show? <a href="contact.html">Let us know.</a></p>
+						</div>
+						<div id="searchWrapper">
+							<input type="text" id="search" name="search" placeholder="Surf by venue, event, or artist">
+							<button id="searchGo" type="button" aria-label="Search" onclick="applyFilters()"><span class="icon" id="ser"></span></button>
+							<button id="searchReset" type="button" aria-label="Clear search" onclick="resetSearch()"><span class="icon" id="clr"></span></button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="boardContent" class="page">
+			<section id="calendar" class="page">
 				<div class="main">
-					<div class="contentSection">
-						<p>Surf a recent crowd? <a id="boardSubmitTrigger" role="button" tabindex="0">Send in your best shots</a> to get added to the Board!</p>
-						<div class="wave-top"></div>
-						<div class="wave-bottom"></div>
-					</div>
+					<div id="calendarSettingsBar">
 
-					<div id="boardSettingsBar">
-						<div id="boardSearchWrapper">
-							<input type="text" id="boardSearch" name="boardSearch" placeholder="Search by title, venue, or name">
-							<button id="boardSearchGo" type="button" aria-label="Search"><span class="icon" id="ser"></span></button>
-							<button id="boardSearchReset" type="button" aria-label="Clear search"><span class="icon" id="clr"></span></button>
+						<div id="calendarToggle">
+							<button type="button" class="toggle-button active" id="calendarToggleDay" aria-label="Day View">
+								Day
+							</button>
+							<button type="button" class="toggle-button" id="calendarToggleWeek" aria-label="Week View">
+								Week
+							</button>
 						</div>
 
-						<button type="button" class="filter-toggle" id="boardFilterToggle" aria-label="Show Filters">
-							<span class="buttonLabel">Filters </span><span class="icon" id="fil"></span>
+						<button type="button" class="filter-toggle" id="calendarFilterToggle" aria-label="Show Filters">
+							Filters <span class="icon" id="fil"></span>
 						</button>
+
 					</div>
 
-					<div id="boardFilterPanel">
-						<div class="filter-panel" id="boardFilters" style="display:none;">
+					<div id="calendarFilterPanel">
+
+						<div class="filter-panel" id="calendarFilters" style="display:none;">
 
 							<div class="filter-group">
 								<div class="filter-group-label">Venue</div>
-								<div class="filter-row" id="boardVenueFilters"></div>
+								<div class="filter-row" id="calendarVenueFilters"></div>
 							</div>
 
 							<div class="filter-group">
 								<div class="filter-group-label">Area</div>
-								<div class="filter-row" id="boardAreaFilters"></div>
+								<div class="filter-row" id="calendarAreaFilters"></div>
 							</div>
 
 							<div class="filter-group">
 								<div class="filter-group-label">Type</div>
-								<div class="filter-row" id="boardTypeFilters"></div>
+								<div class="filter-row" id="calendarTypeFilters"></div>
 							</div>
 
 						</div>
+
 					</div>
 
-					<div id="boardActiveFiltersWrapper" style="display:none;">
-						<h2 id="boardActiveFiltersLabel">Applied Filters:</h2>
-						<div id="boardActiveFilters"></div>
+					<div id="activeFiltersWrapper" style="display:none;">
+						<h2 id="activeFiltersLabel">Applied Filters:</h2>
+						<div id="activeFilters"></div>
 					</div>
 
-					<h4 class="subHead"><span id="boardSubHead">Most Recent Shots:</span></h4>
+					<h4 class="subHead"><span>All shows for:</span></h4>
+					<div class="calendarWrapper">
+						<div id="calendarNav">
+							<div id="current">
+								<div id="currentSelector">
+									<span class="icon" id="cal"></span>
+									<input type="text" id="datePicker">
+								</div>
+								<h3>Day, Mon X, 20XX</h3>
+							</div>
+							<ul id="navArrows">
+								<li id="prevArrow"><span class="icon" id="bck"></span></li>
+								<li id="nextArrow"><span class="icon" id="fwd"></span></li>
+							</ul>
+						</div>
+						<div class="wave-top"></div>
+						<div class="wave-bottom"></div>
+						<div id="calendarCards">
+							<div id="calendarEnd">
+								<span id="emptyState" style="display:none;">No shows found :(</span>
+								<span id="withResults">That's all, folks<br/><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<section id="boardSpace" class="page">
+			<section id="sponsors" class="page" style="display:none;">
 				<div class="main">
-					<div id="boardResults">
-						<div id="boardGrid" aria-live="polite"></div>
-						<p id="boardEmpty" class="boardStateMsg" hidden>Hmmm, there's nothing here yet...</p>
-					</div>
-					<button type="button" id="boardLoadMore" class="board-load" hidden>Load More</button>
-					<p id="boardLoading" class="boardStateMsg" hidden>Waxing the board...</p>
-					<p id="boardEnd" class="boardStateMsg" hidden>That's all, folks<br/><a aria-label="Back to top of page" href="#top"><small>Back to Top</small></a></p>
+					<p>Sponsors Space</p>
 				</div>
 			</section>
 			<div class="wave-footer"></div>
@@ -186,71 +213,15 @@
 						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
 					</div>
 					<ul id="bottomNav">
-						<li><a href="../terms.html">Terms of Use</a></li>
-						<li><a href="../privacy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms of Use</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
 					</ul>
 					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
 					<p><small>All rights reserved.</small></p>
 				</div>
 			</footer>
 		</div>
-
-		<!-- Board media modal -->
-		<div id="boardModal" class="boardModal" hidden>
-			<div class="boardModalBackdrop" data-boardclose></div>
-			<div class="boardModalContent" role="dialog" aria-modal="true" aria-labelledby="boardModalTitle">
-				<button type="button" class="boardModalClose" data-boardclose aria-label="Close">&times;</button>
-				<div class="boardModalMedia" id="boardModalMedia"></div>
-				<div class="boardModalMeta">
-					<h2 id="boardModalTitle"></h2>
-					<p id="boardModalSub" class="boardModalSub"></p>
-					<p id="boardModalCredit" class="boardModalCredit"></p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Submit media modal -->
-		<div id="boardSubmitModal" class="boardModal" hidden>
-			<div class="boardModalBackdrop" data-boardsubmitclose></div>
-			<div class="boardModalContent boardSubmitModalContent" role="dialog" aria-modal="true" aria-labelledby="boardSubmitModalTitle">
-				<button type="button" class="boardModalClose" data-boardsubmitclose aria-label="Close">&times;</button>
-				<div class="boardSubmitModalBody">
-					<h2 id="boardSubmitModalTitle">Get Added to the Board</h2>
-					<p>Fill out the form below and link or attach your favorite shots. Alternatively, you can send any shots to <a href="mailto:board@crwdsrfr.com">board@crwdsrfr.com</a>. Either works.</p>
-					<p>Once reviewed, any approved submissions will be added to the Board at the next site update.</p>
-					<p class="note"><strong>Note:</strong> There is a 25 MB limit for attachments. For larger videos, please either reduce the size or link to the video instead.</p>
-
-					<div class="boardForm">
-						<form action="https://formspree.io/f/myeyzlak" method="POST" enctype="multipart/form-data">
-							<input type="hidden" name="_subject" value="New SRF Board Submission">
-
-							<label for="boardFormTitle">Artist or Show Title:</label>
-							<input type="text" id="boardFormTitle" name="title" placeholder="Who was playing?" required>
-
-							<label for="boardFormVenue">Venue:</label>
-							<input type="text" id="boardFormVenue" name="venue" placeholder="Where were they playing?" required>
-
-							<label for="boardFormDate">Date:</label>
-							<input type="text" id="boardFormDate" name="date" placeholder="When was the show?" required>
-
-							<label for="boardFormName">Your Name (if you want it displayed):</label>
-							<input type="text" id="boardFormName" name="submittedBy" placeholder="Who took the shot?">
-
-							<label for="boardFormLink">Link to Media:</label>
-							<input type="text" id="boardFormLink" name="link" placeholder="Full link to the photo or video">
-
-							<label for="boardFormAttachments" id="attachLabel">Attachments:</label>
-							<input type="file" id="boardFormAttachments" name="attachments" accept="image/*,video/*" multiple>
-
-							<input type="submit" id="boardSubmitSend" class="contactButton" value="Send">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script src="../js/board.js"></script>
-
+		
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
 		
 	</body>
