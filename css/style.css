@@ -41,7 +41,7 @@ h1,h2{
 
 h1{
 	font-size:48px;
-	font-weight: 700 !important;
+	font-weight: 400 !important;
 }
 
 h2{
@@ -116,6 +116,10 @@ em{
 	color:#62CBB8;
 	font-weight:700;
 	font-style:normal;
+}
+
+h1 em {
+	font-weight:400;
 }
 
 header{
