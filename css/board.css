@@ -407,7 +407,7 @@
 
 @media (hover: hover) and (pointer: fine) {
 	#boardEnd a:hover {
-		color: #F9F976;
+		text-decoration: underline;
 	}
 }
 
