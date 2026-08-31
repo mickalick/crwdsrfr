@@ -166,7 +166,9 @@
 	const endMsg = document.getElementById('boardEnd');
 
 	const modal = document.getElementById('boardModal');
-	const modalMedia = document.getElementById('boardModalMedia');
+	const modalMediaInner = document.getElementById('boardModalMediaInner');
+	const modalPrevBtn = document.getElementById('boardModalPrev');
+	const modalNextBtn = document.getElementById('boardModalNext');
 	const modalTitle = document.getElementById('boardModalTitle');
 	const modalSub = document.getElementById('boardModalSub');
 	const modalCredit = document.getElementById('boardModalCredit');
@@ -180,6 +182,7 @@
 	let filteredItems = []; // items after search + filters
 	let venueLookup = {};
 	let renderedCount = 0;
+	let modalIndex = -1; // index of the currently open item within filteredItems
 
 	let currentSearch = '';
 	const selectedVenueIds = new Set();
@@ -545,8 +548,8 @@
 
 	// --- Modal --------------------------------------------------------------
 
-	function openModal(item) {
-		modalMedia.innerHTML = '';
+	function renderModalItem(item) {
+		modalMediaInner.innerHTML = '';
 
 		if (item.type === 'video') {
 			const video = document.createElement('video');
@@ -555,12 +558,12 @@
 			video.autoplay = true;
 			video.volume = 0.5;
 			video.playsInline = true;
-			modalMedia.appendChild(video);
+			modalMediaInner.appendChild(video);
 		} else {
 			const img = document.createElement('img');
 			img.src = item.src;
 			img.alt = item.title || '';
-			modalMedia.appendChild(img);
+			modalMediaInner.appendChild(img);
 		}
 
 		modalTitle.textContent = item.title || 'Untitled';
@@ -579,6 +582,28 @@
 			}));
 		}
 
+		updateModalNavState();
+	}
+
+	function updateModalNavState() {
+		const hasMultiple = filteredItems.length > 1;
+		modalPrevBtn.hidden = !hasMultiple;
+		modalNextBtn.hidden = !hasMultiple;
+		if (hasMultiple) {
+			modalPrevBtn.disabled = modalIndex <= 0;
+			modalNextBtn.disabled = modalIndex >= filteredItems.length - 1;
+		}
+	}
+
+	function showModalIndex(newIndex) {
+		if (newIndex < 0 || newIndex >= filteredItems.length) return;
+		modalIndex = newIndex;
+		renderModalItem(filteredItems[modalIndex]);
+	}
+
+	function openModal(item) {
+		modalIndex = filteredItems.indexOf(item);
+		renderModalItem(item);
 
 		modal.hidden = false;
 		document.body.classList.add('boardModalOpen');
@@ -589,19 +614,26 @@
 		document.body.classList.remove('boardModalOpen');
 
 		// Stop any playing video when the modal closes.
-		const video = modalMedia.querySelector('video');
+		const video = modalMediaInner.querySelector('video');
 		if (video) video.pause();
-		modalMedia.innerHTML = '';
+		modalMediaInner.innerHTML = '';
+		modalIndex = -1;
 	}
+
+	modalPrevBtn.addEventListener('click', () => showModalIndex(modalIndex - 1));
+	modalNextBtn.addEventListener('click', () => showModalIndex(modalIndex + 1));
 
 	modal.addEventListener('click', (e) => {
 		if (e.target.closest('[data-boardclose]')) closeModal();
 	});
 
 	document.addEventListener('keydown', (e) => {
-		if (e.key !== 'Escape') return;
-		if (!modal.hidden) closeModal();
-		if (submitModal && !submitModal.hidden) closeSubmitModal();
+		if (!modal.hidden) {
+			if (e.key === 'Escape') closeModal();
+			if (e.key === 'ArrowLeft') showModalIndex(modalIndex - 1);
+			if (e.key === 'ArrowRight') showModalIndex(modalIndex + 1);
+		}
+		if (e.key === 'Escape' && submitModal && !submitModal.hidden) closeSubmitModal();
 	});
 
 	// --- Submit media modal --------------------------------------------------
