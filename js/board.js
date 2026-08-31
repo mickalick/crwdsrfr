@@ -163,6 +163,7 @@
 	const loadMoreBtn = document.getElementById('boardLoadMore');
 	const emptyMsg = document.getElementById('boardEmpty');
 	const loadingMsg = document.getElementById('boardLoading');
+	const endMsg = document.getElementById('boardEnd');
 
 	const modal = document.getElementById('boardModal');
 	const modalMedia = document.getElementById('boardModalMedia');
@@ -236,8 +237,8 @@
 		const subHeadEl = document.getElementById('boardSubHead');
 		const term = currentSearch.trim();
 		subHeadEl.textContent = term === ''
-			? 'Most Recent Shots:'
-			: `Most Recent Shots including "${term}"`;
+			? 'All Shots by Most Recent:'
+			: `All Shots by Most Recent including "${term}":`;
 	}
 
 	function applyFilters() {
@@ -305,21 +306,27 @@
 
 	function resetGrid() {
 		$(resultsEl).fadeTo(150, 0, function () {
-			grid.innerHTML = '';
-			renderedCount = 0;
+			try {
+				grid.innerHTML = '';
+				renderedCount = 0;
 
-			if (filteredItems.length === 0) {
-				emptyMsg.hidden = false;
-				emptyMsg.textContent = items.length === 0
-					? "Hmmm, there's nothing here yet..."
-					: 'No results — try a different search or filter.';
-				loadMoreBtn.hidden = true;
-			} else {
-				emptyMsg.hidden = true;
-				renderNextBatch();
+				if (filteredItems.length === 0) {
+					emptyMsg.hidden = false;
+					emptyMsg.textContent = items.length === 0
+						? "Hmmm, there's nothing here yet..."
+						: 'No results :(';
+					loadMoreBtn.hidden = true;
+					if (endMsg) endMsg.hidden = true;
+				} else {
+					emptyMsg.hidden = true;
+					renderNextBatch();
+				}
+			} finally {
+				// Always fade back in, even if something above threw —
+				// otherwise #boardResults gets stuck at opacity 0 with
+				// tiles rendered but invisible.
+				$(resultsEl).fadeTo(150, 1);
 			}
-
-			$(resultsEl).fadeTo(150, 1);
 		});
 	}
 
@@ -333,7 +340,9 @@
 
 		renderedCount += batch.length;
 
-		loadMoreBtn.hidden = renderedCount >= filteredItems.length;
+		const allLoaded = renderedCount >= filteredItems.length;
+		loadMoreBtn.hidden = allLoaded;
+		if (endMsg) endMsg.hidden = !allLoaded;
 	}
 
 	function buildTile(item) {
@@ -376,17 +385,21 @@
 		const venueName = resolveVenueName(item.venueId, venueLookup);
 		if (venueName) {
 			const venueEl = document.createElement('span');
-			venueEl.className = 'boardTileSub';
-			venueEl.textContent = `at ${venueName}`;
+			venueEl.className = 'boardTileVenue';
+			venueEl.textContent = `${venueName}`;
 			tile.appendChild(venueEl);
 		}
 
 		if (item.submittedBy) {
 			const caption = document.createElement('span');
 			caption.className = 'boardTileSub';
-			caption.textContent = `from ${item.submittedBy}`;
+			caption.append('from ', Object.assign(document.createElement('span'), {
+				className: 'boardTileSubValue',
+				textContent: item.submittedBy,
+			}));
 			tile.appendChild(caption);
 		}
+
 
 		tile.addEventListener('click', () => openModal(item));
 
@@ -558,7 +571,14 @@
 		if (item.date) subParts.push(formatDateDisplay(item.date));
 		modalSub.textContent = subParts.join(' · ');
 
-		modalCredit.textContent = item.submittedBy ? `from ${item.submittedBy}` : '';
+		modalCredit.textContent = '';
+		if (item.submittedBy) {
+			modalCredit.append('from ', Object.assign(document.createElement('span'), {
+				className: 'boardModalCreditValue',
+				textContent: item.submittedBy,
+			}));
+		}
+
 
 		modal.hidden = false;
 		document.body.classList.add('boardModalOpen');

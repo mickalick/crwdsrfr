@@ -51,6 +51,10 @@
 	padding-right: 60px;
 }
 
+#boardSearch:focus {
+	border-color: #62CBB8;
+}
+
 #boardSearchWrapper.hasValue #boardSearch {
 	border: 3px solid #F9F976;
 }
@@ -301,13 +305,14 @@
 	flex-direction: column;
 	width: 100%;
 	padding: 0;
-	border: none;
-	background: none;
+	border: 3px solid #333;
+	border-radius: 9px;
+	overflow: hidden;
+	background: #101010;
 	cursor: pointer;
 	font: inherit;
 	color: inherit;
 	text-align: left;
-	margin-bottom: 16px;
 }
 
 .boardTileThumb {
@@ -315,7 +320,6 @@
 	width: 100%;
 	aspect-ratio: 4/3;
 	overflow: hidden;
-	border-radius: 9px;
 	background-color: #101010;
 }
 
@@ -360,29 +364,51 @@
 }
 
 .boardTileCaption {
-	margin-top: 8px;
+	margin: 8px 8px 0px;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 20px;
 	line-height: 1.2;
 	color: #FFF;
 }
 
+.boardTileVenue {
+	margin: 4px 8px 0px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #ADADAD;
+}
+
 .boardTileSub {
-	margin-top: 4px;
+	margin: 4px 8px 8px;
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	line-height: 1.2;
 	color: #ADADAD;
 }
 
+.boardTileSubValue {
+	color: #FFF;
+}
+
 .boardStateMsg {
 	width: 100%;
-	margin: 20px 0;
+	margin: 0px 0px 40px;
 	text-align: center;
-	font-family: "Space Mono", monospace;
+	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.05em;
-	color: #999;
+	color: #FFF;
+}
+
+#boardEnd a {
+	color: #62CBB8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	#boardEnd a:hover {
+		color: #F9F976;
+	}
 }
 
 .board-load {
@@ -410,12 +436,8 @@
 @media (hover: hover) and (pointer: fine) {
 	.boardTile:hover,
 	.boardTile:focus-visible {
-		transform: translateY(-3px);
-	}
-
-	.boardTile:hover .boardTileCaption,
-	.boardTile:focus-visible .boardTileCaption {
-		color: #62CBB8;
+		transform: translateY(-2px);
+		border-color: #62CBB8;
 	}
 }
 
@@ -557,11 +579,12 @@
 }
 
 .boardModalMeta {
-	padding: 16px 20px 20px;
+	padding: 16px 0px 0px;
 }
 
 .boardModalMeta h2 {
 	font-size: 24px;
+	margin-bottom: 8px !important;
 }
 
 .boardModalSub {
@@ -576,8 +599,12 @@
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	letter-spacing: 0.05em;
-	color: #999;
+	color: #ADADAD;
 	margin: 0;
+}
+
+.boardModalCreditValue {
+	color: #FFF;
 }
 
 body.boardModalOpen {
