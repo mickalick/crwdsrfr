@@ -1,0 +1,421 @@
+/* featured.css
+   Styles for featured.html — date-grouped headline grid + modal.
+   Colors and type follow the existing style.css palette:
+   #222 page bg, #101010 panel/card bg, #62CBB8 teal accent,
+   #F9F976 yellow accent, #ADADAD/#999 muted text.
+
+   The modal below intentionally mirrors board.css's .boardModal* rules
+   (same structure, same interaction) but is kept in its own
+   featured-prefixed classes rather than importing board.css, since this
+   page isn't otherwise related to /board/ and each page here keeps its
+   own scoped stylesheet.
+*/
+
+#featuredSpace.page {
+	align-items: flex-start;
+}
+
+#featuredSpace .main,
+#featuredContent .main {
+	margin-bottom: 0 !important;
+}
+
+/* --- Date-grouped headline grid ---------------------------------------- */
+
+#featuredGroups {
+	width: 100%;
+}
+
+.featuredDateGroup {
+	margin-bottom: 48px;
+}
+
+.featuredDateGroup:last-child {
+	margin-bottom: 40px;
+}
+
+.featuredDateHeadline {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 28px;
+	color: #F9F976;
+	border-bottom: 3px solid #333;
+	padding-bottom: 8px;
+	margin: 0 0 20px;
+}
+
+.featuredGrid {
+	display: grid;
+	grid-template-columns: repeat(var(--group-cols, 5), 1fr);
+	gap: 20px;
+	width: 100%;
+	justify-items: center;
+}
+
+.featuredTile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	padding: 0;
+	border: 3px solid #333;
+	border-radius: 9px;
+	overflow: hidden;
+	background: #101010;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+	text-align: left;
+}
+
+.featuredTileThumb {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 3/4;
+	overflow: hidden;
+	background-color: #101010;
+}
+
+.featuredTileThumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.featuredTileCaption {
+	margin: 8px 8px 0px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	color: #FFF;
+}
+
+.featuredTileVenue {
+	margin: 4px 8px 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #ADADAD;
+}
+
+.boardStateMsg {
+	width: 100%;
+	margin: 0px 0px 40px;
+	text-align: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featuredTile:hover,
+	.featuredTile:focus-visible {
+		transform: translateY(-2px);
+		border-color: #62CBB8;
+	}
+}
+
+/* Responsive: cap at 3 columns on tablet, 2 on phones — still shrinking
+   further via --group-cols for date groups with fewer items than that. */
+@media screen and (max-width: 900px) {
+	.featuredGrid {
+		grid-template-columns: repeat(min(var(--group-cols, 5), 3), 1fr);
+		gap: 16px;
+	}
+
+	.featuredDateHeadline {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.featuredGrid {
+		grid-template-columns: repeat(min(var(--group-cols, 5), 2), 1fr);
+		gap: 12px;
+	}
+
+	.featuredTile {
+		max-width: 67%;
+	}
+
+	.featuredTileCaption {
+		font-size: 14px;
+	}
+
+	.featuredDateHeadline {
+		font-size: 24px;
+	}
+}
+
+/* --- "Want to see your show here?" CTA ---------------------------------- */
+
+.featuredCta {
+	width: 100%;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 60px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	color: #FFF;
+}
+
+.featuredCta a {
+	color: #62CBB8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featuredCta a:hover {
+		text-decoration: underline;
+	}
+}
+
+/* --- Modal (mirrors board.css's .boardModal* structure) ---------------- */
+
+.boardModal[hidden] {
+	display: none;
+	opacity: 0;
+}
+
+.boardModal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 200ms ease, display 200ms allow-discrete;
+}
+
+@starting-style {
+	.boardModal:not([hidden]) {
+		opacity: 0;
+	}
+}
+
+.boardModalBackdrop {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(16, 16, 16, 0.9);
+}
+
+.boardModalContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	max-height: 90vh;
+	width: 100%;
+	background-color: #222;
+	overflow: hidden;
+	padding: 48px 24px 24px;
+	border-radius: 9px;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.boardModal[hidden] .boardModalContent {
+	opacity: 0;
+	transform: scale(0.96);
+}
+
+@starting-style {
+	.boardModal:not([hidden]) .boardModalContent {
+		opacity: 0;
+		transform: scale(0.96);
+	}
+}
+
+.boardModalClose {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	z-index: 2;
+	background: none;
+	border: none;
+	color: #FFF;
+	font-size: 32px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 4px 8px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalClose:hover {
+		color: #FF6262;
+	}
+}
+
+.boardModalMedia {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	max-height: 65vh;
+}
+
+.boardModalMediaInner {
+	display: contents;
+}
+
+.boardModalNavBtn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(16, 16, 16, 0.65);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.boardModalNavPrev {
+	left: 12px;
+}
+
+.boardModalNavNext {
+	right: 12px;
+}
+
+.boardModalNavBtn[hidden] {
+	display: none;
+}
+
+.boardModalNavBtn[disabled] {
+	opacity: 0.25;
+	cursor: default;
+	pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalNavBtn:hover {
+		background-color: #171717;
+	}
+}
+
+.boardModalMedia img {
+	width: 100%;
+	max-height: 65vh;
+	object-fit: contain;
+	display: block;
+}
+
+/* Two-column grid: title (row 1) and date/venue (row 2) share the left
+   column, while the Learn More link spans both rows in the right column
+   so it lands right-aligned and vertically centered against that pair —
+   no extra HTML wrapper needed around the title/sub. */
+.boardModalMeta {
+	padding: 16px 0px 0px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.boardModalMeta h2 {
+	grid-column: 1;
+	grid-row: 1;
+	font-size: 24px;
+	margin-bottom: 4px !important;
+}
+
+.boardModalSub {
+	grid-column: 1;
+	grid-row: 2;
+	font-family: "Space Mono", monospace;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #ADADAD;
+	margin: 0;
+}
+
+.featuredModalVenueLink {
+	color: #62CBB8;
+	text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featuredModalVenueLink:hover {
+		text-decoration: underline;
+	}
+}
+
+.featuredModalLink {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	align-self: center;
+	justify-self: end;
+	white-space: nowrap;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 24px;
+	border-radius: 9px;
+	border: 1px solid #F9F976;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.featuredModalLink .icon {
+	width: 20px;
+	height: 20px;
+	background-color: #F9F976 !important;
+}
+
+
+
+.featuredModalLink[hidden] {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.boardModalMeta {
+		grid-template-columns: 1fr;
+	}
+
+	.boardModalMeta h2,
+	.boardModalSub {
+		grid-column: 1;
+	}
+
+	.featuredModalLink {
+		grid-column: 1;
+		grid-row: auto;
+		justify-self: stretch;
+		justify-content: center;
+		text-align: center;
+		margin-top: 12px;
+	}
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.featuredModalLink:hover {
+		background-color: #F9F976;
+		color: #101010;
+	}
+
+	.featuredModalLink:hover .icon {
+		background-color: #101010 !important;
+	}
+}
+
+body.boardModalOpen {
+	overflow: hidden;
+}

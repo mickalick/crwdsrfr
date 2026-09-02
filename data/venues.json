@@ -539,6 +539,39 @@
     "lng": -81.6119848
   },
   {
+    "id": "visible-voice-books",
+    "name": "Visible Voice Books",
+    "url": "https://www.visiblevoicebooks.com/",
+    "eventsUrl": "https://www.visiblevoicebooks.com/calendar-of-events",
+    "type": "other",
+    "address": "4601 Lorain Ave, Cleveland, OH, 44102",
+    "area": "Ohio City",
+    "lat": 41.47830130000001,
+    "lng": -81.7182938
+  },
+  {
+    "id": "near-west-theatre",
+    "name": "Near West Theatre",
+    "url": "https://www.nearwesttheatre.org/",
+    "eventsUrl": "https://www.nearwesttheatre.org/shows-events/2026-27",
+    "type": "theater",
+    "address": "6702 Detroit Ave, Cleveland, OH, 44102",
+    "area": "Detroit Shoreway",
+    "lat": 41.4842311,
+    "lng": -81.7316618
+  },
+  {
+    "id": "jenks-1929",
+    "name": "The Jenks 1929",
+    "url": "https://jenks1929.com/",
+    "eventsUrl": "https://jenks1929.com/pages/live-music-performance",
+    "type": "other",
+    "address": "1884 Front Street, Cuyahoga Falls, Ohio, 44221",
+    "area": "Cuyahoga Falls",
+    "lat": 41.1320363,
+    "lng": -81.4838063
+  },
+  {
     "id": "cebars",
     "name": "Cebars",
     "url": "https://www.facebook.com/groups/51071547181",
@@ -999,5 +1032,27 @@
     "area": "Ohio City",
     "lat": 41.4861933,
     "lng": -81.70286899999999
+  },
+  {
+    "id": "hingetown-jazz-festival",
+    "name": "Hingetown Jazz Fest",
+    "url": "https://www.hingetownjazzfest.org/",
+    "eventsUrl": "https://www.hingetownjazzfest.org/",
+    "type": "festival",
+    "address": "1404 W 29th St, Cleveland, OH, 44113",
+    "area": "Ohio City",
+    "lat": 41.4895582,
+    "lng": -81.71104799999999
+  },
+  {
+    "id": "hyde-park-beachwood",
+    "name": "Hyde Park Beachwood",
+    "url": "https://www.hydeparkrestaurants.com/location/beachwood/",
+    "eventsUrl": "https://www.hydeparkrestaurants.com/happenings/",
+    "type": "bar",
+    "address": "26300 Chargin Boulevard, Beachwood, OH, 44122",
+    "area": "Beachwood",
+    "lat": 41.4644979,
+    "lng": -81.5087322
   }
 ]
