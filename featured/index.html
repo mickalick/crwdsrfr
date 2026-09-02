@@ -38,18 +38,14 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
-      					event.preventDefault();
-
-      					var hash = this.hash;
-
-      					$('html, body').animate({
-        					scrollTop: $(hash).offset().top
-      					}, 650, function(){
-        					window.location.hash = hash;
-      					});
-    				}
-  				});
+				    if (this.hash !== "" && this.pathname === window.location.pathname) {
+				        event.preventDefault();
+				        var hash = this.hash;
+				        $('html, body').animate({ scrollTop: $(hash).offset().top }, 650, function(){
+				            window.location.hash = hash;
+				        });
+				    }
+				});
 			});
 			$(function() {
 				var header = $("header");
@@ -136,7 +132,7 @@
 						<div id="featuredGroups" aria-live="polite"></div>
 						<p id="featuredEmpty" class="boardStateMsg" hidden>Nothing featured right now — check back soon!</p>
 					</div>
-					<p class="featuredCta">Want to see your show here? <a class="navLink" href="/about.html#support">Learn How</a></p>
+					<p class="featuredCta">Want to see your show here? <a href="/about.html#support">Learn How</a></p>
 				</div>
 			</section>
 			<div class="wave-footer"></div>
