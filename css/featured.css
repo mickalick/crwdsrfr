@@ -171,6 +171,7 @@
 @media (hover: hover) and (pointer: fine) {
 	.featuredCta a:hover {
 		text-decoration: underline;
+		background-color: none;
 	}
 }
 
