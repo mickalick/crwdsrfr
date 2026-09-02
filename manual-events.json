@@ -4676,7 +4676,44 @@
 
 
 
-  
+  {
+    "title": "Shooters After Dark: Friday LDW",
+    "performers": [
+      {
+        "name": "LDW",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-09-04-friday-ldw"
+  },
+  {
+    "title": "Shooters After Dark: Saturday LDW",
+    "performers": [
+      {
+        "name": "LDW",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-09-05-saturday-ldw"
+  },
   {
     "title": "Palmer Anthony",
     "performers": [
@@ -4827,6 +4864,80 @@
     "id": "crobar-2026-09-04-904-day"
   },
   {
+    "title": "Don't Funk the Groove: Hot Swap",
+    "performers": [
+      {
+        "name": "Lamar Z",
+        "headliner": true
+      },
+      {
+        "name": "Vaver",
+        "headliner": false
+      },
+      {
+        "name": "Le Schlippy",
+        "headliner": false
+      },
+      {
+        "name": "Sleazus",
+        "headliner": false
+      }
+    ],
+    "date": "2025-09-11",
+    "time": "22:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2025-09-11-lamar-z"
+  },
+  {
+    "title": "Gettoblaster BBQ",
+    "performers": [
+      {
+        "name": "Gettoblaster",
+        "headliner": true
+      },
+      {
+        "name": "Roland Clark",
+        "headliner": false
+      },
+      {
+        "name": "DJ Mes",
+        "headliner": false
+      },
+      {
+        "name": "Uriah G",
+        "headliner": false
+      },
+      {
+        "name": "Missy",
+        "headliner": false
+      },
+      {
+        "name": "Fuzz Worth",
+        "headliner": false
+      },
+      {
+        "name": "Gerad G",
+        "headliner": false
+      }
+    ],
+    "date": "2025-09-12",
+    "time": "18:00",
+    "doors": null,
+    "price": "$15",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2025-09-12-gettoblaster"
+  },
+  {
     "title": "Villem",
     "performers": [
       {
@@ -4945,14 +5056,14 @@
 
 
   {
-    "title": "Jam Machine",
+    "title": "Big Al & The Hitman",
     "performers": [
       {
-        "name": "Jam Machine",
+        "name": "Big Al & The Hitman",
         "headliner": true
       }
     ],
-    "date": "2026-06-27",
+    "date": "2026-09-04",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -4961,36 +5072,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-06-27-jam-machine"
+    "id": "chagrin-tavern-2026-09-04-big-al-the-hitman"
   },
   {
-    "title": "Legacy Band",
+    "title": "Treble In CLE",
     "performers": [
       {
-        "name": "Legacy Band",
+        "name": "Treble In CLE",
         "headliner": true
       }
     ],
-    "date": "2026-06-28",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-06-28-legacy-band"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-01",
+    "date": "2026-09-05",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -4999,369 +5091,7 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-07-01-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-02",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-02-trivia"
-  },
-  {
-    "title": "Abbey Rodeo",
-    "performers": [
-      {
-        "name": "Abbey Rodeo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-02",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-02-abbey-rodeo"
-  },
-  {
-    "title": "Intense",
-    "performers": [
-      {
-        "name": "Intense",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-03",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-03-intense"
-  },
-  {
-    "title": "Medusa",
-    "performers": [
-      {
-        "name": "Medusa",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-04",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-04-medusa"
-  },
-  {
-    "title": "FM 77",
-    "performers": [
-      {
-        "name": "FM 77",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-04",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-04-fm-77"
-  },
-
-  {
-    "title": "Eric Butler",
-    "performers": [
-      {
-        "name": "Eric Butler",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-05",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-05-eric-butler"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-08",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-08-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-09",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-09-trivia"
-  },
-  {
-    "title": "Elmerz Gun",
-    "performers": [
-      {
-        "name": "Elmerz Gun",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-10",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-10-elmerz-gun"
-  },
-  {
-    "title": "Pawn",
-    "performers": [
-      {
-        "name": "Pawn",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-11",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-11-pawn"
-  },
-  {
-    "title": "Higher Ground",
-    "performers": [
-      {
-        "name": "Higher Ground",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-12",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-12-higher-ground"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-15-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-16",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-16-trivia"
-  },
-  {
-    "title": "Swamp Boogie",
-    "performers": [
-      {
-        "name": "Swamp Boogie",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-17",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-17-swamp-boogie"
-  },
-  {
-    "title": "Phil n the Blanks",
-    "performers": [
-      {
-        "name": "Phil n the Blanks",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-18",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-18-phil-n-the-blanks"
-  },
-  {
-    "title": "Sully Solo",
-    "performers": [
-      {
-        "name": "Sully Solo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-19",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-19-sully-solo"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-22",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-22-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-23",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-23-trivia"
-  },
-  {
-    "title": "Follow the Sun",
-    "performers": [
-      {
-        "name": "Follow the Sun",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-24",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-24-follow-the-sun"
+    "id": "chagrin-tavern-2026-09-05-treble-in-cle"
   },
   {
     "title": "Ted Riser",
@@ -5371,7 +5101,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-07-26",
+    "date": "2026-09-06",
     "time": "12:00",
     "doors": null,
     "price": null,
@@ -5380,160 +5110,7 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-07-26-ted-riser"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-29-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-30",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-30-trivia"
-  },
-  {
-    "title": "Big Al & the Hit Man",
-    "performers": [
-      {
-        "name": "Big Al & the Hit Man",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-31",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-07-31-big-al-the-hit-man"
-  },
-  {
-    "title": "Rock the House",
-    "performers": [
-      {
-        "name": "Rock the House",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-01",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-01-rock-the-house"
-  },
-
-  {
-    "title": "Sully Solo",
-    "performers": [
-      {
-        "name": "Sully Solo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-02",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-02-sully-solo"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-05",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-05-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-06",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-06-trivia"
-  },
-  {
-    "title": "The Marshall Band",
-    "performers": [
-      {
-        "name": "The Marshall Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": "23:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-07-the-marshall-band"
+    "id": "chagrin-tavern-2026-09-06-ted-riser"
   },
   {
     "title": "Medusa",
@@ -5543,8 +5120,8 @@
         "headliner": true
       }
     ],
-    "date": "2026-08-08",
-    "time": "19:00",
+    "date": "2026-09-07",
+    "time": "12:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -5552,17 +5129,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-08-medusa"
+    "id": "chagrin-tavern-2026-09-07-medusa"
   },
   {
-    "title": "SINGO",
+    "title": "Intense",
     "performers": [
       {
-        "name": "SINGO",
+        "name": "Intense",
         "headliner": true
       }
     ],
-    "date": "2026-08-12",
+    "date": "2026-09-11",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5571,45 +5148,7 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-12-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-13",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-13-trivia"
-  },
-  {
-    "title": "The Legacy Band",
-    "performers": [
-      {
-        "name": "The Legacy Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-14-the-legacy-band"
+    "id": "chagrin-tavern-2026-09-11-intense"
   },
   {
     "title": "Glass House",
@@ -5619,7 +5158,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-08-15",
+    "date": "2026-09-12",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5628,36 +5167,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-15-glass-house"
+    "id": "chagrin-tavern-2026-09-12-glass-house"
   },
   {
-    "title": "Sully Solo",
+    "title": "Legacy Band",
     "performers": [
       {
-        "name": "Sully Solo",
+        "name": "Legacy Band",
         "headliner": true
       }
     ],
-    "date": "2026-08-17",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-17-sully-solo"
-  },
-  {
-    "title": "SINGO",
-    "performers": [
-      {
-        "name": "SINGO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-19",
+    "date": "2026-09-13",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5666,17 +5186,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-19-singo"
+    "id": "chagrin-tavern-2026-09-13-legacy-band"
   },
   {
-    "title": "TRIVIA",
+    "title": "Pawn",
     "performers": [
       {
-        "name": "TRIVIA",
+        "name": "Pawn",
         "headliner": true
       }
     ],
-    "date": "2026-08-20",
+    "date": "2026-09-18",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5685,17 +5205,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-20-trivia"
+    "id": "chagrin-tavern-2026-09-18-pawn"
   },
   {
-    "title": "Higher Ground",
+    "title": "Churchills Basement",
     "performers": [
       {
-        "name": "Higher Ground",
+        "name": "Churchills Basement",
         "headliner": true
       }
     ],
-    "date": "2026-08-21",
+    "date": "2026-09-19",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5704,17 +5224,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-21-higher-ground"
+    "id": "chagrin-tavern-2026-09-19-churchills-basement"
   },
   {
-    "title": "Cleveland Rock Bar",
+    "title": "Eric Butler",
     "performers": [
       {
-        "name": "Cleveland Rock Bar",
+        "name": "Eric Butler",
         "headliner": true
       }
     ],
-    "date": "2026-08-22",
+    "date": "2026-09-20",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5723,17 +5243,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-22-cleveland-rock-bar"
+    "id": "chagrin-tavern-2026-09-20-eric-butler"
   },
   {
-    "title": "SINGO",
+    "title": "Vinyl Arcade",
     "performers": [
       {
-        "name": "SINGO",
+        "name": "Vinyl Arcade",
         "headliner": true
       }
     ],
-    "date": "2026-08-26",
+    "date": "2026-09-25",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5742,26 +5262,7 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-26-singo"
-  },
-  {
-    "title": "TRIVIA",
-    "performers": [
-      {
-        "name": "TRIVIA",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-27",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-08-27-trivia"
+    "id": "chagrin-tavern-2026-09-25-vinyl-arcade"
   },
   {
     "title": "FM 77",
@@ -5771,7 +5272,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-08-28",
+    "date": "2026-09-26",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5780,17 +5281,55 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-28-fm-77"
+    "id": "chagrin-tavern-2026-09-26-fm-77"
   },
   {
-    "title": "Jam Machine",
+    "title": "Sully Solo",
     "performers": [
       {
-        "name": "Jam Machine",
+        "name": "Sully Solo",
         "headliner": true
       }
     ],
-    "date": "2026-08-29",
+    "date": "2026-09-27",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-09-27-sully-solo"
+  },
+  {
+    "title": "Comedy Night",
+    "performers": [
+      {
+        "name": "Comedy Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-27",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-09-27-comedy-night"
+  },
+  {
+    "title": "Elmerz Gun",
+    "performers": [
+      {
+        "name": "Elmerz Gun",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-02",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5799,18 +5338,18 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-29-jam-machine"
+    "id": "chagrin-tavern-2026-10-02-elmerz-gun"
   },
   {
-    "title": "Phil n the Blanks",
+    "title": "Phil N The Blanks",
     "performers": [
       {
-        "name": "Phil n the Blanks",
+        "name": "Phil N The Blanks",
         "headliner": true
       }
     ],
-    "date": "2026-08-30",
-    "time": "12:00",
+    "date": "2026-10-03",
+    "time": "19:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -5818,7 +5357,102 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-08-30-phil-n-the-blanks"
+    "id": "chagrin-tavern-2026-10-03-phil-n-the-blanks"
+  },
+  {
+    "title": "Cameron Zona",
+    "performers": [
+      {
+        "name": "Cameron Zona",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-10-05-cameron-zona"
+  },
+  {
+    "title": "Rock The House Live",
+    "performers": [
+      {
+        "name": "Rock The House Live",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-10-09-rock-the-house-live"
+  },
+  {
+    "title": "The Marshall Band",
+    "performers": [
+      {
+        "name": "The Marshall Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-10-10-the-marshall-band"
+  },
+  {
+    "title": "Cameron Zona",
+    "performers": [
+      {
+        "name": "Cameron Zona",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-10-12-cameron-zona"
+  },
+  {
+    "title": "Cleveland Rock Bar",
+    "performers": [
+      {
+        "name": "Cleveland Rock Bar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-10-16-cleveland-rock-bar"
   },
 
 
@@ -6611,15 +6245,17 @@
 
 
 
+
+
   {
-    "title": "Matt Goodrich (Restaurant)",
+    "title": "Brokenglish",
     "performers": [
       {
-        "name": "Matt Goodrich",
+        "name": "Brokenglish",
         "headliner": true
       }
     ],
-    "date": "2026-08-13",
+    "date": "2026-09-03",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -6628,17 +6264,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-13-matt-goodrich"
+    "id": "house-of-blues-2026-09-03-brokenglish"
   },
   {
-    "title": "The Brakes (Restaurant)",
+    "title": "Dan Pyne",
     "performers": [
       {
-        "name": "The Brakes",
+        "name": "Dan Pyne",
         "headliner": true
       }
     ],
-    "date": "2026-08-14",
+    "date": "2026-09-04",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -6647,17 +6283,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-14-the-brakes"
+    "id": "house-of-blues-2026-09-04-dan-pyne"
   },
   {
-    "title": "Take 2 (Restaurant)",
+    "title": "Bridge The Gap",
     "performers": [
       {
-        "name": "Take 2",
+        "name": "Bridge The Gap",
         "headliner": true
       }
     ],
-    "date": "2026-08-15",
+    "date": "2026-09-05",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -6666,17 +6302,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-15-take-2"
+    "id": "house-of-blues-2026-09-05-bridge-the-gap"
   },
   {
-    "title": "Chad Hoffman (Restaurant)",
+    "title": "Nathan Hedges",
     "performers": [
       {
-        "name": "Chad Hoffman",
+        "name": "Nathan Hedges",
         "headliner": true
       }
     ],
-    "date": "2026-08-20",
+    "date": "2026-09-10",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -6685,93 +6321,17 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-20-chad-hoffman"
+    "id": "house-of-blues-2026-09-10-nathan-hedges"
   },
   {
-    "title": "Brent Kirby (Restaurant)",
-    "performers": [
-      {
-        "name": "Brent Kirby",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-21",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-21-brent-kirby"
-  },
-  {
-    "title": "Diana Chittester (Restaurant)",
-    "performers": [
-      {
-        "name": "Diana Chittester",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-22",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-22-diana-chittester"
-  },
-  {
-    "title": "Scott Stiert (Restaurant)",
-    "performers": [
-      {
-        "name": "Scott Stiert",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-27",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-27-scott-stiert"
-  },
-  {
-    "title": "Erin Nicole Neal & The Chill Factors (Restaurant)",
-    "performers": [
-      {
-        "name": "Erin Nicole Neal & The Chill Factors",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-08-28-erin-nicole-neal-the-chill-factors"
-  },
-  {
-    "title": "Ohio Drifters (Restaurant)",
+    "title": "Ohio Drifters",
     "performers": [
       {
         "name": "Ohio Drifters",
         "headliner": true
       }
     ],
-    "date": "2026-08-29",
+    "date": "2026-09-11",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -6780,7 +6340,121 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-08-29-ohio-drifters"
+    "id": "house-of-blues-2026-09-11-ohio-drifters"
+  },
+  {
+    "title": "Erin Nicole Neal & The Chill",
+    "performers": [
+      {
+        "name": "Erin Nicole Neal & The Chill",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-12-erin-nicole-neal-the-chill"
+  },
+  {
+    "title": "The Jelly Duo",
+    "performers": [
+      {
+        "name": "The Jelly Duo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-17",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-17-the-jelly-duo"
+  },
+  {
+    "title": "Karaoke Kenny",
+    "performers": [
+      {
+        "name": "Karaoke Kenny",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-19-karaoke-kenny"
+  },
+  {
+    "title": "Kristine Jackson",
+    "performers": [
+      {
+        "name": "Kristine Jackson",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-24",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-24-kristine-jackson"
+  },
+  {
+    "title": "The Brakes",
+    "performers": [
+      {
+        "name": "The Brakes",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-25-the-brakes"
+  },
+  {
+    "title": "Chad Hoffman",
+    "performers": [
+      {
+        "name": "Chad Hoffman",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-09-26-chad-hoffman"
   },
 
 
@@ -8119,14 +7793,52 @@
 
 
   {
-    "title": "Pete Lazard",
+    "title": "DJ Caffrey",
     "performers": [
       {
-        "name": "Pete Lazard",
+        "name": "DJ Caffrey",
         "headliner": true
       }
     ],
-    "date": "2026-08-01",
+    "date": "2026-09-05",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-05-dj-caffrey"
+  },
+  {
+    "title": "Maria Petti",
+    "performers": [
+      {
+        "name": "Maria Petti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-11-maria-petti"
+  },
+  {
+    "title": "Maria Petti",
+    "performers": [
+      {
+        "name": "Maria Petti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
     "time": "17:00",
     "doors": null,
     "price": null,
@@ -8135,7 +7847,83 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-08-01-pete-lazard"
+    "id": "bar-32-2026-09-12-maria-petti"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-12-dj-caffrey"
+  },
+  {
+    "title": "Pete Lazard",
+    "performers": [
+      {
+        "name": "Pete Lazard",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-18-pete-lazard"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-19-dj-caffrey"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-09-25-chris-hatton"
   },
   {
     "title": "Emma Nicholas",
@@ -8145,26 +7933,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-08-07",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-07-emma-nicholas"
-  },
-  {
-    "title": "Maria Petti",
-    "performers": [
-      {
-        "name": "Maria Petti",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
+    "date": "2026-09-25",
     "time": "17:00",
     "doors": null,
     "price": null,
@@ -8173,159 +7942,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-08-08-maria-petti"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-08",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-08-dj-caffrey"
-  },
-  {
-    "title": "Chris Hatton",
-    "performers": [
-      {
-        "name": "Chris Hatton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-14-chris-hatton"
-  },
-  {
-    "title": "Maria Petti",
-    "performers": [
-      {
-        "name": "Maria Petti",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-15-maria-petti"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-15-dj-caffrey"
-  },
-  {
-    "title": "Maria Petti",
-    "performers": [
-      {
-        "name": "Maria Petti",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-21",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-21-maria-petti"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-22",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-22-dj-caffrey"
-  },
-  {
-    "title": "Pete Lazard",
-    "performers": [
-      {
-        "name": "Pete Lazard",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-28-pete-lazard"
-  },
-  {
-    "title": "Chris Hatton",
-    "performers": [
-      {
-        "name": "Chris Hatton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-08-29-chris-hatton"
+    "id": "bar-32-2026-09-25-emma-nicholas"
   },
 
 
@@ -11499,1934 +11116,199 @@
 
 
   {
-    "title": "Chuck Fink (Luna Bakery)",
+    "title": "Bop Stop - Evelyn Wright Trio",
     "performers": [
       {
-        "name": "Chuck Fink",
+        "name": "Evelyn Wright Trio",
         "headliner": true
       }
     ],
-    "date": "2026-08-28",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-chuck-fink"
-  },
-  {
-    "title": "Toby RAPS (BUffalo Wild Wings)",
-    "performers": [
-      {
-        "name": "Toby RAPS",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-toby-raps"
-  },
-  {
-    "title": "Jazz Cats (EDWINS)",
-    "performers": [
-      {
-        "name": "Jazz Cats",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "21:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-jazz-cats"
-  },
-  {
-    "title": "A Glass of Vino (POUR)",
-    "performers": [
-      {
-        "name": "A Glass of Vino",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-a-glass-of-vino"
-  },
-  {
-    "title": "The Road Warrior (The Fairmount)",
-    "performers": [
-      {
-        "name": "The Road Warrior",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-the-road-warrior"
-  },
-  {
-    "title": "Kiss Me Deadly (The Fairmount)",
-    "performers": [
-      {
-        "name": "Kiss Me Deadly",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-kiss-me-deadly"
-  },
-  {
-    "title": "Stamper Starr (The Grocery Outlet)",
-    "performers": [
-      {
-        "name": "Stamper Starr",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "17:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-stamper-starr"
-  },
-  {
-    "title": "Velocity Stax (The Checkered Shelf)",
-    "performers": [
-      {
-        "name": "Velocity Stax",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-velocity-stax"
-  },
-  {
-    "title": "By Light We Loom (The Checkered Shelf)",
-    "performers": [
-      {
-        "name": "By Light We Loom",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-by-light-we-loom"
-  },
-  {
-    "title": "Ruairi Hurley and Carrie King (Vero Pizza)",
-    "performers": [
-      {
-        "name": "Ruairi Hurley and Carrie King",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-ruairi-hurley-and-carrie-king"
-  },
-  {
-    "title": "Kozak and Davidson Duo (Vero Pizza)",
-    "performers": [
-      {
-        "name": "Kozak and Davidson Duo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-kozak-and-davidson-duo"
-  },
-  {
-    "title": "Alan Greene Band (Barrio)",
-    "performers": [
-      {
-        "name": "Alan Greene Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-alan-greene-band"
-  },
-  {
-    "title": "Roadkill Revolution (Barrio)",
-    "performers": [
-      {
-        "name": "Roadkill Revolution",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-roadkill-revolution"
-  },
-  {
-    "title": "Civic Summer (Barrio)",
-    "performers": [
-      {
-        "name": "Civic Summer",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-civic-summer"
-  },
-  {
-    "title": "James Douglas (Parnell's Pub)",
-    "performers": [
-      {
-        "name": "James Douglas",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-james-douglas"
-  },
-  {
-    "title": "Grace Oddo (Parnell's Pub)",
-    "performers": [
-      {
-        "name": "Grace Oddo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-grace-oddo"
-  },
-  {
-    "title": "Blue Lunch (Ascent Pocket Park)",
-    "performers": [
-      {
-        "name": "Blue Lunch",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "17:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-blue-lunch"
-  },
-  {
-    "title": "Hello 3D (Ascent Pocket Park)",
-    "performers": [
-      {
-        "name": "Hello 3D",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-28-hello-3d"
-  },
-
-
-
-  {
-    "title": "Soulful Steps line dancing (Noble Library)",
-    "performers": [
-      {
-        "name": "Soulful Steps",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-soulful-steps"
-  },
-  {
-    "title": "Neekesh and the Band (Noble Library)",
-    "performers": [
-      {
-        "name": "Neekesh and the Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
+    "date": "2026-09-05",
     "time": "14:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "heights-music-hop",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "heights-music-hop-2026-08-29-neekesh-and-the-band"
+    "id": "hingetown-jazz-festival-2026-09-05-evelyn-wright-trio"
   },
   {
-    "title": "Mr. Haney & Friends (Church of the Saviour)",
+    "title": "Saucy Brew Works - The Kent State University Jazz Combo",
     "performers": [
       {
-        "name": "Mr. Haney & Friends",
+        "name": "The Kent State University Jazz Combo",
         "headliner": true
       }
     ],
-    "date": "2026-08-29",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-mr-haney-friends"
-  },
-  {
-    "title": "DJ Lily Jade (Church of the Saviour)",
-    "performers": [
-      {
-        "name": "DJ Lily Jade",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "15:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-dj-lily-jade"
-  },
-  {
-    "title": "Sweet Willy and the Solid Cats (Sophie La Gourmande)",
-    "performers": [
-      {
-        "name": "Sweet Willy and the Solid Cats",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-sweet-willy-and-the-solid-cats"
-  },
-  {
-    "title": "Colleen Welch (Sophie La Gourmande)",
-    "performers": [
-      {
-        "name": "Colleen Welch",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-colleen-welch"
-  },
-  {
-    "title": "Jesse Jukebox and Music Izzey Groovy (S'il Vous Play')",
-    "performers": [
-      {
-        "name": "Jesse Jukebox",
-        "headliner": true
-      },
-      {
-        "name": "Music Izzey Groovy",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-jesse-jukebox"
-  },
-  {
-    "title": "With Windswept Hair (S'il Vous Play')",
-    "performers": [
-      {
-        "name": "With Windswept Hair",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-with-windswept-hair"
-  },
-  {
-    "title": "Lonesome Bones (CLE Urban Winery)",
-    "performers": [
-      {
-        "name": "Lonesome Bones",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-lonesome-bones"
-  },
-  {
-    "title": "Charity Evonna (CLE Urban Winery)",
-    "performers": [
-      {
-        "name": "Charity Evonna",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-charity-evonna"
-  },
-  {
-    "title": "Super Babes (CLE Urban Winery)",
-    "performers": [
-      {
-        "name": "Super Babes",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-super-babes"
-  },
-  {
-    "title": "Sierra Delaine (CLE Urban Winery)",
-    "performers": [
-      {
-        "name": "Sierra Delaine",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-sierra-delaine"
-  },
-  {
-    "title": "Craig Rich (Stone Oven)",
-    "performers": [
-      {
-        "name": "Craig Rich",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-craig-rich"
-  },
-  {
-    "title": "Kate Kooser (Stone Oven)",
-    "performers": [
-      {
-        "name": "Kate Kooser",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-kate-kooser"
-  },
-  {
-    "title": "Alla Boara (Hexagon Books)",
-    "performers": [
-      {
-        "name": "Alla Boara",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-alla-boara"
-  },
-  {
-    "title": "Shortt Stories (Dewey's Pizza)",
-    "performers": [
-      {
-        "name": "Shortt Stories",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-shortt-stories"
-  },
-  {
-    "title": "Charlie Mosbrook (Heights Arts)",
-    "performers": [
-      {
-        "name": "Charlie Mosbrook",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-charlie-mosbrook"
-  },
-  {
-    "title": "Tweed (Heights Arts)",
-    "performers": [
-      {
-        "name": "Tweed",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-tweed"
-  },
-  {
-    "title": "MOSSOM (Bottlehouse)",
-    "performers": [
-      {
-        "name": "MOSSOM",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-mossom"
-  },
-  {
-    "title": "The Baker's Basement (Bottlehouse)",
-    "performers": [
-      {
-        "name": "The Baker's Basement",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-the-baker-s-basement"
-  },
-  {
-    "title": "Warren Bendler (Bottlehouse)",
-    "performers": [
-      {
-        "name": "Warren Bendler",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-warren-bendler"
-  },
-  {
-    "title": "David Loy and the Ramrods (Bottlehouse)",
-    "performers": [
-      {
-        "name": "David Loy and the Ramrods",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-david-loy-and-the-ramrods"
-  },
-  {
-    "title": "Bill Lestock and Alex Parris (Abundance)",
-    "performers": [
-      {
-        "name": "Bill Lestock",
-        "headliner": true
-      },
-      {
-        "name": "Alex Parris",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-bill-lestock"
-  },
-  {
-    "title": "First Class Citizens (Abundance)",
-    "performers": [
-      {
-        "name": "First Class Citizens",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-first-class-citizens"
-  },
-  {
-    "title": "Synergy (Boss Dog Brewing)",
-    "performers": [
-      {
-        "name": "Synergy",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-synergy"
-  },
-  {
-    "title": "Cats on Holiday (Boss Dog Brewing)",
-    "performers": [
-      {
-        "name": "Cats on Holiday",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-cats-on-holiday"
-  },
-  {
-    "title": "Maura Rogers and the Bellows (Boss Dog Brewing)",
-    "performers": [
-      {
-        "name": "Maura Rogers and the Bellows",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-maura-rogers-and-the-bellows"
-  },
-  {
-    "title": "Matt Harmon (Mitchell's Chocolates)",
-    "performers": [
-      {
-        "name": "Matt Harmon",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-matt-harmon"
-  },
-  {
-    "title": "Tracy Marie and Josh Donato (STEM)",
-    "performers": [
-      {
-        "name": "Tracy Marie",
-        "headliner": true
-      },
-      {
-        "name": "Josh Donato",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-tracy-marie"
-  },
-  {
-    "title": "Bob Frank (STEM)",
-    "performers": [
-      {
-        "name": "Bob Frank",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-bob-frank"
-  },
-  {
-    "title": "Ashley Brooke Toussaint (Peace Lily Plant Boutique)",
-    "performers": [
-      {
-        "name": "Ashley Brooke Toussaint",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-ashley-brooke-toussaint"
-  },
-  {
-    "title": "Morgan Mecaskey (Peace Lily Plant Boutique)",
-    "performers": [
-      {
-        "name": "Morgan Mecaskey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-morgan-mecaskey"
-  },
-  {
-    "title": "Wave Magnetik (Olie's Gift & Ship)",
-    "performers": [
-      {
-        "name": "Wave Magnetik",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "15:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-wave-magnetik"
-  },
-  {
-    "title": "Adult Human Chicken (Olie's Gift & Ship)",
-    "performers": [
-      {
-        "name": "Adult Human Chicken",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-adult-human-chicken"
-  },
-  {
-    "title": "Sean Benjamin (High Key on Lee)",
-    "performers": [
-      {
-        "name": "Sean Benjamin",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-sean-benjamin"
-  },
-  {
-    "title": "AJ and the Woods (High Key on Lee)",
-    "performers": [
-      {
-        "name": "AJ and the Woods",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-aj-and-the-woods"
-  },
-  {
-    "title": "DJ TK (High Key on Lee)",
-    "performers": [
-      {
-        "name": "DJ TK",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "23:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-dj-tk"
-  },
-  {
-    "title": "Mariachi Santa Cecilia (Cozumel)",
-    "performers": [
-      {
-        "name": "Mariachi Santa Cecilia",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-mariachi-santa-cecilia"
-  },
-  {
-    "title": "Opus 216 (Marchant Manor)",
-    "performers": [
-      {
-        "name": "Opus 216",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "16:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-opus-216"
-  },
-  {
-    "title": "Eric Butler (Tavern Company)",
-    "performers": [
-      {
-        "name": "Eric Butler",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-eric-butler"
-  },
-  {
-    "title": "City Lite Trio (Tavern Company)",
-    "performers": [
-      {
-        "name": "City Lite Trio",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-city-lite-trio"
-  },
-  {
-    "title": "Apostle Jones (Tavern Company)",
-    "performers": [
-      {
-        "name": "Apostle Jones",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-apostle-jones"
-  },
-  {
-    "title": "Austin Walkin' Cane (Marotta's)",
-    "performers": [
-      {
-        "name": "Austin Walkin' Cane",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-austin-walkin-cane"
-  },
-  {
-    "title": "Musicologie (Best Gyros Street Stage)",
-    "performers": [
-      {
-        "name": "Musicologie",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-musicologie"
-  },
-  {
-    "title": "Tony Quarles and the Discovery Band (Best Gyros Street Stage)",
-    "performers": [
-      {
-        "name": "Tony Quarles and the Discovery Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-tony-quarles-and-the-discovery-band"
-  },
-  {
-    "title": "Tim Matson (New Heights Grill)",
-    "performers": [
-      {
-        "name": "Tim Matson",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-tim-matson"
-  },
-  {
-    "title": "Boomers 330 (New Heights Grill)",
-    "performers": [
-      {
-        "name": "Boomers 330",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-boomers-330"
-  },
-  {
-    "title": "The Sidemen (New Heights Grill)",
-    "performers": [
-      {
-        "name": "The Sidemen",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-the-sidemen"
-  },
-  {
-    "title": "Get Back (The Social Room)",
-    "performers": [
-      {
-        "name": "Get Back",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "18:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-get-back"
-  },
-  {
-    "title": "Outside Friends (The Social Room)",
-    "performers": [
-      {
-        "name": "Outside Friends",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-29-outside-friends"
-  },
-
-
-
-  {
-    "title": "Hum and Strum (PEACE Park)",
-    "performers": [
-      {
-        "name": "Hum and Strum",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-hum-and-strum"
-  },
-  {
-    "title": "Yiddishe Cup (PEACE Park)",
-    "performers": [
-      {
-        "name": "Yiddishe Cup",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
+    "date": "2026-09-05",
     "time": "14:30",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "heights-music-hop",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "heights-music-hop-2026-08-30-yiddishe-cup"
+    "id": "hingetown-jazz-festival-2026-09-05-ksu-jazz-combo"
   },
   {
-    "title": "Mekimi (Convetry PEACE Arch)",
+    "title": "Jukebox - Jennifer James Trio",
     "performers": [
       {
-        "name": "Mekimi",
+        "name": "Jennifer James Trio",
         "headliner": true
       }
     ],
-    "date": "2026-08-30",
-    "time": "13:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-mekimi"
-  },
-  {
-    "title": "Gary Lee (Convetry PEACE Arch)",
-    "performers": [
-      {
-        "name": "Gary Lee",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
+    "date": "2026-09-05",
     "time": "15:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "heights-music-hop",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "heights-music-hop-2026-08-30-gary-lee"
+    "id": "hingetown-jazz-festival-2026-09-05-jennifer-james-trio"
   },
   {
-    "title": "Allen Littman (Mac's Backs Books)",
+    "title": "Saucy Brew Works - Cleveland State University Jazz Combo",
     "performers": [
       {
-        "name": "Allen Littman",
+        "name": "Cleveland State University Jazz Combo",
         "headliner": true
       }
     ],
-    "date": "2026-08-30",
-    "time": "13:00",
+    "date": "2026-09-05",
+    "time": "16:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "heights-music-hop",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "heights-music-hop-2026-08-30-allen-littman"
+    "id": "hingetown-jazz-festival-2026-09-05-csu-jazz-combo"
   },
   {
-    "title": "Melonhead (Mac's Backs Books)",
+    "title": "Jukebox - University of Akron Jazz Combo",
     "performers": [
       {
-        "name": "Melonhead",
+        "name": "University of Akron Jazz Combo",
         "headliner": true
       }
     ],
-    "date": "2026-08-30",
-    "time": "15:00",
+    "date": "2026-09-05",
+    "time": "16:30",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "heights-music-hop",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "heights-music-hop-2026-08-30-melonhead"
+    "id": "hingetown-jazz-festival-2026-09-05-ua-jazz-combo"
   },
   {
-    "title": "Breaking Point (Pekar Park Stage)",
+    "title": "Bop Stop - JT's Electrik Blackout",
     "performers": [
       {
-        "name": "Breaking Point",
+        "name": "JT's Electrik Blackout",
         "headliner": true
       }
     ],
-    "date": "2026-08-30",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-breaking-point"
-  },
-  {
-    "title": "The Blues Drivers (Pekar Park Stage)",
-    "performers": [
-      {
-        "name": "The Blues Drivers",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-the-blues-drivers"
-  },
-  {
-    "title": "Silent Film Festival with Live Piano (City Church)",
-    "performers": [
-      {
-        "name": "Silent Film Festival with Live Piano",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-silent-film-festival-with-live-piano"
-  },
-  {
-    "title": "Dave Zup (Soba Noodles)",
-    "performers": [
-      {
-        "name": "Dave Zup",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-dave-zup"
-  },
-  {
-    "title": "Tom Shaper and the Resistance (Soba Noodles)",
-    "performers": [
-      {
-        "name": "Tom Shaper and the Resistance",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-tom-shaper-and-the-resistance"
-  },
-  {
-    "title": "Highland Heights School of Rock Grad Show (Grog Shop)",
-    "performers": [
-      {
-        "name": "Highland Heights School of Rock Grad Show",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-highland-heights-school-of-rock-grad-show"
-  },
-  {
-    "title": "Highland Heights School of Rock Grad Show (Grog Shop)",
-    "performers": [
-      {
-        "name": "Highland Heights School of Rock Grad Show",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-highland-heights-school-of-rock-grad-show"
-  },
-  {
-    "title": "Tri-Tones Surf and Rock Band (B-Side)",
-    "performers": [
-      {
-        "name": "Tri-Tones Surf and Rock Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-tri-tones-surf-and-rock-band"
-  },
-  {
-    "title": "Ziggy D. of C-level (B-Side)",
-    "performers": [
-      {
-        "name": "Ziggy D. of C-level",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-ziggy-d-of-c-level"
-  },
-  {
-    "title": "DJ Trapathonjerm (B-Side Patio)",
-    "performers": [
-      {
-        "name": "DJ Trapathonjerm",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-dj-trapathonjerm"
-  },
-  {
-    "title": "DJ Casualtearsintheclub (B-Side Patio)",
-    "performers": [
-      {
-        "name": "DJ Casualtearsintheclub",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "15:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "heights-music-hop",
-    "source": "manual",
-    "manual": true,
-    "id": "heights-music-hop-2026-08-30-dj-casualtearsintheclub"
-  },
-
-
-
-
-
-
-
-  {
-    "title": "Dan Ricci / AMS DJ (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "Dan Ricci",
-        "headliner": true
-      },
-      {
-        "name": "AMS DJ",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-13",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-13-dan-ricci"
-  },
-  {
-    "title": "Primavera Band (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Primavera Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-13",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-13-primavera-band"
-  },
-  {
-    "title": "Italian Band of Cleveland (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Italian Band of Cleveland",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-13",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-13-italian-band-of-cleveland"
-  },
-  {
-    "title": "The GoodFellos (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "The GoodFellos",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-14-the-goodfellos"
-  },
-  {
-    "title": "Primavera Band (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Primavera Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-14-primavera-band"
-  },
-  {
-    "title": "Italian Band of Cleveland (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Italian Band of Cleveland",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-14-italian-band-of-cleveland"
-  },
-  {
-    "title": "Cleveland Cannolis (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "Cleveland Cannolis",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-cleveland-cannolis"
-  },
-  {
-    "title": "Cleveland Cannolis (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Cleveland Cannolis",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "14:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-cleveland-cannolis"
-  },
-  {
-    "title": "G4Live Band (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "G4Live Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-g4live-band"
-  },
-  {
-    "title": "Nick Costa (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "Nick Costa",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-nick-costa"
-  },
-  {
-    "title": "Primavera Band (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Primavera Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-primavera-band"
-  },
-  {
-    "title": "Italian Band of Cleveland (Mayfield Rd)",
-    "performers": [
-      {
-        "name": "Italian Band of Cleveland",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-15",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-15-italian-band-of-cleveland"
-  },
-  {
-    "title": "Avanti Band (Church Yard Tent)",
-    "performers": [
-      {
-        "name": "Avanti Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-16",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "little-italy-feast",
-    "source": "manual",
-    "manual": true,
-    "id": "little-italy-feast-2026-08-16-avanti-band"
-  },
-  {
-    "title": "Primavera Band and Choral Group (Front of Church)",
-    "performers": [
-      {
-        "name": "Primavera Band and Choral Group",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-16",
+    "date": "2026-09-05",
     "time": "17:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "little-italy-feast",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "little-italy-feast-2026-08-16-primavera-band-and-choral-group"
+    "id": "hingetown-jazz-festival-2026-09-05-electrik-blackout"
   },
   {
-    "title": "Swamp Boogie Band (Church Yard Tent)",
+    "title": "Saucy Brew Works - Tri-C Jazz Studies Fellowship Ensemble",
     "performers": [
       {
-        "name": "Swamp Boogie Band",
+        "name": "Tri-C Jazz Studies Fellowship Ensemble",
         "headliner": true
       }
     ],
-    "date": "2026-08-16",
-    "time": "17:00",
+    "date": "2026-09-05",
+    "time": "17:30",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
-    "venueId": "little-italy-feast",
+    "venueId": "hingetown-jazz-festival",
     "source": "manual",
     "manual": true,
-    "id": "little-italy-feast-2026-08-16-swamp-boogie-band"
+    "id": "hingetown-jazz-festival-2026-09-05-tri-c-ensemble"
   },
+  {
+    "title": "Jukebox - Rewired",
+    "performers": [
+      {
+        "name": "Rewired",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "18:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hingetown-jazz-festival",
+    "source": "manual",
+    "manual": true,
+    "id": "hingetown-jazz-festival-2026-09-05-rewired"
+  },
+  {
+    "title": "Bop Stop - John Klayman's Prism",
+    "performers": [
+      {
+        "name": "John Klayman's Prism",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "18:30",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hingetown-jazz-festival",
+    "source": "manual",
+    "manual": true,
+    "id": "hingetown-jazz-festival-2026-09-05-prism"
+  },
+  {
+    "title": "Bop Stop - Grace Blackford Quintet",
+    "performers": [
+      {
+        "name": "Grace Blackford Quintet",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hingetown-jazz-festival",
+    "source": "manual",
+    "manual": true,
+    "id": "hingetown-jazz-festival-2026-09-05-grace-blackford-quintet"
+  },
+
+
+
+
 
 
 
@@ -13601,6 +11483,25 @@
     "id": "twist-social-club-2026-09-05-latrice-j-love-diamond"
   },
   {
+    "title": "Hilary Duff Brunch",
+    "performers": [
+      {
+        "name": "Hilary Duff Brunch",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "10:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-09-19-hilary-duff-brunch"
+  },
+  {
     "title": "American Whorror Story",
     "performers": [
       {
@@ -13638,6 +11539,10 @@
     "manual": true,
     "id": "twist-social-club-2026-10-10-practical-magic-brunch"
   },
+
+
+
+
 
 
   {
@@ -14835,84 +12740,328 @@
     "manual": true,
     "id": "nano-brew-2026-09-03-alzheimers-awareness"
   },
-  
-
-
   {
-    "title": "DJ JayBe",
+    "title": "Cassius G",
     "performers": [
       {
-        "name": "DJ JayBe",
+        "name": "Cassius G",
         "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bird-of-paradise",
-    "source": "manual",
-    "manual": true,
-    "id": "bird-of-paradise-2026-08-28-dj-jaybe"
-  },
-  {
-    "title": "DJ Flash Flaco",
-    "performers": [
-      {
-        "name": "DJ Flash Flaco",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bird-of-paradise",
-    "source": "manual",
-    "manual": true,
-    "id": "bird-of-paradise-2026-08-29-dj-flash-flaco"
-  },
-  {
-    "title": "DJ Phero",
-    "performers": [
-      {
-        "name": "DJ Phero",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-08-29-dj-phero"
-  },
-  {
-    "title": "Clown Prom",
-    "performers": [
-      {
-        "name": "Clown Prom",
-        "headliner": true
-      },
-      {
-        "name": "DJ EENY",
-        "headliner": false
-      },
-      {
-        "name": "Kellevators",
-        "headliner": false
       }
     ],
     "date": "2026-09-04",
-    "time": "20:00",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-04-cassius-g"
+  },
+  {
+    "title": "Unknownphrazes",
+    "performers": [
+      {
+        "name": "Unknownphrazes",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-05-unknownphrazes"
+  },
+  {
+    "title": "Mike James",
+    "performers": [
+      {
+        "name": "Mike James",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-11-mike-james"
+  },
+  {
+    "title": "IK Dubaku",
+    "performers": [
+      {
+        "name": "IK Dubaku",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-12-ik-dubaku"
+  },
+  {
+    "title": "Corey Grand",
+    "performers": [
+      {
+        "name": "Corey Grand",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-18-corey-grand"
+  },
+  {
+    "title": "Cassius G",
+    "performers": [
+      {
+        "name": "Cassius G",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-19-cassius-g"
+  },
+  {
+    "title": "Ariq",
+    "performers": [
+      {
+        "name": "Ariq",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-25-ariq"
+  },
+  {
+    "title": "Spaz",
+    "performers": [
+      {
+        "name": "Spaz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-09-26-spaz"
+  },
+  
+
+
+
+
+  {
+    "title": "Spaz",
+    "performers": [
+      {
+        "name": "Spaz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-04-spaz"
+  },
+  {
+    "title": "Cassius G",
+    "performers": [
+      {
+        "name": "Cassius G",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-05-cassius-g"
+  },
+  {
+    "title": "Jaybe",
+    "performers": [
+      {
+        "name": "Jaybe",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-11-jaybe"
+  },
+  {
+    "title": "Mike James",
+    "performers": [
+      {
+        "name": "Mike James",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-12-mike-james"
+  },
+  {
+    "title": "Flaco Flash",
+    "performers": [
+      {
+        "name": "Flaco Flash",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-18-flaco-flash"
+  },
+  {
+    "title": "IK Dubaku",
+    "performers": [
+      {
+        "name": "IK Dubaku",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-19-ik-dubaku"
+  },
+  {
+    "title": "Spaz",
+    "performers": [
+      {
+        "name": "Spaz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-25-spaz"
+  },
+  {
+    "title": "Nu-Era",
+    "performers": [
+      {
+        "name": "Nu-Era",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bird-of-paradise",
+    "source": "manual",
+    "manual": true,
+    "id": "bird-of-paradise-2026-09-26-nu-era"
+  },
+
+
+
+  {
+    "title": "Sound On Tape",
+    "performers": [
+      {
+        "name": "Sound On Tape",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -14920,8 +13069,419 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-09-04-clown-prom"
+    "id": "smoke-and-mirrors-2026-09-05-sound-on-tape"
+  },
+  {
+    "title": "Tano",
+    "performers": [
+      {
+        "name": "Tano",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-09-12-tano"
+  },
+  {
+    "title": "MFC / KDIN",
+    "performers": [
+      {
+        "name": "MFC",
+        "headliner": true
+      },
+      {
+        "name": "KDIN",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-18",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-09-18-mfc"
+  },
+  {
+    "title": "Just AJ",
+    "performers": [
+      {
+        "name": "Just AJ",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-09-19-just-aj"
+  },
+  {
+    "title": "Teez",
+    "performers": [
+      {
+        "name": "Teez",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-09-26-teez"
+  },
+
+
+
+
+
+
+  {
+    "title": "Dennis Lewin",
+    "performers": [
+      {
+        "name": "Dennis Lewin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-02",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-02-dennis-lewin"
+  },
+  {
+    "title": "Kristin Pepper",
+    "performers": [
+      {
+        "name": "Kristin Pepper",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-03",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-03-kristin-pepper"
+  },
+  {
+    "title": "Jeffrey Cruz",
+    "performers": [
+      {
+        "name": "Jeffrey Cruz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-04-jeffrey-cruz"
+  },
+  {
+    "title": "Eddie Majeski",
+    "performers": [
+      {
+        "name": "Eddie Majeski",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-05-eddie-majeski"
+  },
+  {
+    "title": "Dennis Lewin",
+    "performers": [
+      {
+        "name": "Dennis Lewin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-09",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-09-dennis-lewin"
+  },
+  {
+    "title": "Jeffrey Cruz",
+    "performers": [
+      {
+        "name": "Jeffrey Cruz",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-10",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-10-jeffrey-cruz"
+  },
+  {
+    "title": "Sam Romano",
+    "performers": [
+      {
+        "name": "Sam Romano",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-11-sam-romano"
+  },
+  {
+    "title": "Jordan Hope",
+    "performers": [
+      {
+        "name": "Jordan Hope",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-12-jordan-hope"
+  },
+  {
+    "title": "Dennis Lewin",
+    "performers": [
+      {
+        "name": "Dennis Lewin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-16",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-16-dennis-lewin"
+  },
+  {
+    "title": "Kristin Pepper",
+    "performers": [
+      {
+        "name": "Kristin Pepper",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-17",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-17-kristin-pepper"
+  },
+  {
+    "title": "Zach Meadows",
+    "performers": [
+      {
+        "name": "Zach Meadows",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-18",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-18-zach-meadows"
+  },
+  {
+    "title": "Eddie Majeski",
+    "performers": [
+      {
+        "name": "Eddie Majeski",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-19-eddie-majeski"
+  },
+  {
+    "title": "Dennis Lewin",
+    "performers": [
+      {
+        "name": "Dennis Lewin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-23",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-23-dennis-lewin"
+  },
+  {
+    "title": "Tricia Crane",
+    "performers": [
+      {
+        "name": "Tricia Crane",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-24",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-24-tricia-crane"
+  },
+  {
+    "title": "Sam Romano",
+    "performers": [
+      {
+        "name": "Sam Romano",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-25-sam-romano"
+  },
+  {
+    "title": "Kristin Pepper",
+    "performers": [
+      {
+        "name": "Kristin Pepper",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-26-kristin-pepper"
+  },
+  {
+    "title": "Dennis Lewin",
+    "performers": [
+      {
+        "name": "Dennis Lewin",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-30",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hyde-park-beachwood",
+    "source": "manual",
+    "manual": true,
+    "id": "hyde-park-beachwood-2026-09-30-dennis-lewin"
   }
+
+
 
 
 

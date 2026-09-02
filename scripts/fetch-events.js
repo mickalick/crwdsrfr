@@ -3955,6 +3955,249 @@ async function fetchClevelandMuseumOfArt() {
 
 
 
+async function fetchVisibleVoiceBooks() {
+  const events = [];
+  const seenIds = new Set();
+ 
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+ 
+  try {
+    const res = await fetch('https://www.visiblevoicebooks.com/calendar-of-events');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+ 
+    $('article.eventlist-event--upcoming').each((i, el) => {
+      const $el = $(el);
+ 
+      const titleLink = $el.find('h1.eventlist-title a.eventlist-title-link').first();
+      let title = titleLink.text().trim();
+      if (!title) return;
+ 
+      // Strip "(FREE EVENT)"-style suffixes (case-insensitive, with or without space before)
+      title = title.replace(/\s*\(\s*free\s*event\s*\)\s*/i, '').trim();
+ 
+      const hrefRaw = titleLink.attr('href');
+      if (!hrefRaw) return;
+      const eventUrl = hrefRaw.startsWith('http') ? hrefRaw : `https://www.visiblevoicebooks.com${hrefRaw}`;
+ 
+      const date = $el.find('time.event-date').first().attr('datetime');
+      if (!date) return;
+ 
+      const startTimeText = $el.find('time.event-time-localized-start').first().text().trim();
+      const time = normalizeTime(startTimeText);
+ 
+      const slugMatch = hrefRaw.match(/\/calendar-of-events\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
+      const id = `visible-voice-books-${date}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+ 
+      events.push({
+        id,
+        title,
+        venueId: 'visible-voice-books',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchVisibleVoiceBooks error:', err.message);
+  }
+ 
+  return events;
+}
+
+
+
+
+async function fetchNearWestTheatre() {
+  const events = [];
+  const seenIds = new Set();
+ 
+  function normalizeTime(t) {
+    if (!t) return null;
+    const match = t.trim().match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+    if (!match) return null;
+    let [, h, m, mod] = match;
+    h = parseInt(h, 10);
+    if (mod.toLowerCase() === 'pm' && h !== 12) h += 12;
+    if (mod.toLowerCase() === 'am' && h === 12) h = 0;
+    return `${String(h).padStart(2, '0')}:${m}`;
+  }
+ 
+  // "Friday, April 16, 2027 at 7:30pm" -> { date: 'YYYY-MM-DD', time: 'HH:MM' }
+  function parseTicketDate(dateRaw) {
+    const m = dateRaw.trim().match(
+      /^[A-Za-z]+,\s+([A-Za-z]{3,9})\s+(\d{1,2}),\s+(\d{4})\s+at\s+(\d{1,2}:\d{2}\s*(?:am|pm))/i
+    );
+    if (!m) return null;
+    const monthAbbr = m[1].slice(0, 3);
+    const monthIndex = MONTH_ABBR[monthAbbr];
+    if (monthIndex === undefined) return null;
+    const eventDate = new Date(parseInt(m[3], 10), monthIndex, parseInt(m[2], 10));
+    return { date: toLocalDateStr(eventDate), time: normalizeTime(m[4]) };
+  }
+ 
+  // Each show's own page lists every individual performance in #show-tickets .ticket
+  async function fetchShowDates(eventUrl) {
+    try {
+      const res = await fetch(eventUrl);
+      const html = await res.text();
+      const $ = cheerio.load(html);
+      const showings = [];
+ 
+      $('#show-tickets .ticket').each((i, el) => {
+        const $el = $(el);
+        const dateRaw = $el.find('.wrap p.date').first().text().trim();
+        const parsed = parseTicketDate(dateRaw);
+        if (!parsed) {
+          console.warn(`fetchNearWestTheatre: unparseable date "${dateRaw}" (${eventUrl})`);
+          return;
+        }
+ 
+        const ticketHref = $el.find('.add a').first().attr('href') || null;
+ 
+        showings.push({ date: parsed.date, time: parsed.time, ticketUrl: ticketHref });
+      });
+ 
+      return showings;
+    } catch (err) {
+      console.error(`fetchNearWestTheatre showdates error (${eventUrl}):`, err.message);
+      return [];
+    }
+  }
+ 
+  try {
+    const res = await fetch('https://www.nearwesttheatre.org/shows-events/2026-27');
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const shows = [];
+ 
+    $('a.show').each((i, el) => {
+      const $el = $(el);
+      const title = $el.find('.inner p.title').first().text().trim();
+      const hrefRaw = $el.attr('href');
+      if (!title || !hrefRaw) return;
+      const eventUrl = hrefRaw.startsWith('http')
+        ? hrefRaw
+        : `https://www.nearwesttheatre.org/${hrefRaw.replace(/^\/+/, '')}`;
+ 
+      const slugMatch = hrefRaw.match(/\/shows-events\/[^/]+\/([^/?]+)/);
+      const slug = slugMatch ? slugMatch[1] : slugify(title);
+ 
+      shows.push({ title, eventUrl, slug });
+    });
+ 
+    for (const show of shows) {
+      const showings = await fetchShowDates(show.eventUrl);
+      showings.forEach(s => {
+        const id = `near-west-theatre-${s.date}-${s.time ? s.time.replace(':', '') : 'tba'}-${show.slug}`;
+        if (seenIds.has(id)) return;
+        seenIds.add(id);
+ 
+        events.push({
+          id,
+          title: show.title,
+          venueId: 'near-west-theatre',
+          date: s.date,
+          time: s.time,
+          doors: null,
+          price: null,
+          performers: [{ name: show.title, headliner: true }],
+          eventUrl: show.eventUrl,
+          ticketUrl: s.ticketUrl,
+          source: 'scrape',
+          manual: false,
+        });
+      });
+    }
+  } catch (err) {
+    console.error('fetchNearWestTheatre error:', err.message);
+  }
+ 
+  return events;
+}
+
+
+
+async function fetchJenks1929() {
+  const events = [];
+  const seenIds = new Set();
+ 
+  // Titles to drop entirely — "open" is an unbooked/available slot placeholder,
+  // not an actual event, and Aroma Mobile Cigar Bar is a recurring non-music vendor.
+  const TITLE_BLOCKLIST = /^open$|aroma\s+mobile\s+cigar\s+bar/i;
+ 
+  try {
+    const now = Date.now();
+    const from = now;
+    const to = now + 200 * 24 * 60 * 60 * 1000; // ~200 days out
+ 
+    const url = `https://broker.eventscalendar.co/api/google/events?user=user_80l7ilLIVrNYUoyEUCcbp&project=proj_wzAO0aWAMNbWVZ0DOkjAE&calendar=bookingjenks1929%40gmail.com&from=${from}&to=${to}&options=undefined`;
+    const res = await fetch(url);
+    const data = await res.json();
+ 
+    (data.events || []).forEach(ev => {
+      const title = (ev.title || '').trim();
+      if (!title || TITLE_BLOCKLIST.test(title)) return;
+ 
+      // start_time is either "2026-09-02T18:00:00-04:00" (timed) or
+      // "2026-09-18" (allday) — split directly rather than round-tripping
+      // through Date/UTC.
+      const startRaw = ev.start_time || '';
+      const [date, timePart] = startRaw.split('T');
+      if (!date) return;
+      const time = ev.allday ? null : (timePart ? timePart.slice(0, 5) : null);
+ 
+      const slug = slugify(title);
+      const id = `jenks-1929-${date}-${time ? time.replace(':', '') : 'allday'}-${slug}`;
+      if (seenIds.has(id)) return;
+      seenIds.add(id);
+ 
+      events.push({
+        id,
+        title,
+        venueId: 'jenks-1929',
+        date,
+        time,
+        doors: null,
+        price: null,
+        performers: [{ name: title, headliner: true }],
+        eventUrl: null,
+        ticketUrl: null,
+        source: 'scrape',
+        manual: false,
+      });
+    });
+  } catch (err) {
+    console.error('fetchJenks1929 error:', err.message);
+  }
+ 
+  return events;
+}
+
+
+
+
+
+
+
 
 
 // ─── Scraper manifest ──────────────────────────────────────────────────────
@@ -4007,6 +4250,9 @@ const FETCHERS = [
   { label: 'Reithoffers', fn: fetchReithoffers },
   { label: 'Flat Iron Cafe', fn: fetchFlatIronCafe },
   { label: 'Cleveland Museum of Art', fn: fetchClevelandMuseumOfArt },
+  { label: 'Visible Voice Books', fn: fetchVisibleVoiceBooks },
+  { label: 'Near West Theatre', fn: fetchNearWestTheatre },
+  { label: 'Jenks 1929', fn: fetchJenks1929 },
 ];
 
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
@@ -4140,4 +4386,7 @@ export {
   fetchReithoffers,
   fetchFlatIronCafe,
   fetchClevelandMuseumOfArt,
+  fetchVisibleVoiceBooks,
+  fetchNearWestTheatre,
+  fetchJenks1929,
 };
