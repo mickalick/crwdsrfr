@@ -445,17 +445,71 @@ footer a {
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	position: relative;
 }
 
-#calendarToggle {
+#calendarSettings {
+	display: none;
+	position: absolute;
+	top: 100%;
+	margin-right: 30px;
+	background: #F9F976;
 	border-radius: 9px;
+	width: 40%;
+	margin-top: 12px;
+	padding: 20px;
+	z-index: 1000;
+}
+
+#calendarSettings.open {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+
+#calendarSettingsBar .settings-toggle.open #set {
+	background-color: #F9F976 !important;
+}
+
+#calendarSettingsBar .settings-toggle.open {
 	border: 1px solid #F9F976;
+}
+
+
+#calendarSettingsBar label {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	font-weight: 400;
+	color: #101010;
+}
+
+#calendarSettingsBar .settings-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
 	color: #FFFFFF;
 	background: transparent;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
+	gap: 16px;
+}
+
+
+#calendarToggle {
+	border-radius: 9px;
+	color: #F9F976;
+	background: rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
 	gap: 0;
+	width: fit-content;
+	margin-bottom: 12px;
 }
 
 #calendarToggle .toggle-button {
@@ -463,9 +517,9 @@ footer a {
 	font-size: 16px;
 	letter-spacing: 0.05em;
 	padding: 12px 16px;
-	color: #FFFFFF;
-	border: none;
-	background: transparent;
+	color: #F9F976;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
@@ -482,10 +536,32 @@ footer a {
 }
 
 #calendarToggle .toggle-button.active {
-	color: #222;
+	color: #101010;
 	background: #F9F976;
 	font-weight: 900;
+	border: 2px solid rgba(0, 0, 0, 0.75);
 }
+
+#calendarSortMethod {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	background: #F9F976;
+	color: #101010;
+	border: 1px solid #101010;
+	margin-bottom: 8px;
+}
+
+#calendarSortMethod option {
+	font-weight: 400;
+}
+
+#calendarSortMethod option:checked {
+	background: #101010;
+	color: #F9F976;
+	font-weight: 700;
+}
+
 
 #calendarSettingsBar .filter-toggle {
 	font-family: "Plus Jakarta Sans", sans-serif;
@@ -561,7 +637,7 @@ footer a {
 #calendarFilterPanel .chip-show-all {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	border-style: none;
-	color: #FFFFFF;
+	color: #F9F976;
 	padding: 8px 0;
 	padding-left: 8px;
 	margin-right: 80px;
@@ -885,6 +961,14 @@ footer a {
 	background-color: #62CBB8;
 	-webkit-mask-image: url('../images/icons/external.svg');
   mask-image: url('../images/icons/external.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+#set {
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/levels.svg');
+  mask-image: url('../images/icons/levels.svg');
   mask-size: contain;
   mask-repeat: no-repeat;
 }
@@ -1309,12 +1393,16 @@ span.flatpickr-weekday {
 		background-color: #F9F976 !important;
 	}
 
+	#calendarSettingsBar .settings-toggle:hover #set {
+		background-color: #F9F976 !important;
+	}
+
 	#calendarFilterPanel .chip:hover {
 		border-color: #62CBB8;
 	}
 
 	#calendarFilterPanel .chip-show-all:hover {
-		color: #62CBB8;
+		text-decoration: underline;
 	}
 
 	#activeFilters .chip-reset:hover {
@@ -1487,6 +1575,19 @@ span.flatpickr-weekday {
 
 	#menuNav {
 		width: 50%;
+	}
+
+	#calendarSettings {
+		width: 100%;
+	}
+
+	#calendarSettingsBar .settings-toggle, #calendarSettingsBar .filter-toggle {
+		font-size: 14px;
+		padding: 8px;
+	}
+
+	#calendarSettingsBar .settings-toggle {
+		gap: 12px;
 	}
 
 	.navItem{
