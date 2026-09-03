@@ -671,501 +671,16 @@
       "eventsUrl": "https://www.hydeparkrestaurants.com/happenings/",
       "type": "bar",
       "area": "Beachwood"
+    },
+    "cleveland-national-air-show": {
+      "name": "Cleveland National Air Show",
+      "url": "https://www.clevelandairshow.com/",
+      "eventsUrl": "https://www.clevelandairshow.com/",
+      "type": "other",
+      "area": "Downtown"
     }
   },
   "events": [
-    {
-      "id": "cain-park-2026-09-02-the-cleveland-orchestra-free-community-concert",
-      "title": "The Cleveland Orchestra Free Community Concert",
-      "venueId": "cain-park",
-      "date": "2026-09-02",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Cleveland Orchestra Free Community Concert",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://cainpark.com/event/the-cleveland-orchestra-free-community-concert/cain-park-evans-amphitheater/cleveland-heights-ohio/",
-      "ticketUrl": "https://www.etix.com/ticket/p/88684018/the-cleveland-orchestra-free-community-concert-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-09-02-brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "title": "Brent Kirby's 10x3 Songwriter/Band Showcase",
-      "venueId": "bop-stop",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/09/02/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/02/brent-kirbys-10x3-songwriterband-showcase-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-02-august-plant-bingo-2",
-      "title": "PLANT BINGO!",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "PLANT BINGO!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/august-plant-bingo-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/plant-bingo-the-winchester-tickets/15001673",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-02-free-play-wednesdays-4",
-      "title": "FREE PLAY WEDNESDAYS",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-02",
-      "time": "16:00",
-      "doors": "16:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "FREE PLAY WEDNESDAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/free-play-wednesdays-4/",
-      "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023503",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-02-bike-night-6",
-      "title": "BIKE NIGHT",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "BIKE NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/bike-night-6/",
-      "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288404",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-09-02-for-absent-friends-metalcore-night-3",
-      "title": "For Absent Friends Metalcore Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-02",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "For Absent Friends Metalcore Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/for-absent-friends-metalcore-night-3/",
-      "ticketUrl": "https://www.ticketweb.com/event/for-absent-friends-metalcore-night-the-foundry-tickets/15044413?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-09-02",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-09-02",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-09-02",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-social-club-2026-09-02-14284254",
-      "title": "Jack & The Optimists, Zack Keim, The VUMMS \"Duo Set\"",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Jack & The Optimists, Zack Keim, The VUMMS \"Duo Set\"",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/jack-the-optimists-zack-treelawn-social-club-tickets/14284254",
-      "ticketUrl": "https://www.ticketweb.com/event/jack-the-optimists-zack-treelawn-social-club-tickets/14284254",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hofbrauhaus-2026-09-02-yhma73yj886bclr-amp5w-s9rhp-6ty6s-j3smd-da59c-ydczn-twn77-rsf46-t2s8s-f396t-7mwyt-29rla-zpbay-ch8h6-jljkl-687et-an8s5-9438m-57x5z-f7b75-m95t7-955g4-4l3tn-tty8g-kfyzc",
-      "title": "Live Music: Joey Tomsick & The Shotskis",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-09-02",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Music: Joey Tomsick & The Shotskis",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/yhma73yj886bclr-amp5w-s9rhp-6ty6s-j3smd-da59c-ydczn-twn77-rsf46-t2s8s-f396t-7mwyt-29rla-zpbay-ch8h6-jljkl-687et-an8s5-9438m-57x5z-f7b75-m95t7-955g4-4l3tn-tty8g-kfyzc",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hofbrauhaus-2026-09-02-hboktoberfestbier-7ebnt-9l7r4",
-      "title": "Festbier Keg Tapping",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-09-02",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Festbier Keg Tapping",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/hboktoberfestbier-7ebnt-9l7r4",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-09-02-we-are-wednesdays-w-da-land-brass-band-2",
-      "title": "We Are Wednesdays w/ Da Land Brass Band",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "We Are Wednesdays w/ Da Land Brass Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/we-are-wednesdays-w-da-land-brass-band-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/we-are-wednesdays-w-da-b-side-lounge-tickets/14240814?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bside-2026-09-02-shit-show-karaoke-21",
-      "title": "SHIT SHOW KARAOKE",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-02",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "SHIT SHOW KARAOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-21/",
-      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230234?pl=bside",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-09-02-bosco-baker",
-      "title": "BOSKO BAKER",
-      "venueId": "no-class",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$20 Suggested / PWYC",
-      "performers": [
-        {
-          "name": "Bosko Baker & the Do Makers",
-          "headliner": true
-        },
-        {
-          "name": "Cowboy Princess Brigade",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/bosco-baker",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "cleveland-orchestra-6a04de2d970515500825b739",
-      "title": "2026 Cain Park Community Concert",
-      "venueId": "cleveland-orchestra",
-      "room": "Cain Park",
-      "date": "2026-09-02",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "2026 Cain Park Community Concert",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/2026-cain-park-community-concert",
-      "ticketUrl": "https://www.etix.com/ticket/p/88684018/the-cleveland-orchestra-cleveland-heights-cain-park-evans-amphitheater",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-09-02-mikey-silas-from-apostle-jones-solo-show",
-      "title": "Mikey Silas - from Apostle Jones - Solo Show!",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-02",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/5/28/mikey-silas-from-apostle-jones-solo-show",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-09-02-swing-island",
-      "title": "Swing Island",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/6/3/swing-island",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-09-02-the-wednesday-jam",
-      "title": "The Wednesday Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-09-02",
-      "time": "20:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-090226",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-090226",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grindstone-tap-house-3348832-2026-09-02",
-      "title": "Jeopardy Bar Leagues!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "reithoffers-2026-09-02-trivia-night",
-      "title": "Trivia Night",
-      "venueId": "reithoffers",
-      "date": "2026-09-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-09-02-19-00",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-09-02-19-00",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "visible-voice-books-2026-09-02-movie-vs-book-club-1-kxnkm",
-      "title": "Movie VS Book Club",
-      "venueId": "visible-voice-books",
-      "date": "2026-09-02",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Movie VS Book Club",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/movie-vs-book-club-1-kxnkm",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "jenks-1929-2026-09-02-1800-well-read-and-well-poured-a-night-for-the-arts",
-      "title": "Well-Read and Well-Poured: A Night for the Arts",
-      "venueId": "jenks-1929",
-      "date": "2026-09-02",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Well-Read and Well-Poured: A Night for the Arts",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "MatWhataGuy",
-      "performers": [
-        {
-          "name": "MatWhataGuy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-02",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-09-02-matwhataguy"
-    },
-    {
-      "title": "Rob Zombie & Marilyn Manson",
-      "performers": [
-        {
-          "name": "Rob Zombie",
-          "headliner": true
-        },
-        {
-          "name": "Marilyn Manson",
-          "headliner": false
-        },
-        {
-          "name": "The Hu",
-          "headliner": false
-        },
-        {
-          "name": "Orgy",
-          "headliner": false
-        }
-      ],
-      "date": "2026-09-02",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "blossom-music-center",
-      "source": "manual",
-      "manual": true,
-      "id": "blossom-music-center-2026-09-02-rob-zombie"
-    },
-    {
-      "title": "Danny Christian",
-      "performers": [
-        {
-          "name": "Danny Christian",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-02",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-09-02-danny-christian"
-    },
-    {
-      "title": "Mourning [A] Blkstar",
-      "performers": [
-        {
-          "name": "Mourning [A] Blkstar",
-          "headliner": true
-        },
-        {
-          "name": "Free Black!",
-          "headliner": false
-        }
-      ],
-      "date": "2026-09-02",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "public-square",
-      "source": "manual",
-      "manual": true,
-      "id": "public-square-2026-09-02-mourning-a-blkstar"
-    },
-    {
-      "title": "Dennis Lewin",
-      "performers": [
-        {
-          "name": "Dennis Lewin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-02",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-09-02-dennis-lewin"
-    },
     {
       "id": "grog-shop-2026-09-03-dire-wolf-cowboy-princess-brigade-cloner",
       "title": "Dire Wolf / Cowboy Princess Brigade / Cloner w/ Cowboy Princess Brigade, Cloner",
@@ -1795,104 +1310,6 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-03-kristin-pepper"
-    },
-    {
-      "id": "spotlight-bluegrass-jam-2026-09-03",
-      "title": "Bluegrass Jam (hosted by David Mayfield)",
-      "venueId": "spotlight-cle",
-      "date": "2026-09-03",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "smedleys-thursdays-2026-09-03",
-      "title": "Freebyrds Jam Night",
-      "venueId": "smedleys",
-      "date": "2026-09-03",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "crocker-movies-2026-09-03",
-      "title": "Movies in the Park",
-      "venueId": "crocker-park",
-      "date": "2026-09-03",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-don-phillips-thu-2026-09-03",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-don-phillips-thu-hh-2026-09-03",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-03",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "twist-malibus-dreamhouse-2026-09-03",
-      "title": "Malibu's Dreamhouse Drag Show",
-      "venueId": "twist-social-club",
-      "date": "2026-09-03",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "bird-of-paradise-karaoke-2026-09-03",
-      "title": "KARAOKE",
-      "venueId": "bird-of-paradise",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
     },
     {
       "id": "grog-shop-2026-09-04-return-of-the-cap-20-years-in-the-game-concert",
@@ -4651,6 +4068,25 @@
       "id": "hyde-park-beachwood-2026-09-05-eddie-majeski"
     },
     {
+      "title": "National Air Show ft. the U.S. Navy Blue Angels",
+      "performers": [
+        {
+          "name": "National Air Show",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "10:00",
+      "doors": "9:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://www.clevelandairshow.com/ticketing/",
+      "venueId": "cleveland-national-air-show",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-national-air-show-2026-09-05-air-show-saturday"
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-05",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -5440,6 +4876,25 @@
       "id": "crocker-park-2026-09-06-earle-rogoff"
     },
     {
+      "title": "National Air Show ft. the U.S. Navy Blue Angels",
+      "performers": [
+        {
+          "name": "National Air Show",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "10:00",
+      "doors": "9:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://www.clevelandairshow.com/ticketing/",
+      "venueId": "cleveland-national-air-show",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-national-air-show-2026-09-06-air-show-sunday"
+    },
+    {
       "id": "spotlight-house-techno-2026-09-06",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -5652,6 +5107,25 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-09-07-medusa"
+    },
+    {
+      "title": "National Air Show ft. the U.S. Navy Blue Angels",
+      "performers": [
+        {
+          "name": "National Air Show",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "10:00",
+      "doors": "9:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://www.clevelandairshow.com/ticketing/",
+      "venueId": "cleveland-national-air-show",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-national-air-show-2026-09-07-air-show-monday"
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-09-07",
