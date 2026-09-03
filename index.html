@@ -84,7 +84,25 @@
 			        btn.classList.remove('open');
 			      }
 			    });
+
+			    document.getElementById('calendarSettingsToggle').addEventListener('click', function() {
+      				document.getElementById('calendarSettings').classList.toggle('open');
+      				document.getElementById('calendarSettingsToggle').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const menu = document.getElementById('calendarSettings');
+			      const btn = document.getElementById('calendarSettingsToggle');
+
+			      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+			        menu.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
 			});
+
+
+
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
@@ -131,15 +149,30 @@
 			<section id="calendar" class="page">
 				<div class="main">
 					<div id="calendarSettingsBar">
+						<button type="button" class="settings-toggle" id="calendarSettingsToggle" aria-label="Open Settings">
+							<span class="icon" id="set"></span> View
+						</button>
 
-						<div id="calendarToggle">
-							<button type="button" class="toggle-button active" id="calendarToggleDay" aria-label="Day View">
-								Day
-							</button>
-							<button type="button" class="toggle-button" id="calendarToggleWeek" aria-label="Week View">
-								Week
-							</button>
+						<div id="calendarSettings">
+							
+							<div id="calendarToggle" aria-label="View Toggle">
+								<button type="button" class="toggle-button active" id="calendarToggleDay" aria-label="Day View">
+									Day
+								</button>
+								<button type="button" class="toggle-button" id="calendarToggleWeek" aria-label="Week View">
+									Week
+								</button>
+							</div>
+
+							<label for="sort-method">Sort by:</label>
+							<select id="calendarSortMethod" name="sort-method">
+							  <option value="venue-name">Venue Name (A-Z)</option>
+							  <option value="show-title">Show Title (A-Z)</option>
+							  <option value="show-time">Show Time (Earliest First)</option>
+							</select>
+
 						</div>
+
 
 						<button type="button" class="filter-toggle" id="calendarFilterToggle" aria-label="Show Filters">
 							Filters <span class="icon" id="fil"></span>

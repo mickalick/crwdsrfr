@@ -3,6 +3,7 @@ let allVenues = null; // keyed by venue id — loaded from venues.json for type/
 let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
 let calendarViewMode = 'day'; // 'day' | 'week'
+let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time'
 
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
@@ -58,7 +59,8 @@ const TYPE_LABELS = {
   "jazz-bar": "Jazz Bar",
   "comedy-club": "Comedy Club",
   "diy": "DIY",
-  "festival": "Festival"
+  "festival": "Festival",
+  "other": "Other"
 };
 
 function toLocalDateStr(date) {
@@ -206,12 +208,22 @@ function renderVenueCards(events, container, beforeNode) {
     grouped[event.venueId].push(event);
   });
 
+  const groupSortKey = (venueId, venueEvents) => {
+    if (calendarSortMethod === 'show-title') {
+      const titles = venueEvents.map(e => e.title).sort((a, b) => a.localeCompare(b));
+      return titles[0] ?? '';
+    }
+    if (calendarSortMethod === 'show-time') {
+      const times = venueEvents.map(e => e.time).filter(Boolean).sort();
+      return times[0] ?? '99:99'; // events with no time sort to the end
+    }
+    return sortableName(allData.venues[venueId]?.name ?? '');
+  };
+
   Object.entries(grouped)
-    .sort(([a], [b]) => {
-      const nameA = sortableName(allData.venues[a]?.name ?? '');
-      const nameB = sortableName(allData.venues[b]?.name ?? '');
-      return nameA.localeCompare(nameB);
-    })
+    .sort(([venueIdA, eventsA], [venueIdB, eventsB]) =>
+      String(groupSortKey(venueIdA, eventsA)).localeCompare(String(groupSortKey(venueIdB, eventsB)))
+    )
     .forEach(([venueId, venueEvents]) => {
       const venue = allData.venues[venueId];
       if (!venue) return;
@@ -564,4 +576,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('calendarToggleDay').addEventListener('click', () => setViewMode('day'));
   document.getElementById('calendarToggleWeek').addEventListener('click', () => setViewMode('week'));
+
+  document.getElementById('calendarSortMethod').addEventListener('change', function() {
+    calendarSortMethod = this.value;
+    applyFilters();
+  });
 });
