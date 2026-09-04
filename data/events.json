@@ -678,639 +678,16 @@
       "eventsUrl": "https://www.clevelandairshow.com/",
       "type": "other",
       "area": "Downtown"
+    },
+    "cleveland-oktoberfest": {
+      "name": "Cleveland Oktoberfest",
+      "url": "https://www.clevelandoktoberfest.com/stc/",
+      "eventsUrl": "https://www.clevelandoktoberfest.com/stc/weihenstephan-fest-tent-schedule/",
+      "type": "festival",
+      "area": "Middleburg Heights"
     }
   },
   "events": [
-    {
-      "id": "grog-shop-2026-09-03-dire-wolf-cowboy-princess-brigade-cloner",
-      "title": "Dire Wolf / Cowboy Princess Brigade / Cloner w/ Cowboy Princess Brigade, Cloner",
-      "venueId": "grog-shop",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$25.43",
-      "performers": [
-        {
-          "name": "Dire Wolf / Cowboy Princess Brigade / Cloner",
-          "headliner": true
-        },
-        {
-          "name": "Cowboy Princess Brigade",
-          "headliner": false
-        },
-        {
-          "name": "Cloner",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/dire-wolf-cowboy-princess-brigade-cloner/",
-      "ticketUrl": "https://www.ticketweb.com/event/dire-wolf-cowboy-princess-grog-shop-tickets/14202254?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "beachland-ballroom-2026-09-03-nolan-taylor",
-      "title": "Nolan Taylor with Jess Woodland",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Nolan Taylor",
-          "headliner": true
-        },
-        {
-          "name": "Jess Woodland",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/nolan-taylor-03-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/nolan-taylor-03-sep#tickets",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "happy-dog-2026-09-03-cleveland-global-shapers-karaoke-benefit-for-undue-medical-debt",
-      "title": "Cleveland Global Shapers Karaoke benefit for undue medical debt!",
-      "venueId": "happy-dog",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Cleveland Global Shapers Karaoke benefit for undue medical debt!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/cleveland-global-shapers-karaoke-benefit-for-undue-medical-debt-september-03-2026-743209",
-      "ticketUrl": "https://app.opendate.io/e/cleveland-global-shapers-karaoke-benefit-for-undue-medical-debt-september-03-2026-743209",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mahalls-2026-09-03-mustard-service",
-      "title": "Mustard Service",
-      "venueId": "mahalls",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$24.00",
-      "performers": [
-        {
-          "name": "Mustard Service",
-          "headliner": true
-        },
-        {
-          "name": "Pity Party (Girls Club)",
-          "headliner": false
-        },
-        {
-          "name": "Manwolves",
-          "headliner": false
-        },
-        {
-          "name": "Chicano Mosh",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/mustard-service/",
-      "ticketUrl": "https://link.dice.fm/d6fe05ca5e96",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "bop-stop-2026-09-03-jamey-haddad-quartet-bop-stop",
-      "title": "Jamey Haddad Quartet",
-      "venueId": "bop-stop",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Jamey Haddad Quartet",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/09/03/jamey-haddad-quartet-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/03/jamey-haddad-quartet-bop-stop",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-09-03-gnomes-mushrooms-sep3",
-      "title": "Gnomes & Mushrooms! Paint Ceramic Mushroom & Gnome Lanterns",
-      "venueId": "music-box",
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": "17:30",
-      "price": "$45",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Gnomes & Mushrooms! Paint Ceramic Mushroom & Gnome Lanterns",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/gnomes-mushrooms-sep3/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "music-box-2026-09-03-duprees-dead-band-sep3",
-      "title": "Dupree’s Dead Band",
-      "venueId": "music-box",
-      "date": "2026-09-03",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": "$12 Advance, $18 Day of Show",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "Dupree’s Dead Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/duprees-dead-band-sep3/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62342",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-03-the-kenny-vs-spenny-2026-usa-comedy-tour",
-      "title": "The Kenny VS Spenny 2026 USA Comedy Tour",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$40.66",
-      "performers": [
-        {
-          "name": "The Kenny VS Spenny 2026 USA Comedy Tour",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/the-kenny-vs-spenny-2026-usa-comedy-tour/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-kenny-vs-spenny-2026-the-winchester-tickets/14202764",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-03-starwood-drum-jam",
-      "title": "Starwood Drum Jam",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Starwood Drum Jam",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/starwood-drum-jam/",
-      "ticketUrl": "https://www.ticketweb.com/event/starwood-drum-jam-the-mercury-music-lounge-tickets/14288864",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-09-03-partners-magicians-table",
-      "title": "Partners and Alumni Night at The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-03",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "Partners and Alumni Night at The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/partners-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/login.asp?targetpage=default.asp?doWork::WScontent::loadArticle=Load%26BOparam%3A%3AWScontent%3A%3AloadArticle%3A%3Aarticle_id%3DA5C7C876-BC6E-40BE-94FD-816693695A96",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "playhouse-square-2026-09-03-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-03",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "foundry-concert-club-2026-09-03-runnner-pleasure-systems",
-      "title": "Runnner, Pleasure Systems, Warren Village",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Runnner, Pleasure Systems, Warren Village",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/runnner-pleasure-systems/",
-      "ticketUrl": "https://www.ticketweb.com/event/runnner-pleasure-systems-warren-village-the-foundry-tickets/14229994?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "hilarities-2026-09-03-1900-141254",
-      "title": "Preacher Lawson",
-      "venueId": "hilarities",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Preacher Lawson",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/141254",
-      "ticketUrl": "https://hilarities.com/shows/381884",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-summer-farmers-market-2026-09-03",
-      "title": "Summer Farmers Market",
-      "venueId": "van-aken-district",
-      "date": "2026-09-03",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Summer Farmers Market",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/summer-farmers-market-2026-09-03",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "van-aken-live-music-at-the-van-aken-district-steve-renko-trio-2026-09-03",
-      "title": "Live Music at The Van Aken District- Steve Renko Trio",
-      "venueId": "van-aken-district",
-      "date": "2026-09-03",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "Live Music at The Van Aken District- Steve Renko Trio",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/live-music-at-the-van-aken-district-steve-renko-trio-2026-09-03",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "treelawn-music-hall-2026-09-03-15030943",
-      "title": "CLE Punk Summit",
-      "venueId": "treelawn",
-      "room": "Treelawn Music Hall",
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "CLE Punk Summit",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/cle-punk-summit-treelawn-music-hall-tickets/15030943",
-      "ticketUrl": "https://www.ticketweb.com/event/cle-punk-summit-treelawn-music-hall-tickets/15030943",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "coda-2026-09-03-1993621834574",
-      "title": "Juno Dunes | Lake Philly at CODA",
-      "venueId": "coda",
-      "date": "2026-09-03",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": "$10",
-      "performers": [
-        {
-          "name": "Juno Dunes | Lake Philly at CODA",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.eventbrite.com/e/juno-dunes-lake-philly-at-coda-tickets-1993621834574",
-      "ticketUrl": "https://www.eventbrite.com/e/juno-dunes-lake-philly-at-coda-tickets-1993621834574",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "no-class-2026-09-03-acid-witch",
-      "title": "ACID WITCH",
-      "venueId": "no-class",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$25",
-      "performers": [
-        {
-          "name": "Acid Witch",
-          "headliner": true
-        },
-        {
-          "name": "Graveripper",
-          "headliner": false
-        },
-        {
-          "name": "Void",
-          "headliner": false
-        },
-        {
-          "name": "Phantom",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/acid-witch",
-      "ticketUrl": "https://sickening.events/e/acid-witch",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "forest-city-brewery-2026-09-03-cats-on-holiday",
-      "title": "Cats on Holiday",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2025/9/4/cats-on-holiday-k5zhm-rpghz",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "the-grove-2026-09-03-liverpool-lads",
-      "title": "Liverpool Lads",
-      "venueId": "the-grove",
-      "date": "2026-09-03",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://recreation.mayfieldvillage.com/event/liverpool-lads/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "imposters-theater-2026-09-03-dynamic-duos-improv-night-jam",
-      "title": "Dynamic Duos Improv Night + Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-09-03",
-      "time": "20:30",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-090326",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-090326",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "grindstone-tap-house-3353096-2026-09-03",
-      "title": "Open Mic Night!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "reithoffers-2026-09-03-karaoke-night-hosted-by-frankie",
-      "title": "Karaoke Night Hosted by Frankie",
-      "venueId": "reithoffers",
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/karaoke-night-hosted-by-frankie-2026-09-03-18-00",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/karaoke-night-hosted-by-frankie-2026-09-03-18-00",
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "visible-voice-books-2026-09-03-free-hearts-book-club",
-      "title": "Free Hearts Book Club",
-      "venueId": "visible-voice-books",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Free Hearts Book Club",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/free-hearts-book-club",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "id": "jenks-1929-2026-09-03-1900-kaiden-bos-mike-lenz",
-      "title": "Kaiden Bos & Mike Lenz",
-      "venueId": "jenks-1929",
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Kaiden Bos & Mike Lenz",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false
-    },
-    {
-      "title": "Pet The Cougar",
-      "performers": [
-        {
-          "name": "Pet The Cougar",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-09-03-pet-the-cougar"
-    },
-    {
-      "title": "Brokenglish",
-      "performers": [
-        {
-          "name": "Brokenglish",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-09-03-brokenglish"
-    },
-    {
-      "title": "Ronnie Szucs",
-      "performers": [
-        {
-          "name": "Ronnie Szucs",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-09-03-ronnie-szucs"
-    },
-    {
-      "title": "Pat Sandy",
-      "performers": [
-        {
-          "name": "Pat Sandy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-09-03-pat-sandy"
-    },
-    {
-      "title": "Chris Casalinuovo",
-      "performers": [
-        {
-          "name": "Chris Casalinuovo",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "1928-public-house",
-      "source": "manual",
-      "manual": true,
-      "id": "1928-public-house-2026-09-03-chris-casalinuovo"
-    },
-    {
-      "title": "Alzheimer's Awareness Fundraiser featuring Skuff Micksun",
-      "performers": [
-        {
-          "name": "Skuff Micksun",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-09-03-alzheimers-awareness"
-    },
-    {
-      "title": "Kristin Pepper",
-      "performers": [
-        {
-          "name": "Kristin Pepper",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-03",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-09-03-kristin-pepper"
-    },
     {
       "id": "grog-shop-2026-09-04-return-of-the-cap-20-years-in-the-game-concert",
       "title": "Return Of The Cap : 20 Years In The Game Concert w/ Corey Bapes, Reka, Ripp Flames, Diva Dee",
@@ -2516,102 +1893,202 @@
       "id": "hyde-park-beachwood-2026-09-04-jeffrey-cruz"
     },
     {
-      "id": "spotlight-weekend-nights-fri-2026-09-04",
-      "title": "Live Music • DJs • Special Nights",
-      "venueId": "spotlight-cle",
+      "title": "Weihenstephan Fest Test - Donauschwaben Blaskapelle",
+      "performers": [
+        {
+          "name": "Donauschwaben Blaskapelle",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-04",
-      "time": null,
+      "time": "16:30",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
       "source": "manual",
-      "manual": true
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-donauschwaben-blaskapelle"
     },
     {
-      "id": "velvet-jazz-trio-early-2026-09-04",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
+      "title": "Weihenstephan Fest Test - Gottscheer Tanz Und Spielkreis Austrian Dance",
+      "performers": [
+        {
+          "name": "Gottscheer Tanz Und Spielkreis Austrian Dance",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-04",
-      "time": "17:30",
+      "time": "19:30",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
       "source": "manual",
-      "manual": true
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-gottscheer-tanz-und-spielkreis-austrian-dance"
     },
     {
-      "id": "velvet-jazz-trio-late-2026-09-04",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-04",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-don-phillips-fri-main-2026-09-04",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-04",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-don-phillips-fri-back-2026-09-04",
-      "title": "Pianist Don Phillips (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-04",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true
-    },
-    {
-      "id": "velvet-david-blazer-fri-main-2026-09-04",
-      "title": "Pianist David Blazer (Main Lounge)",
-      "venueId": "velvet-tango-room",
+      "title": "Weihenstephan Fest Test - Alex Meixner",
+      "performers": [
+        {
+          "name": "Alex Meixner",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-04",
       "time": "20:00",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
       "source": "manual",
-      "manual": true
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-alex-meixner"
     },
     {
-      "id": "velvet-david-blazer-fri-back-2026-09-04",
-      "title": "Pianist David Blazer (Back Room)",
-      "venueId": "velvet-tango-room",
+      "title": "Bier Garten - Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-disco-inferno"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-masskrugstemmen-bavarian-strongman-contest"
+    },
+    {
+      "title": "Bier Garten - U2 Desire",
+      "performers": [
+        {
+          "name": "U2 Desire",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-04",
       "time": "21:00",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
       "source": "manual",
-      "manual": true
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-u2-desire"
+    },
+    {
+      "title": "BitBurger Area - Sports/German Musik Discs",
+      "performers": [
+        {
+          "name": "Sports/German Musik Discs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-sports-german-musik-discs"
+    },
+    {
+      "title": "BitBurger Area - The Klaberheads",
+      "performers": [
+        {
+          "name": "The Klaberheads",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-the-klaberheads"
+    },
+    {
+      "title": "BitBurger Area - Sports/German Musik Discs",
+      "performers": [
+        {
+          "name": "Sports/German Musik Discs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "22:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-sports-german-musik-discs"
+    },
+    {
+      "title": "V.I.P. Tent - The Alley Katz",
+      "performers": [
+        {
+          "name": "The Alley Katz",
+          "headliner": true
+        },
+        {
+          "name": "Logan Wells",
+          "headliner": false
+        },
+        {
+          "name": "Patti Ann",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-04",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-04-the-alley-katz"
     },
     {
       "id": "grog-shop-2026-09-05-jesse-jukebox-presents-birds-of-a-feather",
@@ -4087,6 +3564,413 @@
       "id": "cleveland-national-air-show-2026-09-05-air-show-saturday"
     },
     {
+      "title": "Weihenstephan Fest Test - The Klaberheads",
+      "performers": [
+        {
+          "name": "The Klaberheads",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "12:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-the-klaberheads"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Bavarian Schuhplattlers",
+      "performers": [
+        {
+          "name": "Bavarian Schuhplattlers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-bavarian-schuhplattlers"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Dorfrocker",
+      "performers": [
+        {
+          "name": "Dorfrocker",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-dorfrocker"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Bavarian Schuhplattlers",
+      "performers": [
+        {
+          "name": "Bavarian Schuhplattlers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-bavarian-schuhplattlers"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Chardon Polka Band",
+      "performers": [
+        {
+          "name": "Chardon Polka Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-chardon-polka-band"
+    },
+    {
+      "title": "Bier Garten - Faction",
+      "performers": [
+        {
+          "name": "Faction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-faction"
+    },
+    {
+      "title": "Bier Garten - 7 Summers",
+      "performers": [
+        {
+          "name": "7 Summers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-7-summers"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-masskrugstemmen-bavarian-strongman-contest"
+    },
+    {
+      "title": "Bier Garten - Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-spazmatics"
+    },
+    {
+      "title": "BitBurger Area - Sports",
+      "performers": [
+        {
+          "name": "Sports",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-sports"
+    },
+    {
+      "title": "BitBurger Area - Alex Meixner",
+      "performers": [
+        {
+          "name": "Alex Meixner",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-alex-meixner"
+    },
+    {
+      "title": "BitBurger Area - Da Land Brass Band",
+      "performers": [
+        {
+          "name": "Da Land Brass Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-da-land-brass-band"
+    },
+    {
+      "title": "International Pavilion - Cleveland Alphorn Society",
+      "performers": [
+        {
+          "name": "Cleveland Alphorn Society",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-cleveland-alphorn-society"
+    },
+    {
+      "title": "International Pavilion - Madame Gigi's French Can Can Dancers",
+      "performers": [
+        {
+          "name": "Madame Gigi's French Can Can Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-madame-gigi-s-french-can-can-dancers"
+    },
+    {
+      "title": "International Pavilion - Burke School of Irish Dance",
+      "performers": [
+        {
+          "name": "Burke School of Irish Dance",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-burke-school-of-irish-dance"
+    },
+    {
+      "title": "International Pavilion - Yin Tang Chinese Blue River Dragon Dance Team",
+      "performers": [
+        {
+          "name": "Yin Tang Chinese Blue River Dragon Dance Team",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-yin-tang-chinese-blue-river-dragon-dance-team"
+    },
+    {
+      "title": "International Pavilion - Cleveland Alphorn Society",
+      "performers": [
+        {
+          "name": "Cleveland Alphorn Society",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-cleveland-alphorn-society"
+    },
+    {
+      "title": "International Pavilion - Madame Gigi's French Can Can Dancers",
+      "performers": [
+        {
+          "name": "Madame Gigi's French Can Can Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-madame-gigi-s-french-can-can-dancers"
+    },
+    {
+      "title": "International Pavilion - Burke School of Irish Dance",
+      "performers": [
+        {
+          "name": "Burke School of Irish Dance",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-burke-school-of-irish-dance"
+    },
+    {
+      "title": "International Pavilion - Yin Tang Chinese Blue River Dragon Dance Team",
+      "performers": [
+        {
+          "name": "Yin Tang Chinese Blue River Dragon Dance Team",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-yin-tang-chinese-blue-river-dragon-dance-team"
+    },
+    {
+      "title": "V.I.P. Tent - The Alley Katz",
+      "performers": [
+        {
+          "name": "The Alley Katz",
+          "headliner": true
+        },
+        {
+          "name": "Logan Wells",
+          "headliner": false
+        },
+        {
+          "name": "Patti Ann",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-05",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-05-the-alley-katz"
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-05",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -4895,6 +4779,470 @@
       "id": "cleveland-national-air-show-2026-09-06-air-show-sunday"
     },
     {
+      "title": "Weihenstephan Fest Test - Mass, Veneration of Carlo Acutis Relic, Potato Pancake Brunch",
+      "performers": [
+        {
+          "name": "Mass, Veneration of Carlo Acutis Relic, Potato Pancake Brunch",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "10:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-mass-veneration-of-carlo-acutis-relic-potato-pancake-brunch"
+    },
+    {
+      "title": "Weihenstephan Fest Test - The Klaberheads",
+      "performers": [
+        {
+          "name": "The Klaberheads",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "12:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-the-klaberheads"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Cleveland Saxson Dance Group",
+      "performers": [
+        {
+          "name": "Cleveland Saxson Dance Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-cleveland-saxson-dance-group"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Dorfrocker",
+      "performers": [
+        {
+          "name": "Dorfrocker",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-dorfrocker"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Cleveland Saxson Dance Group",
+      "performers": [
+        {
+          "name": "Cleveland Saxson Dance Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-cleveland-saxson-dance-group"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Alex Meixner",
+      "performers": [
+        {
+          "name": "Alex Meixner",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-alex-meixner"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Fireworks",
+      "performers": [
+        {
+          "name": "Fireworks",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-fireworks"
+    },
+    {
+      "title": "Bier Garten - Diamond Project",
+      "performers": [
+        {
+          "name": "Diamond Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-diamond-project"
+    },
+    {
+      "title": "Bier Garten - Walt Sanders & The Cadillac Band",
+      "performers": [
+        {
+          "name": "Walt Sanders & The Cadillac Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-walt-sanders-the-cadillac-band"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-masskrugstemmen-bavarian-strongman-contest"
+    },
+    {
+      "title": "Bier Garten - Bruce in the USA",
+      "performers": [
+        {
+          "name": "Bruce in the USA",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-bruce-in-the-usa"
+    },
+    {
+      "title": "BitBurger Area - Gemutlekeit Clevelander Musikanten",
+      "performers": [
+        {
+          "name": "Gemutlekeit Clevelander Musikanten",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-gemutlekeit-clevelander-musikanten"
+    },
+    {
+      "title": "BitBurger Area - Chardon Polka Band",
+      "performers": [
+        {
+          "name": "Chardon Polka Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-chardon-polka-band"
+    },
+    {
+      "title": "BitBurger Area - Fireworks",
+      "performers": [
+        {
+          "name": "Fireworks",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-fireworks"
+    },
+    {
+      "title": "BitBurger Area - North Coast Prost",
+      "performers": [
+        {
+          "name": "North Coast Prost",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-north-coast-prost"
+    },
+    {
+      "title": "International Pavilion - Piast Polish Folk Ensemble",
+      "performers": [
+        {
+          "name": "Piast Polish Folk Ensemble",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-piast-polish-folk-ensemble"
+    },
+    {
+      "title": "International Pavilion - Madame Gigi's French Can Can Dancers",
+      "performers": [
+        {
+          "name": "Madame Gigi's French Can Can Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-madame-gigi-s-french-can-can-dancers"
+    },
+    {
+      "title": "International Pavilion - Red Hackle Pipe Band",
+      "performers": [
+        {
+          "name": "Red Hackle Pipe Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-red-hackle-pipe-band"
+    },
+    {
+      "title": "International Pavilion - St. Haralambos Hellenic Dancers",
+      "performers": [
+        {
+          "name": "St. Haralambos Hellenic Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-st-haralambos-hellenic-dancers"
+    },
+    {
+      "title": "International Pavilion - Piast Polish Folk Ensemble",
+      "performers": [
+        {
+          "name": "Piast Polish Folk Ensemble",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-piast-polish-folk-ensemble"
+    },
+    {
+      "title": "International Pavilion - Madame Gigi's French Can Can Dancers",
+      "performers": [
+        {
+          "name": "Madame Gigi's French Can Can Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-madame-gigi-s-french-can-can-dancers"
+    },
+    {
+      "title": "International Pavilion - Red Hackle Pipe Band",
+      "performers": [
+        {
+          "name": "Red Hackle Pipe Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-red-hackle-pipe-band"
+    },
+    {
+      "title": "International Pavilion - St. Haralambos Hellenic Dancers",
+      "performers": [
+        {
+          "name": "St. Haralambos Hellenic Dancers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-st-haralambos-hellenic-dancers"
+    },
+    {
+      "title": "V.I.P. Tent - The Alley Katz",
+      "performers": [
+        {
+          "name": "The Alley Katz",
+          "headliner": true
+        },
+        {
+          "name": "Logan Wells",
+          "headliner": false
+        },
+        {
+          "name": "Patti Ann",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-06",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-06-the-alley-katz"
+    },
+    {
       "id": "spotlight-house-techno-2026-09-06",
       "title": "House & Techno",
       "venueId": "spotlight-cle",
@@ -5126,6 +5474,158 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-national-air-show-2026-09-07-air-show-monday"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Dorfrocker",
+      "performers": [
+        {
+          "name": "Dorfrocker",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "12:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-dorfrocker"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Bavarian Schuhplattlers",
+      "performers": [
+        {
+          "name": "Bavarian Schuhplattlers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-bavarian-schuhplattlers"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Alex Meixner",
+      "performers": [
+        {
+          "name": "Alex Meixner",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-alex-meixner"
+    },
+    {
+      "title": "Bier Garten - Das Boaterhead",
+      "performers": [
+        {
+          "name": "Das Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-das-boaterhead"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-masskrugstemmen-bavarian-strongman-contest"
+    },
+    {
+      "title": "Bier Garten - China Grove",
+      "performers": [
+        {
+          "name": "China Grove",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-china-grove"
+    },
+    {
+      "title": "BitBurger Area - Die Ünprönöüncëäblës",
+      "performers": [
+        {
+          "name": "Die Ünprönöüncëäblës",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-die-npr-n-nc-bl-s"
+    },
+    {
+      "title": "BitBurger Area - Johnny Koenig",
+      "performers": [
+        {
+          "name": "Johnny Koenig",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-07",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-07-johnny-koenig"
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-09-07",
@@ -7903,6 +8403,185 @@
       "id": "hyde-park-beachwood-2026-09-11-sam-romano"
     },
     {
+      "title": "Weihenstephan Fest Test - Lynn Marie & The Nashville Polka Guys",
+      "performers": [
+        {
+          "name": "Lynn Marie & The Nashville Polka Guys",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-lynn-marie-the-nashville-polka-guys"
+    },
+    {
+      "title": "Weihenstephan Fest Test - The Bräts From New Orleans",
+      "performers": [
+        {
+          "name": "The Bräts From New Orleans",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-the-br-ts-from-new-orleans"
+    },
+    {
+      "title": "Bier Garten - Old Skool",
+      "performers": [
+        {
+          "name": "Old Skool",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-old-skool"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Contest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-masskrugstemmen-bavarian-strongman-contest"
+    },
+    {
+      "title": "Bier Garten - Rumors",
+      "performers": [
+        {
+          "name": "Rumors",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-rumors"
+    },
+    {
+      "title": "BitBurger Area - Sports/German Musik Discs",
+      "performers": [
+        {
+          "name": "Sports/German Musik Discs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-sports-german-musik-discs"
+    },
+    {
+      "title": "BitBurger Area - The Don Wojtila Band",
+      "performers": [
+        {
+          "name": "The Don Wojtila Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-the-don-wojtila-band"
+    },
+    {
+      "title": "BitBurger Area - Sports/German Musik Discs",
+      "performers": [
+        {
+          "name": "Sports/German Musik Discs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "22:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-sports-german-musik-discs"
+    },
+    {
+      "title": "V.I.P. Tent - The Alley Katz",
+      "performers": [
+        {
+          "name": "The Alley Katz",
+          "headliner": true
+        },
+        {
+          "name": "Logan Wells",
+          "headliner": false
+        },
+        {
+          "name": "Patti Ann",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-11-the-alley-katz"
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-09-11",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -9209,6 +9888,272 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-12-jordan-hope"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Donauschwaben Blaskapelle",
+      "performers": [
+        {
+          "name": "Donauschwaben Blaskapelle",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-donauschwaben-blaskapelle"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Donauschwaben Kulturgruppe",
+      "performers": [
+        {
+          "name": "Donauschwaben Kulturgruppe",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-donauschwaben-kulturgruppe"
+    },
+    {
+      "title": "Weihenstephan Fest Test - The Bräts From New Orleans",
+      "performers": [
+        {
+          "name": "The Bräts From New Orleans",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-the-br-ts-from-new-orleans"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Bavarian Schuhplattlers",
+      "performers": [
+        {
+          "name": "Bavarian Schuhplattlers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-bavarian-schuhplattlers"
+    },
+    {
+      "title": "Weihenstephan Fest Test - Lynn Marie & The Nashville Polka Guys",
+      "performers": [
+        {
+          "name": "Lynn Marie & The Nashville Polka Guys",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-lynn-marie-the-nashville-polka-guys"
+    },
+    {
+      "title": "Bier Garten - Tricky Dick & The Cover-Ups",
+      "performers": [
+        {
+          "name": "Tricky Dick & The Cover-Ups",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-tricky-dick-the-cover-ups"
+    },
+    {
+      "title": "Bier Garten - Spazmatics",
+      "performers": [
+        {
+          "name": "Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-spazmatics"
+    },
+    {
+      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Finals",
+      "performers": [
+        {
+          "name": "Masskrugstemmen Bavarian Strongman Finals",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-masskrugstemmen-bavarian-strongman-finals"
+    },
+    {
+      "title": "Bier Garten - E5C4P3",
+      "performers": [
+        {
+          "name": "E5C4P3",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-e5c4p3"
+    },
+    {
+      "title": "BitBurger Area - Da Land Brass Band",
+      "performers": [
+        {
+          "name": "Da Land Brass Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-da-land-brass-band"
+    },
+    {
+      "title": "BitBurger Area - Sports",
+      "performers": [
+        {
+          "name": "Sports",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-sports"
+    },
+    {
+      "title": "BitBurger Area - River Maps",
+      "performers": [
+        {
+          "name": "River Maps",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-river-maps"
+    },
+    {
+      "title": "BitBurger Area - Sports",
+      "performers": [
+        {
+          "name": "Sports",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-sports"
+    },
+    {
+      "title": "V.I.P. Tent - DJ Kishka",
+      "performers": [
+        {
+          "name": "DJ Kishka",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cleveland-oktoberfest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-oktoberfest-2026-09-12-dj-kishka"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-09-12",
