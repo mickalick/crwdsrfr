@@ -234,29 +234,38 @@ function resetSearch() {
 }
 
 function renderVenueCards(events, container, beforeNode) {
-  const grouped = {};
-  events.forEach(event => {
-    if (!grouped[event.venueId]) grouped[event.venueId] = [];
-    grouped[event.venueId].push(event);
-  });
+  // Show Title and Show Time sorting give each show its own tile, even when
+  // a venue has multiple shows that day — only the default Venue Name sort
+  // groups them into a single card the way the calendar has always worked.
+  const splitPerShow = calendarSortMethod === 'show-title' || calendarSortMethod === 'show-time';
 
-  const groupSortKey = (venueId, venueEvents) => {
+  let groups;
+  if (splitPerShow) {
+    groups = events.map(event => ({ venueId: event.venueId, events: [event] }));
+  } else {
+    const grouped = {};
+    events.forEach(event => {
+      if (!grouped[event.venueId]) grouped[event.venueId] = [];
+      grouped[event.venueId].push(event);
+    });
+    groups = Object.entries(grouped).map(([venueId, venueEvents]) => ({ venueId, events: venueEvents }));
+  }
+
+  const groupSortKey = (group) => {
     if (calendarSortMethod === 'show-title') {
-      const titles = venueEvents.map(e => e.title).sort((a, b) => a.localeCompare(b));
+      const titles = group.events.map(e => e.title).sort((a, b) => a.localeCompare(b));
       return titles[0] ?? '';
     }
     if (calendarSortMethod === 'show-time') {
-      const times = venueEvents.map(e => e.time).filter(Boolean).sort();
+      const times = group.events.map(e => e.time).filter(Boolean).sort();
       return times[0] ?? '99:99'; // events with no time sort to the end
     }
-    return sortableName(allData.venues[venueId]?.name ?? '');
+    return sortableName(allData.venues[group.venueId]?.name ?? '');
   };
 
-  Object.entries(grouped)
-    .sort(([venueIdA, eventsA], [venueIdB, eventsB]) =>
-      String(groupSortKey(venueIdA, eventsA)).localeCompare(String(groupSortKey(venueIdB, eventsB)))
-    )
-    .forEach(([venueId, venueEvents]) => {
+  groups
+    .sort((a, b) => String(groupSortKey(a)).localeCompare(String(groupSortKey(b))))
+    .forEach(({ venueId, events: venueEvents }) => {
       const venue = allData.venues[venueId];
       if (!venue) return;
 
@@ -313,7 +322,7 @@ function renderVenueCards(events, container, beforeNode) {
       );
     });
 
-  return Object.keys(grouped).length > 0;
+  return groups.length > 0;
 }
 
 function renderDateSeparator(dateStr, container, beforeNode) {
