@@ -474,6 +474,7 @@ footer a {
 
 #calendarSettingsBar .settings-toggle.open {
 	border: 1px solid #F9F976;
+	color: #F9F976;
 }
 
 
@@ -518,7 +519,7 @@ footer a {
 	letter-spacing: 0.05em;
 	padding: 12px 16px;
 	color: #F9F976;
-	border: 1px solid rgba(0, 0, 0, 0.25);
+	border: 2px solid rgba(0, 0, 0, 0.1);
 	background: rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 	display: inline-flex;
@@ -589,6 +590,7 @@ footer a {
 
 #calendarSettingsBar .filter-toggle.active {
 	border: 1px solid #F9F976;
+	color: #F9F976;
 }
 
 #calendarFilterPanel .filter-panel {
@@ -942,7 +944,7 @@ footer a {
 }
 
 #fil {
-	background-color: #FFF;
+	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/filter.svg');
   mask-image: url('../images/icons/filter.svg');
   mask-size: contain;
@@ -966,7 +968,7 @@ footer a {
 }
 
 #set {
-	background-color: #FFF;
+	background-color: #F9F976;
 	-webkit-mask-image: url('../images/icons/levels.svg');
   mask-image: url('../images/icons/levels.svg');
   mask-size: contain;
@@ -1389,12 +1391,12 @@ span.flatpickr-weekday {
 		background-color: #F9F976;
 	}
 
-	#calendarSettingsBar .filter-toggle:hover #fil {
-		background-color: #F9F976 !important;
+	#calendarSettingsBar .filter-toggle:hover {
+		color: #F9F976 !important;
 	}
 
-	#calendarSettingsBar .settings-toggle:hover #set {
-		background-color: #F9F976 !important;
+	#calendarSettingsBar .settings-toggle:hover {
+		color: #F9F976 !important;
 	}
 
 	#calendarFilterPanel .chip:hover {
