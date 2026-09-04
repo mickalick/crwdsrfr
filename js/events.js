@@ -13,6 +13,38 @@ const selectedAreas = new Set();
 const expandedGroups = { name: false, type: false, area: false };
 
 const FILTER_STORAGE_KEY = 'crwdsrfr_calendar_filters';
+const CALENDAR_SETTINGS_KEY = 'crwdsrfr_calendar_settings';
+
+// Persists view mode + sort method to localStorage, same pattern as filters.
+function saveCalendarSettingsToStorage() {
+  try {
+    const payload = {
+      viewMode: calendarViewMode,
+      sortMethod: calendarSortMethod,
+    };
+    localStorage.setItem(CALENDAR_SETTINGS_KEY, JSON.stringify(payload));
+  } catch (e) {
+    // localStorage unavailable — settings simply won't persist this session
+  }
+}
+
+// Reads previously saved view mode + sort method back in. Falls back to
+// the defaults ('day' / 'venue-name') if nothing's stored or values are invalid.
+function loadCalendarSettingsFromStorage() {
+  try {
+    const raw = localStorage.getItem(CALENDAR_SETTINGS_KEY);
+    if (!raw) return;
+    const parsed = JSON.parse(raw);
+    if (parsed.viewMode === 'day' || parsed.viewMode === 'week') {
+      calendarViewMode = parsed.viewMode;
+    }
+    if (['venue-name', 'show-title', 'show-time'].includes(parsed.sortMethod)) {
+      calendarSortMethod = parsed.sortMethod;
+    }
+  } catch (e) {
+    // Corrupt or missing data — just start with defaults
+  }
+}
 
 // Persists selected filters to localStorage so they survive tab close /
 // revisit. Fails silently if storage is unavailable (private browsing,
@@ -510,6 +542,11 @@ const datePickerFp = flatpickr('#datePicker', {
   }
 });
 
+loadCalendarSettingsFromStorage();
+document.getElementById('calendarToggleDay').classList.toggle('active', calendarViewMode === 'day');
+document.getElementById('calendarToggleWeek').classList.toggle('active', calendarViewMode === 'week');
+document.getElementById('calendarSortMethod').value = calendarSortMethod;
+
 loadEvents();
 
 document.getElementById('search').addEventListener('input', function() {
@@ -571,6 +608,7 @@ document.addEventListener('DOMContentLoaded', function() {
     calendarViewMode = mode;
     document.getElementById('calendarToggleDay').classList.toggle('active', mode === 'day');
     document.getElementById('calendarToggleWeek').classList.toggle('active', mode === 'week');
+    saveCalendarSettingsToStorage();
     applyFilters();
   }
 
@@ -579,6 +617,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('calendarSortMethod').addEventListener('change', function() {
     calendarSortMethod = this.value;
+    saveCalendarSettingsToStorage();
     applyFilters();
   });
 });

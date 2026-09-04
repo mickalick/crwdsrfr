@@ -117,12 +117,9 @@
 	height: 32px;
 }
 
-#boardSettingsBar .filter-toggle.active #fil {
-	background-color: #F9F976 !important;
-}
-
 #boardSettingsBar .filter-toggle.active {
 	border: 1px solid #F9F976;
+	color: #F9F976;
 }
 
 #boardFilterPanel .filter-panel {
@@ -233,8 +230,8 @@
 
 
 @media (hover: hover) and (pointer: fine) {
-	#boardSettingsBar .filter-toggle:hover #fil {
-		background-color: #F9F976 !important;
+	#boardSettingsBar .filter-toggle:hover {
+		color: #F9F976;
 	}
 
 	#boardFilterPanel .chip:hover {
