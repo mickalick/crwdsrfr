@@ -485,6 +485,46 @@ footer a {
 	color: #101010;
 }
 
+#calendarSettings .checkbox-label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	cursor: pointer;
+}
+
+#calendarSettings .checkbox-label input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	margin: 0;
+	border: 1px solid #101010;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+}
+
+#calendarSettings .checkbox-label input[type="checkbox"]:checked {
+	background: #F9F976; /* checked fill */
+	border-color: #101010;
+}
+
+#calendarSettings .checkbox-label input[type="checkbox"]:checked::after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 4px;
+	height: 10px;
+	border: solid #101010; /* checkmark color */
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
 #calendarSettingsBar .settings-toggle {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 16px;
@@ -551,6 +591,7 @@ footer a {
 	color: #101010;
 	border: 1px solid #101010;
 	margin-bottom: 8px;
+	cursor: pointer;
 }
 
 #calendarSortMethod option {
@@ -636,6 +677,20 @@ footer a {
 	color: #F9F976;
 }
 
+/* Genre chips get a unique color per genre via the --genre-color custom
+   property (set inline by events.js — see genreColor()). Unselected chips
+   show a subtle tint; selected chips fill solid with dark text for contrast. */
+#calendarFilterPanel .chip[data-filter="genre"] {
+	border-color: var(--genre-color);
+	color: var(--genre-color);
+}
+
+#calendarFilterPanel .chip[data-filter="genre"].active {
+	background: var(--genre-color) !important;
+	border-color: var(--genre-color) !important;
+	color: #101010;
+}
+
 #calendarFilterPanel .chip-show-all {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	border-style: none;
@@ -683,6 +738,10 @@ footer a {
 	border-style: none;
 	cursor: pointer;
 	gap: 8px;
+}
+
+#activeFilters .chip[data-group="genre"] {
+	color: var(--genre-color, #FFF);
 }
 
 #activeFilters .chip-remove {
@@ -831,7 +890,44 @@ footer a {
 }
 
 .eventCost {
-	width: 14%;
+	width: 17%;
+}
+
+/* Genre chips render as their own full-width flex row below the name/
+   time/price line. Being 100% width forces a line break before it in
+   .eventInfo's normal flow, so it only ever adds height to the event
+   tile — it never competes with or shifts the existing spans. */
+.eventGenres {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 12px;
+}
+
+/* Overrides the broad ".eventInfo span" rule above (higher specificity)
+   so genre chips get their own compact pill look instead of inheriting
+   the 40px margin-right meant for the name/time/price columns. */
+.eventGenres .genre-chip {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 0;
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
+	border-radius: 20px;
+	color: var(--genre-color, #FFF);
+	background: transparent;
+	white-space: nowrap;
+}
+
+/* Toggled by the "Display genre where available" checkbox in the
+   settings panel. Genre chips are always rendered into the DOM by
+   renderVenueCards — this just hides them instantly with no re-render. */
+body.hide-genres .eventGenres {
+	display: none;
 }
 
 .ticketLink {
@@ -1403,6 +1499,11 @@ span.flatpickr-weekday {
 		border-color: #62CBB8;
 	}
 
+	#calendarFilterPanel .chip[data-filter="genre"]:hover {
+		border-color: var(--genre-color);
+		filter: brightness(1.2);
+	}
+
 	#calendarFilterPanel .chip-show-all:hover {
 		text-decoration: underline;
 	}
@@ -1483,13 +1584,15 @@ span.flatpickr-weekday {
 
 }
 
-/*@media screen and (max-width:984px){
+@media screen and (max-width:1008px){
 
-	
+	.eventCost {
+		width: 20%;
+	}
 
-}*/
+}
 
-@media screen and (max-width:774px){
+@media screen and (max-width:788px){
 
 	.eventName {
   	display: flex !important;
@@ -1497,12 +1600,8 @@ span.flatpickr-weekday {
   	margin-bottom: 8px;
 	}
 
-	.eventTime {
-		width: 60%;
-	}
-
-	.eventCost {
-		width: 20%;
+	.eventTime, .eventCost {
+		width: 100%;
 	}
 
 	.main h1, .main h2, {
@@ -1548,14 +1647,6 @@ span.flatpickr-weekday {
 
 	#calendar {
 		margin-top: 0;
-	}
-
-	.eventTime {
-		width: 100%;
-	}
-
-	.eventCost {
-		width: 100%;
 	}
 }
 

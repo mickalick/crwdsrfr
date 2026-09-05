@@ -15,6 +15,18 @@ const OUTPUT_PATH = join(__dirname, '..', 'data', 'events.json');
 // map coords, etc). Both this script and venue-map.js read from venues.json directly.
 const VENUES_PATH = join(__dirname, '..', 'data', 'venues.json');
 const venues = JSON.parse(readFileSync(VENUES_PATH, 'utf-8'));
+const venuesById = Object.fromEntries(venues.map(v => [v.id, v]));
+
+// Acts registry — maps recurring act names (and their aliases) to genres,
+// applied to every event as a centralized post-scrape pass regardless of
+// which venue or fetcher it came from. See acts.json for the format.
+const ACTS_PATH = join(__dirname, '..', 'data', 'acts.json');
+let acts = {};
+try {
+  acts = JSON.parse(readFileSync(ACTS_PATH, 'utf-8'));
+} catch (err) {
+  console.error(`Could not read acts.json (${err.message}) — genre matching will fall back to venue defaults only.`);
+}
 
 // Your SeatGeek API key
 const SEATGEEK_CLIENT_ID = 'OTM4MDQ4OHwxNzgxMDUwNjkxLjk4OTY5NA';
@@ -4255,6 +4267,45 @@ const FETCHERS = [
   { label: 'Jenks 1929', fn: fetchJenks1929 },
 ];
 
+// ─── Genre matching (acts.json) ───────────────────────────────────────────────
+// Flattened to one {alias, genres} pair per alias, longest alias first so a
+// more specific name (e.g. "The Whiskey Hollow") gets checked before a
+// shorter alias could pre-empt it. Built once at module load, not per-event.
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+const actEntries = Object.values(acts)
+  .flatMap(act => (act.aliases ?? []).map(alias => ({ alias, genres: act.genres ?? [] })))
+  .sort((a, b) => b.alias.length - a.alias.length);
+
+// Matches an event's title against every known act alias (word-boundary,
+// case-insensitive) and unions in the matched acts' genres, plus the
+// venue's defaultGenres from venues.json (additive, not a fallback-only
+// path — both can contribute to the same event). Run once per event as a
+// centralized pass after all fetchers/manual/recurring entries are merged,
+// so every venue — old and new — gets tagged the same way with no
+// per-fetcher changes required.
+function assignGenres(event, venue) {
+  const title = event.title ?? '';
+  const matched = new Set();
+
+  for (const { alias, genres } of actEntries) {
+    const pattern = new RegExp(`\\b${escapeRegex(alias)}\\b`, 'i');
+    if (pattern.test(title)) {
+      genres.forEach(g => matched.add(g));
+    }
+  }
+
+  (venue?.defaultGenres ?? []).forEach(g => matched.add(g));
+
+  if (matched.size === 0) {
+    console.warn(`No genre matched for "${event.title}" at ${venue?.name ?? event.venueId}`);
+  }
+
+  return Array.from(matched);
+}
+
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
 function loadManualEntries() {
@@ -4287,11 +4338,42 @@ function loadPreviouslyScrapedEvents() {
   }
 }
 
+// --genres-only: re-tags every event already sitting in events.json using
+// the current acts.json + venues.json defaultGenres, without touching
+// scrapers, manual-events.json, or recurring-rules.json at all. Useful for
+// iterating on acts.json (adding acts, fixing genres) without a full fetch.
+function runGenresOnly() {
+  let existing;
+  try {
+    existing = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8'));
+  } catch (err) {
+    console.error(`Could not read existing events.json (${err.message}) — nothing to re-tag.`);
+    return;
+  }
+
+  const events = existing.events ?? [];
+  events.forEach(event => {
+    event.genres = assignGenres(event, venuesById[event.venueId]);
+  });
+
+  const output = { ...existing, events };
+  writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
+  console.log(`Done! Re-tagged genres for ${events.length} events in events.json`);
+}
+
 async function main() {
   // --manual-only: skip every scraper and just re-merge manual-events.json +
   // recurring-rules.json on top of whatever scraped events are already in
   // events.json. Useful for quick manual edits without re-running all fetchers.
   const manualOnly = process.argv.includes('--manual-only');
+
+  // --genres-only: skip everything else entirely — no scrapers, no manual/
+  // recurring merge — and just re-tag genres on the existing events.json.
+  if (process.argv.includes('--genres-only')) {
+    console.log('Genres-only mode: re-tagging existing events.json...');
+    runGenresOnly();
+    return;
+  }
 
   let scrapedEvents;
   if (manualOnly) {
@@ -4323,6 +4405,10 @@ async function main() {
     ...recurringEvents,
   ].filter(e => e.date >= todayStr)
    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  allEvents.forEach(event => {
+    event.genres = assignGenres(event, venuesById[event.venueId]);
+  });
 
   // Built straight from venues.json — add/edit a venue there and it flows
   // through to events.json automatically, no edits needed here.

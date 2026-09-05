@@ -162,7 +162,10 @@
     "address": "2920 Detroit Ave, Cleveland, OH 44113",
     "area": "Ohio City",
     "lat": 41.489898,
-    "lng": -81.71178119999999
+    "lng": -81.71178119999999,
+    "defaultGenres": [
+      "jazz"
+    ]
   },
   {
     "id": "globe-iron",
@@ -316,7 +319,10 @@
     "address": "2035 East Fourth St, Cleveland, OH 44114",
     "area": "Downtown",
     "lat": 41.4992947,
-    "lng": -81.6900662
+    "lng": -81.6900662,
+    "defaultGenres": [
+      "comedy"
+    ]
   },
   {
     "id": "van-aken-district",
@@ -448,7 +454,10 @@
     "address": "11001 Euclid Ave, Cleveland, OH 44106",
     "area": "University Circle",
     "lat": 41.5062527,
-    "lng": -81.6094664
+    "lng": -81.6094664,
+    "defaultGenres": [
+      "classical"
+    ]
   },
   {
     "id": "forest-city-brewery",
@@ -492,7 +501,10 @@
     "address": "4828 Lorain Ave, Cleveland OH 44102",
     "area": "Ohio City",
     "lat": 41.4779872,
-    "lng": -81.7206772
+    "lng": -81.7206772,
+    "defaultGenres": [
+      "comedy"
+    ]
   },
   {
     "id": "grindstone-tap-house",
@@ -558,7 +570,10 @@
     "address": "6702 Detroit Ave, Cleveland, OH, 44102",
     "area": "Detroit Shoreway",
     "lat": 41.4842311,
-    "lng": -81.7316618
+    "lng": -81.7316618,
+    "defaultGenres": [
+      "theater"
+    ]
   },
   {
     "id": "jenks-1929",
@@ -701,7 +716,10 @@
     "address": "28867 Chagrin Blvd, Woodmere, OH 44122",
     "area": "Woodmere",
     "lat": 41.4631684,
-    "lng": -81.4738763
+    "lng": -81.4738763,
+    "defaultGenres": [
+      "jazz"
+    ]
   },
   {
     "id": "house-of-blues",
@@ -921,7 +939,10 @@
     "address": "2095 Columbus Rd, Cleveland, OH 44113",
     "area": "Ohio City",
     "lat": 41.4839022,
-    "lng": -81.7001318
+    "lng": -81.7001318,
+    "defaultGenres": [
+      "jazz"
+    ]
   },
   {
     "id": "twist-social-club",
@@ -1042,7 +1063,10 @@
     "address": "1404 W 29th St, Cleveland, OH, 44113",
     "area": "Ohio City",
     "lat": 41.4895582,
-    "lng": -81.71104799999999
+    "lng": -81.71104799999999,
+    "defaultGenres": [
+      "jazz"
+    ]
   },
   {
     "id": "hyde-park-beachwood",
