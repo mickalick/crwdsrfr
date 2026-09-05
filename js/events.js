@@ -506,7 +506,7 @@ function renderActiveFilters() {
     active.push({ group: 'area', value: a, label: a });
   });
   selectedGenres.forEach(g => {
-    active.push({ group: 'genre', value: g, label: genreLabel(g), color: genreColor(g) });
+    active.push({ group: 'genre', value: g, label: genreLabel(g) });
   });
 
   if (active.length === 0) {
@@ -517,7 +517,7 @@ function renderActiveFilters() {
 
   wrapper.style.display = 'flex';
   chipsWrap.innerHTML = active.map(f => `
-    <button type="button" class="chip active-chip" data-group="${f.group}" data-value="${f.value}"${f.color ? ` style="--genre-color: ${f.color}"` : ''}>${f.label} <span class="chip-remove">&times;</span></button>
+    <button type="button" class="chip active-chip" data-group="${f.group}" data-value="${f.value}">${f.label} <span class="chip-remove">&times;</span></button>
   `).join('') + `<button type="button" class="chip chip-reset" id="resetAllFilters">Reset</button>`;
 
   chipsWrap.querySelectorAll('.active-chip').forEach(chip => {

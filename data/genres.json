@@ -33,23 +33,27 @@
   },
   "covers": {
     "label": "Covers",
-    "color": "#A1A1A1"
+    "color": "#ADADAD"
   },
   "tribute": {
     "label": "Tribute",
-    "color": "#A1A1A1"
+    "color": "#ADADAD"
   },
   "dance disco": {
     "label": "Dance / Disco",
     "color": "#F0F000"
   },
-  "dj electronic": {
-    "label": "DJ / Electronic",
+  "dj": {
+    "label": "DJ",
     "color": "#7AF500"
   },
   "drag": {
     "label": "Drag",
     "color": "#E85D9E"
+  },
+  "electronic": {
+    "label": "Electronic",
+    "color": "#C2F301"
   },
   "folk americana": {
     "label": "Folk / Americana",
@@ -111,9 +115,9 @@
     "label": "Pop",
     "color": "#FF94C9"
   },
-  "punk": {
-    "label": "Punk",
-    "color": "#FF3D3D"
+  "emo punk": {
+    "label": "Emo / Punk",
+    "color": "#8C8C8C"
   },
   "rnb soul": {
     "label": "R&B / Soul",
@@ -129,7 +133,7 @@
   },
   "singer-songwriter": {
     "label": "Singer-Songwriter",
-    "color": "#B157DB"
+    "color": "#C37DE3"
   },
   "theater": {
     "label": "Theater",

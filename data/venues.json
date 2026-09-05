@@ -308,7 +308,10 @@
     "address": "1054 Old River Rd, Cleveland, OH 44113",
     "area": "Flats East Bank",
     "lat": 41.4996444,
-    "lng": -81.70729879999999
+    "lng": -81.70729879999999,
+    "defaultGenres": [
+      "country"
+    ]
   },
   {
     "id": "hilarities",
@@ -705,7 +708,10 @@
     "address": "3244 Saint Clair Ave NE, Cleveland, OH 44114",
     "area": "AsiaTown",
     "lat": 41.5135601,
-    "lng": -81.66972849999999
+    "lng": -81.66972849999999,
+    "defaultGenres": [
+      "dj"
+    ]
   },
   {
     "id": "nightjar",
@@ -997,7 +1003,10 @@
     "address": "1865 W 25th St, Cleveland, OH 44113",
     "area": "Ohio City",
     "lat": 41.4859353,
-    "lng": -81.7045912
+    "lng": -81.7045912,
+    "defaultGenres": [
+      "dj"
+    ]
   },
   {
     "id": "mg-brewpub",
@@ -1030,7 +1039,10 @@
     "address": "1948 West 25th St, Cleveland, OH, 44113",
     "area": "Ohio City",
     "lat": 41.484737,
-    "lng": -81.7041828
+    "lng": -81.7041828,
+    "defaultGenres": [
+      "dj"
+    ]
   },
   {
     "id": "bright-side",
