@@ -4,13 +4,15 @@ let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
 let calendarViewMode = 'day'; // 'day' | 'week'
 let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time'
+let calendarShowGenres = true; // whether genre chips render on event tiles
 
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
 const selectedVenueIds = new Set();
 const selectedTypes = new Set();
 const selectedAreas = new Set();
-const expandedGroups = { name: false, type: false, area: false };
+const selectedGenres = new Set();
+const expandedGroups = { name: false, type: false, area: false, genre: false };
 
 const FILTER_STORAGE_KEY = 'crwdsrfr_calendar_filters';
 const CALENDAR_SETTINGS_KEY = 'crwdsrfr_calendar_settings';
@@ -21,6 +23,7 @@ function saveCalendarSettingsToStorage() {
     const payload = {
       viewMode: calendarViewMode,
       sortMethod: calendarSortMethod,
+      showGenres: calendarShowGenres,
     };
     localStorage.setItem(CALENDAR_SETTINGS_KEY, JSON.stringify(payload));
   } catch (e) {
@@ -41,9 +44,19 @@ function loadCalendarSettingsFromStorage() {
     if (['venue-name', 'show-title', 'show-time'].includes(parsed.sortMethod)) {
       calendarSortMethod = parsed.sortMethod;
     }
+    if (typeof parsed.showGenres === 'boolean') {
+      calendarShowGenres = parsed.showGenres;
+    }
   } catch (e) {
     // Corrupt or missing data — just start with defaults
   }
+}
+
+// Purely a CSS toggle — genre chips are always rendered into the DOM by
+// renderVenueCards, this just shows/hides them instantly via a body class
+// without needing to re-render any event tiles.
+function applyGenreVisibility() {
+  document.body.classList.toggle('hide-genres', !calendarShowGenres);
 }
 
 // Persists selected filters to localStorage so they survive tab close /
@@ -55,6 +68,7 @@ function saveFiltersToStorage() {
       venueIds: [...selectedVenueIds],
       types: [...selectedTypes],
       areas: [...selectedAreas],
+      genres: [...selectedGenres],
     };
     localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
   } catch (e) {
@@ -75,6 +89,7 @@ function loadFiltersFromStorage() {
     (parsed.venueIds || []).forEach(id => selectedVenueIds.add(id));
     (parsed.types || []).forEach(t => selectedTypes.add(t));
     (parsed.areas || []).forEach(a => selectedAreas.add(a));
+    (parsed.genres || []).forEach(g => selectedGenres.add(g));
   } catch (e) {
     // Corrupt or missing data — just start with no filters
   }
@@ -94,6 +109,39 @@ const TYPE_LABELS = {
   "festival": "Festival",
   "other": "Other"
 };
+
+// Genre labels + colors are the single source of truth in data/genres.json
+// (fetched in loadEvents, below) rather than hardcoded here — edit that
+// file to change how a genre displays or looks, no code changes needed.
+let genreMeta = {}; // populated from data/genres.json — { [genre]: { label, color } }
+
+function titleCase(str) {
+  return str
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// Looks up the label set in data/genres.json first; falls back to
+// titleCase() for any genre not yet added there, so a brand-new genre
+// never breaks — it just won't have a custom label until you add one.
+function genreLabel(genre) {
+  return genreMeta[genre]?.label || titleCase(genre);
+}
+
+// Looks up the color set in data/genres.json first; falls back to a
+// deterministic hash so any genre not yet added there still gets a
+// stable color (just not one you chose) rather than no color at all.
+function genreColor(genre) {
+  if (genreMeta[genre]?.color) return genreMeta[genre].color;
+
+  let hash = 0;
+  for (let i = 0; i < genre.length; i++) {
+    hash = (hash * 31 + genre.charCodeAt(i)) >>> 0;
+  }
+  const hue = hash % 360;
+  return `hsl(${hue}, 65%, 60%)`;
+}
 
 function toLocalDateStr(date) {
   const y = date.getFullYear();
@@ -149,7 +197,8 @@ function updateMatchingDates() {
 
   const term = currentSearch.toLowerCase().trim();
   const filtersActive = hasActiveVenueFilters();
-  if (term === '' && !filtersActive) return; // nothing active = no dots, default calendar view
+  const genreFiltersActive = hasActiveGenreFilters();
+  if (term === '' && !filtersActive && !genreFiltersActive) return; // nothing active = no dots, default calendar view
 
   allData.events.forEach(event => {
     const venue = allData.venues[event.venueId];
@@ -165,8 +214,9 @@ function updateMatchingDates() {
     }
 
     const matchesVenueFilter = !filtersActive || venueMatchesFilters(allVenues?.[event.venueId]);
+    const matchesGenreFilter = eventMatchesGenreFilters(event);
 
-    if (matchesSearch && matchesVenueFilter) {
+    if (matchesSearch && matchesVenueFilter && matchesGenreFilter) {
       matchingDates.add(event.date);
     }
   });
@@ -187,6 +237,21 @@ function venueMatchesFilters(venue) {
   if (selectedTypes.has(venue.type)) return true;
   if (selectedAreas.has(venue.area)) return true;
   return false;
+}
+
+// Genre lives on the event itself (not the venue), so it's checked as its
+// own filter dimension: an event must match AT LEAST ONE selected genre
+// (union within genres), and that result is ANDed against the venue-based
+// filters above — e.g. selecting "Jazz" + "Grog Shop" shows only jazz
+// shows AT Grog Shop, not all jazz shows everywhere plus all Grog Shop shows.
+function hasActiveGenreFilters() {
+  return selectedGenres.size > 0;
+}
+
+function eventMatchesGenreFilters(event) {
+  if (selectedGenres.size === 0) return true;
+  const genres = event.genres || [];
+  return genres.some(g => selectedGenres.has(g));
 }
 
 function applyFilters() {
@@ -217,6 +282,10 @@ function applyFilters() {
 
   if (hasActiveVenueFilters()) {
     filtered = filtered.filter(event => venueMatchesFilters(allVenues?.[event.venueId]));
+  }
+
+  if (hasActiveGenreFilters()) {
+    filtered = filtered.filter(event => eventMatchesGenreFilters(event));
   }
 
   renderEvents(filtered);
@@ -295,12 +364,22 @@ function renderVenueCards(events, container, beforeNode) {
           ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
           : '';
 
+        // Rendered as its own full-width row below the name/time/price line
+        // (not inline with them) so it only adds height to the event tile —
+        // it never affects the width or alignment of the existing content.
+        const genresHtml = (event.genres && event.genres.length > 0)
+          ? `<div class="eventGenres">${event.genres.map(g => `
+              <span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
+            `).join('')}</div>`
+          : '';
+
         return `
           <div class="event">
             <div class="eventInfo">
               <span class="eventName">${titleHtml}</span>
               <span class="eventTime">${timeDisplay}</span>
               <span class="eventCost">${event.price ?? 'Check Price'}</span>
+              ${genresHtml}
             </div>
             ${linkHtml}
           </div>`;
@@ -426,6 +505,9 @@ function renderActiveFilters() {
   selectedAreas.forEach(a => {
     active.push({ group: 'area', value: a, label: a });
   });
+  selectedGenres.forEach(g => {
+    active.push({ group: 'genre', value: g, label: genreLabel(g), color: genreColor(g) });
+  });
 
   if (active.length === 0) {
     wrapper.style.display = 'none';
@@ -435,13 +517,13 @@ function renderActiveFilters() {
 
   wrapper.style.display = 'flex';
   chipsWrap.innerHTML = active.map(f => `
-    <button type="button" class="chip active-chip" data-group="${f.group}" data-value="${f.value}">${f.label} <span class="chip-remove">&times;</span></button>
+    <button type="button" class="chip active-chip" data-group="${f.group}" data-value="${f.value}"${f.color ? ` style="--genre-color: ${f.color}"` : ''}>${f.label} <span class="chip-remove">&times;</span></button>
   `).join('') + `<button type="button" class="chip chip-reset" id="resetAllFilters">Reset</button>`;
 
   chipsWrap.querySelectorAll('.active-chip').forEach(chip => {
     chip.addEventListener('click', () => {
       const { group, value } = chip.dataset;
-      const set = group === 'name' ? selectedVenueIds : group === 'type' ? selectedTypes : selectedAreas;
+      const set = group === 'name' ? selectedVenueIds : group === 'type' ? selectedTypes : group === 'area' ? selectedAreas : selectedGenres;
       set.delete(value);
       refreshFilterUI();
     });
@@ -451,6 +533,7 @@ function renderActiveFilters() {
     selectedVenueIds.clear();
     selectedTypes.clear();
     selectedAreas.clear();
+    selectedGenres.clear();
     refreshFilterUI();
   });
 }
@@ -462,6 +545,7 @@ function buildCalendarFilterChips() {
   const nameWrap = document.getElementById('calendarVenueFilters');
   const typeWrap = document.getElementById('calendarTypeFilters');
   const areaWrap = document.getElementById('calendarAreaFilters');
+  const genreWrap = document.getElementById('calendarGenreFilters');
 
   const sortedVenues = [...venues].sort((a, b) =>
     sortableName(a.name).localeCompare(sortableName(b.name))
@@ -480,11 +564,19 @@ function buildCalendarFilterChips() {
     <button type="button" class="chip ${selectedAreas.has(a) ? 'active' : ''}" data-filter="area" data-value="${a}">${a}</button>
   `).join('');
 
-  [nameWrap, typeWrap, areaWrap].forEach(wrap => {
+  // Genres live on events, not venues, so this list comes from whatever
+  // distinct genre values are currently loaded in allData.events rather
+  // than from allVenues like the other three chip rows.
+  const genres = [...new Set((allData?.events ?? []).flatMap(e => e.genres ?? []))].sort();
+  genreWrap.innerHTML = genres.map(g => `
+    <button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
+  `).join('');
+
+  [nameWrap, typeWrap, areaWrap, genreWrap].forEach(wrap => {
     wrap.querySelectorAll('.chip').forEach(chip => {
       chip.addEventListener('click', () => {
         const { filter, value } = chip.dataset;
-        const set = filter === 'name' ? selectedVenueIds : filter === 'type' ? selectedTypes : selectedAreas;
+        const set = filter === 'name' ? selectedVenueIds : filter === 'type' ? selectedTypes : filter === 'area' ? selectedAreas : selectedGenres;
         if (set.has(value)) set.delete(value); else set.add(value);
         refreshFilterUI();
       });
@@ -494,16 +586,25 @@ function buildCalendarFilterChips() {
   collapseChipRow(nameWrap, 'name');
   collapseChipRow(typeWrap, 'type');
   collapseChipRow(areaWrap, 'area');
+  collapseChipRow(genreWrap, 'genre');
 }
 
 async function loadEvents() {
-  const [eventsRes, venuesRes] = await Promise.all([
+  const [eventsRes, venuesRes, genresRes] = await Promise.all([
     fetch('/data/events.json'),
     fetch('/data/venues.json'),
+    fetch('/data/genres.json'),
   ]);
   allData = await eventsRes.json();
   const venuesList = await venuesRes.json();
   allVenues = Object.fromEntries(venuesList.map(v => [v.id, v]));
+  try {
+    genreMeta = await genresRes.json();
+  } catch (e) {
+    // Missing/invalid genres.json isn't fatal — genreLabel()/genreColor()
+    // already fall back to titleCase()/hash color for every genre.
+    genreMeta = {};
+  }
   loadFiltersFromStorage();
   buildCalendarFilterChips();
   renderActiveFilters();
@@ -555,6 +656,8 @@ loadCalendarSettingsFromStorage();
 document.getElementById('calendarToggleDay').classList.toggle('active', calendarViewMode === 'day');
 document.getElementById('calendarToggleWeek').classList.toggle('active', calendarViewMode === 'week');
 document.getElementById('calendarSortMethod').value = calendarSortMethod;
+document.getElementById('calendarShowGenres').checked = calendarShowGenres;
+applyGenreVisibility();
 
 loadEvents();
 
@@ -628,5 +731,11 @@ document.addEventListener('DOMContentLoaded', function() {
     calendarSortMethod = this.value;
     saveCalendarSettingsToStorage();
     applyFilters();
+  });
+
+  document.getElementById('calendarShowGenres').addEventListener('change', function() {
+    calendarShowGenres = this.checked;
+    saveCalendarSettingsToStorage();
+    applyGenreVisibility();
   });
 });
