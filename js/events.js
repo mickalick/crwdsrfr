@@ -284,7 +284,7 @@ function renderVenueCards(events, container, beforeNode) {
         if (showTime && doorsTime) timeDisplay = `${showTime} (Doors ${doorsTime})`;
         else if (showTime) timeDisplay = showTime;
         else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
-        else timeDisplay = 'See Event';
+        else timeDisplay = 'Check Time';
 
         const titleLink = event.eventUrl || venue.eventsUrl || null;
         const titleHtml = titleLink
@@ -300,7 +300,7 @@ function renderVenueCards(events, container, beforeNode) {
             <div class="eventInfo">
               <span class="eventName">${titleHtml}</span>
               <span class="eventTime">${timeDisplay}</span>
-              <span class="eventCost">${event.price ?? 'See Event'}</span>
+              <span class="eventCost">${event.price ?? 'Check Price'}</span>
             </div>
             ${linkHtml}
           </div>`;
