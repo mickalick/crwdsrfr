@@ -832,9 +832,7 @@
       "ticketUrl": "https://link.dice.fm/d03254dc4992",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "bop-stop-2026-09-04-artists-in-the-night-featuring-ron-davis-bop-stop",
@@ -1135,9 +1133,7 @@
       "ticketUrl": "https://www.ticketweb.com/event/new-wave-dance-party-the-foundry-tickets/14255654?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "dunlaps-2026-09-04-142112",
@@ -1157,9 +1153,7 @@
       "ticketUrl": "https://www.dunlapsbar.com/shows/383621",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "welcome-to-the-farm-booking_01KY0JQZ1Z15A8JAWTSB62Z8MJ",
@@ -1489,7 +1483,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-04-mike-rellick-single-release-show",
@@ -1921,9 +1917,7 @@
       "source": "manual",
       "manual": true,
       "id": "twist-social-club-2026-09-04-beyonc",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "MIX: Island Vibes",
@@ -2113,7 +2107,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-04-masskrugstemmen-bavarian-strongman-contest",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - U2 Desire",
@@ -2629,7 +2625,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/anime-pop-night-homecoming-the-foundry-tickets/14280764?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj",
+        "pop"
+      ]
     },
     {
       "id": "welcome-to-the-farm-booking_01KYJ6ZSRBKWSY0A7MZTYYA2GD",
@@ -2782,7 +2781,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "van-aken-shaker-breakers-2026-09-05",
@@ -2894,8 +2895,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -2961,7 +2961,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/labor-day-weekend-ladies-night-b-side-lounge-tickets/14283894?pl=bside",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "no-class-2026-09-05-namejai",
@@ -3803,9 +3805,7 @@
       "source": "manual",
       "manual": true,
       "id": "twist-social-club-2026-09-05-latrice-j-love-diamond",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "The Scenic Route",
@@ -4115,7 +4115,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-05-masskrugstemmen-bavarian-strongman-contest",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - Spazmatics",
@@ -4584,7 +4586,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "dj"
+        "dj",
+        "event"
       ]
     },
     {
@@ -4711,7 +4714,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -4756,6 +4760,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "event",
         "trivia"
       ]
     },
@@ -4778,9 +4783,7 @@
       "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/TE-AMO-LABOR-DAY-POOL-PARTY?eid=EVE-O3CUDW",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "fwd-nightclub-2026-09-06-2-chainz",
@@ -4823,7 +4826,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-09-06-1500-the-magicians-table",
@@ -4890,9 +4895,7 @@
       "ticketUrl": "https://www.ticketweb.com/event/thrifty-fifty-family-dolla-balla-the-foundry-tickets/14287064?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "welcome-to-the-farm-booking_01KX6RAZW3SG4TJMM4Q0GS8N2Z",
@@ -5283,7 +5286,6 @@
       "manual": true,
       "id": "shooters-2026-09-06-gordo",
       "genres": [
-        "event",
         "dj",
         "country",
         "electronic"
@@ -5371,7 +5373,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-06-mass-veneration-of-carlo-acutis-relic-potato-pancake-brunch",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Weihenstephan Fest Test - The Klaberheads",
@@ -5502,7 +5506,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-06-fireworks",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - Diamond Project",
@@ -5566,7 +5572,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-06-masskrugstemmen-bavarian-strongman-contest",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - Bruce in the USA",
@@ -5652,7 +5660,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-06-fireworks",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "BitBurger Area - North Coast Prost",
@@ -6265,7 +6275,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-07-masskrugstemmen-bavarian-strongman-contest",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - China Grove",
@@ -6379,7 +6391,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-08-american-aquarium",
@@ -6423,7 +6437,9 @@
       "ticketUrl": "https://link.dice.fm/vadbd22106b4",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-09-08-secret-society-comedy-presents-one-more-joke-48",
@@ -6508,7 +6524,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bent-mace-2026-09-08-confounder-ga-carousel-pdx-m-kovacevich-ga-nathan-howland-bay-area-fyodor-novotny",
@@ -6621,7 +6639,9 @@
       "source": "manual",
       "manual": true,
       "id": "quintanas-speakeasy-2026-09-08-eranah-adorjan",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Jeep Nite: Jeep vs Broncos",
@@ -6641,7 +6661,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-09-08-jeep-nite",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-comedy-open-mic-2026-09-08",
@@ -6656,7 +6678,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-08",
@@ -7246,7 +7270,9 @@
       "source": "manual",
       "manual": true,
       "id": "treehouse-2026-09-09-the-happy-hour",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Rachel Brown & The Beatnik Playboys",
@@ -8381,9 +8407,7 @@
       "ticketUrl": "https://link.dice.fm/Lcb4617938ca",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "bop-stop-2026-09-11-hot-jazz-with-whirlybirds-bop-stop",
@@ -8854,9 +8878,7 @@
       "ticketUrl": "https://www.ticketweb.com/event/kawaii-rave-anime-dance-party-b-side-lounge-tickets/14198574?pl=bside",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "no-class-2026-09-11-westside-tony-ski-mask-malley",
@@ -8922,7 +8944,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-11-improv-game-night",
@@ -9311,7 +9335,9 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-11-ladies-night-band",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Mike James",
@@ -9461,7 +9487,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-11-masskrugstemmen-bavarian-strongman-contest",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Bier Garten - Rumors",
@@ -9836,7 +9864,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -10175,7 +10204,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "van-aken-shaker-breakers-2026-09-12",
@@ -10304,9 +10335,7 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "bside-2026-09-12-gaargoyle-velocity-skewed-self-interest-southover-xtobearx",
@@ -10763,9 +10792,7 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-12-it-s-a-2000-s-party",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "Maria Petti",
@@ -10901,7 +10928,8 @@
       "genres": [
         "pop",
         "covers",
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -11671,6 +11699,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "event",
         "drag"
       ]
     },
@@ -11694,7 +11723,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -11736,7 +11766,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bluegrass-brunch-w-whiskey-drinks-the-winchester-tickets/14285934",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "rock-hall-2026-09-13-sensory-friendly-hours-091326",
@@ -12498,7 +12530,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "grog-shop-2026-09-15-raq-baby",
@@ -12983,7 +13017,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-15",
@@ -13686,7 +13722,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-09-16-jeep-nite-jeep-vs-broncos",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Dennis Lewin",
@@ -14830,9 +14868,7 @@
       "ticketUrl": "https://link.dice.fm/A13fe2670eda",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "bop-stop-2026-09-18-tumbao-bravo-bop-stop",
@@ -15271,7 +15307,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-18-lukas-mccrary-live-comedy-at-forest-city",
@@ -15286,7 +15324,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-18-the-imposters-main-stage-sketch-show-new-me-character-showcase",
@@ -16414,7 +16454,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "van-aken-shaker-breakers-2026-09-19",
@@ -16523,8 +16565,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -17012,9 +17053,7 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-19-private-party",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "Cavotta's Annual Clambake (Music by Rachel Brown & the Beatnik Playboys)",
@@ -17309,7 +17348,9 @@
       "source": "manual",
       "manual": true,
       "id": "twist-social-club-2026-09-19-hilary-duff-brunch",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Alan Carl",
@@ -17680,7 +17721,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -17702,7 +17744,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62720",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-09-20-cirque-de-sassy-drag-bingo-brunch",
@@ -17723,6 +17767,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "event",
         "drag"
       ]
     },
@@ -18712,7 +18757,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-22-big-sandy-his-fly-rite-boys",
@@ -19029,7 +19076,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-22",
@@ -19362,9 +19411,7 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "treelawn-social-club-2026-09-23-14252984",
@@ -20516,9 +20563,7 @@
       "ticketUrl": "https://link.dice.fm/U87c06489d00",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "mahalls-2026-09-25-diva-university-an-all-out-2010-s-dance-party",
@@ -20538,9 +20583,7 @@
       "ticketUrl": "https://link.dice.fm/yafb39ec539d",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "bop-stop-2026-09-25-fonville-x-fribush-bop-stop",
@@ -21840,7 +21883,9 @@
       "ticketUrl": "https://henceforthhorning.eventbrite.com",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "mahalls-2026-09-26-emo-homecoming",
@@ -21880,7 +21925,9 @@
       "ticketUrl": "https://henceforthlate926.eventbrite.com",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "bop-stop-2026-09-26-chorinho-pra-ele-the-music-of-hermeto-pascoal-bop-stop",
@@ -22337,7 +22384,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "van-aken-shaker-breakers-2026-09-26",
@@ -22450,8 +22499,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -22793,9 +22841,7 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-26-private-party",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "FM 77",
@@ -23349,7 +23395,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62529",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-09-27-over-the-shire-sep27",
@@ -23757,7 +23805,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "comedy"
+        "comedy",
+        "event"
       ]
     },
     {
@@ -23895,7 +23944,9 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-09-27-comedy-night",
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "title": "Buena Vista Orchestra",
@@ -24174,8 +24225,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "karaoke",
-        "event"
+        "karaoke"
       ]
     },
     {
@@ -24246,7 +24296,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "grog-shop-2026-09-29-militarie-gun",
@@ -24490,7 +24542,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-09-29",
@@ -26357,9 +26411,7 @@
       "ticketUrl": "https://www.ticketweb.com/event/broadway-rave-dance-party-b-side-lounge-tickets/14272974?pl=bside",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "no-class-2026-10-02-marquis-gaylords-odditorium-sigourney-beaver",
@@ -26698,9 +26750,7 @@
       "ticketUrl": "https://seatgeek.com/bert-kreischer-tickets/comedy/2026-10-03-7-pm/18051358",
       "source": "seatgeek",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "grog-shop-2026-10-03-nevertel",
@@ -27594,7 +27644,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62089",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-10-04-fleetwood-mac-tribute-brunch-oct4",
@@ -27616,7 +27668,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -28159,7 +28212,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "rocket-arena-2026-10-06-gorillaz",
@@ -28351,7 +28406,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-06",
@@ -29503,6 +29560,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "event",
         "drag"
       ]
     },
@@ -29524,9 +29582,7 @@
       "ticketUrl": "https://www.ticketweb.com/event/blisspop-presents-hot-in-herre-the-winchester-tickets/15027173",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "collision-bend-cleveland-2026-10-09-boaterhead-at-collision-bend-cle-48749",
@@ -30376,7 +30432,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/queer-bingo-night-treelawn-music-hall-tickets/14239274",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "treelawn-social-club-2026-10-10-14232424",
@@ -30418,8 +30476,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -30802,7 +30859,9 @@
       "source": "manual",
       "manual": true,
       "id": "twist-social-club-2026-10-10-practical-magic-brunch",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "title": "Tricky Dick & The Cover Ups",
@@ -31087,7 +31146,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -31109,7 +31169,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63125",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-10-11-the-po-ramblin-boys",
@@ -31658,7 +31720,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-10-13-roger-clyne-the-peacemakers",
@@ -31907,7 +31971,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-10-13-jeep-nite",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-comedy-open-mic-2026-10-13",
@@ -31922,7 +31988,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-13",
@@ -33387,7 +33455,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "title": "Villem",
@@ -33468,7 +33538,8 @@
       "genres": [
         "pop",
         "covers",
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -33890,8 +33961,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -34529,7 +34599,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62345",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-10-18-carbon-leaf-oct18",
@@ -35061,7 +35133,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "the-agora-2026-10-20-mastodon",
@@ -35322,7 +35396,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-10-20-jeep-nite-go-topless-for-breast-cancer",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-comedy-open-mic-2026-10-20",
@@ -35337,7 +35413,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-20",
@@ -37176,8 +37254,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -37206,9 +37283,7 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "no-class-2026-10-24-ovenhead-mutilatred",
@@ -37666,7 +37741,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62421",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-10-25-hall-oates-brunch-oct25",
@@ -37687,7 +37764,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62786",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-10-25-lights-out-oct25",
@@ -38183,7 +38262,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-10-27-in-her-own-words-every-avenue",
@@ -38377,7 +38458,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-10-27",
@@ -39246,9 +39329,7 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62853",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "welcome-to-the-farm-booking_01KV5SDJK46DZD4ZFYJD737K73",
@@ -40325,7 +40406,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=32977",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-11-01-dolly-parton-brunch-nov1",
@@ -40346,7 +40429,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62978",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-11-01-ohio-hip-hop-nov1",
@@ -40709,7 +40794,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "globe-iron-1425475",
@@ -40813,7 +40900,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-03",
@@ -42850,7 +42939,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62530",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-11-08-doobie-brothers-tribute-nov8",
@@ -43123,7 +43214,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "the-agora-2026-11-10-alter-bridge",
@@ -43300,7 +43393,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-11-10-jeep-nite",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-comedy-open-mic-2026-11-10",
@@ -43315,7 +43410,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-10",
@@ -44750,9 +44847,7 @@
       "ticketUrl": "https://link.dice.fm/C1bf26d72074",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "playhouse-square-2026-11-14-the-uncle-louie-variety-show-1",
@@ -45149,7 +45244,8 @@
       "genres": [
         "pop",
         "covers",
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -45401,7 +45497,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62785",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-11-15-anthony-gomes-2",
@@ -45549,9 +45647,7 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-11-15-golden-a-k-pop-kids-party",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "id": "spotlight-house-techno-2026-11-15",
@@ -45720,7 +45816,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "grog-shop-2026-11-17-michigander",
@@ -45891,7 +45989,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-11-17-jeep-nite-first-responders-appreciation",
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-comedy-open-mic-2026-11-17",
@@ -45906,7 +46006,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-17",
@@ -47299,8 +47401,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "polka",
-        "event"
+        "polka"
       ]
     },
     {
@@ -47720,7 +47821,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62043",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-11-22-matchbox-20-tribute-nov22",
@@ -48084,7 +48187,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mahalls-2026-11-24-chase-petra",
@@ -48216,7 +48321,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-11-24",
@@ -48475,7 +48582,8 @@
       "genres": [
         "pop",
         "covers",
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -49603,7 +49711,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=32411",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-11-29-neil-diamond-brunch-nov29",
@@ -49624,7 +49734,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63060",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-11-29-jared-james-nichols",
@@ -49973,7 +50085,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-12-01-secret-society-comedy-presents-one-more-joke-60",
@@ -50053,7 +50167,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-12-01",
@@ -50172,7 +50288,6 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event",
         "comedy"
       ]
     },
@@ -50909,7 +51024,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/the-dose-a-psychedelic-comedy-grog-shop-tickets/14880133?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "the-agora-2026-12-05-silverstein-story-of-the-year",
@@ -51241,7 +51358,8 @@
       "genres": [
         "pop",
         "covers",
-        "tribute"
+        "tribute",
+        "event"
       ]
     },
     {
@@ -51422,7 +51540,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=33437",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "music-box-2026-12-06-charlie-brown-holiday-brunch-dec6",
@@ -51735,7 +51855,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "rocket-arena-2026-12-08-cleveland-cavaliers",
@@ -51858,7 +51980,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-12-08",
@@ -53130,7 +53254,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-12-15-secret-society-comedy-presents-one-more-joke-62",
@@ -53230,7 +53356,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-12-15",
@@ -54589,7 +54717,9 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E49A6726-3B60-4EC4-8B8A-BBF767DA2595",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-12-21",
@@ -54639,7 +54769,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-12-22-secret-society-comedy-presents-one-more-joke-63",
@@ -54765,7 +54897,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-12-22",
@@ -55402,7 +55536,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62647",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "spotlight-house-techno-2026-12-27",
@@ -55524,7 +55660,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-12-29-secret-society-comedy-presents-one-more-joke-64",
@@ -55604,7 +55742,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "velvet-don-phillips-tue-2026-12-29",
