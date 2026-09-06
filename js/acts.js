@@ -26,6 +26,13 @@
 	const GENRES_URL = '/data/genres.json';
 
 	const JUMP_GROUPS = ['0-9', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
+
+	// Display label for a group — used by both the jump nav chip and its
+	// matching section heading so the two always stay in sync. The group
+	// key itself stays "0-9" everywhere else (anchors, actsByGroup, etc).
+	function groupLabel(group) {
+		return group === '0-9' ? '#' : group;
+	}
 	const MEDIA_PREVIEW_LIMIT = 5;
 	const MAX_UPCOMING_EVENTS = 8;
 	const FILTER_STORAGE_KEY = 'crwdsrfr_acts_filters';
@@ -217,10 +224,11 @@
 	function renderJumpNav(actsByGroup) {
 		const nav = document.getElementById('actsJumpNav');
 		nav.innerHTML = JUMP_GROUPS.map(group => {
+			const label = groupLabel(group);
 			const hasActs = (actsByGroup[group] || []).length > 0;
 			return hasActs
-				? `<a class="jumpChip" href="#actsGroup-${encodeURIComponent(group)}">${group}</a>`
-				: `<span class="jumpChip jumpChip-disabled" aria-disabled="true">${group}</span>`;
+				? `<a class="jumpChip" href="#actsGroup-${encodeURIComponent(group)}">${label}</a>`
+				: `<span class="jumpChip jumpChip-disabled" aria-disabled="true">${label}</span>`;
 		}).join('');
 	}
 
@@ -248,7 +256,7 @@
 			section.className = 'actsGroup';
 			section.innerHTML = `
 				<div class="actsAnchor" id="actsGroup-${encodeURIComponent(group)}"></div>
-				<h2 class="dateSeparator">${group}</h2>
+				<h2 class="dateSeparator">${groupLabel(group)}</h2>
 				<div class="actsGrid">
 					${groupActs.map(slug => actTileHtml(slug, allActsBySlug[slug])).join('')}
 				</div>
@@ -459,8 +467,8 @@
 
 		return `
 			<li class="actModalEvent">
-				<span class="actModalEventTitle">${titleHtml}</span>
-				<span class="actModalEventDate"> · ${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
+				<span class="actModalEventTitle">${titleHtml} :</span>
+				<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
 				<span class="actModalEventVenue">${venueHtml}</span>
 			</li>`;
 	}
@@ -481,28 +489,28 @@
 		modalGenres.innerHTML = genreChipsHtml(act.genres);
 		modalLinks.innerHTML = linksHtml(act.links);
 
+		// Both modal sections are always shown now (not just when they have
+		// content) — an empty-state message fills in instead of hiding the
+		// section, so the modal's shape stays consistent act to act.
 		const upcoming = upcomingEventsForAct(act, eventsData);
-		if (upcoming.length > 0) {
-			modalEventsList.innerHTML = upcoming.map(eventItemHtml).join('');
-			modalEventsSection.hidden = false;
-		} else {
-			modalEventsList.innerHTML = '';
-			modalEventsSection.hidden = true;
-		}
+		modalEventsList.innerHTML = upcoming.length > 0
+			? upcoming.map(eventItemHtml).join('')
+			: '<li class="actModalEmptyMsg">No upcoming shows.</li>';
+		modalEventsSection.hidden = false;
 
-		// Media loads async — show/open the modal first, then fill this section
-		// in once it resolves rather than delaying the whole modal on it.
-		modalMediaSection.hidden = true;
-		modalMediaGrid.innerHTML = '';
+		// Media loads async — show the section with a loading message first,
+		// then fill it in once it resolves rather than delaying the whole
+		// modal on it.
+		modalMediaSection.hidden = false;
+		modalMediaGrid.innerHTML = '<p class="actModalEmptyMsg">Loading media…</p>';
 
 		modal.hidden = false;
 		document.body.classList.add('boardModalOpen');
 
 		const mediaItems = await mediaPreviewForAct(act);
-		if (mediaItems.length > 0) {
-			modalMediaGrid.innerHTML = mediaItems.map(mediaThumbHtml).join('');
-			modalMediaSection.hidden = false;
-		}
+		modalMediaGrid.innerHTML = mediaItems.length > 0
+			? mediaItems.map(mediaThumbHtml).join('')
+			: '<p class="actModalEmptyMsg">No media yet.</p>';
 	}
 
 	function closeActModal() {

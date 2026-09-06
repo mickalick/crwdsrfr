@@ -154,7 +154,7 @@
 	align-items: center;
 	gap: 10px;
 	font-family: "Plus Jakarta Sans", sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	color: #FFF;
 	cursor: pointer;
 	width: fit-content;
@@ -181,19 +181,13 @@
 .checkbox-filter input[type="checkbox"]:checked::after {
 	content: "";
 	position: absolute;
-	top: 3px;
+	top: 2px;
 	left: 6px;
-	width: 5px;
+	width: 4px;
 	height: 10px;
 	border: solid #101010;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
-}
-
-@media (hover: hover) and (pointer: fine) {
-	.checkbox-filter:hover input[type="checkbox"] {
-		border-color: #62CBB8;
-	}
 }
 
 #actsFilterPanel .chip {
@@ -617,6 +611,13 @@
 	content: '· ';
 }
 
+.actModalEmptyMsg {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	color: #ADADAD;
+	margin: 0;
+}
+
 .actModalMediaGrid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -684,7 +685,7 @@
 	}
 
 	#actsJumpNav {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(7, 1fr);
 	}
 
 	.actsGroup .dateSeparator {
