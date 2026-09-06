@@ -1799,36 +1799,57 @@
       "covers"
     ]
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "market": {
-    "name": "Market",
+  "bringmetheolive": {
+    "name": "BRINGMETHEOLIVE",
     "aliases": [
-      "Market"
+      "BRINGMETHEOLIVE",
+      "Anime Pop Night"
+    ],
+    "genres": [
+      "dj",
+      "pop"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "event catch all": {
+    "name": "Event",
+    "aliases": [
+      "Market",
+      "Contest",
+      "Brunch",
+      "Fireworks",
+      "Patio Golf",
+      "Happy Hour",
+      "Bingo",
+      "Tarot",
+      "Jeep Nite",
+      "Ladies Night"
     ],
     "genres": [
       "event"
     ]
   },
-  "party": {
-    "name": "Party",
+  "comedy catch all": {
+    "name": "Comedy",
     "aliases": [
-      "Party"
+      "Comedy",
+      "Improv"
     ],
     "genres": [
-      "event"
+      "comedy"
     ]
   },
   "drag": {
