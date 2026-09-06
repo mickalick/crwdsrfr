@@ -1,4 +1,43 @@
 {
+  "austin-walkin-cane": {
+    "name": "Austin Walkin' Cane",
+    "aliases": [
+      "Austin Walkin' Cane",
+      "Austin Walkin Cane"
+    ],
+    "genres": [
+      "blues",
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://walkincane.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/austinwalkincane"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/austin.charanghat"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4r07d1Of3c8YEDQmCM4sba?si=S0WTE6P7TzebIjr-owBFGQ"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@austinwalkincane2?_r=1&_t=zp-94owbvnttiz"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@aug4077"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
   "old-skool": {
     "name": "Old Skool",
     "aliases": [
@@ -8,7 +47,10 @@
       "covers",
       "dance disco",
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "disco-inferno": {
     "name": "Disco Inferno",
@@ -18,7 +60,10 @@
     "genres": [
       "dance disco",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "that-80s-band": {
     "name": "That 80's Band",
@@ -28,7 +73,10 @@
     ],
     "genres": [
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "spazmatics": {
     "name": "Spazmatics",
@@ -38,7 +86,10 @@
     ],
     "genres": [
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "country-redford": {
     "name": "Country Redford",
@@ -46,8 +97,12 @@
       "Country Redford"
     ],
     "genres": [
-      "country"
-    ]
+      "country",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "post-road": {
     "name": "Post Road",
@@ -57,7 +112,10 @@
     "genres": [
       "country",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "sully-solo": {
     "name": "Sully Solo",
@@ -66,7 +124,10 @@
     ],
     "genres": [
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-ladies-night": {
     "name": "The Ladies Night",
@@ -77,7 +138,10 @@
       "pop",
       "covers",
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "faction": {
     "name": "Faction",
@@ -87,7 +151,10 @@
     "genres": [
       "pop",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "custard-pie": {
     "name": "Custard Pie",
@@ -97,7 +164,10 @@
     "genres": [
       "classic rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "factual-brains": {
     "name": "Factual Brains",
@@ -106,7 +176,10 @@
     ],
     "genres": [
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "bad-juju": {
     "name": "Bad Juju",
@@ -116,7 +189,10 @@
     "genres": [
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "follow-the-sun": {
     "name": "Follow The Sun",
@@ -126,7 +202,10 @@
     "genres": [
       "covers",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "trailer-park-ninjas": {
     "name": "Trailer Park Ninjas",
@@ -137,7 +216,10 @@
       "covers",
       "pop",
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "blue-lunch": {
     "name": "Blue Lunch",
@@ -148,7 +230,10 @@
       "blues",
       "rnb soul",
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "dogwater": {
     "name": "Dogwater",
@@ -160,7 +245,10 @@
     ],
     "genres": [
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "7 summers": {
     "name": "7 Summers",
@@ -169,7 +257,10 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "cocktail-johnny": {
     "name": "Cocktail Johnny",
@@ -179,19 +270,26 @@
     "genres": [
       "covers",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "rachel-brown-and-the-beatnik-playboys": {
     "name": "Rachel Brown & the Beatnik Playboys",
     "aliases": [
       "Rachel Brown & the Beatnik Playboys",
-      "Rachel Brown and the Beatnik Playboys"
+      "Rachel Brown and the Beatnik Playboys",
+      "Rachel and the Beatnik Playboys"
     ],
     "genres": [
       "country",
       "folk americana",
       "blues"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "hair-nation": {
     "name": "Hair Nation",
@@ -201,7 +299,10 @@
     "genres": [
       "metal",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-magicians-table": {
     "name": "The Magicians Table",
@@ -210,7 +311,10 @@
     ],
     "genres": [
       "magic"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "death-becomes-her": {
     "name": "Death Becomes Her",
@@ -219,7 +323,10 @@
     ],
     "genres": [
       "theater"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "beetlejuice": {
     "name": "Beetlejuice",
@@ -228,7 +335,10 @@
     ],
     "genres": [
       "theater"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "the-winter-s-tale": {
     "name": "The Winter's Tale",
@@ -237,7 +347,10 @@
     ],
     "genres": [
       "theater"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "cesear-s-forum-presents-conversations-after-a-burial": {
     "name": "Cesear's Forum Presents: Conversations After A Burial",
@@ -246,7 +359,10 @@
     ],
     "genres": [
       "theater"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "leanne-morgan": {
     "name": "Leanne Morgan",
@@ -255,7 +371,10 @@
     ],
     "genres": [
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "alex-meixner": {
     "name": "Alex Meixner",
@@ -264,7 +383,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "dorfrocker": {
     "name": "Dorfrocker",
@@ -274,7 +396,10 @@
     "genres": [
       "polka",
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "the-klaberheads": {
     "name": "The Klaberheads",
@@ -283,7 +408,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "chardon-polka-band": {
     "name": "Chardon Polka Band",
@@ -292,7 +420,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "donauschwaben-blaskapelle": {
     "name": "Donauschwaben Blaskapelle",
@@ -302,7 +433,10 @@
     "genres": [
       "polka",
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "da-land-brass-band": {
     "name": "Da Land Brass Band",
@@ -311,7 +445,10 @@
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "cleveland-alphorn-society": {
     "name": "Cleveland Alphorn Society",
@@ -320,7 +457,10 @@
     ],
     "genres": [
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "burke-school-of-irish-dance": {
     "name": "Burke School Of Irish Dance",
@@ -329,7 +469,10 @@
     ],
     "genres": [
       "irish"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "yin-tang-chinese-blue-river-dragon-dance-team": {
     "name": "Yin Tang Chinese Blue River Dragon Dance Team",
@@ -338,7 +481,10 @@
     ],
     "genres": [
       "chinese"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "cleveland-saxson-dance-group": {
     "name": "Cleveland Saxson Dance Group",
@@ -347,7 +493,10 @@
     ],
     "genres": [
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "piast-polish-folk-ensemble": {
     "name": "Piast Polish Folk Ensemble",
@@ -357,7 +506,10 @@
     "genres": [
       "polish",
       "folk americana"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "red-hackle-pipe-band": {
     "name": "Red Hackle Pipe Band",
@@ -366,7 +518,10 @@
     ],
     "genres": [
       "scottish"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "st-haralambos-hellenic-dancers": {
     "name": "St. Haralambos Hellenic Dancers",
@@ -375,7 +530,10 @@
     ],
     "genres": [
       "greek"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "lynn-marie-the-nashville-polka-guys": {
     "name": "Lynn Marie & The Nashville Polka Guys",
@@ -384,7 +542,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "the-brats-from-new-orleans": {
     "name": "The Bräts From New Orleans",
@@ -393,7 +554,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "bavarian-schuhplattlers": {
     "name": "Bavarian Schuhplattlers",
@@ -402,7 +566,10 @@
     ],
     "genres": [
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "madame-gigi-s-french-can-can-dancers": {
     "name": "Madame Gigi's French Can Can Dancers",
@@ -411,7 +578,10 @@
     ],
     "genres": [
       "cabaret"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "the-alley-katz": {
     "name": "The Alley Katz",
@@ -421,7 +591,10 @@
     "genres": [
       "covers",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "logan-wells": {
     "name": "Logan Wells",
@@ -431,7 +604,10 @@
     "genres": [
       "covers",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "patti-ann": {
     "name": "Patti Ann",
@@ -441,7 +617,10 @@
     "genres": [
       "covers",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "aaron-dussing": {
     "name": "Aaron Dussing",
@@ -450,7 +629,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "brian-papesh-party-band": {
     "name": "Brian Papesh Party Band",
@@ -459,7 +641,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "joey-tomsick-the-shotskis": {
     "name": "Joey Tomsick & The Shotskis",
@@ -468,7 +653,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-zolkas": {
     "name": "The Zolkas",
@@ -477,7 +665,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "patty-c-the-guys": {
     "name": "Patty C & The Guys",
@@ -486,7 +677,10 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "north-coast-prost": {
     "name": "North Coast Prost",
@@ -495,56 +689,95 @@
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "dave-hinrich": {
     "name": "Dave Hinrich",
     "aliases": [
       "Dave Hinrich"
     ],
-    "genres": null
+    "genres": [
+      "covers",
+      "pop"
+    ], 
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "macy-krew": {
     "name": "Macy Krew",
     "aliases": [
       "Macy Krew"
     ],
-    "genres": null
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "kelly-daniels": {
     "name": "Kelly Daniels",
     "aliases": [
       "Kelly Daniels"
     ],
-    "genres": null
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "matt-whataguy": {
     "name": "Matt Whataguy",
     "aliases": [
       "Matt Whataguy"
     ],
-    "genres": null
+    "genres": [
+      "pop",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "mark-mason": {
     "name": "Mark Mason",
     "aliases": [
       "Mark Mason"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "chad-baker": {
     "name": "Chad Baker",
     "aliases": [
       "Chad Baker"
     ],
-    "genres": null
+    "genres": [
+      "singer-songwriter",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "joe-barron": {
     "name": "Joe Barron",
     "aliases": [
       "Joe Barron"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "teddy-robb": {
     "name": "Teddy Robb",
@@ -553,43 +786,69 @@
     ],
     "genres": [
       "country",
-      "pop"
-    ]
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "kyle-elliott": {
     "name": "Kyle Elliott",
     "aliases": [
       "Kyle Elliott"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "jake-dodds": {
     "name": "Jake Dodds",
     "aliases": [
       "Jake Dodds"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "southbound": {
     "name": "Southbound",
     "aliases": [
       "Southbound"
     ],
-    "genres": null
+    "genres": [
+      "country",
+      "pop",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "devin-henry": {
     "name": "Devin Henry",
     "aliases": [
       "Devin Henry"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "meyer-pavich": {
     "name": "Meyer Pavich",
     "aliases": [
       "Meyer Pavich"
     ],
-    "genres": null
+    "genres": [
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "reece-gus-the-fifths": {
     "name": "Reece Gus & The Fifths",
@@ -599,7 +858,10 @@
     "genres": [
       "country",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "rdna": {
     "name": "RDNA",
@@ -609,14 +871,20 @@
     "genres": [
       "covers",
       "country"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "martin-mcdaniel": {
     "name": "Martin McDaniel",
     "aliases": [
       "Martin McDaniel"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "slugg": {
     "name": "Slugg",
@@ -625,7 +893,10 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "sound-on-tape": {
     "name": "Sound On Tape",
@@ -634,7 +905,10 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "corey-grand": {
     "name": "Corey Grand",
@@ -643,7 +917,10 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "kc-company": {
     "name": "KC & Company",
@@ -654,7 +931,10 @@
       "country",
       "classic rock",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "tea-bags": {
     "name": "Tea Bags",
@@ -664,14 +944,20 @@
     "genres": [
       "covers",
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "chad-hoffman": {
     "name": "Chad Hoffman",
     "aliases": [
       "Chad Hoffman"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "jam-machine": {
     "name": "Jam Machine",
@@ -682,14 +968,22 @@
       "covers",
       "rock",
       "rnb soul"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "mike-james": {
     "name": "Mike James",
     "aliases": [
       "Mike James"
     ],
-    "genres": null
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "ik-dubaku": {
     "name": "Ik Dubaku",
@@ -698,7 +992,10 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "pete-lazard": {
     "name": "Pete Lazard",
@@ -708,7 +1005,10 @@
     "genres": [
       "singer-songwriter",
       "folk americana"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "1988": {
     "name": "1988",
@@ -717,7 +1017,10 @@
     ],
     "genres": [
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "audiophile": {
     "name": "Audiophile",
@@ -728,7 +1031,10 @@
       "covers",
       "pop",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "leisure-hour": {
     "name": "Leisure Hour",
@@ -737,7 +1043,10 @@
     ],
     "genres": [
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "vibe-direct": {
     "name": "Vibe & Direct",
@@ -747,7 +1056,10 @@
     "genres": [
       "electronic",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "boaterhead": {
     "name": "Boaterhead",
@@ -757,7 +1069,10 @@
     "genres": [
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "celestyn": {
     "name": "Celestyn",
@@ -766,37 +1081,52 @@
     ],
     "genres": [
       "metal"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "shooters after dark": {
+  "shooters-after-dark": {
     "name": "Shooters After Dark",
     "aliases": [
       "Shooters After Dark"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "jeffrey-cruz": {
     "name": "Jeffrey Cruz",
     "aliases": [
       "Jeffrey Cruz"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "danny-christian": {
     "name": "Danny Christian",
     "aliases": [
       "Danny Christian"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "sam-romano": {
     "name": "Sam Romano",
     "aliases": [
       "Sam Romano"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "yosemite-slim": {
     "name": "Yosemite Slim",
@@ -806,21 +1136,30 @@
     "genres": [
       "country",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "cassius-g": {
     "name": "Cassius G",
     "aliases": [
       "Cassius G"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "spaz": {
     "name": "Spaz",
     "aliases": [
       "Spaz"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "jim-ballard": {
     "name": "Jim Ballard",
@@ -829,14 +1168,20 @@
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "emma-nicholas": {
     "name": "Emma Nicholas",
     "aliases": [
       "Emma Nicholas"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "journey-tribute-by-e5c4p3": {
     "name": "Journey Tribute by E5C4P3",
@@ -848,7 +1193,10 @@
       "classic rock",
       "covers",
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "a-charlie-brown-holiday-tribute": {
     "name": "A Charlie Brown Holiday Tribute",
@@ -857,7 +1205,10 @@
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "cigar-box-scott": {
     "name": "Cigar Box Scott",
@@ -868,14 +1219,20 @@
       "folk americana",
       "blues",
       "bluegrass"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "gold-tones": {
     "name": "Gold Tones",
     "aliases": [
       "Gold Tones"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "guy-pernetti": {
     "name": "Guy Pernetti",
@@ -886,7 +1243,10 @@
       "singer-songwriter",
       "folk americana",
       "blues"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-john-mcgrail-group": {
     "name": "The John McGrail Group",
@@ -896,14 +1256,24 @@
     "genres": [
       "singer-songwriter",
       "folk americana"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "slow-burn": {
     "name": "Slow Burn",
     "aliases": [
       "Slow Burn"
     ],
-    "genres": null
+    "genres": [
+      "pop",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "third-law-collective": {
     "name": "Third Law Collective",
@@ -912,7 +1282,10 @@
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "outlab-experiments-in-improvised-music": {
     "name": "Outlab: Experiments In Improvised Music",
@@ -923,7 +1296,10 @@
     "genres": [
       "jazz",
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "brent-kirby-s-10x3-songwriter-band-showcase": {
     "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
@@ -932,7 +1308,10 @@
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-sammy-deleon-and-jackie-warren-quartet": {
     "name": "The Sammy Deleon and Jackie Warren Quartet",
@@ -941,7 +1320,10 @@
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "personality-crisis-cle-punk-night": {
     "name": "Personality Crisis (CLE Punk Night)",
@@ -951,7 +1333,10 @@
     ],
     "genres": [
       "emo punk"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "dj-sayword": {
     "name": "DJ Sayword",
@@ -960,14 +1345,20 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "dennis-lewin": {
     "name": "Dennis Lewin",
     "aliases": [
       "Dennis Lewin"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "tricky-dick-and-the-cover-ups": {
     "name": "Tricky Dick and the Cover-Ups",
@@ -977,7 +1368,10 @@
     ],
     "genres": [
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "basement-r-b-experience": {
     "name": "Basement: R&B Experience",
@@ -986,7 +1380,10 @@
     ],
     "genres": [
       "rnb soul"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "rush": {
     "name": "Rush",
@@ -996,7 +1393,10 @@
     "genres": [
       "classic rock",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "the-night-owls": {
     "name": "The Night Owls",
@@ -1005,7 +1405,10 @@
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "dj-caffrey": {
     "name": "DJ Caffrey",
@@ -1014,17 +1417,23 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "signal-cle-presents-classical-revolution": {
-    "name": "Signal Cle Presents: Classical Revolution!",
+  "classical-revolution": {
+    "name": "Classical Revolution",
     "aliases": [
       "Signal Cle Presents: Classical Revolution!",
-      "Signal Cle"
+      "Classical Revolution"
     ],
     "genres": [
       "classical"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "make-em-laugh-mondays": {
     "name": "Make Em Laugh Mondays",
@@ -1033,7 +1442,10 @@
     ],
     "genres": [
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
   },
   "secret-society-comedy-presents-one-more-joke": {
     "name": "Secret Society Comedy Presents: One More Joke",
@@ -1043,7 +1455,10 @@
     ],
     "genres": [
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
   },
   "poets-jam-with-ray-mcniece-and-the-tongue-in-groove-trio": {
     "name": "Poets Jam with Ray McNiece and the Tongue in Groove Trio",
@@ -1053,7 +1468,10 @@
     ],
     "genres": [
       "poetry"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-people-poetry-open-mic-night": {
     "name": "The People Poetry: Open Mic Night",
@@ -1062,7 +1480,10 @@
     ],
     "genres": [
       "poetry"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "lyrical-rhythms": {
     "name": "Lyrical Rhythms",
@@ -1072,14 +1493,20 @@
     "genres": [
       "rnb soul",
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "the-mercury-jam": {
     "name": "The Mercury Jam",
     "aliases": [
       "The Mercury Jam"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "qweirdo": {
     "name": "Qweirdo",
@@ -1088,14 +1515,20 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "billy-morris": {
     "name": "Billy Morris",
     "aliases": [
       "Billy Morris"
     ],
-    "genres": null
+    "genres": null,
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "slacking-pgh": {
     "name": "Slacking (PGH)",
@@ -1105,7 +1538,10 @@
     ],
     "genres": [
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
   "osees": {
     "name": "Osees",
@@ -1115,19 +1551,12 @@
     ],
     "genres": [
       "indie alternative"
-    ]
-  },
-  "devotional": {
-    "name": "Devotional",
-    "aliases": [
-      "Devotional 2026",
-      "Devotional"
     ],
-    "genres": [
-      "indie alternative"
-    ]
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "come undone": {
+  "come-undone": {
     "name": "Come Undone",
     "aliases": [
       "Come Undone"
@@ -1137,18 +1566,24 @@
       "rock",
       "pop",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "niiko x swae": {
+  "niiko-x-swae": {
     "name": "Niiko x Swae",
     "aliases": [
       "Niiko x Swae"
     ],
     "genres": [
       "electronic"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "whos bad": {
+  "whos-bad": {
     "name": "Who's Bad",
     "aliases": [
       "Who's Bad",
@@ -1157,9 +1592,12 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "bridge the gap": {
+  "bridge-the-gap": {
     "name": "Bridge the Gap",
     "aliases": [
       "Bridge the Gap"
@@ -1170,18 +1608,24 @@
       "pop",
       "country",
       "classic rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "eddie majeski": {
+  "eddie-majeski": {
     "name": "Eddie Majeski",
     "aliases": [
       "Eddie Majeski"
     ],
     "genres": [
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "the dollyhoppers": {
+  "the-dollyhoppers": {
     "name": "The Dollyhoppers",
     "aliases": [
       "The Dollyhoppers"
@@ -1189,18 +1633,24 @@
     "genres": [
       "indie alternative",
       "folk americana"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "noah gittell": {
+  "noah-gittell": {
     "name": "Noah Gittell",
     "aliases": [
       "Noah Gittell"
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "lovely weather": {
+  "lovely-weather": {
     "name": "Lovely Weather",
     "aliases": [
       "Lovely Weather"
@@ -1208,9 +1658,12 @@
     "genres": [
       "pop",
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "karta stella": {
+  "karta-stella": {
     "name": "Karta Stella",
     "aliases": [
       "Karta Stella"
@@ -1218,18 +1671,24 @@
     "genres": [
       "indie alternative",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "bronx country": {
+  "bronx-country": {
     "name": "Bronx Country",
     "aliases": [
       "Bronx Country"
     ],
     "genres": [
       "country"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "girl cologne": {
+  "girl-cologne": {
     "name": "Girl Cologne",
     "aliases": [
       "Girl Cologne"
@@ -1237,9 +1696,12 @@
     "genres": [
       "indie alternative",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "riley burke band": {
+  "riley-burke-band": {
     "name": "Riley Burke Band",
     "aliases": [
       "Riley Burke Band",
@@ -1249,9 +1711,12 @@
       "indie alternative",
       "pop",
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "the velvet gentlemen": {
+  "the-velvet-gentlemen": {
     "name": "The Velvet Gentlemen",
     "aliases": [
       "The Velvet Gentlemen",
@@ -1259,9 +1724,12 @@
     ],
     "genres": [
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "last pick": {
+  "last-pick": {
     "name": "Last Pick",
     "aliases": [
       "Last Pick",
@@ -1270,7 +1738,10 @@
     "genres": [
       "emo punk",
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "unknownphrazes": {
     "name": "Unknownphrazes",
@@ -1279,7 +1750,10 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "namejai": {
     "name": "Namejai",
@@ -1288,9 +1762,12 @@
     ],
     "genres": [
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "super troupers": {
+  "super-troupers": {
     "name": "Super Troupers",
     "aliases": [
       "Super Troupers",
@@ -1298,18 +1775,24 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "melrose eve": {
+  "melrose-eve": {
     "name": "Melrose Eve",
     "aliases": [
       "Melrose Eve"
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "voodoo child": {
+  "voodoo-child": {
     "name": "Voodoo Child",
     "aliases": [
       "Voodoo Child"
@@ -1317,9 +1800,12 @@
     "genres": [
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "dj mike filly": {
+  "dj-mike-filly": {
     "name": "DJ Mike Filly",
     "aliases": [
       "DJ Mike Filly",
@@ -1327,16 +1813,22 @@
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "matt moody": {
+  "matt-moody": {
     "name": "Matt Moody",
     "aliases": [
       "Matt Moody"
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "eclipse": {
     "name": "Eclipse",
@@ -1346,9 +1838,12 @@
     "genres": [
       "classic rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "the scenic route": {
+  "the-scenic-route": {
     "name": "The Scenic Route",
     "aliases": [
       "The Scenic Route"
@@ -1357,9 +1852,12 @@
       "pop",
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "treble in cle": {
+  "treble-in-cle": {
     "name": "Treble in CLE",
     "aliases": [
       "Treble in CLE"
@@ -1368,9 +1866,12 @@
       "pop",
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "rent for cheryl": {
+  "rent-for-cheryl": {
     "name": "Rent for Cheryl",
     "aliases": [
       "Rent for Cheryl"
@@ -1380,7 +1881,10 @@
       "blues",
       "indie alternative",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "wildbuilt": {
     "name": "Wildbuilt",
@@ -1391,45 +1895,60 @@
     "genres": [
       "indie alternative",
       "emo punk"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "jasmine jeanise": {
+  "jasmine-jeanise": {
     "name": "Jasmine Jeanise",
     "aliases": [
       "Jasmine Jeanise"
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "12k gotti": {
+  "12k-gotti": {
     "name": "12k Gotti",
     "aliases": [
       "12k Gotti"
     ],
     "genres": [
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "dj lovesick": {
+  "dj-lovesick": {
     "name": "DJ Lovesick",
     "aliases": [
       "DJ Lovesick"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "buffy dj": {
+  "buffy-dj": {
     "name": "Buffy DJ",
     "aliases": [
       "Buffy DJ"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "jesse jukebox": {
+  "jesse-jukebox": {
     "name": "Jesse Jukebox",
     "aliases": [
       "Jesse Jukebox"
@@ -1437,9 +1956,12 @@
     "genres": [
       "family kids",
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "birds of a feather": {
+  "birds-of-a-feather": {
     "name": "Birds of a Feather",
     "aliases": [
       "Birds of a Feather"
@@ -1447,18 +1969,24 @@
     "genres": [
       "family kids",
       "indie alternative"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "shaker breakers": {
+  "shaker-breakers": {
     "name": "Shaker Breakers",
     "aliases": [
       "Shaker Breakers"
     ],
     "genres": [
       "family kids"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "in my feelings": {
+  "in-my-feelings": {
     "name": "In My Feelings",
     "aliases": [
       "In My Feelings"
@@ -1466,27 +1994,36 @@
     "genres": [
       "hiphop rap",
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "dj hg": {
+  "dj-hg": {
     "name": "DJ HG",
     "aliases": [
       "DJ HG"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "dj den mother": {
+  "dj-den-mother": {
     "name": "DJ Den Mother",
     "aliases": [
       "DJ Den Mother"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "furious bongos": {
+  "furious-bongos": {
     "name": "The Furious Bongos",
     "aliases": [
       "The Furious Bongos",
@@ -1494,36 +2031,48 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "earth tongue": {
+  "earth-tongue": {
     "name": "Earth Tongue",
     "aliases": [
       "Earth Tongue"
     ],
     "genres": [
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "brood x": {
+  "brood-x": {
     "name": "Brood X",
     "aliases": [
       "Brood X"
     ],
     "genres": [
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "ted riser": {
+  "ted-riser": {
     "name": "Ted Riser",
     "aliases": [
       "Ted Riser"
     ],
     "genres": [
       "singer-songwriter"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "becky boyd groove train": {
+  "becky-boyd-groove-train": {
     "name": "Becky Boyd & the Groove Train",
     "aliases": [
       "Becky Boyd & the Groove Train",
@@ -1533,9 +2082,12 @@
       "blues",
       "jazz",
       "rock"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "paul kovac": {
+  "paul-kovac": {
     "name": "Paul Kovac",
     "aliases": [
       "Paul Kovac",
@@ -1545,18 +2097,24 @@
     "genres": [
       "singer-songwriter",
       "bluegrass"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "2 chainz": {
+  "2-chainz": {
     "name": "2 CHAINZ",
     "aliases": [
       "2 CHAINZ"
     ],
     "genres": [
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "swamp boogie": {
+  "swamp-boogie": {
     "name": "Swamp Boogie",
     "aliases": [
       "Swamp Boogie",
@@ -1566,36 +2124,48 @@
       "classic rock",
       "blues",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "carnage the executioner": {
+  "carnage-the-executioner": {
     "name": "Carnage the Executioner",
     "aliases": [
       "Carnage the Executioner"
     ],
     "genres": [
       "hiphop rap"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "victim in pain": {
+  "victim-in-pain": {
     "name": "Victim in Pain",
     "aliases": [
       "Victim in Pain"
     ],
     "genres": [
       "emo punk"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "into the blue": {
+  "into-the-blue": {
     "name": "Into the Blue",
     "aliases": [
       "Into the Blue"
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "carlos jones plus band": {
+  "carlos-jones-plus-band": {
     "name": "Carlos Jones & the PLUS Band",
     "aliases": [
       "Carlos Jones & the PLUS Band",
@@ -1603,7 +2173,10 @@
     ],
     "genres": [
       "funk reggae"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "mc4d": {
     "name": "MC4D",
@@ -1614,9 +2187,12 @@
       "dj",
       "country",
       "electronic"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "latin city soul band": {
+  "latin-city-soul-band": {
     "name": "Latin City Soul Band",
     "aliases": [
       "Latin City Soul Band"
@@ -1625,9 +2201,12 @@
       "latin",
       "rnb soul",
       "jazz"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "kimmi bitter": {
+  "kimmi-bitter": {
     "name": "Kimmi Bitter",
     "aliases": [
       "Kimmi Bitter"
@@ -1635,16 +2214,22 @@
     "genres": [
       "country",
       "folk americana"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "tea dances": {
+  "tea-dances": {
     "name": "Tea Dances",
     "aliases": [
       "Tea Dances"
     ],
     "genres": [
       "dj"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
   },
   "eastwind": {
     "name": "Eastwind",
@@ -1654,7 +2239,10 @@
     "genres": [
       "classic rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "medusa": {
     "name": "Medusa",
@@ -1664,25 +2252,34 @@
     "genres": [
       "rock",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "china grove": {
+  "china-grove": {
     "name": "China Grove",
     "aliases": [
       "China Grove"
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "johnny koenig": {
+  "johnny-koenig": {
     "name": "Johnny Koenig",
     "aliases": [
       "Johnny Koenig"
     ],
     "genres": [
       "polka"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "vader": {
     "name": "Vader",
@@ -1691,19 +2288,25 @@
     ],
     "genres": [
       "metal"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "cloudy with a chance": {
-    "name": "Cloudy with a Chance",
+  "cloudy-thee-queen": {
+    "name": "Cloudy Thee Queen",
     "aliases": [
-      "Cloudy with a Chance",
-      "Cloudy Thee Queen"
+      "Cloudy Thee Queen",
+      "Cloudy with a Chance"
     ],
     "genres": [
       "drag"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "steve aoki": {
+  "steve-aoki": {
     "name": "Steve Aoki",
     "aliases": [
       "Steve Aoki"
@@ -1711,18 +2314,24 @@
     "genres": [
       "dj",
       "electronic"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "rock roll love machine": {
+  "rock-roll-love machine": {
     "name": "Rock & Roll Love Machine",
     "aliases": [
       "Rock & Roll Love Machine"
     ],
     "genres": [
       "event"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
   },
-  "craft cocktails": {
+  "craft-cocktails": {
     "name": "Learn Hands-On Craft Cocktails",
     "aliases": [
       "Learn Hands-On Craft Cocktails",
@@ -1730,27 +2339,36 @@
     ],
     "genres": [
       "event"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
-  "backstage stories": {
+  "backstage-stories": {
     "name": "Backstage Stories",
     "aliases": [
       "Backstage Stories"
     ],
     "genres": [
       "event"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
-  "diamond project": {
+  "diamond-project": {
     "name": "Diamond Project",
     "aliases": [
       "Diamond Project"
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "gemutlichkeit clevelander musikanten": {
+  "gemutlichkeit-clevelander-musikanten": {
     "name": "Gemütlichkeit Cleveländer Musikanten",
     "aliases": [
       "Gemütlichkeit Cleveländer Musikanten",
@@ -1759,9 +2377,12 @@
     ],
     "genres": [
       "german"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "walt sanders cadillac band": {
+  "walt-sanders-cadillac-band": {
     "name": "Walt Sanders & the Cadillac Band",
     "aliases": [
       "Walt Sanders & the Cadillac Band",
@@ -1769,27 +2390,36 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
-  "bruce in the usa": {
+  "bruce-in-the-usa": {
     "name": "Bruce in the USA",
     "aliases": [
       "Bruce in the USA"
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
   },
-  "nerd night": {
+  "nerd-night": {
     "name": "Nerd Night",
     "aliases": [
       "Nerd Night"
     ],
     "genres": [
       "event"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
   },
-  "joshua donato": {
+  "joshua-donato": {
     "name": "Joshua Donato",
     "aliases": [
       "Joshua Donato"
@@ -1797,7 +2427,10 @@
     "genres": [
       "singer-songwriter",
       "covers"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
   "bringmetheolive": {
     "name": "BRINGMETHEOLIVE",
@@ -1808,7 +2441,10 @@
     "genres": [
       "dj",
       "pop"
-    ]
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
   },
 
 
@@ -1817,14 +2453,7 @@
 
 
 
-
-
-
-
-
-
-
-  "event catch all": {
+  "event-catchall": {
     "name": "Event",
     "aliases": [
       "Market",
@@ -1840,9 +2469,12 @@
     ],
     "genres": [
       "event"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
-  "comedy catch all": {
+  "comedy-catchall": {
     "name": "Comedy",
     "aliases": [
       "Comedy",
@@ -1850,7 +2482,10 @@
     ],
     "genres": [
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "drag": {
     "name": "Drag",
@@ -1859,7 +2494,10 @@
     ],
     "genres": [
       "drag"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "improv": {
     "name": "Improv",
@@ -1868,7 +2506,10 @@
     ],
     "genres": [
       "comedy"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "karaoke": {
     "name": "Karaoke",
@@ -1877,7 +2518,10 @@
     ],
     "genres": [
       "karaoke"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "tribute": {
     "name": "Tribute",
@@ -1886,7 +2530,10 @@
     ],
     "genres": [
       "tribute"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "trivia": {
     "name": "Trivia",
@@ -1895,7 +2542,10 @@
     ],
     "genres": [
       "trivia"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   },
   "music-trivi-aoke": {
     "name": "Music Trivi-Aoke",
@@ -1907,6 +2557,9 @@
     "genres": [
       "trivia",
       "karaoke"
-    ]
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
   }
 }

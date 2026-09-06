@@ -1,0 +1,693 @@
+/* acts.css
+   Styles for /acts/ — the acts directory: jump nav, letter-grouped tile
+   grid, and the act detail modal.
+
+   The modal reuses .boardModal / .boardModalBackdrop / .boardModalContent /
+   .boardModalClose from board.css (loaded on this page for the same visual
+   treatment — see acts.html), so only the acts-specific inner content
+   (.actModalBody and below) is styled here. Genre chips reuse the exact
+   .genre-chip look from style.css's .eventGenres rule, just rescoped to
+   .actGenres so the calendar and acts page render genre chips identically.
+*/
+
+#actsSpace.page {
+	align-items: flex-start;
+}
+
+#actsSpace .main,
+#actsContent .main {
+	margin-bottom: 0 !important;
+}
+
+/* --- Search + filter bar --------------------------------------------------
+   Mirrors #boardSettingsBar / #boardFilterPanel / #boardActiveFilters from
+   board.css, rescoped to acts-prefixed ids so this page's search + filter
+   UI matches the board's look exactly. */
+
+#actsSettingsBar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	margin-bottom: 40px;
+}
+
+#actsSearchWrapper {
+	position: relative;
+	display: inline-flex;
+	width: 65%;
+	max-width: 720px;
+	height: 70px;
+}
+
+#actsSearch {
+	width: 100%;
+	min-height: 60px;
+	background-color: #101010;
+	border: 3px solid #333;
+	border-radius: 9px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 16px;
+	padding-right: 60px;
+}
+
+#actsSearch:focus {
+	border-color: #62CBB8;
+}
+
+#actsSearchWrapper.hasValue #actsSearch {
+	border: 3px solid #F9F976;
+}
+
+#actsSearchGo {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#actsSearchReset {
+	display: none;
+}
+
+#actsSearchWrapper.hasValue #actsSearchGo {
+	display: none;
+}
+
+#actsSearchWrapper.hasValue #actsSearchReset {
+	height: 100%;
+	position: absolute;
+	right: 16px;
+	background: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#actsSearchGo .icon, #actsSearchReset .icon {
+	width: 40px;
+	height: 40px;
+}
+
+#actsSettingsBar .filter-toggle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: none;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-right: 10%;
+}
+
+#actsSettingsBar .filter-toggle .icon {
+	width: 32px;
+	height: 32px;
+}
+
+#actsSettingsBar .filter-toggle.active {
+	border: 1px solid #F9F976;
+	color: #F9F976;
+}
+
+#actsFilterPanel .filter-panel {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+#actsFilterPanel .filter-group-label {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FCFCFC;
+	margin-bottom: 8px;
+}
+
+#actsFilterPanel .filter-row {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.checkbox-filter {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.checkbox-filter input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+}
+
+.checkbox-filter input[type="checkbox"]:checked {
+	border-color: #F9F976;
+	background: #F9F976;
+}
+
+.checkbox-filter input[type="checkbox"]:checked::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 5px;
+	height: 10px;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.checkbox-filter:hover input[type="checkbox"] {
+		border-color: #62CBB8;
+	}
+}
+
+#actsFilterPanel .chip {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	padding: 8px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 20px;
+	color: #FFF;
+	cursor: pointer;
+	background: transparent;
+	transition: all .15s ease;
+}
+
+#actsFilterPanel .chip.active {
+	border-color: #F9F976 !important;
+	color: #F9F976;
+}
+
+/* Genre chips in the filter panel get the same per-genre --genre-color
+   treatment as the calendar's own genre filter chips. */
+#actsFilterPanel .chip[style*="--genre-color"] {
+	border-color: var(--genre-color);
+	color: var(--genre-color);
+}
+
+#actsFilterPanel .chip[style*="--genre-color"].active {
+	background: var(--genre-color) !important;
+	border-color: var(--genre-color) !important;
+	color: #101010;
+}
+
+#actsFilterPanel .chip-show-all {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	border-style: none;
+	color: #FFFFFF;
+	padding: 8px 0;
+	padding-left: 8px;
+	margin-right: 80px;
+}
+
+#actsActiveFiltersWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+#actsActiveFiltersWrapper #actsActiveFiltersLabel {
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+#actsActiveFilters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+#actsActiveFilters .chip {
+	display: inline-flex;
+	align-items: baseline;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background: transparent;
+	border-style: none;
+	cursor: pointer;
+	gap: 8px;
+}
+
+#actsActiveFilters .chip-remove {
+	color: #FF6262;
+	font-size: 20px;
+}
+
+#actsActiveFilters .chip-reset {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+#actsContent .main .subHead {
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	#actsSettingsBar .filter-toggle:hover {
+		color: #F9F976;
+	}
+
+	#actsFilterPanel .chip:hover {
+		border-color: #62CBB8;
+	}
+
+	#actsFilterPanel .chip-show-all:hover {
+		color: #62CBB8;
+	}
+
+	#actsActiveFilters .chip-reset:hover {
+		color: #F9F976;
+	}
+}
+
+@media screen and (max-width: 774px) {
+	#actsSettingsBar {
+		justify-content: space-between;
+	}
+
+	#actsFilterToggle {
+		margin-top: 4px;
+	}
+
+	.buttonLabel {
+		display: none;
+	}
+
+	#actsSettingsBar .filter-toggle {
+		margin-right: 11%;
+	}
+
+	#actsContent .main .subHead {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	#actsSearch {
+		font-size: 14px;
+		padding-right: 32px;
+	}
+
+	#actsSearchGo .icon, #actsSearchReset .icon {
+		width: 32px !important;
+		height: 32px !important;
+	}
+
+	#actsSearchGo, #actsSearchWrapper.hasValue #actsSearchReset {
+		top: 0;
+		right: 8px;
+	}
+
+	#actsSearchWrapper {
+		width: 75%;
+	}
+
+	#actsSettingsBar .filter-toggle {
+		margin-right: 0px;
+	}
+}
+
+/* --- Jump nav ------------------------------------------------------------ */
+
+#actsJumpNav {
+	z-index: 5;
+	display: grid;
+	/* 27 groups total (0-9 + A-Z)*/
+	grid-template-columns: repeat(28, 1fr);
+	gap: 6px;
+	background: #222;
+	padding: 12px 0 24px;
+	margin-bottom: 8px;
+	justify-content: space-between;
+}
+
+.jumpChip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 32px;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 9px;
+	color: #FFF !important;
+	text-decoration: none;
+	transition: all 250ms ease;
+}
+
+.jumpChip-disabled {
+	color: #555 !important;
+	border-color: rgba(255, 255, 255, 0.06);
+	cursor: default;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.jumpChip:not(.jumpChip-disabled):hover {
+		border-color: #F9F976;
+		color: #F9F976 !important;
+		text-decoration: none;
+	}
+}
+
+/* --- Letter groups + anchors ---------------------------------------------- */
+
+/* Sits just above each dateSeparator heading so the jQuery smooth-scroll in
+   the page <head> lands the group below the fixed header + sticky jump nav,
+   instead of tucking the heading underneath them. */
+.actsAnchor {
+	display: block;
+	position: relative;
+	top: -160px;
+	visibility: hidden;
+}
+
+.actsGroup .dateSeparator {
+	margin-top: 8px;
+	text-align: left;
+}
+
+.actsBackToTop {
+	width: 100%;
+	margin: 0 0 40px;
+	text-align: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+
+.actsBackToTop a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actsBackToTop a:hover {
+		color: #62CBB8;
+	}
+}
+
+/* --- Tile grid -------------------------------------------------------- */
+
+.actsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 16px;
+	margin-bottom: 32px;
+}
+
+.actTile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	width: 100%;
+	padding: 16px;
+	border: 3px solid #333;
+	border-radius: 9px;
+	background: #101010;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+	text-align: left;
+}
+
+.actTileName {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1.25;
+	color: #FFF;
+}
+
+.actGenres {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.actGenres .genre-chip {
+	display: inline-flex;
+	align-items: center;
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
+	border-radius: 20px;
+	color: var(--genre-color, #FFF);
+	background: transparent;
+	white-space: nowrap;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actTile:hover,
+	.actTile:focus-visible {
+		transform: translateY(-2px);
+		border-color: #62CBB8;
+	}
+}
+
+.actsStateMsg {
+	width: 100%;
+	margin: 0px 0px 40px;
+	text-align: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+}
+
+/* --- Act modal ------------------------------------------------------------ */
+/* .boardModal / .boardModalBackdrop / .boardModalContent / .boardModalClose
+   come from board.css. Everything below styles content specific to acts. */
+
+.actModalContent {
+	max-width: 640px;
+	max-height: 85vh;
+	overflow-y: auto;
+}
+
+.actModalBody h2 {
+	font-size: 28px;
+	margin-bottom: 12px !important;
+}
+
+.actModalBody .actGenres {
+	margin-bottom: 16px;
+}
+
+.actLinks {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	margin-bottom: 8px;
+}
+ 
+.actLink {
+	color: #FFF;
+	text-decoration: underline;
+}
+ 
+.actLinkSep {
+	color: #62CBB8;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actLink:hover {
+		color: #62CBB8;
+	}
+}
+
+.actModalSection {
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid #333;
+}
+
+.actModalSectionTitle {
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #FFF;
+	margin-bottom: 12px !important;
+}
+
+.actModalEventList {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.actModalEvent {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px 10px;
+}
+
+.actModalEventDate {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+	white-space: nowrap;
+}
+
+.actModalEventTitle {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+
+.actModalEventTitle a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.actModalEventVenue {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+}
+
+.actModalEventVenue a {
+	color: #62CBB8;
+	text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actModalEventVenue a:hover, .actModalEventTitle a:hover {
+		text-decoration: underline;
+	}
+
+	.actModalEventTitle a:hover {
+		color: #62CBB8;
+	}
+}
+
+.actModalEventVenue::before {
+	content: '· ';
+}
+
+.actModalMediaGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+	gap: 8px;
+}
+
+.actModalMediaThumb {
+	position: relative;
+	display: block;
+	aspect-ratio: 1;
+	border-radius: 9px;
+	overflow: hidden;
+	background: #000;
+}
+
+.actModalMediaThumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.actModalMediaPlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 28px;
+	height: 28px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: rgba(16, 16, 16, 0.65);
+	pointer-events: none;
+}
+
+.actModalMediaPlay::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 6px 0 6px 10px;
+	border-color: transparent transparent transparent #FFF;
+}
+
+.wave {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1108px) {
+	#actsJumpNav {
+		grid-template-columns: repeat(14, 1fr);
+	}
+}
+
+@media screen and (max-width: 774px) {
+	#actsJumpNav {
+		grid-template-columns: repeat(10, 1fr);
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.actModalMediaGrid {
+		grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+	}
+
+	#actsJumpNav {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.actsGroup .dateSeparator {
+		text-align: center;
+	}
+}

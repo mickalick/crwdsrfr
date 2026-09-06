@@ -431,13 +431,20 @@ footer a {
 }
 
 #boardHero {
-	flex: 0 0 auto; /* don't compete for leftover space with #calendar — size based on hero's own content only */
+	flex: 0 0 auto;
 	padding-top: 160px;
 	background:url(../images/board_bg.jpg) no-repeat bottom;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.50);
 	background-size: cover;
 }
 
+#actsHero {
+	flex: 0 0 auto;
+	padding-top: 160px;
+	background:url(../images/acts_bg.jpg) no-repeat bottom;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.50);
+	background-size: cover;
+}
 
 
 #calendarSettingsBar {

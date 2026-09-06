@@ -1,0 +1,233 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Acts | CRWD SRFR</title>
+		<meta name="description" content="Every act coming through the Cleveland area — browse by name or genre.">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/board.css">
+		<link rel="stylesheet" href="../css/acts.css">
+		<link rel="shortcut icon" href="../images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "") {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {    
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});	
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    document.querySelector('label[for="menuToggle"]').addEventListener('click', function() {
+      				document.getElementById('menuNav').classList.toggle('open');
+      				document.getElementById('menuButton').classList.toggle('open');
+    			});
+
+			    document.addEventListener('click', function(e) {
+			      const nav = document.getElementById('menuNav');
+			      const btn = document.getElementById('menuButton');
+			      const label = document.querySelector('label[for="menuToggle"]');
+
+			      if (!nav.contains(e.target) && !label.contains(e.target)) {
+			        nav.classList.remove('open');
+			        btn.classList.remove('open');
+			      }
+			    });
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<div id="menuButton">
+					<label for="menuToggle" aria-label="Open Menu">
+				  	<span class="icon" id="mnu"></span>
+					</label>
+				</div>
+				<div id="menuNav">
+					<ul>
+						<a class="navLink" href="/"><li class="navItem">Calendar</li></a>
+						<a class="navLink" href="/featured/"><li class="navItem">Featured</li></a>
+						<a class="navLink" href="/venues/"><li class="navItem">Venues</li></a>
+						<a class="navLink" href="/acts/"><li class="navItem currentPage">Acts (Beta)</li></a>
+						<a class="navLink" href="/board/"><li class="navItem">The SRF Board</li></a>
+						<hr>
+						<a class="navLink" href="/about.html"><li class="navItem">About</li></a>
+						<a class="navLink" href="/contact.html"><li class="navItem">Contact</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="actsHero" class="page">
+				<div class="main">
+					<div class="pageHeader">
+						<div class="headContent">
+							<h1>Acts <em>(Beta)</em></h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="actsContent" class="page">
+				<div class="main">
+					<div class="contentSection">
+						<p>A running list of every act we've tracked across the Land. Not seeing an act? <a href="/contact.html">Let us know.</a></p>
+					</div>
+
+					<div class="wave">
+						<div class="wave-top"></div>
+						<div class="wave-bottom"></div>
+					</div>
+
+					<div id="actsSettingsBar">
+						<div id="actsSearchWrapper">
+							<input type="text" id="actsSearch" name="actsSearch" placeholder="Search by name">
+							<button id="actsSearchGo" type="button" aria-label="Search"><span class="icon" id="ser"></span></button>
+							<button id="actsSearchReset" type="button" aria-label="Clear search"><span class="icon" id="clr"></span></button>
+						</div>
+
+						<button type="button" class="filter-toggle" id="actsFilterToggle" aria-label="Show Filters">
+							<span class="buttonLabel">Filters </span><span class="icon" id="fil"></span>
+						</button>
+					</div>
+
+					<div id="actsFilterPanel">
+						<div class="filter-panel" id="actsFilters" style="display:none;">
+							<div class="filter-group">
+								<div class="filter-group-label">Genre</div>
+								<div class="filter-row" id="actsGenreFilters"></div>
+							</div>
+
+							<div class="filter-group">
+								<label class="checkbox-filter" for="actsLocalFilter">
+									<input type="checkbox" id="actsLocalFilter">
+									<span>Local Acts Only</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div id="actsActiveFiltersWrapper" style="display:none;">
+						<h2 id="actsActiveFiltersLabel">Applied Filters:</h2>
+						<div id="actsActiveFilters"></div>
+					</div>
+
+					<label for="actsJumpNav">Jump to:</label>
+					<nav id="actsJumpNav" aria-label="Jump to acts starting with">
+						<!-- populated by acts.js: one chip per 0-9 / A-Z, disabled when no acts fall in that group -->
+					</nav>
+
+					<h4 class="subHead"><span id="actsSubHead">All Acts:</span></h4>
+
+				</div>
+			</section>
+			<section id="actsSpace" class="page">
+				<div class="main">
+					<div id="actsResults">
+						<div id="actsList" aria-live="polite"></div>
+						<p id="actsEmpty" class="actsStateMsg" hidden>No acts found :(</p>
+					</div>
+					<p id="actsLoading" class="actsStateMsg">Tuning up...</p>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="../terms.html">Terms of Use</a></li>
+						<li><a href="../privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Act detail modal -->
+		<div id="actModal" class="boardModal actModal" hidden>
+			<div class="boardModalBackdrop" data-actclose></div>
+			<div class="boardModalContent actModalContent" role="dialog" aria-modal="true" aria-labelledby="actModalTitle">
+				<button type="button" class="boardModalClose" data-actclose aria-label="Close">&times;</button>
+				<div class="actModalBody">
+					<h2 id="actModalTitle"></h2>
+					<div id="actModalGenres" class="actGenres"></div>
+					<div id="actModalLinks" class="actLinks"></div>
+
+					<div id="actModalMediaSection" class="actModalSection" hidden>
+						<h3 class="actModalSectionTitle">From the Board</h3>
+						<div id="actModalMedia" class="actModalMediaGrid"></div>
+					</div>
+
+					<div id="actModalEventsSection" class="actModalSection" hidden>
+						<h3 class="actModalSectionTitle">Upcoming Shows</h3>
+						<ul id="actModalEvents" class="actModalEventList"></ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/board.js"></script>
+		<script src="../js/acts.js"></script>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+		
+	</body>
+
+	</html>
