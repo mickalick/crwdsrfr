@@ -469,14 +469,18 @@
 			<li class="actModalEvent">
 				<span class="actModalEventTitle">${titleHtml} :</span>
 				<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
-				<span class="actModalEventVenue">${venueHtml}</span>
+				<span class="actModalEventVenue">at ${venueHtml}</span>
 			</li>`;
 	}
 
 	function mediaThumbHtml(item) {
 		const venueName = window.BoardMedia?.resolveVenueName(item.venueId, venueLookup) || '';
+		// Deep-links straight to this item's modal on /board/ via its stable
+		// id (board.js reads #item-<id> on load). Falls back to the generic
+		// #top if an item is somehow missing an id.
+		const boardHref = item.id ? `/board/#item-${encodeURIComponent(item.id)}` : '/board/#top';
 		return `
-			<a class="actModalMediaThumb" href="/board/#top" title="${item.title}${venueName ? ' — ' + venueName : ''}">
+			<a class="actModalMediaThumb" href="${boardHref}" title="${item.title}${venueName ? ' — ' + venueName : ''}">
 				<img src="/board/${item.thumbnail}" alt="${item.title}" loading="lazy">
 				${item.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
 			</a>`;
