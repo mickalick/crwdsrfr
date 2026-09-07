@@ -53,6 +53,12 @@
 		"festival": "Festival"
 	};
 
+	// Media format toggle (All / Photos / Videos) — mutually exclusive,
+	// unlike the venue/genre chip rows which union together. Labeled
+	// "Shots" in the UI to avoid colliding with the existing venue "Type"
+	// filter (Bar, Club, etc).
+	const FORMAT_LABELS = { all: 'All', photo: 'Photos', video: 'Videos' };
+
 	// --- Date helpers -------------------------------------------------------
 	// Dates are stored as plain "YYYY-MM-DD" strings. Never round-trip these
 	// through `new Date()` for sorting or comparison — that can shift the day
@@ -275,6 +281,7 @@
 	const selectedTypes = new Set();
 	const selectedAreas = new Set();
 	const selectedGenres = new Set();
+	let selectedFormat = 'all'; // 'all' | 'photo' | 'video' — single value, not a Set
 	const expandedGroups = { name: false, type: false, area: false, genre: false };
 
 	// --- Genre label/color (mirrors acts.js/events.js exactly, for chip parity) --
@@ -319,6 +326,7 @@
 				types: [...selectedTypes],
 				areas: [...selectedAreas],
 				genres: [...selectedGenres],
+				format: selectedFormat,
 			};
 			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
 		} catch (e) {
@@ -335,6 +343,7 @@
 			(parsed.types || []).forEach((t) => selectedTypes.add(t));
 			(parsed.areas || []).forEach((a) => selectedAreas.add(a));
 			(parsed.genres || []).forEach((g) => selectedGenres.add(g));
+			if (parsed.format === 'photo' || parsed.format === 'video') selectedFormat = parsed.format;
 		} catch (e) {
 			// Corrupt or missing data — just start with no filters
 		}
@@ -357,6 +366,10 @@
 	function itemMatchesGenreFilters(item) {
 		if (selectedGenres.size === 0) return true;
 		return (item.genres || []).some((g) => selectedGenres.has(g));
+	}
+
+	function itemMatchesFormat(item) {
+		return selectedFormat === 'all' || item.type === selectedFormat;
 	}
 
 	// --- Search + filter application -----------------------------------
@@ -391,6 +404,10 @@
 
 		if (selectedGenres.size > 0) {
 			filtered = filtered.filter(itemMatchesGenreFilters);
+		}
+
+		if (selectedFormat !== 'all') {
+			filtered = filtered.filter(itemMatchesFormat);
 		}
 
 		filteredItems = filtered;
@@ -464,6 +481,7 @@
 			selectedTypes.clear();
 			selectedAreas.clear();
 			selectedGenres.clear();
+			selectedFormat = 'all';
 			saveFiltersToStorage();
 			buildBoardFilterChips();
 			renderActiveFilters();
@@ -555,13 +573,6 @@
 			tile.appendChild(caption);
 		}
 
-		if (item.genres && item.genres.length > 0) {
-			const genresEl = document.createElement('span');
-			genresEl.className = 'boardTileGenres';
-			genresEl.innerHTML = genreChipsHtml(item.genres);
-			tile.appendChild(genresEl);
-		}
-
 		const venueName = resolveVenueName(item.venueId, venueLookup);
 		if (venueName) {
 			const venueEl = document.createElement('span');
@@ -607,6 +618,7 @@
 		const typeWrap = document.getElementById('boardTypeFilters');
 		const areaWrap = document.getElementById('boardAreaFilters');
 		const genreWrap = document.getElementById('boardGenreFilters');
+		const formatWrap = document.getElementById('boardFormatFilters');
 
 		const sortedVenues = [...venues].sort((a, b) =>
 			sortableName(a.name).localeCompare(sortableName(b.name))
@@ -635,6 +647,21 @@
 		genreWrap.innerHTML = genres.map((g) => `
 			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
 		`).join('');
+
+		// Media format (All/Photos/Videos) is a mutually-exclusive toggle,
+		// not a multi-select chip row like the other four groups — styled
+		// like #calendarToggle's Day/Week segmented control on the main
+		// calendar page (see .toggle-button rules in board.css) rather than
+		// the pill-chip look used for venue/type/area/genre.
+		formatWrap.innerHTML = Object.keys(FORMAT_LABELS).map((f) => `
+			<button type="button" class="toggle-button ${selectedFormat === f ? 'active' : ''}" data-format="${f}">${FORMAT_LABELS[f]}</button>
+		`).join('');
+		formatWrap.querySelectorAll('.toggle-button').forEach((btn) => {
+			btn.addEventListener('click', () => {
+				selectedFormat = btn.dataset.format;
+				refreshFilterUI();
+			});
+		});
 
 		[nameWrap, typeWrap, areaWrap, genreWrap].forEach((wrap) => {
 			wrap.querySelectorAll('.chip').forEach((chip) => {
@@ -710,6 +737,9 @@
 		selectedGenres.forEach((g) => {
 			active.push({ group: 'genre', value: g, label: genreLabel(g) });
 		});
+		if (selectedFormat !== 'all') {
+			active.push({ group: 'format', value: selectedFormat, label: FORMAT_LABELS[selectedFormat] });
+		}
 
 		if (active.length === 0) {
 			wrapper.style.display = 'none';
@@ -725,11 +755,15 @@
 		chipsWrap.querySelectorAll('.active-chip').forEach((chip) => {
 			chip.addEventListener('click', () => {
 				const { group, value } = chip.dataset;
-				const set = group === 'name' ? selectedVenueIds
-					: group === 'type' ? selectedTypes
-					: group === 'area' ? selectedAreas
-					: selectedGenres;
-				set.delete(value);
+				if (group === 'format') {
+					selectedFormat = 'all';
+				} else {
+					const set = group === 'name' ? selectedVenueIds
+						: group === 'type' ? selectedTypes
+						: group === 'area' ? selectedAreas
+						: selectedGenres;
+					set.delete(value);
+				}
 				refreshFilterUI();
 			});
 		});
@@ -739,6 +773,7 @@
 			selectedTypes.clear();
 			selectedAreas.clear();
 			selectedGenres.clear();
+			selectedFormat = 'all';
 			refreshFilterUI();
 		});
 	}
