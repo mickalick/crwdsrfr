@@ -224,7 +224,7 @@
 #actsFilterPanel .chip-show-all {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	border-style: none;
-	color: #FFFFFF;
+	color: #F9F976;
 	padding: 8px 0;
 	padding-left: 8px;
 	margin-right: 80px;
@@ -286,12 +286,17 @@
 		color: #F9F976;
 	}
 
+	#actsFilterPanel .chip[data-filter="genre"]:hover {
+		border-color: var(--genre-color);
+		filter: brightness(1.2);
+	}
+
 	#actsFilterPanel .chip:hover {
 		border-color: #62CBB8;
 	}
 
 	#actsFilterPanel .chip-show-all:hover {
-		color: #62CBB8;
+		text-decoration: underline;
 	}
 
 	#actsActiveFilters .chip-reset:hover {
@@ -604,6 +609,10 @@
 	text-decoration: none;
 }
 
+#actModalEventsSection {
+	margin-bottom: 24px;
+}
+
 @media (hover: hover) and (pointer: fine) {
 	.actModalEventVenue a:hover, .actModalEventTitle a:hover {
 		text-decoration: underline;
@@ -684,7 +693,7 @@
 
 @media screen and (max-width: 535px) {
 	.actModalMediaGrid {
-		grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
 	}
 
 	#actsJumpNav {

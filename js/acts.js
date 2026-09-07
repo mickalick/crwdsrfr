@@ -337,7 +337,7 @@
 		const genres = [...new Set(Object.values(allActsBySlug).flatMap(a => a.genres || []))].sort();
 
 		genreWrap.innerHTML = genres.map(g => `
-			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
+			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
 		`).join('');
 
 		genreWrap.querySelectorAll('.chip').forEach(chip => {
@@ -469,7 +469,7 @@
 			<li class="actModalEvent">
 				<span class="actModalEventTitle">${titleHtml} :</span>
 				<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
-				<span class="actModalEventVenue">${venueHtml}</span>
+				<span class="actModalEventVenue">at ${venueHtml}</span>
 			</li>`;
 	}
 
