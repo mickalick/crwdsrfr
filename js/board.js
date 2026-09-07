@@ -10,21 +10,32 @@
 // rather than duplicated as a string on each board entry, so a venue rename
 // doesn't require touching every board post.
 //
+// Genre filter: board-media.json has no genre field of its own. Instead,
+// each item's title is matched against data/acts.json (name + aliases,
+// case-insensitive whole-word match) — same matching rule acts.js uses in
+// the reverse direction (act -> matching board posts). A matched act's
+// genres are attached to the item as item.genres before filtering/rendering.
+// data/genres.json supplies genreLabel()/genreColor() for chip parity with
+// the calendar and acts page.
+//
 // Search + filter behavior mirrors events.js: a search term matches title,
-// venue name, or submitter; venue/type/area filter chips union together
+// venue name, or submitter; venue/type/area/genre filter chips union together
 // (matching ANY selected filter, not requiring all); selected filters persist
 // to localStorage, while the search term itself resets on each visit — same
 // split events.js already uses for its own filters vs. currentSearch.
 //
 // The reusable, page-agnostic data-layer pieces (fetching, sorting, filtering
-// by venue, date formatting) are exposed on window.BoardMedia so a future
-// venue page can pull "board posts for this venue" without duplicating this
-// logic. Only the grid/modal/search/filter rendering below is specific to
-// /board/, and is guarded to no-op if #boardGrid isn't present on the page.
+// by venue, date formatting, act/genre matching) are exposed on window.BoardMedia
+// so a future venue page can pull "board posts for this venue" without
+// duplicating this logic. Only the grid/modal/search/filter rendering below is
+// specific to /board/, and is guarded to no-op if #boardGrid isn't present on
+// the page.
 
 (function () {
 	const BOARD_MEDIA_URL = '../data/board-media.json';
 	const VENUES_URL = '../data/venues.json';
+	const ACTS_URL = '../data/acts.json';
+	const GENRES_URL = '../data/genres.json';
 	const BATCH_SIZE = 15;
 	const FILTER_STORAGE_KEY = 'crwdsrfr_board_filters';
 
@@ -147,6 +158,71 @@
 		return list.find((item) => item.id === id);
 	}
 
+	// --- Act <-> board-media matching ---------------------------------------
+	// Same "whole word, case-insensitive" rule acts.js uses (matching act
+	// name/aliases against event/board-media text), just applied here to
+	// derive a media item's genres rather than to find matching posts for
+	// a given act. Short names (<=3 chars) require exact equality rather
+	// than substring, to avoid noisy false positives (e.g. "DJ").
+
+	function normalizeText(str) {
+		return String(str || '').trim().toLowerCase();
+	}
+
+	function escapeRegex(str) {
+		return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+
+	function actNeedles(act) {
+		return [act.name, ...(act.aliases || [])].map(normalizeText).filter(Boolean);
+	}
+
+	function textMatchesNeedle(text, needle) {
+		if (!text) return false;
+		const normalizedText = normalizeText(text);
+		if (needle.length <= 3) return normalizedText === needle;
+		return new RegExp(`\\b${escapeRegex(needle)}\\b`, 'i').test(text);
+	}
+
+	// Genres for a board-media title, derived by matching it against every
+	// (non-excluded) act's name/aliases. Usually resolves to at most one
+	// act since board post titles are typically just the act's own name.
+	function genresForTitle(title, actsList) {
+		if (!title || !actsList || actsList.length === 0) return [];
+		const genres = new Set();
+		actsList.forEach((act) => {
+			if (actNeedles(act).some((needle) => textMatchesNeedle(title, needle))) {
+				(act.genres || []).forEach((g) => genres.add(g));
+			}
+		});
+		return [...genres];
+	}
+
+	function fetchActsList() {
+		return fetch(ACTS_URL, { cache: 'no-store' })
+			.then((res) => {
+				if (!res.ok) throw new Error(`Failed to load ${ACTS_URL}: ${res.status}`);
+				return res.json();
+			})
+			.then((data) => Object.values(data || {}).filter((act) => String(act.exclude).toLowerCase() !== 'yes'))
+			.catch((err) => {
+				console.warn('board.js: could not load acts for genre matching', err);
+				return [];
+			});
+	}
+
+	function fetchGenreMeta() {
+		return fetch(GENRES_URL, { cache: 'no-store' })
+			.then((res) => {
+				if (!res.ok) throw new Error(`Failed to load ${GENRES_URL}: ${res.status}`);
+				return res.json();
+			})
+			.catch((err) => {
+				console.warn('board.js: could not load genre metadata', err);
+				return {};
+			});
+	}
+
 	// Expose the page-agnostic pieces for reuse (e.g. a future venue page
 	// rendering "Board posts from this venue").
 	window.BoardMedia = {
@@ -154,6 +230,9 @@
 		fetchVenueLookup,
 		filterByVenueId,
 		findItemById,
+		fetchActsList,
+		fetchGenreMeta,
+		genresForTitle,
 		sortByDateDesc,
 		formatDateDisplay,
 		resolveVenueName,
@@ -175,6 +254,7 @@
 	const modalPrevBtn = document.getElementById('boardModalPrev');
 	const modalNextBtn = document.getElementById('boardModalNext');
 	const modalTitle = document.getElementById('boardModalTitle');
+	const modalGenres = document.getElementById('boardModalGenres');
 	const modalSub = document.getElementById('boardModalSub');
 	const modalCredit = document.getElementById('boardModalCredit');
 
@@ -186,6 +266,7 @@
 	let items = []; // all valid, date-sorted media
 	let filteredItems = []; // items after search + filters
 	let venueLookup = {};
+	let genreMeta = {}; // from data/genres.json, for genreLabel()/genreColor() chip parity
 	let renderedCount = 0;
 	let modalIndex = -1; // index of the currently open item within filteredItems
 
@@ -193,7 +274,39 @@
 	const selectedVenueIds = new Set();
 	const selectedTypes = new Set();
 	const selectedAreas = new Set();
-	const expandedGroups = { name: false, type: false, area: false };
+	const selectedGenres = new Set();
+	const expandedGroups = { name: false, type: false, area: false, genre: false };
+
+	// --- Genre label/color (mirrors acts.js/events.js exactly, for chip parity) --
+
+	function titleCase(str) {
+		return str
+			.split('-')
+			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+			.join(' ');
+	}
+
+	function genreLabel(genre) {
+		return genreMeta[genre]?.label || titleCase(genre);
+	}
+
+	function genreColor(genre) {
+		if (genreMeta[genre]?.color) return genreMeta[genre].color;
+
+		let hash = 0;
+		for (let i = 0; i < genre.length; i++) {
+			hash = (hash * 31 + genre.charCodeAt(i)) >>> 0;
+		}
+		const hue = hash % 360;
+		return `hsl(${hue}, 65%, 60%)`;
+	}
+
+	function genreChipsHtml(genres) {
+		if (!genres || genres.length === 0) return '';
+		return genres.map(g => `
+			<span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
+		`).join('');
+	}
 
 	// --- Filter persistence ---------------------------------------------
 	// Selected filters persist across visits; the search term itself does
@@ -205,6 +318,7 @@
 				venueIds: [...selectedVenueIds],
 				types: [...selectedTypes],
 				areas: [...selectedAreas],
+				genres: [...selectedGenres],
 			};
 			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
 		} catch (e) {
@@ -220,6 +334,7 @@
 			(parsed.venueIds || []).forEach((id) => selectedVenueIds.add(id));
 			(parsed.types || []).forEach((t) => selectedTypes.add(t));
 			(parsed.areas || []).forEach((a) => selectedAreas.add(a));
+			(parsed.genres || []).forEach((g) => selectedGenres.add(g));
 		} catch (e) {
 			// Corrupt or missing data — just start with no filters
 		}
@@ -237,6 +352,11 @@
 		if (selectedTypes.has(venue.type)) return true;
 		if (selectedAreas.has(venue.area)) return true;
 		return false;
+	}
+
+	function itemMatchesGenreFilters(item) {
+		if (selectedGenres.size === 0) return true;
+		return (item.genres || []).some((g) => selectedGenres.has(g));
 	}
 
 	// --- Search + filter application -----------------------------------
@@ -269,6 +389,10 @@
 			filtered = filtered.filter((item) => venueMatchesFilters(venueLookup[item.venueId]));
 		}
 
+		if (selectedGenres.size > 0) {
+			filtered = filtered.filter(itemMatchesGenreFilters);
+		}
+
 		filteredItems = filtered;
 		resetGrid();
 	}
@@ -291,9 +415,13 @@
 	// --- Data loading -------------------------------------------------------
 
 	function loadMedia() {
-		Promise.all([fetchBoardMedia(), fetchVenueLookup()])
-			.then(([mediaItems, lookup]) => {
-				items = mediaItems;
+		Promise.all([fetchBoardMedia(), fetchVenueLookup(), fetchActsList(), fetchGenreMeta()])
+			.then(([mediaItems, lookup, actsList, genres]) => {
+				genreMeta = genres;
+				items = mediaItems.map((item) => ({
+					...item,
+					genres: genresForTitle(item.title, actsList),
+				}));
 				venueLookup = lookup;
 
 				loadFiltersFromStorage();
@@ -335,6 +463,7 @@
 			selectedVenueIds.clear();
 			selectedTypes.clear();
 			selectedAreas.clear();
+			selectedGenres.clear();
 			saveFiltersToStorage();
 			buildBoardFilterChips();
 			renderActiveFilters();
@@ -426,6 +555,13 @@
 			tile.appendChild(caption);
 		}
 
+		if (item.genres && item.genres.length > 0) {
+			const genresEl = document.createElement('span');
+			genresEl.className = 'boardTileGenres';
+			genresEl.innerHTML = genreChipsHtml(item.genres);
+			tile.appendChild(genresEl);
+		}
+
 		const venueName = resolveVenueName(item.venueId, venueLookup);
 		if (venueName) {
 			const venueEl = document.createElement('span');
@@ -470,6 +606,7 @@
 		const nameWrap = document.getElementById('boardVenueFilters');
 		const typeWrap = document.getElementById('boardTypeFilters');
 		const areaWrap = document.getElementById('boardAreaFilters');
+		const genreWrap = document.getElementById('boardGenreFilters');
 
 		const sortedVenues = [...venues].sort((a, b) =>
 			sortableName(a.name).localeCompare(sortableName(b.name))
@@ -491,11 +628,22 @@
 			<button type="button" class="chip ${selectedAreas.has(a) ? 'active' : ''}" data-filter="area" data-value="${a}">${a}</button>
 		`).join('');
 
-		[nameWrap, typeWrap, areaWrap].forEach((wrap) => {
+		// Genre options are only offered for genres that at least one
+		// current board post actually resolved to (via title -> act match) —
+		// same "don't show an empty-result filter" rule as venue/type/area.
+		const genres = [...new Set(items.flatMap((item) => item.genres || []))].sort();
+		genreWrap.innerHTML = genres.map((g) => `
+			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
+		`).join('');
+
+		[nameWrap, typeWrap, areaWrap, genreWrap].forEach((wrap) => {
 			wrap.querySelectorAll('.chip').forEach((chip) => {
 				chip.addEventListener('click', () => {
 					const { filter, value } = chip.dataset;
-					const set = filter === 'name' ? selectedVenueIds : filter === 'type' ? selectedTypes : selectedAreas;
+					const set = filter === 'name' ? selectedVenueIds
+						: filter === 'type' ? selectedTypes
+						: filter === 'area' ? selectedAreas
+						: selectedGenres;
 					if (set.has(value)) set.delete(value); else set.add(value);
 					refreshFilterUI();
 				});
@@ -505,6 +653,7 @@
 		collapseChipRow(nameWrap, 'name');
 		collapseChipRow(typeWrap, 'type');
 		collapseChipRow(areaWrap, 'area');
+		collapseChipRow(genreWrap, 'genre');
 	}
 
 	function collapseChipRow(wrap, groupKey) {
@@ -558,6 +707,9 @@
 		selectedAreas.forEach((a) => {
 			active.push({ group: 'area', value: a, label: a });
 		});
+		selectedGenres.forEach((g) => {
+			active.push({ group: 'genre', value: g, label: genreLabel(g) });
+		});
 
 		if (active.length === 0) {
 			wrapper.style.display = 'none';
@@ -573,7 +725,10 @@
 		chipsWrap.querySelectorAll('.active-chip').forEach((chip) => {
 			chip.addEventListener('click', () => {
 				const { group, value } = chip.dataset;
-				const set = group === 'name' ? selectedVenueIds : group === 'type' ? selectedTypes : selectedAreas;
+				const set = group === 'name' ? selectedVenueIds
+					: group === 'type' ? selectedTypes
+					: group === 'area' ? selectedAreas
+					: selectedGenres;
 				set.delete(value);
 				refreshFilterUI();
 			});
@@ -583,6 +738,7 @@
 			selectedVenueIds.clear();
 			selectedTypes.clear();
 			selectedAreas.clear();
+			selectedGenres.clear();
 			refreshFilterUI();
 		});
 	}
@@ -608,6 +764,8 @@
 		}
 
 		modalTitle.textContent = item.title || 'Untitled';
+		modalGenres.innerHTML = genreChipsHtml(item.genres);
+		modalGenres.style.display = item.genres && item.genres.length > 0 ? 'flex' : 'none';
 
 		const subParts = [];
 		const venueName = resolveVenueName(item.venueId, venueLookup);

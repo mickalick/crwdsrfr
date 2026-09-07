@@ -34,8 +34,8 @@
 #boardSearchWrapper {
 	position: relative;
 	display: inline-flex;
-	width: 65%;
-	max-width: 720px;
+	width: 75%;
+	max-width: 825px;
 	height: 70px;
 }
 
@@ -109,7 +109,7 @@
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	margin-right: 10%;
+	margin-right: 6%;
 }
 
 #boardSettingsBar .filter-toggle .icon {
@@ -163,6 +163,19 @@
 #boardFilterPanel .chip.active {
 	border-color: #F9F976 !important;
 	color: #F9F976;
+}
+
+/* Genre chips in the filter panel get the same per-genre --genre-color
+   treatment as the calendar's/acts page's own genre filter chips. */
+#boardFilterPanel .chip[style*="--genre-color"] {
+	border-color: var(--genre-color);
+	color: var(--genre-color);
+}
+
+#boardFilterPanel .chip[style*="--genre-color"].active {
+	background: var(--genre-color) !important;
+	border-color: var(--genre-color) !important;
+	color: #101010;
 }
 
 #boardFilterPanel .chip-show-all {
@@ -247,13 +260,11 @@
 	}
 }
 
-/*
-@media screen and (max-width: 1108px) {
+@media screen and (max-width: 984px) {
 	#boardSettingsBar .filter-toggle {
-		margin-right: 16px;
+		margin-right: 3%;
 	}
 }
-*/
 
 @media screen and (max-width: 774px) {
 	#boardSettingsBar {
@@ -269,7 +280,7 @@
 	}
 
 	#boardSettingsBar .filter-toggle {
-		margin-right: 11%;
+		margin-right: 6%;
 	}
 
 	#boardContent .main .subHead {
@@ -298,7 +309,7 @@
 	}
 
 	#boardSettingsBar .filter-toggle {
-		margin-right: 0px;
+		margin-right: 3%;
 	}
 }
 
@@ -383,6 +394,27 @@
 	font-size: 20px;
 	line-height: 1.2;
 	color: #FFF;
+}
+
+.boardTileGenres {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 6px 8px 0px;
+}
+
+.boardTileGenres .genre-chip {
+	display: inline-flex;
+	align-items: center;
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
+	border-radius: 20px;
+	color: var(--genre-color, #FFF);
+	background: transparent;
+	white-space: nowrap;
 }
 
 .boardTileVenue {
@@ -672,6 +704,27 @@
 .boardModalMeta h2 {
 	font-size: 24px;
 	margin-bottom: 8px !important;
+}
+
+.boardModalGenres {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 0 0 12px;
+}
+
+.boardModalGenres .genre-chip {
+	display: inline-flex;
+	align-items: center;
+	font-family: 'Space Mono', monospace;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
+	border-radius: 20px;
+	color: var(--genre-color, #FFF);
+	background: transparent;
+	white-space: nowrap;
 }
 
 .boardModalSub {

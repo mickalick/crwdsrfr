@@ -103,6 +103,10 @@
     "label": "Karaoke",
     "color": "#FFFFA3"
   },
+  "klezmer": {
+    "label": "Klezmer",
+    "color": "#FCFCFC"
+  },
   "latin": {
     "label": "Latin",
     "color": "#FDA631"
@@ -114,6 +118,10 @@
   "metal": {
     "label": "Metal",
     "color": "#FF6D24"
+  },
+  "nepalese": {
+    "label": "Nepalese",
+    "color": "#F35353"
   },
   "poetry": {
     "label": "Poetry",
@@ -155,8 +163,16 @@
     "label": "Theater",
     "color": "#FF8A8A"
   },
+  "traditional": {
+    "label": "Traditional",
+    "color": "#D2C4A8"
+  },
   "trivia": {
     "label": "Trivia",
     "color": "#ADECA8"
+  },
+  "world": {
+    "label": "World",
+    "color": "#18DC95"
   }
 }

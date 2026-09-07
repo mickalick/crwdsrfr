@@ -82,6 +82,7 @@
     "name": "Hello! 3D",
     "aliases": [
       "Hello! 3D",
+      "Hello!3D",
       "Hello 3D",
       "Hello 3D Band"
     ],
@@ -796,7 +797,7 @@
     "genres": [
       "covers",
       "pop"
-    ], 
+    ],
     "links": [],
     "exclude": "no",
     "local": "yes"
@@ -2540,6 +2541,1013 @@
     "exclude": "no",
     "local": "yes"
   },
+  
+
+
+
+
+  "chuck-fink": {
+    "name": "Chuck Fink",
+    "aliases": [
+      "Chuck Fink"
+    ],
+    "genres": [
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "toby-raps": {
+    "name": "Toby RAPS",
+    "aliases": [
+      "Toby RAPS"
+    ],
+    "genres": [
+      "hiphop rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jazz-cats": {
+    "name": "Jazz Cats",
+    "aliases": [
+      "Jazz Cats"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "a-glass-of-vino": {
+    "name": "A Glass of Vino",
+    "aliases": [
+      "A Glass of Vino"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-road-warrior": {
+    "name": "The Road Warrior",
+    "aliases": [
+      "The Road Warrior"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kiss-me-deadly": {
+    "name": "Kiss Me Deadly",
+    "aliases": [
+      "Kiss Me Deadly"
+    ],
+    "genres": [
+      "indie alternative",
+      "pop",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "velocity-stax": {
+    "name": "Velocity Stax",
+    "aliases": [
+      "Velocity Stax"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "by-light-we-loom": {
+    "name": "By Light We Loom",
+    "aliases": [
+      "By Light We Loom"
+    ],
+    "genres": [
+      "indie alternative",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ruairi-hurley-and-carrie-king": {
+    "name": "Ruairi Hurley and Carrie King",
+    "aliases": [
+      "Ruairi Hurley and Carrie King"
+    ],
+    "genres": [
+      "folk americana",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kozak-and-davidson-duo": {
+    "name": "Kozak and Davidson Duo",
+    "aliases": [
+      "Kozak and Davidson Duo"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "alan-greene-band": {
+    "name": "Alan Greene Band",
+    "aliases": [
+      "Alan Greene Band"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "roadkill-revolution": {
+    "name": "Roadkill Revolution",
+    "aliases": [
+      "Roadkill Revolution"
+    ],
+    "genres": [
+      "pop",
+      "emo punk"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "civic-summer": {
+    "name": "Civic Summer",
+    "aliases": [
+      "Civic Summer"
+    ],
+    "genres": [
+      "rock",
+      "classic rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "james-douglas": {
+    "name": "James Douglas",
+    "aliases": [
+      "James Douglas"
+    ],
+    "genres": [
+      "folk americana",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "grace-oddo": {
+    "name": "Grace Oddo",
+    "aliases": [
+      "Grace Oddo"
+    ],
+    "genres": [
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "neekesh-and-the-band": {
+    "name": "Neekesh and the Band",
+    "aliases": [
+      "Neekesh and the Band"
+    ],
+    "genres": [
+      "nepalese"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mr-haney-friends": {
+    "name": "Mr. Haney & Friends",
+    "aliases": [
+      "Mr. Haney & Friends",
+      "Mr. Haney"
+    ],
+    "genres": [
+      "family kids",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-lily-jade": {
+    "name": "DJ Lily Jade",
+    "aliases": [
+      "DJ Lily Jade"
+    ],
+    "genres": [
+      "dj",
+      "family kids",
+      "dance disco"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sweet-willy-and-the-solid-cats": {
+    "name": "Sweet Willy and the Solid Cats",
+    "aliases": [
+      "Sweet Willy and the Solid Cats",
+      "Sweet Willy & the Solid Cats"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "colleen-welsch": {
+    "name": "Colleen Welsch",
+    "aliases": [
+      "Colleen Welsch"
+    ],
+    "genres": [
+      "pop",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "music-izzey-groovy": {
+    "name": "Music Izzey Groovy",
+    "aliases": [
+      "Music Izzey Groovy"
+    ],
+    "genres": [
+      "family kids"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "with-windswept-hair": {
+    "name": "With Windswept Hair",
+    "aliases": [
+      "With Windswept Hair"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lonesome-bones": {
+    "name": "Lonesome Bones",
+    "aliases": [
+      "Lonesome Bones"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "charity-evonna": {
+    "name": "Charity Evonna",
+    "aliases": [
+      "Charity Evonna"
+    ],
+    "genres": [
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-super-babes": {
+    "name": "The Super Babes",
+    "aliases": [
+      "The Super Babes"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "craig-rich": {
+    "name": "Craig Rich",
+    "aliases": [
+      "Craig Rich"
+    ],
+    "genres": [
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "kate-kooser": {
+    "name": "Kate Kooser",
+    "aliases": [
+      "Kate Kooser"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "alla-boara": {
+    "name": "Alla Boara",
+    "aliases": [
+      "Alla Boara"
+    ],
+    "genres": [
+      "world",
+      "folk americana",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "shortt-stories": {
+    "name": "Shortt Stories",
+    "aliases": [
+      "Shortt Stories"
+    ],
+    "genres": [
+      "indie alternative",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "charlie-mosbrook": {
+    "name": "Charlie Mosbrook",
+    "aliases": [
+      "Charlie Mosbrook"
+    ],
+    "genres": [
+      "folk americana",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tweed": {
+    "name": "Tweed",
+    "aliases": [
+      "Tweed"
+    ],
+    "genres": [
+      "irish",
+      "folk americana",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mossom": {
+    "name": "MOSSOM",
+    "aliases": [
+      "MOSSOM"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-bakers-basement": {
+    "name": "The Baker's Basement",
+    "aliases": [
+      "The Baker's Basement"
+    ],
+    "genres": [
+      "indie alternative",
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "warren-bendler": {
+    "name": "Warren Bendler",
+    "aliases": [
+      "Warren Bendler"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "david-loy-and-the-ramrods": {
+    "name": "David Loy and the Ramrods",
+    "aliases": [
+      "David Loy and the Ramrods"
+    ],
+    "genres": [
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bill-lestock": {
+    "name": "Bill Lestock",
+    "aliases": [
+      "Bill Lestock"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "first-class-citizens": {
+    "name": "First Class Citizens",
+    "aliases": [
+      "First Class Citizens"
+    ],
+    "genres": [
+      "poetry",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "synergy": {
+    "name": "Synergy",
+    "aliases": [
+      "Synergy"
+    ],
+    "genres": [
+      "classic rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "cats-on-holiday": {
+    "name": "Cats on Holiday",
+    "aliases": [
+      "Cats on Holiday"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "maura-rogers-and-the-bellows": {
+    "name": "Maura Rogers and the Bellows",
+    "aliases": [
+      "Maura Rogers and the Bellows"
+    ],
+    "genres": [
+      "folk americana",
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "matt-harmon": {
+    "name": "Matt Harmon",
+    "aliases": [
+      "Matt Harmon"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tracy-marie": {
+    "name": "Tracy Marie",
+    "aliases": [
+      "Tracy Marie"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "bob-frank": {
+    "name": "Bob Frank",
+    "aliases": [
+      "Bob Frank"
+    ],
+    "genres": [
+      "blues",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ashley-brooke-toussant": {
+    "name": "Ashley Brooke Toussant",
+    "aliases": [
+      "Ashley Brooke Toussant"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "morgan-mecaskey": {
+    "name": "Morgan Mecaskey",
+    "aliases": [
+      "Morgan Mecaskey"
+    ],
+    "genres": [
+      "indie alternative",
+      "folk americana",
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "epilogue": {
+    "name": "Epilogue",
+    "aliases": [
+      "Epilogue"
+    ],
+    "genres": [
+      "blues",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sean-benjamin": {
+    "name": "Sean Benjamin",
+    "aliases": [
+      "Sean Benjamin"
+    ],
+    "genres": [
+      "indie alternative",
+      "funk reggae",
+      "electronic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "aj-and-the-woods": {
+    "name": "AJ and the Woods",
+    "aliases": [
+      "AJ and the Woods"
+    ],
+    "genres": [
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-tk": {
+    "name": "DJ TK",
+    "aliases": [
+      "DJ TK"
+    ],
+    "genres": [
+      "dj",
+      "electronic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mariachi-santa-cecilia": {
+    "name": "Mariachi Santa Cecilia",
+    "aliases": [
+      "Mariachi Santa Cecilia"
+    ],
+    "genres": [
+      "latin",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jeff-holland": {
+    "name": "Jeff Holland",
+    "aliases": [
+      "Jeff Holland"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dan-maier-trio": {
+    "name": "Dan Maier Trio",
+    "aliases": [
+      "Dan Maier Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "saralila": {
+    "name": "Saralila",
+    "aliases": [
+      "Saralila"
+    ],
+    "genres": [
+      "folk americana",
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "city-lite-trio": {
+    "name": "City Lite Trio",
+    "aliases": [
+      "City Lite Trio"
+    ],
+    "genres": [
+      "classic rock",
+      "blues",
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "apostle-jones": {
+    "name": "Apostle Jones",
+    "aliases": [
+      "Apostle Jones"
+    ],
+    "genres": [
+      "rnb soul",
+      "rock",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "musicologie": {
+    "name": "Musicologie",
+    "aliases": [
+      "Musicologie"
+    ],
+    "genres": [
+      "family kids",
+      "rock",
+      "pop",
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tony-quarles-and-the-discovery-band": {
+    "name": "Tony Quarles and the Discovery Band",
+    "aliases": [
+      "Tony Quarles and the Discovery Band"
+    ],
+    "genres": [
+      "rnb soul",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tim-matson": {
+    "name": "Tim Matson",
+    "aliases": [
+      "Tim Matson"
+    ],
+    "genres": [
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "boomers-330": {
+    "name": "Boomers 330",
+    "aliases": [
+      "Boomers 330"
+    ],
+    "genres": [
+      "classic rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-sidemen": {
+    "name": "The Sidemen",
+    "aliases": [
+      "The Sidemen"
+    ],
+    "genres": [
+      "classic rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "get-back": {
+    "name": "Get Back",
+    "aliases": [
+      "Get Back"
+    ],
+    "genres": [
+      "tribute",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "outside-friends": {
+    "name": "Outside Friends",
+    "aliases": [
+      "Outside Friends"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hum-and-strum": {
+    "name": "Hum and Strum",
+    "aliases": [
+      "Hum and Strum"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "yiddishe-cup": {
+    "name": "Yiddishe Cup",
+    "aliases": [
+      "Yiddishe Cup"
+    ],
+    "genres": [
+      "world",
+      "klezmer",
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "mekimi": {
+    "name": "Mekimi",
+    "aliases": [
+      "Mekimi"
+    ],
+    "genres": [
+      "classic rock",
+      "world"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gary-lee": {
+    "name": "Gary Lee",
+    "aliases": [
+      "Gary Lee"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "allen-littman": {
+    "name": "Allen Littman",
+    "aliases": [
+      "Allen Littman"
+    ],
+    "genres": [
+      "indie alternative",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "melonhead": {
+    "name": "Melonhead",
+    "aliases": [
+      "Melonhead"
+    ],
+    "genres": [
+      "emo punk"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "breaking-point": {
+    "name": "Breaking Point",
+    "aliases": [
+      "Breaking Point"
+    ],
+    "genres": [
+      "classic rock",
+      "pop",
+      "blues"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-blue-drivers": {
+    "name": "The Blue Drivers",
+    "aliases": [
+      "The Blue Drivers"
+    ],
+    "genres": [
+      "blues",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dave-zup": {
+    "name": "Dave Zup",
+    "aliases": [
+      "Dave Zup"
+    ],
+    "genres": [
+      "hiphop rap",
+      "funk reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tom-shaper-and-the-resistance": {
+    "name": "Tom Shaper and the Resistance",
+    "aliases": [
+      "Tom Shaper and the Resistance"
+    ],
+    "genres": [
+      "covers",
+      "blues",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "valentine-ventura": {
+    "name": "Valentine Ventura",
+    "aliases": [
+      "Valentine Ventura"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nathan-paul": {
+    "name": "Nathan-Paul",
+    "aliases": [
+      "Nathan-Paul"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "tri-tones-surf-and-rock-band": {
+    "name": "Tri-Tones Surf and Rock Band",
+    "aliases": [
+      "Tri-Tones Surf and Rock Band"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ziggy-d": {
+    "name": "Ziggy D.",
+    "aliases": [
+      "Ziggy D.",
+      "Ziggy D"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-trapathonjerm": {
+    "name": "DJ Trapathonjerm",
+    "aliases": [
+      "DJ Trapathonjerm"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-casualtearsintheclub": {
+    "name": "DJ Casualtearsintheclub",
+    "aliases": [
+      "DJ Casualtearsintheclub"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+
 
 
 

@@ -457,7 +457,7 @@
 		const venue = eventsData?.venues?.[event.venueId];
 		const venueName = venue?.name || '';
 		const venueHtml = venueName
-			? `<a href="/venues/${event.venueId}/">${venueName}</a>`
+			? `<a href="/venues/${event.venueId}/" target="_blank" rel="noopener">${venueName}</a>`
 			: '';
 		const timeDisplay = formatTime(event.time);
 		const titleLink = event.eventUrl || venue?.eventsUrl || null;
@@ -469,7 +469,7 @@
 			<li class="actModalEvent">
 				<span class="actModalEventTitle">${titleHtml} :</span>
 				<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
-				<span class="actModalEventVenue">at ${venueHtml}</span>
+				<span class="actModalEventVenue">${venueHtml}</span>
 			</li>`;
 	}
 
@@ -480,7 +480,7 @@
 		// #top if an item is somehow missing an id.
 		const boardHref = item.id ? `/board/#item-${encodeURIComponent(item.id)}` : '/board/#top';
 		return `
-			<a class="actModalMediaThumb" href="${boardHref}" title="${item.title}${venueName ? ' — ' + venueName : ''}">
+			<a class="actModalMediaThumb" href="${boardHref}" target="_blank" rel="noopener" title="${item.title}${venueName ? ' — ' + venueName : ''}">
 				<img src="/board/${item.thumbnail}" alt="${item.title}" loading="lazy">
 				${item.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
 			</a>`;
