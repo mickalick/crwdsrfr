@@ -3612,7 +3612,6 @@
       "Yiddishe Cup"
     ],
     "genres": [
-      "world",
       "klezmer",
       "rnb soul"
     ],
@@ -3986,6 +3985,57 @@
     "exclude": "no",
     "local": "yes"
   },
+  "ian-mcconnell": {
+    "name": "Ian McConnell",
+    "aliases": [
+      "Ian McConnell"
+    ],
+    "genres": [
+      "comedy",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "cherokee-social": {
+    "name": "Cherokee Social",
+    "aliases": [
+      "Cherokee Social"
+    ],
+    "genres": [
+      "indie alternative",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.cherokeesocial.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/cherokee.social/?hl=en"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/3BA0AjT1znMXddbdsT2jJD?si=KHWboD4cQyS5ERp2ijkj6A"
+      }
+    ],
+    "exclude": "no",
+    "local": "no"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
   "event-catchall": {
     "name": "Event",
     "aliases": [
