@@ -317,7 +317,7 @@
 	}
 
 	#actsContent .main .subHead {
-		margin-top: 40px;
+		margin-top: 24px;
 	}
 }
 
@@ -409,7 +409,7 @@
 
 .actsBackToTop {
 	width: 100%;
-	margin: 0 0 40px;
+	margin: 0 0 24px;
 	text-align: center;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
@@ -607,10 +607,6 @@
 	}
 }
 
-.actModalEventVenue::before {
-	content: '· ';
-}
-
 .actModalEmptyMsg {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
@@ -620,8 +616,8 @@
 
 .actModalMediaGrid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-	gap: 8px;
+	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	gap: 16px;
 }
 
 .actModalMediaThumb {
@@ -681,7 +677,7 @@
 
 @media screen and (max-width: 535px) {
 	.actModalMediaGrid {
-		grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
 	}
 
 	#actsJumpNav {

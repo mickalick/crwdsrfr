@@ -897,27 +897,6 @@
       ]
     },
     {
-      "id": "fwd-nightclub-2026-09-06-te-amo-labor-day-pool-party",
-      "title": "TE AMO LABOR DAY POOL PARTY",
-      "venueId": "fwd-nightclub",
-      "date": "2026-09-06",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "tag": "DAY",
-      "performers": [
-        {
-          "name": "TE AMO LABOR DAY POOL PARTY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/TE-AMO-LABOR-DAY-POOL-PARTY?eid=EVE-O3CUDW",
-      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/TE-AMO-LABOR-DAY-POOL-PARTY?eid=EVE-O3CUDW",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "fwd-nightclub-2026-09-06-2-chainz",
       "title": "2 CHAINZ",
       "venueId": "fwd-nightclub",
@@ -938,31 +917,6 @@
       "manual": false,
       "genres": [
         "hiphop rap"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-06-1500-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-06",
-      "endDate": null,
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
       ]
     },
     {
@@ -1030,28 +984,6 @@
       ]
     },
     {
-      "id": "hilarities-2026-09-06-141494",
-      "title": "Mike Paramore",
-      "venueId": "hilarities",
-      "date": "2026-09-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Mike Paramore",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/141494",
-      "ticketUrl": "https://hilarities.com/shows/382396",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
       "id": "van-aken-ice-cream-social-at-woof-gang-2026-09-06",
       "title": "Ice Cream Social at Woof Gang",
       "venueId": "van-aken-district",
@@ -1088,7 +1020,7 @@
         }
       ],
       "eventUrl": "https://www.ticketweb.com/event/kimmi-bitter-treelawn-social-club-tickets/14265654",
-      "ticketUrl": "https://www.ticketweb.com/event/kimmi-bitter-treelawn-social-club-tickets/14265654",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -1116,30 +1048,6 @@
       "manual": false,
       "genres": [
         "polka"
-      ]
-    },
-    {
-      "id": "sixty6-2026-09-06-latin-city-soul-cleveland",
-      "title": "Latin City Soul Band",
-      "venueId": "the-sixty6",
-      "date": "2026-09-06",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Latin City Soul Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/latin-city-soul-cleveland/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "latin",
-        "rnb soul",
-        "jazz"
       ]
     },
     {
@@ -1207,29 +1115,6 @@
       "manual": false,
       "genres": [
         "event"
-      ]
-    },
-    {
-      "id": "cleveland-orchestra-69b2fdfaf1ed93c9ed4b54ba",
-      "title": "The Music of John Williams",
-      "venueId": "cleveland-orchestra",
-      "room": null,
-      "date": "2026-09-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "The Music of John Williams",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/the-music-of-john-williams",
-      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24286",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "classical"
       ]
     },
     {
@@ -8867,34 +8752,6 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/abby-jeanne-the-shadow-band-15-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "happy-dog-2026-09-15-d-sablu",
-      "title": "D. Sablu / Spike Pit / #1 Bad Boy",
-      "venueId": "happy-dog",
-      "date": "2026-09-15",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "D. Sablu",
-          "headliner": true
-        },
-        {
-          "name": "Spike Pit",
-          "headliner": false
-        },
-        {
-          "name": "#1 Bad Boy",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/d-sablu-spike-pit-1-bad-boy-september-15-2026-743279",
-      "ticketUrl": "https://app.opendate.io/e/d-sablu-spike-pit-1-bad-boy-september-15-2026-743279",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -23661,38 +23518,6 @@
       "genres": []
     },
     {
-      "id": "happy-dog-2026-10-03-farge",
-      "title": "Farge / The Daze / Cat Stanley / Sayyadina",
-      "venueId": "happy-dog",
-      "date": "2026-10-03",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Farge",
-          "headliner": true
-        },
-        {
-          "name": "The Daze",
-          "headliner": false
-        },
-        {
-          "name": "Cat Stanley",
-          "headliner": false
-        },
-        {
-          "name": "Sayyadina",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/farge-the-daze-cat-stanley-sayyadina-october-03-2026-749301",
-      "ticketUrl": "https://app.opendate.io/e/farge-the-daze-cat-stanley-sayyadina-october-03-2026-749301",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "mahalls-2026-10-03-willi-carlisle",
       "title": "Willi Carlisle",
       "venueId": "mahalls",
@@ -30666,6 +30491,34 @@
       ]
     },
     {
+      "id": "bent-mace-2026-10-16-lint-lobotomy-cin-ploughshare-developer",
+      "title": "Lint Lobotomy (CIN) / Ploughshare / Developer",
+      "venueId": "bent-mace",
+      "date": "2026-10-16",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Lint Lobotomy (CIN)",
+          "headliner": true
+        },
+        {
+          "name": "Ploughshare",
+          "headliner": false
+        },
+        {
+          "name": "Developer",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://bentmace.org/event/lint-lobotomy-cin-ploughshare-developer/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a74923ea7bba75093171ebe",
       "title": "Jazz at Lincoln Center Orchestra with Wynton Marsalis",
       "venueId": "cleveland-orchestra",
@@ -31825,7 +31678,7 @@
     },
     {
       "id": "happy-dog-2026-10-18-sungaze",
-      "title": "Sungaze / Lavisher / Honeybee",
+      "title": "Sungaze / Lavisher / Honeybee / Blue Yuma",
       "venueId": "happy-dog",
       "date": "2026-10-18",
       "time": "21:00",
@@ -31843,10 +31696,14 @@
         {
           "name": "Honeybee",
           "headliner": false
+        },
+        {
+          "name": "Blue Yuma",
+          "headliner": false
         }
       ],
-      "eventUrl": "https://app.opendate.io/e/sungaze-lavisher-honeybee-october-18-2026-743280",
-      "ticketUrl": "https://app.opendate.io/e/sungaze-lavisher-honeybee-october-18-2026-743280",
+      "eventUrl": "https://app.opendate.io/e/sungaze-lavisher-honeybee-blue-yuma-october-18-2026-743280",
+      "ticketUrl": "https://app.opendate.io/e/sungaze-lavisher-honeybee-blue-yuma-october-18-2026-743280",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -33513,7 +33370,7 @@
         }
       ],
       "eventUrl": "https://hilarities.com/events/133515",
-      "ticketUrl": "https://hilarities.com/shows/363740",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -44078,6 +43935,26 @@
       "genres": []
     },
     {
+      "id": "beachland-ballroom-2026-11-18-other-lives",
+      "title": "Other Lives",
+      "venueId": "beachland-ballroom",
+      "date": "2026-11-18",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Other Lives",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/other-lives-18-nov",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/other-lives-18-nov#tickets",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "mahalls-2026-11-18-hot-freaks",
       "title": "Hot Freaks",
       "venueId": "mahalls",
@@ -47544,26 +47421,6 @@
         }
       ],
       "eventUrl": "https://www.hofbrauhauscleveland.com/events/live-music-schnicklefritz-an5kg-b75fe-kpflf-dzm6p-47zms-6aat3-xwdxr-ayswa-36el3-mmbdf-kl4t3-pfga9-tztw4-mlmcf-f2n9a-me2zm-knw48-rb4xh-cashx-4x667-m8gda-ckyl3-txa85",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bent-mace-2026-11-28-friendsgiving",
-      "title": "FRIENDSGIVING",
-      "venueId": "bent-mace",
-      "date": "2026-11-28",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "FRIENDSGIVING",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/friendsgiving/",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,

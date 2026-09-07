@@ -19,20 +19,114 @@
         "value": "https://www.instagram.com/austinwalkincane"
       },
       {
-        "label": "Facebook",
-        "value": "https://www.facebook.com/austin.charanghat"
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/4r07d1Of3c8YEDQmCM4sba?si=S0WTE6P7TzebIjr-owBFGQ"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "adult-human-chicken": {
+    "name": "Adult Human Chicken",
+    "aliases": [
+      "Adult Human Chicken"
+    ],
+    "genres": [
+      "pop",
+      "emo punk"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/adulthumanchickenband/"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://adulthumanchicken.bandcamp.com/album/adult-human-chicken"
       },
       {
         "label": "Spotify",
-        "value": "https://open.spotify.com/artist/4r07d1Of3c8YEDQmCM4sba?si=S0WTE6P7TzebIjr-owBFGQ"
+        "value": "https://open.spotify.com/artist/4OtBOSwqM08VUE2kISH7Vq"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "opus-216": {
+    "name": "Opus 216",
+    "aliases": [
+      "Opus 216",
+      "Opus216"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.opus216.com/"
       },
       {
-        "label": "TikTok",
-        "value": "https://www.tiktok.com/@austinwalkincane2?_r=1&_t=zp-94owbvnttiz"
+        "label": "Instagram",
+        "value": "https://www.instagram.com/opus216/"
       },
       {
-        "label": "Youtube",
-        "value": "https://www.youtube.com/@aug4077"
+        "label": "Facebook",
+        "value": "https://www.facebook.com/OPUS216/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hello-3d": {
+    "name": "Hello! 3D",
+    "aliases": [
+      "Hello! 3D",
+      "Hello 3D",
+      "Hello 3D Band"
+    ],
+    "genres": [
+      "latin",
+      "psych"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/hello3dband/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/Hello3Dband/"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://hello3d.bandcamp.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "stamper-starr": {
+    "name": "Stamper Starr",
+    "aliases": [
+      "Stamper Starr"
+    ],
+    "genres": [
+      "blues",
+      "classic rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.stamperstarr.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/stamperstarrmusic/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/stamperstarrmusic/"
       }
     ],
     "exclude": "no",

@@ -143,12 +143,17 @@
 		return items.filter((item) => item.venueId === venueId);
 	}
 
+	function findItemById(list, id) {
+		return list.find((item) => item.id === id);
+	}
+
 	// Expose the page-agnostic pieces for reuse (e.g. a future venue page
 	// rendering "Board posts from this venue").
 	window.BoardMedia = {
 		fetchBoardMedia,
 		fetchVenueLookup,
 		filterByVenueId,
+		findItemById,
 		sortByDateDesc,
 		formatDateDisplay,
 		resolveVenueName,
@@ -295,12 +300,48 @@
 				buildBoardFilterChips();
 				renderActiveFilters();
 				applyFilters();
+				openItemFromHash();
 			})
 			.catch((err) => {
 				console.warn('board.js: could not load media', err);
 				emptyMsg.hidden = false;
 				emptyMsg.textContent = 'Could not load the board right now — try again later.';
 			});
+	}
+
+	// Deep-linking: a URL like /board/#item-<id> (e.g. linked from a media
+	// thumbnail on /acts/) opens straight to that item's modal instead of
+	// landing on the plain grid. `id` is the stable field already on every
+	// entry in board-media.json.
+	const ITEM_HASH_PREFIX = '#item-';
+
+	function openItemFromHash() {
+		const hash = window.location.hash;
+		if (!hash.startsWith(ITEM_HASH_PREFIX)) return;
+
+		const id = decodeURIComponent(hash.slice(ITEM_HASH_PREFIX.length));
+		const item = findItemById(items, id);
+		if (!item) return;
+
+		// The modal's prev/next nav is indexed against filteredItems, so if
+		// the linked item is currently hidden by an active search/filter,
+		// clear those first — otherwise indexOf(item) comes back -1 and nav
+		// state ends up wrong. Whoever followed this link wants to see this
+		// specific item, not a filtered subset that happens to exclude it.
+		if (!filteredItems.includes(item)) {
+			currentSearch = '';
+			searchInput.value = '';
+			searchWrapper.classList.remove('hasValue');
+			selectedVenueIds.clear();
+			selectedTypes.clear();
+			selectedAreas.clear();
+			saveFiltersToStorage();
+			buildBoardFilterChips();
+			renderActiveFilters();
+			applyFilters();
+		}
+
+		openModal(item);
 	}
 
 	// --- Grid rendering (rebuilt from scratch on every search/filter change) --
