@@ -1109,7 +1109,10 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "country",
+        "indie alternative"
+      ]
     },
     {
       "id": "mahalls-2026-09-08-emo-bingo",
@@ -1254,7 +1257,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "experimental"
+      ]
     },
     {
       "id": "bside-2026-09-08-lyrical-rhythms-12",
@@ -1450,7 +1455,11 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/davy-knowles-09-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "blues",
+        "rock"
+      ]
     },
     {
       "id": "mahalls-2026-09-09-sex-mex",
@@ -1470,7 +1479,10 @@
       "ticketUrl": "https://link.dice.fm/v78e29bf042b",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "emo punk",
+        "electronic"
+      ]
     },
     {
       "id": "bop-stop-2026-09-09-adam-ofarrills-elephant-bop-stop",
@@ -1534,7 +1546,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023553",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-09-bike-night-7",
@@ -1554,7 +1568,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288444",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "rock-hall-2026-09-09-backstage-stories-090926",
@@ -1644,7 +1660,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/sports-x-remo-drive-the-foundry-tickets/14230024?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
     },
     {
       "id": "hilarities-2026-09-09-127454",
@@ -1775,7 +1794,9 @@
       "ticketUrl": "https://www.ivycle.com/event-details/girl-dinner-w-love-doesnt-shove",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bside-2026-09-09-the-people-poetry-open-mic-night-3",
@@ -1834,7 +1855,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-09-the-wednesday-jam",
@@ -1903,7 +1926,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "classical"
+      ]
     },
     {
       "id": "visible-voice-books-2026-09-09-kitchen-table-songs-hosted-by-brent-kirby-with-special-guest-joey-beltram",
@@ -1923,7 +1948,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Tea Bags",
@@ -1966,7 +1993,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-09-09-furious-george",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Wu-Tang Clan",
@@ -1986,7 +2015,9 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-09-09-wu-tang-clan",
-      "genres": []
+      "genres": [
+        "hiphop rap"
+      ]
     },
     {
       "title": "Chad Gray",
@@ -2006,7 +2037,9 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-09-chad-gray",
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "title": "The Happy Hour",
@@ -4356,9 +4389,7 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-11-joke-and-mirrors",
-      "genres": [
-        "dj"
-      ]
+      "genres": []
     },
     {
       "title": "Sam Romano",
@@ -5736,7 +5767,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-09-12-furious-george",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Disco Dom",
@@ -6149,9 +6182,7 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-12-tano",
-      "genres": [
-        "dj"
-      ]
+      "genres": []
     },
     {
       "title": "Jordan Hope",
@@ -8469,7 +8500,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023513",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-16-bike-night-8",
@@ -8489,7 +8522,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288414",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-09-16-2000-the-magicians-table",
@@ -11139,9 +11174,7 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-18-mfc",
-      "genres": [
-        "dj"
-      ]
+      "genres": []
     },
     {
       "title": "Zach Meadows",
@@ -12943,9 +12976,7 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-19-just-aj",
-      "genres": [
-        "dj"
-      ]
+      "genres": []
     },
     {
       "title": "Eddie Majeski",
@@ -14836,7 +14867,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023593",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-23-bike-night-9",
@@ -14856,7 +14889,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288424",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-23-hammerfall-freedom-world-crusade-north-america-2026",
@@ -19055,9 +19090,7 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-26-teez",
-      "genres": [
-        "dj"
-      ]
+      "genres": []
     },
     {
       "title": "Kristin Pepper",
@@ -19861,7 +19894,9 @@
       "source": "manual",
       "manual": true,
       "id": "paninis-westlake-2026-09-27-furious-george",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Evilways",
@@ -20755,7 +20790,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023583",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-30-bike-night-10",
@@ -20775,7 +20812,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288434",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-30-iguana-death-cult",
@@ -22662,7 +22701,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-10-02-furious-george",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Elmerz Gun",
@@ -25033,7 +25074,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023543",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-10-07-2000-the-magicians-table",
@@ -28833,7 +28876,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023533",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-10-14-outlander-in-concert",
@@ -29050,7 +29095,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Chris Hatton",
@@ -32480,7 +32527,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023573",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-10-21-my-hero-academia-in-concert",
@@ -32674,7 +32723,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-10-21-furious-george",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-10-21",
@@ -35822,7 +35873,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023653",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "hilarities-2026-10-28-1900-135982",
@@ -38358,7 +38411,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023623",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "hofbrauhaus-2026-11-04-yhma73yj886bclr-amp5w-s9rhp-6ty6s-j3smd-da59c-ydczn-twn77-rsf46-t2s8s-f396t-7mwyt-29rla-zpbay-ch8h6-jljkl-687et-an8s5-9438m-57x5z-f7b75-m95t7-955g4-4l3tn-tty8g-plsfa",
@@ -41015,7 +41070,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023673",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "prosperity-social-club-2026-11-11-djsayword-51326-akmd9-htpmt-nysc8",
@@ -43652,7 +43709,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023643",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bside-2026-11-18-shit-show-karaoke-33",
@@ -46110,7 +46169,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023633",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "hofbrauhaus-2026-11-25-north-coast-prost-dls9z-nerf4-egkhy-y8hcz-8z284-ze435-s32w5-nye54",
@@ -47971,7 +48032,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023663",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-12-02-love-actually-in-concert",
@@ -49786,7 +49849,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023683",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "playhouse-square-2026-12-09-wicked-3",
@@ -51206,7 +51271,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023693",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bside-2026-12-16-shit-show-karaoke-37",
@@ -52734,7 +52801,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023603",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bside-2026-12-23-the-people-poetry-open-mic-night-20",
@@ -53599,7 +53668,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023613",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "bside-2026-12-30-shit-show-karaoke-39",

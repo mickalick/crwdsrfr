@@ -1396,10 +1396,11 @@
     "exclude": "yes",
     "local": "yes"
   },
-  "brent-kirby-s-10x3-songwriter-band-showcase": {
-    "name": "Brent Kirby's 10x3 Songwriter/Band Showcase",
+  "brent-kirby": {
+    "name": "Brent Kirby",
     "aliases": [
-      "Brent Kirby's 10x3 Songwriter/Band Showcase"
+      "Brent Kirby's 10x3 Songwriter/Band Showcase",
+      "Brent Kirby"
     ],
     "genres": [
       "singer-songwriter"
@@ -3548,6 +3549,171 @@
     "exclude": "no",
     "local": "yes"
   },
+  "bill-squire": {
+    "name": "Bill Squire",
+    "aliases": [
+      "Bill Squire"
+    ],
+    "genres": [
+      "comedy"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "american-aquarium": {
+    "name": "American Aquarium",
+    "aliases": [
+      "American Aquarium"
+    ],
+    "genres": [
+      "country",
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "fyodor-novotny": {
+    "name": "Fyodor Novotny",
+    "aliases": [
+      "Fyodor Novotny"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "davy-knowles": {
+    "name": "Davy Knowles",
+    "aliases": [
+      "Davy Knowles"
+    ],
+    "genres": [
+      "singer-songwriter",
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "freddy-hill": {
+    "name": "Freddy Hill",
+    "aliases": [
+      "Freddy Hill"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wu-tang-clan": {
+    "name": "Wu-Tang Clan",
+    "aliases": [
+      "Wu-Tang Clan",
+      "Wutang Clan"
+    ],
+    "genres": [
+      "hiphop rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "joel-link": {
+    "name": "Joel Link",
+    "aliases": [
+      "Joel Link"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nathaniel-silberschlag": {
+    "name": "Nathaniel Silberschlag",
+    "aliases": [
+      "Nathaniel Silberschlag"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dawoon-chung": {
+    "name": "Dawoon Chung",
+    "aliases": [
+      "Dawoon Chung"
+    ],
+    "genres": [
+      "classical"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "remo-drive": {
+    "name": "Remo Drive",
+    "aliases": [
+      "Remo Drive"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "chad-gray": {
+    "name": "Chad Gray",
+    "aliases": [
+      "Chad Gray"
+    ],
+    "genres": [
+      "metal"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "sex-mex": {
+    "name": "Sex Mex",
+    "aliases": [
+      "Sex Mex"
+    ],
+    "genres": [
+      "emo punk",
+      "electronic"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "no"
+  },
+  "furious-george-hartwig": {
+    "name": "Furious George Hartwig",
+    "aliases": [
+      "Furious George Hartwig",
+      "Furious George",
+      "FGH"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+
 
 
 
@@ -3568,7 +3734,12 @@
       "Bingo",
       "Tarot",
       "Jeep Nite",
-      "Ladies Night"
+      "Ladies Night",
+      "Story Club Cleveland",
+      "Jeopardy Bar League",
+      "Girl Dinner w/ Love Doesn't Shove",
+      "Bike Night",
+      "Free Play Wednesdays"
     ],
     "genres": [
       "event"
@@ -3585,6 +3756,18 @@
     ],
     "genres": [
       "comedy"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "no"
+  },
+  "theater-catchall": {
+    "name": "Theater",
+    "aliases": [
+      "Dominick Farinacci & Behind the Lines:"
+    ],
+    "genres": [
+      "theater"
     ],
     "links": [],
     "exclude": "yes",
