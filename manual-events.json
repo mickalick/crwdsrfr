@@ -3611,6 +3611,35 @@
 
 
 
+  {
+      "id": "foundry-concert-club-2026-10-09-ian-mcconnell-cherokee-social",
+      "title": "Ian McConnell w/ Cherokee Social",
+      "venueId": "foundry-concert-club",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ian McConnell",
+          "headliner": true
+        },
+        {
+          "name": "Cherokee Social",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/ian-mcconnell/",
+      "ticketUrl": "https://www.ticketweb.com/event/ian-mcconnell-the-foundry-tickets/14230194?pl=thefoundry&REFID=clientsitewp",
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+
+
+
+
+
 
 
 
