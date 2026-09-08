@@ -50,6 +50,7 @@
 	let currentSearch = '';
 	const selectedGenres = new Set();
 	let onlyLocal = false;
+	let onlyUpcoming = false;
 	const expandedGroups = { genre: false };
 
 	// --- Filter persistence --------------------------------------------------
@@ -58,7 +59,7 @@
 
 	function saveFiltersToStorage() {
 		try {
-			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ genres: [...selectedGenres], local: onlyLocal }));
+			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify({ genres: [...selectedGenres], local: onlyLocal, upcoming: onlyUpcoming }));
 		} catch (e) {
 			// localStorage unavailable — filters simply won't persist this session
 		}
@@ -71,6 +72,7 @@
 			const parsed = JSON.parse(raw);
 			(parsed.genres || []).forEach(g => selectedGenres.add(g));
 			onlyLocal = Boolean(parsed.local);
+			onlyUpcoming = Boolean(parsed.upcoming);
 		} catch (e) {
 			// Corrupt or missing data — just start with no filters
 		}
@@ -84,6 +86,16 @@
 	function actMatchesLocalFilter(act) {
 		if (!onlyLocal) return true;
 		return String(act.local).toLowerCase() === 'yes';
+	}
+
+	// Reuses the same act<->event matching logic the modal uses for "Upcoming
+	// Shows", so a tile only passes this filter when the modal would actually
+	// show something under that section. Defined lower in the file, but that's
+	// fine — function declarations are hoisted, and this only ever runs after
+	// loadActs() has populated eventsData.
+	function actMatchesUpcomingFilter(act) {
+		if (!onlyUpcoming) return true;
+		return upcomingEventsForAct(act, eventsData).length > 0;
 	}
 
 	function actMatchesSearch(act, term) {
@@ -289,6 +301,7 @@
 			if (!actMatchesSearch(act, term)) return;
 			if (!actMatchesGenreFilters(act)) return;
 			if (!actMatchesLocalFilter(act)) return;
+			if (!actMatchesUpcomingFilter(act)) return;
 			actsByGroup[jumpGroupFor(act.name)].push(slug);
 		});
 
@@ -298,17 +311,38 @@
 	function applyFilters() {
 		updateSubHead();
 
-		const actsByGroup = groupFilteredActs();
-		const totalMatches = Object.values(actsByGroup).reduce((n, list) => n + list.length, 0);
-
 		const container = document.getElementById('actsList');
 		const emptyMsg = document.getElementById('actsEmpty');
+		const loadingMsg = document.getElementById('actsLoading');
 
-		$(container).fadeTo(150, 0, function () {
-			renderJumpNav(actsByGroup);
-			renderActsList(actsByGroup);
-			emptyMsg.hidden = totalMatches > 0;
-			$(container).fadeTo(150, 1);
+		// Swap the results out for the "Tuning up..." message right away —
+		// synchronous with whatever triggered this (a checkbox's checked
+		// state, a chip's active class, etc.) — so it's what's visible while
+		// the filtering pass runs, not a frozen list.
+		$(container).hide();
+		emptyMsg.hidden = true;
+		loadingMsg.hidden = false;
+
+		// groupFilteredActs() (and especially actMatchesUpcomingFilter within
+		// it) is real synchronous work now — filtering/sorting the events list
+		// per act. A single requestAnimationFrame still runs *before* the
+		// browser paints, so the loading message above and this work would
+		// still land in the same frame. Nesting two rAF calls waits for an
+		// actual paint to happen first, then runs the filtering pass — so the
+		// checkbox and loading message are visible immediately, before
+		// results load.
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				const actsByGroup = groupFilteredActs();
+				const totalMatches = Object.values(actsByGroup).reduce((n, list) => n + list.length, 0);
+
+				renderJumpNav(actsByGroup);
+				renderActsList(actsByGroup);
+
+				loadingMsg.hidden = true;
+				emptyMsg.hidden = totalMatches > 0;
+				$(container).fadeIn(150);
+			});
 		});
 	}
 
@@ -395,7 +429,7 @@
 		const wrapper = document.getElementById('actsActiveFiltersWrapper');
 		const chipsWrap = document.getElementById('actsActiveFilters');
 
-		if (selectedGenres.size === 0 && !onlyLocal) {
+		if (selectedGenres.size === 0 && !onlyLocal && !onlyUpcoming) {
 			wrapper.style.display = 'none';
 			chipsWrap.innerHTML = '';
 			return;
@@ -409,14 +443,21 @@
 			? `<button type="button" class="chip active-chip" data-local="true">Local Only <span class="chip-remove">&times;</span></button>`
 			: '';
 
+		const upcomingChip = onlyUpcoming
+			? `<button type="button" class="chip active-chip" data-upcoming="true">Upcoming Shows Only <span class="chip-remove">&times;</span></button>`
+			: '';
+
 		wrapper.style.display = 'flex';
-		chipsWrap.innerHTML = genreChips + localChip + `<button type="button" class="chip chip-reset" id="actsResetAllFilters">Reset</button>`;
+		chipsWrap.innerHTML = genreChips + localChip + upcomingChip + `<button type="button" class="chip chip-reset" id="actsResetAllFilters">Reset</button>`;
 
 		chipsWrap.querySelectorAll('.active-chip').forEach(chip => {
 			chip.addEventListener('click', () => {
 				if (chip.dataset.local) {
 					onlyLocal = false;
 					document.getElementById('actsLocalFilter').checked = false;
+				} else if (chip.dataset.upcoming) {
+					onlyUpcoming = false;
+					document.getElementById('actsUpcomingFilter').checked = false;
 				} else {
 					selectedGenres.delete(chip.dataset.value);
 				}
@@ -427,7 +468,9 @@
 		document.getElementById('actsResetAllFilters').addEventListener('click', () => {
 			selectedGenres.clear();
 			onlyLocal = false;
+			onlyUpcoming = false;
 			document.getElementById('actsLocalFilter').checked = false;
+			document.getElementById('actsUpcomingFilter').checked = false;
 			refreshFilterUI();
 		});
 	}
@@ -573,6 +616,7 @@
 
 			loadFiltersFromStorage();
 			document.getElementById('actsLocalFilter').checked = onlyLocal;
+			document.getElementById('actsUpcomingFilter').checked = onlyUpcoming;
 			buildActsFilterChips();
 			renderActiveFilters();
 			applyFilters();
@@ -614,6 +658,11 @@
 
 		document.getElementById('actsLocalFilter').addEventListener('change', function () {
 			onlyLocal = this.checked;
+			refreshFilterUI();
+		});
+
+		document.getElementById('actsUpcomingFilter').addEventListener('change', function () {
+			onlyUpcoming = this.checked;
 			refreshFilterUI();
 		});
 

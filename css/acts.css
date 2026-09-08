@@ -157,7 +157,8 @@
 	font-size: 14px;
 	color: #FFF;
 	cursor: pointer;
-	width: fit-content;
+	width: 100%;
+	margin: 8px 0;
 }
 
 .checkbox-filter input[type="checkbox"] {
