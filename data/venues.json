@@ -1112,5 +1112,49 @@
     "area": "Middleburg Heights",
     "lat": 41.3675573,
     "lng": -81.83824659999999
+  },
+  {
+    "id": "cleveland-pickle-fest",
+    "name": "Cleveland Picklefest",
+    "url": "https://clevelandpicklefest.com/",
+    "eventsUrl": "https://clevelandpicklefest.com/event-info/",
+    "type": "festival",
+    "address": "301 Lakeside Ave E, Cleveland, OH 44114",
+    "area": "Downtown",
+    "lat": 41.50407939999999,
+    "lng": -81.6946744
+  },
+  {
+    "id": "waterloo-arts-fest",
+    "name": "Waterloo Arts Fest",
+    "url": "https://www.waterlooartsfest.org/",
+    "eventsUrl": "https://www.waterlooartsfest.org/2026-schedule",
+    "type": "festival",
+    "address": "15605 Waterloo Rd, Cleveland, OH 44110",
+    "area": "Collinwood",
+    "lat": 41.5710665,
+    "lng": -81.57166649999999
+  },
+  {
+    "id": "doinks",
+    "name": "Doinks Burger Joint",
+    "url": "https://www.instagram.com/doinksburgerjoint/",
+    "eventsUrl": null,
+    "type": "bar",
+    "address": "15519 Waterloo Rd, Cleveland, OH 44110",
+    "area": "Collinwood",
+    "lat": 41.5709564,
+    "lng": -81.5721058
+  },
+  {
+    "id": "riffs",
+    "name": "Riff's Libations & Creations",
+    "url": "https://www.riffs216.com/",
+    "eventsUrl": "https://www.instagram.com/riffs.216",
+    "type": "other",
+    "address": "2418 Professor Ave, Cleveland, OH",
+    "area": "Tremont",
+    "lat": 41.4794707,
+    "lng": -81.68488719999999
   }
 ]
