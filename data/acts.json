@@ -33,7 +33,7 @@
     ],
     "genres": [
       "pop",
-      "emo punk"
+      "punk ska"
     ],
     "links": [
       {
@@ -1636,7 +1636,7 @@
       "CLE Punk Night"
     ],
     "genres": [
-      "emo punk"
+      "punk ska"
     ],
     "links": [],
     "exclude": "yes",
@@ -2055,7 +2055,7 @@
       "Last Pick Band"
     ],
     "genres": [
-      "emo punk",
+      "emo",
       "indie alternative"
     ],
     "links": [],
@@ -2213,7 +2213,7 @@
     ],
     "genres": [
       "indie alternative",
-      "emo punk"
+      "emo"
     ],
     "links": [],
     "exclude": "no",
@@ -2481,7 +2481,7 @@
       "Victim in Pain"
     ],
     "genres": [
-      "emo punk"
+      "punk ska"
     ],
     "links": [],
     "exclude": "no",
@@ -2940,7 +2940,7 @@
     ],
     "genres": [
       "pop",
-      "emo punk"
+      "punk ska"
     ],
     "links": [],
     "exclude": "no",
@@ -3663,7 +3663,7 @@
       "Melonhead"
     ],
     "genres": [
-      "emo punk"
+      "punk ska"
     ],
     "links": [],
     "exclude": "no",
@@ -3959,7 +3959,7 @@
       "Sex Mex"
     ],
     "genres": [
-      "emo punk",
+      "punk ska",
       "electronic"
     ],
     "links": [
@@ -4024,6 +4024,566 @@
     "exclude": "no",
     "local": "no"
   },
+  "lilieae": {
+    "name": "Lilieae",
+    "aliases": [
+      "Lilieae"
+    ],
+    "genres": [
+      "pop",
+      "punk ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "messmaker": {
+    "name": "MESSMAKER",
+    "aliases": [
+      "MESSMAKER"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ohayo": {
+    "name": "Ohayo",
+    "aliases": [
+      "Ohayo"
+    ],
+    "genres": [
+      "rock",
+      "rnb soul",
+      "funk reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ardamus-and-rnl": {
+    "name": "Ardamus and RNL",
+    "aliases": [
+      "Ardamus and RNL"
+    ],
+    "genres": [
+      "hiphop rap"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sabon": {
+    "name": "SABON",
+    "aliases": [
+      "SABON"
+    ],
+    "genres": [
+      "punk ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-lookout-service": {
+    "name": "The Lookout Service",
+    "aliases": [
+      "The Lookout Service"
+    ],
+    "genres": [
+      "rock",
+      "indie alternative"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hed-cheez": {
+    "name": "Hed Cheez",
+    "aliases": [
+      "Hed Cheez"
+    ],
+    "genres": [
+      "electronic",
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dream-float": {
+    "name": "Dream Float",
+    "aliases": [
+      "Dream Float"
+    ],
+    "genres": [
+      "jazz",
+      "funk reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dimitri-nassar-trio": {
+    "name": "Dimitri Nassar Trio",
+    "aliases": [
+      "Dimitri Nassar Trio"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "wave-magnetik": {
+    "name": "Wave Magnetik",
+    "aliases": [
+      "Wave Magnetik"
+    ],
+    "genres": [
+      "jazz",
+      "electronic",
+      "dance disco"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-mars-express": {
+    "name": "The Mars Express",
+    "aliases": [
+      "The Mars Express"
+    ],
+    "genres": [
+      "jazz",
+      "rnb soul",
+      "funk reggae"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sugardeer": {
+    "name": "Sugardeer",
+    "aliases": [
+      "Sugardeer"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "the-zerbo-brothers": {
+    "name": "The Zerbo Brothers",
+    "aliases": [
+      "The Zerbo Brothers"
+    ],
+    "genres": [
+      "world",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "non-bruises": {
+    "name": "Non Bruises",
+    "aliases": [
+      "Non Bruises"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "homedays": {
+    "name": "Homedays",
+    "aliases": [
+      "Homedays"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rellick": {
+    "name": "Rellick",
+    "aliases": [
+      "Rellick"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "whats-his-face-and-friends": {
+    "name": "Whats His Face and Friends",
+    "aliases": [
+      "Whats His Face and Friends"
+    ],
+    "genres": [
+      "hiphop rap",
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "country-honk": {
+    "name": "Country Honk",
+    "aliases": [
+      "Country Honk"
+    ],
+    "genres": [
+      "country"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "beach-city-postal-service": {
+    "name": "Beach City Postal Service",
+    "aliases": [
+      "Beach City Postal Service"
+    ],
+    "genres": [
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "grumpy-plum": {
+    "name": "Grumpy Plum",
+    "aliases": [
+      "Grumpy Plum"
+    ],
+    "genres": [
+      "indie alternative",
+      "pop",
+      "punk ska"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "lemoyne-alexander": {
+    "name": "Lemoyne Alexander",
+    "aliases": [
+      "Lemoyne Alexander"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "time-cat": {
+    "name": "Time Cat",
+    "aliases": [
+      "Time Cat"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "a-m-the-queen": {
+    "name": "A.M. The Queen",
+    "aliases": [
+      "A.M. The Queen"
+    ],
+    "genres": [
+      "hiphop rap",
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "scorch-steezy": {
+    "name": "Scorch Steezy",
+    "aliases": [
+      "Scorch Steezy"
+    ],
+    "genres": [
+      "indie alternative",
+      "folk americana",
+      "country",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "anna-beau": {
+    "name": "Anna Beau",
+    "aliases": [
+      "Anna Beau"
+    ],
+    "genres": [
+      "indie alternative",
+      "pop",
+      "folk americana",
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dust-and-debris": {
+    "name": "Dust and Debris",
+    "aliases": [
+      "Dust and Debris"
+    ],
+    "genres": [
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "macho-texans": {
+    "name": "Macho Texans",
+    "aliases": [
+      "Macho Texans"
+    ],
+    "genres": [
+      "folk americana",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "moko-bovo": {
+    "name": "Moko Bovo",
+    "aliases": [
+      "Moko Bovo"
+    ],
+    "genres": [
+      "experimental",
+      "folk americana"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "waylonfingers-friends": {
+    "name": "WaylonFingers & Friends",
+    "aliases": [
+      "WaylonFingers & Friends"
+    ],
+    "genres": [
+      "bluegrass"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "ballinloch": {
+    "name": "Ballinloch",
+    "aliases": [
+      "Ballinloch"
+    ],
+    "genres": [
+      "irish",
+      "folk americana",
+      "traditional"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "frida-and-the-mann": {
+    "name": "Frida and the Mann",
+    "aliases": [
+      "Frida and the Mann"
+    ],
+    "genres": [
+      "indie alternative",
+      "rock",
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "fox-ears": {
+    "name": "Fox Ears",
+    "aliases": [
+      "Fox Ears"
+    ],
+    "genres": [
+      "funk reggae",
+      "rnb soul"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "jack-and-the-optimists": {
+    "name": "Jack and The Optimists",
+    "aliases": [
+      "Jack and The Optimists"
+    ],
+    "genres": [
+      "pop"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "colin-miller-the-brother-nature": {
+    "name": "Colin Miller & The Brother Nature",
+    "aliases": [
+      "Colin Miller & The Brother Nature"
+    ],
+    "genres": [
+      "rnb soul",
+      "funk reggae",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "guy-snowdon": {
+    "name": "Guy Snowdon",
+    "aliases": [
+      "Guy Snowdon"
+    ],
+    "genres": [
+      "blues",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "rustic-skies": {
+    "name": "Rustic Skies",
+    "aliases": [
+      "Rustic Skies"
+    ],
+    "genres": [
+      "indie alternative",
+      "jazz",
+      "funk reggae",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "nature-nvoke": {
+    "name": "Nature Nvoke",
+    "aliases": [
+      "Nature Nvoke"
+    ],
+    "genres": [
+      "punk ska",
+      "hiphop rap",
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "goodmorning-valentine": {
+    "name": "Goodmorning Valentine",
+    "aliases": [
+      "Goodmorning Valentine"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "moon-echo-garden": {
+    "name": "Moon Echo Garden",
+    "aliases": [
+      "Moon Echo Garden"
+    ],
+    "genres": [
+      "psych",
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "hyperius-blake-trio": {
+    "name": "Hyperius Blake Trio",
+    "aliases": [
+      "Hyperius Blake Trio"
+    ],
+    "genres": [
+      "experimental"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "anitakeys": {
+    "name": "anitakeys",
+    "aliases": [
+      "anitakeys"
+    ],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dj-outdoor-cat": {
+    "name": "DJ Outdoor Cat",
+    "aliases": [
+      "DJ Outdoor Cat",
+      "DJ Outdoorcat"
+    ],
+    "genres": [
+      "dj"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "vegan-cannibals": {
+    "name": "Vegan Cannibals",
+    "aliases": [
+      "Vegan Cannibals"
+    ],
+    "genres": [
+      "rock"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+
 
 
 

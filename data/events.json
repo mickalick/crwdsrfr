@@ -685,408 +685,37 @@
       "eventsUrl": "https://www.clevelandoktoberfest.com/stc/weihenstephan-fest-tent-schedule/",
       "type": "festival",
       "area": "Middleburg Heights"
+    },
+    "cleveland-pickle-fest": {
+      "name": "Cleveland Picklefest",
+      "url": "https://clevelandpicklefest.com/",
+      "eventsUrl": "https://clevelandpicklefest.com/event-info/",
+      "type": "festival",
+      "area": "Downtown"
+    },
+    "waterloo-arts-fest": {
+      "name": "Waterloo Arts Fest",
+      "url": "https://www.waterlooartsfest.org/",
+      "eventsUrl": "https://www.waterlooartsfest.org/2026-schedule",
+      "type": "festival",
+      "area": "Collinwood"
+    },
+    "doinks": {
+      "name": "Doinks Burger Joint",
+      "url": "https://www.instagram.com/doinksburgerjoint/",
+      "eventsUrl": null,
+      "type": "bar",
+      "area": "Collinwood"
+    },
+    "riffs": {
+      "name": "Riff's Libations & Creations",
+      "url": "https://www.riffs216.com/",
+      "eventsUrl": "https://www.instagram.com/riffs.216",
+      "type": "other",
+      "area": "Tremont"
     }
   },
   "events": [
-    {
-      "id": "mercury-music-lounge-2026-09-07-vader-jungle-rot-fleshcrawl-trash-panda",
-      "title": "Vader – MOVED TO THE FOUNDRY",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-07",
-      "time": "18:00",
-      "doors": null,
-      "price": "$38.60",
-      "performers": [
-        {
-          "name": "Vader – MOVED TO THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/vader-jungle-rot-fleshcrawl-trash-panda/",
-      "ticketUrl": "https://www.ticketweb.com/event/vader-moved-to-the-mercury-music-lounge-tickets/14255744",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "metal"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-07-music-trivi-aoke-35",
-      "title": "MUSIC TRIVI-AOKE",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-07",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "MUSIC TRIVI-AOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/music-trivi-aoke-35/",
-      "ticketUrl": "https://www.ticketweb.com/event/music-trivi-aoke-the-mercury-music-lounge-tickets/14233174",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia",
-        "karaoke"
-      ]
-    },
-    {
-      "id": "foundry-concert-club-2026-09-07-nerd-night",
-      "title": "Nerd Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-07",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Nerd Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-tickets/15044343?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-09-07",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-09-07",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-09-07",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "family kids"
-      ]
-    },
-    {
-      "id": "no-class-2026-09-07-cloudy-spelling-bee",
-      "title": "CLOUDY WITH A CHANCE ...",
-      "venueId": "no-class",
-      "date": "2026-09-07",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Cloudy with a Chance, drag open stage at No Class hosted by Cloudy. Septembers theme is SPELLING BEE. To sign up for a future open stage please email cloudy.thee.queen@gmail.com",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/cloudy-spelling-bee",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "drag"
-      ]
-    },
-    {
-      "id": "nlqp-2026-09-07-summerdance-2026",
-      "title": "Summerdance 2026",
-      "venueId": "nelson-ledges",
-      "date": "2026-09-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Summerdance 2026",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://nlqp.com/events/summerdance-2026",
-      "ticketUrl": "https://nlqp.com/events/summerdance-2026",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "title": "Custard Pie",
-      "performers": [
-        {
-          "name": "Custard Pie",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "14:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "whiskey-island",
-      "source": "manual",
-      "manual": true,
-      "id": "whiskey-island-2026-09-07-custard-pie",
-      "genres": [
-        "classic rock",
-        "covers"
-      ]
-    },
-    {
-      "title": "Steve Aoki",
-      "performers": [
-        {
-          "name": "Steve Aoki",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-09-07-steve-aoki",
-      "genres": [
-        "dj",
-        "electronic"
-      ]
-    },
-    {
-      "title": "Medusa",
-      "performers": [
-        {
-          "name": "Medusa",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "12:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "chagrin-tavern",
-      "source": "manual",
-      "manual": true,
-      "id": "chagrin-tavern-2026-09-07-medusa",
-      "genres": [
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "title": "National Air Show ft. the U.S. Navy Blue Angels",
-      "performers": [
-        {
-          "name": "National Air Show",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "10:00",
-      "doors": "9:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandairshow.com/ticketing/",
-      "venueId": "cleveland-national-air-show",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-national-air-show-2026-09-07-air-show-monday",
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "title": "Weihenstephan Fest Test - Dorfrocker",
-      "performers": [
-        {
-          "name": "Dorfrocker",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "12:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-dorfrocker",
-      "genres": [
-        "polka",
-        "german"
-      ]
-    },
-    {
-      "title": "Weihenstephan Fest Test - Bavarian Schuhplattlers",
-      "performers": [
-        {
-          "name": "Bavarian Schuhplattlers",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "15:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-bavarian-schuhplattlers",
-      "genres": [
-        "german"
-      ]
-    },
-    {
-      "title": "Weihenstephan Fest Test - Alex Meixner",
-      "performers": [
-        {
-          "name": "Alex Meixner",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-alex-meixner",
-      "genres": [
-        "polka"
-      ]
-    },
-    {
-      "title": "Bier Garten - Das Boaterhead",
-      "performers": [
-        {
-          "name": "Das Boaterhead",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-das-boaterhead",
-      "genres": [
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "title": "Bier Garten - Masskrugstemmen Bavarian Strongman Contest",
-      "performers": [
-        {
-          "name": "Masskrugstemmen Bavarian Strongman Contest",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-masskrugstemmen-bavarian-strongman-contest",
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "title": "Bier Garten - China Grove",
-      "performers": [
-        {
-          "name": "China Grove",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-china-grove",
-      "genres": [
-        "tribute"
-      ]
-    },
-    {
-      "title": "BitBurger Area - Die Ünprönöüncëäblës",
-      "performers": [
-        {
-          "name": "Die Ünprönöüncëäblës",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "13:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-die-npr-n-nc-bl-s",
-      "genres": []
-    },
-    {
-      "title": "BitBurger Area - Johnny Koenig",
-      "performers": [
-        {
-          "name": "Johnny Koenig",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-07",
-      "time": "16:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://www.clevelandoktoberfest.com/stc/tickets/#/select",
-      "venueId": "cleveland-oktoberfest",
-      "source": "manual",
-      "manual": true,
-      "id": "cleveland-oktoberfest-2026-09-07-johnny-koenig",
-      "genres": [
-        "polka"
-      ]
-    },
     {
       "id": "beachland-ballroom-2026-09-08-american-aquarium",
       "title": "American Aquarium with Nathan Evans Fox",
@@ -1197,7 +826,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "emo punk"
+        "punk ska"
       ]
     },
     {
@@ -1363,57 +992,6 @@
       ]
     },
     {
-      "id": "spotlight-comedy-open-mic-2026-09-08",
-      "title": "Comedy Open Mic",
-      "venueId": "spotlight-cle",
-      "date": "2026-09-08",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-tue-2026-09-08",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-08",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "twist-trivia-tuesdays-2026-09-08",
-      "title": "LGBTQ+ Trivia Tuesdays",
-      "venueId": "twist-social-club",
-      "date": "2026-09-08",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "trivia"
-      ]
-    },
-    {
       "id": "grog-shop-2026-09-09-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
@@ -1480,7 +1058,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "emo punk",
+        "punk ska",
         "electronic"
       ]
     },
@@ -4613,6 +4191,26 @@
       ]
     },
     {
+      "title": "Open Decks w/ DJ Dommie Salami",
+      "performers": [
+        {
+          "name": "DJ Dommie Salami",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "riffs",
+      "source": "manual",
+      "manual": true,
+      "id": "riffs-2026-09-11-open-decks",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-09-11",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -4773,7 +4371,9 @@
       "manual": false,
       "genres": [
         "indie alternative",
-        "folk americana"
+        "folk americana",
+        "funk reggae",
+        "rnb soul"
       ]
     },
     {
@@ -6502,6 +6102,1184 @@
       "genres": []
     },
     {
+      "title": "Doinks After Dark w/ DJ Outdoor Cat, Vegan Cannibals",
+      "performers": [
+        {
+          "name": "DJ Outdoor Cat",
+          "headliner": true
+        },
+        {
+          "name": "Vegan Cannibals",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "20:30",
+      "doors": null,
+      "price": "$5",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "doinks",
+      "source": "manual",
+      "manual": true,
+      "id": "doinks-2026-09-12-doinks-after-dark",
+      "genres": [
+        "rock",
+        "dj"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - Lilieae",
+      "performers": [
+        {
+          "name": "Lilieae",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-lilieae",
+      "genres": [
+        "pop",
+        "punk ska"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - MESSMAKER",
+      "performers": [
+        {
+          "name": "MESSMAKER",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:40",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-messmaker",
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - Ohayo",
+      "performers": [
+        {
+          "name": "Ohayo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-ohayo",
+      "genres": [
+        "rock",
+        "rnb soul",
+        "funk reggae"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - Ardamus and RNL",
+      "performers": [
+        {
+          "name": "Ardamus and RNL",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-ardamus-and-rnl",
+      "genres": [
+        "hiphop rap"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - SABON",
+      "performers": [
+        {
+          "name": "SABON",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-sabon",
+      "genres": [
+        "punk ska"
+      ]
+    },
+    {
+      "title": "Tucker Ellis Stage - The Lookout Service",
+      "performers": [
+        {
+          "name": "The Lookout Service",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "18:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-the-lookout-service",
+      "genres": [
+        "rock",
+        "indie alternative"
+      ]
+    },
+    {
+      "title": "The Treelawn - Hed Cheez",
+      "performers": [
+        {
+          "name": "Hed Cheez",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-hed-cheez",
+      "genres": [
+        "electronic",
+        "jazz"
+      ]
+    },
+    {
+      "title": "The Treelawn - Dream Float",
+      "performers": [
+        {
+          "name": "Dream Float",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-dream-float",
+      "genres": [
+        "jazz",
+        "funk reggae"
+      ]
+    },
+    {
+      "title": "The Treelawn - Dimitri Nassar Trio",
+      "performers": [
+        {
+          "name": "Dimitri Nassar Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-dimitri-nassar-trio",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "title": "The Treelawn - Wave Magnetik",
+      "performers": [
+        {
+          "name": "Wave Magnetik",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-wave-magnetik",
+      "genres": [
+        "jazz",
+        "electronic",
+        "dance disco"
+      ]
+    },
+    {
+      "title": "The Treelawn - The Mars Express",
+      "performers": [
+        {
+          "name": "The Mars Express",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:40",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-the-mars-express",
+      "genres": [
+        "jazz",
+        "rnb soul",
+        "funk reggae"
+      ]
+    },
+    {
+      "title": "The Treelawn - Slugg",
+      "performers": [
+        {
+          "name": "Slugg",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-slugg",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - Sugardeer",
+      "performers": [
+        {
+          "name": "Sugardeer",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-sugardeer",
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - By Light We Loom",
+      "performers": [
+        {
+          "name": "By Light We Loom",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-by-light-we-loom",
+      "genres": [
+        "indie alternative",
+        "pop"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - The Zerbo Brothers",
+      "performers": [
+        {
+          "name": "The Zerbo Brothers",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:40",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-the-zerbo-brothers",
+      "genres": [
+        "world",
+        "folk americana"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - Non Bruises",
+      "performers": [
+        {
+          "name": "Non Bruises",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-non-bruises",
+      "genres": [
+        "rock"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - Homedays",
+      "performers": [
+        {
+          "name": "Homedays",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-homedays",
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
+    },
+    {
+      "title": "Blue Windmill Stage - Rellick",
+      "performers": [
+        {
+          "name": "Rellick",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "18:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-rellick",
+      "genres": [
+        "rock"
+      ]
+    },
+    {
+      "title": "Tower Stage - Whats His Face and Friends",
+      "performers": [
+        {
+          "name": "Whats His Face and Friends",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-whats-his-face-and-friends",
+      "genres": [
+        "hiphop rap",
+        "rnb soul"
+      ]
+    },
+    {
+      "title": "Tower Stage - Country Honk",
+      "performers": [
+        {
+          "name": "Country Honk",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-country-honk",
+      "genres": [
+        "country"
+      ]
+    },
+    {
+      "title": "Tower Stage - Beach City Postal Service",
+      "performers": [
+        {
+          "name": "Beach City Postal Service",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-beach-city-postal-service",
+      "genres": [
+        "folk americana",
+        "rock"
+      ]
+    },
+    {
+      "title": "Tower Stage - Grumpy Plum",
+      "performers": [
+        {
+          "name": "Grumpy Plum",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-grumpy-plum",
+      "genres": [
+        "indie alternative",
+        "pop",
+        "punk ska"
+      ]
+    },
+    {
+      "title": "Tower Stage - Lemoyne Alexander",
+      "performers": [
+        {
+          "name": "Lemoyne Alexander",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:40",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-lemoyne-alexander",
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
+    },
+    {
+      "title": "Tower Stage - Time Cat",
+      "performers": [
+        {
+          "name": "Time Cat",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-time-cat",
+      "genres": [
+        "rock"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - A.M. The Queen",
+      "performers": [
+        {
+          "name": "A.M. The Queen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-a-m-the-queen",
+      "genres": [
+        "hiphop rap",
+        "rnb soul"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - Ashley Brooke Toussant",
+      "performers": [
+        {
+          "name": "Ashley Brooke Toussant",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-ashley-brooke-toussant",
+      "genres": [
+        "folk americana"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - Jeff Holland",
+      "performers": [
+        {
+          "name": "Jeff Holland",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-jeff-holland",
+      "genres": [
+        "indie alternative",
+        "rock"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - Scorch Steezy",
+      "performers": [
+        {
+          "name": "Scorch Steezy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-scorch-steezy",
+      "genres": [
+        "indie alternative",
+        "folk americana",
+        "country",
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - Anna Beau",
+      "performers": [
+        {
+          "name": "Anna Beau",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:40",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-anna-beau",
+      "genres": [
+        "indie alternative",
+        "pop",
+        "folk americana",
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "E 160th St Stage - Dust and Debris",
+      "performers": [
+        {
+          "name": "Dust and Debris",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-dust-and-debris",
+      "genres": [
+        "folk americana"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - The John McGrail Group",
+      "performers": [
+        {
+          "name": "The John McGrail Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-the-john-mcgrail-group",
+      "genres": [
+        "singer-songwriter",
+        "folk americana"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - Macho Texans",
+      "performers": [
+        {
+          "name": "Macho Texans",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-macho-texans",
+      "genres": [
+        "folk americana",
+        "rock"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - Moko Bovo",
+      "performers": [
+        {
+          "name": "Moko Bovo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-moko-bovo",
+      "genres": [
+        "experimental",
+        "folk americana"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - WaylonFingers & Friends",
+      "performers": [
+        {
+          "name": "WaylonFingers & Friends",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:50",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-waylonfingers-friends",
+      "genres": [
+        "bluegrass"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - Cigar Box Scott",
+      "performers": [
+        {
+          "name": "Cigar Box Scott",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:10",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-cigar-box-scott",
+      "genres": [
+        "folk americana",
+        "blues",
+        "bluegrass"
+      ]
+    },
+    {
+      "title": "Sculpture Garden - Ballinloch",
+      "performers": [
+        {
+          "name": "Ballinloch",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "18:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-ballinloch",
+      "genres": [
+        "irish",
+        "folk americana",
+        "traditional"
+      ]
+    },
+    {
+      "title": "Beachland Stage - Shortt Stories",
+      "performers": [
+        {
+          "name": "Shortt Stories",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-shortt-stories",
+      "genres": [
+        "indie alternative",
+        "folk americana"
+      ]
+    },
+    {
+      "title": "Beachland Stage - Frida and the Mann",
+      "performers": [
+        {
+          "name": "Frida and the Mann",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:15",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-frida-and-the-mann",
+      "genres": [
+        "indie alternative",
+        "rock",
+        "pop"
+      ]
+    },
+    {
+      "title": "Beachland Stage - Fox Ears",
+      "performers": [
+        {
+          "name": "Fox Ears",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-fox-ears",
+      "genres": [
+        "funk reggae",
+        "rnb soul"
+      ]
+    },
+    {
+      "title": "Beachland Stage - Jack and The Optimists",
+      "performers": [
+        {
+          "name": "Jack and The Optimists",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "15:45",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-jack-and-the-optimists",
+      "genres": [
+        "pop"
+      ]
+    },
+    {
+      "title": "Beachland Stage - Colin Miller & The Brother Nature",
+      "performers": [
+        {
+          "name": "Colin Miller & The Brother Nature",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-colin-miller-the-brother-nature",
+      "genres": [
+        "rnb soul",
+        "funk reggae",
+        "rock"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Guy Snowdon",
+      "performers": [
+        {
+          "name": "Guy Snowdon",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:15",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-guy-snowdon",
+      "genres": [
+        "blues",
+        "rock"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Rustic Skies",
+      "performers": [
+        {
+          "name": "Rustic Skies",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-rustic-skies",
+      "genres": [
+        "indie alternative",
+        "jazz",
+        "funk reggae",
+        "rock"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Nature Nvoke",
+      "performers": [
+        {
+          "name": "Nature Nvoke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-nature-nvoke",
+      "genres": [
+        "punk ska",
+        "hiphop rap",
+        "experimental"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Goodmorning Valentine",
+      "performers": [
+        {
+          "name": "Goodmorning Valentine",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:45",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-goodmorning-valentine",
+      "genres": [
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Moon Echo Garden",
+      "performers": [
+        {
+          "name": "Moon Echo Garden",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:15",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-moon-echo-garden",
+      "genres": [
+        "psych",
+        "rock"
+      ]
+    },
+    {
+      "title": "Cleveland Rocks Shop - Hyperius Blake Trio",
+      "performers": [
+        {
+          "name": "Hyperius Bliska Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "18:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-hyperius-blake-trio",
+      "genres": [
+        "experimental"
+      ]
+    },
+    {
+      "title": "Millard Fillmore - anitakeys",
+      "performers": [
+        {
+          "name": "anitakeys",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-anitakeys",
+      "genres": [
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "Millard Fillmore - David Loy and The Ramrods",
+      "performers": [
+        {
+          "name": "David Loy and The Ramrods",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "14:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-david-loy-and-the-ramrods",
+      "genres": [
+        "folk americana",
+        "rock"
+      ]
+    },
+    {
+      "title": "Millard Fillmore - Kiss Me Deadly",
+      "performers": [
+        {
+          "name": "Kiss Me Deadly",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "waterloo-arts-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "waterloo-arts-fest-2026-09-12-kiss-me-deadly",
+      "genres": [
+        "indie alternative",
+        "pop",
+        "rock"
+      ]
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-12",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -8001,7 +8779,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "emo punk"
+        "punk ska"
       ]
     },
     {
@@ -8043,7 +8821,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "emo punk"
+        "punk ska"
       ]
     },
     {
@@ -10535,7 +11313,11 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "jazz",
+        "electronic",
+        "dance disco"
+      ]
     },
     {
       "id": "treelawn-social-club-2026-09-18-15039503",
@@ -10789,7 +11571,11 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "irish",
+        "folk americana",
+        "traditional"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-09-18-the-johnstown-flood-1926",
@@ -11393,7 +12179,10 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/jason-ricci-the-bad-kind-19-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "experimental",
+        "folk americana"
+      ]
     },
     {
       "id": "cain-park-2026-09-19-punch-brothers",
@@ -20500,7 +21289,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "emo punk"
+        "punk ska"
       ]
     },
     {
@@ -23768,6 +24557,69 @@
       ]
     },
     {
+      "title": "Gates Open",
+      "performers": [
+        {
+          "name": "Pickle Fest",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "11:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://clevelandpicklefest.com/tickets/",
+      "venueId": "cleveland-pickle-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-pickle-fest-2026-10-03-gates",
+      "genres": []
+    },
+    {
+      "title": "Boaterhead",
+      "performers": [
+        {
+          "name": "Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "11:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://clevelandpicklefest.com/tickets/",
+      "venueId": "cleveland-pickle-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-pickle-fest-2026-10-03-boaterhead",
+      "genres": [
+        "rock",
+        "covers"
+      ]
+    },
+    {
+      "title": "Jasmin Jeanise",
+      "performers": [
+        {
+          "name": "Jasmin Jeanise",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://clevelandpicklefest.com/tickets/",
+      "venueId": "cleveland-pickle-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "cleveland-pickle-fest-2026-10-03-jasmin-jeanise",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-10-03",
       "title": "Live Music • DJs • Special Nights",
       "venueId": "spotlight-cle",
@@ -24963,7 +25815,9 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-dream-syndicate-07-oct#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "id": "happy-dog-2026-10-07-city-club-of-cleveland-presents-happy-dog-takes-on-everything",
@@ -33388,7 +34242,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "country"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-10-23-soiree-of-the-stallions-2",
@@ -46975,7 +47831,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/voodoo-glow-skulls-koffin-kats-grog-shop-tickets/15035663?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "punk ska"
+      ]
     },
     {
       "id": "globe-iron-1514785",
@@ -48684,7 +49542,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "SPAZMATICS",
@@ -50645,7 +51505,12 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "indie alternative",
+        "jazz",
+        "funk reggae",
+        "rock"
+      ]
     },
     {
       "id": "jenks-1929-2026-12-12-2000-jenks-1929-saturday-salon-series-long-tall-deb-and-colin-john",

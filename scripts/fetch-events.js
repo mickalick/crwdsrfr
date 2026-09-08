@@ -4309,7 +4309,7 @@ function assignGenres(event, venue) {
 // ─── Manual entries (Cebars etc.) ─────────────────────────────────────────────
 
 function loadManualEntries() {
-  const manualPath = join(__dirname, '..', 'manual-events.json');
+  const manualPath = join(__dirname, '..', 'data', 'manual-events.json');
   try {
     const manual = JSON.parse(readFileSync(manualPath, 'utf-8'));
     const entries = manual.events ?? [];
@@ -4393,7 +4393,7 @@ async function main() {
 
   const manualEntries = loadManualEntries();
 
-  const recurringRules = JSON.parse(readFileSync(join(__dirname, '..', 'recurring-rules.json'), 'utf-8'));
+  const recurringRules = JSON.parse(readFileSync(join(__dirname, '..', 'data', 'recurring-rules.json'), 'utf-8'));
   const recurringEvents = materializeRecurringEvents(recurringRules);
   console.log('Recurring Events:', recurringEvents.length);
 
