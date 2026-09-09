@@ -2,10 +2,10 @@
   {
     "id": "spotlight-acoustic-jam-night",
     "venueId": "spotlight-cle",
-    "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+    "title": "Acoustic Jam Night! Hosted by Joshua Donato",
     "weekday": 1,
     "nth": null,
-    "time": null,
+    "time": "21:00",
     "startDate": "2026-01-01",
     "endDate": null
   },
@@ -15,17 +15,17 @@
     "title": "Comedy Open Mic",
     "weekday": 2,
     "nth": null,
-    "time": null,
+    "time": "19:30",
     "startDate": "2026-01-01",
     "endDate": null
   },
   {
     "id": "spotlight-jam-night",
     "venueId": "spotlight-cle",
-    "title": "Jam Night",
+    "title": "Jam Night! Hosted by Clockwork",
     "weekday": 3,
     "nth": null,
-    "time": null,
+    "time": "21:00",
     "startDate": "2026-01-01",
     "endDate": null
   },
@@ -35,17 +35,17 @@
     "title": "Bluegrass Jam (hosted by David Mayfield)",
     "weekday": 4,
     "nth": [1],
-    "time": null,
+    "time": "20:00",
     "startDate": "2026-01-01",
     "endDate": null
   },
   {
     "id": "spotlight-open-mic-theme",
     "venueId": "spotlight-cle",
-    "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+    "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
     "weekday": 4,
     "nth": [2, 4],
-    "time": null,
+    "time": "20:00",
     "startDate": "2026-01-01",
     "endDate": null
   },
@@ -55,14 +55,14 @@
     "title": "TK's Jazz Odyssey & Workshop",
     "weekday": 4,
     "nth": [3],
-    "time": null,
+    "time": "21:00",
     "startDate": "2026-01-01",
     "endDate": null
   },
   {
     "id": "spotlight-weekend-nights-fri",
     "venueId": "spotlight-cle",
-    "title": "Live Music • DJs • Special Nights",
+    "title": "Live Music, DJs, Special Nights, featuring...",
     "weekday": 5,
     "nth": null,
     "time": null,
@@ -72,7 +72,7 @@
   {
     "id": "spotlight-weekend-nights-sat",
     "venueId": "spotlight-cle",
-    "title": "Live Music • DJs • Special Nights",
+    "title": "Live Music, DJs, Special Nights, featuring...",
     "weekday": 6,
     "nth": null,
     "time": null,
@@ -82,10 +82,10 @@
   {
     "id": "spotlight-house-techno",
     "venueId": "spotlight-cle",
-    "title": "House & Techno",
+    "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
     "weekday": 0,
     "nth": null,
-    "time": null,
+    "time": "21:00",
     "startDate": "2026-01-01",
     "endDate": null
   },

@@ -717,289 +717,13 @@
   },
   "events": [
     {
-      "id": "beachland-ballroom-2026-09-08-american-aquarium",
-      "title": "American Aquarium with Nathan Evans Fox",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-08",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "American Aquarium",
-          "headliner": true
-        },
-        {
-          "name": "Nathan Evans Fox",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/american-aquarium-08-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "alternative",
-        "country"
-      ]
-    },
-    {
-      "id": "mahalls-2026-09-08-emo-bingo",
-      "title": "Emo Bingo",
-      "venueId": "mahalls",
-      "date": "2026-09-08",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Emo Bingo",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/emo-bingo-11/",
-      "ticketUrl": "https://link.dice.fm/vadbd22106b4",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games",
-        "emo"
-      ]
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-08-secret-society-comedy-presents-one-more-joke-48",
-      "title": "Secret Society Comedy Presents: One More Joke",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-08",
-      "time": "21:00",
-      "doors": null,
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Secret Society Comedy Presents: One More Joke",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/secret-society-comedy-presents-one-more-joke-48/",
-      "ticketUrl": "https://www.ticketweb.com/event/secret-society-comedy-presents-one-the-winchester-tickets/13982504",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-08-the-mercury-jam-81",
-      "title": "The Mercury Jam",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-08",
-      "time": "20:30",
-      "doors": "20:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Mercury Jam",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/the-mercury-jam-81/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-mercury-jam-the-mercury-music-lounge-tickets/14969963",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "foundry-concert-club-2026-09-08-personality-crisis-aka-cle-punk-night-2",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-08",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/15044403?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "punk-ska"
-      ]
-    },
-    {
-      "id": "van-aken-plant-bingo-houseplant-edition-2026-09-08",
-      "title": "Plant Bingo - Houseplant Edition",
-      "venueId": "van-aken-district",
-      "date": "2026-09-08",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "Plant Bingo - Houseplant Edition",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/plant-bingo-houseplant-edition-2026-09-08",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "bent-mace-2026-09-08-confounder-ga-carousel-pdx-m-kovacevich-ga-nathan-howland-bay-area-fyodor-novotny",
-      "title": "Confounder (GA) / Carousel (PDX) / M. Kovacevich (GA) / Nathan Howland (BAY AREA) / Fyodor Novotny",
-      "venueId": "bent-mace",
-      "date": "2026-09-08",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Confounder (GA)",
-          "headliner": true
-        },
-        {
-          "name": "Carousel (PDX)",
-          "headliner": false
-        },
-        {
-          "name": "M. Kovacevich (GA)",
-          "headliner": false
-        },
-        {
-          "name": "Nathan Howland (BAY AREA)",
-          "headliner": false
-        },
-        {
-          "name": "Fyodor Novotny",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://bentmace.org/event/confounder-ga-carousel-pdx-m-kovacevich-ga-nathan-howland-bay-area-fyodor-novotny/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "experimental"
-      ]
-    },
-    {
-      "id": "bside-2026-09-08-lyrical-rhythms-12",
-      "title": "Lyrical Rhythms",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-08",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": "$6.67",
-      "performers": [
-        {
-          "name": "Lyrical Rhythms",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/lyrical-rhythms-12/",
-      "ticketUrl": "https://www.ticketweb.com/event/lyrical-rhythms-b-side-lounge-tickets/14229984?pl=bside",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "rnb-soul",
-        "comedy"
-      ]
-    },
-    {
-      "id": "forest-city-brewery-2026-09-08-last-call-trivia",
-      "title": "Last Call Trivia",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-08",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/1/6/last-call-trivia-zjehs-afmpz-zy2rs-tj7pp-56mbk",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-08-storytelling-basics-2-with-michelle-r-smith",
-      "title": "Storytelling Basics 2 with Michelle R. Smith",
-      "venueId": "imposters-theater",
-      "date": "2026-09-08",
-      "time": "18:30",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/storytelling-basics-2-090826",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/storytelling-basics-2-090826",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "title": "Tarot Night in The Speakeasy",
-      "performers": [
-        {
-          "name": "Eranah Adorjan",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-08",
-      "time": "18:30",
-      "doors": null,
-      "price": "$22",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-09-08-eranah-adorjan",
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "title": "Jeep Nite: Jeep vs Broncos",
-      "performers": [
-        {
-          "name": "Jeep Nite",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-08",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-streetsboro",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-streetsboro-2026-09-08-jeep-nite",
-      "genres": [
-        "event"
-      ]
-    },
-    {
       "id": "grog-shop-2026-09-09-midnight-rental-presents-secret-movie-night",
       "title": "Midnight Rental presents Secret Movie Night",
       "venueId": "grog-shop",
       "date": "2026-09-09",
       "time": "20:00",
       "doors": "19:00",
-      "price": "$12.59",
+      "price": "$19.51",
       "performers": [
         {
           "name": "Midnight Rental presents Secret Movie Night",
@@ -1702,87 +1426,6 @@
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-09-dennis-lewin",
       "genres": []
-    },
-    {
-      "id": "spotlight-jam-night-2026-09-09",
-      "title": "Jam Night",
-      "venueId": "spotlight-cle",
-      "date": "2026-09-09",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "smedleys-wednesdays-2026-09-09",
-      "title": "JP & Friends",
-      "venueId": "smedleys",
-      "date": "2026-09-09",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "velvet-don-phillips-wed-2026-09-09",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-09",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "twist-karaoke-wednesdays-2026-09-09",
-      "title": "Karaoke Wednesdays",
-      "venueId": "twist-social-club",
-      "date": "2026-09-09",
-      "time": "21:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "karaoke"
-      ]
-    },
-    {
-      "id": "nano-brew-trivia-2026-09-09",
-      "title": "Trivia Wednesdays",
-      "venueId": "nano-brew",
-      "date": "2026-09-09",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "trivia-games"
-      ]
     },
     {
       "id": "grog-shop-2026-09-10-westside-live",
@@ -2602,10 +2245,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-09-10",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-09-10",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -2794,7 +2437,9 @@
       "ticketUrl": "https://app.opendate.io/e/jim-e-brown-andy-burns-chemical-baths-djs-nothing-phase-and-spek-sold-out-september-11-2026-695946",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "mahalls-2026-09-11-keep-flying",
@@ -2940,6 +2585,27 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/jembaa-groove/",
       "ticketUrl": "https://www.ticketweb.com/event/jembaa-groove-the-winchester-tickets/14273534",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "fwd-nightclub-2026-09-11-customer-appreciation-night",
+      "title": "CUSTOMER APPRECIATION NIGHT",
+      "venueId": "fwd-nightclub",
+      "date": "2026-09-11",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "tag": "NIGHT",
+      "performers": [
+        {
+          "name": "CUSTOMER APPRECIATION NIGHT",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CUSTOMER-APPRECIATION-NIGHT?eid=EVE-QZ5Y7Z",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/CUSTOMER-APPRECIATION-NIGHT?eid=EVE-QZ5Y7Z",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -4230,11 +3896,41 @@
       "source": "manual",
       "manual": true,
       "id": "riffs-2026-09-11-open-decks",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Guggy, Noah, Rachel Shortt",
+      "performers": [
+        {
+          "name": "Guggy",
+          "headliner": true
+        },
+        {
+          "name": "Noah",
+          "headliner": false
+        },
+        {
+          "name": "Rachel Shortt",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-11-guggy",
       "genres": []
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-09-11",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-11",
       "time": null,
@@ -4245,7 +3941,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-11",
@@ -6127,7 +5825,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-12-dj-kishka",
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Doinks After Dark w/ DJ Outdoor Cat, Vegan Cannibals",
@@ -7309,8 +7009,28 @@
       ]
     },
     {
+      "title": "C&C Acoustic Jazz Duo",
+      "performers": [
+        {
+          "name": "C&C Acoustic Jazz Duo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-12-c-c-acoustic-jazz-duo",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-12",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-12",
       "time": null,
@@ -7321,7 +7041,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-12",
@@ -7454,11 +7176,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-09-13-elvis-costello-the-imposters-with-charlie-sexton",
+      "id": "the-agora-2026-09-13-2000-elvis-costello-the-imposters-with-charlie-sexton",
       "title": "Elvis Costello & The Imposters with Charlie Sexton",
       "venueId": "the-agora",
       "date": "2026-09-13",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -7467,8 +7189,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1472187",
-      "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets",
+      "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -7496,7 +7218,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "event",
+        "dj"
       ]
     },
     {
@@ -7749,6 +7472,28 @@
       ]
     },
     {
+      "id": "winchester-music-tavern-2026-09-13-ray-flanagan-brunch",
+      "title": "Ray Flanagan Brunch",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-09-13",
+      "time": "12:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Ray Flanagan Brunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/ray-flanagan-brunch/",
+      "ticketUrl": "https://www.ticketweb.com/event/ray-flanagan-brunch-the-winchester-tickets/14307824",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "event"
+      ]
+    },
+    {
       "id": "fwd-nightclub-2026-09-13-dawg-pound-dog-swim-cleveland-market",
       "title": "DAWG POUND: DOG SWIM (Cleveland Market)",
       "venueId": "fwd-nightclub",
@@ -7888,6 +7633,28 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "welcome-to-the-farm-booking_01M1PSHKCZZP9XJ2WT3JFAR505",
+      "title": "Quinn Hoffman",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-09-13",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Quinn Hoffman",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false,
+      "genres": [
+        "country"
+      ]
     },
     {
       "id": "hilarities-2026-09-13-138029",
@@ -8259,10 +8026,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-09-13",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-09-13",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -8270,7 +8037,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-09-13",
@@ -8540,10 +8309,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-09-14",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-09-14",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -8792,28 +8561,6 @@
       "genres": []
     },
     {
-      "id": "foundry-concert-club-2026-09-15-personality-crisis-aka-cle-punk-night-2",
-      "title": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-15",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "PERSONALITY CRISIS AKA CLE PUNK NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/personality-crisis-aka-cle-punk-night-2/",
-      "ticketUrl": "https://www.ticketweb.com/event/personality-crisis-aka-cle-punk-the-foundry-tickets/15044383?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "punk-ska"
-      ]
-    },
-    {
       "id": "foundry-concert-club-2026-09-15-book-banter-brigade-3",
       "title": "Book Banter Brigade",
       "venueId": "foundry-concert-club",
@@ -9037,7 +8784,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-09-15",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -9864,10 +9611,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-09-16",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-09-16",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -9995,11 +9742,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-09-17-bikini-kill",
+      "id": "the-agora-2026-09-17-2000-bikini-kill",
       "title": "Bikini Kill w/ Ganser",
       "venueId": "the-agora",
       "date": "2026-09-17",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -10012,8 +9759,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1294408",
-      "ticketUrl": "https://www.axs.com/events/1294408/bikini-kill-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1294408/bikini-kill-tickets",
+      "ticketUrl": "https://www.axs.com/events/1294408/bikini-kill-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -10801,7 +10548,7 @@
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
       "date": "2026-09-17",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -10899,7 +10646,7 @@
     },
     {
       "id": "beachland-ballroom-2026-09-18-michelle-shocked",
-      "title": "Michelle Shocked with Charlie Mosbrook",
+      "title": "Michelle Shocked",
       "venueId": "beachland-ballroom",
       "date": "2026-09-18",
       "time": "20:00",
@@ -10909,19 +10656,13 @@
         {
           "name": "Michelle Shocked",
           "headliner": true
-        },
-        {
-          "name": "Charlie Mosbrook",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/michelle-shocked-18-sep",
       "ticketUrl": "https://www.beachlandballroom.com/shows/michelle-shocked-18-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "folk-roots"
-      ]
+      "genres": []
     },
     {
       "id": "rockin-on-the-river-2026-09-18-bad-juju",
@@ -11649,7 +11390,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "jenks-1929-2026-09-18-allday-cuyahoga-falls-oktoberfest",
@@ -12018,8 +11761,36 @@
       "genres": []
     },
     {
+      "title": "Fragments",
+      "performers": [
+        {
+          "name": "Fragments",
+          "headliner": true
+        },
+        {
+          "name": "accubats",
+          "headliner": false
+        },
+        {
+          "name": "Greg Smith",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-18",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-18-fragments",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-09-18",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-18",
       "time": null,
@@ -12030,7 +11801,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-18",
@@ -12429,6 +12202,27 @@
       ],
       "eventUrl": "https://thewinchestermusictavern.com/tm-event/dark-wave-dance-cave-16/",
       "ticketUrl": "https://www.ticketweb.com/event/dark-wave-dance-cave-the-winchester-tickets/14302184",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "fwd-nightclub-2026-09-19-unforgettable-season-11-closing-party-with-french-montana",
+      "title": "\"UNFORGETTABLE\" SEASON 11 CLOSING PARTY WITH FRENCH MONTANA",
+      "venueId": "fwd-nightclub",
+      "date": "2026-09-19",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "tag": "NIGHT",
+      "performers": [
+        {
+          "name": "\"UNFORGETTABLE\" SEASON 11 CLOSING PARTY WITH FRENCH MONTANA",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/%22UNFORGETTABLE%22-SEASON-11-CLOSING-PARTY-WITH-FRENCH-MONTANA?eid=EVE-9NAWFP",
+      "ticketUrl": "https://speakeasygo.com/FWD-Day-%2B-Nightclub/%22UNFORGETTABLE%22-SEASON-11-CLOSING-PARTY-WITH-FRENCH-MONTANA?eid=EVE-9NAWFP",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -12899,7 +12693,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "jolly-scholar-2026-09-19-3367587",
@@ -13049,7 +12845,7 @@
           "headliner": false
         },
         {
-          "name": "Skumbag",
+          "name": "Dirty Lines",
           "headliner": false
         }
       ],
@@ -13304,7 +13100,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Punk",
@@ -13830,8 +13628,28 @@
       ]
     },
     {
+      "title": "Benefit Allyssa Allison",
+      "performers": [
+        {
+          "name": "Allyssa Allison",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-19",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-19-allyssa-allison",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-19",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-19",
       "time": null,
@@ -13842,7 +13660,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-19",
@@ -14239,6 +14059,26 @@
       "genres": [
         "theater"
       ]
+    },
+    {
+      "id": "foundry-concert-club-2026-09-20-levels-eremition",
+      "title": "Levels, Eremition",
+      "venueId": "foundry-concert-club",
+      "date": "2026-09-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Levels, Eremition",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/levels-eremition/",
+      "ticketUrl": "https://www.ticketweb.com/event/levels-eremition-the-foundry-tickets/14309004?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
     },
     {
       "id": "hilarities-2026-09-20-140702",
@@ -14683,10 +14523,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-09-20",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-09-20",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -14694,7 +14534,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-09-20",
@@ -14922,29 +14764,6 @@
       "genres": []
     },
     {
-      "id": "foundry-concert-club-2026-09-21-nerd-night",
-      "title": "Nerd Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-21",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Nerd Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/nerd-night/",
-      "ticketUrl": "https://www.ticketweb.com/event/nerd-night-the-foundry-tickets/15044363?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event",
-        "trivia-games"
-      ]
-    },
-    {
       "id": "foundry-concert-club-2026-09-21-nerd-night-2",
       "title": "Nerd Night",
       "venueId": "foundry-concert-club",
@@ -15115,10 +14934,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-09-21",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-09-21",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -15405,7 +15224,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "bside-2026-09-22-lyrical-rhythms-14",
@@ -15492,7 +15313,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-09-22",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -16111,10 +15932,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-09-23",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-09-23",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -16943,10 +16764,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-09-24",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-09-24",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -17026,11 +16847,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-09-25-pennywise",
+      "id": "the-agora-2026-09-25-1930-pennywise",
       "title": "Pennywise w/ Angel Du$t, H2O, Murphy's Law",
       "venueId": "the-agora",
       "date": "2026-09-25",
-      "time": null,
+      "time": "19:30",
       "doors": "18:30",
       "price": null,
       "performers": [
@@ -17051,8 +16872,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1497545",
-      "ticketUrl": "https://www.axs.com/events/1497545/pennywise-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1497545/pennywise-tickets",
+      "ticketUrl": "https://www.axs.com/events/1497545/pennywise-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -17141,26 +16962,6 @@
       "genres": []
     },
     {
-      "id": "mahalls-2026-09-25-i-love-r-b-party",
-      "title": "I Love R&B Party",
-      "venueId": "mahalls",
-      "date": "2026-09-25",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "I Love R&B Party",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/i-love-rb-party/",
-      "ticketUrl": "https://link.dice.fm/U87c06489d00",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "mahalls-2026-09-25-diva-university-an-all-out-2010-s-dance-party",
       "title": "Diva University: an all out 2010’s dance party",
       "venueId": "mahalls",
@@ -17176,6 +16977,26 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/diva-university-an-all-out-2010s-dance-party/",
       "ticketUrl": "https://link.dice.fm/yafb39ec539d",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "mahalls-2026-09-25-i-love-r-b-party",
+      "title": "I Love R&B Party",
+      "venueId": "mahalls",
+      "date": "2026-09-25",
+      "time": "20:00",
+      "doors": "20:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "I Love R&B Party",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/i-love-rb-party/",
+      "ticketUrl": "https://link.dice.fm/U87c06489d00",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -18351,8 +18172,28 @@
       "genres": []
     },
     {
+      "title": "Breakwater Band",
+      "performers": [
+        {
+          "name": "Breakwater Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-25-breakwater-band",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-09-25",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-25",
       "time": null,
@@ -18363,7 +18204,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-09-25",
@@ -18941,6 +18784,26 @@
       ],
       "eventUrl": "https://www.playhousesquare.org/events/detail/gregory-porter-1",
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=B0D604C7-F94D-4676-9760-3E13F67FA33D",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "foundry-concert-club-2026-09-26-bratty-billionaire-club",
+      "title": "BRATTY BILLIONAIRE CLUB",
+      "venueId": "foundry-concert-club",
+      "date": "2026-09-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "BRATTY BILLIONAIRE CLUB",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/bratty-billionaire-club/",
+      "ticketUrl": "https://www.ticketweb.com/event/bratty-billionaire-club-the-foundry-tickets/14309154?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -19954,8 +19817,32 @@
       "genres": []
     },
     {
+      "title": "Lords of the Highway",
+      "performers": [
+        {
+          "name": "Lords of the Highway",
+          "headliner": true
+        },
+        {
+          "name": "FFF",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-09-26-lords-of-the-highway",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-sat-2026-09-26",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-09-26",
       "time": null,
@@ -19966,7 +19853,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-09-26",
@@ -20107,11 +19996,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-09-27-jim-henson-s-labyrinth-in-concert-40th-anniversary",
+      "id": "the-agora-2026-09-27-1930-jim-henson-s-labyrinth-in-concert-40th-anniversary",
       "title": "Jim Henson’s Labyrinth: In Concert 40th Anniversary",
       "venueId": "the-agora",
       "date": "2026-09-27",
-      "time": null,
+      "time": "19:30",
       "doors": "18:30",
       "price": null,
       "performers": [
@@ -20120,8 +20009,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1285994",
-      "ticketUrl": "https://www.axs.com/events/1285994/jim-hensons-labyrinth-in-concert-40th-anniversary-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1285994/jim-hensons-labyrinth-in-concert-40th-anniversary-tickets",
+      "ticketUrl": "https://www.axs.com/events/1285994/jim-hensons-labyrinth-in-concert-40th-anniversary-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -20417,6 +20306,29 @@
       "genres": []
     },
     {
+      "id": "welcome-to-the-farm-booking_01M2159XV7KEBDYDTNVSS65VC7",
+      "title": "Country Redford",
+      "venueId": "welcome-to-the-farm",
+      "date": "2026-09-27",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Country Redford",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "beatgig",
+      "manual": false,
+      "genres": [
+        "country",
+        "covers"
+      ]
+    },
+    {
       "id": "hilarities-2026-09-27-1800-139554",
       "title": "Noel Miller",
       "venueId": "hilarities",
@@ -20564,6 +20476,28 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "no-class-2026-09-27-xcsb-metal-djs",
+      "title": "XCSB METAL DJ'S",
+      "venueId": "no-class",
+      "date": "2026-09-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "XCSB METAL DJ'S",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/xcsb-metal-djs",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-27-oktoberfest-at-forest-city-brewery",
@@ -20848,10 +20782,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-09-27",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-09-27",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -20859,7 +20793,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-09-27",
@@ -21107,10 +21043,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-09-28",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-09-28",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -21210,6 +21146,26 @@
       "genres": []
     },
     {
+      "id": "mahalls-2026-09-29-noah-rinker",
+      "title": "Noah Rinker",
+      "venueId": "mahalls",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "Noah Rinker",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
+      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "mahalls-2026-09-29-the-holdup",
       "title": "The Holdup",
       "venueId": "mahalls",
@@ -21233,26 +21189,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/the-holdup/",
       "ticketUrl": "https://link.dice.fm/v75b6b85d2b0",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-09-29-noah-rinker",
-      "title": "Noah Rinker",
-      "venueId": "mahalls",
-      "date": "2026-09-29",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$22.00",
-      "performers": [
-        {
-          "name": "Noah Rinker",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/noah-rinker/",
-      "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -21391,7 +21327,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-09-29",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -21865,6 +21801,26 @@
       ]
     },
     {
+      "id": "no-class-2026-09-30-october-cocktail-menu-drop-2026",
+      "title": "OCTOBER COCKTAIL MENU DROP",
+      "venueId": "no-class",
+      "date": "2026-09-30",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The return of the No Class October cocktail menu!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/october-cocktail-menu-drop-2026",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "forest-city-brewery-2026-09-30-line-dancing-lessons-with-laura",
       "title": "Line Dancing Lessons with Laura",
       "venueId": "forest-city-brewery",
@@ -21890,6 +21846,23 @@
       "performers": [],
       "eventUrl": "https://grindstonetaphouse.com/events",
       "ticketUrl": "https://grindstonetaphouse.com/events",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
+      "id": "reithoffers-2026-09-30-trivia-night",
+      "title": "Trivia Night",
+      "venueId": "reithoffers",
+      "date": "2026-09-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-4",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-4",
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -22026,10 +21999,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-09-30",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-09-30",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -22126,11 +22099,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-01-sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter",
+      "id": "the-agora-2026-10-01-2030-sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter",
       "title": "Sex Pistols (Steve Jones, Paul Cook, Glen Matlock) featuring Frank Carter w/ Bad Nerves",
       "venueId": "the-agora",
       "date": "2026-10-01",
-      "time": null,
+      "time": "20:30",
       "doors": "19:30",
       "price": null,
       "performers": [
@@ -22143,8 +22116,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/909207",
-      "ticketUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets",
+      "ticketUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -22501,7 +22474,11 @@
           "headliner": true
         },
         {
-          "name": "+ more TBA",
+          "name": "Skeleton Drive",
+          "headliner": false
+        },
+        {
+          "name": "This Pestilent Existence",
           "headliner": false
         }
       ],
@@ -22535,8 +22512,8 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-01-harold-night",
-      "title": "Harold Night",
+      "id": "imposters-theater-2026-10-01-harold-night-hear-me-out-new-terminator",
+      "title": "Harold Night - Hear Me Out + New Terminator",
       "venueId": "imposters-theater",
       "date": "2026-10-01",
       "time": "19:00",
@@ -22615,7 +22592,7 @@
       "title": "Bluegrass Jam (hosted by David Mayfield)",
       "venueId": "spotlight-cle",
       "date": "2026-10-01",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -23595,7 +23572,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-10-02",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-02",
       "time": null,
@@ -23606,7 +23583,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-02",
@@ -23759,8 +23738,8 @@
       "genres": []
     },
     {
-      "id": "beachland-ballroom-2026-10-03-slothrust",
-      "title": "Slothrust with The Velveteers",
+      "id": "beachland-ballroom-2026-10-03-slothrust-pretty-pretty-awful",
+      "title": "Slothrust, Pretty Pretty Awful with The Velveteers",
       "venueId": "beachland-ballroom",
       "date": "2026-10-03",
       "time": "20:00",
@@ -23768,7 +23747,7 @@
       "price": null,
       "performers": [
         {
-          "name": "Slothrust",
+          "name": "Slothrust, Pretty Pretty Awful",
           "headliner": true
         },
         {
@@ -24143,7 +24122,7 @@
         }
       ],
       "eventUrl": "https://hilarities.com/events/130718",
-      "ticketUrl": "https://hilarities.com/shows/357190",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -24217,6 +24196,27 @@
       ]
     },
     {
+      "id": "treelawn-social-club-2026-10-03-14308424",
+      "title": "Smooth Sailing, featuring Randie Shane",
+      "venueId": "treelawn",
+      "room": "Treelawn Social Club",
+      "date": "2026-10-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Smooth Sailing, featuring Randie Shane",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.ticketweb.com/event/smooth-sailing-featuring-randie-shane-treelawn-social-club-tickets/14308424",
+      "ticketUrl": "https://www.ticketweb.com/event/smooth-sailing-featuring-randie-shane-treelawn-social-club-tickets/14308424",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "hofbrauhaus-2026-10-03-live-music-patty-c-the-guys-er62a",
       "title": "Live Music: Patty C & The Guys",
       "venueId": "hofbrauhaus-cleveland",
@@ -24260,7 +24260,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "bside-2026-10-03-karenpalooza-presents-steve-austin",
@@ -24278,6 +24280,98 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/karenpalooza-presents-steve-austin/",
       "ticketUrl": "https://www.ticketweb.com/event/karenpalooza-presents-steve-austin-b-side-lounge-tickets/14298594?pl=bside",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "no-class-2026-10-03-CLE VS AKR RAP BATTLE",
+      "title": "CLE VS AKR RAP BATTLE",
+      "venueId": "no-class",
+      "date": "2026-10-03",
+      "time": "19:30",
+      "doors": "19:30",
+      "price": "$15 ADV / $20 DOS",
+      "performers": [
+        {
+          "name": "GMALONE",
+          "headliner": true
+        },
+        {
+          "name": "ANION DON",
+          "headliner": false
+        },
+        {
+          "name": "MULAJAY",
+          "headliner": false
+        },
+        {
+          "name": "JOHNNY BLAZE",
+          "headliner": false
+        },
+        {
+          "name": "ROCKSTARKIDD",
+          "headliner": false
+        },
+        {
+          "name": "SHADESTL",
+          "headliner": false
+        },
+        {
+          "name": "KYLOWRLD",
+          "headliner": false
+        },
+        {
+          "name": "FACE DREXLER II",
+          "headliner": false
+        },
+        {
+          "name": "WHITEBOYPHE",
+          "headliner": false
+        },
+        {
+          "name": "JOSH, THE IDIOTIC",
+          "headliner": false
+        },
+        {
+          "name": "DIMII",
+          "headliner": false
+        },
+        {
+          "name": "RICO SAVAGE",
+          "headliner": false
+        },
+        {
+          "name": "$TONY 1K",
+          "headliner": false
+        },
+        {
+          "name": "X1500VON",
+          "headliner": false
+        },
+        {
+          "name": "GROOVY E",
+          "headliner": false
+        },
+        {
+          "name": "MOTARDS",
+          "headliner": false
+        },
+        {
+          "name": "NEFFF",
+          "headliner": false
+        },
+        {
+          "name": "JACOB GOOD VIBES",
+          "headliner": false
+        },
+        {
+          "name": "DANTE PLAYER",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/CLE VS AKR RAP BATTLE",
+      "ticketUrl": "https://ticketnut.com/public/stage_events/1485",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -24339,6 +24433,40 @@
       "performers": [],
       "eventUrl": "https://www.imposterstheater.com/schedule/imposters-improv-play-lab-100326",
       "ticketUrl": "https://www.imposterstheater.com/schedule/imposters-improv-play-lab-100326",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "imposters-theater-2026-10-03-improv-elective-short-form-class",
+      "title": "Improv Elective: Short Form Class",
+      "venueId": "imposters-theater",
+      "date": "2026-10-03",
+      "time": "15:30",
+      "doors": null,
+      "price": "from $0.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/improv-elective-short-form-class-100326",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/improv-elective-short-form-class-100326",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "imposters-theater-2026-10-03-one-shot-a-live-tabletop-role-playing-game",
+      "title": "One Shot: A Live Tabletop Role Playing Game",
+      "venueId": "imposters-theater",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "doors": null,
+      "price": "$10.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/one-shot-100326",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/one-shot-100326",
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -24677,7 +24805,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-10-03",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-03",
       "time": null,
@@ -24688,7 +24816,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-03",
@@ -24793,11 +24923,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-04-cortex",
+      "id": "the-agora-2026-10-04-1900-cortex",
       "title": "Cortex w/ Adrian Younge, J Rocc",
       "venueId": "the-agora",
       "date": "2026-10-04",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -24814,8 +24944,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1513302",
-      "ticketUrl": "https://www.axs.com/events/1513302/cortex-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1513302/cortex-tickets",
+      "ticketUrl": "https://www.axs.com/events/1513302/cortex-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -25070,6 +25200,26 @@
       ]
     },
     {
+      "id": "no-class-2026-10-04-jazz-rats-10-4-26",
+      "title": "JAZZ RATS",
+      "venueId": "no-class",
+      "date": "2026-10-04",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "JAZZ RATS",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/jazz-rats-10-4-26",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-69df8c4ab630fea04bc7132e",
       "title": "Dortmund, Germany",
       "venueId": "cleveland-orchestra",
@@ -25090,23 +25240,6 @@
       "manual": false,
       "genres": [
         "classical"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-10-04-improv-grad-night-level-2",
-      "title": "Improv Grad Night: Level 2",
-      "venueId": "imposters-theater",
-      "date": "2026-10-04",
-      "time": "18:00",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/improv-grad-night-100426",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/improv-grad-night-100426",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
       ]
     },
     {
@@ -25191,10 +25324,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-10-04",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-10-04",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -25202,7 +25335,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-10-04",
@@ -25267,11 +25402,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-05-taste-of-chaos",
+      "id": "the-agora-2026-10-05-1830-taste-of-chaos",
       "title": "Taste of Chaos w/ Hollywood Undead, In This Moment, Vana, Melrose Avenue",
       "venueId": "the-agora",
       "date": "2026-10-05",
-      "time": null,
+      "time": "18:30",
       "doors": "17:30",
       "price": null,
       "performers": [
@@ -25296,8 +25431,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1519989",
-      "ticketUrl": "https://www.axs.com/events/1519989/taste-of-chaos-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1519989/taste-of-chaos-tickets",
+      "ticketUrl": "https://www.axs.com/events/1519989/taste-of-chaos-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -25500,10 +25635,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-10-05",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-10-05",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -25580,7 +25715,7 @@
     },
     {
       "id": "beachland-ballroom-2026-10-06-cardinal-bloom",
-      "title": "Cardinal Bloom with Holdfast.",
+      "title": "Cardinal Bloom",
       "venueId": "beachland-ballroom",
       "date": "2026-10-06",
       "time": "20:00",
@@ -25590,10 +25725,6 @@
         {
           "name": "Cardinal Bloom",
           "headliner": true
-        },
-        {
-          "name": "Holdfast.",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/cardinal-bloom-06-oct",
@@ -25621,6 +25752,28 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "bop-stop-2026-10-06-akira-tana-and-friends-from-osaka-bop-stop",
+      "title": "AKIRA TANA and Friends From Osaka",
+      "venueId": "bop-stop",
+      "date": "2026-10-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "AKIRA TANA and Friends From Osaka",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/10/06/akira-tana-and-friends-from-osaka-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/10/06/akira-tana-and-friends-from-osaka-bop-stop",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "music-box-2026-10-06-martin-sexton-oct6",
@@ -25755,11 +25908,28 @@
       ]
     },
     {
+      "id": "imposters-theater-2026-10-06-comedy-writing-workout-drop-in-writing-workshop",
+      "title": "Comedy Writing Workout - Drop-In Writing Workshop",
+      "venueId": "imposters-theater",
+      "date": "2026-10-06",
+      "time": "18:30",
+      "doors": null,
+      "price": "from $15.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/comedy-writing-workout-drop-in-writing-workshop-100626",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/comedy-writing-workout-drop-in-writing-workshop-100626",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
       "id": "spotlight-comedy-open-mic-2026-10-06",
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-10-06",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -25826,11 +25996,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-07-interpol",
+      "id": "the-agora-2026-10-07-2000-interpol",
       "title": "Interpol w/ DIIV",
       "venueId": "the-agora",
       "date": "2026-10-07",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -25843,8 +26013,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1428035",
-      "ticketUrl": "https://www.axs.com/events/1428035/interpol-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1428035/interpol-tickets",
+      "ticketUrl": "https://www.axs.com/events/1428035/interpol-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -26217,23 +26387,6 @@
       "genres": []
     },
     {
-      "id": "imposters-theater-2026-10-07-improv-level-2",
-      "title": "Improv Level 2",
-      "venueId": "imposters-theater",
-      "date": "2026-10-07",
-      "time": "18:00",
-      "doors": null,
-      "price": "$199.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/improv-level-2-100726",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/improv-level-2-100726",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
       "id": "imposters-theater-2026-10-07-the-wednesday-jam",
       "title": "The Wednesday Jam",
       "venueId": "imposters-theater",
@@ -26411,10 +26564,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-10-07",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-10-07",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -26626,6 +26779,102 @@
       "genres": []
     },
     {
+      "id": "playhouse-square-2026-10-08-2000-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-10-08",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "magic"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-08-1930-the-winters-tale",
+      "title": "The Winter's Tale",
+      "venueId": "playhouse-square",
+      "date": "2026-10-08",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "Hanna Theatre",
+      "presentedBy": "Great Lakes Theater",
+      "performers": [
+        {
+          "name": "The Winter's Tale",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-winters-tale",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BFBE68E3-A699-4655-9C09-6D4F36CCDE37",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "theater"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-08-1930-the-whos-tommy",
+      "title": "THE WHO’S TOMMY",
+      "venueId": "playhouse-square",
+      "date": "2026-10-08",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "Connor Palace",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "THE WHO’S TOMMY",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-whos-tommy",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=88C21EC6-33CA-413F-ABE5-38BFDADCA87B",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "playhouse-square-2026-10-08-1930-pocatello",
+      "title": "Pocatello",
+      "venueId": "playhouse-square",
+      "date": "2026-10-08",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "The Helen",
+      "presentedBy": "Cleveland Play House",
+      "performers": [
+        {
+          "name": "Pocatello",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/pocatello",
+      "ticketUrl": "https://tickets.clevelandplayhouse.com/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=40FC9289-9CDC-43AD-B296-2F26CB3E5E20",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "foundry-concert-club-2026-10-08-exitwounds-nailed-shut-ma",
       "title": "Exitwounds, Nailed Shut MA",
       "venueId": "foundry-concert-club",
@@ -26754,8 +27003,8 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-08-harold-night",
-      "title": "Harold Night",
+      "id": "imposters-theater-2026-10-08-harold-night-diet-steve-fuelperks",
+      "title": "Harold Night - Diet Steve + fuelperks!",
       "venueId": "imposters-theater",
       "date": "2026-10-08",
       "time": "19:00",
@@ -26844,10 +27093,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-10-08",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-10-08",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -26907,11 +27156,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-09-sugar",
+      "id": "the-agora-2026-10-09-2000-sugar",
       "title": "SUGAR",
       "venueId": "the-agora",
       "date": "2026-10-09",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -26920,8 +27169,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1300881",
-      "ticketUrl": "https://www.axs.com/events/1300881/sugar-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1300881/sugar-tickets",
+      "ticketUrl": "https://www.axs.com/events/1300881/sugar-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -26952,7 +27201,7 @@
     },
     {
       "id": "beachland-ballroom-2026-10-09-open-mike-eagle",
-      "title": "Open Mike Eagle",
+      "title": "Open Mike Eagle with Me:You",
       "venueId": "beachland-ballroom",
       "date": "2026-10-09",
       "time": "20:00",
@@ -26962,6 +27211,10 @@
         {
           "name": "Open Mike Eagle",
           "headliner": true
+        },
+        {
+          "name": "Me:You",
+          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/open-mike-eagle-09-oct",
@@ -27085,6 +27338,150 @@
       "genres": [
         "rock",
         "covers"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-09-2000-the-magicians-table",
+      "title": "The Magicians Table",
+      "venueId": "playhouse-square",
+      "date": "2026-10-09",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Cibrèo Privato",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "The Magicians Table",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "magic"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-09-1930-the-winters-tale",
+      "title": "The Winter's Tale",
+      "venueId": "playhouse-square",
+      "date": "2026-10-09",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "Hanna Theatre",
+      "presentedBy": "Great Lakes Theater",
+      "performers": [
+        {
+          "name": "The Winter's Tale",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-winters-tale",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BFBE68E3-A699-4655-9C09-6D4F36CCDE37",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "theater"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-09-2000-cesears-forum-presents-conversations-after-a-burial",
+      "title": "Cesear's Forum presents: Conversations After A Burial",
+      "venueId": "playhouse-square",
+      "date": "2026-10-09",
+      "endDate": null,
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "room": "Kennedy's Cabaret",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "Cesear's Forum presents: Conversations After A Burial",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/cesears-forum-presents-conversations-after-a-burial",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A9D0A863-D0AE-4AC6-A25D-950354C41313",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "theater"
+      ]
+    },
+    {
+      "id": "playhouse-square-2026-10-09-1930-the-whos-tommy",
+      "title": "THE WHO’S TOMMY",
+      "venueId": "playhouse-square",
+      "date": "2026-10-09",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "Connor Palace",
+      "presentedBy": null,
+      "performers": [
+        {
+          "name": "THE WHO’S TOMMY",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/the-whos-tommy",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=88C21EC6-33CA-413F-ABE5-38BFDADCA87B",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "playhouse-square-2026-10-09-1930-pocatello",
+      "title": "Pocatello",
+      "venueId": "playhouse-square",
+      "date": "2026-10-09",
+      "endDate": null,
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "room": "The Helen",
+      "presentedBy": "Cleveland Play House",
+      "performers": [
+        {
+          "name": "Pocatello",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/pocatello",
+      "ticketUrl": "https://tickets.clevelandplayhouse.com/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=40FC9289-9CDC-43AD-B296-2F26CB3E5E20",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "foundry-concert-club-2026-10-09-ian-mcconnell",
+      "title": "Ian McConnell",
+      "venueId": "foundry-concert-club",
+      "date": "2026-10-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Ian McConnell",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/ian-mcconnell/",
+      "ticketUrl": "https://www.ticketweb.com/event/ian-mcconnell-the-foundry-tickets/14230194?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy",
+        "singer-songwriter"
       ]
     },
     {
@@ -27441,7 +27838,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-10-09",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-09",
       "time": null,
@@ -27452,7 +27849,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-09",
@@ -27581,11 +27980,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-10-lenny-pearce",
+      "id": "the-agora-2026-10-10-1700-lenny-pearce",
       "title": "Lenny Pearce",
       "venueId": "the-agora",
       "date": "2026-10-10",
-      "time": null,
+      "time": "17:00",
       "doors": "16:00",
       "price": null,
       "performers": [
@@ -27594,8 +27993,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1486968",
-      "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets",
+      "ticketUrl": "https://www.axs.com/events/1486968/lenny-pearce-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -28474,7 +28873,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-10-10",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-10",
       "time": null,
@@ -28485,7 +28884,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-10",
@@ -28610,11 +29011,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-11-pat-metheny",
+      "id": "the-agora-2026-10-11-1900-pat-metheny",
       "title": "Pat Metheny",
       "venueId": "the-agora",
       "date": "2026-10-11",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -28623,8 +29024,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1480944",
-      "ticketUrl": "https://www.axs.com/events/1480944/pat-metheny-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1480944/pat-metheny-tickets",
+      "ticketUrl": "https://www.axs.com/events/1480944/pat-metheny-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -28976,6 +29377,23 @@
       ]
     },
     {
+      "id": "imposters-theater-2026-10-11-mental-illness-friends",
+      "title": "Mental Illness & Friends",
+      "venueId": "imposters-theater",
+      "date": "2026-10-11",
+      "time": "18:00",
+      "doors": null,
+      "price": "$10.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/mental-illness-friends-101126",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/mental-illness-friends-101126",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
       "id": "imposters-theater-2026-10-11-the-forms-show",
       "title": "The Forms Show!",
       "venueId": "imposters-theater",
@@ -29033,10 +29451,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-10-11",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-10-11",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -29044,7 +29462,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-10-11",
@@ -29203,21 +29623,24 @@
       "genres": []
     },
     {
-      "id": "imposters-theater-2026-10-12-improv-level-3",
-      "title": "Improv Level 3",
-      "venueId": "imposters-theater",
+      "id": "no-class-2026-10-12-mercury-stardust-book-signing",
+      "title": "MERCURY STARDUST BOOK SIGNING",
+      "venueId": "no-class",
       "date": "2026-10-12",
-      "time": "18:30",
-      "doors": null,
-      "price": "$199.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/improv-level-3-101226",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/improv-level-3-101226",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$15",
+      "performers": [
+        {
+          "name": "Mercury Stardust, the Trans Handy Ma'am, will be at No Class signing her new book \"Lost and Found - A Compassionate Guide to Home Ownership\". Preorder your copy from our partner Visible Voice at THIS LINK. Stick around after the signing for live performances from bands TBA! More details and schedule forthcoming.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/mercury-stardust-book-signing",
+      "ticketUrl": "https://www.visiblevoicebooks.com/calendar-of-events/lost-found",
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "comedy"
-      ]
+      "genres": []
     },
     {
       "id": "visible-voice-books-2026-10-12-lost-found",
@@ -29261,10 +29684,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-10-12",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-10-12",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -29567,7 +29990,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-10-13",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -29664,6 +30087,34 @@
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct",
       "ticketUrl": "https://www.beachlandballroom.com/shows/the-linda-lindas-14-oct#tickets",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "happy-dog-2026-10-14-sick-thoughts",
+      "title": "Sick Thoughts / Piss Me Off / Vital Stress",
+      "venueId": "happy-dog",
+      "date": "2026-10-14",
+      "time": "21:00",
+      "doors": "20:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Sick Thoughts",
+          "headliner": true
+        },
+        {
+          "name": "Piss Me Off",
+          "headliner": false
+        },
+        {
+          "name": "Vital Stress",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://app.opendate.io/e/sick-thoughts-piss-me-off-vital-stress-october-14-2026-749622",
+      "ticketUrl": "https://app.opendate.io/e/sick-thoughts-piss-me-off-vital-stress-october-14-2026-749622",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -29918,6 +30369,26 @@
       ]
     },
     {
+      "id": "no-class-2026-10-14-hallo-whoop-whoop-wednesday",
+      "title": "HALLO WHOOP WHOOP WEDNESDAY",
+      "venueId": "no-class",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "WHOOP WHOOP WEDNESDAY - Juggalo Night returns to No Class. Faygo cocktail specials at the bar & ICP jams bumping all night.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/hallo-whoop-whoop-wednesday",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "imposters-theater-2026-10-14-improv-level-4",
       "title": "Improv Level 4",
       "venueId": "imposters-theater",
@@ -29935,8 +30406,8 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-14-standup-level-basics-grad-show",
-      "title": "Standup Level Basics Grad Show",
+      "id": "imposters-theater-2026-10-14-standup-level-1-grad-show",
+      "title": "Standup Level 1 Grad Show",
       "venueId": "imposters-theater",
       "date": "2026-10-14",
       "time": "19:30",
@@ -30049,10 +30520,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-10-14",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-10-14",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -30153,11 +30624,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-15-w-a-s-p",
+      "id": "the-agora-2026-10-15-2000-w-a-s-p",
       "title": "W.A.S.P. w/ KK’s Priest",
       "venueId": "the-agora",
       "date": "2026-10-15",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -30170,8 +30641,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1317886",
-      "ticketUrl": "https://www.axs.com/events/1317886/wasp-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1317886/wasp-tickets",
+      "ticketUrl": "https://www.axs.com/events/1317886/wasp-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -30245,6 +30716,27 @@
       "genres": [
         "jazz"
       ]
+    },
+    {
+      "id": "music-box-2026-10-15-duprees-dead-band-oct15",
+      "title": "Dupree’s Dead Band",
+      "venueId": "music-box",
+      "date": "2026-10-15",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Dupree’s Dead Band",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/duprees-dead-band-oct15/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62342",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
     },
     {
       "id": "music-box-2026-10-15-the-vindys-oct15",
@@ -30396,6 +30888,26 @@
       "genres": []
     },
     {
+      "id": "no-class-2026-10-15-find-your-boo-singles-night-77skb",
+      "title": "FIND YOUR BOO! SINGLES NIGHT",
+      "venueId": "no-class",
+      "date": "2026-10-15",
+      "time": "19:00",
+      "doors": "18:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Cuffing season is upon us, come find a new boo just in time for Halloween adventures at this spooky singles night.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/find-your-boo-singles-night-77skb",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-69df8e2a25effffd0e352a04",
       "title": "Vienna, Austria",
       "venueId": "cleveland-orchestra",
@@ -30419,8 +30931,8 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-15-harold-night",
-      "title": "Harold Night",
+      "id": "imposters-theater-2026-10-15-harold-night-hear-me-out-new-terminator",
+      "title": "Harold Night - Hear Me Out + New Terminator",
       "venueId": "imposters-theater",
       "date": "2026-10-15",
       "time": "19:00",
@@ -30519,7 +31031,7 @@
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
       "date": "2026-10-15",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -31046,6 +31558,42 @@
       "genres": []
     },
     {
+      "id": "no-class-2026-10-16-plaguewielder-10-16-26",
+      "title": "PLAGUEWIELDER",
+      "venueId": "no-class",
+      "date": "2026-10-16",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$15",
+      "performers": [
+        {
+          "name": "Plaguewielder",
+          "headliner": true
+        },
+        {
+          "name": "Storm Reaver",
+          "headliner": false
+        },
+        {
+          "name": "Temple Witch",
+          "headliner": false
+        },
+        {
+          "name": "Cheap Heat",
+          "headliner": false
+        },
+        {
+          "name": "Orions Sword",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/plaguewielder-10-16-26",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a74923ea7bba75093171ebe",
       "title": "Jazz at Lincoln Center Orchestra with Wynton Marsalis",
       "venueId": "cleveland-orchestra",
@@ -31318,7 +31866,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-10-16",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-16",
       "time": null,
@@ -31329,7 +31877,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-16",
@@ -31458,11 +32008,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-17-movements",
+      "id": "the-agora-2026-10-17-1930-movements",
       "title": "Movements w/ Balance and Composure, Midrift, Niis",
       "venueId": "the-agora",
       "date": "2026-10-17",
-      "time": null,
+      "time": "19:30",
       "doors": "18:30",
       "price": null,
       "performers": [
@@ -31471,12 +32021,20 @@
           "headliner": true
         },
         {
-          "name": "Balance and Composure, Midrift, Niis",
+          "name": "Balance and Composure",
+          "headliner": false
+        },
+        {
+          "name": "Midrift",
+          "headliner": false
+        },
+        {
+          "name": "Niis",
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1438503",
-      "ticketUrl": "https://www.axs.com/events/1438503/movements-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1438503/movements-tickets",
+      "ticketUrl": "https://www.axs.com/events/1438503/movements-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -31955,6 +32513,26 @@
       "genres": []
     },
     {
+      "id": "jenks-1929-2026-10-17-1200-rick-szekelyi",
+      "title": "Rick Szekelyi",
+      "venueId": "jenks-1929",
+      "date": "2026-10-17",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rick Szekelyi",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "jenks-1929-2026-10-17-1400-back-n-4th-matinee-arokys-with-nikki-revolver",
       "title": "Back N 4th Matinee: Arokys with Nikki Revolver",
       "venueId": "jenks-1929",
@@ -32100,7 +32678,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-10-17",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-17",
       "time": null,
@@ -32111,7 +32689,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-17",
@@ -32216,11 +32796,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-18-jesse-welles",
+      "id": "the-agora-2026-10-18-1900-jesse-welles",
       "title": "Jesse Welles w/ Hudson Freeman",
       "venueId": "the-agora",
       "date": "2026-10-18",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -32233,8 +32813,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1374107",
-      "ticketUrl": "https://www.axs.com/events/1374107/jesse-welles-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1374107/jesse-welles-tickets",
+      "ticketUrl": "https://www.axs.com/events/1374107/jesse-welles-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -32300,26 +32880,6 @@
       "genres": []
     },
     {
-      "id": "mahalls-2026-10-18-las-olas",
-      "title": "Las Olas",
-      "venueId": "mahalls",
-      "date": "2026-10-18",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$10.00",
-      "performers": [
-        {
-          "name": "Las Olas",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/las-olas/",
-      "ticketUrl": "https://link.dice.fm/h320aa611018",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "mahalls-2026-10-18-pain-of-truth",
       "title": "Pain of Truth",
       "venueId": "mahalls",
@@ -32347,6 +32907,26 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/pain-of-truth/",
       "ticketUrl": "https://link.dice.fm/C1407cd94f04",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "mahalls-2026-10-18-las-olas",
+      "title": "Las Olas",
+      "venueId": "mahalls",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$10.00",
+      "performers": [
+        {
+          "name": "Las Olas",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/las-olas/",
+      "ticketUrl": "https://link.dice.fm/h320aa611018",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -32613,6 +33193,26 @@
       ]
     },
     {
+      "id": "no-class-2026-10-18-sapphic-social-halloween",
+      "title": "SAPPHIC SOCIAL - HALLOWEEN EDITION",
+      "venueId": "no-class",
+      "date": "2026-10-18",
+      "time": "17:00",
+      "doors": "17:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "A low key night for all lesbians, gay gals, bi-babes, trans goddesses, & non-binary finery. Board games, card games, dice, drinks, & music at a reasonable listening volume. NO COVER CHARGE! This month in honor of spooky season we’re encouraging everyone to wear their best Halloween outfits. Not costumes per se, but horror shirts, ugly sweaters, spooky socks, etc.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/sapphic-social-halloween",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-69df8f20b90bbd973559a9a9",
       "title": "Ljubljana, Slovenia",
       "venueId": "cleveland-orchestra",
@@ -32708,10 +33308,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-10-18",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-10-18",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -32719,7 +33319,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-10-18",
@@ -32929,6 +33531,26 @@
       "genres": []
     },
     {
+      "id": "no-class-2026-10-19-night-of-the-trivial-dead-10-19-26",
+      "title": "NIGHT OF THE TRIVIAL DEAD",
+      "venueId": "no-class",
+      "date": "2026-10-19",
+      "time": "19:00",
+      "doors": null,
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Cousin Bobby is back with 6 more rounds of terrifying trivia. Come with up to 6 of your friends, and compete for prizes like DVDs, toys, and show tickets.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/night-of-the-trivial-dead-10-19-26",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a563d2c72334cfc69705424",
       "title": "Batiashvili, Capuçon & Thibaudet in Recital",
       "venueId": "cleveland-orchestra",
@@ -32949,6 +33571,23 @@
       "manual": false,
       "genres": [
         "classical"
+      ]
+    },
+    {
+      "id": "imposters-theater-2026-10-19-comedy-writing-workout-drop-in-writing-workshop",
+      "title": "Comedy Writing Workout - Drop-In Writing Workshop",
+      "venueId": "imposters-theater",
+      "date": "2026-10-19",
+      "time": "18:30",
+      "doors": null,
+      "price": "from $15.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/comedy-writing-workout-drop-in-writing-workshop-100626-r958j",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/comedy-writing-workout-drop-in-writing-workshop-100626-r958j",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
       ]
     },
     {
@@ -32973,10 +33612,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-10-19",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-10-19",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -33024,11 +33663,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-20-mastodon",
+      "id": "the-agora-2026-10-20-1900-mastodon",
       "title": "Mastodon w/ Deafheaven, Alcest",
       "venueId": "the-agora",
       "date": "2026-10-20",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -33045,8 +33684,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1468932",
-      "ticketUrl": "https://www.axs.com/events/1468932/mastodon-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1468932/mastodon-tickets",
+      "ticketUrl": "https://www.axs.com/events/1468932/mastodon-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -33291,7 +33930,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-10-20",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -33667,10 +34306,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-10-21",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-10-21",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -33873,6 +34512,27 @@
       ]
     },
     {
+      "id": "music-box-2026-10-22-upbeat-show",
+      "title": "The Upbeat Show at The Music Box!",
+      "venueId": "music-box",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "doors": "17:00",
+      "price": "Free",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "The Upbeat Show at The Music Box!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/upbeat-show/",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "music-box-2026-10-22-prognation-reunion-oct22",
       "title": "ProgNation Reunion Show (All Original members)",
       "venueId": "music-box",
@@ -33999,8 +34659,28 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-22-harold-night",
-      "title": "Harold Night",
+      "id": "no-class-2026-10-22-soup-potluck-4",
+      "title": "SOUP POTLUCK",
+      "venueId": "no-class",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "IT'S SOUP WEATHER! Bring a soup to share and sample other partygoer's concoctions. Bowls and spoons will be provided but please bring your own serving ladle. Also, please label your dish if it is vegan, contains dairy, gluten, or other allergens.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/soup-potluck-4",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "imposters-theater-2026-10-22-harold-night-diet-steve-fuelperks",
+      "title": "Harold Night - Diet Steve + fuelperks!",
       "venueId": "imposters-theater",
       "date": "2026-10-22",
       "time": "19:00",
@@ -34016,16 +34696,16 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-22-dynamic-duos-improv-night-jam",
-      "title": "Dynamic Duos Improv Night + Jam",
+      "id": "imposters-theater-2026-10-22-improvised-horror-movie",
+      "title": "Improvised Horror Movie",
       "venueId": "imposters-theater",
       "date": "2026-10-22",
       "time": "20:30",
       "doors": null,
-      "price": "$10.00",
+      "price": "$15.00",
       "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-102226",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-102226",
+      "eventUrl": "https://www.imposterstheater.com/schedule/improvised-horror-movie-102326-pwjgz",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/improvised-horror-movie-102326-pwjgz",
       "source": "scrape",
       "manual": false,
       "genres": [
@@ -34096,10 +34776,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-10-22",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-10-22",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -34156,6 +34836,38 @@
       "manual": true,
       "genres": [
         "jazz"
+      ]
+    },
+    {
+      "id": "grog-shop-2026-10-23-rellick",
+      "title": "Rellick w/ Under High Street, Apostle Jones",
+      "venueId": "grog-shop",
+      "date": "2026-10-23",
+      "time": "20:30",
+      "doors": "19:30",
+      "price": "$15.16 - $19.51",
+      "performers": [
+        {
+          "name": "Rellick",
+          "headliner": true
+        },
+        {
+          "name": "Under High Street",
+          "headliner": false
+        },
+        {
+          "name": "Apostle Jones",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/rellick-under-high-street-apostle-jones/",
+      "ticketUrl": "https://www.ticketweb.com/event/rellick-under-high-street-apostle-grog-shop-tickets/14298304?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "rnb-soul",
+        "rock",
+        "blues"
       ]
     },
     {
@@ -34732,7 +35444,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-10-23",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-23",
       "time": null,
@@ -34743,7 +35455,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-23",
@@ -34879,11 +35593,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-24-streetlight-manifesto",
+      "id": "the-agora-2026-10-24-2000-streetlight-manifesto",
       "title": "Streetlight Manifesto w/ Dave Hause",
       "venueId": "the-agora",
       "date": "2026-10-24",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -34896,8 +35610,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1415423",
-      "ticketUrl": "https://www.axs.com/events/1415423/streetlight-manifesto-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1415423/streetlight-manifesto-tickets",
+      "ticketUrl": "https://www.axs.com/events/1415423/streetlight-manifesto-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -34951,6 +35665,34 @@
       "genres": []
     },
     {
+      "id": "mahalls-2026-10-24-baby-bugs-with-special-guest-elliot-lee",
+      "title": "Baby Bugs with Special Guest Elliot Lee",
+      "venueId": "mahalls",
+      "date": "2026-10-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": "$20.00",
+      "performers": [
+        {
+          "name": "Baby Bugs",
+          "headliner": true
+        },
+        {
+          "name": "Elliot Lee",
+          "headliner": false
+        },
+        {
+          "name": "earth 2 tiffany",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/baby-bugs/",
+      "ticketUrl": "https://link.dice.fm/dcb8aab2e741",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "mahalls-2026-10-24-spite",
       "title": "Spite",
       "venueId": "mahalls",
@@ -34978,34 +35720,6 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/spite/",
       "ticketUrl": "https://link.dice.fm/Cc3fe3c53dbf",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-24-baby-bugs-with-special-guest-elliot-lee",
-      "title": "Baby Bugs with Special Guest Elliot Lee",
-      "venueId": "mahalls",
-      "date": "2026-10-24",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Baby Bugs",
-          "headliner": true
-        },
-        {
-          "name": "Elliot Lee",
-          "headliner": false
-        },
-        {
-          "name": "earth 2 tiffany",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/baby-bugs/",
-      "ticketUrl": "https://link.dice.fm/dcb8aab2e741",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -35429,6 +36143,23 @@
       ]
     },
     {
+      "id": "imposters-theater-2026-10-24-the-saturday-improv-jam",
+      "title": "The Saturday Improv Jam",
+      "venueId": "imposters-theater",
+      "date": "2026-10-24",
+      "time": "13:00",
+      "doors": null,
+      "price": "from $0.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/imposters-improv-play-lab-101726-5daps",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/imposters-improv-play-lab-101726-5daps",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
       "id": "imposters-theater-2026-10-24-ikea-near-me",
       "title": "IKEA NEAR ME",
       "venueId": "imposters-theater",
@@ -35634,7 +36365,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-10-24",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-24",
       "time": null,
@@ -35645,7 +36376,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-24",
@@ -35770,11 +36503,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-10-25-dying-fetus-sanguisugabogg",
+      "id": "the-agora-2026-10-25-1830-dying-fetus-sanguisugabogg",
       "title": "Dying Fetus & Sanguisugabogg w/ Left to Suffer, Deterioration",
       "venueId": "the-agora",
       "date": "2026-10-25",
-      "time": null,
+      "time": "18:30",
       "doors": "17:30",
       "price": null,
       "performers": [
@@ -35791,8 +36524,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1540158",
-      "ticketUrl": "https://www.axs.com/events/1540158/dying-fetus-sanguisugabogg-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1540158/dying-fetus-sanguisugabogg-tickets",
+      "ticketUrl": "https://www.axs.com/events/1540158/dying-fetus-sanguisugabogg-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -35924,7 +36657,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/brother-ali-w-dj-abilities-the-winchester-tickets/14240014",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "hilarities-2026-10-25-2000-136502",
@@ -36008,6 +36743,27 @@
         }
       ],
       "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/treat-street-at-the-van-aken-district-2026-10-25",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "van-aken-pup-parade-at-the-van-aken-district-2026-10-25",
+      "title": "Pup Parade at The Van Aken District!",
+      "venueId": "van-aken-district",
+      "date": "2026-10-25",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "room": "3401 Tuttle Road, Shaker Heights, OH",
+      "performers": [
+        {
+          "name": "Pup Parade at The Van Aken District!",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/pup-parade-at-the-van-aken-district-2026-10-25",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
@@ -36193,10 +36949,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-10-25",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-10-25",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -36204,7 +36960,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-10-25",
@@ -36356,6 +37114,26 @@
       ]
     },
     {
+      "id": "no-class-2026-10-26-5th-annual-pumpkin-carving-party",
+      "title": "5TH ANNUAL PUMPKIN CARVING PARTY",
+      "venueId": "no-class",
+      "date": "2026-10-26",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "5th annual pumpkin carving party! Prizes for cutest, scariest, most cunt, PILF, and more. We will have carving supplies on hand, just bring your own pumpkin. We're also celebrating Mike McKays birthday! October cocktail menu available all night. Announcing winners at 11pm.",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/5th-annual-pumpkin-carving-party",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "title": "With a Vengeance",
       "performers": [
         {
@@ -36377,10 +37155,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-10-26",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-10-26",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -36481,7 +37259,7 @@
     },
     {
       "id": "globe-iron-1433620",
-      "title": "L7",
+      "title": "L7 with The Last Hurrah Tour 2026, with VIAL",
       "venueId": "globe-iron",
       "date": "2026-10-27",
       "time": "20:00",
@@ -36491,6 +37269,10 @@
         {
           "name": "L7",
           "headliner": true
+        },
+        {
+          "name": "The Last Hurrah Tour 2026, with VIAL",
+          "headliner": false
         }
       ],
       "eventUrl": "https://globeironcle.com/events/detail?event_id=1433620",
@@ -36611,7 +37393,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-10-27",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -36979,10 +37761,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-10-28",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-10-28",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -37242,8 +38024,8 @@
       ]
     },
     {
-      "id": "imposters-theater-2026-10-29-harold-night",
-      "title": "Harold Night",
+      "id": "imposters-theater-2026-10-29-harold-night-hear-me-out-new-terminator",
+      "title": "Harold Night - Hear Me Out + New Terminator",
       "venueId": "imposters-theater",
       "date": "2026-10-29",
       "time": "19:00",
@@ -37345,11 +38127,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-30-beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson",
+      "id": "the-agora-2026-10-30-2000-beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson",
       "title": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
       "venueId": "the-agora",
       "date": "2026-10-30",
-      "time": null,
+      "time": "20:00",
       "doors": "18:30",
       "price": null,
       "performers": [
@@ -37358,8 +38140,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1541883",
-      "ticketUrl": "https://www.axs.com/events/1541883/beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1541883/beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson-tickets",
+      "ticketUrl": "https://www.axs.com/events/1541883/beat-belew-vai-levin-bozzio-performing-the-music-of-king-crimson-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -37588,6 +38370,38 @@
       ]
     },
     {
+      "id": "no-class-2026-10-30-high-tolerance-halloween-2",
+      "title": "HIGH TOLERANCE",
+      "venueId": "no-class",
+      "date": "2026-10-30",
+      "time": "19:30",
+      "doors": "19:30",
+      "price": "$12 ADV / $15 DOS",
+      "performers": [
+        {
+          "name": "High Tolerance",
+          "headliner": true
+        },
+        {
+          "name": "Against Language",
+          "headliner": false
+        },
+        {
+          "name": "TRYP",
+          "headliner": false
+        },
+        {
+          "name": "Detriment",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://www.noclasscle.com/events/high-tolerance-halloween-2",
+      "ticketUrl": "https://ticketnut.com/public/stage_events/1377",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a9857907a6504a167a724d8",
       "title": "Wine Tastings",
       "venueId": "cleveland-orchestra",
@@ -37797,7 +38611,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-10-30",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-30",
       "time": null,
@@ -37808,7 +38622,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-10-30",
@@ -37952,11 +38768,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-10-31-mushroomhead-fear-factory",
+      "id": "the-agora-2026-10-31-1830-mushroomhead-fear-factory",
       "title": "Mushroomhead & Fear Factory w/ Nine Treasures, Bittersweet Revenge, Unhealthy While Unhinged",
       "venueId": "the-agora",
       "date": "2026-10-31",
-      "time": null,
+      "time": "18:30",
       "doors": "17:30",
       "price": null,
       "performers": [
@@ -37977,8 +38793,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1335715",
-      "ticketUrl": "https://www.axs.com/events/1335715/mushroomhead-fear-factory-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1335715/mushroomhead-fear-factory-tickets",
+      "ticketUrl": "https://www.axs.com/events/1335715/mushroomhead-fear-factory-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -38184,7 +39000,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "no-class-2026-10-31-american-werewolves-halloween-2026",
@@ -38388,7 +39206,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Necronomipod",
@@ -38499,7 +39319,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-10-31",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-10-31",
       "time": null,
@@ -38510,7 +39330,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-10-31",
@@ -38665,6 +39487,28 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "bop-stop-2026-11-01-the-uninvited-haddad-castaldi-tomino-smith-bop-stop",
+      "title": "The Uninvited (Haddad / Castaldi / Tomino / Smith)",
+      "venueId": "bop-stop",
+      "date": "2026-11-01",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "The Uninvited (Haddad / Castaldi / Tomino / Smith)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.themusicsettlement.org/events/2026/11/01/the-uninvited-haddad-castaldi-tomino-smith-bop-stop",
+      "ticketUrl": "https://www.themusicsettlement.org/events/2026/11/01/the-uninvited-haddad-castaldi-tomino-smith-bop-stop",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "music-box-2026-11-01-steely-dan-brunch-nov1",
@@ -38891,10 +39735,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-11-01",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-11-01",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -38902,7 +39746,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-11-01",
@@ -39027,10 +39873,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-02",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-11-02",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -39171,7 +40017,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-11-03",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -39506,10 +40352,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-11-04",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-11-04",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -39621,11 +40467,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-11-05-arch-enemy-the-black-dahlia-murder",
+      "id": "the-agora-2026-11-05-1800-arch-enemy-the-black-dahlia-murder",
       "title": "Arch Enemy & The Black Dahlia Murder w/ Septicflesh, Crypta, Thrown Into Exile",
       "venueId": "the-agora",
       "date": "2026-11-05",
-      "time": null,
+      "time": "18:00",
       "doors": "17:00",
       "price": null,
       "performers": [
@@ -39646,8 +40492,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1452251",
-      "ticketUrl": "https://www.axs.com/events/1452251/arch-enemy-the-black-dahlia-murder-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1452251/arch-enemy-the-black-dahlia-murder-tickets",
+      "ticketUrl": "https://www.axs.com/events/1452251/arch-enemy-the-black-dahlia-murder-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -39843,7 +40689,7 @@
       "title": "Bluegrass Jam (hosted by David Mayfield)",
       "venueId": "spotlight-cle",
       "date": "2026-11-05",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -39960,11 +40806,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-11-06-zack-fox-dj-set",
+      "id": "the-agora-2026-11-06-2100-zack-fox-dj-set",
       "title": "Zack Fox (DJ Set)",
       "venueId": "the-agora",
       "date": "2026-11-06",
-      "time": null,
+      "time": "21:00",
       "doors": "20:00",
       "price": null,
       "performers": [
@@ -39973,11 +40819,13 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1501268",
-      "ticketUrl": "https://www.axs.com/events/1501268/zack-fox-dj-set-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1501268/zack-fox-dj-set-tickets",
+      "ticketUrl": "https://www.axs.com/events/1501268/zack-fox-dj-set-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-11-06-devotional-2026",
@@ -40497,7 +41345,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-06",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-06",
       "time": null,
@@ -40508,7 +41356,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-06",
@@ -40613,11 +41463,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-11-07-blue-october",
+      "id": "the-agora-2026-11-07-2000-blue-october",
       "title": "Blue October",
       "venueId": "the-agora",
       "date": "2026-11-07",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -40626,8 +41476,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1379983",
-      "ticketUrl": "https://www.axs.com/events/1379983/blue-october-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1379983/blue-october-tickets",
+      "ticketUrl": "https://www.axs.com/events/1379983/blue-october-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -40945,6 +41795,26 @@
       ]
     },
     {
+      "id": "jolly-scholar-2026-11-07-3399426",
+      "title": "Case Western Solstice A cappella group",
+      "venueId": "jolly-scholar",
+      "date": "2026-11-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Case Western Solstice A cappella group",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thejollyscholar.com/cleveland-university-circle-the-jolly-scholar-events#3399426",
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a79f21f439e576d385c7e66",
       "title": "Brahms’s Requiem",
       "venueId": "cleveland-orchestra",
@@ -41132,7 +42002,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-07",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-07",
       "time": null,
@@ -41143,7 +42013,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-07",
@@ -41268,26 +42140,6 @@
       "genres": []
     },
     {
-      "id": "mahalls-2026-11-08-waterparks",
-      "title": "Waterparks",
-      "venueId": "mahalls",
-      "date": "2026-11-08",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$39.00",
-      "performers": [
-        {
-          "name": "Waterparks",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/waterparks/",
-      "ticketUrl": "https://link.dice.fm/mbea2de3def8",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "mahalls-2026-11-08-ax-and-the-hatchetmen",
       "title": "Ax and the Hatchetmen",
       "venueId": "mahalls",
@@ -41307,6 +42159,26 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/ax-and-the-hatchetmen-2/",
       "ticketUrl": "https://link.dice.fm/K81027c16ffa",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "mahalls-2026-11-08-waterparks",
+      "title": "Waterparks",
+      "venueId": "mahalls",
+      "date": "2026-11-08",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$39.00",
+      "performers": [
+        {
+          "name": "Waterparks",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/waterparks/",
+      "ticketUrl": "https://link.dice.fm/mbea2de3def8",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -41487,10 +42359,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-11-08",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-11-08",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -41498,7 +42370,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-11-08",
@@ -41559,10 +42433,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-09",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-11-09",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -41610,11 +42484,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-11-10-alter-bridge",
+      "id": "the-agora-2026-11-10-1900-alter-bridge",
       "title": "Alter Bridge w/ Big Wreck, Tim Montana",
       "venueId": "the-agora",
       "date": "2026-11-10",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -41631,8 +42505,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1458549",
-      "ticketUrl": "https://www.axs.com/events/1458549/alter-bridge-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1458549/alter-bridge-tickets",
+      "ticketUrl": "https://www.axs.com/events/1458549/alter-bridge-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -41793,7 +42667,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-11-10",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -42213,10 +43087,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-11-11",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-11-11",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -42337,11 +43211,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-11-12-gymclassheroes-lupe-fiasco",
+      "id": "the-agora-2026-11-12-1900-gymclassheroes-lupe-fiasco",
       "title": "gymclassheroes. & Lupe Fiasco",
       "venueId": "the-agora",
       "date": "2026-11-12",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -42350,8 +43224,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1597265",
-      "ticketUrl": "https://www.axs.com/events/1597265/gymclassheroes-lupe-fiasco-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1597265/gymclassheroes-lupe-fiasco-tickets",
+      "ticketUrl": "https://www.axs.com/events/1597265/gymclassheroes-lupe-fiasco-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -42592,10 +43466,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-11-12",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-11-12",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -43118,7 +43992,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-13",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-13",
       "time": null,
@@ -43129,7 +44003,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-13",
@@ -43714,7 +44590,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-14",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-14",
       "time": null,
@@ -43725,7 +44601,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-14",
@@ -44135,10 +45013,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-11-15",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-11-15",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -44146,7 +45024,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-11-15",
@@ -44254,10 +45134,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-16",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-11-16",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -44418,21 +45298,25 @@
       "genres": []
     },
     {
-      "id": "foundry-concert-club-2026-11-17-vethaken-we-used-to-cut-the-grass-spilly-cave",
-      "title": "Vethaken, We Used to Cut the Grass, Spilly Cave",
-      "venueId": "foundry-concert-club",
+      "id": "bent-mace-2026-11-17-a-spiral-filled-with-roses-johnny-neiman",
+      "title": "A Spiral Filled With Roses / Johnny Neiman",
+      "venueId": "bent-mace",
       "date": "2026-11-17",
-      "time": "19:00",
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [
         {
-          "name": "Vethaken, We Used to Cut the Grass, Spilly Cave",
+          "name": "A Spiral Filled With Roses",
           "headliner": true
+        },
+        {
+          "name": "Johnny Neiman",
+          "headliner": false
         }
       ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/vethaken-we-used-to-cut-the-grass-spilly-cave/",
-      "ticketUrl": "https://www.ticketweb.com/event/vethaken-we-used-to-cut-the-foundry-tickets/15008063?pl=thefoundry&REFID=clientsitewp",
+      "eventUrl": "https://bentmace.org/event/a-spiral-filled-with-roses-johnny-neiman/",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -44505,7 +45389,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-11-17",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -44745,10 +45629,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-11-18",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-11-18",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -44845,11 +45729,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-11-19-dweezil-zappa",
+      "id": "the-agora-2026-11-19-1930-dweezil-zappa",
       "title": "Dweezil Zappa",
       "venueId": "the-agora",
       "date": "2026-11-19",
-      "time": null,
+      "time": "19:30",
       "doors": "18:30",
       "price": null,
       "performers": [
@@ -44858,8 +45742,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1462599",
-      "ticketUrl": "https://www.axs.com/events/1462599/dweezil-zappa-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1462599/dweezil-zappa-tickets",
+      "ticketUrl": "https://www.axs.com/events/1462599/dweezil-zappa-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -45041,7 +45925,7 @@
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
       "date": "2026-11-19",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -45143,14 +46027,16 @@
       "ticketUrl": "https://www.ticketweb.com/event/surprise-chef-dj-teddy-eisenberg-grog-shop-tickets/15025063?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
-      "id": "the-agora-2026-11-20-wheeler-walker-jr",
+      "id": "the-agora-2026-11-20-2000-wheeler-walker-jr",
       "title": "Wheeler Walker Jr.",
       "venueId": "the-agora",
       "date": "2026-11-20",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -45159,8 +46045,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1476154",
-      "ticketUrl": "https://www.axs.com/events/1476154/wheeler-walker-jr-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1476154/wheeler-walker-jr-tickets",
+      "ticketUrl": "https://www.axs.com/events/1476154/wheeler-walker-jr-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -45446,6 +46332,23 @@
       ]
     },
     {
+      "id": "imposters-theater-2026-11-20-the-imposters-main-stage-sketch-show-new-me",
+      "title": "The Imposters Main Stage Sketch Show + New Me",
+      "venueId": "imposters-theater",
+      "date": "2026-11-20",
+      "time": "19:30",
+      "doors": null,
+      "price": "from $5.00",
+      "performers": [],
+      "eventUrl": "https://www.imposterstheater.com/schedule/main-stage-new-me-112026",
+      "ticketUrl": "https://www.imposterstheater.com/schedule/main-stage-new-me-112026",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
       "id": "cleveland-museum-of-art-2026-11-20-the-jazz-heritage-orchestra-the-music-of-frank-foster",
       "title": "The Jazz Heritage Orchestra: The Music of Frank Foster",
       "venueId": "cleveland-museum-of-art",
@@ -45592,7 +46495,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-20",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-20",
       "time": null,
@@ -45603,7 +46506,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-20",
@@ -45728,11 +46633,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2026-11-21-tropidelic",
+      "id": "the-agora-2026-11-21-1900-tropidelic",
       "title": "Tropidelic w/ Surfer Girl, The Quasi Kings, Land of Panda.",
       "venueId": "the-agora",
       "date": "2026-11-21",
-      "time": null,
+      "time": "19:00",
       "doors": "18:15",
       "price": null,
       "performers": [
@@ -45753,8 +46658,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1450925",
-      "ticketUrl": "https://www.axs.com/events/1450925/tropidelic-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1450925/tropidelic-tickets",
+      "ticketUrl": "https://www.axs.com/events/1450925/tropidelic-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -46287,7 +47192,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-21",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-21",
       "time": null,
@@ -46298,7 +47203,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-21",
@@ -46683,10 +47590,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-11-22",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-11-22",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -46694,7 +47601,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-11-22",
@@ -46809,10 +47718,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-23",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-11-23",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -46981,7 +47890,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-11-24",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -47260,10 +48169,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-11-25",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-11-25",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -47381,10 +48290,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-11-26",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-11-26",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -47444,11 +48353,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-11-27-whitechapel",
+      "id": "the-agora-2026-11-27-1900-whitechapel",
       "title": "Whitechapel w/ Chelsea Grin, The Acacia Strain, Netherwalker",
       "venueId": "the-agora",
       "date": "2026-11-27",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -47469,8 +48378,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1459475",
-      "ticketUrl": "https://www.axs.com/events/1459475/whitechapel-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1459475/whitechapel-tickets",
+      "ticketUrl": "https://www.axs.com/events/1459475/whitechapel-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -47518,6 +48427,28 @@
         "classic",
         "rock",
         "covers",
+        "tribute"
+      ]
+    },
+    {
+      "id": "winchester-music-tavern-2026-11-27-doors-on-fire-a-tribute-to-the-doors-2",
+      "title": "Doors on Fire – a tribute to the Doors",
+      "venueId": "winchester-music-tavern",
+      "date": "2026-11-27",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$20.06",
+      "performers": [
+        {
+          "name": "Doors on Fire – a tribute to the Doors",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://thewinchestermusictavern.com/tm-event/doors-on-fire-a-tribute-to-the-doors-2/",
+      "ticketUrl": "https://www.ticketweb.com/event/doors-on-fire-the-winchester-tickets/14308034",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
         "tribute"
       ]
     },
@@ -47783,7 +48714,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-27",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-27",
       "time": null,
@@ -47794,7 +48725,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-11-27",
@@ -48283,7 +49216,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-28",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-11-28",
       "time": null,
@@ -48294,7 +49227,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-11-28",
@@ -48684,10 +49619,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-11-29",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-11-29",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -48695,7 +49630,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-11-29",
@@ -48788,10 +49725,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-30",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-11-30",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -48908,7 +49845,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-12-01",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -49143,10 +50080,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-12-02",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-12-02",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -49313,7 +50250,7 @@
       "title": "Bluegrass Jam (hosted by David Mayfield)",
       "venueId": "spotlight-cle",
       "date": "2026-12-03",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -49666,7 +50603,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-12-04",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-04",
       "time": null,
@@ -49677,7 +50614,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-12-04",
@@ -49804,11 +50743,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-12-05-silverstein-story-of-the-year",
+      "id": "the-agora-2026-12-05-1900-silverstein-story-of-the-year",
       "title": "Silverstein & Story of the Year w/ Stand Atlantic, Footballhead",
       "venueId": "the-agora",
       "date": "2026-12-05",
-      "time": null,
+      "time": "19:00",
       "doors": "18:00",
       "price": null,
       "performers": [
@@ -49825,8 +50764,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1541149",
-      "ticketUrl": "https://www.axs.com/events/1541149/silverstein-story-of-the-year-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1541149/silverstein-story-of-the-year-tickets",
+      "ticketUrl": "https://www.axs.com/events/1541149/silverstein-story-of-the-year-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -50028,6 +50967,26 @@
       ]
     },
     {
+      "id": "jenks-1929-2026-12-05-1200-rick-szekelyi",
+      "title": "Rick Szekelyi",
+      "venueId": "jenks-1929",
+      "date": "2026-12-05",
+      "time": "12:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rick Szekelyi",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "jenks-1929-2026-12-05-1600-guy-pernetti",
       "title": "Guy Pernetti",
       "venueId": "jenks-1929",
@@ -50164,7 +51123,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-12-05",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-05",
       "time": null,
@@ -50175,7 +51134,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-12-05",
@@ -50495,10 +51456,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-12-06",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-12-06",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -50506,7 +51467,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-12-06",
@@ -50587,10 +51550,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-12-07",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-12-07",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -50750,7 +51713,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-12-08",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -50969,10 +51932,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-12-09",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-12-09",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -51090,10 +52053,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-12-10",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-12-10",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -51291,7 +52254,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-12-11",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-11",
       "time": null,
@@ -51302,7 +52265,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-12-11",
@@ -51517,6 +52482,26 @@
       ]
     },
     {
+      "id": "bside-2026-12-12-jingle-bell-holiday-shop",
+      "title": "Jingle Bell Holiday Shop",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-12-12",
+      "time": "11:00",
+      "doors": "11:00",
+      "price": "Free",
+      "performers": [
+        {
+          "name": "Jingle Bell Holiday Shop",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/jingle-bell-holiday-shop/",
+      "ticketUrl": "https://www.ticketweb.com/event/jingle-bell-holiday-shop-grog-shop-and-b-side-tickets/14308584?pl=bside",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
       "id": "cleveland-orchestra-6a5690afeafd3186253df333",
       "title": "Holiday Brass Quintet",
       "venueId": "cleveland-orchestra",
@@ -51698,7 +52683,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-12-12",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-12",
       "time": null,
@@ -51709,7 +52694,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-12-12",
@@ -51902,10 +52889,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-12-13",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-12-13",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -51913,7 +52900,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-12-13",
@@ -51995,10 +52984,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-12-14",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-12-14",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -52135,7 +53124,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-12-15",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -52182,11 +53171,11 @@
       ]
     },
     {
-      "id": "the-agora-2026-12-16-shakey-graves",
+      "id": "the-agora-2026-12-16-2000-shakey-graves",
       "title": "Shakey Graves w/ Jobi Riccio",
       "venueId": "the-agora",
       "date": "2026-12-16",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -52199,8 +53188,8 @@
           "headliner": false
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1449327",
-      "ticketUrl": "https://www.axs.com/events/1449327/shakey-graves-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1449327/shakey-graves-tickets",
+      "ticketUrl": "https://www.axs.com/events/1449327/shakey-graves-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -52331,10 +53320,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-12-16",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-12-16",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -52545,7 +53534,7 @@
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
       "date": "2026-12-17",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -52803,7 +53792,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-12-18",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-18",
       "time": null,
@@ -52814,7 +53803,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-12-18",
@@ -53165,26 +54156,6 @@
       ]
     },
     {
-      "title": "Dunk Betty",
-      "performers": [
-        {
-          "name": "Dunk Betty",
-          "headliner": true
-        }
-      ],
-      "date": "2026-12-19",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-downtown",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-downtown-2026-12-19-dunk-betty",
-      "genres": []
-    },
-    {
       "title": "Country Redford",
       "performers": [
         {
@@ -53229,7 +54200,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-12-19",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-19",
       "time": null,
@@ -53240,7 +54211,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-12-19",
@@ -53448,10 +54421,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-12-20",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-12-20",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -53459,7 +54432,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-12-20",
@@ -53545,10 +54520,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-12-21",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-12-21",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -53711,7 +54686,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-12-22",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -53865,10 +54840,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-12-23",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-12-23",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -53946,10 +54921,10 @@
     },
     {
       "id": "spotlight-open-mic-theme-2026-12-24",
-      "title": "Open Mic with a Theme (hosted by Meganne Stepka)",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
       "venueId": "spotlight-cle",
       "date": "2026-12-24",
-      "time": null,
+      "time": "20:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -54030,7 +55005,7 @@
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-12-25",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-25",
       "time": null,
@@ -54041,7 +55016,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-early-2026-12-25",
@@ -54248,7 +55225,7 @@
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-12-26",
-      "title": "Live Music • DJs • Special Nights",
+      "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
       "date": "2026-12-26",
       "time": null,
@@ -54259,7 +55236,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "velvet-jazz-trio-sat-2026-12-26",
@@ -54364,6 +55343,29 @@
       ]
     },
     {
+      "id": "music-box-2026-12-27-bob-seger-brunch-dec27",
+      "title": "Bob Seger Brunch",
+      "venueId": "music-box",
+      "date": "2026-12-27",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$15 Advance, $20 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Bob Seger Brunch",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/bob-seger-brunch-dec27/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62343",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "event"
+      ]
+    },
+    {
       "id": "music-box-2026-12-27-rat-pack-brunch-dec27",
       "title": "Rat Pack Brunch with Patrick Lynch & The Jazz Guys",
       "venueId": "music-box",
@@ -54388,10 +55390,10 @@
     },
     {
       "id": "spotlight-house-techno-2026-12-27",
-      "title": "House & Techno",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
       "date": "2026-12-27",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -54399,7 +55401,9 @@
       "ticketUrl": null,
       "source": "manual",
       "manual": true,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "treehouse-karaoke-night-2026-12-27",
@@ -54460,10 +55464,10 @@
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-12-28",
-      "title": "Acoustic Jam Night (hosted by Joshua Donato)",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
       "date": "2026-12-28",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -54580,7 +55584,7 @@
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
       "date": "2026-12-29",
-      "time": null,
+      "time": "19:30",
       "doors": null,
       "price": null,
       "performers": [],
@@ -54689,10 +55693,10 @@
     },
     {
       "id": "spotlight-jam-night-2026-12-30",
-      "title": "Jam Night",
+      "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
       "date": "2026-12-30",
-      "time": null,
+      "time": "21:00",
       "doors": null,
       "price": null,
       "performers": [],
@@ -54884,6 +55888,73 @@
       ]
     },
     {
+      "id": "music-box-2027-01-01-springsteen-tribute-jan1",
+      "title": "Springsteen Tribute by Swamps Of Jersey",
+      "venueId": "music-box",
+      "date": "2027-01-01",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$12 Advance, $18 Day of Show",
+      "room": "Supper Club",
+      "performers": [
+        {
+          "name": "Springsteen Tribute by Swamps Of Jersey",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/springsteen-tribute-jan1/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=61810",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute"
+      ]
+    },
+    {
+      "id": "the-agora-2027-01-02-2000-wish-you-were-here",
+      "title": "Wish You Were Here",
+      "venueId": "the-agora",
+      "date": "2027-01-02",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Wish You Were Here",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.axs.com/events/1600577/wish-you-were-here-tickets",
+      "ticketUrl": "https://www.axs.com/events/1600577/wish-you-were-here-tickets",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "music-box-2027-01-03-elo-brunch-jan3",
+      "title": "ELO Brunch with Into The Blue",
+      "venueId": "music-box",
+      "date": "2027-01-03",
+      "time": "12:00",
+      "doors": "11:00",
+      "price": "$18 Advance, $25 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "ELO Brunch with Into The Blue",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/elo-brunch-jan3/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63177",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute",
+        "event"
+      ]
+    },
+    {
       "id": "grindstone-tap-house-3354772-2027-01-03",
       "title": "NFL SUNDAY TICKET!!!!",
       "venueId": "grindstone-tap-house",
@@ -54913,6 +55984,29 @@
       "manual": false,
       "genres": [
         "trivia-games"
+      ]
+    },
+    {
+      "id": "music-box-2027-01-08-jacksons-tribute-jan8",
+      "title": "Tribute to Michael Jackson & The Jacksons by Dancing Machine",
+      "venueId": "music-box",
+      "date": "2027-01-08",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$30 Advance, $38 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Tribute to Michael Jackson & The Jacksons by Dancing Machine",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/jacksons-tribute-jan8/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=63181",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute"
       ]
     },
     {
@@ -55046,6 +56140,29 @@
       ]
     },
     {
+      "id": "music-box-2027-01-15-moody-blues-tribute-jan15",
+      "title": "Moody Blues Tribute by Time Traveller",
+      "venueId": "music-box",
+      "date": "2027-01-15",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$20 Advance, $25 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Moody Blues Tribute by Time Traveller",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/moody-blues-tribute-jan15/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=30178",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute"
+      ]
+    },
+    {
       "id": "cleveland-orchestra-6a7a1382c40bd85838821d0d",
       "title": "Welser-Möst Conducts Strauss",
       "venueId": "cleveland-orchestra",
@@ -55082,6 +56199,29 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "music-box-2027-01-16-van-morrison-tribute-jan16",
+      "title": "Van Morrison Tribute",
+      "venueId": "music-box",
+      "date": "2027-01-16",
+      "time": "19:30",
+      "doors": "18:00",
+      "price": "$18 Advance, $25 Day of Show",
+      "room": "Concert Hall",
+      "performers": [
+        {
+          "name": "Van Morrison Tribute",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://musicboxcle.com/event/van-morrison-tribute-jan16/",
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=61592",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "id": "playhouse-square-2027-01-16-deconstructing-abbey-road-with-scott-freiman",
@@ -55726,11 +56866,11 @@
       ]
     },
     {
-      "id": "the-agora-2027-02-03-the-music-of-the-lord-of-the-rings",
+      "id": "the-agora-2027-02-03-1630-the-music-of-the-lord-of-the-rings",
       "title": "The Music of the Lord of the Rings",
       "venueId": "the-agora",
       "date": "2027-02-03",
-      "time": null,
+      "time": "16:30",
       "doors": "15:30",
       "price": null,
       "performers": [
@@ -55739,18 +56879,18 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1231098",
-      "ticketUrl": "https://www.axs.com/events/1231098/the-music-of-the-lord-of-the-rings-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1231098/the-music-of-the-lord-of-the-rings-tickets",
+      "ticketUrl": "https://www.axs.com/events/1231098/the-music-of-the-lord-of-the-rings-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
     },
     {
-      "id": "the-agora-2027-02-03-the-music-of-hans-zimmer-others",
+      "id": "the-agora-2027-02-03-2000-the-music-of-hans-zimmer-others",
       "title": "The Music of Hans Zimmer & Others",
       "venueId": "the-agora",
       "date": "2027-02-03",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -55759,8 +56899,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1231097",
-      "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets",
+      "ticketUrl": "https://www.axs.com/events/1231097/the-music-of-hans-zimmer-others-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -56450,11 +57590,11 @@
       "genres": []
     },
     {
-      "id": "the-agora-2027-02-25-crystal-methyd-the-enchanted-forest",
+      "id": "the-agora-2027-02-25-2000-crystal-methyd-the-enchanted-forest",
       "title": "Crystal Methyd The Enchanted Forest",
       "venueId": "the-agora",
       "date": "2027-02-25",
-      "time": null,
+      "time": "20:00",
       "doors": "19:00",
       "price": null,
       "performers": [
@@ -56463,8 +57603,8 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.agoracleveland.com/events/detail/1528410",
-      "ticketUrl": "https://www.axs.com/events/1528410/crystal-methyd-the-enchanted-forest-tickets?skin=agora&skin=agora",
+      "eventUrl": "https://www.axs.com/events/1528410/crystal-methyd-the-enchanted-forest-tickets",
+      "ticketUrl": "https://www.axs.com/events/1528410/crystal-methyd-the-enchanted-forest-tickets",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -58565,6 +59705,26 @@
       ],
       "eventUrl": "https://www.clevelandart.org/events/trio-mandili",
       "ticketUrl": null,
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "grog-shop-2027-05-06-carsie-blanton",
+      "title": "Carsie Blanton",
+      "venueId": "grog-shop",
+      "date": "2027-05-06",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "",
+      "performers": [
+        {
+          "name": "Carsie Blanton",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/carsie-blanton/",
+      "ticketUrl": "https://www.ticketweb.com/event/carsie-blanton-grog-shop-tickets/14287034?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
       "genres": []
