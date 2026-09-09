@@ -590,6 +590,55 @@ footer a {
 	border: 2px solid rgba(0, 0, 0, 0.75);
 }
 
+
+
+
+#genreModeToggle {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	gap: 0 !important;
+	border-radius: 9px;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	width: fit-content;
+	margin-bottom: 16px;
+}
+
+#genreModeToggle .toggle-button {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 8px 16px;
+	color: #F9F976;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	height: 100%;
+}
+
+#genreModeToggle .toggle-button:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+#genreModeToggle .toggle-button:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+#genreModeToggle .toggle-button.active {
+	color: #101010;
+	background: #F9F976;
+	font-weight: 900;
+	border: 1px solid #F9F976;
+}
+
+
+
+
+
+
 #calendarSortMethod {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
@@ -669,7 +718,7 @@ footer a {
 	font-family: 'Space Mono', monospace;
 	font-size: 14px;
 	letter-spacing: 0.05em;
-	padding: 8px 16px;
+	padding: 6px 12px;
 	border: 1px solid rgba(255,255,255,0.15);
 	border-radius: 20px;
 	color: #FFF;
