@@ -15,6 +15,34 @@ function formatTime(t) {
   return `${hour}:${String(m).padStart(2, '0')} ${period}`;
 }
 
+// Genre labels + colors come from data/genres.json — same source of truth
+// (and same lookup pattern) as the main calendar in events.js. Falls back
+// to titleCase()/hash color for any genre not yet added there, so a
+// brand-new genre never breaks, it just won't have a custom look yet.
+let genreMeta = {}; // populated from data/genres.json in loadVenueEvents
+
+function titleCase(str) {
+  return str
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+function genreLabel(genre) {
+  return genreMeta[genre]?.label || titleCase(genre);
+}
+
+function genreColor(genre) {
+  if (genreMeta[genre]?.color) return genreMeta[genre].color;
+
+  let hash = 0;
+  for (let i = 0; i < genre.length; i++) {
+    hash = (hash * 31 + genre.charCodeAt(i)) >>> 0;
+  }
+  const hue = hash % 360;
+  return `hsl(${hue}, 65%, 60%)`;
+}
+
 const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
 
 function renderVenueEvents(events, venueMeta) {
@@ -61,12 +89,24 @@ function renderVenueEvents(events, venueMeta) {
         ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
         : '';
 
+      // Same markup/classes as the main calendar's genre chips, so the
+      // existing .eventGenres / .genre-chip CSS in style.css applies here
+      // with no changes needed. Unlike the main calendar, venue pages
+      // don't check the "Display genre where available" setting — genres
+      // always show here regardless of what a visitor set elsewhere.
+      const genresHtml = (event.genres && event.genres.length > 0)
+        ? `<div class="eventGenres">${event.genres.map(g => `
+            <span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
+          `).join('')}</div>`
+        : '';
+
       return `
         <div class="event">
           <div class="eventInfo">
             <span class="eventName">${titleHtml}</span>
             <span class="eventTime">${timeDisplay}</span>
             <span class="eventCost">${event.price ?? 'See Event'}</span>
+            ${genresHtml}
           </div>
           ${linkHtml}
         </div>`;
@@ -90,8 +130,19 @@ function renderVenueEvents(events, venueMeta) {
 }
 
 async function loadVenueEvents() {
-  const res = await fetch('/data/events.json');
-  const allData = await res.json();
+  const [eventsRes, genresRes] = await Promise.all([
+    fetch('/data/events.json'),
+    fetch('/data/genres.json')
+  ]);
+  const allData = await eventsRes.json();
+
+  try {
+    genreMeta = await genresRes.json();
+  } catch (e) {
+    // Missing/invalid genres.json isn't fatal — genreLabel()/genreColor()
+    // already fall back to titleCase()/hash color for every genre.
+    genreMeta = {};
+  }
 
   const todayStr = toLocalDateStr(new Date());
   const events = allData.events

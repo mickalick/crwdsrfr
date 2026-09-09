@@ -739,8 +739,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "country",
-        "indie alternative"
+        "alternative",
+        "country"
       ]
     },
     {
@@ -762,7 +762,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games",
+        "emo"
       ]
     },
     {
@@ -826,7 +827,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -849,7 +850,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -909,7 +910,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -927,7 +928,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -1009,7 +1010,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/15047933?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "movie-film"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-09-davy-knowles",
@@ -1058,8 +1061,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska",
-        "electronic"
+        "punk-ska",
+        "electronic-edm"
       ]
     },
     {
@@ -1103,7 +1106,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -1193,7 +1196,9 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=4B1597B5-BB93-4B7A-9D2E-197EC140FE33",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "playhouse-square-2026-09-09-2000-the-magicians-table",
@@ -1239,7 +1244,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "indie",
         "rock"
       ]
     },
@@ -1285,7 +1290,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -1330,7 +1335,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/tango-y-algo-mas-treelawn-social-club-tickets/15041503",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "prosperity-social-club-2026-09-09-djsayword-51326-akmd9",
@@ -1467,7 +1474,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "reithoffers-2026-09-09-trivia-night",
@@ -1483,7 +1492,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -1549,8 +1558,9 @@
       "manual": true,
       "id": "whiskey-island-2026-09-09-tea-bags",
       "genres": [
+        "classic",
         "covers",
-        "indie alternative"
+        "dance-disco"
       ]
     },
     {
@@ -1594,7 +1604,7 @@
       "manual": true,
       "id": "blossom-music-center-2026-09-09-wu-tang-clan",
       "genres": [
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -1669,7 +1679,7 @@
       "id": "public-square-2026-09-09-rachel-brown-the-beatnik-playboys",
       "genres": [
         "country",
-        "folk americana",
+        "folk-roots",
         "blues"
       ]
     },
@@ -1771,7 +1781,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -1860,7 +1870,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/46702907/the-addams-family-a-musical-opening-night-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "mahalls-2026-09-10-punchline",
@@ -2335,7 +2347,9 @@
       "ticketUrl": "https://www.reithoffers.com/event-details-registration/beginners-sourdough-workshop-with-terra-from-boujee-bread-2",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "reithoffers-2026-09-10-karaoke-night-hosted-by-frankie",
@@ -2372,7 +2386,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "jenks-1929-2026-09-10-1900-the-morning-bird",
@@ -2744,7 +2760,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/64310265/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "happy-dog-2026-09-11-jim-e-brown",
@@ -3287,7 +3305,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie",
+        "rock"
       ]
     },
     {
@@ -3476,9 +3495,10 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
-        "funk reggae",
-        "electronic"
+        "acoustic",
+        "alternative",
+        "funk-reggae",
+        "experimental"
       ]
     },
     {
@@ -3826,7 +3846,7 @@
       "genres": [
         "covers",
         "rock",
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -4055,8 +4075,8 @@
       "id": "cleveland-oktoberfest-2026-09-11-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -4372,10 +4392,11 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
-        "folk americana",
-        "funk reggae",
-        "rnb soul"
+        "acoustic",
+        "alternative",
+        "folk-roots",
+        "funk-reggae",
+        "rnb-soul"
       ]
     },
     {
@@ -4416,7 +4437,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/86941863/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "mahalls-2026-09-12-the-jack-wharff-band",
@@ -4845,7 +4868,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -5998,7 +6021,8 @@
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-12-e5c4p3",
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers",
         "tribute"
       ]
@@ -6152,7 +6176,7 @@
       "id": "waterloo-arts-fest-2026-09-12-lilieae",
       "genres": [
         "pop",
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -6174,7 +6198,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-messmaker",
       "genres": [
-        "indie alternative",
+        "indie",
         "rock"
       ]
     },
@@ -6198,8 +6222,8 @@
       "id": "waterloo-arts-fest-2026-09-12-ohayo",
       "genres": [
         "rock",
-        "rnb soul",
-        "funk reggae"
+        "rnb-soul",
+        "funk-reggae"
       ]
     },
     {
@@ -6221,7 +6245,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-ardamus-and-rnl",
       "genres": [
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -6243,7 +6267,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-sabon",
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -6266,7 +6290,7 @@
       "id": "waterloo-arts-fest-2026-09-12-the-lookout-service",
       "genres": [
         "rock",
-        "indie alternative"
+        "indie"
       ]
     },
     {
@@ -6288,7 +6312,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-hed-cheez",
       "genres": [
-        "electronic",
+        "electronic-edm",
         "jazz"
       ]
     },
@@ -6312,7 +6336,7 @@
       "id": "waterloo-arts-fest-2026-09-12-dream-float",
       "genres": [
         "jazz",
-        "funk reggae"
+        "funk-reggae"
       ]
     },
     {
@@ -6357,8 +6381,8 @@
       "id": "waterloo-arts-fest-2026-09-12-wave-magnetik",
       "genres": [
         "jazz",
-        "electronic",
-        "dance disco"
+        "electronic-edm",
+        "dance-disco"
       ]
     },
     {
@@ -6381,8 +6405,8 @@
       "id": "waterloo-arts-fest-2026-09-12-the-mars-express",
       "genres": [
         "jazz",
-        "rnb soul",
-        "funk reggae"
+        "rnb-soul",
+        "funk-reggae"
       ]
     },
     {
@@ -6426,7 +6450,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-sugardeer",
       "genres": [
-        "indie alternative",
+        "indie",
         "rock"
       ]
     },
@@ -6449,8 +6473,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-by-light-we-loom",
       "genres": [
-        "indie alternative",
-        "pop"
+        "indie",
+        "pop",
+        "rock"
       ]
     },
     {
@@ -6472,8 +6497,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-the-zerbo-brothers",
       "genres": [
-        "world",
-        "folk americana"
+        "african",
+        "folk-roots"
       ]
     },
     {
@@ -6517,7 +6542,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-homedays",
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -6562,8 +6587,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-whats-his-face-and-friends",
       "genres": [
-        "hiphop rap",
-        "rnb soul"
+        "hiphop-rap",
+        "rnb-soul"
       ]
     },
     {
@@ -6607,7 +6632,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-beach-city-postal-service",
       "genres": [
-        "folk americana",
+        "folk-roots",
         "rock"
       ]
     },
@@ -6630,9 +6655,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-grumpy-plum",
       "genres": [
-        "indie alternative",
+        "indie",
         "pop",
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -6654,7 +6679,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-lemoyne-alexander",
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -6699,8 +6724,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-a-m-the-queen",
       "genres": [
-        "hiphop rap",
-        "rnb soul"
+        "hiphop-rap",
+        "rnb-soul"
       ]
     },
     {
@@ -6722,7 +6747,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-ashley-brooke-toussant",
       "genres": [
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -6744,7 +6769,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-jeff-holland",
       "genres": [
-        "indie alternative",
+        "indie",
         "rock"
       ]
     },
@@ -6767,8 +6792,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-scorch-steezy",
       "genres": [
-        "indie alternative",
-        "folk americana",
+        "alternative",
+        "folk-roots",
         "country",
         "singer-songwriter"
       ]
@@ -6792,9 +6817,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-anna-beau",
       "genres": [
-        "indie alternative",
+        "indie",
         "pop",
-        "folk americana",
+        "folk-roots",
         "singer-songwriter"
       ]
     },
@@ -6817,7 +6842,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-dust-and-debris",
       "genres": [
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -6840,7 +6865,7 @@
       "id": "waterloo-arts-fest-2026-09-12-the-john-mcgrail-group",
       "genres": [
         "singer-songwriter",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -6862,7 +6887,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-macho-texans",
       "genres": [
-        "folk americana",
+        "folk-roots",
         "rock"
       ]
     },
@@ -6886,7 +6911,7 @@
       "id": "waterloo-arts-fest-2026-09-12-moko-bovo",
       "genres": [
         "experimental",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -6930,7 +6955,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-cigar-box-scott",
       "genres": [
-        "folk americana",
+        "folk-roots",
         "blues",
         "bluegrass"
       ]
@@ -6955,8 +6980,7 @@
       "id": "waterloo-arts-fest-2026-09-12-ballinloch",
       "genres": [
         "irish",
-        "folk americana",
-        "traditional"
+        "folk-roots"
       ]
     },
     {
@@ -6978,8 +7002,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-shortt-stories",
       "genres": [
-        "indie alternative",
-        "folk americana"
+        "acoustic",
+        "alternative",
+        "folk-roots"
       ]
     },
     {
@@ -7001,8 +7026,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-frida-and-the-mann",
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock",
+        "indie",
         "pop"
       ]
     },
@@ -7025,8 +7051,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-fox-ears",
       "genres": [
-        "funk reggae",
-        "rnb soul"
+        "funk-reggae",
+        "rnb-soul"
       ]
     },
     {
@@ -7070,8 +7096,8 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-colin-miller-the-brother-nature",
       "genres": [
-        "rnb soul",
-        "funk reggae",
+        "rnb-soul",
+        "funk-reggae",
         "rock"
       ]
     },
@@ -7117,9 +7143,9 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-rustic-skies",
       "genres": [
-        "indie alternative",
+        "indie",
         "jazz",
-        "funk reggae",
+        "funk-reggae",
         "rock"
       ]
     },
@@ -7142,8 +7168,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-nature-nvoke",
       "genres": [
-        "punk ska",
-        "hiphop rap",
+        "punk-ska",
         "experimental"
       ]
     },
@@ -7255,7 +7280,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-david-loy-and-the-ramrods",
       "genres": [
-        "folk americana",
+        "folk-roots",
         "rock"
       ]
     },
@@ -7278,7 +7303,7 @@
       "manual": true,
       "id": "waterloo-arts-fest-2026-09-12-kiss-me-deadly",
       "genres": [
-        "indie alternative",
+        "indie",
         "pop",
         "rock"
       ]
@@ -7492,7 +7517,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/85956428/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "happy-dog-2026-09-13-rick-maguire-of-pile",
@@ -8121,10 +8148,10 @@
       "manual": false,
       "genres": [
         "covers",
+        "classic",
         "rock",
         "pop",
-        "country",
-        "classic rock"
+        "country"
       ]
     },
     {
@@ -8147,7 +8174,7 @@
       "id": "paninis-westlake-2026-09-13-pete-lazard",
       "genres": [
         "singer-songwriter",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -8320,7 +8347,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -8342,7 +8369,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -8409,7 +8436,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -8626,8 +8653,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "jazz",
-        "indie alternative"
+        "experimental",
+        "jazz"
       ]
     },
     {
@@ -8783,7 +8810,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -8825,7 +8852,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -8889,7 +8916,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -8945,7 +8972,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -9053,7 +9080,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -9261,7 +9288,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -9460,7 +9487,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -9629,7 +9656,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "reithoffers-2026-09-16-trivia-night",
@@ -9645,7 +9674,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -9911,7 +9940,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -9933,7 +9962,7 @@
       "source": "seatgeek",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
         "rock"
       ]
     },
@@ -10055,7 +10084,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/62974565/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "happy-dog-2026-09-17-roast-battle-cleveland-thursday-night-showdown",
@@ -10180,7 +10211,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
         "rock"
       ]
     },
@@ -10485,7 +10516,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "funk reggae"
+        "funk-reggae"
       ]
     },
     {
@@ -10889,8 +10920,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana",
-        "traditional"
+        "folk-roots"
       ]
     },
     {
@@ -10917,8 +10947,8 @@
       "manual": false,
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap",
+        "dance-disco",
+        "hiphop-rap",
         "rock"
       ]
     },
@@ -10940,7 +10970,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/48731203/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "happy-dog-2026-09-18-food-not-bombs-karaoke-benefit",
@@ -11132,8 +11164,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana",
-        "indie alternative"
+        "folk-roots",
+        "alternative"
       ]
     },
     {
@@ -11319,8 +11351,8 @@
       "manual": false,
       "genres": [
         "jazz",
-        "electronic",
-        "dance disco"
+        "electronic-edm",
+        "dance-disco"
       ]
     },
     {
@@ -11343,8 +11375,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids",
-        "traditional"
+        "family-kids"
       ]
     },
     {
@@ -11577,8 +11608,7 @@
       "manual": false,
       "genres": [
         "irish",
-        "folk americana",
-        "traditional"
+        "folk-roots"
       ]
     },
     {
@@ -11823,7 +11853,7 @@
       "id": "bar-32-2026-09-18-pete-lazard",
       "genres": [
         "singer-songwriter",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -11894,7 +11924,8 @@
       "manual": true,
       "id": "1928-public-house-2026-09-18-custard-pie",
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers"
       ]
     },
@@ -12122,7 +12153,7 @@
       "source": "seatgeek",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
         "rock"
       ]
     },
@@ -12157,7 +12188,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "indie",
         "rock"
       ]
     },
@@ -12185,7 +12216,7 @@
       "manual": false,
       "genres": [
         "experimental",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -12226,7 +12257,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/74409514/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "happy-dog-2026-09-19-white-flag-over-providence",
@@ -12330,7 +12363,9 @@
       "ticketUrl": "https://link.dice.fm/v28506bd371e",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "emo"
+      ]
     },
     {
       "id": "bop-stop-2026-09-19-cleveland-cocktail-choir-the-beatles-bop-stop",
@@ -12732,7 +12767,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -12841,8 +12876,9 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
-        "folk americana"
+        "acoustic",
+        "alternative",
+        "folk-roots"
       ]
     },
     {
@@ -12988,7 +13024,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -13247,7 +13283,7 @@
       "manual": false,
       "genres": [
         "singer-songwriter",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -13372,7 +13408,7 @@
       "id": "cavottas-garden-bar-2026-09-19-cavottas-annual-clambake",
       "genres": [
         "country",
-        "folk americana",
+        "folk-roots",
         "blues"
       ]
     },
@@ -13948,7 +13984,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/52245010/the-addams-family-a-musical-cleveland-heights-cain-park-alma-theater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "theater"
+      ]
     },
     {
       "id": "mahalls-2026-09-20-many-eyes",
@@ -14083,6 +14121,7 @@
       "manual": false,
       "genres": [
         "event",
+        "trivia-games",
         "drag"
       ]
     },
@@ -14407,7 +14446,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "rock",
         "blues"
       ]
@@ -14494,7 +14533,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "blues",
         "covers"
       ]
@@ -14753,7 +14793,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -14831,7 +14871,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -14900,7 +14940,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "event",
+        "trivia-games"
       ]
     },
     {
@@ -14922,7 +14963,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "event",
+        "trivia-games"
       ]
     },
     {
@@ -14973,7 +15015,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -15384,7 +15426,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -15402,7 +15444,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -15493,7 +15535,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -15547,7 +15589,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "rock",
         "blues"
       ]
@@ -15639,7 +15681,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -15801,7 +15843,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -15940,7 +15982,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "reithoffers-2026-09-23-trivia-night",
@@ -15956,7 +16000,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -15998,8 +16042,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana",
-        "traditional"
+        "folk-roots"
       ]
     },
     {
@@ -16144,7 +16187,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -17061,7 +17104,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie",
+        "rock"
       ]
     },
     {
@@ -17225,7 +17269,7 @@
       "manual": false,
       "genres": [
         "tribute",
-        "classic rock",
+        "classic",
         "rock"
       ]
     },
@@ -18611,7 +18655,9 @@
       "ticketUrl": "https://link.dice.fm/yd8c062dd21d",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "emo"
+      ]
     },
     {
       "id": "mahalls-2026-09-26-henceforth-comedy-late-night-mahall-s-apartment",
@@ -18697,7 +18743,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/soda-punk-live-the-mercury-music-lounge-tickets/14294864",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "emo"
+      ]
     },
     {
       "id": "playhouse-square-2026-09-26-1600-the-magicians-table",
@@ -19097,7 +19145,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -19165,7 +19213,7 @@
       "manual": false,
       "genres": [
         "blues",
-        "rnb soul",
+        "rnb-soul",
         "jazz"
       ]
     },
@@ -19226,7 +19274,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie"
       ]
     },
     {
@@ -19268,7 +19316,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "hiphop rap",
+        "hiphop-rap",
         "dj"
       ]
     },
@@ -19529,7 +19577,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
         "rock"
       ]
     },
@@ -19755,8 +19803,8 @@
       "id": "local-bar-strongsville-2026-09-26-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -20665,7 +20713,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers"
       ]
     },
@@ -20919,7 +20968,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -20942,7 +20991,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -20964,7 +21013,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -20987,7 +21036,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "event",
+        "trivia-games"
       ]
     },
     {
@@ -21010,7 +21060,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -21293,7 +21343,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -21315,7 +21365,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -21333,7 +21383,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -21384,7 +21434,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -21562,7 +21612,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -21789,7 +21839,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "family kids"
+        "family-kids"
       ]
     },
     {
@@ -21842,7 +21892,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-09-30-cornelius-karre-violin-and-percussion-duo-in-concert",
@@ -22050,7 +22102,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -24346,7 +24398,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -24431,7 +24483,7 @@
       "id": "cavottas-garden-bar-2026-10-03-blue-lunch",
       "genres": [
         "blues",
-        "rnb soul",
+        "rnb-soul",
         "jazz"
       ]
     },
@@ -24514,7 +24566,7 @@
       "manual": true,
       "id": "time-warp-2026-10-03-disco-inferno",
       "genres": [
-        "dance disco",
+        "dance-disco",
         "covers"
       ]
     },
@@ -25293,7 +25345,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -25336,7 +25388,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -25675,7 +25727,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -25750,7 +25802,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -26211,7 +26263,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-10-07-chamber-music-in-the-galleries",
@@ -26271,7 +26325,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "jenks-1929-2026-10-07-1800-well-read-and-well-poured-a-night-for-the-arts",
@@ -26431,7 +26487,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -26984,7 +27040,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event",
+        "trivia-games",
         "drag"
       ]
     },
@@ -27269,7 +27325,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "indie alternative",
+        "indie",
         "pop",
         "comedy",
         "singer-songwriter"
@@ -27355,8 +27411,8 @@
       "id": "time-warp-2026-10-09-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -27920,7 +27976,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "trivia-games"
       ]
     },
     {
@@ -28005,7 +28061,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie"
       ]
     },
     {
@@ -28183,7 +28239,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "jenks-1929-2026-10-10-1200-evermore-and-folklore-the-music-of-taylor-swift-by-alexis-julia",
@@ -28410,8 +28468,8 @@
       "id": "wild-eagle-streetsboro-2026-10-10-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -28759,7 +28817,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -29097,7 +29155,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -29119,7 +29177,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -29438,7 +29496,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -29552,7 +29610,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -29582,7 +29640,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie",
+        "emo"
       ]
     },
     {
@@ -29922,7 +29981,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-10-14-hiromi-the-trio-project",
@@ -30064,7 +30125,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -30557,7 +30618,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "electronic",
+        "electronic-edm",
         "rock"
       ]
     },
@@ -31227,7 +31288,9 @@
       "source": "manual",
       "manual": true,
       "id": "twist-social-club-2026-10-16-emo-night",
-      "genres": []
+      "genres": [
+        "emo"
+      ]
     },
     {
       "title": "Old Skool",
@@ -31249,8 +31312,8 @@
       "id": "wild-eagle-broadview-heights-2026-10-16-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -31754,7 +31817,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -31992,7 +32055,7 @@
       "genres": [
         "covers",
         "pop",
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -32199,7 +32262,9 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "alternative",
+        "psych",
+        "rock"
       ]
     },
     {
@@ -32769,7 +32834,9 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "alternative",
+        "psych",
+        "rock"
       ]
     },
     {
@@ -32791,7 +32858,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -32837,7 +32904,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -33047,8 +33114,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "jazz",
-        "indie alternative"
+        "experimental",
+        "jazz"
       ]
     },
     {
@@ -33155,7 +33222,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -33267,7 +33334,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -33288,7 +33355,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/15047953?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "movie-film"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-10-21-nik-parr-the-selfless-lovers",
@@ -33550,7 +33619,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-10-21-santiago-ca-n-valencia-solo-cello-recital",
@@ -33672,7 +33743,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -34179,7 +34250,7 @@
       "manual": false,
       "genres": [
         "blues",
-        "rnb soul",
+        "rnb-soul",
         "jazz"
       ]
     },
@@ -34803,7 +34874,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -36230,7 +36301,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -36280,7 +36351,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -36511,7 +36582,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -36583,7 +36654,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -36842,7 +36913,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "visible-voice-books-2026-10-28-roots-masters-of-american-music-celebrates-tba",
@@ -36982,7 +37055,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -37335,7 +37408,9 @@
       "ticketUrl": "https://link.dice.fm/Qec0e5cace91",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "emo"
+      ]
     },
     {
       "id": "bop-stop-2026-10-30-stephen-philip-harvey-octet--mythos-commission-premiere-bop-stop",
@@ -37716,7 +37791,7 @@
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-10-30-disco-inferno",
       "genres": [
-        "dance disco",
+        "dance-disco",
         "covers"
       ]
     },
@@ -37872,7 +37947,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative"
+        "indie",
+        "rock"
       ]
     },
     {
@@ -38037,8 +38113,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "blues",
-        "traditional"
+        "blues"
       ]
     },
     {
@@ -38290,7 +38365,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana",
+        "folk-roots",
         "blues",
         "bluegrass"
       ]
@@ -38926,7 +39001,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -39087,7 +39162,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -39139,7 +39214,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -39361,7 +39436,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-11-04-leenalchi",
@@ -39505,7 +39582,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -39539,7 +39616,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "alternative",
         "rock"
       ]
     },
@@ -39713,6 +39790,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "emo",
         "comedy"
       ]
     },
@@ -40412,7 +40490,8 @@
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-11-06-custard-pie",
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers"
       ]
     },
@@ -41474,7 +41553,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -41683,7 +41762,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -41757,7 +41836,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -42068,7 +42147,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-11-11-chamber-music-in-the-atrium-presenting-the-resonance-project",
@@ -42208,7 +42289,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -42860,7 +42941,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock"
+        "classic",
+        "rock"
       ]
     },
     {
@@ -43030,8 +43112,8 @@
       "id": "time-warp-2026-11-13-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -43194,7 +43276,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "electronic",
+        "electronic-edm",
         "rock"
       ]
     },
@@ -43493,7 +43575,7 @@
       "manual": false,
       "genres": [
         "singer-songwriter",
-        "folk americana",
+        "folk-roots",
         "blues"
       ]
     },
@@ -43601,7 +43683,7 @@
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-11-14-disco-inferno",
       "genres": [
-        "dance disco",
+        "dance-disco",
         "covers"
       ]
     },
@@ -44143,7 +44225,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -44265,8 +44347,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "jazz",
-        "indie alternative"
+        "experimental",
+        "jazz"
       ]
     },
     {
@@ -44374,7 +44456,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -44466,7 +44548,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -44617,7 +44699,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "jenks-1929-2026-11-18-1700-bob-fest-2026",
@@ -44737,7 +44821,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -45963,7 +46047,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -46051,7 +46135,7 @@
       "manual": false,
       "genres": [
         "singer-songwriter",
-        "folk americana"
+        "folk-roots"
       ]
     },
     {
@@ -46178,7 +46262,7 @@
       "genres": [
         "covers",
         "pop",
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -46664,7 +46748,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/midnight-rental-presents-secret-movie-grog-shop-tickets/15047973?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "movie-film"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-11-23-music-trivi-aoke-46",
@@ -46685,7 +46771,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -46866,7 +46952,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -46938,7 +47024,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -47121,7 +47207,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "title": "TRICKY DICK AND THE COVER-UPS",
@@ -47248,7 +47336,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -47427,7 +47515,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers",
         "tribute"
       ]
@@ -47688,8 +47777,8 @@
       "id": "wild-eagle-broadview-heights-2026-11-27-old-skool",
       "genres": [
         "covers",
-        "dance disco",
-        "hiphop rap"
+        "dance-disco",
+        "hiphop-rap"
       ]
     },
     {
@@ -47836,7 +47925,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "punk ska"
+        "punk-ska"
       ]
     },
     {
@@ -47883,7 +47972,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "classic rock",
+        "classic",
+        "rock",
         "covers",
         "tribute"
       ]
@@ -48168,7 +48258,7 @@
       "genres": [
         "covers",
         "rock",
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -48692,7 +48782,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -48809,7 +48899,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -48861,7 +48951,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -48987,7 +49077,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-12-02-chamber-music-in-the-galleries",
@@ -49127,7 +49219,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -49955,7 +50047,7 @@
       "manual": false,
       "genres": [
         "singer-songwriter",
-        "folk americana",
+        "folk-roots",
         "blues"
       ]
     },
@@ -50018,7 +50110,7 @@
       "manual": true,
       "id": "time-warp-2026-12-05-disco-inferno",
       "genres": [
-        "dance disco",
+        "dance-disco",
         "covers"
       ]
     },
@@ -50469,7 +50561,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -50626,7 +50718,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -50701,7 +50793,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -50851,7 +50943,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-12-09-camila-ferna-ndez",
@@ -50951,7 +51045,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -51146,7 +51240,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "folk americana",
+        "folk-roots",
         "blues",
         "bluegrass"
       ]
@@ -51510,9 +51604,9 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "indie alternative",
+        "indie",
         "jazz",
-        "funk reggae",
+        "funk-reggae",
         "rock"
       ]
     },
@@ -51895,7 +51989,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -52012,7 +52106,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -52084,7 +52178,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -52211,7 +52305,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-museum-of-art-2026-12-16-in-four-voices-americana",
@@ -52311,7 +52407,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -52955,7 +53051,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul"
+        "rnb-soul"
       ]
     },
     {
@@ -53065,7 +53161,7 @@
       "genres": [
         "covers",
         "pop",
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -53418,7 +53514,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -53583,7 +53679,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -53658,7 +53754,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -53763,7 +53859,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-12-23",
@@ -53843,7 +53941,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -54356,7 +54454,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "trivia",
+        "trivia-games",
         "karaoke"
       ]
     },
@@ -54473,7 +54571,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rnb soul",
+        "rnb-soul",
         "comedy"
       ]
     },
@@ -54525,7 +54623,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -54585,7 +54683,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-12-30",
@@ -54665,7 +54765,7 @@
       "source": "manual",
       "manual": true,
       "genres": [
-        "trivia"
+        "trivia-games"
       ]
     },
     {
@@ -54709,7 +54809,7 @@
       "genres": [
         "covers",
         "pop",
-        "hiphop rap"
+        "hiphop-rap"
       ]
     },
     {
@@ -54811,7 +54911,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "rock-hall-2027-01-10-sensory-friendly-hours-jan-2027",
@@ -54869,7 +54971,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "playhouse-square-2027-01-14-the-elvis-tribute-artist-spectacular-1",
@@ -55142,7 +55246,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "hilarities-2027-01-21-143365",
@@ -55311,7 +55417,9 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "near-west-theatre-2027-01-28-1930-songs-for-a-new-world-in-partnership-with-baldwin-wallace-university",
