@@ -11631,25 +11631,7 @@
     "manual": true,
     "id": "wild-eagle-downtown-2026-12-05-the-ladies-night"
   },
-  {
-    "title": "Dunk Betty",
-    "performers": [
-      {
-        "name": "Dunk Betty",
-        "headliner": true
-      }
-    ],
-    "date": "2026-12-19",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-downtown",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-downtown-2026-12-19-dunk-betty"
-  },
+  
 
   {
     "title": "Country Honk",
@@ -16233,6 +16215,224 @@
     "source": "manual",
     "manual": true,
     "id": "cleveland-pickle-fest-2026-10-03-jasmin-jeanise"
+  },
+
+
+
+
+
+
+
+
+  {
+    "title": "Guggy, Noah, Rachel Shortt",
+    "performers": [
+      {
+        "name": "Guggy",
+        "headliner": true
+      },
+      {
+        "name": "Noah",
+        "headliner": false
+      },
+      {
+        "name": "Rachel Shortt",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-11",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-11-guggy"
+  },
+  {
+    "title": "C&C Acoustic Jazz Duo",
+    "performers": [
+      {
+        "name": "C&C Acoustic Jazz Duo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-12-c-c-acoustic-jazz-duo"
+  },
+  {
+    "title": "Fragments",
+    "performers": [
+      {
+        "name": "Fragments",
+        "headliner": true
+      },
+      {
+        "name": "accubats",
+        "headliner": false
+      },
+      {
+        "name": "Greg Smith",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-18",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-18-fragments"
+  },
+  {
+    "title": "Benefit Allyssa Allison",
+    "performers": [
+      {
+        "name": "Allyssa Allison",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-19",
+    "time": "22:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-19-allyssa-allison"
+  },
+  {
+    "title": "Breakwater Band",
+    "performers": [
+      {
+        "name": "Breakwater Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-25-breakwater-band"
+  },
+  {
+    "title": "Lords of the Highway",
+    "performers": [
+      {
+        "name": "Lords of the Highway",
+        "headliner": true
+      },
+      {
+        "name": "FFF",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-26",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-09-26-lords-of-the-highway"
+  },
+  {
+    "title": "CCF + Afterparty",
+    "performers": [
+      {
+        "name": "CCF",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-02",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2025-10-02-ccf"
+  },
+  {
+    "title": "Spotlight on Songwriters w Freddy Hill",
+    "performers": [
+      {
+        "name": "Freddy Hill",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-03",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2025-10-03-freddy-hill"
+  },
+  {
+    "title": "The Tenants",
+    "performers": [
+      {
+        "name": "The Tenants",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-09",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2025-10-09-the-tenants"
+  },
+  {
+    "title": "Technoberfest",
+    "performers": [
+      {
+        "name": "Technoberfest",
+        "headliner": true
+      }
+    ],
+    "date": "2025-10-10",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2025-10-10-technoberfest"
   }
 
 

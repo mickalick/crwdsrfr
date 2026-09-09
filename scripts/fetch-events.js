@@ -256,40 +256,31 @@ async function fetchGrogShop() {
 
 async function fetchAgora() {
   try {
-    const res = await fetch('https://www.agoracleveland.com/events/all');
-    const html = await res.text();
-    const $ = cheerio.load(html);
+    const res = await fetch('https://aegwebprod.blob.core.windows.net/json/events/82/events.json');
+    const data = await res.json();
     const events = [];
 
-    $('.entry').each((i, el) => {
-      const titleEl = $(el).find('h3.carousel_item_title_small a');
-      const supportEl = $(el).find('h4.supporting');
-      const dateEl = $(el).find('span.date');
-      const timeEl = $(el).find('span.time');
-      const ticketEl = $(el).find('a.btn-tickets');
+    (data.events ?? []).forEach((evt) => {
+      const headlinerName = evt.title?.headlinersText?.trim();
+      const eventDateTimeLocal = evt.eventDateTime; // e.g. "2026-09-13T20:00:00", already local
+      if (!headlinerName || !eventDateTimeLocal) return;
 
-      if (!titleEl.length || !dateEl.length) return;
+      // Local datetime strings — split directly, never round-trip through Date/UTC.
+      const [date, timeRaw] = eventDateTimeLocal.split('T');
+      const time = timeRaw ? timeRaw.slice(0, 5) : null; // "HH:MM"
 
-      const headlinerName = titleEl.text().trim();
-      const dateRaw = dateEl.text().replace(/[^a-zA-Z0-9,\s]/g, '').trim();
-      const parsedDate = new Date(dateRaw);
-      if (isNaN(parsedDate)) return;
-      const date = toLocalDateStr(parsedDate);
-
-      const timeRaw = timeEl.text().replace('Doors', '').trim();
-      const timeClean = timeRaw.replace(/[^0-9:\sAPMapm]/g, '').trim();
-
-      function normalizeTime(t) {
-        if (!t) return null;
-        const [time, modifier] = t.trim().split(' ');
-        let [hours, minutes] = time.split(':').map(Number);
-        if (modifier?.toLowerCase() === 'pm' && hours !== 12) hours += 12;
-        if (modifier?.toLowerCase() === 'am' && hours === 12) hours = 0;
-        return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+      let doors = null;
+      if (evt.doorDateTime) {
+        const doorTimeRaw = evt.doorDateTime.split('T')[1];
+        doors = doorTimeRaw ? doorTimeRaw.slice(0, 5) : null;
       }
 
-      const supporters = supportEl.length
-        ? supportEl.text().split(';').map(s => s.trim()).filter(Boolean)
+      // supportingText delimiter is inconsistent in this feed — semicolons on
+      // some events ("Angel Du$t; H2O; Murphy's Law"), plain commas on others
+      // ("Balance and Composure, Midrift, Niis"). Prefer ';' when present.
+      const supportingText = evt.title?.supportingText?.trim();
+      const supporters = supportingText
+        ? supportingText.split(supportingText.includes(';') ? ';' : ',').map(s => s.trim()).filter(Boolean)
         : [];
 
       const performers = [{ name: headlinerName, headliner: true }];
@@ -299,17 +290,21 @@ async function fetchAgora() {
         ? `${headlinerName} w/ ${supporters.join(', ')}`
         : headlinerName;
 
-      const ticketUrl = ticketEl.attr('href') ?? null;
-      const eventUrl = titleEl.attr('href') ?? null;
+      // ticketing.url is AXS's public event page (same link the "Buy Tickets"
+      // button on the widget pointed to) — absolute, stable, safe for both fields.
+      const ticketUrl = evt.ticketing?.url ?? null;
+      const eventUrl = ticketUrl;
+
       const slug = slugify(headlinerName);
+      const hhmm = time ? time.replace(':', '') : '0000';
 
       events.push({
-        id: `the-agora-${date}-${slug}`,
+        id: `the-agora-${date}-${hhmm}-${slug}`,
         title,
         venueId: 'the-agora',
         date,
-        time: null,
-        doors: normalizeTime(timeClean),
+        time,
+        doors,
         price: null,
         performers,
         eventUrl,
@@ -318,7 +313,6 @@ async function fetchAgora() {
         manual: false,
       });
     });
-
     return events;
   } catch (err) {
     console.error('fetchAgora error:', err.message);
