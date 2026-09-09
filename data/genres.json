@@ -1,11 +1,23 @@
 {
+  "acoustic": {
+    "label": "Acoustic",
+    "color": "#D19974"
+  },
+  "african": {
+    "label": "African",
+    "color": "#35A72F"
+  },
+  "alternative": {
+    "label": "Alternative",
+    "color": "#A572D3"
+  },
   "blues": {
     "label": "Blues",
     "color": "#6187E0"
   },
   "bluegrass": {
     "label": "Bluegrass",
-    "color": "#3DB87A"
+    "color": "#3DB89C"
   },
   "cabaret": {
     "label": "Cabaret",
@@ -15,8 +27,8 @@
     "label": "Chinese",
     "color": "#FF3D3D"
   },
-  "classic rock": {
-    "label": "Classic Rock",
+  "classic": {
+    "label": "Classic",
     "color": "#FF5C33"
   },
   "classical": {
@@ -39,9 +51,9 @@
     "label": "Tribute",
     "color": "#ADADAD"
   },
-  "dance disco": {
+  "dance-disco": {
     "label": "Dance / Disco",
-    "color": "#F0F000"
+    "color": "#FFFF70"
   },
   "dj": {
     "label": "DJ",
@@ -51,9 +63,9 @@
     "label": "Drag",
     "color": "#E85D9E"
   },
-  "electronic": {
-    "label": "Electronic",
-    "color": "#C2F301"
+  "electronic-edm": {
+    "label": "Electronic / EDM",
+    "color": "#D1FE20"
   },
   "emo": {
     "label": "Emo",
@@ -65,17 +77,17 @@
   },
   "experimental": {
     "label": "Experimental",
-    "color": "#D4FE2A"
+    "color": "#BBE901"
   },
-  "family kids": {
+  "family-kids": {
     "label": "Family / Kids",
     "color": "#A0DEAB"
   },
-  "folk americana": {
-    "label": "Folk / Americana",
+  "folk-roots": {
+    "label": "Folk / Roots",
     "color": "#63CA73"
   },
-  "funk reggae": {
+  "funk-reggae": {
     "label": "Funk / Reggae",
     "color": "#FDEF4E"
   },
@@ -87,12 +99,12 @@
     "label": "Greek",
     "color": "#0096E0"
   },
-  "hiphop rap": {
+  "hiphop-rap": {
     "label": "Hip-Hop / Rap",
     "color": "#D1D100"
   },
-  "indie alternative": {
-    "label": "Indie / Alternative",
+  "indie": {
+    "label": "Indie",
     "color": "#9585E5"
   },
   "irish": {
@@ -123,6 +135,10 @@
     "label": "Metal",
     "color": "#FF6D24"
   },
+  "movie-film": {
+    "label": "Movie / Film",
+    "color": "#7EB3E7"
+  },
   "nepalese": {
     "label": "Nepalese",
     "color": "#F35353"
@@ -147,11 +163,11 @@
     "label": "Psychedelic",
     "color": "#E675F5"
   },
-  "punk ska": {
+  "punk-ska": {
     "label": "Punk / Ska",
     "color": "#E65555"
   },
-  "rnb soul": {
+  "rnb-soul": {
     "label": "R&B / Soul",
     "color": "#867BE5"
   },
@@ -164,23 +180,19 @@
     "color": "#FF3D3D"
   },
   "singer-songwriter": {
-    "label": "Singer-Songwriter",
+    "label": "Singer / Songwriter",
     "color": "#C37DE3"
   },
   "theater": {
     "label": "Theater",
     "color": "#FF8A8A"
   },
-  "traditional": {
-    "label": "Traditional",
-    "color": "#D2C4A8"
-  },
-  "trivia": {
-    "label": "Trivia",
+  "trivia-games": {
+    "label": "Trivia / Games",
     "color": "#ADECA8"
   },
-  "world": {
-    "label": "World",
-    "color": "#18DC95"
+  "vocalist": {
+    "label": "Vocalist",
+    "color": "#CBAAE4"
   }
 }
