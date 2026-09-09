@@ -1469,7 +1469,9 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/mikaela-davis-10-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-10-joey-harkum",
@@ -1493,7 +1495,9 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/joey-harkum-10-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "cain-park-2026-09-10-the-addams-family",
@@ -1581,7 +1585,10 @@
       "ticketUrl": "https://www.axs.com/events/1520025/gymclassheroes-lupe-fiasco-moved-to-agora-theatre-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "hiphop-rap",
+        "rock"
+      ]
     },
     {
       "id": "music-box-2026-09-10-moses-cleaveland",
@@ -1783,7 +1790,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "coda-2026-09-10-1997898358773",
@@ -1871,7 +1880,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "id": "cleveland-orchestra-6957e165806226671400474a",
@@ -2093,7 +2104,9 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-10-morning-glory",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "TLC & Salt-N-Pepa",
@@ -2121,7 +2134,9 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-09-10-tlc",
-      "genres": []
+      "genres": [
+        "rnb-soul"
+      ]
     },
     {
       "title": "Nathan Hedges",
@@ -2161,7 +2176,9 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-10-the-pretty-reckless",
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "title": "Elvis",
@@ -2181,7 +2198,9 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-09-10-elvis",
-      "genres": []
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "title": "Island Vibes",
@@ -2333,7 +2352,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/sincere-engineer-the-grog-shop-tickets/14790123?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "punk-ska",
+        "indie"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-11-bethany-joy",
@@ -2357,7 +2379,9 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/bethany-joy-11-sep#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "rockin-on-the-river-2026-09-11-the-seven-wonders-fleetwood-mac-tribute",
@@ -2459,7 +2483,9 @@
       "ticketUrl": "https://link.dice.fm/B91489aa13b2",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "indie"
+      ]
     },
     {
       "id": "mahalls-2026-09-11-glee-k-out-a-glee-dance-party",
@@ -2525,7 +2551,9 @@
       "ticketUrl": "https://www.axs.com/events/1366509/gavin-adcock-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "country"
+      ]
     },
     {
       "id": "music-box-2026-09-11-motown-more-sep11",
@@ -2546,7 +2574,10 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=59474",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rnb-soul",
+        "tribute"
+      ]
     },
     {
       "id": "music-box-2026-09-11-sinatra-soul-sep11",
@@ -2567,7 +2598,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62422",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-09-11-jembaa-groove",
@@ -2587,7 +2620,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/jembaa-groove-the-winchester-tickets/14273534",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "african",
+        "funk-reggae"
+      ]
     },
     {
       "id": "fwd-nightclub-2026-09-11-customer-appreciation-night",
@@ -2701,7 +2737,9 @@
       "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=120ACE84-D405-483F-81F1-C47766AABE03",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "foundry-concert-club-2026-09-11-volumes-the-mirror-touch-tour",
@@ -2721,7 +2759,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/volumes-the-mirror-touch-tour-the-foundry-tickets/14983813?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "id": "welcome-to-the-farm-booking_01KYJ7ZQ8KE6P6KQ2A6WSWCBJ9",
@@ -3029,7 +3069,9 @@
       "ticketUrl": "https://www.ticketnut.com/public/stage_events/1292",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "hiphop-rap"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-11-chris-lugo-acoustic-set-at-forest-city",
@@ -3044,7 +3086,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "acoustic"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-11-roast-battle-cleveland-live-comedy-show",
@@ -3140,7 +3184,9 @@
       "ticketUrl": "https://www.reithoffers.com/event-details-registration/ray-flanagan-7",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "acoustic"
+      ]
     },
     {
       "id": "flat-iron-cafe-3103815",
@@ -3185,7 +3231,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "classical"
+      ]
     },
     {
       "id": "visible-voice-books-2026-09-11-concert-series-esther-fitz",
@@ -3205,7 +3253,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "jenks-1929-2026-09-11-1900-rick-szekelyi",
@@ -3245,7 +3295,9 @@
       "source": "manual",
       "manual": true,
       "id": "cebars-2026-09-11-bootleg-service",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Tricky Dick",
@@ -3265,7 +3317,9 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-11-tricky-dick",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Whiskey Outlaws",
@@ -3285,7 +3339,10 @@
       "source": "manual",
       "manual": true,
       "id": "sound-stage-tavern-2026-09-11-whiskey-outlaws",
-      "genres": []
+      "genres": [
+        "covers",
+        "country"
+      ]
     },
     {
       "title": "Qwik-Silver Trio",
@@ -3305,7 +3362,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-09-11-qwik-silver-trio",
-      "genres": []
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "title": "Shooters After Dark: Bella Grazia",
@@ -3381,7 +3440,9 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-09-11-intense",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Qualified",
@@ -3423,7 +3484,9 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-09-11-o-a-r",
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "title": "Ohio Drifters",
@@ -3443,7 +3506,9 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-11-ohio-drifters",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Joe Jordan",
@@ -3573,9 +3638,7 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-11-ladies-night-band",
-      "genres": [
-        "event"
-      ]
+      "genres": []
     },
     {
       "title": "Mike James",
@@ -3655,7 +3718,9 @@
       "source": "manual",
       "manual": true,
       "id": "smoke-and-mirrors-2026-09-11-joke-and-mirrors",
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "title": "Sam Romano",
@@ -3785,7 +3850,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-11-rumors",
-      "genres": []
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "title": "BitBurger Area - Sports/German Musik Discs",
@@ -3825,7 +3892,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-11-the-don-wojtila-band",
-      "genres": []
+      "genres": [
+        "polka"
+      ]
     },
     {
       "title": "BitBurger Area - Sports/German Musik Discs",
@@ -3926,7 +3995,9 @@
       "source": "manual",
       "manual": true,
       "id": "spotlight-cle-2026-09-11-guggy",
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-09-11",
@@ -4065,7 +4136,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/bloodrave-grog-shop-tickets/14265244?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "electronic-edm"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-12-waterloo-arts-fest",
@@ -4115,7 +4188,9 @@
       "ticketUrl": "https://www.etix.com/ticket/p/54475505/branford-marsalis-and-dianne-reeves-cleveland-heights-cain-park-evans-amphitheater?partner_id=100",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "cain-park-2026-09-12-the-addams-family",
@@ -4222,7 +4297,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/dylan-the-dead-the-winchester-tickets/14838343",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "id": "collision-bend-euclid-2026-09-12-half-way-to-st-patricks-day-at-collision-bend-euclid-51239",
@@ -4359,7 +4436,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/dirty-sound-magnet-the-foundry-tickets/14230064?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "id": "dunlaps-2026-09-12-143134",
@@ -4611,7 +4690,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "hofbrauhaus-2026-09-12-north-coast-prost-dls9z-nerf4-egkhy-y8hcz-8z284-ze435-s32w5",
@@ -4653,7 +4734,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "jolly-scholar-2026-09-12-3367902",
@@ -4673,7 +4756,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "the-ivy-2026-09-12-jake-hadden-just-aj",
@@ -4990,7 +5075,9 @@
       "source": "manual",
       "manual": true,
       "id": "cebars-2026-09-12-reverbious",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Soul Shake",
@@ -5010,7 +5097,9 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-12-soul-shake",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Armstrong Bearcat Band",
@@ -5030,7 +5119,9 @@
       "source": "manual",
       "manual": true,
       "id": "whiskey-island-2026-09-12-armstrong-bearcat-band",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "The Saints",
@@ -5050,7 +5141,9 @@
       "source": "manual",
       "manual": true,
       "id": "cavottas-garden-bar-2026-09-12-the-saints",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Higher Ground",
@@ -5070,7 +5163,9 @@
       "source": "manual",
       "manual": true,
       "id": "sound-stage-tavern-2026-09-12-higher-ground",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Furious George",
@@ -5112,7 +5207,9 @@
       "source": "manual",
       "manual": true,
       "id": "shooters-2026-09-12-disco-dom",
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Gettoblaster BBQ",
@@ -5178,7 +5275,9 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-09-12-glass-house",
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "title": "Bill Ransom Trio",
@@ -5220,7 +5319,9 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-09-12-thomas-rhett",
-      "genres": []
+      "genres": [
+        "country"
+      ]
     },
     {
       "title": "Erin Nicole Neal & The Chill",
@@ -5375,7 +5476,9 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-12-serious-fm",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "The Ladies Night",
@@ -5398,8 +5501,7 @@
       "genres": [
         "pop",
         "covers",
-        "tribute",
-        "event"
+        "tribute"
       ]
     },
     {
@@ -5443,7 +5545,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-09-12-dueling-pianos",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "IK Dubaku",
@@ -5570,7 +5674,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-12-donauschwaben-kulturgruppe",
-      "genres": []
+      "genres": [
+        "german"
+      ]
     },
     {
       "title": "Weihenstephan Fest Test - The Bräts From New Orleans",
@@ -5656,7 +5762,9 @@
       "source": "manual",
       "manual": true,
       "id": "cleveland-oktoberfest-2026-09-12-tricky-dick-the-cover-ups",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Bier Garten - Spazmatics",
@@ -7026,7 +7134,10 @@
       "source": "manual",
       "manual": true,
       "id": "spotlight-cle-2026-09-12-c-c-acoustic-jazz-duo",
-      "genres": []
+      "genres": [
+        "jazz",
+        "acoustic"
+      ]
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-09-12",
@@ -7173,7 +7284,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/soul-glo-minority-threat-for-grog-shop-tickets/15030613?pl=grogshop&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "punk-ska"
+      ]
     },
     {
       "id": "the-agora-2026-09-13-2000-elvis-costello-the-imposters-with-charlie-sexton",
@@ -7193,7 +7306,10 @@
       "ticketUrl": "https://www.axs.com/events/1472187/elvis-costello-the-imposters-with-charlie-sexton-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rock",
+        "tribute"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-09-13-beachland-brunch",
@@ -7218,8 +7334,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event",
-        "dj"
+        "dj",
+        "event"
       ]
     },
     {
@@ -7266,7 +7382,10 @@
       "ticketUrl": "https://app.opendate.io/e/rick-maguire-of-pile-plastic-wildflowers-september-13-2026-733249",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rock",
+        "indie"
+      ]
     },
     {
       "id": "mahalls-2026-09-13-atta-boy",
@@ -7354,7 +7473,9 @@
       "ticketUrl": "https://www.axs.com/events/1528359/xavier-wulf-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "hiphop-rap"
+      ]
     },
     {
       "id": "jacobs-pavilion-1407898",
@@ -7378,7 +7499,9 @@
       "ticketUrl": "https://www.axs.com/events/1407898/black-label-society-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "id": "music-box-2026-09-13-drag-brunch-sep13",
@@ -7447,7 +7570,9 @@
       "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62477",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-09-13-bluegrass-brunch-w-whiskey-drinks-cory-grinder-the-playboy-scouts",
@@ -7468,6 +7593,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "bluegrass",
         "event"
       ]
     },
@@ -7490,6 +7616,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "acoustic",
         "event"
       ]
     },
@@ -7982,7 +8109,9 @@
       "source": "manual",
       "manual": true,
       "id": "cavottas-garden-bar-2026-09-13-monica-robins-the-whiskey-kings",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Legacy Band",
@@ -8002,7 +8131,9 @@
       "source": "manual",
       "manual": true,
       "id": "chagrin-tavern-2026-09-13-legacy-band",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Billy Idol",
@@ -8022,7 +8153,9 @@
       "source": "manual",
       "manual": true,
       "id": "blossom-music-center-2026-09-13-billy-idol",
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "id": "spotlight-house-techno-2026-09-13",
@@ -8322,7 +8455,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -11245,6 +11379,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
+        "acoustic",
         "event"
       ]
     },
@@ -14947,7 +15082,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -16517,7 +16653,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "acoustic"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-24-harold-night-diet-steve-fuelperks",
@@ -20303,7 +20441,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/ancient-entities-amalgamation-chaos-eater-the-foundry-tickets/14296434?pl=thefoundry&REFID=clientsitewp",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "id": "welcome-to-the-farm-booking_01M2159XV7KEBDYDTNVSS65VC7",
@@ -21056,7 +21196,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -21163,7 +21304,9 @@
       "ticketUrl": "https://link.dice.fm/Q94021bd26aa",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "comedy"
+      ]
     },
     {
       "id": "mahalls-2026-09-29-the-holdup",
@@ -22816,7 +22959,9 @@
       "ticketUrl": "https://link.dice.fm/F410ef30d2f6",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "bop-stop-2026-10-02-tony-cudas-jazz-cats-bop-stop",
@@ -25648,7 +25793,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -28720,7 +28866,9 @@
       "source": "manual",
       "manual": true,
       "id": "seeing-double-2026-10-10-qwik-silver-trio",
-      "genres": []
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "title": "The Marshall Band",
@@ -28845,7 +28993,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-broadview-heights-2026-10-10-tricky-dick-the-cover-ups",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "title": "Old Skool",
@@ -29697,7 +29847,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -30669,7 +30820,9 @@
       "ticketUrl": "https://www.beachlandballroom.com/shows/bobby-bare-jr-15-oct#tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "acoustic"
+      ]
     },
     {
       "id": "mahalls-2026-10-15-fraxiom",
@@ -31814,8 +31967,7 @@
       "genres": [
         "pop",
         "covers",
-        "tribute",
-        "event"
+        "tribute"
       ]
     },
     {
@@ -33625,7 +33777,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -37168,7 +37321,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -39886,7 +40040,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -42446,7 +42601,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -43228,7 +43384,10 @@
       "ticketUrl": "https://www.axs.com/events/1597265/gymclassheroes-lupe-fiasco-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "hiphop-rap",
+        "rock"
+      ]
     },
     {
       "id": "beachland-ballroom-2026-11-12-banda-al9-the-burkharts",
@@ -44584,8 +44743,7 @@
       "genres": [
         "pop",
         "covers",
-        "tribute",
-        "event"
+        "tribute"
       ]
     },
     {
@@ -45147,7 +45305,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -47731,7 +47890,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -48163,8 +48323,7 @@
       "genres": [
         "pop",
         "covers",
-        "tribute",
-        "event"
+        "tribute"
       ]
     },
     {
@@ -48402,7 +48561,9 @@
       "ticketUrl": "https://www.axs.com/events/1516645/absolute-intense-wrestling-hell-on-earth-21-tickets",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "music-box-2026-11-27-e5c4p3-nov27",
@@ -49738,7 +49899,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -51094,8 +51256,7 @@
       "genres": [
         "pop",
         "covers",
-        "tribute",
-        "event"
+        "tribute"
       ]
     },
     {
@@ -51280,7 +51441,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "event"
+        "event",
+        "tribute"
       ]
     },
     {
@@ -51563,7 +51725,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -52997,7 +53160,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -54533,7 +54697,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
@@ -55221,7 +55386,9 @@
       "source": "manual",
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-12-26-dueling-pianos",
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-12-26",
@@ -55477,7 +55644,8 @@
       "manual": true,
       "genres": [
         "singer-songwriter",
-        "covers"
+        "covers",
+        "acoustic"
       ]
     },
     {
