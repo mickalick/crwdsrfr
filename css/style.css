@@ -593,7 +593,7 @@ footer a {
 
 
 
-#genreModeToggle {
+#filterModeToggle {
 	display: inline-flex;
 	flex-wrap: nowrap;
 	gap: 0 !important;
@@ -604,7 +604,7 @@ footer a {
 	margin-bottom: 16px;
 }
 
-#genreModeToggle .toggle-button {
+#filterModeToggle .toggle-button {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.05em;
@@ -619,19 +619,24 @@ footer a {
 	height: 100%;
 }
 
-#genreModeToggle .toggle-button:first-child {
+#filterModeToggle .toggle-button:first-child {
 	border-radius: 8px 0 0 8px;
 }
 
-#genreModeToggle .toggle-button:last-child {
+#filterModeToggle .toggle-button:last-child {
 	border-radius: 0 8px 8px 0;
 }
 
-#genreModeToggle .toggle-button.active {
+#filterModeToggle .toggle-button.active {
 	color: #101010;
 	background: #F9F976;
 	font-weight: 900;
 	border: 1px solid #F9F976;
+}
+
+
+#filterToggleLabel {
+	margin-bottom: 0px !important;
 }
 
 
