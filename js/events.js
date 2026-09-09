@@ -5,7 +5,7 @@ let currentSearch = '';
 let calendarViewMode = 'day'; // 'day' | 'week'
 let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time'
 let calendarShowGenres = true; // whether genre chips render on event tiles
-let genreFilterMode = 'include'; // 'include' | 'exclude' — whether selectedGenres are required or forbidden
+let filterMode = 'include'; // 'include' | 'exclude' — applies to every active filter category (venue name/type/area, genre)
 
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
@@ -70,7 +70,7 @@ function saveFiltersToStorage() {
       types: [...selectedTypes],
       areas: [...selectedAreas],
       genres: [...selectedGenres],
-      genreMode: genreFilterMode,
+      filterMode: filterMode,
     };
     localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
   } catch (e) {
@@ -92,8 +92,8 @@ function loadFiltersFromStorage() {
     (parsed.types || []).forEach(t => selectedTypes.add(t));
     (parsed.areas || []).forEach(a => selectedAreas.add(a));
     (parsed.genres || []).forEach(g => selectedGenres.add(g));
-    if (parsed.genreMode === 'include' || parsed.genreMode === 'exclude') {
-      genreFilterMode = parsed.genreMode;
+    if (parsed.filterMode === 'include' || parsed.filterMode === 'exclude') {
+      filterMode = parsed.filterMode;
     }
   } catch (e) {
     // Corrupt or missing data — just start with no filters
@@ -236,19 +236,27 @@ function hasActiveVenueFilters() {
 // filter across all three categories (union, not intersection). e.g.
 // selecting one venue name plus an area shows that venue AND every
 // venue in that area, not just venues that match both.
+//
+// In exclude mode this same "matches any" result gets negated below —
+// an unrecognized venue (no venue data) is never a raw match either way,
+// so it's simply never affected by a venue-based filter in either mode.
 function venueMatchesFilters(venue) {
-  if (!venue) return false;
-  if (selectedVenueIds.has(venue.id)) return true;
-  if (selectedTypes.has(venue.type)) return true;
-  if (selectedAreas.has(venue.area)) return true;
-  return false;
+  const matchesAny = !!venue && (
+    selectedVenueIds.has(venue.id) ||
+    selectedTypes.has(venue.type) ||
+    selectedAreas.has(venue.area)
+  );
+  return filterMode === 'exclude' ? !matchesAny : matchesAny;
 }
 
 // Genre lives on the event itself (not the venue), so it's checked as its
 // own filter dimension: an event must match AT LEAST ONE selected genre
 // (union within genres), and that result is ANDed against the venue-based
 // filters above — e.g. selecting "Jazz" + "Grog Shop" shows only jazz
-// shows AT Grog Shop, not all jazz shows everywhere plus all Grog Shop shows.
+// shows AT Grog Shop, not all jazz shows everywhere plus all Grog Shop shows
+// (in include mode — in exclude mode it hides jazz shows AND Grog Shop shows,
+// since De Morgan's law turns "AND of two matches" into "OR of two negated
+// matches" once every category is negated the same way).
 function hasActiveGenreFilters() {
   return selectedGenres.size > 0;
 }
@@ -257,7 +265,7 @@ function eventMatchesGenreFilters(event) {
   if (selectedGenres.size === 0) return true;
   const genres = event.genres || [];
   const matchesAny = genres.some(g => selectedGenres.has(g));
-  return genreFilterMode === 'exclude' ? !matchesAny : matchesAny;
+  return filterMode === 'exclude' ? !matchesAny : matchesAny;
 }
 
 function applyFilters() {
@@ -500,20 +508,20 @@ function refreshFilterUI() {
 function renderActiveFilters() {
   const wrapper = document.getElementById('activeFiltersWrapper');
   const chipsWrap = document.getElementById('activeFilters');
+  const prefix = filterMode === 'exclude' ? 'Not ' : '';
   const active = [];
 
   selectedVenueIds.forEach(id => {
-    active.push({ group: 'name', value: id, label: allVenues?.[id]?.name ?? id });
+    active.push({ group: 'name', value: id, label: prefix + (allVenues?.[id]?.name ?? id) });
   });
   selectedTypes.forEach(t => {
-    active.push({ group: 'type', value: t, label: TYPE_LABELS[t] || t });
+    active.push({ group: 'type', value: t, label: prefix + (TYPE_LABELS[t] || t) });
   });
   selectedAreas.forEach(a => {
-    active.push({ group: 'area', value: a, label: a });
+    active.push({ group: 'area', value: a, label: prefix + a });
   });
   selectedGenres.forEach(g => {
-    const label = genreFilterMode === 'exclude' ? `Not ${genreLabel(g)}` : genreLabel(g);
-    active.push({ group: 'genre', value: g, label });
+    active.push({ group: 'genre', value: g, label: prefix + genreLabel(g) });
   });
 
   if (active.length === 0) {
@@ -613,8 +621,8 @@ async function loadEvents() {
     genreMeta = {};
   }
   loadFiltersFromStorage();
-  document.getElementById('genreModeInclude').classList.toggle('active', genreFilterMode === 'include');
-  document.getElementById('genreModeExclude').classList.toggle('active', genreFilterMode === 'exclude');
+  document.getElementById('filterModeInclude').classList.toggle('active', filterMode === 'include');
+  document.getElementById('filterModeExclude').classList.toggle('active', filterMode === 'exclude');
   buildCalendarFilterChips();
   renderActiveFilters();
   updateMatchingDates();
@@ -736,15 +744,15 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('calendarToggleDay').addEventListener('click', () => setViewMode('day'));
   document.getElementById('calendarToggleWeek').addEventListener('click', () => setViewMode('week'));
 
-  function setGenreFilterMode(mode) {
-    genreFilterMode = mode;
-    document.getElementById('genreModeInclude').classList.toggle('active', mode === 'include');
-    document.getElementById('genreModeExclude').classList.toggle('active', mode === 'exclude');
-    refreshFilterUI(); // re-applies filters immediately, same as flipping a genre chip
+  function setFilterMode(mode) {
+    filterMode = mode;
+    document.getElementById('filterModeInclude').classList.toggle('active', mode === 'include');
+    document.getElementById('filterModeExclude').classList.toggle('active', mode === 'exclude');
+    refreshFilterUI(); // re-applies every filter category immediately
   }
 
-  document.getElementById('genreModeInclude').addEventListener('click', () => setGenreFilterMode('include'));
-  document.getElementById('genreModeExclude').addEventListener('click', () => setGenreFilterMode('exclude'));
+  document.getElementById('filterModeInclude').addEventListener('click', () => setFilterMode('include'));
+  document.getElementById('filterModeExclude').addEventListener('click', () => setFilterMode('exclude'));
 
   document.getElementById('calendarSortMethod').addEventListener('change', function() {
     calendarSortMethod = this.value;
