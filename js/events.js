@@ -5,6 +5,7 @@ let currentSearch = '';
 let calendarViewMode = 'day'; // 'day' | 'week'
 let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time'
 let calendarShowGenres = true; // whether genre chips render on event tiles
+let genreFilterMode = 'include'; // 'include' | 'exclude' — whether selectedGenres are required or forbidden
 
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
@@ -69,6 +70,7 @@ function saveFiltersToStorage() {
       types: [...selectedTypes],
       areas: [...selectedAreas],
       genres: [...selectedGenres],
+      genreMode: genreFilterMode,
     };
     localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
   } catch (e) {
@@ -90,6 +92,9 @@ function loadFiltersFromStorage() {
     (parsed.types || []).forEach(t => selectedTypes.add(t));
     (parsed.areas || []).forEach(a => selectedAreas.add(a));
     (parsed.genres || []).forEach(g => selectedGenres.add(g));
+    if (parsed.genreMode === 'include' || parsed.genreMode === 'exclude') {
+      genreFilterMode = parsed.genreMode;
+    }
   } catch (e) {
     // Corrupt or missing data — just start with no filters
   }
@@ -251,7 +256,8 @@ function hasActiveGenreFilters() {
 function eventMatchesGenreFilters(event) {
   if (selectedGenres.size === 0) return true;
   const genres = event.genres || [];
-  return genres.some(g => selectedGenres.has(g));
+  const matchesAny = genres.some(g => selectedGenres.has(g));
+  return genreFilterMode === 'exclude' ? !matchesAny : matchesAny;
 }
 
 function applyFilters() {
@@ -506,7 +512,8 @@ function renderActiveFilters() {
     active.push({ group: 'area', value: a, label: a });
   });
   selectedGenres.forEach(g => {
-    active.push({ group: 'genre', value: g, label: genreLabel(g) });
+    const label = genreFilterMode === 'exclude' ? `Not ${genreLabel(g)}` : genreLabel(g);
+    active.push({ group: 'genre', value: g, label });
   });
 
   if (active.length === 0) {
@@ -606,6 +613,8 @@ async function loadEvents() {
     genreMeta = {};
   }
   loadFiltersFromStorage();
+  document.getElementById('genreModeInclude').classList.toggle('active', genreFilterMode === 'include');
+  document.getElementById('genreModeExclude').classList.toggle('active', genreFilterMode === 'exclude');
   buildCalendarFilterChips();
   renderActiveFilters();
   updateMatchingDates();
@@ -726,6 +735,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('calendarToggleDay').addEventListener('click', () => setViewMode('day'));
   document.getElementById('calendarToggleWeek').addEventListener('click', () => setViewMode('week'));
+
+  function setGenreFilterMode(mode) {
+    genreFilterMode = mode;
+    document.getElementById('genreModeInclude').classList.toggle('active', mode === 'include');
+    document.getElementById('genreModeExclude').classList.toggle('active', mode === 'exclude');
+    refreshFilterUI(); // re-applies filters immediately, same as flipping a genre chip
+  }
+
+  document.getElementById('genreModeInclude').addEventListener('click', () => setGenreFilterMode('include'));
+  document.getElementById('genreModeExclude').addEventListener('click', () => setGenreFilterMode('exclude'));
 
   document.getElementById('calendarSortMethod').addEventListener('change', function() {
     calendarSortMethod = this.value;

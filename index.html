@@ -191,8 +191,16 @@
 						<div class="filter-panel" id="calendarFilters" style="display:none;">
 
 							<div class="filter-group">
-								<div class="filter-group-label">Genre</div>
-								<div class="filter-row" id="calendarGenreFilters"></div>
+							    <div class="filter-group-label">Genre</div>
+							    <div id="genreModeToggle" class="toggle-group" aria-label="Genre Filter Mode">
+							        <button type="button" class="toggle-button active" id="genreModeInclude" aria-label="Include selected genres">
+							            Include
+							        </button>
+							        <button type="button" class="toggle-button" id="genreModeExclude" aria-label="Exclude selected genres">
+							            Exclude
+							        </button>
+							    </div>
+							    <div class="filter-row" id="calendarGenreFilters"></div>
 							</div>
 
 							<div class="filter-group">
