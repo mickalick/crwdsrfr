@@ -1425,7 +1425,9 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-09-dennis-lewin",
-      "genres": []
+      "genres": [
+        "pianist"
+      ]
     },
     {
       "id": "grog-shop-2026-09-10-westside-live",
@@ -1496,7 +1498,10 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "singer-songwriter"
+        "singer-songwriter",
+        "folk-roots",
+        "rock",
+        "punk-ska"
       ]
     },
     {
@@ -1539,7 +1544,10 @@
       "ticketUrl": "https://link.dice.fm/w464a29a6ed7",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "pop",
+        "punk-ska"
+      ]
     },
     {
       "id": "bop-stop-2026-09-10-shawn-maxwell-quartet-bop-stop",
@@ -1609,7 +1617,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "mercury-music-lounge-2026-09-10-live-wire-karaoke-34",
@@ -1812,7 +1822,9 @@
       "ticketUrl": "https://www.eventbrite.com/e/iron-hank-adam-moldovan-mike-mesteller-at-coda-tickets-1997898358773",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "the-ivy-2026-09-10-curse-the-alchemist-6",
@@ -1832,7 +1844,9 @@
       "ticketUrl": "https://www.ivycle.com/event-details/curse-the-alchemist-6",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "bside-2026-09-10-b-side-grooves-4",
@@ -1852,7 +1866,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/b-side-grooves-b-side-lounge-tickets/14267064?pl=bside",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event",
+        "dj"
+      ]
     },
     {
       "id": "no-class-2026-09-10-COGNITIVE",
@@ -1920,7 +1937,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "tribute"
+      ]
     },
     {
       "id": "the-grove-2026-09-10-the-diamond-project",
@@ -2062,7 +2081,10 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "folk-roots",
+        "rock"
+      ]
     },
     {
       "title": "Dog Water",
@@ -2156,7 +2178,10 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-10-nathan-hedges",
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "folk-roots"
+      ]
     },
     {
       "title": "The Pretty Reckless",
@@ -2240,7 +2265,10 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-10-chad-hoffman",
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ]
     },
     {
       "title": "Jeffrey Cruz",
@@ -2260,7 +2288,9 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-10-jeffrey-cruz",
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "id": "spotlight-open-mic-theme-2026-09-10",
@@ -2893,7 +2923,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "covers"
+      ]
     },
     {
       "id": "treelawn-social-club-2026-09-11-14279664",
@@ -2914,7 +2946,9 @@
       "ticketUrl": "https://www.ticketweb.com/event/eric-seddon-fusion-trio-treelawn-social-club-tickets/14279664",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "hofbrauhaus-2026-09-11-pejs743al64l8j9-h2c7c-pgkbb-pcexp-n72dj-2ys6a-fnrxm-ec5jz-7pdsm-jsrbp-gamxm-lyk9l-bnas9-e6m9w",
@@ -3169,7 +3203,11 @@
       "ticketUrl": "https://grindstonetaphouse.com/events",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "classic",
+        "rock",
+        "covers"
+      ]
     },
     {
       "id": "reithoffers-2026-09-11-ray-flanagan",
@@ -3275,7 +3313,11 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "folk-roots",
+        "blues"
+      ]
     },
     {
       "title": "Bootleg Service",
@@ -3528,7 +3570,10 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-11-joe-jordan",
-      "genres": []
+      "genres": [
+        "rock",
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Maria Petti",
@@ -3577,7 +3622,9 @@
       "genres": [
         "covers",
         "rock",
-        "rnb-soul"
+        "rnb-soul",
+        "classic",
+        "dance-disco"
       ]
     },
     {
@@ -3598,7 +3645,10 @@
       "source": "manual",
       "manual": true,
       "id": "time-warp-2026-09-11-driving-rain",
-      "genres": []
+      "genres": [
+        "classic",
+        "covers"
+      ]
     },
     {
       "title": "Danny Christian",
@@ -3618,7 +3668,9 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-11-danny-christian",
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Ladies Night Band",
@@ -3638,7 +3690,11 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-11-ladies-night-band",
-      "genres": []
+      "genres": [
+        "pop",
+        "covers",
+        "tribute"
+      ]
     },
     {
       "title": "Mike James",
@@ -3740,7 +3796,10 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-11-sam-romano",
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ]
     },
     {
       "title": "Weihenstephan Fest Test - Lynn Marie & The Nashville Polka Guys",
@@ -4466,7 +4525,9 @@
       "ticketUrl": "https://www.dunlapsbar.com/shows/386014",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "rock"
+      ]
     },
     {
       "id": "welcome-to-the-farm-booking_01KV5WYFAESPWXN3RK7AHTYAHV",
@@ -4838,7 +4899,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "cleveland-orchestra-6a5642654b1f6bf0e7931068",
@@ -5254,7 +5317,8 @@
       "manual": true,
       "id": "crobar-2026-09-12-gettoblaster",
       "genres": [
-        "dj"
+        "dj",
+        "electronic-edm"
       ]
     },
     {
@@ -5433,7 +5497,9 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-09-12-kenny-chesney",
-      "genres": []
+      "genres": [
+        "country"
+      ]
     },
     {
       "title": "YOSEMITE SLIM",
@@ -8421,7 +8487,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-14-comedy-writing-workout-drop-in-writing-workshop",
@@ -9741,7 +9809,9 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-16-dennis-lewin",
-      "genres": []
+      "genres": [
+        "pianist"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-09-16",
@@ -15028,7 +15098,10 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "tribute",
+        "drag"
+      ]
     },
     {
       "id": "imposters-theater-2026-09-21-fundamentals-of-acting-with-katie-booze-mooney",
@@ -16044,7 +16117,9 @@
       "source": "manual",
       "manual": true,
       "id": "public-square-2026-09-23-hubb-s-groove",
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Dennis Lewin",
@@ -16064,7 +16139,9 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-23-dennis-lewin",
-      "genres": []
+      "genres": [
+        "pianist"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-09-23",
@@ -17730,7 +17807,9 @@
       "ticketUrl": "https://sickening.events/e/xasthur",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "metal"
+      ]
     },
     {
       "id": "forest-city-brewery-2026-09-25-austin-walkin-cane",
@@ -18205,7 +18284,9 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-25-danny-christian",
-      "genres": []
+      "genres": [
+        "singer-songwriter"
+      ]
     },
     {
       "title": "Banana Ball",
@@ -18307,7 +18388,10 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-25-sam-romano",
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ]
     },
     {
       "title": "Breakwater Band",
@@ -19339,7 +19423,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event"
+      ]
     },
     {
       "id": "cleveland-orchestra-6a98566cc383d64fe784e494",
@@ -19742,7 +19828,10 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-09-26-chad-hoffman",
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ]
     },
     {
       "title": "The Takes",
@@ -22138,7 +22227,9 @@
       "source": "manual",
       "manual": true,
       "id": "hyde-park-beachwood-2026-09-30-dennis-lewin",
-      "genres": []
+      "genres": [
+        "pianist"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-09-30",
@@ -23509,7 +23600,9 @@
       "ticketUrl": "https://sickening.events/e/Studio-Fifty-Gore",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "drag"
+      ]
     },
     {
       "id": "cleveland-orchestra-69f23cc44e264f76cf0626da",
@@ -27123,7 +27216,10 @@
       "ticketUrl": "https://www.ticketweb.com/event/b-side-grooves-b-side-lounge-tickets/14267084?pl=bside",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "event",
+        "dj"
+      ]
     },
     {
       "id": "cleveland-orchestra-69df8d16ead56883491cbc88",
@@ -32659,7 +32755,11 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "folk-roots",
+        "blues"
+      ]
     },
     {
       "id": "jenks-1929-2026-10-17-1400-back-n-4th-matinee-arokys-with-nikki-revolver",
@@ -33677,7 +33777,9 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "trivia-games"
+      ]
     },
     {
       "id": "cleveland-orchestra-6a563d2c72334cfc69705424",
@@ -47935,7 +48037,10 @@
       "ticketUrl": "https://link.dice.fm/a3fb1da9fa4d",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "indie",
+        "emo"
+      ]
     },
     {
       "id": "winchester-music-tavern-2026-11-24-secret-society-comedy-presents-one-more-joke-59",
@@ -51123,7 +51228,11 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "singer-songwriter",
+        "folk-roots",
+        "blues"
+      ]
     },
     {
       "id": "jenks-1929-2026-12-05-1600-guy-pernetti",
