@@ -253,7 +253,8 @@
   "the-ladies-night": {
     "name": "The Ladies Night",
     "aliases": [
-      "The Ladies Night"
+      "The Ladies Night",
+      "Ladies Night Band"
     ],
     "genres": [
       "pop",
@@ -264,6 +265,14 @@
       {
         "label": "Website",
         "value": "https://www.theladiesnightband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/ladies_night_band/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TheLadiesNightBand/"
       }
     ],
     "exclude": "no",
@@ -291,6 +300,20 @@
     "name": "Custard Pie",
     "aliases": [
       "Custard Pie"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "clayton-brothers": {
+    "name": "Clayton Brothers",
+    "aliases": [
+      "Clayton Brothers"
     ],
     "genres": [
       "classic",
@@ -666,6 +689,24 @@
     "exclude": "no",
     "local": "yes"
   },
+  "hoodie-bk": {
+    "name": "Hoodie BK",
+    "aliases": [
+      "Hoodie BK",
+      "Westside Live!"
+    ],
+    "genres": [
+      "hiphop-rap"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://hoodiebk.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
   "cleveland-alphorn-society": {
     "name": "Cleveland Alphorn Society",
     "aliases": [
@@ -947,6 +988,23 @@
       "polka"
     ],
     "links": [],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "north-union-street": {
+    "name": "North Union Street",
+    "aliases": [
+      "North Union Street"
+    ],
+    "genres": [
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/people/North-Union-Street/100093691284876/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -1237,8 +1295,20 @@
     "aliases": [
       "Chad Hoffman"
     ],
-    "genres": null,
-    "links": [],
+    "genres": [
+      "singer-songwriter",
+      "acoustic"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.chadsolo.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/ChadSolo/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -1416,8 +1486,15 @@
     "aliases": [
       "Jeffrey Cruz"
     ],
-    "genres": null,
-    "links": [],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.jeffreycruzmusic.com/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -1426,8 +1503,19 @@
     "aliases": [
       "Danny Christian"
     ],
-    "genres": null,
-    "links": [],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/mrdannychristian"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/MrDannyChristian/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -1436,8 +1524,16 @@
     "aliases": [
       "Sam Romano"
     ],
-    "genres": null,
-    "links": [],
+    "genres": [
+      "singer-songwriter",
+      "acoustic"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/samromanomusic/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -1542,6 +1638,27 @@
     ],
     "exclude": "no",
     "local": "no"
+  },
+  "eric-seddon": {
+    "name": "Eric Seddon",
+    "aliases": [
+      "Eric Seddon"
+    ],
+    "genres": [
+      "jazz"
+    ],
+    "links": [
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/ericseddonmusician/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCtmDiJZ14ABmsX0otNr_fZg/videos"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
   },
   "gold-tones": {
     "name": "Gold Tones",
@@ -1674,8 +1791,19 @@
     "aliases": [
       "Dennis Lewin"
     ],
-    "genres": null,
-    "links": [],
+    "genres": [
+      "pianist"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://dennislewinmusic.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/dennis.lewin.9/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -4710,10 +4838,10 @@
     "exclude": "no",
     "local": "yes"
   },
-  "adam-ofarrills-elephant": {
-    "name": "Adam O’Farrill’s ELEPHANT",
+  "adam-ofarrills": {
+    "name": "Adam O’Farrill",
     "aliases": [
-      "Adam O’Farrill’s ELEPHANT"
+      "Adam O’Farrill"
     ],
     "genres": [
       "jazz"
@@ -4884,6 +5012,12 @@
       "classical"
     ],
     "links": [
+      {
+        "label": "Website",
+        "value": "https://bluewaterchamberorchestra.org/"
+      }
+    ],
+    "links": [
       "https://bluewaterchamberorchestra.org/"
     ],
     "exclude": "no",
@@ -5018,7 +5152,10 @@
       "comedy"
     ],
     "links": [
-      "https://www.coreyb.com/"
+      {
+        "label": "Website",
+        "value": "https://www.coreyb.com/"
+      }
     ],
     "exclude": "no",
     "local": "no"
@@ -5060,10 +5197,21 @@
     "aliases": [
       "Curse The Alchemist"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "dj"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/cursethealchemist/"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@cursethealchemist"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "dj-dave-mcnally": {
     "name": "DJ Dave McNally",
@@ -5178,8 +5326,20 @@
     "aliases": [
       "Driving Rain"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "classic",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/drivingrainbandCLE/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UC0OQNSx2tx_UnLWeTn0FEeA"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -5413,20 +5573,33 @@
     "aliases": [
       "Iron Hank"
     ],
-    "genres": [],
+    "genres": [
+      "singer-songwriter"
+    ],
     "links": [],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "adam-moldovan": {
     "name": "Adam Moldovan",
     "aliases": [
       "Adam Moldovan"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "singer-songwriter"
+    ],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/theadammoldovan/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/adam.moldovan.90/"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "mike-mesteller": {
     "name": "Mike Mesteller",
@@ -5436,7 +5609,28 @@
     "genres": [],
     "links": [],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
+  },
+  "the-new-soft-shoe": {
+    "name": "The New Soft Shoe",
+    "aliases": [
+      "The New Soft Shoe"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://thenewsoftshoe.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/thenewsoftshoe/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
   },
   "jake-hadden": {
     "name": "Jake Hadden",
@@ -5540,7 +5734,10 @@
     "aliases": [
       "Joe Jordan"
     ],
-    "genres": [],
+    "genres": [
+      "rock",
+      "singer-songwriter"
+    ],
     "links": [],
     "exclude": "no",
     "local": "no"
@@ -5551,9 +5748,23 @@
       "Joey Harkum"
     ],
     "genres": [
-      "singer-songwriter"
+      "singer-songwriter",
+      "folk-roots"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.joeyharkum.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/joeyharkum/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/72SpvqbeEYsAqZddWryI0m"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -5565,7 +5776,20 @@
     "genres": [
       "singer-songwriter"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.johannasamuels.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/johannasamuels"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/3NsEv68AsYdjKdCJ4AhHTa?si=6pnWKPhAQvCUEIMjqpuodA&nd=1&dlsi=dfce3e5116b44d0d"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -5743,7 +5967,20 @@
     "genres": [
       "singer-songwriter"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.mikaeladavis.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/mikaeladavis"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6CbL78A3tB1CPFoduF7UM5"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -5838,10 +6075,26 @@
     "aliases": [
       "Nathan Hedges"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://nathanhedges.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/nrhedges/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6CbL78A3tB1CPFoduF7UM5"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "noah": {
     "name": "Noah",
@@ -5931,8 +6184,24 @@
     "aliases": [
       "Punchline"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "pop",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.punchlion.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/punchlion/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCqpOHIKMSe9cOpNmSfosSXw"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -6028,7 +6297,10 @@
       "tribute"
     ],
     "links": [
-      "https://rhyminnstealin.com/"
+      {
+        "label": "Website",
+        "value": "https://rhyminnstealin.com/"
+      }
     ],
     "exclude": "no",
     "local": "no"
@@ -6052,8 +6324,25 @@
     "aliases": [
       "Rick Szekelyi"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "singer-songwriter",
+      "folk-roots",
+      "blues"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rickzmusic.com/home"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/rickszekelyi/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@rickszekelyi502"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -6130,8 +6419,25 @@
     "aliases": [
       "Russ Baum"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "folk-roots",
+      "rock",
+      "punk-ska"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://rhyminnstealin.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/russbaum"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/@russbaumofficial"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
@@ -6388,10 +6694,26 @@
     "aliases": [
       "The Morning Bird"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "folk-roots",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.themorningbirdband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/themorningbirdband/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TheMorningBirdCLE/"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "the-pretty-reckless": {
     "name": "The Pretty Reckless",
@@ -6528,7 +6850,8 @@
   "who-the-heck-was-moses-cleaveland": {
     "name": "Who the Heck was Moses Cleaveland?",
     "aliases": [
-      "Who the Heck was Moses Cleaveland?"
+      "Who the Heck was Moses Cleaveland?",
+      "Who the Heck was Moses Cleaveland"
     ],
     "genres": [
       "event"
@@ -6606,6 +6929,20 @@
     "exclude": "no",
     "local": "no"
   },
+  "b-side-grooves": {
+    "name": "B SIDE GROOVES",
+    "aliases": [
+      "B SIDE GROOVES"
+    ],
+    "genres": [
+      "event",
+      "dj"
+    ],
+    "links": [],
+    "exclude": "yes",
+    "local": "yes"
+  },
+
 
 
 
