@@ -518,6 +518,7 @@
 	max-width: 640px;
 	max-height: 85vh;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .actModalBody h2 {

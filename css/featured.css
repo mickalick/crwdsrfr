@@ -214,7 +214,8 @@
 	max-height: 90vh;
 	width: 100%;
 	background-color: #222;
-	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	padding: 48px 24px 24px;
 	border-radius: 9px;
 	opacity: 1;
