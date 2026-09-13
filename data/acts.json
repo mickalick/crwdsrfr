@@ -4315,7 +4315,20 @@
     "genres": [
       "punk-ska"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/sabonband/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6nsOYGgFlgBbKTWeWBw6Xc"
+      },
+      {
+        "label": "TikTok",
+        "value": "https://www.tiktok.com/@sabonbandofficial"
+      },
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -4457,7 +4470,20 @@
     "genres": [
       "rock"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.rellick.net/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/sabonband/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/6nsOYGgFlgBbKTWeWBw6Xc"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -4534,7 +4560,20 @@
     "genres": [
       "rock"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://timecat.wixsite.com/music"
+      },
+      {
+        "label": "Instagram",
+        "value": "http://www.instagram.com/time_cat_"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TimeCatMusic/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -6811,7 +6850,20 @@
     "genres": [
       "covers"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://trickydickcoverband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/trickydickcover/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/trickydickcoverband/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
