@@ -5434,9 +5434,22 @@
     "genres": [
       "punk-ska"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.foryourhealthoh.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/foryourhealthoh"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/foryourhealthOH/"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "fuzz-worth": {
     "name": "Fuzz Worth",
@@ -5992,9 +6005,22 @@
     "genres": [
       "punk-ska"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/minoritythreat/"
+      },
+      {
+        "label": "Spotify",
+        "value": "https://open.spotify.com/artist/0DvxRbW6fpEOvMyTQNTrjC?si=zjIt5tw7RGK4MKuApVuHww"
+      },
+      {
+        "label": "Bandcamp",
+        "value": "https://minoritythreat.bandcamp.com/"
+      }
+    ],
     "exclude": "no",
-    "local": "no"
+    "local": "yes"
   },
   "missy": {
     "name": "Missy",
@@ -6558,7 +6584,20 @@
     "genres": [
       "punk-ska"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://soulglophl.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/soulglophl/?hl=en"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/soulglophilly"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
