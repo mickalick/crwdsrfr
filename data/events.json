@@ -765,7 +765,8 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "rock"
+        "rock",
+        "tribute"
       ]
     },
     {
@@ -2532,7 +2533,10 @@
       "ticketUrl": "https://link.dice.fm/ub3903957eea",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [
+        "electronic-edm",
+        "pop"
+      ]
     },
     {
       "id": "mahalls-2026-09-16-the-4411",
@@ -3312,10 +3316,7 @@
       "ticketUrl": "https://seatgeek.com/rush-tickets/cleveland-ohio-rocket-arena-2026-09-17-7-30-pm/concert/17779004",
       "source": "seatgeek",
       "manual": false,
-      "genres": [
-        "classic",
-        "rock"
-      ]
+      "genres": []
     },
     {
       "id": "grog-shop-2026-09-17-melt-banana",
@@ -3581,10 +3582,7 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "classic",
-        "rock"
-      ]
+      "genres": []
     },
     {
       "id": "playhouse-square-2026-09-17-1930-show1-dbh",
@@ -4209,7 +4207,10 @@
       "source": "manual",
       "manual": true,
       "id": "1928-public-house-2026-09-17-fun-girl",
-      "genres": []
+      "genres": [
+        "acoustic",
+        "covers"
+      ]
     },
     {
       "title": "Kristin Pepper",
@@ -5614,10 +5615,7 @@
       "ticketUrl": "https://seatgeek.com/rush-tickets/cleveland-ohio-rocket-arena-2026-09-19-7-30-pm/concert/17806088",
       "source": "seatgeek",
       "manual": false,
-      "genres": [
-        "classic",
-        "rock"
-      ]
+      "genres": []
     },
     {
       "id": "grog-shop-2026-09-19-the-dreadful-yawns",
@@ -10897,9 +10895,7 @@
       "source": "scrape",
       "manual": false,
       "genres": [
-        "tribute",
-        "classic",
-        "rock"
+        "tribute"
       ]
     },
     {
@@ -13276,10 +13272,7 @@
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
-      "genres": [
-        "classic",
-        "rock"
-      ]
+      "genres": []
     },
     {
       "title": "Pivot",
