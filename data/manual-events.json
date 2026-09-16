@@ -4458,15 +4458,20 @@
 
 
 
+  
   {
-    "title": "Shooters After Dark: Friday LDW",
+    "title": "JUST AJ B2B BOBBY BOOSHAY",
     "performers": [
       {
-        "name": "LDW",
+        "name": "Just AJ",
         "headliner": true
+      },
+      {
+        "name": "Bobby Booshay",
+        "headliner": false
       }
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-18",
     "time": "22:00",
     "doors": null,
     "price": null,
@@ -4475,121 +4480,7 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-09-04-friday-ldw"
-  },
-  {
-    "title": "Shooters After Dark: Saturday LDW",
-    "performers": [
-      {
-        "name": "LDW",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-05",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-09-05-saturday-ldw"
-  },
-  {
-    "title": "Palmer Anthony",
-    "performers": [
-      {
-        "name": "Palmer Anthony",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-30",
-    "time": "15:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-08-30-palmer-anthony"
-  },
-  {
-    "title": "MC4D Sunset Party",
-    "performers": [
-      {
-        "name": "MC4D",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-06",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-09-06-gordo"
-  },
-  {
-    "title": "Steve Aoki",
-    "performers": [
-      {
-        "name": "Steve Aoki",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-07",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-09-07-steve-aoki"
-  },
-  {
-    "title": "Shooters After Dark: Bella Grazia",
-    "performers": [
-      {
-        "name": "Bella Grazia",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-09-11-bella-grazia"
-  },
-  {
-    "title": "Disco Dom",
-    "performers": [
-      {
-        "name": "Disco Dom",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-09-12-disco-dom"
+    "id": "shooters-2026-09-18-just-aj-bobby-booshay"
   },
 
   
@@ -4598,146 +4489,6 @@
 
 
 
-  {
-    "title": "904 Day",
-    "performers": [
-      {
-        "name": "Sound on Tape",
-        "headliner": true
-      },
-      {
-        "name": "Corey Grand",
-        "headliner": false
-      },
-      {
-        "name": "Cardio",
-        "headliner": false
-      },
-      {
-        "name": "Uknownphrazes",
-        "headliner": false
-      },
-      {
-        "name": "Mitch Mantra",
-        "headliner": false
-      },
-      {
-        "name": "Presque View",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-04",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-04-904-day"
-  },
-  {
-    "title": "Physical Therapy",
-    "performers": [
-      {
-        "name": "Physical Therapy",
-        "headliner": true
-      },
-      {
-        "name": "Hush",
-        "headliner": false
-      },
-      {
-        "name": "Gerad G",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-05",
-    "time": "21:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-04-904-day"
-  },
-  {
-    "title": "Don't Funk the Groove: Hot Swap",
-    "performers": [
-      {
-        "name": "Lamar Z",
-        "headliner": true
-      },
-      {
-        "name": "Vaver",
-        "headliner": false
-      },
-      {
-        "name": "Le Schlippy",
-        "headliner": false
-      },
-      {
-        "name": "Sleazus",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "22:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-11-lamar-z"
-  },
-  {
-    "title": "Gettoblaster BBQ",
-    "performers": [
-      {
-        "name": "Gettoblaster",
-        "headliner": true
-      },
-      {
-        "name": "Roland Clark",
-        "headliner": false
-      },
-      {
-        "name": "DJ Mes",
-        "headliner": false
-      },
-      {
-        "name": "Uriah G",
-        "headliner": false
-      },
-      {
-        "name": "Missy",
-        "headliner": false
-      },
-      {
-        "name": "Fuzz Worth",
-        "headliner": false
-      },
-      {
-        "name": "Gerad G",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "18:00",
-    "doors": null,
-    "price": "$15",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-12-gettoblaster"
-  },
   {
     "title": "Villem",
     "performers": [
@@ -4772,6 +4523,33 @@
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-10-16-villem"
+  },
+  {
+    "title": "FJAAK",
+    "performers": [
+      {
+        "name": "FJAAK",
+        "headliner": true
+      },
+      {
+        "name": "Den Hur",
+        "headliner": false
+      },
+      {
+        "name": "Delish",
+        "headliner": false
+      }
+    ],
+    "date": "2026-09-25",
+    "time": "21:00",
+    "doors": null,
+    "price": "$15",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-09-25-fjaak"
   },
   {
     "title": "So Long Summer!!",
@@ -14777,14 +14555,14 @@
 
 
   {
-    "title": "Open Decks w/ DJ Dommie Salami",
+    "title": "Butt-Rock Karaoke w/ DJ Dommie Salami",
     "performers": [
       {
         "name": "DJ Dommie Salami",
         "headliner": true
       }
     ],
-    "date": "2026-09-11",
+    "date": "2026-09-18",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -14793,8 +14571,28 @@
     "venueId": "riffs",
     "source": "manual",
     "manual": true,
-    "id": "riffs-2026-09-11-open-decks"
+    "id": "riffs-2026-09-18-butt-rock-karaoke"
   },
+  {
+    "title": "Tango Night w/ the Cleveland Tango School",
+    "performers": [
+      {
+        "name": "Cleveland Tango School",
+        "headliner": true
+      }
+    ],
+    "date": "2026-09-16",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "riffs",
+    "source": "manual",
+    "manual": true,
+    "id": "riffs-2026-09-16-tango-night"
+  },
+  
 
 
 
@@ -15835,52 +15633,6 @@
 
 
   {
-    "title": "Guggy, Noah, Rachel Shortt",
-    "performers": [
-      {
-        "name": "Guggy",
-        "headliner": true
-      },
-      {
-        "name": "Noah",
-        "headliner": false
-      },
-      {
-        "name": "Rachel Shortt",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-11-guggy"
-  },
-  {
-    "title": "C&C Acoustic Jazz Duo",
-    "performers": [
-      {
-        "name": "C&C Acoustic Jazz Duo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-12-c-c-acoustic-jazz-duo"
-  },
-  {
     "title": "Fragments",
     "performers": [
       {
@@ -16043,7 +15795,103 @@
     "source": "manual",
     "manual": true,
     "id": "spotlight-cle-2026-10-10-technoberfest"
+  },
+  {
+    "title": "Ben Cohen Show",
+    "performers": [
+      {
+        "name": "Ben Cohen",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-16-ben-cohen"
+  },
+  {
+    "title": "Freddy Andy New Band",
+    "performers": [
+      {
+        "name": "Freddy Andy New Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-17-freddy-andy"
+  },
+  {
+    "title": "Ben Plank Halloween",
+    "performers": [
+      {
+        "name": "Ben Plank",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-24-ben-plank"
+  },
+  {
+    "title": "Mishak",
+    "performers": [
+      {
+        "name": "Mishak",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-29",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-29-mishak"
+  },
+  {
+    "title": "Dollyween",
+    "performers": [
+      {
+        "name": "Dollyween",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-30",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-30-dollyween"
   }
+
 
 
 

@@ -4940,8 +4940,24 @@
     "aliases": [
       "Atta Boy"
     ],
-    "genres": [],
-    "links": [],
+    "genres": [
+      "indie",
+      "pop"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://attaboyonline.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/weareattaboy/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCsu0_m5Kjh42Iv6crTYfjEA"
+      }
+    ],
     "exclude": "no",
     "local": "no"
   },
