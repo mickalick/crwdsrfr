@@ -724,1507 +724,6 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-09-23-squirrel-flower",
-      "title": "Squirrel Flower w/ youbet, Wish Queen",
-      "venueId": "grog-shop",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$27.75",
-      "performers": [
-        {
-          "name": "Squirrel Flower",
-          "headliner": true
-        },
-        {
-          "name": "youbet",
-          "headliner": false
-        },
-        {
-          "name": "Wish Queen",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/squirrel-flower-youbet/",
-      "ticketUrl": "https://www.ticketweb.com/event/squirrel-flower-youbet-wish-queen-grog-shop-tickets/14909653?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-09-23-daley",
-      "title": "Daley with Apostle Jones (Trio)",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Daley",
-          "headliner": true
-        },
-        {
-          "name": "Apostle Jones (Trio)",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/daley-24-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/daley-24-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "rnb-soul",
-        "rock",
-        "blues"
-      ]
-    },
-    {
-      "id": "beachland-ballroom-2026-09-23-schur",
-      "title": "schur with ZuP",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "schur",
-          "headliner": true
-        },
-        {
-          "name": "ZuP",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/schur-23-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/schur-23-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-09-23-franklin-jonas-the-byzantines",
-      "title": "FRANKLIN JONAS & THE BYZANTINES",
-      "venueId": "mahalls",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$30.00",
-      "performers": [
-        {
-          "name": "Franklin Jonas & The Byzantines",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/franklin-jonas-the-byzantines/",
-      "ticketUrl": "https://link.dice.fm/F1f24ee5c06d",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "globe-iron-1340454",
-      "title": "St. Paul & The Broken Bones with The Psycodelics",
-      "venueId": "globe-iron",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "St. Paul & The Broken Bones",
-          "headliner": true
-        },
-        {
-          "name": "The Psycodelics",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://globeironcle.com/events/detail?event_id=1340454",
-      "ticketUrl": "https://www.axs.com/events/1340454/st-paul-the-broken-bones-tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-23-boozy-bingo-book-bingo-4",
-      "title": "BOOZY BINGO (BOOK BINGO)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "BOOZY BINGO (BOOK BINGO)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-bingo-book-bingo-4/",
-      "ticketUrl": "https://www.ticketweb.com/event/boozy-bingo-book-bingo-the-winchester-tickets/14299614",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-23-hammerfall-freedom-world-crusade-moved-from-mercury",
-      "title": "Hammerfall – Freedom World Crusade (Moved from Mercury)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "doors": "18:30",
-      "price": "$40.92",
-      "performers": [
-        {
-          "name": "Hammerfall – Freedom World Crusade (Moved from Mercury)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/hammerfall-freedom-world-crusade-moved-from-mercury/",
-      "ticketUrl": "https://www.ticketweb.com/event/hammerfall-freedom-world-the-winchester-tickets/14336014",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-23-free-play-wednesdays-7",
-      "title": "FREE PLAY WEDNESDAYS",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-23",
-      "time": "16:00",
-      "doors": "16:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "FREE PLAY WEDNESDAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/free-play-wednesdays-7/",
-      "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023593",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-23-bike-night-9",
-      "title": "BIKE NIGHT",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "BIKE NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/bike-night-9/",
-      "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288424",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-23-hammerfall-freedom-world-crusade-north-america-2026",
-      "title": "HammerFall – Freedom World Crusade North America 2026 ( Now at The Winchester!)",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "doors": "18:30",
-      "price": "$35.51",
-      "performers": [
-        {
-          "name": "HammerFall – Freedom World Crusade North America 2026 ( Now at The Winchester!)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/hammerfall-freedom-world-crusade-north-america-2026/",
-      "ticketUrl": "https://www.ticketweb.com/event/hammerfall-freedom-world-the-mercury-music-lounge-tickets/13984764",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-09-23-beetlejuice-2",
-      "title": "BEETLEJUICE",
-      "venueId": "playhouse-square",
-      "date": "2026-09-23",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "E.J. Thomas Hall",
-      "presentedBy": "Broadway In Akron",
-      "performers": [
-        {
-          "name": "BEETLEJUICE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/beetlejuice-2",
-      "ticketUrl": "https://www.ticketmaster.com/event/050064CB8B245EB8",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-23-1930-show1-dbh",
-      "title": "Death Becomes Her",
-      "venueId": "playhouse-square",
-      "date": "2026-09-23",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "Death Becomes Her",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/show1-dbh",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=54A932AF-55B2-4E66-B518-90FAF433C5E1",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-23-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-23",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
-      ]
-    },
-    {
-      "id": "dunlaps-2026-09-23-144212",
-      "title": "Witchforce",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Witchforce",
-          "headliner": true
-        },
-        {
-          "name": "Storms Within",
-          "headliner": false
-        },
-        {
-          "name": "Witchforce",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/144212",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/388635",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-09-23",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-09-23",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-09-23",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "family-kids"
-      ]
-    },
-    {
-      "id": "van-aken-piercing-party-at-luster-2026-09-23",
-      "title": "Piercing Party at Luster!",
-      "venueId": "van-aken-district",
-      "date": "2026-09-23",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "room": "LUSTER A Gift Boutique",
-      "performers": [
-        {
-          "name": "Piercing Party at Luster!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/piercing-party-at-luster-2026-09-23",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "treelawn-social-club-2026-09-23-14252984",
-      "title": "Dan Hubbard - The Letting Go Tour",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Dan Hubbard - The Letting Go Tour",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/dan-hubbard-the-treelawn-social-club-tickets/14252984",
-      "ticketUrl": "https://www.ticketweb.com/event/dan-hubbard-the-treelawn-social-club-tickets/14252984",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "the-ivy-2026-09-23-commanders-cocktails-a-magic-the-gathering-game-night",
-      "title": "Commanders & Cocktails — A Magic The Gathering Game Night",
-      "venueId": "the-ivy",
-      "date": "2026-09-23",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Commanders & Cocktails — A Magic The Gathering Game Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ivycle.com/event-details/commanders-cocktails-a-magic-the-gathering-game-night",
-      "ticketUrl": "https://www.ivycle.com/event-details/commanders-cocktails-a-magic-the-gathering-game-night",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-09-23-the-people-poetry-open-mic-night-4",
-      "title": "THE PEOPLE POETRY: OPEN MIC NIGHT",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "$9.76",
-      "performers": [
-        {
-          "name": "THE PEOPLE POETRY: OPEN MIC NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-people-poetry-open-mic-night-4/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-people-poetry-open-mic-b-side-lounge-tickets/14231034?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "poetry"
-      ]
-    },
-    {
-      "id": "bside-2026-09-23-shit-show-karaoke-24",
-      "title": "SHIT SHOW KARAOKE",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-23",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "SHIT SHOW KARAOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-24/",
-      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230264?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "karaoke"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-23-the-wednesday-jam",
-      "title": "The Wednesday Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-09-23",
-      "time": "20:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-092326",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-092326",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "grindstone-tap-house-3427297-2026-09-23",
-      "title": "Jeopardy Bar Leagues!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "reithoffers-2026-09-23-trivia-night",
-      "title": "Trivia Night",
-      "venueId": "reithoffers",
-      "date": "2026-09-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-09-23-19-00",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-09-23-19-00",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "cleveland-museum-of-art-2026-09-23-monsieur-perin",
-      "title": "Monsieur Periné",
-      "venueId": "cleveland-museum-of-art",
-      "date": "2026-09-23",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Monsieur Periné",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandart.org/events/monsieur-perine",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "visible-voice-books-2026-09-23-roots-masters-of-ameriacan-music-presents-tba",
-      "title": "ROOTS: Masters of American Music celebrates Woodie Guthrie presented by Charlie Mosbrook",
-      "venueId": "visible-voice-books",
-      "date": "2026-09-23",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "ROOTS: Masters of American Music celebrates Woodie Guthrie presented by Charlie Mosbrook",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/roots-masters-of-ameriacan-music-presents-tba",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "folk-roots"
-      ]
-    },
-    {
-      "title": "Uncle Lulu",
-      "performers": [
-        {
-          "name": "Uncle Lulu",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-09-23-uncle-lulu",
-      "genres": []
-    },
-    {
-      "title": "Hubb's Groove",
-      "performers": [
-        {
-          "name": "Hubb's Groove",
-          "headliner": true
-        },
-        {
-          "name": "Esther Fitz",
-          "headliner": false
-        }
-      ],
-      "date": "2026-09-23",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "public-square",
-      "source": "manual",
-      "manual": true,
-      "id": "public-square-2026-09-23-hubb-s-groove",
-      "genres": [
-        "singer-songwriter"
-      ]
-    },
-    {
-      "title": "Dennis Lewin",
-      "performers": [
-        {
-          "name": "Dennis Lewin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-09-23-dennis-lewin",
-      "genres": [
-        "pianist"
-      ]
-    },
-    {
-      "id": "grog-shop-2026-09-24-dick-golden-the-rock-n-roll-experience",
-      "title": "Dick Golden & The Rock n' Roll Experience w/ Ringer, Adam Molodovan",
-      "venueId": "grog-shop",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$15.16",
-      "performers": [
-        {
-          "name": "Dick Golden & The Rock n' Roll Experience",
-          "headliner": true
-        },
-        {
-          "name": "Ringer",
-          "headliner": false
-        },
-        {
-          "name": "Adam Molodovan",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/dick-golden-the-rock-n-roll-experience-ringer-adam-molodovan/",
-      "ticketUrl": "https://www.ticketweb.com/event/dick-golden-the-rock-grog-shop-tickets/14278874?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-09-24-solomon-hicks-norman-nardini",
-      "title": "Solomon Hicks, Norman Nardini",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Solomon Hicks, Norman Nardini",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/solomon-hicks-24-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/solomon-hicks-24-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-09-24-hannah-cole",
-      "title": "Hannah Cole with Evil Adeline",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Hannah Cole",
-          "headliner": true
-        },
-        {
-          "name": "Evil Adeline",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/hannah-cole-24-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/hannah-cole-24-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-09-24-sparta",
-      "title": "Sparta",
-      "venueId": "mahalls",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Sparta",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/sparta/",
-      "ticketUrl": "https://link.dice.fm/i243ec8ca96d",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bop-stop-2026-09-24-third-law-collective-bop-stop",
-      "title": "Third Law Collective",
-      "venueId": "bop-stop",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Third Law Collective",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/09/24/third-law-collective-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/24/third-law-collective-bop-stop",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "music-box-2026-09-24-cleveland-mafia",
-      "title": "The Rise and Fall of the Cleveland Mafia",
-      "venueId": "music-box",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "The Rise and Fall of the Cleveland Mafia",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/cleveland-mafia/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "music-box-2026-09-24-joe-pug-willie-watson-sep24",
-      "title": "Joe Pug & Willie Watson",
-      "venueId": "music-box",
-      "date": "2026-09-24",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": null,
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Joe Pug & Willie Watson",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/joe-pug-willie-watson-sep24/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62436",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-24-satisfaction-rolling-stones-tribute",
-      "title": "Satisfaction – Rolling Stones Tribute",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": "18:30",
-      "price": "$25.21",
-      "performers": [
-        {
-          "name": "Satisfaction – Rolling Stones Tribute",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/satisfaction-rolling-stones-tribute/",
-      "ticketUrl": "https://www.ticketweb.com/event/satisfaction-rolling-stones-the-winchester-tickets/14245914",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "tribute"
-      ]
-    },
-    {
-      "id": "collision-bend-euclid-2026-09-24-homeownership-on-tap-53361",
-      "title": "Homeownership On Tap",
-      "venueId": "collision-bend-euclid",
-      "date": "2026-09-24",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Homeownership On Tap",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/homeownership-on-tap-53361",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-24-live-wire-karaoke-35",
-      "title": "Live Wire Karaoke",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-24",
-      "time": "21:00",
-      "doors": "21:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Wire Karaoke",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/live-wire-karaoke-35/",
-      "ticketUrl": "https://www.ticketweb.com/event/live-wire-karaoke-the-mercury-music-lounge-tickets/14288464",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "karaoke"
-      ]
-    },
-    {
-      "id": "rock-hall-2026-09-24-backstage-stories-092426",
-      "title": "Backstage Stories – A Premium Visitor Experience",
-      "venueId": "rock-hall",
-      "date": "2026-09-24",
-      "time": "11:00",
-      "doors": null,
-      "price": "GA $195",
-      "performers": [
-        {
-          "name": "Backstage Stories – A Premium Visitor Experience",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/backstage-stories-092426/",
-      "ticketUrl": "https://tickets.rockhall.com/events/01985128-88cd-3765-f214-c970bcb37135",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-24-1930-show1-dbh",
-      "title": "Death Becomes Her",
-      "venueId": "playhouse-square",
-      "date": "2026-09-24",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "Death Becomes Her",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/show1-dbh",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=54A932AF-55B2-4E66-B518-90FAF433C5E1",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-24-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-24",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
-      ]
-    },
-    {
-      "id": "foundry-concert-club-2026-09-24-jackson-marshall",
-      "title": "Jackson Marshall",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Jackson Marshall",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/jackson-marshall/",
-      "ticketUrl": "https://www.ticketweb.com/event/jackson-marshall-the-foundry-tickets/14291824?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "hilarities-2026-09-24-1930-133081",
-      "title": "Sam Tallent",
-      "venueId": "hilarities",
-      "date": "2026-09-24",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Sam Tallent",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/133081",
-      "ticketUrl": "https://hilarities.com/shows/362784",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "van-aken-live-music-at-the-van-aken-district-chagrin-river-band-2026-09-24",
-      "title": "Live Music at The Van Aken District- Chagrin River Band",
-      "venueId": "van-aken-district",
-      "date": "2026-09-24",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "room": "3401 Tuttle Road, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "Live Music at The Van Aken District- Chagrin River Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/live-music-at-the-van-aken-district-chagrin-river-band-2026-09-24",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "treelawn-social-club-2026-09-24-14788233",
-      "title": "Sunflurry",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-09-24",
-      "time": "19:30",
-      "doors": "18:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "Sunflurry",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/sunflurry-treelawn-social-club-tickets/14788233",
-      "ticketUrl": "https://www.ticketweb.com/event/sunflurry-treelawn-social-club-tickets/14788233",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "coda-2026-09-24-1993623127441",
-      "title": "Charming Disaster | Miss Dreadful at CODA",
-      "venueId": "coda",
-      "date": "2026-09-24",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": "$15",
-      "performers": [
-        {
-          "name": "Charming Disaster | Miss Dreadful at CODA",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.eventbrite.com/e/charming-disaster-miss-dreadful-at-coda-tickets-1993623127441",
-      "ticketUrl": "https://www.eventbrite.com/e/charming-disaster-miss-dreadful-at-coda-tickets-1993623127441",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "the-ivy-2026-09-24-soundboard-society",
-      "title": "Soundboard Society",
-      "venueId": "the-ivy",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Soundboard Society",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ivycle.com/event-details/soundboard-society",
-      "ticketUrl": "https://www.ivycle.com/event-details/soundboard-society",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-09-24-princessfest-part-two",
-      "title": "PRINCESSFEST PART TWO",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-24",
-      "time": "17:30",
-      "doors": "17:30",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "PRINCESSFEST PART TWO",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/princessfest-part-two/",
-      "ticketUrl": "https://www.ticketweb.com/event/princessfest-part-two-b-side-lounge-tickets/14304604?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-09-24-dancehall-on-coventry",
-      "title": "DANCEHALL ON COVENTRY",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-24",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "DANCEHALL ON COVENTRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/dancehall-on-coventry/",
-      "ticketUrl": "https://www.ticketweb.com/event/dancehall-on-coventry-b-side-lounge-tickets/14295674?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "no-class-2026-09-24-snake-father",
-      "title": "SNAKE FATHER",
-      "venueId": "no-class",
-      "date": "2026-09-24",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$15 ADV / $20 DOS",
-      "performers": [
-        {
-          "name": "Snake Father",
-          "headliner": true
-        },
-        {
-          "name": "Betrayal",
-          "headliner": false
-        },
-        {
-          "name": "Warm Body",
-          "headliner": false
-        },
-        {
-          "name": "Death & Exhale",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/snake-father",
-      "ticketUrl": "https://sickening.events/e/snakefather",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "cleveland-orchestra-6a98566cc383d64fe784e485",
-      "title": "Wine Tastings",
-      "venueId": "cleveland-orchestra",
-      "room": null,
-      "date": "2026-09-24",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Wine Tastings",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/wine-tastings-brahms-2",
-      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24690",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "classical"
-      ]
-    },
-    {
-      "id": "cleveland-orchestra-6a79dd79f34ff87d08a30bcf",
-      "title": "Brahms’s Second Symphony",
-      "venueId": "cleveland-orchestra",
-      "room": null,
-      "date": "2026-09-24",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Brahms’s Second Symphony",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/brahmss-second-symphony",
-      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24376",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "classical"
-      ]
-    },
-    {
-      "id": "forest-city-brewery-2026-09-24-when-september-ends-an-acoustic-green-day-experience",
-      "title": "When September Ends -AN ACOUSTIC GREEN DAY EXPERIENCE",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/5/29/when-september-ends-green-day-cover-band-7tsjm",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "acoustic"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-24-harold-night-diet-steve-fuelperks",
-      "title": "Harold Night - Diet Steve & fuelperks!",
-      "venueId": "imposters-theater",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/harold-night-092426",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/harold-night-092426",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-24-dynamic-duos-improv-night-jam",
-      "title": "Dynamic Duos Improv Night + Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-09-24",
-      "time": "20:30",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-092426",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-092426",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "grindstone-tap-house-3431437-2026-09-24",
-      "title": "Open Mic Night!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "reithoffers-2026-09-24-the-tortfeasors",
-      "title": "The Tortfeasors",
-      "venueId": "reithoffers",
-      "date": "2026-09-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/the-tortfeasors-2",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/the-tortfeasors-2",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "visible-voice-books-2026-09-24-poets-jam-with-ray-mcniece-and-the-tongue-in-groove-trio-lds37-946em-nlleb-kh96a-z8xrm-ztwed-hhh36",
-      "title": "Open MIC Poets Jam with Sara Holbrook and Michael Salinger and the Tongue In Groove Trio",
-      "venueId": "visible-voice-books",
-      "date": "2026-09-24",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Open MIC Poets Jam with Sara Holbrook and Michael Salinger and the Tongue In Groove Trio",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/poets-jam-with-ray-mcniece-and-the-tongue-in-groove-trio-lds37-946em-nlleb-kh96a-z8xrm-ztwed-hhh36",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "jenks-1929-2026-09-24-1900-johnny-rockdog",
-      "title": "Johnny Rockdog",
-      "venueId": "jenks-1929",
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Johnny Rockdog",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-09-24-dog-water",
-      "genres": [
-        "rock"
-      ]
-    },
-    {
-      "title": "Kristine Jackson",
-      "performers": [
-        {
-          "name": "Kristine Jackson",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-09-24-kristine-jackson",
-      "genres": []
-    },
-    {
-      "title": "Justo & The Havana Nights",
-      "performers": [
-        {
-          "name": "Justo & The Havana Nights",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-09-24-justo-the-havana-nights",
-      "genres": []
-    },
-    {
-      "title": "Ashley Gulla",
-      "performers": [
-        {
-          "name": "Ashley Gulla",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-09-24-ashley-gulla",
-      "genres": []
-    },
-    {
-      "title": "Flannel Planet",
-      "performers": [
-        {
-          "name": "Flannel Planet",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "1928-public-house",
-      "source": "manual",
-      "manual": true,
-      "id": "1928-public-house-2026-09-24-flannel-planet",
-      "genres": []
-    },
-    {
-      "title": "Pizza Night with Spiral Galaxy, Moth Cock, Horizon Keeps",
-      "performers": null,
-      "date": "2026-09-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "little-rose",
-      "source": "manual",
-      "manual": true,
-      "id": "little-rose-2026-09-24-pizza-night",
-      "genres": []
-    },
-    {
-      "title": "Tricia Crane",
-      "performers": [
-        {
-          "name": "Tricia Crane",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-09-24-tricia-crane",
-      "genres": []
-    },
-    {
-      "title": "Open Decks w/ DJ Dommie Salami",
-      "performers": [
-        {
-          "name": "DJ Dommie Salami",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "riffs",
-      "source": "manual",
-      "manual": true,
-      "id": "riffs-2026-09-24-open-decks",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "spotlight-open-mic-theme-2026-09-24",
-      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
-      "venueId": "spotlight-cle",
-      "date": "2026-09-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "smedleys-thursdays-2026-09-24",
-      "title": "Freebyrds Jam Night",
-      "venueId": "smedleys",
-      "date": "2026-09-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "velvet-don-phillips-thu-2026-09-24",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-24",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-thu-hh-2026-09-24",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-24",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
       "id": "grog-shop-2026-09-25-chip-tha-ripper",
       "title": "Chip Tha Ripper",
       "venueId": "grog-shop",
@@ -3574,6 +2073,26 @@
       "genres": []
     },
     {
+      "title": "Reckless Bettie's",
+      "performers": [
+        {
+          "name": "Reckless Bettie's",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-09-25-reckless-bettie-s",
+      "genres": []
+    },
+    {
       "title": "BILLY MORRIS",
       "performers": [
         {
@@ -3761,7 +2280,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Gruve Tonic",
+      "title": "Gruve Tonic (Music Meadow Stage)",
       "performers": [
         {
           "name": "Gruve Tonic",
@@ -3781,7 +2300,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - From Rio with Love",
+      "title": "From Rio with Love (Music Meadow Stage)",
       "performers": [
         {
           "name": "From Rio with Love",
@@ -3801,7 +2320,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Thicarus",
+      "title": "Thicarus (Music Meadow Stage)",
       "performers": [
         {
           "name": "Thicarus",
@@ -3821,7 +2340,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Charity Barnes",
+      "title": "Charity Barnes (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Charity Barnes",
@@ -3841,7 +2360,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - LaToya Kent",
+      "title": "LaToya Kent (Cryptid Cabaret)",
       "performers": [
         {
           "name": "LaToya Kent",
@@ -3861,7 +2380,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Cleveland Comedy Fest",
+      "title": "Cleveland Comedy Fest (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Cleveland Comedy Fest",
@@ -3883,7 +2402,7 @@
       ]
     },
     {
-      "title": "Cryptid Cabaret - Cleveland Kings and Queens",
+      "title": "Cleveland Kings and Queens (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Cleveland Kings and Queens",
@@ -3903,7 +2422,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - VIP Opening Night Reception",
+      "title": "VIP Opening Night Reception (Tesseract Stage)",
       "performers": [
         {
           "name": "VIP Opening Night Reception",
@@ -3923,7 +2442,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - The Great American Fever Dream: A Cabaret",
+      "title": "The Great American Fever Dream: A Cabaret (Tesseract Stage)",
       "performers": [
         {
           "name": "The Great American Fever Dream: A Cabaret",
@@ -3943,7 +2462,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - The Dreams We Carry: Night Circus Show",
+      "title": "The Dreams We Carry: Night Circus Show (Tesseract Stage)",
       "performers": [
         {
           "name": "The Dreams We Carry: Night Circus Show",
@@ -3963,7 +2482,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - DJ Reggie Fields",
+      "title": "DJ Reggie Fields (Tesseract Stage)",
       "performers": [
         {
           "name": "DJ Reggie Fields",
@@ -3985,7 +2504,7 @@
       ]
     },
     {
-      "title": "Crystal Palace Stage - Blue Horse (Poetry Reading)",
+      "title": "Blue Horse Poetry Reading (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Blue Horse",
@@ -4005,7 +2524,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Istvan Medyesi",
+      "title": "Istvan Medyesi (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Istvan Medyesi",
@@ -4025,7 +2544,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Black Island Condors",
+      "title": "Black Island Condors (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Black Island Condors",
@@ -4045,7 +2564,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Nitty Gritty Soul Club",
+      "title": "Nitty Gritty Soul Club (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Nitty Gritty Soul Club",
@@ -4065,123 +2584,216 @@
       "genres": []
     },
     {
-      "id": "spotlight-weekend-nights-fri-2026-09-25",
-      "title": "Live Music, DJs, Special Nights, featuring...",
-      "venueId": "spotlight-cle",
+      "title": "Priscilla (The Dock)",
+      "performers": [
+        {
+          "name": "Priscilla",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-25",
-      "time": null,
+      "time": "18:30",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "ingenuity-fest",
       "source": "manual",
       "manual": true,
+      "id": "ingenuity-fest-2026-09-25-priscilla",
+      "genres": []
+    },
+    {
+      "title": "Cardboard Caskets (The Dock)",
+      "performers": [
+        {
+          "name": "Cardboard Caskets",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-cardboard-caskets",
+      "genres": []
+    },
+    {
+      "title": "False Teeth (The Dock)",
+      "performers": [
+        {
+          "name": "False Teeth",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "21:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-false-teeth",
+      "genres": []
+    },
+    {
+      "title": "TRUSS (The Dock)",
+      "performers": [
+        {
+          "name": "TRUSS",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "23:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-truss",
+      "genres": []
+    },
+    {
+      "title": "Ciix (The Dock)",
+      "performers": [
+        {
+          "name": "Ciix",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "00:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-ciix",
+      "genres": []
+    },
+    {
+      "title": "DJ Justin Hartman (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "DJ Justin Hartman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-dj-justin-hartman",
       "genres": [
         "dj"
       ]
     },
     {
-      "id": "velvet-jazz-trio-early-2026-09-25",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-25",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-late-2026-09-25",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-25",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-main-2026-09-25",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-25",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-back-2026-09-25",
-      "title": "Pianist Don Phillips (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-09-25",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-fri-main-2026-09-25",
-      "title": "Pianist David Blazer (Main Lounge)",
-      "venueId": "velvet-tango-room",
+      "title": "ManowViolin & Abbey Studor (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "ManowViolin",
+          "headliner": true
+        },
+        {
+          "name": "Abbey Studor",
+          "headliner": false
+        }
+      ],
       "date": "2026-09-25",
       "time": "20:00",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "ingenuity-fest",
       "source": "manual",
       "manual": true,
-      "genres": [
-        "jazz"
-      ]
+      "id": "ingenuity-fest-2026-09-25-manowviolin",
+      "genres": []
     },
     {
-      "id": "velvet-david-blazer-fri-back-2026-09-25",
-      "title": "Pianist David Blazer (Back Room)",
-      "venueId": "velvet-tango-room",
+      "title": "Slugg (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "Slugg",
+          "headliner": true
+        }
+      ],
       "date": "2026-09-25",
       "time": "21:00",
       "doors": null,
       "price": null,
-      "performers": [],
       "eventUrl": null,
       "ticketUrl": null,
+      "venueId": "ingenuity-fest",
       "source": "manual",
       "manual": true,
+      "id": "ingenuity-fest-2026-09-25-slugg",
       "genres": [
-        "jazz"
+        "dj"
       ]
+    },
+    {
+      "title": "Freakuency (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "Freakuency",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-freakuency",
+      "genres": []
+    },
+    {
+      "title": "Kim Crowl & Friends (Zephyr the Boat)",
+      "performers": [
+        {
+          "name": "Kim Crowl",
+          "headliner": true
+        },
+        {
+          "name": "Friends",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-25",
+      "time": "20:20",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-25-kim-crowl",
+      "genres": []
     },
     {
       "id": "grog-shop-2026-09-26-the-tear-garden-the-legendary-pink-dots-cevin-key",
@@ -5637,6 +4249,26 @@
       ]
     },
     {
+      "title": "Austin Hamilton",
+      "performers": [
+        {
+          "name": "Austin Hamilton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-09-26-austin-hamilton",
+      "genres": []
+    },
+    {
       "title": "SPAZMATICS",
       "performers": [
         {
@@ -5807,7 +4439,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Carolina Borja",
+      "title": "Carolina Borja (Music Meadow Stage)",
       "performers": [
         {
           "name": "Carolina Borja",
@@ -5827,7 +4459,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Jeffry Cruz",
+      "title": "Jeffry Cruz (Music Meadow Stage)",
       "performers": [
         {
           "name": "Jeffry Cruz",
@@ -5847,7 +4479,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - United Sound Percussion",
+      "title": "United Sound Percussion (Music Meadow Stage)",
       "performers": [
         {
           "name": "United Sound Percussion",
@@ -5867,7 +4499,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Nate Yingling Trio",
+      "title": "Nate Yingling Trio (Music Meadow Stage)",
       "performers": [
         {
           "name": "Nate Yingling Trio",
@@ -5887,7 +4519,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - Lea Marra & The River Boys",
+      "title": "Lea Marra & The River Boys (Music Meadow Stage)",
       "performers": [
         {
           "name": "Lea Marra & The River Boys",
@@ -5907,7 +4539,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Breakthrough Sound",
+      "title": "Breakthrough Sound (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Breakthrough Sound",
@@ -5927,7 +4559,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Colour Phase",
+      "title": "Colour Phase (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Colour Phase",
@@ -5947,7 +4579,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Naomi Clumna",
+      "title": "Naomi Clumna (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Naomi Clumna",
@@ -5967,7 +4599,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Moon Echo Garden",
+      "title": "Moon Echo Garden (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Moon Echo Garden",
@@ -5990,7 +4622,7 @@
       ]
     },
     {
-      "title": "Cryptid Cabaret - Uno Lady",
+      "title": "Uno Lady (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Uno Lady",
@@ -6014,7 +4646,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Cleveland Comedy Fest",
+      "title": "Cleveland Comedy Fest (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Cleveland Comedy Fest",
@@ -6036,7 +4668,7 @@
       ]
     },
     {
-      "title": "Cryptid Cabaret - Cleveland Kings and Queens",
+      "title": "Cleveland Kings and Queens (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Cleveland Kings and Queens",
@@ -6056,7 +4688,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Ambient Circus Performances",
+      "title": "Ambient Circus Performances (Tesseract Stage)",
       "performers": [
         {
           "name": "Ambient Circus Performances",
@@ -6076,7 +4708,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Nerdy Dancers of CLE",
+      "title": "Nerdy Dancers of CLE (Tesseract Stage)",
       "performers": [
         {
           "name": "Nerdy Dancers of CLE",
@@ -6096,7 +4728,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Tides of Friendship: Circus Show",
+      "title": "Tides of Friendship: Circus Show (Tesseract Stage)",
       "performers": [
         {
           "name": "Tides of Friendship: Circus Show",
@@ -6116,7 +4748,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Intro to Juggling & Acrobatics",
+      "title": "Intro to Juggling & Acrobatics (Tesseract Stage)",
       "performers": [
         {
           "name": "Intro to Juggling & Acrobatics",
@@ -6136,7 +4768,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Circus & Acrobat Jam",
+      "title": "Circus & Acrobat Jam (Tesseract Stage)",
       "performers": [
         {
           "name": "Circus & Acrobat Jam",
@@ -6156,7 +4788,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - The Great American Fever Dream: A Cabaret",
+      "title": "The Great American Fever Dream: A Cabaret (Tesseract Stage)",
       "performers": [
         {
           "name": "The Great American Fever Dream: A Cabaret",
@@ -6176,7 +4808,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - The Dreams We Carry: Night Circus Show",
+      "title": "The Dreams We Carry: Night Circus Show (Tesseract Stage)",
       "performers": [
         {
           "name": "The Dreams We Carry: Night Circus Show",
@@ -6196,7 +4828,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - DJ SqrBiz",
+      "title": "DJ SqrBiz (Tesseract Stage)",
       "performers": [
         {
           "name": "DJ SqrBiz",
@@ -6218,7 +4850,7 @@
       ]
     },
     {
-      "title": "Crystal Palace Stage - Disco Stitch",
+      "title": "Disco Stitch (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Disco Stitch",
@@ -6242,7 +4874,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - So Long Albatross",
+      "title": "So Long Albatross (Crystal Palace Stage)",
       "performers": [
         {
           "name": "So Long Albatross",
@@ -6262,7 +4894,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - honeybee",
+      "title": "honeybee (Crystal Palace Stage)",
       "performers": [
         {
           "name": "honeybee",
@@ -6282,7 +4914,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Liquid Images",
+      "title": "Liquid Images (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Liquid Images",
@@ -6302,7 +4934,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Pink Owl",
+      "title": "Pink Owl (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Pink Owl",
@@ -6322,7 +4954,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - The Magnavoxes",
+      "title": "The Magnavoxes (Crystal Palace Stage)",
       "performers": [
         {
           "name": "The Magnavoxes",
@@ -6342,7 +4974,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Ma Holos",
+      "title": "Ma Holos (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Ma Holos",
@@ -6362,7 +4994,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Hot Take",
+      "title": "Hot Take (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Hot Take",
@@ -6383,6 +5015,360 @@
       "source": "manual",
       "manual": true,
       "id": "ingenuity-fest-2026-09-26-hot-take",
+      "genres": []
+    },
+    {
+      "title": "The Elder Goths (The Dock)",
+      "performers": [
+        {
+          "name": "The Elder Goths",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "13:15",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-the-elder-goths",
+      "genres": []
+    },
+    {
+      "title": "Disco Duro (The Dock)",
+      "performers": [
+        {
+          "name": "Disco Duro",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "15:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-disco-duro",
+      "genres": []
+    },
+    {
+      "title": "Midori Jacket (The Dock)",
+      "performers": [
+        {
+          "name": "Midori Jacket",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-midori-jacket",
+      "genres": []
+    },
+    {
+      "title": "Reverend Lee (The Dock)",
+      "performers": [
+        {
+          "name": "Reverend Lee",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-reverend-lee",
+      "genres": []
+    },
+    {
+      "title": "Ritual Bronze (The Dock)",
+      "performers": [
+        {
+          "name": "Ritual Bronze",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-ritual-bronze",
+      "genres": []
+    },
+    {
+      "title": "Heart & Lung (The Dock)",
+      "performers": [
+        {
+          "name": "Heart & Lung",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-heart-lung",
+      "genres": []
+    },
+    {
+      "title": "Cascade Valance (The Dock)",
+      "performers": [
+        {
+          "name": "Cascade Valance",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "22:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-cascade-valance",
+      "genres": []
+    },
+    {
+      "title": "Jinari Kemet & The Black Jackets (The Dock)",
+      "performers": [
+        {
+          "name": "Jinari Kemet & The Black Jackets",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "00:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-jinari-kemet-the-black-jackets",
+      "genres": []
+    },
+    {
+      "title": "DJ Justin Hartman (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "DJ Justin Hartman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "14:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-dj-justin-hartman",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "DJ Le Schlippy (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "DJ Le Schlippy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-dj-le-schlippy",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "DJ Jason Soditch (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "DJ Jason Soditch",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-dj-jason-soditch",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "ManowViolin & Abbey Studor (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "ManowViolin",
+          "headliner": true
+        },
+        {
+          "name": "Abbey Studor",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-manowviolin",
+      "genres": []
+    },
+    {
+      "title": "CROSSTALK: A Live Hardware Experience (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "CROSSTALK",
+          "headliner": true
+        },
+        {
+          "name": "Justin Hartman",
+          "headliner": false
+        },
+        {
+          "name": "Glacial23",
+          "headliner": false
+        },
+        {
+          "name": "Jesse Hawk",
+          "headliner": false
+        },
+        {
+          "name": "Mark Strauss",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-crosstalk",
+      "genres": []
+    },
+    {
+      "title": "CCF Designers (Zephyr the Boat)",
+      "performers": [
+        {
+          "name": "CCF Designers",
+          "headliner": true
+        },
+        {
+          "name": "SunMinga",
+          "headliner": false
+        },
+        {
+          "name": "Jazmine Fischer",
+          "headliner": false
+        },
+        {
+          "name": "6th Street Vintage",
+          "headliner": false
+        },
+        {
+          "name": "The House of Duality",
+          "headliner": false
+        },
+        {
+          "name": "MOODY MORI",
+          "headliner": false
+        },
+        {
+          "name": "House of Chazzly",
+          "headliner": false
+        },
+        {
+          "name": "Jahi by Akili",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "15:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-ccf-designers",
+      "genres": []
+    },
+    {
+      "title": "Joey Feketik (Zephyr the Boat)",
+      "performers": [
+        {
+          "name": "Joey Feketik",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-26-joey-feketik",
       "genres": []
     },
     {
@@ -7489,7 +6475,61 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - ROOTS Guitar Petting Zoo",
+      "title": "Browns Home Opener Tailgate Party",
+      "performers": [
+        {
+          "name": "Browns Home Opener Tailgate Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "08:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-09-27-browns-home-opener-tailgate-party",
+      "genres": []
+    },
+    {
+      "title": "ROOTS Picking Circle (Music Meadow Stage)",
+      "performers": [
+        {
+          "name": "ROOTS Picking Circle",
+          "headliner": true
+        },
+        {
+          "name": "Charlie Mosbrook",
+          "headliner": false
+        },
+        {
+          "name": "Kevin Richards",
+          "headliner": false
+        },
+        {
+          "name": "Bob Saada",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-roots-picking-circle",
+      "genres": [
+        "folk-roots"
+      ]
+    },
+    {
+      "title": "ROOTS Guitar Petting Zoo (Music Meadow Stage)",
       "performers": [
         {
           "name": "ROOTS Guitar Petting Zoo",
@@ -7509,7 +6549,7 @@
       "genres": []
     },
     {
-      "title": "Music Meadow Stage - B.A.D.J.R.",
+      "title": "B.A.D.J.R. (Music Meadow Stage)",
       "performers": [
         {
           "name": "B.A.D.J.R.",
@@ -7529,7 +6569,7 @@
       "genres": []
     },
     {
-      "title": "Cryptid Cabaret - Sophii Appsolutelii Prepares SOUP & SALAD: The Musical Melting Pot",
+      "title": "Sophii Appsolutelii Prepares SOUP & SALAD: The Musical Melting Pot (Cryptid Cabaret)",
       "performers": [
         {
           "name": "Sophii Appsolutelii",
@@ -7549,7 +6589,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - A Short Play by Queen, I Am",
+      "title": "A Short Play by Queen, I Am (Tesseract Stage)",
       "performers": [
         {
           "name": "A Short Play by Queen, I Am",
@@ -7569,7 +6609,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Tides of Friendship: Circus Show",
+      "title": "Tides of Friendship: Circus Show (Tesseract Stage)",
       "performers": [
         {
           "name": "Tides of Friendship: Circus Show",
@@ -7589,7 +6629,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Circus & Acrobat Jam",
+      "title": "Circus & Acrobat Jam (Tesseract Stage)",
       "performers": [
         {
           "name": "Circus & Acrobat Jam",
@@ -7609,7 +6649,7 @@
       "genres": []
     },
     {
-      "title": "Tesseract Stage - Intro to Juggling & Acrobatics",
+      "title": "Intro to Juggling & Acrobatics (Tesseract Stage)",
       "performers": [
         {
           "name": "Intro to Juggling & Acrobatics",
@@ -7629,7 +6669,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Mick Fox",
+      "title": "Mick Fox (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Mick Fox",
@@ -7649,7 +6689,7 @@
       "genres": []
     },
     {
-      "title": "Crystal Palace Stage - Erie Division",
+      "title": "Erie Division (Crystal Palace Stage)",
       "performers": [
         {
           "name": "Erie Division",
@@ -7666,6 +6706,172 @@
       "source": "manual",
       "manual": true,
       "id": "ingenuity-fest-2026-09-27-erie-division",
+      "genres": []
+    },
+    {
+      "title": "Twinspeak (The Dock)",
+      "performers": [
+        {
+          "name": "Twinspeak",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-twinspeak",
+      "genres": []
+    },
+    {
+      "title": "Thirty/50 (The Dock)",
+      "performers": [
+        {
+          "name": "Thirty/50",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:45",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-thirty-50",
+      "genres": []
+    },
+    {
+      "title": "BRAINFREEZE (The Dock)",
+      "performers": [
+        {
+          "name": "BRAINFREEZE",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "15:15",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-brainfreeze",
+      "genres": []
+    },
+    {
+      "title": "Lee Marvin Oswald (The Dock)",
+      "performers": [
+        {
+          "name": "Lee Marvin Oswald",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-lee-marvin-oswald",
+      "genres": []
+    },
+    {
+      "title": "Climb The Sun (The Dock)",
+      "performers": [
+        {
+          "name": "Climb The Sun",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "16:45",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-climb-the-sun",
+      "genres": []
+    },
+    {
+      "title": "Zero-G Hangman (The Dock)",
+      "performers": [
+        {
+          "name": "Zero-G Hangman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-zero-g-hangman",
+      "genres": []
+    },
+    {
+      "title": "DJ Justin Hartman & Friends (Enchanted Forest Stage)",
+      "performers": [
+        {
+          "name": "DJ Justin Hartman",
+          "headliner": true
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-dj-justin-hartman",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Andrew Kaletta & Friends (Zephyr the Boat)",
+      "performers": [
+        {
+          "name": "Andrew Kaletta",
+          "headliner": true
+        },
+        {
+          "name": "Friends",
+          "headliner": false
+        }
+      ],
+      "date": "2026-09-27",
+      "time": "13:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "ingenuity-fest",
+      "source": "manual",
+      "manual": true,
+      "id": "ingenuity-fest-2026-09-27-andrew-kaletta",
       "genres": []
     },
     {
@@ -7717,40 +6923,6 @@
       "manual": true,
       "genres": [
         "dj"
-      ]
-    },
-    {
-      "title": "Music Meadow Stage - ROOTS Picking Circle",
-      "performers": [
-        {
-          "name": "ROOTS Picking Circle",
-          "headliner": true
-        },
-        {
-          "name": "Charlie Mosbrook",
-          "headliner": false
-        },
-        {
-          "name": "Kevin Richards",
-          "headliner": false
-        },
-        {
-          "name": "Bob Saada",
-          "headliner": false
-        }
-      ],
-      "date": "Music Meadow Stage - 2026-09-27",
-      "time": "13:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "ingenuity-fest",
-      "source": "manual",
-      "manual": true,
-      "id": "ingenuity-fest-2026-09-27-roots-picking-circle",
-      "genres": [
-        "folk-roots"
       ]
     },
     {
@@ -11046,6 +10218,26 @@
       "genres": []
     },
     {
+      "title": "Mary Taylor Brooks Band",
+      "performers": [
+        {
+          "name": "Mary Taylor Brooks Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-02",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-02-mary-taylor-brooks-band",
+      "genres": []
+    },
+    {
       "title": "FOLLOW THE SUN",
       "performers": [
         {
@@ -12410,6 +11602,46 @@
       ]
     },
     {
+      "title": "Wine Wonderland",
+      "performers": [
+        {
+          "name": "Wine Wonderland",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-03-wine-wonderland",
+      "genres": []
+    },
+    {
+      "title": "Big Al & The Hitmen",
+      "performers": [
+        {
+          "name": "Big Al & The Hitmen",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-03-big-al-the-hitmen",
+      "genres": []
+    },
+    {
       "title": "DISCO INFERNO",
       "performers": [
         {
@@ -13523,6 +12755,28 @@
       "manual": true,
       "id": "chagrin-tavern-2026-10-05-cameron-zona",
       "genres": []
+    },
+    {
+      "title": "Lonesome Bones",
+      "performers": [
+        {
+          "name": "Lonesome Bones",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-05-lonesome-bones",
+      "genres": [
+        "country"
+      ]
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-10-05",
@@ -16051,6 +15305,26 @@
       ]
     },
     {
+      "title": "Dan McCoy",
+      "performers": [
+        {
+          "name": "Dan McCoy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-09-dan-mccoy",
+      "genres": []
+    },
+    {
       "title": "OLD SKOOL",
       "performers": [
         {
@@ -17383,6 +16657,26 @@
         "dance-disco",
         "covers"
       ]
+    },
+    {
+      "title": "The Pawn Band",
+      "performers": [
+        {
+          "name": "The Pawn Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-10-the-pawn-band",
+      "genres": []
     },
     {
       "title": "YOSEMITE SLIM",
@@ -20409,6 +19703,26 @@
       "genres": []
     },
     {
+      "title": "Cleveland Blues Society Jam",
+      "performers": [
+        {
+          "name": "Cleveland Blues Society Jam",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-15",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-15-cleveland-blues-society-jam",
+      "genres": []
+    },
+    {
       "id": "spotlight-tk-jazz-odyssey-2026-10-15",
       "title": "TK's Jazz Odyssey & Workshop",
       "venueId": "spotlight-cle",
@@ -21457,6 +20771,46 @@
       "source": "manual",
       "manual": true,
       "id": "local-bar-strongsville-2026-10-16-rockhouse-columbus",
+      "genres": []
+    },
+    {
+      "title": "North vs. South Football Tailgate Party",
+      "performers": [
+        {
+          "name": "North vs. South Football Tailgate Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-16-north-vs-south-football-tailgate-party",
+      "genres": []
+    },
+    {
+      "title": "Dawn to Dusk",
+      "performers": [
+        {
+          "name": "Dawn to Dusk",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-16-dawn-to-dusk",
       "genres": []
     },
     {
@@ -22638,6 +21992,26 @@
       "genres": [
         "tribute"
       ]
+    },
+    {
+      "title": "Frank Amato Scary-Okie",
+      "performers": [
+        {
+          "name": "Frank Amato",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-17-frank-amato",
+      "genres": []
     },
     {
       "title": "TRAILER PARK NINJAS",
@@ -26067,6 +25441,30 @@
       ]
     },
     {
+      "title": "Stamper Starr",
+      "performers": [
+        {
+          "name": "Stamper Starr",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-23-stamper-starr",
+      "genres": [
+        "blues",
+        "classic",
+        "rock"
+      ]
+    },
+    {
       "title": "TRICKY DICK AND THE COVER-UPS",
       "performers": [
         {
@@ -27121,6 +26519,26 @@
       "genres": [
         "covers"
       ]
+    },
+    {
+      "title": "Cows Giving Kerosene",
+      "performers": [
+        {
+          "name": "Cows Giving Kerosene",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene",
+      "genres": []
     },
     {
       "title": "THAT 80'S BAND",
@@ -29443,6 +28861,32 @@
       "genres": []
     },
     {
+      "title": "Ghost Rider with Ted Riser Halloween Party",
+      "performers": [
+        {
+          "name": "Ghost Rider",
+          "headliner": true
+        },
+        {
+          "name": "Ted Riser",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-29-ghost-rider",
+      "genres": [
+        "singer-songwriter"
+      ]
+    },
+    {
       "title": "Mishak",
       "performers": [
         {
@@ -30051,6 +29495,26 @@
         "dance-disco",
         "hiphop-rap"
       ]
+    },
+    {
+      "title": "Blaming Willy",
+      "performers": [
+        {
+          "name": "Blaming Willy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-30-blaming-willy",
+      "genres": []
     },
     {
       "title": "DT AND THE SHAKES",
@@ -30970,6 +30434,26 @@
         "rock",
         "covers"
       ]
+    },
+    {
+      "title": "3 Day Weekend",
+      "performers": [
+        {
+          "name": "3 Day Weekend",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-31-3-day-weekend",
+      "genres": []
     },
     {
       "title": "THE SELLOUTS",
@@ -33245,6 +32729,26 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-11-06-chris-mitchell",
+      "genres": []
+    },
+    {
+      "title": "Black Jack Gypsies",
+      "performers": [
+        {
+          "name": "Black Jack Gypsies",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-11-06-black-jack-gypsies",
       "genres": []
     },
     {
