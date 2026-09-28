@@ -9,13 +9,23 @@
 // Shape per postType:
 //   shot    -> flat media fields on the post itself: { type ('photo'|'video'), src, thumbnail }
 //   gallery -> { items: [ { type, src, thumbnail, caption?, cover? }, ... ] }
-//   report  -> { blocks: [ { type: 'paragraph', text } | { type: 'media', mediaType, src, thumbnail?, caption?, cover? }, ... ] }
+//   report  -> { hero?: { mediaType, src, thumbnail?, caption? }, blocks: [ { type: 'paragraph', text } | { type: 'media', mediaType, src, thumbnail?, caption?, cover? }, ... ] }
 //
-// `cover: true` on one entry in `items` (gallery) or one 'media' block in
-// `blocks` (report) marks which shot is used as the grid tile's cover image.
-// Paragraph blocks in a report are never eligible. If nothing is flagged,
-// the first item/media block is used. See getCoverMedia() for the exact
-// resolution/fallback logic.
+// For a gallery, `cover: true` on one entry in `items` marks which shot is
+// used as the grid tile's cover image (first item wins if none is flagged).
+//
+// For a report, the grid tile AND the modal's top hero both come from
+// `hero` when it's set — a standalone shot that lives outside `blocks`
+// entirely, so it is never automatically duplicated into the body. If you
+// want that same shot to also appear in the body text, add it again as its
+// own ordinary media block; that's a deliberate second copy, not a mirrored
+// reference, so a report can just as easily have a hero shown nowhere else,
+// or no hero at all. When `hero` is omitted, the tile falls back to
+// whichever block has `"cover": true` (or the first media block, paragraph
+// blocks never eligible) for backward compatibility with reports written
+// before `hero` existed — but in that fallback case no hero section is
+// shown in the modal; it's purely a tile-image fallback. See
+// resolveCoverEntry()/getCoverMedia() for the exact resolution logic.
 //
 // venueId matches an id in data/venues.json (same relationship events.json
 // uses for its own venueId field). Display names are resolved via that file
@@ -148,16 +158,43 @@
 		return false;
 	}
 
-	// The grid tile and modal both need a single "cover" image/video to
-	// represent a post — trivial for a shot (it IS the media). For a
-	// gallery, set `"cover": true` on whichever entry in `items` should
-	// represent the post; for a report, set it on whichever 'media' block
-	// in `blocks` should represent it. If no entry is flagged (or more than
-	// one is, by mistake), the first item/media block wins.
-	function getCoverMedia(item) {
+	// Finds the raw cover entry for a gallery/report. Returns null for a
+	// shot, which has no separate cover entry — it IS the cover. Kept
+	// distinct from getCoverMedia() below because callers that need to
+	// actually play/show the cover (e.g. the report hero) need its real
+	// `src`, not just the thumbnail getCoverMedia() resolves for the tile.
+	//
+	// Gallery: whichever entry in `items` has `cover: true`, falling back to
+	// the first item if none is flagged (or more than one is, by mistake).
+	//
+	// Report: `hero` if the post has one — a standalone shot outside
+	// `blocks` — otherwise (for reports written before `hero` existed)
+	// whichever 'media' block has `cover: true`, or the first media block.
+	// That fallback path exists purely so old data still resolves a tile
+	// image; renderReportHero() does NOT use this function; it only ever
+	// shows `item.hero` directly, so a report without one gets no hero
+	// section rather than one being inferred from a body block.
+	function resolveCoverEntry(item) {
 		if (item.postType === 'gallery') {
 			const list = Array.isArray(item.items) ? item.items : [];
-			const cover = list.find((i) => i && i.cover === true) || list[0] || {};
+			return list.find((i) => i && i.cover === true) || list[0] || null;
+		}
+
+		if (item.postType === 'report') {
+			if (item.hero) return item.hero;
+			const mediaBlocks = (item.blocks || []).filter((b) => b && b.type === 'media');
+			return mediaBlocks.find((b) => b.cover === true) || mediaBlocks[0] || null;
+		}
+
+		return null;
+	}
+
+	// The grid tile and modal both need a single "cover" image/video to
+	// represent a post — trivial for a shot (it IS the media); for a
+	// gallery/report it's whichever entry resolveCoverEntry() picks out.
+	function getCoverMedia(item) {
+		if (item.postType === 'gallery') {
+			const cover = resolveCoverEntry(item) || {};
 			return {
 				type: cover.type || 'photo',
 				thumbnail: cover.thumbnail || (cover.type === 'photo' ? cover.src : '') || '',
@@ -165,8 +202,7 @@
 		}
 
 		if (item.postType === 'report') {
-			const mediaBlocks = (item.blocks || []).filter((b) => b && b.type === 'media');
-			const cover = mediaBlocks.find((b) => b.cover === true) || mediaBlocks[0] || {};
+			const cover = resolveCoverEntry(item) || {};
 			return {
 				type: cover.mediaType || 'photo',
 				thumbnail: cover.thumbnail || (cover.mediaType === 'photo' ? cover.src : '') || '',
@@ -343,6 +379,7 @@
 	const modalMediaWrap = document.getElementById('boardModalMedia');
 	const modalMediaInner = document.getElementById('boardModalMediaInner');
 	const modalContentList = document.getElementById('boardModalContentList');
+	const modalReportHero = document.getElementById('boardModalReportHero');
 	const modalPrevBtn = document.getElementById('boardModalPrev');
 	const modalNextBtn = document.getElementById('boardModalNext');
 	const modalTitle = document.getElementById('boardModalTitle');
@@ -888,6 +925,7 @@
 	function pauseAllModalVideos() {
 		modalMediaInner.querySelectorAll('video').forEach((v) => v.pause());
 		modalContentList.querySelectorAll('video').forEach((v) => v.pause());
+		modalReportHero.querySelectorAll('video').forEach((v) => v.pause());
 	}
 
 	function buildStreamMediaEl(media) {
@@ -979,6 +1017,31 @@
 		});
 	}
 
+	// Shows a report's standalone `hero` shot at the very top of the modal,
+	// above the title/venue/date info, when the post has one — independent
+	// of `blocks`, so it's never automatically duplicated into the body.
+	// If the same shot should also appear in the body text, that's done by
+	// adding it again as its own ordinary media block; nothing here keeps
+	// the two in sync. Only reports get this treatment; shots and galleries
+	// leave modalReportHero hidden.
+	function renderReportHero(item) {
+		modalReportHero.innerHTML = '';
+
+		// Deliberately reads item.hero directly rather than going through
+		// resolveCoverEntry() — a report with no explicit `hero` gets no
+		// hero section at all, rather than one inferred from a body block
+		// (that fallback exists in resolveCoverEntry() only for the grid
+		// tile image, on older reports written before `hero` existed).
+		const hero = item.hero;
+		if (!hero || !hero.src) {
+			modalReportHero.hidden = true;
+			return;
+		}
+
+		modalReportHero.hidden = false;
+		modalReportHero.appendChild(buildStreamMediaEl({ type: hero.mediaType, src: hero.src, caption: hero.caption }));
+	}
+
 	// Keeps the address bar in sync with whichever post is open, using the
 	// same bare #<id> hash openItemFromHash() already reads on page load —
 	// so the URL sitting in the browser bar while a post is open (or after
@@ -1021,7 +1084,7 @@
 
 		modalCredit.textContent = '';
 		if (item.submittedBy) {
-			modalCredit.append('from ', Object.assign(document.createElement('span'), {
+			modalCredit.append('by ', Object.assign(document.createElement('span'), {
 				className: 'boardModalCreditValue',
 				textContent: item.submittedBy,
 			}));
@@ -1029,10 +1092,15 @@
 
 		if (item.postType === 'gallery') {
 			renderGalleryContent(item);
+			modalReportHero.hidden = true;
+			modalReportHero.innerHTML = '';
 		} else if (item.postType === 'report') {
+			renderReportHero(item);
 			renderReportContent(item);
 		} else {
 			renderShotContent(item);
+			modalReportHero.hidden = true;
+			modalReportHero.innerHTML = '';
 		}
 
 		updateModalNavState();
@@ -1071,6 +1139,7 @@
 		pauseAllModalVideos();
 		modalMediaInner.innerHTML = '';
 		modalContentList.innerHTML = '';
+		modalReportHero.innerHTML = '';
 		modalIndex = -1;
 	}
 
