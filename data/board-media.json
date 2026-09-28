@@ -1,6 +1,7 @@
 [
 	{
 		"id": "stamper-starr-20260828-01",
+		"postType": "shot",
 		"type": "video",
 		"src": "media/stamper-starr-20260828-01.mp4",
 		"thumbnail": "media/thumbs/stamper-starr-20260828-01.webp",
@@ -10,47 +11,50 @@
 		"submittedBy": "CRWD SRFR"
 	},
 	{
-		"id": "hello3d-20260828-01",
-		"type": "video",
-		"src": "media/hello3d-20260828-01.mp4",
-		"thumbnail": "media/thumbs/hello3d-20260828-01.webp",
+		"id": "hello3d-20260828",
+		"postType": "gallery",
 		"title": "Hello!3D",
 		"date": "2026-08-28",
 		"venueId": "heights-music-hop",
-		"submittedBy": "CRWD SRFR"
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "video",
+				"src": "media/hello3d-20260828-01.mp4",
+				"thumbnail": "media/thumbs/hello3d-20260828-01.webp",
+				"cover": true
+			},
+			{
+				"type": "video",
+				"src": "media/hello3d-20260828-02.mp4",
+				"thumbnail": "media/thumbs/hello3d-20260828-02.webp"
+			}
+		]
 	},
 	{
-		"id": "hello3d-20260828-02",
-		"type": "video",
-		"src": "media/hello3d-20260828-02.mp4",
-		"thumbnail": "media/thumbs/hello3d-20260828-02.webp",
-		"title": "Hello!3D",
-		"date": "2026-08-28",
-		"venueId": "heights-music-hop",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "austin-walkin-cane-20260829-01",
-		"type": "photo",
-		"src": "media/austin-walkin-cane-20260829-01.webp",
-		"thumbnail": "media/thumbs/austin-walkin-cane-20260829-01.webp",
+		"id": "austin-walkin-cane-20260829",
+		"postType": "gallery",
 		"title": "Austin Walkin' Cane",
 		"date": "2026-08-29",
 		"venueId": "heights-music-hop",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "austin-walkin-cane-20260829-02",
-		"type": "photo",
-		"src": "media/austin-walkin-cane-20260829-02.webp",
-		"thumbnail": "media/thumbs/austin-walkin-cane-20260829-02.webp",
-		"title": "Austin Walkin' Cane",
-		"date": "2026-08-29",
-		"venueId": "heights-music-hop",
-		"submittedBy": "CRWD SRFR"
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "photo",
+				"src": "media/austin-walkin-cane-20260829-01.webp",
+				"thumbnail": "media/thumbs/austin-walkin-cane-20260829-01.webp"
+			},
+			{
+				"type": "photo",
+				"src": "media/austin-walkin-cane-20260829-02.webp",
+				"thumbnail": "media/thumbs/austin-walkin-cane-20260829-02.webp",
+				"cover": true
+			}
+		]
 	},
 	{
 		"id": "adult-human-chicken-20260829-01",
+		"postType": "shot",
 		"type": "photo",
 		"src": "media/adult-human-chicken-20260829-01.webp",
 		"thumbnail": "media/thumbs/adult-human-chicken-20260829-01.webp",
@@ -61,6 +65,7 @@
 	},
 	{
 		"id": "opus-216-20260829-01",
+		"postType": "shot",
 		"type": "video",
 		"src": "media/opus-216-20260829-01.mp4",
 		"thumbnail": "media/thumbs/opus-216-20260829-01.webp",
@@ -70,121 +75,277 @@
 		"submittedBy": "CRWD SRFR"
 	},
 	{
-		"id": "time-cat-20260912-01",
-		"type": "photo",
-		"src": "media/time-cat-20260912-01.webp",
-		"thumbnail": "media/thumbs/time-cat-20260912-01.webp",
+		"id": "time-cat-20260912",
+		"postType": "gallery",
 		"title": "Time Cat",
 		"date": "2026-09-12",
 		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "photo",
+				"src": "media/time-cat-20260912-01.webp",
+				"thumbnail": "media/thumbs/time-cat-20260912-01.webp"
+			},
+			{
+				"type": "photo",
+				"src": "media/time-cat-20260912-02.webp",
+				"thumbnail": "media/thumbs/time-cat-20260912-02.webp"
+			},
+			{
+				"type": "photo",
+				"src": "media/time-cat-20260912-03.webp",
+				"thumbnail": "media/thumbs/time-cat-20260912-03.webp",
+				"cover": true
+			},
+			{
+				"type": "video",
+				"src": "media/time-cat-20260912-04.mp4",
+				"thumbnail": "media/thumbs/time-cat-20260912-04.webp"
+			},
+			{
+				"type": "video",
+				"src": "media/time-cat-20260912-05.mp4",
+				"thumbnail": "media/thumbs/time-cat-20260912-05.webp"
+			}
+		]
 	},
 	{
-		"id": "time-cat-20260912-02",
-		"type": "photo",
-		"src": "media/time-cat-20260912-02.webp",
-		"thumbnail": "media/thumbs/time-cat-20260912-02.webp",
-		"title": "Time Cat",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "time-cat-20260912-03",
-		"type": "photo",
-		"src": "media/time-cat-20260912-03.webp",
-		"thumbnail": "media/thumbs/time-cat-20260912-03.webp",
-		"title": "Time Cat",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "time-cat-20260912-04",
-		"type": "video",
-		"src": "media/time-cat-20260912-04.mp4",
-		"thumbnail": "media/thumbs/time-cat-20260912-04.webp",
-		"title": "Time Cat",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "time-cat-20260912-05",
-		"type": "video",
-		"src": "media/time-cat-20260912-05.mp4",
-		"thumbnail": "media/thumbs/time-cat-20260912-05.webp",
-		"title": "Time Cat",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "rellick-20260912-01",
-		"type": "video",
-		"src": "media/rellick-20260912-01.mp4",
-		"thumbnail": "media/thumbs/rellick-20260912-01.webp",
+		"id": "rellick-20260912",
+		"postType": "gallery",
 		"title": "Rellick",
 		"date": "2026-09-12",
 		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "video",
+				"src": "media/rellick-20260912-01.mp4",
+				"thumbnail": "media/thumbs/rellick-20260912-01.webp"
+			},
+			{
+				"type": "photo",
+				"src": "media/rellick-20260912-02.webp",
+				"thumbnail": "media/thumbs/rellick-20260912-02.webp",
+				"cover": true
+			}
+		]
 	},
 	{
-		"id": "rellick-20260912-02",
-		"type": "photo",
-		"src": "media/rellick-20260912-02.webp",
-		"thumbnail": "media/thumbs/rellick-20260912-02.webp",
-		"title": "Rellick",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "sabon-20260912-01",
-		"type": "photo",
-		"src": "media/sabon-20260912-01.webp",
-		"thumbnail": "media/thumbs/sabon-20260912-01.webp",
+		"id": "sabon-20260912",
+		"postType": "gallery",
 		"title": "SABON",
 		"date": "2026-09-12",
 		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "photo",
+				"src": "media/sabon-20260912-01.webp",
+				"thumbnail": "media/thumbs/sabon-20260912-01.webp"
+			},
+			{
+				"type": "photo",
+				"src": "media/sabon-20260912-02.webp",
+				"thumbnail": "media/thumbs/sabon-20260912-02.webp",
+				"cover": true
+			},
+			{
+				"type": "photo",
+				"src": "media/sabon-20260912-03.webp",
+				"thumbnail": "media/thumbs/sabon-20260912-03.webp"
+			},
+			{
+				"type": "video",
+				"src": "media/sabon-20260912-04.mp4",
+				"thumbnail": "media/thumbs/sabon-20260912-04.webp"
+			}
+		]
 	},
 	{
-		"id": "sabon-20260912-02",
-		"type": "photo",
-		"src": "media/sabon-20260912-02.webp",
-		"thumbnail": "media/thumbs/sabon-20260912-02.webp",
-		"title": "SABON",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "sabon-20260912-03",
-		"type": "photo",
-		"src": "media/sabon-20260912-03.webp",
-		"thumbnail": "media/thumbs/sabon-20260912-03.webp",
-		"title": "SABON",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
-	},
-	{
-		"id": "sabon-20260912-04",
-		"type": "video",
-		"src": "media/sabon-20260912-04.mp4",
-		"thumbnail": "media/thumbs/sabon-20260912-04.webp",
-		"title": "SABON",
-		"date": "2026-09-12",
-		"venueId": "waterloo-arts-fest",
-		"submittedBy": "CRWD SRFR"
+		"id": "chip-tha-ripper-report-20260925",
+		"postType": "report",
+		"title": "Chip Tha Ripper Can't Be Slowed Down",
+		"date": "2026-09-25",
+		"venueId": "grog-shop",
+		"submittedBy": "CRWD SRFR",
+		"blocks": [
+			{
+				"type": "paragraph",
+				"text": "I won't lie - I've been out of the hip hop game for some time. But when I saw that Chip Tha Ripper was coming to the Grog Shop this past Friday, I knew it was a show I couldn't miss."
+			},
+			{
+				"type": "paragraph",
+				"text": "And though I mostly showed up for Chip, I left blown away by all of the incredible acts that took the stage - the king included. Here are some of the highlights from an amazing night!"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/lil-jesse-20260925-01.mp4",
+				"thumbnail": "media/thumbs/lil-jesse-20260925-01.webp",
+				"caption": "Lil Jesse got the crowd goin"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/anion-don-20260925-01.mp4",
+				"thumbnail": "media/thumbs/anion-don-20260925-01.webp",
+				"caption": "Anion Don followed up with some heat"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/marquis-storm-20260925-01.mp4",
+				"thumbnail": "media/thumbs/marquis-storm-20260925-01.webp",
+				"caption": "Marquis Storm kept the show and crowd rockin"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/marquis-storm-20260925-02.webp",
+				"thumbnail": "media/thumbs/marquis-storm-20260925-02.webp",
+				"caption": "Marquis Storm"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/flow-fanatic-20260925-01.webp",
+				"thumbnail": "media/thumbs/flow-fanatic-20260925-01.webp",
+				"caption": "Flow Fanatic flexed his freestyle skills"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/the-kais-20260925-01.mp4",
+				"thumbnail": "media/thumbs/the-kais-20260925-01.webp",
+				"caption": "The Kais were on another level"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/j-work-20260925-02.mp4",
+				"thumbnail": "media/thumbs/j-work-20260925-02.webp",
+				"caption": "J-Work came out spittin fire"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/j-work-20260925-01.webp",
+				"thumbnail": "media/thumbs/j-work-20260925-01.webp",
+				"caption": "J-Work"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/hoodie-bk-20260925-02.mp4",
+				"thumbnail": "media/thumbs/hoodie-bk-20260925-02.webp",
+				"caption": "Hoodie BK was lettin' everyone know"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/hoodie-bk-20260925-01.webp",
+				"thumbnail": "media/thumbs/hoodie-bk-20260925-01.webp",
+				"caption": "Hoodie BK"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/casse-laygo-20260925-01.webp",
+				"thumbnail": "media/thumbs/casse-laygo-20260925-01.webp",
+				"caption": "Casse Laygo had unmatched aura"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/casse-laygo-20260925-01.mp4",
+				"thumbnail": "media/thumbs/casse-laygo-20260925-01.webp",
+				"caption": "Casse Laygo"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/casse-laygo-20260925-02.webp",
+				"thumbnail": "media/thumbs/casse-laygo-20260925-02.webp",
+				"caption": "Casse Laygo"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/unknown-20260925-01.webp",
+				"thumbnail": "media/thumbs/unknown-20260925-01.webp",
+				"caption": "We didn't catch this act's name - let us know if you know!"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/young-genesis-20260925-01.webp",
+				"thumbnail": "media/thumbs/young-genesis-20260925-01.webp",
+				"caption": "Young Genesis brought the energy"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-05.mp4",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-05.webp",
+				"caption": "Chip Tha Ripper takes the stage"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-01.webp",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-01.webp",
+				"caption": "Chip Tha Ripper"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-06.mp4",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-06.webp",
+				"caption": "Chip Tha Ripper pulling out a classic"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-02.webp",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-02.webp",
+				"caption": "Chip Tha Ripper"
+			},
+			{
+				"type": "media",
+				"mediaType": "video",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-07.mp4",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-07.webp",
+				"caption": "Chip Tha Ripper taking us hyyerr"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-03.webp",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-03.webp",
+				"caption": "Chip Tha Ripper"
+			},
+			{
+				"type": "media",
+				"mediaType": "photo",
+				"src": "media/chip-tha-ripper-20260925/chip-tha-ripper-20260925-04.webp",
+				"thumbnail": "media/thumbs/chip-tha-ripper-20260925-04.webp",
+				"caption": "Chip Tha Ripper",
+				"cover": true
+			},
+			{
+				"type": "paragraph",
+				"text": "Take any good shots at the show? Make sure to send them in to get them added to the Board!"
+			}
+		]
 	},
 	{
 		"id": "tricky-dick-the-cover-ups-20260911-01",
+		"postType": "shot",
 		"type": "video",
 		"src": "media/tricky-dick-the-cover-ups-20260911-01.mp4",
 		"thumbnail": "media/thumbs/tricky-dick-the-cover-ups-20260911-01.webp",
-		"title": "Tricky Dick & the Cover-Ups ",
+		"title": "Tricky Dick & the Cover-Ups",
 		"date": "2026-09-11",
 		"venueId": "whiskey-island",
 		"submittedBy": "Mike M."

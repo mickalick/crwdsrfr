@@ -178,11 +178,13 @@
 	color: #101010;
 }
 
-/* Shots (All/Photos/Videos) — segmented-control look instead of pill chips,
-   matching #calendarToggle's Day/Week toggle on the main calendar page
-   (style.css). Rescoped to #boardFormatFilters since this row overrides
-   the default .filter-row flex/gap used by the other filter groups. */
-#boardFormatFilters {
+/* Posts (All/Shots/Galleries/Reports) — segmented-control look instead of
+   pill chips, matching #calendarToggle's Day/Week toggle on the main
+   calendar page (style.css). Rescoped to #boardPostTypeFilters since this
+   row overrides the default .filter-row flex/gap used by the other filter
+   groups. Replaces the old Photos/Videos "Shots" format toggle now that a
+   post can hold more than one photo/video (galleries, reports). */
+#boardPostTypeFilters {
 	display: inline-flex;
 	flex-wrap: nowrap;
 	gap: 0 !important;
@@ -192,7 +194,7 @@
 	width: fit-content;
 }
 
-#boardFormatFilters .toggle-button {
+#boardPostTypeFilters .toggle-button {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 16px;
 	letter-spacing: 0.05em;
@@ -207,15 +209,15 @@
 	height: 100%;
 }
 
-#boardFormatFilters .toggle-button:first-child {
+#boardPostTypeFilters .toggle-button:first-child {
 	border-radius: 8px 0 0 8px;
 }
 
-#boardFormatFilters .toggle-button:last-child {
+#boardPostTypeFilters .toggle-button:last-child {
 	border-radius: 0 8px 8px 0;
 }
 
-#boardFormatFilters .toggle-button.active {
+#boardPostTypeFilters .toggle-button.active {
 	color: #101010;
 	background: #F9F976;
 	font-weight: 900;
@@ -437,6 +439,21 @@
 	border-color: transparent transparent transparent #FFF;
 }
 
+/* Small top-right badge on gallery/report tiles hinting there's more than
+   one piece of media behind the cover thumbnail — purely decorative, so it
+   fails silently (no badge) if it doesn't render on some older browser. */
+.boardTileStackBadge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 22px;
+	height: 22px;
+	border-radius: 5px;
+	background-color: rgba(16, 16, 16, 0.65);
+	box-shadow: -3px 3px 0 0 rgba(16, 16, 16, 0.4);
+	pointer-events: none;
+}
+
 .boardTileCaption {
 	margin: 8px 8px 0px;
 	font-family: "Plus Jakarta Sans", sans-serif;
@@ -474,16 +491,13 @@
 	color: #ADADAD;
 }
 
-.boardTileSub {
+.boardTilePostType {
 	margin: 4px 8px 8px;
 	font-family: "Space Mono", monospace;
-	font-size: 14px;
+	font-size: 12px;
+	letter-spacing: 0.05em;
 	line-height: 1.2;
-	color: #ADADAD;
-}
-
-.boardTileSubValue {
-	color: #FFF;
+	color: #F9F976;
 }
 
 .boardStateMsg {
@@ -549,7 +563,7 @@
 		font-size: 16px;
 	}
 
-	.boardTileSub {
+	.boardTilePostType {
 		font-size: 12px;
 	}
 }
@@ -682,45 +696,32 @@
 	}
 }
 
-.boardModalMedia {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #000;
-	max-height: 70vh;
-}
-
-/* Keeps the wrapper invisible to layout so the img/video inside behave
-   exactly as if they were still direct children of .boardModalMedia —
-   this wrapper exists purely so JS can clear/replace the media without
-   also wiping out the nav buttons below. */
-.boardModalMediaInner {
-	display: contents;
-}
-
+/* Prev/next nav sits beside the whole modal card (not just over the media),
+   since a gallery/report post has no single "media area" to anchor to —
+   this way the same two buttons work for every post type and stay put
+   while a long gallery/report scrolls underneath them. */
 .boardModalNavBtn {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	z-index: 2;
+	z-index: 1001;
 	width: 48px;
 	height: 48px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(16, 16, 16, 0.65);
+	background-color: rgba(16, 16, 16, 0.75);
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
 .boardModalNavPrev {
-	left: 12px;
+	left: max(16px, calc(50% - 500px));
 }
 
 .boardModalNavNext {
-	right: 12px;
+	right: max(16px, calc(50% - 500px));
 }
 
 .boardModalNavBtn[hidden] {
@@ -739,6 +740,62 @@
 	}
 }
 
+@media screen and (max-width: 700px) {
+	.boardModalNavPrev {
+		left: 8px;
+	}
+
+	.boardModalNavNext {
+		right: 8px;
+	}
+}
+
+/* Meta (title/genres/venue+date/credit) vs. the media — order is flipped
+   between post types via the .boardModalContent--shot modifier instead of
+   reordering the DOM: a shot keeps media-on-top/info-below like before,
+   while a gallery or report puts the info first, followed by its content
+   stream. */
+.boardModalMeta {
+	order: 1;
+	padding: 16px 0px 0px;
+}
+
+.boardModalMedia,
+.boardModalContentList {
+	order: 2;
+}
+
+.boardModalContent--shot .boardModalMeta {
+	order: 2;
+	padding: 16px 0px 0px;
+}
+
+.boardModalContent--shot .boardModalMedia,
+.boardModalContent--shot .boardModalContentList {
+	order: 1;
+}
+
+.boardModalMedia {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	max-height: 70vh;
+}
+
+.boardModalMedia[hidden] {
+	display: none;
+}
+
+/* Keeps the wrapper invisible to layout so the img/video inside behave
+   exactly as if they were still direct children of .boardModalMedia —
+   this wrapper exists purely so JS can clear/replace the media without
+   also wiping out sibling elements. */
+.boardModalMediaInner {
+	display: contents;
+}
+
 .boardModalMedia img,
 .boardModalMedia video {
 	width: 100%;
@@ -747,8 +804,51 @@
 	display: block;
 }
 
-.boardModalMeta {
-	padding: 16px 0px 0px;
+/* Gallery/report scrollable content stream — a vertical list of media
+   (+ optional captions) for a gallery, or a mix of paragraph and media
+   blocks for a report. It's not a separately-scrolling pane of its own;
+   it scrolls along with the rest of .boardModalContent. */
+.boardModalContentList {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-top: 16px;
+}
+
+.boardModalContentList[hidden] {
+	display: none;
+}
+
+.boardModalStreamItem {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.boardModalStreamItem img,
+.boardModalStreamItem video {
+	width: 100%;
+	max-height: 70vh;
+	border-radius: 6px;
+	object-fit: contain;
+	background-color: #000;
+	display: block;
+}
+
+.boardModalStreamCaption {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: #ADADAD;
+	margin: 0;
+}
+
+.boardModalStreamParagraph {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #FFF;
+	margin: 0;
 }
 
 .boardModalMeta h2 {
@@ -795,6 +895,29 @@
 
 .boardModalCreditValue {
 	color: #FFF;
+}
+
+/* Styled to match .board-load (the grid's "Load More" button) — same
+   pill shape/border/spacing — and pinned to order: 3 so it always renders
+   last, after the meta/media swap that flips between order 1 and 2 for
+   shots vs. galleries/reports. */
+.boardModalShareBtn {
+	order: 3;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 12px 16px;
+	border-radius: 9px;
+	border: 1px solid #F9F976;
+	color: #FFFFFF;
+	background: transparent;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: fit-content;
+	margin: 24px auto 0;
 }
 
 body.boardModalOpen {

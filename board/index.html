@@ -53,7 +53,7 @@
 				var header = $("header");
 				var mnuBtn = $("#menuButton");
 
-				$(window).scroll(function() {    
+				$(window).scroll(function() {
 					var scroll = $(window).scrollTop();
 					if (scroll >= 50) {
 						header.addClass("scrolled");
@@ -62,7 +62,7 @@
 						header.removeClass("scrolled");
 						mnuBtn.removeClass("scrolled");
 					}
-				});	
+				});
 			});
 		</script>
 		<script>
@@ -144,8 +144,8 @@
 						<div class="filter-panel" id="boardFilters" style="display:none;">
 
 							<div class="filter-group">
-								<div class="filter-group-label">Shots</div>
-								<div class="filter-row" id="boardFormatFilters"></div>
+								<div class="filter-group-label">Posts</div>
+								<div class="filter-row" id="boardPostTypeFilters"></div>
 							</div>
 
 							<div class="filter-group">
@@ -176,7 +176,7 @@
 						<div id="boardActiveFilters"></div>
 					</div>
 
-					<h4 class="subHead"><span id="boardSubHead">All Shots by Most Recent:</span></h4>
+					<h4 class="subHead"><span id="boardSubHead">All Posts by Most Recent:</span></h4>
 				</div>
 			</section>
 			<section id="boardSpace" class="page">
@@ -209,19 +209,25 @@
 		<!-- Board media modal -->
 		<div id="boardModal" class="boardModal" hidden>
 			<div class="boardModalBackdrop" data-boardclose></div>
+			<button type="button" class="boardModalNavBtn boardModalNavPrev" id="boardModalPrev" aria-label="Previous"><span class="icon" id="bck"></span></button>
+			<button type="button" class="boardModalNavBtn boardModalNavNext" id="boardModalNext" aria-label="Next"><span class="icon" id="fwd"></span></button>
 			<div class="boardModalContent" role="dialog" aria-modal="true" aria-labelledby="boardModalTitle">
 				<button type="button" class="boardModalClose" data-boardclose aria-label="Close">&times;</button>
-				<div class="boardModalMedia" id="boardModalMedia">
-					<button type="button" class="boardModalNavBtn boardModalNavPrev" id="boardModalPrev" aria-label="Previous"><span class="icon" id="bck"></span></button>
-					<div class="boardModalMediaInner" id="boardModalMediaInner"></div>
-					<button type="button" class="boardModalNavBtn boardModalNavNext" id="boardModalNext" aria-label="Next"><span class="icon" id="fwd"></span></button>
-				</div>
-				<div class="boardModalMeta">
+
+				<div class="boardModalMeta" id="boardModalMeta">
 					<h2 id="boardModalTitle"></h2>
 					<p id="boardModalGenres" class="boardModalGenres"></p>
 					<p id="boardModalSub" class="boardModalSub"></p>
 					<p id="boardModalCredit" class="boardModalCredit"></p>
 				</div>
+
+				<div class="boardModalMedia" id="boardModalMedia">
+					<div class="boardModalMediaInner" id="boardModalMediaInner"></div>
+				</div>
+
+				<div class="boardModalContentList" id="boardModalContentList" hidden></div>
+
+				<button type="button" class="boardModalShareBtn" id="boardModalShare">Copy Link</button>
 			</div>
 		</div>
 
@@ -268,7 +274,7 @@
 		<script src="../js/board.js"></script>
 
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
-		
+
 	</body>
 
 	</html>
