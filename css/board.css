@@ -449,8 +449,8 @@
 	width: 22px;
 	height: 22px;
 	border-radius: 5px;
-	background-color: rgba(16, 16, 16, 0.65);
-	box-shadow: -3px 3px 0 0 rgba(16, 16, 16, 0.4);
+	background-color: rgba(255, 255, 255, 0.65);
+	box-shadow: -3px 3px 0 0 rgba(255, 255, 255, 0.4);
 	pointer-events: none;
 }
 
@@ -748,6 +748,28 @@
 	.boardModalNavNext {
 		right: 8px;
 	}
+}
+
+/* A report's cover shot, shown as a hero above everything else — always
+   order: 0 regardless of the .boardModalContent--shot swap below, since
+   only reports use it (shots/galleries leave it empty and hidden). */
+.boardModalReportHero {
+	order: 0;
+	margin-bottom: 16px;
+}
+
+.boardModalReportHero[hidden] {
+	display: none;
+}
+
+.boardModalReportHero img,
+.boardModalReportHero video {
+	width: 100%;
+	max-height: 60vh;
+	border-radius: 6px;
+	object-fit: contain;
+	background-color: #000;
+	display: block;
 }
 
 /* Meta (title/genres/venue+date/credit) vs. the media — order is flipped
