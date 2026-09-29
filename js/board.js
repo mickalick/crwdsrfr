@@ -216,6 +216,70 @@
 		};
 	}
 
+	// Flattens any post into an array of individually-matchable "media
+	// units" — one per shot, one per gallery item, one per report hero/media
+	// block (paragraph blocks are never units, they have no media). Built
+	// for acts.js: a report can mention several acts across its per-shot
+	// captions (e.g. opening acts named only in individual block captions),
+	// and those need to surface on their own act's /acts/ media preview even
+	// though the report's own title only names the headliner.
+	//
+	// Each unit's `matchText` is its own caption when it has one, falling
+	// back to the parent post's title otherwise — so a shot (no captions at
+	// all) or an uncaptioned gallery/report block still matches by title,
+	// exactly like before this function existed.
+	function mediaUnitsForItem(item) {
+		const base = {
+			postId: item.id,
+			postTitle: item.title,
+			date: item.date,
+			venueId: item.venueId,
+		};
+
+		if (item.postType === 'gallery') {
+			return (item.items || []).map((entry) => ({
+				...base,
+				type: entry.type,
+				thumbnail: entry.thumbnail || (entry.type === 'photo' ? entry.src : '') || '',
+				caption: entry.caption || null,
+				matchText: entry.caption || item.title,
+			}));
+		}
+
+		if (item.postType === 'report') {
+			const units = [];
+			if (item.hero && item.hero.src) {
+				units.push({
+					...base,
+					type: item.hero.mediaType,
+					thumbnail: item.hero.thumbnail || (item.hero.mediaType === 'photo' ? item.hero.src : '') || '',
+					caption: item.hero.caption || null,
+					matchText: item.hero.caption || item.title,
+				});
+			}
+			(item.blocks || []).forEach((block) => {
+				if (!block || block.type !== 'media') return;
+				units.push({
+					...base,
+					type: block.mediaType,
+					thumbnail: block.thumbnail || (block.mediaType === 'photo' ? block.src : '') || '',
+					caption: block.caption || null,
+					matchText: block.caption || item.title,
+				});
+			});
+			return units;
+		}
+
+		// shot
+		return [{
+			...base,
+			type: item.type,
+			thumbnail: item.thumbnail || (item.type === 'photo' ? item.src : '') || '',
+			caption: null,
+			matchText: item.title,
+		}];
+	}
+
 	// --- Venue name lookup ------------------------------------------------
 	// data/venues.json is an array of venue objects, e.g.
 	// { id, name, url, eventsUrl, type, address, area, lat, lng }.
@@ -361,6 +425,7 @@
 		formatDateDisplay,
 		resolveVenueName,
 		getCoverMedia,
+		mediaUnitsForItem,
 	};
 
 	// --- Grid + modal + search/filter rendering (specific to /board/) -------
@@ -1084,7 +1149,7 @@
 
 		modalCredit.textContent = '';
 		if (item.submittedBy) {
-			modalCredit.append('by ', Object.assign(document.createElement('span'), {
+			modalCredit.append('from ', Object.assign(document.createElement('span'), {
 				className: 'boardModalCreditValue',
 				textContent: item.submittedBy,
 			}));
