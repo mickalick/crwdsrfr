@@ -145,7 +145,7 @@
 	// Strips diacritics so "Gemütlichkeit" / "Bräts" bucket under G / B rather
 	// than falling through to the 0-9 catch-all.
 	function stripDiacritics(str) {
-		return String(str || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+		return String(str || '').normalize('NFD').replace(/[̀-ͯ]/g, '');
 	}
 
 	function jumpGroupFor(name) {
@@ -184,8 +184,15 @@
 		});
 	}
 
-	function actMatchesMediaItem(needles, item) {
-		return needles.some(needle => textMatchesNeedle(item.title, needle));
+	// A "unit" here is one of window.BoardMedia.mediaUnitsForItem()'s
+	// per-shot entries — its own caption when it has one, else the parent
+	// post's title (see board.js for the fallback logic). Matching against
+	// units instead of whole posts means an act named only in one shot's
+	// caption within a larger gallery/report (e.g. an opening act mentioned
+	// in a single block of a headliner's recap) still surfaces here, even
+	// though the post's own title never names that act.
+	function actMatchesMediaUnit(needles, unit) {
+		return needles.some(needle => textMatchesNeedle(unit.matchText, needle));
 	}
 
 	function toLocalDateStr(date) {
@@ -224,7 +231,12 @@
 		try {
 			const items = await window.BoardMedia.fetchBoardMedia();
 			const needles = actNeedles(act);
-			return items.filter(item => actMatchesMediaItem(needles, item)).slice(0, MEDIA_PREVIEW_LIMIT);
+			// Flatten every post into its individual shots/blocks first, then
+			// match each unit on its own — this is what lets an opener named
+			// only in one caption of a larger report surface here, rather than
+			// only whole posts whose top-level title names the act.
+			const units = items.flatMap(item => window.BoardMedia.mediaUnitsForItem(item));
+			return units.filter(unit => actMatchesMediaUnit(needles, unit)).slice(0, MEDIA_PREVIEW_LIMIT);
 		} catch (e) {
 			console.warn('acts.js: could not load board media', e);
 			return [];
@@ -516,16 +528,21 @@
 			</li>`;
 	}
 
-	function mediaThumbHtml(item) {
-		const venueName = window.BoardMedia?.resolveVenueName(item.venueId, venueLookup) || '';
-		// Deep-links straight to this item's modal on /board/ via its stable
-		// id (board.js reads #item-<id> on load). Falls back to the generic
-		// #top if an item is somehow missing an id.
-		const boardHref = item.id ? `/board/#item-${encodeURIComponent(item.id)}` : '/board/#top';
+	// `unit` is one of window.BoardMedia.mediaUnitsForItem()'s per-shot
+	// entries, not a raw top-level board-media post — its thumbnail/caption
+	// are the specific shot's own, even when that shot is nested inside a
+	// gallery or report.
+	function mediaThumbHtml(unit) {
+		const venueName = window.BoardMedia?.resolveVenueName(unit.venueId, venueLookup) || '';
+		const label = unit.caption || unit.postTitle;
+		// Deep-links straight to the parent post's modal on /board/ via its
+		// stable id (board.js reads a bare #<id> on load — no "item-" prefix).
+		// Falls back to the generic #top if a unit is somehow missing a postId.
+		const boardHref = unit.postId ? `/board/#${encodeURIComponent(unit.postId)}` : '/board/#top';
 		return `
-			<a class="actModalMediaThumb" href="${boardHref}" target="_blank" rel="noopener" title="${item.title}${venueName ? ' — ' + venueName : ''}">
-				<img src="/board/${item.thumbnail}" alt="${item.title}" loading="lazy">
-				${item.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
+			<a class="actModalMediaThumb" href="${boardHref}" target="_blank" rel="noopener" title="${label}${venueName ? ' — ' + venueName : ''}">
+				<img src="/board/${unit.thumbnail}" alt="${label}" loading="lazy">
+				${unit.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
 			</a>`;
 	}
 
