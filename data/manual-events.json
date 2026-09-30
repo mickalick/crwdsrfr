@@ -3801,6 +3801,25 @@
     "id": "shooters-2026-10-02-cazes"
   },
   {
+    "title": "YDG",
+    "performers": [
+      {
+        "name": "YDG",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "22:00",
+    "doors": null,
+    "price": "$19.73",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-10-09-ydg"
+  },
+  {
     "title": "GRAVAGERZ",
     "performers": [
       {
@@ -8064,48 +8083,7 @@
 
   
 
-  {
-    "title": "Treehouse's 30th Anniversary Party w/ Michael Crawley, The Cuyahoga Slim Band",
-    "performers": [
-      {
-        "name": "The Cuyahoga Slim Band",
-        "headliner": true
-      },
-      {
-        "name": "Michael Crawley",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-13",
-    "time": "15:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "treehouse",
-    "source": "manual",
-    "manual": true,
-    "id": "treehouse-2026-09-13-30th-anniversary-party"
-  },
-  {
-    "title": "Nathan Henry",
-    "performers": [
-      {
-        "name": "Nathan Henry",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-16",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "treehouse",
-    "source": "manual",
-    "manual": true,
-    "id": "treehouse-2026-09-16-nathan-henry"
-  },
+  
   {
     "title": "Austin Hamilton",
     "performers": [
@@ -8143,6 +8121,82 @@
     "source": "manual",
     "manual": true,
     "id": "treehouse-2026-10-07-graham-miller"
+  },
+  {
+    "title": "Kevin McCarthy",
+    "performers": [
+      {
+        "name": "Kevin McCarthy",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-14",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2026-10-14-kevin-mccarthy"
+  },
+  {
+    "title": "Hannah Crandall",
+    "performers": [
+      {
+        "name": "Hannah Crandall",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-21",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2026-10-21-hannah-crandall"
+  },
+  {
+    "title": "Ethan Timm",
+    "performers": [
+      {
+        "name": "Ethan Timm",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-28",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2026-10-28-ethan-timm"
+  },
+  {
+    "title": "Nathan Henry",
+    "performers": [
+      {
+        "name": "Nathan Henry",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-11",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2026-11-11-nathan-henry"
   },
 
 
@@ -14409,6 +14463,144 @@
     "source": "manual",
     "manual": true,
     "id": "cleveland-pickle-fest-2026-10-03-jasmin-jeanise"
+  },
+
+
+
+
+
+  {
+    "title": "Ms. BBC & Di Queendom",
+    "performers": [
+      {
+        "name": "Ms. BBC & Di Queendom",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "12:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-ms-bbc-di-queendom"
+  },
+  {
+    "title": "Austin Walkin' Cane",
+    "performers": [
+      {
+        "name": "Austin Walkin' Cane",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "13:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-austin-walkin-cane"
+  },
+  {
+    "title": "Country Honk",
+    "performers": [
+      {
+        "name": "Country Honk",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "14:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-country-honk"
+  },
+  {
+    "title": "Hoodoo BBQ",
+    "performers": [
+      {
+        "name": "Hoodoo BBQ",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "15:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-hoodoo-bbq"
+  },
+  {
+    "title": "Charlie Mosbrook & Friends",
+    "performers": [
+      {
+        "name": "Charlie Mosbrook",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "16:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-charlie-mosbrook"
+  },
+  {
+    "title": "The JiMiller Band",
+    "performers": [
+      {
+        "name": "The JiMiller Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "17:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-jimiller-band"
+  },
+  {
+    "title": "Hello!3D",
+    "performers": [
+      {
+        "name": "Hello!3D",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "18:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "hessler-street-fair",
+    "source": "manual",
+    "manual": true,
+    "id": "hessler-street-fair-2026-10-03-hello3d"
   },
 
 
