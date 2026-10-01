@@ -12013,15 +12013,15 @@
 
 
   {
-    "title": "Sound On Tape",
+    "title": "Unknownphrazes",
     "performers": [
       {
-        "name": "Sound On Tape",
+        "name": "Unknownphrazes",
         "headliner": true
       }
     ],
-    "date": "2026-09-05",
-    "time": null,
+    "date": "2026-10-03",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -12029,34 +12029,18 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-09-05-sound-on-tape"
+    "id": "smoke-and-mirrors-2026-10-03-unknownphrazes"
   },
   {
-    "title": "Joke and Mirrors",
+    "title": "Ik Dubaku",
     "performers": [
       {
-        "name": "Bill Squire",
+        "name": "Ik Dubaku",
         "headliner": true
-      },
-      {
-        "name": "John Armstrong",
-        "headliner": false
-      },
-      {
-        "name": "Angelo Maneage",
-        "headliner": false
-      },
-      {
-        "name": "Brett Thomas",
-        "headliner": false
-      },
-      {
-        "name": "Cam Godfrey",
-        "headliner": false
       }
     ],
-    "date": "2026-09-11",
-    "time": "19:00",
+    "date": "2026-10-10",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -12067,14 +12051,14 @@
     "id": "smoke-and-mirrors-2026-09-11-joke-and-mirrors"
   },
   {
-    "title": "Tano",
+    "title": "Dylan Spyder",
     "performers": [
       {
-        "name": "Tano",
+        "name": "Dylan Spyder",
         "headliner": true
       }
     ],
-    "date": "2026-09-12",
+    "date": "2026-10-17",
     "time": null,
     "doors": null,
     "price": null,
@@ -12083,22 +12067,18 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-09-12-tano"
+    "id": "smoke-and-mirrors-2026-10-17-dylan-spyder"
   },
   {
-    "title": "MFC / KDIN",
+    "title": "Nik Ryan",
     "performers": [
       {
-        "name": "MFC",
+        "name": "Nik Ryan",
         "headliner": true
-      },
-      {
-        "name": "KDIN",
-        "headliner": false
       }
     ],
-    "date": "2026-09-18",
-    "time": null,
+    "date": "2026-10-24",
+    "time": "22:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -12106,52 +12086,18 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-09-18-mfc"
-  },
-  {
-    "title": "Just AJ",
-    "performers": [
-      {
-        "name": "Just AJ",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-09-19-just-aj"
-  },
-  {
-    "title": "Teez",
-    "performers": [
-      {
-        "name": "Teez",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-09-26-teez"
+    "id": "smoke-and-mirrors-2026-10-24-nik-ryan"
   },
   {
     "title": "Rocky Horror Costume Party",
     "performers": [
       {
-        "name": "Rocky Horror",
+        "name": "EENY",
         "headliner": true
+      },
+      {
+        "name": "Kellevators",
+        "headliner": false
       }
     ],
     "date": "2026-10-30",
@@ -12163,7 +12109,26 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-09-26-teez"
+    "id": "smoke-and-mirrors-2026-10-30-rocky-horror"
+  },
+  {
+    "title": "Slob Dylan",
+    "performers": [
+      {
+        "name": "Slob Dylan",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-10-31-slob-dylan"
   },
 
 
