@@ -731,824 +731,6 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-09-30-luna",
-      "title": "Luna w/ Sister Ray Davies",
-      "venueId": "grog-shop",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$31.36",
-      "performers": [
-        {
-          "name": "Luna",
-          "headliner": true
-        },
-        {
-          "name": "Sister Ray Davies",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/luna/",
-      "ticketUrl": "https://www.ticketweb.com/event/luna-sister-ray-davies-grog-shop-tickets/14911833?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-09-30-cory-grinder-and-the-playboy-scouts",
-      "title": "Cory Grinder and the Playboy Scouts",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "No Cover",
-      "performers": [
-        {
-          "name": "Cory Grinder and the Playboy Scouts",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/pre-party-with-cory-grinder-the-playboy-scouts-30-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/pre-party-with-cory-grinder-the-playboy-scouts-30-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "bluegrass"
-      ]
-    },
-    {
-      "id": "beachland-ballroom-2026-09-30-dale-watson-and-his-lone-stars",
-      "title": "Dale Watson and His Lone Stars with India Ramey",
-      "venueId": "beachland-ballroom",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Dale Watson and His Lone Stars",
-          "headliner": true
-        },
-        {
-          "name": "India Ramey",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/dale-watson-27-sep",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/dale-watson-27-sep#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-09-30-laci-kaye-booth",
-      "title": "Laci Kaye Booth",
-      "venueId": "mahalls",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Laci Kaye Booth",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/laci-kaye-booth/",
-      "ticketUrl": "https://link.dice.fm/Tec5060ead28",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bop-stop-2026-09-30-norside-bop-stop",
-      "title": "Norside",
-      "venueId": "bop-stop",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Norside",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/09/30/norside-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/09/30/norside-bop-stop",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "jacobs-pavilion-1386853",
-      "title": "Modest Mouse with Caroline Rose",
-      "venueId": "jacobs-pavilion",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Modest Mouse",
-          "headliner": true
-        },
-        {
-          "name": "Caroline Rose",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1386853",
-      "ticketUrl": "https://www.axs.com/events/1386853/modest-mouse-tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "music-box-2026-09-30-the-misny-method",
-      "title": "The Misny Method",
-      "venueId": "music-box",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "room": "Supper Club",
-      "performers": [
-        {
-          "name": "The Misny Method",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/the-misny-method/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "music-box-2026-09-30-jim-messina-sep30",
-      "title": "Jim Messina",
-      "venueId": "music-box",
-      "date": "2026-09-30",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": null,
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Jim Messina",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/jim-messina-sep30/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62608",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "winchester-music-tavern-2026-09-30-boozy-bingo-plant-10",
-      "title": "BOOZY BINGO (PLANT)",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": "17:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "BOOZY BINGO (PLANT)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/boozy-bingo-plant-10/",
-      "ticketUrl": "https://www.ticketweb.com/event/boozy-bingo-plant-the-winchester-tickets/14299624",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-30-free-play-wednesdays-8",
-      "title": "FREE PLAY WEDNESDAYS",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-30",
-      "time": "16:00",
-      "doors": "16:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "FREE PLAY WEDNESDAYS",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/free-play-wednesdays-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/free-play-wednesdays-the-mercury-music-lounge-tickets/15023583",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-30-bike-night-10",
-      "title": "BIKE NIGHT",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "BIKE NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/bike-night-10/",
-      "ticketUrl": "https://www.ticketweb.com/event/bike-night-the-mercury-music-lounge-tickets/14288434",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "mercury-music-lounge-2026-09-30-iguana-death-cult",
-      "title": "Iguana Death Cult – MOVED TO THE FOUNDRY",
-      "venueId": "mercury-music-lounge",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$25.21",
-      "performers": [
-        {
-          "name": "Iguana Death Cult – MOVED TO THE FOUNDRY",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.mercurymusiclakewood.com/tm-event/iguana-death-cult/",
-      "ticketUrl": "https://www.ticketweb.com/event/iguana-death-cult-the-mercury-music-lounge-tickets/14196944",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-09-30-1930-show1-dbh",
-      "title": "Death Becomes Her",
-      "venueId": "playhouse-square",
-      "date": "2026-09-30",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "Death Becomes Her",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/show1-dbh",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=54A932AF-55B2-4E66-B518-90FAF433C5E1",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-09-30-partners-game-on",
-      "title": "Game On: A Partners Speed Gaming Social",
-      "venueId": "playhouse-square",
-      "date": "2026-09-30",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Mimi Ohio Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "Game On: A Partners Speed Gaming Social",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/partners-game-on",
-      "ticketUrl": "https://venues.wufoo.com/forms/m1kdxuk61rcqzsj/",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-09-30-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-09-30",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
-      ]
-    },
-    {
-      "id": "foundry-concert-club-2026-09-30-for-absent-friends-metalcore-night-4",
-      "title": "For Absent Friends Metalcore Night",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "For Absent Friends Metalcore Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/for-absent-friends-metalcore-night-4/",
-      "ticketUrl": "https://www.ticketweb.com/event/for-absent-friends-metalcore-night-the-foundry-tickets/15044423?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "foundry-concert-club-2026-09-30-iguana-death-cult-moved-from-mercury-music-lounge",
-      "title": "Iguana Death Cult – Moved from Mercury Music Lounge",
-      "venueId": "foundry-concert-club",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Iguana Death Cult – Moved from Mercury Music Lounge",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/iguana-death-cult-moved-from-mercury-music-lounge/",
-      "ticketUrl": "https://www.ticketweb.com/event/iguana-death-cult-the-foundry-tickets/14351504?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "dunlaps-2026-09-30-143990",
-      "title": "Awesome Quest",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Awesome Quest",
-          "headliner": true
-        },
-        {
-          "name": "Wes Meadows",
-          "headliner": false
-        },
-        {
-          "name": "Friendly Spectres",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/143990",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/388131",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "hilarities-2026-09-30-138027",
-      "title": "Cliff Cash",
-      "venueId": "hilarities",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cliff Cash",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/138027",
-      "ticketUrl": "https://hilarities.com/shows/374441",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "van-aken-shaker-breakers-2026-09-30",
-      "title": "Shaker Breakers",
-      "venueId": "van-aken-district",
-      "date": "2026-09-30",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "20021 Walker Rd, Shaker Heights, OH 44122",
-      "performers": [
-        {
-          "name": "Shaker Breakers",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/shaker-breakers-2026-09-30",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "family-kids"
-      ]
-    },
-    {
-      "id": "treelawn-social-club-2026-09-30-14336114",
-      "title": "WEDNESDAY JAM SESSION WITH THE STIX TRIO",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "WEDNESDAY JAM SESSION WITH THE STIX TRIO",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/wednesday-jam-session-with-the-treelawn-social-club-tickets/14336114",
-      "ticketUrl": "https://www.ticketweb.com/event/wednesday-jam-session-with-the-treelawn-social-club-tickets/14336114",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "sixty6-2026-09-30-diy-organizing-workshop-cleveland",
-      "title": "Workshop: Building It Yourself",
-      "venueId": "the-sixty6",
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Workshop: Building It Yourself",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/diy-organizing-workshop-cleveland/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-09-30-luna-pre-party-with-free-pizza",
-      "title": "Luna Pre-Party with FREE Pizza!",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "Luna Pre-Party with FREE Pizza!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/luna-pre-party-with-free-pizza/",
-      "ticketUrl": "https://www.ticketweb.com/event/luna-pre-party-with-free-b-side-lounge-tickets/14334954?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-09-30-shit-show-karaoke-25",
-      "title": "SHIT SHOW KARAOKE",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-09-30",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "SHIT SHOW KARAOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-25/",
-      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14230284?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "karaoke"
-      ]
-    },
-    {
-      "id": "no-class-2026-09-30-october-cocktail-menu-drop-2026",
-      "title": "OCTOBER COCKTAIL MENU DROP",
-      "venueId": "no-class",
-      "date": "2026-09-30",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "The return of the No Class October cocktail menu!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/october-cocktail-menu-drop-2026",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "forest-city-brewery-2026-09-30-cleveland-comedy-festival-happy-hour",
-      "title": "Cleveland Comedy Festival - Happy Hour",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-30",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/9/30/cleveland-comedy-festival-happy-hour",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event",
-        "comedy"
-      ]
-    },
-    {
-      "id": "forest-city-brewery-2026-09-30-line-dancing-lessons-with-laura",
-      "title": "Line Dancing Lessons with Laura",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/6/24/line-dancing-lessons-with-laura-zdy7w-sb9r4",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "forest-city-brewery-2026-09-30-clev-comedy-festival-presents-chris-paugh",
-      "title": "Clev Comedy FEstival Presents Chris Paugh",
-      "venueId": "forest-city-brewery",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2026/9/16/ccf-presents-chris-paugh",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-30-acting-level-2-class-scene-study",
-      "title": "Acting Level 2 Class: Scene Study",
-      "venueId": "imposters-theater",
-      "date": "2026-09-30",
-      "time": "18:30",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/fundamentals-of-acting-level-2-class",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/fundamentals-of-acting-level-2-class",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-09-30-the-wednesday-jam",
-      "title": "The Wednesday Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": null,
-      "price": "from $0.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-093026",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/the-wednesday-jam-093026",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "grindstone-tap-house-3494723-2026-09-30",
-      "title": "Clayton Brothers",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-30",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "classic",
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "id": "grindstone-tap-house-3457309-2026-09-30",
-      "title": "Jeopardy Bar Leagues!!!",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "reithoffers-2026-09-30-trivia-night",
-      "title": "Trivia Night",
-      "venueId": "reithoffers",
-      "date": "2026-09-30",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-4",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-4",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ]
-    },
-    {
-      "id": "cleveland-museum-of-art-2026-09-30-cornelius-karre-violin-and-percussion-duo-in-concert",
-      "title": "Cornelius & Karre: Violin and Percussion Duo in Concert",
-      "venueId": "cleveland-museum-of-art",
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Cornelius & Karre: Violin and Percussion Duo in Concert",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandart.org/events/cornelius-karre-violin-and-percussion-duo-concert",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "cleveland-museum-of-art-2026-09-30-relic-the-blood-of-the-rose",
-      "title": "Relic: “The Blood of the Rose”",
-      "venueId": "cleveland-museum-of-art",
-      "date": "2026-09-30",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Relic: “The Blood of the Rose”",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandart.org/events/relic-blood-rose",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "title": "Chris Hatton",
-      "performers": [
-        {
-          "name": "Chris Hatton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-30",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-09-30-chris-hatton",
-      "genres": []
-    },
-    {
-      "title": "Cheekface",
-      "performers": [
-        {
-          "name": "Cheekface",
-          "headliner": true
-        },
-        {
-          "name": "Apes of the State",
-          "headliner": false
-        }
-      ],
-      "date": "2026-09-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-09-30-cheekface",
-      "genres": []
-    },
-    {
-      "title": "Austin Hamilton",
-      "performers": [
-        {
-          "name": "Austin Hamilton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-09-30",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-09-30-austin-hamilton",
-      "genres": []
-    },
-    {
-      "title": "Grupo Fuego",
-      "performers": [
-        {
-          "name": "Grupo Fuego",
-          "headliner": true
-        },
-        {
-          "name": "Moises Borges",
-          "headliner": false
-        }
-      ],
-      "date": "2026-09-30",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "public-square",
-      "source": "manual",
-      "manual": true,
-      "id": "public-square-2026-09-30-grupo-fuego",
-      "genres": []
-    },
-    {
       "id": "grog-shop-2026-10-01-kennedy-ryon",
       "title": "Kennedy Ryon w/ Charity Evonna",
       "venueId": "grog-shop",
@@ -2385,105 +1567,6 @@
       "manual": true,
       "id": "riffs-2026-10-01-open-decks",
       "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "spotlight-bluegrass-jam-2026-10-01",
-      "title": "Bluegrass Jam (hosted by David Mayfield)",
-      "venueId": "spotlight-cle",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "smedleys-thursdays-2026-10-01",
-      "title": "Freebyrds Jam Night",
-      "venueId": "smedleys",
-      "date": "2026-10-01",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
-    {
-      "id": "velvet-don-phillips-thu-2026-10-01",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-01",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-thu-hh-2026-10-01",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-01",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "twist-malibus-dreamhouse-2026-10-01",
-      "title": "Malibu's Dreamhouse Drag Show",
-      "venueId": "twist-social-club",
-      "date": "2026-10-01",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "drag"
-      ]
-    },
-    {
-      "id": "bird-of-paradise-karaoke-2026-10-01",
-      "title": "KARAOKE",
-      "venueId": "bird-of-paradise",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "karaoke",
         "dj"
       ]
     },
@@ -3553,6 +2636,28 @@
       "genres": []
     },
     {
+      "title": "Max Schlenk Group",
+      "performers": [
+        {
+          "name": "Max Schlenk Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-02",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-02-max-schlenk-group",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Mike Kaminski",
       "performers": [
         {
@@ -3610,6 +2715,26 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-10-02-grits-eggs-podcast",
+      "genres": []
+    },
+    {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-02",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-02-emma-nicholas",
       "genres": []
     },
     {
@@ -5065,6 +4190,28 @@
       "genres": []
     },
     {
+      "title": "Alvin Frazier Group",
+      "performers": [
+        {
+          "name": "Alvin Frazier Group",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-03-alvin-frazier-group",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Dan Pyne",
       "performers": [
         {
@@ -5123,6 +4270,48 @@
       "manual": true,
       "id": "house-of-blues-2026-10-03-artemas",
       "genres": []
+    },
+    {
+      "title": "Mo Andrews",
+      "performers": [
+        {
+          "name": "Mo Andrews",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "16:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-03-mo-andrews",
+      "genres": []
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-03-dj-caffrey",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Four Horsemen",
@@ -9474,6 +8663,36 @@
       "genres": []
     },
     {
+      "title": "Dan Bruce, Chris Vance & Joe Tomino",
+      "performers": [
+        {
+          "name": "Dan Bruce",
+          "headliner": true
+        },
+        {
+          "name": "Chris Vance",
+          "headliner": false
+        },
+        {
+          "name": "Joe Tomino",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-09",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-09-dan-bruce",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "The Brakes",
       "performers": [
         {
@@ -9511,6 +8730,26 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-10-09-punchis-punchis-banda-rave",
+      "genres": []
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-09-chris-hatton",
       "genres": []
     },
     {
@@ -10945,6 +10184,28 @@
       "genres": []
     },
     {
+      "title": "Bobby Selvaggio Hope Quartet",
+      "performers": [
+        {
+          "name": "Bobby Selvaggio Hope Quartet",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-10-bobby-selvaggio-hope-quartet",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Van Arlo",
       "performers": [
         {
@@ -11003,6 +10264,28 @@
       "manual": true,
       "id": "house-of-blues-2026-10-10-here-come-the-mummies",
       "genres": []
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-10-dj-caffrey",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "1988/Disco Inferno",
@@ -15567,6 +14850,28 @@
       "genres": []
     },
     {
+      "title": "Northcoast Jazz Trio",
+      "performers": [
+        {
+          "name": "Northcoast Jazz Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-16-northcoast-jazz-trio",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Nathan Hedges",
       "performers": [
         {
@@ -15608,6 +14913,29 @@
       "manual": true,
       "id": "house-of-blues-2026-10-16-sploinky-rave-cleveland",
       "genres": []
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-16-pete-lazard",
+      "genres": [
+        "singer-songwriter",
+        "folk-roots"
+      ]
     },
     {
       "title": "Rockhouse Columbus",
@@ -16955,6 +16283,33 @@
       ]
     },
     {
+      "title": "Joe Hunter & Tim Matson",
+      "performers": [
+        {
+          "name": "Joe Hunter",
+          "headliner": true
+        },
+        {
+          "name": "Tim Matson",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-17-joe-hunter",
+      "genres": [
+        "blues",
+        "jazz"
+      ]
+    },
+    {
       "title": "Brent Kirby",
       "performers": [
         {
@@ -16974,6 +16329,51 @@
       "id": "house-of-blues-2026-10-17-brent-kirby",
       "genres": [
         "singer-songwriter"
+      ]
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-17-pete-lazard",
+      "genres": [
+        "singer-songwriter",
+        "folk-roots"
+      ]
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-17-dj-caffrey",
+      "genres": [
+        "dj"
       ]
     },
     {
@@ -20713,6 +20113,28 @@
       "genres": []
     },
     {
+      "title": "Mal Barron Trio",
+      "performers": [
+        {
+          "name": "Mal Barron Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-23-mal-barron-trio",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Ohio Drifters",
       "performers": [
         {
@@ -22176,6 +21598,36 @@
       ]
     },
     {
+      "title": "Tony K, Darren Frate & Steve Kortyka",
+      "performers": [
+        {
+          "name": "Tony K",
+          "headliner": true
+        },
+        {
+          "name": "Darren Frate",
+          "headliner": false
+        },
+        {
+          "name": "Steve Kortyka",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-24-tony-k",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Huffman Acoustic",
       "performers": [
         {
@@ -22216,6 +21668,48 @@
       "manual": true,
       "id": "house-of-blues-2026-10-24-candlebox",
       "genres": []
+    },
+    {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-emma-nicholas",
+      "genres": []
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-dj-caffrey",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Tricky Dick & The Cover Ups",
@@ -26064,6 +25558,28 @@
       "genres": []
     },
     {
+      "title": "Abstract Sounds",
+      "performers": [
+        {
+          "name": "Abstract Sounds",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-30-abstract-sounds",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "title": "Teddy Snyder",
       "performers": [
         {
@@ -26101,6 +25617,26 @@
       "source": "manual",
       "manual": true,
       "id": "house-of-blues-2026-10-30-the-longest-johns",
+      "genres": []
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-30-chris-hatton",
       "genres": []
     },
     {
@@ -27204,6 +26740,28 @@
       "manual": true,
       "id": "shooters-2026-10-31-halloween",
       "genres": []
+    },
+    {
+      "title": "Nightjar Jazz Halloween",
+      "performers": [
+        {
+          "name": "Nightjar Jazz Halloween",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-31-nightjar-jazz-halloween",
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "title": "Bridge the Gap",
@@ -46937,6 +46495,125 @@
       ]
     },
     {
+      "id": "spotlight-weekend-nights-fri-2027-01-01",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-01",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-early-2027-01-01",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-late-2027-01-01",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-main-2027-01-01",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-back-2027-01-01",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-main-2027-01-01",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-back-2027-01-01",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-01",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "id": "the-agora-2027-01-02-2000-wish-you-were-here",
       "title": "Wish You Were Here",
       "venueId": "the-agora",
@@ -46955,6 +46632,125 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "spotlight-weekend-nights-sat-2027-01-02",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-02",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-sat-2027-01-02",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-02",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-main-2027-01-02",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-02",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-back-2027-01-02",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-02",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-main-2027-01-02",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-02",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-back-2027-01-02",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-02",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-dj-saturdays-2027-01-02",
+      "title": "DJ Mike Filly",
+      "venueId": "twist-social-club",
+      "date": "2027-01-02",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
     },
     {
       "id": "music-box-2027-01-03-elo-brunch-jan3",
@@ -46996,6 +46792,161 @@
       "genres": []
     },
     {
+      "id": "spotlight-house-techno-2027-01-03",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-03",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "treehouse-karaoke-night-2027-01-03",
+      "title": "Karaoke Night",
+      "venueId": "treehouse",
+      "date": "2027-01-03",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "twist-tea-dances-2027-01-03",
+      "title": "Tea Dances",
+      "venueId": "twist-social-club",
+      "date": "2027-01-03",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "spotlight-acoustic-jam-night-2027-01-04",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-04",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "singer-songwriter",
+        "covers",
+        "acoustic"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-mon-2027-01-04",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-04",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-monday-matinee-2027-01-04",
+      "title": "Monday Matinee Showtunes Happy Hour",
+      "venueId": "twist-social-club",
+      "date": "2027-01-04",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "event"
+      ]
+    },
+    {
+      "id": "spotlight-comedy-open-mic-2027-01-05",
+      "title": "Comedy Open Mic",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-05",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-tue-2027-01-05",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-05",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-trivia-tuesdays-2027-01-05",
+      "title": "LGBTQ+ Trivia Tuesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
       "id": "grindstone-tap-house-3457309-2027-01-06",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
@@ -47011,6 +46962,102 @@
       "genres": [
         "trivia-games"
       ]
+    },
+    {
+      "id": "spotlight-jam-night-2027-01-06",
+      "title": "Jam Night! Hosted by Clockwork",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-wednesdays-2027-01-06",
+      "title": "JP & Friends",
+      "venueId": "smedleys",
+      "date": "2027-01-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-wed-2027-01-06",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-karaoke-wednesdays-2027-01-06",
+      "title": "Karaoke Wednesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-06",
+      "time": "21:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "nano-brew-trivia-2027-01-06",
+      "title": "Trivia Wednesdays",
+      "venueId": "nano-brew",
+      "date": "2027-01-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
+      "id": "coda-collective-2027-01-06",
+      "title": "Collective Night - Poetry, Singer/Songwriter, Spoken Word, Hiphop",
+      "venueId": "coda",
+      "date": "2027-01-06",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
     },
     {
       "id": "hilarities-2027-01-07-144773",
@@ -47032,6 +47079,105 @@
       "manual": false,
       "genres": [
         "comedy"
+      ]
+    },
+    {
+      "id": "spotlight-bluegrass-jam-2027-01-07",
+      "title": "Bluegrass Jam (hosted by David Mayfield)",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-thursdays-2027-01-07",
+      "title": "Freebyrds Jam Night",
+      "venueId": "smedleys",
+      "date": "2027-01-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-thu-2027-01-07",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-thu-hh-2027-01-07",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-malibus-dreamhouse-2027-01-07",
+      "title": "Malibu's Dreamhouse Drag Show",
+      "venueId": "twist-social-club",
+      "date": "2027-01-07",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "drag"
+      ]
+    },
+    {
+      "id": "bird-of-paradise-karaoke-2027-01-07",
+      "title": "KARAOKE",
+      "venueId": "bird-of-paradise",
+      "date": "2027-01-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke",
+        "dj"
       ]
     },
     {
@@ -47097,6 +47243,125 @@
       "manual": false,
       "genres": [
         "comedy"
+      ]
+    },
+    {
+      "id": "spotlight-weekend-nights-fri-2027-01-08",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-08",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-early-2027-01-08",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-late-2027-01-08",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-main-2027-01-08",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-back-2027-01-08",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-main-2027-01-08",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-back-2027-01-08",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-08",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
       ]
     },
     {
@@ -47167,6 +47432,125 @@
       ]
     },
     {
+      "id": "spotlight-weekend-nights-sat-2027-01-09",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-09",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-sat-2027-01-09",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-09",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-main-2027-01-09",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-09",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-back-2027-01-09",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-09",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-main-2027-01-09",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-09",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-back-2027-01-09",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-09",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-dj-saturdays-2027-01-09",
+      "title": "DJ Mike Filly",
+      "venueId": "twist-social-club",
+      "date": "2027-01-09",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "id": "rock-hall-2027-01-10-sensory-friendly-hours-jan-2027",
       "title": "Sensory Friendly Hours",
       "venueId": "rock-hall",
@@ -47232,6 +47616,161 @@
       ]
     },
     {
+      "id": "spotlight-house-techno-2027-01-10",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-10",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "treehouse-karaoke-night-2027-01-10",
+      "title": "Karaoke Night",
+      "venueId": "treehouse",
+      "date": "2027-01-10",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "twist-tea-dances-2027-01-10",
+      "title": "Tea Dances",
+      "venueId": "twist-social-club",
+      "date": "2027-01-10",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "spotlight-acoustic-jam-night-2027-01-11",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-11",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "singer-songwriter",
+        "covers",
+        "acoustic"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-mon-2027-01-11",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-11",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-monday-matinee-2027-01-11",
+      "title": "Monday Matinee Showtunes Happy Hour",
+      "venueId": "twist-social-club",
+      "date": "2027-01-11",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "event"
+      ]
+    },
+    {
+      "id": "spotlight-comedy-open-mic-2027-01-12",
+      "title": "Comedy Open Mic",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-12",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-tue-2027-01-12",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-12",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-trivia-tuesdays-2027-01-12",
+      "title": "LGBTQ+ Trivia Tuesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-12",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
       "id": "music-box-2027-01-13-g-love-special-sauce-jan13",
       "title": "G. Love & Special Sauce",
       "venueId": "music-box",
@@ -47268,6 +47807,102 @@
       "genres": [
         "trivia-games"
       ]
+    },
+    {
+      "id": "spotlight-jam-night-2027-01-13",
+      "title": "Jam Night! Hosted by Clockwork",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-13",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-wednesdays-2027-01-13",
+      "title": "JP & Friends",
+      "venueId": "smedleys",
+      "date": "2027-01-13",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-wed-2027-01-13",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-13",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-karaoke-wednesdays-2027-01-13",
+      "title": "Karaoke Wednesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-13",
+      "time": "21:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "nano-brew-trivia-2027-01-13",
+      "title": "Trivia Wednesdays",
+      "venueId": "nano-brew",
+      "date": "2027-01-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
+      "id": "coda-collective-2027-01-13",
+      "title": "Collective Night - Poetry, Singer/Songwriter, Spoken Word, Hiphop",
+      "venueId": "coda",
+      "date": "2027-01-13",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
     },
     {
       "id": "playhouse-square-2027-01-14-the-elvis-tribute-artist-spectacular-1",
@@ -47340,6 +47975,70 @@
       ]
     },
     {
+      "id": "spotlight-open-mic-theme-2027-01-14",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-14",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-thursdays-2027-01-14",
+      "title": "Freebyrds Jam Night",
+      "venueId": "smedleys",
+      "date": "2027-01-14",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-thu-2027-01-14",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-14",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-thu-hh-2027-01-14",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-14",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
       "id": "music-box-2027-01-15-moody-blues-tribute-jan15",
       "title": "Moody Blues Tribute by Time Traveller",
       "venueId": "music-box",
@@ -47399,6 +48098,125 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "spotlight-weekend-nights-fri-2027-01-15",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-15",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-early-2027-01-15",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-late-2027-01-15",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-main-2027-01-15",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-back-2027-01-15",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-main-2027-01-15",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-back-2027-01-15",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-15",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "beachland-ballroom-2027-01-16-jon-spencer",
@@ -47490,6 +48308,125 @@
       ]
     },
     {
+      "id": "spotlight-weekend-nights-sat-2027-01-16",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-16",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-sat-2027-01-16",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-16",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-main-2027-01-16",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-16",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-back-2027-01-16",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-16",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-main-2027-01-16",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-16",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-back-2027-01-16",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-16",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-dj-saturdays-2027-01-16",
+      "title": "DJ Mike Filly",
+      "venueId": "twist-social-club",
+      "date": "2027-01-16",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "id": "music-box-2027-01-17-rodgers-co-brunch-jan17",
       "title": "A Tribute to Bad Co., Free, & The Firm by Rodgers & Co.",
       "venueId": "music-box",
@@ -47571,6 +48508,110 @@
       "genres": []
     },
     {
+      "id": "spotlight-house-techno-2027-01-17",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-17",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "treehouse-karaoke-night-2027-01-17",
+      "title": "Karaoke Night",
+      "venueId": "treehouse",
+      "date": "2027-01-17",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "twist-tea-dances-2027-01-17",
+      "title": "Tea Dances",
+      "venueId": "twist-social-club",
+      "date": "2027-01-17",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "spotlight-acoustic-jam-night-2027-01-18",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-18",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "singer-songwriter",
+        "covers",
+        "acoustic"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-mon-2027-01-18",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-18",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-monday-matinee-2027-01-18",
+      "title": "Monday Matinee Showtunes Happy Hour",
+      "venueId": "twist-social-club",
+      "date": "2027-01-18",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "event"
+      ]
+    },
+    {
       "id": "cleveland-orchestra-69de9e9fb8d755d6796e4d16",
       "title": "Carnegie Hall - Beethoven’s Missa Solemnis",
       "venueId": "cleveland-orchestra",
@@ -47591,6 +48632,57 @@
       "manual": false,
       "genres": [
         "classical"
+      ]
+    },
+    {
+      "id": "spotlight-comedy-open-mic-2027-01-19",
+      "title": "Comedy Open Mic",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-19",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-tue-2027-01-19",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-19",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-trivia-tuesdays-2027-01-19",
+      "title": "LGBTQ+ Trivia Tuesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-19",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
       ]
     },
     {
@@ -47634,6 +48726,102 @@
       ]
     },
     {
+      "id": "spotlight-jam-night-2027-01-20",
+      "title": "Jam Night! Hosted by Clockwork",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-20",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-wednesdays-2027-01-20",
+      "title": "JP & Friends",
+      "venueId": "smedleys",
+      "date": "2027-01-20",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-wed-2027-01-20",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-20",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-karaoke-wednesdays-2027-01-20",
+      "title": "Karaoke Wednesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-20",
+      "time": "21:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "nano-brew-trivia-2027-01-20",
+      "title": "Trivia Wednesdays",
+      "venueId": "nano-brew",
+      "date": "2027-01-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
+      "id": "coda-collective-2027-01-20",
+      "title": "Collective Night - Poetry, Singer/Songwriter, Spoken Word, Hiphop",
+      "venueId": "coda",
+      "date": "2027-01-20",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
       "id": "hilarities-2027-01-21-143365",
       "title": "Love & Laughter – Jeff Allen",
       "venueId": "hilarities",
@@ -47653,6 +48841,105 @@
       "manual": false,
       "genres": [
         "comedy"
+      ]
+    },
+    {
+      "id": "spotlight-tk-jazz-odyssey-2027-01-21",
+      "title": "TK's Jazz Odyssey & Workshop",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-21",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-thursdays-2027-01-21",
+      "title": "Freebyrds Jam Night",
+      "venueId": "smedleys",
+      "date": "2027-01-21",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-thu-2027-01-21",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-21",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-thu-hh-2027-01-21",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-21",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-malibus-dreamhouse-2027-01-21",
+      "title": "Malibu's Dreamhouse Drag Show",
+      "venueId": "twist-social-club",
+      "date": "2027-01-21",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "drag"
+      ]
+    },
+    {
+      "id": "bird-of-paradise-karaoke-2027-01-21",
+      "title": "KARAOKE",
+      "venueId": "bird-of-paradise",
+      "date": "2027-01-21",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke",
+        "dj"
       ]
     },
     {
@@ -47763,6 +49050,125 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "spotlight-weekend-nights-fri-2027-01-22",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-22",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-early-2027-01-22",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-late-2027-01-22",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-main-2027-01-22",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-back-2027-01-22",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-main-2027-01-22",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-back-2027-01-22",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-22",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
     },
     {
       "id": "playhouse-square-2027-01-23-hubbard-street-dance-chicago-1",
@@ -47898,6 +49304,125 @@
       ]
     },
     {
+      "id": "spotlight-weekend-nights-sat-2027-01-23",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-sat-2027-01-23",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-main-2027-01-23",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-back-2027-01-23",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-main-2027-01-23",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-23",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-back-2027-01-23",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-dj-saturdays-2027-01-23",
+      "title": "DJ Mike Filly",
+      "venueId": "twist-social-club",
+      "date": "2027-01-23",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "id": "hilarities-2027-01-24-1900-143882",
       "title": "Nate Craig",
       "venueId": "hilarities",
@@ -47917,6 +49442,110 @@
       "manual": false,
       "genres": [
         "comedy"
+      ]
+    },
+    {
+      "id": "spotlight-house-techno-2027-01-24",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-24",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "treehouse-karaoke-night-2027-01-24",
+      "title": "Karaoke Night",
+      "venueId": "treehouse",
+      "date": "2027-01-24",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "twist-tea-dances-2027-01-24",
+      "title": "Tea Dances",
+      "venueId": "twist-social-club",
+      "date": "2027-01-24",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "spotlight-acoustic-jam-night-2027-01-25",
+      "title": "Acoustic Jam Night! Hosted by Joshua Donato",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-25",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "singer-songwriter",
+        "covers",
+        "acoustic"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-mon-2027-01-25",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-25",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-monday-matinee-2027-01-25",
+      "title": "Monday Matinee Showtunes Happy Hour",
+      "venueId": "twist-social-club",
+      "date": "2027-01-25",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "event"
       ]
     },
     {
@@ -47963,6 +49592,57 @@
       ]
     },
     {
+      "id": "spotlight-comedy-open-mic-2027-01-26",
+      "title": "Comedy Open Mic",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-26",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "comedy"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-tue-2027-01-26",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-26",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-trivia-tuesdays-2027-01-26",
+      "title": "LGBTQ+ Trivia Tuesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
       "id": "grindstone-tap-house-3457309-2027-01-27",
       "title": "Jeopardy Bar Leagues!!!",
       "venueId": "grindstone-tap-house",
@@ -47978,6 +49658,102 @@
       "genres": [
         "trivia-games"
       ]
+    },
+    {
+      "id": "spotlight-jam-night-2027-01-27",
+      "title": "Jam Night! Hosted by Clockwork",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-27",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-wednesdays-2027-01-27",
+      "title": "JP & Friends",
+      "venueId": "smedleys",
+      "date": "2027-01-27",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-wed-2027-01-27",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-27",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-karaoke-wednesdays-2027-01-27",
+      "title": "Karaoke Wednesdays",
+      "venueId": "twist-social-club",
+      "date": "2027-01-27",
+      "time": "21:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "nano-brew-trivia-2027-01-27",
+      "title": "Trivia Wednesdays",
+      "venueId": "nano-brew",
+      "date": "2027-01-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "trivia-games"
+      ]
+    },
+    {
+      "id": "coda-collective-2027-01-27",
+      "title": "Collective Night - Poetry, Singer/Songwriter, Spoken Word, Hiphop",
+      "venueId": "coda",
+      "date": "2027-01-27",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
     },
     {
       "id": "hilarities-2027-01-28-144399",
@@ -48044,6 +49820,70 @@
       "manual": false,
       "genres": [
         "theater"
+      ]
+    },
+    {
+      "id": "spotlight-open-mic-theme-2027-01-28",
+      "title": "Thematic Thursday Open Mic (hosted by Meganne Stepka)",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-28",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "smedleys-thursdays-2027-01-28",
+      "title": "Freebyrds Jam Night",
+      "venueId": "smedleys",
+      "date": "2027-01-28",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": []
+    },
+    {
+      "id": "velvet-don-phillips-thu-2027-01-28",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-28",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-thu-hh-2027-01-28",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-28",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
       ]
     },
     {
@@ -48196,6 +50036,125 @@
       "manual": false,
       "genres": [
         "theater"
+      ]
+    },
+    {
+      "id": "spotlight-weekend-nights-fri-2027-01-29",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-29",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-early-2027-01-29",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-late-2027-01-29",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-main-2027-01-29",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-fri-back-2027-01-29",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-main-2027-01-29",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-fri-back-2027-01-29",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-29",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
       ]
     },
     {
@@ -48356,6 +50315,125 @@
       ]
     },
     {
+      "id": "spotlight-weekend-nights-sat-2027-01-30",
+      "title": "Live Music, DJs, Special Nights, featuring...",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "velvet-jazz-trio-sat-2027-01-30",
+      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-main-2027-01-30",
+      "title": "Pianist Don Phillips (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-don-phillips-sat-back-2027-01-30",
+      "title": "Pianist Don Phillips (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-main-2027-01-30",
+      "title": "Pianist David Blazer (Main Lounge)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-30",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "velvet-david-blazer-sat-back-2027-01-30",
+      "title": "Pianist David Blazer (Back Room)",
+      "venueId": "velvet-tango-room",
+      "date": "2027-01-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "id": "twist-dj-saturdays-2027-01-30",
+      "title": "DJ Mike Filly",
+      "venueId": "twist-social-club",
+      "date": "2027-01-30",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "id": "music-box-2027-01-31-chicago-brunch-jan31",
       "title": "Chicago & More Brunch with Brass Express",
       "venueId": "music-box",
@@ -48503,6 +50581,57 @@
       "manual": false,
       "genres": [
         "theater"
+      ]
+    },
+    {
+      "id": "spotlight-house-techno-2027-01-31",
+      "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
+      "venueId": "spotlight-cle",
+      "date": "2027-01-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "id": "treehouse-karaoke-night-2027-01-31",
+      "title": "Karaoke Night",
+      "venueId": "treehouse",
+      "date": "2027-01-31",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "karaoke"
+      ]
+    },
+    {
+      "id": "twist-tea-dances-2027-01-31",
+      "title": "Tea Dances",
+      "venueId": "twist-social-club",
+      "date": "2027-01-31",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": null,
+      "ticketUrl": null,
+      "source": "manual",
+      "manual": true,
+      "genres": [
+        "dj"
       ]
     },
     {

@@ -4505,7 +4505,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-08-14",
+    "date": "2026-10-02",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4514,7 +4514,91 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-08-14-max-schlenk-group"
+    "id": "nightjar-2026-10-02-max-schlenk-group"
+  },
+  {
+    "title": "Alvin Frazier Group",
+    "performers": [
+      {
+        "name": "Alvin Frazier Group",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-10-03-alvin-frazier-group"
+  },
+  {
+    "title": "Dan Bruce, Chris Vance & Joe Tomino",
+    "performers": [
+      {
+        "name": "Dan Bruce",
+        "headliner": true
+      },
+      {
+        "name": "Chris Vance",
+        "headliner": false
+      },
+      {
+        "name": "Joe Tomino",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-10-09-dan-bruce"
+  },
+  {
+    "title": "Bobby Selvaggio Hope Quartet",
+    "performers": [
+      {
+        "name": "Bobby Selvaggio Hope Quartet",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-10-10-bobby-selvaggio-hope-quartet"
+  },
+  {
+    "title": "Northcoast Jazz Trio",
+    "performers": [
+      {
+        "name": "Northcoast Jazz Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-10-16-northcoast-jazz-trio"
   },
   {
     "title": "Joe Hunter & Tim Matson",
@@ -4528,7 +4612,7 @@
         "headliner": false
       }
     ],
-    "date": "2026-08-15",
+    "date": "2026-10-17",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4537,17 +4621,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-08-15-joe-hunter"
+    "id": "nightjar-2026-10-17-joe-hunter"
   },
   {
-    "title": "The Public Good",
+    "title": "Mal Barron Trio",
     "performers": [
       {
-        "name": "The Public Good",
+        "name": "Mal Barron Trio",
         "headliner": true
       }
     ],
-    "date": "2026-08-21",
+    "date": "2026-10-23",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4556,48 +4640,25 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-08-21-the-public-good"
+    "id": "nightjar-2026-10-23-mal-barron-trio"
   },
   {
-    "title": "Gabe Jones & Fresh Fruit",
+    "title": "Tony K, Darren Frate & Steve Kortyka",
     "performers": [
       {
-        "name": "Gabe Jones",
-        "headliner": true
-      },
-      {
-        "name": "Fresh Fruit",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-22",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-08-22-gabe-jones"
-  },
-  {
-    "title": "Chris Hovan, Tim Mirth & Taylor Arbogast",
-    "performers": [
-      {
-        "name": "Chris Hovan",
+        "name": "Tony K",
         "headliner": true
       },
       {
-        "name": "Tim Mirth",
+        "name": "Darren Frate",
         "headliner": false
       },
       {
-        "name": "Taylor Arbogast",
+        "name": "Steve Kortyka",
         "headliner": false
       }
     ],
-    "date": "2026-08-28",
+    "date": "2026-10-24",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4606,17 +4667,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-08-28-chris-hovan"
+    "id": "nightjar-2026-10-24-tony-k"
   },
   {
-    "title": "Alvin Frazier Group",
+    "title": "Abstract Sounds",
     "performers": [
       {
-        "name": "Alvin Frazier Group",
+        "name": "Abstract Sounds",
         "headliner": true
       }
     ],
-    "date": "2026-08-29",
+    "date": "2026-10-30",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4625,17 +4686,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-08-29-alvin-frazier-group"
+    "id": "nightjar-2026-10-30-abstract-sounds"
   },
   {
-    "title": "Nick Puin Group",
+    "title": "Nightjar Jazz Halloween",
     "performers": [
       {
-        "name": "Nick Puin Group",
+        "name": "Nightjar Jazz Halloween",
         "headliner": true
       }
     ],
-    "date": "2026-09-04",
+    "date": "2026-10-31",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4644,140 +4705,7 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-09-04-nick-puin-group"
-  },
-  {
-    "title": "EMP Group",
-    "performers": [
-      {
-        "name": "EMP Group",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-05",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-05-emp-group"
-  },
-  {
-    "title": "Qualified",
-    "performers": [
-      {
-        "name": "Qualified",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-11-qualified"
-  },
-  {
-    "title": "Bill Ransom Trio",
-    "performers": [
-      {
-        "name": "Bill Ransom Trio",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-12-bill-ransom-trio"
-  },
-  {
-    "title": "The Darren Frate Group",
-    "performers": [
-      {
-        "name": "The Darren Frate Group",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-18",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-18-the-darren-frate-group"
-  },
-  {
-    "title": "Swingbone",
-    "performers": [
-      {
-        "name": "Swingbone",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-19-swingbone"
-  },
-  {
-    "title": "Scossa Quartet",
-    "performers": [
-      {
-        "name": "Scossa Quartet",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-25-scossa-quartet"
-  },
-  {
-    "title": "Forest City Django Club",
-    "performers": [
-      {
-        "name": "Forest City Django Club",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-09-26-forest-city-django-club"
+    "id": "nightjar-2026-10-31-nightjar-jazz-halloween"
   },
 
 
@@ -6721,34 +6649,15 @@
 
 
 
-  {
-    "title": "DJ Caffrey",
+   {
+    "title": "Emma Nicholas",
     "performers": [
       {
-        "name": "DJ Caffrey",
+        "name": "Emma Nicholas",
         "headliner": true
       }
     ],
-    "date": "2026-09-05",
-    "time": "20:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-09-05-dj-caffrey"
-  },
-  {
-    "title": "Maria Petti",
-    "performers": [
-      {
-        "name": "Maria Petti",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
+    "date": "2026-10-02",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -6757,18 +6666,18 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-09-11-maria-petti"
+    "id": "bar-32-2026-10-02-emma-nicholas"
   },
   {
-    "title": "Maria Petti",
+    "title": "Mo Andrews",
     "performers": [
       {
-        "name": "Maria Petti",
+        "name": "Mo Andrews",
         "headliner": true
       }
     ],
-    "date": "2026-09-12",
-    "time": "17:00",
+    "date": "2026-10-03",
+    "time": "16:30",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -6776,7 +6685,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-09-12-maria-petti"
+    "id": "bar-32-2026-10-03-mo-andrews"
   },
   {
     "title": "DJ Caffrey",
@@ -6786,7 +6695,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-12",
+    "date": "2026-10-03",
     "time": "20:30",
     "doors": null,
     "price": null,
@@ -6795,45 +6704,7 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-09-12-dj-caffrey"
-  },
-  {
-    "title": "Pete Lazard",
-    "performers": [
-      {
-        "name": "Pete Lazard",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-18",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-09-18-pete-lazard"
-  },
-  {
-    "title": "DJ Caffrey",
-    "performers": [
-      {
-        "name": "DJ Caffrey",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "bar-32",
-    "source": "manual",
-    "manual": true,
-    "id": "bar-32-2026-09-19-dj-caffrey"
+    "id": "bar-32-2026-10-03-dj-caffrey"
   },
   {
     "title": "Chris Hatton",
@@ -6843,7 +6714,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-25",
+    "date": "2026-10-09",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -6852,7 +6723,83 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-09-25-chris-hatton"
+    "id": "bar-32-2026-10-09-chris-hatton"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-10-dj-caffrey"
+  },
+  {
+    "title": "Pete Lazard",
+    "performers": [
+      {
+        "name": "Pete Lazard",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-16-pete-lazard"
+  },
+  {
+    "title": "Pete Lazard",
+    "performers": [
+      {
+        "name": "Pete Lazard",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-17-pete-lazard"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-17-dj-caffrey"
   },
   {
     "title": "Emma Nicholas",
@@ -6862,7 +6809,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-25",
+    "date": "2026-10-24",
     "time": "17:00",
     "doors": null,
     "price": null,
@@ -6871,7 +6818,45 @@
     "venueId": "bar-32",
     "source": "manual",
     "manual": true,
-    "id": "bar-32-2026-09-25-emma-nicholas"
+    "id": "bar-32-2026-10-24-emma-nicholas"
+  },
+  {
+    "title": "DJ Caffrey",
+    "performers": [
+      {
+        "name": "DJ Caffrey",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-24",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-24-dj-caffrey"
+  },
+  {
+    "title": "Chris Hatton",
+    "performers": [
+      {
+        "name": "Chris Hatton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-30",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "bar-32",
+    "source": "manual",
+    "manual": true,
+    "id": "bar-32-2026-10-30-chris-hatton"
   },
 
 
