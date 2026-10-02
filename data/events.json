@@ -731,846 +731,6 @@
   },
   "events": [
     {
-      "id": "grog-shop-2026-10-01-kennedy-ryon",
-      "title": "Kennedy Ryon w/ Charity Evonna",
-      "venueId": "grog-shop",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$31.36",
-      "performers": [
-        {
-          "name": "Kennedy Ryon",
-          "headliner": true
-        },
-        {
-          "name": "Charity Evonna",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/kennedy-ryon/",
-      "ticketUrl": "https://www.ticketweb.com/event/kennedy-ryon-charity-evonna-grog-shop-tickets/14995793?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "rnb-soul"
-      ]
-    },
-    {
-      "id": "the-agora-2026-10-01-2030-sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter",
-      "title": "Sex Pistols (Steve Jones, Paul Cook, Glen Matlock) featuring Frank Carter w/ Bad Nerves",
-      "venueId": "the-agora",
-      "date": "2026-10-01",
-      "time": "20:30",
-      "doors": "19:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "Sex Pistols (Steve Jones, Paul Cook, Glen Matlock) featuring Frank Carter",
-          "headliner": true
-        },
-        {
-          "name": "Bad Nerves",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets",
-      "ticketUrl": "https://www.axs.com/events/909207/sex-pistols-steve-jones-paul-cook-glen-matlock-featuring-frank-carter-tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-10-01-el-ten-eleven",
-      "title": "El Ten Eleven with Tall Tall Trees",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "El Ten Eleven",
-          "headliner": true
-        },
-        {
-          "name": "Tall Tall Trees",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/el-ten-eleven-01-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/el-ten-eleven-01-oct#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "beachland-ballroom-2026-10-01-soraia",
-      "title": "Soraia with Burning River",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Soraia",
-          "headliner": true
-        },
-        {
-          "name": "Burning River",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/soraia-01-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/soraia-01-oct#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-01-nicholas-lee-if-it-ends-tonight-release-show",
-      "title": "Nicholas Lee “If It Ends Tonight” release show",
-      "venueId": "mahalls",
-      "date": "2026-10-01",
-      "time": "18:30",
-      "doors": "18:30",
-      "price": "$12.00",
-      "performers": [
-        {
-          "name": "Nicholas Lee “If It Ends Tonight” release show",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/nicholas-lee-if-it-ends-tonight-release-show/",
-      "ticketUrl": "https://link.dice.fm/e64bda503d3a",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bop-stop-2026-10-01-caleb-smith-quintet-bop-stop",
-      "title": "Caleb Smith Quintet",
-      "venueId": "bop-stop",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Caleb Smith Quintet",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/10/01/caleb-smith-quintet-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/10/01/caleb-smith-quintet-bop-stop",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "jacobs-pavilion-1448383",
-      "title": "Ole 60 with Kolton Moore & the Clever Few, GARRET ELIAS",
-      "venueId": "jacobs-pavilion",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Ole 60",
-          "headliner": true
-        },
-        {
-          "name": "Kolton Moore & the Clever Few, GARRET ELIAS",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://jacobspavilion.com/events/detail?event_id=1448383",
-      "ticketUrl": "https://www.axs.com/events/1448383/ole-60-tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "music-box-2026-10-01-danielle-nicole-oct1",
-      "title": "Danielle Nicole Band",
-      "venueId": "music-box",
-      "date": "2026-10-01",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": "$18 Advance, $25 Day of Show",
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "Danielle Nicole Band",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/danielle-nicole-oct1/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62690",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "winchester-music-tavern-2026-10-01-texas-hippie-coalition-3",
-      "title": "Texas Hippie Coalition",
-      "venueId": "winchester-music-tavern",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": "$30.36",
-      "performers": [
-        {
-          "name": "Texas Hippie Coalition",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thewinchestermusictavern.com/tm-event/texas-hippie-coalition-3/",
-      "ticketUrl": "https://www.ticketweb.com/event/texas-hippie-coalition-the-winchester-tickets/14245854",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "collision-bend-euclid-2026-10-01-golf-league-meet-greet-at-collision-bend-euclid-w-24-7mobile-golf-1-54329",
-      "title": "Golf League Meet & Greet at Collision Bend Euclid w/ 24/7Mobile Golf",
-      "venueId": "collision-bend-euclid",
-      "date": "2026-10-01",
-      "time": "15:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Golf League Meet & Greet at Collision Bend Euclid w/ 24/7Mobile Golf",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/golf-league-meet-greet-at-collision-bend-euclid-w-24-7mobile-golf-1-54329",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "collision-bend-cleveland-2026-10-01-browns-vs-steelers-pregame-at-collision-bend-cle-49887",
-      "title": "Browns vs. Steelers PreGame at Collision Bend CLE",
-      "venueId": "collision-bend-cleveland",
-      "date": "2026-10-01",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Browns vs. Steelers PreGame at Collision Bend CLE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/browns-vs-steelers-pregame-at-collision-bend-cle-49887",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "collision-bend-euclid-2026-10-01-homeownership-on-tap-1-53363",
-      "title": "Homeownership On Tap",
-      "venueId": "collision-bend-euclid",
-      "date": "2026-10-01",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Homeownership On Tap",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/homeownership-on-tap-1-53363",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "rock-hall-2026-10-01-backstage-stories-100126",
-      "title": "Backstage Stories – A Premium Visitor Experience",
-      "venueId": "rock-hall",
-      "date": "2026-10-01",
-      "time": "11:00",
-      "doors": null,
-      "price": "GA $195",
-      "performers": [
-        {
-          "name": "Backstage Stories – A Premium Visitor Experience",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/backstage-stories-100126/",
-      "ticketUrl": "https://tickets.rockhall.com/events/01985128-88cd-3765-f214-c970bcb37135",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-01-1930-show1-dbh",
-      "title": "Death Becomes Her",
-      "venueId": "playhouse-square",
-      "date": "2026-10-01",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "KeyBank State Theatre",
-      "presentedBy": "KeyBank Broadway Series",
-      "performers": [
-        {
-          "name": "Death Becomes Her",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/show1-dbh",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=54A932AF-55B2-4E66-B518-90FAF433C5E1",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-01-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-10-01",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-01-1930-the-winters-tale",
-      "title": "The Winter's Tale",
-      "venueId": "playhouse-square",
-      "date": "2026-10-01",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "Hanna Theatre",
-      "presentedBy": "Great Lakes Theater",
-      "performers": [
-        {
-          "name": "The Winter's Tale",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-winters-tale",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=BFBE68E3-A699-4655-9C09-6D4F36CCDE37",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-01-the-billy-joel-legacy",
-      "title": "The Billy Joel Legacy",
-      "venueId": "playhouse-square",
-      "date": "2026-10-01",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Mimi Ohio Theatre",
-      "presentedBy": "CELEBRATING THE PIANO MAN",
-      "performers": [
-        {
-          "name": "The Billy Joel Legacy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-billy-joel-legacy",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0D330B1D-29EB-460C-82B6-D63FC91C6215",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "foundry-concert-club-2026-10-01-iron-crusaiders",
-      "title": "Iron Crusaiders",
-      "venueId": "foundry-concert-club",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Iron Crusaiders",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/iron-crusaiders/",
-      "ticketUrl": "https://www.ticketweb.com/event/iron-crusaiders-unhinged-lounge-tickets/14341264?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "dunlaps-2026-10-01-144663",
-      "title": "Songwriter Night",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Songwriter Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/144663",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/389607",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "welcome-to-the-farm-booking_01M3MWCDV2TQ7WNPTN7Z7462RB",
-      "title": "Matt Whataguy",
-      "venueId": "welcome-to-the-farm",
-      "date": "2026-10-01",
-      "time": "23:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Matt Whataguy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "beatgig",
-      "manual": false,
-      "genres": [
-        "pop",
-        "rock",
-        "country"
-      ]
-    },
-    {
-      "id": "hilarities-2026-10-01-1900-130718",
-      "title": "Big Jay Oakerson",
-      "venueId": "hilarities",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Big Jay Oakerson",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/130718",
-      "ticketUrl": "https://hilarities.com/shows/357187",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "van-aken-well-stocked-is-celebrating-one-year-2026-10-01",
-      "title": "Well Stocked is celebrating ONE YEAR!",
-      "venueId": "van-aken-district",
-      "date": "2026-10-01",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "room": "3398 Tuttle Rd, Shaker Heights, OH",
-      "performers": [
-        {
-          "name": "Well Stocked is celebrating ONE YEAR!",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.thevanakendistrict.com/events-at-the-district/well-stocked-is-celebrating-one-year-2026-10-01",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "treelawn-social-club-2026-10-01-14290294",
-      "title": "Organ Ism",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-10-01",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Organ Ism",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/organ-ism-treelawn-social-club-tickets/14290294",
-      "ticketUrl": "https://www.ticketweb.com/event/organ-ism-treelawn-social-club-tickets/14290294",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "sixty6-2026-10-01-bpacf-40-40-takeover-sixty6",
-      "title": "BPACF 40/40 Take Over at The Sixty6",
-      "venueId": "the-sixty6",
-      "date": "2026-10-01",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "BPACF 40/40 Take Over at The Sixty6",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/bpacf-40-40-takeover-sixty6/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "bside-2026-10-01-thursday-thursday-game-night",
-      "title": "THURSDAY THURSDAY: GAME NIGHT",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "THURSDAY THURSDAY: GAME NIGHT",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/thursday-thursday-game-night/",
-      "ticketUrl": "https://www.ticketweb.com/event/thursday-thursday-game-night-b-side-lounge-tickets/14314494?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "no-class-2026-10-01-matt-pless",
-      "title": "MATT PLESS",
-      "venueId": "no-class",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$10-$15 Suggested, NOTAFLOF",
-      "performers": [
-        {
-          "name": "Matt Pless",
-          "headliner": true
-        },
-        {
-          "name": "Skeleton Drive",
-          "headliner": false
-        },
-        {
-          "name": "This Pestilent Existence",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/matt-pless",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "cleveland-orchestra-6a63a8f88bf5309d4539572a",
-      "title": "Zade Dirani Live in Concert",
-      "venueId": "cleveland-orchestra",
-      "room": null,
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Zade Dirani Live in Concert",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandorchestra.com/events/zade-dirani-live-in-concert",
-      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24671",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "classical"
-      ]
-    },
-    {
-      "id": "forest-city-brewery-2026-10-01-cats-on-holiday",
-      "title": "Cats on Holiday",
-      "venueId": "forest-city-brewery",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2025/9/4/cats-on-holiday",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "folk-roots"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-10-01-harold-night-hear-me-out-new-terminator",
-      "title": "Harold Night - Hear Me Out + New Terminator",
-      "venueId": "imposters-theater",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/harold-night-100126",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/harold-night-100126",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-10-01-dynamic-duos-improv-night-jam",
-      "title": "Dynamic Duos Improv Night + Jam",
-      "venueId": "imposters-theater",
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10.00",
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-100126",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/dynamic-duos-100126",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "reithoffers-2026-10-01-karaoke-night",
-      "title": "Karaoke Night",
-      "venueId": "reithoffers",
-      "date": "2026-10-01",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/karaoke-night-2026-10-01-18-00",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/karaoke-night-2026-10-01-18-00",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "karaoke"
-      ]
-    },
-    {
-      "id": "visible-voice-books-2026-10-01-writers-in-residence-event-xjrts",
-      "title": "Writers in Residence Fundraiser & Chapbook Release",
-      "venueId": "visible-voice-books",
-      "date": "2026-10-01",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Writers in Residence Fundraiser & Chapbook Release",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/writers-in-residence-event-xjrts",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "near-west-theatre-2026-10-01-1830-west-clinton-historic-haunts-2026",
-      "title": "West Clinton Historic Haunts 2026",
-      "venueId": "near-west-theatre",
-      "date": "2026-10-01",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "West Clinton Historic Haunts 2026",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.nearwesttheatre.org/shows-events/2026-27/west-clinton-historic-haunts-2026",
-      "ticketUrl": "https://prod5.agileticketing.net/websales/pages/info.aspx?evtinfo=633419~9245a13d-e541-4ef8-8c5f-0e1f77ed1994&",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "jenks-1929-2026-10-01-1900-jenks-1929-road-warrior-series-jeff-miller",
-      "title": "JENKS 1929 ROAD WARRIOR SERIES: Jeff Miller",
-      "venueId": "jenks-1929",
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "JENKS 1929 ROAD WARRIOR SERIES: Jeff Miller",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "title": "BrokenEnglish",
-      "performers": [
-        {
-          "name": "BrokenEnglish",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-01-brokenenglish",
-      "genres": []
-    },
-    {
-      "title": "Mallory & Comp.",
-      "performers": [
-        {
-          "name": "Mallory & Comp.",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-01",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-01-mallory-comp",
-      "genres": []
-    },
-    {
-      "title": "Bob Frank",
-      "performers": [
-        {
-          "name": "Bob Frank",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-01",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-10-01-bob-frank",
-      "genres": [
-        "blues"
-      ]
-    },
-    {
-      "title": "Jeffrey Cruz",
-      "performers": [
-        {
-          "name": "Jeffrey Cruz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-01",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-01-jeffrey-cruz",
-      "genres": [
-        "singer-songwriter"
-      ]
-    },
-    {
-      "title": "Open Decks w/ DJ Dommie Salami",
-      "performers": [
-        {
-          "name": "DJ Dommie Salami",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-01",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "riffs",
-      "source": "manual",
-      "manual": true,
-      "id": "riffs-2026-10-01-open-decks",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
       "id": "grog-shop-2026-10-02-people-in-the-daytime",
       "title": "People in the Daytime w/ Mud Whale, Touchdown Jesus",
       "venueId": "grog-shop",
@@ -2801,6 +1961,50 @@
       ]
     },
     {
+      "title": "Corey Grand",
+      "performers": [
+        {
+          "name": "Corey Grand",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-02",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-02-corey-grand",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Nu-Era",
+      "performers": [
+        {
+          "name": "Nu-Era",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-02",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-02-nu-era",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "title": "Kristin Pepper",
       "performers": [
         {
@@ -2839,125 +2043,6 @@
       "manual": true,
       "id": "spotlight-cle-2026-10-02-ccf",
       "genres": []
-    },
-    {
-      "id": "spotlight-weekend-nights-fri-2026-10-02",
-      "title": "Live Music, DJs, Special Nights, featuring...",
-      "venueId": "spotlight-cle",
-      "date": "2026-10-02",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-early-2026-10-02",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-late-2026-10-02",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-main-2026-10-02",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-back-2026-10-02",
-      "title": "Pianist Don Phillips (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-fri-main-2026-10-02",
-      "title": "Pianist David Blazer (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-fri-back-2026-10-02",
-      "title": "Pianist David Blazer (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-02",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
     },
     {
       "id": "rocket-arena-2026-10-03-bert-kreischer",
@@ -4465,6 +3550,50 @@
       "id": "wild-eagle-streetsboro-2026-10-03-that-80-s-band",
       "genres": [
         "covers"
+      ]
+    },
+    {
+      "title": "IK Dubaku",
+      "performers": [
+        {
+          "name": "IK Dubaku",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-03-ik-dubaku",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Spaz",
+      "performers": [
+        {
+          "name": "Spaz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-03",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-03-spaz",
+      "genres": [
+        "dj"
       ]
     },
     {
@@ -8887,6 +8016,50 @@
       ]
     },
     {
+      "title": "Unknownphrazes",
+      "performers": [
+        {
+          "name": "Unknownphrazes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-09",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-09-unknownphrazes",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Lano",
+      "performers": [
+        {
+          "name": "Lano",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-09",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-09-lano",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "title": "Sam Romano",
       "performers": [
         {
@@ -10441,6 +9614,50 @@
         "covers",
         "dance-disco",
         "hiphop-rap"
+      ]
+    },
+    {
+      "title": "Unknownphrazes",
+      "performers": [
+        {
+          "name": "Unknownphrazes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-10-unknownphrazes",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Cassius G",
+      "performers": [
+        {
+          "name": "Cassius G",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-10",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-10-cassius-g",
+      "genres": [
+        "dj"
       ]
     },
     {
@@ -15112,6 +14329,48 @@
       ]
     },
     {
+      "title": "Flaco Flash",
+      "performers": [
+        {
+          "name": "Flaco Flash",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-16-flaco-flash",
+      "genres": []
+    },
+    {
+      "title": "Ariq",
+      "performers": [
+        {
+          "name": "Ariq",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-16-ariq",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "title": "Kristin Pepper",
       "performers": [
         {
@@ -16529,6 +15788,48 @@
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-10-17-ldnl",
       "genres": []
+    },
+    {
+      "title": "Cassius G",
+      "performers": [
+        {
+          "name": "Cassius G",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-17-cassius-g",
+      "genres": []
+    },
+    {
+      "title": "Spaz",
+      "performers": [
+        {
+          "name": "Spaz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-17-spaz",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Dylan Spyder",
@@ -20333,6 +19634,48 @@
       ]
     },
     {
+      "title": "Nu-Era",
+      "performers": [
+        {
+          "name": "Nu-Era",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-23-nu-era",
+      "genres": []
+    },
+    {
+      "title": "Ariq",
+      "performers": [
+        {
+          "name": "Ariq",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-23-ariq",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "title": "Sam Romano",
       "performers": [
         {
@@ -21880,6 +21223,48 @@
       "genres": [
         "rock",
         "covers"
+      ]
+    },
+    {
+      "title": "Spaz",
+      "performers": [
+        {
+          "name": "Spaz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-24-spaz",
+      "genres": []
+    },
+    {
+      "title": "IK Dubaku",
+      "performers": [
+        {
+          "name": "IK Dubaku",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-24-ik-dubaku",
+      "genres": [
+        "dj"
       ]
     },
     {
@@ -25873,6 +25258,48 @@
       ]
     },
     {
+      "title": "Just AJ",
+      "performers": [
+        {
+          "name": "Just AJ",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-30-just-aj",
+      "genres": []
+    },
+    {
+      "title": "Flaco Flash",
+      "performers": [
+        {
+          "name": "Flaco Flash",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-30-flaco-flash",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
       "title": "Rocky Horror Costume Party",
       "performers": [
         {
@@ -27066,6 +26493,48 @@
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-10-31-radio-chaos",
       "genres": []
+    },
+    {
+      "title": "Lano",
+      "performers": [
+        {
+          "name": "Lano",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-31-lano",
+      "genres": []
+    },
+    {
+      "title": "Nu-Era",
+      "performers": [
+        {
+          "name": "Nu-Era",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-31-nu-era",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Slob Dylan",
