@@ -79,7 +79,7 @@
     "local": "yes"
   },
   "hello-3d": {
-    "name": "Hello! 3D",
+    "name": "Hello!3D",
     "aliases": [
       "Hello! 3D",
       "Hello!3D",
@@ -503,6 +503,33 @@
       {
         "label": "Website",
         "value": "https://clehairnation.com/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "four-horsemen": {
+    "name": "Four Horsemen",
+    "aliases": [
+      "Four Horsemen",
+      "The Four Horsemen"
+    ],
+    "genres": [
+      "metal",
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.fourhorses.me/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/thefourhorsemenofficial/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/fourhorsemenmetallica/"
       }
     ],
     "exclude": "no",
