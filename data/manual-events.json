@@ -3,6 +3,63 @@
 
 
     {
+    "title": "Browns Game (No Dog Water)",
+    "performers": [
+      {
+        "name": "Browns Game (No Dog Water)",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-01",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-01-browns-game-no-dog-water"
+  },
+  {
+    "title": "R&R Express",
+    "performers": [
+      {
+        "name": "R&R Express",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-02",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-02-r-r-express"
+  },
+  {
+    "title": "CLE Collective",
+    "performers": [
+      {
+        "name": "CLE Collective",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-03-cle-collective"
+  },
+  {
     "title": "Dog Water",
     "performers": [
       {
@@ -10,7 +67,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-03",
+    "date": "2026-10-08",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -19,7 +76,45 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-03-dog-water"
+    "id": "cebars-2026-10-08-dog-water"
+  },
+  {
+    "title": "AWD&H",
+    "performers": [
+      {
+        "name": "AWD&H",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-09-awd-h"
+  },
+  {
+    "title": "Brendan Cosgriff",
+    "performers": [
+      {
+        "name": "Brendan Cosgriff",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-09-brendan-cosgriff"
   },
   {
     "title": "Among The Willows",
@@ -29,7 +124,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-04",
+    "date": "2026-10-10",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -38,85 +133,7 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-04-among-the-willows"
-  },
-  {
-    "title": "Shut Your Trap",
-    "performers": [
-      {
-        "name": "Shut Your Trap",
-        "headliner": true
-      },
-      {
-        "name": "Suscrofa",
-        "headliner": false
-      },
-      {
-        "name": "Life Sentence",
-        "headliner": false
-      },
-      {
-        "name": "Revere",
-        "headliner": false
-      },
-      {
-        "name": "Allied",
-        "headliner": false
-      },
-      {
-        "name": "Mastercomputer",
-        "headliner": false
-      },
-      {
-        "name": "Piss Ant",
-        "headliner": false
-      },
-      {
-        "name": "Pooch",
-        "headliner": false
-      },
-      {
-        "name": "Sketchball",
-        "headliner": false
-      },
-      {
-        "name": "Slug Dealer",
-        "headliner": false
-      },
-      {
-        "name": "Common Threat",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-05",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "cebars",
-    "source": "manual",
-    "manual": true,
-    "id": "cebars-2026-09-05-shut-your-trap"
-  },
-  {
-    "title": "Armstrong Bearcat",
-    "performers": [
-      {
-        "name": "Armstrong Bearcat",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-06",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "cebars",
-    "source": "manual",
-    "manual": true,
-    "id": "cebars-2026-09-06-armstrong-bearcat"
+    "id": "cebars-2026-10-10-among-the-willows"
   },
   {
     "title": "Dog Water",
@@ -126,7 +143,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-10",
+    "date": "2026-10-15",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -135,18 +152,18 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-10-dog-water"
+    "id": "cebars-2026-10-15-dog-water"
   },
   {
-    "title": "Bootleg Service",
+    "title": "Avery Glassman",
     "performers": [
       {
-        "name": "Bootleg Service",
+        "name": "Avery Glassman",
         "headliner": true
       }
     ],
-    "date": "2026-09-11",
-    "time": "21:00",
+    "date": "2026-10-16",
+    "time": "18:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -154,17 +171,17 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-11-bootleg-service"
+    "id": "cebars-2026-10-16-avery-glassman"
   },
   {
-    "title": "Reverbious",
+    "title": "Alan Greene Band",
     "performers": [
       {
-        "name": "Reverbious",
+        "name": "Alan Greene Band",
         "headliner": true
       }
     ],
-    "date": "2026-09-12",
+    "date": "2026-10-16",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -173,7 +190,26 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-12-reverbious"
+    "id": "cebars-2026-10-16-alan-greene-band"
+  },
+  {
+    "title": "Punk Metal Ect",
+    "performers": [
+      {
+        "name": "Punk Metal Ect",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-17-punk-metal-ect"
   },
   {
     "title": "Dog Water",
@@ -183,7 +219,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-17",
+    "date": "2026-10-22",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -192,18 +228,18 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-17-dog-water"
+    "id": "cebars-2026-10-22-dog-water"
   },
   {
-    "title": "Punk",
+    "title": "Punk Metal Ect",
     "performers": [
       {
-        "name": "Punk",
+        "name": "Punk Metal Ect",
         "headliner": true
       }
     ],
-    "date": "2026-09-18",
-    "time": "19:00",
+    "date": "2026-10-23",
+    "time": "18:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -211,18 +247,18 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-18-punk"
+    "id": "cebars-2026-10-23-punk-metal-ect"
   },
   {
-    "title": "Punk",
+    "title": "Cap Halloween Spooktacular",
     "performers": [
       {
-        "name": "Punk",
+        "name": "Cap Halloween Spooktacular",
         "headliner": true
       }
     ],
-    "date": "2026-09-19",
-    "time": "19:00",
+    "date": "2026-10-24",
+    "time": "20:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -230,7 +266,7 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-19-punk"
+    "id": "cebars-2026-10-24-cap-halloween-spooktacular"
   },
   {
     "title": "Dog Water",
@@ -240,7 +276,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-24",
+    "date": "2026-10-29",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -249,44 +285,17 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-24-dog-water"
+    "id": "cebars-2026-10-29-dog-water"
   },
   {
-    "title": "Lake Erie Highball",
+    "title": "Those Men Inside My Brain",
     "performers": [
       {
-        "name": "Lake Erie Highball",
-        "headliner": true
-      },
-      {
-        "name": "A Way Of Flying",
-        "headliner": false
-      },
-      {
-        "name": "Pro Skater",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "cebars",
-    "source": "manual",
-    "manual": true,
-    "id": "cebars-2026-09-25-lake-erie-highball"
-  },
-  {
-    "title": "Pivot",
-    "performers": [
-      {
-        "name": "Pivot",
+        "name": "Those Men Inside My Brain",
         "headliner": true
       }
     ],
-    "date": "2026-09-26",
+    "date": "2026-10-30",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -295,7 +304,26 @@
     "venueId": "cebars",
     "source": "manual",
     "manual": true,
-    "id": "cebars-2026-09-26-pivot"
+    "id": "cebars-2026-10-30-those-men-inside-my-brain"
+  },
+  {
+    "title": "Herb Funky",
+    "performers": [
+      {
+        "name": "Herb Funky",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "cebars",
+    "source": "manual",
+    "manual": true,
+    "id": "cebars-2026-10-31-herb-funky"
   },
 
 
@@ -2929,10 +2957,10 @@
     "id": "sound-stage-tavern-2026-10-09-sugar-daddys"
   },
   {
-    "title": "Open",
+    "title": "Bounce",
     "performers": [
       {
-        "name": "Open",
+        "name": "Bounce",
         "headliner": true
       }
     ],
@@ -2945,7 +2973,7 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-10-10-open"
+    "id": "sound-stage-tavern-2026-10-10-bounce"
   },
   {
     "title": "Dan McCoy",
@@ -3004,15 +3032,15 @@
 
 
   {
-    "title": "Snakebite",
+    "title": "Drop Downs",
     "performers": [
       {
-        "name": "Snakebite",
+        "name": "Drop Downs",
         "headliner": true
       }
     ],
-    "date": "2026-09-04",
-    "time": "21:00",
+    "date": "2026-10-02",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3020,7 +3048,163 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-04-snakebite"
+    "id": "smedleys-2026-10-02-drop-downs"
+  },
+  {
+    "title": "Alan Green",
+    "performers": [
+      {
+        "name": "Alan Green",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-03",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-03-alan-green"
+  },
+  {
+    "title": "Three Orange Whips",
+    "performers": [
+      {
+        "name": "Three Orange Whips",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-04-three-orange-whips"
+  },
+  {
+    "title": "Metal Mondays w/ DJ Sam Sinister",
+    "performers": [
+      {
+        "name": "DJ Sam Sinister",
+        "headliner": true
+      },
+      {
+        "name": "Necrobiome",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-05-dj-sam-sinister"
+  },
+  {
+    "title": "The Lyle Quimby Band",
+    "performers": [
+      {
+        "name": "The Lyle Quimby Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-09",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-09-the-lyle-quimby-band"
+  },
+  {
+    "title": "Sky's The Limit",
+    "performers": [
+      {
+        "name": "Sky's The Limit",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-10-sky-s-the-limit"
+  },
+  {
+    "title": "Tom Brady Acoustic",
+    "performers": [
+      {
+        "name": "Tom Brady Acoustic",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-11-tom-brady-acoustic"
+  },
+  {
+    "title": "Metal Mondays w/ DJ Sam Sinister",
+    "performers": [
+      {
+        "name": "DJ Sam Sinister",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-12-dj-sam-sinister"
+  },
+  {
+    "title": "Retro Junkies",
+    "performers": [
+      {
+        "name": "Retro Junkies",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-16",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-10-16-retro-junkies"
   },
   {
     "title": "Big Don Band",
@@ -3030,8 +3214,8 @@
         "headliner": true
       }
     ],
-    "date": "2026-09-05",
-    "time": "21:00",
+    "date": "2026-10-17",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3039,18 +3223,18 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-05-big-don-band"
+    "id": "smedleys-2026-10-17-big-don-band"
   },
   {
-    "title": "Jam Night Freebryds",
+    "title": "Mookie Baylock",
     "performers": [
       {
-        "name": "Freebryds",
+        "name": "Mookie Baylock",
         "headliner": true
       }
     ],
-    "date": "2026-09-06",
-    "time": "19:00",
+    "date": "2026-10-18",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3058,186 +3242,22 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-06-freebryds"
+    "id": "smedleys-2026-10-18-mookie-baylock"
   },
   {
-    "title": "Metal Mondays",
-    "performers": [
-      {
-        "name": "DJ Sam Sinister",
-        "headliner": true
-      },
-      {
-        "name": "Misery Jackal",
-        "headliner": false
-      },
-      {
-        "name": "Gemini Lounge",
-        "headliner": false
-      },
-      {
-        "name": "Hot Wings",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-07",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-07-dj-sam-sinister"
-  },
-  {
-    "title": "Colin Dussault",
-    "performers": [
-      {
-        "name": "Colin Dussault",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-11-colin-dussault"
-  },
-  {
-    "title": "The Project",
-    "performers": [
-      {
-        "name": "The Project",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-12-the-project"
-  },
-  {
-    "title": "Dirty Mike & The Boyz",
-    "performers": [
-      {
-        "name": "Dirty Mike & The Boyz",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-13",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-13-dirty-mike-the-boyz"
-  },
-  {
-    "title": "Metal Mondays",
-    "performers": [
-      {
-        "name": "DJ Sam Sinister",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-14",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-14-dj-sam-sinister"
-  },
-  {
-    "title": "Butch Armstrong",
-    "performers": [
-      {
-        "name": "Butch Armstrong",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-18",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-18-butch-armstrong"
-  },
-  {
-    "title": "Gren Fall",
-    "performers": [
-      {
-        "name": "Gren Fall",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-19-gren-fall"
-  },
-  {
-    "title": "Noah Gitell",
-    "performers": [
-      {
-        "name": "Noah Gitell",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-20",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-09-20-noah-gitell"
-  },
-  {
-    "title": "Metal Mondays",
+    "title": "Metal Mondays w/ DJ Sam Sinister",
     "performers": [
       {
         "name": "DJ Sam Sinister",
         "headliner": true
       },
       {
-        "name": "Black Spirit Crown",
+        "name": "Red Leather Jacket",
         "headliner": false
       }
     ],
-    "date": "2026-09-21",
-    "time": "20:00",
+    "date": "2026-10-19",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3245,18 +3265,18 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-21-dj-sam-sinister"
+    "id": "smedleys-2026-10-19-dj-sam-sinister"
   },
   {
-    "title": "Cosmic Flurry",
+    "title": "Eric Burke",
     "performers": [
       {
-        "name": "Cosmic Flurry",
+        "name": "Eric Burke",
         "headliner": true
       }
     ],
-    "date": "2026-09-25",
-    "time": "21:00",
+    "date": "2026-10-23",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3264,18 +3284,18 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-25-cosmic-flurry"
+    "id": "smedleys-2026-10-23-eric-burke"
   },
   {
-    "title": "The Brakes",
+    "title": "Jesters Revenge",
     "performers": [
       {
-        "name": "The Brakes",
+        "name": "Jesters Revenge",
         "headliner": true
       }
     ],
-    "date": "2026-09-26",
-    "time": "21:00",
+    "date": "2026-10-24",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3283,22 +3303,18 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-26-the-brakes"
+    "id": "smedleys-2026-10-24-jesters-revenge"
   },
   {
-    "title": "Blues For DC",
+    "title": "Tony Schultz",
     "performers": [
       {
-        "name": "Blues For DC",
+        "name": "Tony Schultz",
         "headliner": true
-      },
-      {
-        "name": "Chris Stok",
-        "headliner": false
       }
     ],
-    "date": "2026-09-27",
-    "time": "19:00",
+    "date": "2026-10-25",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3306,18 +3322,18 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-27-blues-for-dc"
+    "id": "smedleys-2026-10-25-tony-schultz"
   },
   {
-    "title": "Metal Mondays",
+    "title": "Metal Mondays w/ DJ Sam Sinister",
     "performers": [
       {
         "name": "DJ Sam Sinister",
         "headliner": true
       }
     ],
-    "date": "2026-09-28",
-    "time": "20:00",
+    "date": "2026-10-26",
+    "time": null,
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -3325,7 +3341,7 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-09-28-dj-sam-sinister"
+    "id": "smedleys-2026-10-26-dj-sam-sinister"
   },
 
 
