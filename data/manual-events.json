@@ -3935,111 +3935,6 @@
     "id": "crobar-2026-10-16-villem"
   },
   {
-    "title": "FJAAK",
-    "performers": [
-      {
-        "name": "FJAAK",
-        "headliner": true
-      },
-      {
-        "name": "Den Hur",
-        "headliner": false
-      },
-      {
-        "name": "Delish",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "21:00",
-    "doors": null,
-    "price": "$15",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-25-fjaak"
-  },
-  {
-    "title": "Perf - 12 Hour Circus",
-    "performers": [
-      {
-        "name": "Joey Sardelle",
-        "headliner": true
-      },
-      {
-        "name": "Stout XTC",
-        "headliner": false
-      },
-      {
-        "name": "Uh-Huh",
-        "headliner": false
-      },
-      {
-        "name": "Navy Jayde",
-        "headliner": false
-      },
-      {
-        "name": "Hush",
-        "headliner": false
-      },
-      {
-        "name": "Delish",
-        "headliner": false
-      },
-      {
-        "name": "Gerad G",
-        "headliner": false
-      },
-      {
-        "name": "Reggie Fields",
-        "headliner": false
-      },
-      {
-        "name": "Solace",
-        "headliner": false
-      },
-      {
-        "name": "Batty Jack",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-20",
-    "time": "21:00",
-    "doors": null,
-    "price": "$15",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-09-26-perf"
-  },
-  {
-    "title": "DJ Fart in the Club",
-    "performers": [
-      {
-        "name": "DJ Fart in the Club",
-        "headliner": true
-      },
-      {
-        "name": "Honk",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-02",
-    "time": "21:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-10-02-dj-fart-in-the-club"
-  },
-  {
     "title": "Chez Damier",
     "performers": [
       {
@@ -4100,6 +3995,60 @@
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-10-17-dvs1"
+  },
+  {
+    "title": "Satin Jackets",
+    "performers": [
+      {
+        "name": "Satin Jackets",
+        "headliner": true
+      },
+      {
+        "name": "Le Schlippy",
+        "headliner": false
+      },
+      {
+        "name": "Innergroove",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-18",
+    "time": "21:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-10-18-satin-jackets"
+  },
+  {
+    "title": "Lindsey Herbert",
+    "performers": [
+      {
+        "name": "Lindsey Herbert",
+        "headliner": true
+      },
+      {
+        "name": "Jenny Arcade",
+        "headliner": false
+      },
+      {
+        "name": "Mira",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "21:00",
+    "doors": null,
+    "price": "$20",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-14-lindsey-herbert"
   },
 
 
@@ -5642,6 +5591,25 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2026-10-15-struggle-jennings"
+  },
+  {
+    "title": "The Brook & the Bluff: The Werewolf Tour",
+    "performers": [
+      {
+        "name": "The Brook & the Bluff",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2026-10-19-the-brook-the-bluff"
   },
   {
     "title": "With a Vengeance",
@@ -7998,29 +7966,6 @@
     "source": "manual",
     "manual": true,
     "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene"
-  },
-  {
-    "title": "Ghost Rider with Ted Riser Halloween Party",
-    "performers": [
-      {
-        "name": "Ghost Rider",
-        "headliner": true
-      },
-      {
-        "name": "Ted Riser",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-29",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-29-ghost-rider"
   },
   {
     "title": "Blaming Willy",
@@ -11869,6 +11814,25 @@
     "id": "nano-brew-2026-10-30-just-aj"
   },
   {
+    "title": "Pumpkin Fest",
+    "performers": [
+      {
+        "name": "Pumpkin Fest",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-10-31-pumpkin-fest"
+  },
+  {
     "title": "Lano",
     "performers": [
       {
@@ -12224,6 +12188,25 @@
     "source": "manual",
     "manual": true,
     "id": "irishtown-bend-taproom-2026-10-10-two-mile-moon"
+  },
+  {
+    "title": "Apostle Jones",
+    "performers": [
+      {
+        "name": "Apostle Jones",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-17",
+    "time": "20:00",
+    "doors": "19:00",
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "irishtown-bend-taproom",
+    "source": "manual",
+    "manual": true,
+    "id": "irishtown-bend-taproom-2026-10-17-apostle-jones"
   },
 
 
@@ -14351,42 +14334,23 @@
 
 
   {
-    "title": "Open Decks w/ DJ Dommie Salami",
+    "title": "Wynston",
     "performers": [
       {
-        "name": "DJ Dommie Salami",
+        "name": "Wynston",
         "headliner": true
       }
     ],
-    "date": "2026-10-01",
-    "time": "20:00",
+    "date": "2026-10-09",
+    "time": "19:00",
     "doors": null,
-    "price": null,
+    "price": "$10",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "riffs",
     "source": "manual",
     "manual": true,
-    "id": "riffs-2026-10-01-open-decks"
-  },
-  {
-    "title": "Mainstage DJ",
-    "performers": [
-      {
-        "name": "Mainstage DJ",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-04",
-    "time": "17:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "riffs",
-    "source": "manual",
-    "manual": true,
-    "id": "riffs-2026-10-04-mainstage-dj"
+    "id": "riffs-2026-10-09-wynston"
   },
 
 
@@ -14430,61 +14394,61 @@
 
 
   {
-    "title": "Gates Open",
+    "title": "The Yacht Rockerz",
     "performers": [
       {
-        "name": "Pickle Fest",
+        "name": "The Yacht Rockerz",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
-    "time": "11:00",
+    "date": "2026-10-10",
+    "time": "14:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
-    "ticketUrl": "https://clevelandpicklefest.com/tickets/",
-    "venueId": "cleveland-pickle-fest",
+    "ticketUrl": null,
+    "venueId": "ob-street-fest",
     "source": "manual",
     "manual": true,
-    "id": "cleveland-pickle-fest-2026-10-03-gates"
+    "id": "ob-street-fest-2026-10-10-yacht-rockerz"
   },
   {
-    "title": "Boaterhead",
+    "title": "Marcus Smith & The Rapscallions",
     "performers": [
       {
-        "name": "Boaterhead",
+        "name": "Marcus Smith & The Rapscallions",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
-    "time": "11:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": "https://clevelandpicklefest.com/tickets/",
-    "venueId": "cleveland-pickle-fest",
-    "source": "manual",
-    "manual": true,
-    "id": "cleveland-pickle-fest-2026-10-03-boaterhead"
-  },
-  {
-    "title": "Jasmin Jeanise",
-    "performers": [
-      {
-        "name": "Jasmin Jeanise",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
+    "date": "2026-10-10",
     "time": "15:30",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
-    "ticketUrl": "https://clevelandpicklefest.com/tickets/",
-    "venueId": "cleveland-pickle-fest",
+    "ticketUrl": null,
+    "venueId": "ob-street-fest",
     "source": "manual",
     "manual": true,
-    "id": "cleveland-pickle-fest-2026-10-03-jasmin-jeanise"
+    "id": "ob-street-fest-2026-10-10-marcus-smith"
+  },
+  {
+    "title": "Austin & The Syd Experience",
+    "performers": [
+      {
+        "name": "Austin & The Syd Experience",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-10",
+    "time": "18:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "ob-street-fest",
+    "source": "manual",
+    "manual": true,
+    "id": "ob-street-fest-2026-10-10-austin-syd-experience"
   },
 
 
@@ -14633,132 +14597,6 @@
 
 
   {
-    "title": "Fragments",
-    "performers": [
-      {
-        "name": "Fragments",
-        "headliner": true
-      },
-      {
-        "name": "accubats",
-        "headliner": false
-      },
-      {
-        "name": "Greg Smith",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-18",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-18-fragments"
-  },
-  {
-    "title": "Benefit Allyssa Allison",
-    "performers": [
-      {
-        "name": "Allyssa Allison",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-19-allyssa-allison"
-  },
-  {
-    "title": "Breakwater Band",
-    "performers": [
-      {
-        "name": "Breakwater Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-25-breakwater-band"
-  },
-  {
-    "title": "Lords of the Highway",
-    "performers": [
-      {
-        "name": "Lords of the Highway",
-        "headliner": true
-      },
-      {
-        "name": "FFF",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-26",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-09-26-lords-of-the-highway"
-  },
-  {
-    "title": "CCF + Afterparty",
-    "performers": [
-      {
-        "name": "CCF",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-02",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-10-02-ccf"
-  },
-  {
-    "title": "Spotlight on Songwriters w Freddy Hill",
-    "performers": [
-      {
-        "name": "Freddy Hill",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spotlight-cle",
-    "source": "manual",
-    "manual": true,
-    "id": "spotlight-cle-2026-10-03-freddy-hill"
-  },
-  {
     "title": "The Tenants",
     "performers": [
       {
@@ -14816,10 +14654,10 @@
     "id": "spotlight-cle-2026-10-16-ben-cohen"
   },
   {
-    "title": "Freddy Andy New Band",
+    "title": "Freddy Hill CD Release",
     "performers": [
       {
-        "name": "Freddy Andy New Band",
+        "name": "Freddy Hill",
         "headliner": true
       }
     ],
@@ -14832,7 +14670,30 @@
     "venueId": "spotlight-cle",
     "source": "manual",
     "manual": true,
-    "id": "spotlight-cle-2026-10-17-freddy-andy"
+    "id": "spotlight-cle-2026-10-17-freddy-hill"
+  },
+  {
+    "title": "Gene Schwartz Band w/ The Props",
+    "performers": [
+      {
+        "name": "Gene Schwartz Band",
+        "headliner": true
+      },
+      {
+        "name": "The Props",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-23",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-10-23-gene-schwartz"
   },
   {
     "title": "Ben Plank Halloween",
@@ -14890,6 +14751,63 @@
     "source": "manual",
     "manual": true,
     "id": "spotlight-cle-2026-10-30-dollyween"
+  },
+  {
+    "title": "Kiss Me Deadly",
+    "performers": [
+      {
+        "name": "Kiss Me Deadly",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-06",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-11-06-kiss-me-deadly"
+  },
+  {
+    "title": "Freddy Hill",
+    "performers": [
+      {
+        "name": "Freddy Hill",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-07",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-11-06-kiss-me-deadly"
+  },
+  {
+    "title": "Bufflehead",
+    "performers": [
+      {
+        "name": "Bufflehead",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-13",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-11-13-bufflehead"
   },
 
 
