@@ -611,5 +611,55 @@
 				"thumbnail": "media/thumbs/gorillaz-20261006-20.webp"
 			}
 		]
+	},
+	{
+		"id": "cherokee-social-20261009",
+		"postType": "gallery",
+		"title": "Cherokee Social",
+		"date": "2026-10-09",
+		"venueId": "foundry-concert-club",
+		"submittedBy": "CRWD SRFR",
+		"items": [
+			{
+				"type": "photo",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-01.webp",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-01.webp",
+				"cover": true
+			},
+			{
+				"type": "video",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-02.mp4",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-02.webp",
+				"caption": "Cherokee Social opening with \"Eeyoko Mataylë\""
+			},
+			{
+				"type": "video",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-03.mp4",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-03.webp",
+				"caption": "Cherokee Social performing \"Eeyoko Mataylë\""
+			},
+			{
+				"type": "photo",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-04.webp",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-04.webp"
+			},
+			{
+				"type": "video",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-05.mp4",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-05.webp",
+				"caption": "Cherokee Social performing \"Which Witch?\""
+			},
+			{
+				"type": "photo",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-06.webp",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-06.webp"
+			},
+			{
+				"type": "video",
+				"src": "media/cherokee-social-20261009/cherokee-social-20261009-07.mp4",
+				"thumbnail": "media/thumbs/cherokee-social-20261009-07.webp",
+				"caption": "Cherokee Social performing \"Rain Man\" with a guest performer"
+			}
+		]
 	}
 ]
