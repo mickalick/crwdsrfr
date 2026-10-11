@@ -634,8 +634,41 @@
 
 .actModalMediaGrid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	grid-template-columns: repeat(4, 1fr);
 	gap: 16px;
+}
+
+.actModalMediaGrid:not(.expanded) .isOverflow {
+	display: none;
+}
+
+/* Loading / empty messages span the full row instead of sitting in one column */
+.actModalMediaGrid .actModalEmptyMsg {
+	grid-column: 1 / -1;
+}
+
+.actModalMediaToggle {
+	display: block;
+	margin: 12px auto 0;
+	padding: 4px 0;
+	background: none;
+	border: none;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	color: #F9F976;
+	cursor: pointer;
+}
+
+/* An author `display` value overrides the browser's built-in [hidden] style,
+   so restate it or the toggle would show for acts with 8 or fewer items */
+.actModalMediaToggle[hidden] {
+	display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.actModalMediaToggle:hover {
+		text-decoration: underline;
+	}
 }
 
 .actModalMediaThumb {
@@ -695,7 +728,7 @@
 
 @media screen and (max-width: 535px) {
 	.actModalMediaGrid {
-		grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+		gap: 10px;
 	}
 
 	#actsJumpNav {

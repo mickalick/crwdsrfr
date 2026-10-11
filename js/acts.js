@@ -33,7 +33,7 @@
 	function groupLabel(group) {
 		return group === '0-9' ? '#' : group;
 	}
-	const MEDIA_PREVIEW_LIMIT = 5;
+	const MEDIA_COLLAPSED_LIMIT = 8; // 2 rows × 4 columns before "Show All"
 	const MAX_UPCOMING_EVENTS = 8;
 	const FILTER_STORAGE_KEY = 'crwdsrfr_acts_filters';
 
@@ -236,7 +236,7 @@
 			// only in one caption of a larger report surface here, rather than
 			// only whole posts whose top-level title names the act.
 			const units = items.flatMap(item => window.BoardMedia.mediaUnitsForItem(item));
-			return units.filter(unit => actMatchesMediaUnit(needles, unit)).slice(0, MEDIA_PREVIEW_LIMIT);
+			return units.filter(unit => actMatchesMediaUnit(needles, unit));
 		} catch (e) {
 			console.warn('acts.js: could not load board media', e);
 			return [];
@@ -497,6 +497,21 @@
 	const modalEventsList = document.getElementById('actModalEvents');
 	const modalMediaSection = document.getElementById('actModalMediaSection');
 	const modalMediaGrid = document.getElementById('actModalMedia');
+	const modalMediaToggle = document.getElementById('actModalMediaToggle');
+	let activeModalAct = null;
+
+	function setMediaExpanded(expanded) {
+		modalMediaGrid.classList.toggle('expanded', expanded);
+		modalMediaToggle.textContent = expanded ? 'Show Less' : 'Show All';
+		modalMediaToggle.setAttribute('aria-expanded', String(expanded));
+	}
+
+	modalMediaToggle.addEventListener('click', () => {
+		const expanding = !modalMediaGrid.classList.contains('expanded');
+		setMediaExpanded(expanding);
+		// On collapse, keep the toggle in view so the modal doesn't leave you scrolled into empty space
+		if (!expanding) modalMediaToggle.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+	});
 
 	let eventsData = null;
 	let venueLookup = {};
@@ -532,7 +547,7 @@
 	// entries, not a raw top-level board-media post — its thumbnail/caption
 	// are the specific shot's own, even when that shot is nested inside a
 	// gallery or report.
-	function mediaThumbHtml(unit) {
+	function mediaThumbHtml(unit, isOverflow) {
 		const venueName = window.BoardMedia?.resolveVenueName(unit.venueId, venueLookup) || '';
 		const label = unit.caption || unit.postTitle;
 		// Deep-links straight to the parent post's modal on /board/ via its
@@ -540,7 +555,7 @@
 		// Falls back to the generic #top if a unit is somehow missing a postId.
 		const boardHref = unit.postId ? `/board/#${encodeURIComponent(unit.postId)}` : '/board/#top';
 		return `
-			<a class="actModalMediaThumb" href="${boardHref}" target="_blank" rel="noopener" title="${label}${venueName ? ' — ' + venueName : ''}">
+			<a class="actModalMediaThumb${isOverflow ? ' isOverflow' : ''}" href="${boardHref}" target="_blank" rel="noopener" title="${label}${venueName ? ' — ' + venueName : ''}">
 				<img src="/board/${unit.thumbnail}" alt="${label}" loading="lazy">
 				${unit.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
 			</a>`;
@@ -548,6 +563,7 @@
 
 	async function openActModal(act) {
 		if (!act) return;
+		activeModalAct = act;
 
 		modalTitle.textContent = act.name;
 		modalGenres.innerHTML = genreChipsHtml(act.genres);
@@ -567,14 +583,20 @@
 		// modal on it.
 		modalMediaSection.hidden = false;
 		modalMediaGrid.innerHTML = '<p class="actModalEmptyMsg">Loading media…</p>';
+		modalMediaToggle.hidden = true;
+		setMediaExpanded(false);
 
 		modal.hidden = false;
 		document.body.classList.add('boardModalOpen');
 
 		const mediaItems = await mediaPreviewForAct(act);
+		// Guard: if a different act's modal was opened while this one was loading, don't overwrite it
+		if (activeModalAct !== act) return;
+
 		modalMediaGrid.innerHTML = mediaItems.length > 0
-			? mediaItems.map(mediaThumbHtml).join('')
+			? mediaItems.map((unit, i) => mediaThumbHtml(unit, i >= MEDIA_COLLAPSED_LIMIT)).join('')
 			: '<p class="actModalEmptyMsg">No media yet.</p>';
+		modalMediaToggle.hidden = mediaItems.length <= MEDIA_COLLAPSED_LIMIT;
 	}
 
 	function closeActModal() {
