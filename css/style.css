@@ -157,106 +157,6 @@ header{
 	display: block;
 }
 
-#menuButton{
-	display: flex;
-	justify-content: center;
-	margin-right: 30px;
-	width: 80px;
-	height: 60px;
-	cursor: pointer;
-}
-
-#menuButton.scrolled {
-	height: 100%;
-}
-
-#menuButton label {
-	display: flex;
-	align-items: center;
-}
-
-#menuToggle {
-  display: none;
-}
-
-#menuToggle + label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-}
-
-#menuToggle + label span {
-  display: block;
-  background: white;
-}
-
-#menuNav {
-	display: none;
-	position: absolute;
-	top: 100%;
-	right: 0%;
-	margin-right: 30px;
-	background: #62CBB8;
-	width: 25%;
-	margin-top: 20px;
-}
-
-#menuNav.open {
-	display: block;
-}
-
-#menuButton.open {
-	background-color: #62CBB8;
-}
-
-#menuButton.open #mnu {
-	background-color: #101010;
-}
-
-header.scrolled #menuNav {
-	margin-top: 0;
-}
-
-#menuNav ul {
-	list-style: none outside none;
-	padding-left: 0;
-}
-
-#menuNav hr {
-	width: 85%;
-	margin: 0 auto;
-	border-color: #101010;
-}
-
-.navItem {
-	display: block;
-	text-align: center;
-	padding: 20px 0px;
-	margin: 4px;
-	background-color: inherit;
-}
-
-.navItem small {
-		font-size: 12px;
-	}
-
-.navLink{
-	color:#101010;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	transition:all 250ms ease;
-	-webkit-transition:all 250ms ease;
-	-moz-transition:all 250ms ease;
-}
-
-.currentPage {
-	font-weight: 700;
-	text-decoration: underline;
-}
-
 #wrapper{
 	color: #fff;
 	display: flex;
@@ -927,7 +827,9 @@ footer a {
 
 .eventName {
 	font-size: 18px;
-	width: 34%;
+	display: flex !important;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .eventName a {
@@ -944,11 +846,11 @@ footer a {
 }
 
 .eventTime {
-	width: 30%;
+	width: 100%;
 }
 
 .eventCost {
-	width: 14%;
+	width: 100%;
 }
 
 /* Genre chips render as their own full-width flex row below the name/
@@ -1474,11 +1376,6 @@ span.flatpickr-weekday {
 		transform: translateY(-3px);
 	}
 
-	.navLink:hover {
-		background-color: #101010 !important;
-		color: #62CBB8;
-	}
-
 	footer a:hover {
 		text-decoration: underline;
 	}
@@ -1601,9 +1498,6 @@ span.flatpickr-weekday {
 		margin-left: 30px;
 	}
 
-	#menuToggle {
-		margin-right: 30px;
-	}
 }
 
 
@@ -1649,21 +1543,6 @@ span.flatpickr-weekday {
 }*/
 
 @media screen and (max-width:774px){
-
-	.eventName {
-  	display: flex !important;
-  	width: 100%;
-  	margin-bottom: 8px;
-	}
-
-	.eventTime {
-		width: 60%;
-	}
-
-	.eventCost {
-		width: 20%;
-	}
-
 	p{
 		font-size:19px;
 		line-height:30px;
@@ -1688,10 +1567,6 @@ span.flatpickr-weekday {
 		margin:0;
 	}
 
-	#menuNav {
-		width: 40%;
-	}
-
 	footer {
 		background-size: 20%;
 	}
@@ -1704,14 +1579,6 @@ span.flatpickr-weekday {
 
 	#calendar {
 		margin-top: 0;
-	}
-
-	.eventTime {
-		width: 100%;
-	}
-
-	.eventCost {
-		width: 100%;
 	}
 }
 
@@ -1726,15 +1593,6 @@ span.flatpickr-weekday {
 		width: 120px;
 	}
 
-	#menuToggle{
-		margin-right: 20px;
-		margin-top: 16px;
-	}
-
-	#menuNav {
-		width: 50%;
-	}
-
 	#calendarSettings {
 		width: 100%;
 	}
@@ -1746,11 +1604,6 @@ span.flatpickr-weekday {
 
 	#calendarSettingsBar .settings-toggle {
 		gap: 12px;
-	}
-
-	.navItem{
-		padding: 30px 0 !important;
-		margin: 0 16px !important;
 	}
 
 	.main{
