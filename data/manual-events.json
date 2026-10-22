@@ -3296,65 +3296,42 @@
   
   
   {
-    "title": "&FRIENDS",
+    "title": "HALLOWEEN WEEKEND KICKOFF: Mariah the Scientist",
     "performers": [
       {
-        "name": "&FRIENDS",
+        "name": "Mariah the Scientist",
         "headliner": true
       }
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-29",
     "time": "22:00",
     "doors": null,
-    "price": "$18.63",
+    "price": "$78.65",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-10-16-friends"
+    "id": "shooters-2026-10-29-halloween-mariah-the-scientist"
   },
   {
-    "title": "Shooters After Dark: RICH",
+    "title": "HALLOWEEN WEEKEND: QUAVO",
     "performers": [
       {
-        "name": "RICH",
+        "name": "QUAVO",
         "headliner": true
       }
     ],
-    "date": "2026-10-17",
+    "date": "2026-10-30",
     "time": "22:00",
     "doors": null,
-    "price": "Free",
+    "price": "$56.83",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-10-17-rich"
-  },
-  {
-    "title": "Shooters After Dark: Ladies Night w/ NICNACC & POIZON",
-    "performers": [
-      {
-        "name": "NICNACC",
-        "headliner": true
-      },
-      {
-        "name": "POIZON",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-23",
-    "time": "22:00",
-    "doors": null,
-    "price": "Free",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-10-23-nicnacc-poizon"
+    "id": "shooters-2026-10-30-halloween-quavo"
   },
   {
     "title": "HALLOWEEN WEEKEND: JIGITZ",
@@ -3382,41 +3359,7 @@
 
 
 
-  {
-    "title": "Villem",
-    "performers": [
-      {
-        "name": "Villem",
-        "headliner": true
-      },
-      {
-        "name": "Alpha Rhythm",
-        "headliner": false
-      },
-      {
-        "name": "KC",
-        "headliner": false
-      },
-      {
-        "name": "Rob Riddum",
-        "headliner": false
-      },
-      {
-        "name": "JonDoeTho1",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "21:00",
-    "doors": null,
-    "price": "$15",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-10-16-villem"
-  },
+  
   {
     "title": "Chez Damier",
     "performers": [
@@ -3453,38 +3396,19 @@
     "id": "crobar-2026-10-24-chez-damier"
   },
   {
-    "title": "DVS1",
+    "title": "phase:zero: beyond the veil",
     "performers": [
       {
-        "name": "DVS1",
+        "name": "Detroit Bureau of Sound",
         "headliner": true
       },
       {
-        "name": "Lofila",
+        "name": "DJ Noah Anthony",
         "headliner": false
       },
       {
-        "name": "Justin Hartman",
+        "name": "Flute Salad",
         "headliner": false
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "21:00",
-    "doors": null,
-    "price": "$25 - $30",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "crobar",
-    "source": "manual",
-    "manual": true,
-    "id": "crobar-2026-10-17-dvs1"
-  },
-  {
-    "title": "Satin Jackets",
-    "performers": [
-      {
-        "name": "Satin Jackets",
-        "headliner": true
       },
       {
         "name": "Le Schlippy",
@@ -3493,18 +3417,49 @@
       {
         "name": "Innergroove",
         "headliner": false
+      },
+      {
+        "name": "Angelgirl EVA",
+        "headliner": false
       }
     ],
-    "date": "2026-10-18",
+    "date": "2026-10-30",
     "time": "21:00",
     "doors": null,
-    "price": "$10",
+    "price": "$10 adv, $15 doors",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "crobar",
     "source": "manual",
     "manual": true,
-    "id": "crobar-2026-10-18-satin-jackets"
+    "id": "crobar-2026-10-30-phase-zero"
+  },
+  {
+    "title": "Perf Halloween",
+    "performers": [
+      {
+        "name": "S4M23",
+        "headliner": true
+      },
+      {
+        "name": "Honk",
+        "headliner": false
+      },
+      {
+        "name": "Joey Sardelle",
+        "headliner": false
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "21:00",
+    "doors": null,
+    "price": "$17",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-10-31-perf-halloween"
   },
   {
     "title": "Lindsey Herbert",
@@ -4164,15 +4119,15 @@
 
 
   {
-    "title": "Jack Johnson",
+    "title": "A Perfect Circle",
     "performers": [
       {
-        "name": "Jack Johnson",
+        "name": "A Perfect Circle",
         "headliner": true
       }
     ],
-    "date": "2026-07-07",
-    "time": null,
+    "date": "2027-05-20",
+    "time": "19:30",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4180,18 +4135,18 @@
     "venueId": "blossom-music-center",
     "source": "manual",
     "manual": true,
-    "id": "blossom-music-center-2026-07-07-jack-johnson"
+    "id": "blossom-music-center-2027-05-20-a-perfect-circle"
   },
   {
-    "title": "Tim McGraw",
+    "title": "Papa Roach",
     "performers": [
       {
-        "name": "Tim McGraw",
+        "name": "Papa Roach",
         "headliner": true
       }
     ],
-    "date": "2026-07-17",
-    "time": null,
+    "date": "2027-06-06",
+    "time": "19:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4199,18 +4154,18 @@
     "venueId": "blossom-music-center",
     "source": "manual",
     "manual": true,
-    "id": "blossom-music-center-2026-07-17-tim-mcgraw"
+    "id": "blossom-music-center-2027-06-06-papa-roach"
   },
   {
-    "title": "John Mellencamp",
+    "title": "Matchbox Twenty",
     "performers": [
       {
-        "name": "John Mellencamp",
+        "name": "Matchbox Twenty",
         "headliner": true
       }
     ],
-    "date": "2026-07-21",
-    "time": null,
+    "date": "2027-08-11",
+    "time": "19:30",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -4218,443 +4173,10 @@
     "venueId": "blossom-music-center",
     "source": "manual",
     "manual": true,
-    "id": "blossom-music-center-2026-07-21-john-mellencamp"
+    "id": "blossom-music-center-2027-08-11-matchbox-twenty"
   },
-  {
-    "title": "Parker McCollum",
-    "performers": [
-      {
-        "name": "Parker McCollum",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-24",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-07-24-parker-mccollum"
-  },
-  {
-    "title": "Train",
-    "performers": [
-      {
-        "name": "Train",
-        "headliner": true
-      }
-    ],
-    "date": "2026-07-28",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-07-28-train"
-  },
-  {
-    "title": "Evanescence",
-    "performers": [
-      {
-        "name": "Evanescence",
-        "headliner": true
-      },
-      {
-        "name": "Spiritbox",
-        "headliner": false
-      },
-      {
-        "name": "Nova Twins",
-        "headliner": false
-      }
-    ],
-    "date": "2026-07-30",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-07-30-evanescence"
-  },
-  {
-    "title": "Chicago & Styx",
-    "performers": [
-      {
-        "name": "Chicago",
-        "headliner": true
-      },
-      {
-        "name": "Styx",
-        "headliner": false
-      }
-    ],
-    "date": "2026-08-06",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-06-chicago"
-  },
-  {
-    "title": "Riley Green",
-    "performers": [
-      {
-        "name": "Riley Green",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-07",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-07-riley-green"
-  },
-  {
-    "title": "Five Finger Death Punch",
-    "performers": [
-      {
-        "name": "Five Finger Death Punch",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-11",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-11-five-finger-death-punch"
-  },
-  {
-    "title": "Kehlani",
-    "performers": [
-      {
-        "name": "Kehlani",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-14",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-14-kehlani"
-  },
-  {
-    "title": "Lindsey Stirling",
-    "performers": [
-      {
-        "name": "Lindsey Stirling",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-18",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-18-lindsey-stirling"
-  },
-  {
-    "title": "Empire of the Sun",
-    "performers": [
-      {
-        "name": "Empire of the Sun",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-21",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-21-empire-of-the-sun"
-  },
-  {
-    "title": "Mötley Crüe",
-    "performers": [
-      {
-        "name": "Mötley Crüe",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-24",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-24-m-tley-cr-e"
-  },
-  {
-    "title": "RÜFÜS DU SOL",
-    "performers": [
-      {
-        "name": "RÜFÜS DU SOL",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-27",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-27-r-f-s-du-sol"
-  },
-  {
-    "title": "Josh Groban",
-    "performers": [
-      {
-        "name": "Josh Groban",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-28",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-08-28-josh-groban"
-  },
-  {
-    "title": "Rob Zombie & Marilyn Manson",
-    "performers": [
-      {
-        "name": "Rob Zombie",
-        "headliner": true
-      },
-      {
-        "name": "Marilyn Manson",
-        "headliner": false
-      },
-      {
-        "name": "The Hu",
-        "headliner": false
-      },
-      {
-        "name": "Orgy",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-02",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-02-rob-zombie"
-  },
-  {
-    "title": "Wu-Tang Clan",
-    "performers": [
-      {
-        "name": "Wu-Tang Clan",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-09",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-09-wu-tang-clan"
-  },
-  {
-    "title": "TLC & Salt-N-Pepa",
-    "performers": [
-      {
-        "name": "TLC",
-        "headliner": true
-      },
-      {
-        "name": "Salt-N-Pepa",
-        "headliner": false
-      },
-      {
-        "name": "En Vogue",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-10",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-10-tlc"
-  },
-  {
-    "title": "O.A.R.",
-    "performers": [
-      {
-        "name": "O.A.R.",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-11-o-a-r"
-  },
-  {
-    "title": "Thomas Rhett",
-    "performers": [
-      {
-        "name": "Thomas Rhett",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-12-thomas-rhett"
-  },
-  {
-    "title": "Billy Idol",
-    "performers": [
-      {
-        "name": "Billy Idol",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-13",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-13-billy-idol"
-  },
-  {
-    "title": "Pitbull",
-    "performers": [
-      {
-        "name": "Pitbull",
-        "headliner": true
-      },
-      {
-        "name": "Lil Jon",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-16",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-16-pitbull"
-  },
-  {
-    "title": "Bryson Tiller",
-    "performers": [
-      {
-        "name": "Bryson Tiller",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-09-25-bryson-tiller"
-  },
-  {
-    "title": "Foster The People",
-    "performers": [
-      {
-        "name": "Foster The People",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-08",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "blossom-music-center",
-    "source": "manual",
-    "manual": true,
-    "id": "blossom-music-center-2026-10-08-foster-the-people"
-  },
+  
+  
 
 
 
@@ -4662,63 +4184,7 @@
 
 
   
-  {
-    "title": "Dave Hinrich",
-    "performers": [
-      {
-        "name": "Dave Hinrich",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-15",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-15-dave-hinrich"
-  },
-  {
-    "title": "Nathan Hedges",
-    "performers": [
-      {
-        "name": "Nathan Hedges",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-16-nathan-hedges"
-  },
-  {
-    "title": "Kristine Jackson",
-    "performers": [
-      {
-        "name": "Kristine Jackson",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-17-kristine-jackson"
-  },
+  
   {
     "title": "Kristine Jackson",
     "performers": [
@@ -4883,44 +4349,7 @@
 
   
   
-  {
-    "title": "Struggle Jennings",
-    "performers": [
-      {
-        "name": "Struggle Jennings",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-15",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-15-struggle-jennings"
-  },
-  {
-    "title": "The Brook & the Bluff: The Werewolf Tour",
-    "performers": [
-      {
-        "name": "The Brook & the Bluff",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-19",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-19-the-brook-the-bluff"
-  },
+  
   {
     "title": "With a Vengeance",
     "performers": [
@@ -4998,25 +4427,6 @@
     "id": "house-of-blues-2026-11-15-golden-a-k-pop-kids-party"
   },
   {
-    "title": "Maggie Rose",
-    "performers": [
-      {
-        "name": "Maggie Rose",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-21",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-11-21-maggie-rose"
-  },
-  {
     "title": "Missio",
     "performers": [
       {
@@ -5054,6 +4464,25 @@
     "manual": true,
     "id": "house-of-blues-2027-03-05-coey-redd"
   },
+  {
+    "title": "Jack & Jack",
+    "performers": [
+      {
+        "name": "Jack & Jack",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-22",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-22-jack-jack"
+  },
 
 
 
@@ -5061,44 +4490,7 @@
 
 
   
-  {
-    "title": "Sploinky Rave: Cleveland",
-    "performers": [
-      {
-        "name": "Sploinky Rave: Cleveland",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-16-sploinky-rave-cleveland"
-  },
-  {
-    "title": "Hawthorne Heights",
-    "performers": [
-      {
-        "name": "Hawthorne Heights",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-20",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-20-hawthorne-heights"
-  },
+  
   {
     "title": "Rene Vaca",
     "performers": [
@@ -5362,7 +4754,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-12",
+    "date": "2026-11-12",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5371,7 +4763,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-12-pouya"
+    "id": "house-of-blues-2026-11-12-pouya"
   },
   {
     "title": "The Menzingers",
@@ -5381,7 +4773,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-13",
+    "date": "2026-11-13",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5390,7 +4782,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-13-the-menzingers"
+    "id": "house-of-blues-2026-11-13-the-menzingers"
   },
   {
     "title": "AJ McLean",
@@ -5400,7 +4792,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-14",
+    "date": "2026-11-14",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5409,7 +4801,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-14-aj-mclean"
+    "id": "house-of-blues-2026-11-14-aj-mclean"
   },
   {
     "title": "Rival Sons",
@@ -5419,7 +4811,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-18",
+    "date": "2026-11-18",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5428,7 +4820,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-18-rival-sons"
+    "id": "house-of-blues-2026-11-18-rival-sons"
   },
   {
     "title": "Everclear",
@@ -5438,7 +4830,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-19",
+    "date": "2026-11-19",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5447,7 +4839,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-19-everclear"
+    "id": "house-of-blues-2026-11-19-everclear"
   },
   {
     "title": "Skilla Baby",
@@ -5457,7 +4849,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-20",
+    "date": "2026-11-20",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5466,7 +4858,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-20-skilla-baby"
+    "id": "house-of-blues-2026-11-20-skilla-baby"
   },
   {
     "title": "Ekoostik Hookah",
@@ -5476,7 +4868,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-21",
+    "date": "2026-11-21",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5485,7 +4877,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-21-ekoostik-hookah"
+    "id": "house-of-blues-2026-11-21-ekoostik-hookah"
   },
   {
     "title": "Emo Orchestra",
@@ -5499,7 +4891,7 @@
         "headliner": false
       }
     ],
-    "date": "2025-11-23",
+    "date": "2026-11-23",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5508,7 +4900,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-23-emo-orchestra"
+    "id": "house-of-blues-2026-11-23-emo-orchestra"
   },
   {
     "title": "Bleood",
@@ -5518,7 +4910,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-24",
+    "date": "2026-11-24",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5527,7 +4919,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-24-bleood"
+    "id": "house-of-blues-2026-11-24-bleood"
   },
   {
     "title": "Welshly Arms",
@@ -5537,7 +4929,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-27",
+    "date": "2026-11-27",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5546,7 +4938,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-27-welshly-arms"
+    "id": "house-of-blues-2026-11-27-welshly-arms"
   },
   {
     "title": "The Pineapple Thief",
@@ -5556,7 +4948,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-11-28",
+    "date": "2026-11-28",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5565,7 +4957,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-11-28-the-pineapple-thief"
+    "id": "house-of-blues-2026-11-28-the-pineapple-thief"
   },
   {
     "title": "The Bouncing Souls",
@@ -5579,7 +4971,7 @@
         "headliner": false
       }
     ],
-    "date": "2025-12-02",
+    "date": "2026-12-02",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5588,7 +4980,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-02-the-bouncing-souls"
+    "id": "house-of-blues-2026-12-02-the-bouncing-souls"
   },
   {
     "title": "Bone Thugs-N-Harmony",
@@ -5598,7 +4990,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-04",
+    "date": "2026-12-04",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5607,7 +4999,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-04-bone-thugs"
+    "id": "house-of-blues-2026-12-04-bone-thugs"
   },
   {
     "title": "GWAR",
@@ -5617,7 +5009,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-05",
+    "date": "2026-12-05",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5626,7 +5018,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-05-gwar"
+    "id": "house-of-blues-2026-12-05-gwar"
   },
   {
     "title": "Phil Vassar",
@@ -5636,7 +5028,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-09",
+    "date": "2026-12-09",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5645,7 +5037,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-09-phil-vassar"
+    "id": "house-of-blues-2026-12-09-phil-vassar"
   },
   {
     "title": "Bruce in the USA",
@@ -5655,7 +5047,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-18",
+    "date": "2026-12-18",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5664,7 +5056,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-18-bruce-in-the-usa"
+    "id": "house-of-blues-2026-12-18-bruce-in-the-usa"
   },
   {
     "title": "The Boys from the County Hell",
@@ -5674,7 +5066,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-23",
+    "date": "2026-12-23",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5683,7 +5075,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-23-the-boys-from-the-county-hell"
+    "id": "house-of-blues-2026-12-23-the-boys-from-the-county-hell"
   },
   {
     "title": "Red Wanting Blue",
@@ -5693,7 +5085,7 @@
         "headliner": true
       }
     ],
-    "date": "2025-12-31",
+    "date": "2026-12-31",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -5702,7 +5094,72 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2025-12-31-red-wanting-blue"
+    "id": "house-of-blues-2026-12-31-red-wanting-blue"
+  },
+  {
+    "title": "Holiday Hangover",
+    "performers": [
+      {
+        "name": "Tricky Dick & the Cover-Ups",
+        "headliner": true
+      },
+      {
+        "name": "Trailer Park Ninjas",
+        "headliner": false
+      },
+      {
+        "name": "Sparky B",
+        "headliner": false
+      }
+    ],
+    "date": "2027-01-09",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-09-holiday-hangover"
+  },
+  {
+    "title": "Badfish - Tribute to Sublime",
+    "performers": [
+      {
+        "name": "Badfish",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-06",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-06-badfish"
+  },
+  {
+    "title": "Red Not Chili Peppers",
+    "performers": [
+      {
+        "name": "Red Not Chili Peppers",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-12-red-not-chili-peppers"
   },
   {
     "title": "Spin Doctors",
@@ -5712,7 +5169,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-02-20",
+    "date": "2027-02-20",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5721,7 +5178,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-02-20-spin-doctors"
+    "id": "house-of-blues-2027-02-20-spin-doctors"
   },
   {
     "title": "The Mary Wallopers",
@@ -5731,7 +5188,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-03-14",
+    "date": "2027-03-14",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5740,7 +5197,26 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-03-14-the-mary-wallopers"
+    "id": "house-of-blues-2027-03-14-the-mary-wallopers"
+  },
+  {
+    "title": "Lucky Daye",
+    "performers": [
+      {
+        "name": "Lucky Daye",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-23",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-23-lucky-daye"
   },
   {
     "title": "VNV Nation",
@@ -5750,7 +5226,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-04-03",
+    "date": "2027-04-03",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5759,7 +5235,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-04-03-vnv-nation"
+    "id": "house-of-blues-2027-04-03-vnv-nation"
   },
   {
     "title": "Alaska Thunderfuck",
@@ -5769,7 +5245,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-04-07",
+    "date": "2027-04-07",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5778,7 +5254,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-04-07-alaska-thunderfuck"
+    "id": "house-of-blues-2027-04-07-alaska-thunderfuck"
   },
   {
     "title": "The Interrupters",
@@ -5788,7 +5264,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-04-13",
+    "date": "2027-04-13",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -5797,7 +5273,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-04-13-the-interrupters"
+    "id": "house-of-blues-2027-04-13-the-interrupters"
   },
   {
     "title": "The Airborne Toxic Event",
@@ -5807,7 +5283,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-05-24",
+    "date": "2027-05-24",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -5816,7 +5292,7 @@
     "venueId": "house-of-blues",
     "source": "manual",
     "manual": true,
-    "id": "house-of-blues-2026-05-24-the-airborne-toxic-event"
+    "id": "house-of-blues-2027-05-24-the-airborne-toxic-event"
   },
 
 
@@ -6829,6 +6305,158 @@
     "manual": true,
     "id": "quintanas-speakeasy-2026-11-25-julia-taylor"
   },
+  {
+    "title": "Sully Solo",
+    "performers": [
+      {
+        "name": "Sully Solo",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-03",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-03-sully-solo"
+  },
+  {
+    "title": "Learn Hands-On Craft Cocktails",
+    "performers": [
+      {
+        "name": "Learn Hands-On Craft Cocktails",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-05",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-05-learn-hands-on-craft-cocktails"
+  },
+  {
+    "title": "Tarot Night",
+    "performers": [
+      {
+        "name": "Eranah Adorjan",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-08",
+    "time": "18:30",
+    "doors": null,
+    "price": "$22",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-08-eranah-adorjan"
+  },
+  {
+    "title": "John Markovic",
+    "performers": [
+      {
+        "name": "John Markovic",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-10",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-10-john-markovic"
+  },
+  {
+    "title": "Game Night in The Speakeasy",
+    "performers": [
+      {
+        "name": "Game Night",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-15",
+    "time": "15:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-15-game-night"
+  },
+  {
+    "title": "Holiday Mixology Cocktail Class",
+    "performers": [
+      {
+        "name": "Holiday Mixology Cocktail Class",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-16",
+    "time": "19:00",
+    "doors": null,
+    "price": "$50",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-16-holiday-mixology-cocktail-class"
+  },
+  {
+    "title": "James Douglas",
+    "performers": [
+      {
+        "name": "James Douglas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-17",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-17-james-douglas"
+  },
+  {
+    "title": "Bob Frank",
+    "performers": [
+      {
+        "name": "Bob Frank",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-31",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "quintanas-speakeasy",
+    "source": "manual",
+    "manual": true,
+    "id": "quintanas-speakeasy-2026-12-31-bob-frank"
+  },
 
 
 
@@ -6839,92 +6467,17 @@
 
 
   
+  
   {
-    "title": "Cleveland Blues Society Jam",
-    "performers": [
-      {
-        "name": "Cleveland Blues Society Jam",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-15",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-15-cleveland-blues-society-jam"
-  },
-  {
-    "title": "North vs. South Football Tailgate Party",
-    "performers": [
-      {
-        "name": "North vs. South Football Tailgate Party",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "16:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-16-north-vs-south-football-tailgate-party"
-  },
-  {
-    "title": "Dawn to Dusk",
-    "performers": [
-      {
-        "name": "Dawn to Dusk",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-16-dawn-to-dusk"
-  },
-  {
-    "title": "Frank Amato Scary-Okie",
-    "performers": [
-      {
-        "name": "Frank Amato",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-17-frank-amato"
-  },
-  {
-    "title": "Ted Riser",
+    "title": "Ted Riser & Open Band Night",
     "performers": [
       {
         "name": "Ted Riser",
         "headliner": true
       }
     ],
-    "date": "2026-10-17",
-    "time": "19:00",
+    "date": "2026-10-22",
+    "time": "18:00",
     "doors": null,
     "price": null,
     "eventUrl": null,
@@ -6932,7 +6485,7 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-10-17-ted-riser"
+    "id": "spirits-willoughby-2026-10-22-ted-riser"
   },
   {
     "title": "Stamper Starr",
@@ -6952,6 +6505,25 @@
     "source": "manual",
     "manual": true,
     "id": "spirits-willoughby-2026-10-23-stamper-starr"
+  },
+  {
+    "title": "Halloween Party!!!",
+    "performers": [
+      {
+        "name": "Halloween Party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-24",
+    "time": "17:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-10-24-halloween-party"
   },
   {
     "title": "Cows Giving Kerosene",
@@ -7093,15 +6665,16 @@
 
   
   
+  
   {
-    "title": "Kevin McCarthy",
+    "title": "Treehouse of Horrors",
     "performers": [
       {
-        "name": "Kevin McCarthy",
+        "name": "71 Entertainment",
         "headliner": true
       }
     ],
-    "date": "2026-10-14",
+    "date": "2026-10-25",
     "time": "20:00",
     "doors": null,
     "price": null,
@@ -7110,26 +6683,7 @@
     "venueId": "treehouse",
     "source": "manual",
     "manual": true,
-    "id": "treehouse-2026-10-14-kevin-mccarthy"
-  },
-  {
-    "title": "Hannah Crandall",
-    "performers": [
-      {
-        "name": "Hannah Crandall",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-21",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "treehouse",
-    "source": "manual",
-    "manual": true,
-    "id": "treehouse-2026-10-21-hannah-crandall"
+    "id": "treehouse-2026-10-25-treehouse-of-horrors"
   },
   {
     "title": "Ethan Timm",
@@ -8996,101 +8550,7 @@
 
 
   
-  {
-    "title": "Hilary Duff Brunch",
-    "performers": [
-      {
-        "name": "Hilary Duff Brunch",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "10:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "twist-social-club",
-    "source": "manual",
-    "manual": true,
-    "id": "twist-social-club-2026-09-19-hilary-duff-brunch"
-  },
-  {
-    "title": "American Whorror Story",
-    "performers": [
-      {
-        "name": "American Whorror Story",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "twist-social-club",
-    "source": "manual",
-    "manual": true,
-    "id": "twist-social-club-2026-09-25-american-whorror-story"
-  },
-  {
-    "title": "Practical Magic Brunch",
-    "performers": [
-      {
-        "name": "Practical Magic Brunch",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": "10:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "twist-social-club",
-    "source": "manual",
-    "manual": true,
-    "id": "twist-social-club-2026-10-10-practical-magic-brunch"
-  },
-  {
-    "title": "Troye Sivan Album Release Party",
-    "performers": [
-      {
-        "name": "Release Party",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": "22:00",
-    "doors": null,
-    "price": "Free",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "twist-social-club",
-    "source": "manual",
-    "manual": true,
-    "id": "twist-social-club-2026-10-09-troye-sivan-release-party"
-  },
-  {
-    "title": "Emo Night",
-    "performers": [
-      {
-        "name": "Emo Night",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "twist-social-club",
-    "source": "manual",
-    "manual": true,
-    "id": "twist-social-club-2026-10-16-emo-night"
-  },
+  
   {
     "title": "Neon Nightmares: Neon Glow Party",
     "performers": [
@@ -9158,82 +8618,9 @@
 
 
 
-  {
-    "title": "Endrock",
-    "performers": [
-      {
-        "name": "Endrock",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-29",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-downtown",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-downtown-2026-08-29-endrock"
-  },
-  {
-    "title": "The Scenic Route",
-    "performers": [
-      {
-        "name": "The Scenic Route",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-05",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-downtown",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-downtown-2026-09-05-the-scenic-route"
-  },
-  {
-    "title": "The Ladies Night",
-    "performers": [
-      {
-        "name": "The Ladies Night",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-downtown",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-downtown-2026-09-12-the-ladies-night"
-  },
-  {
-    "title": "Drunk Betty",
-    "performers": [
-      {
-        "name": "Drunk Betty",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-downtown",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-downtown-2026-10-03-drunk-betty"
-  },
+  
+
+
   {
     "title": "Third Monkey",
     "performers": [
@@ -9311,6 +8698,25 @@
     "id": "wild-eagle-downtown-2026-11-21-alternation"
   },
   {
+    "title": "CLE Rock Bar",
+    "performers": [
+      {
+        "name": "CLE Rock Bar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "wild-eagle-downtown",
+    "source": "manual",
+    "manual": true,
+    "id": "wild-eagle-downtown-2026-11-28-cle-rock-bar"
+  },
+  {
     "title": "The Ladies Night",
     "performers": [
       {
@@ -9331,186 +8737,9 @@
   },
   
 
-  {
-    "title": "Country Honk",
-    "performers": [
-      {
-        "name": "Country Honk",
-        "headliner": true
-      }
-    ],
-    "date": "2026-08-23",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-08-23-country-honk"
-  },
-  {
-    "title": "Cocktail Johnny",
-    "performers": [
-      {
-        "name": "Cocktail Johnny",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-09-12-cocktail-johnny"
-  },
-  {
-    "title": "Jeep Nite: Jeep vs Broncos",
-    "performers": [],
-    "date": "2026-09-16",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-09-16-jeep-nite-jeep-vs-broncos"
-  },
-  {
-    "title": "Alan Carl",
-    "performers": [
-      {
-        "name": "Alan Carl",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-09-19-alan-carl"
-  },
-  {
-    "title": "Post Road",
-    "performers": [
-      {
-        "name": "Post Road",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-04",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-04-post-road"
-  },
-  {
-    "title": "Audiophile",
-    "performers": [
-      {
-        "name": "Audiophile",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-09-audiophile"
-  },
-  {
-    "title": "Tricky Dick & The Cover Ups",
-    "performers": [
-      {
-        "name": "Tricky Dick & The Cover Ups",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-10-tricky-dick-the-cover-ups"
-  },
-  {
-    "title": "Old Skool",
-    "performers": [
-      {
-        "name": "Old Skool",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-16-old-skool"
-  },
-  {
-    "title": "Radio Tokyo",
-    "performers": [
-      {
-        "name": "Radio Tokyo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-17-radio-tokyo"
-  },
-  {
-    "title": "Jeep Nite: Go Topless for Breast Cancer",
-    "performers": [],
-    "date": "2026-10-20",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-broadview-heights",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-10-20-jeep-nite-go-topless-for-breast-cancer"
-  },
+
+
+  
   {
     "title": "Hair Nation",
     "performers": [
@@ -9906,158 +9135,10 @@
     "id": "wild-eagle-broadview-heights-2026-12-31-trailer-park-ninjas"
   },
 
-  {
-    "title": "Jeep Nite: Jeep vs Broncos",
-    "performers": [
-      {
-        "name": "Jeep Nite",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-08",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-09-08-jeep-nite"
-  },
-  {
-    "title": "Dueling Pianos",
-    "performers": [
-      {
-        "name": "Dueling Pianos",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-09-12-dueling-pianos"
-  },
-  {
-    "title": "Country Fried",
-    "performers": [
-      {
-        "name": "Country Fried",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-09-19-country-fried"
-  },
-  {
-    "title": "1988",
-    "performers": [
-      {
-        "name": "1988",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-09-26-1988"
-  },
-  {
-    "title": "That 80's Band",
-    "performers": [
-      {
-        "name": "That 80's Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-10-03-that-80-s-band"
-  },
-  {
-    "title": "Old Skool",
-    "performers": [
-      {
-        "name": "Old Skool",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-10-10-old-skool"
-  },
-  {
-    "title": "Jeep Nite: Go Topless for Breast Cancer",
-    "performers": [
-      {
-        "name": "Jeep Nite",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-13",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-10-13-jeep-nite"
-  },
-  {
-    "title": "LDNL",
-    "performers": [
-      {
-        "name": "LDNL",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "wild-eagle-streetsboro",
-    "source": "manual",
-    "manual": true,
-    "id": "wild-eagle-streetsboro-2026-10-17-ldnl"
-  },
+
+
+
+  
   {
     "title": "Disco Inferno",
     "performers": [
@@ -10406,6 +9487,25 @@
     "source": "manual",
     "manual": true,
     "id": "nano-brew-2026-10-17-cassius-g"
+  },
+  {
+    "title": "Howl-ween Costume Party",
+    "performers": [
+      {
+        "name": "Howl-ween Costume Party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nano-brew",
+    "source": "manual",
+    "manual": true,
+    "id": "nano-brew-2026-10-22-howl-ween"
   },
   {
     "title": "Nu-Era",
@@ -10885,6 +9985,25 @@
     "source": "manual",
     "manual": true,
     "id": "irishtown-bend-taproom-2026-10-17-apostle-jones"
+  },
+  {
+    "title": "Mourning [A] Blkstar",
+    "performers": [
+      {
+        "name": "Mourning [A] Blkstar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-07",
+    "time": "20:00",
+    "doors": "19:00",
+    "price": "$12 adv, $15 doors",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "irishtown-bend-taproom",
+    "source": "manual",
+    "manual": true,
+    "id": "irishtown-bend-taproom-2026-11-07-mourning-a-blkstar"
   },
 
 
@@ -13011,62 +12130,33 @@
 
 
 
+  
   {
-    "title": "Halloween Movie Marathon",
+    "title": "Chris Pulse / Bron Xeno / Disco Stitch",
     "performers": [
       {
-        "name": "Halloween Movie Marathon",
+        "name": "Chris Pulse",
         "headliner": true
+      },
+      {
+        "name": "Bron Xeno",
+        "headliner": false
+      },
+      {
+        "name": "Disco Stitch",
+        "headliner": false
       }
     ],
-    "date": "2026-10-15",
-    "time": null,
+    "date": "2026-10-24",
+    "time": "21:00",
     "doors": null,
-    "price": null,
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "riffs",
     "source": "manual",
     "manual": true,
-    "id": "riffs-2026-10-15-halloween-movie-marathon"
-  },
-  {
-    "title": "Butt-Rock Karaoke",
-    "performers": [
-      {
-        "name": "DJ Dommie Salami",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "riffs",
-    "source": "manual",
-    "manual": true,
-    "id": "riffs-2026-10-16-butt-rock-karaoke"
-  },
-  {
-    "title": "Sorry for Interrupting",
-    "performers": [
-      {
-        "name": "Sorry for Interrupting",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "19:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "riffs",
-    "source": "manual",
-    "manual": true,
-    "id": "riffs-2026-10-17-sorry-for-interrupting"
+    "id": "riffs-2026-10-24-chris-pulse"
   },
 
 
