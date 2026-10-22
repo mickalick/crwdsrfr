@@ -78,7 +78,7 @@ function renderVenueEvents(events, venueMeta) {
       if (showTime && doorsTime) timeDisplay = `${showTime} (Doors ${doorsTime})`;
       else if (showTime) timeDisplay = showTime;
       else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
-      else timeDisplay = 'See Event';
+      else timeDisplay = 'Check Time';
 
       const titleLink = event.eventUrl || venueMeta?.eventsUrl || null;
       const titleHtml = titleLink
@@ -105,7 +105,7 @@ function renderVenueEvents(events, venueMeta) {
           <div class="eventInfo">
             <span class="eventName">${titleHtml}</span>
             <span class="eventTime">${timeDisplay}</span>
-            <span class="eventCost">${event.price ?? 'See Event'}</span>
+            <span class="eventCost">${event.price ?? 'Check Price'}</span>
             ${genresHtml}
           </div>
           ${linkHtml}
