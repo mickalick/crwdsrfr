@@ -1437,10 +1437,13 @@
 
 	function imagePicker(kit, opts) {
 		// opts: { label, currentUrl, shape: 'circle' | 'wide', disabled, hint }
-		// Label, then the thumbnail, then Upload/Change + Remove underneath it
+		// Label, then the thumbnail, then Upload/Change with Remove underneath it.
+		// Profile pictures (circle) go through the cropper: after picking a file, or by tapping the picture.
+		const circle = opts.shape !== 'wide';
 		const wrap = kit.el('div', 'crwdField profileImagePicker');
 		wrap.appendChild(kit.el('span', 'crwdLabel', opts.label));
-		const preview = kit.el('div', 'profileImagePreview is' + (opts.shape === 'wide' ? 'Wide' : 'Circle'));
+		const preview = kit.el(circle ? 'button' : 'div', 'profileImagePreview is' + (circle ? 'Circle' : 'Wide'));
+		if (circle) preview.type = 'button';
 		const row = kit.el('div', 'profileImagePickerRow');
 		const pick = kit.el('label', 'crwdSmallButton', opts.currentUrl ? 'Change' : 'Upload');
 		const file = document.createElement('input');
@@ -1448,34 +1451,276 @@
 		file.accept = 'image/jpeg,image/png,image/webp';
 		file.disabled = !!opts.disabled;
 		pick.appendChild(file);
-		const remove = kit.el('button', 'crwdLinkButton', 'Remove');
+		const remove = kit.el('button', 'crwdLinkButton profileImageRemove', 'Remove');
 		remove.type = 'button';
 		row.append(pick, remove);
 		wrap.append(preview, row);
 		if (opts.hint) wrap.appendChild(kit.el('span', 'crwdHint', opts.hint));
 		if (opts.disabled) { pick.classList.add('isDisabled'); remove.hidden = true; }
 
-		const state = { file: null, removed: false };
+		// file: what gets uploaded on Save. source + crop: the full picture and where it was cropped,
+		// so adjusting again starts from the original rather than the already-cropped copy.
+		const state = { file: null, removed: false, source: null, crop: null };
+		let original = opts.currentUrl || null; // the saved picture, until it's changed or removed
+		let hasImage = false;
+
 		function show(url) {
 			preview.replaceChildren();
+			hasImage = !!url;
 			if (url) { const img = kit.el('img'); img.src = url; img.alt = ''; preview.appendChild(img); }
 			remove.hidden = !url || !!opts.disabled;
 			pick.firstChild.textContent = url ? 'Change' : 'Upload';
+			if (circle) {
+				preview.setAttribute('aria-label', url ? 'Adjust how your profile picture fits the circle' : 'Upload a profile picture');
+				preview.title = url ? 'Adjust picture' : 'Upload a picture';
+			}
 		}
 		show(opts.currentUrl);
-		file.addEventListener('change', function () {
-			if (!file.files[0]) return;
-			state.file = file.files[0];
+
+		// Opens the cropper; keeps the result only if they press Set Picture
+		async function adjust(src, crop) {
+			const result = await cropAvatar(src, crop, preview);
+			if (!result) return false;
+			state.file = result.blob;
+			state.source = src;
+			state.crop = result.crop;
 			state.removed = false;
-			show(URL.createObjectURL(state.file));
+			show(URL.createObjectURL(result.blob));
+			return true;
+		}
+
+		if (circle) {
+			preview.addEventListener('click', function () {
+				if (opts.disabled) return;
+				if (!hasImage) { file.click(); return; }
+				adjust(state.source || original, state.crop);
+			});
+		}
+
+		file.addEventListener('change', function () {
+			const f = file.files[0];
+			if (!f) return;
+			if (circle) {
+				file.value = ''; // so picking the same file again still opens the cropper
+				adjust(f, null); // Cancel leaves the current picture as it was
+				return;
+			}
+			state.file = f;
+			state.removed = false;
+			show(URL.createObjectURL(f));
 		});
 		remove.addEventListener('click', function () {
 			state.file = null;
 			state.removed = true;
+			state.source = state.crop = original = null;
 			file.value = '';
 			show(null);
+			pick.querySelector('input').focus();
 		});
 		return { wrap: wrap, state: state };
+	}
+
+	// ------------------------------------------------------------------
+	// Profile picture cropper: a small window above Edit Profile.
+	// Drag to move; pinch, scroll or the slider to zoom; arrow keys and +/- work too.
+	// src: a File/Blob or an image URL. start: the last crop ({ cx, cy, zoom }) to reopen at.
+	// Resolves with { blob, crop } on Set Picture, or null on Cancel / Escape.
+	// ------------------------------------------------------------------
+
+	const CROP_OUT = 512;  // saved size (px), same as before
+	const CROP_MAX_ZOOM = 4;
+
+	function cropAvatar(src, start, returnFocus) {
+		return new Promise(function (resolve) {
+			const layer = el('div', 'profileCropper');
+			const backdrop = el('div', 'profileCropperBackdrop');
+			const panel = el('div', 'profileCropperPanel');
+			panel.setAttribute('role', 'dialog');
+			panel.setAttribute('aria-modal', 'true');
+			panel.setAttribute('aria-labelledby', 'profileCropTitle');
+			const title = el('h2', 'crwdModalTitle profileCropTitle');
+			title.id = 'profileCropTitle';
+			title.append('Adjust your ', el('em', null, 'picture'));
+			const help = el('p', 'profileCropHelp', 'Drag to move it. Pinch, scroll or use the slider to zoom.');
+
+			const stage = el('div', 'profileCropStage');
+			stage.tabIndex = 0;
+			stage.setAttribute('aria-label', 'Picture position. Arrow keys move it; plus and minus zoom.');
+			const img = el('img', 'profileCropImg');
+			img.alt = '';
+			img.draggable = false;
+			stage.append(img, el('div', 'profileCropRing'));
+
+			const zoomRow = el('label', 'profileCropZoom');
+			const zoomInput = el('input');
+			zoomInput.type = 'range';
+			zoomInput.min = '1';
+			zoomInput.max = String(CROP_MAX_ZOOM);
+			zoomInput.step = '0.01';
+			zoomInput.value = '1';
+			zoomRow.append(el('span', 'crwdLabel', 'Zoom'), zoomInput);
+
+			const problem = el('p', 'profileCropProblem');
+			problem.setAttribute('role', 'alert');
+			const actions = el('div', 'profileCropActions');
+			const cancel = el('button', 'crwdLinkButton profileCropCancel', 'Cancel');
+			cancel.type = 'button';
+			const done = el('button', 'crwdSmallButton profileCropDone', 'Set Picture');
+			done.type = 'button';
+			done.disabled = true;
+			actions.append(cancel, done);
+
+			panel.append(title, help, stage, zoomRow, problem, actions);
+			layer.append(backdrop, panel);
+			document.body.appendChild(layer);
+
+			// --- position math (V = stage size; the image always covers the circle's square) ---
+			let V = 0, w = 0, h = 0, zoom = 1, x = 0, y = 0;
+			const scale = function () { return (V / Math.min(w, h)) * zoom; };
+			function clamp() {
+				const sc = scale();
+				x = Math.min(0, Math.max(V - w * sc, x));
+				y = Math.min(0, Math.max(V - h * sc, y));
+			}
+			function draw() {
+				clamp();
+				const sc = scale();
+				img.style.width = (w * sc) + 'px';
+				img.style.height = (h * sc) + 'px';
+				img.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+				zoomInput.value = String(zoom);
+			}
+			// Zoom around a point in the stage (the middle by default), keeping that spot under it
+			function setZoom(z, px, py) {
+				if (px == null) { px = V / 2; py = V / 2; }
+				const before = scale();
+				zoom = Math.min(CROP_MAX_ZOOM, Math.max(1, z));
+				const after = scale();
+				x = px - (px - x) * (after / before);
+				y = py - (py - y) * (after / before);
+				draw();
+			}
+
+			// --- load the picture ---
+			let objectUrl = null;
+			if (src instanceof Blob) { objectUrl = URL.createObjectURL(src); img.src = objectUrl; }
+			else { img.crossOrigin = 'anonymous'; img.src = src; } // the saved picture: needs CORS to export
+			img.onload = function () {
+				w = img.naturalWidth; h = img.naturalHeight;
+				V = stage.clientWidth;
+				zoom = start ? Math.min(CROP_MAX_ZOOM, Math.max(1, start.zoom)) : 1;
+				const sc = scale();
+				x = start ? V / 2 - start.cx * w * sc : (V - w * sc) / 2;
+				y = start ? V / 2 - start.cy * h * sc : (V - h * sc) / 2;
+				draw();
+				done.disabled = false;
+			};
+			img.onerror = function () { problem.textContent = 'That picture couldn\'t be loaded. Try uploading it again.'; };
+
+			// --- drag + pinch (pointer events cover mouse, touch and pen) ---
+			const pointers = new Map();
+			let pinch = null; // { dist, midX, midY } from the last move
+			function local(e) { const r = stage.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+			function pinchInfo() {
+				const [a, b] = Array.from(pointers.values());
+				return { dist: Math.hypot(a.x - b.x, a.y - b.y) || 1, midX: (a.x + b.x) / 2, midY: (a.y + b.y) / 2 };
+			}
+			stage.addEventListener('pointerdown', function (e) {
+				if (!w) return;
+				stage.setPointerCapture(e.pointerId);
+				pointers.set(e.pointerId, local(e));
+				pinch = pointers.size === 2 ? pinchInfo() : null;
+				stage.classList.add('isDragging');
+			});
+			stage.addEventListener('pointermove', function (e) {
+				if (!pointers.has(e.pointerId)) return;
+				const prev = pointers.get(e.pointerId);
+				const now = local(e);
+				pointers.set(e.pointerId, now);
+				if (pointers.size === 1) {
+					x += now.x - prev.x;
+					y += now.y - prev.y;
+					draw();
+				} else if (pointers.size === 2 && pinch) {
+					const next = pinchInfo();
+					x += next.midX - pinch.midX;
+					y += next.midY - pinch.midY;
+					setZoom(zoom * (next.dist / pinch.dist), next.midX, next.midY);
+					pinch = next;
+				}
+			});
+			function lift(e) {
+				pointers.delete(e.pointerId);
+				pinch = pointers.size === 2 ? pinchInfo() : null;
+				if (!pointers.size) stage.classList.remove('isDragging');
+			}
+			stage.addEventListener('pointerup', lift);
+			stage.addEventListener('pointercancel', lift);
+			stage.addEventListener('wheel', function (e) {
+				if (!w) return;
+				e.preventDefault();
+				const p = local(e);
+				setZoom(zoom * Math.exp(-e.deltaY * 0.0015), p.x, p.y);
+			}, { passive: false });
+			zoomInput.addEventListener('input', function () { if (w) setZoom(Number(zoomInput.value)); });
+			stage.addEventListener('keydown', function (e) {
+				if (!w) return;
+				const step = e.shiftKey ? 40 : 10;
+				const moves = { ArrowLeft: [step, 0], ArrowRight: [-step, 0], ArrowUp: [0, step], ArrowDown: [0, -step] };
+				if (moves[e.key]) { x += moves[e.key][0]; y += moves[e.key][1]; draw(); }
+				else if (e.key === '+' || e.key === '=') setZoom(zoom * 1.1);
+				else if (e.key === '-' || e.key === '_') setZoom(zoom / 1.1);
+				else return;
+				e.preventDefault();
+			});
+
+			// --- keys for the whole window: Escape cancels just this window, Tab stays inside it.
+			// Capture phase + stopImmediatePropagation so Edit Profile (underneath) doesn't react too.
+			function onKey(e) {
+				if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); finish(null); return; }
+				if (e.key !== 'Tab') return;
+				e.stopImmediatePropagation();
+				const focusable = [stage, zoomInput, cancel, done].filter(function (n) { return !n.disabled; });
+				const i = focusable.indexOf(document.activeElement);
+				e.preventDefault();
+				const next = i === -1 ? 0 : (i + (e.shiftKey ? -1 : 1) + focusable.length) % focusable.length;
+				focusable[next].focus();
+			}
+			window.addEventListener('keydown', onKey, true);
+
+			function finish(result) {
+				window.removeEventListener('keydown', onKey, true);
+				layer.remove();
+				if (objectUrl) URL.revokeObjectURL(objectUrl);
+				if (returnFocus && document.contains(returnFocus)) returnFocus.focus({ preventScroll: true });
+				resolve(result);
+			}
+
+			cancel.addEventListener('click', function () { finish(null); });
+			backdrop.addEventListener('click', function () { finish(null); });
+			done.addEventListener('click', async function () {
+				const sc = scale();
+				const side = V / sc; // the circle's square, in the picture's own pixels
+				const out = Math.max(1, Math.min(CROP_OUT, Math.round(side)));
+				const canvas = document.createElement('canvas');
+				canvas.width = canvas.height = out;
+				try {
+					canvas.getContext('2d').drawImage(img, -x / sc, -y / sc, side, side, 0, 0, out, out);
+					const toBlob = function (type) { return new Promise(function (r) { canvas.toBlob(r, type, 0.9); }); };
+					let blob = await toBlob('image/webp');
+					if (!blob || blob.type !== 'image/webp') blob = await toBlob('image/jpeg'); // older Safari can't encode WebP
+					if (!blob) throw new Error('no blob');
+					finish({ blob: blob, crop: { cx: (V / 2 - x) / sc / w, cy: (V / 2 - y) / sc / h, zoom: zoom } });
+				} catch (err) {
+					// e.g. the saved picture's server didn't allow it to be re-drawn (CORS)
+					console.warn('[profile] crop failed', err);
+					problem.textContent = 'This picture can\'t be adjusted here. Upload it again with Change to resize it.';
+				}
+			});
+
+			title.tabIndex = -1;
+			title.focus({ preventScroll: true });
+		});
 	}
 
 	async function openEditDialog(opts) {
