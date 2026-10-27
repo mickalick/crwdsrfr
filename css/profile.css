@@ -1139,6 +1139,13 @@
 	background: #101010;
 	border: 1px solid #333;
 	border-radius: 9px;
+	transition: border-color 150ms ease;
+}
+
+/* The show that was just added (focus moves to it) */
+.profileHistoryEditItem:focus {
+	outline: none;
+	border-color: #62CBB8;
 }
 
 .profileHistoryEditText {

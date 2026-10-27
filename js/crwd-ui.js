@@ -1,7 +1,7 @@
 /*
  * js/crwd-ui.js — CRWD SRFR account UI shared by every page:
  *   • the profile button + popup menu on the right side of the header
- *   • the account modal: Sign In, Register, "check your email" (6-digit code or link), username setup
+ *   • the account modal: Sign In, Register, "check your email" (emailed code or link), username setup
  *
  * Needs crwd-core.js (data) and nav.js (which creates the #accountNav mount),
  * both loaded before this file. Styles live in /css/crwd-ui.css.
@@ -31,6 +31,7 @@
 	}
 
 	const RESEND_SECONDS = 60; // Supabase allows one email per address per 60s by default
+	const CODE = core.CODE_LENGTH || 6; // digits in the emailed code (set in crwd-core.js)
 
 	function el(tag, className, text) {
 		const node = document.createElement(tag);
@@ -438,6 +439,8 @@
 	// Sends the sign-in email. The remember choice must be saved BEFORE the session exists.
 	function sendEmail(registering) {
 		core.setRememberMe(draft.remember);
+		// Lets this browser welcome the account after its first sign-in (see welcomeNewAccount)
+		if (registering) store(function (s) { s.setItem(NEW_ACCOUNT_KEY, draft.email.trim().toLowerCase()); });
 		return registering
 			? core.register({ email: draft.email, username: draft.username })
 			: core.signIn(draft.email);
@@ -494,7 +497,7 @@
 
 	function viewSignIn(opts) {
 		body.appendChild(title('Welcome <em>back</em>'));
-		body.appendChild(el('p', 'crwdModalText', 'Enter your email and we\'ll send you a 6-digit code. No password needed.'));
+		body.appendChild(el('p', 'crwdModalText', 'Enter your email and we\'ll send you a ' + CODE + '-digit code. No password needed.'));
 
 		const form = el('form', 'crwdForm');
 		form.noValidate = true;
@@ -578,7 +581,7 @@
 		const registering = opts.mode === 'register';
 		body.appendChild(title('Check your <em>email</em>'));
 
-		const p = el('p', 'crwdModalText', 'We sent a 6-digit code to ');
+		const p = el('p', 'crwdModalText', 'We sent a ' + CODE + '-digit code to ');
 		p.appendChild(el('strong', null, draft.email));
 		p.append(registering
 			? '. Enter it below to finish creating your account, or tap the button in the email.'
@@ -589,7 +592,7 @@
 		const form = el('form', 'crwdForm');
 		form.noValidate = true;
 		// No maxLength: a pasted "123 456" must fit before the spaces are stripped
-		const code = field({ label: '6-digit code', name: 'code', autocomplete: 'one-time-code' });
+		const code = field({ label: CODE + '-digit code', name: 'code', autocomplete: 'one-time-code' });
 		code.input.inputMode = 'numeric';
 		code.input.classList.add('crwdCodeInput');
 		code.input.dataset.autofocus = '';
@@ -617,11 +620,10 @@
 		}
 
 		form.addEventListener('submit', function (e) { e.preventDefault(); submitCode(); });
-		// Digits only; sign in as soon as all 6 are typed or pasted
+		// Digits only. Nothing is checked until they press the button (or Enter).
 		code.input.addEventListener('input', function () {
-			const digits = code.input.value.replace(/\D/g, '').slice(0, 6);
+			const digits = code.input.value.replace(/\D/g, '').slice(0, CODE);
 			if (digits !== code.input.value) code.input.value = digits;
-			if (digits.length === 6) submitCode();
 		});
 
 		body.appendChild(el('p', 'crwdModalText crwdMuted', 'Don\'t see it? Check your spam folder. Each code works once and expires in 10 minutes.'));
@@ -720,6 +722,37 @@
 
 	let usernamePromptShown = false;
 
+	// ---------- Brand-new accounts land on their profile with Edit Profile open ----------
+	// "New" = registered in this browser (the Register form sets a note), or the account was created
+	// within the last hour (covers the email's button opened in another browser). Each account is
+	// welcomed once per browser; if that can't be remembered (storage blocked), there's no redirect,
+	// so it can never loop.
+	const NEW_ACCOUNT_KEY = 'crwd-new-account';  // email typed on the Register form
+	const WELCOMED_KEY = 'crwd-welcomed';         // account ids already welcomed in this browser
+	const NEW_ACCOUNT_MS = 60 * 60 * 1000;
+
+	function store(fn) { try { return fn(window.localStorage); } catch (e) { return null; } }
+
+	function welcomedIds() {
+		return store(function (s) { return JSON.parse(s.getItem(WELCOMED_KEY) || '[]'); }) || [];
+	}
+
+	function welcomeNewAccount(state) {
+		if (!state.user || !state.profile || core.needsUsername()) return; // placeholder accounts pick a username first
+		if (welcomedIds().indexOf(state.user.id) !== -1) return;
+		const registeredHere = store(function (s) { return s.getItem(NEW_ACCOUNT_KEY); }) === (state.user.email || '').toLowerCase();
+		const created = Date.parse(state.user.created_at || '');
+		const justCreated = created && Date.now() - created < NEW_ACCOUNT_MS;
+		if (!registeredHere && !justCreated) return;
+
+		const ids = welcomedIds().concat([state.user.id]).slice(-20);
+		store(function (s) { s.setItem(WELCOMED_KEY, JSON.stringify(ids)); s.removeItem(NEW_ACCOUNT_KEY); });
+		if (welcomedIds().indexOf(state.user.id) === -1) return; // couldn't save it: skip rather than risk a loop
+
+		closeModal(true);
+		window.location.href = core.profileUrl(state.profile.username) + '&welcome';
+	}
+
 	core.onChange(function (state) {
 		if (menuBtn) {
 			renderAvatar(state);
@@ -731,6 +764,8 @@
 
 		// Signed in (code entered here, or the email link opened in another tab): "check your email" is done
 		if (state.user && currentView === 'sent') closeModal();
+
+		welcomeNewAccount(state);
 
 		// Once per page load, ask placeholder accounts to pick a username
 		if (state.user && core.needsUsername() && !usernamePromptShown && modal.hidden) {

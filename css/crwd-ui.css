@@ -335,6 +335,11 @@ html.crwdModalOpen {
 	transition: background-color 150ms ease;
 }
 
+/* A title that takes focus when a dialog opens (so no text box grabs it): no focus ring */
+.crwdModalTitle[tabindex="-1"]:focus {
+	outline: none;
+}
+
 .crwdModalTitle {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 44px;
@@ -356,10 +361,11 @@ html.crwdModalOpen {
 	word-break: break-all;
 }
 
+/* "Don't see it?" under the code form: clear of the button above it */
 :is(.crwdModal, .crwdInline) p.crwdMuted {
 	color: #ADADAD;
 	font-size: 14px;
-	margin-top: -12px;
+	margin-top: 20px;
 }
 
 .crwdForm {
@@ -608,6 +614,11 @@ html.crwdModalOpen {
 	background: rgba(98, 203, 184, 0.08);
 	border: 1px solid rgba(98, 203, 184, 0.35);
 	border-radius: 9px;
+}
+
+/* "Your account is all set" at the top of Edit Profile, right after registering */
+:is(.crwdModal, .crwdInline) p.crwdNotice.crwdWelcome {
+	margin-bottom: 20px;
 }
 
 .crwdHint {

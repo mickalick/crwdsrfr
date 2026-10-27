@@ -119,6 +119,12 @@
 		return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 	}
 
+	// The Max badge from crwd-ui.js. If that file is an older copy without it, skip the badge
+	// instead of stopping the page.
+	function maxBadge() {
+		return ui && typeof ui.maxBadge === 'function' ? ui.maxBadge() : document.createTextNode('');
+	}
+
 	function plural(n, word) {
 		return n.toLocaleString() + ' ' + word + (n === 1 ? '' : 's');
 	}
@@ -225,6 +231,15 @@
 		}
 
 		render();
+		openWelcome();
+	}
+
+	// Just registered (crwd-ui.js sends new accounts to /u/?name&welcome): open Edit Profile with a welcome note.
+	// The flag comes off the URL first, so a refresh or the back button doesn't open it again.
+	function openWelcome() {
+		if (!/&welcome(=|&|$)/.test(window.location.search)) return;
+		history.replaceState(null, '', window.location.pathname + window.location.search.replace(/&welcome(=[^&]*)?/, '') + window.location.hash);
+		if (isOwner) openEditDialog({ welcome: true });
 	}
 
 	// ------------------------------------------------------------------
@@ -267,7 +282,7 @@
 			els.username.hidden = true;
 		}
 		// Max badge goes after the @username, wherever it is
-		if (v.max_badge) (v.display_name ? els.username : els.displayName).appendChild(ui.maxBadge());
+		if (v.max_badge) (v.display_name ? els.username : els.displayName).appendChild(maxBadge());
 
 		// Actions
 		els.edit.hidden = !isOwner;
@@ -322,7 +337,7 @@
 
 		// Blurb (the "status" column; null when empty or hidden). Visitors see nothing when it's empty.
 		els.blurb.classList.toggle('isEmpty', !v.status);
-		els.blurb.textContent = v.status || (isOwner ? 'Add a blurb so people know what you\'re into.' : '');
+		els.blurb.textContent = v.status || (isOwner ? 'A litte about yourself? A favorite quote? Whatever you\'re feeling.' : '');
 		els.blurb.hidden = !v.status && !isOwner;
 
 		// Facts: area, established, hype count
@@ -431,7 +446,7 @@
 
 		if (!box.children.length) {
 			emptyMessage(box, isOwner
-				? 'Nothing here yet. Use Edit Profile to add a bio, your best, worst and first shows, top 5 artists and more.'
+				? '*Crickets* Add a short bio, your best/worst/first shows, top 5 artists, and more.'
 				: at(v.username) + ' hasn\'t added anything here yet.');
 		}
 	}
@@ -500,7 +515,7 @@
 		if (!list.length) {
 			let msg;
 			if (postsFilter === 'profile' && !isOwner && viewed.posts_visible === false) msg = at(viewed.username) + ' keeps their profile posts private.';
-			else if (isOwner) msg = postsFilter === 'board' ? 'You haven\'t posted to the Board yet.' : postsFilter === 'profile' ? 'You haven\'t posted to your profile yet.' : 'You haven\'t posted yet.';
+			else if (isOwner) msg = postsFilter === 'board' ? 'You haven\'t posted to the Board yet.' : postsFilter === 'profile' ? 'You haven\'t posted to your profile yet.' : 'You haven\'t posted anything yet.';
 			else msg = at(viewed.username) + ' hasn\'t posted ' + (postsFilter === 'board' ? 'to the Board ' : postsFilter === 'profile' ? 'to their profile ' : '') + 'yet.';
 			emptyMessage(els.posts, msg);
 			return;
@@ -694,7 +709,7 @@
 		const head = el('div', 'profilePostHead');
 		const author = el('a', 'profilePostUser', at(viewed.username));
 		author.href = core.profileUrl(viewed.username);
-		if (viewed.max_badge) author.appendChild(ui.maxBadge());
+		if (viewed.max_badge) author.appendChild(maxBadge());
 		head.appendChild(author);
 
 		// Right side: date, where it was posted (icon), then the post's menu
@@ -1203,7 +1218,7 @@
 	// Links: "Links" label + hint, an "Add Link" button, then the added rows (Link + Label + ✕). Up to 3.
 	function linksEditor(kit, existing) {
 		const wrap = kit.el('div', 'crwdField profileLinkFields');
-		wrap.append(kit.el('span', 'crwdLabel', 'Links'), kit.el('span', 'crwdHint', 'Add external links to your profile - up to three.'));
+		wrap.append(kit.el('span', 'crwdLabel', 'Links'), kit.el('span', 'crwdHint', 'Add external links to your profile. Up to three.'));
 		const list = kit.el('div', 'profileLinkRows');
 		const add = addButton(kit, 'Add Link');
 		wrap.append(add, list);
@@ -1265,7 +1280,7 @@
 				const li = kit.el('li', 'profilePromptItem');
 				li.dataset.id = item.id;
 				const fields = kit.el('div', 'profilePromptFields');
-				const prompt = kit.field({ label: 'Prompt ' + n, name: 'prompt', maxLength: LIMITS.prompt, value: item.prompt, placeholder: 'e.g. Go-to spot before a show?' });
+				const prompt = kit.field({ label: 'Prompt', name: 'prompt', maxLength: LIMITS.prompt, value: item.prompt, placeholder: 'Go-to spots, bucket list shows, etc.' });
 				prompt.input.dataset.action = 'prompt';
 				prompt.input.addEventListener('input', function () { item.prompt = prompt.input.value; });
 				const answer = textArea(kit, { label: 'Answer', name: 'answer', max: LIMITS.answer, value: item.answer });
@@ -1351,19 +1366,28 @@
 			return e;
 		});
 
+		let tiles = new Map(); // entry → its tile, for focusing a newly added show
+
 		function render() {
 			list.replaceChildren();
+			tiles = new Map();
 			sortHistory(entries).forEach(function (h) {
 				const li = kit.el('li', 'profileHistoryEditItem');
+				li.tabIndex = -1; // focusable from code only (after it's added), not a Tab stop
+				tiles.set(h, li);
 				const text = kit.el('span', 'profileHistoryEditText');
 				text.appendChild(kit.el('span', 'profileHistoryActs', h.acts));
 				const meta = [historyDate(h.date), h.venue].filter(Boolean).join(' · ');
 				if (meta) text.appendChild(kit.el('span', 'profileHistoryMeta', meta));
 				const remove = toolButton(kit, 'remove', 'Remove ' + h.acts + (h.date ? ', ' + historyDate(h.date) : '') + ' from your history');
 				remove.addEventListener('click', function () {
+					const at = Array.from(list.children).indexOf(li); // its place in the (sorted) list
 					entries.splice(entries.indexOf(h), 1);
 					render();
-					acts.input.focus();
+					// Focus the tile that moved into its place, else the one above; the Act(s) field once the list is empty
+					const next = list.children[at] || list.children[at - 1];
+					if (next) next.focus();
+					else acts.input.focus();
 				});
 				li.append(text, remove);
 				list.appendChild(li);
@@ -1385,13 +1409,18 @@
 			acts.input.value = venue.input.value = date.input.value = '';
 			problem.textContent = '';
 			render();
-			return true;
+			return e;
 		}
 
 		add.addEventListener('click', function () {
 			if (!acts.input.value.trim()) { problem.textContent = 'Add the act(s) first.'; acts.input.focus(); return; }
-			commit();
-			acts.input.focus();
+			const added = commit();
+			// Focus the new show's tile (the list is sorted, so it may not be at the top)
+			const tile = added && tiles.get(added);
+			if (tile) {
+				tile.focus({ preventScroll: true });
+				tile.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+			}
 		});
 		acts.input.addEventListener('input', function () { if (acts.input.value.trim()) problem.textContent = ''; });
 		// Enter in these fields adds the show instead of saving the whole form
@@ -1449,7 +1478,8 @@
 		return { wrap: wrap, state: state };
 	}
 
-	async function openEditDialog() {
+	async function openEditDialog(opts) {
+		opts = opts && opts.welcome ? opts : {}; // (a click passes an event here; only { welcome } counts)
 		const me = core.profile;
 		if (!me) return;
 		const isPro = !!viewed.is_pro;
@@ -1459,7 +1489,17 @@
 		const areas = Array.from(new Set((Array.isArray(venues) ? venues : []).map(function (v) { return v.area; }).filter(Boolean))).sort();
 
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('Edit <em>profile</em>'));
+			// Start on the title, not in Display Name, so phones don't pop the keyboard up on open
+			const heading = kit.title('Edit <em>profile</em>');
+			heading.tabIndex = -1;
+			heading.setAttribute('data-autofocus', '');
+			body.appendChild(heading);
+			if (opts.welcome) {
+				// Only right after registering
+				const hello = kit.el('p', 'crwdNotice crwdWelcome', 'Your account is all set. Welcome to the crowd, @' + me.username + '! Add a few details below, or close this to start exploring.');
+				hello.setAttribute('role', 'status');
+				body.appendChild(hello);
+			}
 			const form = kit.el('form', 'crwdForm');
 			form.noValidate = true;
 
@@ -1483,7 +1523,7 @@
 
 			const parts = (me.anthem_title || '').split(/\s+[—–-]\s+/);
 			const anthemLink = kit.field({ label: 'Anthem (Link)', name: 'anthem_url', type: 'url', value: me.anthem_url || '',
-				placeholder: 'Link from Spotify, YouTube, SoundCloud or Apple Music' });
+				placeholder: 'Spotify, YouTube, SoundCloud or Apple Music URL' });
 			const anthemRow = kit.el('div', 'crwdFieldRow profileAnthemRow'); // Song + Artist, equal widths
 			const song = kit.field({ label: 'Anthem Title', name: 'anthem_song', maxLength: 60, value: parts[0] || '' });
 			const artist = kit.field({ label: 'Artist', name: 'anthem_artist', maxLength: 37, value: parts.slice(1).join(' — ') });
@@ -1537,10 +1577,10 @@
 			form.appendChild(aboutHead);
 			const about = me.about && typeof me.about === 'object' ? me.about : {};
 			const bio = textArea(kit, { label: 'Bio', name: 'bio', max: LIMITS.bio, value: me.bio || '',
-				placeholder: 'A short blurb about yourself, what you\'re all about, etc.' });
+				placeholder: 'What do you want others to know about you?' });
 
 			const bwf = textArea(kit, { label: 'Best, Worst, First', name: 'about_bwf', max: LIMITS.bwf, value: about.bwf || '',
-				placeholder: 'Your best show, your worst, and your first.' });
+				placeholder: 'Your best show, your worst show, and your first show!' });
 
 			const topWrap = kit.el('div', 'crwdField profileTopFields');
 			topWrap.appendChild(kit.el('span', 'crwdLabel', 'Top 5 Artists'));
