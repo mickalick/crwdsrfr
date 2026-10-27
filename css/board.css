@@ -323,7 +323,6 @@
 	letter-spacing: 0.05em;
 	cursor: pointer;
 	transition: background-color 150ms ease, color 150ms ease;
-	margin: 0 auto;
 }
 
 .boardNewPost .icon {
@@ -1365,6 +1364,10 @@
 	.boardModalDetail {
 		grid-template-columns: 1fr;
 		gap: 2px;
+	}
+
+	.boardNewPost {
+		margin: 0 auto;
 	}
 }
 
