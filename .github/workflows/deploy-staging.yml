@@ -1,0 +1,43 @@
+name: Deploy staging
+
+on:
+  push:
+    branches: [staging]   # only runs when you push the staging branch
+  workflow_dispatch:      # adds a "Run workflow" button in the Actions tab
+
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: true  # if you push twice quickly, only the latest deploys
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out staging branch
+        uses: actions/checkout@v4
+
+      - name: Build staging copy
+        run: |
+          mkdir _site
+          # Copy the site, leaving out repo plumbing and the scraper/backend folders
+          rsync -a ./ _site/ \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '_site' \
+            --exclude 'node_modules' \
+            --exclude 'scripts' \
+            --exclude 'supabase'
+          # Overwrite main's CNAME (crwdsrfr.com) so staging keeps its own domain
+          echo "staging.crwdsrfr.com" > _site/CNAME
+          # Add a noindex tag to every page so Google doesn't index the duplicate site
+          find _site -name '*.html' -exec sed -i 's#<head>#<head>\n  <meta name="robots" content="noindex, nofollow">#' {} +
+
+      - name: Push to crwdsrfr-staging
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.STAGING_DEPLOY_TOKEN }}
+          # >>> Replace YOUR-GITHUB-USERNAME with your GitHub username <<<
+          external_repository: mickalick/crwdsrfr-staging
+          publish_branch: main      # the branch staging's Pages serves from
+          publish_dir: ./_site
+          force_orphan: true        # replace the staging repo's contents each time
