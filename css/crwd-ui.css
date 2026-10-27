@@ -707,6 +707,56 @@ html.crwdModalOpen {
 	text-decoration: underline;
 }
 
+/* "Keep me signed in for 30 days": white text, yellow checkbox like the site's other checkboxes */
+.crwdCheck {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	line-height: 1.3;
+	color: #FFF;
+	cursor: pointer;
+	user-select: none;
+}
+
+.crwdCheck input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: 1px solid #ADADAD;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.crwdCheck input:checked {
+	background: #F9F976;
+	border-color: #F9F976;
+}
+
+.crwdCheck input:checked::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 4px;
+	height: 10px;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.crwdCheck input:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
 .crwdModal button:focus-visible,
 .crwdModal a:focus-visible {
 	outline: 2px solid #62CBB8;
@@ -767,6 +817,11 @@ html.crwdModalOpen {
 	.crwdModal {
 		padding: 12px;
 		align-items: flex-end; /* sheet-style, easier to reach with a thumb */
+	}
+
+	/* …except Sign In / Register / code / username, which stay centered at every width */
+	.crwdModal.isAccount {
+		align-items: center;
 	}
 
 	.crwdModalPanel {
