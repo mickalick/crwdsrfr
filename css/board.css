@@ -1357,6 +1357,12 @@
 	}
 }
 
+@media screen and (max-width: 932px) {
+	.boardNewPost {
+		margin: 0 auto;
+	}
+}
+
 @media screen and (max-width: 535px) {
 	.boardModalHead h2 {
 		font-size: 26px;
@@ -1365,10 +1371,6 @@
 	.boardModalDetail {
 		grid-template-columns: 1fr;
 		gap: 2px;
-	}
-
-	.boardNewPost {
-		margin: 0 auto;
 	}
 }
 
