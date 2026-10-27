@@ -1151,6 +1151,10 @@ button.profileImagePreview:focus-visible {
 	width: 100%;
 }
 
+.crwdLinkButton.profileCropCancel {
+	color: #FF6262;
+}
+
 .profileCropDone:disabled {
 	opacity: 0.5;
 	cursor: default;
@@ -1412,6 +1416,11 @@ button.profileImagePreview:focus-visible {
 @media (hover: hover) and (pointer: fine) {
 	/* Stays red (the shared link-button hover is blue) */
 	.crwdLinkButton.profileImageRemove:hover {
+		color: #FF6262;
+		text-decoration: underline;
+	}
+
+	.crwdLinkButton.profileCropCancel:hover {
 		color: #FF6262;
 		text-decoration: underline;
 	}
