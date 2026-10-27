@@ -11,16 +11,16 @@
 (function () {
 	'use strict';
 
-	// Staging site → staging project; everything else → production
-	const STAGING_HOSTS = ['staging.crwdsrfr.com']; // ← your staging site's hostname(s)
-	const IS_STAGING = STAGING_HOSTS.indexOf(window.location.hostname) !== -1;
+	// Live site → production project; everything else (staging, localhost) → staging
+	const PROD_HOSTS = ['crwdsrfr.com', 'www.crwdsrfr.com'];
+	const IS_STAGING = PROD_HOSTS.indexOf(window.location.hostname) === -1;
 
 	const SUPABASE_URL = IS_STAGING
 		? 'https://kgixthcjojlkacnxtzeg.supabase.co'
-		: 'https://YOUR-PRODUCTION-PROJECT.supabase.co';
+		: 'https://bkzklbyyhnotphpgnnei.supabase.co';
 	const SUPABASE_KEY = IS_STAGING
 		? 'sb_publishable_9hn_OpemNeyrJINtqwwUOQ_gZbIfco-'
-		: 'YOUR-PRODUCTION-PUBLISHABLE-KEY'; // publishable keys: safe in the browser, the database rules protect the data
+		: 'sb_publishable_pDDAyzdIv0E2ZS2lE2HQLA_tR03y2Rx'; // publishable keys: safe in the browser, the database rules protect the data
 
 	const USERNAME_RE = /^[a-z0-9_]{3,24}$/;
 	const PLACEHOLDER_RE = /^user_[0-9a-f]{12}$/; // assigned by the database when a chosen username couldn't be used
@@ -47,11 +47,50 @@
 		history.replaceState(null, '', window.location.pathname + window.location.search);
 	})();
 
+	// ---------- "Keep me signed in for 30 days" ----------
+	// Checked   → session kept in localStorage, ends 30 days after signing in
+	// Unchecked → session kept in sessionStorage, ends when the browser closes
+	// setRememberMe() must run BEFORE the sign-in email is sent (see register/signIn).
+	const REMEMBER_KEY = 'crwd-remember-until';
+	const REMEMBER_DAYS = 30;
+
+	function safe(fn, fallback) { try { return fn(); } catch (e) { return fallback; } }
+	function rememberUntil() { return Number(safe(function () { return localStorage.getItem(REMEMBER_KEY); }, 0)) || 0; }
+	function isRemembered() { return rememberUntil() > Date.now(); }
+
+	const sessionStore = {
+		getItem: function (key) {
+			if (isRemembered()) return safe(function () { return localStorage.getItem(key); }, null);
+			if (rememberUntil()) { // the 30 days ran out: clear the long-lived copy
+				safe(function () { localStorage.removeItem(key); localStorage.removeItem(REMEMBER_KEY); });
+			}
+			return safe(function () { return sessionStorage.getItem(key); }, null);
+		},
+		setItem: function (key, value) {
+			const store = isRemembered() ? localStorage : sessionStorage;
+			safe(function () { store.setItem(key, value); });
+		},
+		removeItem: function (key) {
+			safe(function () { localStorage.removeItem(key); });
+			safe(function () { sessionStorage.removeItem(key); });
+		}
+	};
+
+	function setRememberMe(remember) {
+		if (remember) {
+			const until = Date.now() + REMEMBER_DAYS * 24 * 60 * 60 * 1000;
+			safe(function () { localStorage.setItem(REMEMBER_KEY, String(until)); });
+		} else {
+			safe(function () { localStorage.removeItem(REMEMBER_KEY); });
+		}
+	}
+
 	const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
 		auth: {
 			// 'implicit' lets a magic link work even when it's opened in a different
 			// browser than the one that requested it (e.g. tapped in a phone's mail app).
 			flowType: 'implicit',
+			storage: sessionStore, // where the session lives (see "Keep me signed in" above)
 			persistSession: true,
 			autoRefreshToken: true,
 			detectSessionInUrl: true
@@ -129,6 +168,9 @@
 		} else if (code === '23505') {
 			out = new Error('That username was just taken. Try another.');
 			out.code = 'username_taken';
+		} else if (code === '23514') {
+			out = new Error('Usernames are 3–24 lowercase letters, numbers or underscores.');
+			out.code = 'username_format';
 		} else if (code === 'P0001' && msg) {
 			out = new Error(msg); // messages raised by our own database rules are already user-friendly
 			out.code = 'rule';
@@ -177,6 +219,20 @@
 	async function signOut() {
 		const { error } = await sb.auth.signOut();
 		if (error) throw friendlyError(error);
+	}
+
+	// The 6-digit code from the email (same email they typed). Signs them in just like the link.
+	async function verifyCode(email, code) {
+		const token = String(code || '').replace(/\D/g, '');
+		if (token.length !== 6) throw new Error('Enter the 6-digit code from the email.');
+		const { error } = await sb.auth.verifyOtp({ email: email.trim(), token: token, type: 'email' });
+		if (error) {
+			const out = (error.status === 429) ? friendlyError(error)
+				: new Error('That code didn\'t work. Check your latest email, or send a new code.');
+			if (!out.code) out.code = 'bad_code';
+			throw out;
+		}
+		// onAuthStateChange picks up the new session and loads the profile
 	}
 
 	// ---------- Usernames ----------
@@ -238,6 +294,9 @@
 		register: register,
 		signIn: signIn,
 		signOut: signOut,
+		verifyCode: verifyCode,
+		setRememberMe: setRememberMe,
+		isRemembered: isRemembered,
 		checkUsername: checkUsername,
 		needsUsername: needsUsername,
 		updateProfile: updateProfile,

@@ -1,7 +1,7 @@
 /*
  * js/crwd-ui.js — CRWD SRFR account UI shared by every page:
  *   • the profile button + popup menu on the right side of the header
- *   • the account modal: Sign In, Register, "check your email", username setup
+ *   • the account modal: Sign In, Register, "check your email" (6-digit code or link), username setup
  *
  * Needs crwd-core.js (data) and nav.js (which creates the #accountNav mount),
  * both loaded before this file. Styles live in /css/crwd-ui.css.
@@ -261,7 +261,7 @@
 	let closeGuard = null;   // a dialog's beforeClose(): return false to keep it open (e.g. unsaved post)
 
 	// Remembers what was typed, so "Use a different email" or switching views keeps it
-	const draft = { email: '', username: '' };
+	const draft = { email: '', username: '', remember: true };
 
 	modal.addEventListener('click', function (e) {
 		if (e.target.closest('[data-close]')) closeModal();
@@ -421,6 +421,26 @@
 		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
 	}
 
+	// "Keep me signed in for 30 days" (styles: .crwdCheck in crwd-ui.css)
+	function rememberCheckbox() {
+		const wrap = el('label', 'crwdCheck');
+		const box = document.createElement('input');
+		box.type = 'checkbox';
+		box.name = 'remember';
+		box.checked = draft.remember;
+		box.addEventListener('change', function () { draft.remember = box.checked; });
+		wrap.append(box, el('span', null, 'Keep me signed in for 30 days'));
+		return wrap;
+	}
+
+	// Sends the sign-in email. The remember choice must be saved BEFORE the session exists.
+	function sendEmail(registering) {
+		core.setRememberMe(draft.remember);
+		return registering
+			? core.register({ email: draft.email, username: draft.username })
+			: core.signIn(draft.email);
+	}
+
 	// Live username availability. Returns a function that reports the latest result.
 	function wireUsername(f) {
 		const defaultHint = f.hint.textContent;
@@ -472,14 +492,14 @@
 
 	function viewSignIn(opts) {
 		body.appendChild(title('Welcome <em>back</em>'));
-		body.appendChild(el('p', 'crwdModalText', 'Enter your email and we\'ll send you a sign-in link. No password needed.'));
+		body.appendChild(el('p', 'crwdModalText', 'Enter your email and we\'ll send you a 6-digit code. No password needed.'));
 
 		const form = el('form', 'crwdForm');
 		form.noValidate = true;
 		const email = field({ label: 'Email', name: 'email', type: 'email', autocomplete: 'email', value: draft.email });
 		const err = errorBox();
-		const btn = submitButton('Send my link');
-		form.append(email.wrap, err, btn);
+		const btn = submitButton('Send my code');
+		form.append(email.wrap, rememberCheckbox(), err, btn);
 		body.appendChild(form);
 		body.appendChild(switchLine('New here?', 'Register Now', 'register'));
 
@@ -492,10 +512,10 @@
 			showError(err, '');
 			setBusy(btn, true, 'Sending…');
 			try {
-				await core.signIn(draft.email);
+				await sendEmail(false);
 				showView('sent', { mode: 'signin' });
 			} catch (ex) {
-				setBusy(btn, false, 'Send my link');
+				setBusy(btn, false, 'Send my code');
 				showError(err, ex.code === 'no_account' ? ex.message + ' Want to register instead?' : ex.message);
 			}
 		});
@@ -517,9 +537,9 @@
 		fine.append(terms, ' and ', privacy, '.');
 
 		const err = errorBox();
-		const btn = submitButton('Send my link');
+		const btn = submitButton('Send my code');
 		// Fields, then fine print, then any error right above the button
-		form.append(email.wrap, username.wrap, fine, err, btn);
+		form.append(email.wrap, username.wrap, rememberCheckbox(), fine, err, btn);
 		body.appendChild(form);
 		body.appendChild(switchLine('Already have an account?', 'Sign in', 'signin'));
 
@@ -534,7 +554,7 @@
 			setBusy(btn, true, 'Checking…');
 			const u = await finalUsernameCheck();
 			if (!u.ok) {
-				setBusy(btn, false, 'Send my link');
+				setBusy(btn, false, 'Send my code');
 				showError(err, 'Choose a different username.');
 				username.input.focus();
 				return;
@@ -543,10 +563,10 @@
 			showError(err, '');
 			setBusy(btn, true, 'Sending…');
 			try {
-				await core.register({ email: draft.email, username: draft.username });
+				await sendEmail(true);
 				showView('sent', { mode: 'register' });
 			} catch (ex) {
-				setBusy(btn, false, 'Send my link');
+				setBusy(btn, false, 'Send my code');
 				showError(err, ex.message);
 			}
 		});
@@ -556,18 +576,57 @@
 		const registering = opts.mode === 'register';
 		body.appendChild(title('Check your <em>email</em>'));
 
-		const p = el('p', 'crwdModalText', 'We sent a link to ');
+		const p = el('p', 'crwdModalText', 'We sent a 6-digit code to ');
 		p.appendChild(el('strong', null, draft.email));
 		p.append(registering
-			? '. Click it to confirm your email and finish creating your account.'
-			: '. Click it to sign in.');
+			? '. Enter it below to finish creating your account, or tap the button in the email.'
+			: '. Enter it below to sign in, or tap the button in the email.');
 		body.appendChild(p);
-		body.appendChild(el('p', 'crwdModalText crwdMuted', 'Don\'t see it? Check your spam folder. The link works once.'));
 
+		// Code entry
+		const form = el('form', 'crwdForm');
+		form.noValidate = true;
+		// No maxLength: a pasted "123 456" must fit before the spaces are stripped
+		const code = field({ label: '6-digit code', name: 'code', autocomplete: 'one-time-code' });
+		code.input.inputMode = 'numeric';
+		code.input.classList.add('crwdCodeInput');
+		code.input.dataset.autofocus = '';
 		const err = errorBox();
+		const verify = submitButton(registering ? 'Create my account' : 'Sign in');
+		form.append(code.wrap, err, verify);
+		body.appendChild(form);
+
+		let verifying = false;
+		async function submitCode() {
+			if (verifying) return;
+			verifying = true;
+			showError(err, '');
+			setBusy(verify, true, 'Checking…');
+			try {
+				await core.verifyCode(draft.email, code.input.value);
+				// Signed in: onChange (below) closes this modal, and asks placeholder accounts for a username
+				setBusy(verify, true, 'Signing in…');
+			} catch (ex) {
+				verifying = false;
+				setBusy(verify, false, registering ? 'Create my account' : 'Sign in');
+				showError(err, ex.message);
+				code.input.select();
+			}
+		}
+
+		form.addEventListener('submit', function (e) { e.preventDefault(); submitCode(); });
+		// Digits only; sign in as soon as all 6 are typed or pasted
+		code.input.addEventListener('input', function () {
+			const digits = code.input.value.replace(/\D/g, '').slice(0, 6);
+			if (digits !== code.input.value) code.input.value = digits;
+			if (digits.length === 6) submitCode();
+		});
+
+		body.appendChild(el('p', 'crwdModalText crwdMuted', 'Don\'t see it? Check your spam folder. Each code works once and expires in 10 minutes.'));
+
 		const resend = el('button', 'crwdButton crwdButtonSecondary');
 		resend.type = 'button';
-		body.append(err, resend);
+		body.appendChild(resend);
 
 		const back = el('p', 'crwdModalSwitch');
 		const other = el('button', 'crwdLinkButton', 'Use a different email');
@@ -586,7 +645,7 @@
 				if (left <= 0) {
 					clearInterval(resendTimer);
 					resend.disabled = false;
-					resend.textContent = 'Resend link';
+					resend.textContent = 'Send a new code';
 				} else {
 					resend.textContent = 'Resend in ' + left + 's';
 				}
@@ -598,8 +657,9 @@
 			resend.disabled = true;
 			resend.textContent = 'Sending…';
 			try {
-				if (registering) await core.register({ email: draft.email, username: draft.username });
-				else await core.signIn(draft.email);
+				await sendEmail(registering);
+				code.input.value = '';
+				code.input.focus();
 				countdown(RESEND_SECONDS);
 			} catch (ex) {
 				showError(err, ex.message);
@@ -667,7 +727,7 @@
 			refreshUnread();
 		}
 
-		// Signed in from the email link in another tab: this tab's "check your email" is done
+		// Signed in (code entered here, or the email link opened in another tab): "check your email" is done
 		if (state.user && currentView === 'sent') closeModal();
 
 		// Once per page load, ask placeholder accounts to pick a username
