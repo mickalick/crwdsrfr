@@ -300,6 +300,7 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 16px 24px;
+	margin-bottom: 16px !important;
 }
 
 .boardIntro p {
@@ -322,6 +323,7 @@
 	letter-spacing: 0.05em;
 	cursor: pointer;
 	transition: background-color 150ms ease, color 150ms ease;
+	margin: 0 auto;
 }
 
 .boardNewPost .icon {

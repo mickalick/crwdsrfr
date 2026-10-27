@@ -191,7 +191,11 @@
 		let guard = null;        // set once the form is built; decides whether Escape / ✕ may close it
 
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('New <em>post</em>'));
+			// Start on the title, not in the Title field, so phones don't pop the keyboard up on open
+			const heading = kit.title('New <em>post</em>');
+			heading.tabIndex = -1;
+			heading.setAttribute('data-autofocus', '');
+			body.appendChild(heading);
 			const form = el('form', 'crwdForm composerForm');
 			form.noValidate = true;
 
@@ -224,7 +228,6 @@
 			const title = kit.field({ label: 'Title', name: 'title', maxLength: LIMITS.title,
 				placeholder: 'What\'s the post about?' });
 			title.input.required = true;
-			title.input.setAttribute('data-autofocus', '');
 			addCounter(title.wrap, title.input, LIMITS.title);
 
 			// --- Opening
