@@ -388,6 +388,14 @@
 		return { wrap: wrap, input: input, hint: hint };
 	}
 
+	// Focus lands on the heading when the view opens (instead of the first text box),
+	// so phones don't pop the keyboard up. No focus ring: see .crwdModalTitle[tabindex="-1"] in crwd-ui.css.
+	function startOnTitle(h) {
+		h.tabIndex = -1;
+		h.setAttribute('data-autofocus', '');
+		return h;
+	}
+
 	function errorBox() {
 		const p = el('p', 'crwdFormError');
 		p.setAttribute('role', 'alert');
@@ -496,7 +504,7 @@
 	// ---------- views ----------
 
 	function viewSignIn(opts) {
-		body.appendChild(title('Welcome <em>back</em>'));
+		body.appendChild(startOnTitle(title('Welcome <em>back</em>')));
 		body.appendChild(el('p', 'crwdModalText', 'Enter your email and we\'ll send you a ' + CODE + '-digit code. No password needed.'));
 
 		const form = el('form', 'crwdForm');
@@ -527,7 +535,7 @@
 	}
 
 	function viewRegister() {
-		body.appendChild(title('Join the <em>crowd</em>'));
+		body.appendChild(startOnTitle(title('Join the <em>crowd</em>')));
 		body.appendChild(el('p', 'crwdModalText', 'Register for a SRFR account to hype shows, acts and venues, post to the Board, and message with other SRFRs.'));
 
 		const form = el('form', 'crwdForm');
