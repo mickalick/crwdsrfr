@@ -16,7 +16,13 @@
 		<meta name="description" content="Venue information and calendar of upcoming events.">
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these scripts must stay in this order, before venue-page.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
 		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
 		<link rel="shortcut icon" href="/images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +47,7 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
       					event.preventDefault();
 
       					var hash = this.hash;
@@ -70,27 +76,13 @@
 				});	
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top" data-venue-id="rock-hall">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to home" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>
@@ -109,6 +101,8 @@
 							<div class="venueInfo">
 								<p>1100 Rock and Roll Blvd, Cleveland, OH 44114</p>
 								<p class="venueURL"><a href="https://rockhall.com/" target="_blank">Visit Site <span class="icon" id="ext"></span></a></p>
+								<!-- Hype button, filled in by venue-page.js -->
+								<div id="venueHype" class="venueHype"></div>
 							</div>
 						</div>
 						<div id="venueLocation" class="columnTwo">
