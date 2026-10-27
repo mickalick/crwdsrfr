@@ -830,8 +830,9 @@ html.crwdModalOpen {
 		align-items: flex-end; /* sheet-style, easier to reach with a thumb */
 	}
 
-	/* …except Sign In / Register / code / username, which stay centered at every width */
-	.crwdModal.isAccount {
+	/* …except Sign In / Register / code / username and dialogs opened with { centered: true }
+	   (Max, Comments), which stay centered at every width */
+	.crwdModal.isCentered {
 		align-items: center;
 	}
 

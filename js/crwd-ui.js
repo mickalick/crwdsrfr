@@ -309,8 +309,9 @@
 		currentView = view;
 		closeGuard = opts.beforeClose || null;
 		panel.dataset.view = view;
-		// Sign in / register / code / username: always centered, even on phones (see crwd-ui.css)
-		modal.classList.toggle('isAccount', view !== 'dialog');
+		// Sign in / register / code / username, and dialogs opened with { centered: true }:
+		// centered at every width (other dialogs sit at the bottom on phones; see crwd-ui.css)
+		modal.classList.toggle('isCentered', view !== 'dialog' || !!opts.centered);
 		panel.dataset.size = opts.size || '';
 		body.replaceChildren();
 		({ signin: viewSignIn, register: viewRegister, sent: viewSent, username: viewUsername, dialog: viewDialog })[view](opts);

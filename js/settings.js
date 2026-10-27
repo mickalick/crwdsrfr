@@ -474,7 +474,7 @@
 			ok.type = 'button';
 			ok.addEventListener('click', kit.close);
 			body.appendChild(ok);
-		});
+		}, { centered: true });
 	}
 
 	// TBD: how cancelling works depends on the payment provider (e.g. a link to its billing page)
@@ -487,7 +487,7 @@
 			ok.type = 'button';
 			ok.addEventListener('click', kit.close);
 			body.appendChild(ok);
-		});
+		}, { centered: true });
 	}
 
 	async function downloadData(btn, status) {

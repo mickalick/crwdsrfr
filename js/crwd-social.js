@@ -678,7 +678,7 @@
 				}
 			});
 			body.appendChild(view);
-		}, { size: 'wide' });
+		}, { size: 'wide', centered: true });
 	}
 
 	// A comment-count button that does whatever you pass (e.g. show comments inline).

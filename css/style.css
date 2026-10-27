@@ -785,7 +785,7 @@ footer a {
 .main{
 	max-width:1100px;
 	width: 100%;
-	margin: 40px auto;
+	margin: 24px auto;
 }
 
 .venueCard {
@@ -1560,7 +1560,7 @@ span.flatpickr-weekday {
 
 @media screen and (max-width:1108px){
 	.main{
-		margin: 40px 50px !important;
+		margin: 24px 50px !important;
 	}
 
 	.eventInfo span {
@@ -1585,10 +1585,6 @@ span.flatpickr-weekday {
 
 	h3{
 		font-size:22px;
-	}
-
-	.main{
-		margin: 40px 50px !important;
 	}
 
 }
@@ -1664,7 +1660,7 @@ span.flatpickr-weekday {
 	}
 
 	.main{
-		margin: 24px 30px 24px !important;
+		margin: 24px 30px !important;
 	}
 
 	p{
