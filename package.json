@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "supabase": "^2.122.0"
   }
 }

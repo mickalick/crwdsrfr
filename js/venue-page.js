@@ -85,9 +85,10 @@ function renderVenueEvents(events, venueMeta) {
         ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
         : event.title;
 
+      // No ticket URL: an invisible placeholder keeps the columns lined up
       const linkHtml = event.ticketUrl
         ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
-        : '';
+        : '<div class="ticketLink isPlaceholder" aria-hidden="true"></div>';
 
       // Same markup/classes as the main calendar's genre chips, so the
       // existing .eventGenres / .genre-chip CSS in style.css applies here
@@ -101,7 +102,7 @@ function renderVenueEvents(events, venueMeta) {
         : '';
 
       return `
-        <div class="event">
+        <div class="event" data-event-id="${event.id}">
           <div class="eventInfo">
             <span class="eventName">${titleHtml}</span>
             <span class="eventTime">${timeDisplay}</span>
@@ -109,6 +110,7 @@ function renderVenueEvents(events, venueMeta) {
             ${genresHtml}
           </div>
           ${linkHtml}
+          <div class="eventSocial"></div>
         </div>`;
     }).join('');
 
@@ -156,6 +158,9 @@ async function loadVenueEvents() {
     });
 
   renderVenueEvents(events, allData.venues[venueId]);
+  venueEvents = events;
+  venueName = allData.venues[venueId]?.name || '';
+  attachEventSocial();
 }
 
 async function initMap() {
@@ -179,6 +184,71 @@ async function initMap() {
   });
 
   new AdvancedMarkerElement({ map, position: { lat, lng }, title: name });
+}
+
+// Hype button under "Visit Site" (js/crwd-social.js). Same button and behavior
+// as the act modal's. Runs once accounts are ready, and again if someone signs
+// in or out, so "already hyped" always matches whoever is signed in.
+async function mountVenueHype() {
+  const slot = document.getElementById('venueHype');
+  if (!slot || !venueId) return;
+  const stats = (await CrwdSocial.loadStats('venue', [venueId]))[venueId];
+  slot.replaceChildren(CrwdSocial.hypeButton({
+    type: 'venue',
+    id: venueId,
+    hypes: stats.hypes,
+    hyped: stats.hyped,
+    large: true
+  }));
+}
+
+// ---------- Hype + comment buttons on each show (same as the calendar) ----------
+// Fills each show's .eventSocial slot; counts for every show load in one batch.
+let venueEvents = [];
+let venueName = '';
+let socialRun = 0;
+
+async function attachEventSocial() {
+  if (!(window.CrwdSocial && window.CrwdCore && CrwdCore.enabled)) return;
+  const slots = [...document.querySelectorAll('#calendarCards .eventSocial')];
+  if (slots.length === 0) return;
+  const run = ++socialRun;
+
+  await CrwdCore.ready; // so "already hyped" reflects whoever is signed in
+  const ids = [...new Set(slots.map(slot => slot.closest('.event').dataset.eventId))];
+  const stats = await CrwdSocial.loadStats('event', ids);
+  if (run !== socialRun) return;
+
+  const byId = new Map(venueEvents.map(e => [e.id, e]));
+  slots.forEach(slot => {
+    const id = slot.closest('.event').dataset.eventId;
+    const event = byId.get(id);
+    const s = stats[id];
+    slot.replaceChildren(CrwdSocial.reactions({
+      type: 'event',
+      id: id,
+      hypes: s.hypes,
+      comments: s.comments,
+      hyped: s.hyped,
+      title: event ? eventContext(event) : null // shown at the top of the comments modal
+    }));
+  });
+}
+
+// "OSEES … · Beachland Ballroom · Sun, Oct 19"
+function eventContext(event) {
+  const [y, m, d] = event.date.split('-').map(Number);
+  const day = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  return [event.title, venueName, day].filter(Boolean).join(' · ');
+}
+
+if (window.CrwdSocial && window.CrwdCore && CrwdCore.enabled) {
+  document.body.classList.add('socialOn'); // holds the buttons' space while counts load
+  // Signing in or out changes what you've hyped: refresh both the venue's button and the shows'
+  CrwdCore.onChange(() => {
+    mountVenueHype();
+    attachEventSocial();
+  });
 }
 
 // Google's loader calls this by name once the API script finishes loading —

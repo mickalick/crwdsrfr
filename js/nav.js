@@ -20,9 +20,9 @@
 	const NAV_PRIMARY = [
 		{ label: 'Calendar',      href: '/' },
 		{ label: 'Featured',      href: '/featured/' },
-		{ label: 'Venues',        href: '/venues/' },
 		{ label: 'Acts',          href: '/acts/', badge: 'Beta' },
-		{ label: 'The SRF Board', href: '/board/' },
+		{ label: 'Venues',        href: '/venues/' },
+		{ label: 'Board', href: '/board/' },
 	];
 
 	const NAV_SECONDARY = [
@@ -67,11 +67,16 @@
 		return '<ul class="' + listClass + '">' + lis + '</ul>';
 	}
 
-	function buildMarkup() {
+	// Sits furthest left, just before the logo
+	function buildMenuButton() {
 		return '' +
 			'<button type="button" id="menuButton" aria-label="Open menu" aria-expanded="false" aria-controls="menuNav">' +
 				'<span class="icon" id="mnu"></span>' +
-			'</button>' +
+			'</button>';
+	}
+
+	function buildMarkup() {
+		return '' +
 			'<div id="menuBackdrop"></div>' +
 			// `inert` keeps the off-screen links out of the tab order until the drawer opens
 			'<div id="menuNav" role="dialog" aria-modal="true" aria-label="Site menu" inert>' +
@@ -81,7 +86,9 @@
 				renderList(NAV_PRIMARY, 'navPrimary') +
 				renderList(NAV_SECONDARY, 'navSecondary') +
 				renderSocial(NAV_SOCIAL) +
-			'</div>';
+			'</div>' +
+			// Right side of the header: crwd-ui.js fills this with the profile button + menu
+			'<div id="accountNav"></div>';
 	}
 
 	// Mount immediately (not on DOMContentLoaded): deferred scripts run before jQuery's
@@ -89,6 +96,8 @@
 	const mount = document.getElementById('siteNav');
 	if (!mount) return;
 	mount.outerHTML = buildMarkup();
+	const logo = document.getElementById('logo');
+	(logo || document.getElementById('menuBackdrop')).insertAdjacentHTML('beforebegin', buildMenuButton());
 
 	const root = document.documentElement;
 	const btn = document.getElementById('menuButton');

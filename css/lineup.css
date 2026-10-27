@@ -1,0 +1,871 @@
+/*
+ * css/lineup.css — the Lineup page (/lineup/).
+ * Show/hide sections, cards and menus match Messages; show tiles match the profile's Hyped list;
+ * the Waves filter checkboxes match the profile's. Dialogs use crwd-ui.css.
+ */
+
+/* ---------------- Page ---------------- */
+
+#lineupHero {
+	flex: 0 0 auto;
+	padding-top: 100px;
+}
+
+#lineupHero .main {
+	margin-bottom: 0;
+}
+
+#lineupHero .pageHeader {
+	margin-bottom: 24px;
+}
+
+.lineupContent {
+	flex: 1;
+}
+
+.lineupContent .main {
+	margin-top: 0;
+	min-width: 0;
+}
+
+.lineupWrap {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.lineupState[hidden],
+.lineupSections[hidden] {
+	display: none;
+}
+
+.lineupState {
+	min-height: 30vh;
+	padding-top: 40px;
+}
+
+.lineupStateText {
+	text-align: center;
+	color: #ADADAD;
+}
+
+.lineupStateActions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+/* ---------------- Buttons ---------------- */
+
+.lineupButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.lineupButton[hidden],
+.lineupLinkButton[hidden] {
+	display: none;
+}
+
+/* "Clear All", "Show All", "Undo" */
+.lineupLinkButton {
+	padding: 0;
+	background: none;
+	border: none;
+	color: #62CBB8;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.lineupLinkButton.isDanger {
+	color: #FF6262;
+}
+
+/* "Clear All": not bold, with the clearAll icon in front */
+.lineupLinkButton.lnClearAll {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 400;
+}
+
+.icon.lnClearAllIcon {
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	background-color: currentColor;
+	-webkit-mask: url('../images/icons/clearAll.svg') center / contain no-repeat;
+	mask: url('../images/icons/clearAll.svg') center / contain no-repeat;
+}
+
+.lineupLinkButton.isDanger:focus-visible {
+	outline-color: #FF6262;
+}
+
+.lineupLinkButton:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.lineupButton:focus-visible,
+.lineupLinkButton:focus-visible,
+.lnSectionToggle:focus-visible,
+.lnRippleLink:focus-visible,
+.lnShowLink:focus-visible,
+.lnPreviewLink:focus-visible,
+.lnWaveShow:focus-visible,
+.lnUser:focus-visible,
+.lnItemLink:focus-visible,
+.lnAction:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* ---------------- Ripples / Hyped & Upcoming (show/hide) ---------------- */
+
+.lnSection {
+	padding: 24px 0;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.lnSectionToggle {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.lnSectionTitle,
+.lnWavesTitle {
+	margin: 0 !important;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
+	color: #FFF;
+}
+
+.lnChevron {
+	width: 9px;
+	height: 9px;
+	margin-top: -4px;
+	border: solid #F9F976;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: transform 150ms ease;
+}
+
+/* Icon in front of each heading (follows the heading's color) */
+.lnWavesTitle {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.icon.lnHeadIcon {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	margin-top: -3px; /* Bebas sits a little low; lines the icon up with the letters */
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.lnHeadIcon[data-icon="ripple"] {
+	-webkit-mask-image: url('../images/icons/ripple.svg');
+	mask-image: url('../images/icons/ripple.svg');
+}
+
+.lnHeadIcon[data-icon="hype"] {
+	-webkit-mask-image: url('../images/icons/hype.svg');
+	mask-image: url('../images/icons/hype.svg');
+}
+
+.lnHeadIcon[data-icon="waves"] {
+	-webkit-mask-image: url('../images/icons/waves.svg');
+	mask-image: url('../images/icons/waves.svg');
+}
+
+.lnSectionToggle[aria-expanded="true"] .lnChevron {
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.lnSectionBody {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.lnSectionBody[hidden] {
+	display: none;
+}
+
+.lnRippleTop {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.lnRippleTop[hidden] {
+	display: none;
+}
+
+.lnCards {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lnEmpty,
+.lnNote {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #ADADAD;
+	list-style: none;
+}
+
+.lnStatus:empty {
+	display: none;
+}
+
+/* ---------------- Ripple cards ---------------- */
+
+.lnCard {
+	display: flex;
+	align-items: center;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	transition: border-color 150ms ease;
+}
+
+.lnRipple {
+	cursor: pointer; /* the whole card opens the post */
+}
+
+.lnRipple .lnActions {
+	cursor: default;
+}
+
+.lnRippleMain {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	flex: 1;
+	min-width: 0;
+	padding: 14px 8px 14px 12px;
+}
+
+/* The post a ripple is about: opening it clears the ripple */
+a.lnRippleLink {
+	align-self: flex-start;
+	border-radius: 3px;
+	text-decoration: none !important;
+}
+
+/* New-update dot, far left, centred vertically (same as the Messages cards) */
+.lnDot {
+	flex-shrink: 0;
+	width: 12px;
+	height: 12px;
+	margin-left: 14px;
+	border-radius: 50%;
+	background: #62CBB8;
+}
+
+/* Hype / comment icon: the same light gray as the timestamps */
+.icon.lnRippleIcon {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: 2px;
+	color: #ADADAD;
+}
+
+.lnCardText {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 0;
+}
+
+.lnCardLine {
+	font-size: 15px;
+	line-height: 1.4;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.lnCardLine strong {
+	font-weight: 800;
+}
+
+.lnCardTitle {
+	font-size: 15px;
+	font-weight: 600;
+	color: #F9F976;
+	overflow-wrap: anywhere;
+}
+
+/* The post (or show) a ripple or wave refers to */
+.lnCardTitle.lnRefTitle {
+	color: #FFF !important;
+	font-style: italic;
+}
+
+.lnCardMeta {
+	display: inline-flex;
+	align-items: center;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+/* Clear + Mute: round buttons like the hype and comment buttons */
+.lnActions {
+	display: flex;
+	gap: 8px;
+	flex-shrink: 0;
+	margin-right: 14px;
+}
+
+.lnAction {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	background: #1A1A1A;
+	border: 1px solid #333;
+	border-radius: 999px;
+	color: #ADADAD;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.lnAction:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.icon.lnActionIcon {
+	width: 18px;
+	height: 18px;
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.lnActionIcon[data-icon="clear"] {
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+}
+
+.lnActionIcon[data-icon="mute"] {
+	-webkit-mask-image: url('../images/icons/mute.svg');
+	mask-image: url('../images/icons/mute.svg');
+}
+
+/* "Muted. Undo" */
+.lnMuted {
+	padding: 12px 14px;
+	border: 1px dashed #3a3a3a;
+	border-radius: 9px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+	list-style: none;
+}
+
+/* ---------------- Hyped & Upcoming (same tiles as the profile's Hyped list) ---------------- */
+
+.lnShow {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 14px 16px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	transition: border-color 150ms ease;
+}
+
+.lnShowLink {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	border-radius: 6px;
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+.lnShowLink .lnCardTitle {
+	font-size: 17px;
+	color: #FFF;
+}
+
+.lnShowDate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 52px;
+	height: 52px;
+	border-radius: 6px;
+	background: #222;
+	line-height: 1;
+}
+
+.lnShowMonth {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #F9F976;
+}
+
+.lnShowDay {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
+	color: #FFF;
+}
+
+.lnShowActions {
+	margin-left: 68px; /* lines up with the title, past the date badge */
+}
+
+/* ---------------- Waves ---------------- */
+
+.lnWavesSection {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 28px 0 8px;
+}
+
+/* Waves search (same look as the Board's search, a little shorter) */
+.lnSearch {
+	position: relative;
+	width: 100%;
+	margin-top: 4px;
+}
+
+/* Two classes deep so it outranks style.css's global input[type=text] rule */
+.lnSearch .lnSearchInput {
+	box-sizing: border-box;
+	width: 100%;
+	height: 56px;
+	margin: 0;
+	padding: 0 56px 0 16px;
+	background-color: #101010;
+	border: 3px solid #333;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	outline: none;
+	transition: border-color 150ms ease;
+}
+
+.lnSearchInput::placeholder {
+	color: #ADADAD;
+}
+
+.lnSearch .lnSearchInput:focus {
+	border-color: #62CBB8;
+}
+
+.lnSearch.hasValue .lnSearchInput {
+	border-color: #F9F976;
+}
+
+.icon.lnSearchIcon,
+.icon.lnSearchClearIcon {
+	width: 24px;
+	height: 24px;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: background-color 150ms ease;
+}
+
+.icon.lnSearchIcon {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+	background-color: #62CBB8;
+	-webkit-mask-image: url('../images/icons/search.svg');
+	mask-image: url('../images/icons/search.svg');
+	pointer-events: none;
+}
+
+.icon.lnSearchClearIcon {
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+}
+
+/* With text in it: the search icon swaps for a Clear button */
+.lnSearchClear {
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.lnSearch.hasValue .lnSearchIcon {
+	display: none;
+}
+
+.lnSearch.hasValue .lnSearchClear {
+	display: flex;
+}
+
+.lnSearchClear:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 0;
+}
+
+.lnFilter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 24px;
+	margin: 4px 0;
+}
+
+/* Same checkboxes as the profile and settings pages */
+.lnFilterCheck {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	cursor: pointer;
+	user-select: none;
+}
+
+.lnFilterCheck input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: 1px solid #ADADAD;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.lnFilterCheck input:checked {
+	background: #F9F976;
+	border-color: #F9F976;
+}
+
+.lnFilterCheck input:checked::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 4px;
+	height: 10px;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.lnFilterCheck input:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.lnWaves {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lnWave {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 14px 16px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+/* Usernames in Waves: primary blue, link to their profile */
+.lnUser {
+	color: #62CBB8 !important;
+	font-weight: 800;
+	text-decoration: none !important;
+}
+
+/* Acts and venues in Waves: bold white links */
+.lnItemLink {
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+.lnWaveHead {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 4px 12px;
+}
+
+.lnWaveShow {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding-left: 12px;
+	border-left: 3px solid #62CBB8;
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+.lnPreviewLink {
+	display: block;
+	border-radius: 6px;
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+/* The rest of a referenced post's details: italic */
+.lnPreviewExcerpt,
+.lnPreviewBy {
+	font-style: italic;
+}
+
+/* Post preview: picture + title + a line of the opening + author */
+.lnPreview {
+	display: flex;
+	gap: 12px;
+	padding: 9px; /* + the 1px border = the same 10px as before */
+	background: #1a1a1a;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	transition: border-color 150ms ease; /* fades like the Ripple and Hyped Show cards */
+}
+
+.lnPreviewImg {
+	flex-shrink: 0;
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+	border-radius: 6px;
+	background: #333;
+}
+
+.lnPreviewText {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 0;
+}
+
+.lnPreviewExcerpt {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #DADADA;
+	white-space: pre-line;
+}
+
+/* End of the feed: "You've reached the shore" */
+.lnWavesEnd {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	padding: 28px 16px 12px;
+	text-align: center;
+	color: #F9F976;
+}
+
+.lnWavesEnd .lnHeadIcon {
+	margin-top: 0;
+}
+
+/* End-of-feed icon: back to the top of Waves */
+.lnWavesTopButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 999px;
+	color: #F9F976;
+	cursor: pointer;
+	transition: color 150ms ease;
+}
+
+.lnWavesTopButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Where "back to top" lands: a little room above the heading, no focus ring on the heading */
+#lnWavesTop {
+	scroll-margin-top: 24px;
+}
+
+#lnWavesTop:focus {
+	outline: none;
+}
+
+.lnWavesEndTitle {
+	margin: 0;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
+	color: #FFF;
+}
+
+.lnLoadMore {
+	align-self: center;
+	margin-top: 4px;
+}
+
+/* ---------------- Hover (mouse only) ---------------- */
+
+@media (hover: hover) and (pointer: fine) {
+	.lineupButton:not(:disabled):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.lineupLinkButton:not(:disabled):hover {
+		text-decoration: underline;
+	}
+
+	.lnCard:hover,
+	.lnShow:hover {
+		border-color: #62CBB8;
+	}
+
+	.lnPreviewLink:hover .lnPreview {
+		border-color: #62CBB8;
+	}
+
+	.lnWaveShow:hover .lnCardTitle,
+	.lnRippleLink:hover,
+	.lnUser:hover,
+	.lnItemLink:hover {
+		text-decoration: underline !important;
+	}
+
+	.lnAction:not(:disabled):hover {
+		color: #FFF;
+		border-color: #ADADAD;
+	}
+
+	.lnWavesTopButton:hover {
+		transform: translateY(-2px);
+		transition: transform 150ms ease;
+	}
+
+	.lnSearchClear:hover .lnSearchClearIcon {
+		background-color: #FF6262;
+	}
+
+	/* Clear and Mute use the red of the other clear/delete actions */
+	.lnAction.isClear:not(:disabled):hover {
+		color: #FF6262;
+		border-color: #FF6262;
+	}
+}
+
+/* ---------------- Small screens ---------------- */
+
+@media screen and (max-width: 535px) {
+	#lineupHero {
+		padding-top: 60px;
+	}
+
+	.lnShowActions {
+		margin-left: 0;
+	}
+
+	.lnPreviewImg {
+		width: 56px;
+		height: 56px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.lnChevron {
+		transition: none;
+	}
+}

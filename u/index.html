@@ -1,0 +1,213 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Profile | CRWD SRFR</title>
+		<meta name="description" content="A CRWD SRFR member profile: shows, acts and venues they're hyped on, plus their posts.">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/board.css"><!-- the full-post modal's styles -->
+		<link rel="stylesheet" href="/css/profile.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<link rel="stylesheet" href="/css/crwd-composer.css"><!-- the New Post form -->
+		<!-- Accounts: these scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-mock.js" defer></script><!-- local testing only: does nothing on crwdsrfr.com -->
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
+		<script src="/js/board.js" defer></script><!-- post data helpers (BoardMedia) -->
+		<script src="/js/crwd-post.js" defer></script><!-- the full-post modal, shared with the Board -->
+		<script src="/js/crwd-composer.js" defer></script><!-- the New Post form, shared with the Board -->
+		<!-- Page scripts -->
+		<script src="/js/anthem.js" defer></script>
+		<script src="/js/profile.js" defer></script>
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Home" href="/"></a>
+				<div id="siteNav"></div>
+			</nav>
+		</header>
+		<div id="wrapper">
+
+			<!-- Shown while loading, and for "not found" / "you blocked this person" / errors.
+			     profile.js fills in the message. -->
+			<section id="profileState" class="page profileState">
+				<div class="main">
+					<p id="profileStateText" class="profileStateText">Loading profile…</p>
+					<div id="profileStateActions" class="profileStateActions"></div>
+				</div>
+			</section>
+
+			<!-- Everything below stays hidden until a profile loads -->
+			<section id="profileHero" class="page profileHero" hidden>
+				<div class="main profileHeroInner">
+					<div class="profileIdentity">
+						<div id="profileAvatar" class="profileAvatar" aria-hidden="true"></div>
+						<div class="profileNames">
+							<h1 id="profileDisplayName" class="profileDisplayName" hidden></h1>
+							<p id="profileUsername" class="profileUsername"></p>
+						</div>
+					</div>
+
+					<div class="profileActions">
+						<!-- Your own profile -->
+						<button type="button" id="profileEdit" class="profileButton" hidden>Edit Profile</button>
+
+						<!-- Someone else's profile -->
+						<button type="button" id="profileHype" class="profileButton profileHypeButton" aria-pressed="false" hidden>
+							<span class="icon iconHype" aria-hidden="true"></span><span id="profileHypeLabel">Hype</span>
+						</button>
+						<div id="profileMore" class="profileMore" hidden>
+							<button type="button" id="profileMoreButton" class="profileMoreButton" aria-label="More options" aria-haspopup="true" aria-expanded="false" aria-controls="profileMoreMenu">
+								<span class="icon" id="kbb"></span>
+							</button>
+							<ul id="profileMoreMenu" class="profileMoreMenu" hidden>
+								<li><button type="button" class="profileMoreItem" data-action="message">Message</button></li>
+								<li><button type="button" class="profileMoreItem" data-action="block">Block</button></li>
+								<li><button type="button" class="profileMoreItem isDanger" data-action="report">Report</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="profileContent" class="page profileContent" hidden>
+				<div class="main">
+
+					<!-- Pro only: sits across the bottom edge of the hero -->
+					<div id="profileAnthem" class="profile-anthem profileAnthem" hidden></div>
+
+					<!-- Blurb + facts on the left, Posts/Hyped/About tabs on the right; stacked on small screens -->
+					<div class="profileLayout">
+						<aside class="profileAbout" aria-label="Profile details">
+							<p id="profileBlurb" class="profileBlurb"></p>
+							<dl id="profileStats" class="profileStats"></dl>
+							<ul id="profileLinks" class="profileLinks" hidden></ul>
+						</aside>
+
+						<div class="profileTabsWrap">
+							<div class="profileTabs" role="tablist" aria-label="Profile sections">
+								<button type="button" role="tab" id="profileTabPosts" class="profileTab" aria-selected="true" aria-controls="profilePanelPosts">Posts</button>
+								<button type="button" role="tab" id="profileTabHyped" class="profileTab" aria-selected="false" aria-controls="profilePanelHyped" tabindex="-1">Hyped</button>
+								<button type="button" role="tab" id="profileTabAbout" class="profileTab" aria-selected="false" aria-controls="profilePanelAbout" tabindex="-1">About</button>
+							</div>
+
+							<div id="profilePanelPosts" class="profilePanel" role="tabpanel" aria-labelledby="profileTabPosts">
+								<div class="profilePostsBar">
+									<div class="profileFilter" role="group" aria-label="Show posts from">
+										<button type="button" class="toggle-button active" data-posts="all" aria-pressed="true">All</button>
+										<button type="button" class="toggle-button" data-posts="board" aria-pressed="false">Board</button>
+										<button type="button" class="toggle-button" data-posts="profile" aria-pressed="false">Profile</button>
+									</div>
+									<button type="button" id="profileNewPost" class="profileButton profileNewPost" hidden>
+										<span class="icon iconNewPost" aria-hidden="true"></span><span>New Post</span>
+									</button>
+								</div>
+								<div id="profilePosts" class="profilePosts"></div>
+							</div>
+
+							<div id="profilePanelHyped" class="profilePanel" role="tabpanel" aria-labelledby="profileTabHyped" hidden>
+								<div class="profileFilter" role="group" aria-label="Show hyped">
+									<button type="button" class="toggle-button active" data-hyped="event" aria-pressed="true">Shows</button>
+									<button type="button" class="toggle-button" data-hyped="act" aria-pressed="false">Acts</button>
+									<button type="button" class="toggle-button" data-hyped="venue" aria-pressed="false">Venues</button>
+								</div>
+								<ul id="profileHyped" class="profileHyped"></ul>
+							</div>
+
+							<!-- Bio, Best/Worst/First, Top 5 Artists, custom prompts, Show History (profile.js fills it in) -->
+							<div id="profilePanelAbout" class="profilePanel" role="tabpanel" aria-labelledby="profileTabAbout" hidden>
+								<div id="profileAboutTab" class="profileAboutTab"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+
+	</body>
+
+	</html>

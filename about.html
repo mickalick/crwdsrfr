@@ -16,7 +16,12 @@
 		<meta name="description" content="About CRWD SRFR, Cleveland's live music and show finder.">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these four scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
 		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +44,7 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
       					event.preventDefault();
 
       					var hash = this.hash;
@@ -68,27 +73,13 @@
 				});	
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to home" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>

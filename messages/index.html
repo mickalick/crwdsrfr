@@ -1,0 +1,138 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Messages | CRWD SRFR</title>
+		<meta name="description" content="Your CRWD SRFR message requests and conversations.">
+		<meta name="robots" content="noindex">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<link rel="stylesheet" href="/css/messages.css">
+		<!-- Accounts: these scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-mock.js" defer></script><!-- local testing only: does nothing on crwdsrfr.com -->
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<!-- Page script -->
+		<script src="/js/messages.js" defer></script>
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Home" href="/"></a>
+				<div id="siteNav"></div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="messagesHero" class="page">
+				<div class="main">
+					<div class="pageHeader">
+						<div class="headContent">
+							<h1>Messages</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="messagesContent" class="page messagesContent">
+				<div class="main">
+					<div class="messagesWrap">
+						<!-- Loading / signed out / errors / "you left" etc. messages.js fills in the text. -->
+						<div id="messagesState" class="messagesState">
+							<p id="messagesStateText" class="messagesStateText">Loading your messages…</p>
+							<div id="messagesStateActions" class="messagesStateActions"></div>
+						</div>
+
+						<!-- /messages/ : Requests + Conversations -->
+						<div id="messagesList" class="messagesList" hidden></div>
+
+						<!-- /messages/?c=<id> : one conversation -->
+						<div id="messagesThread" class="messagesThread" hidden></div>
+					</div>
+				</div>
+			</section>
+
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+
+	</body>
+
+	</html>

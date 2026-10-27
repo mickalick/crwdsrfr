@@ -1,0 +1,1536 @@
+/* =====================================================================
+   css/profile.css — the /u/ profile page
+   Palette: #222 page, #101010 panels, #62CBB8 teal, #F9F976 yellow,
+   #ADADAD muted text, 9px corners. Account dialogs (Edit Profile, Report…)
+   are styled by crwd-ui.css; only page-specific bits live here.
+   ===================================================================== */
+
+/* .page sets display:flex, which would beat the hidden attribute */
+#wrapper [hidden] {
+	display: none !important;
+}
+
+/* ---------------- Loading / not found / blocked ---------------- */
+
+.profileState {
+	flex: 1;
+	align-items: center;
+	padding-top: 140px;
+	min-height: 60vh;
+}
+
+.profileStateText {
+	text-align: center;
+	color: #ADADAD;
+}
+
+.profileStateActions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+/* ---------------- Hero ---------------- */
+
+.profileHero {
+	flex: 0 0 auto;
+	position: relative;
+	padding: 150px 0 24px;
+	/* Default for everyone: dark with a faint teal/yellow glow. Pro members can swap in a photo. */
+	background:
+		radial-gradient(ellipse at 15% 110%, rgba(98, 203, 184, 0.28), transparent 55%),
+		radial-gradient(ellipse at 90% -10%, rgba(249, 249, 118, 0.14), transparent 50%),
+		#101010;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Pro header image: same darkening treatment as the Board/Acts heroes */
+.profileHero.hasImage {
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.55);
+}
+
+/* Room underneath for the anthem card to overlap the edge */
+.profileHero.hasAnthem {
+	padding-bottom: 72px;
+}
+
+.profileHero .main {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Let the page columns shrink on small screens; without this, wide content
+   (like post images) props them open past the screen edge */
+.profileHero .main,
+.profileContent .main {
+	min-width: 0;
+}
+
+.profileHeroInner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.profileIdentity {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	min-width: 0;
+}
+
+.profileAvatar {
+	flex-shrink: 0;
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid #222;
+	background: #2a2a2a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profileAvatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.profileAvatarIcon {
+	width: 56px;
+	height: 56px;
+	background-color: #6b6b6b;
+	-webkit-mask-image: url('../images/icons/user.svg');
+	mask-image: url('../images/icons/user.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}
+
+.profileNames {
+	min-width: 0;
+}
+
+.profileDisplayName {
+	font-size: 48px;
+	line-height: 0.95;
+	letter-spacing: 0.01em;
+	overflow-wrap: anywhere;
+}
+
+.profileUsername {
+	margin: 6px 0 0;
+	font-family: "Space Mono", monospace;
+	font-size: 18px;
+	color: #62CBB8;
+	overflow-wrap: anywhere;
+}
+
+.profileActions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;
+}
+
+/* Same family as the Board's Load More / Copy Link buttons */
+.profileButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.profileHypeButton {
+	gap: 8px;
+	min-width: 104px;
+}
+
+.profileHypeButton .icon {
+	width: 20px;
+	height: 20px;
+	transition: none;
+}
+
+.profileHypeButton.isActive {
+	background: #F9F976;
+	color: #101010;
+	font-weight: 800;
+}
+
+.profileButton:disabled {
+	opacity: 0.55;
+	cursor: default;
+}
+
+.profileButton:focus-visible,
+.profileMoreButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* ---------------- Kebab menu ---------------- */
+
+.profileMore {
+	position: relative;
+}
+
+.profileMoreButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 46px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: border-color 150ms ease;
+}
+
+.profileMoreButton.open {
+	border-color: #F9F976;
+}
+
+#kbb {
+	width: 28px;
+	height: 28px;
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/kebab.svg');
+	mask-image: url('../images/icons/kebab.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transition: background-color 150ms ease;
+}
+
+.profileMoreButton.open #kbb {
+	background-color: #F9F976;
+}
+
+/* Same yellow panel as the header's account menu */
+.profileMoreMenu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 20;
+	width: 200px;
+	margin: 8px 0 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.profileMoreItem {
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.profileMoreItem.isDanger {
+	color: #B42318;
+}
+
+/* Message, when the person doesn't allow message requests: greyed out with a note */
+.profileMoreItem.isDisabled {
+	color: #8A8A8A;
+	cursor: not-allowed;
+}
+
+.profileMoreNote {
+	display: block;
+	margin-top: 2px;
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 1.35;
+	color: #6B6B6B;
+}
+
+
+.profileMoreItem:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* ---------------- Content ---------------- */
+
+.profileContent {
+	flex: 1;
+}
+
+.profileContent .main {
+	margin-top: 40px;
+}
+
+/* Anthem card straddles the hero's bottom edge: pulled up by the content's
+   top margin (40px) plus half the card's height */
+.profileAnthem {
+	position: relative;
+	z-index: 2;
+	margin: -84px auto 40px; /* auto: centered once there's room beyond its 520px max width */
+}
+
+/* ---------------- Layout: About left, tabs right ---------------- */
+
+.profileLayout {
+	display: grid;
+	grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+	gap: 48px;
+	align-items: start;
+	margin-bottom: 48px;
+}
+
+.profileTabsWrap {
+	min-width: 0;
+}
+
+/* ---------------- Side panel: blurb, facts, links ---------------- */
+
+.profileAbout {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 24px;
+	background: #101010;
+	border-radius: 9px;
+}
+
+.profileBlurb {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.55;
+	white-space: pre-line; /* keep the line breaks people type */
+	overflow-wrap: anywhere;
+}
+
+/* Owner-only nudge when there's no blurb yet */
+.profileBlurb.isEmpty {
+	color: #ADADAD;
+	font-style: italic;
+}
+
+/* Nothing above the facts when the blurb is hidden: drop the divider */
+.profileBlurb[hidden] + .profileStats {
+	padding-top: 0;
+	border-top: none;
+}
+
+.profileStats {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin: 0;
+	padding-top: 20px;
+	border-top: 1px solid #2a2a2a;
+}
+
+.profileStat dt {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.profileStat dd {
+	margin: 2px 0 0;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.profileStatNote {
+	display: block;
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	color: #F9F976;
+	margin-top: 2px;
+}
+
+.profileLinks {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 16px 0 0;
+	list-style: none;
+	border-top: 1px solid #2a2a2a;
+}
+
+.main a.profileLink {
+	color: #62CBB8;
+	text-decoration: none;
+	overflow-wrap: anywhere;
+}
+
+/* ---------------- Tabs ---------------- */
+
+.profileTabs {
+	display: flex;
+	gap: 32px;
+	border-bottom: 1px solid #3a3a3a;
+	margin-bottom: 24px;
+}
+
+.profileTab {
+	position: relative;
+	padding: 0 8px 10px;
+	background: none;
+	border: none;
+	color: #ADADAD;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	transition: color 150ms ease;
+}
+
+.profileTab[aria-selected="true"] {
+	color: #F9F976;
+}
+
+.profileTab[aria-selected="true"]::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	height: 3px;
+	background: #F9F976;
+	border-radius: 3px 3px 0 0;
+}
+
+.profileTab:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 4px;
+}
+
+/* Posts tab: filter on the left, New Post (owner only) on the right */
+.profilePostsBar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.profilePostsBar .profileFilter {
+	margin-bottom: 0;
+}
+
+.profileNewPost {
+	gap: 8px;
+}
+
+.profileNewPost .icon {
+	width: 20px;
+	height: 20px;
+	transition: none;
+}
+
+/* Segmented filter: same look as the Board's Posts toggle (#boardPostTypeFilters) */
+.profileFilter {
+	display: inline-flex;
+	overflow: hidden; /* keeps the corners rounded when a hidden Hyped list drops its button */
+	border-radius: 9px;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	margin-bottom: 24px;
+}
+
+.profileFilter .toggle-button {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	padding: 10px 16px;
+	color: #F9F976;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	background: rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+
+/* Inside the ring, since the group clips anything outside it */
+.profileFilter .toggle-button:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: -2px;
+}
+
+.profileFilter .toggle-button:first-child { border-radius: 8px 0 0 8px; }
+.profileFilter .toggle-button:last-child  { border-radius: 0 8px 8px 0; }
+
+.profileFilter .toggle-button.active {
+	color: #101010;
+	background: #F9F976;
+	font-weight: 900;
+	border-color: #F9F976;
+}
+
+.profileEmpty {
+	margin: 8px 0 40px;
+	font-size: 16px;
+	color: #ADADAD;
+	list-style: none;
+}
+
+/* ---------------- Posts ---------------- */
+
+.profilePosts {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.profilePost {
+	padding: 20px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.profilePostHead {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 12px;
+}
+
+.profileBadge {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	border: 1px solid currentColor;
+	border-radius: 20px;
+}
+
+.profileBadge.isPending  { color: #ADADAD; }
+.profileBadge.isRejected { color: #FF6262; }
+
+.profilePostUser {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	font-weight: 700;
+	color: #62CBB8; /* same as @usernames in comments */
+	text-decoration: none;
+}
+
+.profilePostUser:hover {
+	text-decoration: underline;
+}
+
+/* Date, board/profile icon and kebab, pushed to the right */
+.profilePostWhere {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: auto;
+}
+
+.profilePostPlace {
+	width: 16px;
+	height: 16px;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.profilePostPlace.iconBoard {
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/board.svg');
+	mask-image: url('../images/icons/board.svg');
+}
+
+.profilePostPlace.iconProfile {
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/profile.svg');
+	mask-image: url('../images/icons/profile.svg');
+}
+
+.profilePostDate {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+}
+
+/* Post kebab: smaller version of the hero's, same yellow menu */
+.profilePostMore {
+	position: relative;
+	display: flex;
+}
+
+.profilePostMoreButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	margin-right: -6px; /* lines the dots up with the card's padding edge */
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: #ADADAD;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.profilePostMoreButton.open {
+	border-color: #F9F976;
+	color: #F9F976;
+}
+
+.profilePostMoreButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.icon.iconKebab {
+	width: 18px;
+	height: 18px;
+	background-color: currentColor;
+	-webkit-mask-image: url('../images/icons/kebab.svg');
+	mask-image: url('../images/icons/kebab.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.profilePostMenu {
+	width: 180px;
+}
+
+.profilePostMenu .profileMoreItem {
+	font-size: 15px;
+}
+
+/* "Link copied" bubble under the kebab */
+.profilePostNote {
+	position: absolute;
+	top: calc(100% + 6px);
+	right: 0;
+	z-index: 20;
+	padding: 6px 10px;
+	background: #62CBB8;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+	transition: opacity 300ms ease;
+}
+
+.profilePostNote.isLeaving {
+	opacity: 0;
+}
+
+/* Opened from a shared link */
+.profilePost.isLinked {
+	border-color: #F9F976;
+}
+
+/* Post title: a button that opens the full post (so does the rest of the card) */
+.profilePostTitle {
+	display: block;
+	width: 100%;
+	margin: 0 0 6px;
+	padding: 0;
+	background: none;
+	border: none;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #FFF;
+	text-align: left;
+	cursor: pointer;
+	overflow-wrap: anywhere;
+}
+
+.profilePostTitle:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 4px;
+	border-radius: 4px;
+}
+
+/* The whole card opens the post, like a Board tile */
+.profilePost {
+	cursor: pointer;
+	transition: border-color 150ms ease;
+}
+
+/* Bottom row: hype + comment counts, or the review status (never both) */
+.profilePostFoot {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-height: 0;
+}
+
+.profilePostFoot:empty {
+	display: none;
+}
+
+.profilePostCount {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1;
+	color: #ADADAD;
+}
+
+.profilePostCount .icon {
+	width: 16px;
+	height: 16px;
+	background-color: currentColor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.profilePost:hover {
+		border-color: #62CBB8;
+	}
+}
+
+.profilePostBody {
+	margin: 0 0 12px;
+	font-size: 16px;
+	line-height: 1.55;
+	white-space: pre-line;
+	overflow-wrap: anywhere;
+}
+
+.profilePostMedia {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 6px;
+	margin-bottom: 12px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.profilePostMedia[data-count="1"] {
+	grid-template-columns: 1fr;
+}
+
+.profilePostMedia img {
+	width: 100%;
+	height: 100%;
+	max-height: 420px;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	display: block;
+	background: #000;
+}
+
+.profilePostMedia[data-count="1"] img {
+	aspect-ratio: auto;
+	object-fit: contain;
+}
+
+
+/* ---------------- About tab ---------------- */
+
+.profileAboutTab {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.profileAboutBlock {
+	padding: 20px;
+	background: #101010;
+	border-radius: 9px;
+}
+
+.profileAboutHeading {
+	margin: 0 0 10px !important; /* style.css sizes headings on small screens */
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.profileAboutText {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.55;
+	white-space: pre-line; /* keep the line breaks people type */
+	overflow-wrap: anywhere;
+}
+
+/* Top 5 Artists (also the number badges in Edit Profile) */
+.profileTopArtists,
+.profileTopInputs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profileTopArtists li,
+.profileTopInputs li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 17px;
+	overflow-wrap: anywhere;
+}
+
+.profileTopRank {
+	flex-shrink: 0;
+	width: 20px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	color: #F9F976;
+	text-align: center;
+}
+
+/* Show History */
+.profileHistory {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profileHistoryItem {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding: 10px 0;
+	border-top: 1px solid #2a2a2a;
+}
+
+.profileHistoryItem:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+
+.profileHistoryActs {
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.profileHistoryMeta {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+	overflow-wrap: anywhere;
+}
+
+/* ---------------- Hyped ---------------- */
+
+.profileHyped {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profileHypedLink {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 14px 16px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	color: #FFF !important;
+	text-decoration: none !important;
+	transition: border-color 150ms ease;
+}
+
+.profileHypedDate {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 52px;
+	height: 52px;
+	border-radius: 6px;
+	background: #222;
+	line-height: 1;
+}
+
+.profileHypedMonth {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #F9F976;
+}
+
+.profileHypedDay {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
+	color: #FFF;
+}
+
+.profileHypedText {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 0;
+}
+
+.profileHypedTitle {
+	font-size: 17px;
+	font-weight: 600;
+	overflow-wrap: anywhere;
+}
+
+.profileHypedMeta {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+}
+
+.profileHypedItem.isPast .profileHypedLink {
+	opacity: 0.6;
+}
+
+.profileHypedItem.isMissing .profileHypedLink {
+	border-style: dashed;
+	color: #ADADAD !important;
+}
+
+/* ---------------- Edit Profile dialog extras ---------------- */
+
+/* Profile picture + header image side by side; each is label → thumbnail → buttons */
+.profileImagePickers {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 20px 32px;
+}
+
+.profileImagePicker {
+	align-items: flex-start;
+}
+
+.profileImagePickerRow {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+/* Song + Artist share the row evenly (the default .crwdFieldRow is 1 : 2) */
+.crwdFieldRow.profileAnthemRow {
+	grid-template-columns: 1fr 1fr;
+}
+
+.profileImagePreview {
+	flex-shrink: 0;
+	overflow: hidden;
+	background: #333;
+}
+
+.profileImagePreview.isCircle {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+}
+
+.profileImagePreview.isWide {
+	width: 160px;
+	height: 72px;
+	border-radius: 6px;
+}
+
+.profileImagePreview img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Delete Post confirm */
+.crwdModal .crwdButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+.crwdSmallButton.isDisabled {
+	opacity: 0.45;
+	pointer-events: none;
+}
+
+/* "(optional)" after a label */
+.profileOptional {
+	color: #ADADAD;
+	font-weight: 400;
+}
+
+/* "Add Link" / "Add Prompt" / "Add to History" */
+.profileAddButton {
+	align-self: flex-start;
+}
+
+/* Add to History spans the full width of its fields */
+.profileHistoryEditor > .profileAddButton {
+	align-self: stretch;
+}
+
+.profileAddButton:disabled {
+	cursor: default;
+}
+
+/* Links: Link + Label + ✕ per row, added with "Add Link" (up to 3) */
+.profileLinkFields {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.profileLinkRows {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.profileLinkRows:empty {
+	display: none;
+}
+
+.profileLinkRow {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+	gap: 10px;
+	align-items: end;
+}
+
+/* Lines the ✕ up with the middle of the text boxes */
+.profileLinkRow > .composerMediaTool {
+	margin-bottom: 10px;
+}
+
+/* Top 5 Artists */
+.profileTopFields {
+	gap: 12px;
+}
+
+/* Custom prompts: same card + ↑ ↓ ✕ tools as the New Post form's shots */
+.profilePromptList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profilePromptItem {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 12px;
+	align-items: start;
+	padding: 12px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.profilePromptFields {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	min-width: 0;
+}
+
+:is(.crwdModal, .crwdInline) .profilePromptFields textarea {
+	min-height: 64px;
+}
+
+/* Show History: Act(s) on its own line, Date + Venue side by side under it, then the list */
+.profileHistoryEditor {
+	gap: 10px;
+}
+
+.profileHistoryFields {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+}
+
+.profileHistoryFields > .profileHistoryActsField {
+	grid-column: 1 / -1;
+}
+
+/* "Add the act(s) first." — same look as the form's error text */
+.profileHistoryProblem {
+	color: #FF6262;
+	font-size: 14px;
+}
+
+.profileHistoryProblem:empty {
+	display: none;
+}
+
+/* Native date picker icon is dark by default; make it readable on the dark field */
+.profileDateInput::-webkit-calendar-picker-indicator {
+	filter: invert(1);
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.profileHistoryEditList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 4px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.profileHistoryEditItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 10px 10px 10px 14px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.profileHistoryEditText {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+/* PRO badge sitting after a field label */
+.crwdLabel .crwdProBadge {
+	margin-left: 4px;
+	vertical-align: 1px;
+}
+
+/* Show/hide checkboxes (About, Posts, Hypes) */
+.profileCheckList {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.profileCheck {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	cursor: pointer;
+	user-select: none;
+}
+
+.profileCheck input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: 1px solid #ADADAD;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.profileCheck input:checked {
+	background: #62CBB8;
+	border-color: #62CBB8;
+}
+
+/* Check mark, same shape as the calendar's View settings */
+.profileCheck input:checked::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 4px;
+	height: 10px;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+/* A setting that's on its way: greyed out, can't be changed yet */
+.profileCheck.isComingSoon {
+	cursor: default;
+}
+
+.profileCheck.isComingSoon > span:not(.crwdProBadge) {
+	color: #ADADAD;
+}
+
+.profileCheck input:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.profileComingSoon {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+/* Note under a checkbox, lined up with its text */
+.profileCheckHint {
+	margin: -6px 0 0 30px;
+}
+
+.profileCheck input:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* ---------------- Hover (mouse only) ---------------- */
+
+@media (hover: hover) and (pointer: fine) {
+	.profileButton:not(:disabled):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.profileMoreButton:hover {
+		border-color: #F9F976;
+	}
+
+	.profileCheck input:not(:checked):not(:disabled):hover {
+		border-color: #62CBB8;
+	}
+
+	.profilePostMoreButton:hover {
+		border-color: #F9F976;
+		color: #FFF;
+	}
+
+	.crwdModal .crwdButton.isDanger:not(:disabled):hover {
+		background: #FF6262;
+		color: #101010;
+	}
+
+	.profileMoreItem:not(.isDisabled):hover {
+		background: #101010;
+		color: #F9F976;
+	}
+
+	.profileTab:hover {
+		color: #FFF;
+	}
+
+	a.profileHypedLink:hover {
+		border-color: #62CBB8;
+	}
+
+	.main a.profileLink:hover {
+		text-decoration: underline;
+	}
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Untitled divider in Edit Profile (between the anthem and the side-panel fields) */
+:is(.crwdModal, .crwdInline) .crwdSection.profileSectionDivider {
+	margin: 4px 0 -8px;
+	padding-top: 0;
+}
+
+/* Edit Profile: Save stays pinned to the bottom of the modal while the form scrolls.
+   The negative margins stretch it to the panel's edges (panel padding: 36px sides, 32px bottom). */
+.profileEditFooter {
+	position: sticky;
+	bottom: -32px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0 -36px -32px;
+	padding: 16px 36px 24px;
+	background: #222;
+	border-top: 1px solid #3a3a3a;
+	box-shadow: 0 -12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.profileEditFooter .crwdButton {
+	margin-top: 0;
+}
+
+/* Keep fields the keyboard moves to from hiding behind the footer */
+.crwdModalPanel:has(.profileEditFooter) {
+	scroll-padding-bottom: 120px;
+}
+
+@media screen and (max-width: 774px) {
+	.profileHeroInner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* Buttons drop below the name: center them */
+	.profileActions {
+		align-self: center;
+	}
+}
+
+/* About panel stacks above the tabs */
+@media screen and (max-width: 900px) {
+	.profileLayout {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 40px;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.profileHero {
+		padding-top: 120px;
+	}
+
+	.profileIdentity {
+		gap: 16px;
+	}
+
+	.profileAvatar {
+		width: 88px;
+		height: 88px;
+	}
+
+	.profileAvatarIcon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.profileDisplayName {
+		font-size: 40px;
+	}
+
+	.profileUsername {
+		font-size: 15px;
+	}
+
+	.profileTabs {
+		gap: 24px;
+	}
+
+	.profileTab {
+		font-size: 28px;
+	}
+
+	.profileFilter .toggle-button {
+		font-size: 14px;
+		padding: 8px 12px;
+	}
+
+	.profileHypedLink {
+		padding: 12px;
+		gap: 12px;
+	}
+
+	/* crwd-ui.css stacks field rows on phones; keep Song + Artist doing the same */
+	.crwdFieldRow.profileAnthemRow {
+		grid-template-columns: 1fr;
+	}
+
+	/* Links: the address gets its own line; Label + ✕ share the next */
+	.profileLinkRow {
+		grid-template-columns: minmax(0, 1fr) auto;
+	}
+
+	.profileLinkRow > .crwdField:first-child {
+		grid-column: 1 / -1;
+	}
+
+	.profileHistoryFields {
+		grid-template-columns: 1fr;
+	}
+
+	/* Phone panel padding is 22px sides, 24px bottom */
+	.profileEditFooter {
+		bottom: -24px;
+		margin: 0 -22px -24px;
+		padding: 14px 22px 18px;
+	}
+}
+
+/* ---------------- Anthem card (click to play) ---------------- */
+
+
+.profile-anthem { max-width: 520px; }
+.profile-anthem[hidden] { display: none; }   /* see technical note: [hidden] vs display rules */
+
+.profile-anthem-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 18px 14px 14px;
+  background: #101010;
+  border: 1px solid #2a2a2a;
+  border-radius: 9px;
+  color: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.profile-anthem-card:hover,
+.profile-anthem-card:focus-visible {
+  border-color: #62CBB8;
+  outline: none;
+}
+
+/* Yellow play button */
+.profile-anthem-play {
+  position: relative;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #F9F976;
+  transition: transform 0.15s ease;
+}
+.profile-anthem-play::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-left: 15px solid #101010;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+.profile-anthem-card:hover .profile-anthem-play,
+.profile-anthem-card:focus-visible .profile-anthem-play { transform: scale(1.06); }
+
+/* Text */
+.profile-anthem-text {
+  flex: 1;
+  min-width: 0;   /* lets long titles truncate instead of stretching the card */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.profile-anthem-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #62CBB8;
+}
+.profile-anthem-song {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.profile-anthem-artist {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: #a8a8a8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Equalizer bars: resting, then they bounce on hover */
+.profile-anthem-bars {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 28px;
+}
+.profile-anthem-bars i {
+  width: 4px;
+  height: var(--h);
+  background: linear-gradient(to top, #9BE58F 0%, #F9F976 50%, #B42318 100%) bottom / 100% 28px no-repeat;
+  border-radius: 2px;
+  opacity: 0.35;
+  transition: opacity 0.15s ease;
+}
+.profile-anthem-bars i:nth-child(1) { --h: 40%; }
+.profile-anthem-bars i:nth-child(2) { --h: 85%; animation-delay: -0.3s; }
+.profile-anthem-bars i:nth-child(3) { --h: 60%; animation-delay: -0.6s; }
+.profile-anthem-bars i:nth-child(4) { --h: 100%; animation-delay: -0.15s; }
+.profile-anthem-bars i:nth-child(5) { --h: 50%; animation-delay: -0.45s; }
+
+.profile-anthem-card:hover .profile-anthem-bars i,
+.profile-anthem-card:focus-visible .profile-anthem-bars i {
+  opacity: 0.9;
+  animation: profile-anthem-bounce 0.9s ease-in-out infinite alternate;
+}
+@keyframes profile-anthem-bounce {
+  from { height: 20%; }
+  to   { height: var(--h); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .profile-anthem-bars i { animation: none !important; }
+}
+@media (max-width: 400px) {
+  .profile-anthem-bars { display: none; }
+}
+
+/* The real player, swapped in on click */
+.profile-anthem-player {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 9px;
+  background: #101010;
+}
+.profile-anthem-player[data-provider="youtube"] { aspect-ratio: 16 / 9; }

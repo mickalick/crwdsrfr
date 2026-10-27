@@ -16,7 +16,14 @@
 		<meta name="description" content="Find live music and shows in Cleveland. Updated Sundays and Wednesdays.">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these scripts must stay in this order, before events.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-mock.js" defer></script><!-- local testing only: does nothing on crwdsrfr.com -->
+		<script src="/js/crwd-core.js" defer></script>
 		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +47,7 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
       					event.preventDefault();
 
       					var hash = this.hash;
@@ -86,9 +93,6 @@
 			      }
 			    });
 			});
-
-
-
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
@@ -145,6 +149,7 @@
 							  <option value="venue-name">Venue Name (A-Z)</option>
 							  <option value="show-title">Show Title (A-Z)</option>
 							  <option value="show-time">Show Time (Earliest First)</option>
+							  <option value="hype-count">Hype Count (Most First)</option>
 							</select>
 
 						</div>

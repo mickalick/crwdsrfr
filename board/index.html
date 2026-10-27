@@ -17,7 +17,17 @@
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/board.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<script src="../js/nav.js" defer></script>
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<link rel="stylesheet" href="/css/crwd-composer.css"><!-- the New Post form -->
+		<!-- Accounts: these scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-mock.js" defer></script><!-- local testing only: does nothing on crwdsrfr.com -->
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
+		<script src="/js/crwd-post.js" defer></script>
+		<script src="/js/crwd-composer.js" defer></script><!-- the New Post form, shared with profile pages -->
 		<link rel="shortcut icon" href="../images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,27 +77,13 @@
 				});
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>
@@ -103,10 +99,11 @@
 			</section>
 			<section id="boardContent" class="page">
 				<div class="main">
-					<div class="contentSection">
-						<p>Surf a recent show? <a id="boardSubmitTrigger" role="button" tabindex="0">Send in your best shots</a> to get added to the Board!</p>
-						<div class="wave-top"></div>
-						<div class="wave-bottom"></div>
+					<div class="contentSection boardIntro">
+						<p>Start a discussion or share your favorite shots from a recent show.</p>
+						<button type="button" id="boardNewPost" class="boardNewPost">
+							<span class="icon iconNewPost" aria-hidden="true"></span><span>New Post</span>
+						</button>
 					</div>
 
 					<div id="boardSettingsBar">
@@ -157,7 +154,30 @@
 						<div id="boardActiveFilters"></div>
 					</div>
 
-					<h4 class="subHead"><span id="boardSubHead">All Posts by Most Recent:</span></h4>
+					<div class="boardSubHeadRow">
+						<h4 class="subHead"><span id="boardSubHead">All Posts by Most Recent:</span></h4>
+						<div class="boardSort" id="boardSort">
+							<button type="button" class="boardSortButton" id="boardSortButton" aria-label="Sort posts" aria-haspopup="true" aria-expanded="false" aria-controls="boardSortMenu">
+								<span class="icon iconSettings" aria-hidden="true"></span>
+							</button>
+							<ul class="boardSortMenu" id="boardSortMenu" role="menu" aria-label="Sort posts" hidden>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-sort="recent" aria-checked="true">Most Recent</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-sort="oldest" aria-checked="false">Oldest Posted</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-sort="hyped" aria-checked="false">Most Hyped</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-sort="commented" aria-checked="false">Most Commented</button></li>
+							</ul>
+						</div>
+						<div class="boardViewToggle" id="boardViewToggle" role="group" aria-label="Layout">
+							<button type="button" class="boardViewButton active" data-view="tiles" aria-pressed="true" aria-label="Tile view">
+								<span class="icon iconViewTiles" aria-hidden="true"></span>
+							</button>
+							<button type="button" class="boardViewButton" data-view="rows" aria-pressed="false" aria-label="Row view">
+								<span class="icon iconViewRows" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<div class="wave-top"></div>
+					<div class="wave-bottom"></div>
 				</div>
 			</section>
 			<section id="boardSpace" class="page">
@@ -187,72 +207,7 @@
 			</footer>
 		</div>
 
-		<!-- Board media modal -->
-		<div id="boardModal" class="boardModal" hidden>
-			<div class="boardModalBackdrop" data-boardclose></div>
-			<button type="button" class="boardModalNavBtn boardModalNavPrev" id="boardModalPrev" aria-label="Previous"><span class="icon" id="bck"></span></button>
-			<button type="button" class="boardModalNavBtn boardModalNavNext" id="boardModalNext" aria-label="Next"><span class="icon" id="fwd"></span></button>
-			<div class="boardModalContent" role="dialog" aria-modal="true" aria-labelledby="boardModalTitle">
-				<button type="button" class="boardModalClose" data-boardclose aria-label="Close">&times;</button>
-
-				<div class="boardModalReportHero" id="boardModalReportHero" hidden></div>
-
-				<div class="boardModalMeta" id="boardModalMeta">
-					<h2 id="boardModalTitle"></h2>
-					<p id="boardModalGenres" class="boardModalGenres"></p>
-					<p id="boardModalSub" class="boardModalSub"></p>
-					<p id="boardModalCredit" class="boardModalCredit"></p>
-				</div>
-
-				<div class="boardModalMedia" id="boardModalMedia">
-					<div class="boardModalMediaInner" id="boardModalMediaInner"></div>
-				</div>
-
-				<div class="boardModalContentList" id="boardModalContentList" hidden></div>
-
-				<button type="button" class="boardModalShareBtn" id="boardModalShare">Copy Link</button>
-			</div>
-		</div>
-
-		<!-- Submit media modal -->
-		<div id="boardSubmitModal" class="boardModal" hidden>
-			<div class="boardModalBackdrop" data-boardsubmitclose></div>
-			<div class="boardModalContent boardSubmitModalContent" role="dialog" aria-modal="true" aria-labelledby="boardSubmitModalTitle">
-				<button type="button" class="boardModalClose" data-boardsubmitclose aria-label="Close">&times;</button>
-				<div class="boardSubmitModalBody">
-					<h2 id="boardSubmitModalTitle">Get Added to the Board</h2>
-					<p>Fill out the form below and link or attach your favorite shots. Alternatively, you can send any shots to <a href="mailto:board@crwdsrfr.com">board@crwdsrfr.com</a>. Either works.</p>
-					<p>Once reviewed, any approved submissions will be added to the Board at the next site update.</p>
-					<p class="note"><strong>Note:</strong> There is a 25 MB limit for attachments. For larger videos, please either reduce the size or link to the video instead.</p>
-
-					<div class="boardForm">
-						<form action="https://formspree.io/f/myeyzlak" method="POST" enctype="multipart/form-data">
-							<input type="hidden" name="_subject" value="New SRF Board Submission">
-
-							<label for="boardFormTitle">Artist or Show Title:</label>
-							<input type="text" id="boardFormTitle" name="title" placeholder="Who was playing?" required>
-
-							<label for="boardFormVenue">Venue:</label>
-							<input type="text" id="boardFormVenue" name="venue" placeholder="Where were they playing?" required>
-
-							<label for="boardFormDate">Date:</label>
-							<input type="text" id="boardFormDate" name="date" placeholder="When was the show?" required>
-
-							<label for="boardFormName">Your Name (if you want it displayed):</label>
-							<input type="text" id="boardFormName" name="submittedBy" placeholder="Who took the shot?">
-
-							<label for="boardFormLink">Link to Media:</label>
-							<input type="text" id="boardFormLink" name="link" placeholder="Full link to the photo or video">
-
-							<label for="boardFormAttachments" id="attachLabel">Attachments:</label>
-							<input type="file" id="boardFormAttachments" name="attachments" accept="image/*,video/*" multiple>
-
-							<input type="submit" id="boardSubmitSend" class="contactButton" value="Send">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- The post modal is built by js/crwd-post.js (shared with profile pages) -->
 
 		<script src="../js/board.js"></script>
 

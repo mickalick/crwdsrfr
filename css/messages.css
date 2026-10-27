@@ -1,0 +1,604 @@
+/*
+ * css/messages.css — the Messages page (/messages/ and /messages/?c=<id>).
+ * Dialogs use crwd-ui.css. Buttons, show/hide sections and menus match Settings and the profile page.
+ */
+
+/* ---------------- Page ---------------- */
+
+/* Clears the fixed header, like the Board and Settings heroes */
+#messagesHero {
+	flex: 0 0 auto;
+	padding-top: 100px;
+}
+
+#messagesHero .main {
+	margin-bottom: 0;
+}
+
+#messagesHero .pageHeader {
+	margin-bottom: 24px;
+}
+
+.messagesContent {
+	flex: 1;
+}
+
+.messagesContent .main {
+	margin-top: 0;
+	min-width: 0;
+}
+
+.messagesWrap {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+/* .page and friends set display, which would beat the hidden attribute */
+.messagesState[hidden],
+.messagesList[hidden],
+.messagesThread[hidden] {
+	display: none;
+}
+
+.messagesState {
+	min-height: 30vh;
+	padding-top: 40px;
+}
+
+.messagesStateText {
+	text-align: center;
+	color: #ADADAD;
+}
+
+.messagesStateActions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+/* Screen-reader-only text */
+.msgSrOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* ---------------- Buttons (same as Settings) ---------------- */
+
+.messagesButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.messagesButton.isPrimary {
+	background: transparent;
+	color: #FFF;
+	font-weight: 800;
+}
+
+.messagesButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+.messagesButton[hidden] {
+	display: none;
+}
+
+.messagesButton:disabled {
+	opacity: 0.45;
+	cursor: default;
+}
+
+.messagesButton:focus-visible,
+.msgSectionToggle:focus-visible,
+.msgCardLink:focus-visible,
+.msgMoreButton:focus-visible,
+.msgBack:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.crwdModal .crwdButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+/* ---------------- Requests / Conversations (show/hide) ---------------- */
+
+.msgSection {
+	padding: 24px 0;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.msgSection:last-child {
+	border-bottom: none;
+}
+
+.msgSectionToggle {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.msgSectionTitle {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
+}
+
+.msgChevron {
+	width: 9px;
+	height: 9px;
+	margin-top: -4px;
+	border: solid #F9F976;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: transform 150ms ease;
+}
+
+.msgSectionToggle[aria-expanded="true"] .msgChevron {
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.msgSectionBody {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	margin-top: 16px;
+}
+
+.msgSectionBody[hidden] {
+	display: none;
+}
+
+.msgCards {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.msgEmpty,
+.msgNote,
+.msgFooterNote {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #ADADAD;
+}
+
+.msgNote:empty {
+	display: none;
+}
+
+/* ---------------- Cards ---------------- */
+
+.msgCard {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	transition: border-color 150ms ease;
+}
+
+.msgCardLink {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex: 1;
+	min-width: 0;
+	padding: 14px 8px 14px 14px;
+	border-radius: 9px;
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+/* New-update dot, far left. Takes its space even when hidden so titles line up. */
+.msgDot {
+	flex-shrink: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: transparent;
+}
+
+.msgCard.isUnread .msgDot {
+	background: #62CBB8;
+}
+
+.msgCardText {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.msgCardTitle {
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.msgCard.isUnread .msgCardTitle {
+	font-weight: 800;
+}
+
+.msgCardMeta {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+.msgCard > .msgMore {
+	margin-right: 16px;
+}
+
+/* ---------------- Kebab menu (same yellow panel as the profile page) ---------------- */
+
+.msgMore {
+	position: relative;
+	flex-shrink: 0;
+}
+
+.msgMoreButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: border-color 150ms ease;
+}
+
+.msgMoreButton.open {
+	border-color: #F9F976;
+}
+
+.icon.msgKebabIcon {
+	width: 24px;
+	height: 24px;
+	background-color: #FFF;
+	-webkit-mask: url('../images/icons/kebab.svg') center / contain no-repeat;
+	mask: url('../images/icons/kebab.svg') center / contain no-repeat;
+	transition: background-color 150ms ease;
+}
+
+.msgMoreButton.open .msgKebabIcon {
+	background-color: #F9F976;
+}
+
+.msgMoreMenu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 20;
+	width: 210px;
+	margin: 6px 0 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.msgMoreMenu[hidden] {
+	display: none;
+}
+
+.msgMoreItem {
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010 !important;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.msgMoreItem.isDanger {
+	color: #B42318 !important;
+}
+
+.msgMoreItem:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* ---------------- One conversation ---------------- */
+
+.msgBack {
+	display: inline-block;
+	margin-bottom: 16px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #62CBB8;
+	text-decoration: none !important;
+}
+
+.msgThreadHead {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.msgThreadTitle {
+	margin: 0 !important;
+	min-width: 0;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	line-height: 1.1;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.msgEarlier {
+	display: flex;
+	margin: 16px auto 0;
+	padding: 8px 14px;
+	font-size: 14px;
+}
+
+.msgEarlier[hidden] {
+	display: none;
+}
+
+.msgTimeline {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0;
+	padding: 20px 0 8px;
+	list-style: none;
+}
+
+/* "You sent a message request" */
+.msgStatus {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2px 8px;
+	padding: 4px 0;
+	text-align: center;
+}
+
+.msgStatusText {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+/* Bubbles: theirs on the left, mine on the right */
+.msgBubbleRow {
+	display: flex;
+}
+
+.msgBubbleRow.isMine {
+	justify-content: flex-end;
+}
+
+.msgBubble {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	max-width: min(80%, 520px);
+	padding: 10px 14px 12px;
+	border-radius: 14px;
+	background: #101010;
+	border: 1px solid #333;
+}
+
+.msgBubbleRow.isTheirs .msgBubble {
+	border-bottom-left-radius: 4px;
+}
+
+.msgBubbleRow.isMine .msgBubble {
+	background: rgba(98, 203, 184, 0.12);
+	border-color: rgba(98, 203, 184, 0.45);
+	border-bottom-right-radius: 4px;
+}
+
+.msgBubbleTime {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	color: #ADADAD;
+}
+
+.msgBubbleRow.isMine .msgBubbleTime {
+	text-align: right;
+}
+
+.msgBubbleText {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.45;
+	color: #FFF;
+	white-space: pre-line;
+	overflow-wrap: anywhere;
+}
+
+/* Under the last message: Reply / Accept + Decline / Cancel Request / notes */
+.msgFooter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 12px 0 8px;
+}
+
+.msgFooter.isRight {
+	align-items: flex-end;
+}
+
+.msgFooter.isCentered {
+	align-items: center;
+	text-align: center;
+}
+
+.msgFooterActions,
+.msgReplyActions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px;
+}
+
+.msgReplyActions {
+	justify-content: flex-end;
+}
+
+.msgError {
+	margin: 0;
+	font-size: 14px;
+	color: #FF6262;
+}
+
+.msgError:empty {
+	display: none;
+}
+
+.msgReply {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.msgReplyField {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.msgReplyField textarea {
+	width: 100%;
+	min-height: 96px;
+	padding: 12px 14px;
+	resize: vertical;
+	background: #333;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.45;
+	box-sizing: border-box;
+}
+
+.msgReplyField textarea:focus {
+	outline: none;
+	border-color: #62CBB8;
+}
+
+/* ---------------- Hover (mouse only) ---------------- */
+
+@media (hover: hover) and (pointer: fine) {
+	.messagesButton:not(:disabled):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.messagesButton.isPrimary:not(:disabled):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.messagesButton.isDanger:not(:disabled):hover,
+	.crwdModal .crwdButton.isDanger:not(:disabled):hover {
+		background: #FF6262;
+		color: #101010;
+	}
+
+	.msgCard:hover {
+		border-color: #62CBB8;
+	}
+
+	.msgMoreItem:hover {
+		background: #101010;
+		color: #F9F976 !important;
+	}
+
+	.msgMoreButton:hover {
+		border-color: #F9F976;
+	}
+
+	.msgBack:hover {
+		text-decoration: underline !important;
+	}
+}
+
+/* ---------------- Small screens ---------------- */
+
+@media screen and (max-width: 535px) {
+	#messagesHero {
+		padding-top: 60px;
+	}
+
+	.msgBubble {
+		max-width: 88%;
+	}
+
+	.msgFooterActions .messagesButton,
+	.msgReplyActions .messagesButton {
+		flex: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.msgChevron {
+		transition: none;
+	}
+}

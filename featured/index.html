@@ -15,9 +15,15 @@
 		<title>Featured | CRWD SRFR</title>
 		<meta name="description" content="Featured shows happening around Cleveland.">
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/board.css">
 		<link rel="stylesheet" href="../css/featured.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<script src="../js/nav.js" defer></script>
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these four scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
 		<link rel="shortcut icon" href="../images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,27 +71,13 @@
 				});	
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>
@@ -137,7 +129,7 @@
 		<div id="featuredModal" class="boardModal" hidden>
 			<div class="boardModalBackdrop" data-featclose></div>
 			<div class="boardModalContent" role="dialog" aria-modal="true" aria-labelledby="featuredModalTitle">
-				<button type="button" class="boardModalClose" data-featclose aria-label="Close">&times;</button>
+				<button type="button" class="boardModalClose" data-featclose aria-label="Close"><span class="boardIconClose"></button>
 				<div class="boardModalMedia" id="featuredModalMedia">
 					<button type="button" class="boardModalNavBtn boardModalNavPrev" id="featuredModalPrev" aria-label="Previous"><span class="icon" id="bck"></span></button>
 					<div class="boardModalMediaInner" id="featuredModalMediaInner"></div>

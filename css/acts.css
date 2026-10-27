@@ -492,6 +492,24 @@
 	white-space: nowrap;
 }
 
+/* Display-only hype count, pinned to the bottom of the tile */
+.actTileHypes {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: auto;
+	padding-top: 4px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1;
+	color: #ADADAD;
+}
+
+.actTileHypes .icon {
+	width: 16px;
+	height: 16px;
+}
+
 @media (hover: hover) and (pointer: fine) {
 	.actTile:hover,
 	.actTile:focus-visible {
@@ -519,6 +537,24 @@
 	max-height: 85vh;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
+}
+
+/* Title, genres and links on the left; hype button on the right */
+.actModalHead {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.actModalHeadText {
+	flex: 1;
+	min-width: 0;
+}
+
+.actModalHype {
+	flex-shrink: 0;
+	min-width: 48px; /* holds the button's space while its count loads */
 }
 
 .actModalBody h2 {

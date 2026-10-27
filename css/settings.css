@@ -1,0 +1,745 @@
+/*
+ * css/settings.css — the Settings & Privacy page (/settings/).
+ * Dialogs use crwd-ui.css; the tabs, checkboxes and buttons match the profile page.
+ */
+
+/* ---------------- Page states (loading / signed out) ---------------- */
+
+/* .page is display:flex, which would beat the hidden attribute */
+.settingsState[hidden],
+.settingsContent[hidden] {
+	display: none;
+}
+
+.settingsState {
+	flex: 1;
+	align-items: center;
+	min-height: 40vh;
+}
+
+.settingsStateText {
+	text-align: center;
+	color: #ADADAD;
+}
+
+.settingsStateActions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+/* Clears the fixed header, like the Board and Acts heroes */
+#settingsHero {
+	flex: 0 0 auto;
+	padding-top: 100px;
+}
+
+#settingsHero .main {
+	margin-bottom: 0;
+}
+
+#settingsHero .pageHeader {
+	margin-bottom: 24px;
+}
+
+.settingsContent {
+	flex: 1;
+}
+
+.settingsContent .main {
+	margin-top: 0;
+	min-width: 0;
+}
+
+.settingsWrap {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+/* ---------------- Tabs (same look as the profile tabs) ---------------- */
+
+.settingsTabs {
+	display: flex;
+	gap: 32px;
+	border-bottom: 1px solid #3a3a3a;
+	margin-bottom: 8px;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+
+.settingsTab {
+	position: relative;
+	flex-shrink: 0;
+	padding: 0 8px 10px;
+	background: none;
+	border: none;
+	color: #ADADAD;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	transition: color 150ms ease;
+}
+
+.settingsTab[hidden] {
+	display: none;
+}
+
+/* Max icon in the Max tab: takes the tab's text color (grey, yellow when selected, white on hover) */
+.settingsTab:has(.settingsTabIcon) {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.icon.settingsTabIcon {
+	width: 20px;
+	height: 20px;
+	margin-top: -2px; /* Bebas sits a little low; lines the icon up with the letters */
+	background-color: currentColor;
+	-webkit-mask: url('../images/icons/srfrMax.svg') center / contain no-repeat;
+	mask: url('../images/icons/srfrMax.svg') center / contain no-repeat;
+	transition: none;
+}
+
+.settingsTab[aria-selected="true"] {
+	color: #F9F976;
+}
+
+.settingsTab[aria-selected="true"]::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3px;
+	background: #F9F976;
+	border-radius: 3px 3px 0 0;
+}
+
+.settingsTab:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: -2px;
+}
+
+.settingsPanel[hidden] {
+	display: none;
+}
+
+/* ---------------- Sections ---------------- */
+
+.settingsSection {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 28px 0;
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.settingsSection:last-child {
+	border-bottom: none;
+}
+
+.settingsSectionHead {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px 12px;
+}
+
+/* Section titles: same Bebas Neue as the tabs, smaller */
+.settingsHeading {
+	margin: 0 !important;
+	padding: 0;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: 0.02em;
+	color: #FFF;
+}
+
+.settingsText,
+.settingsNote {
+	margin: 0;
+	line-height: 1.5;
+}
+
+.settingsText {
+	font-size: 16px;
+	color: #FFF;
+}
+
+.settingsNote {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+.settingsNote strong,
+.settingsText strong {
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.settingsValue {
+	margin: 0;
+	min-width: 0;
+	font-size: 18px;
+	color: #FFF;
+	overflow-wrap: anywhere;
+}
+
+.settingsActions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+/* Save button at the end of the Max, Notifications and Privacy tabs */
+.settingsSaveBar {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 12px 16px;
+	padding: 24px 0 28px;
+}
+
+/* Privacy: Blocked Accounts comes after Save, so draw the divider */
+.settingsSaveBar:not(:last-child) {
+	border-bottom: 1px solid #3a3a3a;
+}
+
+.settingsSaveBar .settingsButton {
+	min-width: 140px;
+}
+
+/* "Saved" / error, next to the setting it belongs to */
+.settingsStatus {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #62CBB8;
+}
+
+.settingsStatus[data-state="bad"] {
+	color: #FF6262;
+}
+
+.settingsStatus:empty {
+	display: none;
+}
+
+/* ---------------- Buttons ---------------- */
+
+.settingsButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.settingsButton.isPrimary {
+	background: #F9F976;
+	color: #101010;
+	font-weight: 800;
+}
+
+.settingsButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+.settingsButton:disabled {
+	opacity: 0.45;
+	cursor: default;
+}
+
+.settingsButton:focus-visible,
+.settingsLinkButton:focus-visible,
+.settingsDisclosure:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.settingsLinkButton {
+	padding: 0;
+	background: none;
+	border: none;
+	color: #62CBB8;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/* Delete Account section */
+.settingsSection.isDanger .settingsHeading {
+	color: #FF6262;
+}
+
+/* ---------------- Max pitch ---------------- */
+
+.settingsBenefits {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding-left: 20px;
+	color: #FFF;
+	line-height: 1.45;
+}
+
+.settingsBenefits strong {
+	color: #F9F976;
+}
+
+.settingsBenefits li::marker {
+	color: #62CBB8;
+}
+
+.crwdModal .settingsBenefits {
+	margin-bottom: 4px;
+	font-size: 15px;
+}
+
+/* ---------------- Checkboxes (same look as Edit Profile) ---------------- */
+
+.settingsCheckList {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.settingsCheckWrap {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.settingsCheck {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	cursor: pointer;
+	user-select: none;
+}
+
+.settingsCheck input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: 1px solid #ADADAD;
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.settingsCheck input:checked {
+	background: #62CBB8;
+	border-color: #62CBB8;
+}
+
+.settingsCheck input:checked::after {
+	content: "";
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 4px;
+	height: 10px;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.settingsCheck input:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Note under a checkbox, lined up with its text */
+.settingsCheckHint {
+	margin: 0 0 0 30px;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #ADADAD;
+}
+
+/* Badge preview */
+.settingsBadgePreview {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 4px 0 0 30px;
+	padding: 10px 14px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.settingsPreviewLabel {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.settingsPreviewName {
+	display: inline-flex;
+	align-items: center;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	color: #62CBB8;
+}
+
+/* ---------------- Choices (profile visibility, message requests) ---------------- */
+
+.settingsChoices {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	min-width: 0;
+}
+
+.settingsChoices legend {
+	float: left; /* lets the legend sit in the flex column like a normal heading */
+	width: 100%;
+	margin-bottom: 12px !important;
+}
+
+.settingsChoices .crwdChoices {
+	clear: both;
+	gap: 8px;
+}
+
+.settingsChoice {
+	align-items: flex-start;
+	padding: 12px 14px;
+	background: #1a1a1a;
+}
+
+.settingsChoice input {
+	margin-top: 3px;
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.settingsChoiceText {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.settingsChoiceLabel {
+	font-weight: 700;
+	color: #FFF;
+}
+
+.settingsChoiceNote {
+	font-size: 14px;
+	color: #ADADAD;
+}
+
+.settingsChoice:has(input:focus-visible) {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* ---------------- Blocked accounts (show/hide) ---------------- */
+
+.settingsDisclosure {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.settingsChevron {
+	width: 9px;
+	height: 9px;
+	margin-top: -4px;
+	border: solid #F9F976;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	transition: transform 150ms ease;
+}
+
+.settingsDisclosure[aria-expanded="true"] .settingsChevron {
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.settingsBlockedBody {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 100%;
+}
+
+.settingsBlockedBody[hidden] {
+	display: none;
+}
+
+.settingsBlockedList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.settingsBlockedItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 10px 10px 10px 14px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.settingsBlockedWho {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.settingsBlockedName {
+	color: #FFF;
+	font-weight: 700;
+	overflow-wrap: anywhere;
+}
+
+.settingsBlockedDate {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+.settingsBlockedStatus:empty {
+	display: none;
+}
+
+/* ---------------- Max settings without Max: shown, greyed out ---------------- */
+
+.settingsSection.isLocked .settingsCheck,
+.settingsSection.isLocked .settingsCheckHint,
+.settingsSection.isLocked .settingsBadgePreview {
+	opacity: 0.5;
+}
+
+.settingsSection.isLocked .settingsCheck,
+.settingsSection.isLocked .settingsCheck input {
+	cursor: default;
+}
+
+/* ---------------- Coming soon (custom site colors) ---------------- */
+
+.settingsComingSoon {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.settingsSection.isComingSoon .settingsText {
+	color: #ADADAD;
+}
+
+.settingsSwatches {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.settingsSwatch {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	column-gap: 10px;
+	align-items: center;
+	padding: 8px 14px 8px 8px;
+	border: 1px solid #333;
+	border-radius: 9px;
+	opacity: 0.6;
+}
+
+.settingsSwatch input {
+	grid-row: 1 / span 2;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border: none;
+	border-radius: 6px;
+	background: none;
+	cursor: default;
+}
+
+.settingsSwatchText {
+	font-size: 14px;
+	color: #FFF;
+}
+
+.settingsSwatchHex {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+/* ---------------- Dialog bits ---------------- */
+
+/* Same red outline button as Delete Post on the profile page */
+.crwdModal .crwdButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+.crwdModal .settingsDialogDone {
+	margin-top: 20px;
+}
+
+.crwdModal .settingsWarning {
+	color: #FF6262;
+	font-weight: 700;
+}
+
+:is(.crwdModal) p.settingsDeleteIntro {
+	margin-bottom: 10px;
+}
+
+.settingsDeleteList {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0 0 16px;
+	padding-left: 20px;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 1.45;
+}
+
+.crwdModal .settingsCodeInput {
+	font-family: "Space Mono", monospace;
+	font-size: 22px;
+	letter-spacing: 0.3em;
+}
+
+/* ---------------- Hover (mouse only) ---------------- */
+
+@media (hover: hover) and (pointer: fine) {
+	.settingsButton:not(:disabled):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.settingsButton.isPrimary:not(:disabled):hover {
+		background: transparent;
+		color: #FFF;
+	}
+
+	.settingsButton.isDanger:not(:disabled):hover,
+	.crwdModal .crwdButton.isDanger:not(:disabled):hover {
+		background: #FF6262;
+		color: #101010;
+	}
+
+	.settingsTab:not([aria-selected="true"]):hover {
+		color: #FFF;
+	}
+
+	.settingsLinkButton:hover {
+		text-decoration: underline;
+	}
+
+	.settingsChoice:hover {
+		border-color: #62CBB8;
+	}
+}
+
+/* ---------------- Small screens ---------------- */
+
+@media screen and (max-width: 535px) {
+	#settingsHero {
+		padding-top: 60px;
+	}
+
+	/* All four tabs fit on a phone */
+	.settingsTabs {
+		gap: 4px;
+		justify-content: space-between;
+	}
+
+	.settingsTab {
+		font-size: 20px;
+		padding: 0 2px 10px;
+	}
+
+	.settingsTab:has(.settingsTabIcon) {
+		gap: 4px;
+	}
+
+	.icon.settingsTabIcon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.settingsSection {
+		padding: 24px 0;
+	}
+
+	.settingsSection > .settingsButton,
+	.settingsSaveBar .settingsButton {
+		width: 100%;
+	}
+
+	.settingsBadgePreview {
+		margin-left: 0;
+	}
+}
+
+/* Narrowest phones: a touch smaller so all four tabs still fit */
+@media screen and (max-width: 400px) {
+	.settingsTab {
+		font-size: 18px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.settingsChevron {
+		transition: none;
+	}
+}

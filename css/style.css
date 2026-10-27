@@ -806,7 +806,7 @@ footer a {
 }
 
 .venueEvents {
-	width: 73%;
+	width: 75%;
 }
 
 .event {
@@ -817,7 +817,8 @@ footer a {
 }
 
 .eventInfo {
-	width: 90%;
+	flex: 1; /* takes whatever the ticket link and hype/comment buttons don't */
+	min-width: 0;
 }
 
 .eventInfo span {
@@ -898,7 +899,7 @@ body.hide-genres .eventGenres {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px;
+  margin: auto 12px;
 }
 
 .ticketLink a {
@@ -907,6 +908,35 @@ body.hide-genres .eventGenres {
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ticketLink {
+	flex-shrink: 0;
+}
+
+/* Shows with no ticket URL keep an empty slot so every column lines up */
+.ticketLink.isPlaceholder {
+	visibility: hidden;
+}
+
+/* Hype + comment buttons, stacked, at the far right of each show.
+   A fixed-width column, so a growing count never pushes the ticket link over:
+   84px fits up to "999" / "1.2K", and the chips center inside it. Not scoped
+   to .socialOn, so it also holds the space while counts load. */
+.eventSocial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 0 0 84px;
+	width: 84px;
+	margin-left: 12px;
+}
+
+.eventSocial .crwdReactions {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 6px;
 }
 
 .dateSeparator {
@@ -1351,6 +1381,33 @@ span.flatpickr-weekday {
 	text-decoration: underline;
 }
 
+/* Hype button under "Visit Site" — holds its space while the count loads */
+.venueHype {
+	min-height: 48px;
+}
+
+
+/* Show opened from a link (/?show=<id>), e.g. a profile's Hyped list */
+.event.isLinked {
+	border-radius: 9px;
+	box-shadow: inset 0 0 0 2px #F9F976;
+	animation: eventLinkedPulse 1.2s ease-out 2;
+}
+
+@keyframes eventLinkedPulse {
+	0%   { background-color: rgba(249, 249, 118, 0.18); }
+	100% { background-color: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.event.isLinked {
+		animation: none;
+	}
+}
+
+
+
+
 
 
 
@@ -1654,6 +1711,28 @@ span.flatpickr-weekday {
 
 	.venueEvents .event:last-child {
 		margin-bottom: 8px;
+	}
+
+	.eventSocial {
+		flex-basis: 72px;
+		width: 72px;
+		margin-left: 8px;
+	}
+
+	.eventSocial .crwdChip {
+		min-height: 32px;
+		padding: 4px 10px 4px 8px;
+		gap: 5px;
+		font-size: 12px;
+	}
+
+	.eventSocial .crwdChip .icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.eventSocial .crwdChip.isEmpty {
+		padding: 4px 9px;
 	}
 
 	.flex {

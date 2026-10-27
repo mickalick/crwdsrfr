@@ -47,6 +47,10 @@
 	let allActsBySlug = {};
 	let allActSlugsSorted = [];
 
+	// Hype counts above zero, keyed by act slug — filled by loadActHypeCounts()
+	// once accounts are ready, and kept current when someone hypes in the modal.
+	let actHypeCounts = {};
+
 	let currentSearch = '';
 	const selectedGenres = new Set();
 	let onlyLocal = false;
@@ -226,17 +230,21 @@
 			.slice(0, MAX_UPCOMING_EVENTS);
 	}
 
-	async function mediaPreviewForAct(act) {
+	async function mediaPreviewForAct(act, slug) {
 		if (!window.BoardMedia) return [];
 		try {
 			const items = await window.BoardMedia.fetchBoardMedia();
 			const needles = actNeedles(act);
-			// Flatten every post into its individual shots/blocks first, then
-			// match each unit on its own — this is what lets an opener named
-			// only in one caption of a larger report surface here, rather than
-			// only whole posts whose top-level title names the act.
+			// Flatten every post into its individual photos/videos first, then
+			// match each one on its own — this is what lets an opener named
+			// only in one caption of a larger gallery surface here.
+			// A captioned shot matches when its caption names the act; an
+			// uncaptioned one when its post is tagged with the act, or titled after it.
 			const units = items.flatMap(item => window.BoardMedia.mediaUnitsForItem(item));
-			return units.filter(unit => actMatchesMediaUnit(needles, unit));
+			return units.filter(unit => unit.caption
+				? actMatchesMediaUnit(needles, unit)
+				: (unit.actIds || []).includes(slug) || actMatchesMediaUnit(needles, unit))
+				.filter(unit => unit.thumbnail); // videos without a preview image are skipped
 		} catch (e) {
 			console.warn('acts.js: could not load board media', e);
 			return [];
@@ -263,7 +271,35 @@
 			<button type="button" class="actTile" data-slug="${slug}">
 				<span class="actTileName">${act.name}</span>
 				<span class="actGenres">${genreChipsHtml(act.genres)}</span>
+				${tileHypesHtml(slug)}
 			</button>`;
+	}
+
+	// Display-only hype count at the bottom of a tile; nothing at all at zero
+	function tileHypesHtml(slug) {
+		const n = actHypeCounts[slug] || 0;
+		if (n === 0) return '';
+		return `<span class="actTileHypes" aria-label="${n} hype${n === 1 ? '' : 's'}"><span class="icon iconHype" aria-hidden="true"></span>${n.toLocaleString()}</span>`;
+	}
+
+	// Updates the counts on tiles already on the page (all of them, or one act's)
+	function refreshTileHypes(onlySlug) {
+		const selector = onlySlug ? `.actTile[data-slug="${CSS.escape(onlySlug)}"]` : '.actTile';
+		document.querySelectorAll(selector).forEach(tile => {
+			tile.querySelector('.actTileHypes')?.remove();
+			const html = tileHypesHtml(tile.dataset.slug);
+			if (html) tile.insertAdjacentHTML('beforeend', html);
+		});
+	}
+
+	function socialReady() {
+		return !!(window.CrwdSocial && window.CrwdCore && CrwdCore.enabled);
+	}
+
+	async function loadActHypeCounts() {
+		if (!socialReady()) return;
+		actHypeCounts = await CrwdSocial.loadAllHypeCounts('act');
+		refreshTileHypes();
 	}
 
 	// actsByGroup holds only the slugs currently passing search/filter; the
@@ -289,7 +325,7 @@
 		});
 
 		container.querySelectorAll('.actTile').forEach(tile => {
-			tile.addEventListener('click', () => openActModal(allActsBySlug[tile.dataset.slug]));
+			tile.addEventListener('click', () => openActModal(allActsBySlug[tile.dataset.slug], tile.dataset.slug));
 		});
 	}
 
@@ -493,12 +529,14 @@
 	const modalTitle = document.getElementById('actModalTitle');
 	const modalGenres = document.getElementById('actModalGenres');
 	const modalLinks = document.getElementById('actModalLinks');
+	const modalHype = document.getElementById('actModalHype');
 	const modalEventsSection = document.getElementById('actModalEventsSection');
 	const modalEventsList = document.getElementById('actModalEvents');
 	const modalMediaSection = document.getElementById('actModalMediaSection');
 	const modalMediaGrid = document.getElementById('actModalMedia');
 	const modalMediaToggle = document.getElementById('actModalMediaToggle');
 	let activeModalAct = null;
+	let activeModalSlug = null;
 
 	function setMediaExpanded(expanded) {
 		modalMediaGrid.classList.toggle('expanded', expanded);
@@ -543,31 +581,59 @@
 			</li>`;
 	}
 
+	// Board titles and captions are written by members now, so they're escaped
+	// before going into the HTML below
+	function escapeHtml(str) {
+		return String(str ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+	}
+
 	// `unit` is one of window.BoardMedia.mediaUnitsForItem()'s per-shot
-	// entries, not a raw top-level board-media post — its thumbnail/caption
-	// are the specific shot's own, even when that shot is nested inside a
-	// gallery or report.
+	// entries — its thumbnail/caption are the specific shot's own, even when
+	// that shot is one of several in a gallery.
 	function mediaThumbHtml(unit, isOverflow) {
-		const venueName = window.BoardMedia?.resolveVenueName(unit.venueId, venueLookup) || '';
-		const label = unit.caption || unit.postTitle;
+		const venueName = escapeHtml(window.BoardMedia?.resolveVenueName(unit.venueId, venueLookup) || '');
+		const label = escapeHtml(unit.caption || unit.postTitle);
 		// Deep-links straight to the parent post's modal on /board/ via its
 		// stable id (board.js reads a bare #<id> on load — no "item-" prefix).
 		// Falls back to the generic #top if a unit is somehow missing a postId.
 		const boardHref = unit.postId ? `/board/#${encodeURIComponent(unit.postId)}` : '/board/#top';
 		return `
 			<a class="actModalMediaThumb${isOverflow ? ' isOverflow' : ''}" href="${boardHref}" target="_blank" rel="noopener" title="${label}${venueName ? ' — ' + venueName : ''}">
-				<img src="/board/${unit.thumbnail}" alt="${label}" loading="lazy">
+				<img src="${escapeHtml(unit.thumbnail)}" alt="${label}" loading="lazy">
 				${unit.type === 'video' ? '<span class="actModalMediaPlay"></span>' : ''}
 			</a>`;
 	}
 
-	async function openActModal(act) {
+	// Hype button, top right of the modal. Loads this act's count and whether
+	// you've hyped it, then keeps the tile's count in step with clicks.
+	async function mountModalHype(act, slug) {
+		modalHype.replaceChildren();
+		if (!socialReady() || !slug) return;
+		await CrwdCore.ready;
+		const stats = (await CrwdSocial.loadStats('act', [slug]))[slug];
+		if (activeModalAct !== act) return; // another act was opened meanwhile
+		modalHype.replaceChildren(CrwdSocial.hypeButton({
+			type: 'act',
+			id: slug,
+			hypes: stats.hypes,
+			hyped: stats.hyped,
+			large: true,
+			onChange: state => {
+				if (state.hypes > 0) actHypeCounts[slug] = state.hypes; else delete actHypeCounts[slug];
+				refreshTileHypes(slug);
+			}
+		}));
+	}
+
+	async function openActModal(act, slug) {
 		if (!act) return;
 		activeModalAct = act;
+		activeModalSlug = slug;
 
 		modalTitle.textContent = act.name;
 		modalGenres.innerHTML = genreChipsHtml(act.genres);
 		modalLinks.innerHTML = linksHtml(act.links);
+		mountModalHype(act, slug);
 
 		// Both modal sections are always shown now (not just when they have
 		// content) — an empty-state message fills in instead of hiding the
@@ -589,7 +655,7 @@
 		modal.hidden = false;
 		document.body.classList.add('boardModalOpen');
 
-		const mediaItems = await mediaPreviewForAct(act);
+		const mediaItems = await mediaPreviewForAct(act, slug);
 		// Guard: if a different act's modal was opened while this one was loading, don't overwrite it
 		if (activeModalAct !== act) return;
 
@@ -602,6 +668,17 @@
 	function closeActModal() {
 		modal.hidden = true;
 		document.body.classList.remove('boardModalOpen');
+		// Drop a /acts/#slug link's hash so a refresh doesn't reopen it
+		if (activeModalSlug && decodeURIComponent(window.location.hash.slice(1)) === activeModalSlug) {
+			history.replaceState(null, '', window.location.pathname + window.location.search);
+		}
+	}
+
+	// /acts/#<slug> (e.g. from a profile's Hyped list) opens that act's modal
+	function openActFromHash() {
+		let slug = '';
+		try { slug = decodeURIComponent(window.location.hash.slice(1)); } catch (e) { return; }
+		if (slug && allActsBySlug[slug]) openActModal(allActsBySlug[slug], slug);
 	}
 
 	modal.addEventListener('click', (e) => {
@@ -609,6 +686,8 @@
 	});
 
 	document.addEventListener('keydown', (e) => {
+		// Leave the act modal open when Escape is closing the sign-in modal on top of it
+		if (document.documentElement.classList.contains('crwdModalOpen')) return;
 		if (!modal.hidden && e.key === 'Escape') closeActModal();
 	});
 
@@ -659,6 +738,15 @@
 			buildActsFilterChips();
 			renderActiveFilters();
 			applyFilters();
+			openActFromHash();
+			loadActHypeCounts();
+
+			// Signing in or out changes whether you've hyped the open act
+			if (socialReady()) {
+				CrwdCore.onChange(() => {
+					if (!modal.hidden && activeModalAct) mountModalHype(activeModalAct, activeModalSlug);
+				});
+			}
 		} catch (err) {
 			console.error('acts.js: failed to load acts', err);
 			loadingMsg.textContent = "Couldn't load the acts list — try refreshing.";

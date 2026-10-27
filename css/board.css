@@ -279,12 +279,240 @@
 	color: #FFF;
 }
 
-#boardContent .main .subHead {
+/* Heading + sort button on one line. The heading's spacing moves to the row so
+   the button lines up with the text. */
+#boardContent .main .boardSubHeadRow {
+	display: flex;
+	align-items: center;
+	gap: 8px;
 	margin-top: 40px;
+	margin-bottom: 16px;
 }
 
-#boardSubmitTrigger {
+#boardContent .main .boardSubHeadRow .subHead {
+	margin: 0 !important;
+}
+
+/* Intro line on the left, New Post on the right (wraps under it on small screens) */
+.boardIntro {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px 24px;
+}
+
+.boardIntro p {
+	margin: 0;
+}
+
+/* Same look as the profile page's New Post / Edit Profile buttons */
+.boardNewPost {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 12px 20px;
+	background: transparent;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
 	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardNewPost .icon {
+	width: 20px;
+	height: 20px;
+	transition: none;
+}
+
+.boardNewPost[hidden] {
+	display: none;
+}
+
+.boardNewPost:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* --- Sort menu ----------------------------------------------------------- */
+
+.boardSort {
+	position: relative;
+	display: flex;
+}
+
+.boardSortButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.icon.iconSettings {
+	width: 22px;
+	height: 22px;
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/settings.svg');
+	mask-image: url('../images/icons/settings.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.boardSortButton.open {
+	border-color: #F9F976;
+	color: #F9F976;
+}
+
+.boardSortButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Same yellow panel as the post ⋮ menus */
+.boardSortMenu {
+	position: absolute;
+	top: calc(100% + 8px);
+	right: -80px; /* opens back toward the heading, so it never runs off the right edge */
+	z-index: 30;
+	width: 200px;
+	margin: 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.boardSortMenu[hidden] {
+	display: none;
+}
+
+.boardSortOption {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* Check mark on the current sort; the empty slot keeps the labels lined up */
+.boardSortOption::before {
+	content: "";
+	flex-shrink: 0;
+	width: 5px;
+	height: 10px;
+	margin: -3px 3px 0 3px;
+	border: solid transparent;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.boardSortOption[aria-checked="true"] {
+	font-weight: 800;
+}
+
+.boardSortOption[aria-checked="true"]::before {
+	border-color: currentColor;
+}
+
+.boardSortOption:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* --- Tile / row view toggle ---------------------------------------------- */
+/* Same yellow segmented look as the Posts toggle, pushed to the far right */
+
+.boardViewToggle {
+	display: inline-flex;
+	flex-shrink: 0;
+	margin-left: auto;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	border-radius: 9px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.boardViewButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 36px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #F9F976;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardViewButton:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+.boardViewButton:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.boardViewButton.active {
+	background: #F9F976;
+	color: #101010;
+}
+
+.boardViewButton .icon {
+	width: 20px;
+	height: 20px;
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.iconViewTiles {
+	-webkit-mask-image: url('../images/icons/grid.svg');
+	mask-image: url('../images/icons/grid.svg');
+}
+
+.iconViewRows {
+	-webkit-mask-image: url('../images/icons/rows.svg');
+	mask-image: url('../images/icons/rows.svg');
+}
+
+.boardViewButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
 }
 
 
@@ -308,6 +536,19 @@
 
 	#boardActiveFilters .chip-reset:hover {
 		color: #F9F976;
+	}
+
+	.boardSortButton:hover {
+		border-color: #F9F976;
+	}
+
+	.boardSortOption:hover {
+		background: #101010;
+		color: #F9F976;
+	}
+
+	.boardViewButton:not(.active):hover {
+		background: rgba(249, 249, 118, 0.15);
 	}
 }
 
@@ -334,7 +575,7 @@
 		margin-right: 6%;
 	}
 
-	#boardContent .main .subHead {
+	#boardContent .main .boardSubHeadRow {
 		margin-top: 40px;
 	}
 }
@@ -454,50 +695,96 @@
 	pointer-events: none;
 }
 
+.boardTileThumb-empty {
+	min-height: 120px;
+}
+
+/* Title, by, type + counts */
+.boardTileInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	flex: 1;
+	width: 100%;
+	padding: 10px 12px 12px;
+}
+
 .boardTileCaption {
-	margin: 8px 8px 0px;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 20px;
 	line-height: 1.2;
 	color: #FFF;
+	overflow-wrap: anywhere;
 }
 
-.boardTileGenres {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 6px;
-	margin: 6px 8px 0px;
-}
-
-.boardTileGenres .genre-chip {
-	display: inline-flex;
-	align-items: center;
-	font-family: 'Space Mono', monospace;
-	font-size: 11px;
-	letter-spacing: 0.03em;
-	padding: 3px 10px;
-	border: 1px solid var(--genre-color, rgba(255,255,255,0.15));
-	border-radius: 20px;
-	color: var(--genre-color, #FFF);
-	background: transparent;
-	white-space: nowrap;
-}
-
-.boardTileVenue {
-	margin: 4px 8px 0px;
+/* Discussions have no picture: a few lines of the opening text fill in instead */
+.boardTileExcerpt {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin-top: 6px;
 	font-family: "Plus Jakarta Sans", sans-serif;
-	font-size: 14px;
-	line-height: 1.2;
+	font-size: 15px;
+	line-height: 1.45;
+	color: #DADADA;
+	white-space: pre-line;
+}
+
+.boardTileBy {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1.3;
 	color: #ADADAD;
+	overflow-wrap: anywhere;
+}
+
+/* Max badge after the username, sized down from its 24px default
+   (three classes so it beats crwd-ui.css, which loads later) */
+.boardTileBy .icon.crwdMaxBadge {
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	vertical-align: -3px;
+}
+
+/* Post type on the left, hype/comment counts on the right, pinned to the bottom */
+.boardTileFoot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: auto;
+	padding-top: 8px;
 }
 
 .boardTilePostType {
-	margin: 4px 8px 8px;
 	font-family: "Space Mono", monospace;
 	font-size: 12px;
 	letter-spacing: 0.05em;
 	line-height: 1.2;
 	color: #F9F976;
+}
+
+.boardTileCounts {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.boardTileCount {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1;
+	color: #ADADAD;
+}
+
+.boardTileCount .icon {
+	width: 16px;
+	height: 16px;
 }
 
 .boardStateMsg {
@@ -563,8 +850,51 @@
 		font-size: 16px;
 	}
 
-	.boardTilePostType {
-		font-size: 12px;
+	.boardTileExcerpt {
+		font-size: 13px;
+	}
+}
+
+/* --- Row view: full-width tiles, thumbnail left, info right ---------------
+   #boardGrid.isRows outranks the #boardGrid breakpoint rules above, so it
+   stays one column at every width. */
+
+#boardGrid.isRows {
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+
+#boardGrid.isRows .boardTile {
+	flex-direction: row;
+	align-items: stretch;
+}
+
+/* Fixed-width thumb that stretches to the tile's height (cropped by object-fit) */
+#boardGrid.isRows .boardTileThumb {
+	flex: 0 0 280px;
+	width: 280px;
+	aspect-ratio: auto;
+	min-height: 168px;
+}
+
+#boardGrid.isRows .boardTileInfo {
+	min-width: 0;
+	padding: 16px 20px;
+}
+
+#boardGrid.isRows .boardTileExcerpt {
+	-webkit-line-clamp: 3;
+}
+
+@media screen and (max-width: 535px) {
+	#boardGrid.isRows .boardTileThumb {
+		flex-basis: 120px;
+		width: 120px;
+		min-height: 100px;
+	}
+
+	#boardGrid.isRows .boardTileInfo {
+		padding: 10px 12px 12px;
 	}
 }
 
@@ -628,261 +958,236 @@
 	}
 }
 
-.note {
-	font-size: 14px;
-}
-
+/* Stays pinned to the top-right corner while the post scrolls underneath.
+   Sticky inside the scrolling card: the negative margins pull it up into the
+   card's top padding without pushing the content below it down. The dark
+   circle keeps it visible over photos. */
 .boardModalClose {
-	position: absolute;
-	top: 8px;
-	right: 12px;
-	z-index: 2;
-	background: none;
-	border: none;
-	color: #FFF;
-	font-size: 32px;
-	line-height: 1;
-	cursor: pointer;
-	padding: 4px 8px;
-}
-
-.boardForm {
-	margin-top: 24px;
-}
-
-.boardForm label {
-	color: #FFF;
-	font-size: 14px;
-}
-
-.boardSubmitModalBody a {
-	color: #62CBB8;
-}
-
-#attachLabel {
-	display: inline-block;
-	width: 100%;
-}
-
-#boardFormAttachments {
-	color: #ADADAD;
-	font-family: "Space Mono", monospace;
-	font-size: 14px;
-	margin-bottom: 16px;
-}
-
-#boardFormAttachments::file-selector-button,
-#boardFormAttachments::-webkit-file-upload-button {
-	background: none !important;
-	border: 2px solid #F9F976 !important;
-	display: block;
-	text-align: center;
-	color: #F9F976 !important;
-	padding: 12px 40px !important;
-	font-size: 16px;
-	letter-spacing: 2px;
-	cursor: pointer;
-	margin-top: 8px;
-}
-
-
-@media (hover: hover) and (pointer: fine) {
-	.boardModalClose:hover {
-		color: #FF6262;
-	}
-
-	.boardSubmitModalBody a:hover {
-		text-decoration: underline;
-	}
-}
-
-/* Prev/next nav sits beside the whole modal card (not just over the media),
-   since a gallery/report post has no single "media area" to anchor to —
-   this way the same two buttons work for every post type and stay put
-   while a long gallery/report scrolls underneath them. */
-.boardModalNavBtn {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 1001;
-	width: 48px;
-	height: 48px;
+	position: sticky;
+	top: -40px; /* sticky is measured from inside the card's 48px top padding: this lands it 8px from the top */
+	z-index: 5;
+	align-self: flex-end;
+	flex-shrink: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 40px;
+	height: 40px;
+	margin: -40px -12px 0 0;
+	padding: 0;
 	background-color: rgba(16, 16, 16, 0.75);
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+	transition: background-color 150ms ease;
 }
 
-.boardModalNavPrev {
-	left: max(16px, calc(50% - 500px));
+/* Same clear.svg icon as the menu drawer and search clear buttons */
+.boardIconClose {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transition: background-color 150ms ease;
 }
 
-.boardModalNavNext {
-	right: max(16px, calc(50% - 500px));
-}
-
-.boardModalNavBtn[hidden] {
-	display: none;
-}
-
-.boardModalNavBtn[disabled] {
-	opacity: 0.25;
-	cursor: default;
-	pointer-events: none;
-}
 
 @media (hover: hover) and (pointer: fine) {
-	.boardModalNavBtn:hover {
-		background-color: #171717;
+	.boardModalClose:hover .boardIconClose {
+		background-color: #FF6262;
+	}
+
+	.boardNewPost:hover {
+		background: #F9F976;
+		color: #101010;
 	}
 }
 
-@media screen and (max-width: 700px) {
-	.boardModalNavPrev {
-		left: 8px;
-	}
+/* --- Post modal content ---------------------------------------------------
+   Top to bottom: cover photo · title · by · opening · media + captions ·
+   closing · details · footer (hype, comments, ⋮) · comments. */
 
-	.boardModalNavNext {
-		right: 8px;
-	}
-}
-
-/* A report's cover shot, shown as a hero above everything else — always
-   order: 0 regardless of the .boardModalContent--shot swap below, since
-   only reports use it (shots/galleries leave it empty and hidden). */
-.boardModalReportHero {
-	order: 0;
-	margin-bottom: 16px;
-}
-
-.boardModalReportHero[hidden] {
+.boardModalHero[hidden],
+.boardModalActions > span:empty,
+.boardModalMore[hidden],
+.boardModalStatus[hidden],
+.boardModalShow[hidden],
+.boardModalCredit[hidden],
+.boardModalComments[hidden],
+.boardModalMoreMenu[hidden],
+.boardModalMoreItem[hidden],
+.boardModalNote[hidden] {
 	display: none;
 }
 
-.boardModalReportHero img,
-.boardModalReportHero video {
+.boardModalHero {
+	margin-bottom: 20px;
+}
+
+.boardModalHero img,
+.boardModalHero video,
+.boardModalFigure img,
+.boardModalFigure video {
 	width: 100%;
-	max-height: 60vh;
+	max-height: 70vh;
 	border-radius: 6px;
 	object-fit: contain;
 	background-color: #000;
 	display: block;
 }
 
-/* Meta (title/genres/venue+date/credit) vs. the media — order is flipped
-   between post types via the .boardModalContent--shot modifier instead of
-   reordering the DOM: a shot keeps media-on-top/info-below like before,
-   while a gallery or report puts the info first, followed by its content
-   stream. */
-.boardModalMeta {
-	order: 1;
-	padding: 16px 0px 0px;
+.boardModalHead h2 {
+	font-size: 32px;
+	line-height: 1.05;
+	margin: 0 40px 4px 0 !important; /* clear of the close button */
+	overflow-wrap: anywhere;
 }
 
-.boardModalMedia,
-.boardModalContentList {
-	order: 2;
+.boardModalHead {
+	margin-bottom: 20px;
 }
 
-.boardModalContent--shot .boardModalMeta {
-	order: 2;
-	padding: 16px 0px 0px;
+/* "by username on Oct 14, 2026 at 8:30 PM" */
+.boardModalBy {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: #ADADAD;
 }
 
-.boardModalContent--shot .boardModalMedia,
-.boardModalContent--shot .boardModalContentList {
-	order: 1;
+.boardModalCredit {
+	margin: 4px 0 0;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	color: #ADADAD;
 }
 
-.boardModalMedia {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #000;
-	max-height: 70vh;
+.boardModalByName {
+	color: #62CBB8;
+	text-decoration: none;
 }
 
-.boardModalMedia[hidden] {
-	display: none;
+.boardModalBy .icon.crwdMaxBadge {
+	width: 18px;
+	height: 18px;
+	margin-left: 4px;
+	vertical-align: -4px;
 }
 
-/* Keeps the wrapper invisible to layout so the img/video inside behave
-   exactly as if they were still direct children of .boardModalMedia —
-   this wrapper exists purely so JS can clear/replace the media without
-   also wiping out sibling elements. */
-.boardModalMediaInner {
-	display: contents;
-}
-
-.boardModalMedia img,
-.boardModalMedia video {
-	width: 100%;
-	max-height: 70vh;
-	object-fit: contain;
-	display: block;
-}
-
-/* Gallery/report scrollable content stream — a vertical list of media
-   (+ optional captions) for a gallery, or a mix of paragraph and media
-   blocks for a report. It's not a separately-scrolling pane of its own;
-   it scrolls along with the rest of .boardModalContent. */
-.boardModalContentList {
+.boardModalBody {
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
-	margin-top: 16px;
+	gap: 20px;
 }
 
-.boardModalContentList[hidden] {
-	display: none;
+.boardModalText p {
+	margin: 0 0 12px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #FFF;
+	white-space: pre-line; /* keep single line breaks people type */
+	overflow-wrap: anywhere;
 }
 
-.boardModalStreamItem {
+.boardModalText p:last-child {
+	margin-bottom: 0;
+}
+
+.boardModalFigure {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-}
-
-.boardModalStreamItem img,
-.boardModalStreamItem video {
-	width: 100%;
-	max-height: 70vh;
-	border-radius: 6px;
-	object-fit: contain;
-	background-color: #000;
-	display: block;
+	margin: 0;
 }
 
 .boardModalStreamCaption {
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	letter-spacing: 0.03em;
+	line-height: 1.5;
 	color: #ADADAD;
 	margin: 0;
+	white-space: pre-line;
 }
 
-.boardModalStreamParagraph {
-	font-family: "Plus Jakarta Sans", sans-serif;
-	font-size: 16px;
-	line-height: 1.6;
+/* Show Details: tagged acts (+ genres), venue, show date */
+.boardModalShow {
+	margin: 24px 0 0;
+	padding-top: 20px;
+	border-top: 1px solid #333;
+}
+
+.boardModalShowTitle {
+	margin: 0 0 12px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
 	color: #FFF;
+}
+
+.boardModalDetails {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 	margin: 0;
 }
 
-.boardModalMeta h2 {
-	font-size: 24px;
-	margin-bottom: 8px !important;
+.boardModalDetail {
+	display: grid;
+	grid-template-columns: 72px minmax(0, 1fr);
+	gap: 12px;
+	align-items: baseline;
+}
+
+.boardModalDetail dt {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ADADAD;
+}
+
+.boardModalDetail dd {
+	margin: 0;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+
+.boardModalDetail dd a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.boardModalActs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.boardModalAct {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 10px;
 }
 
 .boardModalGenres {
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 6px;
-	margin: 0 0 12px;
 }
 
 .boardModalGenres .genre-chip {
@@ -899,47 +1204,166 @@
 	white-space: nowrap;
 }
 
-.boardModalSub {
+/* Shown in place of hype/comments while a post waits on review (only its author sees it) */
+.boardModalStatus {
 	font-family: "Space Mono", monospace;
-	font-size: 16px;
-	letter-spacing: 0.05em;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	border: 1px solid currentColor;
+	border-radius: 20px;
 	color: #ADADAD;
-	margin: 0 0 8px;
 }
 
-.boardModalCredit {
-	font-family: "Space Mono", monospace;
-	font-size: 14px;
-	letter-spacing: 0.05em;
-	color: #ADADAD;
-	margin: 0;
+.boardModalStatus.isRejected {
+	color: #FF6262;
 }
 
-.boardModalCreditValue {
-	color: #FFF;
+/* Footer: hype + comments on the left, ⋮ on the right */
+.boardModalFooter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid #333;
 }
 
-/* Styled to match .board-load (the grid's "Load More" button) — same
-   pill shape/border/spacing — and pinned to order: 3 so it always renders
-   last, after the meta/media swap that flips between order 1 and 2 for
-   shots vs. galleries/reports. */
-.boardModalShareBtn {
-	order: 3;
-	font-family: "Plus Jakarta Sans", sans-serif;
-	font-size: 16px;
-	letter-spacing: 0.05em;
-	padding: 12px 16px;
-	border-radius: 9px;
-	border: 1px solid #F9F976;
-	color: #FFFFFF;
-	background: transparent;
-	cursor: pointer;
+.boardModalActions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.crwdChipComment.isOpen {
+	color: #62CBB8;
+	border-color: #62CBB8;
+}
+
+.boardModalMore {
+	position: relative;
+}
+
+.boardModalMoreButton {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
-	width: fit-content;
-	margin: 24px auto 0;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: none;
+	border: 1px solid transparent;
+	border-radius: 9px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.boardModalMoreButton .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.boardModalMoreButton.open {
+	border-color: #F9F976;
+	color: #F9F976;
+}
+
+.boardModalMoreButton:focus-visible {
+	outline: 2px solid #F9F976;
+	outline-offset: 2px;
+}
+
+/* Same yellow panel as the header's account menu; opens upward from the footer */
+.boardModalMoreMenu {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 8px);
+	z-index: 20;
+	width: 180px;
+	margin: 0;
+	padding: 8px;
+	list-style: none;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.boardModalMoreItem {
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.boardModalMoreItem.isDanger {
+	color: #B42318;
+}
+
+.boardModalMoreItem:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* "Link copied" bubble above the ⋮ button */
+.boardModalNote {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 8px);
+	z-index: 21;
+	padding: 6px 10px;
+	background: #62CBB8;
+	border-radius: 6px;
+	color: #101010;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.boardModalComments {
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid #333;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.boardModalByName:hover,
+	.boardModalDetail dd a:hover {
+		color: #62CBB8;
+		text-decoration: underline;
+	}
+
+	.boardModalMoreButton:hover {
+		border-color: #F9F976;
+	}
+
+	.boardModalMoreItem:hover {
+		background: #101010;
+		color: #F9F976;
+	}
+}
+
+@media screen and (max-width: 535px) {
+	.boardModalHead h2 {
+		font-size: 26px;
+	}
+
+	.boardModalDetail {
+		grid-template-columns: 1fr;
+		gap: 2px;
+	}
 }
 
 body.boardModalOpen {

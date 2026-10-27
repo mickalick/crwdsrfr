@@ -1,9 +1,10 @@
 let allData = null;
+let eventsById = new Map(); // event id → event, for the hype/comment buttons
 let allVenues = null; // keyed by venue id — loaded from venues.json for type/area filtering
 let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
 let calendarViewMode = 'day'; // 'day' | 'week'
-let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time'
+let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time' | 'hype-count'
 let calendarShowGenres = true; // whether genre chips render on event tiles
 let filterMode = 'include'; // 'include' | 'exclude' — applies to every active filter category (venue name/type/area, genre)
 
@@ -14,6 +15,10 @@ const selectedTypes = new Set();
 const selectedAreas = new Set();
 const selectedGenres = new Set();
 const expandedGroups = { name: false, type: false, area: false, genre: false };
+
+// Set when the calendar is opened with a link to one show (/?show=<event id>),
+// e.g. from a profile's Hyped list. Cleared once that show has been revealed.
+let focusEventId = new URLSearchParams(window.location.search).get('show');
 
 const FILTER_STORAGE_KEY = 'crwdsrfr_calendar_filters';
 const CALENDAR_SETTINGS_KEY = 'crwdsrfr_calendar_settings';
@@ -42,7 +47,7 @@ function loadCalendarSettingsFromStorage() {
     if (parsed.viewMode === 'day' || parsed.viewMode === 'week') {
       calendarViewMode = parsed.viewMode;
     }
-    if (['venue-name', 'show-title', 'show-time'].includes(parsed.sortMethod)) {
+    if (['venue-name', 'show-title', 'show-time', 'hype-count'].includes(parsed.sortMethod)) {
       calendarSortMethod = parsed.sortMethod;
     }
     if (typeof parsed.showGenres === 'boolean') {
@@ -268,7 +273,17 @@ function eventMatchesGenreFilters(event) {
   return filterMode === 'exclude' ? !matchesAny : matchesAny;
 }
 
-function applyFilters() {
+// Hype/comment counts for the shows being rendered. Only fetched before rendering
+// when sorting by Most Hyped (the order depends on them); otherwise the buttons
+// load their counts after the cards appear.
+let currentStats = null;
+let renderRun = 0;
+
+function socialReady() {
+  return !!(window.CrwdSocial && window.CrwdCore && CrwdCore.enabled);
+}
+
+async function applyFilters() {
   updateSubHead();
 
   if (!allData) return;
@@ -302,6 +317,23 @@ function applyFilters() {
     filtered = filtered.filter(event => eventMatchesGenreFilters(event));
   }
 
+  // A linked show always appears, even if a saved filter would hide it
+  if (focusEventId && !filtered.some(e => e.id === focusEventId)) {
+    const linked = allData.events.find(e => e.id === focusEventId);
+    const shownDates = calendarViewMode === 'week' ? getWeekDates(currentDateStr) : [currentDateStr];
+    if (linked && shownDates.includes(linked.date)) filtered.push(linked);
+  }
+
+  // Most Hyped needs the counts first. A newer date/filter change cancels this one.
+  const run = ++renderRun;
+  currentStats = null;
+  if (calendarSortMethod === 'hype-count' && socialReady()) {
+    await CrwdCore.ready;
+    const stats = await CrwdSocial.loadStats('event', [...new Set(filtered.map(e => e.id))]);
+    if (run !== renderRun) return;
+    currentStats = stats;
+  }
+
   renderEvents(filtered);
 }
 
@@ -320,7 +352,7 @@ function renderVenueCards(events, container, beforeNode) {
   // Show Title and Show Time sorting give each show its own tile, even when
   // a venue has multiple shows that day — only the default Venue Name sort
   // groups them into a single card the way the calendar has always worked.
-  const splitPerShow = calendarSortMethod === 'show-title' || calendarSortMethod === 'show-time';
+  const splitPerShow = calendarSortMethod === 'show-title' || calendarSortMethod === 'show-time' || calendarSortMethod === 'hype-count';
 
   let groups;
   if (splitPerShow) {
@@ -346,8 +378,20 @@ function renderVenueCards(events, container, beforeNode) {
     return sortableName(allData.venues[group.venueId]?.name ?? '');
   };
 
+  // Most Hyped: highest count first; ties go to the earlier show, then A-Z
+  const hypesOf = (group) => currentStats?.[group.events[0].id]?.hypes ?? 0;
+  const compareGroups = (a, b) => {
+    if (calendarSortMethod === 'hype-count') {
+      const diff = hypesOf(b) - hypesOf(a);
+      if (diff !== 0) return diff;
+      const time = (a.events[0].time || '99:99').localeCompare(b.events[0].time || '99:99');
+      return time !== 0 ? time : a.events[0].title.localeCompare(b.events[0].title);
+    }
+    return String(groupSortKey(a)).localeCompare(String(groupSortKey(b)));
+  };
+
   groups
-    .sort((a, b) => String(groupSortKey(a)).localeCompare(String(groupSortKey(b))))
+    .sort(compareGroups)
     .forEach(({ venueId, events: venueEvents }) => {
       const venue = allData.venues[venueId];
       if (!venue) return;
@@ -374,9 +418,10 @@ function renderVenueCards(events, container, beforeNode) {
           ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
           : event.title;
 
+        // No ticket URL: an invisible placeholder keeps the columns lined up
         const linkHtml = event.ticketUrl
           ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
-          : '';
+          : '<div class="ticketLink isPlaceholder" aria-hidden="true"></div>';
 
         // Rendered as its own full-width row below the name/time/price line
         // (not inline with them) so it only adds height to the event tile —
@@ -387,8 +432,9 @@ function renderVenueCards(events, container, beforeNode) {
             `).join('')}</div>`
           : '';
 
+        // Empty slot for the hype + comment buttons; attachEventSocial() fills it
         return `
-          <div class="event">
+          <div class="event" data-event-id="${event.id}">
             <div class="eventInfo">
               <span class="eventName">${titleHtml}</span>
               <span class="eventTime">${timeDisplay}</span>
@@ -396,6 +442,7 @@ function renderVenueCards(events, container, beforeNode) {
               ${genresHtml}
             </div>
             ${linkHtml}
+            <div class="eventSocial"></div>
           </div>`;
       }).join('');
 
@@ -456,7 +503,75 @@ function renderEvents(events) {
     }
 
     $(container).fadeTo(150, 1);
+    revealFocusedEvent();
+    attachEventSocial();
   });
+}
+
+// ---------- Hype + comment buttons (js/crwd-social.js) ----------
+// Fills each rendered show's .eventSocial slot. Counts for every show on screen
+// load in one batch; a newer render (date/filter change) cancels an older one.
+let socialRun = 0;
+
+async function attachEventSocial() {
+  if (!window.CrwdSocial || !window.CrwdCore || !CrwdCore.enabled) return;
+  const slots = [...document.querySelectorAll('#calendarCards .eventSocial')];
+  if (slots.length === 0) return;
+  const run = ++socialRun;
+
+  await CrwdCore.ready; // so "already hyped" reflects whoever is signed in
+  const ids = [...new Set(slots.map(slot => slot.closest('.event').dataset.eventId))];
+  // Reuse the counts Most Hyped already fetched, when they cover these shows
+  const stats = (currentStats && ids.every(id => currentStats[id]))
+    ? currentStats
+    : await CrwdSocial.loadStats('event', ids);
+  if (run !== socialRun) return;
+
+  slots.forEach(slot => {
+    if (!slot.isConnected) return;
+    const id = slot.closest('.event').dataset.eventId;
+    const event = eventsById.get(id);
+    const s = stats[id];
+    slot.replaceChildren(CrwdSocial.reactions({
+      type: 'event',
+      id: id,
+      hypes: s.hypes,
+      comments: s.comments,
+      hyped: s.hyped,
+      title: event ? eventContext(event) : null // shown at the top of the comments modal
+    }));
+  });
+}
+
+// "OSEES … · Beachland Ballroom · Sun, Oct 19"
+function eventContext(event) {
+  const [y, m, d] = event.date.split('-').map(Number);
+  const day = new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  return [event.title, allData.venues[event.venueId]?.name, day].filter(Boolean).join(' · ');
+}
+
+// /?show=<event id>: open the calendar on that show's date
+function jumpToLinkedShow() {
+  if (!focusEventId) return;
+  const linked = allData.events.find(e => e.id === focusEventId);
+  if (!linked) { focusEventId = null; return; } // no longer listed: just open today
+  const [y, m, d] = linked.date.split('-').map(Number); // local date, never via UTC
+  const date = new Date(y, m - 1, d);
+  document.querySelector('#current h3').textContent = date.toLocaleDateString('en-US', options);
+  datePickerFp.setDate(date, false);
+  currentDateStr = linked.date;
+}
+
+// ...then scroll to the show and highlight it
+function revealFocusedEvent() {
+  if (!focusEventId) return;
+  const el = document.querySelector(`.event[data-event-id="${CSS.escape(focusEventId)}"]`);
+  focusEventId = null;
+  // Drop ?show= so a refresh or a later date change behaves normally
+  history.replaceState(null, '', window.location.pathname + window.location.hash);
+  if (!el) return;
+  el.classList.add('isLinked');
+  el.scrollIntoView({ block: 'center', behavior: 'smooth' });
 }
 
 function collapseChipRow(wrap, groupKey) {
@@ -611,6 +726,7 @@ async function loadEvents() {
     fetch('/data/genres.json'),
   ]);
   allData = await eventsRes.json();
+  eventsById = new Map(allData.events.map(e => [e.id, e]));
   const venuesList = await venuesRes.json();
   allVenues = Object.fromEntries(venuesList.map(v => [v.id, v]));
   try {
@@ -627,6 +743,7 @@ async function loadEvents() {
   renderActiveFilters();
   updateMatchingDates();
   datePickerFp.redraw();
+  jumpToLinkedShow();
   applyFilters();
 }
 
@@ -677,6 +794,20 @@ document.getElementById('calendarShowGenres').checked = calendarShowGenres;
 applyGenreVisibility();
 
 loadEvents();
+
+// Signing in or out changes which shows are "already hyped": refresh the buttons
+if (socialReady()) {
+  document.body.classList.add('socialOn');
+  CrwdCore.onChange(() => {
+    currentStats = null; // its "already hyped" flags belong to the previous user
+    attachEventSocial();
+  });
+} else {
+  // Accounts unavailable (e.g. Supabase didn't load): no counts to sort by
+  document.querySelector('#calendarSortMethod option[value="hype-count"]')?.remove();
+  if (calendarSortMethod === 'hype-count') calendarSortMethod = 'venue-name';
+  document.getElementById('calendarSortMethod').value = calendarSortMethod;
+}
 
 document.getElementById('search').addEventListener('input', function() {
   currentSearch = this.value;

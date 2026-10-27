@@ -1,0 +1,499 @@
+/* =====================================================================
+   css/crwd-composer.css — the New Post form (js/crwd-composer.js)
+   Lives inside the shared account modal, so inputs, labels, hints and
+   buttons come from crwd-ui.css; only the composer's own pieces are here.
+   ===================================================================== */
+
+.composerForm [hidden] {
+	display: none !important;
+}
+
+/* While uploading: everything but the Post button is frozen */
+.composerForm.isBusy :is(input, textarea, select, .composerMediaTool, .composerChipRemove) {
+	pointer-events: none;
+	opacity: 0.6;
+}
+
+/* "(optional)" after a label */
+.composerOptional {
+	color: #ADADAD;
+	font-weight: 400;
+}
+
+/* ---------- Post to: Board / Profile Only ---------- */
+
+.composerDestination {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.composerDestination legend {
+	margin-bottom: 8px;
+	padding: 0;
+}
+
+/* Same segmented look as the profile/Board filters */
+.composerSegmented {
+	display: flex;
+	width: 100%;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	border-radius: 9px;
+	background: rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+}
+
+.composerSegment {
+	position: relative;
+	flex: 1;
+	display: flex;
+}
+
+.composerSegment input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.composerSegment span {
+	flex: 1;
+	padding: 12px 16px;
+	text-align: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	color: #F9F976;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.composerSegment + .composerSegment span {
+	border-left: 1px solid rgba(249, 249, 118, 0.25);
+}
+
+.composerSegment input:checked + span {
+	background: #F9F976;
+	color: #101010;
+	font-weight: 900;
+}
+
+.composerSegment input:focus-visible + span {
+	outline: 2px solid #62CBB8;
+	outline-offset: -3px;
+}
+
+/* ---------- Media ---------- */
+
+.composerMediaList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.composerMediaItem {
+	display: grid;
+	grid-template-columns: 96px minmax(0, 1fr) auto;
+	gap: 12px;
+	align-items: start;
+	padding: 10px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+}
+
+.composerMediaPreview {
+	position: relative;
+	width: 96px;
+	height: 96px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: #2a2a2a;
+}
+
+.composerMediaPreview img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.composerMediaWorking {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	color: #ADADAD;
+	animation: composerPulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes composerPulse {
+	from { opacity: 0.4; }
+	to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.composerMediaWorking { animation: none; }
+}
+
+/* Small play mark on video thumbnails */
+.composerMediaPlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 32px;
+	height: 32px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: rgba(16, 16, 16, 0.65);
+}
+
+.composerMediaPlay::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-width: 6px 0 6px 10px;
+	border-color: transparent transparent transparent #FFF;
+}
+
+.composerMediaCover {
+	position: absolute;
+	left: 4px;
+	bottom: 4px;
+	padding: 1px 6px;
+	border-radius: 20px;
+	background: #F9F976;
+	color: #101010;
+	font-family: "Space Mono", monospace;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.composerMediaMain {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.composerMediaMeta {
+	display: flex;
+	gap: 10px;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+}
+
+.composerMediaKind {
+	color: #FFF;
+}
+
+/* Caption box: smaller than the main fields */
+:is(.crwdModal, .crwdInline) .crwdField textarea.composerCaption {
+	min-height: 58px;
+	padding: 8px 10px;
+	font-size: 16px; /* 16px+ stops iOS from zooming in */
+	line-height: 1.35;
+}
+
+.composerMediaTools {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.composerMediaTool {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	background: none;
+	border: 1px solid #3a3a3a;
+	border-radius: 6px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+.composerMediaTool:disabled {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.composerMediaTool.isDanger {
+	color: #FF6262;
+}
+
+.composerMediaTool:focus-visible,
+.composerChipRemove:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Chevrons drawn with borders, so no extra icon files are needed */
+.composerArrow {
+	width: 8px;
+	height: 8px;
+	border: solid currentColor;
+	border-width: 2px 2px 0 0;
+}
+
+.composerArrow.isUp   { transform: translateY(2px) rotate(-45deg); }
+.composerArrow.isDown { transform: translateY(-2px) rotate(135deg); }
+
+/* Same clear.svg as the modal's close button */
+.composerRemove {
+	width: 14px;
+	height: 14px;
+	background-color: currentColor;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+.composerAddMedia {
+	align-self: flex-start;
+}
+
+.composerAddMedia.isDisabled {
+	opacity: 0.45;
+	pointer-events: none;
+}
+
+.composerMediaNote {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #FF6262;
+}
+
+/* ---------- Tags ---------- */
+
+.composerTagsHint {
+	margin: -8px 0 0;
+}
+
+.composerActChips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.composerActChip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 6px 4px 12px;
+	border: 1px solid #62CBB8;
+	border-radius: 20px;
+	color: #62CBB8;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+}
+
+.composerChipRemove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 50%;
+	color: inherit;
+	cursor: pointer;
+}
+
+.composerChipRemove .composerRemove {
+	width: 12px;
+	height: 12px;
+}
+
+.composerCombo {
+	position: relative;
+}
+
+.composerComboList {
+	position: absolute;
+	top: calc(100% + 4px);
+	left: 0;
+	right: 0;
+	z-index: 5;
+	max-height: 240px;
+	overflow-y: auto;
+	margin: 0;
+	padding: 6px;
+	list-style: none;
+	background: #101010;
+	border: 1px solid #3a3a3a;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.composerComboOption,
+.composerComboEmpty {
+	padding: 10px 12px;
+	border-radius: 6px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+
+.composerComboOption {
+	cursor: pointer;
+}
+
+.composerComboOption.isActive {
+	background: #F9F976;
+	color: #101010;
+	font-weight: 600;
+}
+
+.composerComboEmpty {
+	color: #ADADAD;
+}
+
+/* "Add "…"" — an act that isn't on the Acts page */
+.composerComboOption.isNew {
+	color: #62CBB8;
+}
+
+.composerComboOption.isNew strong {
+	font-weight: 700;
+}
+
+.composerComboOption.isNew.isActive {
+	color: #101010;
+}
+
+/* Native date picker icon is dark by default; make it readable on the dark field */
+.composerDate::-webkit-calendar-picker-indicator {
+	filter: invert(1);
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+/* Venue and date share the row evenly */
+.crwdFieldRow.composerTagRow {
+	grid-template-columns: 1fr 1fr;
+}
+
+.composerReviewNote {
+	margin: 0;
+	text-align: center;
+}
+
+/* ---------- Discard? ---------- */
+
+.composerConfirm {
+	position: sticky;
+	bottom: 0;
+	z-index: 6;
+	margin: 16px -12px 0;
+	padding: 16px;
+	background: #101010;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.composerConfirm p {
+	margin: 0 0 12px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	color: #FFF;
+}
+
+.composerConfirmActions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.composerConfirm .crwdSmallButton.isDanger {
+	border-color: #FF6262;
+	color: #FF6262;
+}
+
+/* ---------- Done ---------- */
+
+.composerDoneActions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+	margin-top: 8px;
+}
+
+/* ---------- Hover (mouse only) ---------- */
+
+@media (hover: hover) and (pointer: fine) {
+	.composerSegment input:not(:checked) + span:hover {
+		background: rgba(249, 249, 118, 0.08);
+	}
+
+	.composerMediaTool:not(:disabled):hover {
+		border-color: #62CBB8;
+	}
+
+	.composerMediaTool.isDanger:not(:disabled):hover {
+		border-color: #FF6262;
+	}
+
+	.composerChipRemove:hover {
+		background: rgba(98, 203, 184, 0.15);
+	}
+
+	.composerComboOption:not(.isActive):hover {
+		background: #2a2a2a;
+	}
+
+	.composerConfirm .crwdSmallButton.isDanger:hover {
+		background: #FF6262;
+		color: #101010;
+	}
+}
+
+/* ---------- Small screens ---------- */
+
+@media screen and (max-width: 535px) {
+	.composerMediaItem {
+		grid-template-columns: 72px minmax(0, 1fr) auto;
+		gap: 10px;
+	}
+
+	.composerMediaPreview {
+		width: 72px;
+		height: 72px;
+	}
+
+	.crwdFieldRow.composerTagRow {
+		grid-template-columns: 1fr;
+	}
+}

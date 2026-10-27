@@ -1,68 +1,41 @@
 // board.js
-// Data layer + grid/modal/search/filter rendering for the media board.
+// Data layer + grid/modal/search/filter rendering for the Board.
 //
-// Data source: data/board-media.json, an array of posts. Every post has a
-// postType of 'shot' | 'gallery' | 'report' (older entries with no postType
-// are treated as 'shot' for backward compatibility) plus shared fields:
-//   { id, postType, title, date ('YYYY-MM-DD'), venueId, submittedBy, thumbnail }
+// Data source: approved Board posts in Supabase (public.posts, destination 'board'),
+// read through CrwdCore. Every post has a post_type:
+//   shot       — one photo or video
+//   gallery    — two or more photos/videos (what used to be galleries AND reports)
+//   discussion — text only, no media
+// and these fields (see the schema for the rules):
+//   { id, title, opener?, media: [{ src, type, caption?, thumb?, cover? }], closer?,
+//     hero? (cover photo at the top), venue_id?, show_date?, act_ids[], credit?, legacy_id? }
 //
-// Shape per postType:
-//   shot    -> flat media fields on the post itself: { type ('photo'|'video'), src, thumbnail }
-//   gallery -> { items: [ { type, src, thumbnail, caption?, cover? }, ... ] }
-//   report  -> { hero?: { mediaType, src, thumbnail?, caption? }, blocks: [ { type: 'paragraph', text } | { type: 'media', mediaType, src, thumbnail?, caption?, cover? }, ... ] }
+// Media `src` is either a file in the post-media storage bucket ("<user id>/…") or one
+// of the site's own Board files ("/board/…", for posts imported from board-media.json).
+// mediaUrl() turns either into a URL.
 //
-// For a gallery, `cover: true` on one entry in `items` marks which shot is
-// used as the grid tile's cover image (first item wins if none is flagged).
+// Tile image: `hero` when set, else the media entry marked `cover: true`, else the
+// first media entry. Discussions have none.
 //
-// For a report, the grid tile AND the modal's top hero both come from
-// `hero` when it's set — a standalone shot that lives outside `blocks`
-// entirely, so it is never automatically duplicated into the body. If you
-// want that same shot to also appear in the body text, add it again as its
-// own ordinary media block; that's a deliberate second copy, not a mirrored
-// reference, so a report can just as easily have a hero shown nowhere else,
-// or no hero at all. When `hero` is omitted, the tile falls back to
-// whichever block has `"cover": true` (or the first media block, paragraph
-// blocks never eligible) for backward compatibility with reports written
-// before `hero` existed — but in that fallback case no hero section is
-// shown in the modal; it's purely a tile-image fallback. See
-// resolveCoverEntry()/getCoverMedia() for the exact resolution logic.
+// Genres come from the post's tagged acts (act_ids → data/acts.json). Posts with no
+// tags fall back to matching the title against act names, like before.
 //
-// venueId matches an id in data/venues.json (same relationship events.json
-// uses for its own venueId field). Display names are resolved via that file
-// rather than duplicated as a string on each board entry, so a venue rename
-// doesn't require touching every board post.
+// Search + filter behavior mirrors events.js: a search term matches title, venue name,
+// username, credit or tagged act; venue/type/area/genre chips union together; selected
+// filters persist to localStorage while the search term resets each visit. The Posts
+// toggle (All/Shots/Galleries/Discussion) is a separate mutually-exclusive toggle.
 //
-// Genre filter: board-media.json has no genre field of its own. Instead,
-// each item's title is matched against data/acts.json (name + aliases,
-// case-insensitive whole-word match) — same matching rule acts.js uses in
-// the reverse direction (act -> matching board posts). A matched act's
-// genres are attached to the item as item.genres before filtering/rendering.
-// data/genres.json supplies genreLabel()/genreColor() for chip parity with
-// the calendar and acts page. This is title-based, so it works unchanged
-// for shots, galleries, and reports alike.
-//
-// Search + filter behavior mirrors events.js: a search term matches title,
-// venue name, or submitter; venue/type/area/genre filter chips union together
-// (matching ANY selected filter, not requiring all); selected filters persist
-// to localStorage, while the search term itself resets on each visit — same
-// split events.js already uses for its own filters vs. currentSearch. The
-// Posts filter (All/Shots/Galleries/Reports) is a separate mutually-exclusive
-// toggle, like the old Photos/Videos "Shots" toggle it replaces.
-//
-// The reusable, page-agnostic data-layer pieces (fetching, sorting, filtering
-// by venue, date formatting, act/genre matching) are exposed on window.BoardMedia
-// so a future venue page can pull "board posts for this venue" without
-// duplicating this logic. Only the grid/modal/search/filter rendering below is
-// specific to /board/, and is guarded to no-op if #boardGrid isn't present on
-// the page.
+// The page-agnostic data-layer pieces are exposed on window.BoardMedia (acts.js uses
+// them for an act's "From the Board" thumbnails). The grid/modal code below only runs
+// when #boardGrid is on the page.
 
 (function () {
-	const BOARD_MEDIA_URL = '../data/board-media.json';
-	const VENUES_URL = '../data/venues.json';
-	const ACTS_URL = '../data/acts.json';
-	const GENRES_URL = '../data/genres.json';
+	const VENUES_URL = '/data/venues.json';
+	const ACTS_URL = '/data/acts.json';
+	const GENRES_URL = '/data/genres.json';
 	const BATCH_SIZE = 15;
 	const FILTER_STORAGE_KEY = 'crwdsrfr_board_filters';
+	const POST_COLUMNS = 'id, legacy_id, author_id, post_type, title, opener, media, closer, hero, venue_id, show_date, act_ids, act_names, credit, created_at';
 
 	const TYPE_LABELS = {
 		"music-hall": "Music Hall",
@@ -78,30 +51,19 @@
 		"festival": "Festival"
 	};
 
-	// Post-type toggle (All / Shots / Galleries / Reports) — mutually
-	// exclusive, unlike the venue/genre chip rows which union together.
-	// Replaces the old Photos/Videos "Shots" format toggle now that a post
-	// can contain more than one photo/video (galleries, reports).
-	const POST_TYPE_LABELS = { all: 'All', shot: 'Shots', gallery: 'Galleries', report: 'Reports' };
-	// Singular labels for the tile's own "what kind of post is this" line.
-	const POST_TYPE_ITEM_LABEL = { shot: 'Shot', gallery: 'Gallery', report: 'Report' };
+	// Post-type toggle (All / Shots / Galleries / Discussion) — mutually exclusive,
+	// unlike the venue/genre chip rows which union together.
+	const POST_TYPE_LABELS = { all: 'All', shot: 'Shots', gallery: 'Galleries', discussion: 'Discussion' };
+	// Singular labels for the tile's "what kind of post is this" line.
+	const POST_TYPE_ITEM_LABEL = { shot: 'Shot', gallery: 'Gallery', discussion: 'Discussion' };
+	// Sort options in the menu next to the "All Posts by…" heading (first one is the default)
+	const SORT_LABELS = { recent: 'Most Recent', hyped: 'Most Hyped', commented: 'Most Commented', oldest: 'Oldest Posted' };
 
 	// --- Date helpers -------------------------------------------------------
-	// Dates are stored as plain "YYYY-MM-DD" strings. Never round-trip these
-	// through `new Date()` for sorting or comparison — that can shift the day
-	// depending on the browser's local timezone. String comparison on ISO
-	// dates sorts correctly and safely.
-
-	function sortByDateDesc(list) {
-		return list.slice().sort((a, b) => {
-			if (a.date === b.date) return 0;
-			return a.date > b.date ? -1 : 1;
-		});
-	}
+	// Show dates are plain "YYYY-MM-DD" strings. Never round-trip these through
+	// `new Date()` — that can shift the day depending on the browser's timezone.
 
 	function formatDateDisplay(dateStr) {
-		// Build the display string directly from the parsed components
-		// rather than constructing a Date object from the raw string.
 		const parts = String(dateStr).split('-');
 		if (parts.length !== 3) return dateStr;
 		const [year, month, day] = parts.map(Number);
@@ -110,217 +72,131 @@
 		return `${MONTH_ABBR[month - 1]} ${day}, ${year}`;
 	}
 
+	// When the post was made: "Oct 14, 2026 at 8:30 PM", in the visitor's own timezone
+	function formatPostedAt(timestamp) {
+		const d = new Date(timestamp);
+		if (isNaN(d)) return '';
+		return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+			+ ' at ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+	}
+
 	function sortableName(name) {
 		return String(name || '').replace(/^the\s+/i, '');
 	}
 
-	// --- Validation -----------------------------------------------------------
-	// Every post is normalized (postType defaulted to 'shot') before this
-	// runs — see fetchBoardMedia() — so postType is always one of the three
-	// known values by the time isValidItem() sees it.
+	// --- Media ----------------------------------------------------------------
 
-	function isValidItem(item) {
-		if (!item || typeof item !== 'object') return false;
-		if (!item.title || !item.date) {
-			console.warn('board.js: skipping item missing title/date', item);
-			return false;
-		}
-
-		if (item.postType === 'shot') {
-			if (item.type !== 'photo' && item.type !== 'video') {
-				console.warn('board.js: skipping shot with unknown type', item);
-				return false;
-			}
-			if (!item.src) {
-				console.warn('board.js: skipping shot missing src', item);
-				return false;
-			}
-			return true;
-		}
-
-		if (item.postType === 'gallery') {
-			if (!Array.isArray(item.items) || item.items.length === 0) {
-				console.warn('board.js: skipping gallery with no items', item);
-				return false;
-			}
-			return true;
-		}
-
-		if (item.postType === 'report') {
-			if (!Array.isArray(item.blocks) || item.blocks.length === 0) {
-				console.warn('board.js: skipping report with no blocks', item);
-				return false;
-			}
-			return true;
-		}
-
-		console.warn('board.js: skipping item with unknown postType', item);
-		return false;
+	function mediaUrl(src) {
+		if (!src) return '';
+		if (src.charAt(0) === '/') return src; // the site's own /board/ files
+		const core = window.CrwdCore;
+		if (!core || !core.enabled) return '';
+		return core.sb.storage.from('post-media').getPublicUrl(src).data.publicUrl;
 	}
 
-	// Finds the raw cover entry for a gallery/report. Returns null for a
-	// shot, which has no separate cover entry — it IS the cover. Kept
-	// distinct from getCoverMedia() below because callers that need to
-	// actually play/show the cover (e.g. the report hero) need its real
-	// `src`, not just the thumbnail getCoverMedia() resolves for the tile.
-	//
-	// Gallery: whichever entry in `items` has `cover: true`, falling back to
-	// the first item if none is flagged (or more than one is, by mistake).
-	//
-	// Report: `hero` if the post has one — a standalone shot outside
-	// `blocks` — otherwise (for reports written before `hero` existed)
-	// whichever 'media' block has `cover: true`, or the first media block.
-	// That fallback path exists purely so old data still resolves a tile
-	// image; renderReportHero() does NOT use this function; it only ever
-	// shows `item.hero` directly, so a report without one gets no hero
-	// section rather than one being inferred from a body block.
-	function resolveCoverEntry(item) {
-		if (item.postType === 'gallery') {
-			const list = Array.isArray(item.items) ? item.items : [];
-			return list.find((i) => i && i.cover === true) || list[0] || null;
-		}
-
-		if (item.postType === 'report') {
-			if (item.hero) return item.hero;
-			const mediaBlocks = (item.blocks || []).filter((b) => b && b.type === 'media');
-			return mediaBlocks.find((b) => b.cover === true) || mediaBlocks[0] || null;
-		}
-
-		return null;
-	}
-
-	// The grid tile and modal both need a single "cover" image/video to
-	// represent a post — trivial for a shot (it IS the media); for a
-	// gallery/report it's whichever entry resolveCoverEntry() picks out.
-	function getCoverMedia(item) {
-		if (item.postType === 'gallery') {
-			const cover = resolveCoverEntry(item) || {};
-			return {
-				type: cover.type || 'photo',
-				thumbnail: cover.thumbnail || (cover.type === 'photo' ? cover.src : '') || '',
-			};
-		}
-
-		if (item.postType === 'report') {
-			const cover = resolveCoverEntry(item) || {};
-			return {
-				type: cover.mediaType || 'photo',
-				thumbnail: cover.thumbnail || (cover.mediaType === 'photo' ? cover.src : '') || '',
-			};
-		}
-
-		// shot
+	function prepareMedia(entry) {
+		if (!entry || !entry.src) return null;
+		const url = mediaUrl(entry.src);
 		return {
-			type: item.type,
-			thumbnail: item.thumbnail || (item.type === 'photo' ? item.src : '') || '',
+			type: entry.type === 'video' ? 'video' : 'photo',
+			url: url,
+			thumbnail: entry.thumb ? mediaUrl(entry.thumb) : (entry.type === 'video' ? '' : url),
+			caption: entry.caption || null,
+			cover: entry.cover === true
 		};
 	}
 
-	// Flattens any post into an array of individually-matchable "media
-	// units" — one per shot, one per gallery item, one per report hero/media
-	// block (paragraph blocks are never units, they have no media). Built
-	// for acts.js: a report can mention several acts across its per-shot
-	// captions (e.g. opening acts named only in individual block captions),
-	// and those need to surface on their own act's /acts/ media preview even
-	// though the report's own title only names the headliner.
-	//
-	// Each unit's `matchText` is its own caption when it has one, falling
-	// back to the parent post's title otherwise — so a shot (no captions at
-	// all) or an uncaptioned gallery/report block still matches by title,
-	// exactly like before this function existed.
+	// The one image that represents a post on its tile (null for discussions)
+	function getCoverMedia(item) {
+		const pick = item.hero || item.media.find((m) => m.cover) || item.media[0] || null;
+		return pick ? { type: pick.type, thumbnail: pick.thumbnail } : null;
+	}
+
+	// Every photo/video of a post as its own "unit", for acts.js: an act's page shows
+	// the shots that name it in their caption, or (uncaptioned) the shots of posts
+	// tagged with that act or titled after it.
 	function mediaUnitsForItem(item) {
 		const base = {
 			postId: item.id,
 			postTitle: item.title,
 			date: item.date,
 			venueId: item.venueId,
+			actIds: item.actIds
 		};
-
-		if (item.postType === 'gallery') {
-			return (item.items || []).map((entry) => ({
-				...base,
-				type: entry.type,
-				thumbnail: entry.thumbnail || (entry.type === 'photo' ? entry.src : '') || '',
-				caption: entry.caption || null,
-				matchText: entry.caption || item.title,
-			}));
-		}
-
-		if (item.postType === 'report') {
-			const units = [];
-			if (item.hero && item.hero.src) {
-				units.push({
-					...base,
-					type: item.hero.mediaType,
-					thumbnail: item.hero.thumbnail || (item.hero.mediaType === 'photo' ? item.hero.src : '') || '',
-					caption: item.hero.caption || null,
-					matchText: item.hero.caption || item.title,
-				});
-			}
-			(item.blocks || []).forEach((block) => {
-				if (!block || block.type !== 'media') return;
-				units.push({
-					...base,
-					type: block.mediaType,
-					thumbnail: block.thumbnail || (block.mediaType === 'photo' ? block.src : '') || '',
-					caption: block.caption || null,
-					matchText: block.caption || item.title,
-				});
-			});
-			return units;
-		}
-
-		// shot
-		return [{
+		// A cover picked from the post's own media is the same file: don't list it twice
+		const heroIsExtra = item.hero && !item.media.some((m) => m.url === item.hero.url);
+		return (heroIsExtra ? [item.hero] : []).concat(item.media).map((m) => ({
 			...base,
-			type: item.type,
-			thumbnail: item.thumbnail || (item.type === 'photo' ? item.src : '') || '',
-			caption: null,
-			matchText: item.title,
-		}];
+			type: m.type,
+			thumbnail: m.thumbnail,
+			caption: m.caption,
+			matchText: m.caption || item.title
+		}));
 	}
 
 	// --- Venue name lookup ------------------------------------------------
-	// data/venues.json is an array of venue objects, e.g.
-	// { id, name, url, eventsUrl, type, address, area, lat, lng }.
-	// The lookup is keyed by id -> full venue object, so callers can pull
-	// more than just the name (used here for type/area filtering too).
+	// data/venues.json is an array of venue objects ({ id, name, type, area, … }).
 
 	function buildVenueLookup(venuesData) {
 		const lookup = {};
-		const list = Array.isArray(venuesData) ? venuesData : [];
-
-		list.forEach((venue) => {
-			if (venue && venue.id) {
-				lookup[venue.id] = venue;
-			}
+		(Array.isArray(venuesData) ? venuesData : []).forEach((venue) => {
+			if (venue && venue.id) lookup[venue.id] = venue;
 		});
-
 		return lookup;
 	}
 
 	function resolveVenueName(venueId, venueLookup) {
 		if (!venueId) return '';
 		const venue = venueLookup && venueLookup[venueId];
-		if (venue && venue.name) return venue.name;
-		console.warn('board.js: no venue match for venueId', venueId);
-		return venueId;
+		return venue && venue.name ? venue.name : venueId;
 	}
 
 	// --- Data fetching (reusable) -------------------------------------------
 
-	function fetchBoardMedia() {
-		return fetch(BOARD_MEDIA_URL, { cache: 'no-store' })
-			.then((res) => {
-				if (!res.ok) throw new Error(`Failed to load ${BOARD_MEDIA_URL}: ${res.status}`);
-				return res.json();
-			})
-			.then((data) => {
-				const list = Array.isArray(data) ? data : [];
-				// Older entries predate postType — treat them as plain shots.
-				const normalized = list.map((item) => ({ ...item, postType: item.postType || 'shot' }));
-				return sortByDateDesc(normalized.filter(isValidItem));
-			});
+	function toItem(row, author) {
+		return {
+			id: row.id,
+			legacyId: row.legacy_id || null,
+			postType: row.post_type,
+			title: row.title,
+			opener: row.opener || '',
+			closer: row.closer || '',
+			media: (row.media || []).map(prepareMedia).filter(Boolean),
+			hero: prepareMedia(row.hero),
+			venueId: row.venue_id || null,
+			date: row.show_date || null,
+			actIds: row.act_ids || [],
+			actNames: row.act_names || [], // acts typed in that aren't on the Acts page
+			credit: row.credit || null,
+			authorId: row.author_id,
+			status: row.status || 'approved',
+			destination: row.destination || 'board',
+			author: author || null, // { username, avatar_path } — null if the account is gone
+			createdAt: row.created_at
+		};
+	}
+
+	// Approved Board posts, newest first, with their authors' usernames
+	async function fetchBoardMedia() {
+		const core = window.CrwdCore;
+		if (!core || !core.enabled) throw new Error('Accounts are unavailable, so the Board can\'t load');
+		await core.ready;
+
+		const { data, error } = await core.sb.from('posts')
+			.select(POST_COLUMNS)
+			.eq('destination', 'board')
+			.eq('status', 'approved')
+			.order('created_at', { ascending: false })
+			.limit(1000);
+		if (error) throw error;
+
+		const authorIds = [...new Set(data.map((p) => p.author_id))];
+		const people = {};
+		if (authorIds.length) {
+			const { data: profiles } = await core.sb.from('public_profiles').select('id, username, avatar_path, max_badge').in('id', authorIds);
+			(profiles || []).forEach((p) => { people[p.id] = p; });
+		}
+		return data.map((row) => toItem(row, people[row.author_id]));
 	}
 
 	function fetchVenueLookup() {
@@ -340,18 +216,14 @@
 		return items.filter((item) => item.venueId === venueId);
 	}
 
+	// Matches the post id, or the old board-media.json id (old /board/#id links)
 	function findItemById(list, id) {
-		return list.find((item) => item.id === id);
+		return list.find((item) => item.id === id || item.legacyId === id);
 	}
 
-	// --- Act <-> board-media matching ---------------------------------------
-	// Same "whole word, case-insensitive" rule acts.js uses (matching act
-	// name/aliases against event/board-media text), just applied here to
-	// derive a media item's genres rather than to find matching posts for
-	// a given act. Short names (<=3 chars) require exact equality rather
-	// than substring, to avoid noisy false positives (e.g. "DJ"). Only the
-	// post's title is matched, so this works unchanged for shots, galleries,
-	// and reports.
+	// --- Acts + genres ---------------------------------------------------------
+	// Same "whole word, case-insensitive" rule acts.js uses. Short names (<=3 chars)
+	// require exact equality, to avoid noisy false positives (e.g. "DJ").
 
 	function normalizeText(str) {
 		return String(str || '').trim().toLowerCase();
@@ -372,29 +244,38 @@
 		return new RegExp(`\\b${escapeRegex(needle)}\\b`, 'i').test(text);
 	}
 
-	// Genres for a board-media title, derived by matching it against every
-	// (non-excluded) act's name/aliases. Usually resolves to at most one
-	// act since board post titles are typically just the act's own name.
-	function genresForTitle(title, actsList) {
-		if (!title || !actsList || actsList.length === 0) return [];
-		const genres = new Set();
-		actsList.forEach((act) => {
-			if (actNeedles(act).some((needle) => textMatchesNeedle(title, needle))) {
-				(act.genres || []).forEach((g) => genres.add(g));
-			}
-		});
-		return [...genres];
+	// Acts named in a title — the fallback for posts with no tagged acts
+	function actsForTitle(title, actsList) {
+		if (!title || !actsList) return [];
+		return actsList.filter((act) => actNeedles(act).some((needle) => textMatchesNeedle(title, needle)));
 	}
 
+	function genresForTitle(title, actsList) {
+		return [...new Set(actsForTitle(title, actsList).flatMap((act) => act.genres || []))];
+	}
+
+	// Adds item.acts (tagged acts, else acts named in the title) and item.genres
+	function withActs(item, actsList) {
+		const bySlug = Object.fromEntries(actsList.map((act) => [act.slug, act]));
+		const tagged = item.actIds.map((slug) => bySlug[slug]).filter(Boolean)
+			// Typed-in acts: a name only (no Acts page link, no genres)
+			.concat((item.actNames || []).map((name) => ({ name, slug: null, genres: [] })));
+		const acts = tagged.length ? tagged : actsForTitle(item.title, actsList);
+		return { ...item, acts, genres: [...new Set(acts.flatMap((act) => act.genres || []))] };
+	}
+
+	// Non-excluded acts as a list, each with its acts.json key as `slug`
 	function fetchActsList() {
 		return fetch(ACTS_URL, { cache: 'no-store' })
 			.then((res) => {
 				if (!res.ok) throw new Error(`Failed to load ${ACTS_URL}: ${res.status}`);
 				return res.json();
 			})
-			.then((data) => Object.values(data || {}).filter((act) => String(act.exclude).toLowerCase() !== 'yes'))
+			.then((data) => Object.entries(data || {})
+				.filter(([, act]) => String(act.exclude).toLowerCase() !== 'yes')
+				.map(([slug, act]) => ({ ...act, slug })))
 			.catch((err) => {
-				console.warn('board.js: could not load acts for genre matching', err);
+				console.warn('board.js: could not load acts', err);
 				return [];
 			});
 	}
@@ -411,8 +292,6 @@
 			});
 	}
 
-	// Expose the page-agnostic pieces for reuse (e.g. a future venue page
-	// rendering "Board posts from this venue").
 	window.BoardMedia = {
 		fetchBoardMedia,
 		fetchVenueLookup,
@@ -421,11 +300,14 @@
 		fetchActsList,
 		fetchGenreMeta,
 		genresForTitle,
-		sortByDateDesc,
+		withActs,
+		toItem,
 		formatDateDisplay,
+		formatPostedAt,
 		resolveVenueName,
 		getCoverMedia,
 		mediaUnitsForItem,
+		mediaUrl,
 	};
 
 	// --- Grid + modal + search/filter rendering (specific to /board/) -------
@@ -439,39 +321,38 @@
 	const loadingMsg = document.getElementById('boardLoading');
 	const endMsg = document.getElementById('boardEnd');
 
-	const modal = document.getElementById('boardModal');
-	const modalContent = modal.querySelector('.boardModalContent');
-	const modalMediaWrap = document.getElementById('boardModalMedia');
-	const modalMediaInner = document.getElementById('boardModalMediaInner');
-	const modalContentList = document.getElementById('boardModalContentList');
-	const modalReportHero = document.getElementById('boardModalReportHero');
-	const modalPrevBtn = document.getElementById('boardModalPrev');
-	const modalNextBtn = document.getElementById('boardModalNext');
-	const modalTitle = document.getElementById('boardModalTitle');
-	const modalGenres = document.getElementById('boardModalGenres');
-	const modalSub = document.getElementById('boardModalSub');
-	const modalCredit = document.getElementById('boardModalCredit');
-	const modalShareBtn = document.getElementById('boardModalShare');
-
 	const searchInput = document.getElementById('boardSearch');
 	const searchWrapper = document.getElementById('boardSearchWrapper');
 	const filterToggle = document.getElementById('boardFilterToggle');
 	const filterPanel = document.getElementById('boardFilters');
 
-	let items = []; // all valid, date-sorted media
+	let items = []; // all approved posts, newest first
 	let filteredItems = []; // items after search + filters
 	let venueLookup = {};
-	let genreMeta = {}; // from data/genres.json, for genreLabel()/genreColor() chip parity
+	let genreMeta = {};
+	let stats = {}; // post id → { hypes, comments, hyped }
 	let renderedCount = 0;
-	let modalIndex = -1; // index of the currently open item within filteredItems
+	let loaded = false;
 
 	let currentSearch = '';
 	const selectedVenueIds = new Set();
 	const selectedTypes = new Set();
 	const selectedAreas = new Set();
 	const selectedGenres = new Set();
-	let selectedPostType = 'all'; // 'all' | 'shot' | 'gallery' | 'report' — single value, not a Set
+	let selectedPostType = 'all'; // 'all' | 'shot' | 'gallery' | 'discussion'
+	let selectedSort = 'recent'; // a key of SORT_LABELS
 	const expandedGroups = { name: false, type: false, area: false, genre: false };
+
+	function socialReady() {
+		return !!(window.CrwdSocial && window.CrwdCore && window.CrwdCore.enabled);
+	}
+
+	function el(tag, className, text) {
+		const node = document.createElement(tag);
+		if (className) node.className = className;
+		if (text != null) node.textContent = text;
+		return node;
+	}
 
 	// --- Genre label/color (mirrors acts.js/events.js exactly, for chip parity) --
 
@@ -497,16 +378,13 @@
 		return `hsl(${hue}, 65%, 60%)`;
 	}
 
-	function genreChipsHtml(genres) {
-		if (!genres || genres.length === 0) return '';
-		return genres.map(g => `
-			<span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
-		`).join('');
+	function genreChip(genre) {
+		const chip = el('span', 'genre-chip', genreLabel(genre));
+		chip.style.setProperty('--genre-color', genreColor(genre));
+		return chip;
 	}
 
 	// --- Filter persistence ---------------------------------------------
-	// Selected filters persist across visits; the search term itself does
-	// not, matching the same split events.js uses for the calendar page.
 
 	function saveFiltersToStorage() {
 		try {
@@ -516,6 +394,7 @@
 				areas: [...selectedAreas],
 				genres: [...selectedGenres],
 				postType: selectedPostType,
+				sort: selectedSort,
 			};
 			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
 		} catch (e) {
@@ -532,8 +411,12 @@
 			(parsed.types || []).forEach((t) => selectedTypes.add(t));
 			(parsed.areas || []).forEach((a) => selectedAreas.add(a));
 			(parsed.genres || []).forEach((g) => selectedGenres.add(g));
+			// An old saved 'report' choice isn't a type anymore, so it's ignored here
 			if (Object.prototype.hasOwnProperty.call(POST_TYPE_LABELS, parsed.postType)) {
 				selectedPostType = parsed.postType;
+			}
+			if (Object.prototype.hasOwnProperty.call(SORT_LABELS, parsed.sort)) {
+				selectedSort = parsed.sort;
 			}
 		} catch (e) {
 			// Corrupt or missing data — just start with no filters
@@ -568,9 +451,24 @@
 	function updateSubHead() {
 		const subHeadEl = document.getElementById('boardSubHead');
 		const term = currentSearch.trim();
+		const sortLabel = SORT_LABELS[selectedSort];
 		subHeadEl.textContent = term === ''
-			? 'All Posts by Most Recent:'
-			: `All Posts including "${term}" by Most Recent:`;
+			? `All Posts by ${sortLabel}:`
+			: `All Posts including "${term}" by ${sortLabel}:`;
+	}
+
+	// Ties (e.g. two posts with 3 hypes) fall back to newest first
+	function sortPosts(list) {
+		const time = (item) => new Date(item.createdAt).getTime() || 0;
+		const count = (item, key) => (stats[item.id] && stats[item.id][key]) || 0;
+		const newestFirst = (a, b) => time(b) - time(a);
+		const compare = {
+			recent: newestFirst,
+			oldest: (a, b) => time(a) - time(b),
+			hyped: (a, b) => count(b, 'hypes') - count(a, 'hypes') || newestFirst(a, b),
+			commented: (a, b) => count(b, 'comments') - count(a, 'comments') || newestFirst(a, b),
+		}[selectedSort] || newestFirst;
+		return [...list].sort(compare);
 	}
 
 	function applyFilters() {
@@ -582,10 +480,11 @@
 			const term = currentSearch.toLowerCase().trim();
 			filtered = filtered.filter((item) => {
 				const venue = venueLookup[item.venueId];
-				const matchesTitle = item.title?.toLowerCase().includes(term);
-				const matchesVenue = venue?.name?.toLowerCase().includes(term);
-				const matchesSubmitter = item.submittedBy?.toLowerCase().includes(term);
-				return matchesTitle || matchesVenue || matchesSubmitter;
+				return item.title.toLowerCase().includes(term)
+					|| (venue && venue.name && venue.name.toLowerCase().includes(term))
+					|| (item.author && item.author.username.includes(term))
+					|| (item.credit && item.credit.toLowerCase().includes(term))
+					|| item.acts.some((act) => act.name.toLowerCase().includes(term));
 			});
 		}
 
@@ -601,7 +500,7 @@
 			filtered = filtered.filter(itemMatchesPostType);
 		}
 
-		filteredItems = filtered;
+		filteredItems = sortPosts(filtered);
 		resetGrid();
 	}
 
@@ -620,17 +519,129 @@
 		applyFilters();
 	}
 
+	// --- Sort menu (icon button next to the heading) -------------------------
+
+	const sortButton = document.getElementById('boardSortButton');
+	const sortMenu = document.getElementById('boardSortMenu');
+
+	function sortOptions() {
+		return [...sortMenu.querySelectorAll('[data-sort]')];
+	}
+
+	function markSelectedSort() {
+		sortOptions().forEach((option) => {
+			option.setAttribute('aria-checked', option.dataset.sort === selectedSort ? 'true' : 'false');
+		});
+	}
+
+	function openSortMenu() {
+		markSelectedSort();
+		sortMenu.hidden = false;
+		sortButton.classList.add('open');
+		sortButton.setAttribute('aria-expanded', 'true');
+		const current = sortOptions().find((option) => option.dataset.sort === selectedSort);
+		(current || sortOptions()[0]).focus();
+	}
+
+	function closeSortMenu(returnFocus) {
+		if (sortMenu.hidden) return;
+		sortMenu.hidden = true;
+		sortButton.classList.remove('open');
+		sortButton.setAttribute('aria-expanded', 'false');
+		if (returnFocus) sortButton.focus();
+	}
+
+	if (sortButton && sortMenu) {
+		markSelectedSort();
+
+		sortButton.addEventListener('click', () => {
+			if (sortMenu.hidden) openSortMenu(); else closeSortMenu(false);
+		});
+
+		sortMenu.addEventListener('click', (e) => {
+			const option = e.target.closest('[data-sort]');
+			if (!option) return;
+			closeSortMenu(true);
+			if (option.dataset.sort === selectedSort) return;
+			selectedSort = option.dataset.sort;
+			markSelectedSort();
+			saveFiltersToStorage();
+			if (loaded) applyFilters();
+		});
+
+		// Up/down moves through the options, Escape/Tab closes
+		sortMenu.addEventListener('keydown', (e) => {
+			const options = sortOptions();
+			const i = options.indexOf(document.activeElement);
+			if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+				e.preventDefault();
+				const step = e.key === 'ArrowDown' ? 1 : -1;
+				options[(i + step + options.length) % options.length].focus();
+			} else if (e.key === 'Escape') {
+				e.preventDefault();
+				closeSortMenu(true);
+			} else if (e.key === 'Tab') {
+				closeSortMenu(false);
+			}
+		});
+
+		document.addEventListener('click', (e) => {
+			if (!sortMenu.hidden && !e.target.closest('#boardSort')) closeSortMenu(false);
+		});
+	}
+
+	// --- Tile / row view toggle (far right of the heading row) ----------------
+	// Just a class on the grid: switching never re-renders or refetches.
+
+	const VIEW_STORAGE_KEY = 'crwdsrfr_board_view';
+	const viewToggle = document.getElementById('boardViewToggle');
+	let selectedView = 'tiles'; // 'tiles' | 'rows'
+	try { if (localStorage.getItem(VIEW_STORAGE_KEY) === 'rows') selectedView = 'rows'; } catch (e) {}
+
+	function applyView() {
+		grid.classList.toggle('isRows', selectedView === 'rows');
+		if (!viewToggle) return;
+		viewToggle.querySelectorAll('[data-view]').forEach((btn) => {
+			const on = btn.dataset.view === selectedView;
+			btn.classList.toggle('active', on);
+			btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+		});
+	}
+
+	if (viewToggle) {
+		viewToggle.addEventListener('click', (e) => {
+			const btn = e.target.closest('[data-view]');
+			if (!btn || btn.dataset.view === selectedView) return;
+			selectedView = btn.dataset.view;
+			try { localStorage.setItem(VIEW_STORAGE_KEY, selectedView); } catch (err) {}
+			// Same fade as a search/filter change, so the layout swap isn't jumpy
+			$(resultsEl).fadeTo(150, 0, function () {
+				applyView();
+				$(resultsEl).fadeTo(150, 1);
+			});
+		});
+	}
+
+	applyView();
+
 	// --- Data loading -------------------------------------------------------
 
 	function loadMedia() {
+		// "Waxing the board..." until the posts (and their counts) are in
+		loadingMsg.hidden = false;
+		emptyMsg.hidden = true;
+
 		Promise.all([fetchBoardMedia(), fetchVenueLookup(), fetchActsList(), fetchGenreMeta()])
-			.then(([mediaItems, lookup, actsList, genres]) => {
+			.then(async ([posts, lookup, actsList, genres]) => {
 				genreMeta = genres;
-				items = mediaItems.map((item) => ({
-					...item,
-					genres: genresForTitle(item.title, actsList),
-				}));
 				venueLookup = lookup;
+				// Tagged acts (unknown slugs are skipped), else acts named in the title
+				items = posts.map((item) => withActs(item, actsList));
+
+				// Hype + comment counts for every post (and which ones you've hyped)
+				if (socialReady()) stats = await CrwdSocial.loadStats('post', items.map((item) => item.id));
+				loaded = true;
+				loadingMsg.hidden = true;
 
 				loadFiltersFromStorage();
 				buildBoardFilterChips();
@@ -639,32 +650,34 @@
 				openItemFromHash();
 			})
 			.catch((err) => {
-				console.warn('board.js: could not load media', err);
+				console.warn('board.js: could not load posts', err);
+				loadingMsg.hidden = true;
 				emptyMsg.hidden = false;
 				emptyMsg.textContent = 'Could not load the board right now — try again later.';
 			});
 	}
 
-	// Deep-linking: a URL like /board/#<id> (e.g. linked from a media
-	// thumbnail on /acts/) opens straight to that post's modal instead of
-	// landing on the plain grid. `id` is the stable field already on every
-	// entry in board-media.json. There's no distinguishing prefix on the
-	// hash itself — any hash that happens to match a post's id is treated
-	// as a deep link, and anything else (e.g. "#top" from the footer's
-	// back-to-top link) is simply ignored since findItemById() won't match it.
+	// Signing in or out changes which posts you've hyped
+	async function refreshStats() {
+		if (!loaded || !socialReady()) return;
+		stats = await CrwdSocial.loadStats('post', items.map((item) => item.id));
+		grid.querySelectorAll('.boardTile').forEach(updateTileCounts);
+		if (window.CrwdPost) CrwdPost.refresh();
+	}
+
+	// Deep-linking: /board/#<id> opens that post's modal. Old board-media.json ids
+	// still work (they're kept as legacy_id). Anything else (e.g. "#top") is ignored.
 	function openItemFromHash() {
 		const hash = window.location.hash;
 		if (!hash || hash.length <= 1) return;
 
-		const id = decodeURIComponent(hash.slice(1));
+		let id;
+		try { id = decodeURIComponent(hash.slice(1)); } catch (e) { return; }
 		const item = findItemById(items, id);
 		if (!item) return;
 
-		// The modal's prev/next nav is indexed against filteredItems, so if
-		// the linked item is currently hidden by an active search/filter,
-		// clear those first — otherwise indexOf(item) comes back -1 and nav
-		// state ends up wrong. Whoever followed this link wants to see this
-		// specific item, not a filtered subset that happens to exclude it.
+		// The modal's prev/next nav is indexed against filteredItems, so if the
+		// linked post is hidden by an active search/filter, clear those first.
 		if (!filteredItems.includes(item)) {
 			currentSearch = '';
 			searchInput.value = '';
@@ -684,8 +697,6 @@
 	}
 
 	// --- Grid rendering (rebuilt from scratch on every search/filter change) --
-	// Uses the same fadeTo(150, 0) -> rebuild -> fadeTo(150, 1) transition as
-	// renderEvents() on the calendar page.
 
 	function resetGrid() {
 		$(resultsEl).fadeTo(150, 0, function () {
@@ -705,9 +716,7 @@
 					renderNextBatch();
 				}
 			} finally {
-				// Always fade back in, even if something above threw —
-				// otherwise #boardResults gets stuck at opacity 0 with
-				// tiles rendered but invisible.
+				// Always fade back in, even if something above threw
 				$(resultsEl).fadeTo(150, 1);
 			}
 		});
@@ -728,72 +737,81 @@
 		if (endMsg) endMsg.hidden = !allLoaded;
 	}
 
+	// Tile: thumbnail (if any), title, "by username", post type, and hype/comment
+	// counts (each only when above zero — display only, not buttons)
 	function buildTile(item) {
 		const tile = document.createElement('button');
 		tile.type = 'button';
-		tile.className = 'boardTile';
-		tile.setAttribute('aria-label', item.title ? `Open ${item.title}` : 'Open media');
+		tile.className = 'boardTile' + (item.postType === 'discussion' ? ' isDiscussion' : '');
+		tile.dataset.postId = item.id;
+		tile.setAttribute('aria-label', `Open ${item.title}`);
 
 		const cover = getCoverMedia(item);
-
-		const thumbWrap = document.createElement('div');
-		thumbWrap.className = 'boardTileThumb';
-
-		if (cover.thumbnail) {
-			const img = document.createElement('img');
-			img.src = cover.thumbnail;
-			img.alt = item.title || '';
-			img.loading = 'lazy';
-			thumbWrap.appendChild(img);
-		} else {
-			thumbWrap.classList.add('boardTileThumb-empty');
+		if (cover) {
+			const thumbWrap = el('div', 'boardTileThumb');
+			if (cover.thumbnail) {
+				const img = el('img');
+				img.src = cover.thumbnail;
+				img.alt = '';
+				img.loading = 'lazy';
+				thumbWrap.appendChild(img);
+			} else {
+				thumbWrap.classList.add('boardTileThumb-empty');
+			}
+			if (cover.type === 'video') {
+				const playIcon = el('span', 'boardTilePlayIcon');
+				playIcon.setAttribute('aria-hidden', 'true');
+				thumbWrap.appendChild(playIcon);
+			}
+			if (item.postType === 'gallery') {
+				const stackBadge = el('span', 'boardTileStackBadge');
+				stackBadge.setAttribute('aria-hidden', 'true');
+				thumbWrap.appendChild(stackBadge);
+			}
+			tile.appendChild(thumbWrap);
 		}
 
-		if (cover.type === 'video') {
-			const playIcon = document.createElement('span');
-			playIcon.className = 'boardTilePlayIcon';
-			playIcon.setAttribute('aria-hidden', 'true');
-			thumbWrap.appendChild(playIcon);
+		const info = el('span', 'boardTileInfo');
+		info.appendChild(el('span', 'boardTileCaption', item.title));
+		const by = el('span', 'boardTileBy', 'by ' + (item.author ? item.author.username : 'a former member'));
+		if (item.author && item.author.max_badge && window.CrwdUI) by.appendChild(CrwdUI.maxBadge());
+		info.appendChild(by);
+		// Discussions have no picture: a few lines of the opening text fill in instead
+		if (item.postType === 'discussion' && item.opener) {
+			info.appendChild(el('span', 'boardTileExcerpt', item.opener));
 		}
 
-		if (item.postType === 'gallery' || item.postType === 'report') {
-			const stackBadge = document.createElement('span');
-			stackBadge.className = 'boardTileStackBadge';
-			stackBadge.setAttribute('aria-hidden', 'true');
-			thumbWrap.appendChild(stackBadge);
-		}
-
-		tile.appendChild(thumbWrap);
-
-		// Three info lines: title, then venue + date, then the post type —
-		// submittedBy is still shown once the post is open in the modal, but
-		// no longer takes a line on the tile itself.
-		if (item.title) {
-			const caption = document.createElement('span');
-			caption.className = 'boardTileCaption';
-			caption.textContent = item.title;
-			tile.appendChild(caption);
-		}
-
-		const venueName = resolveVenueName(item.venueId, venueLookup);
-		const venueDateParts = [];
-		if (venueName) venueDateParts.push(venueName);
-		if (item.date) venueDateParts.push(formatDateDisplay(item.date));
-		if (venueDateParts.length > 0) {
-			const venueEl = document.createElement('span');
-			venueEl.className = 'boardTileVenue';
-			venueEl.textContent = venueDateParts.join(' · ');
-			tile.appendChild(venueEl);
-		}
-
-		const typeEl = document.createElement('span');
-		typeEl.className = 'boardTilePostType';
-		typeEl.textContent = POST_TYPE_ITEM_LABEL[item.postType] || 'Shot';
-		tile.appendChild(typeEl);
+		const foot = el('span', 'boardTileFoot');
+		foot.appendChild(el('span', 'boardTilePostType', POST_TYPE_ITEM_LABEL[item.postType] || 'Post'));
+		foot.appendChild(el('span', 'boardTileCounts'));
+		info.appendChild(foot);
+		tile.appendChild(info);
+		updateTileCounts(tile);
 
 		tile.addEventListener('click', () => openModal(item));
-
 		return tile;
+	}
+
+	function countBadge(iconClass, n, noun) {
+		const badge = el('span', 'boardTileCount');
+		badge.setAttribute('aria-label', `${n} ${noun}${n === 1 ? '' : 's'}`);
+		const icon = el('span', 'icon ' + iconClass);
+		icon.setAttribute('aria-hidden', 'true');
+		badge.append(icon, n.toLocaleString());
+		return badge;
+	}
+
+	function updateTileCounts(tile) {
+		const s = stats[tile.dataset.postId] || { hypes: 0, comments: 0 };
+		const wrap = tile.querySelector('.boardTileCounts');
+		wrap.replaceChildren();
+		if (s.hypes > 0) wrap.appendChild(countBadge('iconHype', s.hypes, 'hype'));
+		if (s.comments > 0) wrap.appendChild(countBadge('iconComment', s.comments, 'comment'));
+	}
+
+	function updateTileFor(id) {
+		const tile = grid.querySelector(`.boardTile[data-post-id="${CSS.escape(id)}"]`);
+		if (tile) updateTileCounts(tile);
 	}
 
 	// --- Load More button ---------------------------------------------------
@@ -807,9 +825,7 @@
 	// --- Filter chips -------------------------------------------------------
 
 	function buildBoardFilterChips() {
-		// Only offer chips for venues that actually have at least one board
-		// post — a venue existing in venues.json with zero submissions
-		// shouldn't show up as a filter option with no possible results.
+		// Only offer chips for venues that actually have at least one post
 		const venueIdsWithItems = new Set(items.map((item) => item.venueId));
 		const venues = Object.values(venueLookup).filter((v) => venueIdsWithItems.has(v.id));
 
@@ -826,9 +842,6 @@
 			<button type="button" class="chip ${selectedVenueIds.has(v.id) ? 'active' : ''}" data-filter="name" data-value="${v.id}">${v.name}</button>
 		`).join('');
 
-		// Type/area options are derived from that same has-items venue
-		// subset, so e.g. a "Festival" chip won't appear if no festival
-		// venue has any posts yet, even if other festival venues exist.
 		const types = [...new Set(venues.map((v) => v.type).filter(Boolean))].sort();
 		typeWrap.innerHTML = types.map((t) => `
 			<button type="button" class="chip ${selectedTypes.has(t) ? 'active' : ''}" data-filter="type" data-value="${t}">${TYPE_LABELS[t] || t}</button>
@@ -839,19 +852,11 @@
 			<button type="button" class="chip ${selectedAreas.has(a) ? 'active' : ''}" data-filter="area" data-value="${a}">${a}</button>
 		`).join('');
 
-		// Genre options are only offered for genres that at least one
-		// current board post actually resolved to (via title -> act match) —
-		// same "don't show an empty-result filter" rule as venue/type/area.
 		const genres = [...new Set(items.flatMap((item) => item.genres || []))].sort();
 		genreWrap.innerHTML = genres.map((g) => `
 			<button type="button" class="chip ${selectedGenres.has(g) ? 'active' : ''}" data-filter="genre" data-value="${g}" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</button>
 		`).join('');
 
-		// Post type (All/Shots/Galleries/Reports) is a mutually-exclusive
-		// toggle, not a multi-select chip row like the other four groups —
-		// styled like #calendarToggle's Day/Week segmented control on the
-		// main calendar page (see .toggle-button rules in board.css) rather
-		// than the pill-chip look used for venue/type/area/genre.
 		postTypeWrap.innerHTML = Object.keys(POST_TYPE_LABELS).map((p) => `
 			<button type="button" class="toggle-button ${selectedPostType === p ? 'active' : ''}" data-post-type="${p}">${POST_TYPE_LABELS[p]}</button>
 		`).join('');
@@ -977,333 +982,33 @@
 		});
 	}
 
-	// --- Modal --------------------------------------------------------------
-	// A shot renders exactly like before: single media block on top, info
-	// below. A gallery or report instead puts the info (.boardModalMeta)
-	// first, followed by a scrollable content area (#boardModalContentList) —
-	// a stream of media (+ optional captions) for a gallery, or a mix of
-	// paragraph and media blocks for a report. Which layout applies is
-	// driven by the .boardModalContent--shot modifier class (see board.css
-	// for the order-based reordering of .boardModalMeta vs. the media/content
-	// blocks) so no DOM reordering is needed here.
-
-	function pauseAllModalVideos() {
-		modalMediaInner.querySelectorAll('video').forEach((v) => v.pause());
-		modalContentList.querySelectorAll('video').forEach((v) => v.pause());
-		modalReportHero.querySelectorAll('video').forEach((v) => v.pause());
-	}
-
-	function buildStreamMediaEl(media) {
-		let el;
-		if (media.type === 'video') {
-			el = document.createElement('video');
-			el.src = media.src;
-			el.controls = true;
-			el.volume = 0.5;
-			el.playsInline = true;
-		} else {
-			el = document.createElement('img');
-			el.src = media.src;
-			el.alt = media.caption || '';
-			el.loading = 'lazy';
-		}
-		return el;
-	}
-
-	function appendStreamCaption(container, caption) {
-		if (!caption) return;
-		const cap = document.createElement('p');
-		cap.className = 'boardModalStreamCaption';
-		cap.textContent = caption;
-		container.appendChild(cap);
-	}
-
-	function renderShotContent(item) {
-		modalContentList.hidden = true;
-		modalContentList.innerHTML = '';
-		modalMediaWrap.hidden = false;
-		modalMediaInner.innerHTML = '';
-
-		if (item.type === 'video') {
-			const video = document.createElement('video');
-			video.src = item.src;
-			video.controls = true;
-			video.autoplay = true;
-			video.volume = 0.5;
-			video.playsInline = true;
-			modalMediaInner.appendChild(video);
-		} else {
-			const img = document.createElement('img');
-			img.src = item.src;
-			img.alt = item.title || '';
-			modalMediaInner.appendChild(img);
-		}
-	}
-
-	function renderGalleryContent(item) {
-		modalMediaWrap.hidden = true;
-		modalMediaInner.innerHTML = '';
-		modalContentList.hidden = false;
-		modalContentList.innerHTML = '';
-
-		(item.items || []).forEach((media) => {
-			const row = document.createElement('div');
-			row.className = 'boardModalStreamItem';
-			row.appendChild(buildStreamMediaEl(media));
-			appendStreamCaption(row, media.caption);
-			modalContentList.appendChild(row);
-		});
-	}
-
-	function renderReportContent(item) {
-		modalMediaWrap.hidden = true;
-		modalMediaInner.innerHTML = '';
-		modalContentList.hidden = false;
-		modalContentList.innerHTML = '';
-
-		(item.blocks || []).forEach((block) => {
-			if (!block) return;
-
-			if (block.type === 'paragraph') {
-				const p = document.createElement('p');
-				p.className = 'boardModalStreamParagraph';
-				p.textContent = block.text || '';
-				modalContentList.appendChild(p);
-				return;
-			}
-
-			if (block.type === 'media') {
-				const row = document.createElement('div');
-				row.className = 'boardModalStreamItem';
-				row.appendChild(buildStreamMediaEl({ type: block.mediaType, src: block.src, caption: block.caption }));
-				appendStreamCaption(row, block.caption);
-				modalContentList.appendChild(row);
-			}
-		});
-	}
-
-	// Shows a report's standalone `hero` shot at the very top of the modal,
-	// above the title/venue/date info, when the post has one — independent
-	// of `blocks`, so it's never automatically duplicated into the body.
-	// If the same shot should also appear in the body text, that's done by
-	// adding it again as its own ordinary media block; nothing here keeps
-	// the two in sync. Only reports get this treatment; shots and galleries
-	// leave modalReportHero hidden.
-	function renderReportHero(item) {
-		modalReportHero.innerHTML = '';
-
-		// Deliberately reads item.hero directly rather than going through
-		// resolveCoverEntry() — a report with no explicit `hero` gets no
-		// hero section at all, rather than one inferred from a body block
-		// (that fallback exists in resolveCoverEntry() only for the grid
-		// tile image, on older reports written before `hero` existed).
-		const hero = item.hero;
-		if (!hero || !hero.src) {
-			modalReportHero.hidden = true;
-			return;
-		}
-
-		modalReportHero.hidden = false;
-		modalReportHero.appendChild(buildStreamMediaEl({ type: hero.mediaType, src: hero.src, caption: hero.caption }));
-	}
-
-	// Keeps the address bar in sync with whichever post is open, using the
-	// same bare #<id> hash openItemFromHash() already reads on page load —
-	// so the URL sitting in the browser bar while a post is open (or after
-	// paging prev/next to a different one) is always a valid, shareable
-	// link straight to that post. replaceState (not pushState) is used so
-	// opening a post or paging between posts doesn't spam the back button
-	// with an entry per post.
-	function updateUrlForItem(item) {
-		try {
-			history.replaceState(null, '', `${location.pathname}${location.search}#${encodeURIComponent(item.id)}`);
-		} catch (e) {
-			// history API unavailable in some embedding contexts — non-fatal
-		}
-	}
-
-	function clearUrlHash() {
-		try {
-			history.replaceState(null, '', location.pathname + location.search);
-		} catch (e) {
-			// non-fatal — see updateUrlForItem()
-		}
-	}
-
-	function renderModalItem(item) {
-		pauseAllModalVideos();
-		updateUrlForItem(item);
-
-		const isStream = item.postType === 'gallery' || item.postType === 'report';
-		modalContent.classList.toggle('boardModalContent--shot', !isStream);
-
-		modalTitle.textContent = item.title || 'Untitled';
-		modalGenres.innerHTML = genreChipsHtml(item.genres);
-		modalGenres.style.display = item.genres && item.genres.length > 0 ? 'flex' : 'none';
-
-		const subParts = [];
-		const venueName = resolveVenueName(item.venueId, venueLookup);
-		if (venueName) subParts.push(venueName);
-		if (item.date) subParts.push(formatDateDisplay(item.date));
-		modalSub.textContent = subParts.join(' · ');
-
-		modalCredit.textContent = '';
-		if (item.submittedBy) {
-			modalCredit.append('from ', Object.assign(document.createElement('span'), {
-				className: 'boardModalCreditValue',
-				textContent: item.submittedBy,
-			}));
-		}
-
-		if (item.postType === 'gallery') {
-			renderGalleryContent(item);
-			modalReportHero.hidden = true;
-			modalReportHero.innerHTML = '';
-		} else if (item.postType === 'report') {
-			renderReportHero(item);
-			renderReportContent(item);
-		} else {
-			renderShotContent(item);
-			modalReportHero.hidden = true;
-			modalReportHero.innerHTML = '';
-		}
-
-		updateModalNavState();
-	}
-
-	function updateModalNavState() {
-		const hasMultiple = filteredItems.length > 1;
-		modalPrevBtn.hidden = !hasMultiple;
-		modalNextBtn.hidden = !hasMultiple;
-		if (hasMultiple) {
-			modalPrevBtn.disabled = modalIndex <= 0;
-			modalNextBtn.disabled = modalIndex >= filteredItems.length - 1;
-		}
-	}
-
-	function showModalIndex(newIndex) {
-		if (newIndex < 0 || newIndex >= filteredItems.length) return;
-		modalIndex = newIndex;
-		renderModalItem(filteredItems[modalIndex]);
-	}
+	// --- Post modal (js/crwd-post.js, shared with profile pages) --------------
 
 	function openModal(item) {
-		modalIndex = filteredItems.indexOf(item);
-		renderModalItem(item);
-
-		modal.hidden = false;
-		document.body.classList.add('boardModalOpen');
-	}
-
-	function closeModal() {
-		modal.hidden = true;
-		document.body.classList.remove('boardModalOpen');
-		clearUrlHash();
-
-		// Stop any playing video when the modal closes.
-		pauseAllModalVideos();
-		modalMediaInner.innerHTML = '';
-		modalContentList.innerHTML = '';
-		modalReportHero.innerHTML = '';
-		modalIndex = -1;
-	}
-
-	modalPrevBtn.addEventListener('click', () => showModalIndex(modalIndex - 1));
-	modalNextBtn.addEventListener('click', () => showModalIndex(modalIndex + 1));
-
-	// Share the currently open post — native share sheet where available
-	// (mainly mobile), falling back to copying the #item-<id> link (kept in
-	// sync with the address bar by updateUrlForItem()) to the clipboard.
-	const SHARE_LABEL_DEFAULT = 'Copy Link';
-	let shareFeedbackTimer = null;
-
-	function showShareFeedback(label) {
-		if (!modalShareBtn) return;
-		clearTimeout(shareFeedbackTimer);
-		modalShareBtn.textContent = label;
-		shareFeedbackTimer = setTimeout(() => {
-			modalShareBtn.textContent = SHARE_LABEL_DEFAULT;
-		}, 1800);
-	}
-
-	if (modalShareBtn) {
-		modalShareBtn.addEventListener('click', async () => {
-			const item = filteredItems[modalIndex];
-			if (!item) return;
-			const url = `${location.origin}${location.pathname}#${encodeURIComponent(item.id)}`;
-
-			if (navigator.share) {
-				try {
-					await navigator.share({ title: item.title || 'CRWD SRFR Board', url });
-				} catch (e) {
-					// User cancelled the share sheet — not an error, nothing to do.
-				}
-				return;
-			}
-
-			if (navigator.clipboard && navigator.clipboard.writeText) {
-				try {
-					await navigator.clipboard.writeText(url);
-					showShareFeedback('Copied!');
-					return;
-				} catch (e) {
-					// Clipboard permission denied/unavailable — fall through.
-				}
-			}
-
-			// Last resort: the URL is already sitting in the address bar
-			// (updateUrlForItem keeps it current), so there's nothing more
-			// to do here beyond letting the person copy it manually.
-			showShareFeedback("Copy from your browser's address bar");
+		CrwdPost.open({
+			items: filteredItems,
+			index: Math.max(0, filteredItems.indexOf(item)),
+			context: { venueLookup, genreMeta },
+			getStats: (id) => stats[id],
+			onStatsChange: (id, next) => { stats[id] = next; updateTileFor(id); },
+			hashFor: (post) => '#' + encodeURIComponent(post.id),
+			shareUrl: (post) => location.origin + location.pathname + '#' + encodeURIComponent(post.id)
 		});
 	}
 
-	modal.addEventListener('click', (e) => {
-		if (e.target.closest('[data-boardclose]')) closeModal();
-	});
+	// --- New Post (the same form as profile pages: js/crwd-composer.js) -------
 
-	document.addEventListener('keydown', (e) => {
-		if (!modal.hidden) {
-			if (e.key === 'Escape') closeModal();
-			if (e.key === 'ArrowLeft') showModalIndex(modalIndex - 1);
-			if (e.key === 'ArrowRight') showModalIndex(modalIndex + 1);
-		}
-		if (e.key === 'Escape' && submitModal && !submitModal.hidden) closeSubmitModal();
-	});
-
-	// --- Submit media modal --------------------------------------------------
-
-	const submitModal = document.getElementById('boardSubmitModal');
-	const submitTrigger = document.getElementById('boardSubmitTrigger');
-
-	function openSubmitModal() {
-		submitModal.hidden = false;
-		document.body.classList.add('boardModalOpen');
-	}
-
-	function closeSubmitModal() {
-		submitModal.hidden = true;
-		document.body.classList.remove('boardModalOpen');
-	}
-
-	if (submitModal && submitTrigger) {
-		submitTrigger.addEventListener('click', (e) => {
-			e.preventDefault(); // no-op today since the anchor has no href, but guards against future navigation if one's added
-			openSubmitModal();
+	const newPostButton = document.getElementById('boardNewPost');
+	if (newPostButton) {
+		newPostButton.addEventListener('click', () => {
+			// Signed out: this opens sign-in instead. New posts start as pending, so the
+			// grid doesn't change; the form's thank-you screen says where it'll show.
+			if (window.CrwdComposer) window.CrwdComposer.open({ destination: 'board' });
 		});
-
-		// The trigger is an <a> without an href, which browsers don't make
-		// keyboard-focusable or Enter/Space-activatable by default the way
-		// a real link or button is — so both are added explicitly here.
-		submitTrigger.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				openSubmitModal();
-			}
-		});
-
-		submitModal.addEventListener('click', (e) => {
-			if (e.target.closest('[data-boardsubmitclose]')) closeSubmitModal();
+		// board.js runs before the account scripts; once they've loaded, hide the
+		// button if accounts are switched off (it would do nothing)
+		document.addEventListener('DOMContentLoaded', () => {
+			newPostButton.hidden = !(window.CrwdComposer && window.CrwdCore && window.CrwdCore.enabled);
 		});
 	}
 
@@ -1334,5 +1039,18 @@
 
 	// --- Init -----------------------------------------------------------------
 
-	document.addEventListener('DOMContentLoaded', loadMedia);
+	// Shown straight away: board.js runs before the account scripts, and loadMedia()
+	// waits for them, so this covers the whole wait, not just the database request
+	loadingMsg.hidden = false;
+
+	document.addEventListener('DOMContentLoaded', () => {
+		loadMedia();
+		if (socialReady()) {
+			let first = true;
+			CrwdCore.onChange(() => {
+				if (first) { first = false; return; } // the first call is just "ready"
+				refreshStats();
+			});
+		}
+	});
 })();

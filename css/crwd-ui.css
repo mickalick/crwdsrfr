@@ -1,0 +1,1207 @@
+/* =====================================================================
+   css/crwd-ui.css — account UI shared by every page (markup from js/crwd-ui.js)
+   Link on every page after the page's own stylesheet and nav.css.
+   Elements here set their own transitions to override the global
+   `* { transition: all 250ms }` rule in style.css.
+   ===================================================================== */
+
+/* =========================== Header: profile button ============== */
+
+#accountNav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+}
+
+/* Same size as #menuButton. Like the drawer's close button: a rounded tile
+   appears behind the icon on hover, and stays while the menu is open. */
+#profileButton {
+	position: relative; /* for the new-messages dot */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	background-color: transparent;
+	border: 2px solid transparent;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: background-color 150ms ease;
+}
+
+#profileButton.open {
+	border: 2px solid #F9F976;
+}
+
+/* Fill the shorter header once the page scrolls, like #menuButton.scrolled */
+header.scrolled #accountNav {
+	height: 100%;
+}
+
+/* The tile stays square when the header shrinks on scroll */
+header.scrolled #profileButton {
+	height: 60px;
+}
+
+#prf {
+	width: 45px;
+	height: 45px;
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/user.svg');
+	mask-image: url('../images/icons/user.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transition: background-color 150ms ease, opacity 150ms ease;
+}
+
+/* Signed out: login icon, and the button opens the sign-in modal */
+#profileButton.isGuest #prf {
+	-webkit-mask-image: url('../images/icons/login.svg');
+	mask-image: url('../images/icons/login.svg');
+}
+
+/* Hidden for the split second before sign-in state is known, so it doesn't flip icons */
+#profileButton.isLoading #prf {
+	opacity: 0;
+}
+
+/* Yellow while the menu is open, matching the View toggle's open state */
+#profileButton.open #prf {
+	background-color: #F9F976;
+}
+
+/* "New" dot: on the account button (new messages or ripples), and on the Lineup / Messages icons in the menu.
+   Dark ring so it stands out on both the dark header and the yellow menu. */
+.crwdUnreadDot {
+	display: none;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #62CBB8;
+	border: 2px solid #101010;
+	box-sizing: border-box;
+	pointer-events: none;
+}
+
+#accountNav.hasUnread #profileButton .crwdUnreadDot,
+.profileMenuItem.hasUnread .crwdUnreadDot {
+	display: block;
+}
+
+#profileButton .crwdUnreadDot {
+	bottom: 6px;
+	right: 6px;
+}
+
+.profileMenuIconWrap {
+	position: relative;
+	display: flex;
+	flex-shrink: 0;
+}
+
+.profileMenuIconWrap .crwdUnreadDot {
+	bottom: -2px;
+	right: -5px;
+	width: 12px;
+	height: 12px;
+}
+
+.crwdSrOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* =========================== Header: popup menu ================== */
+/* Same yellow panel as the calendar's View menu (#calendarSettings) */
+
+#profileMenu {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 1001;
+	width: 260px;
+	max-width: calc(100vw - 40px);
+	margin-top: 12px;
+	padding: 12px;
+	background: #F9F976;
+	border-radius: 9px;
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+	transition: none;
+}
+
+/* Explicit, so no display rule can override the hidden attribute */
+#profileMenu[hidden] {
+	display: none;
+}
+
+.profileMenuHead {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding: 8px 12px 12px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid rgba(16, 16, 16, 0.15);
+}
+
+.profileMenuName {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
+	line-height: 1.1;
+	color: #101010;
+	overflow-wrap: anywhere;
+}
+
+.profileMenuList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.profileMenuItem {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	padding: 10px 12px;
+	background: none;
+	border: none;
+	border-radius: 6px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+	color: #101010 !important; /* beats `.main a` and similar link colors */
+	text-decoration: none !important;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* Icons follow the text color, so they invert with it on hover */
+.profileMenuIcon {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
+.profileMenuIcon[data-icon="profile"] {
+	-webkit-mask-image: url('../images/icons/profile.svg');
+	mask-image: url('../images/icons/profile.svg');
+}
+
+.profileMenuIcon[data-icon="messages"] {
+	-webkit-mask-image: url('../images/icons/messages.svg');
+	mask-image: url('../images/icons/messages.svg');
+}
+
+.profileMenuIcon[data-icon="lineup"] {
+	-webkit-mask-image: url('../images/icons/lineup.svg');
+	mask-image: url('../images/icons/lineup.svg');
+}
+
+.profileMenuIcon[data-icon="notifications"] {
+	-webkit-mask-image: url('../images/icons/notifications.svg');
+	mask-image: url('../images/icons/notifications.svg');
+}
+
+.profileMenuIcon[data-icon="settings"] {
+	-webkit-mask-image: url('../images/icons/settings.svg');
+	mask-image: url('../images/icons/settings.svg');
+}
+
+.profileMenuIcon[data-icon="logout"] {
+	-webkit-mask-image: url('../images/icons/logout.svg');
+	mask-image: url('../images/icons/logout.svg');
+}
+
+.profileMenuItem.isAlert::after {
+	content: "";
+	flex-shrink: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FF6262;
+}
+
+.profileMenuDivider {
+	margin-top: 4px;
+	padding-top: 4px;
+	border-top: 1px solid rgba(16, 16, 16, 0.15);
+}
+
+#profileButton:focus-visible {
+	outline: 3px solid #F9F976;
+	outline-offset: 2px;
+}
+
+.profileMenuItem:focus-visible {
+	outline: 2px solid #101010;
+	outline-offset: -2px;
+}
+
+/* =========================== Account modal ======================= */
+
+html.crwdModalOpen {
+	overflow: hidden;
+}
+
+.crwdModal {
+	position: fixed;
+	inset: 0;
+	z-index: 10000; /* above the header (1000) and the date picker (9999) */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	transition: none;
+}
+
+.crwdModal[hidden] {
+	display: none;
+}
+
+.crwdModalBackdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.75);
+	transition: none;
+}
+
+.crwdModalPanel {
+	position: relative;
+	width: 100%;
+	max-width: 460px;
+	max-height: calc(100vh - 40px);
+	max-height: calc(100dvh - 40px);
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	padding: 40px 36px 32px;
+	background: #222; /* same as .boardModalContent */
+	border: 1px solid #333;
+	border-radius: 9px;
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+	animation: crwdModalIn 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: none;
+}
+
+@keyframes crwdModalIn {
+	from { opacity: 0; transform: translateY(12px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+.crwdModalClose {
+	/* Same as .boardModalClose */
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.crwdIconClose {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: #FFF;
+	-webkit-mask-image: url('../images/icons/clear.svg');
+	mask-image: url('../images/icons/clear.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transition: background-color 150ms ease;
+}
+
+.crwdModalTitle {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 1;
+	color: #FFF;
+	margin: 0 40px 12px 0; /* right margin keeps long titles clear of the close button */
+}
+
+:is(.crwdModal, .crwdInline) p.crwdModalText {
+	font-size: 16px;
+	line-height: 1.45;
+	color: #DADADA;
+	margin: 0 0 24px;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdModalText strong {
+	color: #FFF;
+	word-break: break-all;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdMuted {
+	color: #ADADAD;
+	font-size: 14px;
+	margin-top: -12px;
+}
+
+.crwdForm {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.crwdField {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.crwdLabel {
+	/* Same as .boardForm label */
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	color: #FFF;
+}
+
+/* Two classes deep so it outranks style.css's global input[type=text] rule */
+:is(.crwdModal, .crwdInline) .crwdField input,
+:is(.crwdModal, .crwdInline) .crwdField textarea,
+:is(.crwdModal, .crwdInline) .crwdField select {
+	width: 100%;
+	margin: 0;
+	padding: 14px 16px;
+	background: #333; /* same as the board form's inputs */
+	border: 2px solid #333; /* matches the fill; turns teal on focus */
+	border-radius: 9px;
+	color: #FCFCFC;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px; /* 16px+ stops iOS from zooming in on focus */
+	transition: border-color 150ms ease;
+}
+
+:is(.crwdModal, .crwdInline) .crwdField input:focus,
+:is(.crwdModal, .crwdInline) .crwdField textarea:focus,
+:is(.crwdModal, .crwdInline) .crwdField select:focus {
+	outline: none;
+	border-color: #62CBB8;
+}
+
+/* ---- Extra form pieces for dialogs (CrwdUI.openDialog) ---- */
+
+.crwdModalPanel[data-size="wide"] {
+	max-width: 600px;
+}
+
+:is(.crwdModal, .crwdInline) .crwdField textarea {
+	min-height: 110px;
+	resize: vertical;
+	line-height: 1.45;
+}
+
+:is(.crwdModal, .crwdInline) .crwdField input:disabled,
+:is(.crwdModal, .crwdInline) .crwdField textarea:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* Two or more fields side by side (e.g. link label + URL) */
+.crwdFieldRow {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+}
+
+/* Section heading inside a long dialog, e.g. "About" or "Pro" */
+:is(.crwdModal, .crwdInline) .crwdSection {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 8px 0 -4px;
+	padding-top: 20px;
+	border-top: 1px solid #3a3a3a;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFF;
+}
+
+:is(.crwdModal, .crwdInline) .crwdSection:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.crwdProBadge {
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	padding: 2px 8px;
+	border: 1px solid #F9F976;
+	border-radius: 20px;
+	color: #F9F976;
+}
+
+/* Max badge after a username (CrwdUI.maxBadge). The SVG is used as a mask,
+   so background-color sets its color, like the site's other icons. */
+.icon.crwdMaxBadge {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 4px;
+	vertical-align: middle;
+	flex-shrink: 0;
+	background-color: #F9F976;
+	-webkit-mask: url('../images/icons/srfrMax.svg') center / contain no-repeat;
+	mask: url('../images/icons/srfrMax.svg') center / contain no-repeat;
+}
+
+/* Show/hide switch next to a field label */
+.crwdLabelRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.crwdToggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+	cursor: pointer;
+	user-select: none;
+}
+
+.crwdToggle input {
+	appearance: none;
+	-webkit-appearance: none;
+	position: relative;
+	width: 34px;
+	height: 20px;
+	margin: 0;
+	border-radius: 20px;
+	background: #444;
+	cursor: pointer;
+	transition: background-color 150ms ease;
+}
+
+.crwdToggle input::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #FFF;
+	transition: transform 150ms ease;
+}
+
+.crwdToggle input:checked {
+	background: #62CBB8;
+}
+
+.crwdToggle input:checked::after {
+	transform: translateX(14px);
+}
+
+.crwdToggle input:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Small outline button, e.g. "Upload photo" (wraps a hidden file input) */
+.crwdSmallButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 14px;
+	background: none;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.crwdSmallButton input[type="file"] {
+	display: none;
+}
+
+.crwdSmallButton:focus-within {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Radio list, e.g. report reasons */
+.crwdChoices {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.crwdChoice {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	border: 1px solid #3a3a3a;
+	border-radius: 9px;
+	font-size: 15px;
+	color: #FFF;
+	cursor: pointer;
+	transition: border-color 150ms ease;
+}
+
+.crwdChoice:has(input:checked) {
+	border-color: #62CBB8;
+}
+
+.crwdChoice input {
+	accent-color: #62CBB8;
+	margin: 0;
+}
+
+.crwdCounter {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #ADADAD;
+	text-align: right;
+}
+
+.crwdCounter[data-state="over"] {
+	color: #FF6262;
+}
+
+/* Calm confirmation line, e.g. "Request sent" */
+:is(.crwdModal, .crwdInline) p.crwdNotice {
+	margin: 0;
+	padding: 12px 14px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #62CBB8;
+	background: rgba(98, 203, 184, 0.08);
+	border: 1px solid rgba(98, 203, 184, 0.35);
+	border-radius: 9px;
+}
+
+.crwdHint {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #ADADAD;
+	overflow-wrap: anywhere;
+}
+
+.crwdHint[data-state="good"]    { color: #62CBB8; }
+.crwdHint[data-state="bad"]     { color: #FF6262; }
+
+.crwdHint[data-state="good"]::before { content: "\2713  "; }
+
+:is(.crwdModal, .crwdInline) p.crwdFormError {
+	margin: 0;
+	padding: 12px 14px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #FF6262;
+	background: rgba(255, 98, 98, 0.08);
+	border: 1px solid rgba(255, 98, 98, 0.35);
+	border-radius: 9px;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdFormError[hidden] {
+	display: none;
+}
+
+.crwdButton {
+	/* Same look as .contactButton (the board form's Send button), kept full width */
+	width: 100%;
+	padding: 20px 50px;
+	margin-top: 4px;
+	background: none;
+	border: 2px solid #62CBB8;
+	border-radius: 9px; /* matches the input fields */
+	color: #62CBB8;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 21px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+.crwdButton:disabled {
+	opacity: 0.55;
+	cursor: default;
+}
+
+/* Same as .boardModalShareBtn (Copy Link) — used for "Resend link" */
+.crwdButtonSecondary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	margin: 0 auto;
+	padding: 12px 16px;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-transform: none;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdModalSwitch {
+	margin: 20px 0 0;
+	font-size: 15px;
+	color: #ADADAD;
+	text-align: center;
+}
+
+.crwdLinkButton {
+	padding: 0;
+	background: none;
+	border: none;
+	color: #62CBB8;
+	font: inherit;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdFinePrint {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #888;
+}
+
+.crwdFinePrint a {
+	color: #ADADAD;
+	text-decoration: underline;
+}
+
+.crwdModal button:focus-visible,
+.crwdModal a:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* =========================== Hover (mouse only) ================== */
+
+@media (hover: hover) and (pointer: fine) {
+	#profileButton:not(.open):hover #prf {
+		background-color: #F9F976;
+	}
+
+	.profileMenuItem:hover {
+		background: #101010;
+		color: #F9F976 !important;
+	}
+
+	.crwdModalClose:hover .crwdIconClose {
+		background-color: #FF6262;
+	}
+
+	/* Same as .contactButton:hover; the secondary button has no hover, like Copy Link */
+	.crwdButton:not(.crwdButtonSecondary):not(:disabled):hover {
+		background: #62CBB8;
+		color: #222;
+	}
+
+	.crwdSmallButton:hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.crwdChoice:hover {
+		border-color: #ADADAD;
+	}
+
+	.crwdLinkButton:hover,
+	.crwdFinePrint a:hover {
+		text-decoration: underline;
+		color: #62CBB8;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.crwdModalPanel {
+		animation: none;
+	}
+}
+
+/* =========================== Small screens ======================= */
+
+@media screen and (max-width: 535px) {
+	#accountNav {
+		margin-right: 20px;
+	}
+
+	.crwdModal {
+		padding: 12px;
+		align-items: flex-end; /* sheet-style, easier to reach with a thumb */
+	}
+
+	.crwdModalPanel {
+		padding: 32px 22px 24px;
+		max-height: calc(100dvh - 24px);
+	}
+
+	.crwdModalTitle {
+		font-size: 38px;
+	}
+
+	.crwdFieldRow {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* =========================== Hype + comment buttons ================ */
+/* Shared by posts now and shows later (js/crwd-social.js).
+   Classes, not ids, because a page has many of these. */
+
+.icon.iconHype,
+.icon.iconComment,
+.icon.crwdCommentAvatarIcon {
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
+.icon.iconHype {
+	-webkit-mask-image: url('../images/icons/hype.svg');
+	mask-image: url('../images/icons/hype.svg');
+}
+
+.icon.iconComment {
+	-webkit-mask-image: url('../images/icons/comment.svg');
+	mask-image: url('../images/icons/comment.svg');
+}
+
+.crwdReactions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.crwdChip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	min-height: 36px;
+	padding: 6px 14px 6px 10px;
+	background: #1A1A1A;
+	border: 1px solid #333;
+	border-radius: 999px;
+	color: #ADADAD;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+.crwdChip .icon {
+	width: 18px;
+	height: 18px;
+	transition: none;
+}
+
+/* No hypes/comments yet: icon only, centered */
+.crwdChip.isEmpty {
+	justify-content: center;
+	padding: 6px 10px;
+}
+
+.crwdChip.isEmpty .crwdChipCount {
+	display: none;
+}
+
+.crwdChip:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.crwdChipHype.isActive {
+	color: #F9F976;
+	border-color: rgba(249, 249, 118, 0.6);
+	background: rgba(249, 249, 118, 0.08);
+}
+
+.crwdChipHype.isPopping .icon {
+	animation: crwdHypePop 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes crwdHypePop {
+	0% { transform: scale(1); }
+	45% { transform: scale(1.35) rotate(-8deg); }
+	100% { transform: scale(1); }
+}
+
+@media (hover: hover) {
+	.crwdChipHype:hover {
+		color: #F9F976;
+		border-color: #F9F976;
+	}
+
+	.crwdChipComment:hover {
+		color: #62CBB8;
+		border-color: #62CBB8;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.crwdChipHype.isPopping .icon {
+		animation: none;
+	}
+}
+
+/* =========================== Comments modal ======================== */
+
+.crwdCommentsHead {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0 40px 12px 0; /* clear of the close button */
+}
+
+.crwdCommentsHead .crwdModalTitle {
+	margin: 0;
+}
+
+.crwdCommentsHead .crwdModalTitle:focus {
+	outline: none;
+}
+
+.crwdCommentsTotal {
+	padding: 3px 9px;
+	border: 1px solid #444;
+	border-radius: 999px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	line-height: 1.2;
+	color: #ADADAD;
+}
+
+.crwdCommentsTotal:empty {
+	display: none;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdCommentsContext {
+	margin: 4px 0 0;
+	padding-left: 10px;
+	border-left: 3px solid #F9F976;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #ADADAD;
+	overflow-wrap: anywhere;
+}
+
+.crwdComments {
+	list-style: none;
+	margin: 20px 0 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.crwdComment {
+	display: flex;
+	gap: 12px;
+	padding: 14px 0;
+	border-top: 1px solid #333;
+}
+
+.crwdComment:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.crwdCommentsEmpty {
+	padding: 8px 0 4px;
+	font-size: 14px;
+	font-style: italic;
+	color: #ADADAD;
+}
+
+.crwdCommentAvatar {
+	flex: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #333;
+	color: #777;
+	overflow: hidden;
+}
+
+.crwdCommentAvatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.icon.crwdCommentAvatarIcon {
+	width: 18px;
+	height: 18px;
+	-webkit-mask-image: url('../images/icons/user.svg');
+	mask-image: url('../images/icons/user.svg');
+}
+
+.crwdCommentMain {
+	flex: 1;
+	min-width: 0;
+}
+
+.crwdCommentMeta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.crwdCommentUser {
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	font-weight: 700;
+	color: #62CBB8;
+	text-decoration: none;
+}
+
+a.crwdCommentUser:hover {
+	text-decoration: underline;
+}
+
+.crwdCommentTime {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	color: #777;
+}
+
+:is(.crwdModal, .crwdInline) p.crwdCommentBody {
+	margin: 4px 0 0;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #FFF;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
+.crwdCommentActions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 14px;
+	margin-top: 6px;
+}
+
+.crwdCommentAction {
+	padding: 0;
+	background: none;
+	border: none;
+	color: #777;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.crwdCommentAction:hover,
+.crwdCommentAction:focus-visible {
+	color: #FFF;
+}
+
+.crwdCommentAction.isDanger {
+	color: #FF6262;
+}
+
+.crwdCommentConfirm {
+	font-size: 12px;
+	color: #FFF;
+}
+
+.crwdCommentForm {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #333;
+}
+
+:is(.crwdModal, .crwdInline) .crwdCommentForm textarea {
+	min-height: 80px;
+}
+
+.crwdCommentSignIn {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #333;
+	text-align: center;
+}
+
+.crwdCommentSignIn p {
+	margin: 0 0 12px;
+	font-size: 14px;
+	color: #ADADAD;
+}
+
+/* The full-size modal button is a lot under a comment box */
+.crwdCommentForm .crwdButton,
+.crwdCommentSignIn .crwdButton {
+	padding: 14px 24px;
+	font-size: 16px;
+}
+
+/* Bigger hype button (act and venue modals) */
+.crwdChip.crwdChipLarge {
+	min-height: 48px;
+	padding: 10px 18px 10px 14px;
+	gap: 8px;
+	font-size: 16px;
+}
+
+.crwdChip.crwdChipLarge .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.crwdChip.crwdChipLarge.isEmpty {
+	padding: 10px 13px;
+}
+
+/* Kebab (⋮) icon for post menus — a class, since a page can have many */
+.icon.iconKebab {
+	background-color: currentColor;
+	-webkit-mask-image: url('../images/icons/kebab.svg');
+	mask-image: url('../images/icons/kebab.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+/* --- Comments: "Load more" and the "Add a comment" toggle ----------- */
+
+.crwdCommentsMore {
+	display: block;
+	margin: 12px auto 0;
+	padding: 8px 16px;
+	background: none;
+	border: 1px solid #444;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.crwdCommentsMore[hidden],
+.crwdCommentForm[hidden] {
+	display: none;
+}
+
+.crwdCommentsMore:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+/* Comments posted before the newer pages were loaded wait here, below "Load more" */
+.crwdComments.crwdCommentsJustPosted {
+	margin-top: 0;
+}
+
+.crwdCommentsJustPosted:empty {
+	display: none;
+}
+
+.crwdCommentsJustPosted .crwdComment:first-child {
+	margin-top: 12px;
+	padding-top: 14px;
+	border-top: 1px solid #333;
+}
+
+/* Board: the comment box opens from this button */
+.crwdCommentsAdd {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 16px;
+	padding: 10px 16px;
+	background: none;
+	border: 1px solid #F9F976;
+	border-radius: 9px;
+	color: #FFF;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.crwdCommentsAdd.isOpen {
+	border-color: #444;
+	color: #ADADAD;
+}
+
+.crwdCommentsAdd:focus-visible,
+.crwdCommentsMore:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.crwdCommentsAdd + .crwdCommentForm {
+	margin-top: 12px;
+	padding-top: 0;
+	border-top: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.crwdCommentsMore:not(:disabled):hover {
+		border-color: #62CBB8;
+		color: #62CBB8;
+	}
+
+	.crwdCommentsAdd:not(.isOpen):hover {
+		background: #F9F976;
+		color: #101010;
+	}
+
+	.crwdCommentsAdd.isOpen:hover {
+		color: #FFF;
+	}
+}
