@@ -337,7 +337,7 @@
 
 		// Blurb (the "status" column; null when empty or hidden). Visitors see nothing when it's empty.
 		els.blurb.classList.toggle('isEmpty', !v.status);
-		els.blurb.textContent = v.status || (isOwner ? 'A litte about yourself? A favorite quote? Whatever you\'re feeling.' : '');
+		els.blurb.textContent = v.status || (isOwner ? 'A little about yourself? A favorite quote? Whatever you\'re feeling.' : '');
 		els.blurb.hidden = !v.status && !isOwner;
 
 		// Facts: area, established, hype count
