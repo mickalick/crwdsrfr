@@ -868,6 +868,7 @@
 #boardGrid.isRows .boardTile {
 	flex-direction: row;
 	align-items: stretch;
+	max-height: 160px;
 }
 
 /* Fixed-width thumb that stretches to the tile's height (cropped by object-fit) */
