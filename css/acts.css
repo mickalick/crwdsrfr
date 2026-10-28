@@ -555,6 +555,7 @@
 .actModalHype {
 	flex-shrink: 0;
 	min-width: 48px; /* holds the button's space while its count loads */
+	margin: auto 0;
 }
 
 .actModalBody h2 {
@@ -613,9 +614,23 @@
 
 .actModalEvent {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+/* Title, date and venue wrap together on the left; the hype button sits on the right */
+.actModalEventInfo {
+	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	gap: 4px 10px;
+	flex: 1;
+	min-width: 0;
+}
+
+.actModalEventHype {
+	flex-shrink: 0;
 }
 
 .actModalEventDate {

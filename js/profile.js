@@ -49,7 +49,7 @@
 	let posts = null;         // loaded once per profile
 	let hypes = null;         // loaded the first time the Hyped tab opens
 	let postsFilter = 'all';  // 'all' | 'board' | 'profile'
-	let hypedFilter = 'event';// 'event' | 'act' | 'venue'
+	let hypedFilter = 'event';// 'event' | 'act' | 'venue' | 'srfr' (SRFRs: owner only)
 	let loadedForUser;        // which signed-in user the page was rendered for
 	const jsonCache = {};
 
@@ -794,10 +794,12 @@
 		renderHyped();
 	}
 
-	// Which Hyped lists this visitor can see (owners always see all three)
+	// Which Hyped lists this visitor can see. Owners see all of them, plus SRFRs (the people they've hyped),
+	// which is never shown to anyone else.
 	function visibleHypeKinds() {
+		if (isOwner) return ['event', 'act', 'venue', 'srfr'];
 		const flags = { event: 'hyped_shows_visible', act: 'hyped_acts_visible', venue: 'hyped_venues_visible' };
-		return ['event', 'act', 'venue'].filter(function (kind) { return isOwner || viewed[flags[kind]] !== false; });
+		return ['event', 'act', 'venue'].filter(function (kind) { return viewed[flags[kind]] !== false; });
 	}
 
 	async function renderHyped() {
@@ -818,6 +820,7 @@
 			setFilter(filter, 'hyped', hypedFilter);
 		}
 		const kind = hypedFilter;
+		if (kind === 'srfr') { renderHypedSrfrs(); return; }
 
 		const ids = hypes.filter(function (h) { return h.kind === kind; }).map(function (h) { return h.item_id; });
 		if (!ids.length) {
@@ -833,6 +836,93 @@
 
 		els.hyped.replaceChildren();
 		items.forEach(function (item) { els.hyped.appendChild(item); });
+	}
+
+	// SRFRs you've hyped: only ever shown to you, on your own profile
+	async function renderHypedSrfrs() {
+		const note = el('li', 'profileHypedPrivate', 'Only you can see this list. Nobody else can see who you\'ve hyped, including the people on it.');
+		els.hyped.replaceChildren(note, el('li', 'profileEmpty', 'Loading…'));
+
+		const { data: follows, error } = await core.sb.from('follows').select('followee_id').eq('follower_id', core.user.id);
+		if (hypedFilter !== 'srfr') return;
+		if (error) { console.error('[profile]', error); els.hyped.replaceChildren(note, el('li', 'profileEmpty', 'Your hyped SRFRs couldn\'t load right now.')); return; }
+		const ids = (follows || []).map(function (f) { return f.followee_id; });
+		if (!ids.length) {
+			els.hyped.replaceChildren(note, el('li', 'profileEmpty', 'You haven\'t hyped any SRFRs yet. Hype someone from their profile to see their posts and hypes in Waves on your Lineup.'));
+			return;
+		}
+
+		const { data: people } = await core.sb.from('public_profiles').select('id, username, display_name, area').in('id', ids);
+		if (hypedFilter !== 'srfr') return;
+		const rows = (people || []).slice()
+			.sort(function (a, b) { return String(a.username).localeCompare(String(b.username)); })
+			.map(function (p) {
+				const li = hypedRow({ title: at(p.username), meta: [p.display_name, p.area].filter(Boolean).join(' · ') || null, href: core.profileUrl(p.username) });
+				return withUnhype(li, at(p.username),
+					function () { return core.sb.from('follows').delete().eq('follower_id', core.user.id).eq('followee_id', p.id); },
+					function () { return core.sb.from('follows').insert({ followee_id: p.id }); });
+			});
+		// e.g. someone who has since blocked you or deleted their account
+		const missing = ids.length - (people || []).length;
+		if (missing > 0) rows.push(hypedRow({ title: plural(missing, 'SRFR') + ' no longer available', missing: true }));
+		els.hyped.replaceChildren.apply(els.hyped, [note].concat(rows));
+	}
+
+	// Owner only: a lit hype button at the end of a Hyped row that takes the hype back,
+	// leaving "Unhyped …. Undo" in its place. unhype() / rehype() return the Supabase result.
+	function withUnhype(li, name, unhype, rehype) {
+		if (!isOwner) return li;
+		li.classList.add('hasAction');
+		const btn = el('button', 'crwdChip crwdChipHype isActive profileUnhype');
+		btn.type = 'button';
+		btn.setAttribute('aria-label', 'Unhype ' + name);
+		btn.title = 'Unhype';
+		const icon = el('span', 'icon iconHype');
+		icon.setAttribute('aria-hidden', 'true');
+		btn.appendChild(icon);
+		li.appendChild(btn);
+
+		btn.addEventListener('click', async function () {
+			btn.disabled = true;
+			const { error } = await unhype();
+			if (error) { btn.disabled = false; alert(core.friendlyError(error).message); return; }
+			const note = el('li', 'profileHypedUndo', 'Unhyped ' + name + '. ');
+			const undo = el('button', 'crwdLinkButton', 'Undo');
+			undo.type = 'button';
+			note.appendChild(undo);
+			li.replaceWith(note);
+			undo.focus();
+			undo.addEventListener('click', async function () {
+				undo.disabled = true;
+				const { error: e2 } = await rehype();
+				if (e2 && e2.code !== '23505') { undo.disabled = false; alert(core.friendlyError(e2).message); return; }
+				note.replaceWith(li);
+				btn.disabled = false;
+				btn.focus();
+			});
+		});
+		return li;
+	}
+
+	// Unhype / re-hype a show, act or venue from your own Hyped list (keeps the loaded list in step)
+	function itemHypeActions(kind, id) {
+		return {
+			unhype: async function () {
+				const r = await core.sb.from('item_hypes').delete().eq('user_id', core.user.id).eq('kind', kind).eq('item_id', id);
+				if (!r.error) hypes = hypes.filter(function (h) { return !(h.kind === kind && h.item_id === id); });
+				return r;
+			},
+			rehype: async function () {
+				const r = await core.sb.from('item_hypes').insert({ kind: kind, item_id: id });
+				if (!r.error || r.error.code === '23505') hypes = hypes.concat([{ kind: kind, item_id: id }]);
+				return r;
+			}
+		};
+	}
+
+	function withItemUnhype(li, name, kind, id) {
+		const a = itemHypeActions(kind, id);
+		return withUnhype(li, name, a.unhype, a.rehype);
 	}
 
 	function hypedRow(opts) {
@@ -872,14 +962,14 @@
 		const rows = upcoming.concat(past).map(function (e) {
 			const venue = venues[e.venueId];
 			const d = showDate(e.date);
-			return hypedRow({
+			return withItemUnhype(hypedRow({
 				title: e.title,
 				meta: [venue && venue.name, d && d.label].filter(Boolean).join(' · ') + (e.date < today ? ' · Past' : ''),
 				date: d,
 				href: '/?show=' + encodeURIComponent(e.id), // opens the calendar on that day, scrolled to the show
 				external: false,
 				past: e.date < today
-			});
+			}), e.title, 'event', e.id);
 		});
 		const missing = ids.length - found.length;
 		if (missing) rows.push(hypedRow({ title: plural(missing, 'older show') + ' no longer listed', missing: true }));
@@ -895,7 +985,7 @@
 		const rows = ids.map(function (id) { return byId[id]; }).filter(Boolean)
 			.sort(function (a, b) { return String(a.name).localeCompare(String(b.name)); })
 			.map(function (a) {
-				return hypedRow({ title: a.name, href: '/acts/#' + encodeURIComponent(a.id || a.slug) });
+				return withItemUnhype(hypedRow({ title: a.name, href: '/acts/#' + encodeURIComponent(a.id || a.slug) }), a.name, 'act', a.id || a.slug);
 			});
 		const missing = ids.filter(function (id) { return !byId[id]; }).length;
 		if (missing) rows.push(hypedRow({ title: plural(missing, 'act') + ' no longer listed', missing: true }));
@@ -910,7 +1000,7 @@
 		const rows = ids.map(function (id) { return byId[id]; }).filter(Boolean)
 			.sort(function (a, b) { return String(a.name).replace(/^the\s+/i, '').localeCompare(String(b.name).replace(/^the\s+/i, '')); })
 			.map(function (v) {
-				return hypedRow({ title: v.name, meta: v.area || null, href: '/venues/' + encodeURIComponent(v.id) + '/' });
+				return withItemUnhype(hypedRow({ title: v.name, meta: v.area || null, href: '/venues/' + encodeURIComponent(v.id) + '/' }), v.name, 'venue', v.id);
 			});
 		const missing = ids.filter(function (id) { return !byId[id]; }).length;
 		if (missing) rows.push(hypedRow({ title: plural(missing, 'venue') + ' no longer listed', missing: true }));

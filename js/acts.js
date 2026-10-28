@@ -573,11 +573,14 @@
 			? `<a href="${titleLink}" target="_blank" rel="noopener">${event.title}</a>`
 			: event.title;
 
+		// Details on the left; the show's hype button goes on the right (mountEventHypes)
 		return `
-			<li class="actModalEvent">
-				<span class="actModalEventTitle">${titleHtml} :</span>
-				<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
-				<span class="actModalEventVenue">at ${venueHtml}</span>
+			<li class="actModalEvent" data-event-id="${escapeHtml(event.id)}">
+				<div class="actModalEventInfo">
+					<span class="actModalEventTitle">${titleHtml} :</span>
+					<span class="actModalEventDate">${formatEventDate(event.date)}${timeDisplay ? ' · ' + timeDisplay : ''}</span>
+					<span class="actModalEventVenue">at ${venueHtml}</span>
+				</div>
 			</li>`;
 	}
 
@@ -625,6 +628,23 @@
 		}));
 	}
 
+	// A hype button on each upcoming show, same as the calendar's (hype it without leaving the modal)
+	async function mountEventHypes(act, events) {
+		if (!socialReady() || !events.length) return;
+		await CrwdCore.ready;
+		const stats = await CrwdSocial.loadStats('event', events.map(e => e.id));
+		if (activeModalAct !== act) return; // another act was opened meanwhile
+		modalEventsList.querySelectorAll('.actModalEvent[data-event-id]').forEach(li => {
+			const event = events.find(e => e.id === li.dataset.eventId);
+			if (!event) return;
+			const s = stats[event.id] || {};
+			const wrap = document.createElement('div');
+			wrap.className = 'actModalEventHype';
+			wrap.appendChild(CrwdSocial.hypeButton({ type: 'event', id: event.id, hypes: s.hypes || 0, hyped: !!s.hyped }));
+			li.appendChild(wrap);
+		});
+	}
+
 	async function openActModal(act, slug) {
 		if (!act) return;
 		activeModalAct = act;
@@ -643,6 +663,7 @@
 			? upcoming.map(eventItemHtml).join('')
 			: '<li class="actModalEmptyMsg">No upcoming shows.</li>';
 		modalEventsSection.hidden = false;
+		mountEventHypes(act, upcoming);
 
 		// Media loads async — show the section with a loading message first,
 		// then fill it in once it resolves rather than delaying the whole

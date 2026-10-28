@@ -933,6 +933,54 @@
 	color: #ADADAD;
 }
 
+/* Your own list: the row's link + a lit hype button that unhypes it */
+.profileHypedItem.hasAction {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.profileHypedItem.hasAction .profileHypedLink {
+	flex: 1;
+	min-width: 0;
+}
+
+.profileUnhype {
+	flex-shrink: 0;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+}
+
+.profileUnhype .icon {
+	flex-shrink: 0;
+	width: 18px;
+	height: 18px;
+}
+
+/* "Unhyped The Linda Lindas. Undo" */
+.profileHypedUndo {
+	padding: 14px 16px;
+	border: 1px dashed #3a3a3a;
+	border-radius: 9px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+	list-style: none;
+}
+
+/* Top of the SRFRs list: only the owner ever sees it */
+.profileHypedPrivate {
+	padding: 10px 14px;
+	border-left: 3px solid #F9F976;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #ADADAD;
+	list-style: none;
+}
+
 .profileHypedItem.isPast .profileHypedLink {
 	opacity: 0.6;
 }
