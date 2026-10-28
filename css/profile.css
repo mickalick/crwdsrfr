@@ -933,16 +933,23 @@
 	color: #ADADAD;
 }
 
-/* Your own list: the row's link + a lit hype button that unhypes it */
 .profileHypedItem.hasAction {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	padding-right: 12px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	transition: border-color 150ms ease;
 }
 
+/* The card is the row itself now, so the link inside drops its own border and fill */
 .profileHypedItem.hasAction .profileHypedLink {
 	flex: 1;
 	min-width: 0;
+	background: none;
+	border: none;
 }
 
 .profileUnhype {
@@ -1509,7 +1516,8 @@ button.profileImagePreview:focus-visible {
 		color: #FFF;
 	}
 
-	a.profileHypedLink:hover {
+	a.profileHypedLink:hover,
+	.profileHypedItem.hasAction:hover {
 		border-color: #62CBB8;
 	}
 
