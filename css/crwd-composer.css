@@ -14,12 +14,7 @@
 	opacity: 0.6;
 }
 
-/* "(optional)" after a label, or after the Tags headline */
-.composerOptional {
-	color: #ADADAD;
-	font-weight: 400;
-}
-
+/* New Post button icon (profile page + Board); takes the button's text color */
 .icon.iconNewPost {
 	background-color: currentColor;
 	-webkit-mask-image: url('../images/icons/newPost.svg');
@@ -30,6 +25,12 @@
 	mask-repeat: no-repeat;
 	-webkit-mask-position: center;
 	mask-position: center;
+}
+
+/* "(optional)" after a label, or after the Tags headline */
+.composerOptional {
+	color: #ADADAD;
+	font-weight: 400;
 }
 
 /* ---------- Post to: Board / Profile Only ---------- */
@@ -633,4 +634,15 @@
 	.crwdFieldRow.composerTagRow {
 		grid-template-columns: 1fr;
 	}
+}
+
+/* The hidden video the form reads a still from while preparing a clip (iPhone Safari needs it on the page) */
+.composerProbeVideo {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	pointer-events: none;
 }

@@ -114,6 +114,8 @@
 		});
 	}
 
+	const UNPLAYABLE = 'can\'t be played in this browser, so others may not be able to play it either. Try exporting it as an MP4 (H.264).';
+
 	async function prepareVideo(file) {
 		if (!VIDEO_TYPES[file.type]) throw new Error('isn\'t a video type we take. Use MP4, WebM or MOV.');
 		if (file.size > VIDEO_MAX_MB * 1024 * 1024) throw new Error('is ' + formatSize(file.size) + '. Videos can be up to ' + VIDEO_MAX_MB + ' MB.');
@@ -122,28 +124,69 @@
 		const video = document.createElement('video');
 		video.muted = true;
 		video.playsInline = true;
+		video.setAttribute('playsinline', ''); // older iPhone Safari reads the attribute, not the property
 		video.preload = 'auto';
+		// On the page (invisible), since iPhone Safari won't load frames for a video that isn't
+		video.className = 'composerProbeVideo';
+		document.body.appendChild(video);
 		video.src = url;
 		try {
+			// Step 1: the video's details (size + length). iPhone Safari stops here for a video
+			// that isn't playing, so this (not a frame) is the "can it be played at all?" check.
 			try {
-				await waitFor(video, 'loadeddata', 15000);
+				await waitFor(video, 'loadedmetadata', 15000);
 			} catch (e) {
-				// Most often an iPhone HEVC .mov in a browser that can't play it — viewers couldn't either
-				throw new Error('can\'t be played in this browser, so others may not be able to play it either. Try exporting it as an MP4 (H.264).');
+				throw new Error(UNPLAYABLE);
 			}
+			// No picture size = the browser can't decode the picture (e.g. HEVC in a browser without it)
+			if (!video.videoWidth || !video.videoHeight) throw new Error(UNPLAYABLE);
 			if (video.duration > VIDEO_MAX_SECONDS + 0.5) {
 				throw new Error('is ' + Math.round(video.duration) + ' seconds long. Videos can be up to ' + VIDEO_MAX_SECONDS + ' seconds.');
 			}
-			// A frame a moment in, so the poster isn't a black fade-in
-			video.currentTime = Math.min(1, (video.duration || 0) / 2);
-			await waitFor(video, 'seeked', 10000).catch(function () { /* keep whatever frame is showing */ });
-			const thumb = await encode(video, video.videoWidth || 640, video.videoHeight || 360, THUMB_MAX, THUMB_QUALITY);
+
+			// Step 2: a still a moment in, for the poster (so it isn't a black fade-in)
+			const hasFrame = await stillFrame(video);
+			const thumb = hasFrame
+				? await encode(video, video.videoWidth, video.videoHeight, THUMB_MAX, THUMB_QUALITY)
+				: await blankPoster(video.videoWidth, video.videoHeight); // e.g. iPhone in Low Power Mode
 			return { type: 'video', blob: file, thumb: thumb, duration: video.duration };
 		} finally {
 			video.removeAttribute('src');
 			video.load();
+			video.remove();
 			URL.revokeObjectURL(url);
 		}
+	}
+
+	// Seeks to ~1s and waits for that frame. iPhone Safari often won't load frames until the video
+	// plays, so if seeking alone doesn't do it, it plays (muted, invisibly) for a moment and pauses.
+	// Resolves true once a frame is ready to draw.
+	async function stillFrame(video) {
+		const HAVE_CURRENT_DATA = 2;
+		video.currentTime = Math.min(1, (video.duration || 0) / 2);
+		await waitFor(video, 'seeked', 4000).catch(function () {});
+		if (video.readyState >= HAVE_CURRENT_DATA) return true;
+		try {
+			const playing = waitFor(video, 'timeupdate', 6000);
+			await video.play();
+			await playing;
+		} catch (e) {
+			// play() refused (Low Power Mode) or nothing came in time
+		}
+		video.pause();
+		return video.readyState >= HAVE_CURRENT_DATA;
+	}
+
+	// Plain dark poster in the video's shape, used when no frame could be grabbed
+	function blankPoster(w, h) {
+		const scale = Math.min(1, THUMB_MAX / Math.max(w, h));
+		const canvas = document.createElement('canvas');
+		canvas.width = Math.max(1, Math.round(w * scale));
+		canvas.height = Math.max(1, Math.round(h * scale));
+		const ctx = canvas.getContext('2d');
+		ctx.fillStyle = '#1A1A1A';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		return encode(canvas, canvas.width, canvas.height, THUMB_MAX, THUMB_QUALITY);
 	}
 
 	function prepare(file) {
