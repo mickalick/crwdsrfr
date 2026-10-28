@@ -721,7 +721,6 @@ document.getElementById('historyLink').addEventListener('click', function (e) {
   if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return; // new tab: let the link work
   e.preventDefault();
   setHistoryMode(!historyMode, true);
-  document.getElementById('calendar').scrollIntoView({ block: 'start', behavior: 'smooth' });
 });
 
 // Back / Forward between the two
@@ -1108,4 +1107,4 @@ document.addEventListener('DOMContentLoaded', function() {
     saveCalendarSettingsToStorage();
     applyGenreVisibility();
   });
-});
+});
