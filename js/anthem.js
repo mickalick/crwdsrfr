@@ -51,6 +51,37 @@ function anthemEmbed(link) {
   return null;
 }
 
+// Anthems start at half volume where the player allows it. YouTube and SoundCloud players
+// take a "set volume" message from the page; Spotify and Apple Music players don't offer that,
+// so they play at the listener's own volume. (iPhones ignore volume changes from a page entirely:
+// there it's always the phone's volume buttons.)
+const ANTHEM_VOLUME = 50; // percent
+
+function setAnthemVolume(iframe, provider) {
+  let send;
+  if (provider === 'youtube') {
+    const origin = 'https://www.youtube-nocookie.com';
+    send = function () {
+      const win = iframe.contentWindow;
+      if (!win) return;
+      // "listening" tells the player this page wants to talk to it; then the command itself
+      win.postMessage(JSON.stringify({ event: 'listening', id: 1 }), origin);
+      win.postMessage(JSON.stringify({ event: 'command', func: 'setVolume', args: [ANTHEM_VOLUME] }), origin);
+    };
+  } else if (provider === 'soundcloud') {
+    send = function () {
+      const win = iframe.contentWindow;
+      if (win) win.postMessage(JSON.stringify({ method: 'setVolume', value: ANTHEM_VOLUME }), 'https://w.soundcloud.com');
+    };
+  } else {
+    return; // Spotify, Apple Music: no volume control from the page
+  }
+  // The player needs a moment after loading before it listens, so send it a few times
+  iframe.addEventListener('load', function () {
+    [0, 400, 1000, 2000, 3500].forEach(function (ms) { setTimeout(send, ms); });
+  }, { once: true });
+}
+
 // Renders the placeholder card into `container`; the real player loads only on click.
 // link = profile.anthem_url, title = profile.anthem_title ("Song — Artist")
 function renderAnthemCard(container, link, title) {
@@ -80,7 +111,7 @@ function renderAnthemCard(container, link, title) {
       '<span class="profile-anthem-artist"></span>' +
     '</span>' +
     '<span class="profile-anthem-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>';
-  card.querySelector('.profile-anthem-label').textContent = 'Anthem';
+  card.querySelector('.profile-anthem-label').textContent = 'Anthem · ' + label;
   card.querySelector('.profile-anthem-song').textContent = song;
   const artistEl = card.querySelector('.profile-anthem-artist');
   if (artist) artistEl.textContent = artist; else artistEl.remove();
@@ -90,7 +121,8 @@ function renderAnthemCard(container, link, title) {
     // YouTube and SoundCloud can start playing right away; Spotify and Apple
     // Music load their player and need one more tap on their own play button.
     let src = embed.src;
-    if (embed.provider === 'youtube') src += '?autoplay=1';
+    // enablejsapi lets the page set the YouTube player's volume (setAnthemVolume)
+    if (embed.provider === 'youtube') src += '?autoplay=1&enablejsapi=1&origin=' + encodeURIComponent(window.location.origin);
     if (embed.provider === 'soundcloud') src += '&auto_play=true';
 
     const iframe = document.createElement('iframe');
@@ -100,6 +132,7 @@ function renderAnthemCard(container, link, title) {
     if (embed.provider !== 'youtube') iframe.style.height = embed.height + 'px';
     iframe.allow = 'autoplay; encrypted-media; clipboard-write; fullscreen; picture-in-picture';
     iframe.title = 'Anthem: ' + (title || song);
+    setAnthemVolume(iframe, embed.provider);
     container.replaceChildren(iframe);
   }, { once: true });
 
