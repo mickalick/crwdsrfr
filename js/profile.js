@@ -827,6 +827,7 @@
 			emptyMessage(els.hyped, isOwner
 				? 'You haven\'t hyped any ' + nouns[kind] + ' yet.'
 				: at(viewed.username) + ' hasn\'t hyped any ' + nouns[kind] + ' yet.');
+			addNotSharingNote(kind);
 			return;
 		}
 
@@ -836,6 +837,15 @@
 
 		els.hyped.replaceChildren();
 		items.forEach(function (item) { els.hyped.appendChild(item); });
+		addNotSharingNote(kind);
+	}
+
+	// Your own profile, a list you've turned off in Edit Profile (e.g. "Share acts you've hyped on your profile"):
+	// you still see it (and can unhype from it), with a note at the top that nobody else does
+	const SHARE_FLAGS = { event: 'show_hyped_shows', act: 'show_hyped_acts', venue: 'show_hyped_venues' };
+	function addNotSharingNote(kind) {
+		if (!isOwner || !core.profile || core.profile[SHARE_FLAGS[kind]] !== false) return;
+		els.hyped.prepend(el('li', 'profileHypedPrivate', 'You are not currently sharing this list.'));
 	}
 
 	// SRFRs you've hyped: only ever shown to you, on your own profile
