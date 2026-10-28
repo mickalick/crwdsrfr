@@ -732,8 +732,8 @@
 		card.appendChild(title);
 		if (p.opener) card.appendChild(el('p', 'profilePostBody', p.opener));
 
-		// Up to 4 pictures: the cover first, then the post's photos/videos
-		const pictures = (p.hero ? [p.hero] : []).concat(p.media || [])
+		// A post with a cover shows just the cover; otherwise up to 4 of its photos/videos
+		const pictures = (p.hero ? [p.hero] : (p.media || []))
 			.map(function (m) { return m.thumb || (m.type === 'video' ? null : m.src); })
 			.filter(Boolean)
 			.slice(0, 4);

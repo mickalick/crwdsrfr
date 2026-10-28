@@ -1355,6 +1355,10 @@
 		background: #101010;
 		color: #F9F976;
 	}
+
+	.boardModalFigure:hover {
+		transform: none !important;
+	}
 }
 
 @media screen and (max-width: 932px) {
