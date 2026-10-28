@@ -368,10 +368,10 @@
 	function benefitsList() {
 		const ul = el('ul', 'settingsBenefits');
 		[
-			['Max badge', 'next to your username, everywhere it appears'],
-			['Header image', 'a custom banner across the top of your profile'],
-			['Weekly roundup', 'an email with new shows from the acts and venues you\'ve hyped'],
-			['Custom site colors', 'swap the site\'s two main colors for your own (coming soon)']
+			['Max Badge', 'Displays next to your username to show your support'],
+			['Header Image', 'Go further with your profile with a custom header image'],
+			['Custom Colors', 'Swap the site\'s two main colors for your own'],
+			['Lineup Newsletter', 'A weekly email listing new shows from the acts and venues you\'ve hyped']
 		].forEach(function (b) {
 			const li = el('li');
 			li.append(el('strong', null, b[0]), ': ' + b[1]);
@@ -465,11 +465,11 @@
 
 	function openMaxDialog() {
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('Go <em>Max</em>'));
-			body.appendChild(kit.el('p', 'crwdModalText', 'Max is CRWD SRFR\'s paid membership. It helps keep the site running and adds:'));
+			body.appendChild(kit.title('Surf to the <em>Max</em>'));
+			body.appendChild(kit.el('p', 'crwdModalText', 'By subscribing to Max, you not only help us keep the lights on, but also unlock these cool features:'));
 			body.appendChild(benefitsList());
 			// TBD: plans + checkout go here once payments are set up
-			body.appendChild(kit.el('p', 'crwdNotice', 'Max memberships are coming soon. Check back here to sign up.'));
+			body.appendChild(kit.el('p', 'crwdNotice', 'Max is coming soon. Check back here to sign up.'));
 			const ok = kit.el('button', 'crwdButton settingsDialogDone', 'Got It');
 			ok.type = 'button';
 			ok.addEventListener('click', kit.close);
@@ -637,11 +637,11 @@
 		const action = isMax ? settingsButton('Cancel Max', 'isDanger') : settingsButton('Go Max', 'isPrimary');
 		action.addEventListener('click', isMax ? openCancelMaxDialog : openMaxDialog);
 		if (isMax) {
-			status.el.appendChild(el('p', 'settingsValue', 'You\'re a Max subscriber.'));
-			status.el.appendChild(el('p', 'settingsNote', 'Thanks for supporting CRWD SRFR! Your Max settings are below.'));
+			status.el.appendChild(el('p', 'settingsValue', 'You\'re a Max member.'));
+			status.el.appendChild(el('p', 'settingsNote', 'Thanks for supporting CRWD SRFR!'));
 		} else {
-			status.el.appendChild(el('p', 'settingsValue', 'You\'re not a Max subscriber.'));
-			status.el.appendChild(el('p', 'settingsNote', 'Max is CRWD SRFR\'s paid membership. It unlocks the settings below, plus a custom header image on your profile.'));
+			status.el.appendChild(el('p', 'settingsValue', 'You\'re not a Max member.'));
+			status.el.appendChild(el('p', 'settingsNote', 'Max is CRWD SRFR\'s paid membership. On top of supporting the site, it unlocks the settings below plus additional profile customizations.'));
 		}
 		status.el.appendChild(action);
 
@@ -719,7 +719,7 @@
 		mail.el.appendChild(list);
 
 		if (!isMax) {
-			const more = el('p', 'settingsNote', 'Want a weekly roundup of new shows from your hyped acts and venues? It comes with Max. ');
+			const more = el('p', 'settingsNote', 'For notifications on your hyped acts and venues, manage your Lineup Newsletter in Max settings.');
 			const link = el('button', 'settingsLinkButton', 'See Max');
 			link.type = 'button';
 			link.addEventListener('click', function () { selectTab('max', true); });

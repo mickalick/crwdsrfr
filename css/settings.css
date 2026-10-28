@@ -301,10 +301,6 @@
 	line-height: 1.45;
 }
 
-.settingsBenefits strong {
-	color: #F9F976;
-}
-
 .settingsBenefits li::marker {
 	color: #62CBB8;
 }
