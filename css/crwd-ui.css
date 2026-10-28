@@ -227,6 +227,11 @@ header.scrolled #profileButton {
 	mask-image: url('../images/icons/settings.svg');
 }
 
+.profileMenuIcon[data-icon="admin"] {
+	-webkit-mask-image: url('../images/icons/admin.svg');
+	mask-image: url('../images/icons/admin.svg');
+}
+
 .profileMenuIcon[data-icon="logout"] {
 	-webkit-mask-image: url('../images/icons/logout.svg');
 	mask-image: url('../images/icons/logout.svg');

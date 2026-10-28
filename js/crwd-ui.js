@@ -228,6 +228,7 @@
 		list.appendChild(dottedMenuLink('Lineup', '/lineup/', 'lineup', 'lineup'));
 		list.appendChild(dottedMenuLink('Messages', '/messages/', 'messages', 'messages'));
 		list.appendChild(menuLink('Settings', '/settings/', 'settings'));
+		if (core.isAdmin) list.appendChild(menuLink('Admin', '/admin/', 'admin')); // admins only (icon: data-icon="admin" in crwd-ui.css)
 
 		const out = menuAction('Sign Out', 'logout', async function () {
 			closeMenu(false);

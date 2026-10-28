@@ -100,6 +100,7 @@
 	// ---------- State ----------
 	let user = null;     // Supabase auth user (holds the email; never shown publicly)
 	let profile = null;  // the signed-in user's own row from public.profiles
+	let isAdmin = false; // shows the Admin menu item + page (the database enforces it either way)
 	let isReady = false;
 	const listeners = [];
 	let resolveReady;
@@ -122,8 +123,12 @@
 	}
 
 	async function loadProfile() {
-		if (!user) { profile = null; return; }
-		const { data, error } = await sb.from('profiles').select('*').eq('id', user.id).single();
+		if (!user) { profile = null; isAdmin = false; return; }
+		const [{ data, error }, adminCheck] = await Promise.all([
+			sb.from('profiles').select('*').eq('id', user.id).single(),
+			sb.rpc('am_i_admin')
+		]);
+		isAdmin = !adminCheck.error && adminCheck.data === true;
 		if (error) {
 			console.warn('[crwd] could not load profile', error);
 			profile = null;
@@ -288,6 +293,7 @@
 		ready: ready,
 		get user() { return user; },
 		get profile() { return profile; },
+		get isAdmin() { return isAdmin; },
 		get linkError() { return linkError; },
 		clearLinkError: function () { linkError = null; },
 		onChange: onChange,

@@ -1,0 +1,173 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-46609022-1');
+		</script>
+
+		<meta charset="utf-8">
+		<title>Admin | CRWD SRFR</title>
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/board.css"><!-- the post modal's styles, used by Preview -->
+		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<link rel="stylesheet" href="/css/admin.css">
+		<!-- Accounts: these scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
+		<script src="/js/crwd-post.js" defer></script><!-- the post modal, for Preview -->
+		<script src="/js/admin.js" defer></script>
+		<link rel="shortcut icon" href="../images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.8.2.min.js" integrity="sha256-9VTS8JJyxvcUR+v+RTLTsd0ZWbzmafmlzMmeZO9RFyk=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body').css('display', 'none');
+				$('body').fadeIn(750);
+
+				$('.link').click(function() {
+					event.preventDefault();
+					newLocation = this.href;
+
+					$('body').fadeOut(1000, newpage);
+				});
+				function newpage() {
+					window.location = newLocation;
+				}
+				$("a").on('click', function(event) {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
+      					event.preventDefault();
+
+      					var hash = this.hash;
+
+      					$('html, body').animate({
+        					scrollTop: $(hash).offset().top
+      					}, 650, function(){
+        					window.location.hash = hash;
+      					});
+    				}
+  				});
+			});
+			$(function() {
+				var header = $("header");
+				var mnuBtn = $("#menuButton");
+
+				$(window).scroll(function() {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 50) {
+						header.addClass("scrolled");
+						mnuBtn.addClass("scrolled");
+					} else {
+						header.removeClass("scrolled");
+						mnuBtn.removeClass("scrolled");
+					}
+				});
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body id="top">
+		<header>
+			<nav>
+				<a id="logo" aria-label="Home" href="/"></a>
+				<div id="siteNav"></div>
+			</nav>
+		</header>
+		<div id="wrapper">
+			<section id="adminHero" class="page">
+				<div class="main">
+					<div class="pageHeader">
+						<div class="headContent">
+							<h1>Site <em>Admin</em></h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="adminContent" class="page">
+				<div class="main">
+					<div class="admin">
+
+						<!-- Loading / signed out / not an admin -->
+						<div class="adminGate" id="adminGate">
+							<p id="adminGateText">Loading…</p>
+							<button type="button" class="adminButton" id="adminGateSignIn" hidden>Sign in</button>
+						</div>
+
+						<div id="adminApp" hidden>
+							<div class="adminTabsRow">
+								<div class="adminTabs" role="tablist" aria-label="Admin sections">
+									<button type="button" class="adminTab" role="tab" id="adminTabPosts" aria-controls="adminPanelPosts" aria-selected="true">
+										Posts <span class="adminCount" id="adminPostsCount"></span>
+									</button>
+									<button type="button" class="adminTab" role="tab" id="adminTabReports" aria-controls="adminPanelReports" aria-selected="false" tabindex="-1">
+										Reports <span class="adminCount" id="adminReportsCount"></span>
+									</button>
+								</div>
+								<button type="button" class="adminRefresh" id="adminRefresh" hidden>Refresh</button>
+							</div>
+
+							<p class="adminStatus" id="adminStatus" role="status" aria-live="polite"></p>
+
+							<!-- Posts -->
+							<div class="adminPanel" id="adminPanelPosts" role="tabpanel" aria-labelledby="adminTabPosts">
+								<h2 class="adminSubhead">Waiting for review</h2>
+								<div class="adminList" id="adminPending"></div>
+								<p class="adminEmpty" id="adminPendingEmpty" hidden>All caught up. Nothing is waiting for review.</p>
+
+								<h2 class="adminSubhead">Recently reviewed</h2>
+								<div class="adminList" id="adminReviewed"></div>
+								<p class="adminEmpty" id="adminReviewedEmpty" hidden>Nothing reviewed yet.</p>
+							</div>
+
+							<!-- Reports -->
+							<div class="adminPanel" id="adminPanelReports" role="tabpanel" aria-labelledby="adminTabReports" hidden>
+								<div class="adminFilterRow" id="adminReportFilter">
+									<button type="button" class="toggle-button active" data-reports="open" aria-pressed="true">Open</button>
+									<button type="button" class="toggle-button" data-reports="all" aria-pressed="false">All</button>
+								</div>
+								<div class="adminList" id="adminReportList"></div>
+								<p class="adminEmpty" id="adminReportsEmpty" hidden>No open reports.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<div class="wave-footer"></div>
+			<footer>
+				<div class="footWrap">
+					<div id="social">
+						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
+					</div>
+					<ul id="bottomNav">
+						<li><a href="../terms.html">Terms of Use</a></li>
+						<li><a href="../privacy.html">Privacy Policy</a></li>
+					</ul>
+					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
+					<p><small>All rights reserved.</small></p>
+				</div>
+			</footer>
+		</div>
+
+		<!-- board.js: only its data helpers (window.BoardMedia) are used here; the grid code skips itself.
+		     Not deferred, same as on the Board page, so it's ready before admin.js runs. -->
+		<script src="../js/board.js"></script>
+
+		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
+
+	</body>
+
+	</html>

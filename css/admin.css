@@ -1,0 +1,222 @@
+/* admin.css — CRWD SRFR admin page (/admin/). Page title + layout come from style.css (.page, .main, .pageHeader). */
+
+.admin {
+	max-width: 880px;
+	margin: 0 auto;
+	padding-bottom: 48px;
+	color: #eee;
+	font-family: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+	text-align: left;
+}
+
+.adminGate {
+	padding: 32px 24px;
+	background: #101010;
+	border-radius: 9px;
+	text-align: center;
+	color: #aaa;
+}
+.adminGate p { margin: 0 0 16px; }
+.adminGate p:last-child { margin: 0; }
+
+/* ---------- Tabs (Refresh sits at the right end of the row) ---------- */
+.adminTabsRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	border-bottom: 1px solid #333;
+	margin-bottom: 16px;
+}
+.adminTabs { display: flex; gap: 8px; }
+.adminTab {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	border: 0;
+	border-bottom: 3px solid transparent;
+	background: none;
+	color: #aaa;
+	font: inherit;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.adminTab.active,
+.adminTab[aria-selected="true"] { color: #eee; border-bottom-color: #62CBB8; }
+.adminCount {
+	min-width: 22px;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: #F9F976;
+	color: #101010;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+.adminCount[hidden] { display: none; }
+
+.adminStatus { min-height: 1.4em; margin: 0 0 8px; color: #62CBB8; font-size: 14px; }
+
+.adminSubhead {
+	margin: 28px 0 12px;
+	font-family: 'Space Mono', 'Courier New', monospace;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999;
+}
+.adminPanel > .adminSubhead:first-child { margin-top: 8px; }
+
+.adminFilterRow { display: flex; gap: 8px; margin: 8px 0 16px; }
+
+/* ---------- Cards ---------- */
+.adminList { display: flex; flex-direction: column; gap: 12px; }
+
+.adminCard {
+	display: flex;
+	gap: 16px;
+	padding: 14px;
+	background: #101010;
+	border-radius: 9px;
+}
+
+.adminThumb {
+	position: relative;
+	flex: 0 0 120px;
+	height: 120px;
+	padding: 0;
+	border: 0;
+	border-radius: 9px;
+	overflow: hidden;
+	background: #222;
+	cursor: pointer;
+}
+.adminThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.adminThumbLabel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: #777;
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+/* Little play triangle on video covers */
+.adminThumbPlay {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 0 7px 12px;
+	border-color: transparent transparent transparent #fff;
+	filter: drop-shadow(0 0 3px rgba(0, 0, 0, .7));
+}
+
+.adminCardBody { flex: 1; min-width: 0; }
+.adminCardTitle { margin: 0 0 4px; font-size: 17px; line-height: 1.3; }
+.adminMeta { margin: 0 0 2px; color: #aaa; font-size: 13px; line-height: 1.4; }
+.adminMetaTime { color: #777; }
+.adminExcerpt {
+	margin: 8px 0 0;
+	color: #ccc;
+	font-size: 14px;
+	line-height: 1.45;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.adminActions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+.adminButton {
+	display: inline-flex;
+	align-items: center;
+	padding: 8px 14px;
+	border: 1px solid #444;
+	border-radius: 9px;
+	background: none;
+	color: #eee;
+	font: inherit;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+}
+.adminButton:disabled { opacity: .45; cursor: default; }
+.adminButtonGo { background: #62CBB8; border-color: #62CBB8; color: #101010; }
+.adminButtonStop { border-color: #ff8a8a; color: #ff8a8a; }
+.adminButtonGhost:hover:not(:disabled) { border-color: #62CBB8; }
+.adminRefresh {
+	padding: 8px 14px;
+	border: 1px solid #444;
+	border-radius: 9px;
+	background: none;
+	color: #eee;
+	font: inherit;
+	font-size: 14px;
+	cursor: pointer;
+}
+.adminRefresh[hidden] { display: none; }
+
+.adminPill {
+	display: inline-block;
+	margin: 0 6px 6px 0;
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 700;
+	background: #333;
+	color: #eee;
+}
+.adminPill-approved, .adminPill-actioned { background: #62CBB8; color: #101010; }
+.adminPill-rejected { background: #ff8a8a; color: #101010; }
+.adminPill-reason { background: #F9F976; color: #101010; }
+.adminPill-dismissed, .adminPill-reviewed { background: #333; color: #ccc; }
+
+.adminError { margin: 8px 0 0; color: #ff8a8a; font-size: 14px; }
+.adminError[hidden] { display: none; }
+.adminEmpty { margin: 0; padding: 20px; background: #101010; border-radius: 9px; color: #888; text-align: center; }
+
+/* ---------- Reports ---------- */
+.adminReportTop { display: flex; flex-wrap: wrap; align-items: center; }
+.adminReportType {
+	margin: 0 8px 6px 0;
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #999;
+}
+.adminDetails { margin: 8px 0 0; color: #ddd; font-size: 14px; font-style: italic; }
+.adminTarget {
+	margin-top: 10px;
+	padding: 10px 12px;
+	border-left: 3px solid #444;
+	background: #181818;
+	border-radius: 0 9px 9px 0;
+}
+.adminTargetTitle { margin: 0 0 4px; font-weight: 700; }
+.adminQuote { margin: 0 0 6px; color: #eee; font-size: 14px; line-height: 1.45; white-space: pre-wrap; }
+.adminLink { color: #62CBB8; font-size: 13px; }
+
+/* ---------- Fallback preview (only without the post modal) ---------- */
+.adminPreviewTitle { margin: 0 0 8px; }
+.adminPreviewText { white-space: pre-wrap; line-height: 1.5; }
+.adminPreviewMedia { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.adminPreviewMedia figure { margin: 0; }
+.adminPreviewMedia img,
+.adminPreviewMedia video { width: 100%; border-radius: 9px; display: block; background: #000; }
+.adminPreviewMedia figcaption { margin-top: 4px; font-size: 13px; color: #aaa; }
+
+/* ---------- Phones ---------- */
+@media (max-width: 560px) {
+	.adminCard { flex-direction: column; }
+	.adminThumb { flex-basis: auto; width: 100%; height: 180px; }
+	.adminActions .adminButton { flex: 1 1 auto; justify-content: center; }
+}
