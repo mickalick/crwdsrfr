@@ -16,7 +16,7 @@
 }
 
 #messagesHero .pageHeader {
-	margin-bottom: 24px;
+	margin-bottom: 0 !important;
 }
 
 .messagesContent {
@@ -24,7 +24,7 @@
 }
 
 .messagesContent .main {
-	margin-top: 0;
+	margin-top: 0 !important;
 	min-width: 0;
 }
 
