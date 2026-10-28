@@ -430,6 +430,29 @@
 		return p;
 	}
 
+	// "Already have a code?" — for someone who closed the modal (or the page) before typing in
+	// the code we emailed. Goes straight to code entry for the flow they're in.
+	function haveCodeLine(mode) {
+		const p = el('p', 'crwdModalSwitch');
+		const b = el('button', 'crwdLinkButton', 'Already have a code?');
+		b.type = 'button';
+		b.addEventListener('click', function () { showView('sent', { mode: mode, haveCode: true }); });
+		p.appendChild(b);
+		return p;
+	}
+
+	// The email the last code was sent to, so "Already have a code?" can fill it in even after
+	// a page reload. Kept for an hour (how long Supabase codes last by default).
+	const CODE_EMAIL_KEY = 'crwd-code-email';
+	const CODE_EMAIL_MS = 60 * 60 * 1000;
+	function rememberCodeEmail(email) {
+		store(function (s) { s.setItem(CODE_EMAIL_KEY, JSON.stringify({ email: email, at: Date.now() })); });
+	}
+	function lastCodeEmail() {
+		const saved = store(function (s) { return JSON.parse(s.getItem(CODE_EMAIL_KEY) || 'null'); });
+		return saved && saved.email && Date.now() - saved.at < CODE_EMAIL_MS ? saved.email : '';
+	}
+
 	function looksLikeEmail(v) {
 		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
 	}
@@ -451,6 +474,7 @@
 		core.setRememberMe(draft.remember);
 		// Lets this browser welcome the account after its first sign-in (see welcomeNewAccount)
 		if (registering) store(function (s) { s.setItem(NEW_ACCOUNT_KEY, draft.email.trim().toLowerCase()); });
+		rememberCodeEmail(draft.email.trim());
 		return registering
 			? core.register({ email: draft.email, username: draft.username })
 			: core.signIn(draft.email);
@@ -516,6 +540,7 @@
 		const btn = submitButton('Send my code');
 		form.append(email.wrap, rememberCheckbox(), err, btn);
 		body.appendChild(form);
+		body.appendChild(haveCodeLine('signin'));
 		body.appendChild(switchLine('New here?', 'Register Now', 'register'));
 
 		if (opts.error) showError(err, opts.error);
@@ -556,6 +581,7 @@
 		// Fields, then fine print, then any error right above the button
 		form.append(email.wrap, username.wrap, rememberCheckbox(), fine, err, btn);
 		body.appendChild(form);
+		body.appendChild(haveCodeLine('register'));
 		body.appendChild(switchLine('Already have an account?', 'Sign in', 'signin'));
 
 		const finalUsernameCheck = wireUsername(username);
@@ -587,16 +613,29 @@
 		});
 	}
 
+	// Code entry. Normally right after the email is sent ("Check your email").
+	// opts.haveCode: opened from "Already have a code?", so it also asks for the email
+	// (filled in when we know it) and doesn't start the resend countdown.
 	function viewSent(opts) {
 		const registering = opts.mode === 'register';
-		body.appendChild(title('Check your <em>email</em>'));
+		const haveCode = !!opts.haveCode;
 
-		const p = el('p', 'crwdModalText', 'We sent a ' + CODE + '-digit code to ');
-		p.appendChild(el('strong', null, draft.email));
-		p.append(registering
-			? '. Enter it below to finish creating your account, or tap the button in the email.'
-			: '. Enter it below to sign in, or tap the button in the email.');
-		body.appendChild(p);
+		let emailField = null;
+		if (haveCode) {
+			body.appendChild(title('Enter your <em>code</em>'));
+			body.appendChild(el('p', 'crwdModalText', registering
+				? 'Enter the email you registered with and the ' + CODE + '-digit code we sent you to finish creating your account.'
+				: 'Enter your email and the ' + CODE + '-digit code we sent you to sign in.'));
+			emailField = field({ label: 'Email', name: 'email', type: 'email', autocomplete: 'email', value: draft.email || lastCodeEmail() });
+		} else {
+			body.appendChild(title('Check your <em>email</em>'));
+			const p = el('p', 'crwdModalText', 'We sent a ' + CODE + '-digit code to ');
+			p.appendChild(el('strong', null, draft.email));
+			p.append(registering
+				? '. Enter it below to finish creating your account, or tap the button in the email.'
+				: '. Enter it below to sign in, or tap the button in the email.');
+			body.appendChild(p);
+		}
 
 		// Code entry
 		const form = el('form', 'crwdForm');
@@ -605,15 +644,32 @@
 		const code = field({ label: CODE + '-digit code', name: 'code', autocomplete: 'one-time-code' });
 		code.input.inputMode = 'numeric';
 		code.input.classList.add('crwdCodeInput');
-		code.input.dataset.autofocus = '';
+		// Straight to the code box when we know the email; otherwise start on the heading (no surprise keyboard)
+		if (!haveCode || emailField.input.value) code.input.dataset.autofocus = '';
+		else startOnTitle(body.querySelector('.crwdModalTitle'));
 		const err = errorBox();
 		const verify = submitButton(registering ? 'Create my account' : 'Sign in');
+		if (emailField) form.append(emailField.wrap);
 		form.append(code.wrap, err, verify);
 		body.appendChild(form);
+
+		// "Already have a code?" asks for the email here; otherwise it's the one just typed
+		function takeEmail() {
+			if (!emailField) return true;
+			const typed = emailField.input.value.trim();
+			if (!looksLikeEmail(typed)) {
+				showError(err, 'Enter the email the code was sent to.');
+				emailField.input.focus();
+				return false;
+			}
+			draft.email = typed;
+			return true;
+		}
 
 		let verifying = false;
 		async function submitCode() {
 			if (verifying) return;
+			if (!takeEmail()) return;
 			verifying = true;
 			showError(err, '');
 			setBusy(verify, true, 'Checking…');
@@ -643,7 +699,8 @@
 		body.appendChild(resend);
 
 		const back = el('p', 'crwdModalSwitch');
-		const other = el('button', 'crwdLinkButton', 'Use a different email');
+		// With the email box right here, the way out is just back to where they came from
+		const other = el('button', 'crwdLinkButton', haveCode ? (registering ? 'Back to Register' : 'Back to Sign In') : 'Use a different email');
 		other.type = 'button';
 		other.addEventListener('click', function () { showView(registering ? 'register' : 'signin', {}); });
 		back.appendChild(other);
@@ -667,11 +724,14 @@
 		}
 
 		resend.addEventListener('click', async function () {
+			if (!takeEmail()) return;
 			showError(err, '');
 			resend.disabled = true;
 			resend.textContent = 'Sending…';
 			try {
-				await sendEmail(registering);
+				// After a reload we may not know the username they registered with; the account
+				// already exists by then, so a normal sign-in code works the same
+				await sendEmail(registering && !!draft.username);
 				code.input.value = '';
 				code.input.focus();
 				countdown(RESEND_SECONDS);
@@ -681,7 +741,9 @@
 			}
 		});
 
-		countdown(RESEND_SECONDS);
+		// Just sent: wait before another. "Already have a code?": can send a new one right away.
+		if (haveCode) resend.textContent = 'Send a new code';
+		else countdown(RESEND_SECONDS);
 	}
 
 	// Shown when the database gave the account a placeholder username
