@@ -111,7 +111,7 @@ function renderAnthemCard(container, link, title) {
       '<span class="profile-anthem-artist"></span>' +
     '</span>' +
     '<span class="profile-anthem-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>';
-  card.querySelector('.profile-anthem-label').textContent = 'Anthem · ' + label;
+  card.querySelector('.profile-anthem-label').textContent = 'Anthem';
   card.querySelector('.profile-anthem-song').textContent = song;
   const artistEl = card.querySelector('.profile-anthem-artist');
   if (artist) artistEl.textContent = artist; else artistEl.remove();
