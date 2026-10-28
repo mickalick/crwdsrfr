@@ -8,6 +8,11 @@ let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-ti
 let calendarShowGenres = true; // whether genre chips render on event tiles
 let filterMode = 'include'; // 'include' | 'exclude' — applies to every active filter category (venue name/type/area, genre)
 
+// Show History: the same page, listing the last HISTORY_DAYS days of shows (newest first)
+// instead of the calendar. Lives at /?history so Back, refresh and links work.
+const HISTORY_DAYS = 14; // same as the fetch script keeps in events.json
+let historyMode = new URLSearchParams(window.location.search).has('history');
+
 // Selected filter values. Names are stored as venue ids (unambiguous),
 // types and areas as their raw string values.
 const selectedVenueIds = new Set();
@@ -160,6 +165,18 @@ function toLocalDateStr(date) {
   return `${y}-${m}-${d}`;
 }
 
+// Today, as YYYY-MM-DD in local time (fresh each call, in case the page stays open past midnight)
+function todayStr() {
+  return toLocalDateStr(new Date());
+}
+
+// First day Show History covers
+function historyStartStr() {
+  const d = new Date();
+  d.setDate(d.getDate() - HISTORY_DAYS);
+  return toLocalDateStr(d);
+}
+
 function getWeekDates(startDateStr) {
   const [y, m, d] = startDateStr.split('-').map(Number);
   const start = new Date(y, m - 1, d); // local date, not UTC — avoids the off-by-one issues toLocalDateStr already guards against
@@ -188,7 +205,11 @@ function updateSubHead() {
   const subHeadSpan = document.querySelector('.subHead span');
   const term = currentSearch.trim();
 
-  if (calendarViewMode === 'week') {
+  if (historyMode) {
+    subHeadSpan.textContent = term === ''
+      ? 'Last Two Weeks of Shows:'
+      : `Last Two Weeks of Shows including "${term}":`;
+  } else if (calendarViewMode === 'week') {
     subHeadSpan.textContent = term === ''
       ? 'All shows for week of:'
       : `All shows including "${term}" for week of:`;
@@ -210,7 +231,10 @@ function updateMatchingDates() {
   const genreFiltersActive = hasActiveGenreFilters();
   if (term === '' && !filtersActive && !genreFiltersActive) return; // nothing active = no dots, default calendar view
 
+  const today = todayStr();
   allData.events.forEach(event => {
+    if (event.date < today) return; // past days can't be picked
+
     const venue = allData.venues[event.venueId];
 
     let matchesSearch = true;
@@ -289,7 +313,10 @@ async function applyFilters() {
   if (!allData) return;
 
   let filtered;
-  if (calendarViewMode === 'week') {
+  if (historyMode) {
+    const today = todayStr(), start = historyStartStr();
+    filtered = allData.events.filter(e => e.date < today && e.date >= start);
+  } else if (calendarViewMode === 'week') {
     const weekSet = new Set(getWeekDates(currentDateStr));
     filtered = allData.events.filter(e => weekSet.has(e.date));
   } else {
@@ -320,14 +347,16 @@ async function applyFilters() {
   // A linked show always appears, even if a saved filter would hide it
   if (focusEventId && !filtered.some(e => e.id === focusEventId)) {
     const linked = allData.events.find(e => e.id === focusEventId);
-    const shownDates = calendarViewMode === 'week' ? getWeekDates(currentDateStr) : [currentDateStr];
-    if (linked && shownDates.includes(linked.date)) filtered.push(linked);
+    const shown = historyMode
+      ? (linked && linked.date < todayStr())
+      : (linked && (calendarViewMode === 'week' ? getWeekDates(currentDateStr) : [currentDateStr]).includes(linked.date));
+    if (shown) filtered.push(linked);
   }
 
   // Most Hyped needs the counts first. A newer date/filter change cancels this one.
   const run = ++renderRun;
   currentStats = null;
-  if (calendarSortMethod === 'hype-count' && socialReady()) {
+  if (!historyMode && calendarSortMethod === 'hype-count' && socialReady()) {
     await CrwdCore.ready;
     const stats = await CrwdSocial.loadStats('event', [...new Set(filtered.map(e => e.id))]);
     if (run !== renderRun) return;
@@ -403,50 +432,18 @@ function renderVenueCards(events, container, beforeNode) {
         return a.time.localeCompare(b.time);
       });
 
-      const eventsHtml = sortedEvents.map(event => {
-        const showTime = formatTime(event.time);
-        const doorsTime = formatTime(event.doors);
+      const eventsHtml = sortedEvents.map(event => eventHtml(event, venue)).join('');
+      container.insertBefore(
+        document.createRange().createContextualFragment(venueCardHtml(venueId, venue, eventsHtml)),
+        beforeNode
+      );
+    });
 
-        let timeDisplay = '';
-        if (showTime && doorsTime) timeDisplay = `${showTime} (Doors ${doorsTime})`;
-        else if (showTime) timeDisplay = showTime;
-        else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
-        else timeDisplay = 'Check Time';
+  return groups.length > 0;
+}
 
-        const titleLink = event.eventUrl || venue.eventsUrl || null;
-        const titleHtml = titleLink
-          ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
-          : event.title;
-
-        // No ticket URL: an invisible placeholder keeps the columns lined up
-        const linkHtml = event.ticketUrl
-          ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
-          : '<div class="ticketLink isPlaceholder" aria-hidden="true"></div>';
-
-        // Rendered as its own full-width row below the name/time/price line
-        // (not inline with them) so it only adds height to the event tile —
-        // it never affects the width or alignment of the existing content.
-        const genresHtml = (event.genres && event.genres.length > 0)
-          ? `<div class="eventGenres">${event.genres.map(g => `
-              <span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
-            `).join('')}</div>`
-          : '';
-
-        // Empty slot for the hype + comment buttons; attachEventSocial() fills it
-        return `
-          <div class="event" data-event-id="${event.id}">
-            <div class="eventInfo">
-              <span class="eventName">${titleHtml}</span>
-              <span class="eventTime">${timeDisplay}</span>
-              <span class="eventCost">${event.price ?? 'Check Price'}</span>
-              ${genresHtml}
-            </div>
-            ${linkHtml}
-            <div class="eventSocial"></div>
-          </div>`;
-      }).join('');
-
-      const cardHtml = `
+function venueCardHtml(venueId, venue, eventsHtml) {
+  return `
         <div class="venueCard">
           <div class="venue">
             <h4><a href="/venues/${venueId}/">${venue.name}</a></h4>
@@ -455,14 +452,80 @@ function renderVenueCards(events, container, beforeNode) {
             ${eventsHtml}
           </div>
         </div>`;
+}
 
-      container.insertBefore(
-        document.createRange().createContextualFragment(cardHtml),
-        beforeNode
-      );
-    });
+// One show's row. In Show History the ticket link's spot holds the "Add to my Show History" button.
+function eventHtml(event, venue) {
+  const showTime = formatTime(event.time);
+  const doorsTime = formatTime(event.doors);
 
-  return groups.length > 0;
+  let timeDisplay = '';
+  if (showTime && doorsTime) timeDisplay = `${showTime} (Doors ${doorsTime})`;
+  else if (showTime) timeDisplay = showTime;
+  else if (doorsTime) timeDisplay = `Doors ${doorsTime}`;
+  else timeDisplay = 'Check Time';
+
+  const titleLink = event.eventUrl || venue.eventsUrl || null;
+  const titleHtml = titleLink
+    ? `<a href="${titleLink}" target="_blank">${event.title}</a>`
+    : event.title;
+
+  // No ticket URL: an invisible placeholder keeps the columns lined up
+  const linkHtml = historyMode
+    ? `<div class="historyAdd"><button type="button" class="historyAddButton" aria-pressed="false" aria-label="Add to my Show History" title="Add to my Show History"></button></div>`
+    : event.ticketUrl
+      ? `<div class="ticketLink"><a href="${event.ticketUrl}" target="_blank"><span class="icon" id="opn"></span></a></div>`
+      : '<div class="ticketLink isPlaceholder" aria-hidden="true"></div>';
+
+  // Rendered as its own full-width row below the name/time/price line
+  // (not inline with them) so it only adds height to the event tile —
+  // it never affects the width or alignment of the existing content.
+  const genresHtml = (event.genres && event.genres.length > 0)
+    ? `<div class="eventGenres">${event.genres.map(g => `
+        <span class="genre-chip" style="--genre-color: ${genreColor(g)}">${genreLabel(g)}</span>
+      `).join('')}</div>`
+    : '';
+
+  // Empty slot for the hype + comment buttons; attachEventSocial() fills it
+  return `
+    <div class="event" data-event-id="${event.id}">
+      <div class="eventInfo">
+        <span class="eventName">${titleHtml}</span>
+        <span class="eventTime">${timeDisplay}</span>
+        <span class="eventCost">${event.price ?? 'Check Price'}</span>
+        ${genresHtml}
+      </div>
+      ${linkHtml}
+      <div class="eventSocial"></div>
+    </div>`;
+}
+
+// Show History: newest first, in the order shows happened. A card holds one venue's shows only
+// when they started at the same time; otherwise each show gets its own card.
+function renderHistoryCards(events, container, beforeNode) {
+  const byTimeDesc = [...events].sort((a, b) => {
+    if (!a.time && !b.time) return a.title.localeCompare(b.title);
+    if (!a.time) return 1; // no time listed: end of the day's list
+    if (!b.time) return -1;
+    return b.time.localeCompare(a.time) || a.title.localeCompare(b.title);
+  });
+  const cards = [];
+  byTimeDesc.forEach(event => {
+    const last = cards[cards.length - 1];
+    if (last && last.venueId === event.venueId && last.time === (event.time || null)) last.events.push(event);
+    else cards.push({ venueId: event.venueId, time: event.time || null, events: [event] });
+  });
+  let any = false;
+  cards.forEach(card => {
+    const venue = allData.venues[card.venueId];
+    if (!venue) return;
+    any = true;
+    container.insertBefore(
+      document.createRange().createContextualFragment(venueCardHtml(card.venueId, venue, card.events.map(e => eventHtml(e, venue)).join(''))),
+      beforeNode
+    );
+  });
+  return any;
 }
 
 function renderDateSeparator(dateStr, container, beforeNode) {
@@ -485,7 +548,14 @@ function renderEvents(events) {
     const calendarEnd = document.getElementById('calendarEnd');
     let anyRendered = false;
 
-    if (calendarViewMode === 'week') {
+    if (historyMode) {
+      // Newest day first
+      [...new Set(events.map(e => e.date))].sort().reverse().forEach(dateStr => {
+        const dayEvents = events.filter(e => e.date === dateStr);
+        renderDateSeparator(dateStr, container, calendarEnd);
+        if (renderHistoryCards(dayEvents, container, calendarEnd)) anyRendered = true;
+      });
+    } else if (calendarViewMode === 'week') {
       getWeekDates(currentDateStr).forEach(dateStr => {
         const dayEvents = events.filter(e => e.date === dateStr);
         if (dayEvents.length === 0) return;
@@ -505,6 +575,7 @@ function renderEvents(events) {
     $(container).fadeTo(150, 1);
     revealFocusedEvent();
     attachEventSocial();
+    if (historyMode) refreshHistoryButtons();
   });
 }
 
@@ -543,6 +614,122 @@ async function attachEventSocial() {
   });
 }
 
+// ---------- "Add to my Show History" (Show History view) ----------
+// Adds the show to the Show History list on your profile (profiles.about.history), or takes it
+// back off. Entries added here carry the show's id (event_id) so the button knows they're there.
+let myHistory = null;      // your about.history, once loaded (null: signed out / not loaded)
+let myHistoryFor = null;   // whose list that is
+const HISTORY_MAX = 500;   // same limit as the profile's Show History
+
+async function loadMyHistory() {
+  const user = window.CrwdCore && CrwdCore.enabled ? CrwdCore.user : null;
+  if (!user) { myHistory = null; myHistoryFor = null; return null; }
+  const { data, error } = await CrwdCore.sb.from('profiles').select('about').eq('id', user.id).single();
+  if (error) { console.warn('[calendar] show history', error); return myHistory; }
+  myHistory = Array.isArray(data?.about?.history) ? data.about.history : [];
+  myHistoryFor = user.id;
+  return myHistory;
+}
+
+function inMyHistory(eventId) {
+  return !!myHistory && myHistory.some(h => h && h.event_id === eventId);
+}
+
+function setHistoryButton(btn, added) {
+  btn.setAttribute('aria-pressed', added ? 'true' : 'false');
+  const label = added ? 'Remove from my Show History' : 'Add to my Show History';
+  btn.setAttribute('aria-label', label);
+  btn.title = label;
+  btn.classList.toggle('isAdded', added);
+}
+
+async function refreshHistoryButtons() {
+  const buttons = [...document.querySelectorAll('#calendarCards .historyAddButton')];
+  if (!buttons.length) return;
+  if (window.CrwdCore && CrwdCore.enabled) {
+    await CrwdCore.ready;
+    if (CrwdCore.user && myHistoryFor !== CrwdCore.user.id) await loadMyHistory();
+    if (!CrwdCore.user) { myHistory = null; myHistoryFor = null; }
+  }
+  buttons.forEach(btn => setHistoryButton(btn, inMyHistory(btn.closest('.event').dataset.eventId)));
+}
+
+// What gets saved: the acts (or the show title), the venue and the date, same shape as an entry
+// typed in on the profile, plus the show's id
+function historyEntryFor(event) {
+  const names = (event.performers || []).map(p => p && p.name).filter(Boolean);
+  const acts = (names.length ? names.join(', ') : event.title).trim().slice(0, 200);
+  const entry = { acts: acts || 'Show', date: event.date, event_id: event.id };
+  const venue = (allData.venues[event.venueId]?.name || '').trim().slice(0, 80);
+  if (venue) entry.venue = venue;
+  return entry;
+}
+
+async function toggleShowHistory(btn) {
+  if (!window.CrwdUI || !CrwdUI.requireSignIn()) return; // signed out: opens Sign In
+  const event = eventsById.get(btn.closest('.event').dataset.eventId);
+  if (!event || btn.disabled) return;
+  btn.disabled = true;
+  try {
+    // Read the latest list first, so edits made elsewhere (another tab, Edit Profile) aren't lost
+    const { data, error } = await CrwdCore.sb.from('profiles').select('about').eq('id', CrwdCore.user.id).single();
+    if (error) throw error;
+    const about = Object.assign({}, data?.about || {});
+    let list = Array.isArray(about.history) ? about.history.slice() : [];
+    const adding = !list.some(h => h && h.event_id === event.id);
+    if (adding) {
+      if (list.length >= HISTORY_MAX) { alert('Your Show History is full (' + HISTORY_MAX + ' shows). Remove some on your profile to add more.'); return; }
+      list.push(historyEntryFor(event));
+    } else {
+      list = list.filter(h => !(h && h.event_id === event.id));
+    }
+    if (list.length) about.history = list; else delete about.history;
+    await CrwdCore.updateProfile({ about: about });
+    myHistory = list;
+    myHistoryFor = CrwdCore.user.id;
+    // The same show can't appear twice, but keep every copy of the button in step anyway
+    document.querySelectorAll(`.event[data-event-id="${CSS.escape(event.id)}"] .historyAddButton`).forEach(b => setHistoryButton(b, adding));
+  } catch (e) {
+    alert((e && e.message) || 'That couldn\'t be saved. Please try again.');
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+document.getElementById('calendarCards').addEventListener('click', function (e) {
+  const btn = e.target.closest('.historyAddButton');
+  if (btn) toggleShowHistory(btn);
+});
+
+// ---------- Switching between the calendar and Show History ----------
+// push: add a browser history entry (a click). render: redraw the list now (loadEvents draws it itself).
+function setHistoryMode(on, push, render) {
+  historyMode = on;
+  document.body.classList.toggle('isHistory', on);
+  const link = document.getElementById('historyLink');
+  link.textContent = on ? 'Back to Calendar' : 'Show History';
+  link.href = on ? '/' : '/?history';
+  document.getElementById('historyIntro').hidden = !on;
+  // The View menu doesn't apply to Show History
+  document.getElementById('calendarSettings').classList.remove('open');
+  document.getElementById('calendarSettingsToggle').classList.remove('open');
+  if (push) history.pushState({ history: on }, '', on ? '/?history' : '/');
+  if (render !== false) applyFilters();
+}
+
+document.getElementById('historyLink').addEventListener('click', function (e) {
+  if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return; // new tab: let the link work
+  e.preventDefault();
+  setHistoryMode(!historyMode, true);
+  document.getElementById('calendar').scrollIntoView({ block: 'start', behavior: 'smooth' });
+});
+
+// Back / Forward between the two
+window.addEventListener('popstate', function () {
+  const on = new URLSearchParams(window.location.search).has('history');
+  if (on !== historyMode) setHistoryMode(on, false);
+});
+
 // "OSEES … · Beachland Ballroom · Sun, Oct 19"
 function eventContext(event) {
   const [y, m, d] = event.date.split('-').map(Number);
@@ -555,11 +742,17 @@ function jumpToLinkedShow() {
   if (!focusEventId) return;
   const linked = allData.events.find(e => e.id === focusEventId);
   if (!linked) { focusEventId = null; return; } // no longer listed: just open today
+  // A show that's already happened (e.g. from a profile's Hyped list) opens in Show History
+  if (linked.date < todayStr()) {
+    if (!historyMode) setHistoryMode(true, false, false); // loadEvents draws it next
+    return;
+  }
   const [y, m, d] = linked.date.split('-').map(Number); // local date, never via UTC
   const date = new Date(y, m - 1, d);
   document.querySelector('#current h3').textContent = date.toLocaleDateString('en-US', options);
   datePickerFp.setDate(date, false);
   currentDateStr = linked.date;
+  updateNavArrows();
 }
 
 // ...then scroll to the show and highlight it
@@ -567,8 +760,8 @@ function revealFocusedEvent() {
   if (!focusEventId) return;
   const el = document.querySelector(`.event[data-event-id="${CSS.escape(focusEventId)}"]`);
   focusEventId = null;
-  // Drop ?show= so a refresh or a later date change behaves normally
-  history.replaceState(null, '', window.location.pathname + window.location.hash);
+  // Drop ?show= so a refresh or a later date change behaves normally (keeps ?history)
+  history.replaceState(null, '', window.location.pathname + (historyMode ? '?history' : '') + window.location.hash);
   if (!el) return;
   el.classList.add('isLinked');
   el.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -744,17 +937,31 @@ async function loadEvents() {
   updateMatchingDates();
   datePickerFp.redraw();
   jumpToLinkedShow();
+  updateNavArrows();
   applyFilters();
 }
 
 const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
 const today = new Date();
 
+// Past days aren't on the calendar any more (they're in Show History): Back stops at today
+function updateNavArrows() {
+  const prev = document.getElementById('prevArrow');
+  const atToday = currentDateStr <= todayStr();
+  prev.classList.toggle('isDisabled', atToday);
+  prev.setAttribute('aria-disabled', atToday ? 'true' : 'false');
+}
+
 function setDate(date) {
+  // Never before today (e.g. a week back from 3 days out lands on today)
+  const now = new Date();
+  const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if (date < todayMidnight) date = todayMidnight;
   const formatted = date.toLocaleDateString('en-US', options);
   document.querySelector('#current h3').textContent = formatted;
   document.getElementById('datePicker')._flatpickr.setDate(date, false);
   currentDateStr = toLocalDateStr(date);
+  updateNavArrows();
   applyFilters();
 }
 
@@ -764,6 +971,7 @@ let lastAutoClose = 0;
 
 const datePickerFp = flatpickr('#datePicker', {
   defaultDate: today,
+  minDate: 'today', // past days are greyed out; they live in Show History now
   positionElement: document.getElementById('currentSelector'),
   position: 'below auto',
   disableMobile: true,
@@ -782,6 +990,7 @@ const datePickerFp = flatpickr('#datePicker', {
     const formatted = selectedDates[0].toLocaleDateString('en-US', options);
     document.querySelector('#current h3').textContent = formatted;
     currentDateStr = toLocalDateStr(selectedDates[0]);
+    updateNavArrows();
     applyFilters();
   }
 });
@@ -792,6 +1001,7 @@ document.getElementById('calendarToggleWeek').classList.toggle('active', calenda
 document.getElementById('calendarSortMethod').value = calendarSortMethod;
 document.getElementById('calendarShowGenres').checked = calendarShowGenres;
 applyGenreVisibility();
+setHistoryMode(historyMode, false); // opened at /?history: show that view from the start
 
 loadEvents();
 
@@ -801,6 +1011,7 @@ if (socialReady()) {
   CrwdCore.onChange(() => {
     currentStats = null; // its "already hyped" flags belong to the previous user
     attachEventSocial();
+    if (historyMode) refreshHistoryButtons(); // whose Show History it is may have changed
   });
 } else {
   // Accounts unavailable (e.g. Supabase didn't load): no counts to sort by
@@ -844,6 +1055,7 @@ document.addEventListener('DOMContentLoaded', function() {
   currentSelector.addEventListener('touchend', toggleDatePicker);
   
   document.getElementById('prevArrow').addEventListener('click', function() {
+    if (this.classList.contains('isDisabled')) return; // already on today
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
     const step = calendarViewMode === 'week' ? 7 : 1;
     const prev = new Date(current);
@@ -896,4 +1108,4 @@ document.addEventListener('DOMContentLoaded', function() {
     saveCalendarSettingsToStorage();
     applyGenreVisibility();
   });
-});
+});

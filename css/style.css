@@ -1414,6 +1414,129 @@ span.flatpickr-weekday {
 
 
 
+/* ---------- Show History (same page as the calendar, at /?history) ---------- */
+
+#historyBar {
+	margin-bottom: 24px;
+}
+
+#historyLink {
+	font-family: "Space Mono", monospace;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+}
+
+#historyIntro {
+	margin: -8px 0 32px;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #ADADAD;
+}
+
+#historyIntro[hidden] {
+	display: none;
+}
+
+/* No View menu or date picker in Show History; Filters stays on the right */
+body.isHistory #calendarSettingsToggle,
+body.isHistory #calendarSettings,
+body.isHistory #calendarNav {
+	display: none !important;
+}
+
+body.isHistory #calendarFilterToggle {
+	margin-left: auto;
+}
+
+/* "Add to my Show History": takes the ticket link's spot. A + that turns into a yellow check. */
+.historyAdd {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 4px;
+}
+
+.historyAddButton {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: none;
+	border: 1px solid #555;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.historyAddButton::before,
+.historyAddButton::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 16px;
+	height: 2px;
+	border-radius: 2px;
+	background: #62CBB8;
+	transform: translate(-50%, -50%);
+	transition: none;
+}
+
+.historyAddButton::after {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.historyAddButton.isAdded {
+	background: #F9F976;
+	border-color: #F9F976;
+}
+
+.historyAddButton.isAdded::before {
+	width: 7px;
+	height: 13px;
+	background: none;
+	border: solid #101010;
+	border-width: 0 2px 2px 0;
+	border-radius: 0;
+	transform: translate(-50%, -62%) rotate(45deg);
+}
+
+.historyAddButton.isAdded::after {
+	display: none;
+}
+
+.historyAddButton:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+.historyAddButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Back arrow on today: the calendar doesn't go into the past any more */
+#navArrows li.isDisabled {
+	opacity: 0.3;
+	pointer-events: none;
+	cursor: default;
+}
+
+/* Past days in the date picker */
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+	color: rgba(252, 252, 252, 0.2) !important;
+	background: transparent !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+	cursor: default;
+}
+
 /* Mobile Hover Fix */
 
 @media (hover: hover) and (pointer: fine) {
@@ -1456,6 +1579,10 @@ span.flatpickr-weekday {
 
 	.ticketLink:hover #opn {
 		background-color: #101010;
+	}
+
+	.historyAddButton:not(.isAdded):not(:disabled):hover {
+		border-color: #62CBB8;
 	}
 
 	#clr:hover {
@@ -1729,6 +1856,23 @@ span.flatpickr-weekday {
 
 	.eventSocial .crwdChip.isEmpty {
 		padding: 4px 9px;
+	}
+
+	/* Show History's + button: same size as the hype/comment buttons beside it */
+	.historyAdd,
+	.historyAddButton {
+		width: 32px;
+		height: 32px;
+	}
+
+	.historyAddButton::before,
+	.historyAddButton::after {
+		width: 14px;
+	}
+
+	.historyAddButton.isAdded::before {
+		width: 6px;
+		height: 11px;
 	}
 
 	.flex {

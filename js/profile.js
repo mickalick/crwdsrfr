@@ -1453,6 +1453,7 @@
 			const e = { acts: String(h.acts) };
 			if (h.venue) e.venue = String(h.venue);
 			if (h.date) e.date = String(h.date);
+			if (h.event_id) e.event_id = String(h.event_id); // added from the calendar's Show History: keep the link to the show
 			return e;
 		});
 
