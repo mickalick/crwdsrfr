@@ -1824,6 +1824,102 @@
 		});
 	}
 
+	// Area suggestions under the Area field. (A <datalist> only opened on a second click on
+	// desktop and barely shows on phones, so this is a small list of our own.)
+	// Opens on tap/focus, narrows as you type; arrows + Enter pick, Escape closes; any text still works.
+	// Same dropdown as the New Post form's Acts picker: it uses that one's classes (crwd-composer.css).
+	function areaPicker(input, areas) {
+		const box = el('div', 'composerCombo');
+		input.replaceWith(box);
+		const list = el('ul', 'composerComboList');
+		list.id = 'profileAreaOptions';
+		list.setAttribute('role', 'listbox');
+		list.hidden = true;
+		box.append(input, list);
+		input.setAttribute('role', 'combobox');
+		input.setAttribute('aria-autocomplete', 'list');
+		input.setAttribute('aria-controls', list.id);
+		input.setAttribute('aria-expanded', 'false');
+		input.autocomplete = 'off';
+
+		let options = [];
+		let active = -1;
+
+		// Typing narrows the list; opening it (tap / focus) shows every area, whatever's in the field
+		function matches(narrow) {
+			const q = input.value.trim().toLowerCase();
+			if (!narrow || !q) return areas;
+			return areas.filter(function (a) { return a.toLowerCase().indexOf(q) !== -1; });
+		}
+
+		function open(narrow) {
+			options = matches(narrow === true);
+			list.replaceChildren();
+			options.forEach(function (a, i) {
+				const li = el('li', 'composerComboOption', a);
+				li.id = 'profileAreaOption-' + i;
+				li.setAttribute('role', 'option');
+				li.setAttribute('aria-selected', 'false');
+				// Keep focus in the field while pressing (desktop); pick on click/tap (a scroll-drag isn't a tap)
+				li.addEventListener('mousedown', function (e) { e.preventDefault(); });
+				li.addEventListener('click', function (e) {
+					e.preventDefault(); // the field sits in a <label>: don't let the click re-open the list
+					pick(a);
+				});
+				list.appendChild(li);
+			});
+			active = -1;
+			input.removeAttribute('aria-activedescendant');
+			const show = options.length > 0;
+			list.hidden = !show;
+			input.setAttribute('aria-expanded', show ? 'true' : 'false');
+		}
+
+		function close() {
+			list.hidden = true;
+			input.setAttribute('aria-expanded', 'false');
+			input.removeAttribute('aria-activedescendant');
+			active = -1;
+		}
+
+		function pick(a) {
+			input.value = a;
+			input.dispatchEvent(new Event('input', { bubbles: true })); // so anything watching for changes sees it
+			close();
+		}
+
+		function highlight(i) {
+			const items = list.children;
+			if (!items.length) return;
+			active = (i + items.length) % items.length;
+			Array.prototype.forEach.call(items, function (li, n) {
+				li.classList.toggle('isActive', n === active);
+				li.setAttribute('aria-selected', n === active ? 'true' : 'false');
+			});
+			input.setAttribute('aria-activedescendant', items[active].id);
+			items[active].scrollIntoView({ block: 'nearest' });
+		}
+
+		input.addEventListener('focus', function () { open(); });
+		input.addEventListener('click', function () { if (list.hidden) open(); });
+		input.addEventListener('input', function (e) { if (e.isTrusted) open(true); });
+		// A moment's grace: on phones the field can lose focus as an option is tapped
+		input.addEventListener('blur', function () { setTimeout(function () { if (document.activeElement !== input) close(); }, 150); });
+		input.addEventListener('keydown', function (e) {
+			if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+				e.preventDefault();
+				if (list.hidden) open();
+				highlight(active + (e.key === 'ArrowDown' ? 1 : -1));
+			} else if (e.key === 'Enter' && !list.hidden && active > -1) {
+				e.preventDefault(); // pick it, don't submit the form
+				pick(options[active]);
+			} else if (e.key === 'Escape' && !list.hidden) {
+				e.stopPropagation(); // close the list, not Edit Profile
+				close();
+			}
+		});
+	}
+
 	async function openEditDialog(opts) {
 		opts = opts && opts.welcome ? opts : {}; // (a click passes an event here; only { welcome } counts)
 		const me = core.profile;
@@ -1882,13 +1978,7 @@
 
 			const areaField = kit.field({ label: 'Area', name: 'area', maxLength: LIMITS.area,
 				value: me.area || '', hint: 'Pick from our areas, or add your own.' });
-			if (areas.length) {
-				const list = document.createElement('datalist');
-				list.id = 'profileAreas';
-				areas.forEach(function (a) { const o = document.createElement('option'); o.value = a; list.appendChild(o); });
-				areaField.wrap.appendChild(list);
-				areaField.input.setAttribute('list', 'profileAreas');
-			}
+			if (areas.length) areaPicker(areaField.input, areas);
 
 			const linksField = linksEditor(kit, me.links);
 			const linkRows = linksField.rows; // live list: rows come and go with Add Link / ✕
