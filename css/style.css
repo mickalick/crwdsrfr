@@ -1518,7 +1518,7 @@ body.isHistory #calendarFilterToggle {
 }
 
 .historyAddButton:focus-visible {
-	outline: 2px solid #62CBB8;
+	outline: 2px solid #F9F976;
 	outline-offset: 2px;
 }
 
@@ -1584,7 +1584,7 @@ body.isHistory #calendarFilterToggle {
 	}
 
 	.historyAddButton:not(.isAdded):not(:disabled):hover {
-		border-color: #62CBB8;
+		border-color: #F9F976;
 	}
 
 	#clr:hover {
