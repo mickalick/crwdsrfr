@@ -33,7 +33,7 @@
 	const VIDEO_MAX_MB = 50;          // same as the post-media storage limit
 	const VIDEO_TYPES = { 'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov' };
 	// Shrinking videos that are over VIDEO_MAX_MB (see shrinkVideo)
-	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1/+esm'; // pin to an exact version before launch
+	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1.63.0/+esm'; // pin to an exact version before launch
 	const SHRINK_SHORT_SIDE = 1080;   // 1080p: the shorter side, so portrait phone clips work too
 	const SHRINK_MAX_BITRATE = 5e6;   // 5 Mbps: 60 s ≈ 38 MB
 	const SHRINK_MIN_BITRATE = 1.5e6;
