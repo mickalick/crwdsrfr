@@ -22,6 +22,9 @@
 		? 'sb_publishable_9hn_OpemNeyrJINtqwwUOQ_gZbIfco-'
 		: 'sb_publishable_pDDAyzdIv0E2ZS2lE2HQLA_tR03y2Rx'; // publishable keys: safe in the browser, the database rules protect the data
 
+	// Direct storage address for big (resumable) uploads, e.g. https://<project>.storage.supabase.co
+	const STORAGE_URL = SUPABASE_URL.replace('.supabase.co', '.storage.supabase.co');
+
 	const USERNAME_RE = /^[a-z0-9_]{3,24}$/;
 	const PLACEHOLDER_RE = /^user_[0-9a-f]{12}$/; // assigned by the database when a chosen username couldn't be used
 
@@ -309,6 +312,8 @@
 		profileUrl: profileUrl,
 		avatarUrl: avatarUrl,
 		friendlyError: friendlyError, // for pages making their own Supabase calls
+		STORAGE_URL: STORAGE_URL,     // resumable uploads (crwd-composer.js)
+		SUPABASE_KEY: SUPABASE_KEY,   // the publishable key, sent with those uploads
 		USERNAME_RE: USERNAME_RE
 	};
 })();

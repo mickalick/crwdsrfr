@@ -30,7 +30,7 @@
 	const THUMB_MAX = 500;            // longest side of a tile thumbnail / video poster, px (THUMB_MAX_DIMENSION)
 	const THUMB_QUALITY = 0.72;       // THUMB_QUALITY 72
 	const VIDEO_MAX_SECONDS = 60;
-	const VIDEO_MAX_MB = 50;          // same as the post-media storage limit
+	const VIDEO_MAX_MB = 200;         // same as the post-media bucket limit (and the project's upload limit)
 	const VIDEO_TYPES = { 'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov' };
 	// Shrinking videos that are over VIDEO_MAX_MB (see shrinkVideo)
 	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1/+esm'; // pin to an exact version before launch
@@ -327,6 +327,126 @@
 			job.cancel = null;
 			if (input.dispose) input.dispose();
 			if (wakeLock) wakeLock.release().catch(function () {});
+		}
+	}
+
+	// ------------------------------------------------------------------
+	// Resumable uploads for big files (TUS, Supabase's /upload/resumable)
+	// Sends 6 MB pieces; if the connection drops, it asks Supabase how much
+	// arrived and carries on from there instead of starting over.
+	// Same protocol as tus-js-client, without the extra download.
+	// ------------------------------------------------------------------
+
+	const TUS_CHUNK = 6 * 1024 * 1024;                  // Supabase requires exactly 6 MB pieces
+	const TUS_RETRY_MS = [0, 1000, 3000, 5000, 10000, 20000]; // waits between retries after a dropped connection
+
+	// Videos (and anything else over one piece) go resumable on the real site
+	function useResumable(blob) {
+		if (!core.STORAGE_URL) return false;                                   // older crwd-core.js
+		if (window.CrwdMock && !window.CrwdMock.resumableUploads) return false; // mock data: plain upload
+		return blob.size > TUS_CHUNK;
+	}
+
+	function base64(text) {
+		return btoa(unescape(encodeURIComponent(text)));
+	}
+
+	function sleep(ms) {
+		return new Promise(function (resolve) { setTimeout(resolve, ms); });
+	}
+
+	// One request. XHR (not fetch) because it reports upload progress.
+	function tusRequest(method, url, headers, body, onSent) {
+		return new Promise(function (resolve, reject) {
+			const xhr = new XMLHttpRequest();
+			xhr.open(method, url);
+			Object.keys(headers).forEach(function (k) { xhr.setRequestHeader(k, headers[k]); });
+			if (onSent && xhr.upload) xhr.upload.onprogress = function (e) { onSent(e.loaded); };
+			xhr.onload = function () { resolve(xhr); };
+			xhr.onerror = xhr.ontimeout = function () {
+				reject(Object.assign(new Error('A file couldn\'t upload. Check your connection and try again.'), { retry: true }));
+			};
+			xhr.send(body || null);
+		});
+	}
+
+	// Turns a reply into an error when it isn't the expected status
+	function tusCheck(xhr, expected) {
+		if (xhr.status === expected) return;
+		let message = 'A file couldn\'t upload. Check your connection and try again.';
+		if (xhr.status === 413) message = 'A video is over the ' + VIDEO_MAX_MB + ' MB limit.';
+		else if (xhr.status === 401 || xhr.status === 403) message = 'Your sign-in ran out. Sign in again, then post.';
+		const err = new Error(message);
+		err.retry = xhr.status === 0 || xhr.status === 409 || xhr.status === 423 || xhr.status >= 500;
+		err.status = xhr.status;
+		throw err;
+	}
+
+	// Uploads blob to bucket/path. onProgress(0..1) as bytes go out.
+	async function uploadResumable(bucket, path, blob, onProgress) {
+		const { data } = await core.sb.auth.getSession();
+		const token = data && data.session && data.session.access_token;
+		if (!token) throw new Error('Your sign-in ran out. Sign in again, then post.');
+		const endpoint = core.STORAGE_URL + '/storage/v1/upload/resumable';
+		const base = { 'Tus-Resumable': '1.0.0', authorization: 'Bearer ' + token, apikey: core.SUPABASE_KEY };
+		const meta = { bucketName: bucket, objectName: path, contentType: blob.type, cacheControl: '3600' };
+
+		let tries = 0;
+		async function retrying(step) {
+			for (;;) {
+				try {
+					return await step();
+				} catch (e) {
+					if (!e.retry || tries >= TUS_RETRY_MS.length) throw e;
+					await sleep(TUS_RETRY_MS[tries++]);
+				}
+			}
+		}
+
+		// 1. Start the upload: Supabase answers with its address
+		const created = await retrying(async function () {
+			const xhr = await tusRequest('POST', endpoint, Object.assign({
+				'Upload-Length': String(blob.size),
+				'Upload-Metadata': Object.keys(meta).map(function (k) { return k + ' ' + base64(meta[k]); }).join(',')
+			}, base));
+			tusCheck(xhr, 201);
+			return xhr;
+		});
+		const location = created.getResponseHeader('Location');
+		if (!location) throw new Error('A file couldn\'t upload. Check your connection and try again.');
+		const url = new URL(location, endpoint).href;
+
+		// 2. Send it in pieces. After a failure, ask how much arrived (HEAD) before sending more.
+		let offset = 0;
+		let resync = false;
+		while (offset < blob.size) {
+			offset = await retrying(async function () {
+				if (resync) {
+					const head = await tusRequest('HEAD', url, base);
+					tusCheck(head, 200);
+					offset = Number(head.getResponseHeader('Upload-Offset')) || 0;
+					resync = false;
+					if (offset >= blob.size) return offset;
+				}
+				const start = offset;
+				const piece = blob.slice(start, Math.min(start + TUS_CHUNK, blob.size));
+				try {
+					const xhr = await tusRequest('PATCH', url, Object.assign({
+						'Upload-Offset': String(start),
+						'Content-Type': 'application/offset+octet-stream'
+					}, base), piece, function (sent) {
+						if (onProgress) onProgress(Math.min(1, (start + sent) / blob.size));
+					});
+					tusCheck(xhr, 204);
+					tries = 0; // a piece got through: a later hiccup gets the full set of retries again
+					const next = Number(xhr.getResponseHeader('Upload-Offset'));
+					return next > start ? next : start + piece.size;
+				} catch (e) {
+					if (e.retry) resync = true;
+					throw e;
+				}
+			});
+			if (onProgress) onProgress(offset / blob.size);
 		}
 	}
 
@@ -1172,9 +1292,15 @@
 				const folder = uid + '/' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 				const uploaded = [];
 				const bucket = core.sb.storage.from('post-media');
-				async function put(path, blob) {
-					const { error } = await bucket.upload(path, blob, { contentType: blob.type, upsert: false });
-					if (error) throw new Error('A file couldn\'t upload. Check your connection and try again.');
+				async function put(path, blob, onProgress) {
+					if (useResumable(blob)) {
+						await uploadResumable('post-media', path, blob, onProgress);
+					} else {
+						const { error } = await bucket.upload(path, blob, { contentType: blob.type, upsert: false });
+						if (error) throw new Error(error.statusCode === '413' || error.statusCode === 413
+							? 'A video is over the ' + VIDEO_MAX_MB + ' MB limit.'
+							: 'A file couldn\'t upload. Check your connection and try again.');
+					}
 					uploaded.push(path);
 					return path;
 				}
@@ -1183,10 +1309,19 @@
 					const items = [];
 					let cover = null;
 					for (let i = 0; i < media.length; i++) {
-						kit.setBusy(submit, true, 'Uploading ' + (i + 1) + ' of ' + media.length + '…');
+						const label = 'Uploading ' + (i + 1) + ' of ' + media.length;
+						kit.setBusy(submit, true, label + '…');
 						const m = media[i];
 						const n = String(i + 1).padStart(2, '0');
-						const entry = { src: await put(folder + '/' + n + '.' + extFor(m.prepared.blob), m.prepared.blob), type: m.prepared.type };
+						// Big files report progress: "Uploading 2 of 3… 42%"
+						let shown = -1;
+						function progress(p) {
+							const pct = Math.floor(p * 100);
+							if (pct === shown) return;
+							shown = pct;
+							kit.setBusy(submit, true, label + '… ' + pct + '%');
+						}
+						const entry = { src: await put(folder + '/' + n + '.' + extFor(m.prepared.blob), m.prepared.blob, progress), type: m.prepared.type };
 						entry.thumb = await put(folder + '/' + n + '-thumb.' + extFor(m.prepared.thumb), m.prepared.thumb);
 						if (m.caption.trim()) entry.caption = m.caption.trim();
 						items.push(entry);
