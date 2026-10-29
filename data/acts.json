@@ -1819,15 +1819,31 @@
     "local": "yes"
   },
   "tricky-dick-and-the-cover-ups": {
-    "name": "Tricky Dick and the Cover-Ups",
+    "name": "Tricky Dick & the Cover-Ups",
     "aliases": [
       "Tricky Dick and the Cover-Ups",
-      "Tricky Dick and the Cover Ups"
+      "Tricky Dick and the Cover Ups",
+      "Tricky Dick & the Cover-Ups",
+      "Tricky Dick & the Cover Ups",
+      "Tricky Dick"
     ],
     "genres": [
       "covers"
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://trickydickcoverband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/trickydickcover/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/trickydickcoverband/"
+      }
+    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -6867,32 +6883,6 @@
     "links": [],
     "exclude": "no",
     "local": "no"
-  },
-  "tricky-dick-the-cover-ups": {
-    "name": "Tricky Dick & The Cover-Ups",
-    "aliases": [
-      "Tricky Dick & The Cover-Ups",
-      "Tricky Dick"
-    ],
-    "genres": [
-      "covers"
-    ],
-    "links": [
-      {
-        "label": "Website",
-        "value": "https://trickydickcoverband.com/"
-      },
-      {
-        "label": "Instagram",
-        "value": "https://www.instagram.com/trickydickcover/"
-      },
-      {
-        "label": "Facebook",
-        "value": "https://www.facebook.com/trickydickcoverband/"
-      }
-    ],
-    "exclude": "no",
-    "local": "yes"
   },
   "uriah-g": {
     "name": "Uriah G",
