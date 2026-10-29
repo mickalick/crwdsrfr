@@ -1567,7 +1567,6 @@ button.profileImagePreview:focus-visible {
 @media screen and (max-width: 774px) {
 	.profileHeroInner {
 		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	/* Buttons drop below the name: center them */
@@ -1590,7 +1589,8 @@ button.profileImagePreview:focus-visible {
 	}
 
 	.profileIdentity {
-		gap: 16px;
+		flex-direction: column;
+		gap: 8px;
 	}
 
 	.profileAvatar {
