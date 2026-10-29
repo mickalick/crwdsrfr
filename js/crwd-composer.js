@@ -12,10 +12,11 @@
    Photos and videos are prepared in the browser before anything uploads:
    - Photos are resized (longest side PHOTO_MAX px) and saved as WebP (JPEG on
      browsers that can't make WebP), plus a small thumbnail for tiles.
-   - Videos aren't re-encoded (browsers can't do that cheaply). They're limited
-     to VIDEO_MAX_SECONDS and VIDEO_MAX_MB, and a still frame becomes the thumbnail.
-   The script's video settings (720p H.264, CRF 24) need ffmpeg, which browsers
-   don't have, so that part isn't matched.
+   - Videos upload as they are when they fit VIDEO_MAX_SECONDS and VIDEO_MAX_MB,
+     and a still frame becomes the thumbnail.
+   - A video over VIDEO_MAX_MB gets a "Shrink it" button: it's re-saved on the
+     device as a 1080p MP4 (Mediabunny + WebCodecs, loaded only when needed).
+     Browsers without WebCodecs get the old "too big" message instead.
    Nothing uploads until "Post" is pressed, so closing the form leaves nothing behind.
    ===================================================================== */
 
@@ -31,6 +32,12 @@
 	const VIDEO_MAX_SECONDS = 60;
 	const VIDEO_MAX_MB = 50;          // same as the post-media storage limit
 	const VIDEO_TYPES = { 'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov' };
+	// Shrinking videos that are over VIDEO_MAX_MB (see shrinkVideo)
+	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1/+esm'; // pin to an exact version before launch
+	const SHRINK_SHORT_SIDE = 1080;   // 1080p: the shorter side, so portrait phone clips work too
+	const SHRINK_MAX_BITRATE = 5e6;   // 5 Mbps: 60 s ≈ 38 MB
+	const SHRINK_MIN_BITRATE = 1.5e6;
+	const SHRINK_AUDIO_ROOM = 192e3;  // bits/s kept free for the sound track
 	const LIMITS = { title: 120, text: 4000, caption: 1000, acts: 10, actName: 80 };
 
 	const core = window.CrwdCore;
@@ -189,6 +196,140 @@
 		return encode(canvas, canvas.width, canvas.height, THUMB_MAX, THUMB_QUALITY);
 	}
 
+	// ------------------------------------------------------------------
+	// Shrinking big videos (only loads when someone presses "Shrink it")
+	// ------------------------------------------------------------------
+
+	function isTooBig(file) {
+		return /^video\//.test(file.type) && file.size > VIDEO_MAX_MB * 1024 * 1024;
+	}
+
+	// WebCodecs does the actual work; without it there's nothing to shrink with
+	function canShrink() {
+		return typeof window.VideoEncoder === 'function' && typeof window.VideoDecoder === 'function';
+	}
+
+	let mediabunny = null;
+	function loadMediabunny() {
+		if (!mediabunny) {
+			mediabunny = import(MEDIABUNNY_URL).catch(function (e) {
+				mediabunny = null; // let a later try load it again
+				throw e;
+			});
+		}
+		return mediabunny;
+	}
+
+	// Video length from the file's details alone (no frames needed). NaN if the browser can't tell.
+	async function probeDuration(file) {
+		const url = URL.createObjectURL(file);
+		const video = document.createElement('video');
+		video.muted = true;
+		video.playsInline = true;
+		video.setAttribute('playsinline', '');
+		video.preload = 'metadata';
+		video.className = 'composerProbeVideo';
+		document.body.appendChild(video);
+		video.src = url;
+		try {
+			await waitFor(video, 'loadedmetadata', 8000);
+			return video.duration;
+		} catch (e) {
+			return NaN;
+		} finally {
+			video.removeAttribute('src');
+			video.load();
+			video.remove();
+			URL.revokeObjectURL(url);
+		}
+	}
+
+	function shrinkError(text) {
+		const e = new Error(text);
+		e.shrink = true;
+		return e;
+	}
+
+	// Re-saves a video as a 1080p H.264 MP4 that fits VIDEO_MAX_MB.
+	// job: { onProgress(0..1), cancel (set here), canceled (set by the caller) }
+	// Resolves with a new File, or rejects (err.canceled when job.cancel() was used).
+	async function shrinkVideo(file, job) {
+		let mb;
+		try {
+			mb = await loadMediabunny();
+		} catch (e) {
+			throw shrinkError('couldn\'t be shrunk: the video tools didn\'t load. Check your connection and try again.');
+		}
+		if (job.canceled) throw Object.assign(new Error('canceled'), { canceled: true });
+
+		let wakeLock = null; // keeps a phone screen on (it would pause the work)
+		try { wakeLock = navigator.wakeLock ? await navigator.wakeLock.request('screen') : null; } catch (e) {}
+
+		const input = new mb.Input({ formats: mb.ALL_FORMATS, source: new mb.BlobSource(file) });
+		try {
+			const track = await input.getPrimaryVideoTrack();
+			if (!track) throw new Error(UNPLAYABLE);
+			const seconds = await input.computeDuration();
+			if (seconds > VIDEO_MAX_SECONDS + 0.5) {
+				throw new Error('is ' + Math.round(seconds) + ' seconds long. Videos can be up to ' + VIDEO_MAX_SECONDS + ' seconds.');
+			}
+
+			// Size: shorter side at most SHRINK_SHORT_SIDE, even numbers (H.264 needs them)
+			const w = track.displayWidth, h = track.displayHeight; // already turned upright
+			const scale = Math.min(1, SHRINK_SHORT_SIDE / Math.min(w, h));
+			function even(n) { return Math.max(2, Math.round(n / 2) * 2); }
+			const width = even(w * scale), height = even(h * scale);
+
+			// Bitrate: whatever fits the limit for this length (85% of it, for headroom), capped
+			const fits = VIDEO_MAX_MB * 1024 * 1024 * 8 * 0.85 / Math.max(1, seconds) - SHRINK_AUDIO_ROOM;
+			const bitrate = Math.max(SHRINK_MIN_BITRATE, Math.min(SHRINK_MAX_BITRATE, fits));
+
+			// H.264 plays everywhere; if this browser can't make it, let Mediabunny pick what it can
+			const avc = await mb.canEncodeVideo('avc', { width: width, height: height, bitrate: bitrate }).catch(function () { return false; });
+
+			const output = new mb.Output({
+				format: new mb.Mp4OutputFormat({ fastStart: 'in-memory' }), // plays before it's fully downloaded
+				target: new mb.BufferTarget()
+			});
+			const conversion = await mb.Conversion.init({
+				input: input,
+				output: output,
+				video: { width: width, height: height, fit: 'contain', bitrate: bitrate, codec: avc ? 'avc' : undefined, forceTranscode: true }
+				// no audio options: the sound is copied as-is when it can be, re-encoded only if it must
+			});
+			if (!conversion.isValid) throw shrinkError('couldn\'t be shrunk in this browser. Try a shorter clip, or record at 1080p.');
+
+			// Never post it silently: if the sound track couldn't come along, stop
+			const hadAudio = (await input.getAudioTracks()).length > 0;
+			const keptAudio = (conversion.utilizedTracks || []).some(function (t) { return t.type === 'audio'; });
+			if (hadAudio && !keptAudio) throw shrinkError('couldn\'t be shrunk with its sound in this browser. Try a shorter clip, or record at 1080p.');
+
+			if (job.canceled) throw Object.assign(new Error('canceled'), { canceled: true });
+			job.cancel = function () { job.canceled = true; conversion.cancel(); };
+			conversion.onProgress = function (p) { if (job.onProgress) job.onProgress(p); };
+			try {
+				await conversion.execute();
+			} catch (e) {
+				if (job.canceled) throw Object.assign(new Error('canceled'), { canceled: true });
+				throw e;
+			}
+
+			const out = new File([output.target.buffer], file.name.replace(/\.[^.]+$/, '') + '.mp4', { type: 'video/mp4' });
+			if (out.size > VIDEO_MAX_MB * 1024 * 1024) {
+				throw shrinkError('is still ' + formatSize(out.size) + ' after shrinking. Try a shorter clip.');
+			}
+			return out;
+		} catch (e) {
+			if (e.canceled || e.shrink || e.message === UNPLAYABLE || /^is \d+ seconds/.test(e.message)) throw e;
+			console.warn('[composer] shrink failed', e);
+			throw shrinkError('couldn\'t be shrunk in this browser. Try a shorter clip, or record at 1080p.');
+		} finally {
+			job.cancel = null;
+			if (input.dispose) input.dispose();
+			if (wakeLock) wakeLock.release().catch(function () {});
+		}
+	}
+
 	function prepare(file) {
 		if (/^video\//.test(file.type)) return prepareVideo(file);
 		if (/^image\//.test(file.type) || !file.type) return preparePhoto(file);
@@ -292,7 +433,7 @@
 			fileInput.accept = 'image/*,video/mp4,video/webm,video/quicktime';
 			addLabel.append(addText, fileInput);
 			const mediaHint = el('span', 'crwdHint', 'Up to ' + MAX_MEDIA + ' photos or videos. Videos can be up to '
-				+ VIDEO_MAX_SECONDS + ' seconds and ' + VIDEO_MAX_MB + ' MB.');
+				+ VIDEO_MAX_SECONDS + ' seconds and ' + VIDEO_MAX_MB + ' MB' + (canShrink() ? ' (bigger ones can be shrunk here).' : '.'));
 			const mediaNote = el('p', 'composerMediaNote');
 			mediaNote.setAttribute('role', 'status');
 			mediaNote.hidden = true;
@@ -392,6 +533,8 @@
 						preview.appendChild(img);
 					}
 					if (m.status === 'working') preview.appendChild(el('span', 'composerMediaWorking', 'Preparing…'));
+					if (m.status === 'shrinking') preview.appendChild(el('span', 'composerMediaWorking', 'Shrinking…'));
+					if (m.status === 'big') preview.appendChild(el('span', 'composerMediaWorking isStill', 'Too big'));
 					if (m.prepared && m.prepared.type === 'video') preview.appendChild(el('span', 'composerMediaPlay'));
 					if (m.id === coverId) {
 						const badge = el('span', 'composerMediaCover', 'Cover');
@@ -403,8 +546,14 @@
 					const meta = el('div', 'composerMediaMeta');
 					const kind = 'Shot';
 					meta.appendChild(el('span', 'composerMediaKind', kind + ' ' + (i + 1)));
-					if (m.prepared) meta.appendChild(el('span', 'composerMediaSize', (m.prepared.type === 'video' ? 'Video · ' : 'Photo · ') + formatSize(m.prepared.blob.size)));
+					if (m.prepared) {
+						meta.appendChild(el('span', 'composerMediaSize', (m.prepared.type === 'video' ? 'Video · ' : 'Photo · ') + formatSize(m.prepared.blob.size)
+							+ (m.shrunkFrom ? ' (shrunk from ' + formatSize(m.shrunkFrom) + ')' : '')));
+					} else if (m.status === 'big' || m.status === 'shrinking') {
+						meta.appendChild(el('span', 'composerMediaSize', 'Video · ' + formatSize(m.file.size)));
+					}
 					main.appendChild(meta);
+					if (m.status === 'big' || m.status === 'shrinking') main.appendChild(shrinkBox(m, kind.toLowerCase() + ' ' + (i + 1)));
 
 					const caption = document.createElement('textarea');
 					caption.className = 'composerCaption';
@@ -466,9 +615,16 @@
 				const action = b.dataset.action;
 				if (action === 'up' && i > 0) { media.splice(i - 1, 0, media.splice(i, 1)[0]); renderMedia(id, 'up'); }
 				else if (action === 'down' && i < media.length - 1) { media.splice(i + 1, 0, media.splice(i, 1)[0]); renderMedia(id, 'down'); }
+				else if (action === 'shrink' && media[i].status === 'big') { setMediaNote(''); startShrink(media[i]); }
+				else if (action === 'cancel' && media[i].status === 'shrinking') {
+					const m = media[i];
+					if (m.job.cancel) m.job.cancel();
+					else m.job.canceled = true; // still loading the tools; stops before it starts
+				}
 				else if (action === 'remove') {
 					const gone = media.splice(i, 1)[0];
 					gone.removed = true;
+					if (gone.job && gone.job.cancel) gone.job.cancel();
 					if (gone.previewUrl) URL.revokeObjectURL(gone.previewUrl);
 					const neighbor = media[i] || media[i - 1];
 					renderMedia(neighbor ? neighbor.id : null, 'remove');
@@ -490,26 +646,103 @@
 				taking.forEach(function (file) {
 					const m = { id: nextId++, file: file, status: 'working', prepared: null, previewUrl: null, caption: '' };
 					media.push(m);
-					m.ready = queue = queue.then(function () {
-						if (m.removed) return;
-						return prepare(file).then(function (prepared) {
-							m.prepared = prepared;
-							m.status = 'ready';
-							m.previewUrl = URL.createObjectURL(prepared.thumb);
-						}, function (ex) {
-							const i = media.indexOf(m);
-							if (i !== -1) media.splice(i, 1);
-							problems.push('"' + file.name + '" ' + ex.message);
-						}).then(function () {
-							if (!open_) return;
-							keepFocus(function () { renderMedia(); });
-							setMediaNote(problems.join(' '));
-						});
-					});
+					track(m, problems, isTooBig(file) ? function () { return checkBig(m); } : function () { return prepare(file); });
 				});
 				renderMedia();
 				setMediaNote(problems.join(' '));
 			});
+
+			// Runs one file's work in the queue. work() resolves with the prepared media,
+			// or with nothing when the file is left waiting (a big video before "Shrink it").
+			function track(m, problems, work) {
+				m.ready = queue = queue.then(function () {
+					if (m.removed) return;
+					return work().then(function (prepared) {
+						if (!prepared) return;
+						m.prepared = prepared;
+						m.status = 'ready';
+						m.previewUrl = URL.createObjectURL(prepared.thumb);
+					}, function (ex) {
+						if (m.removed) return;
+						if (ex.canceled) { m.status = 'big'; return; } // back to the "Shrink it" offer
+						const i = media.indexOf(m);
+						if (i !== -1) media.splice(i, 1);
+						problems.push('"' + m.file.name + '" ' + ex.message);
+					}).then(function () {
+						if (!open_) return;
+						keepFocus(function () { renderMedia(); });
+						setMediaNote(problems.join(' '));
+					});
+				});
+			}
+
+			// A video over the size limit: too long → no; can't shrink here → the old message;
+			// otherwise it waits in the list with a "Shrink it" button.
+			async function checkBig(m) {
+				const tooBig = 'is ' + formatSize(m.file.size) + '. Videos can be up to ' + VIDEO_MAX_MB + ' MB';
+				if (!VIDEO_TYPES[m.file.type]) throw new Error('isn\'t a video type we take. Use MP4, WebM or MOV.');
+				if (!canShrink()) throw new Error(tooBig + ', and this browser can\'t shrink it. Try a shorter clip, or record at 1080p.');
+				const seconds = await probeDuration(m.file);
+				if (seconds > VIDEO_MAX_SECONDS + 0.5) {
+					throw new Error('is ' + Math.round(seconds) + ' seconds long. Videos can be up to ' + VIDEO_MAX_SECONDS + ' seconds.');
+				}
+				m.status = 'big';
+				return null;
+			}
+
+			function startShrink(m) {
+				m.status = 'shrinking';
+				m.progress = 0;
+				m.job = { onProgress: function (p) { m.progress = p; showShrinkProgress(m); } };
+				renderMedia(m.id, 'cancel');
+				track(m, [], function () {
+					return shrinkVideo(m.file, m.job).then(function (small) {
+						m.shrunkFrom = m.file.size;
+						return prepareVideo(small);
+					});
+				});
+			}
+
+			// Under a too-big video: the offer to shrink it, then its progress
+			function shrinkBox(m, name) {
+				const box = el('div', 'composerShrink');
+				if (m.status === 'big') {
+					box.appendChild(el('p', 'composerShrinkText', 'Over the ' + VIDEO_MAX_MB + ' MB limit. Shrink it to 1080p here? It stays on your device until you post.'));
+					const go = button('crwdSmallButton composerShrinkButton', 'Shrink It', 'Shrink ' + name);
+					go.dataset.action = 'shrink';
+					go.disabled = busy;
+					box.appendChild(go);
+				} else {
+					const pct = Math.round((m.progress || 0) * 100);
+					box.appendChild(el('p', 'composerShrinkText', 'Shrinking… ' + pct + '%'));
+					const bar = el('div', 'composerShrinkBar');
+					bar.setAttribute('role', 'progressbar');
+					bar.setAttribute('aria-label', 'Shrinking ' + name);
+					bar.setAttribute('aria-valuemin', '0');
+					bar.setAttribute('aria-valuemax', '100');
+					bar.setAttribute('aria-valuenow', String(pct));
+					const fill = el('span', 'composerShrinkFill');
+					fill.style.width = pct + '%';
+					bar.appendChild(fill);
+					const stop = button('crwdLinkButton composerShrinkCancel', 'Cancel', 'Stop shrinking ' + name);
+					stop.dataset.action = 'cancel';
+					box.append(bar, el('p', 'crwdHint composerShrinkHint', 'Keep this page open while it works.'), stop);
+				}
+				return box;
+			}
+
+			// Progress updates touch only the bar, so typing in a caption isn't interrupted
+			function showShrinkProgress(m) {
+				const li = mediaList.querySelector('[data-id="' + m.id + '"]');
+				if (!li) return;
+				const pct = Math.round(m.progress * 100);
+				const bar = li.querySelector('.composerShrinkBar');
+				const fill = li.querySelector('.composerShrinkFill');
+				const text = li.querySelector('.composerShrinkText');
+				if (bar) bar.setAttribute('aria-valuenow', String(pct));
+				if (fill) fill.style.width = pct + '%';
+				if (text) text.textContent = 'Shrinking… ' + pct + '%';
+			}
 
 			// Re-rendering the list replaces its buttons; put focus back on the same spot if it was in there
 			function keepFocus(fn) {
@@ -520,7 +753,9 @@
 				if (!spot) return;
 				const again = mediaList.querySelector('[data-id="' + spot.id + '"]');
 				if (!again) return;
-				const target = spot.caption ? again.querySelector('.composerCaption') : again.querySelector('[data-action="' + spot.action + '"]');
+				// (a button that's gone, like Cancel after shrinking ends, hands focus to the tile's first button)
+				const target = spot.caption ? again.querySelector('.composerCaption')
+					: again.querySelector('[data-action="' + spot.action + '"]:not(:disabled)') || again.querySelector('[data-action]:not(:disabled)');
 				if (target) {
 					target.focus();
 					if (spot.caption && spot.pos != null) target.setSelectionRange(spot.pos, spot.pos);
@@ -780,6 +1015,17 @@
 				if (!t) { kit.showError(err, 'Give your post a title.'); title.input.focus(); return; }
 				if (!media.length && !o) { kit.showError(err, 'Add an opening or at least one shot.'); opener.input.focus(); return; }
 
+				// A too-big video has to be shrunk (or removed) first
+				function waitingToShrink() {
+					const waiting = media.find(function (m) { return m.status === 'big'; });
+					if (!waiting) return false;
+					kit.showError(err, 'Shrink or remove the video that\'s over ' + VIDEO_MAX_MB + ' MB first.');
+					const go = mediaList.querySelector('[data-id="' + waiting.id + '"] [data-action="shrink"]');
+					if (go) go.focus();
+					return true;
+				}
+				if (waitingToShrink()) return;
+
 				busy = true;
 				kit.setBusy(submit, true, 'Preparing…');
 				form.classList.add('isBusy');
@@ -787,6 +1033,12 @@
 
 				// Wait for anything still being prepared
 				await Promise.all(media.map(function (m) { return m.ready; }));
+				if (media.some(function (m) { return m.status === 'big'; })) { // turned out too big while waiting
+					busy = false; form.classList.remove('isBusy'); renderMedia();
+					kit.setBusy(submit, false, 'Post');
+					waitingToShrink();
+					return;
+				}
 				if (!media.length && !o) {
 					busy = false; form.classList.remove('isBusy'); renderMedia();
 					kit.setBusy(submit, false, 'Post');
@@ -857,7 +1109,11 @@
 
 		function cleanup() {
 			open_ = false;
-			media.forEach(function (m) { m.removed = true; if (m.previewUrl) URL.revokeObjectURL(m.previewUrl); });
+			media.forEach(function (m) {
+				m.removed = true;
+				if (m.job && m.job.cancel) m.job.cancel(); // stop shrinking a video nobody will post
+				if (m.previewUrl) URL.revokeObjectURL(m.previewUrl);
+			});
 		}
 	}
 

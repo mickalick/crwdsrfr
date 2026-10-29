@@ -646,3 +646,60 @@
 	opacity: 0;
 	pointer-events: none;
 }
+
+/* ---------- Too-big video: "Shrink It" offer + progress ---------- */
+.composerMediaWorking.isStill {
+	animation: none;
+	color: #FF6262;
+}
+
+.composerShrink {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.composerShrink[hidden] {
+	display: none;
+}
+
+.composerShrinkText {
+	margin: 0;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #ADADAD;
+}
+
+.composerShrinkBar {
+	position: relative;
+	width: 100%;
+	height: 6px;
+	border-radius: 3px;
+	background: #333;
+	overflow: hidden;
+}
+
+.composerShrinkFill {
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: 0;
+	background: #62CBB8;
+	transition: width 200ms linear;
+}
+
+.composerShrink .composerShrinkHint {
+	margin: 0;
+}
+
+/* Red, and stays red on hover (.crwdLinkButton:hover turns links blue) */
+.composerShrink .crwdLinkButton.composerShrinkCancel,
+.composerShrink .crwdLinkButton.composerShrinkCancel:hover {
+	color: #FF6262;
+	font-size: 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.composerShrinkFill { transition: none; }
+}
