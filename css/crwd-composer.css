@@ -638,7 +638,7 @@
 	}
 
 	.composerMediaTool:not(:disabled):hover {
-		border-color: #62CBB8;
+		border-color: #F9F976;
 	}
 
 	.composerMediaTool.isDanger:not(:disabled):hover {
