@@ -322,16 +322,61 @@
 	outline-offset: 2px;
 }
 
-/* Chevrons drawn with borders, so no extra icon files are needed */
-.composerArrow {
-	width: 8px;
-	height: 8px;
-	border: solid currentColor;
-	border-width: 2px 2px 0 0;
+/* Drag handle: as tall as the two arrow buttons it replaced, six dots drawn with gradients (no icon file) */
+.composerDragHandle {
+	height: 68px;
+	cursor: grab;
+	touch-action: none; /* a drag here moves the shot instead of scrolling the page */
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-.composerArrow.isUp   { transform: translateY(2px) rotate(-45deg); }
-.composerArrow.isDown { transform: translateY(-2px) rotate(135deg); }
+.composerDragHandle[hidden] {
+	display: none;
+}
+
+.composerGrip {
+	width: 10px;
+	height: 16px;
+	background: radial-gradient(circle, currentColor 1.5px, transparent 2px) 0 0 / 5px 5.5px;
+	opacity: 0.8;
+}
+
+/* While dragging: the picked-up tile floats above the others, which slide out of its way */
+.composerMediaList.isSorting {
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: grabbing;
+}
+
+.composerMediaList.isSorting .composerDragHandle {
+	cursor: grabbing;
+}
+
+.composerMediaItem {
+	transition: transform 160ms ease;
+}
+
+.composerMediaItem.isDragging {
+	position: relative;
+	z-index: 2;
+	transition: none;
+	border-color: #F9F976;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* For screen readers only: drag instructions + "moved to position 2 of 4" */
+.composerSrOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
 
 /* Same clear.svg as the modal's close button */
 .composerRemove {
@@ -701,5 +746,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.composerShrinkFill { transition: none; }
+	.composerShrinkFill,
+	.composerMediaItem { transition: none; }
 }

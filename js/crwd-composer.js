@@ -33,7 +33,7 @@
 	const VIDEO_MAX_MB = 50;          // same as the post-media storage limit
 	const VIDEO_TYPES = { 'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov' };
 	// Shrinking videos that are over VIDEO_MAX_MB (see shrinkVideo)
-	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1.63.0/+esm'; // pin to an exact version before launch
+	const MEDIABUNNY_URL = 'https://cdn.jsdelivr.net/npm/mediabunny@1/+esm'; // pin to an exact version before launch
 	const SHRINK_SHORT_SIDE = 1080;   // 1080p: the shorter side, so portrait phone clips work too
 	const SHRINK_MAX_BITRATE = 5e6;   // 5 Mbps: 60 s ≈ 38 MB
 	const SHRINK_MIN_BITRATE = 1.5e6;
@@ -434,11 +434,15 @@
 			addLabel.append(addText, fileInput);
 			const mediaHint = el('span', 'crwdHint', 'Up to ' + MAX_MEDIA + ' photos or videos. Videos can be up to '
 				+ VIDEO_MAX_SECONDS + ' seconds and ' + VIDEO_MAX_MB + ' MB' + (canShrink() ? ' (bigger ones can be shrunk here).' : '.'));
+			const dragHelp = el('span', 'composerSrOnly', 'Drag to reorder, or use the up and down arrow keys.');
+			dragHelp.id = 'composerDragHelp';
+			const dragStatus = el('span', 'composerSrOnly');
+			dragStatus.setAttribute('role', 'status');
 			const mediaNote = el('p', 'composerMediaNote');
 			mediaNote.setAttribute('role', 'status');
 			mediaNote.hidden = true;
 			// Limits hint, then the Add button + its note, all above the shots, so the list grows downward from them
-			mediaWrap.append(mediaLabel, mediaHint, addLabel, mediaNote, mediaList);
+			mediaWrap.append(mediaLabel, mediaHint, addLabel, mediaNote, mediaList, dragHelp, dragStatus);
 			markOptional(mediaWrap);
 
 			// --- Post cover: optional, picked on the shots themselves.
@@ -519,6 +523,7 @@
 			}
 
 			function renderMedia(focusId, focusAction) {
+				if (sorting) { sorting.rerender = true; return; } // runs when the drag ends
 				renderCoverOptions();
 				mediaList.replaceChildren();
 				media.forEach(function (m, i) {
@@ -574,18 +579,17 @@
 					}
 
 					const tools = el('div', 'composerMediaTools');
-					const up = button('composerMediaTool', null, 'Move ' + kind.toLowerCase() + ' ' + (i + 1) + ' up');
-					up.appendChild(el('span', 'composerArrow isUp'));
-					up.disabled = i === 0;
-					up.dataset.action = 'up';
-					const down = button('composerMediaTool', null, 'Move ' + kind.toLowerCase() + ' ' + (i + 1) + ' down');
-					down.appendChild(el('span', 'composerArrow isDown'));
-					down.disabled = i === media.length - 1;
-					down.dataset.action = 'down';
+					// Drag handle (mouse + touch); arrow keys move it too. Only shown when there's something to reorder.
+					const handle = button('composerMediaTool composerDragHandle', null, 'Move ' + kind.toLowerCase() + ' ' + (i + 1));
+					handle.appendChild(el('span', 'composerGrip'));
+					handle.setAttribute('aria-describedby', 'composerDragHelp');
+					handle.dataset.action = 'drag';
+					handle.hidden = media.length < 2;
+					handle.disabled = busy;
 					const remove = button('composerMediaTool isDanger', null, 'Remove ' + kind.toLowerCase() + ' ' + (i + 1));
 					remove.appendChild(el('span', 'composerRemove'));
 					remove.dataset.action = 'remove';
-					tools.append(up, down, remove);
+					tools.append(handle, remove);
 
 					li.append(preview, main, tools);
 					mediaList.appendChild(li);
@@ -599,9 +603,10 @@
 				// Keep the keyboard where it was after a move/remove
 				if (focusId != null) {
 					const li = mediaList.querySelector('[data-id="' + focusId + '"]');
-					let target = li && li.querySelector('[data-action="' + focusAction + '"]:not(:disabled)');
-					if (!target && li) target = li.querySelector('[data-action]:not(:disabled)');
-					if (!target) target = mediaList.querySelector('[data-action]:not(:disabled)') || fileInput;
+					const usable = ':not(:disabled):not([hidden])';
+					let target = li && li.querySelector('[data-action="' + focusAction + '"]' + usable);
+					if (!target && li) target = li.querySelector('[data-action]' + usable);
+					if (!target) target = mediaList.querySelector('[data-action]' + usable) || fileInput;
 					target.focus();
 				}
 			}
@@ -613,9 +618,7 @@
 				const i = media.findIndex(function (m) { return m.id === id; });
 				if (i === -1) return;
 				const action = b.dataset.action;
-				if (action === 'up' && i > 0) { media.splice(i - 1, 0, media.splice(i, 1)[0]); renderMedia(id, 'up'); }
-				else if (action === 'down' && i < media.length - 1) { media.splice(i + 1, 0, media.splice(i, 1)[0]); renderMedia(id, 'down'); }
-				else if (action === 'shrink' && media[i].status === 'big') { setMediaNote(''); startShrink(media[i]); }
+				if (action === 'shrink' && media[i].status === 'big') { setMediaNote(''); startShrink(media[i]); }
 				else if (action === 'cancel' && media[i].status === 'shrinking') {
 					const m = media[i];
 					if (m.job.cancel) m.job.cancel();
@@ -631,6 +634,125 @@
 					setMediaNote('');
 				}
 			});
+
+			// ---------- reordering: drag the handle, or arrow keys on it ----------
+
+			let sorting = null; // the drag in progress
+
+			function announce(text) {
+				dragStatus.textContent = '';
+				setTimeout(function () { dragStatus.textContent = text; }, 50); // re-announce the same words too
+			}
+
+			function movedTo(id) {
+				const i = media.findIndex(function (m) { return m.id === id; });
+				announce('Shot moved to position ' + (i + 1) + ' of ' + media.length + '.');
+			}
+
+			mediaList.addEventListener('keydown', function (e) {
+				const handle = e.target.closest('.composerDragHandle');
+				if (!handle || busy || sorting || (e.key !== 'ArrowUp' && e.key !== 'ArrowDown')) return;
+				e.preventDefault();
+				const id = Number(handle.closest('.composerMediaItem').dataset.id);
+				const i = media.findIndex(function (m) { return m.id === id; });
+				const to = e.key === 'ArrowUp' ? i - 1 : i + 1;
+				if (to < 0 || to >= media.length) return;
+				media.splice(to, 0, media.splice(i, 1)[0]);
+				renderMedia(id, 'drag');
+				movedTo(id);
+			});
+
+			// The nearest box that scrolls (the modal), so dragging near its edge can scroll it
+			function scrollBox(node) {
+				for (let n = node.parentElement; n && n !== document.body; n = n.parentElement) {
+					const y = getComputedStyle(n).overflowY;
+					if ((y === 'auto' || y === 'scroll') && n.scrollHeight > n.clientHeight) return n;
+				}
+				return document.scrollingElement || document.documentElement;
+			}
+
+			mediaList.addEventListener('pointerdown', function (e) {
+				const handle = e.target.closest('.composerDragHandle');
+				if (!handle || busy || sorting || e.button > 0) return;
+				e.preventDefault(); // no text selection / page scroll while dragging
+				handle.focus({ preventScroll: true });
+				const li = handle.closest('.composerMediaItem');
+				const box = scrollBox(mediaList);
+				sorting = { li: li, handle: handle, id: Number(li.dataset.id), pointerId: e.pointerId,
+					startY: e.clientY, y: e.clientY, box: box, startScroll: box.scrollTop, frame: 0, rerender: false };
+				try { handle.setPointerCapture(e.pointerId); } catch (ex) {}
+				li.classList.add('isDragging');
+				mediaList.classList.add('isSorting');
+				sorting.frame = requestAnimationFrame(edgeScroll);
+			});
+
+			mediaList.addEventListener('pointermove', function (e) {
+				if (!sorting || e.pointerId !== sorting.pointerId) return;
+				sorting.y = e.clientY;
+				follow();
+			});
+			mediaList.addEventListener('pointerup', function (e) { if (sorting && e.pointerId === sorting.pointerId) endDrag(true); });
+			mediaList.addEventListener('pointercancel', function (e) { if (sorting && e.pointerId === sorting.pointerId) endDrag(false); });
+			mediaList.addEventListener('lostpointercapture', function (e) { if (sorting && e.pointerId === sorting.pointerId) endDrag(true); });
+
+			// Keeps the dragged tile under the pointer, and swaps it past any neighbor whose middle it crosses
+			function follow() {
+				const d = sorting, li = d.li;
+				function offset() { return d.y - d.startY + (d.box.scrollTop - d.startScroll); }
+				function middle(n) { return n.offsetTop + n.offsetHeight / 2; }
+				for (let guard = 0; guard < MAX_MEDIA; guard++) {
+					const mid = li.offsetTop + offset() + li.offsetHeight / 2;
+					const next = li.nextElementSibling, prev = li.previousElementSibling;
+					let other = null;
+					if (next && mid > middle(next)) other = next;
+					else if (prev && mid < middle(prev)) other = prev;
+					if (!other) break;
+					const before = li.offsetTop, otherBefore = other.offsetTop;
+					// Always move the neighbor, never the dragged tile: moving it would drop the pointer capture
+					if (other === next) mediaList.insertBefore(next, li); else mediaList.insertBefore(prev, li.nextSibling);
+					d.startY += li.offsetTop - before; // the tile's slot moved; keep it under the pointer
+					// slide the neighbor into its new spot instead of jumping
+					other.style.transition = 'none';
+					other.style.transform = 'translateY(' + (otherBefore - other.offsetTop) + 'px)';
+					other.getBoundingClientRect();
+					other.style.transition = '';
+					other.style.transform = '';
+				}
+				li.style.transform = 'translateY(' + offset() + 'px)';
+			}
+
+			// Scrolls the modal while the pointer is held near its top or bottom edge
+			function edgeScroll() {
+				if (!sorting) return;
+				const d = sorting;
+				const page = d.box === document.scrollingElement || d.box === document.documentElement;
+				const r = page ? { top: 0, bottom: window.innerHeight } : d.box.getBoundingClientRect();
+				const zone = 56;
+				let step = 0;
+				if (d.y < r.top + zone) step = -Math.ceil((r.top + zone - d.y) / 4);
+				else if (d.y > r.bottom - zone) step = Math.ceil((d.y - (r.bottom - zone)) / 4);
+				if (step) {
+					const was = d.box.scrollTop;
+					d.box.scrollTop = was + step;
+					if (d.box.scrollTop !== was) follow();
+				}
+				d.frame = requestAnimationFrame(edgeScroll);
+			}
+
+			function endDrag(keep) {
+				const d = sorting;
+				if (!d) return;
+				sorting = null;
+				cancelAnimationFrame(d.frame);
+				mediaList.classList.remove('isSorting');
+				const order = Array.from(mediaList.children).map(function (li) { return Number(li.dataset.id); });
+				const before = media.map(function (m) { return m.id; }).join();
+				// (a shot added during the drag isn't on screen yet: it goes last, as usual)
+				function slot(m) { const i = order.indexOf(m.id); return i === -1 ? Infinity : i; }
+				if (keep) media.sort(function (a, b) { return slot(a) - slot(b); });
+				renderMedia(d.id, 'drag'); // fresh tiles in the saved order (a cancel puts them back)
+				if (keep && media.map(function (m) { return m.id; }).join() !== before) movedTo(d.id);
+			}
 
 			// One at a time, so a phone isn't decoding ten big photos at once
 			let queue = Promise.resolve();
@@ -755,7 +877,7 @@
 				if (!again) return;
 				// (a button that's gone, like Cancel after shrinking ends, hands focus to the tile's first button)
 				const target = spot.caption ? again.querySelector('.composerCaption')
-					: again.querySelector('[data-action="' + spot.action + '"]:not(:disabled)') || again.querySelector('[data-action]:not(:disabled)');
+					: again.querySelector('[data-action="' + spot.action + '"]:not(:disabled):not([hidden])') || again.querySelector('[data-action]:not(:disabled):not([hidden])');
 				if (target) {
 					target.focus();
 					if (spot.caption && spot.pos != null) target.setSelectionRange(spot.pos, spot.pos);
