@@ -3352,6 +3352,56 @@
     "manual": true,
     "id": "shooters-2026-10-31-halloween-jigitz"
   },
+  {
+    "title": "YOURS TRULY: A Night of Jazz & R&B",
+    "performers": [
+      {
+        "name": "Anthony Saxson",
+        "headliner": true
+      },
+      {
+        "name": "Frank Alowishus",
+        "headliner": false
+      },
+      {
+        "name": "DJ Leek",
+        "headliner": false
+      },
+      {
+        "name": "Bobby Booshay",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-05",
+    "time": "19:00",
+    "doors": null,
+    "price": "$24",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-11-05-yours-truly"
+  },
+  {
+    "title": "Night Cap: Bobby Booshay",
+    "performers": [
+      {
+        "name": "Bobby Booshay",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-06",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-11-06-bobby-booshay"
+  },
 
   
 
@@ -5124,6 +5174,25 @@
     "id": "house-of-blues-2027-01-09-holiday-hangover"
   },
   {
+    "title": "Alexandra Kay - The One Woman Show",
+    "performers": [
+      {
+        "name": "Alexandra Kay",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-31",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-31-alexandra-kay"
+  },
+  {
     "title": "Badfish - Tribute to Sublime",
     "performers": [
       {
@@ -5181,6 +5250,25 @@
     "id": "house-of-blues-2027-02-20-spin-doctors"
   },
   {
+    "title": "Bethel Music 2027 Tour",
+    "performers": [
+      {
+        "name": "Bethel Music",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-04",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-04-bethel-music"
+  },
+  {
     "title": "The Mary Wallopers",
     "performers": [
       {
@@ -5198,6 +5286,44 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-03-14-the-mary-wallopers"
+  },
+  {
+    "title": "Beast in Black",
+    "performers": [
+      {
+        "name": "Beast in Black",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-15",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-15-beast-in-black"
+  },
+  {
+    "title": "Big Big Train",
+    "performers": [
+      {
+        "name": "Big Big Train",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-19-big-big-train"
   },
   {
     "title": "Lucky Daye",
@@ -5219,6 +5345,25 @@
     "id": "house-of-blues-2027-03-23-lucky-daye"
   },
   {
+    "title": "Gaelic Storm",
+    "performers": [
+      {
+        "name": "Gaelic Storm",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-24-gaelic-storm"
+  },
+  {
     "title": "VNV Nation",
     "performers": [
       {
@@ -5236,6 +5381,25 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-04-03-vnv-nation"
+  },
+  {
+    "title": "Brakence",
+    "performers": [
+      {
+        "name": "Brakence",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-04",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-04-04-brakence"
   },
   {
     "title": "Alaska Thunderfuck",
@@ -5276,6 +5440,25 @@
     "id": "house-of-blues-2027-04-13-the-interrupters"
   },
   {
+    "title": "Frank Turner & the Sleeping Souls",
+    "performers": [
+      {
+        "name": "Frank Turner & the Sleeping Souls",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-11",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-05-11-frank-turner"
+  },
+  {
     "title": "The Airborne Toxic Event",
     "performers": [
       {
@@ -5293,6 +5476,25 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-05-24-the-airborne-toxic-event"
+  },
+  {
+    "title": "Mat Kearney",
+    "performers": [
+      {
+        "name": "Mat Kearney",
+        "headliner": true
+      }
+    ],
+    "date": "2027-11-10",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-11-10-mat-kearney"
   },
 
 
@@ -5518,227 +5720,7 @@
 
   
   
-  {
-    "title": "Ronnie Clinton",
-    "performers": [
-      {
-        "name": "Ronnie Clinton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-17",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-17-ronnie-clinton"
-  },
-  {
-    "title": "Follow the Sun",
-    "performers": [
-      {
-        "name": "Follow the Sun",
-        "headliner": true
-      },
-      {
-        "name": "4Locos",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-18",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-18-follow-the-sun"
-  },
-  {
-    "title": "Hair Nation",
-    "performers": [
-      {
-        "name": "Hair Nation",
-        "headliner": true
-      },
-      {
-        "name": "Big in Japan",
-        "headliner": false
-      }
-    ],
-    "date": "2026-09-19",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-19-hair-nation"
-  },
-  {
-    "title": "Justo & The Havana Nights",
-    "performers": [
-      {
-        "name": "Justo & The Havana Nights",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-24",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-24-justo-the-havana-nights"
-  },
-  {
-    "title": "Ace Molar",
-    "performers": [
-      {
-        "name": "Ace Molar",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-25-ace-molar"
-  },
-  {
-    "title": "Old Skool",
-    "performers": [
-      {
-        "name": "Old Skool",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-09-26-old-skool"
-  },
-  {
-    "title": "Mallory & Comp.",
-    "performers": [
-      {
-        "name": "Mallory & Comp.",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-01",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-01-mallory-comp"
-  },
-  {
-    "title": "Higher",
-    "performers": [
-      {
-        "name": "Higher",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-02",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-02-higher"
-  },
-  {
-    "title": "Four Horsemen",
-    "performers": [
-      {
-        "name": "Four Horsemen",
-        "headliner": true
-      },
-      {
-        "name": "Hair Nation",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-03",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": "https://tinyurl.com/fourhorsemen-local",
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-03-four-horsemen"
-  },
-  {
-    "title": "Rob Samay",
-    "performers": [
-      {
-        "name": "Rob Samay",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-08",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-08-rob-samay"
-  },
-  {
-    "title": "Trailer Park Ninjas",
-    "performers": [
-      {
-        "name": "Trailer Park Ninjas",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-09-trailer-park-ninjas"
-  },
+  
   {
     "title": "1988/Disco Inferno",
     "performers": [
@@ -5932,6 +5914,254 @@
     "source": "manual",
     "manual": true,
     "id": "local-bar-strongsville-2026-10-31-boaterhead"
+  },
+  {
+    "title": "Chris Twin B Project",
+    "performers": [
+      {
+        "name": "Chris Twin B Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-05",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-05-chris-twin-b-project"
+  },
+  {
+    "title": "4Locos & Saints of Crue",
+    "performers": [
+      {
+        "name": "4Locos",
+        "headliner": true
+      },
+      {
+        "name": "Saints of Crue",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-06",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-06-4locos"
+  },
+  {
+    "title": "ESC4P3 w/ Billy Morris",
+    "performers": [
+      {
+        "name": "ESC4P3",
+        "headliner": true
+      },
+      {
+        "name": "Billy Morris",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-07",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": "https://tinyurl.com/ESCAPE-BILLYMORRIS",
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-07-escape"
+  },
+  {
+    "title": "Hayden Grove",
+    "performers": [
+      {
+        "name": "Hayden Grove",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-12",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-12-hayden-grove"
+  },
+  {
+    "title": "Jam Machiine w/ Serious FM",
+    "performers": [
+      {
+        "name": "Jam Machiine",
+        "headliner": true
+      },
+      {
+        "name": "Serious FM",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-13",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-13-jam-machiine"
+  },
+  {
+    "title": "Panama",
+    "performers": [
+      {
+        "name": "Panama",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-14-panama"
+  },
+  {
+    "title": "Justo & the Havana Nights w/ Laura C & The Salsa Enthusiasts",
+    "performers": [
+      {
+        "name": "Laura C & The Salsa Enthusiasts",
+        "headliner": false
+      },
+      {
+        "name": "Justo & The Havana Nights",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-19",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-19-just-the-havana-nights"
+  },
+  {
+    "title": "Bronx Country",
+    "performers": [
+      {
+        "name": "Bronx Country",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-20-bronx-country"
+  },
+  {
+    "title": "Old Skool",
+    "performers": [
+      {
+        "name": "Old Skool",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-21-old-skool"
+  },
+  {
+    "title": "Boaterhead",
+    "performers": [
+      {
+        "name": "Boaterhead",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-25",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-25-boaterhead"
+  },
+  {
+    "title": "Custard Pie",
+    "performers": [
+      {
+        "name": "Custard Pie",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-27-custard-pie"
+  },
+  {
+    "title": "Posty",
+    "performers": [
+      {
+        "name": "Posty",
+        "headliner": true
+      },
+      {
+        "name": "The Small Things",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": "https://tinyurl.com/LOCAL-POSTY-SMALLTHINGS",
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-11-28-posty"
   },
 
 
@@ -6545,10 +6775,10 @@
     "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene"
   },
   {
-    "title": "Blaming Willy",
+    "title": "Blame Willy",
     "performers": [
       {
-        "name": "Blaming Willy",
+        "name": "Blame Willy",
         "headliner": true
       }
     ],
@@ -6561,7 +6791,7 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-10-30-blaming-willy"
+    "id": "spirits-willoughby-2026-10-30-blame-willy"
   },
   {
     "title": "3 Day Weekend",
@@ -6638,6 +6868,101 @@
     "source": "manual",
     "manual": true,
     "id": "spirits-willoughby-2026-11-07-the-shizz"
+  },
+  {
+    "title": "Ted Riser",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-13",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-13-ted-riser"
+  },
+  {
+    "title": "Superbugs",
+    "performers": [
+      {
+        "name": "Superbugs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-14-superbugs"
+  },
+  {
+    "title": "Cleveland Blues Society Jam",
+    "performers": [
+      {
+        "name": "Superbugs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-19",
+    "time": "19:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-19-cleveland-blues-society"
+  },
+  {
+    "title": "DB Project",
+    "performers": [
+      {
+        "name": "DB Project",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-20-db-project"
+  },
+  {
+    "title": "BLUES DEVILLE",
+    "performers": [
+      {
+        "name": "BLUES DEVILLE",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-21-blues-deville"
   },
   {
     "title": "Larry Haws & the Octopus from Louisiana",
@@ -6855,6 +7180,82 @@
     "source": "manual",
     "manual": true,
     "id": "treehouse-2026-12-30-austin-hamilton"
+  },
+  {
+    "title": "Ray Flanagan",
+    "performers": [
+      {
+        "name": "Ray Flanagan",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-06",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2027-01-06-ray-flanagan"
+  },
+  {
+    "title": "Austin Walkin' Cane",
+    "performers": [
+      {
+        "name": "Austin Walkin' Cane",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-13",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2027-01-13-austin-walkin-cane"
+  },
+  {
+    "title": "Thor Platter",
+    "performers": [
+      {
+        "name": "Thor Platter",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-20",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2027-01-20-thor-platter"
+  },
+  {
+    "title": "Ben Traverse",
+    "performers": [
+      {
+        "name": "Ben Traverse",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-27",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "treehouse",
+    "source": "manual",
+    "manual": true,
+    "id": "treehouse-2027-01-27-ben-traverse"
   },
 
 
@@ -12132,23 +12533,15 @@
 
   
   {
-    "title": "Chris Pulse / Bron Xeno / Disco Stitch",
+    "title": "Beats of the 216",
     "performers": [
       {
-        "name": "Chris Pulse",
+        "name": "Beats of the 216",
         "headliner": true
-      },
-      {
-        "name": "Bron Xeno",
-        "headliner": false
-      },
-      {
-        "name": "Disco Stitch",
-        "headliner": false
       }
     ],
-    "date": "2026-10-24",
-    "time": "21:00",
+    "date": "2026-10-30",
+    "time": null,
     "doors": null,
     "price": "Free",
     "eventUrl": null,
@@ -12156,7 +12549,26 @@
     "venueId": "riffs",
     "source": "manual",
     "manual": true,
-    "id": "riffs-2026-10-24-chris-pulse"
+    "id": "riffs-2026-10-30-beats-of-the-216"
+  },
+  {
+    "title": "NAFAN'S FREAK SHOW HALLOWEEN EXTRAVAGANZA & COSTUME CONTEST",
+    "performers": [
+      {
+        "name": "Nafan",
+        "headliner": true
+      }
+    ],
+    "date": "2026-10-31",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "riffs",
+    "source": "manual",
+    "manual": true,
+    "id": "riffs-2026-10-31-halloween-extravaganza"
   },
 
 
