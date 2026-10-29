@@ -2351,173 +2351,6 @@
       ]
     },
     {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-10-22-dog-water",
-      "genres": [
-        "rock"
-      ]
-    },
-    {
-      "title": "Kristine Jackson",
-      "performers": [
-        {
-          "name": "Kristine Jackson",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-22-kristine-jackson",
-      "genres": []
-    },
-    {
-      "title": "Rene Vaca",
-      "performers": [
-        {
-          "name": "Rene Vaca",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-22-rene-vaca",
-      "genres": []
-    },
-    {
-      "title": "Ronnie Szucs",
-      "performers": [
-        {
-          "name": "Ronnie Szucs",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-22-ronnie-szucs",
-      "genres": []
-    },
-    {
-      "title": "James Douglas",
-      "performers": [
-        {
-          "name": "James Douglas",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-10-22-james-douglas",
-      "genres": [
-        "folk-roots",
-        "blues"
-      ]
-    },
-    {
-      "title": "Ted Riser & Open Band Night",
-      "performers": [
-        {
-          "name": "Ted Riser",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-22-ted-riser",
-      "genres": [
-        "singer-songwriter"
-      ]
-    },
-    {
-      "title": "Howl-ween Costume Party",
-      "performers": [
-        {
-          "name": "Howl-ween Costume Party",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-10-22-howl-ween",
-      "genres": []
-    },
-    {
-      "title": "Tricia Crane",
-      "performers": [
-        {
-          "name": "Tricia Crane",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-22",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-22-tricia-crane",
-      "genres": []
-    },
-    {
       "id": "grog-shop-2026-10-22-vincent-neil-emerson",
       "title": "Vincent Neil Emerson",
       "venueId": "grog-shop",
@@ -3065,6 +2898,173 @@
       "genres": []
     },
     {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-10-22-dog-water",
+      "genres": [
+        "rock"
+      ]
+    },
+    {
+      "title": "Kristine Jackson",
+      "performers": [
+        {
+          "name": "Kristine Jackson",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-22-kristine-jackson",
+      "genres": []
+    },
+    {
+      "title": "Rene Vaca",
+      "performers": [
+        {
+          "name": "Rene Vaca",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-22-rene-vaca",
+      "genres": []
+    },
+    {
+      "title": "Ronnie Szucs",
+      "performers": [
+        {
+          "name": "Ronnie Szucs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-22-ronnie-szucs",
+      "genres": []
+    },
+    {
+      "title": "James Douglas",
+      "performers": [
+        {
+          "name": "James Douglas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-10-22-james-douglas",
+      "genres": [
+        "folk-roots",
+        "blues"
+      ]
+    },
+    {
+      "title": "Ted Riser & Open Band Night",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-22-ted-riser",
+      "genres": [
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "Howl-ween Costume Party",
+      "performers": [
+        {
+          "name": "Howl-ween Costume Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-22-howl-ween",
+      "genres": []
+    },
+    {
+      "title": "Tricia Crane",
+      "performers": [
+        {
+          "name": "Tricia Crane",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-22",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-22-tricia-crane",
+      "genres": []
+    },
+    {
       "id": "bop-stop-2026-10-23-blue-lunch-bop-stop",
       "title": "Blue Lunch",
       "venueId": "bop-stop",
@@ -3159,291 +3159,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Punk Metal Ect",
-      "performers": [
-        {
-          "name": "Punk Metal Ect",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-10-23-punk-metal-ect",
-      "genres": []
-    },
-    {
-      "title": "Eric Burke",
-      "performers": [
-        {
-          "name": "Eric Burke",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-10-23-eric-burke",
-      "genres": []
-    },
-    {
-      "title": "Mal Barron Trio",
-      "performers": [
-        {
-          "name": "Mal Barron Trio",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nightjar",
-      "source": "manual",
-      "manual": true,
-      "id": "nightjar-2026-10-23-mal-barron-trio",
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "title": "Ohio Drifters",
-      "performers": [
-        {
-          "name": "Ohio Drifters",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-23-ohio-drifters",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Lauren Alaina",
-      "performers": [
-        {
-          "name": "Lauren Alaina",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-23-lauren-alaina",
-      "genres": []
-    },
-    {
-      "title": "Country Redford",
-      "performers": [
-        {
-          "name": "Country Redford",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-23-country-redford",
-      "genres": [
-        "country",
-        "covers"
-      ]
-    },
-    {
-      "title": "Stamper Starr",
-      "performers": [
-        {
-          "name": "Stamper Starr",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-23-stamper-starr",
-      "genres": [
-        "blues",
-        "classic",
-        "rock"
-      ]
-    },
-    {
-      "title": "TRICKY DICK AND THE COVER-UPS",
-      "performers": [
-        {
-          "name": "Tricky Dick and the Cover-Ups",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "time-warp",
-      "source": "manual",
-      "manual": true,
-      "id": "time-warp-2026-10-23-tricky-dick-and-the-cover-ups",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Hair Nation",
-      "performers": [
-        {
-          "name": "Hair Nation",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-10-23-hair-nation",
-      "genres": [
-        "metal",
-        "covers"
-      ]
-    },
-    {
-      "title": "Nu-Era",
-      "performers": [
-        {
-          "name": "Nu-Era",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-10-23-nu-era",
-      "genres": []
-    },
-    {
-      "title": "Ariq",
-      "performers": [
-        {
-          "name": "Ariq",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "22:00",
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bird-of-paradise",
-      "source": "manual",
-      "manual": true,
-      "id": "bird-of-paradise-2026-10-23-ariq",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "Sam Romano",
-      "performers": [
-        {
-          "name": "Sam Romano",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-23-sam-romano",
-      "genres": [
-        "singer-songwriter",
-        "acoustic"
-      ]
-    },
-    {
-      "title": "Gene Schwartz Band w/ The Props",
-      "performers": [
-        {
-          "name": "Gene Schwartz Band",
-          "headliner": true
-        },
-        {
-          "name": "The Props",
-          "headliner": false
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-10-23-gene-schwartz",
-      "genres": []
     },
     {
       "id": "grog-shop-2026-10-23-rellick",
@@ -3642,7 +3357,7 @@
       "genres": []
     },
     {
-      "id": "mahalls-2026-10-23-rocky-horror-picture-show",
+      "id": "mahalls-2026-10-23-rocky-horror-picture-show-2130",
       "title": "Rocky Horror Picture Show",
       "venueId": "mahalls",
       "date": "2026-10-23",
@@ -3659,7 +3374,8 @@
       "ticketUrl": "https://link.dice.fm/i435bfea8d7b",
       "source": "scrape",
       "manual": false,
-      "genres": []
+      "genres": [],
+      "addedAt": "2026-10-29T11:32:36.025Z"
     },
     {
       "id": "mahalls-2026-10-23-taylorween-an-all-taylor-swift-halloween-party",
@@ -4312,6 +4028,291 @@
       "genres": []
     },
     {
+      "title": "Punk Metal Ect",
+      "performers": [
+        {
+          "name": "Punk Metal Ect",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-10-23-punk-metal-ect",
+      "genres": []
+    },
+    {
+      "title": "Eric Burke",
+      "performers": [
+        {
+          "name": "Eric Burke",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-10-23-eric-burke",
+      "genres": []
+    },
+    {
+      "title": "Mal Barron Trio",
+      "performers": [
+        {
+          "name": "Mal Barron Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-23-mal-barron-trio",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "title": "Ohio Drifters",
+      "performers": [
+        {
+          "name": "Ohio Drifters",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-23-ohio-drifters",
+      "genres": [
+        "covers"
+      ]
+    },
+    {
+      "title": "Lauren Alaina",
+      "performers": [
+        {
+          "name": "Lauren Alaina",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-23-lauren-alaina",
+      "genres": []
+    },
+    {
+      "title": "Country Redford",
+      "performers": [
+        {
+          "name": "Country Redford",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-23-country-redford",
+      "genres": [
+        "country",
+        "covers"
+      ]
+    },
+    {
+      "title": "Stamper Starr",
+      "performers": [
+        {
+          "name": "Stamper Starr",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-23-stamper-starr",
+      "genres": [
+        "blues",
+        "classic",
+        "rock"
+      ]
+    },
+    {
+      "title": "TRICKY DICK AND THE COVER-UPS",
+      "performers": [
+        {
+          "name": "Tricky Dick and the Cover-Ups",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "time-warp",
+      "source": "manual",
+      "manual": true,
+      "id": "time-warp-2026-10-23-tricky-dick-and-the-cover-ups",
+      "genres": [
+        "covers"
+      ]
+    },
+    {
+      "title": "Hair Nation",
+      "performers": [
+        {
+          "name": "Hair Nation",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-10-23-hair-nation",
+      "genres": [
+        "metal",
+        "covers"
+      ]
+    },
+    {
+      "title": "Nu-Era",
+      "performers": [
+        {
+          "name": "Nu-Era",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-23-nu-era",
+      "genres": []
+    },
+    {
+      "title": "Ariq",
+      "performers": [
+        {
+          "name": "Ariq",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-23-ariq",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Sam Romano",
+      "performers": [
+        {
+          "name": "Sam Romano",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-23-sam-romano",
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ]
+    },
+    {
+      "title": "Gene Schwartz Band w/ The Props",
+      "performers": [
+        {
+          "name": "Gene Schwartz Band",
+          "headliner": true
+        },
+        {
+          "name": "The Props",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-23",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-10-23-gene-schwartz",
+      "genres": []
+    },
+    {
       "id": "spotlight-weekend-nights-fri-2026-10-23",
       "title": "Live Music, DJs, Special Nights, featuring...",
       "venueId": "spotlight-cle",
@@ -4558,427 +4559,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Cap Halloween Spooktacular",
-      "performers": [
-        {
-          "name": "Cap Halloween Spooktacular",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-10-24-cap-halloween-spooktacular",
-      "genres": []
-    },
-    {
-      "title": "Jesters Revenge",
-      "performers": [
-        {
-          "name": "Jesters Revenge",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-10-24-jesters-revenge",
-      "genres": []
-    },
-    {
-      "title": "Chez Damier",
-      "performers": [
-        {
-          "name": "Chez Damier",
-          "headliner": true
-        },
-        {
-          "name": "Andre Leone",
-          "headliner": false
-        },
-        {
-          "name": "Delish",
-          "headliner": false
-        },
-        {
-          "name": "Le Mew",
-          "headliner": false
-        },
-        {
-          "name": "MIKEONE",
-          "headliner": false
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "21:00",
-      "doors": null,
-      "price": "$15 - $25",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "crobar",
-      "source": "manual",
-      "manual": true,
-      "id": "crobar-2026-10-24-chez-damier",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "Tony K, Darren Frate & Steve Kortyka",
-      "performers": [
-        {
-          "name": "Tony K",
-          "headliner": true
-        },
-        {
-          "name": "Darren Frate",
-          "headliner": false
-        },
-        {
-          "name": "Steve Kortyka",
-          "headliner": false
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nightjar",
-      "source": "manual",
-      "manual": true,
-      "id": "nightjar-2026-10-24-tony-k",
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "title": "Huffman Acoustic",
-      "performers": [
-        {
-          "name": "Huffman Acoustic",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-24-huffman-acoustic",
-      "genres": [
-        "acoustic"
-      ]
-    },
-    {
-      "title": "Candlebox",
-      "performers": [
-        {
-          "name": "Candlebox",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-24-candlebox",
-      "genres": []
-    },
-    {
-      "title": "Emma Nicholas",
-      "performers": [
-        {
-          "name": "Emma Nicholas",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-10-24-emma-nicholas",
-      "genres": []
-    },
-    {
-      "title": "DJ Caffrey",
-      "performers": [
-        {
-          "name": "DJ Caffrey",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-10-24-dj-caffrey",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "Tricky Dick & The Cover Ups",
-      "performers": [
-        {
-          "name": "Tricky Dick & The Cover Ups",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-24-tricky-dick-the-cover-ups",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Halloween Party!!!",
-      "performers": [
-        {
-          "name": "Halloween Party",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-24-halloween-party",
-      "genres": []
-    },
-    {
-      "title": "Cows Giving Kerosene",
-      "performers": [
-        {
-          "name": "Cows Giving Kerosene",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene",
-      "genres": []
-    },
-    {
-      "title": "THAT 80'S BAND",
-      "performers": [
-        {
-          "name": "That 80's Band",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "time-warp",
-      "source": "manual",
-      "manual": true,
-      "id": "time-warp-2026-10-24-that-80-s-band",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Third Monkey",
-      "performers": [
-        {
-          "name": "Third Monkey",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-downtown",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-downtown-2026-10-24-third-monkey",
-      "genres": []
-    },
-    {
-      "title": "Boaterhead",
-      "performers": [
-        {
-          "name": "Boaterhead",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-10-24-boaterhead",
-      "genres": [
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "title": "Spaz",
-      "performers": [
-        {
-          "name": "Spaz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-10-24-spaz",
-      "genres": []
-    },
-    {
-      "title": "IK Dubaku",
-      "performers": [
-        {
-          "name": "IK Dubaku",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "22:00",
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bird-of-paradise",
-      "source": "manual",
-      "manual": true,
-      "id": "bird-of-paradise-2026-10-24-ik-dubaku",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "Nik Ryan",
-      "performers": [
-        {
-          "name": "Nik Ryan",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "22:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smoke-and-mirrors",
-      "source": "manual",
-      "manual": true,
-      "id": "smoke-and-mirrors-2026-10-24-nik-ryan",
-      "genres": []
-    },
-    {
-      "title": "Kristin Pepper",
-      "performers": [
-        {
-          "name": "Kristin Pepper",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-24-kristin-pepper",
-      "genres": []
-    },
-    {
-      "title": "Ben Plank Halloween",
-      "performers": [
-        {
-          "name": "Ben Plank",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-10-24-ben-plank",
-      "genres": []
     },
     {
       "id": "grog-shop-2026-10-24-pop-punk-halloween",
@@ -6123,6 +5703,427 @@
       "genres": []
     },
     {
+      "title": "Cap Halloween Spooktacular",
+      "performers": [
+        {
+          "name": "Cap Halloween Spooktacular",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-10-24-cap-halloween-spooktacular",
+      "genres": []
+    },
+    {
+      "title": "Jesters Revenge",
+      "performers": [
+        {
+          "name": "Jesters Revenge",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-10-24-jesters-revenge",
+      "genres": []
+    },
+    {
+      "title": "Chez Damier",
+      "performers": [
+        {
+          "name": "Chez Damier",
+          "headliner": true
+        },
+        {
+          "name": "Andre Leone",
+          "headliner": false
+        },
+        {
+          "name": "Delish",
+          "headliner": false
+        },
+        {
+          "name": "Le Mew",
+          "headliner": false
+        },
+        {
+          "name": "MIKEONE",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "21:00",
+      "doors": null,
+      "price": "$15 - $25",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-10-24-chez-damier",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Tony K, Darren Frate & Steve Kortyka",
+      "performers": [
+        {
+          "name": "Tony K",
+          "headliner": true
+        },
+        {
+          "name": "Darren Frate",
+          "headliner": false
+        },
+        {
+          "name": "Steve Kortyka",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-10-24-tony-k",
+      "genres": [
+        "jazz"
+      ]
+    },
+    {
+      "title": "Huffman Acoustic",
+      "performers": [
+        {
+          "name": "Huffman Acoustic",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-24-huffman-acoustic",
+      "genres": [
+        "acoustic"
+      ]
+    },
+    {
+      "title": "Candlebox",
+      "performers": [
+        {
+          "name": "Candlebox",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-24-candlebox",
+      "genres": []
+    },
+    {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-emma-nicholas",
+      "genres": []
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-dj-caffrey",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Tricky Dick & The Cover Ups",
+      "performers": [
+        {
+          "name": "Tricky Dick & The Cover Ups",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-24-tricky-dick-the-cover-ups",
+      "genres": [
+        "covers"
+      ]
+    },
+    {
+      "title": "Halloween Party!!!",
+      "performers": [
+        {
+          "name": "Halloween Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-24-halloween-party",
+      "genres": []
+    },
+    {
+      "title": "Cows Giving Kerosene",
+      "performers": [
+        {
+          "name": "Cows Giving Kerosene",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene",
+      "genres": []
+    },
+    {
+      "title": "THAT 80'S BAND",
+      "performers": [
+        {
+          "name": "That 80's Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "time-warp",
+      "source": "manual",
+      "manual": true,
+      "id": "time-warp-2026-10-24-that-80-s-band",
+      "genres": [
+        "covers"
+      ]
+    },
+    {
+      "title": "Third Monkey",
+      "performers": [
+        {
+          "name": "Third Monkey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-downtown",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-downtown-2026-10-24-third-monkey",
+      "genres": []
+    },
+    {
+      "title": "Boaterhead",
+      "performers": [
+        {
+          "name": "Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-10-24-boaterhead",
+      "genres": [
+        "rock",
+        "covers"
+      ]
+    },
+    {
+      "title": "Spaz",
+      "performers": [
+        {
+          "name": "Spaz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-10-24-spaz",
+      "genres": []
+    },
+    {
+      "title": "IK Dubaku",
+      "performers": [
+        {
+          "name": "IK Dubaku",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-10-24-ik-dubaku",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "Nik Ryan",
+      "performers": [
+        {
+          "name": "Nik Ryan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "22:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smoke-and-mirrors",
+      "source": "manual",
+      "manual": true,
+      "id": "smoke-and-mirrors-2026-10-24-nik-ryan",
+      "genres": []
+    },
+    {
+      "title": "Kristin Pepper",
+      "performers": [
+        {
+          "name": "Kristin Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-24-kristin-pepper",
+      "genres": []
+    },
+    {
+      "title": "Ben Plank Halloween",
+      "performers": [
+        {
+          "name": "Ben Plank",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-10-24-ben-plank",
+      "genres": []
+    },
+    {
       "title": "Chris Pulse / Bron Xeno / Disco Stitch",
       "performers": [
         {
@@ -6404,66 +6405,6 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
-      "title": "Tony Schultz",
-      "performers": [
-        {
-          "name": "Tony Schultz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-25",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-10-25-tony-schultz",
-      "genres": []
-    },
-    {
-      "title": "Cradle of Filth",
-      "performers": [
-        {
-          "name": "Cradle of Filth",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-25",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-25-cradle-of-filth",
-      "genres": []
-    },
-    {
-      "title": "Treehouse of Horrors",
-      "performers": [
-        {
-          "name": "71 Entertainment",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-25",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-10-25-treehouse-of-horrors",
-      "genres": []
     },
     {
       "id": "rocket-arena-2026-10-25-disney-worlds-collide-concert-tour",
@@ -7185,6 +7126,66 @@
       "genres": []
     },
     {
+      "title": "Tony Schultz",
+      "performers": [
+        {
+          "name": "Tony Schultz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-25",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-10-25-tony-schultz",
+      "genres": []
+    },
+    {
+      "title": "Cradle of Filth",
+      "performers": [
+        {
+          "name": "Cradle of Filth",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-25",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-25-cradle-of-filth",
+      "genres": []
+    },
+    {
+      "title": "Treehouse of Horrors",
+      "performers": [
+        {
+          "name": "71 Entertainment",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-25",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "treehouse",
+      "source": "manual",
+      "manual": true,
+      "id": "treehouse-2026-10-25-treehouse-of-horrors",
+      "genres": []
+    },
+    {
       "id": "spotlight-house-techno-2026-10-25",
       "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
@@ -7234,48 +7235,6 @@
       "genres": [
         "dj"
       ]
-    },
-    {
-      "title": "Metal Mondays w/ DJ Sam Sinister",
-      "performers": [
-        {
-          "name": "DJ Sam Sinister",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-26",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-10-26-dj-sam-sinister",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "With a Vengeance",
-      "performers": [
-        {
-          "name": "With a Vengeance",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-26",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-26-with-a-vengeance",
-      "genres": []
     },
     {
       "id": "grog-shop-2026-10-26-make-em-laugh-mondays",
@@ -7467,6 +7426,48 @@
       "genres": []
     },
     {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-26",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-10-26-dj-sam-sinister",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "With a Vengeance",
+      "performers": [
+        {
+          "name": "With a Vengeance",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-26",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-26-with-a-vengeance",
+      "genres": []
+    },
+    {
       "id": "spotlight-acoustic-jam-night-2026-10-26",
       "title": "Acoustic Jam Night! Hosted by Joshua Donato",
       "venueId": "spotlight-cle",
@@ -7555,26 +7556,6 @@
       "genres": [
         "trivia-games"
       ]
-    },
-    {
-      "title": "The Wrecks",
-      "performers": [
-        {
-          "name": "The Wrecks",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-27",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-27-the-wrecks",
-      "genres": []
     },
     {
       "id": "grog-shop-2026-10-27-the-quenton-rubin-band",
@@ -7862,6 +7843,26 @@
       ]
     },
     {
+      "title": "The Wrecks",
+      "performers": [
+        {
+          "name": "The Wrecks",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-27",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-27-the-wrecks",
+      "genres": []
+    },
+    {
       "id": "spotlight-comedy-open-mic-2026-10-27",
       "title": "Comedy Open Mic",
       "venueId": "spotlight-cle",
@@ -8025,68 +8026,6 @@
         "trivia-games"
       ],
       "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
-      "title": "Chris Webby",
-      "performers": [
-        {
-          "name": "Chris Webby",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-28-chris-webby",
-      "genres": []
-    },
-    {
-      "title": "Ethan Timm",
-      "performers": [
-        {
-          "name": "Ethan Timm",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-10-28-ethan-timm",
-      "genres": []
-    },
-    {
-      "title": "Dennis Lewin",
-      "performers": [
-        {
-          "name": "Dennis Lewin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-28-dennis-lewin",
-      "genres": [
-        "pianist"
-      ]
     },
     {
       "id": "grog-shop-2026-10-28-treehouse-with-rockstead-and-special-guest-jaluski-the-cowabunga-tour",
@@ -8628,6 +8567,68 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Chris Webby",
+      "performers": [
+        {
+          "name": "Chris Webby",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-28-chris-webby",
+      "genres": []
+    },
+    {
+      "title": "Ethan Timm",
+      "performers": [
+        {
+          "name": "Ethan Timm",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "treehouse",
+      "source": "manual",
+      "manual": true,
+      "id": "treehouse-2026-10-28-ethan-timm",
+      "genres": []
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-28-dennis-lewin",
+      "genres": [
+        "pianist"
+      ]
     },
     {
       "id": "spotlight-jam-night-2026-10-28",
@@ -17871,6 +17872,27 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Night Cap: Cavs vs Knicks After Party",
+      "performers": [
+        {
+          "name": "NICNACC",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "22:00",
+      "doors": null,
+      "price": "$24",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-11-07-night-cap-nicnacc",
+      "genres": [],
+      "addedAt": "2026-10-29T11:32:36.025Z"
     },
     {
       "title": "Beyond the Walls 3",
