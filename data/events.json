@@ -1151,27 +1151,6 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
-      "title": "Jazz Cabbage",
-      "performers": [
-        {
-          "name": "Jazz Cabbage",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-16",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-10-16-jazz-cabbage",
-      "genres": [],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
       "title": "Cleveland Rock Bar",
       "performers": [
         {
@@ -1368,6 +1347,27 @@
       "source": "manual",
       "manual": true,
       "id": "spotlight-cle-2026-10-16-ben-cohen",
+      "genres": [],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Jazz Cabbage",
+      "performers": [
+        {
+          "name": "Jazz Cabbage",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-16",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-16-jazz-cabbage",
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
@@ -1579,27 +1579,6 @@
       "source": "manual",
       "manual": true,
       "id": "smedleys-2026-10-17-big-don-band",
-      "genres": [],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
-      "title": "Meshell",
-      "performers": [
-        {
-          "name": "Meshell",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-17",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-10-17-meshell",
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
@@ -1864,6 +1843,27 @@
       "genres": [
         "rock"
       ],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Meshell",
+      "performers": [
+        {
+          "name": "Meshell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-17",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-17-meshell",
+      "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
@@ -2214,29 +2214,6 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
-      "title": "Furious George",
-      "performers": [
-        {
-          "name": "Furious George",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-21",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-10-21-furious-george",
-      "genres": [
-        "covers"
-      ],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
       "title": "Dennis Lewin",
       "performers": [
         {
@@ -2256,6 +2233,29 @@
       "id": "hyde-park-beachwood-2026-10-21-dennis-lewin",
       "genres": [
         "pianist"
+      ],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-21",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-21-furious-george",
+      "genres": [
+        "covers"
       ],
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
@@ -9484,6 +9484,27 @@
       ]
     },
     {
+      "title": "Poetry Unplugged",
+      "performers": [
+        {
+          "name": "Poetry Unplugged",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-29-poetry-unplugged",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Ronnie Clinton",
       "performers": [
         {
@@ -10539,6 +10560,27 @@
       "manual": true,
       "id": "cebars-2026-10-30-those-men-inside-my-brain",
       "genres": []
+    },
+    {
+      "title": "Just Jazz",
+      "performers": [
+        {
+          "name": "Just Jazz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-30-just-jazz",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "HALLOWEEN WEEKEND: QUAVO",
@@ -12155,6 +12197,29 @@
       "genres": []
     },
     {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-31-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "HALLOWEEN WEEKEND: JIGITZ",
       "performers": [
         {
@@ -12251,6 +12316,27 @@
         "pop",
         "country"
       ]
+    },
+    {
+      "title": "Halloween House Sessions",
+      "performers": [
+        {
+          "name": "Jeff Ozmits",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-31-jeff-ozmits",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Necronomipod",
@@ -14603,6 +14689,27 @@
       "genres": []
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-04-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Nekrogoblikon",
       "performers": [
         {
@@ -14645,6 +14752,29 @@
       "manual": true,
       "id": "treehouse-2026-11-04-becky-boyd",
       "genres": []
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-04-dennis-lewin",
+      "genres": [
+        "pianist"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-jam-night-2026-11-04",
@@ -15470,6 +15600,27 @@
       "genres": [
         "singer-songwriter"
       ]
+    },
+    {
+      "title": "Kristen Pepper",
+      "performers": [
+        {
+          "name": "Kristen Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-05-kristen-pepper",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-bluegrass-jam-2026-11-05",
@@ -16485,6 +16636,29 @@
       "genres": []
     },
     {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-06-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Night Cap: Bobby Booshay",
       "performers": [
         {
@@ -16504,6 +16678,27 @@
       "id": "shooters-2026-11-06-bobby-booshay",
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Dupree's Dead Band",
+      "performers": [
+        {
+          "name": "Dupree's Dead Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-06-dupree-s-dead-band",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Chris Mitchell",
@@ -16617,6 +16812,29 @@
         "rock",
         "covers"
       ]
+    },
+    {
+      "title": "Jeffrey Cruz",
+      "performers": [
+        {
+          "name": "Jeffrey Cruz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-06-jeffrey-cruz",
+      "genres": [
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Kiss Me Deadly",
@@ -17874,6 +18092,27 @@
       "genres": []
     },
     {
+      "title": "Just Jazz",
+      "performers": [
+        {
+          "name": "Just Jazz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-07-just-jazz",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Night Cap: Cavs vs Knicks After Party",
       "performers": [
         {
@@ -17893,6 +18132,27 @@
       "id": "shooters-2026-11-07-night-cap-nicnacc",
       "genres": [],
       "addedAt": "2026-10-29T11:32:36.025Z"
+    },
+    {
+      "title": "It's A Vibe",
+      "performers": [
+        {
+          "name": "It's A Vibe",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-it-s-a-vibe",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Beyond the Walls 3",
@@ -18108,6 +18368,29 @@
       "manual": true,
       "id": "irishtown-bend-taproom-2026-11-07-mourning-a-blkstar",
       "genres": []
+    },
+    {
+      "title": "Eddie Majeski",
+      "performers": [
+        {
+          "name": "Eddie Majeski",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-07-eddie-majeski",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Freddy Hill",
@@ -20147,6 +20430,27 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-11",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-11-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Palace",
       "performers": [
         {
@@ -20185,6 +20489,29 @@
       "manual": true,
       "id": "treehouse-2026-11-11-nathan-henry",
       "genres": []
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-11",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-11-dennis-lewin",
+      "genres": [
+        "pianist"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-jam-night-2026-11-11",
@@ -20960,6 +21287,29 @@
       "manual": true,
       "id": "quintanas-speakeasy-2026-11-12-john-lucic",
       "genres": []
+    },
+    {
+      "title": "Jeffrey Cruz",
+      "performers": [
+        {
+          "name": "Jeffrey Cruz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-12",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-12-jeffrey-cruz",
+      "genres": [
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-open-mic-theme-2026-11-12",
@@ -21995,6 +22345,48 @@
       "genres": []
     },
     {
+      "title": "Big Sky",
+      "performers": [
+        {
+          "name": "Big Sky",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-13-big-sky",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Rye Valley Band",
+      "performers": [
+        {
+          "name": "Rye Valley Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-13-rye-valley-band",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "The Menzingers",
       "performers": [
         {
@@ -22115,6 +22507,27 @@
       "manual": true,
       "id": "smoke-and-mirrors-2026-11-13-bender",
       "genres": []
+    },
+    {
+      "title": "Kristen Pepper",
+      "performers": [
+        {
+          "name": "Kristen Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-13-kristen-pepper",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Bufflehead",
@@ -23196,6 +23609,29 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
+      "title": "Qwik-Silver Trio",
+      "performers": [
+        {
+          "name": "Qwik-Silver Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-14",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-14-qwik-silver-trio",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Lindsey Herbert",
       "performers": [
         {
@@ -23224,6 +23660,27 @@
       "genres": [
         "dj"
       ]
+    },
+    {
+      "title": "Chloe & The Steel Strings",
+      "performers": [
+        {
+          "name": "Chloe & The Steel Strings",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-14",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-14-chloe-the-steel-strings",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "AJ McLean",
@@ -23398,6 +23855,27 @@
         "covers",
         "tribute"
       ]
+    },
+    {
+      "title": "Jacob B. Johnson",
+      "performers": [
+        {
+          "name": "Jacob B. Johnson",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-14",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-14-jacob-b-johnson",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-14",
@@ -24750,6 +25228,29 @@
       ]
     },
     {
+      "title": "Spanksgiving Adult Bingo with Meshell",
+      "performers": [
+        {
+          "name": "Meshell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-17",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-17-meshell",
+      "genres": [
+        "trivia-games"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Christmas Sea Glass Craft and Sip",
       "performers": [
         {
@@ -25251,6 +25752,29 @@
       "genres": []
     },
     {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-18",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-18-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Rival Sons",
       "performers": [
         {
@@ -25309,6 +25833,29 @@
       "manual": true,
       "id": "treehouse-2026-11-18-rob-samay",
       "genres": []
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-18",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-18-dennis-lewin",
+      "genres": [
+        "pianist"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-jam-night-2026-11-18",
@@ -26015,6 +26562,27 @@
       "id": "spirits-willoughby-2026-11-19-cleveland-blues-society",
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Kristen Pepper",
+      "performers": [
+        {
+          "name": "Kristen Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-19",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-19-kristen-pepper",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-tk-jazz-odyssey-2026-11-19",
@@ -26887,6 +27455,48 @@
       "genres": []
     },
     {
+      "title": "Jazz Cabbage",
+      "performers": [
+        {
+          "name": "Jazz Cabbage",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-20-jazz-cabbage",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Women of CLE",
+      "performers": [
+        {
+          "name": "Women of CLE",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-20",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-20-women-of-cle",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Skilla Baby",
       "performers": [
         {
@@ -26992,6 +27602,30 @@
         "covers",
         "rock"
       ]
+    },
+    {
+      "title": "Sam Romano",
+      "performers": [
+        {
+          "name": "Sam Romano",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-20-sam-romano",
+      "genres": [
+        "singer-songwriter",
+        "acoustic"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-20",
@@ -28018,6 +28652,29 @@
       "genres": []
     },
     {
+      "title": "Karaoke Night with Meshell",
+      "performers": [
+        {
+          "name": "Meshell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-21",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-21-meshell",
+      "genres": [
+        "karaoke"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Ekoostik Hookah",
       "performers": [
         {
@@ -28169,6 +28826,29 @@
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-11-21-fm77",
       "genres": []
+    },
+    {
+      "title": "Eddie Majeski",
+      "performers": [
+        {
+          "name": "Eddie Majeski",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-21",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-21-eddie-majeski",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-21",
@@ -29830,6 +30510,27 @@
       "genres": []
     },
     {
+      "title": "Pre Thanksgiving Party with Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-25",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-25-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Boaterhead",
       "performers": [
         {
@@ -29938,6 +30639,29 @@
         "covers",
         "tribute"
       ]
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-25",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-25-dennis-lewin",
+      "genres": [
+        "pianist"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-jam-night-2026-11-25",
@@ -30886,6 +31610,52 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
+      "title": "The Jelly Duo",
+      "performers": [
+        {
+          "name": "The Jelly Duo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-27",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-27-the-jelly-duo",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Apostle Jones",
+      "performers": [
+        {
+          "name": "Apostle Jones",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-27",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-27-apostle-jones",
+      "genres": [
+        "rnb-soul",
+        "rock",
+        "blues"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Welshly Arms",
       "performers": [
         {
@@ -30973,6 +31743,27 @@
         "dance-disco",
         "hiphop-rap"
       ]
+    },
+    {
+      "title": "Jordon Hope",
+      "performers": [
+        {
+          "name": "Jordon Hope",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-27",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-27-jordon-hope",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-weekend-nights-fri-2026-11-27",
@@ -31900,6 +32691,48 @@
       "genres": []
     },
     {
+      "title": "TRS Trio",
+      "performers": [
+        {
+          "name": "TRS Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-28",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-28-trs-trio",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Thicarus",
+      "performers": [
+        {
+          "name": "Thicarus",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-28",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-28-thicarus",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "The Pineapple Thief",
       "performers": [
         {
@@ -32007,6 +32840,29 @@
       "manual": true,
       "id": "wild-eagle-streetsboro-2026-11-28-disco-express",
       "genres": []
+    },
+    {
+      "title": "Jeffrey Cruz",
+      "performers": [
+        {
+          "name": "Jeffrey Cruz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-28-jeffrey-cruz",
+      "genres": [
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "id": "spotlight-weekend-nights-sat-2026-11-28",
@@ -34393,6 +35249,50 @@
       ]
     },
     {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-04-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Dupree's Dead Band",
+      "performers": [
+        {
+          "name": "Dupree's Dead Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-04-dupree-s-dead-band",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Bone Thugs-N-Harmony",
       "performers": [
         {
@@ -35251,6 +36151,48 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Just Jazz",
+      "performers": [
+        {
+          "name": "Just Jazz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-05",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-05-just-jazz",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "It's A Vibe",
+      "performers": [
+        {
+          "name": "It's A Vibe",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-05",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-05-it-s-a-vibe",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "GWAR",
@@ -36431,6 +37373,27 @@
       "genres": []
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-09",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-09-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Phil Vassar",
       "performers": [
         {
@@ -37158,6 +38121,27 @@
         "blues",
         "bluegrass"
       ]
+    },
+    {
+      "title": "The Jelly Duo",
+      "performers": [
+        {
+          "name": "The Jelly Duo",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-11",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-11-the-jelly-duo",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "TRICKY DICK AND THE COVER-UPS",
@@ -37955,6 +38939,29 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Qwik-Silver Trio",
+      "performers": [
+        {
+          "name": "Qwik-Silver Trio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-12",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-12-qwik-silver-trio",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "BOATERHEAD",
@@ -39070,6 +40077,27 @@
       "genres": []
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-16",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-16-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Holiday Mixology Cocktail Class",
       "performers": [
         {
@@ -40018,6 +41046,27 @@
       ]
     },
     {
+      "title": "Jazz Cabbage",
+      "performers": [
+        {
+          "name": "Jazz Cabbage",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-18",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-18-jazz-cabbage",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
       "title": "Bruce in the USA",
       "performers": [
         {
@@ -40652,6 +41701,56 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Karaoke Night with Meshell",
+      "performers": [
+        {
+          "name": "Meshell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-19",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-19-meshell",
+      "genres": [
+        "karaoke"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Bridge The Gap",
+      "performers": [
+        {
+          "name": "Bridge The Gap",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-19",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-19-bridge-the-gap",
+      "genres": [
+        "covers",
+        "classic",
+        "rock",
+        "pop",
+        "country"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "TRAILER PARK NINJAS",
@@ -41635,6 +42734,27 @@
         "trivia-games"
       ],
       "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-23",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-12-23-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "The Boys from the County Hell",
@@ -43002,6 +44122,27 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Iron Bitch",
+      "performers": [
+        {
+          "name": "Iron Bitch",
+          "headliner": true
+        }
+      ],
+      "date": "2026-12-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-12-31-iron-bitch",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
     },
     {
       "title": "Red Wanting Blue",
