@@ -968,11 +968,27 @@ document.querySelector('#current h3').textContent = today.toLocaleDateString('en
 
 let lastAutoClose = 0;
 
+// Opens the date picker to the right of the calendar icon, lined up with its top.
+// Not enough room on the right (phones): it drops below the icon instead, like before.
+function placeBesideSelector(fp) {
+  const anchor = document.getElementById('currentSelector');
+  const cal = fp.calendarContainer;
+  const box = anchor.getBoundingClientRect();
+  const gap = 8;
+  const width = cal.offsetWidth || 308; // flatpickr's default width, in case it isn't measured yet
+  const fitsRight = box.right + gap + width <= document.documentElement.clientWidth - gap;
+  const left = fitsRight ? box.right + gap : Math.max(gap, box.left);
+  const top = fitsRight ? box.top : box.bottom + gap;
+  cal.style.left = (left + window.scrollX) + 'px';
+  cal.style.top = (top + window.scrollY) + 'px';
+  cal.style.right = 'auto';
+}
+
 const datePickerFp = flatpickr('#datePicker', {
   defaultDate: today,
   minDate: 'today', // past days are greyed out; they live in Show History now
   positionElement: document.getElementById('currentSelector'),
-  position: 'below auto',
+  position: placeBesideSelector,
   disableMobile: true,
   clickOpens: false,
   onDayCreate: function(dObj, dStr, fp, dayElem) {

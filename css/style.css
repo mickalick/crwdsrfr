@@ -1127,10 +1127,6 @@ hr {
 	color: #999;
 }
 
-.flatpickr-calendar .open {
-	top: 69px !important;
-}
-
 #datePicker {
 	display: none;
 }
