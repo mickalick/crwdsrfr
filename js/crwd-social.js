@@ -11,16 +11,24 @@
  *       opts: { type, id, hypes, comments, hyped, title, ownerId }
  *         title   — short text shown at the top of the comments modal (optional)
  *         ownerId — the post author's id: they may remove comments on their post (optional)
- *   CrwdSocial.hypeButton(opts)      → just the hype button
- *       opts: { type, id, hypes, hyped, large, onChange({ hypes, hyped }) }
+ *   CrwdSocial.hypeButton(opts)      → just the hype button; button.setState({ hypes, hyped }) redraws it
+ *       opts: { type, id, hypes, hyped, large, lock, onChange({ hypes, hyped }) }
+ *         lock — an object shared by two buttons for the same thing (a post's top + footer
+ *                buttons), so only one hype/unhype request runs at a time
  *   CrwdSocial.loadAllHypeCounts(kind) → Promise<{ [id]: count }> for every hyped act/venue/show
  *   CrwdSocial.openComments(opts)    → opens the comments modal on its own
- *   CrwdSocial.commentsPanel(el, opts) → the same comments list + composer, inline in `el`
- *       opts: { type, id, ownerId, onCountChange(n) }
+ *   CrwdSocial.commentsPanel(el, opts) → the same comments list + composer, inline in `el`;
+ *       returns the view (view.heading is the "Comments (n)" heading, for moving focus to it)
+ *       opts: { type, id, ownerId, count, onCountChange(n) }
+ *         count — the number already known (shown in the heading until the list loads)
  *   CrwdSocial.commentButton(opts)   → comment-count button; opts: { count, label, onClick }
  *   CrwdSocial.openReport(target)    → report dialog; target: { type: 'post' | 'comment', id, who }
  *
  * Counts are public; who hyped is not shown here.
+ *
+ * Every comment section has a "Comments (n)" heading and a Newest / Oldest switch. The choice
+ * is remembered on this device (localStorage 'crwd-comment-sort') and used by every comment
+ * section on the site: Board posts, profile posts and shows.
  */
 (function () {
 	'use strict';
@@ -176,16 +184,18 @@
 	}
 
 	// The hype button on its own.
-	//   opts: { type, id, hypes, hyped, large, onChange(state) }
+	//   opts: { type, id, hypes, hyped, large, lock, onChange(state) }
 	//   large — the bigger version (act/venue modals)
+	//   lock — shared by buttons for the same thing, so their requests never overlap
 	//   onChange — called with { hypes, hyped } after each click, e.g. to update a tile
+	// button.setState({ hypes, hyped }) redraws it without a request (e.g. its twin was clicked)
 	function hypeButton(opts) {
 		const kind = TYPES[opts.type];
 		const state = { hypes: Number(opts.hypes) || 0, hyped: !!opts.hyped };
 		const hype = chip('iconHype', '');
 		hype.button.classList.add('crwdChipHype');
 		if (opts.large) hype.button.classList.add('crwdChipLarge');
-		let busy = false;
+		const lock = opts.lock || { busy: false };
 		function drawHype() {
 			setCount(hype, state.hypes);
 			hype.button.classList.toggle('isActive', state.hyped);
@@ -197,15 +207,15 @@
 			if (opts.onChange) opts.onChange({ hypes: state.hypes, hyped: state.hyped });
 		}
 		hype.button.addEventListener('click', async function () {
-			if (!ui.requireSignIn() || busy) return;
-			busy = true;
+			if (!ui.requireSignIn() || lock.busy) return;
+			lock.busy = true;
 			const was = state.hyped;
 			state.hyped = !was;
 			state.hypes += was ? -1 : 1;
 			changed();
 			hype.button.classList.toggle('isPopping', !was);
 			const { error } = await (was ? kind.hypeDelete(opts.id) : kind.hypeInsert(opts.id));
-			busy = false;
+			lock.busy = false;
 			if (error && error.code !== '23505') { // 23505 = already hyped, which is what we wanted
 				state.hyped = was;
 				state.hypes += was ? 1 : -1;
@@ -214,6 +224,11 @@
 			}
 		});
 		hype.button.addEventListener('animationend', function () { hype.button.classList.remove('isPopping'); });
+		hype.button.setState = function (next) {
+			state.hypes = Number(next.hypes) || 0;
+			state.hyped = !!next.hyped;
+			drawHype();
+		};
 		drawHype();
 		return hype.button;
 	}
@@ -232,7 +247,7 @@
 		}
 		talk.button.addEventListener('click', function () {
 			openComments({
-				type: opts.type, id: opts.id, title: opts.title, ownerId: opts.ownerId,
+				type: opts.type, id: opts.id, title: opts.title, ownerId: opts.ownerId, count: state.comments,
 				onCountChange: function (n) { state.comments = n; drawTalk(); }
 			});
 		});
@@ -258,9 +273,9 @@
 	// ------------------------------------------------------------------
 	// Comments list + composer
 	// Used inside the comments modal (shows, profile posts) and inline under
-	// a post (the Board). Oldest first, COMMENTS_PAGE at a time with a
-	// "Load more" button for the rest.
-	//   hooks.heading         — title + count at the top (the modal)
+	// a post (the Board). Newest or oldest first (the visitor's choice, see
+	// savedSort), COMMENTS_PAGE at a time with a "Load more" button for the rest.
+	//   hooks.heading         — the big modal title (otherwise a smaller heading, inline)
 	//   hooks.collapsedComposer — the comment box stays behind an "Add a comment"
 	//                           button, and closes again after posting (the Board)
 	//   hooks.onReport(c)     — how reporting a comment opens
@@ -268,26 +283,80 @@
 
 	const COMMENTS_PAGE = 20;
 
+	// Newest / Oldest, remembered on this device for every comment section on the site
+	const SORT_KEY = 'crwd-comment-sort';
+	const SORT_OPTIONS = [['newest', 'Newest'], ['oldest', 'Oldest']];
+	function savedSort() {
+		try { return localStorage.getItem(SORT_KEY) === 'newest' ? 'newest' : 'oldest'; } catch (e) { return 'oldest'; }
+	}
+	function saveSort(sort) {
+		try { localStorage.setItem(SORT_KEY, sort); } catch (e) { /* storage blocked: just this time */ }
+	}
+
 	function commentsView(opts, hooks) {
 		const kind = TYPES[opts.type];
-		let comments = null;  // loaded so far, oldest first: [{ id, author_id, body, created_at, edited_at, author }]
-		let total = 0;        // how many there are in all
-		let hasMore = false;  // older pages loaded, newer ones still to come
+		let sort = savedSort(); // 'newest' | 'oldest'
+		let comments = null;  // loaded so far, in `sort` order: [{ id, author_id, body, created_at, edited_at, author }]
+		let total = Number(opts.count) || 0; // how many there are in all
+		let counted = opts.count != null;    // whether `total` is known yet (for the heading)
+		let hasMore = false;  // more pages still to load
 		let loadingMore = false;
-		let justPosted = [];  // posted while newer pages weren't loaded yet: shown at the very end
+		let justPosted = [];  // oldest-first only: posted while newer pages weren't loaded yet, shown at the very end
+		let loadSeq = 0;      // switching the order starts a new load; an older one that finishes late is ignored
 
 		const view = el('div', 'crwdCommentsView');
-		let totalEl = null;
+
+		// "Comments (n)" + the Newest / Oldest switch
+		const head = el('div', 'crwdCommentsHead');
+		let heading;
 		if (hooks.heading) {
-			const head = el('div', 'crwdCommentsHead');
-			const h = form.title('Comments');
-			h.tabIndex = -1;
-			h.setAttribute('data-autofocus', ''); // start at the top, not in the text box (no surprise keyboard on phones)
-			head.appendChild(h);
-			totalEl = el('span', 'crwdCommentsTotal');
-			head.appendChild(totalEl);
-			view.appendChild(head);
-			if (opts.title) view.appendChild(el('p', 'crwdCommentsContext', opts.title));
+			heading = form.title('Comments');
+			heading.setAttribute('data-autofocus', ''); // start at the top, not in the text box (no surprise keyboard on phones)
+		} else {
+			heading = el('h3', 'crwdCommentsTitle', 'Comments');
+			heading.id = 'crwdCommentsTitle-' + opts.id;
+		}
+		heading.tabIndex = -1; // focus can move here (e.g. the post's top comment button), without a ring
+		const sorter = el('div', 'crwdCommentsSort');
+		sorter.setAttribute('role', 'group');
+		sorter.setAttribute('aria-label', 'Sort comments');
+		SORT_OPTIONS.forEach(function (pair) {
+			const b = el('button', 'crwdCommentsSortButton', pair[1]);
+			b.type = 'button';
+			b.dataset.sort = pair[0];
+			b.addEventListener('click', function () { setSort(pair[0]); });
+			sorter.appendChild(b);
+		});
+		head.append(heading, sorter);
+		view.appendChild(head);
+		if (hooks.heading && opts.title) view.appendChild(el('p', 'crwdCommentsContext', opts.title));
+		view.heading = heading;
+
+		function drawHeading() {
+			heading.textContent = 'Comments' + (counted ? ' (' + total.toLocaleString() + ')' : '');
+		}
+
+		function drawSort() {
+			sorter.querySelectorAll('[data-sort]').forEach(function (b) {
+				const on = b.dataset.sort === sort;
+				b.classList.toggle('isActive', on);
+				b.setAttribute('aria-pressed', on ? 'true' : 'false');
+			});
+		}
+
+		function setSort(next) {
+			if (next === sort) return;
+			sort = next;
+			saveSort(sort);
+			drawSort();
+			placeComposer();
+			// Start over in the new order
+			comments = null;
+			justPosted = [];
+			hasMore = false;
+			loadingMore = false;
+			drawList();
+			loadFirst();
 		}
 
 		const list = el('ul', 'crwdComments');
@@ -303,13 +372,20 @@
 		const after = el('ul', 'crwdComments crwdCommentsJustPosted'); // see justPosted
 		view.appendChild(after);
 
-		view.appendChild(composerArea());
+		// The comment box sits at the top when newest is first, at the bottom when oldest is
+		const composerEl = composerArea();
+		function placeComposer() {
+			if (sort === 'newest') view.insertBefore(composerEl, list);
+			else view.appendChild(composerEl);
+		}
+		placeComposer();
 
 		function shownCount() { return (comments ? comments.length : 0) + justPosted.length; }
 
 		function drawTotal() {
 			if (comments === null || comments === false) return;
-			if (totalEl) totalEl.textContent = String(total);
+			counted = true;
+			drawHeading();
 			if (opts.onCountChange) opts.onCountChange(total);
 		}
 
@@ -496,12 +572,15 @@
 				form.setBusy(btn, false, 'Post comment');
 				if (error) { form.showError(err, friendly(error)); return; }
 				data.author = { username: core.profile ? core.profile.username : '', avatar_path: core.profile ? core.profile.avatar_path : null };
-				// Newest goes last. If newer pages aren't loaded yet, it waits below "Load more".
-				if (hasMore) justPosted.push(data); else comments = (comments || []).concat([data]);
+				// Newest first: it goes at the top. Oldest first: it goes last, or, if newer pages
+				// aren't loaded yet, it waits below "Load more".
+				if (sort === 'newest') comments = [data].concat(comments || []);
+				else if (hasMore) justPosted.push(data);
+				else comments = (comments || []).concat([data]);
 				total += 1;
 				ta.value = ''; count();
 				drawList(); drawTotal();
-				const mine = (justPosted.length ? after : list).lastElementChild;
+				const mine = sort === 'newest' ? list.firstElementChild : (justPosted.length ? after : list).lastElementChild;
 				if (afterPost) afterPost();
 				if (mine) mine.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 				if (!afterPost) ta.focus({ preventScroll: true });
@@ -513,7 +592,7 @@
 			const { data, error, count } = await core.sb.from('comments')
 				.select('id, author_id, body, created_at, edited_at', { count: 'exact' })
 				.eq(kind.commentKey, opts.id)
-				.order('created_at', { ascending: true })
+				.order('created_at', { ascending: sort === 'oldest' })
 				.range(from, from + COMMENTS_PAGE - 1);
 			if (error) throw error;
 
@@ -539,11 +618,14 @@
 		}
 
 		async function loadFirst() {
+			const mine = ++loadSeq;
 			try {
 				const page = await fetchPage(0);
+				if (mine !== loadSeq) return; // the order was switched meanwhile
 				comments = page.rows;
 				settlePage(page);
 			} catch (error) {
+				if (mine !== loadSeq) return;
 				console.error('[social]', error);
 				comments = false;
 			}
@@ -554,8 +636,10 @@
 			if (loadingMore || !hasMore) return;
 			loadingMore = true;
 			drawList();
+			const mine = loadSeq;
 			try {
 				const page = await fetchPage(comments.length);
+				if (mine !== loadSeq) return; // the order was switched meanwhile
 				const posted = new Set(justPosted.map(function (c) { return c.id; }));
 				comments = comments.concat(page.rows.filter(function (c) { return !posted.has(c.id); }));
 				settlePage(page);
@@ -567,6 +651,8 @@
 			drawList(); drawTotal();
 		}
 
+		drawHeading();
+		drawSort();
 		drawList();
 		view.redraw = function () { drawList(); drawTotal(); };
 		loadFirst();
@@ -698,11 +784,13 @@
 	// Comments shown inline in a page (the Board's post modal): fills `container`
 	function commentsPanel(container, opts) {
 		container.classList.add('crwdInline'); // picks up the modal form styles
-		container.replaceChildren(commentsView(opts, {
+		const view = commentsView(opts, {
 			heading: false,
 			collapsedComposer: true,
 			onReport: function (c) { openReport({ type: 'comment', id: c.id, who: whoOf(c) }); }
-		}));
+		});
+		container.replaceChildren(view);
+		return view;
 	}
 
 	window.CrwdSocial = {

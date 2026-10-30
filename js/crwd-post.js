@@ -1,10 +1,14 @@
 /*
  * js/crwd-post.js — the full-post modal, shared by the Board and profile pages.
  *
- * Top to bottom: cover photo · title · "by username on … at …" · credit · opening ·
- * media with captions · closing · Show Details (acts + genres, venue, show date) ·
- * footer (hype, comments, ⋮) · comments (when opened). Arrow keys and swipes move
- * between posts; the close button stays pinned while the post scrolls.
+ * Top to bottom: cover photo · title · "by username on … at …" · credit · hype + comment
+ * buttons · opening · media with captions · closing · Show Details (acts + genres, venue,
+ * show date) · footer (hype, comments, ⋮) · comments (when opened). Arrow keys and swipes
+ * move between posts; the close button stays pinned while the post scrolls.
+ *
+ * The hype and comment buttons appear twice, under the title and in the footer. Either hype
+ * button hypes the post (they stay in step). The footer's comment button opens and closes
+ * the comments; the top one opens them and jumps down to them.
  *
  * Needs board.js (window.BoardMedia, for dates/venue names) and crwd-social.js,
  * and board.css for the styles. Load after crwd-social.js:
@@ -34,6 +38,9 @@
 	let els = {};
 	let opts = null;
 	let index = -1;
+	let commentButtons = []; // the open post's two comment buttons (top + footer)
+	let commentsView = null; // the comments panel, while it's open
+	let jumpPending = false; // the top comment button was used before the comments finished loading
 
 	function el(tag, className, text) {
 		const node = document.createElement(tag);
@@ -64,6 +71,10 @@
 					<h2 id="postModalTitle" data-el="title"></h2>
 					<p class="boardModalBy" data-el="by"></p>
 					<p class="boardModalCredit" data-el="credit" hidden></p>
+				</div>
+				<div class="boardModalActions boardModalTopActions" data-el="topActions" hidden>
+					<span data-el="hypeTop"></span>
+					<span data-el="commentTop"></span>
 				</div>
 				<div class="boardModalBody" data-el="body"></div>
 				<section class="boardModalShow" data-el="show" aria-labelledby="postModalShowTitle" hidden>
@@ -186,11 +197,15 @@
 		return !!(window.CrwdCore && CrwdCore.user && CrwdCore.user.id === item.authorId);
 	}
 
-	// Hype + comment buttons — or, for a post still waiting on review, its status
+	// Hype + comment buttons, under the title and in the footer — or, for a post still
+	// waiting on review, its status (footer only)
 	function renderFooter(item) {
 		const s = opts.getStats(item.id) || { hypes: 0, comments: 0, hyped: false };
 		els.hype.replaceChildren();
 		els.commentSlot.replaceChildren();
+		els.hypeTop.replaceChildren();
+		els.commentTop.replaceChildren();
+		commentButtons = [];
 
 		const approved = isApproved(item);
 		els.status.hidden = approved;
@@ -202,47 +217,107 @@
 		els.report.hidden = isMine(item);
 		els.more.hidden = els.share.hidden && els.report.hidden;
 
+		els.topActions.hidden = !approved || !socialReady();
 		if (!approved || !socialReady()) return;
 
-		els.hype.appendChild(CrwdSocial.hypeButton({
-			type: 'post',
-			id: item.id,
-			hypes: s.hypes,
-			hyped: s.hyped,
-			onChange: (state) => {
-				const next = { ...(opts.getStats(item.id) || { comments: 0 }), hypes: state.hypes, hyped: state.hyped };
-				opts.onStatsChange(item.id, next);
-			}
-		}));
+		// Two hype buttons for one post: clicking either updates both, and the shared
+		// lock keeps a quick tap on each from sending two requests at once
+		const hypeButtons = [];
+		const lock = { busy: false };
+		function hypeButton() {
+			const button = CrwdSocial.hypeButton({
+				type: 'post',
+				id: item.id,
+				hypes: s.hypes,
+				hyped: s.hyped,
+				lock: lock,
+				onChange: (state) => {
+					hypeButtons.forEach((other) => { if (other !== button) other.setState(state); });
+					const next = { ...(opts.getStats(item.id) || { comments: 0 }), hypes: state.hypes, hyped: state.hyped };
+					opts.onStatsChange(item.id, next);
+				}
+			});
+			hypeButtons.push(button);
+			return button;
+		}
+		els.hypeTop.appendChild(hypeButton());
+		els.hype.appendChild(hypeButton());
 
-		const commentBtn = CrwdSocial.commentButton({
-			count: s.comments,
-			label: 'show comments',
-			onClick: () => toggleComments(item, commentBtn)
+		// Top: opens the comments and jumps to them. Footer: opens/closes them in place.
+		function commentButton(jump) {
+			const button = CrwdSocial.commentButton({
+				count: s.comments,
+				label: jump ? 'go to comments' : 'show comments',
+				onClick: () => (jump ? jumpToComments(item) : toggleComments(item))
+			});
+			button.setAttribute('aria-controls', 'postModalComments');
+			commentButtons.push(button);
+			return button;
+		}
+		els.commentTop.appendChild(commentButton(true));
+		els.commentSlot.appendChild(commentButton(false));
+		markCommentButtons();
+	}
+
+	// Both comment buttons show whether the comments are open
+	function markCommentButtons() {
+		const open = !els.comments.hidden;
+		commentButtons.forEach((button) => {
+			button.setAttribute('aria-expanded', open ? 'true' : 'false');
+			button.classList.toggle('isOpen', open);
 		});
-		commentBtn.setAttribute('aria-expanded', els.comments.hidden ? 'false' : 'true');
-		commentBtn.setAttribute('aria-controls', 'postModalComments');
-		els.commentSlot.appendChild(commentBtn);
 	}
 
 	// Comments open underneath the footer, inside the post
-	function toggleComments(item, button) {
-		const opening = els.comments.hidden;
-		els.comments.hidden = !opening;
-		button.setAttribute('aria-expanded', opening ? 'true' : 'false');
-		button.classList.toggle('isOpen', opening);
-		if (!opening) return;
-		CrwdSocial.commentsPanel(els.comments, {
+	function openComments(item) {
+		if (!els.comments.hidden) return;
+		const s = opts.getStats(item.id) || { comments: 0 };
+		els.comments.hidden = false;
+		commentsView = CrwdSocial.commentsPanel(els.comments, {
 			type: 'post',
 			id: item.id,
 			ownerId: item.authorId, // the author can remove comments on their post
+			count: s.comments,      // shown in "Comments (n)" right away
 			onCountChange: (n) => {
 				const next = { ...(opts.getStats(item.id) || { hypes: 0, hyped: false }), comments: n };
 				opts.onStatsChange(item.id, next);
-				button.setCount(n);
+				commentButtons.forEach((button) => button.setCount(n));
+				// First page is in: the post is tall enough now to scroll the comments right to the top
+				if (jumpPending) {
+					jumpPending = false;
+					els.comments.scrollIntoView({ block: 'start', behavior: 'smooth' });
+				}
 			}
 		});
-		els.comments.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+		markCommentButtons();
+	}
+
+	function closeComments() {
+		jumpPending = false;
+		els.comments.hidden = true;
+		els.comments.replaceChildren();
+		commentsView = null;
+		markCommentButtons();
+	}
+
+	// Footer button
+	function toggleComments(item) {
+		if (els.comments.hidden) {
+			openComments(item);
+			els.comments.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+		} else {
+			closeComments();
+		}
+	}
+
+	// Top button: open (if needed), scroll the comments to the top of the post, and move
+	// keyboard focus to the "Comments (n)" heading so Tab carries on from there
+	function jumpToComments(item) {
+		// Just opened: "Loading comments…" is short, so scroll again once they're in (onCountChange)
+		jumpPending = els.comments.hidden;
+		openComments(item);
+		els.comments.scrollIntoView({ block: 'start', behavior: 'smooth' });
+		if (commentsView && commentsView.heading) commentsView.heading.focus({ preventScroll: true });
 	}
 
 	function pauseVideos() {
@@ -298,8 +373,7 @@
 
 		renderDetails(item);
 
-		els.comments.hidden = true;
-		els.comments.replaceChildren();
+		closeComments();
 		renderFooter(item);
 
 		els.scroller.scrollTop = 0;
@@ -332,6 +406,8 @@
 		els.hero.replaceChildren();
 		els.body.replaceChildren();
 		els.comments.replaceChildren();
+		commentsView = null;
+		commentButtons = [];
 		const done = opts && opts.onClose;
 		opts = null;
 		index = -1;

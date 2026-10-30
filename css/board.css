@@ -1239,6 +1239,15 @@
 	gap: 8px;
 }
 
+/* The same hype + comment buttons under the title (the footer keeps its own) */
+.boardModalTopActions {
+	margin: -8px 0 20px; /* 12px under the byline, then the post */
+}
+
+.boardModalTopActions[hidden] {
+	display: none;
+}
+
 .crwdChipComment.isOpen {
 	color: #62CBB8;
 	border-color: #62CBB8;
@@ -1338,6 +1347,7 @@
 	margin-top: 16px;
 	padding-top: 16px;
 	border-top: 1px solid #333;
+	scroll-margin-top: 16px; /* the top comment button scrolls here: leave a little room above */
 }
 
 @media (hover: hover) and (pointer: fine) {

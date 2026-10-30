@@ -964,35 +964,87 @@ html.crwdModalOpen {
 	}
 }
 
-/* =========================== Comments modal ======================== */
+/* =========================== Comments ============================== */
 
+/* "Comments (n)" on the left, Newest / Oldest on the right (wraps under it when narrow) */
 .crwdCommentsHead {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	gap: 12px;
-	margin: 0 40px 12px 0; /* clear of the close button */
+	justify-content: space-between;
+	gap: 10px 16px;
+}
+
+/* In the comments modal: clear of the close button */
+.crwdModal .crwdCommentsHead {
+	margin: 0 40px 12px 0;
 }
 
 .crwdCommentsHead .crwdModalTitle {
 	margin: 0;
 }
 
-.crwdCommentsHead .crwdModalTitle:focus {
+/* Inline (under a Board post): smaller than the modal's title, like "In This Post" but bigger */
+.crwdCommentsHead .crwdCommentsTitle {
+	margin: 0;
+	padding: 0;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	color: #FFF;
+}
+
+/* Focus moves to the heading (e.g. the post's top comment button): no ring, like modal titles */
+.crwdCommentsHead .crwdModalTitle:focus,
+.crwdCommentsHead .crwdCommentsTitle:focus {
 	outline: none;
 }
 
-.crwdCommentsTotal {
-	padding: 3px 9px;
-	border: 1px solid #444;
-	border-radius: 999px;
-	font-family: "Space Mono", monospace;
-	font-size: 13px;
-	line-height: 1.2;
-	color: #ADADAD;
+/* Newest / Oldest: same yellow segmented look as the Board's tile/row toggle */
+.crwdCommentsSort {
+	display: inline-flex;
+	flex-shrink: 0;
+	border: 1px solid rgba(249, 249, 118, 0.25);
+	border-radius: 9px;
+	background: rgba(0, 0, 0, 0.25);
 }
 
-.crwdCommentsTotal:empty {
-	display: none;
+.crwdCommentsSortButton {
+	padding: 6px 12px;
+	background: none;
+	border: none;
+	color: #F9F976;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	transition: background-color 150ms ease, color 150ms ease;
+}
+
+.crwdCommentsSortButton:first-child {
+	border-radius: 8px 0 0 8px;
+}
+
+.crwdCommentsSortButton:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.crwdCommentsSortButton.isActive {
+	background: #F9F976;
+	color: #101010;
+	font-weight: 700;
+}
+
+.crwdCommentsSortButton:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+/* Newest first: the comment box sits above the list instead of below it */
+.crwdCommentsHead + .crwdCommentComposer > .crwdCommentsAdd:first-child {
+	margin-top: 12px;
 }
 
 :is(.crwdModal, .crwdInline) p.crwdCommentsContext {
@@ -1268,6 +1320,10 @@ a.crwdCommentUser:hover {
 }
 
 @media (hover: hover) and (pointer: fine) {
+	.crwdCommentsSortButton:not(.isActive):hover {
+		background: rgba(249, 249, 118, 0.15);
+	}
+
 	.crwdCommentsMore:not(:disabled):hover {
 		border-color: #62CBB8;
 		color: #62CBB8;
@@ -1280,5 +1336,22 @@ a.crwdCommentUser:hover {
 
 	.crwdCommentsAdd.isOpen:hover {
 		color: #FFF;
+	}
+}
+
+/* "Comments (n)" + Newest / Oldest still fit on one line on a phone
+   (down here so it comes after the comment styles above) */
+@media screen and (max-width: 535px) {
+	.crwdCommentsHead {
+		gap: 10px;
+	}
+
+	.crwdCommentsHead .crwdCommentsTitle {
+		font-size: 24px;
+	}
+
+	.crwdCommentsSortButton {
+		padding: 5px 9px;
+		font-size: 12px;
 	}
 }
