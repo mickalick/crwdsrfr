@@ -8243,6 +8243,57 @@
     "exclude": "no",
     "local": "yes"
   },
+  "fm77": {
+    "name": "FM77",
+    "aliases": [
+      "FM77"
+    ],
+    "genres": [
+      "classic",
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://fm77cleveland.com/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/FM77Cleveland/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "big-in-japan": {
+    "name": "BIG IN JAPAN",
+    "aliases": [
+      "BIG IN JAPAN"
+    ],
+    "genres": [
+      "covers",
+      "pop",
+      "hiphop-rap",
+      "dance-disco",
+      "rock"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.biginjapanband.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "http://instagram.com/biginjapancleveland"
+      },
+      {
+        "label": "Facebook",
+        "value": "http://www.facebook.com/biginjapanband"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
 
 
 
