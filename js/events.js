@@ -764,6 +764,24 @@ function revealFocusedEvent() {
   if (!el) return;
   el.classList.add('isLinked');
   el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  clearLinkedHighlight(el);
+}
+
+// The yellow highlight goes away after its two pulses, or as soon as the mouse moves over the show
+function clearLinkedHighlight(el) {
+  let timer;
+  const clear = () => {
+    el.classList.remove('isLinked');
+    el.removeEventListener('animationend', onEnd);
+    el.removeEventListener('pointermove', onMove);
+    clearTimeout(timer);
+  };
+  const onEnd = e => { if (e.target === el && e.animationName === 'eventLinkedPulse') clear(); };
+  // Only real movement: the scroll can slide the show under a mouse that isn't moving
+  const onMove = e => { if (e.movementX || e.movementY) clear(); };
+  el.addEventListener('animationend', onEnd);
+  el.addEventListener('pointermove', onMove);
+  timer = setTimeout(clear, 2600); // backup (reduced motion has no animation, so no animationend)
 }
 
 function collapseChipRow(wrap, groupKey) {
