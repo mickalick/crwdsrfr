@@ -142,6 +142,9 @@
 								<button type="button" class="toggle-button" id="calendarToggleWeek" aria-label="Week View">
 									Week
 								</button>
+								<button type="button" class="toggle-button" id="calendarToggleMonth" aria-label="Month View">
+									Month
+								</button>
 							</div>
 
 							<label class="checkbox-label" for="calendarShowGenres">
@@ -149,11 +152,19 @@
 								Display Genres (Beta)
 							</label>
 
-							<label for="sort-method">Sort by:</label>
+							<label for="calendarSortMethod" id="calendarSortLabel">Sort by:</label>
 							<select id="calendarSortMethod" name="sort-method">
 							  <option value="venue-name">Venue Name (A-Z)</option>
 							  <option value="show-title">Show Title (A-Z)</option>
 							  <option value="show-time">Show Time (Earliest First)</option>
+							  <option value="hype-count">Hype Count (Most First)</option>
+							</select>
+
+							<!-- Show History has its own sort (js/events.js swaps which one shows) -->
+							<label for="historySortMethod" id="historySortLabel">Sort by:</label>
+							<select id="historySortMethod" name="history-sort-method">
+							  <option value="time-desc">Show Time (Recent First)</option>
+							  <option value="time-asc">Show Time (Oldest First)</option>
 							  <option value="hype-count">Hype Count (Most First)</option>
 							</select>
 
@@ -260,4 +271,4 @@
 		
 	</body>
 
-	</html>
+	</html>

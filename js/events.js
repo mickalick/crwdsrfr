@@ -3,8 +3,9 @@ let eventsById = new Map(); // event id → event, for the hype/comment buttons
 let allVenues = null; // keyed by venue id — loaded from venues.json for type/area filtering
 let currentDateStr = toLocalDateStr(new Date());
 let currentSearch = '';
-let calendarViewMode = 'day'; // 'day' | 'week'
+let calendarViewMode = 'day'; // 'day' | 'week' | 'month'
 let calendarSortMethod = 'venue-name'; // 'venue-name' | 'show-title' | 'show-time' | 'hype-count'
+let historySortMethod = 'time-desc'; // Show History's own sort: 'time-desc' | 'time-asc' | 'hype-count'
 let calendarShowGenres = true; // whether genre chips render on event tiles
 let filterMode = 'include'; // 'include' | 'exclude' — applies to every active filter category (venue name/type/area, genre)
 
@@ -34,6 +35,7 @@ function saveCalendarSettingsToStorage() {
     const payload = {
       viewMode: calendarViewMode,
       sortMethod: calendarSortMethod,
+      historySort: historySortMethod,
       showGenres: calendarShowGenres,
     };
     localStorage.setItem(CALENDAR_SETTINGS_KEY, JSON.stringify(payload));
@@ -49,11 +51,14 @@ function loadCalendarSettingsFromStorage() {
     const raw = localStorage.getItem(CALENDAR_SETTINGS_KEY);
     if (!raw) return;
     const parsed = JSON.parse(raw);
-    if (parsed.viewMode === 'day' || parsed.viewMode === 'week') {
+    if (['day', 'week', 'month'].includes(parsed.viewMode)) {
       calendarViewMode = parsed.viewMode;
     }
     if (['venue-name', 'show-title', 'show-time', 'hype-count'].includes(parsed.sortMethod)) {
       calendarSortMethod = parsed.sortMethod;
+    }
+    if (['time-desc', 'time-asc', 'hype-count'].includes(parsed.historySort)) {
+      historySortMethod = parsed.historySort;
     }
     if (typeof parsed.showGenres === 'boolean') {
       calendarShowGenres = parsed.showGenres;
@@ -189,6 +194,35 @@ function getWeekDates(startDateStr) {
   return dates;
 }
 
+// Month view: every day left in the selected date's month (from today when it's the current month)
+function getMonthDates(dateStr) {
+  const [y, m] = dateStr.split('-').map(Number);
+  const today = todayStr();
+  const dates = [];
+  const lastDay = new Date(y, m, 0).getDate(); // day 0 of next month = last day of this one
+  for (let d = 1; d <= lastDay; d++) {
+    const ds = toLocalDateStr(new Date(y, m - 1, d));
+    if (ds >= today) dates.push(ds);
+  }
+  return dates;
+}
+
+// The days the current view covers (not Show History)
+function viewDates() {
+  if (calendarViewMode === 'week') return getWeekDates(currentDateStr);
+  if (calendarViewMode === 'month') return getMonthDates(currentDateStr);
+  return [currentDateStr];
+}
+
+// The date header: "Sat, Oct 31, 2026", or "October 2026" in Month view
+function updateCurrentLabel() {
+  const [y, m, d] = currentDateStr.split('-').map(Number);
+  const date = new Date(y, m - 1, d);
+  document.querySelector('#current h3').textContent = calendarViewMode === 'month'
+    ? date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+    : date.toLocaleDateString('en-US', options);
+}
+
 function formatTime(t) {
   if (!t) return null;
   const [h, m] = t.split(':').map(Number);
@@ -213,6 +247,10 @@ function updateSubHead() {
     subHeadSpan.textContent = term === ''
       ? 'All shows for week of:'
       : `All shows including "${term}" for week of:`;
+  } else if (calendarViewMode === 'month') {
+    subHeadSpan.textContent = term === ''
+      ? 'All shows for Month of:'
+      : `All shows including "${term}" for Month of:`;
   } else {
     subHeadSpan.textContent = term === ''
       ? 'All shows for:'
@@ -316,11 +354,9 @@ async function applyFilters() {
   if (historyMode) {
     const today = todayStr(), start = historyStartStr();
     filtered = allData.events.filter(e => e.date < today && e.date >= start);
-  } else if (calendarViewMode === 'week') {
-    const weekSet = new Set(getWeekDates(currentDateStr));
-    filtered = allData.events.filter(e => weekSet.has(e.date));
   } else {
-    filtered = allData.events.filter(e => e.date === currentDateStr);
+    const dateSet = new Set(viewDates());
+    filtered = allData.events.filter(e => dateSet.has(e.date));
   }
 
   if (currentSearch.trim() !== '') {
@@ -349,14 +385,15 @@ async function applyFilters() {
     const linked = allData.events.find(e => e.id === focusEventId);
     const shown = historyMode
       ? (linked && linked.date < todayStr())
-      : (linked && (calendarViewMode === 'week' ? getWeekDates(currentDateStr) : [currentDateStr]).includes(linked.date));
+      : (linked && viewDates().includes(linked.date));
     if (shown) filtered.push(linked);
   }
 
   // Most Hyped needs the counts first. A newer date/filter change cancels this one.
   const run = ++renderRun;
   currentStats = null;
-  if (!historyMode && calendarSortMethod === 'hype-count' && socialReady()) {
+  const sortByHype = (historyMode ? historySortMethod : calendarSortMethod) === 'hype-count';
+  if (sortByHype && socialReady()) {
     await CrwdCore.ready;
     const stats = await CrwdSocial.loadStats('event', [...new Set(filtered.map(e => e.id))]);
     if (run !== renderRun) return;
@@ -500,21 +537,30 @@ function eventHtml(event, venue) {
     </div>`;
 }
 
-// Show History: newest first, in the order shows happened. A card holds one venue's shows only
-// when they started at the same time; otherwise each show gets its own card.
+// Show History, one day's shows. By show time (Recent First: latest first; Oldest First:
+// earliest first), a card holds one venue's shows only when they started at the same time.
+// Hype Count: one card per show, most hyped first (ties: the later show, then A-Z).
 function renderHistoryCards(events, container, beforeNode) {
-  const byTimeDesc = [...events].sort((a, b) => {
+  const asc = historySortMethod === 'time-asc';
+  const byTime = (a, b) => {
     if (!a.time && !b.time) return a.title.localeCompare(b.title);
     if (!a.time) return 1; // no time listed: end of the day's list
     if (!b.time) return -1;
-    return b.time.localeCompare(a.time) || a.title.localeCompare(b.title);
-  });
+    return (asc ? a.time.localeCompare(b.time) : b.time.localeCompare(a.time)) || a.title.localeCompare(b.title);
+  };
   const cards = [];
-  byTimeDesc.forEach(event => {
-    const last = cards[cards.length - 1];
-    if (last && last.venueId === event.venueId && last.time === (event.time || null)) last.events.push(event);
-    else cards.push({ venueId: event.venueId, time: event.time || null, events: [event] });
-  });
+  if (historySortMethod === 'hype-count') {
+    const hypesOf = e => currentStats?.[e.id]?.hypes ?? 0;
+    [...events]
+      .sort((a, b) => (hypesOf(b) - hypesOf(a)) || byTime(a, b))
+      .forEach(event => cards.push({ venueId: event.venueId, events: [event] }));
+  } else {
+    [...events].sort(byTime).forEach(event => {
+      const last = cards[cards.length - 1];
+      if (last && last.venueId === event.venueId && last.time === (event.time || null)) last.events.push(event);
+      else cards.push({ venueId: event.venueId, time: event.time || null, events: [event] });
+    });
+  }
   let any = false;
   cards.forEach(card => {
     const venue = allData.venues[card.venueId];
@@ -549,14 +595,16 @@ function renderEvents(events) {
     let anyRendered = false;
 
     if (historyMode) {
-      // Newest day first
-      [...new Set(events.map(e => e.date))].sort().reverse().forEach(dateStr => {
+      // Newest day first (Oldest First: oldest day first)
+      const days = [...new Set(events.map(e => e.date))].sort();
+      if (historySortMethod !== 'time-asc') days.reverse();
+      days.forEach(dateStr => {
         const dayEvents = events.filter(e => e.date === dateStr);
         renderDateSeparator(dateStr, container, calendarEnd);
         if (renderHistoryCards(dayEvents, container, calendarEnd)) anyRendered = true;
       });
-    } else if (calendarViewMode === 'week') {
-      getWeekDates(currentDateStr).forEach(dateStr => {
+    } else if (calendarViewMode === 'week' || calendarViewMode === 'month') {
+      viewDates().forEach(dateStr => {
         const dayEvents = events.filter(e => e.date === dateStr);
         if (dayEvents.length === 0) return;
         anyRendered = true;
@@ -710,7 +758,7 @@ function setHistoryMode(on, push, render) {
   link.textContent = on ? 'Back to Upcoming' : 'Recent History';
   link.href = on ? '/' : '/?history';
   document.getElementById('historyIntro').hidden = !on;
-  // The View menu doesn't apply to Show History
+  // Close the View menu: its options change between the two (style.css swaps them)
   document.getElementById('calendarSettings').classList.remove('open');
   document.getElementById('calendarSettingsToggle').classList.remove('open');
   if (push) history.pushState({ history: on }, '', on ? '/?history' : '/');
@@ -748,9 +796,9 @@ function jumpToLinkedShow() {
   }
   const [y, m, d] = linked.date.split('-').map(Number); // local date, never via UTC
   const date = new Date(y, m - 1, d);
-  document.querySelector('#current h3').textContent = date.toLocaleDateString('en-US', options);
   datePickerFp.setDate(date, false);
   currentDateStr = linked.date;
+  updateCurrentLabel();
   updateNavArrows();
 }
 
@@ -964,7 +1012,10 @@ const today = new Date();
 // Past days aren't on the calendar any more (they're in Show History): Back stops at today
 function updateNavArrows() {
   const prev = document.getElementById('prevArrow');
-  const atToday = currentDateStr <= todayStr();
+  // Month view: off once it's this month (YYYY-MM compares as text)
+  const atToday = calendarViewMode === 'month'
+    ? currentDateStr.slice(0, 7) <= todayStr().slice(0, 7)
+    : currentDateStr <= todayStr();
   prev.classList.toggle('isDisabled', atToday);
   prev.setAttribute('aria-disabled', atToday ? 'true' : 'false');
 }
@@ -974,10 +1025,9 @@ function setDate(date) {
   const now = new Date();
   const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   if (date < todayMidnight) date = todayMidnight;
-  const formatted = date.toLocaleDateString('en-US', options);
-  document.querySelector('#current h3').textContent = formatted;
   document.getElementById('datePicker')._flatpickr.setDate(date, false);
   currentDateStr = toLocalDateStr(date);
+  updateCurrentLabel();
   updateNavArrows();
   applyFilters();
 }
@@ -1020,9 +1070,8 @@ const datePickerFp = flatpickr('#datePicker', {
   },
   onChange: function(selectedDates) {
     if (!allData || selectedDates.length === 0) return;
-    const formatted = selectedDates[0].toLocaleDateString('en-US', options);
-    document.querySelector('#current h3').textContent = formatted;
     currentDateStr = toLocalDateStr(selectedDates[0]);
+    updateCurrentLabel();
     updateNavArrows();
     applyFilters();
   }
@@ -1031,8 +1080,12 @@ const datePickerFp = flatpickr('#datePicker', {
 loadCalendarSettingsFromStorage();
 document.getElementById('calendarToggleDay').classList.toggle('active', calendarViewMode === 'day');
 document.getElementById('calendarToggleWeek').classList.toggle('active', calendarViewMode === 'week');
+document.getElementById('calendarToggleMonth').classList.toggle('active', calendarViewMode === 'month');
 document.getElementById('calendarSortMethod').value = calendarSortMethod;
+document.getElementById('historySortMethod').value = historySortMethod;
 document.getElementById('calendarShowGenres').checked = calendarShowGenres;
+updateCurrentLabel(); // "October 2026" when the saved view is Month
+updateNavArrows();
 applyGenreVisibility();
 setHistoryMode(historyMode, false); // opened at /?history: show that view from the start
 
@@ -1048,9 +1101,11 @@ if (socialReady()) {
   });
 } else {
   // Accounts unavailable (e.g. Supabase didn't load): no counts to sort by
-  document.querySelector('#calendarSortMethod option[value="hype-count"]')?.remove();
+  document.querySelectorAll('#calendarSortMethod option[value="hype-count"], #historySortMethod option[value="hype-count"]').forEach(o => o.remove());
   if (calendarSortMethod === 'hype-count') calendarSortMethod = 'venue-name';
+  if (historySortMethod === 'hype-count') historySortMethod = 'time-desc';
   document.getElementById('calendarSortMethod').value = calendarSortMethod;
+  document.getElementById('historySortMethod').value = historySortMethod;
 }
 
 document.getElementById('search').addEventListener('input', function() {
@@ -1087,21 +1142,25 @@ document.addEventListener('DOMContentLoaded', function() {
   currentSelector.addEventListener('mouseup', toggleDatePicker);
   currentSelector.addEventListener('touchend', toggleDatePicker);
   
-  document.getElementById('prevArrow').addEventListener('click', function() {
-    if (this.classList.contains('isDisabled')) return; // already on today
+  // A day, a week, or (Month view) the 1st of the month before/after.
+  // setDate keeps it from going before today.
+  function stepDate(dir) {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
-    const step = calendarViewMode === 'week' ? 7 : 1;
-    const prev = new Date(current);
-    prev.setDate(prev.getDate() - step);
-    setDate(prev);
-  });
-  document.getElementById('nextArrow').addEventListener('click', function() {
-    const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
+    if (calendarViewMode === 'month') {
+      setDate(new Date(current.getFullYear(), current.getMonth() + dir, 1));
+      return;
+    }
     const step = calendarViewMode === 'week' ? 7 : 1;
     const next = new Date(current);
-    next.setDate(next.getDate() + step);
+    next.setDate(next.getDate() + dir * step);
     setDate(next);
+  }
+
+  document.getElementById('prevArrow').addEventListener('click', function() {
+    if (this.classList.contains('isDisabled')) return; // already on today
+    stepDate(-1);
   });
+  document.getElementById('nextArrow').addEventListener('click', () => stepDate(1));
   document.getElementById('calendarFilterToggle').addEventListener('click', function() {
     const panel = document.getElementById('calendarFilters');
     const isOpen = panel.style.display !== 'none';
@@ -1113,12 +1172,16 @@ document.addEventListener('DOMContentLoaded', function() {
     calendarViewMode = mode;
     document.getElementById('calendarToggleDay').classList.toggle('active', mode === 'day');
     document.getElementById('calendarToggleWeek').classList.toggle('active', mode === 'week');
+    document.getElementById('calendarToggleMonth').classList.toggle('active', mode === 'month');
     saveCalendarSettingsToStorage();
+    updateCurrentLabel();
+    updateNavArrows();
     applyFilters();
   }
 
   document.getElementById('calendarToggleDay').addEventListener('click', () => setViewMode('day'));
   document.getElementById('calendarToggleWeek').addEventListener('click', () => setViewMode('week'));
+  document.getElementById('calendarToggleMonth').addEventListener('click', () => setViewMode('month'));
 
   function setFilterMode(mode) {
     filterMode = mode;
@@ -1132,6 +1195,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('calendarSortMethod').addEventListener('change', function() {
     calendarSortMethod = this.value;
+    saveCalendarSettingsToStorage();
+    applyFilters();
+  });
+
+  document.getElementById('historySortMethod').addEventListener('change', function() {
+    historySortMethod = this.value;
     saveCalendarSettingsToStorage();
     applyFilters();
   });

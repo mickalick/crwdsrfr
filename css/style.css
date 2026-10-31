@@ -544,7 +544,7 @@ footer a {
 
 
 
-#calendarSortMethod {
+#calendarSortMethod, #historySortMethod {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 700;
@@ -554,11 +554,11 @@ footer a {
 	margin-bottom: 8px;
 }
 
-#calendarSortMethod option {
+#calendarSortMethod option, #historySortMethod option {
 	font-weight: 400;
 }
 
-#calendarSortMethod option:checked {
+#calendarSortMethod option:checked, #historySortMethod option:checked {
 	background: #101010;
 	color: #F9F976;
 	font-weight: 700;
@@ -1437,15 +1437,14 @@ span.flatpickr-weekday {
 	display: none;
 }
 
-/* No View menu or date picker in Show History; Filters stays on the right */
-body.isHistory #calendarSettingsToggle,
-body.isHistory #calendarSettings,
-body.isHistory #calendarNav {
+/* Show History: no date picker. Its View menu has no Day/Week/Month toggle and its own sort list. */
+body.isHistory #calendarNav,
+body.isHistory #calendarToggle,
+body.isHistory #calendarSortLabel,
+body.isHistory #calendarSortMethod,
+body:not(.isHistory) #historySortLabel,
+body:not(.isHistory) #historySortMethod {
 	display: none !important;
-}
-
-body.isHistory #calendarFilterToggle {
-	margin-left: auto;
 }
 
 /* "Add to my Show History": takes the ticket link's spot. A + that turns into a yellow check. */
@@ -1921,4 +1920,4 @@ body.isHistory #calendarFilterToggle {
 		margin-left: 20px;
 		margin-top: 8px;
 	}
-}
+}
