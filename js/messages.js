@@ -216,7 +216,7 @@
 
 	function cancelRequest(conv, done) {
 		confirmDialog({
-			title: 'Cancel this <em>request</em>?', username: conv.other_username,
+			title: 'Cancel this request?', username: conv.other_username,
 			before: 'Your request to ', after: ' and its message will be deleted. To reach them again, you\'d need to send a new request.',
 			confirm: 'Cancel Request', busy: 'Cancelling…', keep: 'Keep my request', danger: true,
 			run: function () { return rpc('cancel_request', { conversation: conv.conversation_id }); },
@@ -236,8 +236,8 @@
 
 	function leaveConversation(conv, done) {
 		confirmDialog({
-			title: 'Leave this <em>conversation</em>?', username: conv.other_username,
-			before: 'It will disappear from your Messages. ', after: ' will see that you left and won\'t be able to reply. To talk again, one of you would send a new request.',
+			title: 'Leave the conversation?', username: conv.other_username,
+			before: 'Leaving will remove the conversation from your Messages. ', after: ' will see that you left and won\'t be able to reply. To message again, one of you would need to send a new request.',
 			confirm: 'Leave Conversation', busy: 'Leaving…', keep: 'Stay', danger: true,
 			run: function () { return rpc('leave_conversation', { conversation: conv.conversation_id }); },
 			done: done
@@ -246,8 +246,8 @@
 
 	function blockUser(conv, done) {
 		confirmDialog({
-			title: 'Block this <em>user</em>?', username: conv.other_username,
-			before: 'You and ', after: ' won\'t be able to see each other\'s profiles, posts or comments, or send each other messages. This conversation is hidden too. They aren\'t notified.',
+			title: 'Block this user?', username: conv.other_username,
+			before: 'You and ', after: ' won\'t be able to see each other\'s profiles, posts or comments, or send each other messages. This conversation is removed for you as well. They aren\'t notified.',
 			confirm: 'Block', busy: 'Blocking…', keep: 'Cancel',
 			run: async function () {
 				const { error } = await core.sb.from('blocks').insert({ blocked_id: conv.other_user_id });
@@ -259,10 +259,10 @@
 
 	function reportUser(conv) {
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('Report this <em>user</em>'));
-			const p = kit.el('p', 'crwdModalText', 'Reports go to the CRWD SRFR team for review. ');
+			body.appendChild(kit.title('Report this user'));
+			const p = kit.el('p', 'crwdModalText', 'Reports go directly to the CRWD SRFR team for review. ');
 			p.appendChild(kit.el('strong', null, at(conv.other_username)));
-			p.append(' won\'t see who reported them.');
+			p.append(' can\'t see who reported them.');
 			body.appendChild(p);
 			const form = kit.el('form', 'crwdForm');
 			form.noValidate = true;
