@@ -707,7 +707,7 @@ function setHistoryMode(on, push, render) {
   historyMode = on;
   document.body.classList.toggle('isHistory', on);
   const link = document.getElementById('historyLink');
-  link.textContent = on ? 'Back to Calendar' : 'Show History';
+  link.textContent = on ? 'Back to Upcoming' : 'Recent History';
   link.href = on ? '/' : '/?history';
   document.getElementById('historyIntro').hidden = !on;
   // The View menu doesn't apply to Show History

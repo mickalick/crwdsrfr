@@ -251,12 +251,6 @@
 	transition: background-color 150ms ease, color 150ms ease;
 }
 
-.settingsButton.isPrimary {
-	background: #F9F976;
-	color: #101010;
-	font-weight: 800;
-}
-
 .settingsButton.isDanger {
 	border-color: #FF6262;
 	color: #FF6262;
@@ -660,11 +654,6 @@
 	.settingsButton:not(:disabled):hover {
 		background: #F9F976;
 		color: #101010;
-	}
-
-	.settingsButton.isPrimary:not(:disabled):hover {
-		background: transparent;
-		color: #FFF;
 	}
 
 	.settingsButton.isDanger:not(:disabled):hover,
