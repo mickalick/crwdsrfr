@@ -194,15 +194,24 @@ function getWeekDates(startDateStr) {
   return dates;
 }
 
-// Month view: every day left in the selected date's month (from today when it's the current month)
-function getMonthDates(dateStr) {
-  const [y, m] = dateStr.split('-').map(Number);
-  const today = todayStr();
+// The same day n months later (or earlier). A day the target month doesn't have
+// lands on its last day: Jan 31 + 1 month = Feb 28, not Mar 3.
+function addMonths(date, n) {
+  const target = new Date(date.getFullYear(), date.getMonth() + n, 1);
+  const lastDay = new Date(target.getFullYear(), target.getMonth() + 1, 0).getDate();
+  target.setDate(Math.min(date.getDate(), lastDay));
+  return target;
+}
+
+// Month view: like Week, starts on the selected date and runs one month
+// (Nov 15 → Dec 14)
+function getMonthDates(startDateStr) {
+  const [y, m, d] = startDateStr.split('-').map(Number);
+  const start = new Date(y, m - 1, d); // local date, not UTC
+  const end = addMonths(start, 1);
   const dates = [];
-  const lastDay = new Date(y, m, 0).getDate(); // day 0 of next month = last day of this one
-  for (let d = 1; d <= lastDay; d++) {
-    const ds = toLocalDateStr(new Date(y, m - 1, d));
-    if (ds >= today) dates.push(ds);
+  for (const dt = new Date(start); dt < end; dt.setDate(dt.getDate() + 1)) {
+    dates.push(toLocalDateStr(dt));
   }
   return dates;
 }
@@ -214,13 +223,10 @@ function viewDates() {
   return [currentDateStr];
 }
 
-// The date header: "Sat, Oct 31, 2026", or "October 2026" in Month view
+// The date header: "Sat, Oct 31, 2026" (the first day shown, in every view)
 function updateCurrentLabel() {
   const [y, m, d] = currentDateStr.split('-').map(Number);
-  const date = new Date(y, m - 1, d);
-  document.querySelector('#current h3').textContent = calendarViewMode === 'month'
-    ? date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
-    : date.toLocaleDateString('en-US', options);
+  document.querySelector('#current h3').textContent = new Date(y, m - 1, d).toLocaleDateString('en-US', options);
 }
 
 function formatTime(t) {
@@ -1012,10 +1018,7 @@ const today = new Date();
 // Past days aren't on the calendar any more (they're in Show History): Back stops at today
 function updateNavArrows() {
   const prev = document.getElementById('prevArrow');
-  // Month view: off once it's this month (YYYY-MM compares as text)
-  const atToday = calendarViewMode === 'month'
-    ? currentDateStr.slice(0, 7) <= todayStr().slice(0, 7)
-    : currentDateStr <= todayStr();
+  const atToday = currentDateStr <= todayStr();
   prev.classList.toggle('isDisabled', atToday);
   prev.setAttribute('aria-disabled', atToday ? 'true' : 'false');
 }
@@ -1084,8 +1087,6 @@ document.getElementById('calendarToggleMonth').classList.toggle('active', calend
 document.getElementById('calendarSortMethod').value = calendarSortMethod;
 document.getElementById('historySortMethod').value = historySortMethod;
 document.getElementById('calendarShowGenres').checked = calendarShowGenres;
-updateCurrentLabel(); // "October 2026" when the saved view is Month
-updateNavArrows();
 applyGenreVisibility();
 setHistoryMode(historyMode, false); // opened at /?history: show that view from the start
 
@@ -1142,12 +1143,11 @@ document.addEventListener('DOMContentLoaded', function() {
   currentSelector.addEventListener('mouseup', toggleDatePicker);
   currentSelector.addEventListener('touchend', toggleDatePicker);
   
-  // A day, a week, or (Month view) the 1st of the month before/after.
-  // setDate keeps it from going before today.
+  // A day, a week, or a month before/after. setDate keeps it from going before today.
   function stepDate(dir) {
     const current = document.getElementById('datePicker')._flatpickr.selectedDates[0];
     if (calendarViewMode === 'month') {
-      setDate(new Date(current.getFullYear(), current.getMonth() + dir, 1));
+      setDate(addMonths(current, dir));
       return;
     }
     const step = calendarViewMode === 'week' ? 7 : 1;
@@ -1174,8 +1174,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('calendarToggleWeek').classList.toggle('active', mode === 'week');
     document.getElementById('calendarToggleMonth').classList.toggle('active', mode === 'month');
     saveCalendarSettingsToStorage();
-    updateCurrentLabel();
-    updateNavArrows();
     applyFilters();
   }
 
