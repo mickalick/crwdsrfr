@@ -1137,7 +1137,7 @@
 				const link = kit.el('p', 'crwdModalSwitch');
 				const a = kit.el('a', null, 'View conversation'); a.href = '/messages/?c=' + encodeURIComponent(convId);
 				link.appendChild(a);
-				doneView(body, kit, 'Request <em>sent</em>', 'Sent to ' + at(target.username) + '. You can keep chatting once they accept.', link);
+				doneView(body, kit, 'Request <em>sent</em>', 'Your message was sent successfully. You can keep chatting once ' + at(target.username) + ' accepts.', link);
 			});
 		});
 	}

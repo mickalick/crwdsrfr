@@ -677,6 +677,11 @@ html.crwdModalOpen {
 	cursor: default;
 }
 
+.crwdModalSwitch a {
+	color: #62CBB8;
+	text-decoration: none;
+}
+
 /* Same as .boardModalShareBtn (Copy Link) — used for "Resend link" */
 .crwdButtonSecondary {
 	display: flex;
@@ -819,6 +824,10 @@ html.crwdModalOpen {
 	.crwdFinePrint a:hover {
 		text-decoration: underline;
 		color: #62CBB8;
+	}
+
+	.crwdModalSwitch a:hover {
+		text-decoration: underline;
 	}
 }
 
