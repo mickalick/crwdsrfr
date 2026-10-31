@@ -337,7 +337,7 @@
 
 		// Blurb (the "status" column; null when empty or hidden). Visitors see nothing when it's empty.
 		els.blurb.classList.toggle('isEmpty', !v.status);
-		els.blurb.textContent = v.status || (isOwner ? 'A little about yourself? A favorite quote? Whatever you\'re feeling.' : '');
+		els.blurb.textContent = v.status || (isOwner ? '*crickets*' : '');
 		els.blurb.hidden = !v.status && !isOwner;
 
 		// Facts: area, established, hype count
@@ -446,7 +446,7 @@
 
 		if (!box.children.length) {
 			emptyMessage(box, isOwner
-				? '*Crickets* Add a short bio, your best/worst/first shows, top 5 artists, and more.'
+				? 'You haven\'t added anything yet. Add a short bio, your best/worst/first shows, top 5 artists, and more.'
 				: at(v.username) + ' hasn\'t added anything here yet.');
 		}
 	}
@@ -1116,8 +1116,8 @@
 	function openMessageDialog() {
 		const target = viewed;
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('Send a <em>message</em>'));
-			body.appendChild(textWithUser(kit, 'Your first message goes to ', target.username, ' as a request. You can keep chatting once they accept.'));
+			body.appendChild(kit.title('Message <em>', target.username, '</em>'));
+			body.appendChild(textWithUser(kit, 'They will need to accept your request to continue the conversation.'));
 			const form = kit.el('form', 'crwdForm');
 			form.noValidate = true;
 			const msg = textArea(kit, { label: 'Message', name: 'message', max: LIMITS.message });
@@ -1938,7 +1938,7 @@
 			body.appendChild(heading);
 			if (opts.welcome) {
 				// Only right after registering
-				const hello = kit.el('p', 'crwdNotice crwdWelcome', 'Your account is all set. Welcome to the crowd, @' + me.username + '! Add a few details below, or close this to start exploring.');
+				const hello = kit.el('p', 'crwdNotice crwdWelcome', 'Welcome to the crowd, @' + me.username + '! Edit your profile details below, or close this to start exploring.');
 				hello.setAttribute('role', 'status');
 				body.appendChild(hello);
 			}
@@ -1957,7 +1957,7 @@
 			const pictures = kit.el('div', 'profileImagePickers');
 			pictures.append(avatar.wrap, hero.wrap);
 			// Placeholder for a future Max setting (not saved yet)
-			const customColors = comingSoonCheckbox(kit, 'Use custom colors on my profile');
+			const customColors = comingSoonCheckbox(kit, 'Share my custom colors on my profile');
 			const colorsList = checkboxList(kit, [customColors]);
 			colorsList.appendChild(kit.el('span', 'crwdHint profileCheckHint', 'Shows the custom site colors from your Max settings to visitors on your profile.'));
 			const dname = kit.field({ label: 'Display Name', name: 'display_name', maxLength: LIMITS.displayName,
@@ -1974,7 +1974,7 @@
 			// Blurb (saved in the "status" column) — shows at the top of the panel beside the tabs
 			// A text box like Bio, so line breaks can be typed
 			const blurb = textArea(kit, { label: 'Blurb', name: 'status', max: LIMITS.status,
-				value: me.status || '', placeholder: 'What\'re you up to?' });
+				value: me.status || '', placeholder: 'A little about yourself, a favorite quote, whatever you\'re feeling!' });
 
 			const areaField = kit.field({ label: 'Area', name: 'area', maxLength: LIMITS.area,
 				value: me.area || '', hint: 'Pick from our areas, or add your own.' });
