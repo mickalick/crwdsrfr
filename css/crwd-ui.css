@@ -700,7 +700,7 @@ html.crwdModalOpen {
 	text-align: center;
 }
 
-/* "Already have a code?" sits just above "New here? Register Now" (or "Already have an account? Sign in") */
+/* "Already have a code?" sits just above "New here? Create Account" (or "Already have an account? Sign in") */
 :is(.crwdModal, .crwdInline) p.crwdModalSwitch + p.crwdModalSwitch {
 	margin-top: 10px;
 }
@@ -728,7 +728,7 @@ html.crwdModalOpen {
 	text-decoration: underline;
 }
 
-/* "Keep me signed in for 30 days": white text, yellow checkbox like the site's other checkboxes */
+/* "Keep me signed in for 30 days" (on the code screens): white text, yellow checkbox like the site's other checkboxes */
 .crwdCheck {
 	display: flex;
 	align-items: center;
@@ -840,7 +840,7 @@ html.crwdModalOpen {
 		align-items: flex-end; /* sheet-style, easier to reach with a thumb */
 	}
 
-	/* …except Sign In / Register / code / username and dialogs opened with { centered: true }
+	/* …except Sign In / Create Account / code / username and dialogs opened with { centered: true }
 	   (Max, Comments), which stay centered at every width */
 	.crwdModal.isCentered {
 		align-items: center;

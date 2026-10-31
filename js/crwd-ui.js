@@ -1,7 +1,7 @@
 /*
  * js/crwd-ui.js — CRWD SRFR account UI shared by every page:
  *   • the profile button + popup menu on the right side of the header
- *   • the account modal: Sign In, Register, "check your email" (emailed code or link), username setup
+ *   • the account modal: Sign In, Create Account, "check your email" (emailed code or link), username setup
  *
  * Needs crwd-core.js (data) and nav.js (which creates the #accountNav mount),
  * both loaded before this file. Styles live in /css/crwd-ui.css.
@@ -136,6 +136,9 @@
 	// The account button gets a dot when anything is new; inside the menu, Messages gets one for
 	// new requests/conversation updates (my_conversations.unread) and Lineup for undismissed
 	// ripples (my_ripples). Just dots, no counts.
+	// Settings → Notifications can turn the Messages dot off for requests and/or for conversation
+	// updates (profiles.dot_message_requests / dot_message_updates). Ripple types turned off there
+	// are already left out of my_ripples by the database.
 	const unread = { messages: false, lineup: false };
 
 	function accountLabel() {
@@ -166,16 +169,27 @@
 		if (!core.user) { setUnread('messages', false); setUnread('lineup', false); return; }
 		const [msgs, ripples] = await Promise.all([
 			core.sb.from('my_conversations')
-				.select('conversation_id', { count: 'exact', head: true })
+				.select('status, i_requested')
 				.eq('unread', true)
 				.in('status', ['pending', 'accepted']),
 			core.sb.from('my_ripples').select('id', { count: 'exact', head: true })
 		]);
 		if (mine !== unreadCheck) return;
 		if (msgs.error) console.warn('[crwd] unread messages check failed', msgs.error);
-		else setUnread('messages', (msgs.count || 0) > 0);
+		else setUnread('messages', wantsMessageDot(msgs.data || []));
 		if (ripples.error) console.warn('[crwd] ripples check failed', ripples.error);
 		else setUnread('lineup', (ripples.count || 0) > 0);
+	}
+
+	// Unread conversations → dot or not, by the member's settings. A request someone sent you that
+	// you haven't answered counts as a "new message request"; anything else unread (a new message,
+	// your request accepted, the other person left) is a "conversation update".
+	function wantsMessageDot(unreadRows) {
+		const p = core.profile || {};
+		return unreadRows.some(function (c) {
+			const isRequest = c.status === 'pending' && !c.i_requested;
+			return isRequest ? p.dot_message_requests !== false : p.dot_message_updates !== false;
+		});
 	}
 
 	// A menu link with room for a "new" dot on its icon
@@ -457,19 +471,26 @@
 		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
 	}
 
-	// "Keep me signed in for 30 days" (styles: .crwdCheck in crwd-ui.css)
+	// "Keep me signed in for 30 days" (styles: .crwdCheck in crwd-ui.css). On the code screens.
+	// The choice is saved as soon as it changes, so it also applies if they tap the button in the
+	// email (in this browser) instead of typing the code.
 	function rememberCheckbox() {
 		const wrap = el('label', 'crwdCheck');
 		const box = document.createElement('input');
 		box.type = 'checkbox';
 		box.name = 'remember';
 		box.checked = draft.remember;
-		box.addEventListener('change', function () { draft.remember = box.checked; });
+		box.addEventListener('change', function () {
+			draft.remember = box.checked;
+			core.setRememberMe(draft.remember);
+		});
 		wrap.append(box, el('span', null, 'Keep me signed in for 30 days'));
 		return wrap;
 	}
 
-	// Sends the sign-in email. The remember choice must be saved BEFORE the session exists.
+	// Sends the sign-in email. The remember choice must be saved BEFORE the session exists, so the
+	// current one (checked unless they unchecked it earlier) is saved now; the code screen's checkbox
+	// can still change it before they sign in.
 	function sendEmail(registering) {
 		core.setRememberMe(draft.remember);
 		// Lets this browser welcome the account after its first sign-in (see welcomeNewAccount)
@@ -538,17 +559,17 @@
 		const email = field({ label: 'Email', name: 'email', type: 'email', autocomplete: 'email', value: draft.email });
 		const err = errorBox();
 		const btn = submitButton('Send my code');
-		form.append(email.wrap, rememberCheckbox(), err, btn);
+		form.append(email.wrap, err, btn);
 		body.appendChild(form);
 		body.appendChild(haveCodeLine('signin'));
-		body.appendChild(switchLine('New here?', 'Register Now', 'register'));
+		body.appendChild(switchLine('New here?', 'Create Account', 'register'));
 
 		if (opts.error) showError(err, opts.error);
 
 		form.addEventListener('submit', async function (e) {
 			e.preventDefault();
 			draft.email = email.input.value.trim();
-			if (!looksLikeEmail(draft.email)) { showError(err, 'Enter the email you registered with.'); email.input.focus(); return; }
+			if (!looksLikeEmail(draft.email)) { showError(err, 'Enter the email for your account.'); email.input.focus(); return; }
 			showError(err, '');
 			setBusy(btn, true, 'Sending…');
 			try {
@@ -556,14 +577,14 @@
 				showView('sent', { mode: 'signin' });
 			} catch (ex) {
 				setBusy(btn, false, 'Send my code');
-				showError(err, ex.code === 'no_account' ? ex.message + ' Want to register instead?' : ex.message);
+				showError(err, ex.code === 'no_account' ? ex.message + ' Want to create an account instead?' : ex.message);
 			}
 		});
 	}
 
 	function viewRegister() {
 		body.appendChild(startOnTitle(title('Join the <em>crowd</em>')));
-		body.appendChild(el('p', 'crwdModalText', 'Register for a SRFR account to hype shows, acts and venues, post to the Board, and message with other SRFRs.'));
+		body.appendChild(el('p', 'crwdModalText', 'Create a SRFR account to hype shows, acts and venues, post to the Board, and message with other SRFRs.'));
 
 		const form = el('form', 'crwdForm');
 		form.noValidate = true;
@@ -571,7 +592,7 @@
 			hint: 'Never shown on the site.' });
 		const username = field({ label: 'Username', name: 'username', autocomplete: 'username', maxLength: 24, username: true,
 			value: draft.username, hint: '3–24 characters: letters, numbers, underscores' });
-		const fine = el('p', 'crwdFinePrint', 'By registering you agree to the ');
+		const fine = el('p', 'crwdFinePrint', 'By creating an account you agree to the ');
 		const terms = el('a', null, 'Terms of Use'); terms.href = '/terms.html';
 		const privacy = el('a', null, 'Privacy Policy'); privacy.href = '/privacy.html';
 		fine.append(terms, ' and ', privacy, '.');
@@ -579,7 +600,7 @@
 		const err = errorBox();
 		const btn = submitButton('Send my code');
 		// Fields, then fine print, then any error right above the button
-		form.append(email.wrap, username.wrap, rememberCheckbox(), fine, err, btn);
+		form.append(email.wrap, username.wrap, fine, err, btn);
 		body.appendChild(form);
 		body.appendChild(haveCodeLine('register'));
 		body.appendChild(switchLine('Already have an account?', 'Sign in', 'signin'));
@@ -624,7 +645,7 @@
 		if (haveCode) {
 			body.appendChild(title('Enter your <em>code</em>'));
 			body.appendChild(el('p', 'crwdModalText', registering
-				? 'Enter the email you registered with and the ' + CODE + '-digit code we sent you to finish creating your account.'
+				? 'Enter the email you used and the ' + CODE + '-digit code we sent you to finish creating your account.'
 				: 'Enter your email and the ' + CODE + '-digit code we sent you to sign in.'));
 			emailField = field({ label: 'Email', name: 'email', type: 'email', autocomplete: 'email', value: draft.email || lastCodeEmail() });
 		} else {
@@ -650,7 +671,7 @@
 		const err = errorBox();
 		const verify = submitButton(registering ? 'Create my account' : 'Sign in');
 		if (emailField) form.append(emailField.wrap);
-		form.append(code.wrap, err, verify);
+		form.append(code.wrap, rememberCheckbox(), err, verify);
 		body.appendChild(form);
 
 		// "Already have a code?" asks for the email here; otherwise it's the one just typed
@@ -673,6 +694,7 @@
 			verifying = true;
 			showError(err, '');
 			setBusy(verify, true, 'Checking…');
+			core.setRememberMe(draft.remember); // before the session exists (see crwd-core.js)
 			try {
 				await core.verifyCode(draft.email, code.input.value);
 				// Signed in: onChange (below) closes this modal, and asks placeholder accounts for a username
@@ -700,7 +722,7 @@
 
 		const back = el('p', 'crwdModalSwitch');
 		// With the email box right here, the way out is just back to where they came from
-		const other = el('button', 'crwdLinkButton', haveCode ? (registering ? 'Back to Register' : 'Back to Sign In') : 'Use a different email');
+		const other = el('button', 'crwdLinkButton', haveCode ? (registering ? 'Back to Create Account' : 'Back to Sign In') : 'Use a different email');
 		other.type = 'button';
 		other.addEventListener('click', function () { showView(registering ? 'register' : 'signin', {}); });
 		back.appendChild(other);
@@ -795,11 +817,11 @@
 	let usernamePromptShown = false;
 
 	// ---------- Brand-new accounts land on their profile with Edit Profile open ----------
-	// "New" = registered in this browser (the Register form sets a note), or the account was created
+	// "New" = created in this browser (the Create Account form sets a note), or the account was created
 	// within the last hour (covers the email's button opened in another browser). Each account is
 	// welcomed once per browser; if that can't be remembered (storage blocked), there's no redirect,
 	// so it can never loop.
-	const NEW_ACCOUNT_KEY = 'crwd-new-account';  // email typed on the Register form
+	const NEW_ACCOUNT_KEY = 'crwd-new-account';  // email typed on the Create Account form
 	const WELCOMED_KEY = 'crwd-welcomed';         // account ids already welcomed in this browser
 	const NEW_ACCOUNT_MS = 60 * 60 * 1000;
 

@@ -800,7 +800,7 @@
 		const vis = el('section', 'settingsSection');
 		vis.appendChild(choices('profile_visibility', 'Profile Visibility', [
 			{ value: 'everyone', label: 'Everyone (Default)', note: 'Anyone can see your profile, even without an account.' },
-			{ value: 'members', label: 'Registered Only', note: 'Only people signed in to CRWD SRFR.' },
+			{ value: 'members', label: 'Members Only', note: 'Only people signed in to CRWD SRFR.' },
 			{ value: 'connections', label: 'Connections Only', note: 'Only people you\'ve accepted messages with.' },
 			{ value: 'nobody', label: 'No One', note: 'Your profile is hidden from everyone but you.' }
 		], me.profile_visibility || 'everyone'));

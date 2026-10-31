@@ -53,7 +53,8 @@
 	// ---------- "Keep me signed in for 30 days" ----------
 	// Checked   → session kept in localStorage, ends 30 days after signing in
 	// Unchecked → session kept in sessionStorage, ends when the browser closes
-	// setRememberMe() must run BEFORE the sign-in email is sent (see register/signIn).
+	// setRememberMe() must run BEFORE the session exists: crwd-ui.js saves it when the email is sent,
+	// again whenever the box on the code screen changes, and right before the code is checked.
 	const REMEMBER_KEY = 'crwd-remember-until';
 	const REMEMBER_DAYS = 30;
 
@@ -158,7 +159,7 @@
 
 	// ---------- Errors ----------
 	// Turns Supabase/Postgres errors into short messages the UI can show as-is.
-	// err.code is kept so the UI can react (e.g. offer "Register" on 'no_account').
+	// err.code is kept so the UI can react (e.g. offer "Create Account" on 'no_account').
 	function friendlyError(error) {
 		const msg = (error && error.message) || '';
 		const code = (error && error.code) || '';
