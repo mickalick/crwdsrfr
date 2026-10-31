@@ -13,10 +13,11 @@
 
 		<meta charset="utf-8">
 		<title>Admin | CRWD SRFR</title>
+		<meta name="description" content="CRWD SRFR admin tools: review posts and reports.">
 		<meta name="robots" content="noindex, nofollow">
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/board.css"><!-- the post modal's styles, used by Preview -->
-		<link rel="stylesheet" href="../css/nav.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/board.css"><!-- the post modal's styles, used by Preview -->
+		<link rel="stylesheet" href="/css/nav.css">
 		<link rel="stylesheet" href="/css/crwd-ui.css">
 		<link rel="stylesheet" href="/css/admin.css">
 		<!-- Accounts: these scripts must stay in this order -->
@@ -26,8 +27,9 @@
 		<script src="/js/crwd-ui.js" defer></script>
 		<script src="/js/crwd-social.js" defer></script>
 		<script src="/js/crwd-post.js" defer></script><!-- the post modal, for Preview -->
+		<!-- Page script -->
 		<script src="/js/admin.js" defer></script>
-		<link rel="shortcut icon" href="../images/favicon.png">
+		<link rel="shortcut icon" href="/images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -96,56 +98,58 @@
 					</div>
 				</div>
 			</section>
-			<section id="adminContent" class="page">
+
+			<!-- Shown while loading, when signed out, and for non-admins. admin.js fills in the message. -->
+			<section id="adminState" class="page adminState">
 				<div class="main">
-					<div class="admin">
+					<p id="adminStateText" class="adminStateText">Loading…</p>
+					<div id="adminStateActions" class="adminStateActions"></div>
+				</div>
+			</section>
 
-						<!-- Loading / signed out / not an admin -->
-						<div class="adminGate" id="adminGate">
-							<p id="adminGateText">Loading…</p>
-							<button type="button" class="adminButton" id="adminGateSignIn" hidden>Sign in</button>
+			<section id="adminContent" class="page adminContent" hidden>
+				<div class="main">
+					<div class="adminWrap">
+						<div class="adminTabs" role="tablist" aria-label="Admin sections">
+							<button type="button" role="tab" id="adminTabPosts" class="adminTab" aria-selected="true" aria-controls="adminPanelPosts">Posts</button>
+							<button type="button" role="tab" id="adminTabReports" class="adminTab" aria-selected="false" aria-controls="adminPanelReports" tabindex="-1">Reports</button>
 						</div>
 
-						<div id="adminApp" hidden>
-							<div class="adminTabsRow">
-								<div class="adminTabs" role="tablist" aria-label="Admin sections">
-									<button type="button" class="adminTab" role="tab" id="adminTabPosts" aria-controls="adminPanelPosts" aria-selected="true">
-										Posts <span class="adminCount" id="adminPostsCount"></span>
-									</button>
-									<button type="button" class="adminTab" role="tab" id="adminTabReports" aria-controls="adminPanelReports" aria-selected="false" tabindex="-1">
-										Reports <span class="adminCount" id="adminReportsCount"></span>
-									</button>
-								</div>
-								<button type="button" class="adminRefresh" id="adminRefresh" hidden>Refresh</button>
-							</div>
-
-							<p class="adminStatus" id="adminStatus" role="status" aria-live="polite"></p>
-
-							<!-- Posts -->
-							<div class="adminPanel" id="adminPanelPosts" role="tabpanel" aria-labelledby="adminTabPosts">
-								<h2 class="adminSubhead">Waiting for review</h2>
-								<div class="adminList" id="adminPending"></div>
-								<p class="adminEmpty" id="adminPendingEmpty" hidden>All caught up. Nothing is waiting for review.</p>
-
-								<h2 class="adminSubhead">Recently reviewed</h2>
-								<div class="adminList" id="adminReviewed"></div>
-								<p class="adminEmpty" id="adminReviewedEmpty" hidden>Nothing reviewed yet.</p>
-							</div>
-
-							<!-- Reports -->
-							<div class="adminPanel" id="adminPanelReports" role="tabpanel" aria-labelledby="adminTabReports" hidden>
-								<div class="adminFilterRow" id="adminReportFilter">
-									<button type="button" class="toggle-button active" data-reports="open" aria-pressed="true">Open</button>
-									<button type="button" class="toggle-button" data-reports="all" aria-pressed="false">All</button>
-								</div>
-								<div class="adminList" id="adminReportList"></div>
-								<p class="adminEmpty" id="adminReportsEmpty" hidden>No open reports.</p>
-							</div>
+						<!-- What just happened ("Approved …"), and Refresh -->
+						<div class="adminToolbar">
+							<p id="adminStatus" class="adminStatus" role="status" aria-live="polite"></p>
+							<button type="button" id="adminRefresh" class="adminLinkButton">Refresh</button>
 						</div>
 
+						<!-- Posts -->
+						<div id="adminPanelPosts" class="adminPanel" role="tabpanel" aria-labelledby="adminTabPosts">
+							<section class="adminSection">
+								<h2 id="adminPendingHeading" class="adminHeading">Waiting for Review</h2>
+								<p class="adminNote">Oldest first. Approved posts show on the site right away.</p>
+								<div id="adminPending" class="adminList"></div>
+							</section>
+							<section class="adminSection">
+								<h2 class="adminHeading">Recently Reviewed</h2>
+								<p class="adminNote">The last 20 posts you or another admin reviewed. Change your mind here.</p>
+								<div id="adminReviewed" class="adminList"></div>
+							</section>
+						</div>
+
+						<!-- Reports -->
+						<div id="adminPanelReports" class="adminPanel" role="tabpanel" aria-labelledby="adminTabReports" hidden>
+							<section class="adminSection">
+								<h2 id="adminReportsHeading" class="adminHeading">Open Reports</h2>
+								<label class="adminCheck">
+									<input type="checkbox" id="adminShowClosed">
+									<span>Show closed reports too</span>
+								</label>
+								<div id="adminReportList" class="adminList"></div>
+							</section>
+						</div>
 					</div>
 				</div>
 			</section>
+
 			<div class="wave-footer"></div>
 			<footer>
 				<div class="footWrap">
@@ -153,8 +157,8 @@
 						<a aria-label="Instagram" href="https://www.instagram.com/crwdsrfr/" target="_blank"><span class="icon" id="insta"></span></a>
 					</div>
 					<ul id="bottomNav">
-						<li><a href="../terms.html">Terms of Use</a></li>
-						<li><a href="../privacy.html">Privacy Policy</a></li>
+						<li><a href="/terms.html">Terms of Use</a></li>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
 					</ul>
 					<p><small>&copy; 2026 <a href="https://kmmakes.com" target="_blank">KM Makes</a> | <a href="/">crwdsrfr.com</a></small></p>
 					<p><small>All rights reserved.</small></p>
@@ -164,7 +168,7 @@
 
 		<!-- board.js: only its data helpers (window.BoardMedia) are used here; the grid code skips itself.
 		     Not deferred, same as on the Board page, so it's ready before admin.js runs. -->
-		<script src="../js/board.js"></script>
+		<script src="/js/board.js"></script>
 
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "78badd6860d14c8a867c21a14912cdd4"}'></script><!-- End Cloudflare Web Analytics -->
 
