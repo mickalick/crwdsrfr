@@ -226,8 +226,8 @@
 
 	function declineRequest(conv, done) {
 		confirmDialog({
-			title: 'Decline this <em>request</em>?', username: conv.other_username,
-			before: 'You won\'t be able to accept it later, and you can\'t message each other unless one of you sends a new request. ', after: ' isn\'t told you declined.',
+			title: 'Decline this request?', username: conv.other_username,
+			before: 'You won\'t be able to accept it later, and you can\'t message unless you send a new request. ', after: ' isn\'t told you declined.',
 			confirm: 'Decline Request', busy: 'Declining…', keep: 'Keep it for now', danger: true,
 			run: function () { return rpc('respond_to_request', { conversation: conv.conversation_id, accept: false }); },
 			done: done
@@ -592,7 +592,7 @@
 				footer.className = 'msgFooter isCentered';
 			} else if (conv.status === 'declined') {
 				footer.className = 'msgFooter isCentered';
-				footer.appendChild(el('p', 'msgFooterNote', 'You declined this request. ' + them + ' isn\'t told.'));
+				footer.appendChild(el('p', 'msgFooterNote', 'You declined this request.'));
 			} else if (conv.other_left_at) {
 				footer.className = 'msgFooter isCentered';
 				footer.appendChild(el('p', 'msgFooterNote', 'You can\'t reply to this conversation anymore.'));
