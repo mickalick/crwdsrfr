@@ -1116,8 +1116,8 @@
 	function openMessageDialog() {
 		const target = viewed;
 		ui.openDialog(function (body, kit) {
-			body.appendChild(kit.title('Message <em>', target.username, '</em>'));
-			body.appendChild(textWithUser(kit, 'They will need to accept your request to continue the conversation.'));
+			body.appendChild(kit.title('Send a <em>message</em>'));
+			body.appendChild(textWithUser(kit, 'Your first message goes to ', target.username, ' as a request. You can keep chatting once they accept.'));
 			const form = kit.el('form', 'crwdForm');
 			form.noValidate = true;
 			const msg = textArea(kit, { label: 'Message', name: 'message', max: LIMITS.message });
