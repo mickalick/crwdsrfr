@@ -56,6 +56,10 @@
 	gap: 12px;
 }
 
+.messagesStateActions a {
+	color: #FFF;
+}
+
 /* Screen-reader-only text */
 .msgSrOnly {
 	position: absolute;
