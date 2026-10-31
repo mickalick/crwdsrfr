@@ -687,6 +687,43 @@ a.lnRippleLink {
 	text-decoration: none !important;
 }
 
+/* Show titles in Waves: white and underlined (primary blue on hover) */
+.lnWaveShow .lnCardTitle {
+	color: #FFF;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+/* Shows added together: "See all N shows" opens the list */
+.lnShowsToggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	align-self: flex-start;
+}
+
+.lnShowsToggle .lnChevron {
+	border-color: currentColor;
+}
+
+.lnShowsToggle[aria-expanded="true"] .lnChevron {
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.lnWaveShows {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0;
+	padding: 2px 0 0;
+	list-style: none;
+}
+
+.lnWaveShows[hidden] {
+	display: none;
+}
+
 .lnPreviewLink {
 	display: block;
 	border-radius: 6px;
@@ -819,7 +856,10 @@ a.lnRippleLink {
 		border-color: #62CBB8;
 	}
 
-	.lnWaveShow:hover .lnCardTitle,
+	.lnWaveShow:hover .lnCardTitle {
+		color: #62CBB8;
+	}
+
 	.lnRippleLink:hover,
 	.lnUser:hover,
 	.lnItemLink:hover {

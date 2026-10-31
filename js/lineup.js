@@ -507,8 +507,19 @@
 	// Waves
 	// ------------------------------------------------------------------
 
+	// "20:00" → "8:00 PM" (same as the calendar's)
+	function showTime(t) {
+		if (!t) return null;
+		const hm = String(t).split(':').map(Number);
+		if (isNaN(hm[0])) return null;
+		return (hm[0] % 12 || 12) + ':' + String(hm[1] || 0).padStart(2, '0') + ' ' + (hm[0] >= 12 ? 'PM' : 'AM');
+	}
+
+	// Returns { waves, shows }.
 	// Each wave: { key, time, cats: { act?, venue?, srfr? } (the line for each), href, post?, terms }
 	// terms: the act names, venue names and usernames the Waves search looks through
+	// Each show: one newly added show. They're grouped into waves when drawn (groupShows), since
+	// which group a show is in depends on the Acts / Venues boxes.
 	async function collectWaves(cat) {
 		const me = core.user.id;
 		const since = new Date(Date.now() - WAVE_DAYS * 86400000).toISOString();
@@ -535,22 +546,27 @@
 
 		// 1. Newly added shows (events.json addedAt) by hyped acts / at hyped venues, not yet happened
 		const actNeedleList = hypedActs.map(function (id) { const a = cat.actsById[id]; return a ? { id: id, needles: actNeedles(a) } : null; }).filter(Boolean);
+		const shows = [];
 		cat.events.forEach(function (e) {
 			if (!e.addedAt || e.addedAt < since || e.date < today) return;
-			const venue = venueName(e.venueId);
-			const d = showDate(e.date);
-			const when = d ? d.label : e.date;
 			const act = actNeedleList.find(function (a) { return actPlaysEvent(a.needles, e); });
 			const atVenue = hypedVenues.indexOf(e.venueId) !== -1;
 			if (!act && !atVenue) return;
-			const w = wave('show:' + e.id, e.addedAt, { href: showUrl(e.id), show: { title: e.title, meta: [venue, when].join(' · ') } });
-			// (the show's title, venue and date are in the box under this line)
-			if (act) w.cats.act = ['New show added for ', { b: actName(act.id), href: actUrl(act.id) }];
-			if (atVenue) w.cats.venue = ['New show added at ', { b: venue, href: venueUrl(e.venueId) }];
+			const venue = venueName(e.venueId);
+			const d = showDate(e.date);
 			// Searchable: the venue, the hyped act, and everyone on the bill
-			w.terms.push(venue);
-			if (act) w.terms.push(actName(act.id));
-			(e.performers || []).forEach(function (p) { if (p && p.name) w.terms.push(p.name); });
+			const terms = [venue];
+			if (act) terms.push(actName(act.id));
+			(e.performers || []).forEach(function (p) { if (p && p.name) terms.push(p.name); });
+			shows.push({
+				id: e.id, title: e.title, href: showUrl(e.id),
+				addedAt: e.addedAt, // the same for every show added in one scraper run
+				order: e.date + ' ' + (e.time || ''),
+				when: d ? d.label : e.date, time: showTime(e.time),
+				actId: act ? act.id : null, actName: act ? actName(act.id) : null,
+				venueId: e.venueId, venueName: venue, atVenue: atVenue,
+				search: terms.join('\n').toLowerCase()
+			});
 		});
 
 		// 2. Posts: Board posts tagged with your acts/venues, and your SRFRs' posts
@@ -615,12 +631,45 @@
 			if (h.created_at > w.time) w.time = h.created_at;
 		});
 
-		return Object.keys(waves).map(function (k) {
-			const w = waves[k];
-			w.search = w.terms.join('\n').toLowerCase(); // one string to look through
-			return w;
-		})
-			.sort(function (a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; });
+		return {
+			waves: Object.keys(waves).map(function (k) {
+				const w = waves[k];
+				w.search = w.terms.join('\n').toLowerCase(); // one string to look through
+				return w;
+			}),
+			shows: shows
+		};
+	}
+
+	function newestFirst(a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; }
+
+	// Newly added shows → waves: one per hyped act (or venue) per push, so shows the scraper added
+	// together are one block. A show by a hyped act goes with the act if Acts is checked, otherwise
+	// with its venue if that's hyped and Venues is checked (so it's never in the feed twice).
+	// Search: if the act/venue's name matches, all its shows stay; otherwise just the shows that match.
+	function groupShows(shows, kinds, q) {
+		const groups = {};
+		shows.forEach(function (s) {
+			const kind = kinds.has('act') && s.actId ? 'act' : kinds.has('venue') && s.atVenue ? 'venue' : null;
+			if (!kind) return;
+			const key = 'shows:' + kind + ':' + (kind === 'act' ? s.actId : s.venueId) + ':' + s.addedAt;
+			if (!groups[key]) {
+				groups[key] = kind === 'act'
+					? { key: key, time: s.addedAt, kind: kind, name: s.actName, href: actUrl(s.actId), shows: [] }
+					: { key: key, time: s.addedAt, kind: kind, name: s.venueName, href: venueUrl(s.venueId), shows: [] };
+			}
+			groups[key].shows.push(s);
+		});
+		return Object.keys(groups).map(function (k) {
+			const g = groups[k];
+			if (q && g.name.toLowerCase().indexOf(q) === -1) {
+				g.shows = g.shows.filter(function (s) { return s.search.indexOf(q) !== -1; });
+			}
+			g.shows.sort(function (a, b) { return a.order < b.order ? -1 : a.order > b.order ? 1 : 0; });
+			const n = g.shows.length;
+			const line = [n === 1 ? 'New show added ' : n + ' new shows added ', g.kind === 'act' ? 'for ' : 'at ', { b: g.name, href: g.href }];
+			return { key: g.key, time: g.time, cats: { [g.kind]: line }, group: g };
+		}).filter(function (w) { return w.group.shows.length; });
 	}
 
 	// Waves filter: one checkbox per kind of wave. Saved in this browser, like the calendar's filters.
@@ -700,6 +749,8 @@
 		let query = '';
 		let shown = WAVE_PAGE;
 		let all = [];
+		let shows = [];
+		const openGroups = new Set(); // the show blocks that are open (kept through Load More / filtering)
 		FILTERS.forEach(function (f) {
 			const row = el('label', 'lnFilterCheck');
 			const box = el('input');
@@ -739,7 +790,7 @@
 			return all.filter(function (w) {
 				if (!ALL_KINDS.some(function (k) { return kinds.has(k) && w.cats[k]; })) return false;
 				return !q || w.search.indexOf(q) !== -1;
-			});
+			}).concat(groupShows(shows, kinds, q)).sort(newestFirst);
 		}
 
 		function draw(focusFrom) {
@@ -775,6 +826,7 @@
 			return li;
 		}
 
+		let groupSeq = 0; // ids for the show lists' aria-controls
 		function waveCard(w) {
 			// Same order as before: the SRFR's line first, then the act's, then the venue's (whichever are checked)
 			const line = ['srfr', 'act', 'venue'].filter(function (k) { return kinds.has(k) && w.cats[k]; }).map(function (k) { return w.cats[k]; })[0];
@@ -789,13 +841,49 @@
 				a.appendChild(postPreview(w.post, w.author));
 				li.appendChild(a);
 			}
-			if (w.show) {
-				const a = el('a', 'lnWaveShow');
-				a.href = w.href;
-				a.append(el('span', 'lnCardTitle', w.show.title), el('span', 'lnCardMeta', w.show.meta));
-				li.appendChild(a);
+			if (w.group) {
+				const g = w.group;
+				if (g.shows.length === 1) {
+					li.appendChild(showLink(g.shows[0], g.kind));
+				} else {
+					// More than one show from the same push: one block, opened with "See all N shows"
+					const open = openGroups.has(g.key);
+					const listId = 'lnShows-' + (++groupSeq);
+					const toggle = el('button', 'lineupLinkButton lnShowsToggle');
+					toggle.type = 'button';
+					toggle.setAttribute('aria-controls', listId);
+					const label = el('span', '');
+					toggle.append(label, el('span', 'lnChevron'));
+					const shows = el('ul', 'lnWaveShows');
+					shows.id = listId;
+					g.shows.forEach(function (s) {
+						const item = el('li');
+						item.appendChild(showLink(s, g.kind));
+						shows.appendChild(item);
+					});
+					const setOpen = function (on) {
+						toggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+						label.textContent = on ? 'Hide shows' : 'See all ' + g.shows.length + ' shows';
+						shows.hidden = !on;
+						if (on) openGroups.add(g.key); else openGroups.delete(g.key);
+					};
+					setOpen(open);
+					toggle.addEventListener('click', function () { setOpen(toggle.getAttribute('aria-expanded') !== 'true'); });
+					li.classList.add('isGroup');
+					li.append(toggle, shows);
+				}
 			}
 			return li;
+		}
+
+		// One show in a wave. From a venue: just the date and time (the venue's already in the line).
+		// From an act: the venue too.
+		function showLink(s, kind) {
+			const a = el('a', 'lnWaveShow');
+			a.href = s.href;
+			const meta = (kind === 'act' ? [s.venueName] : []).concat(s.when, s.time || []);
+			a.append(el('span', 'lnCardTitle', s.title), el('span', 'lnCardMeta', meta.join(' · ')));
+			return a;
 		}
 
 		more.addEventListener('click', function () {
@@ -805,7 +893,9 @@
 		});
 
 		try {
-			all = await collectWaves(cat);
+			const got = await collectWaves(cat);
+			all = got.waves;
+			shows = got.shows;
 		} catch (e) {
 			console.error('[lineup] waves', e);
 			list.replaceChildren(el('li', 'lnEmpty', 'Waves couldn\'t load right now. Please try again in a bit.'));
