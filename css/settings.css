@@ -556,6 +556,74 @@
 	cursor: default;
 }
 
+/* One Max-only setting in a list of others (the Hype Report under Email Notifications) */
+.settingsCheckWrap.isLocked .settingsCheck,
+.settingsCheckWrap.isLocked > .settingsCheckHint:not(.settingsMaxNote),
+.settingsCheckWrap.isLocked .settingsSelectRow {
+	opacity: 0.5;
+}
+
+.settingsCheckWrap.isLocked .settingsCheck,
+.settingsCheckWrap.isLocked .settingsCheck input {
+	cursor: default;
+}
+
+/* "Max" tag after a setting's label */
+.settingsMaxTag {
+	margin-left: 8px;
+	padding: 1px 7px;
+	border: 1px solid #F9F976;
+	border-radius: 20px;
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	color: #F9F976;
+	vertical-align: 2px;
+}
+
+/* Hype Report day: under its checkbox, lined up with the label */
+.settingsSelectRow {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px 12px;
+	margin: 6px 0 0 30px;
+}
+
+.settingsSelectRow[hidden] {
+	display: none;
+}
+
+.settingsSelectLabel {
+	font-size: 14px;
+	color: #ADADAD;
+}
+
+/* Beats style.css's global select rule (full width, margins) */
+.settingsSelectRow select.settingsSelect {
+	width: auto;
+	min-width: 160px;
+	margin: 0;
+	padding: 8px 12px;
+	background: #333;
+	border: 2px solid #333;
+	border-radius: 9px;
+	color: #FCFCFC;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 16px; /* 16px+ stops iOS from zooming in */
+	cursor: pointer;
+	transition: border-color 150ms ease;
+}
+
+.settingsSelectRow select.settingsSelect:focus {
+	outline: none;
+	border-color: #62CBB8;
+}
+
+.settingsSelectRow select.settingsSelect:disabled {
+	cursor: default;
+}
+
 /* ---------------- Coming soon (custom site colors) ---------------- */
 
 .settingsComingSoon {

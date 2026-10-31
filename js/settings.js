@@ -2,6 +2,8 @@
  * js/settings.js — the Settings & Privacy page (/settings/).
  *
  * Tabs: Account · Max (paid members only) · Notifications · Privacy
+ * Notifications has three sections: Ripple Notifications (one switch per ripple type),
+ * Message Notifications (the "new" dot) and Email Notifications (incl. the Max-only Hype Report).
  * The tab is kept in the URL (#account, #max, #notifications, #privacy) so links can open one directly.
  *
  * Checkboxes and choices save as soon as they change ("Saved" appears next to them).
@@ -371,7 +373,7 @@
 			['Max Badge', 'Displays next to your username to show your support'],
 			['Header Image', 'Go further with your profile with a custom header image'],
 			['Custom Colors', 'Swap the site\'s two main colors for your own'],
-			['Lineup Newsletter', 'A weekly email listing new shows from the acts and venues you\'ve hyped']
+			['Hype Report', 'A weekly email of new shows from the acts and venues you\'ve hyped, on the day you choose']
 		].forEach(function (b) {
 			const li = el('li');
 			li.append(el('strong', null, b[0]), ': ' + b[1]);
@@ -664,12 +666,7 @@
 		box.input.addEventListener('change', drawPreview);
 		if (locked) { box.input.disabled = true; badge.el.classList.add('isLocked'); }
 
-		// Weekly roundup
-		const roundup = section(panel, 'Weekly Roundup');
-		const rBox = checkbox('Email me a weekly roundup of my hyped acts and venues', !!me.email_weekly_roundup,
-			'New shows from the acts and venues you\'ve hyped, once a week.');
-		roundup.el.appendChild(rBox.wrap);
-		if (locked) { rBox.input.disabled = true; roundup.el.classList.add('isLocked'); }
+		// (The Hype Report, formerly "Weekly Roundup", is under Notifications → Email Notifications)
 
 		// Custom site colors (placeholder)
 		const colors = section(panel, 'Custom Site Colors', 'isComingSoon');
@@ -690,49 +687,105 @@
 		// Nothing to save until they have Max
 		if (locked) { delete unsaved.max; return; }
 		panel.appendChild(saveBar('max', function () {
-			return { show_max_badge: box.input.checked, email_weekly_roundup: rBox.input.checked };
+			return { show_max_badge: box.input.checked };
 		}));
 	}
 
 	// ---------- Notifications ----------
+
+	// Ripple types (the Lineup's "Ripples"), as profiles.ripple_* columns
+	const RIPPLE_SETTINGS = [
+		['ripple_post_hype', 'Hypes on your posts', 'When someone hypes one of your posts.'],
+		['ripple_post_comment', 'Comments on your posts', 'When someone comments on one of your posts.'],
+		['ripple_commented_post', 'New comments on posts you commented on', 'When someone else comments on a post you\'ve commented on.'],
+		['ripple_event_comment', 'New comments on shows you commented on', 'When someone else comments on a show you\'ve commented on.']
+	];
+
+	// What puts the "new" dot on the account menu and Messages (profiles.dot_message_*)
+	const MESSAGE_DOT_SETTINGS = [
+		['dot_message_requests', 'New message requests', 'When someone sends you a message request.'],
+		['dot_message_updates', 'Conversation updates', 'When there\'s a new message in a conversation, or someone accepts your request.']
+	];
+
+	const EMAIL_SETTINGS = [
+		['email_message_requests', 'New message requests', 'When someone sends you a message request.'],
+		['email_new_messages', 'New messages in a conversation', 'When someone you\'re chatting with sends you a message.']
+	];
+
+	const HYPE_REPORT_DAYS = [
+		['sun', 'Sunday'], ['mon', 'Monday'], ['tue', 'Tuesday'], ['wed', 'Wednesday'],
+		['thu', 'Thursday'], ['fri', 'Friday'], ['sat', 'Saturday']
+	];
+
+	// A list of on/off checkboxes for profile columns; checked unless the column is false
+	function checkList(rows) {
+		const list = el('div', 'settingsCheckList');
+		rows.forEach(function (s) {
+			const box = checkbox(s[1], core.profile[s[0]] !== false, s[2]);
+			box.input.name = s[0];
+			list.appendChild(box.wrap);
+		});
+		return list;
+	}
 
 	function renderNotifications() {
 		const panel = tabParts('notifications').panel;
 		panel.replaceChildren();
 		const me = core.profile;
 
+		// Ripple Notifications
+		const ripples = section(panel, 'Ripple Notifications');
+		ripples.el.appendChild(el('p', 'settingsText', 'Ripples are updates about your posts and comments, in your Lineup. Turning one off stops that kind of ripple and hides any you already have.'));
+		ripples.el.appendChild(checkList(RIPPLE_SETTINGS));
+
+		// Message Notifications
+		const messages = section(panel, 'Message Notifications');
+		messages.el.appendChild(el('p', 'settingsText', 'Choose what puts a "new" dot on your account menu and Messages.'));
+		messages.el.appendChild(checkList(MESSAGE_DOT_SETTINGS));
+
+		// Email Notifications
 		const mail = section(panel, 'Email Notifications');
 		const to = el('p', 'settingsText', 'Emails go to ');
 		to.append(el('strong', null, core.user.email || ''), '.');
 		mail.el.appendChild(to);
+		const list = checkList(EMAIL_SETTINGS);
 
-		const list = el('div', 'settingsCheckList');
-		[
-			['email_message_requests', 'New message requests', 'When someone sends you a message request.'],
-			['email_new_messages', 'New messages', 'When someone you\'re chatting with sends you a message.'],
-			['email_ripples', 'Ripples', 'Hypes and comments on your posts, and new comments where you\'ve commented.']
-		].forEach(function (s) {
-			const box = checkbox(s[1], me[s[0]] !== false, s[2]);
-			box.input.name = s[0];
-			list.appendChild(box.wrap);
-		});
-		mail.el.appendChild(list);
-
+		// Hype Report: Max only (shown, greyed out, without Max). Choosing it shows the day picker.
+		const report = checkbox('Hype Report', !!me.email_hype_report,
+			'A weekly email of new shows from the acts and venues you\'ve hyped.');
+		report.input.name = 'email_hype_report';
+		report.text.appendChild(el('span', 'settingsMaxTag', 'Max'));
+		const dayWrap = el('label', 'settingsSelectRow');
+		dayWrap.appendChild(el('span', 'settingsSelectLabel', 'Send it on'));
+		const day = el('select', 'settingsSelect');
+		day.name = 'hype_report_day';
+		HYPE_REPORT_DAYS.forEach(function (d) { day.appendChild(new Option(d[1], d[0])); });
+		day.value = HYPE_REPORT_DAYS.some(function (d) { return d[0] === me.hype_report_day; }) ? me.hype_report_day : 'sun';
+		dayWrap.appendChild(day);
+		report.wrap.appendChild(dayWrap);
+		function showDay() { dayWrap.hidden = !report.input.checked; }
+		report.input.addEventListener('change', showDay);
+		showDay();
 		if (!isMax) {
-			const more = el('p', 'settingsNote', 'For notifications on your hyped acts and venues, manage your Lineup Newsletter in Max settings.');
+			report.input.disabled = true;
+			day.disabled = true;
+			report.wrap.classList.add('isLocked');
+			const more = el('p', 'settingsCheckHint settingsMaxNote', 'The Hype Report is part of Max. ');
 			const link = el('button', 'settingsLinkButton', 'See Max');
 			link.type = 'button';
 			link.addEventListener('click', function () { selectTab('max', true); });
 			more.appendChild(link);
-			mail.el.appendChild(more);
+			report.wrap.appendChild(more);
 		}
+		list.appendChild(report.wrap);
+		mail.el.appendChild(list);
 
+		// One Save for the whole tab
 		panel.appendChild(saveBar('notifications', function () {
-			return {
-				email_message_requests: list.querySelector('input[name=email_message_requests]').checked,
-				email_new_messages: list.querySelector('input[name=email_new_messages]').checked,
-				email_ripples: list.querySelector('input[name=email_ripples]').checked
-			};
+			const out = {};
+			panel.querySelectorAll('.settingsCheckList input[type=checkbox]').forEach(function (box) { out[box.name] = box.checked; });
+			out.hype_report_day = day.value;
+			return out;
 		}));
 	}
 

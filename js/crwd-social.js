@@ -26,7 +26,8 @@
  *
  * Counts are public; who hyped is not shown here.
  *
- * Every comment section has a "Comments (n)" heading and a Newest / Oldest switch. The choice
+ * Every comment section has a "Comments (n)" heading and a sort button that shows the current
+ * order ("Newest" or "Oldest") and switches to the other one when pressed. The choice
  * is remembered on this device (localStorage 'crwd-comment-sort') and used by every comment
  * section on the site: Board posts, profile posts and shows.
  */
@@ -285,7 +286,7 @@
 
 	// Newest / Oldest, remembered on this device for every comment section on the site
 	const SORT_KEY = 'crwd-comment-sort';
-	const SORT_OPTIONS = [['newest', 'Newest'], ['oldest', 'Oldest']];
+	const SORT_LABELS = { newest: 'Newest', oldest: 'Oldest' };
 	function savedSort() {
 		try { return localStorage.getItem(SORT_KEY) === 'newest' ? 'newest' : 'oldest'; } catch (e) { return 'oldest'; }
 	}
@@ -306,7 +307,7 @@
 
 		const view = el('div', 'crwdCommentsView');
 
-		// "Comments (n)" + the Newest / Oldest switch
+		// "Comments (n)" + the sort button
 		const head = el('div', 'crwdCommentsHead');
 		let heading;
 		if (hooks.heading) {
@@ -317,16 +318,15 @@
 			heading.id = 'crwdCommentsTitle-' + opts.id;
 		}
 		heading.tabIndex = -1; // focus can move here (e.g. the post's top comment button), without a ring
-		const sorter = el('div', 'crwdCommentsSort');
-		sorter.setAttribute('role', 'group');
-		sorter.setAttribute('aria-label', 'Sort comments');
-		SORT_OPTIONS.forEach(function (pair) {
-			const b = el('button', 'crwdCommentsSortButton', pair[1]);
-			b.type = 'button';
-			b.dataset.sort = pair[0];
-			b.addEventListener('click', function () { setSort(pair[0]); });
-			sorter.appendChild(b);
-		});
+		// One button: its label is the current order, and pressing it switches to the other
+		// (styled like the calendar's Filters button: label, then the sort.svg icon)
+		const sorter = el('button', 'crwdCommentsSort');
+		sorter.type = 'button';
+		const sorterLabel = el('span', 'crwdCommentsSortLabel');
+		const sorterIcon = el('span', 'icon iconSort');
+		sorterIcon.setAttribute('aria-hidden', 'true');
+		sorter.append(sorterLabel, sorterIcon);
+		sorter.addEventListener('click', function () { setSort(sort === 'newest' ? 'oldest' : 'newest'); });
 		head.append(heading, sorter);
 		view.appendChild(head);
 		if (hooks.heading && opts.title) view.appendChild(el('p', 'crwdCommentsContext', opts.title));
@@ -337,11 +337,9 @@
 		}
 
 		function drawSort() {
-			sorter.querySelectorAll('[data-sort]').forEach(function (b) {
-				const on = b.dataset.sort === sort;
-				b.classList.toggle('isActive', on);
-				b.setAttribute('aria-pressed', on ? 'true' : 'false');
-			});
+			sorterLabel.textContent = SORT_LABELS[sort];
+			sorter.dataset.sort = sort;
+			sorter.setAttribute('aria-label', 'Current sort: ' + SORT_LABELS[sort] + ', select to switch');
 		}
 
 		function setSort(next) {

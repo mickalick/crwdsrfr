@@ -1347,7 +1347,7 @@
 	margin-top: 16px;
 	padding-top: 16px;
 	border-top: 1px solid #333;
-	scroll-margin-top: 16px; /* the top comment button scrolls here: leave a little room above */
+	scroll-margin-top: 56px; /* the top comment button scrolls here: lands below the pinned ✕, so it can't cover the sort button */
 }
 
 @media (hover: hover) and (pointer: fine) {

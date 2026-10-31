@@ -1002,42 +1002,41 @@ html.crwdModalOpen {
 	outline: none;
 }
 
-/* Newest / Oldest: same yellow segmented look as the Board's tile/row toggle */
+/* Sort button: the current order ("Newest" / "Oldest") + sort.svg. Same look as the calendar's
+   Filters button (white label, yellow icon, yellow on hover), sized down for the comments header */
 .crwdCommentsSort {
 	display: inline-flex;
+	align-items: center;
+	gap: 6px;
 	flex-shrink: 0;
-	border: 1px solid rgba(249, 249, 118, 0.25);
-	border-radius: 9px;
-	background: rgba(0, 0, 0, 0.25);
-}
-
-.crwdCommentsSortButton {
-	padding: 6px 12px;
-	background: none;
+	padding: 6px 10px;
+	background: transparent;
 	border: none;
-	color: #F9F976;
+	border-radius: 9px;
+	color: #FFF;
 	font-family: "Plus Jakarta Sans", sans-serif;
-	font-size: 13px;
-	letter-spacing: 0.03em;
+	font-size: 14px;
+	letter-spacing: 0.05em;
 	cursor: pointer;
-	transition: background-color 150ms ease, color 150ms ease;
+	transition: color 150ms ease;
 }
 
-.crwdCommentsSortButton:first-child {
-	border-radius: 8px 0 0 8px;
+.icon.iconSort {
+	width: 20px;
+	height: 20px;
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/sort.svg');
+	mask-image: url('../images/icons/sort.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
 }
 
-.crwdCommentsSortButton:last-child {
-	border-radius: 0 8px 8px 0;
-}
-
-.crwdCommentsSortButton.isActive {
-	background: #F9F976;
-	color: #101010;
-	font-weight: 700;
-}
-
-.crwdCommentsSortButton:focus-visible {
+.crwdCommentsSort:focus-visible {
 	outline: 2px solid #62CBB8;
 	outline-offset: 2px;
 }
@@ -1320,8 +1319,8 @@ a.crwdCommentUser:hover {
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.crwdCommentsSortButton:not(.isActive):hover {
-		background: rgba(249, 249, 118, 0.15);
+	.crwdCommentsSort:hover {
+		color: #F9F976;
 	}
 
 	.crwdCommentsMore:not(:disabled):hover {
@@ -1350,8 +1349,13 @@ a.crwdCommentUser:hover {
 		font-size: 24px;
 	}
 
-	.crwdCommentsSortButton {
-		padding: 5px 9px;
-		font-size: 12px;
+	.crwdCommentsSort {
+		padding: 4px 6px;
+		font-size: 13px;
+	}
+
+	.icon.iconSort {
+		width: 18px;
+		height: 18px;
 	}
 }
