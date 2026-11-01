@@ -589,7 +589,7 @@
 		const form = el('form', 'crwdForm');
 		form.noValidate = true;
 		const email = field({ label: 'Email', name: 'email', type: 'email', autocomplete: 'email', value: draft.email,
-			hint: 'Never shown on the site.' });
+			hint: 'Never shared on the site.' });
 		const username = field({ label: 'Username', name: 'username', autocomplete: 'username', maxLength: 24, username: true,
 			value: draft.username, hint: '3–24 characters: letters, numbers, underscores' });
 		const fine = el('p', 'crwdFinePrint', 'By creating an account you agree to the ');
