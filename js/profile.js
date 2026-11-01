@@ -710,8 +710,8 @@
 		const card = el('article', 'profilePost');
 
 		const head = el('div', 'profilePostHead');
-		const author = el('a', 'profilePostUser', at(viewed.username));
-		author.href = core.profileUrl(viewed.username);
+		// Plain text: you're already on their profile
+		const author = el('span', 'profilePostUser', at(viewed.username));
 		if (viewed.max_badge) author.appendChild(maxBadge());
 		head.appendChild(author);
 
@@ -763,7 +763,7 @@
 		renderPostFoot(card, p);
 
 		card.addEventListener('click', function (e) {
-			// The name link and the ⋮ menu do their own thing
+			// The ⋮ menu does its own thing
 			if (e.target.closest('a, .profilePostMore')) return;
 			openPost(p);
 		});

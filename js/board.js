@@ -738,13 +738,13 @@
 	}
 
 	// Tile: thumbnail (if any), title, "by username", post type, and hype/comment
-	// counts (each only when above zero — display only, not buttons)
+	// counts (each only when above zero — display only, not buttons).
+	// The tile is a plain box, not a button, so the username can be a real link (a link
+	// can't go inside a button). Clicking anywhere else opens the post; the title is the
+	// button that does it from the keyboard.
 	function buildTile(item) {
-		const tile = document.createElement('button');
-		tile.type = 'button';
-		tile.className = 'boardTile' + (item.postType === 'discussion' ? ' isDiscussion' : '');
+		const tile = el('article', 'boardTile' + (item.postType === 'discussion' ? ' isDiscussion' : ''));
 		tile.dataset.postId = item.id;
-		tile.setAttribute('aria-label', `Open ${item.title}`);
 
 		const cover = getCoverMedia(item);
 		if (cover) {
@@ -772,9 +772,18 @@
 		}
 
 		const info = el('span', 'boardTileInfo');
-		info.appendChild(el('span', 'boardTileCaption', item.title));
-		const by = el('span', 'boardTileBy', 'by ' + (item.author ? item.author.username : 'a former member'));
-		if (item.author && item.author.max_badge && window.CrwdUI) by.appendChild(CrwdUI.maxBadge());
+		const caption = el('button', 'boardTileCaption', item.title);
+		caption.type = 'button';
+		info.appendChild(caption);
+		const by = el('span', 'boardTileBy', 'by ');
+		if (item.author) {
+			const name = el('a', 'boardTileByName', item.author.username);
+			name.href = window.CrwdCore ? CrwdCore.profileUrl(item.author.username) : '/u/?' + encodeURIComponent(item.author.username);
+			by.appendChild(name);
+			if (item.author.max_badge && window.CrwdUI) by.appendChild(CrwdUI.maxBadge());
+		} else {
+			by.append('a former member');
+		}
 		info.appendChild(by);
 		// Discussions have no picture: a few lines of the opening text fill in instead
 		if (item.postType === 'discussion' && item.opener) {
@@ -788,7 +797,10 @@
 		tile.appendChild(info);
 		updateTileCounts(tile);
 
-		tile.addEventListener('click', () => openModal(item));
+		tile.addEventListener('click', (e) => {
+			if (e.target.closest('a')) return; // the username goes to their profile
+			openModal(item);
+		});
 		return tile;
 	}
 

@@ -541,12 +541,7 @@
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	font-weight: 700;
-	color: #62CBB8; /* same as @usernames in comments */
-	text-decoration: none;
-}
-
-.profilePostUser:hover {
-	text-decoration: underline;
+	color: #62CBB8; /* same as @usernames in comments; not a link, since you're on their profile */
 }
 
 /* Date, board/profile icon and kebab, pushed to the right */

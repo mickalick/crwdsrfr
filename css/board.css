@@ -711,11 +711,26 @@
 }
 
 .boardTileCaption {
+	/* a button (opens the post from the keyboard), styled as plain text */
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 20px;
+	font-weight: inherit;
 	line-height: 1.2;
 	color: #FFF;
+	text-align: left;
+	cursor: pointer;
 	overflow-wrap: anywhere;
+}
+
+/* The tile's teal border shows keyboard focus instead */
+.boardTileCaption:focus-visible {
+	outline: none;
 }
 
 /* Discussions have no picture: a few lines of the opening text fill in instead */
@@ -738,6 +753,17 @@
 	line-height: 1.3;
 	color: #ADADAD;
 	overflow-wrap: anywhere;
+}
+
+/* Username: links to their profile (teal, like the post window's byline) */
+.main a.boardTileByName {
+	color: #62CBB8;
+}
+
+.boardTileByName:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+	border-radius: 2px;
 }
 
 /* Max badge after the username, sized down from its 24px default
@@ -831,11 +857,19 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-	.boardTile:hover,
-	.boardTile:focus-visible {
+	.boardTile:hover {
 		transform: translateY(-2px);
 		border-color: #62CBB8;
 	}
+
+	.main a.boardTileByName:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Keyboard focus on the title lights up the whole tile */
+.boardTile:has(.boardTileCaption:focus-visible) {
+	border-color: #62CBB8;
 }
 
 /* Responsive: 2-up on tablet, 1-up on phones (matches .main breakpoints) */
