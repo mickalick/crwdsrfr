@@ -833,7 +833,8 @@
 			// The line has its own links (usernames, acts, venues); the post or show under it is a link too
 			const li = el('li', 'lnWave');
 			const head = el('div', 'lnWaveHead');
-			head.append(richLine('lnCardLine', line), timeEl(w.time, 'lnCardMeta'));
+			// Time first, on its own line at the right, so a long line never wraps under it
+			head.append(timeEl(w.time, 'lnCardMeta lnWaveTime'), richLine('lnCardLine', line));
 			li.appendChild(head);
 			if (w.post) {
 				const a = el('a', 'lnPreviewLink');

@@ -669,12 +669,15 @@ a.lnRippleLink {
 	text-decoration: none !important;
 }
 
+/* Time on top at the right, then the line full width under it */
 .lnWaveHead {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	justify-content: space-between;
-	gap: 4px 12px;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.lnWaveHead .lnWaveTime {
+	align-self: flex-end;
 }
 
 .lnWaveShow {
