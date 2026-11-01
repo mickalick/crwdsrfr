@@ -847,6 +847,15 @@
 		const items = kind === 'event' ? await hypedShows(ids) : kind === 'act' ? await hypedActs(ids) : await hypedVenues(ids);
 		if (hypedFilter !== kind) return; // filter changed while loading
 
+		// e.g. every hyped show has dropped off the calendar
+		if (!items.length) {
+			emptyMessage(els.hyped, isOwner
+				? 'You haven\'t hyped any ' + nouns[kind] + ' yet.'
+				: at(viewed.username) + ' hasn\'t hyped any ' + nouns[kind] + ' yet.');
+			addNotSharingNote(kind);
+			return;
+		}
+
 		els.hyped.replaceChildren();
 		items.forEach(function (item) { els.hyped.appendChild(item); });
 		addNotSharingNote(kind);
@@ -981,21 +990,35 @@
 		const upcoming = found.filter(function (e) { return e.date >= today; }).sort(function (a, b) { return a.date < b.date ? -1 : 1; });
 		const past = found.filter(function (e) { return e.date < today; }).sort(function (a, b) { return a.date > b.date ? -1 : 1; });
 
-		const rows = upcoming.concat(past).map(function (e) {
+		function showRow(e) {
 			const venue = venues[e.venueId];
 			const d = showDate(e.date);
 			return withItemUnhype(hypedRow({
 				title: e.title,
-				meta: [venue && venue.name, d && d.label].filter(Boolean).join(' · ') + (e.date < today ? ' · Past' : ''),
+				meta: [venue && venue.name, d && d.label].filter(Boolean).join(' · '),
 				date: d,
 				href: '/?show=' + encodeURIComponent(e.id), // opens the calendar on that day, scrolled to the show
 				external: false,
 				past: e.date < today
 			}), e.title, 'event', e.id);
-		});
-		const missing = ids.length - found.length;
-		if (missing) rows.push(hypedRow({ title: plural(missing, 'older show') + ' no longer listed', missing: true }));
+		}
+
+		// Shows that have dropped off events.json aren't shown at all
+		const rows = upcoming.map(showRow);
+		if (past.length) rows.push(pastShowsAccordion(past.map(showRow)));
 		return rows;
+	}
+
+	// Past shows, tucked into a closed "3 past shows" section at the end of the list
+	function pastShowsAccordion(rows) {
+		const li = el('li', 'profileHypedPast');
+		const details = el('details', 'profileHypedPastDetails');
+		details.appendChild(el('summary', 'profileHypedPastSummary', plural(rows.length, 'past show')));
+		const list = el('ul', 'profileHyped profileHypedPastList');
+		rows.forEach(function (row) { list.appendChild(row); });
+		details.appendChild(list);
+		li.appendChild(details);
+		return li;
 	}
 
 	async function hypedActs(ids) {

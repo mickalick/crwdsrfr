@@ -1005,6 +1005,58 @@
 	opacity: 0.6;
 }
 
+/* "3 past shows": closed accordion at the end of the Shows list */
+.profileHypedPast {
+	list-style: none;
+}
+
+.profileHypedPastSummary {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px 16px;
+	background: #101010;
+	border: 1px solid #333;
+	border-radius: 9px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #ADADAD;
+	list-style: none; /* hides the default triangle */
+	cursor: pointer;
+	user-select: none;
+	transition: border-color 150ms ease, color 150ms ease;
+}
+
+.profileHypedPastSummary::-webkit-details-marker {
+	display: none;
+}
+
+/* Chevron: points right when closed, down when open */
+.profileHypedPastSummary::before {
+	content: "";
+	flex-shrink: 0;
+	width: 6px;
+	height: 6px;
+	margin: 0 2px;
+	border: solid currentColor;
+	border-width: 0 2px 2px 0;
+	transform: rotate(-45deg);
+	transition: transform 150ms ease;
+}
+
+.profileHypedPastDetails[open] > .profileHypedPastSummary::before {
+	transform: rotate(45deg);
+}
+
+.profileHypedPastSummary:focus-visible {
+	outline: 2px solid #62CBB8;
+	outline-offset: 2px;
+}
+
+.profileHypedPastList {
+	margin-top: 10px;
+}
+
 .profileHypedItem.isMissing .profileHypedLink {
 	border-style: dashed;
 	color: #ADADAD !important;
@@ -1530,8 +1582,13 @@ button.profileImagePreview:focus-visible {
 	}
 
 	a.profileHypedLink:hover,
-	.profileHypedItem.hasAction:hover {
+	.profileHypedItem.hasAction:hover,
+	.profileHypedPastSummary:hover {
 		border-color: #62CBB8;
+	}
+
+	.profileHypedPastSummary:hover {
+		color: #FFF;
 	}
 
 	.main a.profileLink:hover {
