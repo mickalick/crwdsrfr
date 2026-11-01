@@ -397,7 +397,6 @@
 	gap: 6px;
 	width: auto;
 	padding: 0 10px 0 8px;
-	color: #F9F976;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.03em;
@@ -590,6 +589,10 @@
 
 	.boardViewButton:not(.active):hover {
 		background: rgba(249, 249, 118, 0.15);
+	}
+
+	.boardSortButton.boardTimeframeButton:hover {
+		color: #F9F976;
 	}
 }
 
