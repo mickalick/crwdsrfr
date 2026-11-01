@@ -2,15 +2,6 @@
 	<html>
 
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
-  			gtag('config', 'UA-46609022-1');
-		</script>
-
 		<meta charset="utf-8">
 		<title>Acts | CRWD SRFR</title>
 		<meta name="description" content="Every act coming through the Cleveland area — browse by name or genre.">
@@ -18,7 +9,13 @@
 		<link rel="stylesheet" href="../css/board.css">
 		<link rel="stylesheet" href="../css/acts.css">
 		<link rel="stylesheet" href="../css/nav.css">
-		<script src="../js/nav.js" defer></script>
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
+		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
+		<script src="/js/crwd-social.js" defer></script>
 		<link rel="shortcut icon" href="../images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +36,7 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
       					event.preventDefault();
 
       					var hash = this.hash;
@@ -68,27 +65,13 @@
 				});	
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to top of page" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>
@@ -105,7 +88,7 @@
 			<section id="actsContent" class="page">
 				<div class="main">
 					<div class="contentSection">
-						<p>Every act we've tracked across the Land. Not seeing an act? <a href="/contact.html">Let us know.</a></p>
+						<p>All the acts we've tracked across the Land. Not seeing an act? <a href="/contact.html">Let us know.</a></p>
 					</div>
 
 					<div class="wave">
@@ -187,11 +170,17 @@
 		<div id="actModal" class="boardModal actModal" hidden>
 			<div class="boardModalBackdrop" data-actclose></div>
 			<div class="boardModalContent actModalContent" role="dialog" aria-modal="true" aria-labelledby="actModalTitle">
-				<button type="button" class="boardModalClose" data-actclose aria-label="Close">&times;</button>
+				<button type="button" class="boardModalClose" data-actclose aria-label="Close"><span class="boardIconClose"></button>
 				<div class="actModalBody">
-					<h2 id="actModalTitle"></h2>
-					<div id="actModalGenres" class="actGenres"></div>
-					<div id="actModalLinks" class="actLinks"></div>
+					<div class="actModalHead">
+						<div class="actModalHeadText">
+							<h2 id="actModalTitle"></h2>
+							<div id="actModalGenres" class="actGenres"></div>
+							<div id="actModalLinks" class="actLinks"></div>
+						</div>
+						<!-- Hype button, filled in by acts.js -->
+						<div id="actModalHype" class="actModalHype"></div>
+					</div>
 
 					<div id="actModalMediaSection" class="actModalSection" hidden>
 						<h3 class="actModalSectionTitle">From the Board</h3>

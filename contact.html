@@ -2,21 +2,17 @@
 	<html>
 
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46609022-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-
-  			gtag('config', 'UA-46609022-1');
-		</script>
-
 		<meta charset="utf-8">
 		<title>Contact | CRWD SRFR</title>
 		<meta name="description" content="How to contact CRWD SRFR for site feedback, venue requests, and other inquiries.">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="/css/nav.css">
+		<link rel="stylesheet" href="/css/crwd-ui.css">
+		<!-- Accounts: these four scripts must stay in this order -->
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+		<script src="/js/crwd-core.js" defer></script>
 		<script src="/js/nav.js" defer></script>
+		<script src="/js/crwd-ui.js" defer></script>
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +35,7 @@
 					window.location = newLocation;
 				}
 				$("a").on('click', function(event) {
-    				if (this.hash !== "") {
+    				if (this.hash !== "" && this.pathname === window.location.pathname) {
       					event.preventDefault();
 
       					var hash = this.hash;
@@ -68,27 +64,13 @@
 				});	
 			});
 		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			    document.addEventListener('click', function(e) {
-			      const nav = document.getElementById('menuNav');
-			      const btn = document.getElementById('menuButton');
-			      const label = document.querySelector('label[for="menuToggle"]');
-
-			      if (!nav.contains(e.target) && !label.contains(e.target)) {
-			        nav.classList.remove('open');
-			        btn.classList.remove('open');
-			      }
-			    });
-			});
-		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 
 	<body id="top">
 		<header>
 			<nav>
-				<a id="logo" aria-label="Back to home" href="/"></a>
+				<a id="logo" aria-label="Home" href="/"></a>
 				<div id="siteNav"></div>
 			</nav>
 		</header>
@@ -104,7 +86,7 @@
 			</section>
 			<section id="contactContent" class="page">
 				<div class="main">
-					<p>Use the form below to submit site feedback, request venues to support, inquire about feature or sponsorship opportunities, or share whatever else is on your mind.</p>
+					<p>Use the form below to submit site feedback, request shows, acts, or venues to add, inquire about featuring a show or sponsorship opportunities, or share whatever else is on your mind.</p>
 					<p>Or, you can always reach out to us at <em>contact@crwdsrfr.com</em>. Your call.</p>
 					<div class="contactForm">
 	  					<form  action="https://formspree.io/f/xkoaazwa" method="POST">
@@ -112,8 +94,8 @@
 	  					<label for="reason">Subject:</label>
 						<select id="reason" name="reason">
 						  <option value="">Select a Subject</option>
-						  <option value="site-feedback">Site Feedback</option>
-						  <option value="venue-request">Venue Request</option>
+						  <option value="feedback">Site Feedback</option>
+						  <option value="request">Show/Act/Venue Request</option>
 						  <option value="inquiry">Feature/Sponsorship Inquiry</option>
 						  <option value="other">Other</option>
 						</select>

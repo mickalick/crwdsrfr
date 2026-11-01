@@ -1,0 +1,320 @@
+/*
+ * js/crwd-core.js — CRWD SRFR accounts: Supabase client, session, profile, auth actions.
+ *
+ * No DOM work happens here; the header menu and modals live in crwd-ui.js.
+ * Load on every page, all deferred, in this order:
+ *   supabase-js (CDN) → /js/crwd-core.js → /js/nav.js → /js/crwd-ui.js → page script
+ *
+ * Exposes window.CrwdCore. If supabase-js fails to load (CDN down, blocked),
+ * CrwdCore.enabled is false and the rest of the site keeps working without accounts.
+ */
+(function () {
+	'use strict';
+
+	// Live site → production project; everything else (staging, localhost) → staging
+	const PROD_HOSTS = ['crwdsrfr.com', 'www.crwdsrfr.com'];
+	const IS_STAGING = PROD_HOSTS.indexOf(window.location.hostname) === -1;
+
+	const SUPABASE_URL = IS_STAGING
+		? 'https://kgixthcjojlkacnxtzeg.supabase.co'
+		: 'https://bkzklbyyhnotphpgnnei.supabase.co';
+	const SUPABASE_KEY = IS_STAGING
+		? 'sb_publishable_9hn_OpemNeyrJINtqwwUOQ_gZbIfco-'
+		: 'sb_publishable_pDDAyzdIv0E2ZS2lE2HQLA_tR03y2Rx'; // publishable keys: safe in the browser, the database rules protect the data
+
+	// Direct storage address for big (resumable) uploads, e.g. https://<project>.storage.supabase.co
+	const STORAGE_URL = SUPABASE_URL.replace('.supabase.co', '.storage.supabase.co');
+
+	const USERNAME_RE = /^[a-z0-9_]{3,24}$/;
+	const PLACEHOLDER_RE = /^user_[0-9a-f]{12}$/; // assigned by the database when a chosen username couldn't be used
+
+	// ---------- Fallback when supabase-js isn't available ----------
+	if (!window.supabase || typeof window.supabase.createClient !== 'function') {
+		console.warn('[crwd] supabase-js not loaded — accounts disabled on this page');
+		window.CrwdCore = { enabled: false, ready: Promise.resolve(), onChange: function () {} };
+		return;
+	}
+
+	// ---------- Expired / already-used magic link ----------
+	// Supabase sends people back with #error=...&error_description=... in the URL.
+	// Read it before the client starts, then strip it so a refresh doesn't show it again.
+	let linkError = null;
+	(function readLinkError() {
+		const hash = window.location.hash.replace(/^#/, '');
+		if (!/(^|&)error=/.test(hash)) return;
+		const params = new URLSearchParams(hash);
+		linkError = {
+			code: params.get('error_code') || params.get('error'),
+			message: params.get('error_description') || 'That sign-in link didn\'t work.'
+		};
+		history.replaceState(null, '', window.location.pathname + window.location.search);
+	})();
+
+	// ---------- "Keep me signed in for 30 days" ----------
+	// Checked   → session kept in localStorage, ends 30 days after signing in
+	// Unchecked → session kept in sessionStorage, ends when the browser closes
+	// setRememberMe() must run BEFORE the session exists: crwd-ui.js saves it when the email is sent,
+	// again whenever the box on the code screen changes, and right before the code is checked.
+	const REMEMBER_KEY = 'crwd-remember-until';
+	const REMEMBER_DAYS = 30;
+
+	function safe(fn, fallback) { try { return fn(); } catch (e) { return fallback; } }
+	function rememberUntil() { return Number(safe(function () { return localStorage.getItem(REMEMBER_KEY); }, 0)) || 0; }
+	function isRemembered() { return rememberUntil() > Date.now(); }
+
+	const sessionStore = {
+		getItem: function (key) {
+			if (isRemembered()) return safe(function () { return localStorage.getItem(key); }, null);
+			if (rememberUntil()) { // the 30 days ran out: clear the long-lived copy
+				safe(function () { localStorage.removeItem(key); localStorage.removeItem(REMEMBER_KEY); });
+			}
+			return safe(function () { return sessionStorage.getItem(key); }, null);
+		},
+		setItem: function (key, value) {
+			const store = isRemembered() ? localStorage : sessionStorage;
+			safe(function () { store.setItem(key, value); });
+		},
+		removeItem: function (key) {
+			safe(function () { localStorage.removeItem(key); });
+			safe(function () { sessionStorage.removeItem(key); });
+		}
+	};
+
+	function setRememberMe(remember) {
+		if (remember) {
+			const until = Date.now() + REMEMBER_DAYS * 24 * 60 * 60 * 1000;
+			safe(function () { localStorage.setItem(REMEMBER_KEY, String(until)); });
+		} else {
+			safe(function () { localStorage.removeItem(REMEMBER_KEY); });
+		}
+	}
+
+	const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+		auth: {
+			// 'implicit' lets a magic link work even when it's opened in a different
+			// browser than the one that requested it (e.g. tapped in a phone's mail app).
+			flowType: 'implicit',
+			storage: sessionStore, // where the session lives (see "Keep me signed in" above)
+			persistSession: true,
+			autoRefreshToken: true,
+			detectSessionInUrl: true
+		}
+	});
+
+	// ---------- State ----------
+	let user = null;     // Supabase auth user (holds the email; never shown publicly)
+	let profile = null;  // the signed-in user's own row from public.profiles
+	let isAdmin = false; // shows the Admin menu item + page (the database enforces it either way)
+	let isReady = false;
+	const listeners = [];
+	let resolveReady;
+	const ready = new Promise(function (resolve) { resolveReady = resolve; });
+
+	function snapshot() {
+		return { user: user, profile: profile };
+	}
+
+	function emit() {
+		listeners.forEach(function (fn) {
+			try { fn(snapshot()); } catch (e) { console.error('[crwd] listener error', e); }
+		});
+	}
+
+	function markReady() {
+		if (isReady) return;
+		isReady = true;
+		resolveReady();
+	}
+
+	async function loadProfile() {
+		if (!user) { profile = null; isAdmin = false; return; }
+		const [{ data, error }, adminCheck] = await Promise.all([
+			sb.from('profiles').select('*').eq('id', user.id).single(),
+			sb.rpc('am_i_admin')
+		]);
+		isAdmin = !adminCheck.error && adminCheck.data === true;
+		if (error) {
+			console.warn('[crwd] could not load profile', error);
+			profile = null;
+			return;
+		}
+		profile = data;
+	}
+
+	sb.auth.onAuthStateChange(function (event, session) {
+		// supabase-js can deadlock if other Supabase calls are awaited inside this
+		// callback, so the profile load runs on the next tick instead.
+		setTimeout(async function () {
+			const nextUser = session ? session.user : null;
+			const userChanged = (nextUser && nextUser.id) !== (user && user.id);
+			user = nextUser;
+			if (userChanged || event === 'USER_UPDATED' || !isReady) await loadProfile();
+			markReady();
+			emit();
+		}, 0);
+	});
+
+	// Safety net: never leave pages waiting if the first auth event is slow
+	setTimeout(markReady, 5000);
+
+	// ---------- Errors ----------
+	// Turns Supabase/Postgres errors into short messages the UI can show as-is.
+	// err.code is kept so the UI can react (e.g. offer "Create Account" on 'no_account').
+	function friendlyError(error) {
+		const msg = (error && error.message) || '';
+		const code = (error && error.code) || '';
+		let out;
+
+		if (code === 'otp_disabled' || /signups? not allowed/i.test(msg)) {
+			out = new Error('We couldn\'t find an account with that email.');
+			out.code = 'no_account';
+		} else if (code === 'over_email_send_rate_limit' || (error && error.status === 429) || /security purposes|rate limit/i.test(msg)) {
+			out = new Error('Too many requests. Please wait a minute and try again.');
+			out.code = 'rate_limited';
+		} else if (code === 'email_address_invalid' || /invalid.*email|email.*invalid/i.test(msg)) {
+			out = new Error('That email address doesn\'t look right.');
+			out.code = 'bad_email';
+		} else if (code === '23505') {
+			out = new Error('That username was just taken. Try another.');
+			out.code = 'username_taken';
+		} else if (code === '23514') {
+			out = new Error('Usernames are 3–24 lowercase letters, numbers or underscores.');
+			out.code = 'username_format';
+		} else if (code === 'P0001' && msg) {
+			out = new Error(msg); // messages raised by our own database rules are already user-friendly
+			out.code = 'rule';
+		} else {
+			console.error('[crwd]', error);
+			out = new Error('Something went wrong. Please try again.');
+			out.code = 'unknown';
+		}
+		return out;
+	}
+
+	// ---------- Auth actions ----------
+	// Magic links return people to the page they started on (minus any #hash).
+	// Every page URL must be covered by the Redirect URLs list in Supabase (https://crwdsrfr.com/**).
+	function redirectUrl() {
+		return window.location.origin + window.location.pathname + window.location.search;
+	}
+
+	// New account: emails a link. Username + display name ride along as signup data
+	// and the database uses them when it creates the profile.
+	// If the email already has an account, Supabase just sends a normal sign-in link
+	// (and ignores the extra data), so this never reveals whether an email is registered.
+	async function register(details) {
+		const { error } = await sb.auth.signInWithOtp({
+			email: details.email.trim(),
+			options: {
+				shouldCreateUser: true,
+				emailRedirectTo: redirectUrl(),
+				data: {
+					username: details.username.trim().toLowerCase()
+				}
+			}
+		});
+		if (error) throw friendlyError(error);
+	}
+
+	// Existing account only — a typo'd email gets an error instead of a new account.
+	async function signIn(email) {
+		const { error } = await sb.auth.signInWithOtp({
+			email: email.trim(),
+			options: { shouldCreateUser: false, emailRedirectTo: redirectUrl() }
+		});
+		if (error) throw friendlyError(error);
+	}
+
+	async function signOut() {
+		const { error } = await sb.auth.signOut();
+		if (error) throw friendlyError(error);
+	}
+
+	// The 6-digit code from the email (same email they typed). Signs them in just like the link.
+	async function verifyCode(email, code) {
+		const token = String(code || '').replace(/\D/g, '');
+		if (token.length !== 6) throw new Error('Enter the 6-digit code from the email.');
+		const { error } = await sb.auth.verifyOtp({ email: email.trim(), token: token, type: 'email' });
+		if (error) {
+			const out = (error.status === 429) ? friendlyError(error)
+				: new Error('That code didn\'t work. Check your latest email, or send a new code.');
+			if (!out.code) out.code = 'bad_code';
+			throw out;
+		}
+		// onAuthStateChange picks up the new session and loads the profile
+	}
+
+	// ---------- Usernames ----------
+	// Returns { ok: true } or { ok: false, reason: 'format' | 'unavailable' | 'error' }
+	async function checkUsername(name) {
+		const clean = (name || '').trim().toLowerCase();
+		if (!USERNAME_RE.test(clean)) return { ok: false, reason: 'format' };
+		if (profile && profile.username === clean) return { ok: true }; // already theirs
+		const { data, error } = await sb.rpc('username_available', { name: clean });
+		if (error) {
+			console.warn('[crwd] username check failed', error);
+			return { ok: false, reason: 'error' };
+		}
+		return data ? { ok: true } : { ok: false, reason: 'unavailable' };
+	}
+
+	// True when the database had to give this account a placeholder username
+	function needsUsername() {
+		return !!(profile && PLACEHOLDER_RE.test(profile.username));
+	}
+
+	// ---------- Profile ----------
+	// fields: any columns the user may edit, e.g. { username, display_name, status }
+	async function updateProfile(fields) {
+		if (!user) throw new Error('Sign in first.');
+		const { data, error } = await sb.from('profiles').update(fields).eq('id', user.id).select().single();
+		if (error) throw friendlyError(error);
+		profile = data;
+		emit();
+		return data;
+	}
+
+	// ---------- Helpers ----------
+
+	function profileUrl(username) {
+		return '/u/?' + encodeURIComponent(username);
+	}
+
+	function avatarUrl(path) {
+		if (!path) return null;
+		return sb.storage.from('avatars').getPublicUrl(path).data.publicUrl;
+	}
+
+	// Call fn({ user, profile }) now (if auth has loaded) and on every change
+	function onChange(fn) {
+		listeners.push(fn);
+		if (isReady) fn(snapshot());
+	}
+
+	window.CrwdCore = {
+		enabled: true,
+		sb: sb,
+		ready: ready,
+		get user() { return user; },
+		get profile() { return profile; },
+		get isAdmin() { return isAdmin; },
+		get linkError() { return linkError; },
+		clearLinkError: function () { linkError = null; },
+		onChange: onChange,
+		register: register,
+		signIn: signIn,
+		signOut: signOut,
+		verifyCode: verifyCode,
+		setRememberMe: setRememberMe,
+		isRemembered: isRemembered,
+		checkUsername: checkUsername,
+		needsUsername: needsUsername,
+		updateProfile: updateProfile,
+		profileUrl: profileUrl,
+		avatarUrl: avatarUrl,
+		friendlyError: friendlyError, // for pages making their own Supabase calls
+		STORAGE_URL: STORAGE_URL,     // resumable uploads (crwd-composer.js)
+		SUPABASE_KEY: SUPABASE_KEY,   // the publishable key, sent with those uploads
+		USERNAME_RE: USERNAME_RE
+	};
+})();

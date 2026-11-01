@@ -544,7 +544,7 @@ footer a {
 
 
 
-#calendarSortMethod {
+#calendarSortMethod, #historySortMethod {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 700;
@@ -554,11 +554,11 @@ footer a {
 	margin-bottom: 8px;
 }
 
-#calendarSortMethod option {
+#calendarSortMethod option, #historySortMethod option {
 	font-weight: 400;
 }
 
-#calendarSortMethod option:checked {
+#calendarSortMethod option:checked, #historySortMethod option:checked {
 	background: #101010;
 	color: #F9F976;
 	font-weight: 700;
@@ -785,7 +785,7 @@ footer a {
 .main{
 	max-width:1100px;
 	width: 100%;
-	margin: 40px auto;
+	margin: 24px auto;
 }
 
 .venueCard {
@@ -806,7 +806,7 @@ footer a {
 }
 
 .venueEvents {
-	width: 73%;
+	width: 75%;
 }
 
 .event {
@@ -817,7 +817,8 @@ footer a {
 }
 
 .eventInfo {
-	width: 90%;
+	flex: 1; /* takes whatever the ticket link and hype/comment buttons don't */
+	min-width: 0;
 }
 
 .eventInfo span {
@@ -898,7 +899,7 @@ body.hide-genres .eventGenres {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px;
+  margin: auto 4px;
 }
 
 .ticketLink a {
@@ -907,6 +908,35 @@ body.hide-genres .eventGenres {
 	display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ticketLink {
+	flex-shrink: 0;
+}
+
+/* Shows with no ticket URL keep an empty slot so every column lines up */
+.ticketLink.isPlaceholder {
+	visibility: hidden;
+}
+
+/* Hype + comment buttons, stacked, at the far right of each show.
+   A fixed-width column, so a growing count never pushes the ticket link over:
+   84px fits up to "999" / "1.2K", and the chips center inside it. Not scoped
+   to .socialOn, so it also holds the space while counts load. */
+.eventSocial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 0 0 84px;
+	width: 84px;
+	margin-left: 12px;
+}
+
+.eventSocial .crwdReactions {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 6px;
 }
 
 .dateSeparator {
@@ -1095,10 +1125,6 @@ hr {
 
 .featureTile-Wide p {
 	color: #999;
-}
-
-.flatpickr-calendar .open {
-	top: 69px !important;
 }
 
 #datePicker {
@@ -1351,11 +1377,162 @@ span.flatpickr-weekday {
 	text-decoration: underline;
 }
 
+/* Hype button under "Visit Site" — holds its space while the count loads */
+.venueHype {
+	min-height: 48px;
+}
+
+
+/* Show opened from a link (/?show=<id>), e.g. a profile's Hyped list */
+.event.isLinked {
+	border-radius: 9px;
+	box-shadow: inset 0 0 0 2px #F9F976;
+	animation: eventLinkedPulse 1.2s ease-out 2;
+}
+
+@keyframes eventLinkedPulse {
+	0%   { background-color: rgba(249, 249, 118, 0.18); }
+	100% { background-color: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.event.isLinked {
+		animation: none;
+	}
+}
 
 
 
 
 
+
+
+
+
+
+/* ---------- Show History (same page as the calendar, at /?history) ---------- */
+
+#historyBar {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+#historyLink {
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+#historyIntro {
+	margin: -8px 0 32px;
+	font-family: "Space Mono", monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #ADADAD;
+	text-align: center;
+}
+
+#historyIntro[hidden] {
+	display: none;
+}
+
+/* Show History: no date picker. Its View menu has no Day/Week/Month toggle and its own sort list. */
+body.isHistory #calendarNav,
+body.isHistory #calendarToggle,
+body.isHistory #calendarSortLabel,
+body.isHistory #calendarSortMethod,
+body:not(.isHistory) #historySortLabel,
+body:not(.isHistory) #historySortMethod {
+	display: none !important;
+}
+
+/* "Add to my Show History": takes the ticket link's spot. A + that turns into a yellow check. */
+.historyAdd {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 4px;
+}
+
+.historyAddButton {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	background: none;
+	border: 1px solid #555;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.historyAddButton::before,
+.historyAddButton::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 16px;
+	height: 2px;
+	border-radius: 2px;
+	background: #F9F976;
+	transform: translate(-50%, -50%);
+	transition: none;
+}
+
+.historyAddButton::after {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.historyAddButton.isAdded {
+	background: rgba(249, 249, 118, 0.08);
+	border-color: #F9F976;
+}
+
+.historyAddButton.isAdded::before {
+	width: 7px;
+	height: 13px;
+	background: none;
+	border: solid #F9F976;
+	border-width: 0 2px 2px 0;
+	border-radius: 0;
+	transform: translate(-50%, -62%) rotate(45deg);
+}
+
+.historyAddButton.isAdded::after {
+	display: none;
+}
+
+.historyAddButton:disabled {
+	opacity: 0.6;
+	cursor: default;
+}
+
+.historyAddButton:focus-visible {
+	outline: 2px solid #F9F976;
+	outline-offset: 2px;
+}
+
+/* Back arrow on today: the calendar doesn't go into the past any more */
+#navArrows li.isDisabled {
+	opacity: 0.3;
+	pointer-events: none;
+	cursor: default;
+}
+
+/* Past days in the date picker */
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+	color: rgba(252, 252, 252, 0.2) !important;
+	background: transparent !important;
+	border-color: transparent !important;
+	box-shadow: none !important;
+	cursor: default;
+}
 
 /* Mobile Hover Fix */
 
@@ -1399,6 +1576,10 @@ span.flatpickr-weekday {
 
 	.ticketLink:hover #opn {
 		background-color: #101010;
+	}
+
+	.historyAddButton:not(.isAdded):not(:disabled):hover {
+		border-color: #F9F976;
 	}
 
 	#clr:hover {
@@ -1503,7 +1684,7 @@ span.flatpickr-weekday {
 
 @media screen and (max-width:1108px){
 	.main{
-		margin: 40px 50px !important;
+		margin: 24px 50px !important;
 	}
 
 	.eventInfo span {
@@ -1528,10 +1709,6 @@ span.flatpickr-weekday {
 
 	h3{
 		font-size:22px;
-	}
-
-	.main{
-		margin: 40px 50px !important;
 	}
 
 }
@@ -1607,7 +1784,7 @@ span.flatpickr-weekday {
 	}
 
 	.main{
-		margin: 24px 30px 24px !important;
+		margin: 24px 30px !important;
 	}
 
 	p{
@@ -1648,12 +1825,51 @@ span.flatpickr-weekday {
 	}
 
 	.venueEvents .event {
-		padding: 8px 16px;
+		padding: 8px 8px;
 		margin-bottom: 4px;
 	}
 
 	.venueEvents .event:last-child {
 		margin-bottom: 8px;
+	}
+
+	.eventSocial {
+		flex-basis: 40px;
+		width: 40px;
+		margin-left: 8px;
+	}
+
+	.eventSocial .crwdChip {
+		min-height: 32px;
+		padding: 4px 10px 4px 8px;
+		gap: 5px;
+		font-size: 12px;
+	}
+
+	.eventSocial .crwdChip .icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.eventSocial .crwdChip.isEmpty {
+		padding: 4px 9px;
+	}
+
+	/* Show History's + button: same size as the hype/comment buttons beside it */
+	.historyAdd,
+	.historyAddButton {
+		width: 32px;
+		height: 32px;
+	}
+
+	.historyAddButton::before,
+	.historyAddButton::after {
+		width: 14px;
+	}
+
+	.historyAddButton.isAdded::before {
+		width: 6px;
+		height: 11px;
 	}
 
 	.flex {
@@ -1704,4 +1920,4 @@ span.flatpickr-weekday {
 		margin-left: 20px;
 		margin-top: 8px;
 	}
-}
+}
