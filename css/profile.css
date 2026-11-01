@@ -541,7 +541,7 @@
 	font-family: "Space Mono", monospace;
 	font-size: 14px;
 	font-weight: 700;
-	color: #62CBB8; /* same as @usernames in comments; not a link, since you're on their profile */
+	color: #ADADAD;
 }
 
 /* Date, board/profile icon and kebab, pushed to the right */
@@ -1015,12 +1015,10 @@
 	align-items: center;
 	gap: 10px;
 	padding: 14px 16px;
-	background: #101010;
-	border: 1px solid #333;
 	border-radius: 9px;
 	font-family: "Space Mono", monospace;
 	font-size: 13px;
-	color: #ADADAD;
+	color: #F9F976;
 	list-style: none; /* hides the default triangle */
 	cursor: pointer;
 	user-select: none;
@@ -1588,7 +1586,7 @@ button.profileImagePreview:focus-visible {
 	}
 
 	.profileHypedPastSummary:hover {
-		color: #FFF;
+		text-decoration: underline;
 	}
 
 	.main a.profileLink:hover {
