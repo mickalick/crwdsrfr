@@ -480,11 +480,9 @@
 		const subHeadEl = document.getElementById('boardSubHead');
 		const term = currentSearch.trim();
 		const sortLabel = SORT_LABELS[selectedSort];
-		// "Posts from the Past Week by Most Hyped:" while a timeframe cuts the results
-		const scope = timeframeApplies() ? `Posts from the ${TIMEFRAME_LABELS[selectedTimeframe]}` : 'All Posts';
 		subHeadEl.textContent = term === ''
-			? `${scope} by ${sortLabel}:`
-			: `${scope} including "${term}" by ${sortLabel}:`;
+			? `All Posts by ${sortLabel}:`
+			: `All Posts including "${term}" by ${sortLabel}:`;
 	}
 
 	// Ties (e.g. two posts with 3 hypes) fall back to newest first
