@@ -387,6 +387,46 @@
 	outline-offset: 2px;
 }
 
+/* Timeframe: same button with a label after the icon ("Past Week").
+   Shown only with Most Hyped / Most Commented (js/board.js). */
+.boardSort[hidden] {
+	display: none;
+}
+
+.boardSortButton.boardTimeframeButton {
+	gap: 6px;
+	width: auto;
+	padding: 0 10px 0 8px;
+	color: #F9F976;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	white-space: nowrap;
+}
+
+.icon.iconTimeframe {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #F9F976;
+	-webkit-mask-image: url('../images/icons/timeframe.svg');
+	mask-image: url('../images/icons/timeframe.svg');
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	transition: none;
+}
+
+/* Opens under the button, lined up with its left edge */
+.boardSortMenu.boardTimeframeMenu {
+	left: 0;
+	right: auto;
+	width: 180px;
+}
+
 /* Same yellow panel as the post ⋮ menus */
 .boardSortMenu {
 	position: absolute;
@@ -578,6 +618,19 @@
 
 	#boardContent .main .boardSubHeadRow {
 		margin-top: 40px;
+	}
+}
+
+/* Phones: with the timeframe button showing there's no room for everything on one line,
+   so the heading gets its own line and the buttons sit under it */
+@media screen and (max-width: 535px) {
+	#boardContent .main .boardSubHeadRow:has(#boardTimeframe:not([hidden])) {
+		flex-wrap: wrap;
+		row-gap: 12px;
+	}
+
+	#boardContent .main .boardSubHeadRow:has(#boardTimeframe:not([hidden])) .subHead {
+		flex: 1 1 100%;
 	}
 }
 

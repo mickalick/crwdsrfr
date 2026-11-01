@@ -58,6 +58,10 @@
 	const POST_TYPE_ITEM_LABEL = { shot: 'Shot', gallery: 'Gallery', discussion: 'Discussion' };
 	// Sort options in the menu next to the "All Posts by…" heading (first one is the default)
 	const SORT_LABELS = { recent: 'Most Recent', hyped: 'Most Hyped', commented: 'Most Commented', oldest: 'Oldest Posted' };
+	// Timeframe menu next to the sort button: only offered with these sorts. Cuts the results to
+	// posts made within that window (counted back from now). 'all' = no cut.
+	const TIMEFRAME_LABELS = { day: 'Past Day', week: 'Past Week', month: 'Past Month', year: 'Past Year', all: 'All Time' };
+	const TIMEFRAME_SORTS = ['hyped', 'commented'];
 
 	// --- Date helpers -------------------------------------------------------
 	// Show dates are plain "YYYY-MM-DD" strings. Never round-trip these through
@@ -341,6 +345,7 @@
 	const selectedGenres = new Set();
 	let selectedPostType = 'all'; // 'all' | 'shot' | 'gallery' | 'discussion'
 	let selectedSort = 'recent'; // a key of SORT_LABELS
+	let selectedTimeframe = 'all'; // a key of TIMEFRAME_LABELS (used only with TIMEFRAME_SORTS)
 	const expandedGroups = { name: false, type: false, area: false, genre: false };
 
 	function socialReady() {
@@ -395,6 +400,7 @@
 				genres: [...selectedGenres],
 				postType: selectedPostType,
 				sort: selectedSort,
+				timeframe: selectedTimeframe,
 			};
 			localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(payload));
 		} catch (e) {
@@ -417,6 +423,9 @@
 			}
 			if (Object.prototype.hasOwnProperty.call(SORT_LABELS, parsed.sort)) {
 				selectedSort = parsed.sort;
+			}
+			if (Object.prototype.hasOwnProperty.call(TIMEFRAME_LABELS, parsed.timeframe)) {
+				selectedTimeframe = parsed.timeframe;
 			}
 		} catch (e) {
 			// Corrupt or missing data — just start with no filters
@@ -446,15 +455,36 @@
 		return selectedPostType === 'all' || item.postType === selectedPostType;
 	}
 
+	// Is a timeframe cutting the results right now?
+	function timeframeApplies() {
+		return TIMEFRAME_SORTS.includes(selectedSort) && selectedTimeframe !== 'all';
+	}
+
+	// The earliest post time (ms) inside the selected timeframe. Day and week are exact
+	// (24 hours / 7 days); month and year go back to the same time on the same date.
+	function timeframeCutoff() {
+		const DAY = 24 * 60 * 60 * 1000;
+		const d = new Date();
+		switch (selectedTimeframe) {
+			case 'day': return d.getTime() - DAY;
+			case 'week': return d.getTime() - 7 * DAY;
+			case 'month': d.setMonth(d.getMonth() - 1); return d.getTime();
+			case 'year': d.setFullYear(d.getFullYear() - 1); return d.getTime();
+			default: return -Infinity;
+		}
+	}
+
 	// --- Search + filter application -----------------------------------
 
 	function updateSubHead() {
 		const subHeadEl = document.getElementById('boardSubHead');
 		const term = currentSearch.trim();
 		const sortLabel = SORT_LABELS[selectedSort];
+		// "Posts from the Past Week by Most Hyped:" while a timeframe cuts the results
+		const scope = timeframeApplies() ? `Posts from the ${TIMEFRAME_LABELS[selectedTimeframe]}` : 'All Posts';
 		subHeadEl.textContent = term === ''
-			? `All Posts by ${sortLabel}:`
-			: `All Posts including "${term}" by ${sortLabel}:`;
+			? `${scope} by ${sortLabel}:`
+			: `${scope} including "${term}" by ${sortLabel}:`;
 	}
 
 	// Ties (e.g. two posts with 3 hypes) fall back to newest first
@@ -500,6 +530,11 @@
 			filtered = filtered.filter(itemMatchesPostType);
 		}
 
+		if (timeframeApplies()) {
+			const cutoff = timeframeCutoff();
+			filtered = filtered.filter((item) => (new Date(item.createdAt).getTime() || 0) >= cutoff);
+		}
+
 		filteredItems = sortPosts(filtered);
 		resetGrid();
 	}
@@ -519,75 +554,113 @@
 		applyFilters();
 	}
 
-	// --- Sort menu (icon button next to the heading) -------------------------
+	// --- Sort + timeframe menus (buttons next to the heading) -----------------
+	// Both are the same yellow pop-up menu. key = the options' data-* name ('sort' / 'timeframe'),
+	// current() = the selected value, onPick(value) runs when a different option is chosen.
 
-	const sortButton = document.getElementById('boardSortButton');
-	const sortMenu = document.getElementById('boardSortMenu');
+	function dropdownMenu(wrap, button, menu, key, current, onPick) {
+		const options = () => [...menu.querySelectorAll(`[data-${key}]`)];
 
-	function sortOptions() {
-		return [...sortMenu.querySelectorAll('[data-sort]')];
-	}
+		function mark() {
+			options().forEach((option) => {
+				option.setAttribute('aria-checked', option.dataset[key] === current() ? 'true' : 'false');
+			});
+		}
 
-	function markSelectedSort() {
-		sortOptions().forEach((option) => {
-			option.setAttribute('aria-checked', option.dataset.sort === selectedSort ? 'true' : 'false');
-		});
-	}
+		function open() {
+			mark();
+			menu.hidden = false;
+			button.classList.add('open');
+			button.setAttribute('aria-expanded', 'true');
+			const selected = options().find((option) => option.dataset[key] === current());
+			(selected || options()[0]).focus();
+		}
 
-	function openSortMenu() {
-		markSelectedSort();
-		sortMenu.hidden = false;
-		sortButton.classList.add('open');
-		sortButton.setAttribute('aria-expanded', 'true');
-		const current = sortOptions().find((option) => option.dataset.sort === selectedSort);
-		(current || sortOptions()[0]).focus();
-	}
+		function close(returnFocus) {
+			if (menu.hidden) return;
+			menu.hidden = true;
+			button.classList.remove('open');
+			button.setAttribute('aria-expanded', 'false');
+			if (returnFocus) button.focus();
+		}
 
-	function closeSortMenu(returnFocus) {
-		if (sortMenu.hidden) return;
-		sortMenu.hidden = true;
-		sortButton.classList.remove('open');
-		sortButton.setAttribute('aria-expanded', 'false');
-		if (returnFocus) sortButton.focus();
-	}
+		mark();
 
-	if (sortButton && sortMenu) {
-		markSelectedSort();
-
-		sortButton.addEventListener('click', () => {
-			if (sortMenu.hidden) openSortMenu(); else closeSortMenu(false);
+		button.addEventListener('click', () => {
+			if (menu.hidden) open(); else close(false);
 		});
 
-		sortMenu.addEventListener('click', (e) => {
-			const option = e.target.closest('[data-sort]');
+		menu.addEventListener('click', (e) => {
+			const option = e.target.closest(`[data-${key}]`);
 			if (!option) return;
-			closeSortMenu(true);
-			if (option.dataset.sort === selectedSort) return;
-			selectedSort = option.dataset.sort;
-			markSelectedSort();
-			saveFiltersToStorage();
-			if (loaded) applyFilters();
+			close(true);
+			if (option.dataset[key] === current()) return;
+			onPick(option.dataset[key]);
+			mark();
 		});
 
 		// Up/down moves through the options, Escape/Tab closes
-		sortMenu.addEventListener('keydown', (e) => {
-			const options = sortOptions();
-			const i = options.indexOf(document.activeElement);
+		menu.addEventListener('keydown', (e) => {
+			const list = options();
+			const i = list.indexOf(document.activeElement);
 			if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
 				e.preventDefault();
 				const step = e.key === 'ArrowDown' ? 1 : -1;
-				options[(i + step + options.length) % options.length].focus();
+				list[(i + step + list.length) % list.length].focus();
 			} else if (e.key === 'Escape') {
 				e.preventDefault();
-				closeSortMenu(true);
+				close(true);
 			} else if (e.key === 'Tab') {
-				closeSortMenu(false);
+				close(false);
 			}
 		});
 
 		document.addEventListener('click', (e) => {
-			if (!sortMenu.hidden && !e.target.closest('#boardSort')) closeSortMenu(false);
+			if (!menu.hidden && !wrap.contains(e.target)) close(false);
 		});
+
+		return { mark, close };
+	}
+
+	const sortWrap = document.getElementById('boardSort');
+	const sortButton = document.getElementById('boardSortButton');
+	const sortMenu = document.getElementById('boardSortMenu');
+	const timeframeWrap = document.getElementById('boardTimeframe');
+	const timeframeButton = document.getElementById('boardTimeframeButton');
+	const timeframeMenu = document.getElementById('boardTimeframeMenu');
+	const timeframeLabel = document.getElementById('boardTimeframeLabel');
+
+	let sortDropdown = null;
+	let timeframeDropdown = null;
+
+	// Timeframe button: shown only with Most Hyped / Most Commented, labelled with the choice
+	function updateTimeframeUI() {
+		if (!timeframeDropdown) return;
+		const show = TIMEFRAME_SORTS.includes(selectedSort);
+		if (!show) timeframeDropdown.close(false);
+		timeframeWrap.hidden = !show;
+		timeframeLabel.textContent = TIMEFRAME_LABELS[selectedTimeframe];
+		timeframeButton.setAttribute('aria-label', `Timeframe: ${TIMEFRAME_LABELS[selectedTimeframe]}`);
+		timeframeDropdown.mark();
+	}
+
+	if (sortWrap && sortButton && sortMenu) {
+		sortDropdown = dropdownMenu(sortWrap, sortButton, sortMenu, 'sort', () => selectedSort, (value) => {
+			selectedSort = value;
+			updateTimeframeUI();
+			saveFiltersToStorage();
+			if (loaded) applyFilters();
+		});
+	}
+
+	if (timeframeWrap && timeframeButton && timeframeMenu && timeframeLabel) {
+		timeframeDropdown = dropdownMenu(timeframeWrap, timeframeButton, timeframeMenu, 'timeframe', () => selectedTimeframe, (value) => {
+			selectedTimeframe = value;
+			updateTimeframeUI();
+			saveFiltersToStorage();
+			if (loaded) applyFilters();
+		});
+		updateTimeframeUI();
 	}
 
 	// --- Tile / row view toggle (far right of the heading row) ----------------
@@ -644,6 +717,8 @@
 				loadingMsg.hidden = true;
 
 				loadFiltersFromStorage();
+				if (sortDropdown) sortDropdown.mark();
+				updateTimeframeUI();
 				buildBoardFilterChips();
 				renderActiveFilters();
 				applyFilters();
@@ -687,6 +762,8 @@
 			selectedAreas.clear();
 			selectedGenres.clear();
 			selectedPostType = 'all';
+			selectedTimeframe = 'all'; // the linked post may be older than the timeframe
+			updateTimeframeUI();
 			saveFiltersToStorage();
 			buildBoardFilterChips();
 			renderActiveFilters();

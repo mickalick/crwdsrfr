@@ -157,6 +157,19 @@
 								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-sort="commented" aria-checked="false">Most Commented</button></li>
 							</ul>
 						</div>
+						<!-- Timeframe: only with Most Hyped / Most Commented (js/board.js shows it) -->
+						<div class="boardSort boardTimeframe" id="boardTimeframe" hidden>
+							<button type="button" class="boardSortButton boardTimeframeButton" id="boardTimeframeButton" aria-label="Timeframe: All Time" aria-haspopup="true" aria-expanded="false" aria-controls="boardTimeframeMenu">
+								<span class="icon iconTimeframe" aria-hidden="true"></span><span class="boardTimeframeLabel" id="boardTimeframeLabel">All Time</span>
+							</button>
+							<ul class="boardSortMenu boardTimeframeMenu" id="boardTimeframeMenu" role="menu" aria-label="Timeframe" hidden>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-timeframe="day" aria-checked="false">Past Day</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-timeframe="week" aria-checked="false">Past Week</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-timeframe="month" aria-checked="false">Past Month</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-timeframe="year" aria-checked="false">Past Year</button></li>
+								<li role="none"><button type="button" role="menuitemradio" class="boardSortOption" data-timeframe="all" aria-checked="true">All Time</button></li>
+							</ul>
+						</div>
 						<div class="boardViewToggle" id="boardViewToggle" role="group" aria-label="Layout">
 							<button type="button" class="boardViewButton active" data-view="tiles" aria-pressed="true" aria-label="Tile view">
 								<span class="icon iconViewTiles" aria-hidden="true"></span>

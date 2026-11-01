@@ -131,7 +131,7 @@ header.scrolled #profileButton {
 	top: 100%;
 	right: 0;
 	z-index: 1001;
-	width: 220px;
+	width: 240px;
 	max-width: calc(100vw - 40px);
 	margin-top: 12px;
 	padding: 12px;
