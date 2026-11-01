@@ -703,6 +703,9 @@
 		if (p) openPost(p);
 	}
 
+	// Post type on the card's bottom left, same wording as the Board's tiles
+	const POST_TYPE_LABEL = { shot: 'Shot', gallery: 'Gallery', discussion: 'Discussion' };
+
 	function postCard(p) {
 		const card = el('article', 'profilePost');
 
@@ -747,6 +750,12 @@
 				img.loading = 'lazy';
 				grid.appendChild(img);
 			});
+			// More than one shot: the Board's stacked-squares badge, top right (board.css)
+			if ((p.media || []).length > 1) {
+				const stack = el('span', 'boardTileStackBadge');
+				stack.setAttribute('aria-hidden', 'true');
+				grid.appendChild(stack);
+			}
 			card.appendChild(grid);
 		}
 
@@ -761,13 +770,16 @@
 		return card;
 	}
 
-	// Bottom row: hype + comment counts (display only, open the post to use them),
-	// or — for a post only its author can see — its review status
+	// Bottom row: post type on the left; on the right, hype + comment counts (display
+	// only, open the post to use them) or — for a post only its author can see — its review status
 	function renderPostFoot(card, p) {
 		const foot = card.querySelector('.profilePostFoot');
 		foot.replaceChildren();
-		if (p.status === 'pending') { foot.appendChild(el('span', 'profileBadge isPending', 'Pending review')); return; }
-		if (p.status === 'rejected') { foot.appendChild(el('span', 'profileBadge isRejected', 'Not approved')); return; }
+		foot.appendChild(el('span', 'profilePostType', POST_TYPE_LABEL[p.post_type] || 'Post'));
+		const right = el('span', 'profilePostCounts');
+		foot.appendChild(right);
+		if (p.status === 'pending') { right.appendChild(el('span', 'profileBadge isPending', 'Pending review')); return; }
+		if (p.status === 'rejected') { right.appendChild(el('span', 'profileBadge isRejected', 'Not approved')); return; }
 		const s = p.stats || { hypes: 0, comments: 0 };
 		[[s.hypes, 'iconHype', 'hype'], [s.comments, 'iconComment', 'comment']].forEach(function (c) {
 			if (!(c[0] > 0)) return;
@@ -776,7 +788,7 @@
 			const icon = el('span', 'icon ' + c[1]);
 			icon.setAttribute('aria-hidden', 'true');
 			badge.append(icon, Number(c[0]).toLocaleString());
-			foot.appendChild(badge);
+			right.appendChild(badge);
 		});
 	}
 

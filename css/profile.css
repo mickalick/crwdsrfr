@@ -698,16 +698,28 @@
 	transition: border-color 150ms ease;
 }
 
-/* Bottom row: hype + comment counts, or the review status (never both) */
+/* Bottom row: post type on the left; hype + comment counts or the review status
+   (never both) on the right — same layout as a Board tile */
 .profilePostFoot {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 12px;
-	min-height: 0;
 }
 
-.profilePostFoot:empty {
-	display: none;
+/* Same as .boardTilePostType */
+.profilePostType {
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	line-height: 1.2;
+	color: #F9F976;
+}
+
+.profilePostCounts {
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
 .profilePostCount {
@@ -752,6 +764,7 @@
 	margin-bottom: 12px;
 	border-radius: 6px;
 	overflow: hidden;
+	position: relative; /* anchors the gallery badge (.boardTileStackBadge) to the top right */
 }
 
 .profilePostMedia[data-count="1"] {
