@@ -669,15 +669,24 @@ a.lnRippleLink {
 	text-decoration: none !important;
 }
 
-/* Time on top at the right, then the line full width under it */
+/* Line on the left, time on the right, on one row while they fit. When the line is too long,
+   it drops to its own full-width row under the time (row-reverse: the time comes first in the
+   page, but sits on the right). */
 .lnWaveHead {
 	display: flex;
-	flex-direction: column;
-	gap: 4px;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 4px 12px;
+}
+
+.lnWaveHead .lnCardLine {
+	flex: 1 1 auto;
 }
 
 .lnWaveHead .lnWaveTime {
-	align-self: flex-end;
+	flex-shrink: 0;
 }
 
 .lnWaveShow {
