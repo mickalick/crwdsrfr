@@ -7254,6 +7254,25 @@
     "manual": true,
     "id": "spirits-willoughby-2026-11-25-larry-haws"
   },
+  {
+    "title": "Ted Riser Himself",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-26-ted-riser"
+  },
 
 
 
@@ -9534,7 +9553,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-11-14",
+    "date": "2026-11-13",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -9543,7 +9562,7 @@
     "venueId": "wild-eagle-broadview-heights",
     "source": "manual",
     "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-11-14-follow-the-sun"
+    "id": "wild-eagle-broadview-heights-2026-11-13-follow-the-sun"
   },
   {
     "title": "Disco Inferno",
@@ -9681,7 +9700,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-12-06",
+    "date": "2026-12-05",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -9690,7 +9709,7 @@
     "venueId": "wild-eagle-broadview-heights",
     "source": "manual",
     "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-12-06-bad-juju"
+    "id": "wild-eagle-broadview-heights-2026-12-05-bad-juju"
   },
   {
     "title": "That 80's Band",
@@ -9776,7 +9795,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-12-20",
+    "date": "2026-12-26",
     "time": "21:00",
     "doors": null,
     "price": null,
@@ -9785,7 +9804,7 @@
     "venueId": "wild-eagle-broadview-heights",
     "source": "manual",
     "manual": true,
-    "id": "wild-eagle-broadview-heights-2026-12-20-dan-nick"
+    "id": "wild-eagle-broadview-heights-2026-12-26-dan-nick"
   },
   {
     "title": "Trailer Park Ninjas",
@@ -13582,6 +13601,86 @@
     "source": "manual",
     "manual": true,
     "id": "spotlight-cle-2026-11-13-bufflehead"
+  },
+  {
+    "title": "TRIAL BY FIRE ft. Dave Katz",
+    "performers": [
+      {
+        "name": "TRIAL BY FIRE",
+        "headliner": true
+      },
+      {
+        "name": "Dave Katz",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-11-27-trial-by-fire"
+  },
+  {
+    "title": "DJ Forrest Getemgump",
+    "performers": [
+      {
+        "name": "DJ Forrest Getemgump",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-29",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-11-29-dj-forrest-getemgump"
+  },
+  {
+    "title": "Chirp",
+    "performers": [
+      {
+        "name": "Chirp",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-12-11-chirp"
+  },
+  {
+    "title": "Ben Cohen Show",
+    "performers": [
+      {
+        "name": "Ben Cohen",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-12-12-ben-cohen"
   },
 
 
