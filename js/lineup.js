@@ -822,7 +822,7 @@
 				wavesHead.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
 				wavesHead.focus({ preventScroll: true });
 			});
-			li.append(el('p', 'lnNote', 'You\'ve reached shore.<br/>Check back soon for more waves.'), top);
+			li.append(el('p', 'lnNote', 'You\'ve reached shore.'), el('p', 'lnNote', 'Check back soon for more waves.'), top);
 			return li;
 		}
 
