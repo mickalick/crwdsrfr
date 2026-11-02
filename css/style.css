@@ -1380,6 +1380,7 @@ span.flatpickr-weekday {
 /* Hype button under "Visit Site" — holds its space while the count loads */
 .venueHype {
 	min-height: 48px;
+	margin-bottom: 20px;
 }
 
 
@@ -1920,4 +1921,4 @@ body:not(.isHistory) #historySortMethod {
 		margin-left: 20px;
 		margin-top: 8px;
 	}
-}
+}

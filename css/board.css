@@ -632,9 +632,10 @@
 		row-gap: 12px;
 	}
 
+	/*
 	#boardContent .main .boardSubHeadRow:has(#boardTimeframe:not([hidden])) .subHead {
 		flex: 1 1 100%;
-	}
+	}*/
 }
 
 @media screen and (max-width:535px){

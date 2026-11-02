@@ -735,12 +735,12 @@
 
 		// Ripple Notifications
 		const ripples = section(panel, 'Ripple Notifications');
-		ripples.el.appendChild(el('p', 'settingsText', 'Ripples are updates about your posts and comments, in your Lineup. Turning one off stops that kind of ripple and hides any you already have.'));
+		ripples.el.appendChild(el('p', 'settingsText', 'Ripples are the updates on your posts and comments, displaying in your Lineup.'));
 		ripples.el.appendChild(checkList(RIPPLE_SETTINGS));
 
 		// Message Notifications
 		const messages = section(panel, 'Message Notifications');
-		messages.el.appendChild(el('p', 'settingsText', 'Choose what puts a "new" dot on your account menu and Messages.'));
+		messages.el.appendChild(el('p', 'settingsText', 'Choose what message activity triggers notifications.'));
 		messages.el.appendChild(checkList(MESSAGE_DOT_SETTINGS));
 
 		// Email Notifications

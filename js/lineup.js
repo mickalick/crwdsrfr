@@ -822,7 +822,7 @@
 				wavesHead.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
 				wavesHead.focus({ preventScroll: true });
 			});
-			li.append(el('p', 'lnNote', 'You\'ve reached shore. Check back soon for more waves.'), top);
+			li.append(el('p', 'lnNote', 'You\'ve reached shore.<br/>Check back soon for more waves.'), top);
 			return li;
 		}
 
@@ -833,8 +833,7 @@
 			// The line has its own links (usernames, acts, venues); the post or show under it is a link too
 			const li = el('li', 'lnWave');
 			const head = el('div', 'lnWaveHead');
-			// Time first, on its own line at the right, so a long line never wraps under it
-			head.append(timeEl(w.time, 'lnCardMeta lnWaveTime'), richLine('lnCardLine', line));
+			head.appendChild(richLine('lnCardLine', line));
 			li.appendChild(head);
 			if (w.post) {
 				const a = el('a', 'lnPreviewLink');
@@ -874,6 +873,8 @@
 					li.append(toggle, shows);
 				}
 			}
+			// Time last, at the bottom right, after the line and any post or shows
+			li.appendChild(timeEl(w.time, 'lnCardMeta lnWaveTime'));
 			return li;
 		}
 
