@@ -5099,9 +5099,6 @@
         "value": "https://bluewaterchamberorchestra.org/"
       }
     ],
-    "links": [
-      "https://bluewaterchamberorchestra.org/"
-    ],
     "exclude": "no",
     "local": "yes"
   },
@@ -8293,6 +8290,111 @@
       {
         "label": "Facebook",
         "value": "http://www.facebook.com/biginjapanband"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "sugar-mountain": {
+    "name": "Sugar Mountain",
+    "aliases": [
+      "Sugar Mountain"
+    ],
+    "genres": [
+      "tribute"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://www.iloveneilyoung.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "http://instagram.com/biginjapancleveland"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/SouthernMountainRevival/about/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "blackjack-gypsies": {
+    "name": "Blackjack Gypsies",
+    "aliases": [
+      "Blackjack Gypsies",
+      "Black Jack Gypsies"
+    ],
+    "genres": [
+      "classic",
+      "rock",
+      "covers"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "http://blackjackgypsies.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/blackjackgypsies/"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/TheBlackjackGypsies/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "gorillaz": {
+    "name": "Gorillaz",
+    "aliases": [
+      "Gorillaz"
+    ],
+    "genres": [
+      "alternative"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://gorillaz.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/gorillaz/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/Gorillaz/"
+      }
+    ],
+    "exclude": "no",
+    "local": "yes"
+  },
+  "dadi-freyr": {
+    "name": "Daði Freyr",
+    "aliases": [
+      "Daði Freyr",
+      "Dadi Freyr"
+    ],
+    "genres": [
+      "electronic-edm",
+      "dance-disco"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "value": "https://dadifreyr.com/"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/dadimakesmusic/"
+      },
+      {
+        "label": "Youtube",
+        "value": "https://www.youtube.com/channel/UCF18N219OPiOcElz_hSYoIQ"
       }
     ],
     "exclude": "no",
