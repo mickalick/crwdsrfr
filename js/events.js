@@ -760,9 +760,12 @@ document.getElementById('calendarCards').addEventListener('click', function (e) 
 function setHistoryMode(on, push, render) {
   historyMode = on;
   document.body.classList.toggle('isHistory', on);
-  const link = document.getElementById('historyLink');
-  link.textContent = on ? 'Back to Upcoming' : 'Recent History';
-  link.href = on ? '/' : '/?history';
+  const upcoming = document.getElementById('historyToggleUpcoming');
+  const past = document.getElementById('historyTogglePast');
+  upcoming.classList.toggle('active', !on);
+  past.classList.toggle('active', on);
+  if (on) { past.setAttribute('aria-current', 'page'); upcoming.removeAttribute('aria-current'); }
+  else { upcoming.setAttribute('aria-current', 'page'); past.removeAttribute('aria-current'); }
   document.getElementById('historyIntro').hidden = !on;
   // Close the View menu: its options change between the two (style.css swaps them)
   document.getElementById('calendarSettings').classList.remove('open');
@@ -771,10 +774,13 @@ function setHistoryMode(on, push, render) {
   if (render !== false) applyFilters();
 }
 
-document.getElementById('historyLink').addEventListener('click', function (e) {
+document.getElementById('historyToggle').addEventListener('click', function (e) {
+  const btn = e.target.closest('.toggle-button');
+  if (!btn) return;
   if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return; // new tab: let the link work
   e.preventDefault();
-  setHistoryMode(!historyMode, true);
+  const on = btn.id === 'historyTogglePast';
+  if (on !== historyMode) setHistoryMode(on, true); // clicking the active side does nothing
 });
 
 // Back / Forward between the two

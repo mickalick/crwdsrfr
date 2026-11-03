@@ -115,9 +115,12 @@
 				<div class="main">
 					<!-- Show History: the last two weeks of shows, on this same page (/?history; js/events.js) -->
 					<div id="historyBar">
-						<a id="historyLink" href="/?history">Recent History</a>
+						<div id="historyToggle" aria-label="Upcoming or past shows">
+							<a class="toggle-button active" id="historyToggleUpcoming" href="/" aria-current="page">Upcoming</a>
+							<a class="toggle-button" id="historyTogglePast" href="/?history">Past</a>
+						</div>
 					</div>
-					<p id="historyIntro" hidden>History includes the last two weeks of shows.<br/>Surf a recent show? Add it to your Show History with the + button.</p>
+					<p id="historyIntro" hidden>Past shows includes the last two weeks of listings.<br/>Surf a recent show? Add it to your Show History with the + button.</p>
 
 					<div id="calendarSettingsBar">
 						<button type="button" class="settings-toggle" id="calendarSettingsToggle" aria-label="Open Settings">
