@@ -871,7 +871,7 @@
 
 	// SRFRs you've hyped: only ever shown to you, on your own profile
 	async function renderHypedSrfrs() {
-		const note = el('li', 'profileHypedPrivate', 'Only you can see this list. Nobody else can see who you\'ve hyped, including the people on it.');
+		const note = el('li', 'profileHypedPrivate', 'Only you can see who you\'ve hyped - no one else can see this list including the SRFRs on it.');
 		els.hyped.replaceChildren(note, el('li', 'profileEmpty', 'Loading…'));
 
 		const { data: follows, error } = await core.sb.from('follows').select('followee_id').eq('follower_id', core.user.id);
