@@ -247,8 +247,8 @@ function updateSubHead() {
 
   if (historyMode) {
     subHeadSpan.textContent = term === ''
-      ? 'Last Two Weeks of Shows:'
-      : `Last Two Weeks of Shows including "${term}":`;
+      ? 'Past Two Weeks of Shows:'
+      : `Past Two Weeks of Shows including "${term}":`;
   } else if (calendarViewMode === 'week') {
     subHeadSpan.textContent = term === ''
       ? 'All shows for week of:'
