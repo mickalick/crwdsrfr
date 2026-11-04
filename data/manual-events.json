@@ -3471,16 +3471,69 @@
 
 
 
-  
   {
-    "title": "Chez Damier",
+    "title": "HEARD! A service industry dance party",
     "performers": [
       {
-        "name": "Chez Damier",
+        "name": "DJs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-05",
+    "time": "21:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-05-heard"
+  },
+  {
+    "title": "MIXTAPE: Marc Lansley",
+    "performers": [
+      {
+        "name": "Marc Lansley",
         "headliner": true
       },
       {
-        "name": "Andre Leone",
+        "name": "Darrell Stout",
+        "headliner": false
+      },
+      {
+        "name": "Nicole Otero",
+        "headliner": false
+      },
+      {
+        "name": "Jesse Hawk",
+        "headliner": false
+      },
+      {
+        "name": "Le Schlippy",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-06",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-06-mixtape"
+  },
+  {
+    "title": "SAY LESS",
+    "performers": [
+      {
+        "name": "SAY LESS",
+        "headliner": true
+      },
+      {
+        "name": "Den Hur",
         "headliner": false
       },
       {
@@ -3488,90 +3541,89 @@
         "headliner": false
       },
       {
-        "name": "Le Mew",
-        "headliner": false
-      },
-      {
-        "name": "MIKEONE",
+        "name": "Edward",
         "headliner": false
       }
     ],
-    "date": "2026-10-24",
+    "date": "2026-11-07",
     "time": "21:00",
     "doors": null,
-    "price": "$15 - $25",
+    "price": null,
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "crobar",
     "source": "manual",
     "manual": true,
-    "id": "crobar-2026-10-24-chez-damier"
+    "id": "crobar-2026-11-07-say-less"
   },
   {
-    "title": "phase:zero: beyond the veil",
+    "title": "Open Turntables",
     "performers": [
       {
-        "name": "Detroit Bureau of Sound",
+        "name": "DJs",
         "headliner": true
-      },
+      }
+    ],
+    "date": "2026-11-08",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-08-open-turntables"
+  },
+  {
+    "title": "Open Decks hosted by Unc D & Le Schlippy",
+    "performers": [
       {
-        "name": "DJ Noah Anthony",
-        "headliner": false
-      },
-      {
-        "name": "Flute Salad",
-        "headliner": false
+        "name": "Unc D",
+        "headliner": true
       },
       {
         "name": "Le Schlippy",
         "headliner": false
-      },
-      {
-        "name": "Innergroove",
-        "headliner": false
-      },
-      {
-        "name": "Angelgirl EVA",
-        "headliner": false
       }
     ],
-    "date": "2026-10-30",
-    "time": "21:00",
+    "date": "2026-11-12",
+    "time": "19:00",
     "doors": null,
-    "price": "$10 adv, $15 doors",
+    "price": null,
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "crobar",
     "source": "manual",
     "manual": true,
-    "id": "crobar-2026-10-30-phase-zero"
+    "id": "crobar-2026-11-12-open-decks"
   },
   {
-    "title": "Perf Halloween",
+    "title": "Forest City Plastic: Bill.D, Kevin Rhoa, Nicole Otero",
     "performers": [
       {
-        "name": "S4M23",
+        "name": "Bill.D",
         "headliner": true
       },
       {
-        "name": "Honk",
+        "name": "Kevin Rhoa",
         "headliner": false
       },
       {
-        "name": "Joey Sardelle",
+        "name": "Nicole Otero",
         "headliner": false
       }
     ],
-    "date": "2026-10-31",
+    "date": "2026-11-13",
     "time": "21:00",
     "doors": null,
-    "price": "$17",
+    "price": null,
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "crobar",
     "source": "manual",
     "manual": true,
-    "id": "crobar-2026-10-31-perf-halloween"
+    "id": "crobar-2026-11-13-forest-city-plastic"
   },
   {
     "title": "Lindsey Herbert",
@@ -3599,6 +3651,170 @@
     "source": "manual",
     "manual": true,
     "id": "crobar-2026-11-14-lindsey-herbert"
+  },
+  {
+    "title": "Dolce Vita w/ Ricki Chianti",
+    "performers": [
+      {
+        "name": "Ricki Chianti",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-15",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-15-dolce-vita"
+  },
+  {
+    "title": "Comedy Showcase w/ John Armstrong",
+    "performers": [
+      {
+        "name": "John Armstrong",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-19",
+    "time": "20:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-19-comedy-showcase"
+  },
+  {
+    "title": "Crysalis: Angelgirl EVA",
+    "performers": [
+      {
+        "name": "Angelgirl EVA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-20-crysalis"
+  },
+  {
+    "title": "Doc Martin",
+    "performers": [
+      {
+        "name": "Doc Martin",
+        "headliner": true
+      },
+      {
+        "name": "Darrell Stout",
+        "headliner": false
+      },
+      {
+        "name": "Gerad G",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-21",
+    "time": "21:00",
+    "doors": null,
+    "price": "$20",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-21-doc-martin"
+  },
+  {
+    "title": "Gerad G + Live Percussion",
+    "performers": [
+      {
+        "name": "Gerad G",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-22",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-22-gerad-g"
+  },
+  {
+    "title": "FREEEE FRIDAY",
+    "performers": [
+      {
+        "name": "DJs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "21:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-27-freeee-friday"
+  },
+  {
+    "title": "Perf: MX. Blairr w/ Joey Sardelle",
+    "performers": [
+      {
+        "name": "MX. Blairr",
+        "headliner": true
+      },
+      {
+        "name": "Joey Sardelle",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "21:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-28-perf-mx-blairr"
+  },
+  {
+    "title": "S.I.N.DAY",
+    "performers": [
+      {
+        "name": "Sleazus Christ",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-29",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-11-29-sinday"
   },
 
 
@@ -4013,14 +4229,14 @@
 
 
   {
-    "title": "Max Schlenk Group",
+    "title": "Good Sounds Collective",
     "performers": [
       {
-        "name": "Max Schlenk Group",
+        "name": "Good Sounds Collective",
         "headliner": true
       }
     ],
-    "date": "2026-10-02",
+    "date": "2026-11-06",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4029,17 +4245,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-10-02-max-schlenk-group"
+    "id": "nightjar-2026-11-06-good-sounds-collective"
   },
   {
-    "title": "Alvin Frazier Group",
+    "title": "Peacox Quartet",
     "performers": [
       {
-        "name": "Alvin Frazier Group",
+        "name": "Peacox Quartet",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
+    "date": "2026-11-07",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4048,17 +4264,112 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-10-03-alvin-frazier-group"
+    "id": "nightjar-2026-11-07-peacox-quartet"
   },
   {
-    "title": "Dan Bruce, Chris Vance & Joe Tomino",
+    "title": "Tricotism",
     "performers": [
       {
-        "name": "Dan Bruce",
+        "name": "Tricotism",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-13",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-11-13-tricotism"
+  },
+  {
+    "title": "Mike Petrone",
+    "performers": [
+      {
+        "name": "Mike Petrone",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "17:30",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-11-14-mike-petrone"
+  },
+  {
+    "title": "Aaron Smith Trio",
+    "performers": [
+      {
+        "name": "Aaron Smith Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-11-14-aaron-smith-trio"
+  },
+  {
+    "title": "Tri-C Jazz Showcase",
+    "performers": [
+      {
+        "name": "Tri-C Jazz Showcase",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-19",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-11-19-tri-c-jazz-showcase"
+  },
+  {
+    "title": "Tony Cuda's Jazz Cats",
+    "performers": [
+      {
+        "name": "Tony Cuda's Jazz Cats",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": "20:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "nightjar",
+    "source": "manual",
+    "manual": true,
+    "id": "nightjar-2026-11-20-tony-cuda-s-jazz-cats"
+  },
+  {
+    "title": "Anthony Fuoco",
+    "performers": [
+      {
+        "name": "Anthony Fuoco",
         "headliner": true
       },
       {
-        "name": "Chris Vance",
+        "name": "Alfredo Guerrieri",
         "headliner": false
       },
       {
@@ -4066,7 +4377,7 @@
         "headliner": false
       }
     ],
-    "date": "2026-10-09",
+    "date": "2026-11-21",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4075,17 +4386,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-10-09-dan-bruce"
+    "id": "nightjar-2026-11-21-anthony-fuoco"
   },
   {
-    "title": "Bobby Selvaggio Hope Quartet",
+    "title": "Darren Frate Group",
     "performers": [
       {
-        "name": "Bobby Selvaggio Hope Quartet",
+        "name": "Darren Frate Group",
         "headliner": true
       }
     ],
-    "date": "2026-10-10",
+    "date": "2026-11-27",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4094,17 +4405,17 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-10-10-bobby-selvaggio-hope-quartet"
+    "id": "nightjar-2026-11-27-darren-frate-group"
   },
   {
-    "title": "Northcoast Jazz Trio",
+    "title": "Scossa Quartet",
     "performers": [
       {
-        "name": "Northcoast Jazz Trio",
+        "name": "Scossa Quartet",
         "headliner": true
       }
     ],
-    "date": "2026-10-16",
+    "date": "2026-11-28",
     "time": "20:00",
     "doors": null,
     "price": "$10",
@@ -4113,114 +4424,7 @@
     "venueId": "nightjar",
     "source": "manual",
     "manual": true,
-    "id": "nightjar-2026-10-16-northcoast-jazz-trio"
-  },
-  {
-    "title": "Joe Hunter & Tim Matson",
-    "performers": [
-      {
-        "name": "Joe Hunter",
-        "headliner": true
-      },
-      {
-        "name": "Tim Matson",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-10-17-joe-hunter"
-  },
-  {
-    "title": "Mal Barron Trio",
-    "performers": [
-      {
-        "name": "Mal Barron Trio",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-10-23-mal-barron-trio"
-  },
-  {
-    "title": "Tony K, Darren Frate & Steve Kortyka",
-    "performers": [
-      {
-        "name": "Tony K",
-        "headliner": true
-      },
-      {
-        "name": "Darren Frate",
-        "headliner": false
-      },
-      {
-        "name": "Steve Kortyka",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-24",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-10-24-tony-k"
-  },
-  {
-    "title": "Abstract Sounds",
-    "performers": [
-      {
-        "name": "Abstract Sounds",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-10-30-abstract-sounds"
-  },
-  {
-    "title": "Nightjar Jazz Halloween",
-    "performers": [
-      {
-        "name": "Nightjar Jazz Halloween",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "nightjar",
-    "source": "manual",
-    "manual": true,
-    "id": "nightjar-2026-10-31-nightjar-jazz-halloween"
+    "id": "nightjar-2026-11-28-scossa-quartet"
   },
 
 
@@ -7555,315 +7759,12 @@
 
 
 
+  
   {
-    "title": "DRIVING RAIN",
+    "title": "OMF",
     "performers": [
       {
-        "name": "Driving Rain",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-11-driving-rain"
-  },
-  {
-    "title": "YOSEMITE SLIM",
-    "performers": [
-      {
-        "name": "Yosemite Slim",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-12-yosemite-slim"
-  },
-  {
-    "title": "TRICKY DICK AND THE COVER-UPS",
-    "performers": [
-      {
-        "name": "Tricky Dick and the Cover-Ups",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-18",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-18-tricky-dick-and-the-cover-ups"
-  },
-  {
-    "title": "LISA AND THE DEADBEATS",
-    "performers": [
-      {
-        "name": "Lisa and the Deadbeats",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-19-lisa-and-the-deadbeats"
-  },
-  {
-    "title": "BILLY MORRIS",
-    "performers": [
-      {
-        "name": "Billy Morris",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-25-billy-morris"
-  },
-  {
-    "title": "SPAZMATICS",
-    "performers": [
-      {
-        "name": "Spazmatics",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-09-26-spazmatics"
-  },
-  {
-    "title": "FOLLOW THE SUN",
-    "performers": [
-      {
-        "name": "Follow the Sun",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-02",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-02-follow-the-sun"
-  },
-  {
-    "title": "DISCO INFERNO",
-    "performers": [
-      {
-        "name": "Disco Inferno",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-03-disco-inferno"
-  },
-  {
-    "title": "OLD SKOOL",
-    "performers": [
-      {
-        "name": "Old Skool",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-09-old-skool"
-  },
-  {
-    "title": "YOSEMITE SLIM",
-    "performers": [
-      {
-        "name": "Yosemite Slim",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-10-yosemite-slim"
-  },
-  {
-    "title": "THE LADIES NIGHT BAND",
-    "performers": [
-      {
-        "name": "The Ladies Night Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-16-the-ladies-night-band"
-  },
-  {
-    "title": "TRAILER PARK NINJAS",
-    "performers": [
-      {
-        "name": "Trailer Park Ninjas",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-17-trailer-park-ninjas"
-  },
-  {
-    "title": "TRICKY DICK AND THE COVER-UPS",
-    "performers": [
-      {
-        "name": "Tricky Dick and the Cover-Ups",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-23-tricky-dick-and-the-cover-ups"
-  },
-  {
-    "title": "THAT 80'S BAND",
-    "performers": [
-      {
-        "name": "That 80's Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-24-that-80-s-band"
-  },
-  {
-    "title": "DT AND THE SHAKES",
-    "performers": [
-      {
-        "name": "DT and the Shakes",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-30-dt-and-the-shakes"
-  },
-  {
-    "title": "THE SELLOUTS",
-    "performers": [
-      {
-        "name": "The Sellouts",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-10-31-the-sellouts"
-  },
-  {
-    "title": "AUDIOPHILE",
-    "performers": [
-      {
-        "name": "Audiophile",
+        "name": "OMF",
         "headliner": true
       }
     ],
@@ -7876,13 +7777,13 @@
     "venueId": "time-warp",
     "source": "manual",
     "manual": true,
-    "id": "time-warp-2026-11-06-audiophile"
+    "id": "time-warp-2026-11-06-omf"
   },
   {
     "title": "BAD JUJU",
     "performers": [
       {
-        "name": "Bad Juju",
+        "name": "BAD JUJU",
         "headliner": true
       }
     ],
@@ -7901,7 +7802,7 @@
     "title": "OLD SKOOL",
     "performers": [
       {
-        "name": "Old Skool",
+        "name": "OLD SKOOL",
         "headliner": true
       }
     ],
@@ -7920,7 +7821,7 @@
     "title": "SPAZMATICS",
     "performers": [
       {
-        "name": "Spazmatics",
+        "name": "SPAZMATICS",
         "headliner": true
       }
     ],
@@ -7939,7 +7840,7 @@
     "title": "BILLY MORRIS",
     "performers": [
       {
-        "name": "Billy Morris",
+        "name": "BILLY MORRIS",
         "headliner": true
       }
     ],
@@ -7958,7 +7859,7 @@
     "title": "FACTION",
     "performers": [
       {
-        "name": "Faction",
+        "name": "FACTION",
         "headliner": true
       }
     ],
@@ -7977,7 +7878,7 @@
     "title": "TRICKY DICK AND THE COVER-UPS",
     "performers": [
       {
-        "name": "Tricky Dick and the Cover-Ups",
+        "name": "TRICKY DICK AND THE COVER-UPS",
         "headliner": true
       }
     ],
@@ -7996,26 +7897,7 @@
     "title": "BREAKFAST CLUB",
     "performers": [
       {
-        "name": "Breakfast Club",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-26",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "time-warp",
-    "source": "manual",
-    "manual": true,
-    "id": "time-warp-2026-11-26-breakfast-club"
-  },
-  {
-    "title": "RUMOURS",
-    "performers": [
-      {
-        "name": "Rumours",
+        "name": "BREAKFAST CLUB",
         "headliner": true
       }
     ],
@@ -8028,13 +7910,51 @@
     "venueId": "time-warp",
     "source": "manual",
     "manual": true,
-    "id": "time-warp-2026-11-27-rumours"
+    "id": "time-warp-2026-11-27-breakfast-club"
+  },
+  {
+    "title": "RUMOURS",
+    "performers": [
+      {
+        "name": "RUMOURS",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2026-11-28-rumours"
+  },
+  {
+    "title": "BRANDY LORINCE",
+    "performers": [
+      {
+        "name": "BRANDY LORINCE",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-03",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2026-12-03-brandy-lorince"
   },
   {
     "title": "SPAZMATICS",
     "performers": [
       {
-        "name": "Spazmatics",
+        "name": "SPAZMATICS",
         "headliner": true
       }
     ],
@@ -8053,7 +7973,7 @@
     "title": "DISCO INFERNO",
     "performers": [
       {
-        "name": "Disco Inferno",
+        "name": "DISCO INFERNO",
         "headliner": true
       }
     ],
@@ -8072,7 +7992,7 @@
     "title": "TRICKY DICK AND THE COVER-UPS",
     "performers": [
       {
-        "name": "Tricky Dick and the Cover-Ups",
+        "name": "TRICKY DICK AND THE COVER-UPS",
         "headliner": true
       }
     ],
@@ -8091,7 +8011,7 @@
     "title": "BOATERHEAD",
     "performers": [
       {
-        "name": "Boaterhead",
+        "name": "BOATERHEAD",
         "headliner": true
       }
     ],
@@ -8110,7 +8030,7 @@
     "title": "THAT 80'S BAND",
     "performers": [
       {
-        "name": "That 80's Band",
+        "name": "THAT 80'S BAND",
         "headliner": true
       }
     ],
@@ -8126,10 +8046,10 @@
     "id": "time-warp-2026-12-18-that-80-s-band"
   },
   {
-    "title": "TRAILER PARK NINJAS",
+    "title": "BAD JUJU",
     "performers": [
       {
-        "name": "Trailer Park Ninjas",
+        "name": "BAD JUJU",
         "headliner": true
       }
     ],
@@ -8142,13 +8062,13 @@
     "venueId": "time-warp",
     "source": "manual",
     "manual": true,
-    "id": "time-warp-2026-12-19-trailer-park-ninjas"
+    "id": "time-warp-2026-12-19-bad-juju"
   },
   {
     "title": "LISA AND THE DEADBEATS",
     "performers": [
       {
-        "name": "Lisa and the Deadbeats",
+        "name": "LISA AND THE DEADBEATS",
         "headliner": true
       }
     ],
@@ -8164,10 +8084,10 @@
     "id": "time-warp-2026-12-26-lisa-and-the-deadbeats"
   },
   {
-    "title": "NEW YEARS EVE CELEBRATION",
+    "title": "BILLY MORRIS",
     "performers": [
       {
-        "name": "New Years Eve Celebration",
+        "name": "BILLY MORRIS",
         "headliner": true
       }
     ],
@@ -8180,8 +8100,851 @@
     "venueId": "time-warp",
     "source": "manual",
     "manual": true,
-    "id": "time-warp-2026-12-31-new-years-eve-celebration"
+    "id": "time-warp-2026-12-31-billy-morris"
   },
+  {
+    "title": "BACKTRACK",
+    "performers": [
+      {
+        "name": "BACKTRACK",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-01",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-01-backtrack"
+  },
+  {
+    "title": "FOLLOW THE SUN",
+    "performers": [
+      {
+        "name": "FOLLOW THE SUN",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-02",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-02-follow-the-sun"
+  },
+  {
+    "title": "DRIVING RAIN",
+    "performers": [
+      {
+        "name": "DRIVING RAIN",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-08",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-08-driving-rain"
+  },
+  {
+    "title": "LADIES NIGHT",
+    "performers": [
+      {
+        "name": "LADIES NIGHT",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-09",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-09-ladies-night"
+  },
+  {
+    "title": "TRICKY DICK AND THE COVER-UPS",
+    "performers": [
+      {
+        "name": "TRICKY DICK AND THE COVER-UPS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-15",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-15-tricky-dick-and-the-cover-ups"
+  },
+  {
+    "title": "DISCO INFERNO",
+    "performers": [
+      {
+        "name": "DISCO INFERNO",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-16",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-16-disco-inferno"
+  },
+  {
+    "title": "FACTION",
+    "performers": [
+      {
+        "name": "FACTION",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-22",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-22-faction"
+  },
+  {
+    "title": "SPAZMATICS",
+    "performers": [
+      {
+        "name": "SPAZMATICS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-23",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-23-spazmatics"
+  },
+  {
+    "title": "TRAILER PARK NINJAS",
+    "performers": [
+      {
+        "name": "TRAILER PARK NINJAS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-29",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-29-trailer-park-ninjas"
+  },
+  {
+    "title": "THAT 80'S BAND",
+    "performers": [
+      {
+        "name": "THAT 80'S BAND",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-30",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-01-30-that-80-s-band"
+  },
+  {
+    "title": "YOSEMITE SLIM",
+    "performers": [
+      {
+        "name": "YOSEMITE SLIM",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-05-yosemite-slim"
+  },
+  {
+    "title": "BOATERHEAD",
+    "performers": [
+      {
+        "name": "BOATERHEAD",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-06",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-06-boaterhead"
+  },
+  {
+    "title": "DT and the SHAKES",
+    "performers": [
+      {
+        "name": "DT and the SHAKES",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-12-dt-and-the-shakes"
+  },
+  {
+    "title": "TRICKY DICK AND THE COVER-UPS",
+    "performers": [
+      {
+        "name": "TRICKY DICK AND THE COVER-UPS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-13",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-13-tricky-dick-and-the-cover-ups"
+  },
+  {
+    "title": "OLD SKOOL",
+    "performers": [
+      {
+        "name": "OLD SKOOL",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-19-old-skool"
+  },
+  {
+    "title": "RUMOURS",
+    "performers": [
+      {
+        "name": "RUMOURS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-20",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-20-rumours"
+  },
+  {
+    "title": "ROCK THE HOUSE",
+    "performers": [
+      {
+        "name": "ROCK THE HOUSE",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-26-rock-the-house"
+  },
+  {
+    "title": "THAT 80'S BAND",
+    "performers": [
+      {
+        "name": "THAT 80'S BAND",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-27",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-02-27-that-80-s-band"
+  },
+  {
+    "title": "DRIVING RAIN",
+    "performers": [
+      {
+        "name": "DRIVING RAIN",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-05-driving-rain"
+  },
+  {
+    "title": "FOLLOW THE SUN",
+    "performers": [
+      {
+        "name": "FOLLOW THE SUN",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-06",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-06-follow-the-sun"
+  },
+  {
+    "title": "LADIES NIGHT",
+    "performers": [
+      {
+        "name": "LADIES NIGHT",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-12-ladies-night"
+  },
+  {
+    "title": "TRICKY DICK AND THE COVER-UPS",
+    "performers": [
+      {
+        "name": "TRICKY DICK AND THE COVER-UPS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-13",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-13-tricky-dick-and-the-cover-ups"
+  },
+  {
+    "title": "ACE MOLAR",
+    "performers": [
+      {
+        "name": "ACE MOLAR",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-19-ace-molar"
+  },
+  {
+    "title": "SPAZMATICS",
+    "performers": [
+      {
+        "name": "SPAZMATICS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-20",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-20-spazmatics"
+  },
+  {
+    "title": "RDNA",
+    "performers": [
+      {
+        "name": "RDNA",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-26-rdna"
+  },
+  {
+    "title": "DISCO INFERNO",
+    "performers": [
+      {
+        "name": "DISCO INFERNO",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-27",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-03-27-disco-inferno"
+  },
+  {
+    "title": "FACTIOM",
+    "performers": [
+      {
+        "name": "FACTIOM",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-02",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-02-factiom"
+  },
+  {
+    "title": "BILLY MORRIS",
+    "performers": [
+      {
+        "name": "BILLY MORRIS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-03",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-03-billy-morris"
+  },
+  {
+    "title": "OMF",
+    "performers": [
+      {
+        "name": "OMF",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-09",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-09-omf"
+  },
+  {
+    "title": "COUNTRY REDFORD",
+    "performers": [
+      {
+        "name": "COUNTRY REDFORD",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-10",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-10-country-redford"
+  },
+  {
+    "title": "OLD SKOOL",
+    "performers": [
+      {
+        "name": "OLD SKOOL",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-16",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-16-old-skool"
+  },
+  {
+    "title": "TRICKY DICK AND THE COVER-UPS",
+    "performers": [
+      {
+        "name": "TRICKY DICK AND THE COVER-UPS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-17",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-17-tricky-dick-and-the-cover-ups"
+  },
+  {
+    "title": "YOSEMITE SLIM",
+    "performers": [
+      {
+        "name": "YOSEMITE SLIM",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-23",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-23-yosemite-slim"
+  },
+  {
+    "title": "SPAZMATICS",
+    "performers": [
+      {
+        "name": "SPAZMATICS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-24",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-24-spazmatics"
+  },
+  {
+    "title": "JAM MACHINE",
+    "performers": [
+      {
+        "name": "JAM MACHINE",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-30",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-04-30-jam-machine"
+  },
+  {
+    "title": "TRICKY DICK AND THE COVER-UPS",
+    "performers": [
+      {
+        "name": "TRICKY DICK AND THE COVER-UPS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-01",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-01-tricky-dick-and-the-cover-ups"
+  },
+  {
+    "title": "TRAILER PARK NINJAS",
+    "performers": [
+      {
+        "name": "TRAILER PARK NINJAS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-07",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-07-trailer-park-ninjas"
+  },
+  {
+    "title": "BAD JUJU",
+    "performers": [
+      {
+        "name": "BAD JUJU",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-08",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-08-bad-juju"
+  },
+  {
+    "title": "LISA AND THE DEADBEATS",
+    "performers": [
+      {
+        "name": "LISA AND THE DEADBEATS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-14",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-14-lisa-and-the-deadbeats"
+  },
+  {
+    "title": "DISCO INFERNO",
+    "performers": [
+      {
+        "name": "DISCO INFERNO",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-15",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-15-disco-inferno"
+  },
+  {
+    "title": "DT and THE SHAKES",
+    "performers": [
+      {
+        "name": "DT and THE SHAKES",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-21-dt-and-the-shakes"
+  },
+  {
+    "title": "THAT 80's BAND",
+    "performers": [
+      {
+        "name": "THAT 80's BAND",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-22",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-22-that-80-s-band"
+  },
+  {
+    "title": "DRIVING RAIN",
+    "performers": [
+      {
+        "name": "DRIVING RAIN",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-28-driving-rain"
+  },
+  {
+    "title": "SPAZMATICS",
+    "performers": [
+      {
+        "name": "SPAZMATICS",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-29",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "time-warp",
+    "source": "manual",
+    "manual": true,
+    "id": "time-warp-2027-05-29-spazmatics"
+  },
+
+
+
+
+
+
+  
 
 
   {
@@ -10490,44 +11253,9 @@
 
 
 
-  {
-    "title": "Unknownphrazes",
-    "performers": [
-      {
-        "name": "Unknownphrazes",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-10-03-unknownphrazes"
-  },
-  {
-    "title": "Ik Dubaku",
-    "performers": [
-      {
-        "name": "Ik Dubaku",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-09-11-joke-and-mirrors"
-  },
+
+
+  
   {
     "title": "Dylan Spyder",
     "performers": [
@@ -10536,7 +11264,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-17",
+    "date": "2026-11-07",
     "time": null,
     "doors": null,
     "price": null,
@@ -10545,68 +11273,7 @@
     "venueId": "smoke-and-mirrors",
     "source": "manual",
     "manual": true,
-    "id": "smoke-and-mirrors-2026-10-17-dylan-spyder"
-  },
-  {
-    "title": "Nik Ryan",
-    "performers": [
-      {
-        "name": "Nik Ryan",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": "22:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-10-24-nik-ryan"
-  },
-  {
-    "title": "Rocky Horror Costume Party",
-    "performers": [
-      {
-        "name": "EENY",
-        "headliner": true
-      },
-      {
-        "name": "Kellevators",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-30",
-    "time": "20:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-10-30-rocky-horror"
-  },
-  {
-    "title": "Slob Dylan",
-    "performers": [
-      {
-        "name": "Slob Dylan",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smoke-and-mirrors",
-    "source": "manual",
-    "manual": true,
-    "id": "smoke-and-mirrors-2026-10-31-slob-dylan"
+    "id": "smoke-and-mirrors-2026-11-07-dylan-spyder"
   },
   {
     "title": "Bender w/ The Silkies, Placid State",
@@ -10634,6 +11301,63 @@
     "source": "manual",
     "manual": true,
     "id": "smoke-and-mirrors-2026-11-13-bender"
+  },
+  {
+    "title": "MAINSTAGE",
+    "performers": [
+      {
+        "name": "MAINSTAGE",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-11-14-mainstage"
+  },
+  {
+    "title": "Just Kids Again",
+    "performers": [
+      {
+        "name": "Just Kids Again",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-11-21-just-kids-again"
+  },
+  {
+    "title": "MAINSTAGE",
+    "performers": [
+      {
+        "name": "MAINSTAGE",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smoke-and-mirrors",
+    "source": "manual",
+    "manual": true,
+    "id": "smoke-and-mirrors-2026-11-28-mainstage"
   },
 
 
@@ -13107,25 +13831,7 @@
 
 
   
-  {
-    "title": "Beats of the 216",
-    "performers": [
-      {
-        "name": "Beats of the 216",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": null,
-    "doors": null,
-    "price": "Free",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "riffs",
-    "source": "manual",
-    "manual": true,
-    "id": "riffs-2026-10-30-beats-of-the-216"
-  },
+  
   {
     "title": "NAFAN'S FREAK SHOW HALLOWEEN EXTRAVAGANZA & COSTUME CONTEST",
     "performers": [
@@ -13145,6 +13851,36 @@
     "manual": true,
     "id": "riffs-2026-10-31-halloween-extravaganza"
   },
+  {
+    "title": "Grace Oddo / Riley Burke / Colleen Welsh",
+    "performers": [
+      {
+        "name": "Grace Oddo",
+        "headliner": true
+      },
+      {
+        "name": "Riley Burke",
+        "headliner": false
+      },
+      {
+        "name": "Colleen Welsh",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-06",
+    "time": "19:00",
+    "doors": null,
+    "price": "$10",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "riffs",
+    "source": "manual",
+    "manual": true,
+    "id": "riffs-2026-11-06-grace-oddo-riley-burke-colleen-welsh"
+  },
+
+
+
 
 
 
