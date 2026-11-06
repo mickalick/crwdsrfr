@@ -430,6 +430,81 @@
     "time": "20:00",
     "startDate": "2026-10-08",
     "endDate": null
+  },
+
+
+
+
+
+  {
+    "id": "brothers-lounge-big-band-orchestra",
+    "venueId": "brothers-lounge",
+    "title": "Big Band Orchestra w/ Skatch Anderson",
+    "weekday": 1,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-11-02",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-trivia",
+    "venueId": "brothers-lounge",
+    "title": "Trivia w/ Flash Gordon",
+    "weekday": 1,
+    "nth": null,
+    "time": "19:00",
+    "startDate": "2026-11-02",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-open-mic",
+    "venueId": "brothers-lounge",
+    "title": "Open Mic Music & More w/ Poor Duncan",
+    "weekday": 2,
+    "nth": null,
+    "time": "19:30",
+    "startDate": "2026-11-03",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-comedy-showcase",
+    "venueId": "brothers-lounge",
+    "title": "Comedy Showcase w/ Bill Squire",
+    "weekday": 2,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-11-03",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-jam-night",
+    "venueId": "brothers-lounge",
+    "title": "Jam Night w/ Bad Boys of Blues",
+    "weekday": 3,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-11-04",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-line-dancing",
+    "venueId": "brothers-lounge",
+    "title": "Line Dancing",
+    "weekday": 4,
+    "nth": [1, 3],
+    "time": "20:00",
+    "startDate": "2026-11-04",
+    "endDate": null
+  },
+  {
+    "id": "brothers-lounge-karaoke",
+    "venueId": "brothers-lounge",
+    "title": "Karaoke w/ Kenny Anderson",
+    "weekday": 0,
+    "nth": null,
+    "time": "20:00",
+    "startDate": "2026-11-08",
+    "endDate": null
   }
 
 
