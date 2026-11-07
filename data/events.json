@@ -738,1373 +738,6 @@
   },
   "events": [
     {
-      "id": "forest-city-brewery-2026-10-23-austin-walkin-cane",
-      "title": "Austin Walkin' Cane",
-      "venueId": "forest-city-brewery",
-      "date": "2026-10-23",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.forestcitybrewery.com/events/2025/10/24/austin-walkin-cane",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "blues",
-        "singer-songwriter"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-10-23-hokus-pokus-an-improvised-movie",
-      "title": "HOKUS POKUS: An Improvised Movie",
-      "venueId": "imposters-theater",
-      "date": "2026-10-23",
-      "time": "21:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/improvised-horror-movie-102326",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/improvised-horror-movie-102326",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "imposters-theater-2026-10-23-improv-night-with-ddk-friends",
-      "title": "Improv Night with DDK & Friends",
-      "venueId": "imposters-theater",
-      "date": "2026-10-23",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.imposterstheater.com/schedule/improv-night-with-ddk-friends-102326",
-      "ticketUrl": "https://www.imposterstheater.com/schedule/improv-night-with-ddk-friends-102326",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "bop-stop-2026-10-23-blue-lunch-bop-stop",
-      "title": "Blue Lunch",
-      "venueId": "bop-stop",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blue Lunch",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.themusicsettlement.org/events/2026/10/23/blue-lunch-bop-stop",
-      "ticketUrl": "https://www.themusicsettlement.org/events/2026/10/23/blue-lunch-bop-stop",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "blues",
-        "rnb-soul",
-        "jazz"
-      ]
-    },
-    {
-      "id": "the-ivy-2026-10-23-eve-hmbwxe",
-      "title": "Dennett @ The Ivy",
-      "venueId": "the-ivy",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Dennett @ The Ivy",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://speakeasygo.com/The-Ivy-Cleveland/Dennett-%40-The-Ivy?eid=EVE-HMBWXE",
-      "ticketUrl": "https://speakeasygo.com/The-Ivy-Cleveland/Dennett-%40-The-Ivy?eid=EVE-HMBWXE",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "grog-shop-2026-10-23-rellick",
-      "title": "Rellick w/ Under High Street, Apostle Jones",
-      "venueId": "grog-shop",
-      "date": "2026-10-23",
-      "time": "20:30",
-      "doors": "19:30",
-      "price": "$15.16 - $19.51",
-      "performers": [
-        {
-          "name": "Rellick",
-          "headliner": true
-        },
-        {
-          "name": "Under High Street",
-          "headliner": false
-        },
-        {
-          "name": "Apostle Jones",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/rellick-under-high-street-apostle-jones/",
-      "ticketUrl": "https://www.ticketweb.com/event/rellick-under-high-street-apostle-grog-shop-tickets/14298304?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "rnb-soul",
-        "rock",
-        "blues"
-      ]
-    },
-    {
-      "id": "beachland-ballroom-2026-10-23-into-the-blue-grateful-dead-revival",
-      "title": "Into the Blue - Grateful Dead Revival",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": "19:30",
-      "price": null,
-      "performers": [
-        {
-          "name": "Into the Blue - Grateful Dead Revival",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-23-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-23-oct#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "tribute"
-      ]
-    },
-    {
-      "id": "beachland-ballroom-2026-10-23-the-smiths-etc",
-      "title": "The Smiths etc",
-      "venueId": "beachland-ballroom",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "The Smiths etc",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/the-smiths-etc-23-oct",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/the-smiths-etc-23-oct#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "happy-dog-2026-10-23-fragment",
-      "title": "Fragment / IK / DJ Heretek - a Darkwave Benefit in the Underdog!",
-      "venueId": "happy-dog",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Fragment",
-          "headliner": true
-        },
-        {
-          "name": "IK",
-          "headliner": false
-        },
-        {
-          "name": "DJ Heretek - a Darkwave Benefit in the Underdog!",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/fragment-ik-dj-heretek-a-darkwave-benefit-in-the-underdog-october-23-2026-779316?default_theme=true",
-      "ticketUrl": "https://app.opendate.io/e/fragment-ik-dj-heretek-a-darkwave-benefit-in-the-underdog-october-23-2026-779316?default_theme=true",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "happy-dog-2026-10-23-solon",
-      "title": "Solon / Wish Queen / Charity Cunningham",
-      "venueId": "happy-dog",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Solon",
-          "headliner": true
-        },
-        {
-          "name": "Wish Queen",
-          "headliner": false
-        },
-        {
-          "name": "Charity Cunningham",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://app.opendate.io/e/solon-wish-queen-charity-cunningham-october-23-2026-743954?default_theme=true",
-      "ticketUrl": "https://app.opendate.io/e/solon-wish-queen-charity-cunningham-october-23-2026-743954?default_theme=true",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-23-the-workshop-dance-fitness-halloween-showcase",
-      "title": "The Workshop Dance + Fitness Halloween Showcase",
-      "venueId": "mahalls",
-      "date": "2026-10-23",
-      "time": "17:00",
-      "doors": "17:00",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "The Workshop Dance + Fitness Halloween Showcase",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/the-workshop-dance-fitness-halloween-showcase/",
-      "ticketUrl": "https://link.dice.fm/y74cd6c12ce1",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-23-greg-freeman",
-      "title": "Greg Freeman",
-      "venueId": "mahalls",
-      "date": "2026-10-23",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": "$20.00",
-      "performers": [
-        {
-          "name": "Greg Freeman",
-          "headliner": true
-        },
-        {
-          "name": "Hello Shark",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/greg-freeman/",
-      "ticketUrl": "https://link.dice.fm/k92b7668716e",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-23-rocky-horror-picture-show",
-      "title": "Rocky Horror Picture Show",
-      "venueId": "mahalls",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "Rocky Horror Picture Show",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/rocky-horror-picture-show/",
-      "ticketUrl": "https://link.dice.fm/ac3847f4e274",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "mahalls-2026-10-23-rocky-horror-picture-show-2130",
-      "title": "Rocky Horror Picture Show",
-      "venueId": "mahalls",
-      "date": "2026-10-23",
-      "time": "21:30",
-      "doors": "21:30",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "Rocky Horror Picture Show",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/rocky-horror-picture-show-2/",
-      "ticketUrl": "https://link.dice.fm/i435bfea8d7b",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-10-29T11:32:36.025Z"
-    },
-    {
-      "id": "mahalls-2026-10-23-taylorween-an-all-taylor-swift-halloween-party",
-      "title": "Taylorween: an all Taylor Swift halloween party",
-      "venueId": "mahalls",
-      "date": "2026-10-23",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "$15.00",
-      "performers": [
-        {
-          "name": "Taylorween: an all Taylor Swift halloween party",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/taylorween-an-all-taylor-swift-halloween-party-3/",
-      "ticketUrl": "https://link.dice.fm/x2752cc43cf1",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "globe-iron-1465851",
-      "title": "Plini with Night Verses, Portraits",
-      "venueId": "globe-iron",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Plini",
-          "headliner": true
-        },
-        {
-          "name": "Night Verses, Portraits",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://globeironcle.com/events/detail?event_id=1465851",
-      "ticketUrl": "https://www.axs.com/events/1465851/plini-tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "music-box-2026-10-23-the-empty-pockets-oct23",
-      "title": "The Empty Pockets",
-      "venueId": "music-box",
-      "date": "2026-10-23",
-      "time": "19:30",
-      "doors": "18:00",
-      "price": "$22 Advance, $28 Day of Show",
-      "room": "Concert Hall",
-      "performers": [
-        {
-          "name": "The Empty Pockets",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://musicboxcle.com/event/the-empty-pockets-oct23/",
-      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62666",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "collision-bend-cleveland-2026-10-23-country-honk-at-collision-bend-cle-1-48757",
-      "title": "Country Honk at Collision Bend CLE",
-      "venueId": "collision-bend-cleveland",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Country Honk at Collision Bend CLE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://collisionbendbrewery.com/events/country-honk-at-collision-bend-cle-1-48757",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "country"
-      ]
-    },
-    {
-      "id": "rock-hall-2026-10-23-backstage-stories-102326",
-      "title": "Backstage Stories – A Premium Visitor Experience",
-      "venueId": "rock-hall",
-      "date": "2026-10-23",
-      "time": "11:00",
-      "doors": null,
-      "price": "GA $195",
-      "performers": [
-        {
-          "name": "Backstage Stories – A Premium Visitor Experience",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://rockhall.com/event/backstage-stories-102326/",
-      "ticketUrl": "https://tickets.rockhall.com/events/01985128-88cd-3765-f214-c970bcb37135",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "event"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-23-2000-the-magicians-table",
-      "title": "The Magicians Table",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Cibrèo Privato",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "The Magicians Table",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/the-magicians-table",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=008A6493-E48C-42D1-B443-518ABADAB9A6",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "magic"
-      ]
-    },
-    {
-      "id": "playhouse-square-2026-10-23-1030-giselle",
-      "title": "Giselle",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": "10:30",
-      "doors": null,
-      "price": null,
-      "room": "Connor Palace",
-      "presentedBy": "Cleveland Ballet",
-      "performers": [
-        {
-          "name": "Giselle",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/giselle",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1E462450-850B-4A25-8298-A612C6861961",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-10-23-1900-giselle",
-      "title": "Giselle",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "room": "Connor Palace",
-      "presentedBy": "Cleveland Ballet",
-      "performers": [
-        {
-          "name": "Giselle",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/giselle",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1E462450-850B-4A25-8298-A612C6861961",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-10-23-1930-sweeney-todd-demon-barber-of-fleet-street",
-      "title": "Sweeney Todd The Demon Barber of Fleet Street",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "room": "Hanna Theatre",
-      "presentedBy": "Great Lakes Theater",
-      "performers": [
-        {
-          "name": "Sweeney Todd The Demon Barber of Fleet Street",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/sweeney-todd-demon-barber-of-fleet-street",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=0F5BB62F-C22C-45CE-9C77-495375659E29",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-10-23-walking-with-ghosts",
-      "title": "Walking With Ghosts",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": null,
-      "doors": null,
-      "price": null,
-      "room": "Mimi Ohio Theatre",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "Walking With Ghosts",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/walking-with-ghosts",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A0007CB2-5856-4F01-AD79-9E4FDCCC53C4",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "playhouse-square-2026-10-23-2000-cesears-forum-presents-conversations-after-a-burial",
-      "title": "Cesear's Forum presents: Conversations After A Burial",
-      "venueId": "playhouse-square",
-      "date": "2026-10-23",
-      "endDate": null,
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "room": "Kennedy's Cabaret",
-      "presentedBy": null,
-      "performers": [
-        {
-          "name": "Cesear's Forum presents: Conversations After A Burial",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.playhousesquare.org/events/detail/cesears-forum-presents-conversations-after-a-burial",
-      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=A9D0A863-D0AE-4AC6-A25D-950354C41313",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "theater"
-      ]
-    },
-    {
-      "id": "foundry-concert-club-2026-10-23-genitorturers-nathan-james",
-      "title": "Genitorturers, Nathan James, Two Dead Roses",
-      "venueId": "foundry-concert-club",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Genitorturers, Nathan James, Two Dead Roses",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/genitorturers-nathan-james/",
-      "ticketUrl": "https://www.ticketweb.com/event/genitorturers-nathan-james-two-dead-the-foundry-tickets/15047153?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "dunlaps-2026-10-23-143468",
-      "title": "Plum Shed",
-      "venueId": "dunlaps-corner-bar",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Plum Shed",
-          "headliner": true
-        },
-        {
-          "name": "The Other Guys",
-          "headliner": false
-        },
-        {
-          "name": "Libcor",
-          "headliner": false
-        },
-        {
-          "name": "New Moons",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.dunlapsbar.com/events/143468",
-      "ticketUrl": "https://www.dunlapsbar.com/shows/386761",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "welcome-to-the-farm-booking_01M2R7P437GPP33N5WC8B336X7",
-      "title": "Emma Nicholas",
-      "venueId": "welcome-to-the-farm",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Emma Nicholas",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "beatgig",
-      "manual": false,
-      "genres": [
-        "country"
-      ]
-    },
-    {
-      "id": "welcome-to-the-farm-booking_01M3AWZ01E21VM31H9YSGP69N6",
-      "title": "THAIGER",
-      "venueId": "welcome-to-the-farm",
-      "date": "2026-10-23",
-      "time": "23:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "THAIGER",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "beatgig",
-      "manual": false,
-      "genres": [
-        "country"
-      ]
-    },
-    {
-      "id": "hilarities-2026-10-23-1815-133515",
-      "title": "Joe Dombrowski",
-      "venueId": "hilarities",
-      "date": "2026-10-23",
-      "time": "18:15",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Joe Dombrowski",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/133515",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "hilarities-2026-10-23-2045-133515",
-      "title": "Joe Dombrowski",
-      "venueId": "hilarities",
-      "date": "2026-10-23",
-      "time": "20:45",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Joe Dombrowski",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/133515",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "treelawn-social-club-2026-10-23-14355824",
-      "title": "Hed Cheez, Stephe DK, Porch Party",
-      "venueId": "treelawn",
-      "room": "Treelawn Social Club",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Hed Cheez, Stephe DK, Porch Party",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.ticketweb.com/event/hed-cheez-stephe-dk-porch-treelawn-social-club-tickets/14355824",
-      "ticketUrl": "https://www.ticketweb.com/event/hed-cheez-stephe-dk-porch-treelawn-social-club-tickets/14355824",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "electronic-edm",
-        "jazz"
-      ]
-    },
-    {
-      "id": "hofbrauhaus-2026-10-23-7rcg9fwa5e5khlf-krdch-azg9d-c6674-sbj4x-mwgrj-7j7hd-75t7b-bms5k-4953p",
-      "title": "Live Music: Aaron Dussing & Friends",
-      "venueId": "hofbrauhaus-cleveland",
-      "date": "2026-10-23",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live Music: Aaron Dussing & Friends",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.hofbrauhauscleveland.com/events/7rcg9fwa5e5khlf-krdch-azg9d-c6674-sbj4x-mwgrj-7j7hd-75t7b-bms5k-4953p",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "polka"
-      ]
-    },
-    {
-      "id": "coda-2026-10-23-2003737243033",
-      "title": "Idiot Kargo | Fat Daddye at CODA",
-      "venueId": "coda",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": "20:00",
-      "price": "$10",
-      "performers": [
-        {
-          "name": "Idiot Kargo | Fat Daddye at CODA",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.eventbrite.com/e/idiot-kargo-fat-daddye-at-coda-tickets-2003737243033",
-      "ticketUrl": "https://www.eventbrite.com/e/idiot-kargo-fat-daddye-at-coda-tickets-2003737243033",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "sixty6-2026-10-23-medusa-live-at-the-sixty6",
-      "title": "Medusa Live at The Sixty6",
-      "venueId": "the-sixty6",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Medusa Live at The Sixty6",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://thesixty6.com/events/medusa-live-at-the-sixty6/",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "id": "bside-2026-10-23-remi-nisce-2000s-2010s-party",
-      "title": "REMI-NISCE 2000's 2010's Party",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": "21:00",
-      "price": "$12.59",
-      "performers": [
-        {
-          "name": "REMI-NISCE 2000's 2010's Party",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/remi-nisce-2000s-2010s-party/",
-      "ticketUrl": "https://www.ticketweb.com/event/remi-nisce-2000s-2010s-party-b-side-lounge-tickets/14385634?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "no-class-2026-10-23-berghaint-10-23-26",
-      "title": "BERGHAIN'T",
-      "venueId": "no-class",
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "BERGHAIN'T",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.noclasscle.com/events/berghaint-10-23-26",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "grindstone-tap-house-3494733-2026-10-23",
-      "title": "Band: Bosco Jigs",
-      "venueId": "grindstone-tap-house",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://grindstonetaphouse.com/events",
-      "ticketUrl": "https://grindstonetaphouse.com/events",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "reithoffers-2026-10-23-robbing-mary",
-      "title": "Robbing Mary",
-      "venueId": "reithoffers",
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/robbing-mary-4",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/robbing-mary-4",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "flat-iron-cafe-3542352",
-      "title": "Live music from No Strangers Here",
-      "venueId": "flat-iron-cafe",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Live music from No Strangers Here",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://flatironcafe.com/cleveland-flat-iron-cafe-events",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "cleveland-museum-of-art-2026-10-23-dancing-wheels-creating-art-from-the-visual-to-the-physical",
-      "title": "Dancing Wheels: Creating Art . . . From the Visual to the Physical",
-      "venueId": "cleveland-museum-of-art",
-      "date": "2026-10-23",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Dancing Wheels: Creating Art . . . From the Visual to the Physical",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.clevelandart.org/events/dancing-wheels-creating-art-visual-physical",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "visible-voice-books-2026-10-23-concert-series-bobdylan",
-      "title": "Concert Series: A Night of Bob Dylan Music",
-      "venueId": "visible-voice-books",
-      "date": "2026-10-23",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Concert Series: A Night of Bob Dylan Music",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/concert-series-bobdylan",
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "jenks-1929-2026-10-23-1900-1-gold-key",
-      "title": "1 Gold Key",
-      "venueId": "jenks-1929",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "1 Gold Key",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "id": "jenks-1929-2026-10-23-2000-justin-curry",
-      "title": "Justin Curry",
-      "venueId": "jenks-1929",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Justin Curry",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
-      "title": "Eric Burke",
-      "performers": [
-        {
-          "name": "Eric Burke",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smedleys",
-      "source": "manual",
-      "manual": true,
-      "id": "smedleys-2026-10-23-eric-burke",
-      "genres": []
-    },
-    {
-      "title": "Ohio Drifters",
-      "performers": [
-        {
-          "name": "Ohio Drifters",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-23-ohio-drifters",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Lauren Alaina",
-      "performers": [
-        {
-          "name": "Lauren Alaina",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-23-lauren-alaina",
-      "genres": []
-    },
-    {
-      "title": "Country Redford",
-      "performers": [
-        {
-          "name": "Country Redford",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-23-country-redford",
-      "genres": [
-        "country",
-        "covers"
-      ]
-    },
-    {
-      "title": "Stamper Starr",
-      "performers": [
-        {
-          "name": "Stamper Starr",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-23-stamper-starr",
-      "genres": [
-        "blues",
-        "classic",
-        "rock"
-      ]
-    },
-    {
-      "title": "Hair Nation",
-      "performers": [
-        {
-          "name": "Hair Nation",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-10-23-hair-nation",
-      "genres": [
-        "metal",
-        "covers"
-      ]
-    },
-    {
-      "title": "Sam Romano",
-      "performers": [
-        {
-          "name": "Sam Romano",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-23-sam-romano",
-      "genres": [
-        "singer-songwriter",
-        "acoustic"
-      ]
-    },
-    {
-      "title": "Gene Schwartz Band w/ The Props",
-      "performers": [
-        {
-          "name": "Gene Schwartz Band",
-          "headliner": true
-        },
-        {
-          "name": "The Props",
-          "headliner": false
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-10-23-gene-schwartz",
-      "genres": []
-    },
-    {
-      "title": "Punk Metal Ect",
-      "performers": [
-        {
-          "name": "Punk Metal Ect",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-10-23-punk-metal-ect",
-      "genres": []
-    },
-    {
-      "title": "Ariq",
-      "performers": [
-        {
-          "name": "Ariq",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "22:00",
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bird-of-paradise",
-      "source": "manual",
-      "manual": true,
-      "id": "bird-of-paradise-2026-10-23-ariq",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "Nu-Era",
-      "performers": [
-        {
-          "name": "Nu-Era",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-10-23-nu-era",
-      "genres": []
-    },
-    {
-      "title": "Mal Barron Trio",
-      "performers": [
-        {
-          "name": "Mal Barron Trio",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nightjar",
-      "source": "manual",
-      "manual": true,
-      "id": "nightjar-2026-10-23-mal-barron-trio",
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "title": "TRICKY DICK AND THE COVER-UPS",
-      "performers": [
-        {
-          "name": "Tricky Dick and the Cover-Ups",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "time-warp",
-      "source": "manual",
-      "manual": true,
-      "id": "time-warp-2026-10-23-tricky-dick-and-the-cover-ups",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "id": "spotlight-weekend-nights-fri-2026-10-23",
-      "title": "Live Music, DJs, Special Nights, featuring...",
-      "venueId": "spotlight-cle",
-      "date": "2026-10-23",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-early-2026-10-23",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-late-2026-10-23",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-main-2026-10-23",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-fri-back-2026-10-23",
-      "title": "Pianist Don Phillips (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-fri-main-2026-10-23",
-      "title": "Pianist David Blazer (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-fri-back-2026-10-23",
-      "title": "Pianist David Blazer (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-10-23",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
       "id": "imposters-theater-2026-10-24-holy-sh-t-la-s-best-improv-live-at-imposters",
       "title": "Holy Sh*t: LA's Best Improv Live at Imposters",
       "venueId": "imposters-theater",
@@ -3438,48 +2071,6 @@
       "genres": []
     },
     {
-      "title": "Emma Nicholas",
-      "performers": [
-        {
-          "name": "Emma Nicholas",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-10-24-emma-nicholas",
-      "genres": []
-    },
-    {
-      "title": "DJ Caffrey",
-      "performers": [
-        {
-          "name": "DJ Caffrey",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-24",
-      "time": "20:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-10-24-dj-caffrey",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
       "title": "Tricky Dick & The Cover Ups",
       "performers": [
         {
@@ -3623,6 +2214,48 @@
       "manual": true,
       "id": "spotlight-cle-2026-10-24-ben-plank",
       "genres": []
+    },
+    {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-emma-nicholas",
+      "genres": []
+    },
+    {
+      "title": "DJ Caffrey",
+      "performers": [
+        {
+          "name": "DJ Caffrey",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-24",
+      "time": "20:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-24-dj-caffrey",
+      "genres": [
+        "dj"
+      ]
     },
     {
       "title": "Cap Halloween Spooktacular",
@@ -8296,26 +6929,6 @@
       "genres": []
     },
     {
-      "title": "Chris Hatton",
-      "performers": [
-        {
-          "name": "Chris Hatton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-10-30-chris-hatton",
-      "genres": []
-    },
-    {
       "title": "Old Skool",
       "performers": [
         {
@@ -8507,6 +7120,26 @@
       "source": "manual",
       "manual": true,
       "id": "spotlight-cle-2026-10-30-dollyween",
+      "genres": []
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-10-30-chris-hatton",
       "genres": []
     },
     {
@@ -15735,6 +14368,27 @@
       "addedAt": "2026-11-06T09:24:52.144Z"
     },
     {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-11-07-emma-nicholas",
+      "genres": [],
+      "addedAt": "2026-11-07T21:45:43.564Z"
+    },
+    {
       "title": "ESC4P3 w/ Billy Morris",
       "performers": [
         {
@@ -16026,132 +14680,6 @@
         "rock"
       ],
       "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "id": "spotlight-weekend-nights-sat-2026-11-07",
-      "title": "Live Music, DJs, Special Nights, featuring...",
-      "venueId": "spotlight-cle",
-      "date": "2026-11-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "id": "velvet-jazz-trio-sat-2026-11-07",
-      "title": "Jazz Trio John James, Bradford and Skip (Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-sat-main-2026-11-07",
-      "title": "Pianist Don Phillips (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-don-phillips-sat-back-2026-11-07",
-      "title": "Pianist Don Phillips (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-11-07",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-sat-main-2026-11-07",
-      "title": "Pianist David Blazer (Main Lounge)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-11-07",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "velvet-david-blazer-sat-back-2026-11-07",
-      "title": "Pianist David Blazer (Back Room)",
-      "venueId": "velvet-tango-room",
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "jazz"
-      ]
-    },
-    {
-      "id": "twist-dj-saturdays-2026-11-07",
-      "title": "DJ Mike Filly",
-      "venueId": "twist-social-club",
-      "date": "2026-11-07",
-      "time": "22:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": null,
-      "ticketUrl": null,
-      "source": "manual",
-      "manual": true,
-      "recurring": true,
-      "genres": [
-        "dj"
-      ]
     },
     {
       "id": "grog-shop-2026-11-08-dupree-s-dead-band",
@@ -20511,6 +19039,27 @@
       "id": "house-of-blues-2026-11-13-the-menzingers",
       "genres": [],
       "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-11-13-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-11-07T21:45:43.564Z"
     },
     {
       "title": "Jam Machiine w/ Serious FM",
@@ -26496,6 +25045,27 @@
       "addedAt": "2026-11-06T09:24:52.144Z"
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-20",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-11-20-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-11-07T21:45:43.564Z"
+    },
+    {
       "title": "Bronx Country",
       "performers": [
         {
@@ -31493,6 +30063,30 @@
       "id": "house-of-blues-2026-11-27-welshly-arms",
       "genres": [],
       "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Pete Lazard",
+      "performers": [
+        {
+          "name": "Pete Lazard",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-27",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-11-27-pete-lazard",
+      "genres": [
+        "singer-songwriter",
+        "folk-roots"
+      ],
+      "addedAt": "2026-11-07T21:45:43.564Z"
     },
     {
       "title": "Custard Pie",
