@@ -3281,94 +3281,7 @@
 
   
   
-  {
-    "title": "HALLOWEEN WEEKEND KICKOFF: Mariah the Scientist",
-    "performers": [
-      {
-        "name": "Mariah the Scientist",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-29",
-    "time": "22:00",
-    "doors": null,
-    "price": "$78.65",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-10-29-halloween-mariah-the-scientist"
-  },
-  {
-    "title": "HALLOWEEN WEEKEND: QUAVO",
-    "performers": [
-      {
-        "name": "QUAVO",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": "22:00",
-    "doors": null,
-    "price": "$56.83",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-10-30-halloween-quavo"
-  },
-  {
-    "title": "HALLOWEEN WEEKEND: JIGITZ",
-    "performers": [
-      {
-        "name": "JIGITZ",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": "22:00",
-    "doors": null,
-    "price": "$35",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-10-31-halloween-jigitz"
-  },
-  {
-    "title": "YOURS TRULY: A Night of Jazz & R&B",
-    "performers": [
-      {
-        "name": "Anthony Saxson",
-        "headliner": true
-      },
-      {
-        "name": "Frank Alowishus",
-        "headliner": false
-      },
-      {
-        "name": "DJ Leek",
-        "headliner": false
-      },
-      {
-        "name": "Bobby Booshay",
-        "headliner": false
-      }
-    ],
-    "date": "2026-11-05",
-    "time": "19:00",
-    "doors": null,
-    "price": "$24",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "shooters",
-    "source": "manual",
-    "manual": true,
-    "id": "shooters-2026-11-05-yours-truly"
-  },
+  
   {
     "title": "Night Cap: Bobby Booshay",
     "performers": [
@@ -3389,23 +3302,23 @@
     "id": "shooters-2026-11-06-bobby-booshay"
   },
   {
-    "title": "Night Cap: Cavs vs Knicks After Party",
+    "title": "SOFT SPOT: Ladies Night w/ Nicnacc",
     "performers": [
       {
-        "name": "NICNACC",
+        "name": "Nicnacc",
         "headliner": true
       }
     ],
-    "date": "2026-11-07",
-    "time": "22:00",
+    "date": "2026-11-12",
+    "time": "19:00",
     "doors": null,
-    "price": "$24",
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-11-07-night-cap-nicnacc"
+    "id": "shooters-2026-11-12-soft-spot"
   },
 
   
@@ -4895,6 +4808,25 @@
     "id": "house-of-blues-2026-11-15-golden-a-k-pop-kids-party"
   },
   {
+    "title": "Brady Lorince",
+    "performers": [
+      {
+        "name": "Brady Lorince",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-09",
+    "time": "18:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-09-brady-lorince"
+  },
+  {
     "title": "Missio",
     "performers": [
       {
@@ -4912,6 +4844,29 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-01-17-missio"
+  },
+  {
+    "title": "LFO w/ Trevor Penick of O-Town",
+    "performers": [
+      {
+        "name": "LFO",
+        "headliner": true
+      },
+      {
+        "name": "Trevor Penick",
+        "headliner": false
+      }
+    ],
+    "date": "2027-02-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-26-lfo"
   },
   {
     "title": "Coey Redd",
@@ -4950,6 +4905,25 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-03-22-jack-jack"
+  },
+  {
+    "title": "Ricky Chilton",
+    "performers": [
+      {
+        "name": "Ricky Chilton",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-02",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-04-02-ricky-chilton"
   },
 
 
@@ -5348,7 +5322,7 @@
     "id": "house-of-blues-2026-11-21-ekoostik-hookah"
   },
   {
-    "title": "Emo Orchestra",
+    "title": "Emo Orchestra w/ The Spill Canvas",
     "performers": [
       {
         "name": "Emo Orchestra",
@@ -5666,6 +5640,37 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-02-20-spin-doctors"
+  },
+  {
+    "title": "Currents",
+    "performers": [
+      {
+        "name": "Currents",
+        "headliner": true
+      },
+      {
+        "name": "Vana",
+        "headliner": false
+      },
+      {
+        "name": "Stick To Your Guns",
+        "headliner": false
+      },
+      {
+        "name": "Dreamwake",
+        "headliner": false
+      }
+    ],
+    "date": "2027-02-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-22-currents"
   },
   {
     "title": "Bethel Music 2027 Tour",
@@ -7155,11 +7160,15 @@
     "id": "spirits-willoughby-2026-11-07-the-shizz"
   },
   {
-    "title": "Ted Riser",
+    "title": "Ted Riser & the Marshall Band",
     "performers": [
       {
         "name": "Ted Riser",
         "headliner": true
+      },
+      {
+        "name": "The Marshall Band",
+        "headliner": false
       }
     ],
     "date": "2026-11-13",
@@ -7174,10 +7183,10 @@
     "id": "spirits-willoughby-2026-11-13-ted-riser"
   },
   {
-    "title": "Superbugs",
+    "title": "Superbus",
     "performers": [
       {
-        "name": "Superbugs",
+        "name": "Superbus",
         "headliner": true
       }
     ],
@@ -7190,13 +7199,13 @@
     "venueId": "spirits-willoughby",
     "source": "manual",
     "manual": true,
-    "id": "spirits-willoughby-2026-11-14-superbugs"
+    "id": "spirits-willoughby-2026-11-14-superbus"
   },
   {
     "title": "Cleveland Blues Society Jam",
     "performers": [
       {
-        "name": "Superbugs",
+        "name": "Cleveland Blues Society",
         "headliner": true
       }
     ],
@@ -7286,6 +7295,181 @@
     "source": "manual",
     "manual": true,
     "id": "spirits-willoughby-2026-11-26-ted-riser"
+  },
+  {
+    "title": "Jimmy Jax Trio",
+    "performers": [
+      {
+        "name": "Jimmy Jax Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-27-jimmy-jax-trio"
+  },
+  {
+    "title": "The Pawn Band",
+    "performers": [
+      {
+        "name": "The Pawn Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-11-28-the-pawn-band"
+  },
+  {
+    "title": "Dusk to Dawn",
+    "performers": [
+      {
+        "name": "Dusk to Dawn",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-04",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-04-dusk-to-dawn"
+  },
+  {
+    "title": "Big Al & The Hitmen",
+    "performers": [
+      {
+        "name": "Big Al & The Hitmen",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-05-big-al-the-hitmen"
+  },
+  {
+    "title": "Dan McCoy",
+    "performers": [
+      {
+        "name": "Dan McCoy",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-11-dan-mccoy"
+  },
+  {
+    "title": "Tonic Boom",
+    "performers": [
+      {
+        "name": "Tonic Boom",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-12-tonic-boom"
+  },
+  {
+    "title": "Cleveland Blues Society Jam",
+    "performers": [
+      {
+        "name": "Cleveland Blues Society",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-17",
+    "time": "19:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-17-cleveland-blues-society"
+  },
+  {
+    "title": "Charles Geil & Ghost Band",
+    "performers": [
+      {
+        "name": "Charles Geil",
+        "headliner": true
+      },
+      {
+        "name": "Ghost Band",
+        "headliner": false
+      }
+    ],
+    "date": "2026-12-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-18-charles-geil-ghost-band"
+  },
+  {
+    "title": "City Lite Trio",
+    "performers": [
+      {
+        "name": "City Lite Trio",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-19-city-lite-trio"
   },
 
 
@@ -9816,14 +10000,14 @@
   
   
   {
-    "title": "Neon Nightmares: Neon Glow Party",
+    "title": "INDIE SLEAZE DANCE PARTY",
     "performers": [
       {
-        "name": "Neon Nightmares Party",
+        "name": "INDIE SLEAZE DANCE PARTY",
         "headliner": true
       }
     ],
-    "date": "2026-10-30",
+    "date": "2026-11-13",
     "time": "22:00",
     "doors": null,
     "price": "Free",
@@ -9832,17 +10016,17 @@
     "venueId": "twist-social-club",
     "source": "manual",
     "manual": true,
-    "id": "twist-social-club-2026-10-30-neon-nightmares"
+    "id": "twist-social-club-2026-11-13-indie-sleaze-party"
   },
   {
-    "title": "So Bad That It's Good: Halloween Costume Party",
+    "title": "POP CULTURE - THE PARTY",
     "performers": [
       {
-        "name": "Halloween Costume Party",
+        "name": "POP CULTURE - THE PARTY",
         "headliner": true
       }
     ],
-    "date": "2026-10-31",
+    "date": "2026-11-25",
     "time": "22:00",
     "doors": null,
     "price": "Free",
@@ -9851,7 +10035,26 @@
     "venueId": "twist-social-club",
     "source": "manual",
     "manual": true,
-    "id": "twist-social-club-2026-10-31-halloween-costume-party"
+    "id": "twist-social-club-2026-11-25-pop-culture-party"
+  },
+  {
+    "title": "Blacklight Friday",
+    "performers": [
+      {
+        "name": "Blacklight Friday",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-11-27-blacklight-friday"
   },
 
 
@@ -11062,63 +11265,27 @@
 
 
 
+  
   {
-    "title": "Two Mile Moon",
+    "title": "Reverend Lee",
     "performers": [
       {
-        "name": "Two Mile Moon",
+        "name": "Reverend Lee",
         "headliner": true
       }
     ],
-    "date": "2026-10-10",
+    "date": "2026-11-14",
     "time": "20:00",
     "doors": "19:00",
-    "price": "$12 Adv, $15 At Doors",
+    "price": "$12 Adv, $15 Doors",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "irishtown-bend-taproom",
     "source": "manual",
     "manual": true,
-    "id": "irishtown-bend-taproom-2026-10-10-two-mile-moon"
+    "id": "irishtown-bend-taproom-2026-11-14-reverend-lee"
   },
-  {
-    "title": "Apostle Jones",
-    "performers": [
-      {
-        "name": "Apostle Jones",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-17",
-    "time": "20:00",
-    "doors": "19:00",
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "irishtown-bend-taproom",
-    "source": "manual",
-    "manual": true,
-    "id": "irishtown-bend-taproom-2026-10-17-apostle-jones"
-  },
-  {
-    "title": "Mourning [A] Blkstar",
-    "performers": [
-      {
-        "name": "Mourning [A] Blkstar",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-07",
-    "time": "20:00",
-    "doors": "19:00",
-    "price": "$12 adv, $15 doors",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "irishtown-bend-taproom",
-    "source": "manual",
-    "manual": true,
-    "id": "irishtown-bend-taproom-2026-11-07-mourning-a-blkstar"
-  },
+  
 
 
 
