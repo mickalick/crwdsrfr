@@ -770,68 +770,6 @@
       ]
     },
     {
-      "title": "Chris Webby",
-      "performers": [
-        {
-          "name": "Chris Webby",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-28-chris-webby",
-      "genres": []
-    },
-    {
-      "title": "Ethan Timm",
-      "performers": [
-        {
-          "name": "Ethan Timm",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-10-28-ethan-timm",
-      "genres": []
-    },
-    {
-      "title": "Dennis Lewin",
-      "performers": [
-        {
-          "name": "Dennis Lewin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-28",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-28-dennis-lewin",
-      "genres": [
-        "pianist"
-      ]
-    },
-    {
       "id": "bop-stop-2026-10-28-the-derrick-baum-quintet-bop-stop",
       "title": "The Derrick Baum Quintet",
       "venueId": "bop-stop",
@@ -1455,6 +1393,68 @@
       "genres": []
     },
     {
+      "title": "Chris Webby",
+      "performers": [
+        {
+          "name": "Chris Webby",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-28-chris-webby",
+      "genres": []
+    },
+    {
+      "title": "Ethan Timm",
+      "performers": [
+        {
+          "name": "Ethan Timm",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "treehouse",
+      "source": "manual",
+      "manual": true,
+      "id": "treehouse-2026-10-28-ethan-timm",
+      "genres": []
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-28",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-28-dennis-lewin",
+      "genres": [
+        "pianist"
+      ]
+    },
+    {
       "id": "spotlight-jam-night-2026-10-28",
       "title": "Jam Night! Hosted by Clockwork",
       "venueId": "spotlight-cle",
@@ -1600,150 +1600,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Poetry Unplugged",
-      "performers": [
-        {
-          "name": "Poetry Unplugged",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-29-poetry-unplugged",
-      "genres": [],
-      "addedAt": "2026-10-30T00:11:30.951Z"
-    },
-    {
-      "title": "Ronnie Clinton",
-      "performers": [
-        {
-          "name": "Ronnie Clinton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-29-ronnie-clinton",
-      "genres": []
-    },
-    {
-      "title": "Anthony Forniti",
-      "performers": [
-        {
-          "name": "Anthony Forniti",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-10-29-anthony-forniti",
-      "genres": []
-    },
-    {
-      "title": "Kristin Pepper",
-      "performers": [
-        {
-          "name": "Kristin Pepper",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-29-kristin-pepper",
-      "genres": []
-    },
-    {
-      "title": "Mishak",
-      "performers": [
-        {
-          "name": "Mishak",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-10-29-mishak",
-      "genres": []
-    },
-    {
-      "title": "Austin Walkin Cane",
-      "performers": [
-        {
-          "name": "Austin Walkin Cane",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-29-austin-walkin-cane",
-      "genres": [
-        "blues",
-        "singer-songwriter"
-      ]
-    },
-    {
-      "title": "HALLOWEEN WEEKEND KICKOFF: Mariah the Scientist",
-      "performers": [
-        {
-          "name": "Mariah the Scientist",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-29",
-      "time": "22:00",
-      "doors": null,
-      "price": "$78.65",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-10-29-halloween-mariah-the-scientist",
-      "genres": []
     },
     {
       "id": "grog-shop-2026-10-29-ultimate-alt-rock-sampler-halloween-cover-show",
@@ -2387,6 +2243,150 @@
       "genres": []
     },
     {
+      "title": "Poetry Unplugged",
+      "performers": [
+        {
+          "name": "Poetry Unplugged",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-29-poetry-unplugged",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Ronnie Clinton",
+      "performers": [
+        {
+          "name": "Ronnie Clinton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-29-ronnie-clinton",
+      "genres": []
+    },
+    {
+      "title": "Anthony Forniti",
+      "performers": [
+        {
+          "name": "Anthony Forniti",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-10-29-anthony-forniti",
+      "genres": []
+    },
+    {
+      "title": "Kristin Pepper",
+      "performers": [
+        {
+          "name": "Kristin Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-29-kristin-pepper",
+      "genres": []
+    },
+    {
+      "title": "Mishak",
+      "performers": [
+        {
+          "name": "Mishak",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-10-29-mishak",
+      "genres": []
+    },
+    {
+      "title": "Austin Walkin Cane",
+      "performers": [
+        {
+          "name": "Austin Walkin Cane",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-29-austin-walkin-cane",
+      "genres": [
+        "blues",
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "HALLOWEEN WEEKEND KICKOFF: Mariah the Scientist",
+      "performers": [
+        {
+          "name": "Mariah the Scientist",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-29",
+      "time": "22:00",
+      "doors": null,
+      "price": "$78.65",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-10-29-halloween-mariah-the-scientist",
+      "genres": []
+    },
+    {
       "title": "Dog Water",
       "performers": [
         {
@@ -2439,281 +2439,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Just Jazz",
-      "performers": [
-        {
-          "name": "Just Jazz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-10-30-just-jazz",
-      "genres": [],
-      "addedAt": "2026-10-30T00:11:30.951Z"
-    },
-    {
-      "title": "The Longest Johns",
-      "performers": [
-        {
-          "name": "The Longest Johns",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-30-the-longest-johns",
-      "genres": []
-    },
-    {
-      "title": "Old Skool",
-      "performers": [
-        {
-          "name": "Old Skool",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-30-old-skool",
-      "genres": [
-        "covers",
-        "dance-disco",
-        "hiphop-rap"
-      ]
-    },
-    {
-      "title": "Halloween Eve Mischief Night",
-      "performers": [
-        {
-          "name": "Halloween Eve Mischief Night",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-10-30-halloween-eve-mischief-night",
-      "genres": []
-    },
-    {
-      "title": "Blame Willy",
-      "performers": [
-        {
-          "name": "Blame Willy",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-30-blame-willy",
-      "genres": [],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
-      "title": "Halloween Party w/ DJ Denicio",
-      "performers": [
-        {
-          "name": "DJ Denicio",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "21:30",
-      "doors": null,
-      "price": "$25",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "1928-public-house",
-      "source": "manual",
-      "manual": true,
-      "id": "1928-public-house-2026-10-30-halloween-party",
-      "genres": [
-        "dj"
-      ]
-    },
-    {
-      "title": "The Spazmatics",
-      "performers": [
-        {
-          "name": "The Spazmatics",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-10-30-the-spazmatics",
-      "genres": [
-        "covers"
-      ]
-    },
-    {
-      "title": "Disco Inferno",
-      "performers": [
-        {
-          "name": "Disco Inferno",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-streetsboro",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-streetsboro-2026-10-30-disco-inferno",
-      "genres": [
-        "dance-disco",
-        "covers"
-      ]
-    },
-    {
-      "title": "Jeffrey Cruz",
-      "performers": [
-        {
-          "name": "Jeffrey Cruz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-30-jeffrey-cruz",
-      "genres": [
-        "singer-songwriter"
-      ]
-    },
-    {
-      "title": "Dollyween",
-      "performers": [
-        {
-          "name": "Dollyween",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-10-30-dollyween",
-      "genres": []
-    },
-    {
-      "title": "Teddy Snyder",
-      "performers": [
-        {
-          "name": "Teddy Snyder",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-30-teddy-snyder",
-      "genres": []
-    },
-    {
-      "title": "HALLOWEEN WEEKEND: QUAVO",
-      "performers": [
-        {
-          "name": "QUAVO",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "22:00",
-      "doors": null,
-      "price": "$56.83",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-10-30-halloween-quavo",
-      "genres": []
-    },
-    {
-      "title": "Neon Nightmares: Neon Glow Party",
-      "performers": [
-        {
-          "name": "Neon Nightmares Party",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-30",
-      "time": "22:00",
-      "doors": null,
-      "price": "Free",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "twist-social-club",
-      "source": "manual",
-      "manual": true,
-      "id": "twist-social-club-2026-10-30-neon-nightmares",
-      "genres": []
     },
     {
       "id": "no-class-2026-10-30-high-tolerance-halloween-2",
@@ -3641,6 +3366,281 @@
       "genres": []
     },
     {
+      "title": "Just Jazz",
+      "performers": [
+        {
+          "name": "Just Jazz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-30-just-jazz",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "The Longest Johns",
+      "performers": [
+        {
+          "name": "The Longest Johns",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-30-the-longest-johns",
+      "genres": []
+    },
+    {
+      "title": "Old Skool",
+      "performers": [
+        {
+          "name": "Old Skool",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-30-old-skool",
+      "genres": [
+        "covers",
+        "dance-disco",
+        "hiphop-rap"
+      ]
+    },
+    {
+      "title": "Halloween Eve Mischief Night",
+      "performers": [
+        {
+          "name": "Halloween Eve Mischief Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-10-30-halloween-eve-mischief-night",
+      "genres": []
+    },
+    {
+      "title": "Blame Willy",
+      "performers": [
+        {
+          "name": "Blame Willy",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-30-blame-willy",
+      "genres": [],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Halloween Party w/ DJ Denicio",
+      "performers": [
+        {
+          "name": "DJ Denicio",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "21:30",
+      "doors": null,
+      "price": "$25",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "1928-public-house",
+      "source": "manual",
+      "manual": true,
+      "id": "1928-public-house-2026-10-30-halloween-party",
+      "genres": [
+        "dj"
+      ]
+    },
+    {
+      "title": "The Spazmatics",
+      "performers": [
+        {
+          "name": "The Spazmatics",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-10-30-the-spazmatics",
+      "genres": [
+        "covers"
+      ]
+    },
+    {
+      "title": "Disco Inferno",
+      "performers": [
+        {
+          "name": "Disco Inferno",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-streetsboro",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-streetsboro-2026-10-30-disco-inferno",
+      "genres": [
+        "dance-disco",
+        "covers"
+      ]
+    },
+    {
+      "title": "Jeffrey Cruz",
+      "performers": [
+        {
+          "name": "Jeffrey Cruz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-30-jeffrey-cruz",
+      "genres": [
+        "singer-songwriter"
+      ]
+    },
+    {
+      "title": "Dollyween",
+      "performers": [
+        {
+          "name": "Dollyween",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-10-30-dollyween",
+      "genres": []
+    },
+    {
+      "title": "Teddy Snyder",
+      "performers": [
+        {
+          "name": "Teddy Snyder",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-30-teddy-snyder",
+      "genres": []
+    },
+    {
+      "title": "HALLOWEEN WEEKEND: QUAVO",
+      "performers": [
+        {
+          "name": "QUAVO",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "22:00",
+      "doors": null,
+      "price": "$56.83",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-10-30-halloween-quavo",
+      "genres": []
+    },
+    {
+      "title": "Neon Nightmares: Neon Glow Party",
+      "performers": [
+        {
+          "name": "Neon Nightmares Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-30",
+      "time": "22:00",
+      "doors": null,
+      "price": "Free",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "twist-social-club",
+      "source": "manual",
+      "manual": true,
+      "id": "twist-social-club-2026-10-30-neon-nightmares",
+      "genres": []
+    },
+    {
       "title": "Chris Hatton",
       "performers": [
         {
@@ -3977,309 +3977,6 @@
       "genres": [
         "jazz"
       ]
-    },
-    {
-      "title": "Furious George",
-      "performers": [
-        {
-          "name": "Furious George",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-10-31-furious-george",
-      "genres": [
-        "covers"
-      ],
-      "addedAt": "2026-10-30T00:11:30.951Z"
-    },
-    {
-      "title": "Halloween House Sessions",
-      "performers": [
-        {
-          "name": "Jeff Ozmits",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-31-jeff-ozmits",
-      "genres": [],
-      "addedAt": "2026-10-30T00:11:30.951Z"
-    },
-    {
-      "title": "Necronomipod",
-      "performers": [
-        {
-          "name": "Necronomipod",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "16:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-31-necronomipod",
-      "genres": []
-    },
-    {
-      "title": "Kitchen Dwellers",
-      "performers": [
-        {
-          "name": "Kitchen Dwellers",
-          "headliner": true
-        },
-        {
-          "name": "Dogs in a Pile",
-          "headliner": false
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-31-kitchen-dwellers",
-      "genres": []
-    },
-    {
-      "title": "Boaterhead",
-      "performers": [
-        {
-          "name": "Boaterhead",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-10-31-boaterhead",
-      "genres": [
-        "rock",
-        "covers"
-      ]
-    },
-    {
-      "title": "Ashley Gulla",
-      "performers": [
-        {
-          "name": "Ashley Gulla",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-10-31-ashley-gulla",
-      "genres": []
-    },
-    {
-      "title": "3 Day Weekend",
-      "performers": [
-        {
-          "name": "3 Day Weekend",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-10-31-3-day-weekend",
-      "genres": []
-    },
-    {
-      "title": "Faction",
-      "performers": [
-        {
-          "name": "Faction",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-10-31-faction",
-      "genres": [
-        "pop",
-        "covers"
-      ]
-    },
-    {
-      "title": "Radio Chaos",
-      "performers": [
-        {
-          "name": "Radio Chaos",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-streetsboro",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-streetsboro-2026-10-31-radio-chaos",
-      "genres": []
-    },
-    {
-      "title": "Tricia Crane",
-      "performers": [
-        {
-          "name": "Tricia Crane",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-10-31-tricia-crane",
-      "genres": []
-    },
-    {
-      "title": "NAFAN'S FREAK SHOW HALLOWEEN EXTRAVAGANZA & COSTUME CONTEST",
-      "performers": [
-        {
-          "name": "Nafan",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "20:00",
-      "doors": null,
-      "price": "Free",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "riffs",
-      "source": "manual",
-      "manual": true,
-      "id": "riffs-2026-10-31-halloween-extravaganza",
-      "genres": [
-        "event"
-      ],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
-      "title": "Bridge the Gap",
-      "performers": [
-        {
-          "name": "Bridge the Gap",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-10-31-bridge-the-gap",
-      "genres": [
-        "covers",
-        "classic",
-        "rock",
-        "pop",
-        "country"
-      ]
-    },
-    {
-      "title": "HALLOWEEN WEEKEND: JIGITZ",
-      "performers": [
-        {
-          "name": "JIGITZ",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "22:00",
-      "doors": null,
-      "price": "$35",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-10-31-halloween-jigitz",
-      "genres": []
-    },
-    {
-      "title": "So Bad That It's Good: Halloween Costume Party",
-      "performers": [
-        {
-          "name": "Halloween Costume Party",
-          "headliner": true
-        }
-      ],
-      "date": "2026-10-31",
-      "time": "22:00",
-      "doors": null,
-      "price": "Free",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "twist-social-club",
-      "source": "manual",
-      "manual": true,
-      "id": "twist-social-club-2026-10-31-halloween-costume-party",
-      "genres": []
     },
     {
       "id": "hofbrauhaus-2026-10-31-haunted-hofbrauhaus-halloween-party-wthfg",
@@ -5304,6 +5001,309 @@
       "genres": []
     },
     {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-10-31-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Halloween House Sessions",
+      "performers": [
+        {
+          "name": "Jeff Ozmits",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-31-jeff-ozmits",
+      "genres": [],
+      "addedAt": "2026-10-30T00:11:30.951Z"
+    },
+    {
+      "title": "Necronomipod",
+      "performers": [
+        {
+          "name": "Necronomipod",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "16:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-31-necronomipod",
+      "genres": []
+    },
+    {
+      "title": "Kitchen Dwellers",
+      "performers": [
+        {
+          "name": "Kitchen Dwellers",
+          "headliner": true
+        },
+        {
+          "name": "Dogs in a Pile",
+          "headliner": false
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-31-kitchen-dwellers",
+      "genres": []
+    },
+    {
+      "title": "Boaterhead",
+      "performers": [
+        {
+          "name": "Boaterhead",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-10-31-boaterhead",
+      "genres": [
+        "rock",
+        "covers"
+      ]
+    },
+    {
+      "title": "Ashley Gulla",
+      "performers": [
+        {
+          "name": "Ashley Gulla",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-10-31-ashley-gulla",
+      "genres": []
+    },
+    {
+      "title": "3 Day Weekend",
+      "performers": [
+        {
+          "name": "3 Day Weekend",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-10-31-3-day-weekend",
+      "genres": []
+    },
+    {
+      "title": "Faction",
+      "performers": [
+        {
+          "name": "Faction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-10-31-faction",
+      "genres": [
+        "pop",
+        "covers"
+      ]
+    },
+    {
+      "title": "Radio Chaos",
+      "performers": [
+        {
+          "name": "Radio Chaos",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-streetsboro",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-streetsboro-2026-10-31-radio-chaos",
+      "genres": []
+    },
+    {
+      "title": "Tricia Crane",
+      "performers": [
+        {
+          "name": "Tricia Crane",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-10-31-tricia-crane",
+      "genres": []
+    },
+    {
+      "title": "NAFAN'S FREAK SHOW HALLOWEEN EXTRAVAGANZA & COSTUME CONTEST",
+      "performers": [
+        {
+          "name": "Nafan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "20:00",
+      "doors": null,
+      "price": "Free",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "riffs",
+      "source": "manual",
+      "manual": true,
+      "id": "riffs-2026-10-31-halloween-extravaganza",
+      "genres": [
+        "event"
+      ],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "title": "Bridge the Gap",
+      "performers": [
+        {
+          "name": "Bridge the Gap",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-10-31-bridge-the-gap",
+      "genres": [
+        "covers",
+        "classic",
+        "rock",
+        "pop",
+        "country"
+      ]
+    },
+    {
+      "title": "HALLOWEEN WEEKEND: JIGITZ",
+      "performers": [
+        {
+          "name": "JIGITZ",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "22:00",
+      "doors": null,
+      "price": "$35",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-10-31-halloween-jigitz",
+      "genres": []
+    },
+    {
+      "title": "So Bad That It's Good: Halloween Costume Party",
+      "performers": [
+        {
+          "name": "Halloween Costume Party",
+          "headliner": true
+        }
+      ],
+      "date": "2026-10-31",
+      "time": "22:00",
+      "doors": null,
+      "price": "Free",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "twist-social-club",
+      "source": "manual",
+      "manual": true,
+      "id": "twist-social-club-2026-10-31-halloween-costume-party",
+      "genres": []
+    },
+    {
       "title": "Herb Funky",
       "performers": [
         {
@@ -5700,26 +5700,6 @@
       ]
     },
     {
-      "title": "The Amity Affliction",
-      "performers": [
-        {
-          "name": "The Amity Affliction",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-01",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-01-the-amity-affliction",
-      "genres": []
-    },
-    {
       "id": "grog-shop-2026-11-01-wolf-bear",
       "title": "Wolf & Bear w/ Coletta, Origami Button",
       "venueId": "grog-shop",
@@ -6025,6 +6005,26 @@
         "blues",
         "covers"
       ]
+    },
+    {
+      "title": "The Amity Affliction",
+      "performers": [
+        {
+          "name": "The Amity Affliction",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-01",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-01-the-amity-affliction",
+      "genres": []
     },
     {
       "id": "van-aken-community-figure-drawing-class-2026-11-02",
@@ -6780,96 +6780,6 @@
       "addedAt": "2026-11-05T10:44:41.944Z"
     },
     {
-      "title": "Chris Hatton",
-      "performers": [
-        {
-          "name": "Chris Hatton",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-04",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-11-04-chris-hatton",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Nekrogoblikon",
-      "performers": [
-        {
-          "name": "Nekrogoblikon",
-          "headliner": true
-        },
-        {
-          "name": "Aborted",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-04",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-04-nekrogoblikon",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Becky Boyd",
-      "performers": [
-        {
-          "name": "Becky Boyd",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-04",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "treehouse",
-      "source": "manual",
-      "manual": true,
-      "id": "treehouse-2026-11-04-becky-boyd",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Dennis Lewin",
-      "performers": [
-        {
-          "name": "Dennis Lewin",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-04",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-11-04-dennis-lewin",
-      "genres": [
-        "pianist"
-      ],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
       "id": "foundry-concert-club-2026-11-04-metalcore-wednesday-w-angelo",
       "title": "Metalcore Wednesday w/ Angelo",
       "venueId": "foundry-concert-club",
@@ -7370,6 +7280,96 @@
       "genres": []
     },
     {
+      "title": "Chris Hatton",
+      "performers": [
+        {
+          "name": "Chris Hatton",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-04-chris-hatton",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Nekrogoblikon",
+      "performers": [
+        {
+          "name": "Nekrogoblikon",
+          "headliner": true
+        },
+        {
+          "name": "Aborted",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-04-nekrogoblikon",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Becky Boyd",
+      "performers": [
+        {
+          "name": "Becky Boyd",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "treehouse",
+      "source": "manual",
+      "manual": true,
+      "id": "treehouse-2026-11-04-becky-boyd",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Dennis Lewin",
+      "performers": [
+        {
+          "name": "Dennis Lewin",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-04",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-04-dennis-lewin",
+      "genres": [
+        "pianist"
+      ],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
       "id": "bop-stop-2026-11-05-marquis-hill-bop-stop",
       "title": "Marquis Hill",
       "venueId": "bop-stop",
@@ -7458,173 +7458,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Dog Water",
-      "performers": [
-        {
-          "name": "Dog Water",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": null,
-      "doors": "18:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-11-05-dog-water",
-      "genres": [
-        "rock"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "HEARD! A service industry dance party",
-      "performers": [
-        {
-          "name": "DJs",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "21:00",
-      "doors": null,
-      "price": "Free",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "crobar",
-      "source": "manual",
-      "manual": true,
-      "id": "crobar-2026-11-05-heard",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Chris Twin B Project",
-      "performers": [
-        {
-          "name": "Chris Twin B Project",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-11-05-chris-twin-b-project",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Island Vibes",
-      "performers": [
-        {
-          "name": "Island Vibes",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-11-05-island-vibes",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Ted Riser Live Band Open Mic",
-      "performers": [
-        {
-          "name": "Ted Riser",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-11-05-ted-riser-open-mic",
-      "genres": [
-        "singer-songwriter"
-      ],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "Kristen Pepper",
-      "performers": [
-        {
-          "name": "Kristen Pepper",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-11-05-kristen-pepper",
-      "genres": [],
-      "addedAt": "2026-11-04T18:25:04.331Z"
-    },
-    {
-      "title": "YOURS TRULY: A Night of Jazz & R&B",
-      "performers": [
-        {
-          "name": "Anthony Saxson",
-          "headliner": true
-        },
-        {
-          "name": "Frank Alowishus",
-          "headliner": false
-        },
-        {
-          "name": "DJ Leek",
-          "headliner": false
-        },
-        {
-          "name": "Bobby Booshay",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-05",
-      "time": "19:00",
-      "doors": null,
-      "price": "$24",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-11-05-yours-truly",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-04T18:25:04.331Z"
     },
     {
       "id": "grog-shop-2026-11-05-super-pop-party-a-night-of-indie-pop",
@@ -8189,6 +8022,173 @@
       "genres": []
     },
     {
+      "title": "Dog Water",
+      "performers": [
+        {
+          "name": "Dog Water",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": null,
+      "doors": "18:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-11-05-dog-water",
+      "genres": [
+        "rock"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "HEARD! A service industry dance party",
+      "performers": [
+        {
+          "name": "DJs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "21:00",
+      "doors": null,
+      "price": "Free",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-11-05-heard",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Chris Twin B Project",
+      "performers": [
+        {
+          "name": "Chris Twin B Project",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-11-05-chris-twin-b-project",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Island Vibes",
+      "performers": [
+        {
+          "name": "Island Vibes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-11-05-island-vibes",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Ted Riser Live Band Open Mic",
+      "performers": [
+        {
+          "name": "Ted Riser",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-11-05-ted-riser-open-mic",
+      "genres": [
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "Kristen Pepper",
+      "performers": [
+        {
+          "name": "Kristen Pepper",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-05-kristen-pepper",
+      "genres": [],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
+      "title": "YOURS TRULY: A Night of Jazz & R&B",
+      "performers": [
+        {
+          "name": "Anthony Saxson",
+          "headliner": true
+        },
+        {
+          "name": "Frank Alowishus",
+          "headliner": false
+        },
+        {
+          "name": "DJ Leek",
+          "headliner": false
+        },
+        {
+          "name": "Bobby Booshay",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-05",
+      "time": "19:00",
+      "doors": null,
+      "price": "$24",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-11-05-yours-truly",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-04T18:25:04.331Z"
+    },
+    {
       "id": "bop-stop-2026-11-06-bobby-selvaggio-sudden-sextet-bop-stop",
       "title": "Bobby Selvaggio Sudden Sextet",
       "venueId": "bop-stop",
@@ -8302,398 +8302,6 @@
       "genres": [
         "comedy"
       ]
-    },
-    {
-      "title": "Metal Night",
-      "performers": [
-        {
-          "name": "Metal Night",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": null,
-      "doors": "18:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-11-06-metal-night",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Furious George",
-      "performers": [
-        {
-          "name": "Furious George",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-11-06-furious-george",
-      "genres": [
-        "covers"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Night Cap: Bobby Booshay",
-      "performers": [
-        {
-          "name": "Bobby Booshay",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "22:00",
-      "doors": null,
-      "price": "Free",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-11-06-bobby-booshay",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "MIXTAPE: Marc Lansley",
-      "performers": [
-        {
-          "name": "Marc Lansley",
-          "headliner": true
-        },
-        {
-          "name": "Darrell Stout",
-          "headliner": false
-        },
-        {
-          "name": "Nicole Otero",
-          "headliner": false
-        },
-        {
-          "name": "Jesse Hawk",
-          "headliner": false
-        },
-        {
-          "name": "Le Schlippy",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "crobar",
-      "source": "manual",
-      "manual": true,
-      "id": "crobar-2026-11-06-mixtape",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Good Sounds Collective",
-      "performers": [
-        {
-          "name": "Good Sounds Collective",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nightjar",
-      "source": "manual",
-      "manual": true,
-      "id": "nightjar-2026-11-06-good-sounds-collective",
-      "genres": [
-        "jazz"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Dupree's Dead Band",
-      "performers": [
-        {
-          "name": "Dupree's Dead Band",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-06-dupree-s-dead-band",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Chris Mitchell",
-      "performers": [
-        {
-          "name": "Chris Mitchell",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-06-chris-mitchell",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "4Locos & Saints of Crue",
-      "performers": [
-        {
-          "name": "4Locos",
-          "headliner": true
-        },
-        {
-          "name": "Saints of Crue",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-11-06-4locos",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Black Jack Gypsies",
-      "performers": [
-        {
-          "name": "Black Jack Gypsies",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-11-06-black-jack-gypsies",
-      "genres": [
-        "classic",
-        "rock",
-        "covers"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "OMF",
-      "performers": [
-        {
-          "name": "OMF",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "time-warp",
-      "source": "manual",
-      "manual": true,
-      "id": "time-warp-2026-11-06-omf",
-      "genres": [],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Custard Pie",
-      "performers": [
-        {
-          "name": "Custard Pie",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-11-06-custard-pie",
-      "genres": [
-        "classic",
-        "rock",
-        "covers"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Unknownphrazes",
-      "performers": [
-        {
-          "name": "Unknownphrazes",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-11-06-unknownphrazes",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Nu-Era",
-      "performers": [
-        {
-          "name": "Nu-Era",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "22:00",
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bird-of-paradise",
-      "source": "manual",
-      "manual": true,
-      "id": "bird-of-paradise-2026-11-06-nu-era",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Jeffrey Cruz",
-      "performers": [
-        {
-          "name": "Jeffrey Cruz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-11-06-jeffrey-cruz",
-      "genres": [
-        "singer-songwriter"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Grace Oddo / Riley Burke / Colleen Welsh",
-      "performers": [
-        {
-          "name": "Grace Oddo",
-          "headliner": true
-        },
-        {
-          "name": "Riley Burke",
-          "headliner": false
-        },
-        {
-          "name": "Colleen Welsh",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "19:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "riffs",
-      "source": "manual",
-      "manual": true,
-      "id": "riffs-2026-11-06-grace-oddo-riley-burke-colleen-welsh",
-      "genres": [
-        "indie",
-        "pop",
-        "singer-songwriter"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
-    },
-    {
-      "title": "Kiss Me Deadly",
-      "performers": [
-        {
-          "name": "Kiss Me Deadly",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-06",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-11-06-kiss-me-deadly",
-      "genres": [
-        "indie",
-        "pop",
-        "rock"
-      ],
-      "addedAt": "2026-11-06T09:24:52.144Z"
     },
     {
       "id": "no-class-2026-11-06-10000-rambos-order-of-the-dead",
@@ -9542,6 +9150,419 @@
       "genres": []
     },
     {
+      "title": "Metal Night",
+      "performers": [
+        {
+          "name": "Metal Night",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": null,
+      "doors": "18:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-11-06-metal-night",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Dead Ringer",
+      "performers": [
+        {
+          "name": "Dead Ringer",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-06-dead-ringer",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
+      "title": "Furious George",
+      "performers": [
+        {
+          "name": "Furious George",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-06-furious-george",
+      "genres": [
+        "covers"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Night Cap: Bobby Booshay",
+      "performers": [
+        {
+          "name": "Bobby Booshay",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "22:00",
+      "doors": null,
+      "price": "Free",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-11-06-bobby-booshay",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "MIXTAPE: Marc Lansley",
+      "performers": [
+        {
+          "name": "Marc Lansley",
+          "headliner": true
+        },
+        {
+          "name": "Darrell Stout",
+          "headliner": false
+        },
+        {
+          "name": "Nicole Otero",
+          "headliner": false
+        },
+        {
+          "name": "Jesse Hawk",
+          "headliner": false
+        },
+        {
+          "name": "Le Schlippy",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-11-06-mixtape",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Good Sounds Collective",
+      "performers": [
+        {
+          "name": "Good Sounds Collective",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-11-06-good-sounds-collective",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Dupree's Dead Band",
+      "performers": [
+        {
+          "name": "Dupree's Dead Band",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-06-dupree-s-dead-band",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Chris Mitchell",
+      "performers": [
+        {
+          "name": "Chris Mitchell",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-06-chris-mitchell",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "4Locos & Saints of Crue",
+      "performers": [
+        {
+          "name": "4Locos",
+          "headliner": true
+        },
+        {
+          "name": "Saints of Crue",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-11-06-4locos",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Black Jack Gypsies",
+      "performers": [
+        {
+          "name": "Black Jack Gypsies",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-11-06-black-jack-gypsies",
+      "genres": [
+        "classic",
+        "rock",
+        "covers"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "OMF",
+      "performers": [
+        {
+          "name": "OMF",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "time-warp",
+      "source": "manual",
+      "manual": true,
+      "id": "time-warp-2026-11-06-omf",
+      "genres": [],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Custard Pie",
+      "performers": [
+        {
+          "name": "Custard Pie",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-11-06-custard-pie",
+      "genres": [
+        "classic",
+        "rock",
+        "covers"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Unknownphrazes",
+      "performers": [
+        {
+          "name": "Unknownphrazes",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-11-06-unknownphrazes",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Nu-Era",
+      "performers": [
+        {
+          "name": "Nu-Era",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-11-06-nu-era",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Jeffrey Cruz",
+      "performers": [
+        {
+          "name": "Jeffrey Cruz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-06-jeffrey-cruz",
+      "genres": [
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Grace Oddo / Riley Burke / Colleen Welsh",
+      "performers": [
+        {
+          "name": "Grace Oddo",
+          "headliner": true
+        },
+        {
+          "name": "Riley Burke",
+          "headliner": false
+        },
+        {
+          "name": "Colleen Welsh",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "19:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "riffs",
+      "source": "manual",
+      "manual": true,
+      "id": "riffs-2026-11-06-grace-oddo-riley-burke-colleen-welsh",
+      "genres": [
+        "indie",
+        "pop",
+        "singer-songwriter"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
+      "title": "Kiss Me Deadly",
+      "performers": [
+        {
+          "name": "Kiss Me Deadly",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-06",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-11-06-kiss-me-deadly",
+      "genres": [
+        "indie",
+        "pop",
+        "rock"
+      ],
+      "addedAt": "2026-11-06T09:24:52.144Z"
+    },
+    {
       "id": "bop-stop-2026-11-07-sold-out-galactic-cowboy-orchestra-bop-stop",
       "title": "(SOLD OUT) Galactic Cowboy Orchestra",
       "venueId": "bop-stop",
@@ -9655,462 +9676,6 @@
       ]
     },
     {
-      "title": "Blackout Jimmies",
-      "performers": [
-        {
-          "name": "Blackout Jimmies",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": null,
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "cebars",
-      "source": "manual",
-      "manual": true,
-      "id": "cebars-2026-11-07-blackout-jimmies",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Just Jazz",
-      "performers": [
-        {
-          "name": "Just Jazz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "seeing-double",
-      "source": "manual",
-      "manual": true,
-      "id": "seeing-double-2026-11-07-just-jazz",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "SAY LESS",
-      "performers": [
-        {
-          "name": "SAY LESS",
-          "headliner": true
-        },
-        {
-          "name": "Den Hur",
-          "headliner": false
-        },
-        {
-          "name": "Delish",
-          "headliner": false
-        },
-        {
-          "name": "Edward",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "crobar",
-      "source": "manual",
-      "manual": true,
-      "id": "crobar-2026-11-07-say-less",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Peacox Quartet",
-      "performers": [
-        {
-          "name": "Peacox Quartet",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "20:00",
-      "doors": null,
-      "price": "$10",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nightjar",
-      "source": "manual",
-      "manual": true,
-      "id": "nightjar-2026-11-07-peacox-quartet",
-      "genres": [
-        "jazz"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "It's A Vibe",
-      "performers": [
-        {
-          "name": "It's A Vibe",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-07-it-s-a-vibe",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Beyond the Walls 3",
-      "performers": [
-        {
-          "name": "Beyond the Walls 3",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-07-beyond-the-walls-3",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Pigeons Playing Ping Pong",
-      "performers": [
-        {
-          "name": "Pigeons Playing Ping Pong",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "17:30",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "house-of-blues",
-      "source": "manual",
-      "manual": true,
-      "id": "house-of-blues-2026-11-07-pigeons-playing-ping-pong",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Emma Nicholas",
-      "performers": [
-        {
-          "name": "Emma Nicholas",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bar-32",
-      "source": "manual",
-      "manual": true,
-      "id": "bar-32-2026-11-07-emma-nicholas",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "ESC4P3 w/ Billy Morris",
-      "performers": [
-        {
-          "name": "ESC4P3",
-          "headliner": true
-        },
-        {
-          "name": "Billy Morris",
-          "headliner": false
-        }
-      ],
-      "date": "2026-11-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": "https://tinyurl.com/ESCAPE-BILLYMORRIS",
-      "venueId": "local-bar-strongsville",
-      "source": "manual",
-      "manual": true,
-      "id": "local-bar-strongsville-2026-11-07-escape",
-      "genres": [
-        "classic",
-        "rock",
-        "covers",
-        "tribute"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Learn Hands-On Craft Cocktails",
-      "performers": [
-        {
-          "name": "Learn Hands-On Craft Cocktails",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "17:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-11-07-learn-hands-on-craft-cocktails",
-      "genres": [
-        "event"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "The Shizz",
-      "performers": [
-        {
-          "name": "The Shizz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spirits-willoughby",
-      "source": "manual",
-      "manual": true,
-      "id": "spirits-willoughby-2026-11-07-the-shizz",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "BAD JUJU",
-      "performers": [
-        {
-          "name": "BAD JUJU",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "time-warp",
-      "source": "manual",
-      "manual": true,
-      "id": "time-warp-2026-11-07-bad-juju",
-      "genres": [
-        "rock",
-        "covers"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Three Day Weekend",
-      "performers": [
-        {
-          "name": "Three Day Weekend",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-downtown",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-downtown-2026-11-07-three-day-weekend",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Out of Eden",
-      "performers": [
-        {
-          "name": "Out of Eden",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-broadview-heights",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-broadview-heights-2026-11-07-out-of-eden",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Endrock",
-      "performers": [
-        {
-          "name": "Endrock",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-streetsboro",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-streetsboro-2026-11-07-endrock",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Spaz",
-      "performers": [
-        {
-          "name": "Spaz",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "nano-brew",
-      "source": "manual",
-      "manual": true,
-      "id": "nano-brew-2026-11-07-spaz",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "IK Dubaku",
-      "performers": [
-        {
-          "name": "IK Dubaku",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "22:00",
-      "doors": "20:00",
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "bird-of-paradise",
-      "source": "manual",
-      "manual": true,
-      "id": "bird-of-paradise-2026-11-07-ik-dubaku",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Dylan Spyder",
-      "performers": [
-        {
-          "name": "Dylan Spyder",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": null,
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "smoke-and-mirrors",
-      "source": "manual",
-      "manual": true,
-      "id": "smoke-and-mirrors-2026-11-07-dylan-spyder",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Eddie Majeski",
-      "performers": [
-        {
-          "name": "Eddie Majeski",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "hyde-park-beachwood",
-      "source": "manual",
-      "manual": true,
-      "id": "hyde-park-beachwood-2026-11-07-eddie-majeski",
-      "genres": [
-        "jazz"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Spotlight on Songwriters w/ Freddy Hill",
-      "performers": [
-        {
-          "name": "Freddy Hill",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "21:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "spotlight-cle",
-      "source": "manual",
-      "manual": true,
-      "id": "spotlight-cle-2026-11-07-freddy-hill",
-      "genres": [
-        "rock"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
       "id": "no-class-2026-11-07-dungeon-synth-night",
       "title": "DUNGEON SYNTH NIGHT",
       "venueId": "no-class",
@@ -10145,48 +9710,6 @@
       "source": "scrape",
       "manual": false,
       "genres": []
-    },
-    {
-      "title": "Night Cap: Cavs vs Knicks After Party",
-      "performers": [
-        {
-          "name": "NICNACC",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "22:00",
-      "doors": null,
-      "price": "$24",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "shooters",
-      "source": "manual",
-      "manual": true,
-      "id": "shooters-2026-11-07-night-cap-nicnacc",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Mourning [A] Blkstar",
-      "performers": [
-        {
-          "name": "Mourning [A] Blkstar",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-07",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$12 adv, $15 doors",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "irishtown-bend-taproom",
-      "source": "manual",
-      "manual": true,
-      "id": "irishtown-bend-taproom-2026-11-07-mourning-a-blkstar",
-      "genres": [],
-      "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
       "id": "grog-shop-2026-11-07-negative-zen",
@@ -11222,6 +10745,525 @@
       "genres": []
     },
     {
+      "title": "Blackout Jimmies",
+      "performers": [
+        {
+          "name": "Blackout Jimmies",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "cebars",
+      "source": "manual",
+      "manual": true,
+      "id": "cebars-2026-11-07-blackout-jimmies",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Cosmic Flurry",
+      "performers": [
+        {
+          "name": "Cosmic Flurry",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-07-cosmic-flurry",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
+      "title": "Just Jazz",
+      "performers": [
+        {
+          "name": "Just Jazz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "seeing-double",
+      "source": "manual",
+      "manual": true,
+      "id": "seeing-double-2026-11-07-just-jazz",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "SAY LESS",
+      "performers": [
+        {
+          "name": "SAY LESS",
+          "headliner": true
+        },
+        {
+          "name": "Den Hur",
+          "headliner": false
+        },
+        {
+          "name": "Delish",
+          "headliner": false
+        },
+        {
+          "name": "Edward",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-11-07-say-less",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Peacox Quartet",
+      "performers": [
+        {
+          "name": "Peacox Quartet",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "20:00",
+      "doors": null,
+      "price": "$10",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nightjar",
+      "source": "manual",
+      "manual": true,
+      "id": "nightjar-2026-11-07-peacox-quartet",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "It's A Vibe",
+      "performers": [
+        {
+          "name": "It's A Vibe",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-it-s-a-vibe",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Beyond the Walls 3",
+      "performers": [
+        {
+          "name": "Beyond the Walls 3",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "19:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-beyond-the-walls-3",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Pigeons Playing Ping Pong",
+      "performers": [
+        {
+          "name": "Pigeons Playing Ping Pong",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "17:30",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "house-of-blues",
+      "source": "manual",
+      "manual": true,
+      "id": "house-of-blues-2026-11-07-pigeons-playing-ping-pong",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Emma Nicholas",
+      "performers": [
+        {
+          "name": "Emma Nicholas",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bar-32",
+      "source": "manual",
+      "manual": true,
+      "id": "bar-32-2026-11-07-emma-nicholas",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "ESC4P3 w/ Billy Morris",
+      "performers": [
+        {
+          "name": "ESC4P3",
+          "headliner": true
+        },
+        {
+          "name": "Billy Morris",
+          "headliner": false
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": "https://tinyurl.com/ESCAPE-BILLYMORRIS",
+      "venueId": "local-bar-strongsville",
+      "source": "manual",
+      "manual": true,
+      "id": "local-bar-strongsville-2026-11-07-escape",
+      "genres": [
+        "classic",
+        "rock",
+        "covers",
+        "tribute"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Learn Hands-On Craft Cocktails",
+      "performers": [
+        {
+          "name": "Learn Hands-On Craft Cocktails",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "17:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-11-07-learn-hands-on-craft-cocktails",
+      "genres": [
+        "event"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "The Shizz",
+      "performers": [
+        {
+          "name": "The Shizz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spirits-willoughby",
+      "source": "manual",
+      "manual": true,
+      "id": "spirits-willoughby-2026-11-07-the-shizz",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "BAD JUJU",
+      "performers": [
+        {
+          "name": "BAD JUJU",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "time-warp",
+      "source": "manual",
+      "manual": true,
+      "id": "time-warp-2026-11-07-bad-juju",
+      "genres": [
+        "rock",
+        "covers"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Three Day Weekend",
+      "performers": [
+        {
+          "name": "Three Day Weekend",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-downtown",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-downtown-2026-11-07-three-day-weekend",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Out of Eden",
+      "performers": [
+        {
+          "name": "Out of Eden",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-broadview-heights",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-broadview-heights-2026-11-07-out-of-eden",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Endrock",
+      "performers": [
+        {
+          "name": "Endrock",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-streetsboro",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-streetsboro-2026-11-07-endrock",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Spaz",
+      "performers": [
+        {
+          "name": "Spaz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "nano-brew",
+      "source": "manual",
+      "manual": true,
+      "id": "nano-brew-2026-11-07-spaz",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "IK Dubaku",
+      "performers": [
+        {
+          "name": "IK Dubaku",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "22:00",
+      "doors": "20:00",
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "bird-of-paradise",
+      "source": "manual",
+      "manual": true,
+      "id": "bird-of-paradise-2026-11-07-ik-dubaku",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Dylan Spyder",
+      "performers": [
+        {
+          "name": "Dylan Spyder",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smoke-and-mirrors",
+      "source": "manual",
+      "manual": true,
+      "id": "smoke-and-mirrors-2026-11-07-dylan-spyder",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Eddie Majeski",
+      "performers": [
+        {
+          "name": "Eddie Majeski",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "hyde-park-beachwood",
+      "source": "manual",
+      "manual": true,
+      "id": "hyde-park-beachwood-2026-11-07-eddie-majeski",
+      "genres": [
+        "jazz"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Spotlight on Songwriters w/ Freddy Hill",
+      "performers": [
+        {
+          "name": "Freddy Hill",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "21:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "spotlight-cle",
+      "source": "manual",
+      "manual": true,
+      "id": "spotlight-cle-2026-11-07-freddy-hill",
+      "genres": [
+        "rock"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Night Cap: Cavs vs Knicks After Party",
+      "performers": [
+        {
+          "name": "NICNACC",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "22:00",
+      "doors": null,
+      "price": "$24",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "shooters",
+      "source": "manual",
+      "manual": true,
+      "id": "shooters-2026-11-07-night-cap-nicnacc",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Mourning [A] Blkstar",
+      "performers": [
+        {
+          "name": "Mourning [A] Blkstar",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-07",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$12 adv, $15 doors",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "irishtown-bend-taproom",
+      "source": "manual",
+      "manual": true,
+      "id": "irishtown-bend-taproom-2026-11-07-mourning-a-blkstar",
+      "genres": [],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
       "id": "bop-stop-2026-11-08-masterclass-with-kenny-werner-trio-bop-stop",
       "title": "Masterclass with Kenny Werner Trio",
       "venueId": "bop-stop",
@@ -11312,29 +11354,6 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-11-02T02:42:50.839Z"
-    },
-    {
-      "title": "Open Turntables",
-      "performers": [
-        {
-          "name": "DJs",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-08",
-      "time": "20:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "crobar",
-      "source": "manual",
-      "manual": true,
-      "id": "crobar-2026-11-08-open-turntables",
-      "genres": [
-        "dj"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
       "id": "no-class-2026-11-08-afterloon",
@@ -11961,6 +11980,52 @@
       "genres": []
     },
     {
+      "title": "Nick Amons Acoustic",
+      "performers": [
+        {
+          "name": "Nick Amons",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-08",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-08-nick-amons",
+      "genres": [
+        "acoustic"
+      ],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
+      "title": "Open Turntables",
+      "performers": [
+        {
+          "name": "DJs",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-08",
+      "time": "20:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "crobar",
+      "source": "manual",
+      "manual": true,
+      "id": "crobar-2026-11-08-open-turntables",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
       "id": "grog-shop-2026-11-09-make-em-laugh-mondays",
       "title": "Make Em Laugh Mondays",
       "venueId": "grog-shop",
@@ -12162,6 +12227,29 @@
       ]
     },
     {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-09",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-09-dj-sam-sinister",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "id": "forest-city-brewery-2026-11-10-last-call-trivia",
       "title": "Last Call Trivia",
       "venueId": "forest-city-brewery",
@@ -12177,52 +12265,6 @@
       "genres": [
         "trivia-games"
       ]
-    },
-    {
-      "title": "Tarot Night",
-      "performers": [
-        {
-          "name": "Eranah Adorjan",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-10",
-      "time": "18:30",
-      "doors": null,
-      "price": "$22",
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "quintanas-speakeasy",
-      "source": "manual",
-      "manual": true,
-      "id": "quintanas-speakeasy-2026-11-10-eranah-adorjan",
-      "genres": [
-        "event"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "title": "Jeep Nite: First Responders Appreciation",
-      "performers": [
-        {
-          "name": "Jeep Nite",
-          "headliner": true
-        }
-      ],
-      "date": "2026-11-10",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "eventUrl": null,
-      "ticketUrl": null,
-      "venueId": "wild-eagle-streetsboro",
-      "source": "manual",
-      "manual": true,
-      "id": "wild-eagle-streetsboro-2026-11-10-jeep-nite",
-      "genres": [
-        "event"
-      ],
-      "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
       "id": "grog-shop-2026-11-10-early-worm",
@@ -12441,6 +12483,52 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-11-02T02:42:50.839Z"
+    },
+    {
+      "title": "Tarot Night",
+      "performers": [
+        {
+          "name": "Eranah Adorjan",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-10",
+      "time": "18:30",
+      "doors": null,
+      "price": "$22",
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "quintanas-speakeasy",
+      "source": "manual",
+      "manual": true,
+      "id": "quintanas-speakeasy-2026-11-10-eranah-adorjan",
+      "genres": [
+        "event"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "title": "Jeep Nite: First Responders Appreciation",
+      "performers": [
+        {
+          "name": "Jeep Nite",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-10",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "wild-eagle-streetsboro",
+      "source": "manual",
+      "manual": true,
+      "id": "wild-eagle-streetsboro-2026-11-10-jeep-nite",
+      "genres": [
+        "event"
+      ],
+      "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
       "id": "spotlight-comedy-open-mic-2026-11-10",
@@ -15257,6 +15345,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Erie Cats",
+      "performers": [
+        {
+          "name": "Erie Cats",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-13",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-13-erie-cats",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Big Sky",
       "performers": [
         {
@@ -16933,6 +17042,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Old #7",
+      "performers": [
+        {
+          "name": "Old #7",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-14",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-14-old-7",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Qwik-Silver Trio",
       "performers": [
         {
@@ -18203,6 +18333,27 @@
       "genres": []
     },
     {
+      "title": "Dirty Mike & The Boyz",
+      "performers": [
+        {
+          "name": "Dirty Mike & The Boyz",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-15",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-15-dirty-mike-the-boyz",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Dolce Vita w/ Ricki Chianti",
       "performers": [
         {
@@ -18506,6 +18657,29 @@
       "genres": [
         "trivia-games"
       ]
+    },
+    {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-16",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-16-dj-sam-sinister",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-11T22:53:52.134Z"
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-16",
@@ -21716,6 +21890,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Ynot",
+      "performers": [
+        {
+          "name": "Ynot",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-20",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-20-ynot",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Jazz Cabbage",
       "performers": [
         {
@@ -23375,6 +23570,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Snakebite",
+      "performers": [
+        {
+          "name": "Snakebite",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-21",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-21-snakebite",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Karaoke Night with Meshell",
       "performers": [
         {
@@ -24600,6 +24816,27 @@
       ]
     },
     {
+      "title": "Chris Donely",
+      "performers": [
+        {
+          "name": "Chris Donely",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-22",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-22-chris-donely",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "Gerad G + Live Percussion",
       "performers": [
         {
@@ -24815,6 +25052,29 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-23",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-23-dj-sam-sinister",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-11T22:53:52.134Z"
     },
     {
       "title": "Emo Orchestra w/ The Spill Canvas",
@@ -27371,6 +27631,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Colin Dussault",
+      "performers": [
+        {
+          "name": "Colin Dussault",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-27",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-27-colin-dussault",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "The Jelly Duo",
       "performers": [
         {
@@ -28890,6 +29171,27 @@
       "addedAt": "2026-11-08T03:51:02.461Z"
     },
     {
+      "title": "Madison Crawl",
+      "performers": [
+        {
+          "name": "Madison Crawl",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-28",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-28-madison-crawl",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "TRS Trio",
       "performers": [
         {
@@ -29976,6 +30278,27 @@
       "genres": []
     },
     {
+      "title": "Nathan Henry",
+      "performers": [
+        {
+          "name": "Nathan Henry",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-29",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-29-nathan-henry",
+      "genres": [],
+      "addedAt": "2026-11-11T22:53:52.134Z"
+    },
+    {
       "title": "S.I.N.DAY",
       "performers": [
         {
@@ -30324,6 +30647,29 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "title": "Metal Mondays w/ DJ Sam Sinister",
+      "performers": [
+        {
+          "name": "DJ Sam Sinister",
+          "headliner": true
+        }
+      ],
+      "date": "2026-11-30",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "eventUrl": null,
+      "ticketUrl": null,
+      "venueId": "smedleys",
+      "source": "manual",
+      "manual": true,
+      "id": "smedleys-2026-11-30-dj-sam-sinister",
+      "genres": [
+        "dj"
+      ],
+      "addedAt": "2026-11-11T22:53:52.134Z"
     },
     {
       "id": "spotlight-acoustic-jam-night-2026-11-30",

@@ -2464,6 +2464,8 @@
       "genres": []
     },
 
+    
+
 
 
 
@@ -2472,14 +2474,14 @@
 
 
   {
-    "title": "Drop Downs",
+    "title": "Dead Ringer",
     "performers": [
       {
-        "name": "Drop Downs",
+        "name": "Dead Ringer",
         "headliner": true
       }
     ],
-    "date": "2026-10-02",
+    "date": "2026-11-06",
     "time": null,
     "doors": null,
     "price": null,
@@ -2488,17 +2490,17 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-02-drop-downs"
+    "id": "smedleys-2026-11-06-dead-ringer"
   },
   {
-    "title": "Alan Green",
+    "title": "Cosmic Flurry",
     "performers": [
       {
-        "name": "Alan Green",
+        "name": "Cosmic Flurry",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
+    "date": "2026-11-07",
     "time": null,
     "doors": null,
     "price": null,
@@ -2507,17 +2509,17 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-03-alan-green"
+    "id": "smedleys-2026-11-07-cosmic-flurry"
   },
   {
-    "title": "Three Orange Whips",
+    "title": "Nick Amons Acoustic",
     "performers": [
       {
-        "name": "Three Orange Whips",
+        "name": "Nick Amons",
         "headliner": true
       }
     ],
-    "date": "2026-10-04",
+    "date": "2026-11-08",
     "time": null,
     "doors": null,
     "price": null,
@@ -2526,87 +2528,7 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-04-three-orange-whips"
-  },
-  {
-    "title": "Metal Mondays w/ DJ Sam Sinister",
-    "performers": [
-      {
-        "name": "DJ Sam Sinister",
-        "headliner": true
-      },
-      {
-        "name": "Necrobiome",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-05",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-05-dj-sam-sinister"
-  },
-  {
-    "title": "The Lyle Quimby Band",
-    "performers": [
-      {
-        "name": "The Lyle Quimby Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-09-the-lyle-quimby-band"
-  },
-  {
-    "title": "Sky's The Limit",
-    "performers": [
-      {
-        "name": "Sky's The Limit",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-10-sky-s-the-limit"
-  },
-  {
-    "title": "Tom Brady Acoustic",
-    "performers": [
-      {
-        "name": "Tom Brady Acoustic",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-11",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-11-tom-brady-acoustic"
+    "id": "smedleys-2026-11-08-nick-amons"
   },
   {
     "title": "Metal Mondays w/ DJ Sam Sinister",
@@ -2616,7 +2538,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-12",
+    "date": "2026-11-09",
     "time": null,
     "doors": null,
     "price": null,
@@ -2625,17 +2547,17 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-12-dj-sam-sinister"
+    "id": "smedleys-2026-11-09-dj-sam-sinister"
   },
   {
-    "title": "Retro Junkies",
+    "title": "Erie Cats",
     "performers": [
       {
-        "name": "Retro Junkies",
+        "name": "Erie Cats",
         "headliner": true
       }
     ],
-    "date": "2026-10-16",
+    "date": "2026-11-13",
     "time": null,
     "doors": null,
     "price": null,
@@ -2644,17 +2566,17 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-16-retro-junkies"
+    "id": "smedleys-2026-11-13-erie-cats"
   },
   {
-    "title": "Big Don Band",
+    "title": "Old #7",
     "performers": [
       {
-        "name": "Big Don Band",
+        "name": "Old #7",
         "headliner": true
       }
     ],
-    "date": "2026-10-17",
+    "date": "2026-11-14",
     "time": null,
     "doors": null,
     "price": null,
@@ -2663,17 +2585,17 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-17-big-don-band"
+    "id": "smedleys-2026-11-14-old-7"
   },
   {
-    "title": "Mookie Baylock",
+    "title": "Dirty Mike & The Boyz",
     "performers": [
       {
-        "name": "Mookie Baylock",
+        "name": "Dirty Mike & The Boyz",
         "headliner": true
       }
     ],
-    "date": "2026-10-18",
+    "date": "2026-11-15",
     "time": null,
     "doors": null,
     "price": null,
@@ -2682,87 +2604,7 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-18-mookie-baylock"
-  },
-  {
-    "title": "Metal Mondays w/ DJ Sam Sinister",
-    "performers": [
-      {
-        "name": "DJ Sam Sinister",
-        "headliner": true
-      },
-      {
-        "name": "Red Leather Jacket",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-19",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-19-dj-sam-sinister"
-  },
-  {
-    "title": "Eric Burke",
-    "performers": [
-      {
-        "name": "Eric Burke",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-23-eric-burke"
-  },
-  {
-    "title": "Jesters Revenge",
-    "performers": [
-      {
-        "name": "Jesters Revenge",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-24-jesters-revenge"
-  },
-  {
-    "title": "Tony Schultz",
-    "performers": [
-      {
-        "name": "Tony Schultz",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-25",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "smedleys",
-    "source": "manual",
-    "manual": true,
-    "id": "smedleys-2026-10-25-tony-schultz"
+    "id": "smedleys-2026-11-15-dirty-mike-the-boyz"
   },
   {
     "title": "Metal Mondays w/ DJ Sam Sinister",
@@ -2772,7 +2614,7 @@
         "headliner": true
       }
     ],
-    "date": "2026-10-26",
+    "date": "2026-11-16",
     "time": null,
     "doors": null,
     "price": null,
@@ -2781,8 +2623,165 @@
     "venueId": "smedleys",
     "source": "manual",
     "manual": true,
-    "id": "smedleys-2026-10-26-dj-sam-sinister"
+    "id": "smedleys-2026-11-16-dj-sam-sinister"
   },
+  {
+    "title": "Ynot",
+    "performers": [
+      {
+        "name": "Ynot",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-20-ynot"
+  },
+  {
+    "title": "Snakebite",
+    "performers": [
+      {
+        "name": "Snakebite",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-21-snakebite"
+  },
+  {
+    "title": "Chris Donely",
+    "performers": [
+      {
+        "name": "Chris Donely",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-22",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-22-chris-donely"
+  },
+  {
+    "title": "Metal Mondays w/ DJ Sam Sinister",
+    "performers": [
+      {
+        "name": "DJ Sam Sinister",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-23",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-23-dj-sam-sinister"
+  },
+  {
+    "title": "Colin Dussault",
+    "performers": [
+      {
+        "name": "Colin Dussault",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-27-colin-dussault"
+  },
+  {
+    "title": "Madison Crawl",
+    "performers": [
+      {
+        "name": "Madison Crawl",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-28-madison-crawl"
+  },
+  {
+    "title": "Nathan Henry",
+    "performers": [
+      {
+        "name": "Nathan Henry",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-29",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-29-nathan-henry"
+  },
+  {
+    "title": "Metal Mondays w/ DJ Sam Sinister",
+    "performers": [
+      {
+        "name": "DJ Sam Sinister",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-30",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "smedleys",
+    "source": "manual",
+    "manual": true,
+    "id": "smedleys-2026-11-30-dj-sam-sinister"
+  },
+
+
+
+
+
 
 
 
