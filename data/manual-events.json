@@ -3615,11 +3615,27 @@
     "id": "crobar-2026-11-19-comedy-showcase"
   },
   {
-    "title": "Crysalis: Angelgirl EVA",
+    "title": "Crysalis",
     "performers": [
       {
-        "name": "Angelgirl EVA",
+        "name": "Nothing Phase",
         "headliner": true
+      },
+      {
+        "name": "Sal Anthony",
+        "headliner": false
+      },
+      {
+        "name": "Readymade",
+        "headliner": false
+      },
+      {
+        "name": "The CLA",
+        "headliner": false
+      },
+      {
+        "name": "Angelgirl EVA",
+        "headliner": false
       }
     ],
     "date": "2026-11-20",
@@ -3775,15 +3791,16 @@
 
 
 
+  
   {
-    "title": "Big Al & The Hitman",
+    "title": "Post-Thanksgiving Party w/ The Heat CLE Dance Band",
     "performers": [
       {
-        "name": "Big Al & The Hitman",
+        "name": "The Heat CLE Dance Band",
         "headliner": true
       }
     ],
-    "date": "2026-09-04",
+    "date": "2026-11-27",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -3792,17 +3809,17 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-09-04-big-al-the-hitman"
+    "id": "chagrin-tavern-2026-11-27-post-thanksgiving-party"
   },
   {
-    "title": "Treble In CLE",
+    "title": "New Year's Eve Party w/ The Heat CLE Dance Band",
     "performers": [
       {
-        "name": "Treble In CLE",
+        "name": "The Heat CLE Dance Band",
         "headliner": true
       }
     ],
-    "date": "2026-09-05",
+    "date": "2026-12-31",
     "time": "19:00",
     "doors": null,
     "price": null,
@@ -3811,368 +3828,7 @@
     "venueId": "chagrin-tavern",
     "source": "manual",
     "manual": true,
-    "id": "chagrin-tavern-2026-09-05-treble-in-cle"
-  },
-  {
-    "title": "Ted Riser",
-    "performers": [
-      {
-        "name": "Ted Riser",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-06",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-06-ted-riser"
-  },
-  {
-    "title": "Medusa",
-    "performers": [
-      {
-        "name": "Medusa",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-07",
-    "time": "12:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-07-medusa"
-  },
-  {
-    "title": "Intense",
-    "performers": [
-      {
-        "name": "Intense",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-11",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-11-intense"
-  },
-  {
-    "title": "Glass House",
-    "performers": [
-      {
-        "name": "Glass House",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-12",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-12-glass-house"
-  },
-  {
-    "title": "Legacy Band",
-    "performers": [
-      {
-        "name": "Legacy Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-13",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-13-legacy-band"
-  },
-  {
-    "title": "Pawn",
-    "performers": [
-      {
-        "name": "Pawn",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-18",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-18-pawn"
-  },
-  {
-    "title": "Churchills Basement",
-    "performers": [
-      {
-        "name": "Churchills Basement",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-19",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-19-churchills-basement"
-  },
-  {
-    "title": "Eric Butler",
-    "performers": [
-      {
-        "name": "Eric Butler",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-20",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-20-eric-butler"
-  },
-  {
-    "title": "Vinyl Arcade",
-    "performers": [
-      {
-        "name": "Vinyl Arcade",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-25",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-25-vinyl-arcade"
-  },
-  {
-    "title": "FM 77",
-    "performers": [
-      {
-        "name": "FM 77",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-26",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-26-fm-77"
-  },
-  {
-    "title": "Sully Solo",
-    "performers": [
-      {
-        "name": "Sully Solo",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-27",
-    "time": "13:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-27-sully-solo"
-  },
-  {
-    "title": "Comedy Night",
-    "performers": [
-      {
-        "name": "Comedy Night",
-        "headliner": true
-      }
-    ],
-    "date": "2026-09-27",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-09-27-comedy-night"
-  },
-  {
-    "title": "Elmerz Gun",
-    "performers": [
-      {
-        "name": "Elmerz Gun",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-02",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-02-elmerz-gun"
-  },
-  {
-    "title": "Phil N The Blanks",
-    "performers": [
-      {
-        "name": "Phil N The Blanks",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-03",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-03-phil-n-the-blanks"
-  },
-  {
-    "title": "Cameron Zona",
-    "performers": [
-      {
-        "name": "Cameron Zona",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-05",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-05-cameron-zona"
-  },
-  {
-    "title": "Rock The House Live",
-    "performers": [
-      {
-        "name": "Rock The House Live",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-09-rock-the-house-live"
-  },
-  {
-    "title": "The Marshall Band",
-    "performers": [
-      {
-        "name": "The Marshall Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-10-the-marshall-band"
-  },
-  {
-    "title": "Cameron Zona",
-    "performers": [
-      {
-        "name": "Cameron Zona",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-12",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-12-cameron-zona"
-  },
-  {
-    "title": "Cleveland Rock Bar",
-    "performers": [
-      {
-        "name": "Cleveland Rock Bar",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "chagrin-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "chagrin-tavern-2026-10-16-cleveland-rock-bar"
+    "id": "chagrin-tavern-2026-12-31-new-years-party"
   },
 
 
@@ -5927,6 +5583,75 @@
     "id": "house-of-blues-2027-01-09-holiday-hangover"
   },
   {
+    "title": "Tequila Sunrise",
+    "performers": [
+      {
+        "name": "Tequila Sunrise",
+        "headliner": true
+      },
+      {
+        "name": "Paul Sidoti",
+        "headliner": false
+      }
+    ],
+    "date": "2027-01-22",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-22-tequila-sunrise"
+  },
+  {
+    "title": "Alive II",
+    "performers": [
+      {
+        "name": "Alive II",
+        "headliner": true
+      },
+      {
+        "name": "Paul Sidoti",
+        "headliner": false
+      }
+    ],
+    "date": "2027-01-23",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-23-alive-ii"
+  },
+  {
+    "title": "Broadway Does Punk",
+    "performers": [
+      {
+        "name": "Broadway Does Punk",
+        "headliner": true
+      },
+      {
+        "name": "Glimmers",
+        "headliner": false
+      }
+    ],
+    "date": "2027-01-28",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-28-broadway-does-punk"
+  },
+  {
     "title": "Alexandra Kay - The One Woman Show",
     "performers": [
       {
@@ -6023,6 +5748,33 @@
       }
     ],
     "date": "2027-02-22",
+    "time": "18:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-22-currents"
+  },
+  {
+    "title": "Grunge Fest: Tributes to STP & Alice in Chains",
+    "performers": [
+      {
+        "name": "Hollow",
+        "headliner": true
+      },
+      {
+        "name": "Creep",
+        "headliner": false
+      },
+      {
+        "name": "Grunge DNA",
+        "headliner": false
+      }
+    ],
+    "date": "2027-02-27",
     "time": "18:00",
     "doors": null,
     "price": null,
@@ -6266,6 +6018,25 @@
     "id": "house-of-blues-2027-04-24-john-violinist"
   },
   {
+    "title": "Haute & Freddy",
+    "performers": [
+      {
+        "name": "Haute & Freddy",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-08",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-05-08-haute-freddy"
+  },
+  {
     "title": "Frank Turner & the Sleeping Souls",
     "performers": [
       {
@@ -6414,200 +6185,7 @@
   
   
   
-  {
-    "title": "1988/Disco Inferno",
-    "performers": [
-      {
-        "name": "1988/Disco Inferno",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-10-1988-disco-inferno"
-  },
-  {
-    "title": "Geoff Toney & Island Troy",
-    "performers": [
-      {
-        "name": "Geoff Toney & Island Troy",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-15",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-15-geoff-toney-island-troy"
-  },
-  {
-    "title": "Rockhouse Columbus",
-    "performers": [
-      {
-        "name": "Rockhouse Columbus",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-16-rockhouse-columbus"
-  },
-  {
-    "title": "7 Summers",
-    "performers": [
-      {
-        "name": "7 Summers",
-        "headliner": true
-      },
-      {
-        "name": "Buck Naked Band",
-        "headliner": false
-      }
-    ],
-    "date": "2026-10-17",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": "https://tinyurl.com/7summers-bucknaked-local",
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-17-7-summers"
-  },
-  {
-    "title": "Ronnie Szucs",
-    "performers": [
-      {
-        "name": "Ronnie Szucs",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-22",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-22-ronnie-szucs"
-  },
-  {
-    "title": "Country Redford",
-    "performers": [
-      {
-        "name": "Country Redford",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-23-country-redford"
-  },
-  {
-    "title": "Tricky Dick & The Cover Ups",
-    "performers": [
-      {
-        "name": "Tricky Dick & The Cover Ups",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-24-tricky-dick-the-cover-ups"
-  },
-  {
-    "title": "Ronnie Clinton",
-    "performers": [
-      {
-        "name": "Ronnie Clinton",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-29",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-29-ronnie-clinton"
-  },
-  {
-    "title": "Old Skool",
-    "performers": [
-      {
-        "name": "Old Skool",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-30-old-skool"
-  },
-  {
-    "title": "Boaterhead",
-    "performers": [
-      {
-        "name": "Boaterhead",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "local-bar-strongsville",
-    "source": "manual",
-    "manual": true,
-    "id": "local-bar-strongsville-2026-10-31-boaterhead"
-  },
+  
   {
     "title": "Chris Twin B Project",
     "performers": [
@@ -6855,6 +6433,265 @@
     "source": "manual",
     "manual": true,
     "id": "local-bar-strongsville-2026-11-28-posty"
+  },
+  {
+    "title": "Elvis Frank Worley",
+    "performers": [
+      {
+        "name": "Elvis Frank Worley",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-03",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-03-elvis-frank-worley"
+  },
+  {
+    "title": "Tricky Dick & The Cover-Ups",
+    "performers": [
+      {
+        "name": "Tricky Dick & The Cover-Ups",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-04",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-04-tricky-dick-the-cover-ups"
+  },
+  {
+    "title": "1988",
+    "performers": [
+      {
+        "name": "1988",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-05",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-05-1988"
+  },
+  {
+    "title": "Christmas Rock & Roll Benefit Operation Lean On Me",
+    "performers": [
+      {
+        "name": "Christmas Rock & Roll Benefit Operation Lean On Me",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-06",
+    "time": "16:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-06-christmas-rock-roll-benefit-operation-lean-on-me"
+  },
+  {
+    "title": "Ronnie Szucs",
+    "performers": [
+      {
+        "name": "Ronnie Szucs",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-10",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-10-ronnie-szucs"
+  },
+  {
+    "title": "Maiden America, Resurrection, & Priscilla",
+    "performers": [
+      {
+        "name": "Maiden America",
+        "headliner": true
+      },
+      {
+        "name": "Resurrection",
+        "headliner": false
+      },
+      {
+        "name": "Priscilla",
+        "headliner": false
+      }
+    ],
+    "date": "2026-12-11",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-11-maiden-america"
+  },
+  {
+    "title": "Trailer Park Ninjas",
+    "performers": [
+      {
+        "name": "Trailer Park Ninjas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-12-trailer-park-ninjas"
+  },
+  {
+    "title": "Ronnie Clinton",
+    "performers": [
+      {
+        "name": "Ronnie Clinton",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-17",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-17-ronnie-clinton"
+  },
+  {
+    "title": "Ace Molar",
+    "performers": [
+      {
+        "name": "Ace Molar",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-18",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-18-ace-molar"
+  },
+  {
+    "title": "Disco Inferno",
+    "performers": [
+      {
+        "name": "Disco Inferno",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-19-disco-inferno"
+  },
+  {
+    "title": "In The Heartland",
+    "performers": [
+      {
+        "name": "In The Heartland",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-26",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": "https://tinyurl.com/INTHEHEARTLAND-LOCAL",
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-26-in-the-heartland"
+  },
+  {
+    "title": "Easy Glistening",
+    "performers": [
+      {
+        "name": "Easy Glistening",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-27",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-27-easy-glistening"
+  },
+  {
+    "title": "NYE Party with Hair Nation/Bad Juju",
+    "performers": [
+      {
+        "name": "Hair Nation",
+        "headliner": true
+      },
+      {
+        "name": "Bad Juju",
+        "headliner": false
+      }
+    ],
+    "date": "2026-12-31",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": "https://tinyurl.com/NYE-LOCAL-JUJU-NATION",
+    "venueId": "local-bar-strongsville",
+    "source": "manual",
+    "manual": true,
+    "id": "local-bar-strongsville-2026-12-31-hair-nation"
   },
 
 
@@ -7795,6 +7632,25 @@
     "id": "spirits-willoughby-2026-12-11-dan-mccoy"
   },
   {
+    "title": "Willoughby Ugly Sweater Party 2026",
+    "performers": [
+      {
+        "name": "Party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "13:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spirits-willoughby",
+    "source": "manual",
+    "manual": true,
+    "id": "spirits-willoughby-2026-12-12-ugly-sweater-party"
+  },
+  {
     "title": "Tonic Boom",
     "performers": [
       {
@@ -7878,6 +7734,61 @@
 
 
   
+
+
+  {
+    "title": "Black Tie Event ft. Apostle Jones, EMP, Chris Lugo, & Don Phillips",
+    "performers": [
+      {
+        "name": "Apostle Jones",
+        "headliner": true
+      },
+      {
+        "name": "EMP",
+        "headliner": false
+      },
+      {
+        "name": "Chris Lugo",
+        "headliner": false
+      },
+      {
+        "name": "Don Phillips",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "17:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "velvet-tango-room",
+    "source": "manual",
+    "manual": true,
+    "id": "velvet-tango-room-2026-11-28-black-tie-event"
+  },
+  {
+    "title": "30th Anniversary Celebration",
+    "performers": [
+      {
+        "name": "Celebration",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-29",
+    "time": "16:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "velvet-tango-room",
+    "source": "manual",
+    "manual": true,
+    "id": "velvet-tango-room-2026-11-29-30th-anniversary"
+  },
+
+
+
 
   
   
@@ -10458,6 +10369,25 @@
     "source": "manual",
     "manual": true,
     "id": "twist-social-club-2026-11-27-blacklight-friday"
+  },
+  {
+    "title": "Queer Tidings: Holiday Mixer",
+    "performers": [
+      {
+        "name": "Queer Tidings",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-12-19-queer-tidings"
   },
 
 
@@ -14101,16 +14031,17 @@
 
   
   
+  
   {
-    "title": "NAFAN'S FREAK SHOW HALLOWEEN EXTRAVAGANZA & COSTUME CONTEST",
+    "title": "The Peacock Trio",
     "performers": [
       {
-        "name": "Nafan",
+        "name": "The Peacock Trio",
         "headliner": true
       }
     ],
-    "date": "2026-10-31",
-    "time": "20:00",
+    "date": "2026-11-19",
+    "time": "21:00",
     "doors": null,
     "price": "Free",
     "eventUrl": null,
@@ -14118,34 +14049,7 @@
     "venueId": "riffs",
     "source": "manual",
     "manual": true,
-    "id": "riffs-2026-10-31-halloween-extravaganza"
-  },
-  {
-    "title": "Grace Oddo / Riley Burke / Colleen Welsh",
-    "performers": [
-      {
-        "name": "Grace Oddo",
-        "headliner": true
-      },
-      {
-        "name": "Riley Burke",
-        "headliner": false
-      },
-      {
-        "name": "Colleen Welsh",
-        "headliner": false
-      }
-    ],
-    "date": "2026-11-06",
-    "time": "19:00",
-    "doors": null,
-    "price": "$10",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "riffs",
-    "source": "manual",
-    "manual": true,
-    "id": "riffs-2026-11-06-grace-oddo-riley-burke-colleen-welsh"
+    "id": "riffs-2026-11-19-the-peacock-trio"
   },
 
 
