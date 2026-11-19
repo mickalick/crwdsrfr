@@ -3282,14 +3282,14 @@
   
   
   {
-    "title": "Night Cap: Bobby Booshay",
+    "title": "Night Cap: ESO",
     "performers": [
       {
-        "name": "Bobby Booshay",
+        "name": "ESO",
         "headliner": true
       }
     ],
-    "date": "2026-11-06",
+    "date": "2026-11-20",
     "time": "22:00",
     "doors": null,
     "price": "Free",
@@ -3298,18 +3298,18 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-11-06-bobby-booshay"
+    "id": "shooters-2026-11-20-eso"
   },
   {
-    "title": "SOFT SPOT: Ladies Night w/ Nicnacc",
+    "title": "Night Cap: Borlini",
     "performers": [
       {
-        "name": "Nicnacc",
+        "name": "Borlini",
         "headliner": true
       }
     ],
-    "date": "2026-11-12",
-    "time": "19:00",
+    "date": "2026-11-21",
+    "time": "22:00",
     "doors": null,
     "price": "Free",
     "eventUrl": null,
@@ -3317,7 +3317,30 @@
     "venueId": "shooters",
     "source": "manual",
     "manual": true,
-    "id": "shooters-2026-11-12-soft-spot"
+    "id": "shooters-2026-11-21-borlini"
+  },
+  {
+    "title": "The Night Before: SLIMXX + Bobby Booshay",
+    "performers": [
+      {
+        "name": "SLIMXX",
+        "headliner": true
+      },
+      {
+        "name": "Bobby Booshay",
+        "headliner": false
+      }
+    ],
+    "date": "2026-11-25",
+    "time": "22:00",
+    "doors": null,
+    "price": "From $18.63",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-11-25-the-night-before"
   },
   {
     "title": "Soulja Boy",
