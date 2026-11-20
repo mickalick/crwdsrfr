@@ -12676,27 +12676,6 @@
       ]
     },
     {
-      "id": "foundry-concert-club-2026-11-18-rittz-nuri-psych-ward-216-zay-a-dub",
-      "title": "Rittz, Nuri, PSYCH WARD, 216 ZAY, A-DUB",
-      "venueId": "foundry-concert-club",
-      "date": "2026-11-18",
-      "time": "18:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Rittz, Nuri, PSYCH WARD, 216 ZAY, A-DUB",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/rittz-nuri-psych-ward-216-zay-a-dub/",
-      "ticketUrl": "https://www.ticketweb.com/event/rittz-nuri-psych-ward-216-the-foundry-tickets/14404864?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-10-29T11:24:13.689Z"
-    },
-    {
       "id": "imposters-theater-2026-11-18-the-wednesday-jam",
       "title": "The Wednesday Jam",
       "venueId": "imposters-theater",
@@ -12747,24 +12726,6 @@
         "trivia-games"
       ],
       "addedAt": "2026-11-05T10:44:41.944Z"
-    },
-    {
-      "id": "reithoffers-2026-11-18-trivia-night",
-      "title": "Trivia Night",
-      "venueId": "reithoffers",
-      "date": "2026-11-18",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [],
-      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-11-18-19-00",
-      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-11-18-19-00",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "trivia-games"
-      ],
-      "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
       "title": "Furious George",
@@ -12874,6 +12835,45 @@
         "pianist"
       ],
       "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "id": "foundry-concert-club-2026-11-18-rittz-nuri-psych-ward-216-zay-a-dub",
+      "title": "Rittz, Nuri, PSYCH WARD, 216 ZAY, A-DUB",
+      "venueId": "foundry-concert-club",
+      "date": "2026-11-18",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Rittz, Nuri, PSYCH WARD, 216 ZAY, A-DUB",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/rittz-nuri-psych-ward-216-zay-a-dub/",
+      "ticketUrl": "https://www.ticketweb.com/event/rittz-nuri-psych-ward-216-the-foundry-tickets/14404864?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-10-29T11:24:13.689Z"
+    },
+    {
+      "id": "reithoffers-2026-11-18-trivia-night",
+      "title": "Trivia Night",
+      "venueId": "reithoffers",
+      "date": "2026-11-18",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-11-18-19-00",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/trivia-night-2026-11-18-19-00",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "trivia-games"
+      ],
+      "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
       "id": "grog-shop-2026-11-18-lucy-cooper-b-handy",
@@ -13374,26 +13374,6 @@
       "genres": []
     },
     {
-      "id": "rocket-arena-2026-11-19-pentatonix",
-      "title": "Pentatonix: Christmas in the City Tour",
-      "venueId": "rocket-arena",
-      "date": "2026-11-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Pentatonix",
-          "headliner": true
-        }
-      ],
-      "eventUrl": null,
-      "ticketUrl": "https://seatgeek.com/pentatonix-tickets/cleveland-ohio-rocket-arena-2026-11-19-7-pm/concert/18385717",
-      "source": "seatgeek",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "grog-shop-2026-11-19-fetty-p-franklin-bet-the-bank-on-frank",
       "title": "Fetty P Franklin \"Bet the Bank on Frank\" w/ Ski Mask Malley, Westside Tony, Astronaut K.I.",
       "venueId": "grog-shop",
@@ -13695,50 +13675,6 @@
       "addedAt": "2026-11-02T02:42:50.839Z"
     },
     {
-      "id": "hilarities-2026-11-19-137228",
-      "title": "Janet McNamara",
-      "venueId": "hilarities",
-      "date": "2026-11-19",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Janet McNamara",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/137228",
-      "ticketUrl": "https://hilarities.com/shows/372430",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
-      "id": "hilarities-2026-11-19-1930-140294",
-      "title": "Steve Rannazzisi",
-      "venueId": "hilarities",
-      "date": "2026-11-19",
-      "time": "19:30",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Steve Rannazzisi",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://hilarities.com/events/140294",
-      "ticketUrl": "https://hilarities.com/shows/379622",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "comedy"
-      ]
-    },
-    {
       "id": "treelawn-social-club-2026-11-19-14395004",
       "title": "Vicki Chew",
       "venueId": "treelawn",
@@ -13754,7 +13690,7 @@
         }
       ],
       "eventUrl": "https://www.ticketweb.com/event/vicki-chew-treelawn-social-club-tickets/14395004",
-      "ticketUrl": "https://www.ticketweb.com/event/vicki-chew-treelawn-social-club-tickets/14395004",
+      "ticketUrl": null,
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -14275,8 +14211,8 @@
       "title": "Why?",
       "venueId": "mahalls",
       "date": "2026-11-20",
-      "time": "18:00",
-      "doors": "18:00",
+      "time": "19:00",
+      "doors": "19:00",
       "price": "$22.00",
       "performers": [
         {
@@ -14391,7 +14327,7 @@
         }
       ],
       "eventUrl": "https://musicboxcle.com/event/the-george-martins-nov20/",
-      "ticketUrl": null,
+      "ticketUrl": "https://musicboxcle.com/buynow/?eventid=62823",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -22540,8 +22476,8 @@
       ]
     },
     {
-      "id": "grindstone-tap-house-3640454-2026-11-28",
-      "title": "Goods Band!!",
+      "id": "grindstone-tap-house-3704347-2026-11-28",
+      "title": "Bounce!!!!!",
       "venueId": "grindstone-tap-house",
       "date": "2026-11-28",
       "time": "20:00",
@@ -23650,27 +23586,6 @@
       ]
     },
     {
-      "id": "bside-2026-11-29-the-fall-social-an-exceptionally-dope-affair",
-      "title": "THE FALL SOCIAL: AN EXCEPTIONALLY DOPE AFFAIR",
-      "venueId": "bside-liquor-lounge",
-      "date": "2026-11-29",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$19.51",
-      "performers": [
-        {
-          "name": "THE FALL SOCIAL: AN EXCEPTIONALLY DOPE AFFAIR",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-fall-social-an-exceptionally-dope-affair/",
-      "ticketUrl": "https://www.ticketweb.com/event/the-fall-social-an-exceptionally-b-side-lounge-tickets/14450924?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
-    },
-    {
       "id": "bside-2026-11-29-fall-ball-an-exceptionally-dope-affair",
       "title": "FALL BALL, An Exceptionally Dope Affair",
       "venueId": "bside-liquor-lounge",
@@ -23686,6 +23601,27 @@
       ],
       "eventUrl": "https://bsideliquorlounge.com/tm-event/fall-ball-an-exceptionally-dope-affair/",
       "ticketUrl": "https://www.ticketweb.com/event/fall-ball-an-exceptionally-dope-b-side-lounge-tickets/14412824?theme=bsll",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "bside-2026-11-29-the-fall-social-an-exceptionally-dope-affair",
+      "title": "THE FALL SOCIAL: AN EXCEPTIONALLY DOPE AFFAIR",
+      "venueId": "bside-liquor-lounge",
+      "date": "2026-11-29",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "THE FALL SOCIAL: AN EXCEPTIONALLY DOPE AFFAIR",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://bsideliquorlounge.com/tm-event/the-fall-social-an-exceptionally-dope-affair/",
+      "ticketUrl": "https://www.ticketweb.com/event/the-fall-social-an-exceptionally-b-side-lounge-tickets/14450924?theme=bsll",
       "source": "scrape",
       "manual": false,
       "genres": [],
@@ -24566,6 +24502,30 @@
       "manual": false,
       "genres": [],
       "addedAt": "2026-11-19T09:32:08.806Z"
+    },
+    {
+      "id": "cleveland-orchestra-6aff11c6e27ae1ea9b06bdbb",
+      "title": "Giving Tuesday",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2026-12-01",
+      "time": "00:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Giving Tuesday",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/giving-tuesday",
+      "ticketUrl": "https://www.clevelandorchestra.com/tickets/calendar/holiday-gift-guide#6ae4ebb889f02c619c1786b8",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "classical"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "spotlight-comedy-open-mic-2026-12-01",
@@ -26519,6 +26479,27 @@
       "addedAt": "2026-11-17T11:41:45.311Z"
     },
     {
+      "id": "dunlaps-2026-12-04-147714",
+      "title": "The Day Nites, Nitty Gritty Soul Club, The Walleyes",
+      "venueId": "dunlaps-corner-bar",
+      "date": "2026-12-04",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "The Day Nites, Nitty Gritty Soul Club, The Walleyes",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.dunlapsbar.com/events/147714",
+      "ticketUrl": "https://www.dunlapsbar.com/shows/396599",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "welcome-to-the-farm-booking_01M73NVJM1QEJ18DDSFXKN07KW",
       "title": "Andi Jo Taylor",
       "venueId": "welcome-to-the-farm",
@@ -26915,7 +26896,7 @@
       "addedAt": "2026-11-11T22:50:35.637Z"
     },
     {
-      "id": "visible-voice-books-2026-12-04-concert-series-rye-valley-with-brent-kirby",
+      "id": "visible-voice-books-2026-12-04-concert-series-rye-valley",
       "title": "Concert Series: Rye Valley with Zach Angeloni",
       "venueId": "visible-voice-books",
       "date": "2026-12-04",
@@ -26928,7 +26909,7 @@
           "headliner": true
         }
       ],
-      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/concert-series-rye-valley-with-brent-kirby",
+      "eventUrl": "https://www.visiblevoicebooks.com/calendar-of-events/concert-series-rye-valley",
       "ticketUrl": null,
       "source": "scrape",
       "manual": false,
@@ -27403,26 +27384,6 @@
       "addedAt": "2026-10-29T11:24:13.689Z"
     },
     {
-      "id": "mahalls-2026-12-05-king-buffalo",
-      "title": "King Buffalo",
-      "venueId": "mahalls",
-      "date": "2026-12-05",
-      "time": "19:00",
-      "doors": "19:00",
-      "price": "$25.00",
-      "performers": [
-        {
-          "name": "King Buffalo (USA)",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/king-buffalo/",
-      "ticketUrl": "https://link.dice.fm/Q019933ff2b6",
-      "source": "scrape",
-      "manual": false,
-      "genres": []
-    },
-    {
       "id": "mahalls-2026-12-05-glee-mas-a-glee-dance-party",
       "title": "Glee-mas! a Glee Dance Party",
       "venueId": "mahalls",
@@ -27438,6 +27399,26 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/glee-mas-a-glee-dance-party/",
       "ticketUrl": "https://link.dice.fm/s2e20fae9348",
+      "source": "scrape",
+      "manual": false,
+      "genres": []
+    },
+    {
+      "id": "mahalls-2026-12-05-king-buffalo",
+      "title": "King Buffalo",
+      "venueId": "mahalls",
+      "date": "2026-12-05",
+      "time": "19:00",
+      "doors": "19:00",
+      "price": "$25.00",
+      "performers": [
+        {
+          "name": "King Buffalo (USA)",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/king-buffalo/",
+      "ticketUrl": "https://link.dice.fm/Q019933ff2b6",
       "source": "scrape",
       "manual": false,
       "genres": []
@@ -29102,6 +29083,29 @@
       "addedAt": "2026-11-08T10:59:56.765Z"
     },
     {
+      "id": "hilarities-2026-12-06-147717",
+      "title": "Drew Thomas",
+      "venueId": "hilarities",
+      "date": "2026-12-06",
+      "time": "19:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Drew Thomas",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/147717",
+      "ticketUrl": "https://hilarities.com/shows/396610",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "van-aken-blood-drive-2026-12-06",
       "title": "Blood Drive",
       "venueId": "van-aken-district",
@@ -30762,6 +30766,27 @@
       "source": "scrape",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "dunlaps-2026-12-10-147679",
+      "title": "Tand",
+      "venueId": "dunlaps-corner-bar",
+      "date": "2026-12-10",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Tand",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.dunlapsbar.com/events/147679",
+      "ticketUrl": "https://www.dunlapsbar.com/shows/396526",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "hilarities-2026-12-10-1900-143881",
@@ -37054,6 +37079,42 @@
       ]
     },
     {
+      "id": "grog-shop-2026-12-19-rent-for-cheryl",
+      "title": "Rent For Cheryl w/ Plastic Wildflowers, Recess",
+      "venueId": "grog-shop",
+      "date": "2026-12-19",
+      "time": "20:00",
+      "doors": "19:00",
+      "price": "$19.51",
+      "performers": [
+        {
+          "name": "Rent For Cheryl",
+          "headliner": true
+        },
+        {
+          "name": "Plastic Wildflowers",
+          "headliner": false
+        },
+        {
+          "name": "Recess",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/rent-for-cheryl/",
+      "ticketUrl": "https://www.ticketweb.com/event/rent-for-cheryl-grog-shop-tickets/14445324?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "indie",
+        "alternative",
+        "pop",
+        "blues",
+        "jazz",
+        "rock"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "the-agora-2026-12-19-2000-kip-moore",
       "title": "Kip Moore w/ Alyssa Flaherty",
       "venueId": "the-agora",
@@ -41116,6 +41177,69 @@
       ]
     },
     {
+      "id": "foundry-concert-club-2026-12-28-blunderful-the-foundrys-chess-night-5",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2026-12-28",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-5/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414574?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2026-12-28-blunderful-the-foundrys-chess-night-6",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2026-12-28",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-6/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414574?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2026-12-28-blunderful-the-foundrys-chess-night-7",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2026-12-28",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-7/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414574?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
       "id": "foundry-concert-club-2026-12-28-blunderful-the-foundrys-chess-night-8",
       "title": "Blunderful: The Foundry's Chess Night",
       "venueId": "foundry-concert-club",
@@ -41438,6 +41562,29 @@
       "source": "seatgeek",
       "manual": false,
       "genres": []
+    },
+    {
+      "id": "beachland-ballroom-2026-12-30-into-the-blue-grateful-dead-revival",
+      "title": "Into the Blue - Grateful Dead Revival",
+      "venueId": "beachland-ballroom",
+      "date": "2026-12-30",
+      "time": "20:00",
+      "doors": "19:30",
+      "price": null,
+      "performers": [
+        {
+          "name": "Into the Blue - Grateful Dead Revival",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-30-dec",
+      "ticketUrl": "https://www.beachlandballroom.com/shows/into-the-blue-grateful-dead-revival-30-dec#tickets",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "tribute"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "mercury-music-lounge-2026-12-30-free-play-wednesdays-21",
@@ -41936,6 +42083,22 @@
       "addedAt": "2026-11-19T09:32:08.806Z"
     },
     {
+      "id": "reithoffers-2026-12-31-nye-at-hoff-s",
+      "title": "NYE AT HOFF'S",
+      "venueId": "reithoffers",
+      "date": "2026-12-31",
+      "time": null,
+      "doors": null,
+      "price": null,
+      "performers": [],
+      "eventUrl": "https://www.reithoffers.com/event-details-registration/nye-at-hoffs",
+      "ticketUrl": "https://www.reithoffers.com/event-details-registration/nye-at-hoffs",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "title": "New Year's Eve Party w/ The Heat CLE Dance Band",
       "performers": [
         {
@@ -42209,6 +42372,52 @@
       "genres": [
         "dj"
       ]
+    },
+    {
+      "id": "hilarities-2027-01-01-1830-147718",
+      "title": "Greg Hahn",
+      "venueId": "hilarities",
+      "date": "2027-01-01",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Greg Hahn",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/147718",
+      "ticketUrl": "https://hilarities.com/shows/396611",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
+      "id": "hilarities-2027-01-01-2115-147718",
+      "title": "Greg Hahn",
+      "venueId": "hilarities",
+      "date": "2027-01-01",
+      "time": "21:15",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Greg Hahn",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/147718",
+      "ticketUrl": "https://hilarities.com/shows/396612",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "title": "BACKTRACK",
@@ -42512,6 +42721,52 @@
       "genres": [
         "comedy"
       ]
+    },
+    {
+      "id": "hilarities-2027-01-02-1830-147718",
+      "title": "Greg Hahn",
+      "venueId": "hilarities",
+      "date": "2027-01-02",
+      "time": "18:30",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Greg Hahn",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/147718",
+      "ticketUrl": "https://hilarities.com/shows/396613",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
+      "id": "hilarities-2027-01-02-2115-147718",
+      "title": "Greg Hahn",
+      "venueId": "hilarities",
+      "date": "2027-01-02",
+      "time": "21:15",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Greg Hahn",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://hilarities.com/events/147718",
+      "ticketUrl": "https://hilarities.com/shows/396614",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "comedy"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "the-ivy-2027-01-02-eve-56iiu4",
@@ -42884,27 +43139,6 @@
       "genres": [
         "karaoke"
       ]
-    },
-    {
-      "id": "foundry-concert-club-2027-01-04-blunderful-the-foundrys-chess-night-8",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-01-04",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414484?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-01-04-blunderful-the-foundrys-chess-night-9",
@@ -44482,27 +44716,6 @@
       "genres": [
         "karaoke"
       ]
-    },
-    {
-      "id": "foundry-concert-club-2027-01-11-blunderful-the-foundrys-chess-night-8",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-01-11",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414624?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-01-11-blunderful-the-foundrys-chess-night-9",
@@ -46337,27 +46550,6 @@
       ]
     },
     {
-      "id": "foundry-concert-club-2027-01-18-blunderful-the-foundrys-chess-night-8",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-01-18",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414584?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
-    },
-    {
       "id": "foundry-concert-club-2027-01-18-blunderful-the-foundrys-chess-night-9",
       "title": "Blunderful: The Foundry's Chess Night",
       "venueId": "foundry-concert-club",
@@ -48087,6 +48279,30 @@
       ]
     },
     {
+      "id": "cleveland-orchestra-6aff5c929851d874b8979537",
+      "title": "Northeastern Ohio Band Invitational XXIII",
+      "venueId": "cleveland-orchestra",
+      "room": null,
+      "date": "2027-01-24",
+      "time": "13:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Northeastern Ohio Band Invitational XXIII",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.clevelandorchestra.com/events/northeastern-ohio-band-invitational-xxiii",
+      "ticketUrl": "https://secure.clevelandorchestra.com/syos/performance/24816",
+      "source": "scrape",
+      "manual": false,
+      "genres": [
+        "classical"
+      ],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "spotlight-house-techno-2027-01-24",
       "title": "Sunday Service hosted by DJs Thaiger and Wolf Daddy",
       "venueId": "spotlight-cle",
@@ -48157,27 +48373,6 @@
       "genres": [
         "karaoke"
       ]
-    },
-    {
-      "id": "foundry-concert-club-2027-01-25-blunderful-the-foundrys-chess-night-8",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-01-25",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414604?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-01-25-blunderful-the-foundrys-chess-night-9",
@@ -49443,7 +49638,7 @@
     },
     {
       "id": "beachland-ballroom-2027-01-30-tophouse",
-      "title": "Tophouse with Sam Burchfield",
+      "title": "Tophouse",
       "venueId": "beachland-ballroom",
       "date": "2027-01-30",
       "time": "20:00",
@@ -49453,10 +49648,6 @@
         {
           "name": "Tophouse",
           "headliner": true
-        },
-        {
-          "name": "Sam Burchfield",
-          "headliner": false
         }
       ],
       "eventUrl": "https://www.beachlandballroom.com/shows/tophouse-30-jan",
@@ -50181,27 +50372,6 @@
       ]
     },
     {
-      "id": "foundry-concert-club-2027-02-01-blunderful-the-foundrys-chess-night-8",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-02-01",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-8/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414524?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
-    },
-    {
       "id": "foundry-concert-club-2027-02-01-blunderful-the-foundrys-chess-night-9",
       "title": "Blunderful: The Foundry's Chess Night",
       "venueId": "foundry-concert-club",
@@ -50543,6 +50713,27 @@
       "genres": [
         "comedy"
       ]
+    },
+    {
+      "id": "rocket-arena-2027-02-03-greater-cleveland-sports-awards",
+      "title": "27th Greater Cleveland Sports Awards",
+      "venueId": "rocket-arena",
+      "date": "2027-02-03",
+      "time": "17:15",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Greater Cleveland Sports Awards",
+          "headliner": true
+        }
+      ],
+      "eventUrl": null,
+      "ticketUrl": "https://seatgeek.com/greater-cleveland-sports-awards-tickets/theater/2027-02-03-5-15-pm/18664681",
+      "source": "seatgeek",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "the-agora-2027-02-03-1630-the-music-of-the-lord-of-the-rings",
@@ -51915,6 +52106,111 @@
       "genres": [
         "karaoke"
       ]
+    },
+    {
+      "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-9",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-9/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414564?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-10",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-10/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414564?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-11",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-11/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414564?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-12",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-12/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414564?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
+    },
+    {
+      "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-13",
+      "title": "Blunderful: The Foundry's Chess Night",
+      "venueId": "foundry-concert-club",
+      "date": "2027-02-08",
+      "time": "18:00",
+      "doors": null,
+      "price": null,
+      "performers": [
+        {
+          "name": "Blunderful: The Foundry's Chess Night",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-13/",
+      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414564?pl=thefoundry&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-02-08-blunderful-the-foundrys-chess-night-14",
@@ -53496,27 +53792,6 @@
       "genres": [
         "karaoke"
       ]
-    },
-    {
-      "id": "foundry-concert-club-2027-02-15-blunderful-the-foundrys-chess-night-14",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-02-15",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-14/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414554?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-02-15-blunderful-the-foundrys-chess-night-15",
@@ -55204,27 +55479,6 @@
       "genres": [
         "karaoke"
       ]
-    },
-    {
-      "id": "foundry-concert-club-2027-02-22-blunderful-the-foundrys-chess-night-14",
-      "title": "Blunderful: The Foundry's Chess Night",
-      "venueId": "foundry-concert-club",
-      "date": "2027-02-22",
-      "time": "18:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Blunderful: The Foundry's Chess Night",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/blunderful-the-foundrys-chess-night-14/",
-      "ticketUrl": "https://www.ticketweb.com/event/blunderful-the-foundrys-chess-night-foundry-lounge-tickets/14414614?pl=thefoundry&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-04T18:22:12.127Z"
     },
     {
       "id": "foundry-concert-club-2027-02-22-blunderful-the-foundrys-chess-night-15",
@@ -58152,6 +58406,31 @@
       ]
     },
     {
+      "id": "grog-shop-2027-03-12-rose-city-band",
+      "title": "Rose City Band w/ Glyders",
+      "venueId": "grog-shop",
+      "date": "2027-03-12",
+      "time": "20:30",
+      "doors": "19:30",
+      "price": "$25.43",
+      "performers": [
+        {
+          "name": "Rose City Band",
+          "headliner": true
+        },
+        {
+          "name": "Glyders",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://grogshop.gs/tm-event/rose-city-band-glyders/",
+      "ticketUrl": "https://www.ticketweb.com/event/rose-city-band-glyders-grog-shop-tickets/14451434?pl=grogshop&REFID=clientsitewp",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "beachland-ballroom-2027-03-12-dogpark",
       "title": "Dogpark with Fai Laci",
       "venueId": "beachland-ballroom",
@@ -59149,6 +59428,35 @@
       "addedAt": "2026-11-11T22:50:35.637Z"
     },
     {
+      "id": "mahalls-2027-03-20-stomach-book",
+      "title": "Stomach Book",
+      "venueId": "mahalls",
+      "date": "2027-03-20",
+      "time": "18:30",
+      "doors": "18:30",
+      "price": "$22.00",
+      "performers": [
+        {
+          "name": "STOMACH BOOK",
+          "headliner": true
+        },
+        {
+          "name": "shteppi",
+          "headliner": false
+        },
+        {
+          "name": "Aren’t We Amphibians",
+          "headliner": false
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/stomach-book/",
+      "ticketUrl": "https://link.dice.fm/Ib19ee24c4a2",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
+    },
+    {
       "id": "music-box-2027-03-20-abacab-mar20",
       "title": "ABACAB – The Music of Genesis, Phil Collins, and Peter Gabriel",
       "venueId": "music-box",
@@ -59590,27 +59898,6 @@
       "addedAt": "2026-11-05T10:44:41.944Z"
     },
     {
-      "id": "mahalls-2027-03-24-augustana-with-string-quartet",
-      "title": "Augustana with String Quartet",
-      "venueId": "mahalls",
-      "date": "2027-03-24",
-      "time": "18:00",
-      "doors": "18:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Augustana with String Quartet",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://mahalls20lanes.com/listing/augustana-with-string-quartet/",
-      "ticketUrl": "https://link.dice.fm/Qd53b35288dc",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-19T09:32:08.806Z"
-    },
-    {
       "id": "mahalls-2027-03-24-narrow-head",
       "title": "Narrow Head",
       "venueId": "mahalls",
@@ -59638,6 +59925,27 @@
       ],
       "eventUrl": "https://mahalls20lanes.com/listing/narrow-head/",
       "ticketUrl": "https://link.dice.fm/T6371a1cdbe4",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-19T09:32:08.806Z"
+    },
+    {
+      "id": "mahalls-2027-03-24-augustana-with-string-quartet",
+      "title": "Augustana with String Quartet",
+      "venueId": "mahalls",
+      "date": "2027-03-24",
+      "time": "18:00",
+      "doors": "18:00",
+      "price": null,
+      "performers": [
+        {
+          "name": "Augustana with String Quartet",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://mahalls20lanes.com/listing/augustana-with-string-quartet/",
+      "ticketUrl": "https://link.dice.fm/Qd53b35288dc",
       "source": "scrape",
       "manual": false,
       "genres": [],
@@ -60380,7 +60688,7 @@
     },
     {
       "id": "hilarities-2027-03-31-145940",
-      "title": "Heroes Off Duty",
+      "title": "Heroes Off Duty Presents: Scrubs & Badges LIVE!",
       "venueId": "hilarities",
       "date": "2027-03-31",
       "time": "19:00",
@@ -60388,7 +60696,7 @@
       "price": null,
       "performers": [
         {
-          "name": "Heroes Off Duty",
+          "name": "Heroes Off Duty Presents: Scrubs & Badges LIVE!",
           "headliner": true
         }
       ],
@@ -62739,6 +63047,30 @@
         "covers"
       ],
       "addedAt": "2026-11-08T03:51:02.461Z"
+    },
+    {
+      "id": "playhouse-square-2027-04-24-john-cameron-mitchell",
+      "title": "John Cameron Mitchell",
+      "venueId": "playhouse-square",
+      "date": "2027-04-24",
+      "endDate": null,
+      "time": null,
+      "doors": null,
+      "price": null,
+      "room": "Mimi Ohio Theatre",
+      "presentedBy": "Hedwig 25th Anniversary Movie Tour",
+      "performers": [
+        {
+          "name": "John Cameron Mitchell",
+          "headliner": true
+        }
+      ],
+      "eventUrl": "https://www.playhousesquare.org/events/detail/john-cameron-mitchell",
+      "ticketUrl": "https://tickets.playhousesquare.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=1AD14403-E527-4404-9B51-DA4EBADC846B",
+      "source": "scrape",
+      "manual": false,
+      "genres": [],
+      "addedAt": "2026-11-20T01:17:43.098Z"
     },
     {
       "id": "welcome-to-the-farm-booking_01M3YVC385DP9XSVJN277TKEY8",
@@ -65551,83 +65883,6 @@
       "id": "house-of-blues-2027-11-10-mat-kearney",
       "genres": [],
       "addedAt": "2026-11-08T03:51:02.461Z"
-    },
-    {
-      "id": "grog-shop-2027-11-18-lucy-cooper-b-handy",
-      "title": "LUCY (Cooper B. Handy) w/ Gods Wisdom, The Pranks",
-      "venueId": "grog-shop",
-      "date": "2027-11-18",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": "$28.78",
-      "performers": [
-        {
-          "name": "LUCY (Cooper B. Handy)",
-          "headliner": true
-        },
-        {
-          "name": "Gods Wisdom",
-          "headliner": false
-        },
-        {
-          "name": "The Pranks",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://grogshop.gs/tm-event/lucy-cooper-b-handy-nation/",
-      "ticketUrl": "https://www.ticketweb.com/event/lucy-cooper-b-handy-gods-grog-shop-tickets/15035283?pl=grogshop&REFID=clientsitewp",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-19T09:32:08.806Z"
-    },
-    {
-      "id": "beachland-ballroom-2027-11-18-other-lives",
-      "title": "Other Lives with Kelcey Ayer",
-      "venueId": "beachland-ballroom",
-      "date": "2027-11-18",
-      "time": "20:00",
-      "doors": "19:00",
-      "price": null,
-      "performers": [
-        {
-          "name": "Other Lives",
-          "headliner": true
-        },
-        {
-          "name": "Kelcey Ayer",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.beachlandballroom.com/shows/other-lives-18-nov",
-      "ticketUrl": "https://www.beachlandballroom.com/shows/other-lives-18-nov#tickets",
-      "source": "scrape",
-      "manual": false,
-      "genres": [],
-      "addedAt": "2026-11-19T09:32:08.806Z"
-    },
-    {
-      "id": "bside-2027-11-18-shit-show-karaoke-33",
-      "title": "SHIT SHOW KARAOKE",
-      "venueId": "bside-liquor-lounge",
-      "date": "2027-11-18",
-      "time": "22:00",
-      "doors": "22:00",
-      "price": "Free",
-      "performers": [
-        {
-          "name": "SHIT SHOW KARAOKE",
-          "headliner": true
-        }
-      ],
-      "eventUrl": "https://bsideliquorlounge.com/tm-event/shit-show-karaoke-33/",
-      "ticketUrl": "https://www.ticketweb.com/event/shit-show-karaoke-b-side-lounge-tickets/14243634?theme=bsll",
-      "source": "scrape",
-      "manual": false,
-      "genres": [
-        "karaoke"
-      ],
-      "addedAt": "2026-11-19T09:32:08.806Z"
     },
     {
       "id": "welcome-to-the-farm-booking_01M3YVC38D79WFKC6DPZW0HHGA",
