@@ -2339,15 +2339,73 @@
 
 
 
+
   {
-    "title": "Open",
+    "title": "Dead Ringers",
+    "performers": [
+      {
+        "name": "Dead Ringers",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "sound-stage-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "sound-stage-tavern-2026-11-21-dead-ringers"
+  },
+  {
+    "title": "Facemyer Band",
+    "performers": [
+      {
+        "name": "Facemyer Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "sound-stage-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "sound-stage-tavern-2026-11-27-facemyer-band"
+  },
+  {
+    "title": "Ohio Crossing",
+    "performers": [
+      {
+        "name": "Ohio Crossing",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": null,
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "sound-stage-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "sound-stage-tavern-2026-11-28-ohio-crossing"
+  },
+  {
+    "title": "*Open*",
     "performers": [
       {
         "name": "Open",
         "headliner": true
       }
     ],
-    "date": "2026-10-02",
+    "date": "2026-12-04",
     "time": null,
     "doors": null,
     "price": null,
@@ -2356,17 +2414,17 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-10-02-open"
+    "id": "sound-stage-tavern-2026-12-04-open"
   },
   {
-    "title": "Open",
+    "title": "*Beat Brothers*",
     "performers": [
       {
-        "name": "Open",
+        "name": "Beat Brothers",
         "headliner": true
       }
     ],
-    "date": "2026-10-03",
+    "date": "2026-12-05",
     "time": null,
     "doors": null,
     "price": null,
@@ -2375,94 +2433,8 @@
     "venueId": "sound-stage-tavern",
     "source": "manual",
     "manual": true,
-    "id": "sound-stage-tavern-2026-10-03-open"
+    "id": "sound-stage-tavern-2026-12-05-beat-brothers"
   },
-  {
-    "title": "Sugar Daddys",
-    "performers": [
-      {
-        "name": "Sugar Daddys",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-09",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "sound-stage-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "sound-stage-tavern-2026-10-09-sugar-daddys"
-  },
-  {
-    "title": "Bounce",
-    "performers": [
-      {
-        "name": "Bounce",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-10",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "sound-stage-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "sound-stage-tavern-2026-10-10-bounce"
-  },
-  {
-    "title": "Dan McCoy",
-    "performers": [
-      {
-        "name": "Dan McCoy",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-16",
-    "time": null,
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "sound-stage-tavern",
-    "source": "manual",
-    "manual": true,
-    "id": "sound-stage-tavern-2026-10-16-dan-mccoy"
-  },
-
-
-
-
-
-  {
-      "id": "foundry-concert-club-2026-10-09-ian-mcconnell-cherokee-social",
-      "title": "Ian McConnell w/ Cherokee Social",
-      "venueId": "foundry-concert-club",
-      "date": "2026-10-09",
-      "time": "19:00",
-      "doors": null,
-      "price": null,
-      "performers": [
-        {
-          "name": "Ian McConnell",
-          "headliner": true
-        },
-        {
-          "name": "Cherokee Social",
-          "headliner": false
-        }
-      ],
-      "eventUrl": "https://www.foundryconcertclub.com/tm-event/ian-mcconnell/",
-      "ticketUrl": "https://www.ticketweb.com/event/ian-mcconnell-the-foundry-tickets/14230194?pl=thefoundry&REFID=clientsitewp",
-      "source": "manual",
-      "manual": true,
-      "genres": []
-    },
 
     
 
@@ -3381,6 +3353,44 @@
     "id": "shooters-2026-11-28-a-trak"
   },
   {
+    "title": "Night Cap: JUST AJ",
+    "performers": [
+      {
+        "name": "JUST AJ",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-12-11-just-aj"
+  },
+  {
+    "title": "Night Cap: ESO",
+    "performers": [
+      {
+        "name": "ESO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-12-12-eso"
+  },
+  {
     "title": "Yours Truly: A Night of Jazz + R&B",
     "performers": [
       {
@@ -3410,6 +3420,44 @@
     "source": "manual",
     "manual": true,
     "id": "shooters-2026-12-17-yours-truly"
+  },
+  {
+    "title": "Night Cap: Bobby Booshay",
+    "performers": [
+      {
+        "name": "Bobby Booshay",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-18",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-12-18-bobby-booshay"
+  },
+  {
+    "title": "Night Cap: RICH",
+    "performers": [
+      {
+        "name": "Rich",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "22:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "shooters",
+    "source": "manual",
+    "manual": true,
+    "id": "shooters-2026-12-19-rich"
   },
 
   
@@ -3806,6 +3854,37 @@
     "manual": true,
     "id": "crobar-2026-12-04-saytek"
   },
+  {
+    "title": "JFB",
+    "performers": [
+      {
+        "name": "JFB",
+        "headliner": true
+      },
+      {
+        "name": "KC",
+        "headliner": false
+      },
+      {
+        "name": "Rob Riddum",
+        "headliner": false
+      },
+      {
+        "name": "JonDoeTho1",
+        "headliner": false
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "21:00",
+    "doors": null,
+    "price": "$20",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "crobar",
+    "source": "manual",
+    "manual": true,
+    "id": "crobar-2026-12-12-jfb"
+  },
 
 
 
@@ -3815,6 +3894,595 @@
 
 
   
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-11-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-12-trivia"
+  },
+  {
+    "title": "Pawn",
+    "performers": [
+      {
+        "name": "Pawn",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-13",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-13-pawn"
+  },
+  {
+    "title": "Jam Machine",
+    "performers": [
+      {
+        "name": "Jam Machine",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-14",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-14-jam-machine"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-18-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-19-trivia"
+  },
+  {
+    "title": "Legacy Band",
+    "performers": [
+      {
+        "name": "Legacy Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-20",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-20-legacy-band"
+  },
+  {
+    "title": "Glass House",
+    "performers": [
+      {
+        "name": "Glass House",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-21",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-21-glass-house"
+  },
+  {
+    "title": "FM 77",
+    "performers": [
+      {
+        "name": "FM 77",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-25-fm-77"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-25-singo"
+  },
+  {
+    "title": "Intense",
+    "performers": [
+      {
+        "name": "Intense",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-27",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-27-intense"
+  },
+  {
+    "title": "Rock The House",
+    "performers": [
+      {
+        "name": "Rock The House",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-28",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-28-rock-the-house"
+  },
+  {
+    "title": "Ted Riser",
+    "performers": [
+      {
+        "name": "Ted Riser",
+        "headliner": true
+      }
+    ],
+    "date": "2026-11-29",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-11-29-ted-riser"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-02",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-02-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-03",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-03-trivia"
+  },
+  {
+    "title": "Soul Shake",
+    "performers": [
+      {
+        "name": "Soul Shake",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-04",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-04-soul-shake"
+  },
+  {
+    "title": "Big Lights Big City",
+    "performers": [
+      {
+        "name": "Big Lights Big City",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-05",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-05-big-lights-big-city"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-09",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-09-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-10",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-10-trivia"
+  },
+  {
+    "title": "Collage",
+    "performers": [
+      {
+        "name": "Collage",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-11-collage"
+  },
+  {
+    "title": "Medusa",
+    "performers": [
+      {
+        "name": "Medusa",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-12",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-12-medusa"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-16",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-16-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-17",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-17-trivia"
+  },
+  {
+    "title": "Marshall Band",
+    "performers": [
+      {
+        "name": "Marshall Band",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-18-marshall-band"
+  },
+  {
+    "title": "Intense",
+    "performers": [
+      {
+        "name": "Intense",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-19",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-19-intense"
+  },
+  {
+    "title": "Zbiegien party",
+    "performers": [
+      {
+        "name": "Zbiegien party",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-20",
+    "time": "12:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-20-zbiegien-party"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-23",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-23-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-24",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-24-trivia"
+  },
+  {
+    "title": "FM 77",
+    "performers": [
+      {
+        "name": "FM 77",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-26-fm-77"
+  },
+  {
+    "title": "SINGO",
+    "performers": [
+      {
+        "name": "SINGO",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-30",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-30-singo"
+  },
+  {
+    "title": "TRIVIA",
+    "performers": [
+      {
+        "name": "TRIVIA",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-31",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "chagrin-tavern",
+    "source": "manual",
+    "manual": true,
+    "id": "chagrin-tavern-2026-12-31-trivia"
+  },
   {
     "title": "Post-Thanksgiving Party w/ The Heat CLE Dance Band",
     "performers": [
@@ -4064,6 +4732,25 @@
 
 
 
+  {
+    "title": "Kings of Leon",
+    "performers": [
+      {
+        "name": "Kings of Leon",
+        "headliner": true
+      }
+    ],
+    "date": "2027-05-14",
+    "time": "19:30",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "blossom-music-center",
+    "source": "manual",
+    "manual": true,
+    "id": "blossom-music-center-2027-05-14-kings-of-leon"
+  },
   {
     "title": "A Perfect Circle",
     "performers": [
@@ -4460,120 +5147,6 @@
 
 
   {
-    "title": "Poetry Unplugged",
-    "performers": [
-      {
-        "name": "Poetry Unplugged",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-29",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-29-poetry-unplugged"
-  },
-  {
-    "title": "Halloween House Sessions",
-    "performers": [
-      {
-        "name": "Jeff Ozmits",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-31-jeff-ozmits"
-  },
-  {
-    "title": "Dupree's Dead Band",
-    "performers": [
-      {
-        "name": "Dupree's Dead Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-06",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-11-06-dupree-s-dead-band"
-  },
-  {
-    "title": "It's A Vibe",
-    "performers": [
-      {
-        "name": "It's A Vibe",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-07",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-11-07-it-s-a-vibe"
-  },
-  {
-    "title": "Rye Valley Band",
-    "performers": [
-      {
-        "name": "Rye Valley Band",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-13",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-11-13-rye-valley-band"
-  },
-  {
-    "title": "Chloe & The Steel Strings",
-    "performers": [
-      {
-        "name": "Chloe & The Steel Strings",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-14",
-    "time": "21:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-11-14-chloe-the-steel-strings"
-  },
-  {
     "title": "Women of CLE",
     "performers": [
       {
@@ -4909,6 +5482,25 @@
     "id": "house-of-blues-2027-03-22-jack-jack"
   },
   {
+    "title": "Garret Elias",
+    "performers": [
+      {
+        "name": "Garret Elias",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-25",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-25-garret-elias"
+  },
+  {
     "title": "Ricky Chilton",
     "performers": [
       {
@@ -4927,6 +5519,25 @@
     "manual": true,
     "id": "house-of-blues-2027-04-02-ricky-chilton"
   },
+  {
+    "title": "Magenta Wave",
+    "performers": [
+      {
+        "name": "Magenta Wave",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-11",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-04-11-magenta-wave"
+  },
 
 
 
@@ -4935,82 +5546,7 @@
 
   
   
-  {
-    "title": "Rene Vaca",
-    "performers": [
-      {
-        "name": "Rene Vaca",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-22",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-22-rene-vaca"
-  },
-  {
-    "title": "Lauren Alaina",
-    "performers": [
-      {
-        "name": "Lauren Alaina",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-23-lauren-alaina"
-  },
-  {
-    "title": "Candlebox",
-    "performers": [
-      {
-        "name": "Candlebox",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-24-candlebox"
-  },
-  {
-    "title": "Cradle of Filth",
-    "performers": [
-      {
-        "name": "Cradle of Filth",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-25",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "house-of-blues",
-    "source": "manual",
-    "manual": true,
-    "id": "house-of-blues-2026-10-25-cradle-of-filth"
-  },
+  
   {
     "title": "The Wrecks",
     "performers": [
@@ -5675,6 +6211,44 @@
     "id": "house-of-blues-2027-01-28-broadway-does-punk"
   },
   {
+    "title": "United We Dance - The Ultimate Rave Experience",
+    "performers": [
+      {
+        "name": "United We Dance",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-29",
+    "time": "20:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-29-united-we-dance"
+  },
+  {
+    "title": "Thr3ewill - A Tribute to Rush",
+    "performers": [
+      {
+        "name": "Thr3ewill",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-30",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-01-30-thr3ewill"
+  },
+  {
     "title": "Alexandra Kay - The One Woman Show",
     "performers": [
       {
@@ -5730,6 +6304,44 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-02-12-red-not-chili-peppers"
+  },
+  {
+    "title": "Into the Blue - ELO Tribute",
+    "performers": [
+      {
+        "name": "Into the Blue",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-13",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-13-into-the-blue"
+  },
+  {
+    "title": "MYA",
+    "performers": [
+      {
+        "name": "MYA",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-18",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-02-18-mya"
   },
   {
     "title": "Spin Doctors",
@@ -5921,6 +6533,25 @@
     "source": "manual",
     "manual": true,
     "id": "house-of-blues-2027-03-24-gaelic-storm"
+  },
+  {
+    "title": "Mod Sun",
+    "performers": [
+      {
+        "name": "Mod Sun",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-26",
+    "time": "19:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "house-of-blues",
+    "source": "manual",
+    "manual": true,
+    "id": "house-of-blues-2027-03-26-mod-sun"
   },
   {
     "title": "Marcy Playground & Wheatus",
@@ -7251,276 +7882,7 @@
 
   
   
-  {
-    "title": "Ted Riser & Open Band Night",
-    "performers": [
-      {
-        "name": "Ted Riser",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-22",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-22-ted-riser"
-  },
-  {
-    "title": "Stamper Starr",
-    "performers": [
-      {
-        "name": "Stamper Starr",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-23",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-23-stamper-starr"
-  },
-  {
-    "title": "Halloween Party!!!",
-    "performers": [
-      {
-        "name": "Halloween Party",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": "17:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-24-halloween-party"
-  },
-  {
-    "title": "Cows Giving Kerosene",
-    "performers": [
-      {
-        "name": "Cows Giving Kerosene",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-24",
-    "time": "20:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-24-cows-giving-kerosene"
-  },
-  {
-    "title": "Blame Willy",
-    "performers": [
-      {
-        "name": "Blame Willy",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-30-blame-willy"
-  },
-  {
-    "title": "3 Day Weekend",
-    "performers": [
-      {
-        "name": "3 Day Weekend",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-31",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-10-31-3-day-weekend"
-  },
-  {
-    "title": "Ted Riser Live Band Open Mic",
-    "performers": [
-      {
-        "name": "Ted Riser",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-05",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-05-ted-riser-open-mic"
-  },
-  {
-    "title": "Black Jack Gypsies",
-    "performers": [
-      {
-        "name": "Black Jack Gypsies",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-06",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-06-black-jack-gypsies"
-  },
-  {
-    "title": "The Shizz",
-    "performers": [
-      {
-        "name": "The Shizz",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-07",
-    "time": "18:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-07-the-shizz"
-  },
-  {
-    "title": "Ted Riser & the Marshall Band",
-    "performers": [
-      {
-        "name": "Ted Riser",
-        "headliner": true
-      },
-      {
-        "name": "The Marshall Band",
-        "headliner": false
-      }
-    ],
-    "date": "2026-11-13",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-13-ted-riser"
-  },
-  {
-    "title": "Superbus",
-    "performers": [
-      {
-        "name": "Superbus",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-14",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-14-superbus"
-  },
-  {
-    "title": "Cleveland Blues Society Jam",
-    "performers": [
-      {
-        "name": "Cleveland Blues Society",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-19",
-    "time": "19:30",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-19-cleveland-blues-society"
-  },
-  {
-    "title": "DB Project",
-    "performers": [
-      {
-        "name": "DB Project",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-20",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-20-db-project"
-  },
-  {
-    "title": "BLUES DEVILLE",
-    "performers": [
-      {
-        "name": "BLUES DEVILLE",
-        "headliner": true
-      }
-    ],
-    "date": "2026-11-21",
-    "time": "19:00",
-    "doors": null,
-    "price": null,
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "spirits-willoughby",
-    "source": "manual",
-    "manual": true,
-    "id": "spirits-willoughby-2026-11-21-blues-deville"
-  },
+  
   {
     "title": "Larry Haws & the Octopus from Louisiana",
     "performers": [
@@ -9614,43 +9976,32 @@
 
 
 
+
+
+
+
   {
-    "title": "Wine with the Witches",
+    "title": "Christmas Karaoke & Trivia",
     "performers": [
       {
-        "name": "Wine with the Witches",
+        "name": "Karaoke",
         "headliner": true
+      },
+      {
+        "name": "Trivia",
+        "headliner": false
       }
     ],
-    "date": "2026-10-14",
+    "date": "2026-12-03",
     "time": "18:00",
     "doors": null,
-    "price": "$50",
+    "price": "Free",
     "eventUrl": null,
     "ticketUrl": null,
     "venueId": "1928-public-house",
     "source": "manual",
     "manual": true,
-    "id": "1928-public-house-2026-10-14-wine-with-the-witches"
-  },
-  {
-    "title": "Halloween Party w/ DJ Denicio",
-    "performers": [
-      {
-        "name": "DJ Denicio",
-        "headliner": true
-      }
-    ],
-    "date": "2026-10-30",
-    "time": "21:30",
-    "doors": null,
-    "price": "$25",
-    "eventUrl": null,
-    "ticketUrl": null,
-    "venueId": "1928-public-house",
-    "source": "manual",
-    "manual": true,
-    "id": "1928-public-house-2026-10-30-halloween-party"
+    "id": "1928-public-house-2026-12-03-christmas-karaoke-trivia"
   },
   
 
@@ -10392,6 +10743,44 @@
     "source": "manual",
     "manual": true,
     "id": "twist-social-club-2026-11-27-blacklight-friday"
+  },
+  {
+    "title": "Naughty List - A Not So Nice Holiday Party",
+    "performers": [
+      {
+        "name": "Naughty List",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-11",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-12-11-naughty-list"
+  },
+  {
+    "title": "brat-mas - A Charlie XCX Christmas Party",
+    "performers": [
+      {
+        "name": "brat-mas",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-18",
+    "time": "20:00",
+    "doors": null,
+    "price": "Free",
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "twist-social-club",
+    "source": "manual",
+    "manual": true,
+    "id": "twist-social-club-2026-12-18-brat-mas"
   },
   {
     "title": "Queer Tidings: Holiday Mixer",
@@ -14612,6 +15001,25 @@
     "id": "spotlight-cle-2026-11-29-dj-forrest-getemgump"
   },
   {
+    "title": "Rumpke",
+    "performers": [
+      {
+        "name": "Rumpke",
+        "headliner": true
+      }
+    ],
+    "date": "2026-12-04",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2026-12-04-rumpke"
+  },
+  {
     "title": "Spotlight on Songwriters w/ Freddy Hill",
     "performers": [
       {
@@ -14863,6 +15271,25 @@
     "id": "spotlight-cle-2027-01-09-eli-moon"
   },
   {
+    "title": "Into The Blue Acoustic",
+    "performers": [
+      {
+        "name": "Into The Blue Acoustic",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-15",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2027-01-15-into-the-blue-acoustic"
+  },
+  {
     "title": "Mikel Paris Solo",
     "performers": [
       {
@@ -14880,6 +15307,25 @@
     "source": "manual",
     "manual": true,
     "id": "spotlight-cle-2027-01-22-mikel-paris"
+  },
+  {
+    "title": "Rumpke",
+    "performers": [
+      {
+        "name": "Rumpke",
+        "headliner": true
+      }
+    ],
+    "date": "2027-01-23",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2027-01-23-rumpke"
   },
   {
     "title": "Spotlight on Songwriters w/ Freddy Hill",
@@ -14901,6 +15347,25 @@
     "id": "spotlight-cle-2027-02-06-freddy-hill"
   },
   {
+    "title": "GRAV",
+    "performers": [
+      {
+        "name": "GRAV",
+        "headliner": true
+      }
+    ],
+    "date": "2027-02-12",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2027-02-12-grav"
+  },
+  {
     "title": "Spotlight on Songwriters w/ Freddy Hill",
     "performers": [
       {
@@ -14918,6 +15383,44 @@
     "source": "manual",
     "manual": true,
     "id": "spotlight-cle-2027-03-06-freddy-hill"
+  },
+  {
+    "title": "Rachel Shortt & Shortt Stories",
+    "performers": [
+      {
+        "name": "Rachel Shortt & Shortt Stories",
+        "headliner": true
+      }
+    ],
+    "date": "2027-03-20",
+    "time": "21:00",
+    "doors": "19:00",
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2027-03-20-rachel-shortt"
+  },
+  {
+    "title": "Noah Gittell Birthday Bash",
+    "performers": [
+      {
+        "name": "Noah Gittell",
+        "headliner": true
+      }
+    ],
+    "date": "2027-04-09",
+    "time": "21:00",
+    "doors": null,
+    "price": null,
+    "eventUrl": null,
+    "ticketUrl": null,
+    "venueId": "spotlight-cle",
+    "source": "manual",
+    "manual": true,
+    "id": "spotlight-cle-2027-04-09-noah-gittell"
   },
   
 
